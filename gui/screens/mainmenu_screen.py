@@ -10,7 +10,7 @@ class MainMenu(Screen):
 	def __init__(self, window):
 		super().__init__()
 		self.window = window
-		self.title_label = Label(data_mng.get_game_property(data_mng.APP_NAME).strip()).set_font_sizes((15, 30, 50))
+		self.title_label = Label(data_mng.get_game_property(data_mng.APP_NAME).strip()).set_font_sizes((15, 30, 50)).set_colour((200, 200, 255))
 		self.play_button = Button("Play")
 		self.quit_button = Button("Quit")
 		self.set_state(True)

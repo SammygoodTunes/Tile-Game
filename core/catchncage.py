@@ -5,6 +5,7 @@ from entity.player import Player
 from world.world import World
 from world.camera import Camera
 import pygame
+from math import sin
 
 
 class Game(Window):
@@ -19,8 +20,9 @@ class Game(Window):
         self.update_all_uis()
 
     def update(self):
-        self.clear((140, 150, 235))
+        ticks = pygame.time.get_ticks()
         if self.start_game:
+            self.clear((140, 150, 235))
             self.world.draw(self.screen)
             # self.world.draw_wireframe(self.screen)
             # self.player.draw_selection_grid(self.screen)
@@ -33,6 +35,10 @@ class Game(Window):
             if not self.paused:
                 self.player.update(self, self.world.get_map())
                 self.world.update(self, self.player)
+        else:
+            self.clear((round(20 * sin(ticks / 5000) + 150), 
+                        round(10 * sin(ticks / 2500) + 120),
+                        235))
         self.all_events()
         self.screens.update()
         self.draw_fps() 
