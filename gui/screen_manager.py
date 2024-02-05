@@ -39,6 +39,8 @@ class Screens:
                     self.window.start_game = True
                     self.main_menu.set_state(False)
                     self.game.world.initialise()
+                elif self.main_menu.quit_button.is_hovering_over():
+                    self.window.stop()
 
                 if self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)

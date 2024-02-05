@@ -86,6 +86,9 @@ class Label(Widget):
     def get_total_width(self):
         return self.font.size(self._text)
 
+    def get_total_height(self):
+        return self.font.size(self._text)[1]
+
     def set_text(self, text):
         self._text = text
         return self

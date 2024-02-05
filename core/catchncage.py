@@ -19,7 +19,7 @@ class Game(Window):
         self.update_all_uis()
 
     def update(self):
-        self.clear()
+        self.clear((140, 150, 235))
         if self.start_game:
             self.world.draw(self.screen)
             # self.world.draw_wireframe(self.screen)

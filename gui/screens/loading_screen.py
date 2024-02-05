@@ -37,7 +37,7 @@ class LoadingScreen(Screen):
         while self.progress_bar.get_value() < self.progress_bar.get_value_bounds()[1]:
             if thread_event.is_set():
                 break
-            game.clear()
+            game.clear((140, 150, 235))
             for e in event.get():
                 if e.type == VIDEORESIZE:
                     game.resize(e)

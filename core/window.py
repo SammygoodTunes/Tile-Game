@@ -37,8 +37,8 @@ class Window:
     def get_time_in_seconds(self):
         return int(time() - self.time)
 
-    def clear(self):
-        self.screen.fill((140, 150, 235), (0, 0, self.width, self.height))
+    def clear(self, colour):
+        self.screen.fill(colour, (0, 0, self.width, self.height))
 
     def tick(self):
         if self.halt_refresh:
