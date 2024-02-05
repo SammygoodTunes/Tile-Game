@@ -4,6 +4,14 @@ A tile-based game with procedural-terrain generation (using the Perlin Noise alg
 
 Currently in-development.
 
+## Setup
+
+Install the pre-requisites from the requirements file (root dir) using:
+
+```shell
+pip install -r requirements.txt
+```
+
 ## Controls
 
 - ZQSD -> Move player (temporary)
