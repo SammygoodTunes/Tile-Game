@@ -21,10 +21,10 @@ class LoadingScreen(Screen):
     def events(self, e):
         pass
 
-    def draw(self, screen):
+    def draw(self):
         if self._enabled:
-            screen.blit(self.surface, (0, 0))
-            self.progress_bar.draw(screen)
+            self.window.screen.blit(self.surface, (0, 0))
+            self.progress_bar.draw(self.window.screen)
 
     def update_ui(self):
         self.surface = self.initialise_surface()

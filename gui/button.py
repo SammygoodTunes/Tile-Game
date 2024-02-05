@@ -16,7 +16,7 @@ class Button(Widget):
         self._width = width
         self._height = height
         self._background_colour = (255, 255, 255)
-        self.label = Label(text, 0, 0)
+        self.label = Label(text, 0, 0).set_font_sizes((8, 10, 12))
 
     def draw(self, screen):
         background_colour = self._background_colour if not self.is_hovering_over() else \
@@ -34,7 +34,7 @@ class Button(Widget):
     def update(self, window):
         button_width = clamp(window.width * 0.25, Button.MIN_WIDTH, Button.MAX_WIDTH)
         button_height = clamp(window.height * 0.1, Button.MIN_HEIGHT, Button.MAX_HEIGHT)
-        self.label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(8, 10, 12))
+        self.label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._width = button_width
         self._height = button_height
         self.refresh()

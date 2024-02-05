@@ -19,8 +19,8 @@ class ProgressBar(Widget):
         self._unfilled_colour = (50, 50, 50)
         self._filled_start_colour = (255, 130, 120)
         self._filled_end_colour = (120, 255, 130)
-        self.info_label = Label()
-        self.progress_label = Label(text=f"{self._value}/{self._max_value}")
+        self.info_label = Label().set_font_sizes((8, 9, 10))
+        self.progress_label = Label(text=f"{self._value}/{self._max_value}").set_font_sizes((7, 8, 9))
 
     def draw(self, screen):
         width = self.progress_label.font.size(self.progress_label.get_text())[0]
@@ -40,8 +40,8 @@ class ProgressBar(Widget):
             self.progress_label.draw(screen)
 
     def update(self, window):
-        self.info_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(8, 9, 10))
-        self.progress_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(7, 8, 9))
+        self.info_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
+        self.progress_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._width = clamp(window.width * 0.2, ProgressBar.MIN_WIDTH, ProgressBar.MAX_WIDTH)
         self._height = self.progress_label.font.size(self.progress_label.get_text())[1] + 4
         self.refresh()

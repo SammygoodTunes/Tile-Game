@@ -1,5 +1,6 @@
 
 import pygame
+from gui.screens.mainmenu_screen import MainMenu
 from gui.screens.loading_screen import LoadingScreen
 from gui.screens.pause_screen import PauseScreen
 from gui.screens.options_screen import OptionsScreen
@@ -12,6 +13,7 @@ class Screens:
         self.window = window
         self.game = None
         self.screen = self.window.screen
+        self.main_menu = MainMenu(window)
         self.loading_screen = LoadingScreen(window)
         self.pause_screen = PauseScreen(window)
         self.options_screen = OptionsScreen(window)
@@ -32,6 +34,12 @@ class Screens:
                 self.window.paused = self.pause_screen.get_state()
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
+
+                if self.main_menu.play_button.is_hovering_over():
+                    self.window.start_game = True
+                    self.main_menu.set_state(False)
+                    self.game.world.initialise()
+
                 if self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
                     self.window.paused = False
@@ -39,17 +47,21 @@ class Screens:
                     self.pause_screen.set_state(False)
                     self.options_screen.set_state(True)
                 elif self.pause_screen.quit_button.is_hovering_over():
-                    self.window.stop()
+                    self.window.start_game = False
+                    self.pause_screen.set_state(False)
+                    self.main_menu.set_state(True)
                 elif self.options_screen.back_button.is_hovering_over():
                     self.options_screen.set_state(False)
                     self.pause_screen.set_state(True)
 
     def update(self):
-        self.loading_screen.draw(self.screen)
-        self.pause_screen.draw(self.screen)
-        self.options_screen.draw(self.screen)
+        self.main_menu.draw()
+        self.loading_screen.draw()
+        self.pause_screen.draw()
+        self.options_screen.draw()
 
     def update_ui(self):
+        self.main_menu.update_ui()
         self.loading_screen.update_ui()
         self.pause_screen.update_ui()
         self.options_screen.update_ui()

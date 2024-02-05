@@ -39,14 +39,14 @@ class OptionsScreen(Screen):
         if self.window.fps_cap != self.fps_limit_slider.get_value():
             self.window.fps_cap = self.fps_limit_slider.get_value()
 
-    def draw(self, screen):
+    def draw(self):
         if self._enabled:
-            screen.blit(self.faded_surface, (0, 0))
-            self.options_label.draw(screen)
-            self.fps_limit_slider.draw(screen)
-            self.show_fps_box.draw(screen)
-            self.debug_info_box.draw(screen)
-            self.back_button.draw(screen)
+            self.window.screen.blit(self.faded_surface, (0, 0))
+            self.options_label.draw(self.window.screen)
+            self.fps_limit_slider.draw(self.window.screen)
+            self.show_fps_box.draw(self.window.screen)
+            self.debug_info_box.draw(self.window.screen)
+            self.back_button.draw(self.window.screen)
 
     def update_ui(self):
         self.faded_surface = self.initialise_surface()

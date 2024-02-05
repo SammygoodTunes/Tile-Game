@@ -16,24 +16,24 @@ class Game(Window):
         self.camera = Camera(self, speed=360)
         self.player = Player(self, speed=350, x=0, y=0)
         self.world = World(self)
-        self.world.initialise()
         self.update_all_uis()
 
     def update(self):
         self.clear()
-        self.world.draw(self.screen)
-        # self.world.draw_wireframe(self.screen)
-        # self.player.draw_selection_grid(self.screen)
-        self.player.draw(self.screen)
-        self.player.draw_score(self.screen)
-        self.player.draw_position(self.screen)
-        self.player.draw_hotbar(self.screen)
-        self.player.draw_ui(self.screen)
+        if self.start_game:
+            self.world.draw(self.screen)
+            # self.world.draw_wireframe(self.screen)
+            # self.player.draw_selection_grid(self.screen)
+            self.player.draw(self.screen)
+            self.player.draw_score(self.screen)
+            self.player.draw_position(self.screen)
+            self.player.draw_hotbar(self.screen)
+            self.player.draw_ui(self.screen)
+            
+            if not self.paused:
+                self.player.update(self, self.world.get_map())
+                self.world.update(self, self.player)
         self.all_events()
-        if not self.paused:
-            self.player.update(self, self.world.get_map())
-            self.world.update(self, self.player)
-
         self.screens.update()
         self.draw_fps() 
         self.tick()

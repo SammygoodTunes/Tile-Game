@@ -13,7 +13,7 @@ class Checkbox(Widget):
         self._colour = (255, 255, 255)
         self._size = 20
         self._spacing = 8
-        self.title_label = Label(title, self._x + self._size + self._spacing, self._y)
+        self.title_label = Label(title, self._x + self._size + self._spacing, self._y).set_font_sizes((7, 8, 10))
 
     def draw(self, screen):
         if self._checked:
@@ -27,7 +27,7 @@ class Checkbox(Widget):
                 self._checked = not self._checked
 
     def update(self, window):
-        self.title_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(7, 8, 10))
+        self.title_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self.refresh()
 
     def refresh(self):

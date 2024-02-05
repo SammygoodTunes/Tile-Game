@@ -13,6 +13,7 @@ class Label(Widget):
         super().__init__(x, y)
         self.font = Font(Label.DEFAULT_FONT, Label.DEFAULT_FONT_SIZE_NORMAL)
         self._font_size = Label.DEFAULT_FONT_SIZE_NORMAL
+        self._font_sizes = (Label.DEFAULT_FONT_SIZE_SMALL, Label.DEFAULT_FONT_SIZE_NORMAL, Label.DEFAULT_FONT_SIZE_LARGE)
         self._text = text
         self._shadow_x = self._x
         self._shadow_y = self._y
@@ -58,13 +59,13 @@ class Label(Widget):
         self.refresh()
         return self
 
-    def set_auto_font_size(self, width, height, max_width, max_height, sizes=(DEFAULT_FONT_SIZE_SMALL, DEFAULT_FONT_SIZE_NORMAL, DEFAULT_FONT_SIZE_LARGE)):
+    def set_auto_font_size(self, width, height, max_width, max_height):
         if width < max_width / 3 and height < max_height / 3:
-            self.set_font_size(sizes[0])
+            self.set_font_size(self._font_sizes[0])
         elif width < max_width / 3 * 2 and height < max_height / 3 * 2:
-            self.set_font_size(sizes[1])
+            self.set_font_size(self._font_sizes[1])
         else:
-            self.set_font_size(sizes[2])
+            self.set_font_size(self._font_sizes[2])
         return self
 
     def set_font_size(self, font_size):
@@ -74,6 +75,13 @@ class Label(Widget):
 
     def get_font_size(self):
         return self._font_size
+
+    def set_font_sizes(self, font_sizes):
+        self._font_sizes = font_sizes
+        return self
+
+    def get_font_sizes(self):
+        return self._font_sizes
 
     def get_total_width(self):
         return self.font.size(self._text)
@@ -101,6 +109,16 @@ class Label(Widget):
 
     def set_shadow_x(self, shadow_x):
         self._shadow_x = shadow_x
+        return self
+
+    def set_x(self, x):
+        super().set_x(x)
+        self.refresh()
+        return self
+
+    def set_y(self, y):
+        super().set_y(y)
+        self.refresh()
         return self
 
     def get_shadow_x(self):

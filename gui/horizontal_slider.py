@@ -23,8 +23,8 @@ class HorizontalSlider(Widget):
         self._button_radius = 10
         self._button_radius_hovered = 12
         self._button_held = False
-        self.title_label = Label(title, 0, self._y - 40)
-        self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13)
+        self.title_label = Label(title, 0, self._y - 40).set_font_sizes((7, 8, 10))
+        self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((6, 7, 8))
 
     def draw(self, screen):
         radius: int = self._button_radius_hovered if self.is_hovering_over_button() else self._button_radius
@@ -68,8 +68,8 @@ class HorizontalSlider(Widget):
 
     def update(self, window):
         self._width = clamp(window.width * 0.2, HorizontalSlider.MIN_WIDTH, HorizontalSlider.MAX_WIDTH)
-        self.title_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(7, 8, 10))
-        self.value_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height, sizes=(6, 7, 8))
+        self.title_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
+        self.value_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self.refresh()
 
     def refresh(self):

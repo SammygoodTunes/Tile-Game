@@ -22,13 +22,13 @@ class PauseScreen(Screen):
         surface.set_alpha(128)
         return surface
 
-    def draw(self, screen):
+    def draw(self):
         if self._enabled:
-            screen.blit(self.faded_surface, (0, 0))
-            self.pause_label.draw(screen)
-            self.resume_button.draw(screen)
-            self.options_button.draw(screen)
-            self.quit_button.draw(screen)
+            self.window.screen.blit(self.faded_surface, (0, 0))
+            self.pause_label.draw(self.window.screen)
+            self.resume_button.draw(self.window.screen)
+            self.options_button.draw(self.window.screen)
+            self.quit_button.draw(self.window.screen)
 
     def update_ui(self):
         self.pause_label.update(self.window)
