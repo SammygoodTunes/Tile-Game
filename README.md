@@ -14,8 +14,8 @@ pip install -r requirements.txt
 
 ## Controls
 
-- ZQSD -> Move player (temporary)
-- Escape -> Pause Menu
+- [**ZQSD**] -> Move player (temporary)
+- [**Escape**] -> Pause Menu
 
 ## Preview
 
