@@ -17,4 +17,4 @@ Currently in-development.
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
-Library(ies) used: Pygame 2.5.2
+Library(ies) used: Pygame 2.5.2, PyAutoGUI 0.9.54
