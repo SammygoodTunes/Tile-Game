@@ -9,7 +9,7 @@ A tile-based game with procedural-terrain generation (using the Perlin Noise alg
 
 ## Preview
 
-![Preview](https://imgur.com/nNMuzor)
+![Preview](https://i.imgur.com/nNMuzor.png)
 
 ## Information
 
