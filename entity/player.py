@@ -87,6 +87,7 @@ class Player(pygame.sprite.Sprite):
             self.position_label.draw(screen)
 
     def draw_ui(self, screen):
+        self.regen_button.set_state(not self.game.paused)
         self.regen_button.draw(screen)
 
     def draw_selection_grid(self, screen):
