@@ -15,6 +15,6 @@ Currently in-development.
 
 ## Information
 
-Developed by [SammygoodTunes](https://www.github.com/SammygoodTunes)
+Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
 Library(ies) used: Pygame 2.5.2
