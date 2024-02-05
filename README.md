@@ -1,10 +1,12 @@
 # Tile-Game
 
-A tile-based game with procedural-terrain generation (using the Perlin Noise algorithm). Currently in-development.
+A tile-based game with procedural-terrain generation (using the Perlin Noise algorithm).
+
+Currently in-development.
 
 ## Controls
 
-- ZQSD -> Move player
+- ZQSD -> Move player (temporary)
 - Escape -> Pause Menu
 
 ## Preview
