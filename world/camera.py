@@ -22,8 +22,6 @@ class Camera:
         d: float = self.game.clock.get_time() / 1000.0
         keys = pygame.key.get_pressed()
 
-        print(self.game.player.is_near_left_edge())
-
         if self.velocity_x != 0:
             self.x += self.speed * self.velocity_x * d
         if self.velocity_y != 0:

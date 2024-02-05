@@ -107,7 +107,6 @@ class Player(pygame.sprite.Sprite):
     def update(self, window, map_obj: Map):
         if not window.paused:
             d: float = window.clock.get_time() / 1000.0
-            print(self.move)
 
             if self.velocity_x != 0:
                 self.x += self.speed * self.velocity_x * d
@@ -150,8 +149,6 @@ class Player(pygame.sprite.Sprite):
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2)
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height)
             self.edges[Directions.RIGHT.value] = (self.screen_x >= window.width // 2 + self.width)
-
-            print(Player.DISTANCE_FROM_EDGE // window.width, Player.DISTANCE_FROM_EDGE // window.height)
 
 
     def update_ui(self):
