@@ -7,7 +7,7 @@ from gui.hotbar import Hotbar
 from utils.tools import clamp, world_to_screen, screen_to_world
 from world.map_manager import Map
 from world.textures import Textures
-from utils import mouse
+from data.mouse_properties import Mouse
 
 
 class Directions(Enum):
@@ -66,7 +66,7 @@ class Player(pygame.sprite.Sprite):
                 self.x = self.y = 0
                 self.game.world.get_map().regenerate(self.game.world.texture)
         elif e.type == pygame.MOUSEBUTTONUP:
-            if e.button == mouse.RMB:
+            if e.button == Mouse.RMB:
                 self.break_tile = False
 
     def draw(self, screen):
