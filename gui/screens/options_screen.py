@@ -15,12 +15,11 @@ class OptionsScreen(Screen):
         self.window = window
         self.game = None
         self.faded_surface = self.initialise_surface()
-        self.options_label = Label("Options", 0, 20)
-        self.fps_limit_slider = (HorizontalSlider("FPS Limit", 0, 150)
-                                 .set_value(window.fps_cap).set_value_bounds(10, 1000))
-        self.show_fps_box = Checkbox("Show FPS", 0, 350, checked=True)
-        self.debug_info_box = Checkbox("Show debug info", 0, 325, checked=False)
-        self.back_button = Button("Back", 0, 400, 250, 50)
+        self.options_label = Label("Options")
+        self.fps_limit_slider = HorizontalSlider("FPS Limit").set_value(window.fps_cap).set_value_bounds(10, 1000)
+        self.show_fps_box = Checkbox("Show FPS", checked=True)
+        self.debug_info_box = Checkbox("Show debug info", checked=False)
+        self.back_button = Button("Back")
 
     def initialise_surface(self):
         surface = pygame.Surface((self.window.width, self.window.height))
@@ -49,17 +48,22 @@ class OptionsScreen(Screen):
             self.back_button.draw(self.window.screen)
 
     def update_ui(self):
+        y = -75
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
-        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -128)
+        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
+        y += self.options_label.get_total_height() + 25
         self.fps_limit_slider.update(self.window)
-        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, -50)
+        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
+        y += 40
         self.show_fps_box.update(self.window)
-        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, -25)
+        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, y)
+        y += self.show_fps_box.get_size() + 5
         self.debug_info_box.update(self.window)
-        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, 0)
+        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, y)
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, 75)
+        y += self.debug_info_box.get_size() + self.back_button.get_height()
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
 
     def set_state(self, state):
         super().set_state(state)

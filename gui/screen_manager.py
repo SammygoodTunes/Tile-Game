@@ -26,7 +26,7 @@ class Screens:
         self.loading_screen.events(e)
         self.options_screen.events(e)
         if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_ESCAPE and not self.main_menu.get_state():
+            if e.key == pygame.K_ESCAPE and self.game.start_game:
                 if self.options_screen.get_state():
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:
@@ -35,12 +35,22 @@ class Screens:
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
 
-                if self.main_menu.play_button.is_hovering_over():
+                if self.options_screen.back_button.is_hovering_over():
+                    self.options_screen.set_state(False)
+                    if self.game.start_game:
+                        self.pause_screen.set_state(True)
+                    else:
+                        self.main_menu.set_state(True)
+
+                elif self.main_menu.play_button.is_hovering_over() and self.main_menu.get_state():
                     self.window.start_game = True
                     self.main_menu.set_state(False)
                     self.game.world.initialise()
-                elif self.main_menu.quit_button.is_hovering_over():
+                elif self.main_menu.quit_button.is_hovering_over() and self.main_menu.get_state():
                     self.window.stop()
+                elif self.main_menu.options_button.is_hovering_over() and self.main_menu.get_state():
+                    self.options_screen.set_state(True)
+                    self.main_menu.set_state(False)
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
@@ -52,9 +62,6 @@ class Screens:
                     self.window.start_game = False
                     self.pause_screen.set_state(False)
                     self.main_menu.set_state(True)
-                elif self.options_screen.back_button.is_hovering_over():
-                    self.options_screen.set_state(False)
-                    self.pause_screen.set_state(True)
 
     def update(self):
         self.main_menu.draw()

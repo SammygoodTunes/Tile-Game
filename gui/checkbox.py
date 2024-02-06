@@ -7,7 +7,7 @@ import pygame
 
 class Checkbox(Widget):
 
-    def __init__(self, title, x, y, checked=False):
+    def __init__(self, title, x=0, y=0, checked=False):
         super().__init__(x, y)
         self._checked = checked
         self._colour = (255, 255, 255)

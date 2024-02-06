@@ -11,7 +11,7 @@ class PauseScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.pause_label = Label(text="Paused").set_font_size(13).center_horizontally(0, window.width)
+        self.pause_label = Label(text="Paused").center_horizontally(0, window.width)
         self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
         self.quit_button = Button(text="Quit").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
