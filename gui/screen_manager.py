@@ -26,7 +26,7 @@ class Screens:
         self.loading_screen.events(e)
         self.options_screen.events(e)
         if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_ESCAPE:
+            if e.key == pygame.K_ESCAPE and not self.main_menu.get_state():
                 if self.options_screen.get_state():
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:
@@ -42,7 +42,7 @@ class Screens:
                 elif self.main_menu.quit_button.is_hovering_over():
                     self.window.stop()
 
-                if self.pause_screen.resume_button.is_hovering_over():
+                elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
                     self.window.paused = False
                 elif self.pause_screen.options_button.is_hovering_over():
