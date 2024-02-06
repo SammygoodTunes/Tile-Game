@@ -38,25 +38,25 @@ class Map:
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
             if noise_value < -80:
-                self._data.append((Textures.WATER, 1))
+                self._data.append(Textures.WATER)
             elif -80 <= noise_value < -48:
-                self._data.append((Textures.SAND, 1))
+                self._data.append(Textures.SAND)
             elif -48 <= noise_value < -24:
-                self._data.append((Textures.DIRT, 1))
+                self._data.append(Textures.DIRT)
             elif -24 <= noise_value <= 20:
-                self._data.append((Textures.GRASS, 1))
+                self._data.append(Textures.GRASS)
             elif 20 <= noise_value <= 35:
-                self._data.append((Textures.PLAINS, 1))
+                self._data.append(Textures.PLAINS)
             elif 100 <= noise_value <= 128:
-                self._data.append((Textures.LAVA, 1))
+                self._data.append(Textures.LAVA)
             else:
-                self._data.append((Textures.COBBLESTONE, 1))
+                self._data.append(Textures.COBBLESTONE)
 
-            if tile > 0:
+            '''if tile > 0:
                 if self._data[tile - offset - 1][0] == self._data[tile - offset][0]:
                     self._data.pop()
                     self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
-                    offset += 1
+                    offset += 1'''
 
             self.game.screens.loading_screen.progress_bar.set_value(round((tile + 1) / (self._width * self._height) * 100))
 
@@ -78,14 +78,19 @@ class Map:
         update_thread = Thread(target=self.game.screens.loading_screen.independant_update, args=(event, self.game, "Loading map..."))
         update_thread.start()
 
-        index = 0
+        for i, tile in enumerate(self._data):
+            x: int = (i % self._width) * Texture.SIZE
+            y: int = Texture.SIZE * (i // self._width)
+            texture_obj.draw(x, y, tile, self._surface)
+            self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
+        '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
                 x: int = (index % self._width) * Texture.SIZE
                 y: int = Texture.SIZE * (index // self._width)
                 texture_obj.draw(x, y, tile[0], self._surface)
                 index += 1
-            self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))    
+            self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''    
         event.set()
 
         if not self._data:
@@ -115,6 +120,17 @@ class Map:
                 self._y = self._y - player_obj.speed * d * player_obj.is_moving_down()
             else:
                 self._y = clamp(self._y, -self._height * Texture.SIZE + window_obj.height, 0)'''
+
+    def get_tile_pos(self, x, y):
+        tile_x = round((x - self._x) / Texture.SIZE)
+        tile_y = round((y - self._y) / Texture.SIZE)
+        return (tile_x, tile_y)
+
+    def tile_to_world_pos(self, tile_x, tile_y):
+        return (tile_x * Texture.SIZE + self._x, tile_y * Texture.SIZE + self._y)
+
+    def get_tile(self, tile_x, tile_y):
+        return self._data[tile_x % self._width + tile_y * self._width]
 
     def set_data(self, data: list):
         if data:

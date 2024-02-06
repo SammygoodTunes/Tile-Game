@@ -72,7 +72,10 @@ class Player(pygame.sprite.Sprite):
     def draw(self, screen):
         self.screen_x = self.game.width / 2 - self.game.camera.x + self.x
         self.screen_y = self.game.height / 2 - self.game.camera.y + self.y
-        pygame.draw.rect(screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
+        if not self.is_in_water():
+            pygame.draw.rect(screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
+        else:
+            pygame.draw.rect(screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
     def draw_score(self, screen):
@@ -108,11 +111,12 @@ class Player(pygame.sprite.Sprite):
     def update(self, window, map_obj: Map):
         if not window.paused:
             d: float = window.clock.get_time() / 1000.0
+            speed = self.speed // 1.5 if self.is_in_water() else self.speed
 
             if self.velocity_x != 0:
-                self.x += self.speed * self.velocity_x * d
+                self.x += speed * self.velocity_x * d
             if self.velocity_y != 0:
-                self.y += self.speed * self.velocity_y * d
+                self.y += speed * self.velocity_y * d
 
             if self.is_moving_left():
                 self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, self.velocity_x)
@@ -146,11 +150,30 @@ class Player(pygame.sprite.Sprite):
                 self.y = clamp(self.y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
                 self.velocity_x = self.velocity_y = 0
 
+            # Player - wall collision
+            tile_x, tile_y = map_obj.get_tile_pos(self.x, self.y)
+            tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
+            walls = self.get_walls()
+            if walls[0] and self.x <= tile_wx:
+                self.x = tile_wx
+                self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
+            if walls[1] and self.x >= tile_wx:
+                self.x = tile_wx
+                self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
+            if walls[2] and self.y <= tile_wy:
+                self.y = tile_wy
+                self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
+            if walls[3] and self.y >= tile_wy:
+                self.y = tile_wy
+                self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
+
+            print(walls)
+                
+
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2)
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height)
             self.edges[Directions.RIGHT.value] = (self.screen_x >= window.width // 2 + self.width)
-
 
     def update_ui(self):
         y = -8
@@ -197,6 +220,10 @@ class Player(pygame.sprite.Sprite):
     def is_near_bottom_edge(self) -> bool:
         return self.edges[Directions.DOWN.value]
 
+    def is_in_water(self) -> bool:
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        return self.game.world.get_map().get_tile(tile_x, tile_y) == Textures.WATER
+
     def set_x(self, x):
         self.x = x
         return self
@@ -210,3 +237,10 @@ class Player(pygame.sprite.Sprite):
 
     def get_y(self):
         return self.y
+
+    def get_walls(self):
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        return [self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE, # Left
+                self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE, # Right
+                self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE, # Up
+                self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE] # Down
