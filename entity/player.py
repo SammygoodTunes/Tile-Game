@@ -1,6 +1,7 @@
 import math
 from enum import Enum
 import pygame
+from random import randint
 from gui.label import Label
 from gui.button import Button
 from gui.hotbar import Hotbar
@@ -96,10 +97,11 @@ class Player(pygame.sprite.Sprite):
     def draw_selection_grid(self, screen):
         if not self.game.paused:
             mx, my = pygame.mouse.get_pos()
-            x, y = screen_to_world(
-                (mx - self.game.world.get_map().get_x()) // self.game.world.texture.SIZE * self.game.world.texture.SIZE,
-                (my - self.game.world.get_map().get_y()) // self.game.world.texture.SIZE * self.game.world.texture.SIZE,
-                int(self.game.world.get_map().get_x()), int(self.game.world.get_map().get_y()))
+            #tile_x, tile_y = self.game.world.get_map().get_strict_tile_pos(mx, my)
+            #x, y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
+            #print(tile_x, tile_y)
+
+            x, y = (self.game.width / 2 - self.game.camera.x + mx // 32) * 32, (self.game.height / 2 - self.game.camera.y + my // 32) * 32
 
             colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
             pygame.draw.rect(screen, (255, colour_anim, colour_anim), (
@@ -166,9 +168,6 @@ class Player(pygame.sprite.Sprite):
             if walls[3] and self.y >= tile_wy:
                 self.y = tile_wy
                 self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
-
-            print(walls)
-                
 
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2)
@@ -239,8 +238,20 @@ class Player(pygame.sprite.Sprite):
         return self.y
 
     def get_walls(self):
+        try:
+            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+            return [self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE, # Left
+                    self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE, # Right
+                    self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE, # Up
+                    self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE] # Down
+        except IndexError:
+            return [False] * 4
+
+    def set_ideal_spawnpoint(self):
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        return [self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE, # Left
-                self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE, # Right
-                self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE, # Up
-                self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE] # Down
+        while self.game.world.get_map().get_tile(tile_x, tile_y) in [Textures.COBBLESTONE, Textures.LAVA]:
+            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+            tile_x = randint(0, self.game.world.get_map().get_width_in_tiles() - 1)
+            tile_y = randint(0, self.game.world.get_map().get_height_in_tiles() - 1)
+            self.x, self.y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
+            self.game.camera.x, self.game.camera.y = self.x, self.y

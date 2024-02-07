@@ -25,7 +25,7 @@ class Game(Window):
             self.clear((140, 150, 235))
             self.world.draw(self.screen)
             # self.world.draw_wireframe(self.screen)
-            # self.player.draw_selection_grid(self.screen)
+            self.player.draw_selection_grid(self.screen)
             self.player.draw(self.screen)
             self.player.draw_score(self.screen)
             self.player.draw_position(self.screen)

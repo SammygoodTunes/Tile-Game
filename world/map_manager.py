@@ -97,6 +97,7 @@ class Map:
             raise InvalidMapData
         self.game.screens.loading_screen.set_state(False)
         self.game.update_all_uis()
+        self.game.player.set_ideal_spawnpoint()
 
     def update(self, window_obj, player_obj):
         '''d: float = window_obj.clock.get_time() / 1000.0
@@ -124,6 +125,11 @@ class Map:
     def get_tile_pos(self, x, y):
         tile_x = round((x - self._x) / Texture.SIZE)
         tile_y = round((y - self._y) / Texture.SIZE)
+        return (tile_x, tile_y)
+
+    def get_strict_tile_pos(self, x, y):
+        tile_x = round(x - self._x) // Texture.SIZE
+        tile_y = round(y - self._y) // Texture.SIZE
         return (tile_x, tile_y)
 
     def tile_to_world_pos(self, tile_x, tile_y):
