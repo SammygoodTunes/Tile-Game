@@ -13,18 +13,17 @@ class World:
     def __init__(self, game):
         self.game = game
         self.texture = Texture()
-        self._map = Map(self.game, 32, 32)
+        self._map = Map(self.game, 128, 128)
 
     def initialise(self):
         self.texture.set_atlas(World.DEFAULT_ATLAS)
         self._map.generate()
         self._map.load(self.texture)
 
-    def events(self, e):
+    def update(self, window_obj, player_obj):
         if mouse.get_pressed()[Mouse.LMB - 1]:
                 self._map.break_tile(self.texture)
 
-    def update(self, window_obj, player_obj):
         self._map.update(window_obj, player_obj)
 
     def update_ui(self):
@@ -34,7 +33,7 @@ class World:
         true_x = self.game.width / 2 - self.game.camera.x + self._map.get_x()
         true_y = self.game.height / 2 - self.game.camera.y + self._map.get_y()
         screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
-        screen.blit(self._map.get_dynatile_surface().convert_alpha(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
+        screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
 
     def draw_wireframe(self, screen):
         for x in range(self._map.get_width_in_tiles() + 1):
