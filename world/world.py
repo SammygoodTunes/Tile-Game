@@ -2,6 +2,8 @@ from pygame import draw, image
 from .texture_manager import Texture
 from .map_manager import Map
 from gui.label import Label
+from pygame import MOUSEBUTTONDOWN
+from data.mouse_properties import Mouse
 
 
 class World:
@@ -18,6 +20,11 @@ class World:
         self._map.generate()
         self._map.load(self.texture)
 
+    def events(self, e):
+        if e.type == MOUSEBUTTONDOWN:
+            if e.button == Mouse.LMB:
+                self._map.break_tile(self.texture)
+
     def update(self, window_obj, player_obj):
         self._map.update(window_obj, player_obj)
 
@@ -28,6 +35,7 @@ class World:
         true_x = self.game.width / 2 - self.game.camera.x + self._map.get_x()
         true_y = self.game.height / 2 - self.game.camera.y + self._map.get_y()
         screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
+        screen.blit(self._map.get_dynatile_surface().convert_alpha(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
 
     def draw_wireframe(self, screen):
         for x in range(self._map.get_width_in_tiles() + 1):

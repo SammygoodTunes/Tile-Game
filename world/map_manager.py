@@ -1,4 +1,4 @@
-from .texture_manager import Textures, Texture
+from .texture_manager import Textures, Tiles, Texture
 from utils.exceptions import InvalidMapData
 from utils.tools import clamp
 from random import randint, seed, random
@@ -17,18 +17,22 @@ class Map:
     def __init__(self, game, width, height):
         self.game = game
         self._data: list = list()
+        self._dynatile_data: list = list()
         self._seed = 0
         self._x = -width * Texture.SIZE // 2
         self._y = -height * Texture.SIZE // 2
         self._width = width
         self._height = height
         self._surface = None
+        self._dynatile_surface = None
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
 
     def generate(self):
         self._data.clear()
+        self._dynatile_data = [False] * self._width * self._height
         self._surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE))
+        self._dynatile_surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE), pygame.SRCALPHA, 32)
         self.game.screens.loading_screen.set_state(True)
         offset = 0
         event = Event()
@@ -122,6 +126,13 @@ class Map:
             else:
                 self._y = clamp(self._y, -self._height * Texture.SIZE + window_obj.height, 0)'''
 
+    def break_tile(self, texture_obj):
+        tile_x, tile_y = self.game.player.get_selected_tile_x(), self.game.player.get_selected_tile_y()
+        if not self.get_dynatile(tile_x, tile_y) and self.get_tile(tile_x, tile_y) in Tiles.BREAKABLE.value:
+            self.set_dynatile(tile_x, tile_y, True)
+            self.set_tile(tile_x, tile_y, Textures.PLAINS)
+            texture_obj.draw(tile_x * Texture.SIZE, tile_y * Texture.SIZE, Textures.PLAINS, self._dynatile_surface)
+
     def get_tile_pos(self, x, y):
         tile_x = round((x - self._x) / Texture.SIZE)
         tile_y = round((y - self._y) / Texture.SIZE)
@@ -135,6 +146,10 @@ class Map:
     def tile_to_world_pos(self, tile_x, tile_y):
         return (tile_x * Texture.SIZE + self._x, tile_y * Texture.SIZE + self._y)
 
+    def set_tile(self, tile_x, tile_y, tile):
+        self._data[tile_x % self._width + tile_y * self._width] = tile
+        return self
+
     def get_tile(self, tile_x, tile_y):
         return self._data[tile_x % self._width + tile_y * self._width]
 
@@ -147,6 +162,20 @@ class Map:
 
     def get_data(self):
         return self._data
+
+    def set_dynatile_data(self, dynatile_data: list):
+        self._dynatile_data = dynatile_data
+        return self
+
+    def get_dynatile_data(self):
+        return self._dynatile_data
+
+    def set_dynatile(self, x, y, state):
+        self._dynatile_data[y * self._width + x % self._width] = state
+        return self
+
+    def get_dynatile(self, x, y):
+        return self._dynatile_data[y * self._width + x % self._width]
 
     def randomise_seed(self):
         self._seed = randint(-Map.SEED_RANGE, Map.SEED_RANGE)
@@ -189,3 +218,6 @@ class Map:
 
     def get_surface(self):
         return self._surface
+
+    def get_dynatile_surface(self):
+        return self._dynatile_surface

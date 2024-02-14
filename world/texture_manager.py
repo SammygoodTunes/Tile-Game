@@ -1,7 +1,7 @@
 
 import pygame
 from random import randint
-from .textures import Textures
+from .textures import Textures, Tiles
 from utils.exceptions import InvalidTextureAtlas
 from utils.tools import error
 

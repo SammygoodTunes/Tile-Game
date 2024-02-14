@@ -59,6 +59,8 @@ class Game(Window):
                 continue
             self.player.events(e)
             self.screens.events(e)
+            if not self.paused and self.start_game:
+                self.world.events(e)
         if not self.paused:
             self.camera.events()
 

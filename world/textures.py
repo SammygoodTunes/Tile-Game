@@ -13,3 +13,6 @@ class Textures(Enum):
     FIRESTONE = (7, 0)
     WATER = (0, 1)
     LAVA = (1, 1)
+
+class Tiles(Enum):
+    BREAKABLE = [Textures.COBBLESTONE]

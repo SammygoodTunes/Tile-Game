@@ -103,7 +103,7 @@ class Player(pygame.sprite.Sprite):
             camera_x, camera_y = self.game.camera.x, self.game.camera.y
 
             wx, wy = (self.game.camera.x - (center_x - mx)) // 32, (self.game.camera.y - (center_y - my)) // 32
-            wx, wy = clamp(wx, -map_width // 2, map_width // 2), clamp(wy, -map_height // 2, map_height // 2)
+            wx, wy = clamp(wx, -map_width // 2, map_width // 2 - 1), clamp(wy, -map_height // 2, map_height // 2 - 1)
 
             x, y = self.game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
             if camera_x != 0 and camera_y != 0:
@@ -246,6 +246,12 @@ class Player(pygame.sprite.Sprite):
 
     def get_y(self):
         return self.y
+
+    def get_selected_tile_x(self):
+        return self.selected_tile_x
+
+    def get_selected_tile_y(self):
+        return self.selected_tile_y
 
     def get_walls(self):
         try:
