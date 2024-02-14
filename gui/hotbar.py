@@ -6,13 +6,14 @@ from pygame import Surface, SRCALPHA
 
 class Hotbar(Widget):
 
-    def __init__(self, x, y, slot_count):
+    def __init__(self, x=0, y=0, slot_count=4):
         super().__init__(x, y)
         self._surface = None
         self._spacing = 4
         self._width = 0
         self._height = 0
-        self.slots = [Slot(0, 0) for i in range(slot_count)]
+        self.slots = [Slot() for i in range(slot_count)]
+        self._selected_slot = 0
         self.init_slots()
 
     def init_slots(self):
@@ -70,3 +71,16 @@ class Hotbar(Widget):
 
     def get_height(self):
         return self._height
+
+    def set_selected_slot(self, slot_index):
+        self._selected_slot = selected_slot
+        self.slots[self._selected_slot].select()
+        return self
+
+    def select_slot(self, slot_index):
+        self._selected_slot = selected_slot
+        self.slots[self._selected_slot].select()
+        return self
+
+    def get_selected_slot(self):
+        return self._selected_slot

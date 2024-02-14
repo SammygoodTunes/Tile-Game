@@ -32,7 +32,7 @@ class Map:
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
         self._surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE))
-        self._dynatile_surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE), pygame.SRCALPHA, 32)
+        self._dynatile_surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE), pygame.SRCALPHA, 32).convert_alpha()
         self.game.screens.loading_screen.set_state(True)
         offset = 0
         event = Event()
@@ -104,27 +104,7 @@ class Map:
         self.game.player.set_ideal_spawnpoint()
 
     def update(self, window_obj, player_obj):
-        '''d: float = window_obj.clock.get_time() / 1000.0
-        if player_obj.is_near_left_edge():
-            if self._x < 0:
-                self._x = self._x + player_obj.speed * d * player_obj.is_moving_left()
-            else:
-                self._x = clamp(self._x, -self._width * Texture.SIZE, 0)
-        if player_obj.is_near_right_edge():
-            if self._x + self._width * Texture.SIZE > window_obj.width:
-                self._x = self._x - player_obj.speed * d * player_obj.is_moving_right()
-            else:
-                self._x = clamp(self._x, -self._width * Texture.SIZE + window_obj.width, 0)
-        if player_obj.is_near_top_edge():
-            if self._y < 0:
-                self._y = self._y + player_obj.speed * d * player_obj.is_moving_up()
-            else:
-                self._y = clamp(self._y, -self._height * Texture.SIZE, 0)
-        if player_obj.is_near_bottom_edge():
-            if self._y + self._height * Texture.SIZE > window_obj.height:
-                self._y = self._y - player_obj.speed * d * player_obj.is_moving_down()
-            else:
-                self._y = clamp(self._y, -self._height * Texture.SIZE + window_obj.height, 0)'''
+        pass
 
     def break_tile(self, texture_obj):
         tile_x, tile_y = self.game.player.get_selected_tile_x(), self.game.player.get_selected_tile_y()

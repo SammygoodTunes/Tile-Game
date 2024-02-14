@@ -38,8 +38,6 @@ class Player(pygame.sprite.Sprite):
         self.velocity_y = 0
         self.speed = speed
         self.move = 0
-        self.place_tile = False
-        self.break_tile = False
         self.score = 0
         self.score_label = (Label(f"Score: {self.score}", 4, -8)
                             .set_shadow_x(6).set_shadow_y(-6)
@@ -47,7 +45,8 @@ class Player(pygame.sprite.Sprite):
         self.camera_label = Label(f"Camera (XY): {round(self.game.camera.x)} {round(self.game.camera.y)}")
         self.position_label = Label(f"Player (XY): {round(self.x)} {round(self.y)}")
         self.regen_button = Button("Regenerate").set_state(True)
-        self.hotbar = Hotbar(0, 0, 4)
+        self.hotbar = Hotbar(slot_count=6)
+        self.hotbar.slots[0].select()
         self.edges = [False, False, False, False]
 
     def events(self, e):
@@ -62,13 +61,14 @@ class Player(pygame.sprite.Sprite):
             self.move &= ~(1 << Directions.RIGHT.value) if e.key == pygame.K_d else self.move
             self.move &= ~(1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
-            # self.break_tile = e.button == mouse.LMB and not self.game.paused
             if self.regen_button.is_hovering_over():
                 self.x = self.y = 0
                 self.game.world.get_map().regenerate(self.game.world.texture)
         elif e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.RMB:
-                self.break_tile = False
+                pass
+        if e.type == pygame.MOUSEWHEEL:
+            print(e.x, e.y)
 
     def draw(self, screen):
         self.screen_x = self.game.width / 2 - self.game.camera.x + self.x
@@ -166,7 +166,6 @@ class Player(pygame.sprite.Sprite):
             tile_x, tile_y = map_obj.get_tile_pos(self.x, self.y)
             tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
             walls = self.get_walls()
-            print(walls)
             if walls[0] and self.x <= tile_wx:
                 self.x = tile_wx
                 self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x

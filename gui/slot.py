@@ -10,7 +10,7 @@ class Slot(Widget):
     MIN_SIZE = 25
     MAX_SIZE = 75
 
-    def __init__(self, x, y):
+    def __init__(self, x=0, y=0):
         super().__init__(x, y)
         self._width = 64
         self._height = 64
@@ -23,13 +23,16 @@ class Slot(Widget):
         self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
         self._item_asset = None
         self._item_count = 0
+        self._selected = False
 
     def draw(self, screen):
-        self._fill_surface.fill(self._fill_colour, (0, 0, self._width, self._height))
+        fill_colour = (60, 40, 210) if self._selected else self._fill_colour
+        inner_colour = self._inner_colour if self._selected else (128, 128, 128)
+        self._fill_surface.fill(fill_colour, (0, 0, self._width, self._height))
         self._fill_surface.set_alpha(self._fill_alpha)
         screen.blit(self._fill_surface, (self._x, self._y, self._width, self._height))
         rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
-        rect(screen, self._inner_colour, (
+        rect(screen, inner_colour, (
                                             self._x + self._outline_width - 1,
                                             self._y + self._outline_width - 1,
                                             self._width - self._outline_width - 1,
@@ -44,6 +47,7 @@ class Slot(Widget):
         if self._item_asset is not None:
             screen.blit(self._item_asset, (0, 0, self._width, self._height))
 
+
     def update(self, window):
         self._width = self._height = clamp(window.width * 0.12, Slot.MIN_SIZE, Slot.MAX_SIZE)
         self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
@@ -56,6 +60,17 @@ class Slot(Widget):
     def center_vertically(self, parent_y, parent_height):
         self._y = parent_y + parent_height / 2 - self._height / 2
         return self
+
+    def select(self):
+        self._selected = True
+        return self
+
+    def unselect(self):
+        self._selected = False
+        return self
+
+    def get_selected(self):
+        return self._selected
 
     def set_width(self, width):
         self._width = width
