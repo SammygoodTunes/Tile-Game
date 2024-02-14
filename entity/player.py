@@ -166,6 +166,7 @@ class Player(pygame.sprite.Sprite):
             tile_x, tile_y = map_obj.get_tile_pos(self.x, self.y)
             tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
             walls = self.get_walls()
+            print(walls)
             if walls[0] and self.x <= tile_wx:
                 self.x = tile_wx
                 self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
@@ -254,14 +255,17 @@ class Player(pygame.sprite.Sprite):
         return self.selected_tile_y
 
     def get_walls(self):
+        walls = []
         try:
             tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-            return [self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE, # Left
-                    self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE, # Right
-                    self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE, # Up
-                    self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE] # Down
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE) # Left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE) # Right
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE) # Up
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE) # Down
         except IndexError:
-            return [False] * 4
+            for _ in range(4 - len(walls)):
+                walls.append(False)
+        return walls
 
     def set_ideal_spawnpoint(self):
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
