@@ -11,7 +11,7 @@ class World:
     def __init__(self, game):
         self.game = game
         self.texture = Texture()
-        self._map = Map(self.game, 128, 128)
+        self._map = Map(self.game, 32, 32)
 
     def initialise(self):
         self.texture.set_atlas(World.DEFAULT_ATLAS)

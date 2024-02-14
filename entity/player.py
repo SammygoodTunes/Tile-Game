@@ -97,11 +97,21 @@ class Player(pygame.sprite.Sprite):
     def draw_selection_grid(self, screen):
         if not self.game.paused:
             mx, my = pygame.mouse.get_pos()
-            #tile_x, tile_y = self.game.world.get_map().get_strict_tile_pos(mx, my)
-            #x, y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
-            #print(tile_x, tile_y)
+            
+            center_x, center_y = self.game.width / 2, self.game.height / 2
+            map_width, map_height = self.game.world.get_map().get_width_in_tiles(), self.game.world.get_map().get_height_in_tiles()
+            camera_x, camera_y = self.game.camera.x, self.game.camera.y
 
-            x, y = (self.game.width / 2 - self.game.camera.x + mx // 32) * 32, (self.game.height / 2 - self.game.camera.y + my // 32) * 32
+            wx, wy = (self.game.camera.x - (center_x - mx)) // 32, (self.game.camera.y - (center_y - my)) // 32
+            wx, wy = clamp(wx, -map_width // 2, map_width // 2), clamp(wy, -map_height // 2, map_height // 2)
+
+            x, y = self.game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
+            if camera_x != 0 and camera_y != 0:
+                x = x + center_x - camera_x % (abs(camera_x) // camera_x * 32) - camera_x // 32 * 32 - (camera_x <= 0) * 32
+                y = y + center_y - camera_y % (abs(camera_y) // camera_y * 32) - camera_y // 32 * 32 - (camera_y <= 0) * 32
+
+            self.selected_tile_x = int(wx + map_width // 2)
+            self.selected_tile_y = int(wy + map_height // 2)
 
             colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
             pygame.draw.rect(screen, (255, colour_anim, colour_anim), (
