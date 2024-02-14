@@ -2,7 +2,7 @@ from pygame import draw, image
 from .texture_manager import Texture
 from .map_manager import Map
 from gui.label import Label
-from pygame import MOUSEBUTTONDOWN
+from pygame import mouse
 from data.mouse_properties import Mouse
 
 
@@ -21,8 +21,7 @@ class World:
         self._map.load(self.texture)
 
     def events(self, e):
-        if e.type == MOUSEBUTTONDOWN:
-            if e.button == Mouse.LMB:
+        if mouse.get_pressed()[Mouse.LMB - 1]:
                 self._map.break_tile(self.texture)
 
     def update(self, window_obj, player_obj):
