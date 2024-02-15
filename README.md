@@ -25,6 +25,6 @@ pip install -r requirements.txt
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
-Tested with Ubuntu 22.04.3 LTS
+Tested on Ubuntu 22.04.3 LTS
 
 Library(ies) used: Pygame 2.5.2, PyAutoGUI 0.9.54
