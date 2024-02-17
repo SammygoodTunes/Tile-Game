@@ -125,6 +125,7 @@ class Player(pygame.sprite.Sprite):
         if not window.paused:
             d: float = window.clock.get_time() / 1000.0
             speed = self.speed // 1.5 if self.is_in_water() else self.speed
+            prev_x, prev_y = self.x, self.y
 
             if self.velocity_x != 0:
                 self.x += speed * self.velocity_x * d
@@ -180,6 +181,10 @@ class Player(pygame.sprite.Sprite):
                 self.y = tile_wy
                 self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
 
+            # Prevent wall clipping when lagging
+            if self.is_in_wall():
+                self.x, self.y = prev_x, prev_y
+
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2 - self.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2 - self.height // 2)
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height // 2)
@@ -233,6 +238,10 @@ class Player(pygame.sprite.Sprite):
     def is_in_water(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) == Textures.WATER
+
+    def is_in_wall(self) -> bool:
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        return self.game.world.get_map().get_tile(tile_x, tile_y) == Textures.COBBLESTONE
 
     def set_x(self, x):
         self.x = x
