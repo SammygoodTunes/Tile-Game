@@ -14,8 +14,8 @@ class Game(Window):
         super().__init__(window_width, window_height)
         self._running = True
         self.screens.link_game(self)
-        self.camera = Camera(self, speed=360)
-        self.player = Player(self, speed=350, x=0, y=0)
+        self.camera = Camera(self, speed=350)
+        self.player = Player(self, speed=350)
         self.world = World(self)
         self.update_all_uis()
 

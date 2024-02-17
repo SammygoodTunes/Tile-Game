@@ -132,29 +132,29 @@ class Player(pygame.sprite.Sprite):
                 self.y += speed * self.velocity_y * d
 
             if self.is_moving_left():
-                self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, self.velocity_x)
+                self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)
             if self.is_moving_right():
-                self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_START * d, self.velocity_x, 1)
+                self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_START * d, -1, 1)
             if self.is_moving_up():
-                self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, self.velocity_y)
+                self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, 1)
             if self.is_moving_down():
-                self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, self.velocity_y, 1)
+                self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, -1, 1)
             
             if not self.is_moving_left() and not self.is_moving_right():
                 if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
                     self.velocity_x = 0
                 if self.velocity_x > 0:
-                    self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_STOP * d, 0, self.velocity_x)
+                    self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_STOP * d, 0, 1)
                 elif self.velocity_x < 0:
-                    self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_STOP * d, self.velocity_x, 0)
+                    self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_STOP * d, -1, 0)
 
             if not self.is_moving_up() and not self.is_moving_down():
                 if -0.0001 < self.velocity_y < 0.0001 and self.velocity_y != 0:
                     self.velocity_y = 0
                 if self.velocity_y > 0:
-                    self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_STOP * d, 0, self.velocity_y)
+                    self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_STOP * d, 0, 1)
                 elif self.velocity_y < 0:
-                    self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, self.velocity_y, 0)
+                    self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, -1, 0)
 
             # Player - map boundaries collision
             if self.x < map_obj.get_x() or self.x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
@@ -180,10 +180,10 @@ class Player(pygame.sprite.Sprite):
                 self.y = tile_wy
                 self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
 
-            self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2)
-            self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2)
-            self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height)
-            self.edges[Directions.RIGHT.value] = (self.screen_x >= window.width // 2 + self.width)
+            self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2 - self.width // 2)
+            self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2 - self.height // 2)
+            self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height // 2)
+            self.edges[Directions.RIGHT.value] = (self.screen_x >= window.width // 2 + self.width // 2)
 
     def update_ui(self):
         y = -8
@@ -247,6 +247,12 @@ class Player(pygame.sprite.Sprite):
 
     def get_y(self):
         return self.y
+
+    def get_coefficient_from_center_x(self):
+        return 1 + abs(self.screen_x - self.game.width // 2) / (self.game.width // 2)
+
+    def get_coefficient_from_center_y(self):
+        return 1 + abs(self.screen_y - self.game.height // 2) / (self.game.height // 2)
 
     def get_selected_tile_x(self):
         return self.selected_tile_x
