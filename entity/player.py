@@ -106,9 +106,10 @@ class Player(pygame.sprite.Sprite):
             wx, wy = clamp(wx, -map_width // 2, map_width // 2 - 1), clamp(wy, -map_height // 2, map_height // 2 - 1)
 
             x, y = self.game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
-            if camera_x != 0 and camera_y != 0:
-                x = x + center_x - camera_x % (abs(camera_x) // camera_x * 32) - camera_x // 32 * 32 - (camera_x <= 0) * 32
-                y = y + center_y - camera_y % (abs(camera_y) // camera_y * 32) - camera_y // 32 * 32 - (camera_y <= 0) * 32
+            sign_x = abs(camera_x) // camera_x if camera_x != 0 else 1
+            sign_y = abs(camera_y) // camera_y if camera_y != 0 else 1
+            x = x + center_x - camera_x % (sign_x * 32) - camera_x // 32 * 32 - (camera_x <= 0) * 32
+            y = y + center_y - camera_y % (sign_y * 32) - camera_y // 32 * 32 - (camera_y <= 0) * 32
 
             self.selected_tile_x = int(wx + map_width // 2)
             self.selected_tile_y = int(wy + map_height // 2)
