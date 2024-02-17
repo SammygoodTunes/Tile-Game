@@ -25,6 +25,7 @@ class Screens:
     def events(self, e):
         self.loading_screen.events(e)
         self.options_screen.events(e)
+
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_ESCAPE and self.game.start_game:
                 if self.options_screen.get_state():
@@ -32,9 +33,9 @@ class Screens:
                 else:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                 self.window.paused = self.pause_screen.get_state()
+
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
-
                 if self.options_screen.back_button.is_hovering_over():
                     self.options_screen.set_state(False)
                     if self.game.start_game:
@@ -46,11 +47,11 @@ class Screens:
                     self.window.start_game = True
                     self.main_menu.set_state(False)
                     self.game.world.initialise()
-                elif self.main_menu.quit_button.is_hovering_over() and self.main_menu.get_state():
-                    self.window.stop()
                 elif self.main_menu.options_button.is_hovering_over() and self.main_menu.get_state():
                     self.options_screen.set_state(True)
                     self.main_menu.set_state(False)
+                elif self.main_menu.quit_button.is_hovering_over() and self.main_menu.get_state():
+                    self.window.stop()
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
@@ -60,6 +61,7 @@ class Screens:
                     self.options_screen.set_state(True)
                 elif self.pause_screen.quit_button.is_hovering_over():
                     self.window.start_game = False
+                    self.window.paused = False
                     self.pause_screen.set_state(False)
                     self.main_menu.set_state(True)
 
