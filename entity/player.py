@@ -181,7 +181,7 @@ class Player(pygame.sprite.Sprite):
                 self.y = tile_wy
                 self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
 
-            # Prevent wall clipping when lagging
+            # Prevent wall-clipping when lagging
             if self.is_in_wall():
                 self.x, self.y = prev_x, prev_y
 
