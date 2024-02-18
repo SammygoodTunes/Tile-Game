@@ -29,4 +29,4 @@ Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
 Tested on Ubuntu 22.04.3 LTS and Windows 10
 
-Library(ies) used: Pygame 2.5.2
+Library(ies) used: Pygame 2.5.2, Crayons 0.4.0
