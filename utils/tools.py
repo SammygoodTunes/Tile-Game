@@ -14,10 +14,6 @@ def success(message: str):
     print(crayons.green(message, bold=True))
 
 
-def clamp(value: int, min_value: int, max_value: int):
-    return max(min(value, max_value), min_value)
-
-
 def world_to_screen(world_x: float, world_y: float, offset_x: float, offset_y: float):
     screen_x: int = int(world_x - offset_x)
     screen_y: int = int(world_y - offset_y)
