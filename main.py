@@ -1,7 +1,7 @@
 # !/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
-from core.catchncage import Game
+from core.game import Game
 from pygame import init, quit, display
 import faulthandler
 
