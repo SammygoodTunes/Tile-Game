@@ -15,6 +15,7 @@ pip install -r requirements.txt
 ## Controls
 
 - [**ZQSD**] -> Move player (temporary)
+- [**LMB**] -> Break cobblestone tiles
 - [**Escape**] -> Pause Menu
 
 ## Preview
@@ -27,4 +28,4 @@ Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
 Tested on Ubuntu 22.04.3 LTS and Windows 10
 
-Library(ies) used: Pygame 2.5.2, PyAutoGUI 0.9.54
+Library(ies) used: Pygame 2.5.2
