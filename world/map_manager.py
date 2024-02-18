@@ -12,7 +12,7 @@ class Map:
                + [Textures.DIRT if randint(0, 10) == 0 else Textures.PLAINS for x in range(1024)]
                + [Textures.DIRT if randint(0, 8) == 0 else Textures.COBBLESTONE for x in range(2048)])
 
-    SEED_RANGE = 2**16
+    SEED_RANGE = 2**32
 
     def __init__(self, game, width, height):
         self.game = game
@@ -41,17 +41,17 @@ class Map:
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
-            if noise_value < -80:
+            if noise_value < -1500:
                 self._data.append(Textures.WATER)
-            elif -80 <= noise_value < -48:
+            elif -1500 <= noise_value < -1000:
                 self._data.append(Textures.SAND)
-            elif -48 <= noise_value < -24:
+            elif -1000 <= noise_value < -600:
                 self._data.append(Textures.DIRT)
-            elif -24 <= noise_value <= 20:
+            elif -600 <= noise_value < 0:
                 self._data.append(Textures.GRASS)
-            elif 20 <= noise_value <= 35:
+            elif 0 <= noise_value < 500:
                 self._data.append(Textures.PLAINS)
-            elif 100 <= noise_value <= 128:
+            elif 1280 <= noise_value < 1550:
                 self._data.append(Textures.LAVA)
             else:
                 self._data.append(Textures.COBBLESTONE)
