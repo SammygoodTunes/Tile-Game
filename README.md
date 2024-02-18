@@ -16,7 +16,8 @@ pip install -r requirements.txt
 
 - [**ZQSD**] -> Move player (temporary)
 - [**LMB**] -> Break cobblestone tiles
-- [**Escape**] -> Pause Menu
+- [**Escape**] -> Pause menu
+- [**Alt+Enter**] -> Fullscreen mode
 
 ## Preview
 
