@@ -114,6 +114,15 @@ class HorizontalSlider(Widget):
         self.refresh()
         return self
 
+    def get_width(self):
+        return self._width
+
+    def get_height(self):
+        return self._height
+
+    def get_bar_width(self):
+        return self._bar_width
+
     def set_title(self, title):
         self.title_label.set_text(title)
         return self
