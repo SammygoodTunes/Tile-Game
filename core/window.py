@@ -44,7 +44,7 @@ class Window:
             self.halt_refresh = False
             return
         pygame.display.flip()
-        self.clock.tick(self.fps_cap)
+        self.clock.tick_busy_loop(self.fps_cap)
 
     def resize(self, e):
         self.halt_refresh = True
