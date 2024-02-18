@@ -44,6 +44,14 @@ class Game(Window):
         self.draw_fps() 
         self.tick()
 
+    # Used for when game needs to be updated during threaded process
+    # This should be used in a while loop controlled by an Event()
+    def update_loop(self):
+        self.all_events()
+        self.screens.update()
+        self.draw_fps()
+        self.tick()
+
     def all_events(self):
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
