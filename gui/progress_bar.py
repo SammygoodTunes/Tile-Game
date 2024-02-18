@@ -1,8 +1,8 @@
 
 from .widget import Widget
 from .label import Label
-from utils.tools import clamp
 from pygame import draw
+from pygame.math import clamp
 
 class ProgressBar(Widget):
 

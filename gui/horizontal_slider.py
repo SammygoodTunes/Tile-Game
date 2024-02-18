@@ -2,7 +2,7 @@ from .widget import Widget
 from .label import Label
 from data.mouse_properties import Mouse
 import pygame
-from utils.tools import clamp
+from pygame.math import clamp
 
 
 class HorizontalSlider(Widget):

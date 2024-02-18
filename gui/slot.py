@@ -1,8 +1,8 @@
 
-from pygame.draw import rect
 from pygame import Surface, SRCALPHA
+from pygame.draw import rect
+from pygame.math import clamp
 from .widget import Widget
-from utils.tools import clamp
 
 
 class Slot(Widget):
