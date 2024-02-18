@@ -48,22 +48,17 @@ class OptionsScreen(Screen):
             self.back_button.draw(self.window.screen)
 
     def update_ui(self):
-        y = -75
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
-        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
-        y += self.options_label.get_total_height() + 25
+        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1])
         self.fps_limit_slider.update(self.window)
-        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
-        y += 40
+        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_label.font.size(self.options_label.get_text())[1] - 25)
         self.show_fps_box.update(self.window)
-        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, y)
-        y += self.show_fps_box.get_size() + 5
+        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, -25)
         self.debug_info_box.update(self.window)
-        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -100, y)
+        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 0)
         self.back_button.update(self.window)
-        y += self.debug_info_box.get_size() + self.back_button.get_height()
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
 
     def set_state(self, state):
         super().set_state(state)
