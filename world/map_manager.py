@@ -27,18 +27,57 @@ class Map:
         self._dynatile_surface = None
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
+        self.generate_data_event = Event()
+        self.load_data_event = Event()
 
-    def generate(self):
+    def generate(self, texture_obj):
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
         self._surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE))
         self._dynatile_surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE), pygame.SRCALPHA, 32).convert_alpha()
         self.game.screens.loading_screen.set_state(True)
         offset = 0
-        event = Event()
-        update_thread = Thread(target=self.game.screens.loading_screen.independant_update, args=(event, self.game, "Generating map..."))
-        update_thread.start()
+
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
+        self.game.screens.loading_screen.progress_bar.set_title("Generating map...")
+        update_thread = Thread(target=self.generate_data)
+        update_thread.start()
+
+        self.game.screens.loading_screen.update_ui()
+
+        while not self.generate_data_event.is_set():
+            self.game.update_loop()
+
+        print(f"Map data length: {len(self._data)}")
+
+        self.game.screens.loading_screen.progress_bar.set_title("Loading map...")
+        update_thread = Thread(target=self.load_data, args=(texture_obj,))
+        update_thread.start()
+
+        self.game.screens.loading_screen.update_ui()
+
+        while not self.load_data_event.is_set():
+            self.game.update_loop()
+
+        if not self._data:
+            raise InvalidMapData
+
+        self.generate_data_event.clear()
+        self.load_data_event.clear()
+        self.game.screens.loading_screen.set_state(False)
+        self.game.update_all_uis()
+        self.game.player.set_ideal_spawnpoint()
+
+    def regenerate(self, texture_obj):
+        self.randomise_seed()
+        self.perlin_noise = noise.PerlinNoise()
+        self._x = -self.get_width_in_pixels() // 2
+        self._y = -self.get_height_in_pixels() // 2
+        self.game.camera.x = self.game.camera.y = self.game.camera.velocity_x = self.game.camera.velocity_y = 0
+        self.generate(texture_obj)
+
+    def generate_data(self):
+        self.game.screens.loading_screen.progress_bar.set_value(0)
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
             if noise_value < -1500:
@@ -63,30 +102,16 @@ class Map:
                     offset += 1'''
 
             self.game.screens.loading_screen.progress_bar.set_value(round((tile + 1) / (self._width * self._height) * 100))
+        self.generate_data_event.set()
 
-        print(f"Map data length: {len(self._data)}")
-        event.set()
-        self.game.screens.loading_screen.progress_bar.set_value(0)
 
-    def regenerate(self, texture_obj):
-        self.randomise_seed()
-        self.perlin_noise = noise.PerlinNoise()
-        self._x = -self.get_width_in_pixels() // 2
-        self._y = -self.get_height_in_pixels() // 2
-        self.game.camera.x = self.game.camera.y = self.game.camera.velocity_x = self.game.camera.velocity_y = 0
-        self.generate()
-        self.load(texture_obj)
-
-    def load(self, texture_obj):
-        event = Event()
-        update_thread = Thread(target=self.game.screens.loading_screen.independant_update, args=(event, self.game, "Loading map..."))
-        update_thread.start()
-
+    def load_data(self, texture_obj):
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * Texture.SIZE
             y: int = Texture.SIZE * (i // self._width)
             texture_obj.draw(x, y, tile, self._surface)
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
+        self.load_data_event.set()
         '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
@@ -95,13 +120,6 @@ class Map:
                 texture_obj.draw(x, y, tile[0], self._surface)
                 index += 1
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''    
-        event.set()
-
-        if not self._data:
-            raise InvalidMapData
-        self.game.screens.loading_screen.set_state(False)
-        self.game.update_all_uis()
-        self.game.player.set_ideal_spawnpoint()
 
     def update(self, window_obj, player_obj):
         pass
