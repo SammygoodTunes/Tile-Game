@@ -1,11 +1,12 @@
 import math
 from enum import Enum
 import pygame
+from pygame.math import clamp
 from random import randint
 from gui.label import Label
 from gui.button import Button
 from gui.hotbar import Hotbar
-from utils.tools import clamp, world_to_screen, screen_to_world
+from utils.tools import world_to_screen, screen_to_world
 from world.map_manager import Map
 from world.textures import Textures
 from data.mouse_properties import Mouse
@@ -277,6 +278,10 @@ class Player(pygame.sprite.Sprite):
             walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE) # Right
             walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE) # Up
             walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE) # Down
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y - 1) == Textures.COBBLESTONE) # Upper left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y - 1) == Textures.COBBLESTONE) # Upper right
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y + 1) == Textures.COBBLESTONE) # Lower left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y + 1) == Textures.COBBLESTONE) # Lower right
         except IndexError:
             for _ in range(4 - len(walls)):
                 walls.append(False)

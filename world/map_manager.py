@@ -1,9 +1,9 @@
 from .texture_manager import Textures, Tiles, Texture
 from utils.exceptions import InvalidMapData
-from utils.tools import clamp
 from random import randint, seed, random
 from .synth import noise
 import pygame
+from pygame.math import clamp
 from threading import Thread, Event
 
 

@@ -1,6 +1,7 @@
 
-import pygame
-from utils.tools import clamp
+from pygame import K_UP, K_DOWN, K_LEFT, K_RIGHT
+from pygame.math import clamp
+from pygame import key
 
 class Camera:
 
@@ -21,7 +22,7 @@ class Camera:
 
     def events(self):
         d: float = self.game.clock.get_time() / 1000.0
-        keys = pygame.key.get_pressed()
+        keys = key.get_pressed()
 
         #print(self.game.player.get_coefficient_from_center_x(), self.game.player.get_coefficient_from_center_y())
 
@@ -39,7 +40,7 @@ class Camera:
         elif self.game.player.is_near_bottom_edge():
             self.velocity_y = clamp(self.velocity_y + Camera.VELOCITY_STEP_START * d, -1, 1)
         
-        if not keys[pygame.K_LEFT] and not keys[pygame.K_RIGHT]:
+        if not keys[K_LEFT] and not keys[K_RIGHT]:
             if -Camera.VELOCITY_STEP_STOP * d < self.velocity_x < Camera.VELOCITY_STEP_STOP * d and self.velocity_x != 0:
                 self.velocity_x = 0
             elif self.velocity_x > 0:
@@ -47,7 +48,7 @@ class Camera:
             elif self.velocity_x < 0:
                 self.velocity_x = clamp(self.velocity_x + Camera.VELOCITY_STEP_STOP * d, -1, 0)
 
-        if not keys[pygame.K_UP] and not keys[pygame.K_DOWN]:
+        if not keys[K_UP] and not keys[K_DOWN]:
             if -Camera.VELOCITY_STEP_STOP * d < self.velocity_y < Camera.VELOCITY_STEP_STOP * d and self.velocity_y != 0:
                 self.velocity_y = 0
             elif self.velocity_y > 0:
