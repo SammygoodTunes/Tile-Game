@@ -74,7 +74,7 @@ class Window:
         if self.fullscreen:
             self.old_width = self.width
             self.old_height = self.height
-            self.width, self.height = pyautogui.size()
+            self.width, self.height = (pygame.display.Info().current_w, pygame.display.Info().current_h)
         else:
             self.width = self.old_width
             self.height = self.old_height

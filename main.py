@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from core.catchncage import Game
-from pygame import init, quit
-import pyautogui
+from pygame import init, quit, display
 import faulthandler
 
 
@@ -12,8 +11,9 @@ def main():
     faulthandler.enable()
 
     init()
-    width = pyautogui.size()[0] // 4
+    width = display.Info().current_w // 4
     height = width / 12 * 8
+
     game = Game(width, height)
 
     while game.is_running():
