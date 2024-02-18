@@ -19,7 +19,7 @@ class PauseScreen(Screen):
     def initialise_surface(self):
         surface = pygame.Surface((self.window.width, self.window.height))
         surface.fill((0, 0, 0))
-        surface.set_alpha(128)
+        surface.set_alpha(96)
         return surface
 
     def draw(self):
