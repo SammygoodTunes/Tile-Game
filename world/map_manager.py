@@ -49,8 +49,6 @@ class Map:
         while not self.generate_data_event.is_set():
             self.game.update_loop()
 
-        print(f"Map data length: {len(self._data)}")
-
         self.game.screens.loading_screen.progress_bar.set_title("Loading map...")
         update_thread = Thread(target=self.load_data, args=(texture_obj,))
         update_thread.start()
