@@ -4,11 +4,10 @@ from .map_manager import Map
 from gui.label import Label
 from pygame import mouse
 from data.mouse_properties import Mouse
+from data.tiles import Tile
 
 
 class World:
-    DEFAULT_ATLAS: str = "assets/atlas.png"
-    CLOUDS_ASSET: str = "assets/clouds.png"
 
     def __init__(self, game):
         self.game = game
@@ -16,7 +15,7 @@ class World:
         self._map = Map(self.game, 128, 128)
 
     def initialise(self):
-        self.tile_manager.set_atlas(World.DEFAULT_ATLAS)
+        self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
         self._map.regenerate(self.tile_manager)
 
     def update(self, window_obj, player_obj):

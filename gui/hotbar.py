@@ -1,6 +1,7 @@
 
 from .widget import Widget
 from .slot import Slot
+from data.items import Items
 from pygame import Surface, SRCALPHA
 
 
@@ -14,9 +15,11 @@ class Hotbar(Widget):
         self._height = 0
         self.slots = [Slot() for i in range(slot_count)]
         self._selected_slot = 0
+        self._atlas = None
         self.init_slots()
 
     def init_slots(self):
+        self.slots[0].set_item_asset(Items.SHOVEL)
         for i, slot in enumerate(self.slots):
             new_x_pos = slot.get_width() * i + self._spacing * i
             slot.set_x(new_x_pos)
@@ -87,3 +90,10 @@ class Hotbar(Widget):
 
     def get_selected_slot(self):
         return self._selected_slot
+
+    def set_atlas(self, atlas):
+        self._atlas = atlas
+        return self
+
+    def get_atlas(self):
+        return self._atlas

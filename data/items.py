@@ -3,6 +3,8 @@ from enum import Enum
 
 class Item:
 
+	DEFAULT_ATLAS: str = "assets/items.png"
+
 	def __init__(self, tooltip_name, x, y):
 		self._xy = (x, y)
 		self._tooltip_name = tooltip_name

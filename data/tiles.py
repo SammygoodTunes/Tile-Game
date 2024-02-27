@@ -3,6 +3,8 @@ from enum import Enum
 
 class Tile:
 
+    DEFAULT_ATLAS: str = "assets/atlas.png"
+
     def __init__(self, x, y):
         self._xy = (x, y)
         self._resistance: int = 0

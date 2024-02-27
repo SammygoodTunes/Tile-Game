@@ -1,8 +1,11 @@
 
-from pygame import Surface, SRCALPHA
+from pygame import Surface, SRCALPHA, image
 from pygame.draw import rect
 from pygame.math import clamp
+from pygame.transform import scale
 from .widget import Widget
+from world.item_manager import ItemManager
+from data.items import Item
 
 
 class Slot(Widget):
@@ -31,6 +34,11 @@ class Slot(Widget):
         self._fill_surface.fill(fill_colour, (0, 0, self._width, self._height))
         self._fill_surface.set_alpha(self._fill_alpha)
         screen.blit(self._fill_surface, (self._x, self._y, self._width, self._height))
+
+        if self._item_asset is not None:
+            item_asset = scale(self._item_asset, (self._width - 8, self._height - 8))
+            screen.blit(item_asset, (4, 0, self._width - 4, self._height - 4))
+
         rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
         rect(screen, inner_colour, (
                                             self._x + self._outline_width - 1,
@@ -44,8 +52,6 @@ class Slot(Widget):
                                                     self._width - self._outline_width - 1 - self._inner_width - 1,
                                                     self._height - self._outline_width - 1 - self._inner_width - 1
                                                 ), self._outline_width, 4)
-        if self._item_asset is not None:
-            screen.blit(self._item_asset, (0, 0, self._width, self._height))
 
 
     def update(self, window):
@@ -106,4 +112,17 @@ class Slot(Widget):
 
     def get_outline_width(self, outline_width):
         self._outline_width = outline_width
+        return self
+
+    def set_item_asset(self, item: Item):
+        self._item_asset = Surface((ItemManager.SIZE, ItemManager.SIZE), SRCALPHA, 32).convert_alpha()
+        self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (self._x, self._y, ItemManager.SIZE, ItemManager.SIZE),
+                    (ItemManager.SIZE * item.value.get_xy()[0], ItemManager.SIZE * item.value.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
+        return self
+
+    def get_item_asset(self):
+        return self._item_asset
+
+    def clear_item_asset(self):
+        self._item_asset = None
         return self
