@@ -70,7 +70,7 @@ class Player(pygame.sprite.Sprite):
                 pass
         if e.type == pygame.MOUSEWHEEL:
             self.hotbar.unselect_slot(self.hotbar.get_selected_slot())
-            self.hotbar.select_slot((self.hotbar.get_selected_slot() + e.y) % len(self.hotbar.slots))
+            self.hotbar.select_slot((self.hotbar.get_selected_slot() - e.y) % len(self.hotbar.slots))
             self.hotbar.init_slots()
 
     def draw(self, screen):
