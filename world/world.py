@@ -17,7 +17,7 @@ class World:
 
     def initialise(self):
         self.texture.set_atlas(World.DEFAULT_ATLAS)
-        self._map.generate(self.texture)
+        self._map.regenerate(self.texture)
 
     def update(self, window_obj, player_obj):
         if mouse.get_pressed()[Mouse.LMB - 1]:

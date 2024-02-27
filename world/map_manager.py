@@ -72,7 +72,8 @@ class Map:
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
-        self.game.camera.x = self.game.camera.y = self.game.camera.velocity_x = self.game.camera.velocity_y = 0
+        self.game.player.reset()
+        self.game.camera.reset()
         self.generate(texture_obj)
 
     def generate_data(self):

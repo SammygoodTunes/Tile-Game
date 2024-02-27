@@ -63,7 +63,6 @@ class Player(pygame.sprite.Sprite):
             self.move &= ~(1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
             if self.regen_button.is_hovering_over():
-                self.x = self.y = 0
                 self.game.world.get_map().regenerate(self.game.world.texture)
         elif e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.RMB:
@@ -210,6 +209,9 @@ class Player(pygame.sprite.Sprite):
         self.regen_button.refresh()
         self.score_label.refresh()
         self.position_label.refresh()
+
+    def reset(self):
+        self.x = self.y = self.velocity_x = self.velocity_y = 0
 
     def is_moving_left(self) -> bool:
         return bool((self.move >> Directions.LEFT.value) & 1)

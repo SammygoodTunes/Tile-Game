@@ -55,3 +55,6 @@ class Camera:
                 self.velocity_y = clamp(self.velocity_y - Camera.VELOCITY_STEP_STOP * d, 0, 1)
             elif self.velocity_y < 0:
                 self.velocity_y = clamp(self.velocity_y + Camera.VELOCITY_STEP_STOP * d, -1, 0)
+
+    def reset(self):
+        self.x = self.y = self.velocity_x = self.velocity_y = 0
