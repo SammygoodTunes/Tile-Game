@@ -78,9 +78,12 @@ class Hotbar(Widget):
         return self
 
     def select_slot(self, slot_index):
-        self._selected_slot = selected_slot
+        self._selected_slot = slot_index
         self.slots[self._selected_slot].select()
         return self
+
+    def unselect_slot(self, slot_index):
+        self.slots[slot_index].unselect()
 
     def get_selected_slot(self):
         return self._selected_slot

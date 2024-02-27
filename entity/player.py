@@ -69,15 +69,17 @@ class Player(pygame.sprite.Sprite):
             if e.button == Mouse.RMB:
                 pass
         if e.type == pygame.MOUSEWHEEL:
-            print(e.x, e.y)
+            self.hotbar.unselect_slot(self.hotbar.get_selected_slot())
+            self.hotbar.select_slot((self.hotbar.get_selected_slot() + e.y) % len(self.hotbar.slots))
+            self.hotbar.init_slots()
 
     def draw(self, screen):
         self.screen_x = self.game.width / 2 - self.game.camera.x + self.x
         self.screen_y = self.game.height / 2 - self.game.camera.y + self.y
         if not self.is_in_water():
             pygame.draw.rect(screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
-        else:
-            pygame.draw.rect(screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
+            return
+        pygame.draw.rect(screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
     def draw_score(self, screen):
