@@ -8,7 +8,7 @@ from gui.button import Button
 from gui.hotbar import Hotbar
 from utils.tools import world_to_screen, screen_to_world
 from world.map_manager import Map
-from world.tiles import Tiles
+from data.tiles import Tiles
 from data.mouse_properties import Mouse
 
 
