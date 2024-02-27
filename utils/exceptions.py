@@ -4,7 +4,7 @@ import sys
 
 class InvalidTextureAtlas(Exception):
 
-    def __init_(self, message="Invalid texture atlas, have you loaded one with set_texture_atlas()?"):
+    def __init_(self, message="Invalid texture atlas, have you loaded one with set_atlas()?"):
         super().__init__(message)
 
 

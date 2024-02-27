@@ -1,12 +1,12 @@
 
 import pygame
 from random import randint
-from .textures import Textures, Tiles
+from .tiles import Tiles, TileTypes
 from utils.exceptions import InvalidTextureAtlas
 from utils.tools import error
 
 
-class Texture:
+class TileManager:
 
     SIZE: int = 32
 
@@ -15,13 +15,13 @@ class Texture:
         self.width: int = 0
         self.height: int = 0
 
-    def draw(self, x: int, y: int, texture: Textures, screen: pygame.Surface):
+    def draw(self, x: int, y: int, tile: Tiles, screen: pygame.Surface):
         if self.atlas is None:
             raise InvalidTextureAtlas
-        #surface = pygame.Surface((Texture.SIZE, Texture.SIZE))
+        #surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
         screen.blit(self.atlas,
                     (x, y, self.width, self.height),
-                    (Texture.SIZE * texture.value[0], Texture.SIZE * texture.value[1], Texture.SIZE, Texture.SIZE))
+                    (TileManager.SIZE * tile.value[0], TileManager.SIZE * tile.value[1], TileManager.SIZE, TileManager.SIZE))
         # rotated_surface = pygame.transform.rotate(surface, randint(0, 3) * 90)
         # screen.blit(rotated_surface, (x, y, self.width, self.height))
 

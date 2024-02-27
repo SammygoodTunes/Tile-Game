@@ -2,7 +2,7 @@
 from enum import Enum
 
 
-class Textures(Enum):
+class Tiles(Enum):
     VOID = (0, 0)
     GRASS = (1, 0)
     PLAINS = (2, 0)
@@ -14,5 +14,5 @@ class Textures(Enum):
     WATER = (0, 1)
     LAVA = (1, 1)
 
-class Tiles(Enum):
-    BREAKABLE = [Textures.COBBLESTONE]
+class TileTypes(Enum):
+    BREAKABLE = [Tiles.COBBLESTONE]

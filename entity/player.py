@@ -8,7 +8,7 @@ from gui.button import Button
 from gui.hotbar import Hotbar
 from utils.tools import world_to_screen, screen_to_world
 from world.map_manager import Map
-from world.textures import Textures
+from world.tiles import Tiles
 from data.mouse_properties import Mouse
 
 
@@ -63,7 +63,7 @@ class Player(pygame.sprite.Sprite):
             self.move &= ~(1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
             if self.regen_button.is_hovering_over():
-                self.game.world.get_map().regenerate(self.game.world.texture)
+                self.game.world.get_map().regenerate(self.game.world.tile_manager)
         elif e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.RMB:
                 pass
@@ -115,7 +115,7 @@ class Player(pygame.sprite.Sprite):
 
             colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
             pygame.draw.rect(screen, (255, colour_anim, colour_anim), (
-                x, y, self.game.world.texture.SIZE, self.game.world.texture.SIZE), 2, 4)
+                x, y, self.game.world.tile_manager.SIZE, self.game.world.tile_manager.SIZE), 2, 4)
 
     def draw_hotbar(self, screen):
         self.hotbar.draw(screen)
@@ -239,11 +239,11 @@ class Player(pygame.sprite.Sprite):
 
     def is_in_water(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        return self.game.world.get_map().get_tile(tile_x, tile_y) == Textures.WATER
+        return self.game.world.get_map().get_tile(tile_x, tile_y) == Tiles.WATER
 
     def is_in_wall(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        return self.game.world.get_map().get_tile(tile_x, tile_y) == Textures.COBBLESTONE
+        return self.game.world.get_map().get_tile(tile_x, tile_y) == Tiles.COBBLESTONE
 
     def set_x(self, x):
         self.x = x
@@ -275,14 +275,14 @@ class Player(pygame.sprite.Sprite):
         walls = []
         try:
             tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Textures.COBBLESTONE) # Left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Textures.COBBLESTONE) # Right
-            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Textures.COBBLESTONE) # Up
-            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Textures.COBBLESTONE) # Down
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y - 1) == Textures.COBBLESTONE) # Upper left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y - 1) == Textures.COBBLESTONE) # Upper right
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y + 1) == Textures.COBBLESTONE) # Lower left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y + 1) == Textures.COBBLESTONE) # Lower right
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) == Tiles.COBBLESTONE) # Left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) == Tiles.COBBLESTONE) # Right
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) == Tiles.COBBLESTONE) # Up
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) == Tiles.COBBLESTONE) # Down
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y - 1) == Tiles.COBBLESTONE) # Upper left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y - 1) == Tiles.COBBLESTONE) # Upper right
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y + 1) == Tiles.COBBLESTONE) # Lower left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y + 1) == Tiles.COBBLESTONE) # Lower right
         except IndexError:
             for _ in range(4 - len(walls)):
                 walls.append(False)
@@ -290,7 +290,7 @@ class Player(pygame.sprite.Sprite):
 
     def set_ideal_spawnpoint(self):
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        while self.game.world.get_map().get_tile(tile_x, tile_y) in [Textures.COBBLESTONE, Textures.LAVA]:
+        while self.game.world.get_map().get_tile(tile_x, tile_y) in [Tiles.COBBLESTONE, Tiles.LAVA]:
             tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
             tile_x = randint(0, self.game.world.get_map().get_width_in_tiles() - 1)
             tile_y = randint(0, self.game.world.get_map().get_height_in_tiles() - 1)

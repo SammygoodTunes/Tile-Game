@@ -1,17 +1,18 @@
-from .texture_manager import Textures, Tiles, Texture
-from utils.exceptions import InvalidMapData
-from .synth import noise
 
 import pygame
 from pygame.math import clamp
 from random import randint, seed, random
 from threading import Thread, Event
 
+from .tile_manager import Tiles, TileTypes, TileManager
+from utils.exceptions import InvalidMapData
+from .synth import noise
+
 
 class Map:
-    DEFAULT = ([Textures.GRASS if randint(0, 8) == 0 else Textures.PLAINS for x in range(2048)]
-               + [Textures.DIRT if randint(0, 10) == 0 else Textures.PLAINS for x in range(1024)]
-               + [Textures.DIRT if randint(0, 8) == 0 else Textures.COBBLESTONE for x in range(2048)])
+    DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
+               + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
+               + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
 
     SEED_RANGE = 2**32
 
@@ -20,8 +21,8 @@ class Map:
         self._data: list = list()
         self._dynatile_data: list = list()
         self._seed = 0
-        self._x = -width * Texture.SIZE // 2
-        self._y = -height * Texture.SIZE // 2
+        self._x = -width * TileManager.SIZE // 2
+        self._y = -height * TileManager.SIZE // 2
         self._width = width
         self._height = height
         self._surface = None
@@ -31,11 +32,11 @@ class Map:
         self.generate_data_event = Event()
         self.load_data_event = Event()
 
-    def generate(self, texture_obj):
+    def generate(self, tile_manager):
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
-        self._surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE))
-        self._dynatile_surface = pygame.Surface((self._width * Texture.SIZE, self._height * Texture.SIZE), pygame.SRCALPHA, 32).convert_alpha()
+        self._surface = pygame.Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
+        self._dynatile_surface = pygame.Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE), pygame.SRCALPHA, 32).convert_alpha()
         self.game.screens.loading_screen.set_state(True)
         offset = 0
 
@@ -50,7 +51,7 @@ class Map:
             self.game.update_loop()
 
         self.game.screens.loading_screen.progress_bar.set_title("Loading map...")
-        update_thread = Thread(target=self.load_data, args=(texture_obj,))
+        update_thread = Thread(target=self.load_data, args=(tile_manager,))
         update_thread.start()
 
         self.game.screens.loading_screen.update_ui()
@@ -67,33 +68,33 @@ class Map:
         self.game.update_all_uis()
         self.game.player.set_ideal_spawnpoint()
 
-    def regenerate(self, texture_obj):
+    def regenerate(self, tile_manager):
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
         self.game.player.reset()
         self.game.camera.reset()
-        self.generate(texture_obj)
+        self.generate(tile_manager)
 
     def generate_data(self):
         self.game.screens.loading_screen.progress_bar.set_value(0)
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
             if noise_value < -1500:
-                self._data.append(Textures.WATER)
+                self._data.append(Tiles.WATER)
             elif -1500 <= noise_value < -1000:
-                self._data.append(Textures.SAND)
+                self._data.append(Tiles.SAND)
             elif -1000 <= noise_value < -600:
-                self._data.append(Textures.DIRT)
+                self._data.append(Tiles.DIRT)
             elif -600 <= noise_value < 0:
-                self._data.append(Textures.GRASS)
+                self._data.append(Tiles.GRASS)
             elif 0 <= noise_value < 500:
-                self._data.append(Textures.PLAINS)
+                self._data.append(Tiles.PLAINS)
             elif 1280 <= noise_value < 1550:
-                self._data.append(Textures.LAVA)
+                self._data.append(Tiles.LAVA)
             else:
-                self._data.append(Textures.COBBLESTONE)
+                self._data.append(Tiles.COBBLESTONE)
 
             '''if tile > 0:
                 if self._data[tile - offset - 1][0] == self._data[tile - offset][0]:
@@ -105,44 +106,44 @@ class Map:
         self.generate_data_event.set()
 
 
-    def load_data(self, texture_obj):
+    def load_data(self, tile_manager):
         for i, tile in enumerate(self._data):
-            x: int = (i % self._width) * Texture.SIZE
-            y: int = Texture.SIZE * (i // self._width)
-            texture_obj.draw(x, y, tile, self._surface)
+            x: int = (i % self._width) * TileManager.SIZE
+            y: int = TileManager.SIZE * (i // self._width)
+            tile_manager.draw(x, y, tile, self._surface)
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
         self.load_data_event.set()
         '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
-                x: int = (index % self._width) * Texture.SIZE
-                y: int = Texture.SIZE * (index // self._width)
-                texture_obj.draw(x, y, tile[0], self._surface)
+                x: int = (index % self._width) * TileManager.SIZE
+                y: int = TileManager.SIZE * (index // self._width)
+                tile_manager.draw(x, y, tile[0], self._surface)
                 index += 1
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''    
 
     def update(self, window_obj, player_obj):
         pass
 
-    def break_tile(self, texture_obj):
+    def break_tile(self, tile_manager):
         tile_x, tile_y = self.game.player.get_selected_tile_x(), self.game.player.get_selected_tile_y()
-        if not self.get_dynatile(tile_x, tile_y) and self.get_tile(tile_x, tile_y) in Tiles.BREAKABLE.value:
+        if not self.get_dynatile(tile_x, tile_y) and self.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value:
             self.set_dynatile(tile_x, tile_y, True)
-            self.set_tile(tile_x, tile_y, Textures.PLAINS)
-            texture_obj.draw(tile_x * Texture.SIZE, tile_y * Texture.SIZE, Textures.PLAINS, self._dynatile_surface)
+            self.set_tile(tile_x, tile_y, Tiles.PLAINS)
+            tile_manager.draw(tile_x * TileManager.SIZE, tile_y * TileManager.SIZE, Tiles.PLAINS, self._dynatile_surface)
 
     def get_tile_pos(self, x, y):
-        tile_x = round((x - self._x) / Texture.SIZE)
-        tile_y = round((y - self._y) / Texture.SIZE)
+        tile_x = round((x - self._x) / TileManager.SIZE)
+        tile_y = round((y - self._y) / TileManager.SIZE)
         return (tile_x, tile_y)
 
     def get_strict_tile_pos(self, x, y):
-        tile_x = round(x - self._x) // Texture.SIZE
-        tile_y = round(y - self._y) // Texture.SIZE
+        tile_x = round(x - self._x) // TileManager.SIZE
+        tile_y = round(y - self._y) // TileManager.SIZE
         return (tile_x, tile_y)
 
     def tile_to_world_pos(self, tile_x, tile_y):
-        return (tile_x * Texture.SIZE + self._x, tile_y * Texture.SIZE + self._y)
+        return (tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y)
 
     def set_tile(self, tile_x, tile_y, tile):
         self._data[tile_x % self._width + tile_y * self._width] = tile
@@ -206,13 +207,13 @@ class Map:
         return self._width
 
     def get_width_in_pixels(self):
-        return self._width * Texture.SIZE
+        return self._width * TileManager.SIZE
 
     def get_height_in_tiles(self):
         return self._height
 
     def get_height_in_pixels(self):
-        return self._height * Texture.SIZE
+        return self._height * TileManager.SIZE
 
     def get_surface(self):
         return self._surface
