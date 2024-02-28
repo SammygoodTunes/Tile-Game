@@ -62,7 +62,7 @@ class Player(pygame.sprite.Sprite):
             self.move &= ~(1 << Directions.RIGHT.value) if e.key == pygame.K_d else self.move
             self.move &= ~(1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
-            if self.regen_button.is_hovering_over():
+            if self.regen_button.is_hovering_over() and not self.game.screens.loading_screen.get_state():
                 self.game.world.get_map().regenerate(self.game.world.tile_manager)
         elif e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.RMB:

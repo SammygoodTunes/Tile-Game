@@ -64,9 +64,9 @@ class Map:
 
         self.generate_data_event.clear()
         self.load_data_event.clear()
-        self.game.screens.loading_screen.set_state(False)
         self.game.update_all_uis()
         self.game.player.set_ideal_spawnpoint()
+        self.game.screens.loading_screen.set_state(False)
 
     def regenerate(self, tile_manager):
         self.randomise_seed()
