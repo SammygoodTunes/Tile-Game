@@ -36,7 +36,6 @@ class World:
         # Culling applied
         culling_x = self.game.camera.x + self._map.get_width_in_pixels() / 2 - width / 2
         culling_y = self.game.camera.y + self._map.get_height_in_pixels() / 2 - height / 2
-        print(culling_x, culling_y)
         culling_width = width
         culling_height = height
         screen.blit(self._map.get_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))
