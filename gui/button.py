@@ -28,7 +28,7 @@ class Button(Widget):
         self.label.center_vertically(self._y, self._height)
 
         draw.rect(screen, background_colour, (self._x, self._y, self._width, self._height), 2, 5)
-        if self._width > self.label.get_total_width()[0]:
+        if self._width > self.label.get_total_width():
             self.label.draw(screen)
 
     def update(self, window):
