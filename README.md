@@ -21,12 +21,12 @@ pip install -r requirements.txt
 
 ## Preview
 
-![Preview](https://i.imgur.com/nNMuzor.png)
+![Preview](https://github.com/SammygoodTunes/docs/ss.png)
 
 ## Information
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
-Tested on Ubuntu 22.04.3 LTS and Windows 10
+Tested on Debian 12 and Windows 10
 
-Library(ies) used: Pygame 2.5.2, Crayons 0.4.0
+Libraries used: Pygame 2.5.2, Crayons 0.4.0
