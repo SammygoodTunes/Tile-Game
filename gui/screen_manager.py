@@ -4,6 +4,7 @@ from gui.screens.mainmenu_screen import MainMenu
 from gui.screens.loading_screen import LoadingScreen
 from gui.screens.pause_screen import PauseScreen
 from gui.screens.options_screen import OptionsScreen
+from gui.screens.credits_screen import CreditsScreen
 from data.mouse_properties import Mouse
 
 
@@ -17,6 +18,7 @@ class Screens:
         self.loading_screen = LoadingScreen(window)
         self.pause_screen = PauseScreen(window)
         self.options_screen = OptionsScreen(window)
+        self.credits_screen = CreditsScreen(window)
 
     def link_game(self, game_obj):
         self.game = game_obj
@@ -25,6 +27,7 @@ class Screens:
     def events(self, e):
         self.loading_screen.events(e)
         self.options_screen.events(e)
+        self.credits_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state():
@@ -43,12 +46,19 @@ class Screens:
                     else:
                         self.main_menu.set_state(True)
 
+                elif self.credits_screen.back_button.is_hovering_over():
+                    self.credits_screen.set_state(False)
+                    self.main_menu.set_state(True)
+
                 elif self.main_menu.play_button.is_hovering_over() and self.main_menu.get_state():
                     self.window.start_game = True
                     self.main_menu.set_state(False)
                     self.game.world.initialise()
                 elif self.main_menu.options_button.is_hovering_over() and self.main_menu.get_state():
                     self.options_screen.set_state(True)
+                    self.main_menu.set_state(False)
+                elif self.main_menu.credits_button.is_hovering_over() and self.main_menu.get_state():
+                    self.credits_screen.set_state(True)
                     self.main_menu.set_state(False)
                 elif self.main_menu.quit_button.is_hovering_over() and self.main_menu.get_state():
                     self.window.stop()
@@ -70,10 +80,12 @@ class Screens:
         self.loading_screen.draw()
         self.pause_screen.draw()
         self.options_screen.draw()
+        self.credits_screen.draw()
 
     def update_ui(self):
         self.main_menu.update_ui()
         self.loading_screen.update_ui()
         self.pause_screen.update_ui()
         self.options_screen.update_ui()
+        self.credits_screen.update_ui()
 

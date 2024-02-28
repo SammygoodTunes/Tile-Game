@@ -13,7 +13,7 @@ class World:
     def __init__(self, game):
         self.game = game
         self.tile_manager = TileManager()
-        self._map = Map(self.game, 128, 128)
+        self._map = Map(self.game, 512, 512)
 
     def initialise(self):
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
