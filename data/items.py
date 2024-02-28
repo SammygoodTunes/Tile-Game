@@ -5,7 +5,7 @@ class Item:
 
 	DEFAULT_ATLAS: str = "assets/items.png"
 
-	def __init__(self, tooltip_name, x, y):
+	def __init__(self, x=0, y=0, tooltip_name=""):
 		self._xy = (x, y)
 		self._tooltip_name = tooltip_name
 		self._strength = 0
@@ -40,7 +40,8 @@ class Item:
 		return self._durability
 
 class Items(Enum):
-	SHOVEL = Item("Shovel", 0, 0).set_strength(2.5).set_durability(200)
+	AIR = Item()
+	SHOVEL = Item(x=1, tooltip_name="Shovel").set_strength(2.5).set_durability(200)
 
 class ItemTypes(Enum):
 	TOOLS = [Items.SHOVEL]

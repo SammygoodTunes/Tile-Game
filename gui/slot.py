@@ -5,7 +5,7 @@ from pygame.math import clamp
 from pygame.transform import scale
 from .widget import Widget
 from world.item_manager import ItemManager
-from data.items import Item
+from data.items import Item, Items
 
 
 class Slot(Widget):
@@ -28,6 +28,7 @@ class Slot(Widget):
         self._item_asset = None
         self._item_count = 0
         self._selected = False
+        self.set_item(Items.AIR)
 
     def draw(self, screen):
         fill_colour = (60, 40, 210) if self._selected else self._fill_colour

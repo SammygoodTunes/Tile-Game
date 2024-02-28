@@ -67,7 +67,8 @@ class Game(Window):
                 continue
             if e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
-            self.player.events(e)
+            if not self.paused:
+                self.player.events(e)
             self.screens.events(e)
         if not self.paused:
             self.camera.events()

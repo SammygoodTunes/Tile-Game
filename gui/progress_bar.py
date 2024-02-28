@@ -39,8 +39,8 @@ class ProgressBar(Widget):
             self.progress_label.draw(screen)
 
     def update(self, window):
-        self.info_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
-        self.progress_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
+        self.info_label.update(window)
+        self.progress_label.update(window)
         self._width = clamp(window.width * 0.2, ProgressBar.MIN_WIDTH, ProgressBar.MAX_WIDTH)
         self._height = self.progress_label.font.size(self.progress_label.get_text())[1] + 4
         self.refresh()
