@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ## Preview
 
-![Preview](https://github.com/SammygoodTunes/docs/ss.png)
+![Preview](https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/main/docs/ss.png)
 
 ## Information
 
