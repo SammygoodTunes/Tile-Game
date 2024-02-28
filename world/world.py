@@ -29,10 +29,18 @@ class World:
         pass
 
     def draw(self, screen):
-        true_x = self.game.width / 2 - self.game.camera.x + self._map.get_x()
-        true_y = self.game.height / 2 - self.game.camera.y + self._map.get_y()
-        screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
-        screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
+        _, _, width, height = screen.get_rect()
+        true_x = width / 2 - self.game.camera.x + self._map.get_x()
+        true_y = height / 2 - self.game.camera.y + self._map.get_y()
+
+        # Culling applied
+        culling_x = self.game.camera.x + self._map.get_width_in_pixels() / 2 - width / 2
+        culling_y = self.game.camera.y + self._map.get_height_in_pixels() / 2 - height / 2
+        print(culling_x, culling_y)
+        culling_width = width
+        culling_height = height
+        screen.blit(self._map.get_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))
+        screen.blit(self._map.get_dynatile_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))
 
     def draw_wireframe(self, screen):
         for x in range(self._map.get_width_in_tiles() + 1):
