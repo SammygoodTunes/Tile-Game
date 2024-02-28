@@ -37,8 +37,8 @@ class Slot(Widget):
         screen.blit(self._fill_surface, (self._x, self._y, self._width, self._height))
 
         if self._item_asset is not None:
-            item_asset = scale(self._item_asset, (self._width - 8, self._height - 8))
-            screen.blit(item_asset, (4, 0, self._width - 4, self._height - 4))
+            item_asset = scale(self._item_asset, (self._width - 12, self._height - 12))
+            screen.blit(item_asset, (4, 4, self._width, self._height))
 
         rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
         rect(screen, inner_colour, (

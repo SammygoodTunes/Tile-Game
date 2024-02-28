@@ -5,6 +5,7 @@ from gui.label import Label
 from pygame import mouse
 from data.mouse_properties import Mouse
 from data.tiles import Tile
+from data.items import Items
 
 
 class World:
@@ -19,8 +20,8 @@ class World:
         self._map.regenerate(self.tile_manager)
 
     def update(self, window_obj, player_obj):
-        if mouse.get_pressed()[Mouse.LMB - 1]:
-                self._map.break_tile(self.tile_manager)
+        if mouse.get_pressed()[Mouse.LMB - 1] and player_obj.hotbar.get_selected_slot_item() == Items.SHOVEL:
+            self._map.break_tile(self.tile_manager)
 
         self._map.update(window_obj, player_obj)
 
