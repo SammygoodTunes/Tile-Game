@@ -24,6 +24,7 @@ class Slot(Widget):
         self._inner_width = 3
         self._fill_alpha = 100
         self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
+        self._item = None
         self._item_asset = None
         self._item_count = 0
         self._selected = False
@@ -114,11 +115,15 @@ class Slot(Widget):
         self._outline_width = outline_width
         return self
 
-    def set_item_asset(self, item: Item):
+    def set_item(self, item: Item):
+        self._item = item
         self._item_asset = Surface((ItemManager.SIZE, ItemManager.SIZE), SRCALPHA, 32).convert_alpha()
         self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (self._x, self._y, ItemManager.SIZE, ItemManager.SIZE),
                     (ItemManager.SIZE * item.value.get_xy()[0], ItemManager.SIZE * item.value.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
         return self
+
+    def get_item(self):
+        return self._item
 
     def get_item_asset(self):
         return self._item_asset

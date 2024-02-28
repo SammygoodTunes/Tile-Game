@@ -13,27 +13,27 @@ class Hotbar(Widget):
         self._spacing = 4
         self._width = 0
         self._height = 0
-        self.slots = [Slot() for i in range(slot_count)]
+        self._slots = [Slot() for i in range(slot_count)]
         self._selected_slot = 0
         self._atlas = None
         self.init_slots()
 
     def init_slots(self):
-        self.slots[0].set_item_asset(Items.SHOVEL)
-        for i, slot in enumerate(self.slots):
+        self._slots[0].set_item(Items.SHOVEL)
+        for i, slot in enumerate(self._slots):
             new_x_pos = slot.get_width() * i + self._spacing * i
             slot.set_x(new_x_pos)
             self._width = new_x_pos + slot.get_width()
             self._height = slot.get_height()
         self._surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
-        for slot in self.slots:
+        for slot in self._slots:
             slot.draw(self._surface)
 
     def draw(self, screen):
         screen.blit(self._surface, (self._x, self._y, self._width, self._height))
 
     def update(self, window):
-        for slot in self.slots:
+        for slot in self._slots:
             slot.update(window)
         self.init_slots()
         return self
@@ -77,19 +77,28 @@ class Hotbar(Widget):
 
     def set_selected_slot(self, slot_index):
         self._selected_slot = selected_slot
-        self.slots[self._selected_slot].select()
+        self._slots[self._selected_slot].select()
         return self
 
     def select_slot(self, slot_index):
         self._selected_slot = slot_index
-        self.slots[self._selected_slot].select()
+        self._slots[self._selected_slot].select()
         return self
 
     def unselect_slot(self, slot_index):
-        self.slots[slot_index].unselect()
+        self._slots[slot_index].unselect()
 
     def get_selected_slot(self):
         return self._selected_slot
+
+    def get_selected_slot_item(self):
+        return self._slots[self._selected_slot].get_item()
+
+    def get_slot(self, slot_index):
+        return self._slots[slot_index]
+
+    def get_slots(self):
+        return self._slots
 
     def set_atlas(self, atlas):
         self._atlas = atlas

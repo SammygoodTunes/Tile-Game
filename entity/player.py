@@ -9,6 +9,7 @@ from gui.hotbar import Hotbar
 from utils.tools import world_to_screen, screen_to_world
 from world.map_manager import Map
 from data.tiles import Tiles
+from data.items import Items
 from data.mouse_properties import Mouse
 
 
@@ -46,8 +47,7 @@ class Player(pygame.sprite.Sprite):
         self.camera_label = Label(f"Camera (XY): {round(self.game.camera.x)} {round(self.game.camera.y)}")
         self.position_label = Label(f"Player (XY): {round(self.x)} {round(self.y)}")
         self.regen_button = Button("Regenerate").set_state(True)
-        self.hotbar = Hotbar(slot_count=6)
-        self.hotbar.slots[0].select()
+        self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.edges = [False, False, False, False]
 
     def events(self, e):
@@ -69,7 +69,7 @@ class Player(pygame.sprite.Sprite):
                 pass
         if e.type == pygame.MOUSEWHEEL:
             self.hotbar.unselect_slot(self.hotbar.get_selected_slot())
-            self.hotbar.select_slot((self.hotbar.get_selected_slot() - e.y) % len(self.hotbar.slots))
+            self.hotbar.select_slot((self.hotbar.get_selected_slot() - e.y) % len(self.hotbar.get_slots()))
             self.hotbar.init_slots()
 
     def draw(self, screen):
@@ -97,7 +97,7 @@ class Player(pygame.sprite.Sprite):
         self.regen_button.draw(screen)
 
     def draw_selection_grid(self, screen):
-        if not self.game.paused:
+        if not self.game.paused and self.hotbar.get_selected_slot_item() == Items.SHOVEL:
             mx, my = pygame.mouse.get_pos()
             
             center_x, center_y = self.game.width / 2, self.game.height / 2
