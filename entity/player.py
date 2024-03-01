@@ -257,13 +257,8 @@ class Player(pygame.sprite.Sprite):
 
     def is_selected_breakable_obstructed(self) -> None:
         player_tile_x, player_tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        player_x, player_y = self.game.world.get_map().tile_to_screen_pos(player_tile_x, player_tile_y)
-        tile_x = self.selected_tile_sx + 16
-        tile_y = self.selected_tile_sy + 16
-        tile_wx, tile_wy = self.game.world.get_map().tile_to_world_pos(self.selected_tile_x, self.selected_tile_y)
-
-        diff_x = self.selected_tile_x - player_tile_x 
-        diff_y = self.selected_tile_y - player_tile_y
+        #tile_x = self.selected_tile_sx + 16
+        #tile_y = self.selected_tile_sy + 16
 
         x0, y0, x1, y1 = player_tile_x, player_tile_y, self.selected_tile_x, self.selected_tile_y
 
@@ -277,8 +272,8 @@ class Player(pygame.sprite.Sprite):
         while True: # Nul à chier mais flm de corriger
             if not (x0 == x1 and y0 == y1) and self.game.world.get_map().get_tile(x0, y0) in TileTypes.BREAKABLE.value:
                 return True
-            wx, wy = self.game.world.get_map().tile_to_screen_pos(x0, y0)
-            #pygame.draw.rect(screen, (255, 255, 0), (wx, wy, 32, 32), 1, 3)
+            # wx, wy = self.game.world.get_map().tile_to_screen_pos(x0, y0)
+            # pygame.draw.rect(screen, (255, 255, 0), (wx, wy, 32, 32), 1, 3)
             if x0 == x1 and y0 == y1:
                 break
             e2 = 2 * error
