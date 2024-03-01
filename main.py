@@ -11,7 +11,7 @@ def main():
     faulthandler.enable()
 
     init()
-    width = display.Info().current_w // 4
+    width = display.Info().current_w // 3
     height = width / 12 * 8
 
     game = Game(width, height)

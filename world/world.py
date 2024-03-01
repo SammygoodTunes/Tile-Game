@@ -13,14 +13,16 @@ class World:
     def __init__(self, game):
         self.game = game
         self.tile_manager = TileManager()
-        self._map = Map(self.game, 512, 512)
+        self._map = Map(self.game, 128, 128)
 
     def initialise(self):
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
         self._map.regenerate(self.tile_manager)
 
     def update(self, window_obj, player_obj):
-        if mouse.get_pressed()[Mouse.LMB - 1] and player_obj.hotbar.get_selected_slot_item() == Items.SHOVEL:
+        if (mouse.get_pressed()[Mouse.LMB - 1] 
+            and player_obj.hotbar.get_selected_slot_item() == Items.SHOVEL 
+            and not player_obj.is_selected_breakable_obstructed()):
             self._map.break_tile(self.tile_manager)
 
         self._map.update(window_obj, player_obj)

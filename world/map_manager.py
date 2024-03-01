@@ -3,6 +3,7 @@ import pygame
 from pygame.math import clamp
 from random import randint, seed, random
 from threading import Thread, Event
+import numpy as np
 
 from .tile_manager import Tiles, TileTypes, TileManager
 from utils.exceptions import InvalidMapData
@@ -144,6 +145,10 @@ class Map:
 
     def tile_to_world_pos(self, tile_x, tile_y):
         return (tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y)
+
+    def tile_to_screen_pos(self, tile_x, tile_y):
+        screen_x, screen_y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
+        return (screen_x - self.game.camera.x + self.game.width // 2, screen_y - self.game.camera.y + self.game.height // 2)
 
     def set_tile(self, tile_x, tile_y, tile):
         self._data[tile_x % self._width + tile_y * self._width] = tile

@@ -24,3 +24,10 @@ def screen_to_world(screen_x: float, screen_y: float, offset_x: float, offset_y:
     world_x: float = float(screen_x + offset_x)
     world_y: float = float(screen_y + offset_y)
     return world_x, world_y
+
+
+def get_sign(value: int | float):
+	try:
+		return value // abs(value)
+	except ZeroDivisionError:
+		return 1
