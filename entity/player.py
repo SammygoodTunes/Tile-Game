@@ -70,7 +70,7 @@ class Player(pygame.sprite.Sprite):
         if e.type == pygame.MOUSEBUTTONDOWN:
             if self.regen_button.is_hovering_over() and not self.game.screens.loading_screen.get_state():
                 self.game.world.get_map().regenerate(self.game.world.tile_manager)
-            elif e.button == Mouse.LMB and self.can_break_breakable():
+            elif e.button == Mouse.LMB:
                 self.breaking = True
                 self.timer = pygame.time.get_ticks() / 1000.0
                 self.game.world.tile_manager.draw(
@@ -224,7 +224,6 @@ class Player(pygame.sprite.Sprite):
                     self.game.world.get_map().get_dynatile_surface()
                 )
 
-
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2 - self.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2 - self.height // 2)
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height // 2)
@@ -258,6 +257,15 @@ class Player(pygame.sprite.Sprite):
                 self.breaking_tile = (self.selected_tile_x, self.selected_tile_y)
                 self.timer = pygame.time.get_ticks() / 1000.0
             
+            if self.prev_selected_tile != (self.selected_tile_x, self.selected_tile_y):
+                self.game.world.tile_manager.draw(
+                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE, 
+                    self.prev_selected_tile[1] * self.game.world.tile_manager.SIZE,
+                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]), 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
+                self.prev_selected_tile = (self.selected_tile_x, self.selected_tile_y)
+
             tile = self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
             delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().value.get_strength()
 
@@ -362,10 +370,13 @@ class Player(pygame.sprite.Sprite):
                 error += dx
                 y0 += sy
 
-        if  (self.game.world.get_map().get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
-                and self.game.world.get_map().get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
-                and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE.value
-                and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE.value):
+        try:
+            if  (self.game.world.get_map().get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
+                    and self.game.world.get_map().get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
+                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE.value
+                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE.value):
+                return True
+        except IndexError:
             return True
         # pygame.draw.line(screen, (255, 0, 0), (self.screen_x + 16, self.screen_y + 16), (tile_x, tile_y), 3)
         return False
