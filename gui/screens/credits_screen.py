@@ -15,7 +15,7 @@ class CreditsScreen(Screen):
         self.prog_title_label = Label("Programming by:")
         self.art_title_label = Label("Art by:")
         self.prog_value_label = Label("SammygoodTunes").set_colour((255, 255, 0))
-        self.art_value_label = Label("[???], SammygoodTunes").set_colour((255, 255, 0))
+        self.art_value_label = Label("Pickmonde, SammygoodTunes").set_colour((255, 255, 0))
         self.back_button = Button("Back")
 
     def initialise_surface(self):
