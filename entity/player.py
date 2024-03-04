@@ -32,17 +32,19 @@ class Player(pygame.sprite.Sprite):
         self.y = y
         self.screen_x = x
         self.screen_y = y
-        self.selected_tile_x = 0
-        self.selected_tile_y = 0
-        self.breaking_tile = None
-        self.selected_tile_sx = 0
-        self.selected_tile_sy = 0
         self.width = 32
         self.height = 32
         self.velocity_x = 0
         self.velocity_y = 0
         self.speed = speed
         self.move = 0
+        self.selected_tile_x = 0
+        self.selected_tile_y = 0
+        self.selected_tile_sx = 0
+        self.selected_tile_sy = 0
+        self.breaking_tile = None
+        self.breaking = False
+        self.prev_selected_tile = (0, 0)
         self.score = 0
         self.score_label = (Label(f"Score: {self.score}", 4, -8)
                             .set_shadow_x(6).set_shadow_y(-6)
@@ -68,7 +70,25 @@ class Player(pygame.sprite.Sprite):
         if e.type == pygame.MOUSEBUTTONDOWN:
             if self.regen_button.is_hovering_over() and not self.game.screens.loading_screen.get_state():
                 self.game.world.get_map().regenerate(self.game.world.tile_manager)
+            elif e.button == Mouse.LMB and self.can_break_breakable():
+                self.breaking = True
+                self.timer = pygame.time.get_ticks() / 1000.0
+                self.game.world.tile_manager.draw(
+                    self.selected_tile_x * self.game.world.tile_manager.SIZE, 
+                    self.selected_tile_y * self.game.world.tile_manager.SIZE,
+                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y), 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
         elif e.type == pygame.MOUSEBUTTONUP:
+            if e.button == Mouse.LMB:
+                self.breaking = False
+                self.timer = pygame.time.get_ticks() / 1000.0
+                self.game.world.tile_manager.draw(
+                    self.selected_tile_x * self.game.world.tile_manager.SIZE, 
+                    self.selected_tile_y * self.game.world.tile_manager.SIZE,
+                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y), 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
             if e.button == Mouse.RMB:
                 pass
         if e.type == pygame.MOUSEWHEEL:
@@ -193,11 +213,17 @@ class Player(pygame.sprite.Sprite):
             if self.is_in_wall():
                 self.x, self.y = prev_x, prev_y
 
-            # Tile-breaking
-            if (self.is_breaking_breakable()):
+            if self.breaking and self.can_break_breakable():
                 self.break_tile()
             else:
                 self.timer = pygame.time.get_ticks() / 1000.0
+                self.game.world.tile_manager.draw(
+                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE, 
+                    self.prev_selected_tile[1] * self.game.world.tile_manager.SIZE,
+                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]), 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
+
 
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2 - self.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2 - self.height // 2)
@@ -226,14 +252,17 @@ class Player(pygame.sprite.Sprite):
         self.position_label.refresh()
 
     def break_tile(self):
-        tile_x, tile_y = self.get_selected_tile_x(), self.get_selected_tile_y()
+        tile_x, tile_y = self.selected_tile_x, self.selected_tile_y
         if not self.game.world.get_map().get_dynatile(tile_x, tile_y) and self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value:
             if self.breaking_tile != (self.selected_tile_x, self.selected_tile_y):
                 self.breaking_tile = (self.selected_tile_x, self.selected_tile_y)
                 self.timer = pygame.time.get_ticks() / 1000.0
+            
+            tile = self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
+            delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().value.get_strength()
+            print(pygame.time.get_ticks() / 1000.0 - self.timer, delay)
 
-            print(pygame.time.get_ticks() / 1000.0 - self.timer)
-            if pygame.time.get_ticks() / 1000.0 - self.timer > 3.0:
+            if pygame.time.get_ticks() / 1000.0 - self.timer >= delay:
                 self.game.world.get_map().set_dynatile(tile_x, tile_y, True)
                 self.game.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
                 self.game.world.tile_manager.draw(
@@ -242,6 +271,20 @@ class Player(pygame.sprite.Sprite):
                     Tiles.PLAINS, 
                     self.game.world.get_map().get_dynatile_surface()
                 )
+            else:
+                self.game.world.tile_manager.draw(
+                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_y * self.game.world.tile_manager.SIZE,
+                    self.game.world.get_map().get_tile(tile_x, tile_y), 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
+                self.game.world.tile_manager.draw(
+                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_y * self.game.world.tile_manager.SIZE,
+                    Tiles.BREAK_TILES_ANIM[int((pygame.time.get_ticks() / 1000.0 - self.timer) / delay * (len(Tiles.BREAK_TILES_ANIM) - 1))], 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
+
 
     def reset(self):
         self.x = self.y = self.velocity_x = self.velocity_y = 0
@@ -278,9 +321,10 @@ class Player(pygame.sprite.Sprite):
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value
 
-    def is_breaking_breakable(self) -> bool:
+    def can_break_breakable(self) -> bool:
         return (pygame.mouse.get_pressed()[Mouse.LMB - 1] 
-            and self.hotbar.get_selected_slot_item() == Items.SHOVEL 
+            and self.hotbar.get_selected_slot_item() == Items.SHOVEL
+            and self.has_selected_breakable() 
             and not self.is_selected_breakable_obstructed())
 
     def has_selected_breakable(self) -> bool:

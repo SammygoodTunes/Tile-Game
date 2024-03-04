@@ -23,7 +23,7 @@ class Tile:
     def get_resistance(self):
         return self._resistance
 
-class Tiles(Enum):
+class Tiles:
     VOID = Tile(0, 0)
     GRASS = Tile(1, 0)
     PLAINS = Tile(2, 0)
@@ -34,6 +34,7 @@ class Tiles(Enum):
     FIRESTONE = Tile(7, 0)
     WATER = Tile(0, 1)
     LAVA = Tile(1, 1)
+    BREAK_TILES_ANIM = [Tile(x, 7) for x in range(8)]
 
 class TileTypes(Enum):
     BREAKABLE = [Tiles.COBBLESTONE]

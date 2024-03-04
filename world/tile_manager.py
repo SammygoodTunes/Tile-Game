@@ -21,7 +21,7 @@ class TileManager:
         #surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
         screen.blit(self.atlas,
                     (x, y, self.width, self.height),
-                    (TileManager.SIZE * tile.value.get_xy()[0], TileManager.SIZE * tile.value.get_xy()[1], TileManager.SIZE, TileManager.SIZE))
+                    (TileManager.SIZE * tile.get_xy()[0], TileManager.SIZE * tile.get_xy()[1], TileManager.SIZE, TileManager.SIZE))
         # rotated_surface = pygame.transform.rotate(surface, randint(0, 3) * 90)
         # screen.blit(rotated_surface, (x, y, self.width, self.height))
 

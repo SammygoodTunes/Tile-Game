@@ -21,7 +21,7 @@ class Game(Window):
 
     def update(self):
         ticks = pygame.time.get_ticks()
-        if self.start_game:
+        if self.start_game and self.world.get_map().is_ready():
             self.clear((140, 150, 235))
             self.world.draw(self.screen)
             # self.world.draw_wireframe(self.screen)
@@ -67,7 +67,7 @@ class Game(Window):
                 continue
             if e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
-            if not self.paused:
+            if not self.paused and self.start_game and self.world.get_map().is_ready():
                 self.player.events(e)
             self.screens.events(e)
         if not self.paused:

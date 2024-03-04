@@ -28,12 +28,14 @@ class Map:
         self._height = height
         self._surface = None
         self._dynatile_surface = None
+        self._ready = False
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         self.generate_data_event = Event()
         self.load_data_event = Event()
 
     def generate(self, tile_manager):
+        self._ready = False
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
         self._surface = pygame.Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
@@ -68,6 +70,7 @@ class Map:
         self.game.update_all_uis()
         self.game.player.set_ideal_spawnpoint()
         self.game.screens.loading_screen.set_state(False)
+        self._ready = True
 
     def regenerate(self, tile_manager):
         self.randomise_seed()
@@ -142,6 +145,9 @@ class Map:
     def tile_to_screen_pos(self, tile_x, tile_y):
         screen_x, screen_y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
         return (screen_x - self.game.camera.x + self.game.width // 2, screen_y - self.game.camera.y + self.game.height // 2)
+
+    def is_ready(self):
+        return self._ready
 
     def set_tile(self, tile_x, tile_y, tile):
         self._data[tile_x % self._width + tile_y * self._width] = tile

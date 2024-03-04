@@ -41,7 +41,7 @@ class Item:
 
 class Items(Enum):
 	AIR = Item()
-	SHOVEL = Item(x=1, tooltip_name="Shovel").set_strength(2.5).set_durability(200)
+	SHOVEL = Item(x=1, tooltip_name="Shovel").set_strength(10).set_durability(200)
 
 class ItemTypes(Enum):
 	TOOLS = [Items.SHOVEL]
