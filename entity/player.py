@@ -260,7 +260,6 @@ class Player(pygame.sprite.Sprite):
             
             tile = self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
             delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().value.get_strength()
-            print(pygame.time.get_ticks() / 1000.0 - self.timer, delay)
 
             if pygame.time.get_ticks() / 1000.0 - self.timer >= delay:
                 self.game.world.get_map().set_dynatile(tile_x, tile_y, True)
