@@ -126,13 +126,6 @@ class Map:
     def update(self, window_obj, player_obj):
         pass
 
-    def break_tile(self, tile_manager):
-        tile_x, tile_y = self.game.player.get_selected_tile_x(), self.game.player.get_selected_tile_y()
-        if not self.get_dynatile(tile_x, tile_y) and self.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value:
-            self.set_dynatile(tile_x, tile_y, True)
-            self.set_tile(tile_x, tile_y, Tiles.PLAINS)
-            tile_manager.draw(tile_x * TileManager.SIZE, tile_y * TileManager.SIZE, Tiles.PLAINS, self._dynatile_surface)
-
     def get_tile_pos(self, x, y):
         tile_x = round((x - self._x) / TileManager.SIZE)
         tile_y = round((y - self._y) / TileManager.SIZE)

@@ -34,6 +34,7 @@ class Player(pygame.sprite.Sprite):
         self.screen_y = y
         self.selected_tile_x = 0
         self.selected_tile_y = 0
+        self.breaking_tile = None
         self.selected_tile_sx = 0
         self.selected_tile_sy = 0
         self.width = 32
@@ -51,6 +52,7 @@ class Player(pygame.sprite.Sprite):
         self.regen_button = Button("Regenerate").set_state(True)
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.edges = [False, False, False, False]
+        self.timer = pygame.time.get_ticks() / 1000.0
 
     def events(self, e):
         if e.type == pygame.KEYDOWN:
@@ -191,6 +193,12 @@ class Player(pygame.sprite.Sprite):
             if self.is_in_wall():
                 self.x, self.y = prev_x, prev_y
 
+            # Tile-breaking
+            if (self.is_breaking_breakable()):
+                self.break_tile()
+            else:
+                self.timer = pygame.time.get_ticks() / 1000.0
+
             self.edges[Directions.LEFT.value] = (self.screen_x <= window.width // 2 - self.width // 2)
             self.edges[Directions.UP.value] = (self.screen_y <= window.height // 2 - self.height // 2)
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height // 2)
@@ -216,6 +224,24 @@ class Player(pygame.sprite.Sprite):
         self.regen_button.refresh()
         self.score_label.refresh()
         self.position_label.refresh()
+
+    def break_tile(self):
+        tile_x, tile_y = self.get_selected_tile_x(), self.get_selected_tile_y()
+        if not self.game.world.get_map().get_dynatile(tile_x, tile_y) and self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value:
+            if self.breaking_tile != (self.selected_tile_x, self.selected_tile_y):
+                self.breaking_tile = (self.selected_tile_x, self.selected_tile_y)
+                self.timer = pygame.time.get_ticks() / 1000.0
+
+            print(pygame.time.get_ticks() / 1000.0 - self.timer)
+            if pygame.time.get_ticks() / 1000.0 - self.timer > 3.0:
+                self.game.world.get_map().set_dynatile(tile_x, tile_y, True)
+                self.game.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
+                self.game.world.tile_manager.draw(
+                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_y * self.game.world.tile_manager.SIZE,
+                    Tiles.PLAINS, 
+                    self.game.world.get_map().get_dynatile_surface()
+                )
 
     def reset(self):
         self.x = self.y = self.velocity_x = self.velocity_y = 0
@@ -251,6 +277,11 @@ class Player(pygame.sprite.Sprite):
     def is_in_wall(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value
+
+    def is_breaking_breakable(self) -> bool:
+        return (pygame.mouse.get_pressed()[Mouse.LMB - 1] 
+            and self.hotbar.get_selected_slot_item() == Items.SHOVEL 
+            and not self.is_selected_breakable_obstructed())
 
     def has_selected_breakable(self) -> bool:
         return self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y) in TileTypes.BREAKABLE.value
