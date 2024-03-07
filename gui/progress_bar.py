@@ -9,7 +9,7 @@ class ProgressBar(Widget):
     MIN_WIDTH = 25
     MAX_WIDTH = 500
 
-    def __init__(self, x=0, y=0):
+    def __init__(self, title="", x=0, y=0):
         super().__init__(x, y)
         self._width = 0
         self._height = 16
@@ -20,6 +20,7 @@ class ProgressBar(Widget):
         self._filled_start_colour = (255, 130, 120)
         self._filled_end_colour = (120, 255, 130)
         self.info_label = Label().set_font_sizes((8, 9, 10))
+        self.info_label.set_text(title)
         self.progress_label = Label(text=f"{self._value}/{self._max_value}").set_font_sizes((7, 8, 9))
 
     def draw(self, screen):
