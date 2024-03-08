@@ -27,9 +27,6 @@ class Game(Window):
             # self.world.draw_wireframe(self.screen)
             self.player.draw(self.screen)
             self.player.draw_selection_grid(self.screen)
-            self.player.draw_score(self.screen)
-            self.player.draw_position(self.screen)
-            self.player.draw_hotbar(self.screen)
             self.player.draw_ui(self.screen)
             
             if not self.paused:
