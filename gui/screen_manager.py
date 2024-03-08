@@ -5,6 +5,7 @@ from gui.screens.loading_screen import LoadingScreen
 from gui.screens.pause_screen import PauseScreen
 from gui.screens.options_screen import OptionsScreen
 from gui.screens.credits_screen import CreditsScreen
+from gui.screens.gameover_screen import GameoverScreen
 from data.mouse_properties import Mouse
 
 
@@ -19,6 +20,7 @@ class Screens:
         self.pause_screen = PauseScreen(window)
         self.options_screen = OptionsScreen(window)
         self.credits_screen = CreditsScreen(window)
+        self.gameover_screen = GameoverScreen(window)
 
     def link_game(self, game_obj):
         self.game = game_obj
@@ -30,7 +32,7 @@ class Screens:
         self.credits_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state():
+            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead():
                 if self.options_screen.get_state():
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:
@@ -75,12 +77,23 @@ class Screens:
                     self.pause_screen.set_state(False)
                     self.main_menu.set_state(True)
 
+                elif self.gameover_screen.regen_button.is_hovering_over():
+                    self.gameover_screen.set_state(False)
+                    self.game.world.get_map().regenerate()
+                    self.game.player.set_health(100)
+                elif self.gameover_screen.quit_button.is_hovering_over():
+                    self.gameover_screen.set_state(False)
+                    self.window.start_game = False
+                    self.window.paused = False
+                    self.main_menu.set_state(True)
+
     def update(self):
         self.main_menu.draw()
         self.loading_screen.draw()
         self.pause_screen.draw()
         self.options_screen.draw()
         self.credits_screen.draw()
+        self.gameover_screen.draw()
 
     def update_ui(self):
         self.main_menu.update_ui()
@@ -88,4 +101,5 @@ class Screens:
         self.pause_screen.update_ui()
         self.options_screen.update_ui()
         self.credits_screen.update_ui()
+        self.gameover_screen.update_ui()
 
