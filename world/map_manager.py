@@ -34,7 +34,7 @@ class Map:
         self.generate_data_event = Event()
         self.load_data_event = Event()
 
-    def generate(self, tile_manager):
+    def generate(self):
         self._ready = False
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
@@ -54,7 +54,7 @@ class Map:
             self.game.update_loop()
 
         self.game.screens.loading_screen.progress_bar.set_title("Loading map...")
-        update_thread = Thread(target=self.load_data, args=(tile_manager,))
+        update_thread = Thread(target=self.load_data)
         update_thread.start()
 
         self.game.screens.loading_screen.update_ui()
@@ -72,14 +72,14 @@ class Map:
         self.game.screens.loading_screen.set_state(False)
         self._ready = True
 
-    def regenerate(self, tile_manager):
+    def regenerate(self):
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
         self.game.player.reset()
         self.game.camera.reset()
-        self.generate(tile_manager)
+        self.generate()
 
     def generate_data(self):
         self.game.screens.loading_screen.progress_bar.set_value(0)
@@ -110,11 +110,11 @@ class Map:
         self.generate_data_event.set()
 
 
-    def load_data(self, tile_manager):
+    def load_data(self):
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * TileManager.SIZE
             y: int = TileManager.SIZE * (i // self._width)
-            tile_manager.draw(x, y, tile, self._surface)
+            self.game.world.tile_manager.draw(x, y, tile, self._surface)
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
         self.load_data_event.set()
         '''index = 0
@@ -122,7 +122,7 @@ class Map:
             for _ in range(tile[1]):
                 x: int = (index % self._width) * TileManager.SIZE
                 y: int = TileManager.SIZE * (index // self._width)
-                tile_manager.draw(x, y, tile[0], self._surface)
+                self.game.world.tile_manager.draw(x, y, tile[0], self._surface)
                 index += 1
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''    
 
