@@ -34,6 +34,7 @@ class ProgressBar(Widget):
                 clamp(self._filled_start_colour[2] - round((self._filled_start_colour[2] - self._filled_end_colour[2]) / self._max_value * self._value), 0, 255)        
             )
         draw.rect(screen, filled_colour, (self._x, self._y, self._width / self._max_value * self._value, self._height), border_radius=4)
+        draw.rect(screen, (0, 0, 0), (self._x - 2, self._y - 2, self._width + 4, self._height + 4), width=2, border_radius=6)
 
         self.info_label.draw(screen)
         if self._width > width:
