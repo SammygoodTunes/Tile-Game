@@ -17,7 +17,7 @@ class World:
 
     def initialise(self):
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
-        self._map.regenerate(self.tile_manager)
+        self._map.regenerate()
 
     def update(self, window_obj, player_obj):
         self._map.update(window_obj, player_obj)
