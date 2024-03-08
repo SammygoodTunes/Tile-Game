@@ -35,7 +35,7 @@ class GameoverScreen(Screen):
         self.regen_button.update(self.window)
         self.regen_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.quit_button.get_height() - 5)
         self.quit_button.update(self.window)
-        self.quit_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.regen_button.get_height() + 5)
+        self.quit_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, 5)
 
     def set_state(self, state):
         super().set_state(state)
