@@ -328,6 +328,8 @@ class Player(pygame.sprite.Sprite):
 
     def reset(self):
         self.x = self.y = self.velocity_x = self.velocity_y = 0
+        self.health = 100
+        self.hurt = False
 
     def is_moving_left(self) -> bool:
         return bool((self.move >> Directions.LEFT.value) & 1)
