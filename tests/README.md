@@ -4,8 +4,6 @@ All logical game-related and data-related tests are found here.
 
 Their purpose is to test the inner functionalities of the game and the existence of files used by it.
 
-Each function of each component of the game will be called in alphabetical order.
-
 ## Running a test
 
 > Make sure to install all the dependencies before running the tests, see the README file (root dir).
