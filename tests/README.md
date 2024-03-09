@@ -2,7 +2,7 @@
 
 All logical game-related and data-related tests are found here.
 
-Their purpose is to test the inner functionalities of the game.
+Their purpose is to test the inner functionalities of the game and the existence of files used by it.
 
 Each function of each component of the game will be called in alphabetical order.
 
