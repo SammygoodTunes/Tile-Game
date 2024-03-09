@@ -29,9 +29,8 @@ class Game(Window):
             self.player.draw_selection_grid(self.screen)
             self.player.draw_ui(self.screen)
             
-            if not self.paused:
-                self.player.update(self, self.world.get_map())
-                self.world.update(self, self.player)
+            self.player.update(self, self.world.get_map())
+            self.world.update(self, self.player)
         else:
             self.clear((round(20 * sin(ticks / 5000) + 150), 
                         round(10 * sin(ticks / 2500) + 120),

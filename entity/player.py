@@ -163,7 +163,7 @@ class Player(pygame.sprite.Sprite):
         if not window.paused and not self.is_dead():
             d: float = window.clock.get_time() / 1000.0
             speed = (
-                self.speed // (int(not self.is_in_water()) + self.is_in_water() * 1.5 + (1.5 * self.is_in_lava()))
+                self.speed // (int(not self.is_in_water()) + 1.5 * self.is_in_water() + 1.5 * self.is_in_lava())
             )
             prev_x, prev_y = self.x, self.y
 
@@ -259,6 +259,10 @@ class Player(pygame.sprite.Sprite):
             self.edges[Directions.DOWN.value] = (self.screen_y >= window.height // 2 + self.height // 2)
             self.edges[Directions.RIGHT.value] = (self.screen_x >= window.width // 2 + self.width // 2)
 
+        else:
+            self.move = 0
+
+
     def update_ui(self):
         y = -8
         self.regen_button.update(self.game)
@@ -328,6 +332,7 @@ class Player(pygame.sprite.Sprite):
 
     def reset(self):
         self.x = self.y = self.velocity_x = self.velocity_y = 0
+        self.move = 0
         self.health = 100
         self.hurt = False
 

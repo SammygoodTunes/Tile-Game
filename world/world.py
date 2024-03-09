@@ -20,7 +20,8 @@ class World:
         self._map.regenerate()
 
     def update(self, window_obj, player_obj):
-        self._map.update(window_obj, player_obj)
+        if not window_obj.paused:
+            self._map.update(window_obj, player_obj)
 
     def update_ui(self):
         pass
