@@ -8,9 +8,9 @@ Each function of each component of the game will be called in alphabetical order
 
 ## Running a test
 
-> Pytest must be installed before running tests, see the README file (root dir).
+> Make sure to install all the dependencies before running the tests, see the README file (root dir).
 
-If you haven't already, position yourself in the `tests` directory using:
+If you want, position yourself in the `tests` directory using:
 
 ```bash
 cd tests
@@ -33,6 +33,8 @@ pytest test_assets.py # Example
 ```bash
 pytest test_assets.py::test_assets_folder_exists # Example
 ```
+
+> If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest **tests/**test_assets.py`) or replace it entirely if the path is `.` (like the first command above).
 
 ## Information
 
