@@ -1,4 +1,8 @@
 
+'''
+Tests dedicated to the assets.
+'''
+
 from os.path import exists, isfile, join
 
 ASSETS_DIR = 'assets'
