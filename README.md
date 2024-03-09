@@ -21,21 +21,21 @@ Currently in-development.
 
 Set up a new virtual environment. For the sake of conventions, we'll call ours `venv`:
 
-```shell
+```bash
 python -m venv venv   # Windows
 python3 -m venv venv  # MacOS / Unix	
 ```
 
-Activate it:
+Activate it using:
 
-```shell
+```bash
 venv\Scripts\activate     # Windows
 source venv/bin/activate  # MacOS / Unix
 ```
 
 Install the pre-requisites from the requirements file (root dir) using:
 
-```shell
+```bash
 pip install -r requirements.txt
 ```
 
