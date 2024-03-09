@@ -33,10 +33,17 @@ venv\Scripts\activate     # Windows
 source venv/bin/activate  # MacOS / Unix
 ```
 
-Install the pre-requisites from the requirements file (root dir) using:
+Install the pre-requisites:
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
+```
+
+Run the game using:
+
+```bash
+python game\main.py   # Windows
+python3 game/main.py  # MacOS / Unix
 ```
 
 ## Information
