@@ -34,7 +34,7 @@ pytest test_assets.py # Example
 pytest test_assets.py::test_assets_folder_exists # Example
 ```
 
-> If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest **tests/**test_assets.py`) or replace it entirely if the path is `.` (like the first command above).
+> If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest tests/test_assets.py`) or replace it entirely if the path is `.` (like the first command above).
 
 ## Information
 
