@@ -1,6 +1,11 @@
 # !/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
+# Project: Tile Game
+# Version: 0.0.1a 
+# Author: SammygoodTunes
+# Art: Pickmonde, SammygoodTunes
+
 from core.game import Game
 from pygame import init, quit, display
 import faulthandler
