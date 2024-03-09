@@ -163,7 +163,7 @@ class Player(pygame.sprite.Sprite):
         if not window.paused and not self.is_dead():
             d: float = window.clock.get_time() / 1000.0
             speed = (
-                self.speed // (1 * int(not self.is_in_water()) + (self.is_in_water() * 1.5 + (0.5 * self.is_in_lava())))
+                self.speed // (int(not self.is_in_water()) + self.is_in_water() * 1.5 + (1.5 * self.is_in_lava()))
             )
             prev_x, prev_y = self.x, self.y
 
