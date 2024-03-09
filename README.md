@@ -4,13 +4,9 @@ A tile-based game with procedural terrain generation (using the Perlin Noise alg
 
 Currently in-development.
 
-## Setup
+## Preview
 
-Install the pre-requisites from the requirements file (root dir) using:
-
-```shell
-pip install -r requirements.txt
-```
+![Preview](https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/main/docs/ss.png)
 
 ## Controls
 
@@ -19,9 +15,29 @@ pip install -r requirements.txt
 - [**Escape**] -> Pause menu
 - [**Alt+Enter**] -> Fullscreen mode
 
-## Preview
+## Setup
 
-![Preview](https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/main/docs/ss.png)
+> Before installing the necessary modules, it is recommended to set up a virtual environment. This allows for a clean workspace and avoids installing packages to your actual environment.
+
+Set up a new virtual environment. For the sake of conventions, we'll call ours `venv`:
+
+```shell
+python -m venv venv   # Windows
+python3 -m venv venv  # MacOS / Unix	
+```
+
+Activate it:
+
+```shell
+venv\Scripts\activate     # Windows
+source venv/bin/activate  # MacOS / Unix
+```
+
+Install the pre-requisites from the requirements file (root dir) using:
+
+```shell
+pip install -r requirements.txt
+```
 
 ## Information
 
