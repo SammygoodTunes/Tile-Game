@@ -1,6 +1,6 @@
 
 '''
-Tests dedicated to the core.
+Tests dedicated to the core module.
 '''
 
 from pygame.display import init as init_display, get_caption
