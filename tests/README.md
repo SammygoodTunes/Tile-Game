@@ -6,7 +6,11 @@ Their purpose is to test the inner functionalities of the game and the existence
 
 ## Running a test
 
-> Make sure to install all the dependencies before running the tests, see the README file (root dir).
+Install the required dependencies using (run in root dir):
+
+```bash
+pip install -e .[test_modules]
+```
 
 If you want, position yourself in the `tests` directory using:
 
