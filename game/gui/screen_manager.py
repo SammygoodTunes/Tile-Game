@@ -1,12 +1,13 @@
 
 import pygame
-from game.gui.screens.mainmenu_screen import MainMenu
-from game.gui.screens.loading_screen import LoadingScreen
-from game.gui.screens.pause_screen import PauseScreen
-from game.gui.screens.options_screen import OptionsScreen
+
+from game.data.mouse_properties import Mouse
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
-from game.data.mouse_properties import Mouse
+from game.gui.screens.loading_screen import LoadingScreen
+from game.gui.screens.mainmenu_screen import MainMenu
+from game.gui.screens.options_screen import OptionsScreen
+from game.gui.screens.pause_screen import PauseScreen
 
 
 class Screens:
