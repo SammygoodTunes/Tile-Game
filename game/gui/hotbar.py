@@ -1,9 +1,10 @@
 
-from game.gui.widget import Widget
+from pygame import Surface, SRCALPHA
+
+from game.data.items import Items
 from game.gui.label import Label
 from game.gui.slot import Slot
-from game.data.items import Items
-from pygame import Surface, SRCALPHA
+from game.gui.widget import Widget
 
 
 class Hotbar(Widget):
@@ -14,7 +15,7 @@ class Hotbar(Widget):
         self._spacing = 4
         self._width = 0
         self._height = 0
-        self._slots = [Slot() for i in range(slot_count)]
+        self._slots = [Slot() for _ in range(slot_count)]
         self._tooltip = Label("")
         self._selected_slot = 0
         self._atlas = None
@@ -30,7 +31,7 @@ class Hotbar(Widget):
         self._surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
         for slot in self._slots:
             slot.draw(self._surface)
-        self._tooltip.set_text(self.get_selected_slot_item().value.get_tooltip_name())
+        self._tooltip.set_text(self.get_selected_slot_item().get_tooltip_name())
 
     def draw(self, screen):
         screen.blit(self._surface, (self._x, self._y, self._width, self._height))
@@ -81,11 +82,6 @@ class Hotbar(Widget):
 
     def get_height(self):
         return self._height
-
-    def set_selected_slot(self, slot_index):
-        self._selected_slot = selected_slot
-        self._slots[self._selected_slot].select()
-        return self
 
     def select_slot(self, slot_index):
         self._selected_slot = slot_index
