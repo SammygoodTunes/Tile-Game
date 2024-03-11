@@ -1,8 +1,10 @@
-from game.gui.widget import Widget
-from game.gui.label import Label
-from game.data.mouse_properties import Mouse
+
 import pygame
 from pygame.math import clamp
+
+from game.data.mouse_properties import Mouse
+from game.gui.label import Label
+from game.gui.widget import Widget
 
 
 class HorizontalSlider(Widget):
@@ -13,6 +15,7 @@ class HorizontalSlider(Widget):
     def __init__(self, title="", x=0, y=0):
         super().__init__(x, y)
         self._width = 0
+        self._height = 40 - 13
         self._value = 50
         self._min_value = 0
         self._max_value = 100
@@ -152,7 +155,7 @@ class HorizontalSlider(Widget):
         return self
 
     def get_value_bounds(self):
-        return (self._min_value, self._max_value)
+        return self._min_value, self._max_value
 
     def button_held(self, state):
         self._button_held = state
