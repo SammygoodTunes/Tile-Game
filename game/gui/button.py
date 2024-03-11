@@ -1,7 +1,8 @@
 
-from game.gui.label import Widget, Label
 from pygame import mouse, draw
 from pygame.math import clamp
+
+from game.gui.label import Widget, Label
 
 
 class Button(Widget):
