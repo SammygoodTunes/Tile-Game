@@ -3,9 +3,10 @@ from pygame import Surface, SRCALPHA, image
 from pygame.draw import rect
 from pygame.math import clamp
 from pygame.transform import scale
+
+from game.data.items import Item, Items
 from game.gui.widget import Widget
 from game.world.item_manager import ItemManager
-from game.data.items import Item, Items
 
 
 class Slot(Widget):
@@ -54,7 +55,6 @@ class Slot(Widget):
                                                     self._width - self._outline_width - 1 - self._inner_width - 1,
                                                     self._height - self._outline_width - 1 - self._inner_width - 1
                                                 ), self._outline_width, 4)
-
 
     def update(self, window):
         self._width = self._height = clamp(window.width * 0.12, Slot.MIN_SIZE, Slot.MAX_SIZE)
@@ -120,7 +120,7 @@ class Slot(Widget):
         self._item = item
         self._item_asset = Surface((ItemManager.SIZE, ItemManager.SIZE), SRCALPHA, 32).convert_alpha()
         self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (self._x, self._y, ItemManager.SIZE, ItemManager.SIZE),
-                    (ItemManager.SIZE * item.value.get_xy()[0], ItemManager.SIZE * item.value.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
+                    (ItemManager.SIZE * item.get_xy()[0], ItemManager.SIZE * item.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
         return self
 
     def get_item(self):
