@@ -1,11 +1,9 @@
-from pygame import draw, image
-from game.world.tile_manager import TileManager
-from game.world.map_manager import Map
-from game.gui.label import Label
-from pygame import mouse
-from game.data.mouse_properties import Mouse
+
+from pygame import draw
+
 from game.data.tiles import Tile
-from game.data.items import Items
+from game.world.map_manager import Map
+from game.world.tile_manager import TileManager
 
 
 class World:
