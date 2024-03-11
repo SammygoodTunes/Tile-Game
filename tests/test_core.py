@@ -8,7 +8,6 @@ from pygame.font import init as init_font
 
 from game.core.game import Game
 from game.core.window import Window
-from game.data.data_manager import get_game_property, APP_NAME
 
 WINDOW_TEST_WIDTH = 800
 WINDOW_TEST_HEIGHT = 600
@@ -21,12 +20,12 @@ def test_window_creation():
     """
     init_display()
     init_font()
-    new_window = Window(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
+    new_window = Window(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT, title='Dummy window')
     assert new_window.width == WINDOW_TEST_WIDTH
     assert new_window.height == WINDOW_TEST_HEIGHT
     assert new_window.screen.get_rect() == Rect(0, 0, WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
     assert new_window.font is not None
-    assert get_caption()[0] == get_game_property(APP_NAME)
+    assert get_caption()[0] == 'Dummy window'
     quit()
 
 
