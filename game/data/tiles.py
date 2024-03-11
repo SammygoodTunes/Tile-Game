@@ -1,6 +1,6 @@
 
-from enum import Enum
 from importlib import resources as impr
+
 from game import assets
 
 
@@ -42,6 +42,7 @@ class Tile:
     def get_damage_delay(self):
         return self._damage_delay
 
+
 class Tiles:
     VOID = Tile(0, 0)
     GRASS = Tile(1, 0)
@@ -55,6 +56,7 @@ class Tiles:
     LAVA = Tile(1, 1).set_damage(3).set_damage_delay(0.5)
     BREAK_TILES_ANIM = [Tile(x, 7) for x in range(8)]
 
-class TileTypes(Enum):
+
+class TileTypes:
     BREAKABLE = [Tiles.COBBLESTONE]
     LETHAL = [Tiles.LAVA]
