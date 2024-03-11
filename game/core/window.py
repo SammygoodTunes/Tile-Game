@@ -1,7 +1,6 @@
 
 from importlib import resources as impr
 import pygame
-from time import time
 
 from game import assets
 import game.data.data_manager as data_mng
@@ -13,7 +12,7 @@ class Window:
 
     FONT_PATH = impr.files(assets) / "font.ttf"
 
-    def __init__(self, width, height):
+    def __init__(self, width, height, title=data_mng.get_game_property(data_mng.APP_NAME)):
         self.width = width
         self.height = height
         self.old_width = width
@@ -23,8 +22,7 @@ class Window:
         self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
         self.fps_cap = 200
         self.clock = pygame.time.Clock()
-        self.time = time()
-        self.seconds = 0
+        self.timer = 0
         self.font = pygame.font.Font(Window.FONT_PATH, 11)
         self.screens = Screens(self)
         self.fps_label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8)
@@ -34,10 +32,7 @@ class Window:
         self.start_game = False
         self.fullscreen = False
         self.halt_refresh = False  # used to prevent graphical distortion when resizing window
-        pygame.display.set_caption(data_mng.get_game_property(data_mng.APP_NAME))
-
-    def get_time_in_seconds(self):
-        return int(time() - self.time)
+        pygame.display.set_caption(title)
 
     def clear(self, colour):
         self.screen.fill(colour, (0, 0, self.width, self.height))
@@ -60,9 +55,9 @@ class Window:
 
     def draw_fps(self):
         if self.screens.options_screen.show_fps_box.is_checked():
-            if self.seconds != self.get_time_in_seconds():
-                self.fps_label.set_text(f"FPS: {str(round(self.clock.get_fps()))}")
-                self.seconds = self.get_time_in_seconds()
+            if self.timer != pygame.time.get_ticks() // 1000:
+                self.fps_label.set_text(f"FPS: {self.clock.get_fps(): .0f}")
+                self.timer = pygame.time.get_ticks() // 1000
             self.fps_label.draw(self.screen)
 
     def update_ui(self):
