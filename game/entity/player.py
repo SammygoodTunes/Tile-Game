@@ -38,8 +38,8 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.game = game
         self.asset = pygame.image.load(Player.TEXTURE).convert_alpha(game.screen)
-        self.x = x
-        self.y = y
+        self._x = x
+        self._y = y
         self.screen_x = x
         self.screen_y = y
         self.width = 32
@@ -62,7 +62,7 @@ class Player(pygame.sprite.Sprite):
                             .set_shadow_x(6).set_shadow_y(-6)
                             .set_colour((240, 240, 240)).set_shadow_colour((25, 25, 25)))
         self.camera_label = Label(f"Camera (XY): {round(self.game.camera.x)} {round(self.game.camera.y)}")
-        self.position_label = Label(f"Player (XY): {round(self.x)} {round(self.y)}")
+        self.position_label = Label(f"Player (XY): {self._x: .0f} {self._y: .0f}")
         self.regen_button = Button("Regenerate").set_state(True)
         self.health_bar = ProgressBar(title="Player health").set_value(self.health).set_state(True)
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
@@ -112,8 +112,8 @@ class Player(pygame.sprite.Sprite):
 
     def draw(self, screen):
         if not self.is_dead():
-            self.screen_x = self.game.width / 2 - self.game.camera.x + self.x
-            self.screen_y = self.game.height / 2 - self.game.camera.y + self.y
+            self.screen_x = self.game.width / 2 - self.game.camera.x + self._x
+            self.screen_y = self.game.height / 2 - self.game.camera.y + self._y
             if self.is_in_lava():
                 pygame.draw.rect(screen, (220, 200, 200), (self.screen_x, self.screen_y, self.width, self.height))
                 return
@@ -126,7 +126,7 @@ class Player(pygame.sprite.Sprite):
     def draw_ui(self, screen):
         if self.game.screens.options_screen.debug_info_box.is_checked():
             self.camera_label.set_text(f"Camera (XY): {round(self.game.camera.x)} {round(self.game.camera.y)}")
-            self.position_label.set_text(f"Player (XY): {round(self.x)} {round(self.y)}")
+            self.position_label.set_text(f"Player (XY): {round(self._x)} {round(self._y)}")
             self.camera_label.draw(screen)
             self.position_label.draw(screen)
         self.score_label.set_text(f"Score: {self.score}")
@@ -168,12 +168,12 @@ class Player(pygame.sprite.Sprite):
             speed = (
                 self.speed // (int(not self.is_in_water()) + 1.5 * self.is_in_water() + 1.5 * self.is_in_lava())
             )
-            prev_x, prev_y = self.x, self.y
+            prev_x, prev_y = self._x, self._y
 
             if self.velocity_x != 0:
-                self.x += speed * self.velocity_x * d
+                self._x += speed * self.velocity_x * d
             if self.velocity_y != 0:
-                self.y += speed * self.velocity_y * d
+                self._y += speed * self.velocity_y * d
 
             if self.is_moving_left():
                 self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)
@@ -201,32 +201,32 @@ class Player(pygame.sprite.Sprite):
                     self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, -1, 0)
 
             # Player - map boundaries collision
-            if self.x < map_obj.get_x() or self.x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
-                    self.y < map_obj.get_y() or self.y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
-                self.x = clamp(self.x, map_obj.get_x(), map_obj.get_x() + map_obj.get_width_in_pixels() - self.width)
-                self.y = clamp(self.y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
+            if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
+                    self._y < map_obj.get_y() or self._y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
+                self._x = clamp(self._x, map_obj.get_x(), map_obj.get_x() + map_obj.get_width_in_pixels() - self.width)
+                self._y = clamp(self._y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
                 self.velocity_x = self.velocity_y = 0
 
             # Player - wall collision
-            tile_x, tile_y = map_obj.get_tile_pos(self.x, self.y)
+            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
             tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
             walls = self.get_walls()
-            if walls[0] and self.x <= tile_wx:
-                self.x = tile_wx
+            if walls[0] and self._x <= tile_wx:
+                self._x = tile_wx
                 self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
-            if walls[1] and self.x >= tile_wx:
-                self.x = tile_wx
+            if walls[1] and self._x >= tile_wx:
+                self._x = tile_wx
                 self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
-            if walls[2] and self.y <= tile_wy:
-                self.y = tile_wy
+            if walls[2] and self._y <= tile_wy:
+                self._y = tile_wy
                 self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
-            if walls[3] and self.y >= tile_wy:
-                self.y = tile_wy
+            if walls[3] and self._y >= tile_wy:
+                self._y = tile_wy
                 self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
 
             # Prevent wall-clipping when lagging
             if self.is_in_wall():
-                self.x, self.y = prev_x, prev_y
+                self._x, self._y = prev_x, prev_y
 
             if self.breaking and self.can_break_breakable():
                 self.break_tile()
@@ -241,7 +241,7 @@ class Player(pygame.sprite.Sprite):
 
             # Update player health
             if self.is_in_lethal_tile():
-                tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+                tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
                 tile = self.game.world.get_map().get_tile(tile_x, tile_y)
                 if pygame.time.get_ticks() / 1000.0 - self.timers[Player.DAMAGE_TIMER] >= tile.get_damage_delay():
                     self.health -= tile.get_damage()
@@ -332,7 +332,7 @@ class Player(pygame.sprite.Sprite):
                 )
 
     def reset(self):
-        self.x = self.y = self.velocity_x = self.velocity_y = 0
+        self._x = self._y = self.velocity_x = self.velocity_y = 0
         self.move = 0
         self.health = 100
         self.hurt = False
@@ -362,19 +362,19 @@ class Player(pygame.sprite.Sprite):
         return self.edges[Directions.DOWN.value]
 
     def is_in_water(self) -> bool:
-        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) == Tiles.WATER
 
     def is_in_lava(self) -> bool:
-        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) == Tiles.LAVA
 
     def is_in_lethal_tile(self) -> bool:
-        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.LETHAL
 
     def is_in_wall(self) -> bool:
-        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE
 
     def is_dead(self) -> bool:
@@ -390,7 +390,7 @@ class Player(pygame.sprite.Sprite):
         return self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y) in TileTypes.BREAKABLE
 
     def is_selected_breakable_obstructed(self) -> bool:
-        player_tile_x, player_tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        player_tile_x, player_tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         # tile_x = self.selected_tile_sx + 16
         # tile_y = self.selected_tile_sy + 16
 
@@ -434,18 +434,18 @@ class Player(pygame.sprite.Sprite):
         return False
 
     def set_x(self, x):
-        self.x = x
+        self._x = x
         return self
 
     def get_x(self):
-        return self.x
+        return self._x
 
     def set_y(self, y):
-        self.y = y
+        self._y = y
         return self
 
     def get_y(self):
-        return self.y
+        return self._y
 
     def get_coefficient_from_center_x(self):
         return 1 + abs(self.screen_x - self.game.width // 2) / (self.game.width // 2)
@@ -469,7 +469,7 @@ class Player(pygame.sprite.Sprite):
     def get_walls(self):
         walls = []
         try:
-            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
             walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE)  # Left
             walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE)  # Right
             walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE)  # Up
@@ -484,10 +484,10 @@ class Player(pygame.sprite.Sprite):
         return walls
 
     def set_ideal_spawnpoint(self):
-        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+        tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
         while self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + [Tiles.LAVA]:
-            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
+            tile_x, tile_y = self.game.world.get_map().get_tile_pos(self._x, self._y)
             tx = randint(0, self.game.world.get_map().get_width_in_tiles() - 1)
             ty = randint(0, self.game.world.get_map().get_height_in_tiles() - 1)
-            self.x, self.y = self.game.world.get_map().tile_to_world_pos(tx, ty)
-            self.game.camera.x, self.game.camera.y = self.x, self.y
+            self._x, self._y = self.game.world.get_map().tile_to_world_pos(tx, ty)
+            self.game.camera.x, self.game.camera.y = self._x, self._y
