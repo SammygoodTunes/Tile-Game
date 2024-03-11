@@ -1,9 +1,8 @@
 
 import pygame
-from random import randint
-from game.data.tiles import Tiles, TileTypes
+
+from game.data.tiles import Tile
 from game.utils.exceptions import InvalidTextureAtlas
-from game.utils.tools import error
 
 
 class TileManager:
@@ -15,10 +14,10 @@ class TileManager:
         self.width: int = 0
         self.height: int = 0
 
-    def draw(self, x: int, y: int, tile: Tiles, screen: pygame.Surface):
+    def draw(self, x: int, y: int, tile: Tile, screen: pygame.Surface):
         if self.atlas is None:
             raise InvalidTextureAtlas
-        #surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
+        # surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
         screen.blit(self.atlas,
                     (x, y, self.width, self.height),
                     (TileManager.SIZE * tile.get_xy()[0], TileManager.SIZE * tile.get_xy()[1], TileManager.SIZE, TileManager.SIZE))
