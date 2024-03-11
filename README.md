@@ -53,4 +53,4 @@ Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
 Tested on Debian 12 and Windows 10
 
-Libraries used: Pygame 2.5.2, Crayons 0.4.0, Numpy 1.26.4
+Libraries used: Pygame 2.5.2, Crayons 0.4.0
