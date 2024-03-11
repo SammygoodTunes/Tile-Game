@@ -1,5 +1,6 @@
 
 from importlib import resources as impr
+
 from game import data
 
 # KEY=VALUE
