@@ -1,8 +1,10 @@
 
-from game.gui.widget import Widget
-from game.gui.label import Label
+from pygame.draw import rect as draw_rect
+from pygame import mouse, MOUSEBUTTONDOWN
+
 from game.data.mouse_properties import Mouse
-import pygame
+from game.gui.label import Label
+from game.gui.widget import Widget
 
 
 class Checkbox(Widget):
@@ -17,12 +19,12 @@ class Checkbox(Widget):
 
     def draw(self, screen):
         if self._checked:
-            pygame.draw.rect(screen, self._colour, (self._x + 4, self._y + 4, self._size - 8, self._size - 8), border_radius=0)
-        pygame.draw.rect(screen, self._colour, (self._x, self._y, self._size, self._size), width=2, border_radius=2)
+            draw_rect(screen, self._colour, (self._x + 4, self._y + 4, self._size - 8, self._size - 8), border_radius=0)
+        draw_rect(screen, self._colour, (self._x, self._y, self._size, self._size), width=2, border_radius=2)
         self.title_label.draw(screen)
 
     def events(self, e):
-        if e.type == pygame.MOUSEBUTTONDOWN:
+        if e.type == MOUSEBUTTONDOWN:
             if e.button == Mouse.LMB and self.is_hovering_over():
                 self._checked = not self._checked
 
@@ -37,7 +39,7 @@ class Checkbox(Widget):
         self.title_label.refresh()
 
     def is_hovering_over(self):
-        mouse_x, mouse_y = pygame.mouse.get_pos()
+        mouse_x, mouse_y = mouse.get_pos()
         width = self.title_label.font.size(self.title_label.get_text())[0]
         return (self._x <= mouse_x <= self._x + self._size + self._spacing * 2 + width and
                 self._y <= mouse_y <= self._y + self._size and self._enabled)
