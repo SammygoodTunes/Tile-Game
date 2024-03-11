@@ -1,11 +1,11 @@
 
-from game.core.window import Window
-from game.entity.animal import Animal
-from game.entity.player import Player
-from game.world.world import World
-from game.world.camera import Camera
-import pygame
 from math import sin
+import pygame
+
+from game.core.window import Window
+from game.entity.player import Player
+from game.world.camera import Camera
+from game.world.world import World
 
 
 class Game(Window):
