@@ -1,8 +1,10 @@
 
-from game.gui.widget import Widget
-from game.gui.label import Label
 from pygame import draw
 from pygame.math import clamp
+
+from game.gui.label import Label
+from game.gui.widget import Widget
+
 
 class ProgressBar(Widget):
 
@@ -29,9 +31,9 @@ class ProgressBar(Widget):
         draw.rect(screen, self._unfilled_colour, (self._x, self._y, self._width, self._height), border_radius=4)
         
         filled_colour = (
-                clamp(self._filled_start_colour[0] - round((self._filled_start_colour[0] - self._filled_end_colour[0]) / self._max_value * self._value), 0, 255),
-                clamp(self._filled_start_colour[1] - round((self._filled_start_colour[1] - self._filled_end_colour[1]) / self._max_value * self._value), 0, 255),
-                clamp(self._filled_start_colour[2] - round((self._filled_start_colour[2] - self._filled_end_colour[2]) / self._max_value * self._value), 0, 255)        
+                int(clamp(self._filled_start_colour[0] - round((self._filled_start_colour[0] - self._filled_end_colour[0]) / self._max_value * self._value), 0, 255)),
+                int(clamp(self._filled_start_colour[1] - round((self._filled_start_colour[1] - self._filled_end_colour[1]) / self._max_value * self._value), 0, 255)),
+                int(clamp(self._filled_start_colour[2] - round((self._filled_start_colour[2] - self._filled_end_colour[2]) / self._max_value * self._value), 0, 255))
             )
         draw.rect(screen, filled_colour, (self._x, self._y, self._width / self._max_value * self._value, self._height), border_radius=4)
         draw.rect(screen, (0, 0, 0), (self._x - 2, self._y - 2, self._width + 4, self._height + 4), width=2, border_radius=6)
@@ -74,14 +76,14 @@ class ProgressBar(Widget):
         return self
 
     def set_width(self, width):
-        self.width = width
+        self._width = width
         return self
 
     def get_width(self):
         return self._width
 
     def set_height(self, height):
-        self.height = height
+        self._height = height
         return self
 
     def get_height(self):
@@ -102,7 +104,7 @@ class ProgressBar(Widget):
         return self
 
     def get_value_bounds(self):
-        return (self._min_value, self._max_value)
+        return self._min_value, self._max_value
 
     def set_unfilled_colour(self, unfilled_colour):
         self._unfilled_colour = unfilled_colour
@@ -116,7 +118,7 @@ class ProgressBar(Widget):
         return self
 
     def get_filled_start_colour(self):
-        return self._filled_colour
+        return self._filled_start_colour
 
     def set_filled_end_color(self, filled_end_colour):
         self._filled_end_colour = filled_end_colour
