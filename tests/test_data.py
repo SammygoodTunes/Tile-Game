@@ -5,7 +5,7 @@ Tests dedicated to the data modules.
 from importlib import resources as impr
 from os.path import isfile
 
-from game import assets
+from game import data
 from game.data.data_manager import (
     get_game_properties,
     get_game_property,
@@ -17,7 +17,7 @@ from game.data.items import Item
 from game.data.mouse_properties import Mouse
 from game.data.tiles import Tile
 
-ASSETS_DIR = impr.files(assets)
+DATA_DIR = impr.files(data)
 
 
 def test_data_folder_exists():
@@ -25,7 +25,7 @@ def test_data_folder_exists():
     Test: data_folder_exists
     Desc: Tests if the data folder exists.
     """
-    assert ASSETS_DIR.is_dir()
+    assert DATA_DIR.is_dir()
 
 
 def test_game_properties_file_exists():
