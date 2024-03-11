@@ -13,6 +13,9 @@ from game.data.data_manager import (
     GAME_PROPERTIES_SEPARATOR,
     APP_NAME,
     APP_VERSION)
+from game.data.items import Item
+from game.data.mouse_properties import Mouse
+from game.data.tiles import Tile
 
 ASSETS_DIR = impr.files(assets)
 
@@ -69,3 +72,38 @@ def test_get_game_property():
             result = get_game_property(key)
             assert result == value
     assert not get_game_property("NONEXISTENT_PROPERTY")
+
+
+def test_item_creation():
+    """
+    Test: item_creation
+    Desc: Tests if items are created correctly.
+    """
+    dummy_item = (Item(x=2 ** 5, y=2 ** 7, tooltip_name='Dummy Item')
+                  .set_strength(100).set_durability(50))
+    assert isinstance(dummy_item, Item)
+    assert dummy_item.get_xy() == (2 ** 5, 2 ** 7)
+    assert dummy_item.get_tooltip_name() == 'Dummy Item'
+    assert dummy_item.get_strength() == 100
+    assert dummy_item.get_durability() == 50
+
+
+def test_mouse_properties():
+    """
+    Test: mouse_properties
+    Desc: Tests if the mouse properties possess the same values defined in Mouse.
+    """
+    assert (Mouse.LMB, Mouse.MMB, Mouse.RMB, Mouse.SCROLL_UP, Mouse.SCROLL_DOWN) == tuple(range(1, 6))
+
+
+def test_tile_creation():
+    """
+    Test: tile_creation
+    Desc: Tests if tiles are created correctly.
+    """
+    dummy_tile = Tile(x=2 ** 4, y=3 ** 5).set_resistance(150).set_damage(25).set_damage_delay(0.005)
+    assert isinstance(dummy_tile, Tile)
+    assert dummy_tile.get_xy() == (2 ** 4, 3 ** 5)
+    assert dummy_tile.get_resistance() == 150
+    assert dummy_tile.get_damage() == 25
+    assert dummy_tile.get_damage_delay() == 0.005
