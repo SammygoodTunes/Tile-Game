@@ -1,18 +1,18 @@
 
 from pygame import K_UP, K_DOWN, K_LEFT, K_RIGHT
-from pygame.math import clamp
 from pygame import key
+from pygame.math import clamp
+
+
+# Camera position strictly relative to the center of the screen
 
 class Camera:
-
-    # Camera position strictly relative to
-    # the center of the screen
 
     VELOCITY_STEP_START = 5
     VELOCITY_STEP_STOP = 3.5
     VELOCITY_THRESHOLD = 0.001
 
-    def __init__(self, game, x=0, y=0, speed=50):
+    def __init__(self, game, speed=50):
         self.game = game
         self.x = 0
         self.y = 0
@@ -23,8 +23,6 @@ class Camera:
     def events(self):
         d: float = self.game.clock.get_time() / 1000.0
         keys = key.get_pressed()
-
-        #print(self.game.player.get_coefficient_from_center_x(), self.game.player.get_coefficient_from_center_y())
 
         if self.velocity_x != 0:
             self.x += self.speed * self.game.player.get_coefficient_from_center_x() * self.velocity_x * d
