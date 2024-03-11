@@ -1,13 +1,12 @@
 
 import pygame
-from pygame.math import clamp
-from random import randint, seed, random
+from random import randint, seed
 from threading import Thread, Event
-import numpy as np
 
-from game.world.tile_manager import Tiles, TileTypes, TileManager
+from game.data.tiles import Tiles
 from game.utils.exceptions import InvalidMapData
 from game.world.synth import noise
+from game.world.tile_manager import TileManager
 
 
 class Map:
@@ -15,7 +14,7 @@ class Map:
                + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
                + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
 
-    SEED_RANGE = 2**32
+    SEED_RANGE = 2 ** 32
 
     def __init__(self, game, width, height):
         self.game = game
@@ -39,9 +38,10 @@ class Map:
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
         self._surface = pygame.Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
-        self._dynatile_surface = pygame.Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE), pygame.SRCALPHA, 32).convert_alpha()
+        self._dynatile_surface = pygame.Surface(
+            (self._width * TileManager.SIZE, self._height * TileManager.SIZE), pygame.SRCALPHA, 32
+        ).convert_alpha()
         self.game.screens.loading_screen.set_state(True)
-        offset = 0
 
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         self.game.screens.loading_screen.progress_bar.set_title("Generating map...")
@@ -106,9 +106,10 @@ class Map:
                     self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
                     offset += 1'''
 
-            self.game.screens.loading_screen.progress_bar.set_value(round((tile + 1) / (self._width * self._height) * 100))
+            self.game.screens.loading_screen.progress_bar.set_value(
+                round((tile + 1) / (self._width * self._height) * 100)
+            )
         self.generate_data_event.set()
-
 
     def load_data(self):
         for i, tile in enumerate(self._data):
@@ -132,19 +133,20 @@ class Map:
     def get_tile_pos(self, x, y):
         tile_x = round((x - self._x) / TileManager.SIZE)
         tile_y = round((y - self._y) / TileManager.SIZE)
-        return (tile_x, tile_y)
+        return tile_x, tile_y
 
     def get_strict_tile_pos(self, x, y):
         tile_x = round(x - self._x) // TileManager.SIZE
         tile_y = round(y - self._y) // TileManager.SIZE
-        return (tile_x, tile_y)
+        return tile_x, tile_y
 
     def tile_to_world_pos(self, tile_x, tile_y):
-        return (tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y)
+        return tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y
 
     def tile_to_screen_pos(self, tile_x, tile_y):
         screen_x, screen_y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
-        return (screen_x - self.game.camera.x + self.game.width // 2, screen_y - self.game.camera.y + self.game.height // 2)
+        return (screen_x - self.game.camera.x + self.game.width // 2,
+                screen_y - self.game.camera.y + self.game.height // 2)
 
     def is_ready(self):
         return self._ready
