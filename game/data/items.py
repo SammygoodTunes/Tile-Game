@@ -1,6 +1,6 @@
 
-from enum import Enum
 from importlib import resources as impr
+
 from game import assets
 
 
@@ -42,9 +42,11 @@ class Item:
 	def get_durability(self):
 		return self._durability
 
-class Items(Enum):
-	AIR = Item()
-	SHOVEL = Item(x=1, tooltip_name="Shovel").set_strength(10).set_durability(200)
 
-class ItemTypes(Enum):
+class Items:
+	AIR: Item = Item()
+	SHOVEL: Item = Item(x=1, tooltip_name="Shovel").set_strength(10).set_durability(200)
+
+
+class ItemTypes:
 	TOOLS = [Items.SHOVEL]
