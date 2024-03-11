@@ -14,6 +14,7 @@ from game.data.data_manager import get_game_property, APP_NAME
 WINDOW_TEST_WIDTH = 800
 WINDOW_TEST_HEIGHT = 600
 
+
 def test_window_creation():
     init_display()
     init_font()
@@ -23,6 +24,7 @@ def test_window_creation():
     assert new_window.screen.get_rect() == Rect(0, 0, WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
     assert new_window.font is not None
     assert get_caption()[0] == get_game_property(APP_NAME)
+
 
 def test_game_creation():
     init_display()
