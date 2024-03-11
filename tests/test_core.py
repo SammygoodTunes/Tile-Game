@@ -21,6 +21,7 @@ def test_window_creation():
     init_display()
     init_font()
     new_window = Window(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT, title='Dummy window')
+    assert isinstance(new_window, Window)
     assert new_window.width == WINDOW_TEST_WIDTH
     assert new_window.height == WINDOW_TEST_HEIGHT
     assert new_window.screen.get_rect() == Rect(0, 0, WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
@@ -59,6 +60,7 @@ def test_game_creation():
     init_display()
     init_font()
     new_game = Game(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
+    assert isinstance(new_game, Window) and isinstance(new_game, Game)
     assert new_game.camera is not None
     assert new_game.player is not None
     assert new_game.world is not None
