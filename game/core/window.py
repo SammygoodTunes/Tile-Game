@@ -1,11 +1,12 @@
 
-import pygame
 from importlib import resources as impr
-import game.data.data_manager as data_mng
+import pygame
+from time import time
+
 from game import assets
+import game.data.data_manager as data_mng
 from game.gui.label import Label
 from game.gui.screen_manager import Screens
-from time import time
 
 
 class Window:
@@ -32,7 +33,7 @@ class Window:
         self.paused = False
         self.start_game = False
         self.fullscreen = False
-        self.halt_refresh = False # used to prevent graphical distortion when resizing window
+        self.halt_refresh = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(data_mng.get_game_property(data_mng.APP_NAME))
 
     def get_time_in_seconds(self):
@@ -79,4 +80,6 @@ class Window:
         else:
             self.width = self.old_width
             self.height = self.old_height
-        self.screen = pygame.display.set_mode((self.width, self.height), pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE)
+        self.screen = pygame.display.set_mode(
+            (self.width, self.height), pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE
+        )
