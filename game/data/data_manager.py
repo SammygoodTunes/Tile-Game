@@ -19,9 +19,10 @@ def get_game_properties():
 
 def get_game_property(game_property: str):
     get_game_properties_gen = get_game_properties()
-    prop = str()
+    prop = next(get_game_properties_gen, None)
     while prop is not None:
-        prop = next(get_game_properties_gen, None)
         key, value = prop.split(GAME_PROPERTIES_SEPARATOR)
         if key == game_property:
             return value
+        prop = next(get_game_properties_gen, None)
+    return str()
