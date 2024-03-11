@@ -1,8 +1,9 @@
 
-from pygame.font import Font
-from game.gui.widget import Widget
 from importlib import resources as impr
+from pygame.font import Font
+
 from game import assets
+from game.gui.widget import Widget
 
 
 class Label(Widget):
