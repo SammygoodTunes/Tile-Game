@@ -1,5 +1,6 @@
-from random import randint, uniform
+
 from math import cos, pi
+from random import randint, uniform
 
 
 class PerlinNoise:
@@ -32,7 +33,8 @@ class PerlinNoise:
                 + (self.noise(x - 1, y) + self.noise(x + 1, y) + self.noise(x, y - 1) + self.noise(x, y + 1)) / 8
                 + self.noise(x, y) / 4)
 
-    def cosine_interpolate(self, a, b, x):
+    @staticmethod
+    def cosine_interpolate(a, b, x):
         ft = x * pi
         f = (1 - cos(ft)) * 0.5
         return a * (1 - f) + b * f
