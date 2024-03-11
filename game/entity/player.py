@@ -1,19 +1,20 @@
+
 import math
 from enum import Enum
+from importlib import resources as impr
 import pygame
 from pygame.math import clamp
 from random import randint
-from game.gui.label import Label
-from game.gui.button import Button
-from game.gui.hotbar import Hotbar
-from game.gui.progress_bar import ProgressBar
-from game.utils.tools import get_sign
-from game.world.map_manager import Map
-from game.data.tiles import Tiles, TileTypes
+
+from game import assets
 from game.data.items import Items
 from game.data.mouse_properties import Mouse
-from importlib import resources as impr
-from game import assets
+from game.data.tiles import Tiles, TileTypes
+from game.gui.button import Button
+from game.gui.hotbar import Hotbar
+from game.gui.label import Label
+from game.gui.progress_bar import ProgressBar
+from game.world.map_manager import Map
 
 
 class Directions(Enum):
@@ -87,9 +88,9 @@ class Player(pygame.sprite.Sprite):
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 self.game.world.tile_manager.draw(
-                    self.selected_tile_x * self.game.world.tile_manager.SIZE, 
+                    self.selected_tile_x * self.game.world.tile_manager.SIZE,
                     self.selected_tile_y * self.game.world.tile_manager.SIZE,
-                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y), 
+                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
                     self.game.world.get_map().get_dynatile_surface()
                 )
         elif e.type == pygame.MOUSEBUTTONUP:
@@ -97,9 +98,9 @@ class Player(pygame.sprite.Sprite):
                 self.breaking = False
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 self.game.world.tile_manager.draw(
-                    self.selected_tile_x * self.game.world.tile_manager.SIZE, 
+                    self.selected_tile_x * self.game.world.tile_manager.SIZE,
                     self.selected_tile_y * self.game.world.tile_manager.SIZE,
-                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y), 
+                    self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
                     self.game.world.get_map().get_dynatile_surface()
                 )
             if e.button == Mouse.RMB:
@@ -138,7 +139,7 @@ class Player(pygame.sprite.Sprite):
     def draw_selection_grid(self, screen):
         if not self.game.paused and not self.is_dead() and self.hotbar.get_selected_slot_item() == Items.SHOVEL:
             mx, my = pygame.mouse.get_pos()
-            
+
             center_x, center_y = self.game.width / 2, self.game.height / 2
             map_width, map_height = self.game.world.get_map().get_width_in_tiles(), self.game.world.get_map().get_height_in_tiles()
             camera_x, camera_y = round(self.game.camera.x), round(self.game.camera.y)
@@ -155,9 +156,9 @@ class Player(pygame.sprite.Sprite):
             if self.has_selected_breakable() and not self.is_selected_breakable_obstructed():
                 colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
                 pygame.draw.rect(screen, (255, colour_anim, colour_anim), (
-                                            self.selected_tile_sx, 
-                                            self.selected_tile_sy, 
-                                            self.game.world.tile_manager.SIZE, 
+                                            self.selected_tile_sx,
+                                            self.selected_tile_sy,
+                                            self.game.world.tile_manager.SIZE,
                                             self.game.world.tile_manager.SIZE
                                         ), 2, 4)
 
@@ -182,7 +183,7 @@ class Player(pygame.sprite.Sprite):
                 self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, 1)
             if self.is_moving_down():
                 self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, -1, 1)
-            
+
             if not self.is_moving_left() and not self.is_moving_right():
                 if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
                     self.velocity_x = 0
@@ -232,9 +233,9 @@ class Player(pygame.sprite.Sprite):
             else:
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 self.game.world.tile_manager.draw(
-                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE, 
+                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE,
                     self.prev_selected_tile[1] * self.game.world.tile_manager.SIZE,
-                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]), 
+                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                     self.game.world.get_map().get_dynatile_surface()
                 )
 
@@ -264,7 +265,6 @@ class Player(pygame.sprite.Sprite):
         else:
             self.move = 0
 
-
     def update_ui(self):
         y = -8
         self.regen_button.update(self.game)
@@ -291,46 +291,45 @@ class Player(pygame.sprite.Sprite):
 
     def break_tile(self):
         tile_x, tile_y = self.selected_tile_x, self.selected_tile_y
-        if not self.game.world.get_map().get_dynatile(tile_x, tile_y) and self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value:
+        if not self.game.world.get_map().get_dynatile(tile_x, tile_y) and self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
             if self.breaking_tile != (self.selected_tile_x, self.selected_tile_y):
                 self.breaking_tile = (self.selected_tile_x, self.selected_tile_y)
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-            
+
             if self.prev_selected_tile != (self.selected_tile_x, self.selected_tile_y):
                 self.game.world.tile_manager.draw(
-                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE, 
+                    self.prev_selected_tile[0] * self.game.world.tile_manager.SIZE,
                     self.prev_selected_tile[1] * self.game.world.tile_manager.SIZE,
-                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]), 
+                    self.game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                     self.game.world.get_map().get_dynatile_surface()
                 )
                 self.prev_selected_tile = (self.selected_tile_x, self.selected_tile_y)
 
             tile = self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
-            delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().value.get_strength()
+            delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().get_strength()
 
             if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
                 self.game.world.get_map().set_dynatile(tile_x, tile_y, True)
                 self.game.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
                 self.game.world.tile_manager.draw(
-                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_x * self.game.world.tile_manager.SIZE,
                     tile_y * self.game.world.tile_manager.SIZE,
-                    Tiles.PLAINS, 
+                    Tiles.PLAINS,
                     self.game.world.get_map().get_dynatile_surface()
                 )
             else:
                 self.game.world.tile_manager.draw(
-                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_x * self.game.world.tile_manager.SIZE,
                     tile_y * self.game.world.tile_manager.SIZE,
-                    self.game.world.get_map().get_tile(tile_x, tile_y), 
+                    self.game.world.get_map().get_tile(tile_x, tile_y),
                     self.game.world.get_map().get_dynatile_surface()
                 )
                 self.game.world.tile_manager.draw(
-                    tile_x * self.game.world.tile_manager.SIZE, 
+                    tile_x * self.game.world.tile_manager.SIZE,
                     tile_y * self.game.world.tile_manager.SIZE,
-                    Tiles.BREAK_TILES_ANIM[int((pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER]) / delay * (len(Tiles.BREAK_TILES_ANIM) - 1))], 
+                    Tiles.BREAK_TILES_ANIM[int((pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER]) / delay * (len(Tiles.BREAK_TILES_ANIM) - 1))],
                     self.game.world.get_map().get_dynatile_surface()
                 )
-
 
     def reset(self):
         self.x = self.y = self.velocity_x = self.velocity_y = 0
@@ -372,28 +371,28 @@ class Player(pygame.sprite.Sprite):
 
     def is_in_lethal_tile(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.LETHAL.value
+        return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.LETHAL
 
     def is_in_wall(self) -> bool:
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value
+        return self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE
 
     def is_dead(self) -> bool:
         return self.health <= 0
 
     def can_break_breakable(self) -> bool:
-        return (pygame.mouse.get_pressed()[Mouse.LMB - 1] 
-            and self.hotbar.get_selected_slot_item() == Items.SHOVEL
-            and self.has_selected_breakable() 
-            and not self.is_selected_breakable_obstructed())
+        return (pygame.mouse.get_pressed()[Mouse.LMB - 1]
+                and self.hotbar.get_selected_slot_item() == Items.SHOVEL
+                and self.has_selected_breakable()
+                and not self.is_selected_breakable_obstructed())
 
     def has_selected_breakable(self) -> bool:
-        return self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y) in TileTypes.BREAKABLE.value
+        return self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y) in TileTypes.BREAKABLE
 
-    def is_selected_breakable_obstructed(self) -> None:
+    def is_selected_breakable_obstructed(self) -> bool:
         player_tile_x, player_tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        #tile_x = self.selected_tile_sx + 16
-        #tile_y = self.selected_tile_sy + 16
+        # tile_x = self.selected_tile_sx + 16
+        # tile_y = self.selected_tile_sy + 16
 
         x0, y0, x1, y1 = player_tile_x, player_tile_y, self.selected_tile_x, self.selected_tile_y
 
@@ -404,8 +403,8 @@ class Player(pygame.sprite.Sprite):
         sy = 1 if y0 < y1 else -1
         error = dx + dy
 
-        while True: # Nul à chier mais flm de corriger
-            if not (x0 == x1 and y0 == y1) and self.game.world.get_map().get_tile(x0, y0) in TileTypes.BREAKABLE.value:
+        while True:  # Nul à chier mais flm de corriger
+            if not (x0 == x1 and y0 == y1) and self.game.world.get_map().get_tile(x0, y0) in TileTypes.BREAKABLE:
                 return True
             # wx, wy = self.game.world.get_map().tile_to_screen_pos(x0, y0)
             # pygame.draw.rect(screen, (255, 255, 0), (wx, wy, 32, 32), 1, 3)
@@ -424,10 +423,10 @@ class Player(pygame.sprite.Sprite):
                 y0 += sy
 
         try:
-            if  (self.game.world.get_map().get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
-                    and self.game.world.get_map().get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE.value
-                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE.value
-                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE.value):
+            if (self.game.world.get_map().get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                    and self.game.world.get_map().get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE
+                    and self.game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE):
                 return True
         except IndexError:
             return True
@@ -471,14 +470,14 @@ class Player(pygame.sprite.Sprite):
         walls = []
         try:
             tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE.value) # Left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE.value) # Right
-            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE.value) # Up
-            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) in TileTypes.BREAKABLE.value) # Down
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y - 1) in TileTypes.BREAKABLE.value) # Upper left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y - 1) in TileTypes.BREAKABLE.value) # Upper right
-            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y + 1) in TileTypes.BREAKABLE.value) # Lower left
-            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE.value) # Lower right
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE)  # Left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE)  # Right
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE)  # Up
+            walls.append(self.game.world.get_map().get_tile(tile_x, tile_y + 1) in TileTypes.BREAKABLE)  # Down
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y - 1) in TileTypes.BREAKABLE)  # Upper left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y - 1) in TileTypes.BREAKABLE)  # Upper right
+            walls.append(self.game.world.get_map().get_tile(tile_x - 1, tile_y + 1) in TileTypes.BREAKABLE)  # Lower left
+            walls.append(self.game.world.get_map().get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE)  # Lower right
         except IndexError:
             for _ in range(4 - len(walls)):
                 walls.append(False)
@@ -486,9 +485,9 @@ class Player(pygame.sprite.Sprite):
 
     def set_ideal_spawnpoint(self):
         tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-        while self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE.value + [Tiles.LAVA]:
+        while self.game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + [Tiles.LAVA]:
             tile_x, tile_y = self.game.world.get_map().get_tile_pos(self.x, self.y)
-            tile_x = randint(0, self.game.world.get_map().get_width_in_tiles() - 1)
-            tile_y = randint(0, self.game.world.get_map().get_height_in_tiles() - 1)
-            self.x, self.y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
+            tx = randint(0, self.game.world.get_map().get_width_in_tiles() - 1)
+            ty = randint(0, self.game.world.get_map().get_height_in_tiles() - 1)
+            self.x, self.y = self.game.world.get_map().tile_to_world_pos(tx, ty)
             self.game.camera.x, self.game.camera.y = self.x, self.y
