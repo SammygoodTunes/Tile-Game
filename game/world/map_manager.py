@@ -16,8 +16,7 @@ class Map:
 
     SEED_RANGE = 2 ** 32
 
-    def __init__(self, game, width, height):
-        self.game = game
+    def __init__(self, width, height):
         self._data: list = list()
         self._dynatile_data: list = list()
         self._seed = 0
@@ -33,7 +32,7 @@ class Map:
         self.generate_data_event = Event()
         self.load_data_event = Event()
 
-    def generate(self):
+    def generate(self, game):
         self._ready = False
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
@@ -41,48 +40,48 @@ class Map:
         self._dynatile_surface = pygame.Surface(
             (self._width * TileManager.SIZE, self._height * TileManager.SIZE), pygame.SRCALPHA, 32
         ).convert_alpha()
-        self.game.screens.loading_screen.set_state(True)
+        game.screens.loading_screen.set_state(True)
 
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
-        self.game.screens.loading_screen.progress_bar.set_title("Generating map...")
-        update_thread = Thread(target=self.generate_data)
+        game.screens.loading_screen.progress_bar.set_title("Generating map...")
+        update_thread = Thread(target=self.generate_data, args=(game,))
         update_thread.start()
 
-        self.game.screens.loading_screen.update_ui()
+        game.screens.loading_screen.update_ui()
 
         while not self.generate_data_event.is_set():
-            self.game.update_loop()
+            game.update_loop()
 
-        self.game.screens.loading_screen.progress_bar.set_title("Loading map...")
-        update_thread = Thread(target=self.load_data)
+        game.screens.loading_screen.progress_bar.set_title("Loading map...")
+        update_thread = Thread(target=self.load_data, args=(game,))
         update_thread.start()
 
-        self.game.screens.loading_screen.update_ui()
+        game.screens.loading_screen.update_ui()
 
         while not self.load_data_event.is_set():
-            self.game.update_loop()
+            game.update_loop()
 
         if not self._data:
             raise InvalidMapData
 
         self.generate_data_event.clear()
         self.load_data_event.clear()
-        self.game.update_all_uis()
-        self.game.player.set_ideal_spawnpoint()
-        self.game.screens.loading_screen.set_state(False)
+        game.update_all_uis()
+        game.player.set_ideal_spawnpoint(game.world.get_map(), game.camera)
+        game.screens.loading_screen.set_state(False)
         self._ready = True
 
-    def regenerate(self):
+    def regenerate(self, game):
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
-        self.game.player.reset()
-        self.game.camera.reset()
-        self.generate()
+        game.player.reset()
+        game.camera.reset()
+        self.generate(game)
 
-    def generate_data(self):
-        self.game.screens.loading_screen.progress_bar.set_value(0)
+    def generate_data(self, game):
+        game.screens.loading_screen.progress_bar.set_value(0)
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
             if noise_value < -1500:
@@ -106,17 +105,17 @@ class Map:
                     self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
                     offset += 1'''
 
-            self.game.screens.loading_screen.progress_bar.set_value(
+            game.screens.loading_screen.progress_bar.set_value(
                 round((tile + 1) / (self._width * self._height) * 100)
             )
         self.generate_data_event.set()
 
-    def load_data(self):
+    def load_data(self, game):
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * TileManager.SIZE
             y: int = TileManager.SIZE * (i // self._width)
-            self.game.world.tile_manager.draw(x, y, tile, self._surface)
-            self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
+            game.world.tile_manager.draw(x, y, tile, self._surface)
+            game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
         self.load_data_event.set()
         '''index = 0
         for i, tile in enumerate(self._data):
@@ -143,10 +142,11 @@ class Map:
     def tile_to_world_pos(self, tile_x, tile_y):
         return tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y
 
-    def tile_to_screen_pos(self, tile_x, tile_y):
-        screen_x, screen_y = self.game.world.get_map().tile_to_world_pos(tile_x, tile_y)
-        return (screen_x - self.game.camera.x + self.game.width // 2,
-                screen_y - self.game.camera.y + self.game.height // 2)
+    @staticmethod
+    def tile_to_screen_pos(game, tile_x, tile_y):
+        screen_x, screen_y = game.world.get_map().tile_to_world_pos(tile_x, tile_y)
+        return (screen_x - game.camera.x + game.width // 2,
+                screen_y - game.camera.y + game.height // 2)
 
     def is_ready(self):
         return self._ready

@@ -14,20 +14,21 @@ class Game(Window):
         super().__init__(window_width, window_height)
         self._running = True
         self.screens.link_game(self)
-        self.camera = Camera(self, speed=350)
-        self.player = Player(self, speed=350)
-        self.world = World(self)
+        self.camera = Camera(speed=350)
+        self.player = Player(speed=350)
+        self.world = World()
+        self.player.init(self)
         self.update_all_uis()
 
     def update(self):
         ticks = pygame.time.get_ticks()
         if self.start_game and self.world.get_map().is_ready():
             self.clear((140, 150, 235))
-            self.world.draw(self.screen)
+            self.world.draw(self)
             # self.world.draw_wireframe(self.screen)
-            self.player.draw(self.screen)
-            self.player.draw_selection_grid(self.screen)
-            self.player.draw_ui(self.screen)
+            self.player.draw(self)
+            self.player.draw_selection_grid(self)
+            self.player.draw_ui(self)
             
             self.player.update(self, self.world.get_map())
             self.world.update(self, self.player)
@@ -64,14 +65,14 @@ class Game(Window):
             if e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
             if not self.paused and self.start_game and self.world.get_map().is_ready():
-                self.player.events(e)
+                self.player.events(self, e)
             self.screens.events(e)
         if not self.paused:
-            self.camera.events()
+            self.camera.events(self)
 
     def update_all_uis(self):
         self.update_ui()
-        self.player.update_ui()
+        self.player.update_ui(self)
         self.world.update_ui()
 
     def is_running(self):

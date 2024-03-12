@@ -56,7 +56,7 @@ class Screens:
                 elif self.main_menu.play_button.is_hovering_over() and self.main_menu.get_state():
                     self.window.start_game = True
                     self.main_menu.set_state(False)
-                    self.game.world.initialise()
+                    self.game.world.initialise(self.game)
                 elif self.main_menu.options_button.is_hovering_over() and self.main_menu.get_state():
                     self.options_screen.set_state(True)
                     self.main_menu.set_state(False)

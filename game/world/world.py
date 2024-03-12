@@ -8,14 +8,13 @@ from game.world.tile_manager import TileManager
 
 class World:
 
-    def __init__(self, game):
-        self.game = game
+    def __init__(self):
         self.tile_manager = TileManager()
-        self._map = Map(self.game, 256, 256)
+        self._map = Map(256, 256)
 
-    def initialise(self):
+    def initialise(self, game):
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
-        self._map.regenerate()
+        self._map.regenerate(game)
 
     def update(self, window_obj, player_obj):
         if not window_obj.paused:
@@ -24,10 +23,10 @@ class World:
     def update_ui(self):
         pass
 
-    def draw(self, screen):
-        _, _, width, height = screen.get_rect()
-        true_x = width / 2 - self.game.camera.x + self._map.get_x()
-        true_y = height / 2 - self.game.camera.y + self._map.get_y()
+    def draw(self, game):
+        _, _, width, height = game.screen.get_rect()
+        true_x = width / 2 - game.camera.x + self._map.get_x()
+        true_y = height / 2 - game.camera.y + self._map.get_y()
 
         # Culling applied
         '''
@@ -38,8 +37,8 @@ class World:
         screen.blit(self._map.get_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))
         screen.blit(self._map.get_dynatile_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))
         '''
-        screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
-        screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
+        game.screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
+        game.screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
 
     def draw_wireframe(self, screen):
         for x in range(self._map.get_width_in_tiles() + 1):
