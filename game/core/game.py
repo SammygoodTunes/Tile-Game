@@ -9,18 +9,24 @@ from game.world.world import World
 
 
 class Game(Window):
+    """
+    Class for managing a game instance.
+    """
 
-    def __init__(self, window_width=1366, window_height=768):
+    def __init__(self, window_width: int, window_height: int) -> None:
         super().__init__(window_width, window_height)
-        self._running = True
+        self._running: bool = True
         self.screens.link_game(self)
-        self.camera = Camera(speed=350)
-        self.player = Player(speed=350)
-        self.world = World()
+        self.camera: Camera = Camera(speed=350)
+        self.player: Player = Player(speed=350)
+        self.world: World = World()
         self.player.init(self)
         self.update_all_uis()
 
-    def update(self):
+    def update(self) -> None:
+        """
+        Update all child objects and core of the game.
+        """
         ticks = pygame.time.get_ticks()
         if self.start_game and self.world.get_map().is_ready():
             self.clear((140, 150, 235))
@@ -43,13 +49,19 @@ class Game(Window):
 
     # Used for when game needs to be updated during threaded process
     # This should be used in a while loop controlled by an Event()
-    def update_loop(self):
+    def update_loop(self) -> None:
+        """
+        Like the standard update loop, but only used for threaded tasks.
+        """
         self.all_events()
         self.screens.update()
         self.draw_fps()
         self.tick()
 
-    def all_events(self):
+    def all_events(self) -> None:
+        """
+        Verify for any potential pygame events and update the targeted elements accordingly.
+        """
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 self.stop()
@@ -70,13 +82,22 @@ class Game(Window):
         if not self.paused:
             self.camera.events(self)
 
-    def update_all_uis(self):
+    def update_all_uis(self) -> None:
+        """
+        Update all the GUI-related elements.
+        """
         self.update_ui()
         self.player.update_ui(self)
         self.world.update_ui()
 
-    def is_running(self):
+    def is_running(self) -> bool:
+        """
+        Return the running state of the game.
+        """
         return self._running
     
-    def stop(self):
+    def stop(self) -> None:
+        """
+        Terminate the game.
+        """
         self._running = False

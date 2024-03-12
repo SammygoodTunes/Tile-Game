@@ -1,89 +1,105 @@
 
 import math
-from enum import Enum
 from importlib import resources as impr
 import pygame
 from pygame.math import clamp
 from random import randint
+from typing import Self
 
-from game import assets
+from game.core.game import Game
 from game.data.items import Items
 from game.data.mouse_properties import Mouse
-from game.data.tiles import Tiles, TileTypes
+from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.button import Button
 from game.gui.hotbar import Hotbar
 from game.gui.label import Label
 from game.gui.progress_bar import ProgressBar
+from game.world.camera import Camera
 from game.world.map_manager import Map
 
 
-class Directions(Enum):
+class Directions:
+    """
+    Class for defining the directions of the player.
+    """
+
+    LEFT: int
+    RIGHT: int
+    UP: int
+    DOWN: int
+
     DOWN, RIGHT, UP, LEFT = range(3, -1, -1)
 
 
-class Player(pygame.sprite.Sprite):
+class Player:
+    """
+    Class for creating a player.
+    """
 
-    TEXTURE = impr.files(assets) / "player.png"
-    DISTANCE_FROM_EDGE = 250
-    VELOCITY_STEP_START = 4.5
-    VELOCITY_STEP_STOP = 5
+    TEXTURE: str = str(impr.files("assets") / "player.png")
+    VELOCITY_STEP_START: float = 4.5
+    VELOCITY_STEP_STOP: float = 5.0
 
-    TIMERS_COUNT = 2
-    (
-        MINING_TIMER,
-        DAMAGE_TIMER
-    ) = range(0, TIMERS_COUNT)
+    TIMERS_COUNT: int = 2
+    MINING_TIMER: int = 0
+    DAMAGE_TIMER: int = 1
 
-    def __init__(self, x=0, y=0, speed=50):
+    def __init__(self, x: int = 0, y: int = 0, speed: int = 50) -> None:
         super().__init__()
-        self.asset = None
-        self._x = x
-        self._y = y
-        self.screen_x = x
-        self.screen_y = y
-        self.width = 32
-        self.height = 32
-        self.velocity_x = 0
-        self.velocity_y = 0
-        self.speed = speed
-        self.move = 0
-        self.selected_tile_x = 0
-        self.selected_tile_y = 0
-        self.selected_tile_sx = 0
-        self.selected_tile_sy = 0
-        self.breaking_tile = None
-        self.breaking = False
-        self.hurt = False
-        self.prev_selected_tile = (0, 0)
-        self.score = 0
-        self.health = 100
-        self.score_label = None
-        self.camera_label = None
+        self.asset: pygame.Surface | None = None
+        self._x: int = x
+        self._y: int = y
+        self.screen_x: int = x
+        self.screen_y: int = y
+        self.width: int = 32
+        self.height: int = 32
+        self.velocity_x: float = 0.0
+        self.velocity_y: float = 0.0
+        self.speed: int = speed
+        self.move: int = 0
+        self.selected_tile_x: int = 0
+        self.selected_tile_y: int = 0
+        self.selected_tile_sx: int = 0
+        self.selected_tile_sy: int = 0
+        self.breaking_tile: tuple[int, int] | None = None
+        self.breaking: bool = False
+        self.hurt: bool = False
+        self.prev_selected_tile: tuple[int, int] = (0, 0)
+        self.score: int = 0
+        self.health: int = 100
+        self.score_label: Label | None = None
+        self.camera_label: Label | None = None
         self.position_label = Label(f"Player (XY): {self._x: .0f} {self._y: .0f}")
         self.regen_button = Button("Regenerate").set_state(True)
         self.health_bar = ProgressBar(title="Player health").set_value(self.health).set_state(True)
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.edges = [False, False, False, False]
-        self.timers = [0] * Player.TIMERS_COUNT
+        self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
 
-    def init(self, game):
+    def init(self, game: Game) -> None:
+        """
+        Define the player attributes that depend on the given game object.
+        """
         self.asset = pygame.image.load(Player.TEXTURE).convert_alpha(game.screen)
         self.score_label = (Label(f"Score: {self.score}", 4, -8)
                             .set_shadow_x(6).set_shadow_y(-6)
                             .set_colour((240, 240, 240)).set_shadow_colour((25, 25, 25)))
         self.camera_label = Label(f"Camera (XY): {round(game.camera.x)} {round(game.camera.y)}")
 
-    def events(self, game, e):
+    def events(self, game: Game, e: pygame.event.Event | pygame.event.EventType) -> None:
+        """
+        Track the player events.
+        """
         if e.type == pygame.KEYDOWN:
-            self.move |= (1 << Directions.LEFT.value) if e.key == pygame.K_q else self.move
-            self.move |= (1 << Directions.UP.value) if e.key == pygame.K_z else self.move
-            self.move |= (1 << Directions.RIGHT.value) if e.key == pygame.K_d else self.move
-            self.move |= (1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
+            self.move |= (1 << Directions.LEFT) if e.key == pygame.K_q else self.move
+            self.move |= (1 << Directions.UP) if e.key == pygame.K_z else self.move
+            self.move |= (1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
+            self.move |= (1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         elif e.type == pygame.KEYUP:
-            self.move &= ~(1 << Directions.LEFT.value) if e.key == pygame.K_q else self.move
-            self.move &= ~(1 << Directions.UP.value) if e.key == pygame.K_z else self.move
-            self.move &= ~(1 << Directions.RIGHT.value) if e.key == pygame.K_d else self.move
-            self.move &= ~(1 << Directions.DOWN.value) if e.key == pygame.K_s else self.move
+            self.move &= ~(1 << Directions.LEFT) if e.key == pygame.K_q else self.move
+            self.move &= ~(1 << Directions.UP) if e.key == pygame.K_z else self.move
+            self.move &= ~(1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
+            self.move &= ~(1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
             if self.regen_button.is_hovering_over() and not game.screens.loading_screen.get_state():
                 game.world.get_map().regenerate(game)
@@ -114,7 +130,10 @@ class Player(pygame.sprite.Sprite):
             self.hotbar.select_slot((self.hotbar.get_selected_slot() - e.y) % len(self.hotbar.get_slots()))
             self.hotbar.init_slots()
 
-    def draw(self, game):
+    def draw(self, game: Game) -> None:
+        """
+        Draw the player to the screen.
+        """
         if not self.is_dead():
             self.screen_x = game.width / 2 - game.camera.x + self._x
             self.screen_y = game.height / 2 - game.camera.y + self._y
@@ -127,7 +146,10 @@ class Player(pygame.sprite.Sprite):
             pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
-    def draw_ui(self, game):
+    def draw_ui(self, game: Game) -> None:
+        """
+        Draw the player GUI to the screen.
+        """
         if game.screens.options_screen.debug_info_box.is_checked():
             self.camera_label.set_text(f"Camera (XY): {round(game.camera.x)} {round(game.camera.y)}")
             self.position_label.set_text(f"Player (XY): {round(self._x)} {round(self._y)}")
@@ -140,16 +162,29 @@ class Player(pygame.sprite.Sprite):
         self.health_bar.draw(game.screen)
         self.hotbar.draw(game.screen)
 
-    def draw_selection_grid(self, game):
+    def draw_selection_grid(self, game: Game) -> None:
+        """
+        Draw the player tile selection grid to the screen.
+        """
         if not game.paused and not self.is_dead() and self.hotbar.get_selected_slot_item() == Items.SHOVEL:
-            mx, my = pygame.mouse.get_pos()
+            x: int
+            y: int
+            mx: int
+            my: int
+            wx: int
+            wy: int
+            center_x: int
+            center_y: int
+            map_width: int
+            map_height: int
 
-            center_x, center_y = game.width / 2, game.height / 2
+            mx, my = pygame.mouse.get_pos()
+            center_x, center_y = round(game.width / 2), round(game.height / 2)
             map_width, map_height = game.world.get_map().get_width_in_tiles(), game.world.get_map().get_height_in_tiles()
             camera_x, camera_y = round(game.camera.x), round(game.camera.y)
 
             wx, wy = (game.camera.x - (center_x - mx)) // 32, (game.camera.y - (center_y - my)) // 32
-            wx, wy = clamp(wx, -map_width // 2, map_width // 2 - 1), clamp(wy, -map_height // 2, map_height // 2 - 1)
+            wx, wy = round(clamp(wx, -map_width // 2, map_width // 2 - 1)), round(clamp(wy, -map_height // 2, map_height // 2 - 1))
 
             x, y = game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
             self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2, y - camera_y + game.height // 2
@@ -166,13 +201,22 @@ class Player(pygame.sprite.Sprite):
                                             game.world.tile_manager.SIZE
                                         ), 2, 4)
 
-    def update(self, game, map_obj: Map):
+    def update(self, game: Game, map_obj: Map) -> None:
+        """
+        Update the player.
+        """
         if not game.paused and not self.is_dead():
             d: float = game.clock.get_time() / 1000.0
-            speed = (
-                self.speed // (int(not self.is_in_water(map_obj)) + 1.5 * self.is_in_water(map_obj) + 1.5 * self.is_in_lava(map_obj))
+            prev_x: int = self._x
+            prev_y: int = self._y
+            speed: int = round(
+                self.speed // (int(not self.is_in_water(map_obj))
+                               + 1.5 * self.is_in_water(map_obj)
+                               + 1.5 * self.is_in_lava(map_obj))
             )
-            prev_x, prev_y = self._x, self._y
+            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
+            tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
+            walls = self.get_walls(map_obj)
 
             if self.velocity_x != 0:
                 self._x += speed * self.velocity_x * d
@@ -212,9 +256,6 @@ class Player(pygame.sprite.Sprite):
                 self.velocity_x = self.velocity_y = 0
 
             # Player - wall collision
-            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-            tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
-            walls = self.get_walls(map_obj)
             if walls[0] and self._x <= tile_wx:
                 self._x = tile_wx
                 self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
@@ -261,16 +302,19 @@ class Player(pygame.sprite.Sprite):
 
             self.health_bar.set_value(self.health)
 
-            self.edges[Directions.LEFT.value] = (self.screen_x <= game.width // 2 - self.width // 2)
-            self.edges[Directions.UP.value] = (self.screen_y <= game.height // 2 - self.height // 2)
-            self.edges[Directions.DOWN.value] = (self.screen_y >= game.height // 2 + self.height // 2)
-            self.edges[Directions.RIGHT.value] = (self.screen_x >= game.width // 2 + self.width // 2)
+            self.edges[Directions.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
+            self.edges[Directions.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
+            self.edges[Directions.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
+            self.edges[Directions.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
 
         else:
             self.move = 0
 
-    def update_ui(self, game):
-        y = -8
+    def update_ui(self, game: Game) -> None:
+        """
+        Update the player GUI.
+        """
+        y: int = -8
         self.regen_button.update(game)
         self.health_bar.update(game)
         self.hotbar.update(game)
@@ -293,7 +337,15 @@ class Player(pygame.sprite.Sprite):
         self.score_label.refresh()
         self.position_label.refresh()
 
-    def break_tile(self, game):
+    def break_tile(self, game: Game) -> None:
+        """
+        Break a map tile and update map surfaces.
+        """
+        delay: float
+        tile: Tile
+        tile_x: int
+        tile_y: int
+
         tile_x, tile_y = self.selected_tile_x, self.selected_tile_y
         if not game.world.get_map().get_dynatile(tile_x, tile_y) and game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
             if self.breaking_tile != (self.selected_tile_x, self.selected_tile_y):
@@ -335,70 +387,118 @@ class Player(pygame.sprite.Sprite):
                     game.world.get_map().get_dynatile_surface()
                 )
 
-    def reset(self):
+    def reset(self) -> None:
+        """
+        Reset the player's general attributes.
+        """
         self._x = self._y = self.velocity_x = self.velocity_y = 0
         self.move = 0
         self.health = 100
         self.hurt = False
 
     def is_moving_left(self) -> bool:
-        return bool((self.move >> Directions.LEFT.value) & 1)
+        """
+        Return True if the player is moving left.
+        """
+        return bool((self.move >> Directions.LEFT) & 1)
 
     def is_moving_up(self) -> bool:
-        return bool((self.move >> Directions.UP.value) & 1)
+        """
+        Return True if the player is moving up.
+        """
+        return bool((self.move >> Directions.UP) & 1)
 
     def is_moving_right(self) -> bool:
-        return bool((self.move >> Directions.RIGHT.value) & 1)
+        """
+        Return True if the player is moving right.
+        """
+        return bool((self.move >> Directions.RIGHT) & 1)
 
     def is_moving_down(self) -> bool:
-        return bool((self.move >> Directions.DOWN.value) & 1)
+        """
+        Return True if the player is moving down.
+        """
+        return bool((self.move >> Directions.DOWN) & 1)
 
     def is_near_left_edge(self) -> bool:
-        return self.edges[Directions.LEFT.value]
+        """
+        Return True if the player is at the left-center of the screen.
+        """
+        return self.edges[Directions.LEFT]
 
     def is_near_top_edge(self) -> bool:
-        return self.edges[Directions.UP.value]
+        """
+        Return True if the player is at the top-center of the screen.
+        """
+        return self.edges[Directions.UP]
 
     def is_near_right_edge(self) -> bool:
-        return self.edges[Directions.RIGHT.value]
+        """
+        Return True if the player is to the right-center of the screen.
+        """
+        return self.edges[Directions.RIGHT]
 
     def is_near_bottom_edge(self) -> bool:
-        return self.edges[Directions.DOWN.value]
+        """
+        Return True if the player is to the bottom-center of the screen.
+        """
+        return self.edges[Directions.DOWN]
 
-    def is_in_water(self, map_obj) -> bool:
+    def is_in_water(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player is in water.
+        """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         return map_obj.get_tile(tile_x, tile_y) == Tiles.WATER
 
-    def is_in_lava(self, map_obj) -> bool:
+    def is_in_lava(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player is in lava.
+        """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         return map_obj.get_tile(tile_x, tile_y) == Tiles.LAVA
 
-    def is_in_lethal_tile(self, map_obj) -> bool:
+    def is_in_lethal_tile(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player is touching a lethal tile.
+        """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         return map_obj.get_tile(tile_x, tile_y) in TileTypes.LETHAL
 
-    def is_in_wall(self, map_obj) -> bool:
+    def is_in_wall(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player is surrounded by tiles with collision.
+        """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         return map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE
 
     def is_dead(self) -> bool:
+        """
+        Returns True if the player is dead.
+        """
         return self.health <= 0
 
-    def can_break_breakable(self, map_obj) -> bool:
+    def can_break_breakable(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player is able to access and break a breakable tile.
+        """
         return (pygame.mouse.get_pressed()[Mouse.LMB - 1]
                 and self.hotbar.get_selected_slot_item() == Items.SHOVEL
                 and self.has_selected_breakable(map_obj)
                 and not self.is_selected_breakable_obstructed(map_obj))
 
-    def has_selected_breakable(self, map_obj) -> bool:
+    def has_selected_breakable(self, map_obj: Map) -> bool:
+        """
+        Returns True if the player has selected a breakable tile.
+        """
         return map_obj.get_tile(self.selected_tile_x, self.selected_tile_y) in TileTypes.BREAKABLE
 
-    def is_selected_breakable_obstructed(self, map_obj) -> bool:
-        player_tile_x, player_tile_y = map_obj.get_tile_pos(self._x, self._y)
-        # tile_x = self.selected_tile_sx + 16
-        # tile_y = self.selected_tile_sy + 16
-
-        x0, y0, x1, y1 = player_tile_x, player_tile_y, self.selected_tile_x, self.selected_tile_y
+    def is_selected_breakable_obstructed(self, map_obj: Map) -> bool:
+        """
+        Returns True if the selected breakable tile is obstructed by other tiles with collision.
+        """
+        x0, y0 = map_obj.get_tile_pos(self._x, self._y)
+        x1, y1 = self.selected_tile_x, self.selected_tile_y
 
         # Bresenham (Thanks Wikipedia)
         dx = abs(x1 - x0)
@@ -437,40 +537,40 @@ class Player(pygame.sprite.Sprite):
         # pygame.draw.line(screen, (255, 0, 0), (self.screen_x + 16, self.screen_y + 16), (tile_x, tile_y), 3)
         return False
 
-    def set_x(self, x):
+    def set_x(self, x: int) -> Self:
         self._x = x
         return self
 
-    def get_x(self):
+    def get_x(self) -> int:
         return self._x
 
-    def set_y(self, y):
+    def set_y(self, y: int) -> Self:
         self._y = y
         return self
 
-    def get_y(self):
+    def get_y(self) -> int:
         return self._y
 
-    def get_coefficient_from_center_x(self, game):
-        return 1 + abs(self.screen_x - game.width // 2) / (game.width // 2)
+    def get_coefficient_from_center_x(self, parent_width: int) -> float:
+        return 1 + abs(self.screen_x - parent_width // 2) / (parent_width // 2)
 
-    def get_coefficient_from_center_y(self, game):
-        return 1 + abs(self.screen_y - game.height // 2) / (game.height // 2)
+    def get_coefficient_from_center_y(self, parent_height: int) -> float:
+        return 1 + abs(self.screen_y - parent_height // 2) / (parent_height // 2)
 
-    def get_selected_tile_x(self):
+    def get_selected_tile_x(self) -> int:
         return self.selected_tile_x
 
-    def get_selected_tile_y(self):
+    def get_selected_tile_y(self) -> int:
         return self.selected_tile_y
 
-    def set_health(self, health):
+    def set_health(self, health: int) -> Self:
         self.health = health
         return self
 
-    def get_health(self):
+    def get_health(self) -> int:
         return self.health
 
-    def get_walls(self, map_obj):
+    def get_walls(self, map_obj: Map) -> list[bool]:
         walls = []
         try:
             tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
@@ -487,9 +587,9 @@ class Player(pygame.sprite.Sprite):
                 walls.append(False)
         return walls
 
-    def set_ideal_spawnpoint(self, map_obj, camera_obj):
+    def set_ideal_spawnpoint(self, map_obj: Map, camera_obj: Camera) -> None:
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-        while map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + [Tiles.LAVA]:
+        while map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + (Tiles.LAVA,):
             tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
             tx = randint(0, map_obj.get_width_in_tiles() - 1)
             ty = randint(0, map_obj.get_height_in_tiles() - 1)
