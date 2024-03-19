@@ -1,4 +1,4 @@
-
+from __future__ import annotations
 import math
 from importlib import resources as impr
 import pygame
@@ -6,7 +6,6 @@ from pygame.math import clamp
 from random import randint
 from typing import Self
 
-from game.core.game import Game
 from game.data.items import Items
 from game.data.mouse_properties import Mouse
 from game.data.tiles import Tile, Tiles, TileTypes

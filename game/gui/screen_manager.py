@@ -80,7 +80,7 @@ class Screens:
 
                 elif self.gameover_screen.regen_button.is_hovering_over():
                     self.gameover_screen.set_state(False)
-                    self.game.world.get_map().regenerate()
+                    self.game.world.get_map().regenerate(self.game)
                     self.game.player.set_health(100)
                 elif self.gameover_screen.quit_button.is_hovering_over():
                     self.gameover_screen.set_state(False)

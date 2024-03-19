@@ -24,9 +24,9 @@ class Camera:
         keys = key.get_pressed()
 
         if self.velocity_x != 0:
-            self.x += self.speed * game.player.get_coefficient_from_center_x(game) * self.velocity_x * d
+            self.x += self.speed * game.player.get_coefficient_from_center_x(game.width) * self.velocity_x * d
         if self.velocity_y != 0:
-            self.y += self.speed * game.player.get_coefficient_from_center_y(game) * self.velocity_y * d
+            self.y += self.speed * game.player.get_coefficient_from_center_y(game.height) * self.velocity_y * d
 
         if game.player.is_near_left_edge():
             self.velocity_x = clamp(self.velocity_x - Camera.VELOCITY_STEP_START * d, -1, 1)
