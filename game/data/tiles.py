@@ -1,5 +1,6 @@
 
 from importlib import resources as impr
+from itertools import count
 from typing import Self
 
 
@@ -9,12 +10,23 @@ class Tile:
     """
 
     DEFAULT_ATLAS: str = str(impr.files("assets") / "atlas.png")
+    count_id = count()
 
     def __init__(self, x: int, y: int) -> None:
+        self._id: int = next(Tile.count_id)
         self._xy: tuple[int, int] = (x, y)
         self._resistance: int = 0
         self._damage: int = 0
         self._damage_delay: float = 0.0
+
+    def __repr__(self):
+        return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'
+
+    def get_id(self):
+        """
+        Get the id of the tile.
+        """
+        return self._id
 
     def set_xy(self, x: int, y: int) -> Self:
         """
