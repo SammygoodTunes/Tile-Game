@@ -6,9 +6,11 @@ from pygame.math import clamp
 from game.utils.logger import logger
 
 
-# Camera position strictly relative to the center of the screen
-
 class Camera:
+    """
+    Class for creating a camera.
+    The camera position is strictly relative to the center of the screen.
+    """
 
     VELOCITY_STEP_START = 5
     VELOCITY_STEP_STOP = 3.5
@@ -23,6 +25,9 @@ class Camera:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def events(self, game):
+        """
+        Track the camera events.
+        """
         d: float = game.clock.get_time() / 1000.0
         keys = key.get_pressed()
 
@@ -57,4 +62,7 @@ class Camera:
                 self.velocity_y = clamp(self.velocity_y + Camera.VELOCITY_STEP_STOP * d, -1, 0)
 
     def reset(self):
+        """
+        Reset the camera's general properties.
+        """
         self.x = self.y = self.velocity_x = self.velocity_y = 0

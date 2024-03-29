@@ -11,6 +11,11 @@ from game.world.tile_manager import TileManager
 
 
 class Map:
+    """
+    Class for creating a Map.
+    """
+
+
     DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
                + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
                + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
@@ -35,6 +40,9 @@ class Map:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def generate(self, game):
+        """
+        Generate the map data.
+        """
         self._ready = False
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
@@ -46,7 +54,7 @@ class Map:
 
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         game.screens.loading_screen.progress_bar.set_title("Generating map...")
-        update_thread = Thread(target=self.generate_data, args=(game,))
+        update_thread = Thread(target=self._generate_data, args=(game,))
         update_thread.start()
 
         game.screens.loading_screen.update_ui()
@@ -55,7 +63,7 @@ class Map:
             game.update_loop()
 
         game.screens.loading_screen.progress_bar.set_title("Loading map...")
-        update_thread = Thread(target=self.load_data, args=(game,))
+        update_thread = Thread(target=self._load_data, args=(game,))
         update_thread.start()
 
         game.screens.loading_screen.update_ui()
@@ -74,6 +82,9 @@ class Map:
         self._ready = True
 
     def regenerate(self, game):
+        """
+        Regenerate the map data.
+        """
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
@@ -82,7 +93,10 @@ class Map:
         game.camera.reset()
         self.generate(game)
 
-    def generate_data(self, game):
+    def _generate_data(self, game):
+        """
+        Internal threaded method for generating map data.
+        """
         game.screens.loading_screen.progress_bar.set_value(0)
         progress: int = -1
         for tile in range(self._width * self._height):
@@ -114,7 +128,10 @@ class Map:
                 logger.debug(f'Generating map data... {progress}%')
         self.generate_data_event.set()
 
-    def load_data(self, game):
+    def _load_data(self, game):
+        """
+        Internal threaded method for loading map data.
+        """
         progress: int = -1
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * TileManager.SIZE
@@ -136,38 +153,66 @@ class Map:
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''    
 
     def update(self, window_obj, player_obj):
+        """
+        Update the map (unused).
+        """
         pass
 
     def get_tile_pos(self, x, y):
+        """
+        Return the tile position of a world position.
+        """
         tile_x = round((x - self._x) / TileManager.SIZE)
         tile_y = round((y - self._y) / TileManager.SIZE)
         return tile_x, tile_y
 
     def get_strict_tile_pos(self, x, y):
+        """
+        Return the strict tile position of a world position
+        """
         tile_x = round(x - self._x) // TileManager.SIZE
         tile_y = round(y - self._y) // TileManager.SIZE
         return tile_x, tile_y
 
     def tile_to_world_pos(self, tile_x, tile_y):
+        """
+        Return the world position of a tile position.
+        """
         return tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y
 
     @staticmethod
     def tile_to_screen_pos(game, tile_x, tile_y):
+        """
+        Return the screen position of a tile position.
+        """
         screen_x, screen_y = game.world.get_map().tile_to_world_pos(tile_x, tile_y)
         return (screen_x - game.camera.x + game.width // 2,
                 screen_y - game.camera.y + game.height // 2)
 
     def is_ready(self):
+        """
+        Return whether the map is ready or not.
+        """
         return self._ready
 
     def set_tile(self, tile_x, tile_y, tile):
+        """
+        Set the tile at specified x and y tile positions and of specified tile type, then return the map manager itself.
+        """
         self._data[tile_x % self._width + tile_y * self._width] = tile
         return self
 
     def get_tile(self, tile_x, tile_y):
+        """
+        Return the tile at specified x and y tile positions.
+        """
         return self._data[tile_x % self._width + tile_y * self._width]
 
     def set_data(self, data: list):
+        """
+        Set the map data, then return the map manager itself.
+        Use default map data if no data is provided.
+        """
         if data:
             self._data = data
         else:
@@ -175,63 +220,118 @@ class Map:
         return self
 
     def get_data(self):
+        """
+        Return the map data.
+        """
         return self._data
 
     def set_dynatile_data(self, dynatile_data: list):
+        """
+        Set the dynamic tile data, then return the map manager itself.
+        """
         self._dynatile_data = dynatile_data
         return self
 
     def get_dynatile_data(self):
+        """
+        Get the dynamic tile data.
+        """
         return self._dynatile_data
 
     def set_dynatile(self, x, y, state):
+        """
+        Set the dynamic tile at specified x and y tile positions and of specified used state (bool), then return
+        the map manager itself.
+        """
         self._dynatile_data[y * self._width + x % self._width] = state
         return self
 
     def get_dynatile(self, x, y):
+        """
+        Return the dynamic tile at specified x and y tile positions.
+        """
         return self._dynatile_data[y * self._width + x % self._width]
 
     def randomise_seed(self):
+        """
+        Randomise the map seed, then return the map manager itself.
+        """
         self._seed = randint(-Map.SEED_RANGE, Map.SEED_RANGE)
         seed(self._seed)
         return self
 
     def set_seed(self, _seed):
+        """
+        Set the map seed, then return the map manager itself.
+        """
         self._seed = _seed
         seed(_seed)
         return self
 
     def get_seed(self):
+        """
+        Return the map seed.
+        """
         return self._seed
 
     def set_x(self, x):
+        """
+        Set the x position of the map, then return the map manager itself.
+        """
         self._x = x
         return self
 
     def get_x(self):
+        """
+        Return the x position of the map.
+        """
         return self._x
 
     def set_y(self, y):
+        """
+        Set the y position of the map, then return the map manager itself.
+        """
         self._y = y
         return self
 
     def get_y(self):
+        """
+        Return the y position of the map.
+        """
         return self._y
 
     def get_width_in_tiles(self):
+        """
+        Return the width of the map in tiles.
+        """
         return self._width
 
     def get_width_in_pixels(self):
+        """
+        Return the width of the map in pixels.
+        """
         return self._width * TileManager.SIZE
 
     def get_height_in_tiles(self):
+        """
+        Return the height of the map in tiles.
+        """
         return self._height
 
     def get_height_in_pixels(self):
+        """
+        Return the height of the map in pixels.
+        """
         return self._height * TileManager.SIZE
 
     def get_surface(self):
+        """
+        Return the map's surface.
+        """
         return self._surface
 
     def get_dynatile_surface(self):
+        """
+        Return the map's dynamic surface.
+        """
         return self._dynatile_surface

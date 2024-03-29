@@ -8,6 +8,9 @@ from game.utils.logger import logger
 
 
 class CreditsScreen(Screen):
+    """
+    Class for creating the credits screen.
+    """
 
     def __init__(self, window):
         super().__init__()
@@ -22,18 +25,27 @@ class CreditsScreen(Screen):
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
+        """
+        Initialise the screen's surface.
+        """
         surface = pygame.Surface((self.window.width, self.window.height))
         surface.fill((0, 0, 0))
         surface.set_alpha(96)
         return surface
 
     def events(self, e):
+        """
+        Track the screen events.
+        """
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
                 if self.back_button.is_hovering_over():
                     self._enabled = False
 
     def draw(self):
+        """
+        Draw the screen and its components.
+        """
         if self._enabled:
             self.window.screen.blit(self.faded_surface, (0, 0))
             self.options_label.draw(self.window.screen)
@@ -44,6 +56,9 @@ class CreditsScreen(Screen):
             self.back_button.draw(self.window.screen)
 
     def update_ui(self):
+        """
+        Update the screen GUI.
+        """
         y = -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1]
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
@@ -62,6 +77,9 @@ class CreditsScreen(Screen):
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
 
     def set_state(self, state):
+        """
+        Set the screen's visibility/interactivity.
+        """
         super().set_state(state)
         self.options_label.set_state(state)
         self.prog_title_label.set_state(state)

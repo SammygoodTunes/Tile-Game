@@ -1,4 +1,8 @@
 
+"""
+Logger for logging debug info, warnings and errors.
+"""
+
 import argparse
 import logging
 

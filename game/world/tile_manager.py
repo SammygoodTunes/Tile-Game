@@ -7,6 +7,9 @@ from game.utils.logger import logger
 
 
 class TileManager:
+    """
+    Class for creating a tile manager.
+    """
 
     SIZE: int = 32
 
@@ -17,6 +20,9 @@ class TileManager:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self, x: int, y: int, tile: Tile, screen: pygame.Surface):
+        """
+        Draw a tile to the screen.
+        """
         if self.atlas is None:
             raise InvalidTextureAtlas
         # surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
@@ -27,5 +33,8 @@ class TileManager:
         # screen.blit(rotated_surface, (x, y, self.width, self.height))
 
     def set_atlas(self, atlas_file: str):
+        """
+        Set the texture atlas.
+        """
         self.atlas = pygame.image.load(atlas_file)
         self.width, self.height = self.atlas.get_rect().size

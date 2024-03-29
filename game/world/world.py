@@ -8,6 +8,9 @@ from game.world.tile_manager import TileManager
 
 
 class World:
+    """
+    Class for creating a world.
+    """
 
     def __init__(self):
         self.tile_manager = TileManager()
@@ -15,17 +18,29 @@ class World:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise(self, game):
+        """
+        Initialise the world.
+        """
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
         self._map.regenerate(game)
 
     def update(self, window_obj, player_obj):
+        """
+        Update the world.
+        """
         if not window_obj.paused:
             self._map.update(window_obj, player_obj)
 
     def update_ui(self):
+        """
+        Update the world's UI (unused).
+        """
         pass
 
     def draw(self, game):
+        """
+        Draw the world (map, tiles, etc).
+        """
         _, _, width, height = game.screen.get_rect()
         true_x = width / 2 - game.camera.x + self._map.get_x()
         true_y = height / 2 - game.camera.y + self._map.get_y()
@@ -43,6 +58,9 @@ class World:
         game.screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
 
     def draw_wireframe(self, screen):
+        """
+        Draw the wireframe of the world.
+        """
         for x in range(self._map.get_width_in_tiles() + 1):
             draw.line(screen, (200, 200, 200),
                       (self._map.get_x() + x * TileManager.SIZE, self._map.get_y()),
@@ -53,4 +71,7 @@ class World:
                       (self._map.get_x() + self._map.get_width_in_pixels(), self._map.get_y() + y * TileManager.SIZE))
 
     def get_map(self):
+        """
+        Return the map.
+        """
         return self._map

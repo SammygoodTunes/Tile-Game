@@ -17,6 +17,9 @@ from game.utils.logger import logger
 
 
 def main() -> None:
+    """
+    Here is where it all begun...
+    """
     faulthandler.enable()
 
     init()

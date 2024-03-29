@@ -7,6 +7,9 @@ from game.utils.logger import logger
 
 
 class MainMenu(Screen):
+	"""
+	Class for creating the main menu screen.
+	"""
 
 	def __init__(self, window):
 		super().__init__()
@@ -20,6 +23,9 @@ class MainMenu(Screen):
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def draw(self):
+		"""
+		Draw the screen and its components.
+		"""
 		if self._enabled:
 			self.title_label.draw(self.window.screen)
 			self.play_button.draw(self.window.screen)
@@ -28,6 +34,9 @@ class MainMenu(Screen):
 			self.quit_button.draw(self.window.screen)
 
 	def update_ui(self):
+		"""
+		Update the screen UI.
+		"""
 		self.title_label.update(self.window)
 		self.title_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.title_label.get_total_height())
 		self.play_button.update(self.window)
@@ -40,6 +49,9 @@ class MainMenu(Screen):
 		self.quit_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.play_button.get_height() + self.options_button.get_height() + self.credits_button.get_height() + 15)
 
 	def set_state(self, state):
+		"""
+		Set the screen's visibility/interactivity.
+		"""
 		super().set_state(state)
 		self.title_label.set_state(state)
 		self.play_button.set_state(state)

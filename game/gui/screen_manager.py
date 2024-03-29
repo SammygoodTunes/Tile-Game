@@ -12,6 +12,9 @@ from game.utils.logger import logger
 
 
 class Screens:
+    """
+    Class for creating a collection of screens.
+    """
 
     def __init__(self, window):
         self.window = window
@@ -26,10 +29,17 @@ class Screens:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def link_game(self, game_obj):
+        """
+        Link the global game instance.
+        TODO: Remove this, it isn't good practice. And it's dirty.
+        """
         self.game = game_obj
         self.options_screen.game = self.game
 
     def events(self, e):
+        """
+        Track the events of the different screens.
+        """
         self.loading_screen.events(e)
         self.options_screen.events(e)
         self.credits_screen.events(e)
@@ -91,6 +101,9 @@ class Screens:
                     self.main_menu.set_state(True)
 
     def update(self):
+        """
+        Update the screens.
+        """
         self.main_menu.draw()
         self.loading_screen.draw()
         self.pause_screen.draw()
@@ -99,6 +112,9 @@ class Screens:
         self.gameover_screen.draw()
 
     def update_ui(self):
+        """
+        Update the screen UIs.
+        """
         self.main_menu.update_ui()
         self.loading_screen.update_ui()
         self.pause_screen.update_ui()

@@ -11,6 +11,9 @@ from game.utils.logger import logger
 
 
 class OptionsScreen(Screen):
+    """
+    Class for creating the options screen.
+    """
 
     def __init__(self, window):
         super().__init__()
@@ -25,12 +28,18 @@ class OptionsScreen(Screen):
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
+        """
+        Initialise the screen's surface.
+        """
         surface = pygame.Surface((self.window.width, self.window.height))
         surface.fill((0, 0, 0))
         surface.set_alpha(96)
         return surface
 
     def events(self, e):
+        """
+        Track the screen events.
+        """
         self.fps_limit_slider.events(e)
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
@@ -42,6 +51,9 @@ class OptionsScreen(Screen):
             self.window.fps_cap = self.fps_limit_slider.get_value()
 
     def draw(self):
+        """
+        Draw the screen and its components.
+        """
         if self._enabled:
             self.window.screen.blit(self.faded_surface, (0, 0))
             self.options_label.draw(self.window.screen)
@@ -51,6 +63,9 @@ class OptionsScreen(Screen):
             self.back_button.draw(self.window.screen)
 
     def update_ui(self):
+        """
+        Update the screen UI.
+        """
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
         self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1])
@@ -64,6 +79,9 @@ class OptionsScreen(Screen):
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
 
     def set_state(self, state):
+        """
+        Set the screen's visibility/interactivity.
+        """
         super().set_state(state)
         self.options_label.set_state(state)
         self.fps_limit_slider.set_state(state)

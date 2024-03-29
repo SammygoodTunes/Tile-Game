@@ -6,6 +6,9 @@ from game.utils.logger import logger
 
 
 class PerlinNoise:
+    """
+    Class for creating an instance of the perlin noise algorithm.
+    """
 
     NOISE_INTENSITY_RANGE = 2**16
     FREQ_ALTER_RANGE = 0.08
@@ -19,6 +22,9 @@ class PerlinNoise:
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def generate(self, x: int, y: int):
+        """
+        Generate and return perlin noise data.
+        """
         result = 0
         for i in range(self._octaves - 1):
             freq = self._frequency ** i
@@ -27,22 +33,34 @@ class PerlinNoise:
         return result
 
     def noise(self, x: int, y: int):
+        """
+        Noise function.
+        """
         n: int = x + y * self._noise_intensity
         n = (n << 13) ^ n
         return 1.0 - ((n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0
 
     def smooth_noise(self, x: int, y: int):
+        """
+        Smooth noise function.
+        """
         return ((self.noise(x - 1, y - 1) + self.noise(x + 1, y - 1) + self.noise(x - 1, y + 1)) / 16
                 + (self.noise(x - 1, y) + self.noise(x + 1, y) + self.noise(x, y - 1) + self.noise(x, y + 1)) / 8
                 + self.noise(x, y) / 4)
 
     @staticmethod
     def cosine_interpolate(a, b, x):
+        """
+        Cosine interpolation.
+        """
         ft = x * pi
         f = (1 - cos(ft)) * 0.5
         return a * (1 - f) + b * f
 
     def interpolate_noise(self, x: float, y: float):
+        """
+        Interpolate noise.
+        """
         ix, iy = int(x), int(y)
         fx, fy = x - ix, y - iy
         v1 = self.smooth_noise(ix, iy)
@@ -56,19 +74,37 @@ class PerlinNoise:
         return self.cosine_interpolate(interp1, interp2, fy)
 
     def set_permutations(self, permutations: list | tuple) -> None:
+        """
+        Set the permutations.
+        """
         self._permutations = permutations
 
     def get_permutations(self) -> list | tuple:
+        """
+        Return the permutations.
+        """
         return self._permutations
 
     def set_noise_intensity(self, noise_intensity):
+        """
+        Set the noise intensity.
+        """
         self._noise_intensity = noise_intensity
 
     def get_noise_intensity(self):
+        """
+        Return the noise intensity.
+        """
         return self._noise_intensity
 
     def set_frequency(self, frequency):
+        """
+        Set the frequency.
+        """
         self._frequency = frequency
 
     def get_frequency(self):
+        """
+        Return the frequency.
+        """
         return self._frequency

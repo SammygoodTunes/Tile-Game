@@ -540,39 +540,74 @@ class Player:
         return False
 
     def set_x(self, x: int) -> Self:
+        """
+        Set the player's x position, then return the player itself.
+        """
         self._x = x
         return self
 
     def get_x(self) -> int:
+        """
+        Return the player's x position.
+        """
         return self._x
 
     def set_y(self, y: int) -> Self:
+        """
+        Set the player's y position, then return the player itself.
+        """
         self._y = y
         return self
 
     def get_y(self) -> int:
+        """
+        Return the player's y position.
+        """
         return self._y
 
     def get_coefficient_from_center_x(self, parent_width: int) -> float:
+        """
+        Return the coefficient indicating how far the player is away from the horizontal center of the screen.
+        """
         return 1 + abs(self.screen_x - parent_width // 2) / (parent_width // 2)
 
     def get_coefficient_from_center_y(self, parent_height: int) -> float:
+        """
+        Return the coefficient indicating how far the player is away from the vertical center of the screen.
+        """
         return 1 + abs(self.screen_y - parent_height // 2) / (parent_height // 2)
 
     def get_selected_tile_x(self) -> int:
+        """
+        Return the selected tile's x position.
+        """
         return self.selected_tile_x
 
     def get_selected_tile_y(self) -> int:
+        """
+        Return the selected tile's y position.
+        """
         return self.selected_tile_y
 
     def set_health(self, health: int) -> Self:
+        """
+        Set the player's health.
+        """
         self.health = health
         return self
 
     def get_health(self) -> int:
+        """
+        Return the player's health.
+        """
         return self.health
 
     def get_walls(self, map_obj: Map) -> list[bool]:
+        """
+        Return the tiles of type BREAKABLE surrounding the player.
+        This is used for determining what tiles the player could potentially collide with.
+        The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT).
+        """
         walls = []
         try:
             tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
@@ -590,6 +625,10 @@ class Player:
         return walls
 
     def set_ideal_spawnpoint(self, map_obj: Map, camera_obj: Camera) -> None:
+        """
+        Find the ideal starting position for the player when creating a new map.
+        TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
+        """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         while map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + (Tiles.LAVA,):
             tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
