@@ -1,8 +1,9 @@
 
+from pygame import Surface, event, quit, QUIT, VIDEORESIZE
+
 from game.gui.screens.screen import Screen
 from game.gui.progress_bar import ProgressBar
-from game.gui.horizontal_slider import HorizontalSlider
-from pygame import Surface, event, quit, QUIT, VIDEORESIZE
+from game.utils.logger import logger
 
 
 class LoadingScreen(Screen):
@@ -12,6 +13,7 @@ class LoadingScreen(Screen):
         self.window = window
         self.surface = self.initialise_surface()
         self.progress_bar = ProgressBar()
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
         surface = Surface((self.window.width, self.window.height))

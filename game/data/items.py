@@ -2,6 +2,8 @@
 from importlib import resources as impr
 from typing import Self
 
+from game.utils.logger import logger
+
 
 class Item:
 	"""
@@ -15,6 +17,7 @@ class Item:
 		self._tooltip_name: str = tooltip_name
 		self._strength: int = 0
 		self._durability: int = -1
+		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def set_xy(self, x: int, y: int) -> Self:
 		"""

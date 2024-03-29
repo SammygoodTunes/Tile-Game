@@ -2,6 +2,7 @@
 from pygame import draw
 
 from game.data.tiles import Tile
+from game.utils.logger import logger
 from game.world.map_manager import Map
 from game.world.tile_manager import TileManager
 
@@ -11,6 +12,7 @@ class World:
     def __init__(self):
         self.tile_manager = TileManager()
         self._map = Map(256, 256)
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise(self, game):
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)

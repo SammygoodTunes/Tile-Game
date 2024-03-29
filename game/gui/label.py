@@ -4,6 +4,7 @@ from pygame.font import Font
 
 from game import assets
 from game.gui.widget import Widget
+from game.utils.logger import logger
 
 
 class Label(Widget):
@@ -22,6 +23,7 @@ class Label(Widget):
         self._shadow_y = self._y
         self._shadow_colour = (0, 0, 0)
         self._antialiasing = False
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def __repr__(self):
         return f"Label at ({self._x, self._y}) with text '{self._text}'"

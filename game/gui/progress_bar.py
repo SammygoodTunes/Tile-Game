@@ -4,6 +4,7 @@ from pygame.math import clamp
 
 from game.gui.label import Label
 from game.gui.widget import Widget
+from game.utils.logger import logger
 
 
 class ProgressBar(Widget):
@@ -24,6 +25,7 @@ class ProgressBar(Widget):
         self.info_label = Label().set_font_sizes((8, 9, 10))
         self.info_label.set_text(title)
         self.progress_label = Label(text=f"{self._value}/{self._max_value}").set_font_sizes((7, 8, 9))
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self, screen):
         width = self.progress_label.font.size(self.progress_label.get_text())[0]

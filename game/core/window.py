@@ -1,12 +1,11 @@
 
 from importlib import resources as impr
-from importlib.abc import Traversable
 import pygame
 
-from game import assets
 import game.data.data_manager as data_mng
 from game.gui.label import Label
 from game.gui.screen_manager import Screens
+from game.utils.logger import logger
 
 
 class Window:
@@ -37,6 +36,7 @@ class Window:
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(title)
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def clear(self, colour: tuple[int, int, int]) -> None:
         """
@@ -59,6 +59,7 @@ class Window:
         Update window dimensions on resize.
         """
         self.halt_refresh = True
+        logger.debug(f'Resizing screen to (W={e.w}, H={e.h}) from (W={self.width}, H={self.height})')
         if pygame.version.vernum >= (2, 0):
             self.screen = pygame.display.get_surface()
             self.width, self.height = self.screen.get_size()

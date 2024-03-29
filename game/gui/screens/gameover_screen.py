@@ -1,8 +1,10 @@
 
 import pygame
+
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
+from game.utils.logger import logger
 
 
 class GameoverScreen(Screen):
@@ -14,6 +16,7 @@ class GameoverScreen(Screen):
         self.gameover_label = Label(text="You died.")
         self.regen_button = Button(text="Regenerate")
         self.quit_button = Button(text="Quit")
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
         surface = pygame.Surface((self.window.width, self.window.height))

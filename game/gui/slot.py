@@ -7,6 +7,7 @@ from pygame.transform import scale
 from game.data.items import Item, Items
 from game.gui.widget import Widget
 from game.world.item_manager import ItemManager
+from game.utils.logger import logger
 
 
 class Slot(Widget):
@@ -30,6 +31,7 @@ class Slot(Widget):
         self._item_count = 0
         self._selected = False
         self.set_item(Items.AIR)
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self, screen):
         fill_colour = (60, 40, 210) if self._selected else self._fill_colour

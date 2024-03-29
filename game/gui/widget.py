@@ -1,4 +1,9 @@
 
+import inspect
+
+from game.utils.logger import logger
+
+
 class Widget:
 
     def __init__(self, x, y):
@@ -6,6 +11,7 @@ class Widget:
         self._y = y
         self._colour = (255, 255, 255)
         self._enabled = False
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def set_x(self, x):
         self._x = x
@@ -36,6 +42,10 @@ class Widget:
 
     def set_state(self, state):
         self._enabled = state
+        logger.debug(
+            f'Setting {__class__.__name__} called by {inspect.stack()[1][0].f_locals["self"].__class__.__name__}'
+            f' at {inspect.stack()[1].code_context[0].strip()} to {state}'
+        )
         return self
 
     def get_state(self):

@@ -5,6 +5,7 @@ from game.data.items import Items
 from game.gui.label import Label
 from game.gui.slot import Slot
 from game.gui.widget import Widget
+from game.utils.logger import logger
 
 
 class Hotbar(Widget):
@@ -20,6 +21,7 @@ class Hotbar(Widget):
         self._selected_slot = 0
         self._atlas = None
         self.init_slots()
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init_slots(self):
         self._slots[0].set_item(Items.SHOVEL)

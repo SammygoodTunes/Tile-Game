@@ -3,6 +3,8 @@ from pygame import K_UP, K_DOWN, K_LEFT, K_RIGHT
 from pygame import key
 from pygame.math import clamp
 
+from game.utils.logger import logger
+
 
 # Camera position strictly relative to the center of the screen
 
@@ -18,6 +20,7 @@ class Camera:
         self.speed = speed
         self.velocity_x = 0
         self.velocity_y = 0
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def events(self, game):
         d: float = game.clock.get_time() / 1000.0

@@ -1,8 +1,10 @@
 
 import pygame
+
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
+from game.utils.logger import logger
 
 
 class PauseScreen(Screen):
@@ -15,6 +17,7 @@ class PauseScreen(Screen):
         self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
         self.quit_button = Button(text="Quit").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
         surface = pygame.Surface((self.window.width, self.window.height))

@@ -8,6 +8,7 @@ Author: SammygoodTunes
 Art: Pickmonde, SammygoodTunes
 """
 
+import argparse
 import faulthandler
 from pygame import init, quit, display
 
@@ -16,6 +17,7 @@ from game.core.game import Game
 
 def main() -> None:
     faulthandler.enable()
+
     init()
 
     width: int = display.Info().current_w // 3

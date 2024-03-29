@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 import math
 from importlib import resources as impr
@@ -13,6 +14,7 @@ from game.gui.button import Button
 from game.gui.hotbar import Hotbar
 from game.gui.label import Label
 from game.gui.progress_bar import ProgressBar
+from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.map_manager import Map
 
@@ -74,6 +76,7 @@ class Player:
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.edges = [False, False, False, False]
         self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init(self, game: Game) -> None:
         """
@@ -156,7 +159,6 @@ class Player:
             self.position_label.draw(game.screen)
         self.score_label.set_text(f"Score: {self.score}")
         self.score_label.draw(game.screen)
-        self.regen_button.set_state(not game.paused)
         self.regen_button.draw(game.screen)
         self.health_bar.draw(game.screen)
         self.hotbar.draw(game.screen)
@@ -372,6 +374,7 @@ class Player:
                     Tiles.PLAINS,
                     game.world.get_map().get_dynatile_surface()
                 )
+                logger.debug(f'Destroyed tile ({tile_x}, {tile_y}) of type {tile}')
             else:
                 game.world.tile_manager.draw(
                     tile_x * game.world.tile_manager.SIZE,

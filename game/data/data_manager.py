@@ -1,6 +1,8 @@
 
 from importlib import resources as impr
 
+from game.utils.logger import logger
+
 # KEY=VALUE
 GAME_PROPERTIES_FILE: str = str(impr.files("data") / "catchncage.properties")
 GAME_PROPERTIES_SEPARATOR: str = '='
@@ -26,9 +28,12 @@ def get_game_property(game_property: str) -> str:
     value: str
     get_game_properties_gen = get_game_properties()
     prop = next(get_game_properties_gen, None)
+    logger.debug(f'Getting game property {game_property}.')
     while prop is not None:
         key, value = prop.split(GAME_PROPERTIES_SEPARATOR)
         if key == game_property:
+            logger.debug(f'Value of property {game_property} found: {value}')
             return value
         prop = next(get_game_properties_gen, None)
+    logger.warning(f'No value for property {game_property} found.')
     return str()

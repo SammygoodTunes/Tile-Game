@@ -3,6 +3,7 @@ import pygame
 
 from game.data.tiles import Tile
 from game.utils.exceptions import InvalidTextureAtlas
+from game.utils.logger import logger
 
 
 class TileManager:
@@ -13,6 +14,7 @@ class TileManager:
         self.atlas: pygame.image = None
         self.width: int = 0
         self.height: int = 0
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self, x: int, y: int, tile: Tile, screen: pygame.Surface):
         if self.atlas is None:

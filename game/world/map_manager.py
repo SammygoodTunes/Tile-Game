@@ -5,6 +5,7 @@ from threading import Thread, Event
 
 from game.data.tiles import Tiles
 from game.utils.exceptions import InvalidMapData
+from game.utils.logger import logger
 from game.world.synth import noise
 from game.world.tile_manager import TileManager
 
@@ -31,6 +32,7 @@ class Map:
         self.perlin_noise = noise.PerlinNoise()
         self.generate_data_event = Event()
         self.load_data_event = Event()
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def generate(self, game):
         self._ready = False
@@ -82,6 +84,7 @@ class Map:
 
     def generate_data(self, game):
         game.screens.loading_screen.progress_bar.set_value(0)
+        progress: int = -1
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
             if noise_value < -1500:
@@ -105,17 +108,23 @@ class Map:
                     self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
                     offset += 1'''
 
-            game.screens.loading_screen.progress_bar.set_value(
-                round((tile + 1) / (self._width * self._height) * 100)
-            )
+            if progress != round((tile + 1) / (self._width * self._height) * 100):
+                progress = round((tile + 1) / (self._width * self._height) * 100)
+                game.screens.loading_screen.progress_bar.set_value(progress)
+                logger.debug(f'Generating map data... {progress}%')
         self.generate_data_event.set()
 
     def load_data(self, game):
+        progress: int = -1
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * TileManager.SIZE
             y: int = TileManager.SIZE * (i // self._width)
             game.world.tile_manager.draw(x, y, tile, self._surface)
-            game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))
+
+            if progress != round((i + 1) / len(self._data) * 100):
+                progress = round((i + 1) / len(self._data) * 100)
+                game.screens.loading_screen.progress_bar.set_value(progress)
+                logger.debug(f'Loading map data... {progress}%')
         self.load_data_event.set()
         '''index = 0
         for i, tile in enumerate(self._data):

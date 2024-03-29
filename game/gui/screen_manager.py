@@ -8,6 +8,7 @@ from game.gui.screens.loading_screen import LoadingScreen
 from game.gui.screens.mainmenu_screen import MainMenu
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
+from game.utils.logger import logger
 
 
 class Screens:
@@ -22,6 +23,7 @@ class Screens:
         self.options_screen = OptionsScreen(window)
         self.credits_screen = CreditsScreen(window)
         self.gameover_screen = GameoverScreen(window)
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def link_game(self, game_obj):
         self.game = game_obj

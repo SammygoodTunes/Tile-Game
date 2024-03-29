@@ -1,11 +1,13 @@
+
 import pygame
+
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.checkbox import Checkbox
 from game.data.mouse_properties import Mouse
-from random import randint
+from game.utils.logger import logger
 
 
 class OptionsScreen(Screen):
@@ -20,6 +22,7 @@ class OptionsScreen(Screen):
         self.show_fps_box = Checkbox("Show FPS", checked=True)
         self.debug_info_box = Checkbox("Show debug info", checked=False)
         self.back_button = Button("Back")
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self):
         surface = pygame.Surface((self.window.width, self.window.height))

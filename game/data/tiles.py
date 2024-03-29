@@ -3,6 +3,8 @@ from importlib import resources as impr
 from itertools import count
 from typing import Self
 
+from game.utils.logger import logger
+
 
 class Tile:
     """
@@ -18,6 +20,7 @@ class Tile:
         self._resistance: int = 0
         self._damage: int = 0
         self._damage_delay: float = 0.0
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def __repr__(self):
         return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'

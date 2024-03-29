@@ -3,6 +3,7 @@ from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 import game.data.data_manager as data_mng
+from game.utils.logger import logger
 
 
 class MainMenu(Screen):
@@ -16,6 +17,7 @@ class MainMenu(Screen):
 		self.credits_button = Button("Credits")
 		self.quit_button = Button("Quit")
 		self.set_state(True)
+		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def draw(self):
 		if self._enabled:

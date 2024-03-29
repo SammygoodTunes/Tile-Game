@@ -4,6 +4,7 @@ import pygame
 
 from game.core.window import Window
 from game.entity.player import Player
+from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.world import World
 
@@ -22,6 +23,7 @@ class Game(Window):
         self.world: World = World()
         self.player.init(self)
         self.update_all_uis()
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def update(self) -> None:
         """
@@ -95,6 +97,12 @@ class Game(Window):
         Return the running state of the game.
         """
         return self._running
+
+    def is_debug_mode_enabled(self) -> bool:
+        """
+        Return the state of the game's debug mode.
+        """
+        return self._debug
     
     def stop(self) -> None:
         """
