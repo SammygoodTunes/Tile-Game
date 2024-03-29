@@ -13,6 +13,7 @@ import faulthandler
 from pygame import init, quit, display
 
 from game.core.game import Game
+from game.utils.logger import logger
 
 
 def main() -> None:
@@ -31,4 +32,5 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+    logger.debug('Starting game...')
     main()
