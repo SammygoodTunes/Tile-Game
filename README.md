@@ -47,6 +47,15 @@ python game\main.py   # Windows
 python3 game/main.py  # MacOS / Unix
 ```
 
+### Debug mode
+
+If you wish to launch the game with extra debugging information, use the `--debug` or `-d` flag:
+
+```bash
+python game\main.py --debug   # Windows
+python3 game/main.py --debug  # MacOS / Unix
+```
+
 ## Information
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
