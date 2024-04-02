@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classentity_1_1player_1_1Player" xml:lang="en-US">
+<title>entity.player.Player Class Reference</title>
+<indexterm><primary>entity.player.Player</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ac139a84f7aaa64b903c90bad4b2054d7">__init__</link> (self, int x=0, int y=0, int speed=50)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a182c972941e0be4cdb9f3e1d2c603bcb">init</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ac466232dafbb6b3c1c2eebb1c2f81540">events</link> (self, Game game, pygame.event.Event|pygame.event.EventType e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6f31c9e9d5faa236ca145fcc52db8804">draw</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab34ee07b82270c286763fc01f75ae2ab">draw_ui</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a2031f6888af44110aadd4ba4dda29f48">draw_selection_grid</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ae6497562697bafe8e2533da4604af7f6">update</link> (self, Game game, Map map_obj)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a1bee780368e9b2abaefc6bd525af713a">update_ui</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1aa381c9da96549e4d6c0089a471a40add">break_tile</link> (self, Game game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb">reset</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a394cf963598eef1f0f884aeffba2aa49">is_moving_left</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1aa3ac9680dd98c07f8e24cabf3990e5f3">is_moving_up</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1ad943f7e66143bfa78ea42fa6cd8e6711">is_moving_right</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a2acb0f55e61c149a8d56d6848e60a34f">is_moving_down</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a984baf0e2cabf4e92ff99f205d4722e5">is_near_left_edge</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1afc0d3650583ad35f979974148d1324b3">is_near_top_edge</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a595200451bbc4a0a14d0eafb092b13df">is_near_right_edge</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a5dc1059f5d598433a83e59d6d634149b">is_near_bottom_edge</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1acfb6dea96f615b76de23b4501748b3d8">is_in_water</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1afa56e7928f74c7a41867f01728582528">is_in_lava</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1ac2a32dfc71633031a14e53dd50a1c01a">is_in_lethal_tile</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1ae81cad8591f0b46786088a12f8ec7519">is_in_wall</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a745d4beb0c9c6a6859283ad99233b3d9">is_dead</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a9c673e4056ff93b088c2a53e7ee9baeb">can_break_breakable</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a5f011e6d3f71afd6dde810615da1e5f4">has_selected_breakable</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a69fe13ed1e333933c482d6e17e027a9d">is_selected_breakable_obstructed</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1ac2c38bcbbdfa79be01c575d9550994c6">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1ad3cdd92868b226021ab2ba048c33ac08">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c">get_coefficient_from_center_x</link> (self, int parent_width)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91">get_coefficient_from_center_y</link> (self, int parent_height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922">get_selected_tile_x</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a3aee04b005560bcb0cad8093b610a150">get_selected_tile_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35">set_health</link> (self, int <link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link>)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a5bb0ef0040a075e0571205fd39ad0900">get_health</link> (self)</para>
+</listitem>
+            <listitem><para>list[bool] <link linkend="_classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28">get_walls</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab">set_ideal_spawnpoint</link> (self, Map map_obj, Camera camera_obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a3f635daf438f33bd15cbdf76aa030b4e">position_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a0a4205b05311ff2bcbe938bbabb1c8fb">regen_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a2c056b24552d7205d9d4bb2d7a72190b">health_bar</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a132a5d52135943fed9d183e9cf55e761">hotbar</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e">edges</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1afd2edb4a7f1c7115725c2c3f9f39f4b0">asset</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1af13567434a52171e6faa181eacabae6a">score_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a86f01aaf02dcb947ece79eec82fef671">camera_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1">breaking</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3">selected_tile_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a83a224799adf0ed4558ae09811000dea">selected_tile_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a4349d9fd6b507aaf1b2a29340146b225">screen_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a259d03b6b673fcb71a3bb54db391b280">screen_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a74b6d7e01d8202946ea62d150fa31174">width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a">height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ad0d96f20cca2a9a493501cfcd39c1f80">selected_tile_sx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516">selected_tile_sy</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982">velocity_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5">velocity_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46">hurt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d">move</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ad522fc5da677a4b49b8b83a789126460">breaking_tile</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2">prev_selected_tile</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90">TEXTURE</link> = str(impr.files(assets) / &quot;player.png&quot;)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4">VELOCITY_STEP_START</link> = 4.5</para>
+</listitem>
+            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca">VELOCITY_STEP_STOP</link> = 5.0</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f">TIMERS_COUNT</link> = 2</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a7af13c9b3a48f31142417667c8437afe">MINING_TIMER</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a7af133b2468f2bdba4869a0b9b0d781f">DAMAGE_TIMER</link> = 1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a812b0e8d385e586b89482e50aab85a83">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a8bc344ca55089329a9e4e6db79eaf2a3">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a player.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac139a84f7aaa64b903c90bad4b2054d7"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  speed = <computeroutput>50</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classentity_1_1player_1_1Player_1aa381c9da96549e4d6c0089a471a40add"/><section>
+    <title>break_tile()</title>
+<indexterm><primary>break_tile</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>break_tile</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.break_tile ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Break a map tile and update map surfaces.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a9c673e4056ff93b088c2a53e7ee9baeb"/><section>
+    <title>can_break_breakable()</title>
+<indexterm><primary>can_break_breakable</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>can_break_breakable</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.can_break_breakable ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is able to access and break a breakable tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a6f31c9e9d5faa236ca145fcc52db8804"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.draw ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the player to the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a2031f6888af44110aadd4ba4dda29f48"/><section>
+    <title>draw_selection_grid()</title>
+<indexterm><primary>draw_selection_grid</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>draw_selection_grid</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.draw_selection_grid ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the player tile selection grid to the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ab34ee07b82270c286763fc01f75ae2ab"/><section>
+    <title>draw_ui()</title>
+<indexterm><primary>draw_ui</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>draw_ui</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.draw_ui ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the player GUI to the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac466232dafbb6b3c1c2eebb1c2f81540"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.events ( self, Game game, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the player events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c"/><section>
+    <title>get_coefficient_from_center_x()</title>
+<indexterm><primary>get_coefficient_from_center_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_coefficient_from_center_x</secondary></indexterm>
+<para><computeroutput> float entity.player.Player.get_coefficient_from_center_x ( self, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Return the coefficient indicating how far the player is away from the horizontal center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91"/><section>
+    <title>get_coefficient_from_center_y()</title>
+<indexterm><primary>get_coefficient_from_center_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_coefficient_from_center_y</secondary></indexterm>
+<para><computeroutput> float entity.player.Player.get_coefficient_from_center_y ( self, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Return the coefficient indicating how far the player is away from the vertical center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a5bb0ef0040a075e0571205fd39ad0900"/><section>
+    <title>get_health()</title>
+<indexterm><primary>get_health</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_health</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_health ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s health.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922"/><section>
+    <title>get_selected_tile_x()</title>
+<indexterm><primary>get_selected_tile_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_selected_tile_x</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_selected_tile_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the selected tile&apos;s x position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a3aee04b005560bcb0cad8093b610a150"/><section>
+    <title>get_selected_tile_y()</title>
+<indexterm><primary>get_selected_tile_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_selected_tile_y</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_selected_tile_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the selected tile&apos;s y position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28"/><section>
+    <title>get_walls()</title>
+<indexterm><primary>get_walls</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_walls</secondary></indexterm>
+<para><computeroutput> list[bool] entity.player.Player.get_walls ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Return the tiles of type BREAKABLE surrounding the player.
+This is used for determining what tiles the player could potentially collide with.
+The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac2c38bcbbdfa79be01c575d9550994c6"/><section>
+    <title>get_x()</title>
+<indexterm><primary>get_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_x</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s x position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ad3cdd92868b226021ab2ba048c33ac08"/><section>
+    <title>get_y()</title>
+<indexterm><primary>get_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_y</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s y position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a5f011e6d3f71afd6dde810615da1e5f4"/><section>
+    <title>has_selected_breakable()</title>
+<indexterm><primary>has_selected_breakable</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>has_selected_breakable</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.has_selected_breakable ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player has selected a breakable tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a182c972941e0be4cdb9f3e1d2c603bcb"/><section>
+    <title>init()</title>
+<indexterm><primary>init</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>init</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.init ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Define the player attributes that depend on the given game object.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a745d4beb0c9c6a6859283ad99233b3d9"/><section>
+    <title>is_dead()</title>
+<indexterm><primary>is_dead</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_dead</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_dead ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is dead.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1afa56e7928f74c7a41867f01728582528"/><section>
+    <title>is_in_lava()</title>
+<indexterm><primary>is_in_lava</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_in_lava</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_in_lava ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is in lava.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac2a32dfc71633031a14e53dd50a1c01a"/><section>
+    <title>is_in_lethal_tile()</title>
+<indexterm><primary>is_in_lethal_tile</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_in_lethal_tile</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_in_lethal_tile ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is touching a lethal tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ae81cad8591f0b46786088a12f8ec7519"/><section>
+    <title>is_in_wall()</title>
+<indexterm><primary>is_in_wall</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_in_wall</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_in_wall ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is surrounded by tiles with collision.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1acfb6dea96f615b76de23b4501748b3d8"/><section>
+    <title>is_in_water()</title>
+<indexterm><primary>is_in_water</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_in_water</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_in_water ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the player is in water.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a2acb0f55e61c149a8d56d6848e60a34f"/><section>
+    <title>is_moving_down()</title>
+<indexterm><primary>is_moving_down</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_moving_down</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_moving_down ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is moving down.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a394cf963598eef1f0f884aeffba2aa49"/><section>
+    <title>is_moving_left()</title>
+<indexterm><primary>is_moving_left</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_moving_left</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_moving_left ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is moving left.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ad943f7e66143bfa78ea42fa6cd8e6711"/><section>
+    <title>is_moving_right()</title>
+<indexterm><primary>is_moving_right</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_moving_right</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_moving_right ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is moving right.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1aa3ac9680dd98c07f8e24cabf3990e5f3"/><section>
+    <title>is_moving_up()</title>
+<indexterm><primary>is_moving_up</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_moving_up</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_moving_up ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is moving up.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a5dc1059f5d598433a83e59d6d634149b"/><section>
+    <title>is_near_bottom_edge()</title>
+<indexterm><primary>is_near_bottom_edge</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_near_bottom_edge</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_near_bottom_edge ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is to the bottom-center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a984baf0e2cabf4e92ff99f205d4722e5"/><section>
+    <title>is_near_left_edge()</title>
+<indexterm><primary>is_near_left_edge</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_near_left_edge</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_near_left_edge ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is at the left-center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a595200451bbc4a0a14d0eafb092b13df"/><section>
+    <title>is_near_right_edge()</title>
+<indexterm><primary>is_near_right_edge</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_near_right_edge</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_near_right_edge ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is to the right-center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1afc0d3650583ad35f979974148d1324b3"/><section>
+    <title>is_near_top_edge()</title>
+<indexterm><primary>is_near_top_edge</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_near_top_edge</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_near_top_edge ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return True if the player is at the top-center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a69fe13ed1e333933c482d6e17e027a9d"/><section>
+    <title>is_selected_breakable_obstructed()</title>
+<indexterm><primary>is_selected_breakable_obstructed</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>is_selected_breakable_obstructed</secondary></indexterm>
+<para><computeroutput> bool entity.player.Player.is_selected_breakable_obstructed ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the selected breakable tile is obstructed by other tiles with collision.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb"/><section>
+    <title>reset()</title>
+<indexterm><primary>reset</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>reset</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.reset ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the player&apos;s general attributes.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35"/><section>
+    <title>set_health()</title>
+<indexterm><primary>set_health</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_health</secondary></indexterm>
+<para><computeroutput> Self entity.player.Player.set_health ( self, int health)</computeroutput></para>
+<para><literallayout><computeroutput>Set the player&apos;s health.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab"/><section>
+    <title>set_ideal_spawnpoint()</title>
+<indexterm><primary>set_ideal_spawnpoint</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_ideal_spawnpoint</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.set_ideal_spawnpoint ( self, Map map_obj, Camera camera_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Find the ideal starting position for the player when creating a new map.
+TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3"/><section>
+    <title>set_x()</title>
+<indexterm><primary>set_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_x</secondary></indexterm>
+<para><computeroutput> Self entity.player.Player.set_x ( self, int x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the player&apos;s x position, then return the player itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc"/><section>
+    <title>set_y()</title>
+<indexterm><primary>set_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_y</secondary></indexterm>
+<para><computeroutput> Self entity.player.Player.set_y ( self, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the player&apos;s y position, then return the player itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ae6497562697bafe8e2533da4604af7f6"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.update ( self, Game game, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Update the player.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a1bee780368e9b2abaefc6bd525af713a"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.update_ui ( self, Game game)</computeroutput></para>
+<para><literallayout><computeroutput>Update the player GUI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a812b0e8d385e586b89482e50aab85a83"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>entity.player.Player._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a8bc344ca55089329a9e4e6db79eaf2a3"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>entity.player.Player._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1afd2edb4a7f1c7115725c2c3f9f39f4b0"/><section>
+    <title>asset</title>
+<indexterm><primary>asset</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>asset</secondary></indexterm>
+<para><computeroutput>entity.player.Player.asset</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1"/><section>
+    <title>breaking</title>
+<indexterm><primary>breaking</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>breaking</secondary></indexterm>
+<para><computeroutput>entity.player.Player.breaking</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ad522fc5da677a4b49b8b83a789126460"/><section>
+    <title>breaking_tile</title>
+<indexterm><primary>breaking_tile</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>breaking_tile</secondary></indexterm>
+<para><computeroutput>entity.player.Player.breaking_tile</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a86f01aaf02dcb947ece79eec82fef671"/><section>
+    <title>camera_label</title>
+<indexterm><primary>camera_label</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>camera_label</secondary></indexterm>
+<para><computeroutput>entity.player.Player.camera_label</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a7af133b2468f2bdba4869a0b9b0d781f"/><section>
+    <title>DAMAGE_TIMER</title>
+<indexterm><primary>DAMAGE_TIMER</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>DAMAGE_TIMER</secondary></indexterm>
+<para><computeroutput>int entity.player.Player.DAMAGE_TIMER = 1<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e"/><section>
+    <title>edges</title>
+<indexterm><primary>edges</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>edges</secondary></indexterm>
+<para><computeroutput>entity.player.Player.edges</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b"/><section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>entity.player.Player.health</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a2c056b24552d7205d9d4bb2d7a72190b"/><section>
+    <title>health_bar</title>
+<indexterm><primary>health_bar</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>health_bar</secondary></indexterm>
+<para><computeroutput>entity.player.Player.health_bar</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a"/><section>
+    <title>height</title>
+<indexterm><primary>height</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>entity.player.Player.height</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a132a5d52135943fed9d183e9cf55e761"/><section>
+    <title>hotbar</title>
+<indexterm><primary>hotbar</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>hotbar</secondary></indexterm>
+<para><computeroutput>entity.player.Player.hotbar</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46"/><section>
+    <title>hurt</title>
+<indexterm><primary>hurt</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>hurt</secondary></indexterm>
+<para><computeroutput>entity.player.Player.hurt</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a7af13c9b3a48f31142417667c8437afe"/><section>
+    <title>MINING_TIMER</title>
+<indexterm><primary>MINING_TIMER</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>MINING_TIMER</secondary></indexterm>
+<para><computeroutput>int entity.player.Player.MINING_TIMER = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d"/><section>
+    <title>move</title>
+<indexterm><primary>move</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>entity.player.Player.move</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a3f635daf438f33bd15cbdf76aa030b4e"/><section>
+    <title>position_label</title>
+<indexterm><primary>position_label</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>position_label</secondary></indexterm>
+<para><computeroutput>entity.player.Player.position_label</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2"/><section>
+    <title>prev_selected_tile</title>
+<indexterm><primary>prev_selected_tile</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>prev_selected_tile</secondary></indexterm>
+<para><computeroutput>entity.player.Player.prev_selected_tile</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a0a4205b05311ff2bcbe938bbabb1c8fb"/><section>
+    <title>regen_button</title>
+<indexterm><primary>regen_button</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>regen_button</secondary></indexterm>
+<para><computeroutput>entity.player.Player.regen_button</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1af13567434a52171e6faa181eacabae6a"/><section>
+    <title>score_label</title>
+<indexterm><primary>score_label</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>score_label</secondary></indexterm>
+<para><computeroutput>entity.player.Player.score_label</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a4349d9fd6b507aaf1b2a29340146b225"/><section>
+    <title>screen_x</title>
+<indexterm><primary>screen_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>screen_x</secondary></indexterm>
+<para><computeroutput>entity.player.Player.screen_x</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a259d03b6b673fcb71a3bb54db391b280"/><section>
+    <title>screen_y</title>
+<indexterm><primary>screen_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>screen_y</secondary></indexterm>
+<para><computeroutput>entity.player.Player.screen_y</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ad0d96f20cca2a9a493501cfcd39c1f80"/><section>
+    <title>selected_tile_sx</title>
+<indexterm><primary>selected_tile_sx</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>selected_tile_sx</secondary></indexterm>
+<para><computeroutput>entity.player.Player.selected_tile_sx</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516"/><section>
+    <title>selected_tile_sy</title>
+<indexterm><primary>selected_tile_sy</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>selected_tile_sy</secondary></indexterm>
+<para><computeroutput>entity.player.Player.selected_tile_sy</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3"/><section>
+    <title>selected_tile_x</title>
+<indexterm><primary>selected_tile_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>selected_tile_x</secondary></indexterm>
+<para><computeroutput>entity.player.Player.selected_tile_x</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a83a224799adf0ed4558ae09811000dea"/><section>
+    <title>selected_tile_y</title>
+<indexterm><primary>selected_tile_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>selected_tile_y</secondary></indexterm>
+<para><computeroutput>entity.player.Player.selected_tile_y</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90"/><section>
+    <title>TEXTURE</title>
+<indexterm><primary>TEXTURE</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>TEXTURE</secondary></indexterm>
+<para><computeroutput>str entity.player.Player.TEXTURE = str(impr.files(assets) / &quot;player.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f"/><section>
+    <title>TIMERS_COUNT</title>
+<indexterm><primary>TIMERS_COUNT</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>TIMERS_COUNT</secondary></indexterm>
+<para><computeroutput>int entity.player.Player.TIMERS_COUNT = 2<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4"/><section>
+    <title>VELOCITY_STEP_START</title>
+<indexterm><primary>VELOCITY_STEP_START</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>VELOCITY_STEP_START</secondary></indexterm>
+<para><computeroutput>float entity.player.Player.VELOCITY_STEP_START = 4.5<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca"/><section>
+    <title>VELOCITY_STEP_STOP</title>
+<indexterm><primary>VELOCITY_STEP_STOP</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>VELOCITY_STEP_STOP</secondary></indexterm>
+<para><computeroutput>float entity.player.Player.VELOCITY_STEP_STOP = 5.0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982"/><section>
+    <title>velocity_x</title>
+<indexterm><primary>velocity_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>velocity_x</secondary></indexterm>
+<para><computeroutput>entity.player.Player.velocity_x</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5"/><section>
+    <title>velocity_y</title>
+<indexterm><primary>velocity_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>velocity_y</secondary></indexterm>
+<para><computeroutput>entity.player.Player.velocity_y</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a74b6d7e01d8202946ea62d150fa31174"/><section>
+    <title>width</title>
+<indexterm><primary>width</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>entity.player.Player.width</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_player_8py">player.py</link></section>
+</section>

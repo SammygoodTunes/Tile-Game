@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classdata_1_1items_1_1Items" kind="class" language="Python" prot="public">
+    <compoundname>data::items::Items</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdata_1_1items_1_1Items_1a2a2e91edadba7644c284c0b007bb2c67" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref></type>
+        <definition>Item data.items.Items::AIR</definition>
+        <argsstring></argsstring>
+        <name>AIR</name>
+        <qualifiedname>data.items.Items.AIR</qualifiedname>
+        <initializer>=  <ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1items_1_1Items_1a7c372332a60d7515f574f1957d697802" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref></type>
+        <definition>Item data.items.Items::SHOVEL</definition>
+        <argsstring></argsstring>
+        <name>SHOVEL</name>
+        <qualifiedname>data.items.Items.SHOVEL</qualifiedname>
+        <initializer>=  <ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>(x=1, tooltip_name=&quot;Shovel&quot;).set_strength(10).set_durability(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="82" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating a collection of items.</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>data.items.Items</label>
+        <link refid="classdata_1_1items_1_1Items"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>AIR</edgelabel>
+          <edgelabel>SHOVEL</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>data.items.Item</label>
+        <link refid="classdata_1_1items_1_1Item"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="76" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classdata_1_1items_1_1Items_1a2a2e91edadba7644c284c0b007bb2c67" prot="public" virt="non-virtual"><scope>data::items::Items</scope><name>AIR</name></member>
+      <member refid="classdata_1_1items_1_1Items_1a7c372332a60d7515f574f1957d697802" prot="public" virt="non-virtual"><scope>data::items::Items</scope><name>SHOVEL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

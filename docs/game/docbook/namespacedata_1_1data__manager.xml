@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacedata_1_1data__manager" xml:lang="en-US">
+<title>data.data_manager Namespace Reference</title>
+<indexterm><primary>data.data_manager</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacedata_1_1data__manager_1a5623c40122236974b332d4eb874500f3">get_game_properties</link> ()</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a43e25f7d8cf23845f2c2d4cda96dec44">get_game_property</link> (str game_property)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1ad580e9a57608df499a68e2b0f6e45405">GAME_PROPERTIES_FILE</link> = str(impr.files(data) / &quot;catchncage.properties&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a605877bc160ff810770b413ec1c66ce9">GAME_PROPERTIES_SEPARATOR</link> = &apos;=&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1ac2133243c19bb0f31327690bd7eede7e">APP_NAME</link> = &quot;APP_NAME&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a69806cab40be96b4184506965b37d628">APP_VERSION</link> = &quot;APP_VER&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacedata_1_1data__manager_1a5623c40122236974b332d4eb874500f3"/><section>
+    <title>get_game_properties()</title>
+<indexterm><primary>get_game_properties</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>get_game_properties</secondary></indexterm>
+<para><computeroutput>data.data_manager.get_game_properties ( )</computeroutput></para>
+<para><literallayout><computeroutput>Yield one game properties at a time from the game properties file.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacedata_1_1data__manager_1a43e25f7d8cf23845f2c2d4cda96dec44"/><section>
+    <title>get_game_property()</title>
+<indexterm><primary>get_game_property</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>get_game_property</secondary></indexterm>
+<para><computeroutput> str data.data_manager.get_game_property (str game_property)</computeroutput></para>
+<para><literallayout><computeroutput>Get the value of a specified game_property key.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacedata_1_1data__manager_1ac2133243c19bb0f31327690bd7eede7e"/><section>
+    <title>APP_NAME</title>
+<indexterm><primary>APP_NAME</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>APP_NAME</secondary></indexterm>
+<para><computeroutput>str data.data_manager.APP_NAME = &quot;APP_NAME&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacedata_1_1data__manager_1a69806cab40be96b4184506965b37d628"/><section>
+    <title>APP_VERSION</title>
+<indexterm><primary>APP_VERSION</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>APP_VERSION</secondary></indexterm>
+<para><computeroutput>str data.data_manager.APP_VERSION = &quot;APP_VER&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacedata_1_1data__manager_1ad580e9a57608df499a68e2b0f6e45405"/><section>
+    <title>GAME_PROPERTIES_FILE</title>
+<indexterm><primary>GAME_PROPERTIES_FILE</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>GAME_PROPERTIES_FILE</secondary></indexterm>
+<para><computeroutput>str data.data_manager.GAME_PROPERTIES_FILE = str(impr.files(data) / &quot;catchncage.properties&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacedata_1_1data__manager_1a605877bc160ff810770b413ec1c66ce9"/><section>
+    <title>GAME_PROPERTIES_SEPARATOR</title>
+<indexterm><primary>GAME_PROPERTIES_SEPARATOR</primary><secondary>data.data_manager</secondary></indexterm>
+<indexterm><primary>data.data_manager</primary><secondary>GAME_PROPERTIES_SEPARATOR</secondary></indexterm>
+<para><computeroutput>str data.data_manager.GAME_PROPERTIES_SEPARATOR = &apos;=&apos;</computeroutput></para></section>
+</section>
+</section>

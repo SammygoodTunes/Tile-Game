@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1tiles_1_1Tile" xml:lang="en-US">
+<title>data.tiles.Tile Class Reference</title>
+<indexterm><primary>data.tiles.Tile</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classdata_1_1tiles_1_1Tile_1afdcaa0ad6217eab53901fd833c3d5198">__init__</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1af49fae56a7283e7e052e807a7a03ec65">__repr__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1a13128318a7cca8880f9176a3135b52a4">get_id</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classdata_1_1tiles_1_1Tile_1a70401d1bd83c605f360e3b12f3f1a052">set_xy</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classdata_1_1tiles_1_1Tile_1a1a0d350fe6c937c04e3e4c482a625a4b">get_xy</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classdata_1_1tiles_1_1Tile_1a8d359b2164676d6b60ee39acb4e2d3e3">set_resistance</link> (self, int resistance)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classdata_1_1tiles_1_1Tile_1a4ea2b97d00b2ff6f29091c98117250fe">get_resistance</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classdata_1_1tiles_1_1Tile_1abb6d881f3636a951a854fe0c25478b40">set_damage</link> (self, int damage)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classdata_1_1tiles_1_1Tile_1ab339756ae7b4426da1aca54568779ac4">get_damage</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classdata_1_1tiles_1_1Tile_1a37ecd2a1b7c53e623a6c998a7f09e991">set_damage_delay</link> (self, float damage_delay)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classdata_1_1tiles_1_1Tile_1a254e54f0f077b746015ffddcbd371c3c">get_damage_delay</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classdata_1_1tiles_1_1Tile_1af670485f472ebee22d83fe79976b45ef">DEFAULT_ATLAS</link> = str(impr.files(assets) / &quot;atlas.png&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1ae024d64c513d0094acf45f3ae0fd5591">count_id</link> = count()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a">_xy</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb">_resistance</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1adc27ab61885a1a82fd702ccf10c357dd">_damage</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1acc45b2ddb25c2a3823837066b8876eeb">_damage_delay</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a map tile.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1afdcaa0ad6217eab53901fd833c3d5198"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None data.tiles.Tile.__init__ ( self, int x, int y)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1af49fae56a7283e7e052e807a7a03ec65"/><section>
+    <title>__repr__()</title>
+<indexterm><primary>__repr__</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>__repr__</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile.__repr__ ( self)</computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1ab339756ae7b4426da1aca54568779ac4"/><section>
+    <title>get_damage()</title>
+<indexterm><primary>get_damage</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>get_damage</secondary></indexterm>
+<para><computeroutput> int data.tiles.Tile.get_damage ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the damage amount of the tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a254e54f0f077b746015ffddcbd371c3c"/><section>
+    <title>get_damage_delay()</title>
+<indexterm><primary>get_damage_delay</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>get_damage_delay</secondary></indexterm>
+<para><computeroutput> float data.tiles.Tile.get_damage_delay ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the damage delay of the tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a13128318a7cca8880f9176a3135b52a4"/><section>
+    <title>get_id()</title>
+<indexterm><primary>get_id</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>get_id</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile.get_id ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Get the id of the tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a4ea2b97d00b2ff6f29091c98117250fe"/><section>
+    <title>get_resistance()</title>
+<indexterm><primary>get_resistance</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>get_resistance</secondary></indexterm>
+<para><computeroutput> int data.tiles.Tile.get_resistance ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the resistance of the tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a1a0d350fe6c937c04e3e4c482a625a4b"/><section>
+    <title>get_xy()</title>
+<indexterm><primary>get_xy</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>get_xy</secondary></indexterm>
+<para><computeroutput> tuple[int, int] data.tiles.Tile.get_xy ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the texture coordinate of the tile.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1abb6d881f3636a951a854fe0c25478b40"/><section>
+    <title>set_damage()</title>
+<indexterm><primary>set_damage</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>set_damage</secondary></indexterm>
+<para><computeroutput> Self data.tiles.Tile.set_damage ( self, int damage)</computeroutput></para>
+<para><literallayout><computeroutput>Set the damage amount of the tile, then return the tile itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a37ecd2a1b7c53e623a6c998a7f09e991"/><section>
+    <title>set_damage_delay()</title>
+<indexterm><primary>set_damage_delay</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>set_damage_delay</secondary></indexterm>
+<para><computeroutput> Self data.tiles.Tile.set_damage_delay ( self, float damage_delay)</computeroutput></para>
+<para><literallayout><computeroutput>Set the damage delay of the tile, then return the tile itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a8d359b2164676d6b60ee39acb4e2d3e3"/><section>
+    <title>set_resistance()</title>
+<indexterm><primary>set_resistance</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>set_resistance</secondary></indexterm>
+<para><computeroutput> Self data.tiles.Tile.set_resistance ( self, int resistance)</computeroutput></para>
+<para><literallayout><computeroutput>Set the resistance of the tile, then return the tile itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a70401d1bd83c605f360e3b12f3f1a052"/><section>
+    <title>set_xy()</title>
+<indexterm><primary>set_xy</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>set_xy</secondary></indexterm>
+<para><computeroutput> Self data.tiles.Tile.set_xy ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the texture coordinates of the tile, then return the tile itself.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1adc27ab61885a1a82fd702ccf10c357dd"/><section>
+    <title>_damage</title>
+<indexterm><primary>_damage</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>_damage</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile._damage<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1acc45b2ddb25c2a3823837066b8876eeb"/><section>
+    <title>_damage_delay</title>
+<indexterm><primary>_damage_delay</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>_damage_delay</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile._damage_delay<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb"/><section>
+    <title>_resistance</title>
+<indexterm><primary>_resistance</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>_resistance</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile._resistance<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a"/><section>
+    <title>_xy</title>
+<indexterm><primary>_xy</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>_xy</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile._xy<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1ae024d64c513d0094acf45f3ae0fd5591"/><section>
+    <title>count_id</title>
+<indexterm><primary>count_id</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>count_id</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile.count_id = count()<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1af670485f472ebee22d83fe79976b45ef"/><section>
+    <title>DEFAULT_ATLAS</title>
+<indexterm><primary>DEFAULT_ATLAS</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>DEFAULT_ATLAS</secondary></indexterm>
+<para><computeroutput>str data.tiles.Tile.DEFAULT_ATLAS = str(impr.files(assets) / &quot;atlas.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_tiles_8py">tiles.py</link></section>
+</section>

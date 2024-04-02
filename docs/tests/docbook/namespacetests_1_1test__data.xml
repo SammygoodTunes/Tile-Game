@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacetests_1_1test__data" xml:lang="en-US">
+<title>tests.test_data Namespace Reference</title>
+<indexterm><primary>tests.test_data</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a90fdc87cb37eed87544ee49471f77697">test_data_folder_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1aaa5bbd20effbe4d1987012ec5c6ede70">test_game_properties_file_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a6dc7cd9039a6a58a951ceb3adf55483b">test_get_game_properties_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a3de1a4bbd952aee9b36788bd37f2ef10">test_get_game_property</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a5f0a77c7b139ccb8be17dc51a5951d88">test_get_game_properties</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a13c5f23b51240722ff5103fbf9eca117">test_item_creation</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a9ebe0f8c63f094485afa069bcc280ccf">test_mouse_properties</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetests_1_1test__data_1a4a469c4fe78d5e8b5ef80775db4de4be">test_tile_creation</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Tests dedicated to the data modules.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacetests_1_1test__data_1a90fdc87cb37eed87544ee49471f77697"/><section>
+    <title>test_data_folder_exists()</title>
+<indexterm><primary>test_data_folder_exists</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_data_folder_exists</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_data_folder_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: data_folder_exists
+Desc: Tests if the data folder exists.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1aaa5bbd20effbe4d1987012ec5c6ede70"/><section>
+    <title>test_game_properties_file_exists()</title>
+<indexterm><primary>test_game_properties_file_exists</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_game_properties_file_exists</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_game_properties_file_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: game_properties_file_exists
+Desc: Tests if the game properties file exists.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a5f0a77c7b139ccb8be17dc51a5951d88"/><section>
+    <title>test_get_game_properties()</title>
+<indexterm><primary>test_get_game_properties</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_get_game_properties</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_get_game_properties ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: get_game_properties
+Desc: Tests if the get_game_properties function returns the correct keys and values.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a6dc7cd9039a6a58a951ceb3adf55483b"/><section>
+    <title>test_get_game_properties_exists()</title>
+<indexterm><primary>test_get_game_properties_exists</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_get_game_properties_exists</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_get_game_properties_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: get_game_properties_exists
+Desc: Tests if all game property keys exist in the game properties file.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a3de1a4bbd952aee9b36788bd37f2ef10"/><section>
+    <title>test_get_game_property()</title>
+<indexterm><primary>test_get_game_property</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_get_game_property</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_get_game_property ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: get_game_property
+Desc: Tests if the get_game_property function returns the correct value from the key it was given.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a13c5f23b51240722ff5103fbf9eca117"/><section>
+    <title>test_item_creation()</title>
+<indexterm><primary>test_item_creation</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_item_creation</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_item_creation ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: item_creation
+Desc: Tests if items are created correctly.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a9ebe0f8c63f094485afa069bcc280ccf"/><section>
+    <title>test_mouse_properties()</title>
+<indexterm><primary>test_mouse_properties</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_mouse_properties</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_mouse_properties ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: mouse_properties
+Desc: Tests if the mouse properties possess the same values defined in Mouse.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacetests_1_1test__data_1a4a469c4fe78d5e8b5ef80775db4de4be"/><section>
+    <title>test_tile_creation()</title>
+<indexterm><primary>test_tile_creation</primary><secondary>tests.test_data</secondary></indexterm>
+<indexterm><primary>tests.test_data</primary><secondary>test_tile_creation</secondary></indexterm>
+<para><computeroutput>tests.test_data.test_tile_creation ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: tile_creation
+Desc: Tests if tiles are created correctly.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

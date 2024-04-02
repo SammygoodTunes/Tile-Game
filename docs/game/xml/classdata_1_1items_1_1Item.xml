@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classdata_1_1items_1_1Item" kind="class" language="Python" prot="public">
+    <compoundname>data::items::Item</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdata_1_1items_1_1Item_1a566cd55f53f32dffd0f3535368f4056f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str data.items.Item::DEFAULT_ATLAS</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_ATLAS</name>
+        <qualifiedname>data.items.Item.DEFAULT_ATLAS</qualifiedname>
+        <initializer>=  str(impr.files(assets) / &quot;items.png&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>data.items.Item::_xy</definition>
+        <argsstring></argsstring>
+        <name>_xy</name>
+        <qualifiedname>data.items.Item._xy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>data.items.Item::_tooltip_name</definition>
+        <argsstring></argsstring>
+        <name>_tooltip_name</name>
+        <qualifiedname>data.items.Item._tooltip_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>data.items.Item::_strength</definition>
+        <argsstring></argsstring>
+        <name>_strength</name>
+        <qualifiedname>data.items.Item._strength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>data.items.Item::_durability</definition>
+        <argsstring></argsstring>
+        <name>_durability</name>
+        <qualifiedname>data.items.Item._durability</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1afebde3a259a32282ba3fbf3fb0859b32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None data.items.Item.__init__</definition>
+        <argsstring>(self, int x=0, int y=0, str tooltip_name=&apos;&apos;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>data.items.Item.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>tooltip_name</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1ae1d5dfd445e5197468a44d8f4b65f0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self data.items.Item.set_xy</definition>
+        <argsstring>(self, int x, int y)</argsstring>
+        <name>set_xy</name>
+        <qualifiedname>data.items.Item.set_xy</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the texture coordinates of the item, then return the item itself.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1aa63be91590e094ea06461f8585655e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[int, int]</type>
+        <definition> tuple[int, int] data.items.Item.get_xy</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_xy</name>
+        <qualifiedname>data.items.Item.get_xy</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Return the texture coordinates of the item.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1abbfa7f9b0c87234039796f933a76fb7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self data.items.Item.set_tooltip_name</definition>
+        <argsstring>(self, str tooltip_name)</argsstring>
+        <name>set_tooltip_name</name>
+        <qualifiedname>data.items.Item.set_tooltip_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>tooltip_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the tooltip name of the item, then return the item itself.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1a312597a6fd569ab331d41945018d23ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str data.items.Item.get_tooltip_name</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_tooltip_name</name>
+        <qualifiedname>data.items.Item.get_tooltip_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Return the tooltip name of the item.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1a074e468e3807c5ef2e3557d3402e75b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self data.items.Item.set_strength</definition>
+        <argsstring>(self, int strength)</argsstring>
+        <name>set_strength</name>
+        <qualifiedname>data.items.Item.set_strength</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>strength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the strength of the item, then return the item itself.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1a3c511e116b3905e486fe022a456b0958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int data.items.Item.get_strength</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_strength</name>
+        <qualifiedname>data.items.Item.get_strength</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Return the strength of the item.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1afd7bd8b362de30f899eb53a03eb97c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self data.items.Item.set_durability</definition>
+        <argsstring>(self, int durability)</argsstring>
+        <name>set_durability</name>
+        <qualifiedname>data.items.Item.set_durability</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the durability of the item, then return the item itself.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="62" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classdata_1_1items_1_1Item_1ab75f86ada76a8eb49698a688e8d138a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int data.items.Item.get_durability</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_durability</name>
+        <qualifiedname>data.items.Item.get_durability</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Return the durability of the item.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="69" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="69" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating a usable item.</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items.py" bodystart="9" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classdata_1_1items_1_1Item_1afebde3a259a32282ba3fbf3fb0859b32" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>__init__</name></member>
+      <member refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" prot="protected" virt="non-virtual"><scope>data::items::Item</scope><name>_durability</name></member>
+      <member refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" prot="protected" virt="non-virtual"><scope>data::items::Item</scope><name>_strength</name></member>
+      <member refid="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" prot="protected" virt="non-virtual"><scope>data::items::Item</scope><name>_tooltip_name</name></member>
+      <member refid="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" prot="protected" virt="non-virtual"><scope>data::items::Item</scope><name>_xy</name></member>
+      <member refid="classdata_1_1items_1_1Item_1a566cd55f53f32dffd0f3535368f4056f" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>DEFAULT_ATLAS</name></member>
+      <member refid="classdata_1_1items_1_1Item_1ab75f86ada76a8eb49698a688e8d138a1" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>get_durability</name></member>
+      <member refid="classdata_1_1items_1_1Item_1a3c511e116b3905e486fe022a456b0958" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>get_strength</name></member>
+      <member refid="classdata_1_1items_1_1Item_1a312597a6fd569ab331d41945018d23ae" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>get_tooltip_name</name></member>
+      <member refid="classdata_1_1items_1_1Item_1aa63be91590e094ea06461f8585655e62" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>get_xy</name></member>
+      <member refid="classdata_1_1items_1_1Item_1afd7bd8b362de30f899eb53a03eb97c1d" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>set_durability</name></member>
+      <member refid="classdata_1_1items_1_1Item_1a074e468e3807c5ef2e3557d3402e75b3" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>set_strength</name></member>
+      <member refid="classdata_1_1items_1_1Item_1abbfa7f9b0c87234039796f933a76fb7e" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>set_tooltip_name</name></member>
+      <member refid="classdata_1_1items_1_1Item_1ae1d5dfd445e5197468a44d8f4b65f0f3" prot="public" virt="non-virtual"><scope>data::items::Item</scope><name>set_xy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
