@@ -70,8 +70,6 @@ class Game(Window):
             if e.type == pygame.KEYDOWN:
                 if e.key == pygame.K_RETURN and pygame.key.get_mods() & pygame.KMOD_ALT:
                     self.toggle_fullscreen()
-                    self.resize(e)
-                    self.update_all_uis()
             if e.type == pygame.VIDEORESIZE:
                 self.resize(e)
                 self.update_all_uis()
