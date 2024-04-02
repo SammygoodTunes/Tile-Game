@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1slot_1_1Slot" kind="class" language="Python" prot="public">
+    <compoundname>gui::slot::Slot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Widget</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a0feed12953ec4d3cd8a7c0e39aa3448e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.slot.Slot::MIN_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MIN_SIZE</name>
+        <qualifiedname>gui.slot.Slot.MIN_SIZE</qualifiedname>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a125f92c71492082f06c27089c5ba0b52" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.slot.Slot::MAX_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_SIZE</name>
+        <qualifiedname>gui.slot.Slot.MAX_SIZE</qualifiedname>
+        <initializer>=  75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1ac1bba07f84987aa679707477064a3911" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>gui.slot.Slot._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a9d69a713b4bba989e8c09cf863cbcea2" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>gui.slot.Slot._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a3f80a082bb45c9b41d1e62a8f3971f8e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_outline_colour</definition>
+        <argsstring></argsstring>
+        <name>_outline_colour</name>
+        <qualifiedname>gui.slot.Slot._outline_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a08cf99677eb31208d286841b3117a218" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_inner_colour</definition>
+        <argsstring></argsstring>
+        <name>_inner_colour</name>
+        <qualifiedname>gui.slot.Slot._inner_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a3de2fcca06ee64a3b9faf3491bdb302e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_fill_colour</definition>
+        <argsstring></argsstring>
+        <name>_fill_colour</name>
+        <qualifiedname>gui.slot.Slot._fill_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a59faacc95ea90a7ec70f443bb9eec495" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_outline_width</definition>
+        <argsstring></argsstring>
+        <name>_outline_width</name>
+        <qualifiedname>gui.slot.Slot._outline_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1abdfacb983a3d2e663f88cbd40b656d33" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_inner_width</definition>
+        <argsstring></argsstring>
+        <name>_inner_width</name>
+        <qualifiedname>gui.slot.Slot._inner_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1abc714567101b3c6fac23de8e20294456" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_fill_alpha</definition>
+        <argsstring></argsstring>
+        <name>_fill_alpha</name>
+        <qualifiedname>gui.slot.Slot._fill_alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a37e33f467920674be3fd6fb0d7790bde" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_fill_surface</definition>
+        <argsstring></argsstring>
+        <name>_fill_surface</name>
+        <qualifiedname>gui.slot.Slot._fill_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1aee1b22f93bd58a03f9bc2e25c2135ffb" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_item</definition>
+        <argsstring></argsstring>
+        <name>_item</name>
+        <qualifiedname>gui.slot.Slot._item</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a1c648c12e35385068135d489e189cbb0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_item_asset</definition>
+        <argsstring></argsstring>
+        <name>_item_asset</name>
+        <qualifiedname>gui.slot.Slot._item_asset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1aed81c9205b49a9ea4a40ad4ef07a8bbd" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_item_count</definition>
+        <argsstring></argsstring>
+        <name>_item_count</name>
+        <qualifiedname>gui.slot.Slot._item_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a0540dbc5a1c412ef482bb35543106dbf" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_selected</definition>
+        <argsstring></argsstring>
+        <name>_selected</name>
+        <qualifiedname>gui.slot.Slot._selected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1a655a540a2f731c6e03284c909f4b6bde" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.slot.Slot._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1slot_1_1Slot_1afa9defb74933c99f9e2364d25afdf585" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.slot.Slot::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.slot.Slot._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a97e3949b3aee79c153c6a8d67371bb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.__init__</definition>
+        <argsstring>(self, x=0, y=0)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.slot.Slot.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="21" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a982136328f20e021108c7a708d19ab96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.slot.Slot.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the slot and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="39" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a1b92abe5a6888a4e4fc27666f14b7319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>gui.slot.Slot.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the slot and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a323fedae9f981eccfc5444ce21a90689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.center_horizontally</definition>
+        <argsstring>(self, parent_x, parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>gui.slot.Slot.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the slot horizontally relative to the specified parent, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="75" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1aa11add94da4df6ae37639e6fd6950b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.center_vertically</definition>
+        <argsstring>(self, parent_y, parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>gui.slot.Slot.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the slot vertically relative to the specified parent, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="82" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1ae7f21b43e4a937ab5a97e6a162ad5727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.select</definition>
+        <argsstring>(self)</argsstring>
+        <name>select</name>
+        <qualifiedname>gui.slot.Slot.select</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="89" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1ae2fac4a282dd5a43375490ac4d8fa995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.unselect</definition>
+        <argsstring>(self)</argsstring>
+        <name>unselect</name>
+        <qualifiedname>gui.slot.Slot.unselect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Unselect the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1ada12dff2980d6b4aaaf809dee1730fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_selected</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_selected</name>
+        <qualifiedname>gui.slot.Slot.get_selected</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the slot is selected or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="103" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="103" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a5e6879bd96eed171ade44a4ffdde4c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_width</definition>
+        <argsstring>(self, width)</argsstring>
+        <name>set_width</name>
+        <qualifiedname>gui.slot.Slot.set_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the width of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="109" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1affa448f13d9b60d7f64e42f09f8f7596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width</name>
+        <qualifiedname>gui.slot.Slot.get_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="116" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="116" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a48f00b67dead50a3f5618b4861ff23b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_height</definition>
+        <argsstring>(self, height)</argsstring>
+        <name>set_height</name>
+        <qualifiedname>gui.slot.Slot.set_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the height of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="122" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a54947ec9c0e53c7c54539f57b574b450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height</name>
+        <qualifiedname>gui.slot.Slot.get_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="129" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a2af6372e4e26eed273c354bd36d73da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_inner_colour</definition>
+        <argsstring>(self, inner_colour)</argsstring>
+        <name>set_inner_colour</name>
+        <qualifiedname>gui.slot.Slot.set_inner_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inner_colour</type>
+          <defname>inner_colour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the inner colour of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="135" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a6b740c1e6e17e108cf2b73756649e7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_inner_colour</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_inner_colour</name>
+        <qualifiedname>gui.slot.Slot.get_inner_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the inner colour of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="142" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="142" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1aef811bb518da0f5211fd9c3545c8561f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_outline_colour</definition>
+        <argsstring>(self, outline_colour)</argsstring>
+        <name>set_outline_colour</name>
+        <qualifiedname>gui.slot.Slot.set_outline_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>outline_colour</type>
+          <defname>outline_colour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the outline colour of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="148" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1aa51a7372c5c2936547e9f5bfd3a3a050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_inner_width</definition>
+        <argsstring>(self, inner_width)</argsstring>
+        <name>set_inner_width</name>
+        <qualifiedname>gui.slot.Slot.set_inner_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inner_width</type>
+          <defname>inner_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the inner width of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="155" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a40c6e728492a0cfd0836c9acced205e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_inner_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_inner_width</name>
+        <qualifiedname>gui.slot.Slot.get_inner_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the inner width of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="162" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a4c9b5831890ac5ac6da89533cf967158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_outline_width</definition>
+        <argsstring>(self, outline_width)</argsstring>
+        <name>get_outline_width</name>
+        <qualifiedname>gui.slot.Slot.get_outline_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>outline_width</type>
+          <defname>outline_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the outline width of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="168" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="168" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a683e21b7ffa4b80fbae760f62c844a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.set_item</definition>
+        <argsstring>(self, Item item)</argsstring>
+        <name>set_item</name>
+        <qualifiedname>gui.slot.Slot.set_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Item</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the item of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="175" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="175" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a8123ce52213ba1d51c14eb6bb9fc06ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_item</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_item</name>
+        <qualifiedname>gui.slot.Slot.get_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the item of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="185" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1a9c8f96a68306cb4326f6ccb94e4a6320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.get_item_asset</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_item_asset</name>
+        <qualifiedname>gui.slot.Slot.get_item_asset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the item asset of the slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="191" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1slot_1_1Slot_1abe92873d6c1505251673d8de62840ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.slot.Slot.clear_item_asset</definition>
+        <argsstring>(self)</argsstring>
+        <name>clear_item_asset</name>
+        <qualifiedname>gui.slot.Slot.clear_item_asset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Clear the item asset of the slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="197" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="197" bodyend="203"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a slot.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.slot.Slot</label>
+        <link refid="classgui_1_1slot_1_1Slot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.slot.Slot</label>
+        <link refid="classgui_1_1slot_1_1Slot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/slot.py" bodystart="13" bodyend="203"/>
+    <listofallmembers>
+      <member refid="classgui_1_1slot_1_1Slot_1a97e3949b3aee79c153c6a8d67371bb12" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>__init__</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1abc714567101b3c6fac23de8e20294456" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_fill_alpha</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a3de2fcca06ee64a3b9faf3491bdb302e" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_fill_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a37e33f467920674be3fd6fb0d7790bde" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_fill_surface</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a9d69a713b4bba989e8c09cf863cbcea2" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_height</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a08cf99677eb31208d286841b3117a218" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_inner_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1abdfacb983a3d2e663f88cbd40b656d33" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_inner_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1aee1b22f93bd58a03f9bc2e25c2135ffb" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_item</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a1c648c12e35385068135d489e189cbb0" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_item_asset</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1aed81c9205b49a9ea4a40ad4ef07a8bbd" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_item_count</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a3f80a082bb45c9b41d1e62a8f3971f8e" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_outline_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a59faacc95ea90a7ec70f443bb9eec495" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_outline_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a0540dbc5a1c412ef482bb35543106dbf" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_selected</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1ac1bba07f84987aa679707477064a3911" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a655a540a2f731c6e03284c909f4b6bde" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_x</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1afa9defb74933c99f9e2364d25afdf585" prot="protected" virt="non-virtual"><scope>gui::slot::Slot</scope><name>_y</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a323fedae9f981eccfc5444ce21a90689" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>center_horizontally</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1aa11add94da4df6ae37639e6fd6950b59" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>center_vertically</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1abe92873d6c1505251673d8de62840ec0" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>clear_item_asset</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a982136328f20e021108c7a708d19ab96" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>draw</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a54947ec9c0e53c7c54539f57b574b450" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_height</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a6b740c1e6e17e108cf2b73756649e7f6" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_inner_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a40c6e728492a0cfd0836c9acced205e5" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_inner_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a8123ce52213ba1d51c14eb6bb9fc06ff" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_item</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a9c8f96a68306cb4326f6ccb94e4a6320" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_item_asset</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a4c9b5831890ac5ac6da89533cf967158" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_outline_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1ada12dff2980d6b4aaaf809dee1730fe6" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_selected</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1affa448f13d9b60d7f64e42f09f8f7596" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>get_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a125f92c71492082f06c27089c5ba0b52" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>MAX_SIZE</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a0feed12953ec4d3cd8a7c0e39aa3448e" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>MIN_SIZE</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1ae7f21b43e4a937ab5a97e6a162ad5727" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>select</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a48f00b67dead50a3f5618b4861ff23b5" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_height</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a2af6372e4e26eed273c354bd36d73da3" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_inner_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1aa51a7372c5c2936547e9f5bfd3a3a050" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_inner_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a683e21b7ffa4b80fbae760f62c844a5b" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_item</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1aef811bb518da0f5211fd9c3545c8561f" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_outline_colour</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a5e6879bd96eed171ade44a4ffdde4c29" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>set_width</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1ae2fac4a282dd5a43375490ac4d8fa995" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>unselect</name></member>
+      <member refid="classgui_1_1slot_1_1Slot_1a1b92abe5a6888a4e4fc27666f14b7319" prot="public" virt="non-virtual"><scope>gui::slot::Slot</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

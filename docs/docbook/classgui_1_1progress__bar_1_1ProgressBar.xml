@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1progress__bar_1_1ProgressBar" xml:lang="en-US">
+<title>gui.progress_bar.ProgressBar Class Reference</title>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary></indexterm>
+<para>Inheritance diagram for gui.progress_bar.ProgressBar:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1progress__bar_1_1ProgressBar.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1aaa2cec04f0769593869fd717f4ca56b3">__init__</link> (self, title=&quot;&quot;, x=0, y=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1abc78e7cf44c3e53dc639092be129d992">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ab857a1549c0e7412eabd841cdef72bf5">update</link> (self, window)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a7b039495d01b82bf89b89c20344dd98d">refresh</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a788281a8cd66503495704f07a05a0ad0">center_horizontally</link> (self, parent_x, parent_width)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a14ed3d1bfa2e4346541b2493f63ae25f">center_vertically</link> (self, parent_y, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a09e7b9d8a7f8439f3e332b4b071c8ae2">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a6dc3b4bc2e8692d6210bdfdc6c425a68">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a74e6909a3d3dd27f132e52747926bca5">set_width</link> (self, width)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a724e40058bad92a9c01749ce17bd1f94">get_width</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ad7b24e5b66730eda55ab0dcf3e8dbb1e">set_height</link> (self, height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1aa7e59e4224a01d551745b09cdb3f7396">get_height</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a5eb11454358e613a283707213d7c89e3">set_value</link> (self, value)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a4ccfbc24971fffc021962cc1d2322b92">get_value</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a70978598e2d1e13c37646e12b431d235">set_value_bounds</link> (self, min_value=None, max_value=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a7837681ef1672879ae6df84b6400b10a">get_value_bounds</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ac21990e0deda9daee2852bf6dff2acf6">set_unfilled_colour</link> (self, unfilled_colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a10e7fcfde8457269be1c4506d18d1e80">get_unfilled_colour</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a464f7fbbffe3334929f0ed15689464d4">set_filled_start_colour</link> (self, filled_start_colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a6f189e509ebc4502fa191b36619f1937">get_filled_start_colour</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ae0922644772686915625ce462065c72d">set_filled_end_color</link> (self, filled_end_colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a3528cb47bf064a3746491ac2aa0c9b46">get_filled_end_colour</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a63e2bb02b55b6c20cda3787e354feeb0">set_title</link> (self, title)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1af174691e2581ab2e9874c2e35cd90379">get_title</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a5f25f62703f41ac7da7932ca81ea18ff">info_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a674b2dc5d4de4cb63d4ab727880b2bca">progress_label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1afceac4be0ceabe34afd39ed9c411c1d7">MIN_WIDTH</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a7a5b67d3a3dcac49355f5505258a8f14">MAX_WIDTH</link> = 500</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1afd681b2c885f682c6277bb288099fde5">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a09fea350b12db5114f84dc02aacfc9f7">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ab39b32cce299f107f618284f06851425">_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1aaa87a440b177bc02001725c8c1c4bead">_min_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a473128e850d97294d44b079db3daf79c">_max_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a29b496cc73d64b76077e398632688534">_unfilled_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a63ba78ff2f3bd45df7820d0fea0ec13a">_filled_start_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a76ddebd735aed16ae112761aa594fa35">_filled_end_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a6171b9b6f2d8159801a32c294cee7ff7">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a9c4dfad17946ee8bb8c85c695e06b005">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a progress bar
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1aaa2cec04f0769593869fd717f4ca56b3"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.__init__ ( self,  title = <computeroutput>&quot;&quot;</computeroutput>
+,  x = <computeroutput>0</computeroutput>
+,  y = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a09e7b9d8a7f8439f3e332b4b071c8ae2"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>center</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar on both axes relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a788281a8cd66503495704f07a05a0ad0"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a14ed3d1bfa2e4346541b2493f63ae25f"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a6dc3b4bc2e8692d6210bdfdc6c425a68"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar with center() and offset it by x and y relative to the specified parent, then return the
+progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1abc78e7cf44c3e53dc639092be129d992"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a3528cb47bf064a3746491ac2aa0c9b46"/><section>
+    <title>get_filled_end_colour()</title>
+<indexterm><primary>get_filled_end_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_filled_end_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_filled_end_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the filled end colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a6f189e509ebc4502fa191b36619f1937"/><section>
+    <title>get_filled_start_colour()</title>
+<indexterm><primary>get_filled_start_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_filled_start_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_filled_start_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the filled start colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1aa7e59e4224a01d551745b09cdb3f7396"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1af174691e2581ab2e9874c2e35cd90379"/><section>
+    <title>get_title()</title>
+<indexterm><primary>get_title</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_title</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_title ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the title text of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a10e7fcfde8457269be1c4506d18d1e80"/><section>
+    <title>get_unfilled_colour()</title>
+<indexterm><primary>get_unfilled_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_unfilled_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_unfilled_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the unfilled colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a4ccfbc24971fffc021962cc1d2322b92"/><section>
+    <title>get_value()</title>
+<indexterm><primary>get_value</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_value</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_value ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the value of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a7837681ef1672879ae6df84b6400b10a"/><section>
+    <title>get_value_bounds()</title>
+<indexterm><primary>get_value_bounds</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_value_bounds</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_value_bounds ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the value bounds of the progress bar (min/max values).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a724e40058bad92a9c01749ce17bd1f94"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a7b039495d01b82bf89b89c20344dd98d"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1ae0922644772686915625ce462065c72d"/><section>
+    <title>set_filled_end_color()</title>
+<indexterm><primary>set_filled_end_color</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_filled_end_color</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_filled_end_color ( self,  filled_end_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the filled end colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a464f7fbbffe3334929f0ed15689464d4"/><section>
+    <title>set_filled_start_colour()</title>
+<indexterm><primary>set_filled_start_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_filled_start_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_filled_start_colour ( self,  filled_start_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the filled start colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1ad7b24e5b66730eda55ab0dcf3e8dbb1e"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_height ( self,  height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a63e2bb02b55b6c20cda3787e354feeb0"/><section>
+    <title>set_title()</title>
+<indexterm><primary>set_title</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_title</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_title ( self,  title)</computeroutput></para>
+<para><literallayout><computeroutput>Set the title text of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1ac21990e0deda9daee2852bf6dff2acf6"/><section>
+    <title>set_unfilled_colour()</title>
+<indexterm><primary>set_unfilled_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_unfilled_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_unfilled_colour ( self,  unfilled_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the unfilled colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a5eb11454358e613a283707213d7c89e3"/><section>
+    <title>set_value()</title>
+<indexterm><primary>set_value</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_value</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_value ( self,  value)</computeroutput></para>
+<para><literallayout><computeroutput>Set the value of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a70978598e2d1e13c37646e12b431d235"/><section>
+    <title>set_value_bounds()</title>
+<indexterm><primary>set_value_bounds</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_value_bounds</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_value_bounds ( self,  min_value = <computeroutput>None</computeroutput>
+,  max_value = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the value bounds of the progress bar (min/max values), then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a74e6909a3d3dd27f132e52747926bca5"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.set_width ( self,  width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1ab857a1549c0e7412eabd841cdef72bf5"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a76ddebd735aed16ae112761aa594fa35"/><section>
+    <title>_filled_end_colour</title>
+<indexterm><primary>_filled_end_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_filled_end_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._filled_end_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a63ba78ff2f3bd45df7820d0fea0ec13a"/><section>
+    <title>_filled_start_colour</title>
+<indexterm><primary>_filled_start_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_filled_start_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._filled_start_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a09fea350b12db5114f84dc02aacfc9f7"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a473128e850d97294d44b079db3daf79c"/><section>
+    <title>_max_value</title>
+<indexterm><primary>_max_value</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_max_value</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._max_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1aaa87a440b177bc02001725c8c1c4bead"/><section>
+    <title>_min_value</title>
+<indexterm><primary>_min_value</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_min_value</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._min_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a29b496cc73d64b76077e398632688534"/><section>
+    <title>_unfilled_colour</title>
+<indexterm><primary>_unfilled_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_unfilled_colour</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._unfilled_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1ab39b32cce299f107f618284f06851425"/><section>
+    <title>_value</title>
+<indexterm><primary>_value</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_value</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1afd681b2c885f682c6277bb288099fde5"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a6171b9b6f2d8159801a32c294cee7ff7"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a9c4dfad17946ee8bb8c85c695e06b005"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a5f25f62703f41ac7da7932ca81ea18ff"/><section>
+    <title>info_label</title>
+<indexterm><primary>info_label</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>info_label</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.info_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a7a5b67d3a3dcac49355f5505258a8f14"/><section>
+    <title>MAX_WIDTH</title>
+<indexterm><primary>MAX_WIDTH</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>MAX_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.progress_bar.ProgressBar.MAX_WIDTH = 500<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1afceac4be0ceabe34afd39ed9c411c1d7"/><section>
+    <title>MIN_WIDTH</title>
+<indexterm><primary>MIN_WIDTH</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>MIN_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.progress_bar.ProgressBar.MIN_WIDTH = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a674b2dc5d4de4cb63d4ab727880b2bca"/><section>
+    <title>progress_label</title>
+<indexterm><primary>progress_label</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>progress_label</secondary></indexterm>
+<para><computeroutput>gui.progress_bar.ProgressBar.progress_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_progress__bar_8py">progress_bar.py</link></section>
+</section>

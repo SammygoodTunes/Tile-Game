@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screen__manager_1_1Screens" xml:lang="en-US">
+<title>gui.screen_manager.Screens Class Reference</title>
+<indexterm><primary>gui.screen_manager.Screens</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a95b1127a58160800fa91ec2b6ccea19a">__init__</link> (self, <link linkend="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646">window</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a0281763358f4f7e48381f0c234a8e9d5">link_game</link> (self, game_obj)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a0cb039e4c4c56ccf0ce5d6c1bc1c62df">events</link> (self, e)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1ab7928128880020a3b2e8b2513041d8e6">update</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a36bbf4721605d77c0a6570fb3e504a49">update_ui</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a760e728fd8477a60e00babf949c9f276">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341">screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a647d8eb2c2e337efee82d04e499e4b7b">main_menu</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1afbdc3c8162678db8583aba629623222d">loading_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a89e66b9c8de4d304ffe2eab2bb9ab8b6">pause_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a1143bf620c4cc39f4933c5942596c749">options_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a3fd9a3c6007911da53e19e1ba971d142">credits_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a39700556405bddc8add791eec0add77d">gameover_screen</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a collection of screens.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a95b1127a58160800fa91ec2b6ccea19a"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a0cb039e4c4c56ccf0ce5d6c1bc1c62df"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>events</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.events ( self,  e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the events of the different screens.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a0281763358f4f7e48381f0c234a8e9d5"/><section>
+    <title>link_game()</title>
+<indexterm><primary>link_game</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>link_game</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.link_game ( self,  game_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Link the global game instance.
+TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ab7928128880020a3b2e8b2513041d8e6"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.update ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screens.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a36bbf4721605d77c0a6570fb3e504a49"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UIs.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a3fd9a3c6007911da53e19e1ba971d142"/><section>
+    <title>credits_screen</title>
+<indexterm><primary>credits_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>credits_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.credits_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a760e728fd8477a60e00babf949c9f276"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.game</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a39700556405bddc8add791eec0add77d"/><section>
+    <title>gameover_screen</title>
+<indexterm><primary>gameover_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>gameover_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.gameover_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1afbdc3c8162678db8583aba629623222d"/><section>
+    <title>loading_screen</title>
+<indexterm><primary>loading_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>loading_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.loading_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a647d8eb2c2e337efee82d04e499e4b7b"/><section>
+    <title>main_menu</title>
+<indexterm><primary>main_menu</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>main_menu</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.main_menu</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a1143bf620c4cc39f4933c5942596c749"/><section>
+    <title>options_screen</title>
+<indexterm><primary>options_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>options_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.options_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a89e66b9c8de4d304ffe2eab2bb9ab8b6"/><section>
+    <title>pause_screen</title>
+<indexterm><primary>pause_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>pause_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.pause_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341"/><section>
+    <title>screen</title>
+<indexterm><primary>screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_screen__manager_8py">screen_manager.py</link></section>
+</section>

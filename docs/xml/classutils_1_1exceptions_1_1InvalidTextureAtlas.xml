@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classutils_1_1exceptions_1_1InvalidTextureAtlas" kind="class" language="Python" prot="public">
+    <compoundname>utils::exceptions::InvalidTextureAtlas</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classutils_1_1exceptions_1_1InvalidTextureAtlas_1aa8e682a7462f89e1e0a479572d845f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utils.exceptions.InvalidTextureAtlas.__init__</definition>
+        <argsstring>(self, message=&quot;Invalid texture atlas, have you loaded one with set_atlas()?&quot;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>utils.exceptions.InvalidTextureAtlas.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+          <defval>&quot;Invalid texture atlas, have you loaded one with set_atlas()?&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the exception caused by loading an invalid texture atlas.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>utils.exceptions.InvalidTextureAtlas</label>
+        <link refid="classutils_1_1exceptions_1_1InvalidTextureAtlas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>utils.exceptions.InvalidTextureAtlas</label>
+        <link refid="classutils_1_1exceptions_1_1InvalidTextureAtlas"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" line="3" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" bodystart="3" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classutils_1_1exceptions_1_1InvalidTextureAtlas_1aa8e682a7462f89e1e0a479572d845f5f" prot="public" virt="non-virtual"><scope>utils::exceptions::InvalidTextureAtlas</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

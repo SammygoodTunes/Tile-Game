@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classworld_1_1map__manager_1_1Map" kind="class" language="Python" prot="public">
+    <compoundname>world::map_manager::Map</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple world.map_manager.Map::DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <qualifiedname>world.map_manager.Map.DEFAULT</qualifiedname>
+        <initializer>=  ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
+               + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
+               + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int world.map_manager.Map::SEED_RANGE</definition>
+        <argsstring></argsstring>
+        <name>SEED_RANGE</name>
+        <qualifiedname>world.map_manager.Map.SEED_RANGE</qualifiedname>
+        <initializer>=  2 ** 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_seed</definition>
+        <argsstring></argsstring>
+        <name>_seed</name>
+        <qualifiedname>world.map_manager.Map._seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a16a61bf50eec085775edada296091b4c" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>world.map_manager.Map._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1adfbf908d6b22c9b28e77a555bdb561f9" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>world.map_manager.Map._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1afc5aee00ce6d3b7e1cb048bcf908967a" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>world.map_manager.Map._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1af42db3e4aa3142a31f587a9cb2967a72" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>world.map_manager.Map._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a42adbc36b9af00dcfdd57b2a0d1bd6e9" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_surface</definition>
+        <argsstring></argsstring>
+        <name>_surface</name>
+        <qualifiedname>world.map_manager.Map._surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a71980cc400700fecfe72535098390515" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_dynatile_surface</definition>
+        <argsstring></argsstring>
+        <name>_dynatile_surface</name>
+        <qualifiedname>world.map_manager.Map._dynatile_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a268983063ebe899899eaa120f7829535" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_ready</definition>
+        <argsstring></argsstring>
+        <name>_ready</name>
+        <qualifiedname>world.map_manager.Map._ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a3115ee328e5316fff5e7a848851684dc" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_dynatile_data</definition>
+        <argsstring></argsstring>
+        <name>_dynatile_data</name>
+        <qualifiedname>world.map_manager.Map._dynatile_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a78803eb44858ece1544c3ae36e4476e2" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <qualifiedname>world.map_manager.Map._data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="136" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a53b89b13ce52b571e4198c5a11a65ae0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::perlin_noise</definition>
+        <argsstring></argsstring>
+        <name>perlin_noise</name>
+        <qualifiedname>world.map_manager.Map.perlin_noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1ad65d73642953633f7d900822c9c07787" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::generate_data_event</definition>
+        <argsstring></argsstring>
+        <name>generate_data_event</name>
+        <qualifiedname>world.map_manager.Map.generate_data_event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworld_1_1map__manager_1_1Map_1a1026345a49bbe0b7a681b090261cb82c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>world.map_manager.Map::load_data_event</definition>
+        <argsstring></argsstring>
+        <name>load_data_event</name>
+        <qualifiedname>world.map_manager.Map.load_data_event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ac370d03b13bf30a3d1c08f1ddc1e4df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.__init__</definition>
+        <argsstring>(self, width, height)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>world.map_manager.Map.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="25" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a7d6e80449e57b91d42252f204ea45eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.generate</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>generate</name>
+        <qualifiedname>world.map_manager.Map.generate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate the map data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="42" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1aac6b9fef426bcdec6c0a07835d45b2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.regenerate</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>regenerate</name>
+        <qualifiedname>world.map_manager.Map.regenerate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Regenerate the map data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="84" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1acd63d6bfb698e2dc563f51d57facbd05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.update</definition>
+        <argsstring>(self, window_obj, player_obj)</argsstring>
+        <name>update</name>
+        <qualifiedname>world.map_manager.Map.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window_obj</type>
+          <defname>window_obj</defname>
+        </param>
+        <param>
+          <type>player_obj</type>
+          <defname>player_obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the map (unused).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="155" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="155" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ac2fd46cbcc8fbcd73bf5216162e03980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_tile_pos</definition>
+        <argsstring>(self, x, y)</argsstring>
+        <name>get_tile_pos</name>
+        <qualifiedname>world.map_manager.Map.get_tile_pos</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the tile position of a world position.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="161" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="161" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a3c43981bce9edf197f373adb8f7f9291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_strict_tile_pos</definition>
+        <argsstring>(self, x, y)</argsstring>
+        <name>get_strict_tile_pos</name>
+        <qualifiedname>world.map_manager.Map.get_strict_tile_pos</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the strict tile position of a world position
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="169" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="169" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a0fe6bd1118e8776f8da9384c24b24c21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.tile_to_world_pos</definition>
+        <argsstring>(self, tile_x, tile_y)</argsstring>
+        <name>tile_to_world_pos</name>
+        <qualifiedname>world.map_manager.Map.tile_to_world_pos</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tile_x</type>
+          <defname>tile_x</defname>
+        </param>
+        <param>
+          <type>tile_y</type>
+          <defname>tile_y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the world position of a tile position.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="177" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="177" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a9e14fffcda99820c29cf469b6cdf249f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.is_ready</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_ready</name>
+        <qualifiedname>world.map_manager.Map.is_ready</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the map is ready or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="192" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a36622a649c5412d749e5c94abea2f0b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_tile</definition>
+        <argsstring>(self, tile_x, tile_y, tile)</argsstring>
+        <name>set_tile</name>
+        <qualifiedname>world.map_manager.Map.set_tile</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tile_x</type>
+          <defname>tile_x</defname>
+        </param>
+        <param>
+          <type>tile_y</type>
+          <defname>tile_y</defname>
+        </param>
+        <param>
+          <type>tile</type>
+          <defname>tile</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the tile at specified x and y tile positions and of specified tile type, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="198" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="198" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1abac84f8e811b5828b38e578c9439604e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_tile</definition>
+        <argsstring>(self, tile_x, tile_y)</argsstring>
+        <name>get_tile</name>
+        <qualifiedname>world.map_manager.Map.get_tile</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tile_x</type>
+          <defname>tile_x</defname>
+        </param>
+        <param>
+          <type>tile_y</type>
+          <defname>tile_y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the tile at specified x and y tile positions.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="205" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="205" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ad30d06848b4e2c64eb21d07ca9b089ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_data</definition>
+        <argsstring>(self, list data)</argsstring>
+        <name>set_data</name>
+        <qualifiedname>world.map_manager.Map.set_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the map data, then return the map manager itself.
+Use default map data if no data is provided.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="211" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="211" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a401158159b9316f382e35be0dc636aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_data</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_data</name>
+        <qualifiedname>world.map_manager.Map.get_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="222" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a329d3a25d7b6b4e00ffe37ae131f24e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_dynatile_data</definition>
+        <argsstring>(self, list dynatile_data)</argsstring>
+        <name>set_dynatile_data</name>
+        <qualifiedname>world.map_manager.Map.set_dynatile_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>dynatile_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the dynamic tile data, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="228" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="228" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a9715185c3d4cba13d7d719fa9f6f9451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_dynatile_data</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_dynatile_data</name>
+        <qualifiedname>world.map_manager.Map.get_dynatile_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the dynamic tile data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="235" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="235" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1abda5a521ebd978f93b48eaf6fd426abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_dynatile</definition>
+        <argsstring>(self, x, y, state)</argsstring>
+        <name>set_dynatile</name>
+        <qualifiedname>world.map_manager.Map.set_dynatile</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the dynamic tile at specified x and y tile positions and of specified used state (bool), then return
+the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="241" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="241" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a3b48348bf04ce8c2249cfaf086dcdb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_dynatile</definition>
+        <argsstring>(self, x, y)</argsstring>
+        <name>get_dynatile</name>
+        <qualifiedname>world.map_manager.Map.get_dynatile</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the dynamic tile at specified x and y tile positions.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="249" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="249" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a2bbe51b73648f6682cf9cd6b8b7634b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.randomise_seed</definition>
+        <argsstring>(self)</argsstring>
+        <name>randomise_seed</name>
+        <qualifiedname>world.map_manager.Map.randomise_seed</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Randomise the map seed, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="255" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="255" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a9ee64c5f14d41d362a45c24cd683f5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_seed</definition>
+        <argsstring>(self, _seed)</argsstring>
+        <name>set_seed</name>
+        <qualifiedname>world.map_manager.Map.set_seed</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763" kindref="member">_seed</ref></type>
+          <defname>_seed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the map seed, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="263" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1abf16aa39e5fc3a5f3c48f1e8dde378f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_seed</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_seed</name>
+        <qualifiedname>world.map_manager.Map.get_seed</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map seed.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="271" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="271" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1af35d83075bd079d3fda2986d7579a448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_x</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>set_x</name>
+        <qualifiedname>world.map_manager.Map.set_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the x position of the map, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="277" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="277" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a849957bc12be5cb625f4fc21e235a382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_x</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_x</name>
+        <qualifiedname>world.map_manager.Map.get_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the x position of the map.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="284" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="284" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1aad91f47bc307d79b8b12cd2afb03b7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.set_y</definition>
+        <argsstring>(self, y)</argsstring>
+        <name>set_y</name>
+        <qualifiedname>world.map_manager.Map.set_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the y position of the map, then return the map manager itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="290" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="290" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a0d32c5d840e255015f68979a78d5d2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_y</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_y</name>
+        <qualifiedname>world.map_manager.Map.get_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the y position of the map.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="297" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="297" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a83c8471b39f3bc0813893cc010228416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_width_in_tiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width_in_tiles</name>
+        <qualifiedname>world.map_manager.Map.get_width_in_tiles</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the map in tiles.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="303" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="303" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a9dac0ed865b771e86898e9d2ec105bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_width_in_pixels</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width_in_pixels</name>
+        <qualifiedname>world.map_manager.Map.get_width_in_pixels</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the map in pixels.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="309" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="309" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1aab6e672dad59eab2371b6b464c187158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_height_in_tiles</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height_in_tiles</name>
+        <qualifiedname>world.map_manager.Map.get_height_in_tiles</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the map in tiles.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="315" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="315" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ae6b7fbf0fd23b8c6f0f3fcc8b5ff2738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_height_in_pixels</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height_in_pixels</name>
+        <qualifiedname>world.map_manager.Map.get_height_in_pixels</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the map in pixels.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="321" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="321" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a59159206c8630fa30fbc6b416521dc37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_surface</name>
+        <qualifiedname>world.map_manager.Map.get_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="327" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="327" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ac237569194a93bc038802a6b8bb4be62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.get_dynatile_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_dynatile_surface</name>
+        <qualifiedname>world.map_manager.Map.get_dynatile_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map&apos;s dynamic surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="333" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="333" bodyend="338"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1aea578fa162611f74ac87791b14551863" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map._generate_data</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>_generate_data</name>
+        <qualifiedname>world.map_manager.Map._generate_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Internal threaded method for generating map data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="96" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a3fe41f945d7779c8709f92f21b59edef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map._load_data</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>_load_data</name>
+        <qualifiedname>world.map_manager.Map._load_data</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Internal threaded method for loading map data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="131" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="131" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1a43840a574c10efc9ac7d8d1b4a9e3b36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.map_manager.Map.tile_to_screen_pos</definition>
+        <argsstring>(game, tile_x, tile_y)</argsstring>
+        <name>tile_to_screen_pos</name>
+        <qualifiedname>world.map_manager.Map.tile_to_screen_pos</qualifiedname>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <param>
+          <type>tile_x</type>
+          <defname>tile_x</defname>
+        </param>
+        <param>
+          <type>tile_y</type>
+          <defname>tile_y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the screen position of a tile position.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="184" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="184" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a Map.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="13" bodyend="338"/>
+    <listofallmembers>
+      <member refid="classworld_1_1map__manager_1_1Map_1ac370d03b13bf30a3d1c08f1ddc1e4df2" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>__init__</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a78803eb44858ece1544c3ae36e4476e2" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a3115ee328e5316fff5e7a848851684dc" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_dynatile_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a71980cc400700fecfe72535098390515" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_dynatile_surface</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1aea578fa162611f74ac87791b14551863" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_generate_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1af42db3e4aa3142a31f587a9cb2967a72" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_height</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a3fe41f945d7779c8709f92f21b59edef" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_load_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a268983063ebe899899eaa120f7829535" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_ready</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_seed</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a42adbc36b9af00dcfdd57b2a0d1bd6e9" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_surface</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1afc5aee00ce6d3b7e1cb048bcf908967a" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_width</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a16a61bf50eec085775edada296091b4c" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_x</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1adfbf908d6b22c9b28e77a555bdb561f9" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_y</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>DEFAULT</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a7d6e80449e57b91d42252f204ea45eb9" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>generate</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ad65d73642953633f7d900822c9c07787" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>generate_data_event</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a401158159b9316f382e35be0dc636aed" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a3b48348bf04ce8c2249cfaf086dcdb18" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a9715185c3d4cba13d7d719fa9f6f9451" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ac237569194a93bc038802a6b8bb4be62" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile_surface</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ae6b7fbf0fd23b8c6f0f3fcc8b5ff2738" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_height_in_pixels</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1aab6e672dad59eab2371b6b464c187158" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_height_in_tiles</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1abf16aa39e5fc3a5f3c48f1e8dde378f1" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_seed</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a3c43981bce9edf197f373adb8f7f9291" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_strict_tile_pos</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a59159206c8630fa30fbc6b416521dc37" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_surface</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1abac84f8e811b5828b38e578c9439604e" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_tile</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ac2fd46cbcc8fbcd73bf5216162e03980" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_tile_pos</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a9dac0ed865b771e86898e9d2ec105bb4" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_width_in_pixels</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a83c8471b39f3bc0813893cc010228416" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_width_in_tiles</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a849957bc12be5cb625f4fc21e235a382" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_x</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a0d32c5d840e255015f68979a78d5d2ea" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_y</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a9e14fffcda99820c29cf469b6cdf249f" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>is_ready</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a1026345a49bbe0b7a681b090261cb82c" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>load_data_event</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a53b89b13ce52b571e4198c5a11a65ae0" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>perlin_noise</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a2bbe51b73648f6682cf9cd6b8b7634b7" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>randomise_seed</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1aac6b9fef426bcdec6c0a07835d45b2ec" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>regenerate</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>SEED_RANGE</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ad30d06848b4e2c64eb21d07ca9b089ce" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1abda5a521ebd978f93b48eaf6fd426abd" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_dynatile</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a329d3a25d7b6b4e00ffe37ae131f24e7" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_dynatile_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a9ee64c5f14d41d362a45c24cd683f5e7" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_seed</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a36622a649c5412d749e5c94abea2f0b6" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_tile</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1af35d83075bd079d3fda2986d7579a448" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_x</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1aad91f47bc307d79b8b12cd2afb03b7e1" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_y</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a43840a574c10efc9ac7d8d1b4a9e3b36" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>tile_to_screen_pos</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1a0fe6bd1118e8776f8da9384c24b24c21" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>tile_to_world_pos</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1acd63d6bfb698e2dc563f51d57facbd05" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

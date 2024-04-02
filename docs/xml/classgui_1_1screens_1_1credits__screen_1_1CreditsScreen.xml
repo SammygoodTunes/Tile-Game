@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::credits_screen::CreditsScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1af14a85f61ef43f57ba3bcefc0244118d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a327b52303034dc6fb89da8ed4723e67f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::options_label</definition>
+        <argsstring></argsstring>
+        <name>options_label</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.options_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a8e8f52007bd256a733ade1c8821d60e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::prog_title_label</definition>
+        <argsstring></argsstring>
+        <name>prog_title_label</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.prog_title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab63efaf19e85e338b923679eae666250" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::art_title_label</definition>
+        <argsstring></argsstring>
+        <name>art_title_label</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.art_title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a067f669fd97930b9439b99679dee3839" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::prog_value_label</definition>
+        <argsstring></argsstring>
+        <name>prog_value_label</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.prog_value_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a66631ed7ad30a5d82e57af71283bd40d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::art_value_label</definition>
+        <argsstring></argsstring>
+        <name>art_value_label</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.art_value_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a10462aea9b3326eb604d744ebcc44bf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::back_button</definition>
+        <argsstring></argsstring>
+        <name>back_button</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.back_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ad4ac4b8f75722086347599d691ed714e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen._enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abb304aaed7ca04e5f1463ceea53bbba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aadf73d2f0c2161a75fdf7978bf4d3a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a68e8ef0bb0f6586240c45d26f7126a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.events</definition>
+        <argsstring>(self, e)</argsstring>
+        <name>events</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>e</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Track the screen events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a50574c3798483946719e06b9bd7b7aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="45" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a74f2d96c07df4818526ba314fc70f2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen GUI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="58" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="58" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a3598afcebf456f3bbb239dbca72e0544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.credits_screen.CreditsScreen.set_state</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.credits_screen.CreditsScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="79" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the credits screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.credits_screen.CreditsScreen</label>
+        <link refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.credits_screen.CreditsScreen</label>
+        <link refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/credits_screen.py" bodystart="10" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abb304aaed7ca04e5f1463ceea53bbba7" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ad4ac4b8f75722086347599d691ed714e" prot="protected" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>_enabled</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab63efaf19e85e338b923679eae666250" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>art_title_label</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a66631ed7ad30a5d82e57af71283bd40d" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>art_value_label</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a10462aea9b3326eb604d744ebcc44bf2" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>back_button</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a50574c3798483946719e06b9bd7b7aaa" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a68e8ef0bb0f6586240c45d26f7126a84" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>events</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1af14a85f61ef43f57ba3bcefc0244118d" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aadf73d2f0c2161a75fdf7978bf4d3a32" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a327b52303034dc6fb89da8ed4723e67f" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>options_label</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a8e8f52007bd256a733ade1c8821d60e7" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>prog_title_label</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a067f669fd97930b9439b99679dee3839" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>prog_value_label</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a3598afcebf456f3bbb239dbca72e0544" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a74f2d96c07df4818526ba314fc70f2d3" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606" prot="public" virt="non-virtual"><scope>gui::screens::credits_screen::CreditsScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

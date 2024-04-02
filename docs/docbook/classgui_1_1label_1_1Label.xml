@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1label_1_1Label" xml:lang="en-US">
+<title>gui.label.Label Class Reference</title>
+<indexterm><primary>gui.label.Label</primary></indexterm>
+<para>Inheritance diagram for gui.label.Label:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1label_1_1Label.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d">__init__</link> (self, text=&quot;&quot;, x=0, y=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00">update</link> (self, window)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31">refresh</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511">center_horizontally</link> (self, parent_x, parent_width)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40">center_vertically</link> (self, parent_y, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae">set_auto_font_size</link> (self, width, height, max_width, max_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c">set_font_size</link> (self, font_size)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5">get_font_size</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8">set_font_sizes</link> (self, font_sizes)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492">get_font_sizes</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c">get_total_width</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7">get_total_height</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2">set_text</link> (self, text)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e">get_text</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e">set_antialiasing</link> (self, state)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c">has_antialiasing</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4">set_colour</link> (self, colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2">get_colour</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221">set_shadow_x</link> (self, shadow_x)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34">set_x</link> (self, x)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9">set_y</link> (self, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f">get_shadow_x</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7">set_shadow_y</link> (self, shadow_y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5">get_shadow_y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363">set_shadow_x_offset</link> (self, offset)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84">set_shadow_y_offset</link> (self, offset)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0">set_shadow_colour</link> (self, shadow_colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623">get_shadow_colour</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a38f29d5b59526efa830235f2f838c3b6">font</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a">DEFAULT_FONT</link> = impr.files(assets) / &quot;font.ttf&quot;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a740ed9b0bf79e904ccba3fc0df2471cb">DEFAULT_FONT_SIZE_SMALL</link> = 8</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a8543898eaa97064dd7b4a4ef7667bada">DEFAULT_FONT_SIZE_NORMAL</link> = 11</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a4c991af9bdd850e36eaeb064f2595b45">DEFAULT_FONT_SIZE_LARGE</link> = 14</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1af8c5c9803314e45a907698eaf3706b34">_font_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a02a1c71ace980ee201275a2cfae9699a">_font_sizes</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d">_text</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221">_shadow_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc">_shadow_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe">_shadow_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025">_antialiasing</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8">_colour</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a label.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.label.Label.__init__ ( self,  text = <computeroutput>&quot;&quot;</computeroutput>
+,  x = <computeroutput>0</computeroutput>
+,  y = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>center</secondary></indexterm>
+<para><computeroutput>gui.label.Label.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the label on both axes relative to the specified parent, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput>gui.label.Label.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the label horizontally relative to the specified parent, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput>gui.label.Label.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the label vertically relative to the specified parent, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput>gui.label.Label.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the label with center() and offset it by x and y relative to the specified parent, then return the
+label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>gui.label.Label.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the label and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2"/><section>
+    <title>get_colour()</title>
+<indexterm><primary>get_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text&apos;s foreground colour.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5"/><section>
+    <title>get_font_size()</title>
+<indexterm><primary>get_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_font_size</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_font_size ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the font size of the label.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492"/><section>
+    <title>get_font_sizes()</title>
+<indexterm><primary>get_font_sizes</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_font_sizes</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_font_sizes ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the small, medium and large sizes of the label&apos;s text.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623"/><section>
+    <title>get_shadow_colour()</title>
+<indexterm><primary>get_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_shadow_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_shadow_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text&apos;s shadow colour.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f"/><section>
+    <title>get_shadow_x()</title>
+<indexterm><primary>get_shadow_x</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_shadow_x</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_shadow_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text&apos;s shadow&apos;s x position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5"/><section>
+    <title>get_shadow_y()</title>
+<indexterm><primary>get_shadow_y</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_shadow_y</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_shadow_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text&apos;s shadow&apos;s y position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e"/><section>
+    <title>get_text()</title>
+<indexterm><primary>get_text</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_text</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label&apos;s text.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7"/><section>
+    <title>get_total_height()</title>
+<indexterm><primary>get_total_height</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_total_height</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_total_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the total height of the label.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c"/><section>
+    <title>get_total_width()</title>
+<indexterm><primary>get_total_width</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>get_total_width</secondary></indexterm>
+<para><computeroutput>gui.label.Label.get_total_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the total width of the label.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c"/><section>
+    <title>has_antialiasing()</title>
+<indexterm><primary>has_antialiasing</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>has_antialiasing</secondary></indexterm>
+<para><computeroutput>gui.label.Label.has_antialiasing ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Returns True if the label has antialiasing enabled.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput>gui.label.Label.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the shadow&apos;s position of the label.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e"/><section>
+    <title>set_antialiasing()</title>
+<indexterm><primary>set_antialiasing</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_antialiasing</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_antialiasing ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the antialiasing state of the label, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae"/><section>
+    <title>set_auto_font_size()</title>
+<indexterm><primary>set_auto_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_auto_font_size</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_auto_font_size ( self,  width,  height,  max_width,  max_height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the automatic font size of the label, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4"/><section>
+    <title>set_colour()</title>
+<indexterm><primary>set_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_colour ( self,  colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s foreground colour, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c"/><section>
+    <title>set_font_size()</title>
+<indexterm><primary>set_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_font_size</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_font_size ( self,  font_size)</computeroutput></para>
+<para><literallayout><computeroutput>Set the font size of the label, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8"/><section>
+    <title>set_font_sizes()</title>
+<indexterm><primary>set_font_sizes</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_font_sizes</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_font_sizes ( self,  font_sizes)</computeroutput></para>
+<para><literallayout><computeroutput>Set the small, medium and large sizes of the label&apos;s text, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0"/><section>
+    <title>set_shadow_colour()</title>
+<indexterm><primary>set_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_shadow_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_shadow_colour ( self,  shadow_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s shadow colour, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221"/><section>
+    <title>set_shadow_x()</title>
+<indexterm><primary>set_shadow_x</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_shadow_x</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_shadow_x ( self,  shadow_x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s x position, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363"/><section>
+    <title>set_shadow_x_offset()</title>
+<indexterm><primary>set_shadow_x_offset</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_shadow_x_offset</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_shadow_x_offset ( self,  offset)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s x offset, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7"/><section>
+    <title>set_shadow_y()</title>
+<indexterm><primary>set_shadow_y</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_shadow_y</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_shadow_y ( self,  shadow_y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s y position, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84"/><section>
+    <title>set_shadow_y_offset()</title>
+<indexterm><primary>set_shadow_y_offset</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_shadow_y_offset</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_shadow_y_offset ( self,  offset)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s y offset, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2"/><section>
+    <title>set_text()</title>
+<indexterm><primary>set_text</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_text</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_text ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label&apos;s text, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34"/><section>
+    <title>set_x()</title>
+<indexterm><primary>set_x</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_x</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_x ( self,  x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s x position, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9"/><section>
+    <title>set_y()</title>
+<indexterm><primary>set_y</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>set_y</secondary></indexterm>
+<para><computeroutput>gui.label.Label.set_y ( self,  y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text&apos;s y position, then return the label itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>gui.label.Label.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the label and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025"/><section>
+    <title>_antialiasing</title>
+<indexterm><primary>_antialiasing</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_antialiasing</secondary></indexterm>
+<para><computeroutput>gui.label.Label._antialiasing<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8"/><section>
+    <title>_colour</title>
+<indexterm><primary>_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label._colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1af8c5c9803314e45a907698eaf3706b34"/><section>
+    <title>_font_size</title>
+<indexterm><primary>_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_font_size</secondary></indexterm>
+<para><computeroutput>gui.label.Label._font_size<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a02a1c71ace980ee201275a2cfae9699a"/><section>
+    <title>_font_sizes</title>
+<indexterm><primary>_font_sizes</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_font_sizes</secondary></indexterm>
+<para><computeroutput>gui.label.Label._font_sizes<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe"/><section>
+    <title>_shadow_colour</title>
+<indexterm><primary>_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_shadow_colour</secondary></indexterm>
+<para><computeroutput>gui.label.Label._shadow_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221"/><section>
+    <title>_shadow_x</title>
+<indexterm><primary>_shadow_x</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_shadow_x</secondary></indexterm>
+<para><computeroutput>gui.label.Label._shadow_x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc"/><section>
+    <title>_shadow_y</title>
+<indexterm><primary>_shadow_y</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_shadow_y</secondary></indexterm>
+<para><computeroutput>gui.label.Label._shadow_y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d"/><section>
+    <title>_text</title>
+<indexterm><primary>_text</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_text</secondary></indexterm>
+<para><computeroutput>gui.label.Label._text<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.label.Label._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>gui.label.Label._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a"/><section>
+    <title>DEFAULT_FONT</title>
+<indexterm><primary>DEFAULT_FONT</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>DEFAULT_FONT</secondary></indexterm>
+<para><computeroutput>str gui.label.Label.DEFAULT_FONT = impr.files(assets) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a4c991af9bdd850e36eaeb064f2595b45"/><section>
+    <title>DEFAULT_FONT_SIZE_LARGE</title>
+<indexterm><primary>DEFAULT_FONT_SIZE_LARGE</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>DEFAULT_FONT_SIZE_LARGE</secondary></indexterm>
+<para><computeroutput>int gui.label.Label.DEFAULT_FONT_SIZE_LARGE = 14<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a8543898eaa97064dd7b4a4ef7667bada"/><section>
+    <title>DEFAULT_FONT_SIZE_NORMAL</title>
+<indexterm><primary>DEFAULT_FONT_SIZE_NORMAL</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>DEFAULT_FONT_SIZE_NORMAL</secondary></indexterm>
+<para><computeroutput>int gui.label.Label.DEFAULT_FONT_SIZE_NORMAL = 11<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a740ed9b0bf79e904ccba3fc0df2471cb"/><section>
+    <title>DEFAULT_FONT_SIZE_SMALL</title>
+<indexterm><primary>DEFAULT_FONT_SIZE_SMALL</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>DEFAULT_FONT_SIZE_SMALL</secondary></indexterm>
+<para><computeroutput>int gui.label.Label.DEFAULT_FONT_SIZE_SMALL = 8<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a38f29d5b59526efa830235f2f838c3b6"/><section>
+    <title>font</title>
+<indexterm><primary>font</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>font</secondary></indexterm>
+<para><computeroutput>gui.label.Label.font</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_label_8py">label.py</link></section>
+</section>

@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::pause_screen::PauseScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a20ac23e2b0df1df11c8be790f2d62045" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af0fd2d6eb748f36699a83ff83992a890" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::pause_label</definition>
+        <argsstring></argsstring>
+        <name>pause_label</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.pause_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1afc7e5a7516ee6a502c66ce6f5aa2f6f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::resume_button</definition>
+        <argsstring></argsstring>
+        <name>resume_button</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.resume_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a84d2d01f4090bcf5962887efad26d48d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::options_button</definition>
+        <argsstring></argsstring>
+        <name>options_button</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.options_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae35928eed3390fa8379b1023d2b8035b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen::quit_button</definition>
+        <argsstring></argsstring>
+        <name>quit_button</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.quit_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="45" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.pause_screen.PauseScreen.set_state</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.pause_screen.PauseScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="59" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the pause screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.pause_screen.PauseScreen</label>
+        <link refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.pause_screen.PauseScreen</label>
+        <link refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="10" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a20ac23e2b0df1df11c8be790f2d62045" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a84d2d01f4090bcf5962887efad26d48d" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>options_button</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af0fd2d6eb748f36699a83ff83992a890" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>pause_label</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae35928eed3390fa8379b1023d2b8035b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>quit_button</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1afc7e5a7516ee6a502c66ce6f5aa2f6f4" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>resume_button</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

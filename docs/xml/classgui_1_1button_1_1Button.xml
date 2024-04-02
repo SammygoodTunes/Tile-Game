@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1button_1_1Button" kind="class" language="Python" prot="public">
+    <compoundname>gui::button::Button</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Widget</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1abb34e41d38b186b00e1febcc94460861" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.button.Button::MIN_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MIN_WIDTH</name>
+        <qualifiedname>gui.button.Button.MIN_WIDTH</qualifiedname>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1a13e5437ccc6ede08af775f445bc8a64c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.button.Button::MAX_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MAX_WIDTH</name>
+        <qualifiedname>gui.button.Button.MAX_WIDTH</qualifiedname>
+        <initializer>=  500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1ad8d833b4a5233cfbf123a54dc339a4a0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.button.Button::MIN_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MIN_HEIGHT</name>
+        <qualifiedname>gui.button.Button.MIN_HEIGHT</qualifiedname>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1a1b58b70e42fb2c95eda456ea43fb5ddf" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.button.Button::MAX_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MAX_HEIGHT</name>
+        <qualifiedname>gui.button.Button.MAX_HEIGHT</qualifiedname>
+        <initializer>=  50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1ac7722992e912d10ba8df971eac17609a" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>gui.button.Button._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1af2430800f6b0e20d225d8bf038e41c11" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>gui.button.Button._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1ae94ae0ccca78ea8e75b9da9b899ee3cc" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::_background_colour</definition>
+        <argsstring></argsstring>
+        <name>_background_colour</name>
+        <qualifiedname>gui.button.Button._background_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1a37a488e04851bb10ace9e9fa135a8e96" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.button.Button._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1ac4d08a54ce09f944fa446f95e0fd3a43" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.button.Button._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1button_1_1Button_1a0a2b890db5e1b7c45017939764bdb4b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.button.Button::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>gui.button.Button.label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.__init__</definition>
+        <argsstring>(self, text=&quot;&quot;, x=0, y=0, width=200, height=50)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.button.Button.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+          <defval>200</defval>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+          <defval>50</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.button.Button.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the button and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="27" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>gui.button.Button.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the button and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>gui.button.Button.refresh</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Refresh the button and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.is_hovering_over</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hovering_over</name>
+        <qualifiedname>gui.button.Button.is_hovering_over</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the user&apos;s mouse cursor is hovering over the button or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.center_horizontally</definition>
+        <argsstring>(self, parent_x, parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>gui.button.Button.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the button horizontally relative to the specified parent, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.center_vertically</definition>
+        <argsstring>(self, parent_y, parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>gui.button.Button.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the button vertically relative to the specified parent, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.center</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>gui.button.Button.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the button on both axes relative to the specified parent, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.center_with_offset</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height, x, y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>gui.button.Button.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the button with center() and offset it by x and y relative to the specified parent, then return the
+button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="91" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.set_width</definition>
+        <argsstring>(self, width)</argsstring>
+        <name>set_width</name>
+        <qualifiedname>gui.button.Button.set_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the width of the button, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="99" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.get_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width</name>
+        <qualifiedname>gui.button.Button.get_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="106" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.set_height</definition>
+        <argsstring>(self, height)</argsstring>
+        <name>set_height</name>
+        <qualifiedname>gui.button.Button.set_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the height of the button, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="112" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.get_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height</name>
+        <qualifiedname>gui.button.Button.get_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="119" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="119" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.set_background_colour</definition>
+        <argsstring>(self, background_colour)</argsstring>
+        <name>set_background_colour</name>
+        <qualifiedname>gui.button.Button.set_background_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>background_colour</type>
+          <defname>background_colour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the background colour of the button, then return the button itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="125" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.button.Button.get_background_colour</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_background_colour</name>
+        <qualifiedname>gui.button.Button.get_background_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the background colour of the button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="132" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="132" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a button.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.button.Button</label>
+        <link refid="classgui_1_1button_1_1Button"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.button.Button</label>
+        <link refid="classgui_1_1button_1_1Button"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/button.py" bodystart="9" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>__init__</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ae94ae0ccca78ea8e75b9da9b899ee3cc" prot="protected" virt="non-virtual"><scope>gui::button::Button</scope><name>_background_colour</name></member>
+      <member refid="classgui_1_1button_1_1Button_1af2430800f6b0e20d225d8bf038e41c11" prot="protected" virt="non-virtual"><scope>gui::button::Button</scope><name>_height</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ac7722992e912d10ba8df971eac17609a" prot="protected" virt="non-virtual"><scope>gui::button::Button</scope><name>_width</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a37a488e04851bb10ace9e9fa135a8e96" prot="protected" virt="non-virtual"><scope>gui::button::Button</scope><name>_x</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ac4d08a54ce09f944fa446f95e0fd3a43" prot="protected" virt="non-virtual"><scope>gui::button::Button</scope><name>_y</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>center</name></member>
+      <member refid="classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>center_horizontally</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>center_vertically</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>center_with_offset</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>draw</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>get_background_colour</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>get_height</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>get_width</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>is_hovering_over</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a0a2b890db5e1b7c45017939764bdb4b8" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>label</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a1b58b70e42fb2c95eda456ea43fb5ddf" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>MAX_HEIGHT</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a13e5437ccc6ede08af775f445bc8a64c" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>MAX_WIDTH</name></member>
+      <member refid="classgui_1_1button_1_1Button_1ad8d833b4a5233cfbf123a54dc339a4a0" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>MIN_HEIGHT</name></member>
+      <member refid="classgui_1_1button_1_1Button_1abb34e41d38b186b00e1febcc94460861" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>MIN_WIDTH</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>refresh</name></member>
+      <member refid="classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>set_background_colour</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>set_height</name></member>
+      <member refid="classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>set_width</name></member>
+      <member refid="classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3" prot="public" virt="non-virtual"><scope>gui::button::Button</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

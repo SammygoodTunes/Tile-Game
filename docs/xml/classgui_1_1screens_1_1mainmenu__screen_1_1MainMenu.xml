@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::mainmenu_screen::MainMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aee97654ec71d417681af229d4027addb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a574cc749bcdb3de0b0abb43b47f202aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ae28bb5b9231c756133520eb4e60e55bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::play_button</definition>
+        <argsstring></argsstring>
+        <name>play_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.play_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a4dd3c7b29d509d3f6354ce14ec3b8144" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::options_button</definition>
+        <argsstring></argsstring>
+        <name>options_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.options_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a8f45ff507b8af99824765c2eab57c3ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::credits_button</definition>
+        <argsstring></argsstring>
+        <name>credits_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.credits_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1abb648ecca265cefff8063b22a02f9cf7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu::quit_button</definition>
+        <argsstring></argsstring>
+        <name>quit_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.quit_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a56c8ca31e7a9730bbc4c8834fd872b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aee97654ec71d417681af229d4027addb" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="14" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aefaa4f9221befa3cced1a6b5e2e83876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Draw the screen and its components.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a2f7017d23488315ba84f28de4848b8e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Update the screen UI.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="36" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad272e9481ca0b24c532413f935e97cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenu.set_state</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenu.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the screen&apos;s visibility/interactivity.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="51" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating the main menu screen.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.mainmenu_screen.MainMenu</label>
+        <link refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.mainmenu_screen.MainMenu</label>
+        <link refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/mainmenu_screen.py" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a56c8ca31e7a9730bbc4c8834fd872b01" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a8f45ff507b8af99824765c2eab57c3ac" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>credits_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aefaa4f9221befa3cced1a6b5e2e83876" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a4dd3c7b29d509d3f6354ce14ec3b8144" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>options_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ae28bb5b9231c756133520eb4e60e55bc" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>play_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1abb648ecca265cefff8063b22a02f9cf7" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>quit_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad272e9481ca0b24c532413f935e97cd1" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a574cc749bcdb3de0b0abb43b47f202aa" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>title_label</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a2f7017d23488315ba84f28de4848b8e5" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aee97654ec71d417681af229d4027addb" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenu</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

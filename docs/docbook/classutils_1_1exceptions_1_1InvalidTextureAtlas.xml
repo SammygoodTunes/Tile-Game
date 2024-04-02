@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classutils_1_1exceptions_1_1InvalidTextureAtlas" xml:lang="en-US">
+<title>utils.exceptions.InvalidTextureAtlas Class Reference</title>
+<indexterm><primary>utils.exceptions.InvalidTextureAtlas</primary></indexterm>
+<para>Inheritance diagram for utils.exceptions.InvalidTextureAtlas:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classutils_1_1exceptions_1_1InvalidTextureAtlas.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classutils_1_1exceptions_1_1InvalidTextureAtlas_1aa8e682a7462f89e1e0a479572d845f5f">__init__</link> (self, message=&quot;Invalid texture atlas, have you loaded one with set_atlas()?&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by loading an invalid texture atlas.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classutils_1_1exceptions_1_1InvalidTextureAtlas_1aa8e682a7462f89e1e0a479572d845f5f"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>utils.exceptions.InvalidTextureAtlas</secondary></indexterm>
+<indexterm><primary>utils.exceptions.InvalidTextureAtlas</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>utils.exceptions.InvalidTextureAtlas.__init__ ( self,  message = <computeroutput>&quot;Invalid&#160;texture&#160;atlas,&#160;have&#160;you&#160;loaded&#160;one&#160;with&#160;set_atlas()?&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

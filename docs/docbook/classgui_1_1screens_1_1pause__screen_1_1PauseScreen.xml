@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen" xml:lang="en-US">
+<title>gui.screens.pause_screen.PauseScreen Class Reference</title>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.pause_screen.PauseScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1pause__screen_1_1PauseScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b">window</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4">draw</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd">set_state</link> (self, state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a20ac23e2b0df1df11c8be790f2d62045">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af0fd2d6eb748f36699a83ff83992a890">pause_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1afc7e5a7516ee6a502c66ce6f5aa2f6f4">resume_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a84d2d01f4090bcf5962887efad26d48d">options_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae35928eed3390fa8379b1023d2b8035b">quit_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the pause screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.set_state ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a20ac23e2b0df1df11c8be790f2d62045"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a84d2d01f4090bcf5962887efad26d48d"/><section>
+    <title>options_button</title>
+<indexterm><primary>options_button</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>options_button</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.options_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af0fd2d6eb748f36699a83ff83992a890"/><section>
+    <title>pause_label</title>
+<indexterm><primary>pause_label</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>pause_label</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.pause_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae35928eed3390fa8379b1023d2b8035b"/><section>
+    <title>quit_button</title>
+<indexterm><primary>quit_button</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>quit_button</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.quit_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1afc7e5a7516ee6a502c66ce6f5aa2f6f4"/><section>
+    <title>resume_button</title>
+<indexterm><primary>resume_button</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>resume_button</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.resume_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screens.pause_screen.PauseScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_pause__screen_8py">pause_screen.py</link></section>
+</section>

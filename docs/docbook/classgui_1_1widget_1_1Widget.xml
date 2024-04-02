@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1widget_1_1Widget" xml:lang="en-US">
+<title>gui.widget.Widget Class Reference</title>
+<indexterm><primary>gui.widget.Widget</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a24edb4f7a55f5b0577ba35a646ca0267">__init__</link> (self, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1ae77c617384133555a80b5b3c717aaef8">set_x</link> (self, x)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a3e4ede5b4e9332321d8476e925fa0762">get_x</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a025bd1c3d2bf2e34245102cf57b02711">set_y</link> (self, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a0a3954b3cfd39e0d349b0de06157a625">get_y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545">offset_x</link> (self, offset_x)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee">offset_y</link> (self, offset_y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a95322e497bbbeb382a13b818c9c7e05f">offset</link> (self, <link linkend="_classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545">offset_x</link>, <link linkend="_classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee">offset_y</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1aa76094c5f639a2d12307526a93473e9c">set_state</link> (self, state)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1ad15780db5ddebdb35be013ea72d43108">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32">_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a widget.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a24edb4f7a55f5b0577ba35a646ca0267"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.__init__ ( self,  x,  y)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1ad15780db5ddebdb35be013ea72d43108"/><section>
+    <title>get_state()</title>
+<indexterm><primary>get_state</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>get_state</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.get_state ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the state of the widget&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a3e4ede5b4e9332321d8476e925fa0762"/><section>
+    <title>get_x()</title>
+<indexterm><primary>get_x</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>get_x</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.get_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the x position of the widget.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a0a3954b3cfd39e0d349b0de06157a625"/><section>
+    <title>get_y()</title>
+<indexterm><primary>get_y</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>get_y</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.get_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the y position of the widget.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a95322e497bbbeb382a13b818c9c7e05f"/><section>
+    <title>offset()</title>
+<indexterm><primary>offset</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>offset</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.offset ( self,  offset_x,  offset_y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the x and y offsets of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545"/><section>
+    <title>offset_x()</title>
+<indexterm><primary>offset_x</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>offset_x</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.offset_x ( self,  offset_x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the x offset of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee"/><section>
+    <title>offset_y()</title>
+<indexterm><primary>offset_y</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>offset_y</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.offset_y ( self,  offset_y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the y offset of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1aa76094c5f639a2d12307526a93473e9c"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.set_state ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the widget&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1ae77c617384133555a80b5b3c717aaef8"/><section>
+    <title>set_x()</title>
+<indexterm><primary>set_x</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>set_x</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.set_x ( self,  x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the x position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a025bd1c3d2bf2e34245102cf57b02711"/><section>
+    <title>set_y()</title>
+<indexterm><primary>set_y</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>set_y</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget.set_y ( self,  y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the y position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32"/><section>
+    <title>_colour</title>
+<indexterm><primary>_colour</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>_colour</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget._colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9"/><section>
+    <title>_enabled</title>
+<indexterm><primary>_enabled</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>_enabled</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget._enabled<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_widget_8py">widget.py</link></section>
+</section>

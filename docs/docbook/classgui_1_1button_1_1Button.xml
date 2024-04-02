@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1button_1_1Button" xml:lang="en-US">
+<title>gui.button.Button Class Reference</title>
+<indexterm><primary>gui.button.Button</primary></indexterm>
+<para>Inheritance diagram for gui.button.Button:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1button_1_1Button.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7">__init__</link> (self, text=&quot;&quot;, x=0, y=0, width=200, height=50)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3">update</link> (self, window)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece">refresh</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2">center_horizontally</link> (self, parent_x, parent_width)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050">center_vertically</link> (self, parent_y, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40">set_width</link> (self, width)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215">get_width</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647">set_height</link> (self, height)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5">get_height</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a">set_background_colour</link> (self, background_colour)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5">get_background_colour</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a0a2b890db5e1b7c45017939764bdb4b8">label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1abb34e41d38b186b00e1febcc94460861">MIN_WIDTH</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1a13e5437ccc6ede08af775f445bc8a64c">MAX_WIDTH</link> = 500</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1ad8d833b4a5233cfbf123a54dc339a4a0">MIN_HEIGHT</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1a1b58b70e42fb2c95eda456ea43fb5ddf">MAX_HEIGHT</link> = 50</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ac7722992e912d10ba8df971eac17609a">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1af2430800f6b0e20d225d8bf038e41c11">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ae94ae0ccca78ea8e75b9da9b899ee3cc">_background_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a37a488e04851bb10ace9e9fa135a8e96">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ac4d08a54ce09f944fa446f95e0fd3a43">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a button.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gui.button.Button.__init__ ( self,  text = <computeroutput>&quot;&quot;</computeroutput>
+,  x = <computeroutput>0</computeroutput>
+,  y = <computeroutput>0</computeroutput>
+,  width = <computeroutput>200</computeroutput>
+,  height = <computeroutput>50</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>center</secondary></indexterm>
+<para><computeroutput>gui.button.Button.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the button on both axes relative to the specified parent, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput>gui.button.Button.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the button horizontally relative to the specified parent, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput>gui.button.Button.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the button vertically relative to the specified parent, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput>gui.button.Button.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the button with center() and offset it by x and y relative to the specified parent, then return the
+button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>gui.button.Button.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the button and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5"/><section>
+    <title>get_background_colour()</title>
+<indexterm><primary>get_background_colour</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>get_background_colour</secondary></indexterm>
+<para><computeroutput>gui.button.Button.get_background_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the background colour of the button.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput>gui.button.Button.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the button.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput>gui.button.Button.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the button.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9"/><section>
+    <title>is_hovering_over()</title>
+<indexterm><primary>is_hovering_over</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>is_hovering_over</secondary></indexterm>
+<para><computeroutput>gui.button.Button.is_hovering_over ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the button or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput>gui.button.Button.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the button and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a"/><section>
+    <title>set_background_colour()</title>
+<indexterm><primary>set_background_colour</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>set_background_colour</secondary></indexterm>
+<para><computeroutput>gui.button.Button.set_background_colour ( self,  background_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the background colour of the button, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput>gui.button.Button.set_height ( self,  height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the button, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput>gui.button.Button.set_width ( self,  width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the button, then return the button itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>gui.button.Button.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the button and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ae94ae0ccca78ea8e75b9da9b899ee3cc"/><section>
+    <title>_background_colour</title>
+<indexterm><primary>_background_colour</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>_background_colour</secondary></indexterm>
+<para><computeroutput>gui.button.Button._background_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1af2430800f6b0e20d225d8bf038e41c11"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>gui.button.Button._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ac7722992e912d10ba8df971eac17609a"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>gui.button.Button._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a37a488e04851bb10ace9e9fa135a8e96"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.button.Button._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ac4d08a54ce09f944fa446f95e0fd3a43"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>gui.button.Button._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a0a2b890db5e1b7c45017939764bdb4b8"/><section>
+    <title>label</title>
+<indexterm><primary>label</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>label</secondary></indexterm>
+<para><computeroutput>gui.button.Button.label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a1b58b70e42fb2c95eda456ea43fb5ddf"/><section>
+    <title>MAX_HEIGHT</title>
+<indexterm><primary>MAX_HEIGHT</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>MAX_HEIGHT</secondary></indexterm>
+<para><computeroutput>int gui.button.Button.MAX_HEIGHT = 50<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a13e5437ccc6ede08af775f445bc8a64c"/><section>
+    <title>MAX_WIDTH</title>
+<indexterm><primary>MAX_WIDTH</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>MAX_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.button.Button.MAX_WIDTH = 500<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ad8d833b4a5233cfbf123a54dc339a4a0"/><section>
+    <title>MIN_HEIGHT</title>
+<indexterm><primary>MIN_HEIGHT</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>MIN_HEIGHT</secondary></indexterm>
+<para><computeroutput>int gui.button.Button.MIN_HEIGHT = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1abb34e41d38b186b00e1febcc94460861"/><section>
+    <title>MIN_WIDTH</title>
+<indexterm><primary>MIN_WIDTH</primary><secondary>gui.button.Button</secondary></indexterm>
+<indexterm><primary>gui.button.Button</primary><secondary>MIN_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.button.Button.MIN_WIDTH = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_button_8py">button.py</link></section>
+</section>

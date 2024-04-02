@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classworld_1_1world_1_1World" kind="class" language="Python" prot="public">
+    <compoundname>world::world::World</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>world.world.World::tile_manager</definition>
+        <argsstring></argsstring>
+        <name>tile_manager</name>
+        <qualifiedname>world.world.World.tile_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>world.world.World::_map</definition>
+        <argsstring></argsstring>
+        <name>_map</name>
+        <qualifiedname>world.world.World._map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a78736b030eec3abd997b3fd3281a112c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>world.world.World.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a592825fb5b1d700019739185089fdf14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.initialise</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>world.world.World.initialise</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the world.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a59349100a84cd734b74d5966f07e0c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.update</definition>
+        <argsstring>(self, window_obj, player_obj)</argsstring>
+        <name>update</name>
+        <qualifiedname>world.world.World.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window_obj</type>
+          <defname>window_obj</defname>
+        </param>
+        <param>
+          <type>player_obj</type>
+          <defname>player_obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the world.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a2db9141efc89f774aae6df943496ba39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>world.world.World.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the world&apos;s UI (unused).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a45569d961156a3d6138a499637ba3690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.draw</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>draw</name>
+        <qualifiedname>world.world.World.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the world (map, tiles, etc.).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="40" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a5b01d8676fa3248a9aa18f94ad324a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.draw_wireframe</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw_wireframe</name>
+        <qualifiedname>world.world.World.draw_wireframe</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the wireframe of the world.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classworld_1_1world_1_1World_1a30d25370e13295f8dacf694c43fed871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>world.world.World.get_map</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_map</name>
+        <qualifiedname>world.world.World.get_map</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="73" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="73" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a world.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="10" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classworld_1_1world_1_1World_1a78736b030eec3abd997b3fd3281a112c" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>__init__</name></member>
+      <member refid="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" prot="protected" virt="non-virtual"><scope>world::world::World</scope><name>_map</name></member>
+      <member refid="classworld_1_1world_1_1World_1a45569d961156a3d6138a499637ba3690" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>draw</name></member>
+      <member refid="classworld_1_1world_1_1World_1a5b01d8676fa3248a9aa18f94ad324a14" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>draw_wireframe</name></member>
+      <member refid="classworld_1_1world_1_1World_1a30d25370e13295f8dacf694c43fed871" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>get_map</name></member>
+      <member refid="classworld_1_1world_1_1World_1a592825fb5b1d700019739185089fdf14" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>initialise</name></member>
+      <member refid="classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>tile_manager</name></member>
+      <member refid="classworld_1_1world_1_1World_1a59349100a84cd734b74d5966f07e0c16" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>update</name></member>
+      <member refid="classworld_1_1world_1_1World_1a2db9141efc89f774aae6df943496ba39" prot="public" virt="non-virtual"><scope>world::world::World</scope><name>update_ui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

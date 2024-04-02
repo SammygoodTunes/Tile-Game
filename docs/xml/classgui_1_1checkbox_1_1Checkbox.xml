@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1checkbox_1_1Checkbox" kind="class" language="Python" prot="public">
+    <compoundname>gui::checkbox::Checkbox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Widget</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a4c9532bd89a6956730e7b1766a34a210" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_checked</definition>
+        <argsstring></argsstring>
+        <name>_checked</name>
+        <qualifiedname>gui.checkbox.Checkbox._checked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a438d767d11b2595a59cc89ab3b25e58d" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_colour</definition>
+        <argsstring></argsstring>
+        <name>_colour</name>
+        <qualifiedname>gui.checkbox.Checkbox._colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a4e8b07f429d255cc494e048378b6ec96" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <qualifiedname>gui.checkbox.Checkbox._size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1ac73958d4611bd65503c59ac47f88aa83" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_spacing</definition>
+        <argsstring></argsstring>
+        <name>_spacing</name>
+        <qualifiedname>gui.checkbox.Checkbox._spacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a1fffb01b28afffaf21e317e43515d1a7" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.checkbox.Checkbox._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a4032da219e43661dcc1aa19b5df5dbe3" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.checkbox.Checkbox._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1checkbox_1_1Checkbox_1a95d0eb79513f4e91192fabae1b3bc069" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.checkbox.Checkbox::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>gui.checkbox.Checkbox.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1ab101fe8e28380164610d25f8b5bed530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.__init__</definition>
+        <argsstring>(self, title, x=0, y=0, checked=False)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.checkbox.Checkbox.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>title</type>
+          <defname>title</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>checked</type>
+          <defname>checked</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a5496399b367e88e77e29f6ddb1dd8953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.checkbox.Checkbox.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the checkbox and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a22bd258dd8db27a4f14d88a7cc5c84f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.events</definition>
+        <argsstring>(self, e)</argsstring>
+        <name>events</name>
+        <qualifiedname>gui.checkbox.Checkbox.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>e</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Track the checkbox events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a28283293b1edb1d7420369a1ffd81114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>gui.checkbox.Checkbox.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the checkbox and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="42" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a703fede72880d12c00e36c0fd5f37702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>gui.checkbox.Checkbox.refresh</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Refresh the checkbox and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1af3a74841a689987e60cca4895111f7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.is_hovering_over</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hovering_over</name>
+        <qualifiedname>gui.checkbox.Checkbox.is_hovering_over</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the user&apos;s mouse cursor is hovering over the checkbox or not.
+The bounding box of the checkbox includes the button and the text.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="58" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1ad96d023cdfbb128f3b7210c8b15ac17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.center_horizontally</definition>
+        <argsstring>(self, parent_x, parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>gui.checkbox.Checkbox.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the checkbox horizontally relative to the specified parent, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1ad3d341a1364f3918104517363ad0e4b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.center_vertically</definition>
+        <argsstring>(self, parent_y, parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>gui.checkbox.Checkbox.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the checkbox vertically relative to the specified parent, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a0bd1e426583a677a3e75af5c1206315a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.center</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>gui.checkbox.Checkbox.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the checkbox on both axes relative to the specified parent, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a241d7198f83e42fa625750fab02e4344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.center_with_offset</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height, x, y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>gui.checkbox.Checkbox.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the checkbox with center() and offset it by x and y relative to the specified parent, then return the
+checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="91" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="91" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a4c6667353be675fbf2065827cb7c5017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.set_size</definition>
+        <argsstring>(self, size)</argsstring>
+        <name>set_size</name>
+        <qualifiedname>gui.checkbox.Checkbox.set_size</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the size of the checkbox&apos;s button, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="100" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a70b94e87c7e18f4042f70bf4319f2383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.get_size</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_size</name>
+        <qualifiedname>gui.checkbox.Checkbox.get_size</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the size of the checkbox&apos;s button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="107" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a67c6a4e00eec9dc8c0777d29996cb80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.set_checked</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_checked</name>
+        <qualifiedname>gui.checkbox.Checkbox.set_checked</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the checked state of the checkbox&apos;s button, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="113" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="113" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a8f961793ed77fd7bd2937a583bde4e81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.is_checked</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_checked</name>
+        <qualifiedname>gui.checkbox.Checkbox.is_checked</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the checked state of the checkbox&apos;s button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="120" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="120" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1a6661614b3fb9440da71af3d5e812045d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.offset_x</definition>
+        <argsstring>(self, offset_x)</argsstring>
+        <name>offset_x</name>
+        <qualifiedname>gui.checkbox.Checkbox.offset_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset_x</type>
+          <defname>offset_x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Offset the checkbox on the x-axis, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="126" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1checkbox_1_1Checkbox_1ad335416247ec873ee6349c8161d9b370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.checkbox.Checkbox.offset_y</definition>
+        <argsstring>(self, offset_y)</argsstring>
+        <name>offset_y</name>
+        <qualifiedname>gui.checkbox.Checkbox.offset_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset_y</type>
+          <defname>offset_y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Offset the checkbox on the y-axis, then return the checkbox itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="135" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="135" bodyend="143"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a checkbox.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.checkbox.Checkbox</label>
+        <link refid="classgui_1_1checkbox_1_1Checkbox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.checkbox.Checkbox</label>
+        <link refid="classgui_1_1checkbox_1_1Checkbox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py" bodystart="11" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1ab101fe8e28380164610d25f8b5bed530" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>__init__</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a4c9532bd89a6956730e7b1766a34a210" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_checked</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a438d767d11b2595a59cc89ab3b25e58d" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_colour</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a4e8b07f429d255cc494e048378b6ec96" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_size</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1ac73958d4611bd65503c59ac47f88aa83" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_spacing</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a1fffb01b28afffaf21e317e43515d1a7" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_x</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a4032da219e43661dcc1aa19b5df5dbe3" prot="protected" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>_y</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a0bd1e426583a677a3e75af5c1206315a" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>center</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1ad96d023cdfbb128f3b7210c8b15ac17e" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>center_horizontally</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1ad3d341a1364f3918104517363ad0e4b7" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>center_vertically</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a241d7198f83e42fa625750fab02e4344" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>center_with_offset</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a5496399b367e88e77e29f6ddb1dd8953" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>draw</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a22bd258dd8db27a4f14d88a7cc5c84f1" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>events</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a70b94e87c7e18f4042f70bf4319f2383" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>get_size</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a8f961793ed77fd7bd2937a583bde4e81" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>is_checked</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1af3a74841a689987e60cca4895111f7bd" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>is_hovering_over</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a6661614b3fb9440da71af3d5e812045d" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>offset_x</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1ad335416247ec873ee6349c8161d9b370" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>offset_y</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a703fede72880d12c00e36c0fd5f37702" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>refresh</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a67c6a4e00eec9dc8c0777d29996cb80f" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>set_checked</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a4c6667353be675fbf2065827cb7c5017" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>set_size</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a95d0eb79513f4e91192fabae1b3bc069" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>title_label</name></member>
+      <member refid="classgui_1_1checkbox_1_1Checkbox_1a28283293b1edb1d7420369a1ffd81114" prot="public" virt="non-virtual"><scope>gui::checkbox::Checkbox</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

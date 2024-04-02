@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceutils_1_1tools" kind="namespace" language="Python">
+    <compoundname>utils::tools</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceutils_1_1tools_1a05ba38877bf5932d5a2f758e01c2a376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utils.tools.error</definition>
+        <argsstring>(str message)</argsstring>
+        <name>error</name>
+        <qualifiedname>utils.tools.error</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Print an error message in red.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutils_1_1tools_1aec33bd9d44934879c1fd061fe2a8c157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utils.tools.warning</definition>
+        <argsstring>(str message)</argsstring>
+        <name>warning</name>
+        <qualifiedname>utils.tools.warning</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Print a warning message in yellow.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" bodystart="12" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceutils_1_1tools_1ae600cae81f1f673da722244533f45370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utils.tools.success</definition>
+        <argsstring>(str message)</argsstring>
+        <name>success</name>
+        <qualifiedname>utils.tools.success</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Print a success message in green.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

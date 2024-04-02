@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceutils_1_1tools" xml:lang="en-US">
+<title>utils.tools Namespace Reference</title>
+<indexterm><primary>utils.tools</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceutils_1_1tools_1a05ba38877bf5932d5a2f758e01c2a376">error</link> (str message)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceutils_1_1tools_1aec33bd9d44934879c1fd061fe2a8c157">warning</link> (str message)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceutils_1_1tools_1ae600cae81f1f673da722244533f45370">success</link> (str message)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceutils_1_1tools_1a05ba38877bf5932d5a2f758e01c2a376"/><section>
+    <title>error()</title>
+<indexterm><primary>error</primary><secondary>utils.tools</secondary></indexterm>
+<indexterm><primary>utils.tools</primary><secondary>error</secondary></indexterm>
+<para><computeroutput>utils.tools.error (str message)</computeroutput></para>
+<para><literallayout><computeroutput>Print an error message in red.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceutils_1_1tools_1ae600cae81f1f673da722244533f45370"/><section>
+    <title>success()</title>
+<indexterm><primary>success</primary><secondary>utils.tools</secondary></indexterm>
+<indexterm><primary>utils.tools</primary><secondary>success</secondary></indexterm>
+<para><computeroutput>utils.tools.success (str message)</computeroutput></para>
+<para><literallayout><computeroutput>Print a success message in green.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceutils_1_1tools_1aec33bd9d44934879c1fd061fe2a8c157"/><section>
+    <title>warning()</title>
+<indexterm><primary>warning</primary><secondary>utils.tools</secondary></indexterm>
+<indexterm><primary>utils.tools</primary><secondary>warning</secondary></indexterm>
+<para><computeroutput>utils.tools.warning (str message)</computeroutput></para>
+<para><literallayout><computeroutput>Print a warning message in yellow.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

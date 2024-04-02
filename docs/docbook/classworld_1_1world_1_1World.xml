@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classworld_1_1world_1_1World" xml:lang="en-US">
+<title>world.world.World Class Reference</title>
+<indexterm><primary>world.world.World</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a78736b030eec3abd997b3fd3281a112c">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a592825fb5b1d700019739185089fdf14">initialise</link> (self, game)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a59349100a84cd734b74d5966f07e0c16">update</link> (self, window_obj, player_obj)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a2db9141efc89f774aae6df943496ba39">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a45569d961156a3d6138a499637ba3690">draw</link> (self, game)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a5b01d8676fa3248a9aa18f94ad324a14">draw_wireframe</link> (self, screen)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a30d25370e13295f8dacf694c43fed871">get_map</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b">tile_manager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11">_map</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a world.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classworld_1_1world_1_1World_1a78736b030eec3abd997b3fd3281a112c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>world.world.World.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classworld_1_1world_1_1World_1a45569d961156a3d6138a499637ba3690"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>world.world.World.draw ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the world (map, tiles, etc.).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a5b01d8676fa3248a9aa18f94ad324a14"/><section>
+    <title>draw_wireframe()</title>
+<indexterm><primary>draw_wireframe</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>draw_wireframe</secondary></indexterm>
+<para><computeroutput>world.world.World.draw_wireframe ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the wireframe of the world.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a30d25370e13295f8dacf694c43fed871"/><section>
+    <title>get_map()</title>
+<indexterm><primary>get_map</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>get_map</secondary></indexterm>
+<para><computeroutput>world.world.World.get_map ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a592825fb5b1d700019739185089fdf14"/><section>
+    <title>initialise()</title>
+<indexterm><primary>initialise</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>initialise</secondary></indexterm>
+<para><computeroutput>world.world.World.initialise ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the world.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a59349100a84cd734b74d5966f07e0c16"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>world.world.World.update ( self,  window_obj,  player_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Update the world.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a2db9141efc89f774aae6df943496ba39"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput>world.world.World.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the world&apos;s UI (unused).
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11"/><section>
+    <title>_map</title>
+<indexterm><primary>_map</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>_map</secondary></indexterm>
+<para><computeroutput>world.world.World._map<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b"/><section>
+    <title>tile_manager</title>
+<indexterm><primary>tile_manager</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>tile_manager</secondary></indexterm>
+<para><computeroutput>world.world.World.tile_manager</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_world_8py">world.py</link></section>
+</section>

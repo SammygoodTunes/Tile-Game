@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="noise_8py" kind="file" language="Python">
+    <compoundname>noise.py</compoundname>
+    <innerclass refid="classworld_1_1synth_1_1noise_1_1PerlinNoise" prot="public">world::synth::noise::PerlinNoise</innerclass>
+    <innernamespace refid="namespaceworld">world</innernamespace>
+    <innernamespace refid="namespaceworld_1_1synth">world::synth</innernamespace>
+    <innernamespace refid="namespaceworld_1_1synth_1_1noise">world::synth::noise</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceworld_1_1synth" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>math<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cos,<sp/>pi</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>random<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>randint,<sp/>uniform</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.logger<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classworld_1_1synth_1_1noise_1_1PerlinNoise" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise" kindref="compound">PerlinNoise</ref>:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>perlin<sp/>noise<sp/>algorithm.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>NOISE_INTENSITY_RANGE<sp/>=<sp/>2**16</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>FREQ_ALTER_RANGE<sp/>=<sp/>0.08</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ae3aa3f5249d6bae979f61192ad9a64a3" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1af40afb3f53abc6df9c75a4576e8cfb23" kindref="member">_permutations</ref><sp/>=<sp/>list()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1afd5143bd688d379a790b2d7b9e0af1ac" kindref="member">_persistence</ref><sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6a42e482b403ed0cc838266df9a90c01" kindref="member">_octaves</ref><sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a474f8a99793c0edf202a31f1dd4a9543" kindref="member">_noise_intensity</ref><sp/>=<sp/>randint(-PerlinNoise.NOISE_INTENSITY_RANGE,<sp/>PerlinNoise.NOISE_INTENSITY_RANGE)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ad3e515a0264c4f9501c845400d709353" kindref="member">_frequency</ref><sp/>=<sp/>0.40<sp/>+<sp/>uniform(-PerlinNoise.FREQ_ALTER_RANGE,<sp/>PerlinNoise.FREQ_ALTER_RANGE)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&apos;Created<sp/>{__class__.__name__}<sp/>with<sp/>attributes<sp/>{self.__dict__}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a97036ade7f7a446c5137feb2c1cf5e21" kindref="member">generate</ref>(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Generate<sp/>and<sp/>return<sp/>perlin<sp/>noise<sp/>data.</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6a42e482b403ed0cc838266df9a90c01" kindref="member">_octaves</ref><sp/>-<sp/>1):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>freq<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ad3e515a0264c4f9501c845400d709353" kindref="member">_frequency</ref><sp/>**<sp/>i</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>amplitude<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1afd5143bd688d379a790b2d7b9e0af1ac" kindref="member">_persistence</ref><sp/>**<sp/>i</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4d30ff3c0d937cb39ce04873b188c86e" kindref="member">interpolate_noise</ref>(x<sp/>*<sp/>freq,<sp/>y<sp/>*<sp/>freq)<sp/>*<sp/>amplitude</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">noise(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Noise<sp/>function.</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n:<sp/>int<sp/>=<sp/>x<sp/>+<sp/>y<sp/>*<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a474f8a99793c0edf202a31f1dd4a9543" kindref="member">_noise_intensity</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>(n<sp/>&lt;&lt;<sp/>13)<sp/>^<sp/>n</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0<sp/>-<sp/>((n<sp/>*<sp/>(n<sp/>*<sp/>n<sp/>*<sp/>15731<sp/>+<sp/>789221)<sp/>+<sp/>1376312589)<sp/>&amp;<sp/>0x7fffffff)<sp/>/<sp/>1073741824.0</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6" kindref="member">smooth_noise</ref>(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Smooth<sp/>noise<sp/>function.</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x<sp/>-<sp/>1,<sp/>y<sp/>-<sp/>1)<sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x<sp/>+<sp/>1,<sp/>y<sp/>-<sp/>1)<sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x<sp/>-<sp/>1,<sp/>y<sp/>+<sp/>1))<sp/>/<sp/>16</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>(self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x<sp/>-<sp/>1,<sp/>y)<sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x<sp/>+<sp/>1,<sp/>y)<sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x,<sp/>y<sp/>-<sp/>1)<sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x,<sp/>y<sp/>+<sp/>1))<sp/>/<sp/>8</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd" kindref="member">noise</ref>(x,<sp/>y)<sp/>/<sp/>4)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60" kindref="member">cosine_interpolate</ref>(a,<sp/>b,<sp/>x):</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cosine<sp/>interpolation.</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ft<sp/>=<sp/>x<sp/>*<sp/>pi</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f<sp/>=<sp/>(1<sp/>-<sp/>cos(ft))<sp/>*<sp/>0.5</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>*<sp/>(1<sp/>-<sp/>f)<sp/>+<sp/>b<sp/>*<sp/>f</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4d30ff3c0d937cb39ce04873b188c86e" kindref="member">interpolate_noise</ref>(self,<sp/>x:<sp/>float,<sp/>y:<sp/>float):</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Interpolate<sp/>noise.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ix,<sp/>iy<sp/>=<sp/>int(x),<sp/>int(y)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fx,<sp/>fy<sp/>=<sp/>x<sp/>-<sp/>ix,<sp/>y<sp/>-<sp/>iy</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6" kindref="member">smooth_noise</ref>(ix,<sp/>iy)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6" kindref="member">smooth_noise</ref>(ix<sp/>+<sp/>1,<sp/>iy)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v3<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6" kindref="member">smooth_noise</ref>(ix,<sp/>iy<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v4<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6" kindref="member">smooth_noise</ref>(ix<sp/>+<sp/>1,<sp/>iy<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interp1<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60" kindref="member">cosine_interpolate</ref>(v1,<sp/>v2,<sp/>fx)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interp2<sp/>=<sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60" kindref="member">cosine_interpolate</ref>(v3,<sp/>v4,<sp/>fx)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60" kindref="member">cosine_interpolate</ref>(interp1,<sp/>interp2,<sp/>fy)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1abac364758bfe84111f67b158c9e059fd" kindref="member">set_permutations</ref>(self,<sp/>permutations:<sp/>list<sp/>|<sp/>tuple)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>permutations.</highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1af40afb3f53abc6df9c75a4576e8cfb23" kindref="member">_permutations</ref><sp/>=<sp/>permutations</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a01a3e9c4678b50f79312152fd43cbfa2" kindref="member">get_permutations</ref>(self)<sp/>-&gt;<sp/>list<sp/>|<sp/>tuple:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>permutations.</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1af40afb3f53abc6df9c75a4576e8cfb23" kindref="member">_permutations</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a211c7c945aefc7c7fa5b5f0d9080e821" kindref="member">set_noise_intensity</ref>(self,<sp/>noise_intensity):</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>noise<sp/>intensity.</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a474f8a99793c0edf202a31f1dd4a9543" kindref="member">_noise_intensity</ref><sp/>=<sp/>noise_intensity</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ab804cfb24f146086f053ed6fe8bcd64a" kindref="member">get_noise_intensity</ref>(self):</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>noise<sp/>intensity.</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a474f8a99793c0edf202a31f1dd4a9543" kindref="member">_noise_intensity</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a26efcdfe232879ba5ca3635a229def1d" kindref="member">set_frequency</ref>(self,<sp/>frequency):</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>frequency.</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ad3e515a0264c4f9501c845400d709353" kindref="member">_frequency</ref><sp/>=<sp/>frequency</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1a52162ec38a1d5dafcc07c7b9d65e3b04" kindref="member">get_frequency</ref>(self):</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>frequency.</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classworld_1_1synth_1_1noise_1_1PerlinNoise_1ad3e515a0264c4f9501c845400d709353" kindref="member">_frequency</ref></highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py"/>
+  </compounddef>
+</doxygen>

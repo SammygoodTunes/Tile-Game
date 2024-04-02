@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1hotbar_1_1Hotbar" kind="class" language="Python" prot="public">
+    <compoundname>gui::hotbar::Hotbar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Widget</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a963d77db2e3e76254dab38079dff0907" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_surface</definition>
+        <argsstring></argsstring>
+        <name>_surface</name>
+        <qualifiedname>gui.hotbar.Hotbar._surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a3fca9353b21de2b871f95f060e4a5763" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_spacing</definition>
+        <argsstring></argsstring>
+        <name>_spacing</name>
+        <qualifiedname>gui.hotbar.Hotbar._spacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1ac91810209ec47d5e6275db80d44a9373" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>gui.hotbar.Hotbar._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1aa3004918278e35fa1468443d4e84fdc9" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>gui.hotbar.Hotbar._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a32f7c5cefb1b687890509f2c03a3dfb0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_slots</definition>
+        <argsstring></argsstring>
+        <name>_slots</name>
+        <qualifiedname>gui.hotbar.Hotbar._slots</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a92dd27dba71123133e6fc6187df7e320" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_tooltip</definition>
+        <argsstring></argsstring>
+        <name>_tooltip</name>
+        <qualifiedname>gui.hotbar.Hotbar._tooltip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1abea700d752e69fede84f2d503ffce638" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_selected_slot</definition>
+        <argsstring></argsstring>
+        <name>_selected_slot</name>
+        <qualifiedname>gui.hotbar.Hotbar._selected_slot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1abcf01fb2918db031cdc0950cccc1d7e0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_atlas</definition>
+        <argsstring></argsstring>
+        <name>_atlas</name>
+        <qualifiedname>gui.hotbar.Hotbar._atlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a6608436fe817dbf27866089fabcdf70f" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.hotbar.Hotbar._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1hotbar_1_1Hotbar_1a0403c2e79f7d5a3d567dc9f87c1b5bc0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.hotbar.Hotbar::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.hotbar.Hotbar._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1af0f0cc8c696ed3a76557576aac40e019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.__init__</definition>
+        <argsstring>(self, x=0, y=0, slot_count=4)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.hotbar.Hotbar.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>slot_count</type>
+          <defname>slot_count</defname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="16" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a3ee70c578e0a3d36bac1b6f849798b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.init_slots</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_slots</name>
+        <qualifiedname>gui.hotbar.Hotbar.init_slots</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the hotbar&apos;s slots.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="29" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1afc324b6d4aa5931161a9a2c2049acb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.hotbar.Hotbar.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the hotbar and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1afc7ad3745efbfaabb4e17ae6e8cdc9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>gui.hotbar.Hotbar.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the hotbar and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="51" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a79cc516f460382cfed9e398aa8a290b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.center_horizontally</definition>
+        <argsstring>(self, parent_x, parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>gui.hotbar.Hotbar.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the hotbar horizontally relative to the specified parent, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1abd74640f1ba310832546173e70b8a2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.center_vertically</definition>
+        <argsstring>(self, parent_y, parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>gui.hotbar.Hotbar.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the hotbar vertically relative to the specified parent, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="70" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a180a2a69b46f408c226fb28f069bba1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.center</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>gui.hotbar.Hotbar.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the hotbar on both axes relative to the specified parent, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="77" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a0813702439bec0a204898ea375a16e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.center_with_offset</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height, x, y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>gui.hotbar.Hotbar.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the hotbar with center() and offset it by x and y relative to the specified parent, then return
+the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a301ecb774c59628739c62c103df2122a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.set_spacing</definition>
+        <argsstring>(self, spacing)</argsstring>
+        <name>set_spacing</name>
+        <qualifiedname>gui.hotbar.Hotbar.set_spacing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>spacing</type>
+          <defname>spacing</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the spacing between the hotbar&apos;s slots, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="92" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a2c188bdc055f9a30ee341874b1531587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_spacing</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_spacing</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_spacing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the spacing between the hotbar&apos;s slots.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="99" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a0a17f238d8aa16bf3df70c9295bd12ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.set_width</definition>
+        <argsstring>(self, width)</argsstring>
+        <name>set_width</name>
+        <qualifiedname>gui.hotbar.Hotbar.set_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the width of the hotbar, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="105" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="105" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1acea2bb527842c232bda24409dc3178b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the hotbar.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="112" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a5cb5f85c3c1641ba2412a7b1c182839c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.set_height</definition>
+        <argsstring>(self, height)</argsstring>
+        <name>set_height</name>
+        <qualifiedname>gui.hotbar.Hotbar.set_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the height of the hotbar, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="118" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="118" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1ac06491cc5b7a74a3acef5efbd07aef57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the hotbar.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="125" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1addf4f1da89c81e41444fe330a7bc96d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.select_slot</definition>
+        <argsstring>(self, slot_index)</argsstring>
+        <name>select_slot</name>
+        <qualifiedname>gui.hotbar.Hotbar.select_slot</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slot_index</type>
+          <defname>slot_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select a hotbar slot, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="131" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="131" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a06a0ac306c018d1092fbc22b7372407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.unselect_slot</definition>
+        <argsstring>(self, slot_index)</argsstring>
+        <name>unselect_slot</name>
+        <qualifiedname>gui.hotbar.Hotbar.unselect_slot</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slot_index</type>
+          <defname>slot_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Unselect a hotbar slot, then return the slot itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="139" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="139" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a85943f6cf3bf3a4b2ef4c35dba45f602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_selected_slot</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_selected_slot</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_selected_slot</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the selected slot of the hotbar.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="146" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="146" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1afbc070871dccddc4d3ca67d594369a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_selected_slot_item</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_selected_slot_item</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_selected_slot_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the item of the selected hotbar slot.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="152" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="152" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a47425a5973646be41d10fd34c072d3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_slot</definition>
+        <argsstring>(self, slot_index)</argsstring>
+        <name>get_slot</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_slot</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slot_index</type>
+          <defname>slot_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the slot object of the hotbar at specified index.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="158" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="158" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1a68c6ac0a9cd35918a5934003fc94616d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_slots</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_slots</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_slots</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return all hotbar slots.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="164" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1aef138d3ced00c7840e69e8c2997fc850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.set_atlas</definition>
+        <argsstring>(self, atlas)</argsstring>
+        <name>set_atlas</name>
+        <qualifiedname>gui.hotbar.Hotbar.set_atlas</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>atlas</type>
+          <defname>atlas</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the texture atlas that will be used by the hotbar, then return the hotbar itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="170" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="170" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1hotbar_1_1Hotbar_1aa13bb451536cd02e9590f340a57519d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.hotbar.Hotbar.get_atlas</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_atlas</name>
+        <qualifiedname>gui.hotbar.Hotbar.get_atlas</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the texture atlas used by the hotbar.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="177" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="177" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a hotbar.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.hotbar.Hotbar</label>
+        <link refid="classgui_1_1hotbar_1_1Hotbar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.hotbar.Hotbar</label>
+        <link refid="classgui_1_1hotbar_1_1Hotbar"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/hotbar.py" bodystart="11" bodyend="182"/>
+    <listofallmembers>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1af0f0cc8c696ed3a76557576aac40e019" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>__init__</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1abcf01fb2918db031cdc0950cccc1d7e0" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_atlas</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1aa3004918278e35fa1468443d4e84fdc9" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_height</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1abea700d752e69fede84f2d503ffce638" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_selected_slot</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a32f7c5cefb1b687890509f2c03a3dfb0" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_slots</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a3fca9353b21de2b871f95f060e4a5763" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_spacing</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a963d77db2e3e76254dab38079dff0907" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_surface</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a92dd27dba71123133e6fc6187df7e320" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_tooltip</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1ac91810209ec47d5e6275db80d44a9373" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_width</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a6608436fe817dbf27866089fabcdf70f" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_x</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a0403c2e79f7d5a3d567dc9f87c1b5bc0" prot="protected" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>_y</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a180a2a69b46f408c226fb28f069bba1d" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>center</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a79cc516f460382cfed9e398aa8a290b1" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>center_horizontally</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1abd74640f1ba310832546173e70b8a2ba" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>center_vertically</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a0813702439bec0a204898ea375a16e32" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>center_with_offset</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1afc324b6d4aa5931161a9a2c2049acb7c" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>draw</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1aa13bb451536cd02e9590f340a57519d5" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_atlas</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1ac06491cc5b7a74a3acef5efbd07aef57" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_height</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a85943f6cf3bf3a4b2ef4c35dba45f602" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_selected_slot</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1afbc070871dccddc4d3ca67d594369a7e" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_selected_slot_item</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a47425a5973646be41d10fd34c072d3e7" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_slot</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a68c6ac0a9cd35918a5934003fc94616d" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_slots</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a2c188bdc055f9a30ee341874b1531587" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_spacing</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1acea2bb527842c232bda24409dc3178b7" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>get_width</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a3ee70c578e0a3d36bac1b6f849798b96" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>init_slots</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1addf4f1da89c81e41444fe330a7bc96d9" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>select_slot</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1aef138d3ced00c7840e69e8c2997fc850" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>set_atlas</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a5cb5f85c3c1641ba2412a7b1c182839c" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>set_height</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a301ecb774c59628739c62c103df2122a" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>set_spacing</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a0a17f238d8aa16bf3df70c9295bd12ff" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>set_width</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1a06a0ac306c018d1092fbc22b7372407d" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>unselect_slot</name></member>
+      <member refid="classgui_1_1hotbar_1_1Hotbar_1afc7ad3745efbfaabb4e17ae6e8cdc9ed" prot="public" virt="non-virtual"><scope>gui::hotbar::Hotbar</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

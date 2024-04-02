@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="tiles_8py" kind="file" language="Python">
+    <compoundname>tiles.py</compoundname>
+    <innerclass refid="classdata_1_1tiles_1_1Tile" prot="public">data::tiles::Tile</innerclass>
+    <innerclass refid="classdata_1_1tiles_1_1Tiles" prot="public">data::tiles::Tiles</innerclass>
+    <innerclass refid="classdata_1_1tiles_1_1TileTypes" prot="public">data::tiles::TileTypes</innerclass>
+    <innernamespace refid="namespacedata">data</innernamespace>
+    <innernamespace refid="namespacedata_1_1tiles">data::tiles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacedata_1_1tiles" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>importlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>resources<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>impr</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>itertools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>count</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Self</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.logger<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classdata_1_1tiles_1_1Tile" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>map<sp/>tile.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>DEFAULT_ATLAS:<sp/>str<sp/>=<sp/>str(impr.files(</highlight><highlight class="stringliteral">&quot;assets&quot;</highlight><highlight class="normal">)<sp/>/<sp/></highlight><highlight class="stringliteral">&quot;atlas.png&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>count_id<sp/>=<sp/>count()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1afdcaa0ad6217eab53901fd833c3d5198" kindref="member">__init__</ref>(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._id:<sp/>int<sp/>=<sp/>next(Tile.count_id)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a" kindref="member">_xy</ref>:<sp/>tuple[int,<sp/>int]<sp/>=<sp/>(x,<sp/>y)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb" kindref="member">_resistance</ref>:<sp/>int<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1adc27ab61885a1a82fd702ccf10c357dd" kindref="member">_damage</ref>:<sp/>int<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1acc45b2ddb25c2a3823837066b8876eeb" kindref="member">_damage_delay</ref>:<sp/>float<sp/>=<sp/>0.0</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&apos;Created<sp/>{__class__.__name__}<sp/>with<sp/>attributes<sp/>{self.__dict__}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1af49fae56a7283e7e052e807a7a03ec65" kindref="member">__repr__</ref>(self):</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&apos;Tile({self._id},<sp/>{self._xy},<sp/>{self._resistance},<sp/>{self._damage},<sp/>{self._damage_delay})&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a13128318a7cca8880f9176a3135b52a4" kindref="member">get_id</ref>(self):</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Get<sp/>the<sp/>id<sp/>of<sp/>the<sp/>tile.</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._id</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a70401d1bd83c605f360e3b12f3f1a052" kindref="member">set_xy</ref>(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>texture<sp/>coordinates<sp/>of<sp/>the<sp/>tile,<sp/>then<sp/>return<sp/>the<sp/>tile<sp/>itself.</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a" kindref="member">_xy</ref><sp/>=<sp/>(x,<sp/>y)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a1a0d350fe6c937c04e3e4c482a625a4b" kindref="member">get_xy</ref>(self)<sp/>-&gt;<sp/>tuple[int,<sp/>int]:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>texture<sp/>coordinate<sp/>of<sp/>the<sp/>tile.</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a" kindref="member">_xy</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a8d359b2164676d6b60ee39acb4e2d3e3" kindref="member">set_resistance</ref>(self,<sp/>resistance:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>resistance<sp/>of<sp/>the<sp/>tile,<sp/>then<sp/>return<sp/>the<sp/>tile<sp/>itself.</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb" kindref="member">_resistance</ref><sp/>=<sp/>resistance</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a4ea2b97d00b2ff6f29091c98117250fe" kindref="member">get_resistance</ref>(self)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>resistance<sp/>of<sp/>the<sp/>tile.</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb" kindref="member">_resistance</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1abb6d881f3636a951a854fe0c25478b40" kindref="member">set_damage</ref>(self,<sp/>damage:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>damage<sp/>amount<sp/>of<sp/>the<sp/>tile,<sp/>then<sp/>return<sp/>the<sp/>tile<sp/>itself.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1adc27ab61885a1a82fd702ccf10c357dd" kindref="member">_damage</ref><sp/>=<sp/>damage</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1ab339756ae7b4426da1aca54568779ac4" kindref="member">get_damage</ref>(self)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>damage<sp/>amount<sp/>of<sp/>the<sp/>tile.</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1adc27ab61885a1a82fd702ccf10c357dd" kindref="member">_damage</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a37ecd2a1b7c53e623a6c998a7f09e991" kindref="member">set_damage_delay</ref>(self,<sp/>damage_delay:<sp/>float)<sp/>-&gt;<sp/>Self:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>damage<sp/>delay<sp/>of<sp/>the<sp/>tile,<sp/>then<sp/>return<sp/>the<sp/>tile<sp/>itself.</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1acc45b2ddb25c2a3823837066b8876eeb" kindref="member">_damage_delay</ref><sp/>=<sp/>damage_delay</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tile_1a254e54f0f077b746015ffddcbd371c3c" kindref="member">get_damage_delay</ref>(self)<sp/>-&gt;<sp/>float:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>damage<sp/>delay<sp/>of<sp/>the<sp/>tile.</highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1tiles_1_1Tile_1acc45b2ddb25c2a3823837066b8876eeb" kindref="member">_damage_delay</ref></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classdata_1_1tiles_1_1Tiles" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1Tiles" kindref="compound">Tiles</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>collection<sp/>of<sp/>tiles.</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>VOID:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>0)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>GRASS:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>0)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAINS:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(2,<sp/>0)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>DIRT:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(3,<sp/>0)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(4,<sp/>0).set_resistance(10)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>SAND:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(5,<sp/>0)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE_STAIRS:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(6,<sp/>0)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>FIRESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(7,<sp/>0)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>WATER:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>1)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>LAVA:<sp/>Tile<sp/>=<sp/><ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>1).set_damage(3).set_damage_delay(0.5)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>BREAK_TILES_ANIM:<sp/>tuple[Tile]<sp/>=<sp/>tuple(<ref refid="classdata_1_1tiles_1_1Tile" kindref="compound">Tile</ref>(x,<sp/>7)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(8))</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classdata_1_1tiles_1_1TileTypes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1tiles_1_1TileTypes" kindref="compound">TileTypes</ref>:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>regrouping<sp/>tiles<sp/>into<sp/>different<sp/>categories.</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>BREAKABLE:<sp/>tuple[Tiles]<sp/>=<sp/>(Tiles.COBBLESTONE,)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>LETHAL:<sp/>tuple[Tiles]<sp/>=<sp/>(Tiles.LAVA,)</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py"/>
+  </compounddef>
+</doxygen>

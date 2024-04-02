@@ -1,0 +1,1068 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1label_1_1Label" kind="class" language="Python" prot="public">
+    <compoundname>gui::label::Label</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Widget</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gui.label.Label::DEFAULT_FONT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_FONT</name>
+        <qualifiedname>gui.label.Label.DEFAULT_FONT</qualifiedname>
+        <initializer>=  impr.files(assets) / &quot;font.ttf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a740ed9b0bf79e904ccba3fc0df2471cb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.label.Label::DEFAULT_FONT_SIZE_SMALL</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_FONT_SIZE_SMALL</name>
+        <qualifiedname>gui.label.Label.DEFAULT_FONT_SIZE_SMALL</qualifiedname>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a8543898eaa97064dd7b4a4ef7667bada" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.label.Label::DEFAULT_FONT_SIZE_NORMAL</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_FONT_SIZE_NORMAL</name>
+        <qualifiedname>gui.label.Label.DEFAULT_FONT_SIZE_NORMAL</qualifiedname>
+        <initializer>=  11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a4c991af9bdd850e36eaeb064f2595b45" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gui.label.Label::DEFAULT_FONT_SIZE_LARGE</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_FONT_SIZE_LARGE</name>
+        <qualifiedname>gui.label.Label.DEFAULT_FONT_SIZE_LARGE</qualifiedname>
+        <initializer>=  14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a38f29d5b59526efa830235f2f838c3b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>gui.label.Label.font</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1af8c5c9803314e45a907698eaf3706b34" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_font_size</definition>
+        <argsstring></argsstring>
+        <name>_font_size</name>
+        <qualifiedname>gui.label.Label._font_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a02a1c71ace980ee201275a2cfae9699a" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_font_sizes</definition>
+        <argsstring></argsstring>
+        <name>_font_sizes</name>
+        <qualifiedname>gui.label.Label._font_sizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_text</definition>
+        <argsstring></argsstring>
+        <name>_text</name>
+        <qualifiedname>gui.label.Label._text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_shadow_x</definition>
+        <argsstring></argsstring>
+        <name>_shadow_x</name>
+        <qualifiedname>gui.label.Label._shadow_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_shadow_y</definition>
+        <argsstring></argsstring>
+        <name>_shadow_y</name>
+        <qualifiedname>gui.label.Label._shadow_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_shadow_colour</definition>
+        <argsstring></argsstring>
+        <name>_shadow_colour</name>
+        <qualifiedname>gui.label.Label._shadow_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_antialiasing</definition>
+        <argsstring></argsstring>
+        <name>_antialiasing</name>
+        <qualifiedname>gui.label.Label._antialiasing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.label.Label._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.label.Label._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.label.Label::_colour</definition>
+        <argsstring></argsstring>
+        <name>_colour</name>
+        <qualifiedname>gui.label.Label._colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="171" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.__init__</definition>
+        <argsstring>(self, text=&quot;&quot;, x=0, y=0)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.label.Label.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.label.Label.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the label and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>gui.label.Label.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the label and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>gui.label.Label.refresh</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the shadow&apos;s position of the label.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.center_horizontally</definition>
+        <argsstring>(self, parent_x, parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>gui.label.Label.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the label horizontally relative to the specified parent, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.center_vertically</definition>
+        <argsstring>(self, parent_y, parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>gui.label.Label.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the label vertically relative to the specified parent, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="65" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.center</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>gui.label.Label.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the label on both axes relative to the specified parent, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.center_with_offset</definition>
+        <argsstring>(self, parent_x, parent_y, parent_width, parent_height, x, y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>gui.label.Label.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent_x</type>
+          <defname>parent_x</defname>
+        </param>
+        <param>
+          <type>parent_y</type>
+          <defname>parent_y</defname>
+        </param>
+        <param>
+          <type>parent_width</type>
+          <defname>parent_width</defname>
+        </param>
+        <param>
+          <type>parent_height</type>
+          <defname>parent_height</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the label with center() and offset it by x and y relative to the specified parent, then return the
+label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_auto_font_size</definition>
+        <argsstring>(self, width, height, max_width, max_height)</argsstring>
+        <name>set_auto_font_size</name>
+        <qualifiedname>gui.label.Label.set_auto_font_size</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>max_width</type>
+          <defname>max_width</defname>
+        </param>
+        <param>
+          <type>max_height</type>
+          <defname>max_height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the automatic font size of the label, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="90" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="90" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_font_size</definition>
+        <argsstring>(self, font_size)</argsstring>
+        <name>set_font_size</name>
+        <qualifiedname>gui.label.Label.set_font_size</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>font_size</type>
+          <defname>font_size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the font size of the label, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="102" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_font_size</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_font_size</name>
+        <qualifiedname>gui.label.Label.get_font_size</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the font size of the label.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="110" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_font_sizes</definition>
+        <argsstring>(self, font_sizes)</argsstring>
+        <name>set_font_sizes</name>
+        <qualifiedname>gui.label.Label.set_font_sizes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>font_sizes</type>
+          <defname>font_sizes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the small, medium and large sizes of the label&apos;s text, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="116" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_font_sizes</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_font_sizes</name>
+        <qualifiedname>gui.label.Label.get_font_sizes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the small, medium and large sizes of the label&apos;s text.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="123" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_total_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_total_width</name>
+        <qualifiedname>gui.label.Label.get_total_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the total width of the label.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="129" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_total_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_total_height</name>
+        <qualifiedname>gui.label.Label.get_total_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the total height of the label.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="135" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="135" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_text</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>set_text</name>
+        <qualifiedname>gui.label.Label.set_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label&apos;s text, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="141" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_text</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>gui.label.Label.get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the label&apos;s text.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="148" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_antialiasing</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_antialiasing</name>
+        <qualifiedname>gui.label.Label.set_antialiasing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the antialiasing state of the label, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="154" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.has_antialiasing</definition>
+        <argsstring>(self)</argsstring>
+        <name>has_antialiasing</name>
+        <qualifiedname>gui.label.Label.has_antialiasing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns True if the label has antialiasing enabled.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="161" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="161" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_colour</definition>
+        <argsstring>(self, colour)</argsstring>
+        <name>set_colour</name>
+        <qualifiedname>gui.label.Label.set_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>colour</type>
+          <defname>colour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s foreground colour, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="167" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="167" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_colour</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_colour</name>
+        <qualifiedname>gui.label.Label.get_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the label text&apos;s foreground colour.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="174" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_shadow_x</definition>
+        <argsstring>(self, shadow_x)</argsstring>
+        <name>set_shadow_x</name>
+        <qualifiedname>gui.label.Label.set_shadow_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>shadow_x</type>
+          <defname>shadow_x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s shadow&apos;s x position, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="180" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="180" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_x</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>set_x</name>
+        <qualifiedname>gui.label.Label.set_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s x position, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="187" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="187" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_y</definition>
+        <argsstring>(self, y)</argsstring>
+        <name>set_y</name>
+        <qualifiedname>gui.label.Label.set_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s y position, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="195" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="195" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_shadow_x</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_shadow_x</name>
+        <qualifiedname>gui.label.Label.get_shadow_x</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the label text&apos;s shadow&apos;s x position.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="203" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="203" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_shadow_y</definition>
+        <argsstring>(self, shadow_y)</argsstring>
+        <name>set_shadow_y</name>
+        <qualifiedname>gui.label.Label.set_shadow_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>shadow_y</type>
+          <defname>shadow_y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s shadow&apos;s y position, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="209" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_shadow_y</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_shadow_y</name>
+        <qualifiedname>gui.label.Label.get_shadow_y</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the label text&apos;s shadow&apos;s y position.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="216" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="216" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_shadow_x_offset</definition>
+        <argsstring>(self, offset)</argsstring>
+        <name>set_shadow_x_offset</name>
+        <qualifiedname>gui.label.Label.set_shadow_x_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset</type>
+          <defname>offset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s shadow&apos;s x offset, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="222" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="222" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_shadow_y_offset</definition>
+        <argsstring>(self, offset)</argsstring>
+        <name>set_shadow_y_offset</name>
+        <qualifiedname>gui.label.Label.set_shadow_y_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset</type>
+          <defname>offset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s shadow&apos;s y offset, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="229" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="229" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.set_shadow_colour</definition>
+        <argsstring>(self, shadow_colour)</argsstring>
+        <name>set_shadow_colour</name>
+        <qualifiedname>gui.label.Label.set_shadow_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>shadow_colour</type>
+          <defname>shadow_colour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the label text&apos;s shadow colour, then return the label itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="236" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.label.Label.get_shadow_colour</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_shadow_colour</name>
+        <qualifiedname>gui.label.Label.get_shadow_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the label text&apos;s shadow colour.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="243" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="243" bodyend="248"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a label.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.label.Label</label>
+        <link refid="classgui_1_1label_1_1Label"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Widget</label>
+      </node>
+      <node id="1">
+        <label>gui.label.Label</label>
+        <link refid="classgui_1_1label_1_1Label"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/label.py" bodystart="10" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>__init__</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_antialiasing</name></member>
+      <member refid="classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1af8c5c9803314e45a907698eaf3706b34" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_font_size</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a02a1c71ace980ee201275a2cfae9699a" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_font_sizes</name></member>
+      <member refid="classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_shadow_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_shadow_x</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_shadow_y</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_text</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_x</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf" prot="protected" virt="non-virtual"><scope>gui::label::Label</scope><name>_y</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>center</name></member>
+      <member refid="classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>center_horizontally</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>center_vertically</name></member>
+      <member refid="classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>center_with_offset</name></member>
+      <member refid="classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>DEFAULT_FONT</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a4c991af9bdd850e36eaeb064f2595b45" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>DEFAULT_FONT_SIZE_LARGE</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a8543898eaa97064dd7b4a4ef7667bada" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>DEFAULT_FONT_SIZE_NORMAL</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a740ed9b0bf79e904ccba3fc0df2471cb" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>DEFAULT_FONT_SIZE_SMALL</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>draw</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a38f29d5b59526efa830235f2f838c3b6" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>font</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_font_size</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_font_sizes</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_shadow_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_shadow_x</name></member>
+      <member refid="classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_shadow_y</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_text</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_total_height</name></member>
+      <member refid="classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>get_total_width</name></member>
+      <member refid="classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>has_antialiasing</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>refresh</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_antialiasing</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_auto_font_size</name></member>
+      <member refid="classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_font_size</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_font_sizes</name></member>
+      <member refid="classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_shadow_colour</name></member>
+      <member refid="classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_shadow_x</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_shadow_x_offset</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_shadow_y</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_shadow_y_offset</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_text</name></member>
+      <member refid="classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_x</name></member>
+      <member refid="classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>set_y</name></member>
+      <member refid="classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00" prot="public" virt="non-virtual"><scope>gui::label::Label</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcore_1_1window_1_1Window" xml:lang="en-US">
+<title>core.window.Window Class Reference</title>
+<indexterm><primary>core.window.Window</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a26a79dd4e0945c69a728d0395c2acfe0">__init__</link> (self, int <link linkend="_classcore_1_1window_1_1Window_1ae36d02a8d928ebee16723bdb3d6f0186">width</link>, int <link linkend="_classcore_1_1window_1_1Window_1a002126f9ebb7154d35a88995aaeadc50">height</link>, str title=data_mng.get_game_property(data_mng.APP_NAME))</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1adfd518e4b0bd086241e90c9ded58ba8a">clear</link> (self, tuple[int, int, int] colour)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1aa4a7a3199afe46692952dd1693594035">tick</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9">resize</link> (self, pygame.event.Event|pygame.event.EventType e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a63ff24d1d4169f8150a57c3f9e6ca98a">draw_fps</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a11c4d7abac1a6e9f8a8c79e7a3a5ad06">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1aa00ad47630441b56e14f37b8b0fbd633">toggle_fullscreen</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1ae36d02a8d928ebee16723bdb3d6f0186">width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a002126f9ebb7154d35a88995aaeadc50">height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a25234e7d72d9808a299f47ad7b38725f">halt_refresh</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a8c6963730828d030536d17c016ce5100">fps_cap</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1ac55e7c57546c74a5b2a9a5c1328d9253">screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a5c5b643d7ea358aadfa7f1ea111afa9a">timer</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a99fdf8c1ee41e7abd9b63871cfa44c97">max_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1ae19b9e047955f8ca433046efe2c83c84">max_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1a51902afec238522cea81bbdce33d1017">fullscreen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1aae3ba375fb7fdcb8ad493abc91871c4e">old_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1window_1_1Window_1aad4b09675f0fe34863cda0d6ad43004c">old_height</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcore_1_1window_1_1Window_1a9561c3b8721a421572fdaf342451fd45">FONT_PATH</link> = impr.files(&quot;assets&quot;) / &quot;font.ttf&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the window frame in which the game will be contained.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a26a79dd4e0945c69a728d0395c2acfe0"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None core.window.Window.__init__ ( self, int width, int height, str  title = <computeroutput>data_mng.get_game_property(data_mng.APP_NAME)</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcore_1_1window_1_1Window_1adfd518e4b0bd086241e90c9ded58ba8a"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>clear</secondary></indexterm>
+<para><computeroutput> None core.window.Window.clear ( self, tuple[int, int, int] colour)</computeroutput></para>
+<para><literallayout><computeroutput>Clear the screen with the specified colour.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a63ff24d1d4169f8150a57c3f9e6ca98a"/><section>
+    <title>draw_fps()</title>
+<indexterm><primary>draw_fps</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>draw_fps</secondary></indexterm>
+<para><computeroutput> None core.window.Window.draw_fps ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update and draw the FPS on-screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9"/><section>
+    <title>resize()</title>
+<indexterm><primary>resize</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>resize</secondary></indexterm>
+<para><computeroutput> None core.window.Window.resize ( self, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
+<para><literallayout><computeroutput>Update window dimensions on resize.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1aa4a7a3199afe46692952dd1693594035"/><section>
+    <title>tick()</title>
+<indexterm><primary>tick</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>tick</secondary></indexterm>
+<para><computeroutput> None core.window.Window.tick ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the screen and keep the in-game clock running.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1aa00ad47630441b56e14f37b8b0fbd633"/><section>
+    <title>toggle_fullscreen()</title>
+<indexterm><primary>toggle_fullscreen</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>toggle_fullscreen</secondary></indexterm>
+<para><computeroutput> None core.window.Window.toggle_fullscreen ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Toggle between windowed mode and full-screen mode, and update the window accordingly.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a11c4d7abac1a6e9f8a8c79e7a3a5ad06"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None core.window.Window.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update all window GUI widgets.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a9561c3b8721a421572fdaf342451fd45"/><section>
+    <title>FONT_PATH</title>
+<indexterm><primary>FONT_PATH</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>FONT_PATH</secondary></indexterm>
+<para><computeroutput>str core.window.Window.FONT_PATH = impr.files(&quot;assets&quot;) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a8c6963730828d030536d17c016ce5100"/><section>
+    <title>fps_cap</title>
+<indexterm><primary>fps_cap</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>fps_cap</secondary></indexterm>
+<para><computeroutput>core.window.Window.fps_cap</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a51902afec238522cea81bbdce33d1017"/><section>
+    <title>fullscreen</title>
+<indexterm><primary>fullscreen</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>fullscreen</secondary></indexterm>
+<para><computeroutput>core.window.Window.fullscreen</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a25234e7d72d9808a299f47ad7b38725f"/><section>
+    <title>halt_refresh</title>
+<indexterm><primary>halt_refresh</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>halt_refresh</secondary></indexterm>
+<para><computeroutput>core.window.Window.halt_refresh</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a002126f9ebb7154d35a88995aaeadc50"/><section>
+    <title>height</title>
+<indexterm><primary>height</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>core.window.Window.height</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1ae19b9e047955f8ca433046efe2c83c84"/><section>
+    <title>max_height</title>
+<indexterm><primary>max_height</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>max_height</secondary></indexterm>
+<para><computeroutput>core.window.Window.max_height</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a99fdf8c1ee41e7abd9b63871cfa44c97"/><section>
+    <title>max_width</title>
+<indexterm><primary>max_width</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>max_width</secondary></indexterm>
+<para><computeroutput>core.window.Window.max_width</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1aad4b09675f0fe34863cda0d6ad43004c"/><section>
+    <title>old_height</title>
+<indexterm><primary>old_height</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>old_height</secondary></indexterm>
+<para><computeroutput>core.window.Window.old_height</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1aae3ba375fb7fdcb8ad493abc91871c4e"/><section>
+    <title>old_width</title>
+<indexterm><primary>old_width</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>old_width</secondary></indexterm>
+<para><computeroutput>core.window.Window.old_width</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1ac55e7c57546c74a5b2a9a5c1328d9253"/><section>
+    <title>screen</title>
+<indexterm><primary>screen</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>screen</secondary></indexterm>
+<para><computeroutput>core.window.Window.screen</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1a5c5b643d7ea358aadfa7f1ea111afa9a"/><section>
+    <title>timer</title>
+<indexterm><primary>timer</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>timer</secondary></indexterm>
+<para><computeroutput>core.window.Window.timer</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1ae36d02a8d928ebee16723bdb3d6f0186"/><section>
+    <title>width</title>
+<indexterm><primary>width</primary><secondary>core.window.Window</secondary></indexterm>
+<indexterm><primary>core.window.Window</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>core.window.Window.width</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_window_8py">window.py</link></section>
+</section>

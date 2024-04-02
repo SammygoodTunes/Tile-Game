@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::options_screen::OptionsScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abe9defab1457f1d39d9f1e01640b2340" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a4ca45e48ac6598bfb1bcdd0e64424778" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1af61f700228227e1ccbe444dc919a6efc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::options_label</definition>
+        <argsstring></argsstring>
+        <name>options_label</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.options_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a51dc529eddd17aa149544ae3425a239f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::fps_limit_slider</definition>
+        <argsstring></argsstring>
+        <name>fps_limit_slider</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.fps_limit_slider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a3ae321326da8f3e2a8c4fd6219a238f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::show_fps_box</definition>
+        <argsstring></argsstring>
+        <name>show_fps_box</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.show_fps_box</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abc734e17142fee2360738246d6542685" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::debug_info_box</definition>
+        <argsstring></argsstring>
+        <name>debug_info_box</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.debug_info_box</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a20e73e2e5785f32cc095ff2c0ca01b21" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::back_button</definition>
+        <argsstring></argsstring>
+        <name>back_button</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.back_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad80c773113202a79c544dbf9f578a3ed" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen._enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a092ea997d61f4cf41fb4f3edf6573bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="18" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2d8e36ebf3113f59149c229c83a7b4b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="30" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a25b11a316c7a2520ba0103af2dc3dca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.events</definition>
+        <argsstring>(self, e)</argsstring>
+        <name>events</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>e</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Track the screen events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="39" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5baa9b8acbb9e0b0728dfb5dc2f3b120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="53" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5255a3b5a48e88a179b3f35c020c75ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="65" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="65" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6ca9eefe83c2369e26f4e5a2217b758c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.options_screen.OptionsScreen.set_state</definition>
+        <argsstring>(self, state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.options_screen.OptionsScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="81" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the options screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.options_screen.OptionsScreen</label>
+        <link refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.options_screen.OptionsScreen</label>
+        <link refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/options_screen.py" bodystart="13" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a092ea997d61f4cf41fb4f3edf6573bea" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad80c773113202a79c544dbf9f578a3ed" prot="protected" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>_enabled</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a20e73e2e5785f32cc095ff2c0ca01b21" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>back_button</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abc734e17142fee2360738246d6542685" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>debug_info_box</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5baa9b8acbb9e0b0728dfb5dc2f3b120" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a25b11a316c7a2520ba0103af2dc3dca1" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>events</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a4ca45e48ac6598bfb1bcdd0e64424778" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a51dc529eddd17aa149544ae3425a239f" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>fps_limit_slider</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abe9defab1457f1d39d9f1e01640b2340" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>game</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2d8e36ebf3113f59149c229c83a7b4b3" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1af61f700228227e1ccbe444dc919a6efc" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>options_label</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6ca9eefe83c2369e26f4e5a2217b758c" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a3ae321326da8f3e2a8c4fd6219a238f9" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>show_fps_box</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5255a3b5a48e88a179b3f35c020c75ea" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011" prot="public" virt="non-virtual"><scope>gui::screens::options_screen::OptionsScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

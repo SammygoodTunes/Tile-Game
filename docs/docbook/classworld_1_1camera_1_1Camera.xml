@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classworld_1_1camera_1_1Camera" xml:lang="en-US">
+<title>world.camera.Camera Class Reference</title>
+<indexterm><primary>world.camera.Camera</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a01f6b29f8e611c5c13a0397ddae1b578">__init__</link> (self, <link linkend="_classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0">speed</link>=50)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a2bef3fd77ce89936f91347e41e36cf60">events</link> (self, game)</para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a272ca1cbd785f8858f623ca851a471a1">reset</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a7b280cd08560a20df275fd7102d1f9aa">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a48356c93f349422fb7153ad1dedbf4cf">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0">speed</link></para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a02bbd342c9ab95d90e2a07c74f525de8">velocity_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf">velocity_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classworld_1_1camera_1_1Camera_1ab870974a99836a923ea4a2400aeec8db">VELOCITY_STEP_START</link> = 5</para>
+</listitem>
+            <listitem><para>float <link linkend="_classworld_1_1camera_1_1Camera_1a18d16fd44b9f1bed2e210f3580f6d0a9">VELOCITY_STEP_STOP</link> = 3.5</para>
+</listitem>
+            <listitem><para>float <link linkend="_classworld_1_1camera_1_1Camera_1a31d39b07d25a937932b9b1ee69b65f79">VELOCITY_THRESHOLD</link> = 0.001</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a camera.
+The camera position is strictly relative to the center of the screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a01f6b29f8e611c5c13a0397ddae1b578"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.__init__ ( self,  speed = <computeroutput>50</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a2bef3fd77ce89936f91347e41e36cf60"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>events</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.events ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Track the camera events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a272ca1cbd785f8858f623ca851a471a1"/><section>
+    <title>reset()</title>
+<indexterm><primary>reset</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>reset</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.reset ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the camera&apos;s general properties.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0"/><section>
+    <title>speed</title>
+<indexterm><primary>speed</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>speed</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.speed</computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1ab870974a99836a923ea4a2400aeec8db"/><section>
+    <title>VELOCITY_STEP_START</title>
+<indexterm><primary>VELOCITY_STEP_START</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_STEP_START</secondary></indexterm>
+<para><computeroutput>int world.camera.Camera.VELOCITY_STEP_START = 5<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a18d16fd44b9f1bed2e210f3580f6d0a9"/><section>
+    <title>VELOCITY_STEP_STOP</title>
+<indexterm><primary>VELOCITY_STEP_STOP</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_STEP_STOP</secondary></indexterm>
+<para><computeroutput>float world.camera.Camera.VELOCITY_STEP_STOP = 3.5<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a31d39b07d25a937932b9b1ee69b65f79"/><section>
+    <title>VELOCITY_THRESHOLD</title>
+<indexterm><primary>VELOCITY_THRESHOLD</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_THRESHOLD</secondary></indexterm>
+<para><computeroutput>float world.camera.Camera.VELOCITY_THRESHOLD = 0.001<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a02bbd342c9ab95d90e2a07c74f525de8"/><section>
+    <title>velocity_x</title>
+<indexterm><primary>velocity_x</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>velocity_x</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.velocity_x</computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf"/><section>
+    <title>velocity_y</title>
+<indexterm><primary>velocity_y</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>velocity_y</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.velocity_y</computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a7b280cd08560a20df275fd7102d1f9aa"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.x</computeroutput></para></section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1a48356c93f349422fb7153ad1dedbf4cf"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>world.camera.Camera.y</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_camera_8py">camera.py</link></section>
+</section>

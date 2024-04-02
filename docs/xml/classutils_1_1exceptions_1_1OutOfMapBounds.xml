@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classutils_1_1exceptions_1_1OutOfMapBounds" kind="class" language="Python" prot="public">
+    <compoundname>utils::exceptions::OutOfMapBounds</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classutils_1_1exceptions_1_1OutOfMapBounds_1a90fecbcdf8bfb955350d82e59defca51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>utils.exceptions.OutOfMapBounds.__init__</definition>
+        <argsstring>(self, message=&quot;Out of map boundaries, make sure to stay within them!&quot;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>utils.exceptions.OutOfMapBounds.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+          <defval>&quot;Out of map boundaries, make sure to stay within them!&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" bodystart="26" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the exception caused by overflowing the map data array.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>utils.exceptions.OutOfMapBounds</label>
+        <link refid="classutils_1_1exceptions_1_1OutOfMapBounds"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>utils.exceptions.OutOfMapBounds</label>
+        <link refid="classutils_1_1exceptions_1_1OutOfMapBounds"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py" bodystart="21" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classutils_1_1exceptions_1_1OutOfMapBounds_1a90fecbcdf8bfb955350d82e59defca51" prot="public" virt="non-virtual"><scope>utils::exceptions::OutOfMapBounds</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

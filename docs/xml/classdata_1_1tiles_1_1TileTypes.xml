@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classdata_1_1tiles_1_1TileTypes" kind="class" language="Python" prot="public">
+    <compoundname>data::tiles::TileTypes</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdata_1_1tiles_1_1TileTypes_1a648728785e143195030e1860ebc1a53e" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple data.tiles.TileTypes::BREAKABLE</definition>
+        <argsstring></argsstring>
+        <name>BREAKABLE</name>
+        <qualifiedname>data.tiles.TileTypes.BREAKABLE</qualifiedname>
+        <initializer>=  (<ref refid="classdata_1_1tiles_1_1Tiles_1a427eaea0c98bb2189293baa862b86aff" kindref="member">Tiles.COBBLESTONE</ref>,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" line="110" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1tiles_1_1TileTypes_1af560579a6e03a98a2e2ffab38388b72c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple data.tiles.TileTypes::LETHAL</definition>
+        <argsstring></argsstring>
+        <name>LETHAL</name>
+        <qualifiedname>data.tiles.TileTypes.LETHAL</qualifiedname>
+        <initializer>=  (<ref refid="classdata_1_1tiles_1_1Tiles_1a4637c27059f06c52f1a84ee4667805f3" kindref="member">Tiles.LAVA</ref>,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" line="111" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for regrouping tiles into different categories.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" line="105" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles.py" bodystart="105" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classdata_1_1tiles_1_1TileTypes_1a648728785e143195030e1860ebc1a53e" prot="public" virt="non-virtual"><scope>data::tiles::TileTypes</scope><name>BREAKABLE</name></member>
+      <member refid="classdata_1_1tiles_1_1TileTypes_1af560579a6e03a98a2e2ffab38388b72c" prot="public" virt="non-virtual"><scope>data::tiles::TileTypes</scope><name>LETHAL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

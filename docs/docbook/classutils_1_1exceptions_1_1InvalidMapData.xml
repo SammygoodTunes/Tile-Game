@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classutils_1_1exceptions_1_1InvalidMapData" xml:lang="en-US">
+<title>utils.exceptions.InvalidMapData Class Reference</title>
+<indexterm><primary>utils.exceptions.InvalidMapData</primary></indexterm>
+<para>Inheritance diagram for utils.exceptions.InvalidMapData:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classutils_1_1exceptions_1_1InvalidMapData.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classutils_1_1exceptions_1_1InvalidMapData_1a8ff32590727483e9cb1a0097fc1492a3">__init__</link> (self, message=&quot;Invalid map data, have you initialise the map with initialise()?&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by invalid map data.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classutils_1_1exceptions_1_1InvalidMapData_1a8ff32590727483e9cb1a0097fc1492a3"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>utils.exceptions.InvalidMapData</secondary></indexterm>
+<indexterm><primary>utils.exceptions.InvalidMapData</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>utils.exceptions.InvalidMapData.__init__ ( self,  message = <computeroutput>&quot;Invalid&#160;map&#160;data,&#160;have&#160;you&#160;initialise&#160;the&#160;map&#160;with&#160;initialise()?&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

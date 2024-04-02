@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1tiles_1_1TileTypes" xml:lang="en-US">
+<title>data.tiles.TileTypes Class Reference</title>
+<indexterm><primary>data.tiles.TileTypes</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>tuple <link linkend="_classdata_1_1tiles_1_1TileTypes_1a648728785e143195030e1860ebc1a53e">BREAKABLE</link> = (<link linkend="_classdata_1_1tiles_1_1Tiles_1a427eaea0c98bb2189293baa862b86aff">Tiles.COBBLESTONE</link>,)</para>
+</listitem>
+            <listitem><para>tuple <link linkend="_classdata_1_1tiles_1_1TileTypes_1af560579a6e03a98a2e2ffab38388b72c">LETHAL</link> = (<link linkend="_classdata_1_1tiles_1_1Tiles_1a4637c27059f06c52f1a84ee4667805f3">Tiles.LAVA</link>,)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for regrouping tiles into different categories.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdata_1_1tiles_1_1TileTypes_1a648728785e143195030e1860ebc1a53e"/><section>
+    <title>BREAKABLE</title>
+<indexterm><primary>BREAKABLE</primary><secondary>data.tiles.TileTypes</secondary></indexterm>
+<indexterm><primary>data.tiles.TileTypes</primary><secondary>BREAKABLE</secondary></indexterm>
+<para><computeroutput>tuple data.tiles.TileTypes.BREAKABLE = (<link linkend="_classdata_1_1tiles_1_1Tiles_1a427eaea0c98bb2189293baa862b86aff">Tiles.COBBLESTONE</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1TileTypes_1af560579a6e03a98a2e2ffab38388b72c"/><section>
+    <title>LETHAL</title>
+<indexterm><primary>LETHAL</primary><secondary>data.tiles.TileTypes</secondary></indexterm>
+<indexterm><primary>data.tiles.TileTypes</primary><secondary>LETHAL</secondary></indexterm>
+<para><computeroutput>tuple data.tiles.TileTypes.LETHAL = (<link linkend="_classdata_1_1tiles_1_1Tiles_1a4637c27059f06c52f1a84ee4667805f3">Tiles.LAVA</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_tiles_8py">tiles.py</link></section>
+</section>

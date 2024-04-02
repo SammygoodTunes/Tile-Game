@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcore_1_1game_1_1Game" xml:lang="en-US">
+<title>core.game.Game Class Reference</title>
+<indexterm><primary>core.game.Game</primary></indexterm>
+<para>Inheritance diagram for core.game.Game:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcore_1_1game_1_1Game.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1af8c9bb7a92a0c9db391cdd60548e3eb0">__init__</link> (self, int window_width, int window_height)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1aec364c856e2f96a027fcd986f45ced06">update</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1ac8f599b19e7b6015ae0ca3b8146749f5">update_loop</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1af1f689367961a3e94a7202fe7283f556">all_events</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1a41a90447bd90d3f047d1d8668732bb39">update_all_uis</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49">is_running</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a">is_debug_mode_enabled</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642">stop</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a">player</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcore_1_1game_1_1Game_1a56b7ba477a2db36d3fb993849399f4db">_running</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for managing a game instance.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcore_1_1game_1_1Game_1af8c9bb7a92a0c9db391cdd60548e3eb0"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None core.game.Game.__init__ ( self, int window_width, int window_height)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcore_1_1game_1_1Game_1af1f689367961a3e94a7202fe7283f556"/><section>
+    <title>all_events()</title>
+<indexterm><primary>all_events</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>all_events</secondary></indexterm>
+<para><computeroutput> None core.game.Game.all_events ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Verify for any potential pygame events and update the targeted elements accordingly.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a"/><section>
+    <title>is_debug_mode_enabled()</title>
+<indexterm><primary>is_debug_mode_enabled</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>is_debug_mode_enabled</secondary></indexterm>
+<para><computeroutput> bool core.game.Game.is_debug_mode_enabled ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the state of the game&apos;s debug mode.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49"/><section>
+    <title>is_running()</title>
+<indexterm><primary>is_running</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>is_running</secondary></indexterm>
+<para><computeroutput> bool core.game.Game.is_running ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the running state of the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput> None core.game.Game.stop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Terminate the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1aec364c856e2f96a027fcd986f45ced06"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None core.game.Game.update ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update all child objects and core of the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a41a90447bd90d3f047d1d8668732bb39"/><section>
+    <title>update_all_uis()</title>
+<indexterm><primary>update_all_uis</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>update_all_uis</secondary></indexterm>
+<para><computeroutput> None core.game.Game.update_all_uis ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update all the GUI-related elements.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1ac8f599b19e7b6015ae0ca3b8146749f5"/><section>
+    <title>update_loop()</title>
+<indexterm><primary>update_loop</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>update_loop</secondary></indexterm>
+<para><computeroutput> None core.game.Game.update_loop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Like the standard update loop, but only used for threaded tasks.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a56b7ba477a2db36d3fb993849399f4db"/><section>
+    <title>_running</title>
+<indexterm><primary>_running</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>_running</secondary></indexterm>
+<para><computeroutput>core.game.Game._running<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a"/><section>
+    <title>player</title>
+<indexterm><primary>player</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>player</secondary></indexterm>
+<para><computeroutput>core.game.Game.player</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_game_8py">game.py</link></section>
+</section>
