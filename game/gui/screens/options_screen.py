@@ -18,7 +18,6 @@ class OptionsScreen(Screen):
     def __init__(self, window):
         super().__init__()
         self.window = window
-        self.game = None
         self.faded_surface = self.initialise_surface()
         self.options_label = Label("Options")
         self.fps_limit_slider = HorizontalSlider("FPS Limit").set_value(window.fps_cap).set_value_bounds(10, 1000)
