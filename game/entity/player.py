@@ -11,10 +11,7 @@ from game import assets
 from game.data.items import Items
 from game.data.mouse_properties import Mouse
 from game.data.tiles import Tile, Tiles, TileTypes
-from game.gui.button import Button
-from game.gui.hotbar import Hotbar
-from game.gui.label import Label
-from game.gui.progress_bar import ProgressBar
+from game.gui.screens.main_hud import MainHud
 from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.map_manager import Map
@@ -69,25 +66,17 @@ class Player:
         self.prev_selected_tile: tuple[int, int] = (0, 0)
         self.score: int = 0
         self.health: int = 100
-        self.score_label: Label | None = None
-        self.camera_label: Label | None = None
-        self.position_label = Label(f"Player (XY): {self._x: .0f} {self._y: .0f}")
-        self.regen_button = Button("Regenerate").set_state(True)
-        self.health_bar = ProgressBar(title="Player health").set_value(self.health).set_state(True)
-        self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.edges = [False, False, False, False]
         self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
+        self.main_hud = None
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init(self, game: Game) -> None:
         """
         Define the player attributes that depend on the given game object.
         """
-        self.asset = pygame.image.load(Player.TEXTURE).convert_alpha(game.screen)
-        self.score_label = (Label(f"Score: {self.score}", 4, -8)
-                            .set_shadow_x(6).set_shadow_y(-6)
-                            .set_colour((240, 240, 240)).set_shadow_colour((25, 25, 25)))
-        self.camera_label = Label(f"Camera (XY): {round(game.camera.x)} {round(game.camera.y)}")
+        self.main_hud = MainHud(game)
+        self.main_hud.set_state(True)
 
     def events(self, game: Game, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
@@ -104,7 +93,7 @@ class Player:
             self.move &= ~(1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
             self.move &= ~(1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
-            if self.regen_button.is_hovering_over() and not game.screens.loading_screen.get_state():
+            if self.main_hud.regen_button.is_hovering_over() and not game.screens.loading_screen.get_state():
                 game.world.get_map().regenerate(game)
                 self.health = 100
             elif e.button == Mouse.LMB:
@@ -129,9 +118,9 @@ class Player:
             if e.button == Mouse.RMB:
                 pass
         if e.type == pygame.MOUSEWHEEL:
-            self.hotbar.unselect_slot(self.hotbar.get_selected_slot())
-            self.hotbar.select_slot((self.hotbar.get_selected_slot() - e.y) % len(self.hotbar.get_slots()))
-            self.hotbar.init_slots()
+            self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())
+            self.main_hud.hotbar.select_slot((self.main_hud.hotbar.get_selected_slot() - e.y) % len(self.main_hud.hotbar.get_slots()))
+            self.main_hud.hotbar.init_slots()
 
     def draw(self, game: Game) -> None:
         """
@@ -149,26 +138,11 @@ class Player:
             pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
-    def draw_ui(self, game: Game) -> None:
-        """
-        Draw the player GUI to the screen.
-        """
-        if game.screens.options_screen.debug_info_box.is_checked():
-            self.camera_label.set_text(f"Camera (XY): {round(game.camera.x)} {round(game.camera.y)}")
-            self.position_label.set_text(f"Player (XY): {round(self._x)} {round(self._y)}")
-            self.camera_label.draw(game.screen)
-            self.position_label.draw(game.screen)
-        self.score_label.set_text(f"Score: {self.score}")
-        self.score_label.draw(game.screen)
-        self.regen_button.draw(game.screen)
-        self.health_bar.draw(game.screen)
-        self.hotbar.draw(game.screen)
-
     def draw_selection_grid(self, game: Game) -> None:
         """
         Draw the player tile selection grid to the screen.
         """
-        if not game.paused and not self.is_dead() and self.hotbar.get_selected_slot_item() == Items.SHOVEL:
+        if not game.paused and not self.is_dead() and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL:
             x: int
             y: int
             mx: int
@@ -302,7 +276,7 @@ class Player:
                 self.health = 0
                 game.screens.gameover_screen.set_state(True)
 
-            self.health_bar.set_value(self.health)
+            self.main_hud.health_bar.set_value(self.health)
 
             self.edges[Directions.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
             self.edges[Directions.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
@@ -316,28 +290,7 @@ class Player:
         """
         Update the player GUI.
         """
-        y: int = -8
-        self.regen_button.update(game)
-        self.health_bar.update(game)
-        self.hotbar.update(game)
-        self.score_label.update(game)
-        self.camera_label.update(game)
-        self.position_label.update(game)
-        self.regen_button.set_x(game.width - self.regen_button.get_width() - 4).set_y(40)
-        self.health_bar.center_horizontally(0, game.width).set_y(self.health_bar.get_height())
-        self.hotbar.set_y(game.height - self.hotbar.get_height() - 16).center_horizontally(0, game.width)
-        self.score_label.set_x(4)
-        self.score_label.set_y(y)
-        y += self.score_label.get_font_size() + 4
-        self.camera_label.set_x(4)
-        self.camera_label.set_y(y)
-        y += self.camera_label.get_font_size() + 4
-        self.position_label.set_x(4)
-        self.position_label.set_y(y)
-        self.regen_button.refresh()
-        self.health_bar.refresh()
-        self.score_label.refresh()
-        self.position_label.refresh()
+        self.main_hud.update_ui()
 
     def break_tile(self, game: Game) -> None:
         """
@@ -364,7 +317,7 @@ class Player:
                 self.prev_selected_tile = (self.selected_tile_x, self.selected_tile_y)
 
             tile = game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
-            delay = tile.get_resistance() / self.hotbar.get_selected_slot_item().get_strength()
+            delay = tile.get_resistance() / self.main_hud.hotbar.get_selected_slot_item().get_strength()
 
             if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
                 game.world.get_map().set_dynatile(tile_x, tile_y, True)
@@ -486,7 +439,7 @@ class Player:
         Returns True if the player is able to access and break a breakable tile.
         """
         return (pygame.mouse.get_pressed()[Mouse.LMB - 1]
-                and self.hotbar.get_selected_slot_item() == Items.SHOVEL
+                and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL
                 and self.has_selected_breakable(map_obj)
                 and not self.is_selected_breakable_obstructed(map_obj))
 
@@ -631,7 +584,8 @@ class Player:
         TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
         """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-        while map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE + (Tiles.LAVA,):
+        tiles = TileTypes.BREAKABLE + (Tiles.LAVA,)
+        while map_obj.get_tile(tile_x, tile_y) in tiles:
             tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
             tx = randint(0, map_obj.get_width_in_tiles() - 1)
             ty = randint(0, map_obj.get_height_in_tiles() - 1)
