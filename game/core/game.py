@@ -36,7 +36,7 @@ class Game(Window):
             # self.world.draw_wireframe(self.screen)
             self.player.draw(self)
             self.player.draw_selection_grid(self)
-            self.player.draw_ui(self)
+            self.player.main_hud.draw()
             
             self.player.update(self, self.world.get_map())
             self.world.update(self, self.player)
