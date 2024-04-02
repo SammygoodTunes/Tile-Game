@@ -55,7 +55,7 @@ class Window:
         pygame.display.flip()
         self.clock.tick_busy_loop(self.fps_cap)
 
-    def resize(self, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def resize(self, e: pygame.event.Event) -> None:
         """
         Update window dimensions on resize.
         """
