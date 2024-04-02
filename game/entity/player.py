@@ -7,6 +7,7 @@ from pygame.math import clamp
 from random import randint
 from typing import Self
 
+from game import assets
 from game.data.items import Items
 from game.data.mouse_properties import Mouse
 from game.data.tiles import Tile, Tiles, TileTypes
@@ -37,7 +38,7 @@ class Player:
     Class for creating a player.
     """
 
-    TEXTURE: str = str(impr.files("assets") / "player.png")
+    TEXTURE: str = str(impr.files(assets) / "player.png")
     VELOCITY_STEP_START: float = 4.5
     VELOCITY_STEP_STOP: float = 5.0
 

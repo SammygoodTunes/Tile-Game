@@ -1,10 +1,11 @@
 
 from importlib import resources as impr
 
+from game import data
 from game.utils.logger import logger
 
 # KEY=VALUE
-GAME_PROPERTIES_FILE: str = str(impr.files("data") / "catchncage.properties")
+GAME_PROPERTIES_FILE: str = str(impr.files(data) / "catchncage.properties")
 GAME_PROPERTIES_SEPARATOR: str = '='
 
 APP_NAME: str = "APP_NAME"
