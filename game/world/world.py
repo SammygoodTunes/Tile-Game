@@ -39,7 +39,7 @@ class World:
 
     def draw(self, game):
         """
-        Draw the world (map, tiles, etc).
+        Draw the world (map, tiles, etc.).
         """
         _, _, width, height = game.screen.get_rect()
         true_x = width / 2 - game.camera.x + self._map.get_x()
