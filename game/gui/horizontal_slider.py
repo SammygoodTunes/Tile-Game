@@ -1,6 +1,7 @@
 
 import pygame
 from pygame.math import clamp
+from typing import Self
 
 from game.data.mouse_properties import Mouse
 from game.gui.label import Label
@@ -16,7 +17,7 @@ class HorizontalSlider(Widget):
     MIN_WIDTH = 50
     MAX_WIDTH = 350
 
-    def __init__(self, title="", x=0, y=0):
+    def __init__(self, title: str = "", x: int = 0, y: int = 0) -> None:
         super().__init__(x, y)
         self._width = 0
         self._height = 40 - 13
@@ -34,7 +35,7 @@ class HorizontalSlider(Widget):
         self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((6, 7, 8))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, screen):
+    def draw(self, screen) -> None:
         """
         Draw the horizontal slider and its components.
         """
@@ -60,7 +61,7 @@ class HorizontalSlider(Widget):
         self.title_label.draw(screen)
         self.value_label.draw(screen)
 
-    def events(self, e):
+    def events(self, e: pygame.event.Event) -> None:
         """
         Track the horizontal slider events.
         """
@@ -80,7 +81,7 @@ class HorizontalSlider(Widget):
             self._value = clamp(self._value + e.y, self._min_value, self._max_value)
         self.value_label.set_text(f"{self._value} FPS")
 
-    def update(self, window):
+    def update(self, window) -> None:
         """
         Update the horizontal slider and its components.
         """
@@ -89,7 +90,7 @@ class HorizontalSlider(Widget):
         self.value_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self.refresh()
 
-    def refresh(self):
+    def refresh(self) -> None:
         """
         Refresh the horizontal slider and its components.
         """
@@ -100,7 +101,7 @@ class HorizontalSlider(Widget):
         self.title_label.refresh()
         self.value_label.refresh()
 
-    def is_hovering_over_button(self):
+    def is_hovering_over_button(self) -> bool:
         """
         Return whether the user's mouse cursor is hovering over the horizontal slider's button or not.
         """
@@ -111,7 +112,7 @@ class HorizontalSlider(Widget):
                 and self._y - self._button_radius <= mouse_y <= self._y + self._button_radius
                 and self._enabled)
 
-    def is_hovering_over(self):
+    def is_hovering_over(self) -> bool:
         """
         Return whether the user's mouse cursor is hovering over the horizontal slider or not.
         """
@@ -120,25 +121,25 @@ class HorizontalSlider(Widget):
                 and self._y - self._button_radius <= mouse_y <= self._y + self._bar_width + self._button_radius
                 and self._enabled)
 
-    def center_horizontally(self, parent_x, parent_width):
+    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
         """
         Center the horizontal slider horizontally relative to the specified parent, then return the horizontal slider
         itself.
         """
-        self._x = parent_x + parent_width / 2 - self._width / 2
+        self._x = round(parent_x + parent_width / 2 - self._width / 2)
         self.refresh()
         return self
 
-    def center_vertically(self, parent_y, parent_height):
+    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
         """
         Center the horizontal slider vertically relative to the specified parent, then return the horizontal slider
         itself.
         """
-        self._y = parent_y + parent_height / 2 - 2
+        self._y = round(parent_y + parent_height / 2 - 2)
         self.refresh()
         return self
 
-    def center(self, parent_x, parent_y, parent_width, parent_height):
+    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
         """
         Center the horizontal slider on both axes relative to the specified parent, then return the horizontal slider
         itself.
@@ -147,7 +148,7 @@ class HorizontalSlider(Widget):
         self.refresh()
         return self
 
-    def center_with_offset(self, parent_x, parent_y, parent_width, parent_height, x, y):
+    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
         """
         Center the horizontal slider with center() and offset it by x and y relative to the specified parent, then
         return the horizontal slider itself.
@@ -156,64 +157,64 @@ class HorizontalSlider(Widget):
         self.refresh()
         return self
 
-    def get_width(self):
+    def get_width(self) -> int:
         """
         Return the width of the horizontal slider.
         """
         return self._width
 
-    def get_height(self):
+    def get_height(self) -> int:
         """
         Return the height of the horizontal slider.
         """
         return self._height
 
-    def get_bar_width(self):
+    def get_bar_width(self) -> int:
         """
         Return the width of the horizontal slider's bar.
         """
         return self._bar_width
 
-    def set_title(self, title):
+    def set_title(self, title: str) -> Self:
         """
         Set the title's text of the horizontal slider, then return the horizontal slider itself.
         """
         self.title_label.set_text(title)
         return self
 
-    def get_title(self):
+    def get_title(self) -> str:
         """
         Return the title label's text of the horizontal slider.
         """
         return self.title_label.get_text()
 
-    def set_value_text(self, text):
+    def set_value_text(self, text: str) -> Self:
         """
         Set the value label's text of the horizontal slider, then return the horizontal slider itself.
         """
         self.value_label.set_text(text)
         return self
 
-    def get_value_text(self):
+    def get_value_text(self) -> str:
         """
         Return the value label's text of the horizontal slider.
         """
         return self.value_label.get_text()
 
-    def set_value(self, value):
+    def set_value(self, value: int) -> Self:
         """
         Set the value of the horizontal slider, then return the horizontal slider itself.
         """
         self._value = value
         return self
 
-    def get_value(self):
+    def get_value(self) -> int:
         """
         Return the value of the horizontal slider.
         """
         return self._value
 
-    def set_value_bounds(self, min_value=None, max_value=None):
+    def set_value_bounds(self, min_value: int | None = None, max_value: int | None = None) -> Self:
         """
         Set the value bounds of the horizontal slider (min/max value), then return the horizontal slider itself.
         """
@@ -223,26 +224,26 @@ class HorizontalSlider(Widget):
             self._max_value = max_value
         return self
 
-    def get_value_bounds(self):
+    def get_value_bounds(self) -> tuple[int, int]:
         """
         Return the value bounds of the horizontal slider (min/max value).
         """
         return self._min_value, self._max_value
 
-    def button_held(self, state):
+    def button_held(self, state: bool) -> Self:
         """
         Set whether the horizontal slider's button is held or not, then return the horizontal slider itself.
         """
         self._button_held = state
         return self
 
-    def is_button_held(self):
+    def is_button_held(self) -> bool:
         """
         Return the held state of the horizontal slider's button.
         """
         return self._button_held
 
-    def get_step_in_pixels(self):
+    def get_step_in_pixels(self) -> float:
         """
         Return the number of pixels needed to move the horizontal slider's button from one value to the next.
         """

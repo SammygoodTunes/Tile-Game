@@ -1,6 +1,7 @@
 
 from pygame import mouse, draw
 from pygame.math import clamp
+from typing import Self
 
 from game.gui.label import Widget, Label
 from game.utils.logger import logger
@@ -16,7 +17,7 @@ class Button(Widget):
     MIN_HEIGHT = 25
     MAX_HEIGHT = 50
 
-    def __init__(self, text="", x=0, y=0, width=200, height=50):
+    def __init__(self, text: str = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
         super().__init__(x, y)
         self._width = width
         self._height = height
@@ -24,7 +25,7 @@ class Button(Widget):
         self.label = Label(text, 0, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, screen):
+    def draw(self, screen) -> None:
         """
         Draw the button and its components.
         """
@@ -40,7 +41,7 @@ class Button(Widget):
         if self._width > self.label.get_total_width():
             self.label.draw(screen)
 
-    def update(self, window):
+    def update(self, window) -> None:
         """
         Update the button and its components.
         """
@@ -51,13 +52,13 @@ class Button(Widget):
         self._height = button_height
         self.refresh()
 
-    def refresh(self):
+    def refresh(self) -> None:
         """
         Refresh the button and its components.
         """
         self.label.refresh()
 
-    def is_hovering_over(self):
+    def is_hovering_over(self) -> bool:
         """
         Return whether the user's mouse cursor is hovering over the button or not.
         """
@@ -65,30 +66,30 @@ class Button(Widget):
         return (self._x <= mouse_x <= self._x + self._width and
                 self._y <= mouse_y <= self._y + self._height and self._enabled)
 
-    def center_horizontally(self, parent_x, parent_width):
+    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
         """
         Center the button horizontally relative to the specified parent, then return the button itself.
         """
-        self._x = parent_x + parent_width / 2 - self._width / 2
+        self._x = round(parent_x + parent_width / 2 - self._width / 2)
         self.refresh()
         return self
 
-    def center_vertically(self, parent_y, parent_height):
+    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
         """
         Center the button vertically relative to the specified parent, then return the button itself.
         """
-        self._y = parent_y + parent_height / 2 - self._height / 2
+        self._y = round(parent_y + parent_height / 2 - self._height / 2)
         self.refresh()
         return self
 
-    def center(self, parent_x, parent_y, parent_width, parent_height):
+    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
         """
         Center the button on both axes relative to the specified parent, then return the button itself.
         """
         self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
         return self
 
-    def center_with_offset(self, parent_x, parent_y, parent_width, parent_height, x, y):
+    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
         """
         Center the button with center() and offset it by x and y relative to the specified parent, then return the
         button itself.
@@ -96,40 +97,40 @@ class Button(Widget):
         self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
         return self
 
-    def set_width(self, width):
+    def set_width(self, width: int) -> Self:
         """
         Set the width of the button, then return the button itself.
         """
         self._width = width
         return self
 
-    def get_width(self):
+    def get_width(self) -> int:
         """
         Return the width of the button.
         """
         return self._width
 
-    def set_height(self, height):
+    def set_height(self, height: int) -> Self:
         """
         Set the height of the button, then return the button itself.
         """
         self._height = height
         return self
 
-    def get_height(self):
+    def get_height(self) -> int:
         """
         Return the height of the button.
         """
         return self._height
 
-    def set_background_colour(self, background_colour):
+    def set_background_colour(self, background_colour: tuple[int, int, int]) -> Self:
         """
         Set the background colour of the button, then return the button itself.
         """
         self._background_colour = background_colour
         return self
 
-    def get_background_colour(self):
+    def get_background_colour(self) -> tuple[int, int, int]:
         """
         Return the background colour of the button.
         """

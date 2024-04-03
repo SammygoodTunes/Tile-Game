@@ -1,6 +1,7 @@
 
 from pygame import draw
 from pygame.math import clamp
+from typing import Self
 
 from game.gui.label import Label
 from game.gui.widget import Widget
@@ -15,7 +16,7 @@ class ProgressBar(Widget):
     MIN_WIDTH = 25
     MAX_WIDTH = 500
 
-    def __init__(self, title="", x=0, y=0):
+    def __init__(self, title: str = "", x: int = 0, y: int = 0) -> None:
         super().__init__(x, y)
         self._width = 0
         self._height = 16
@@ -30,7 +31,7 @@ class ProgressBar(Widget):
         self.progress_label = Label(text=f"{self._value}/{self._max_value}").set_font_sizes((7, 8, 9))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, screen):
+    def draw(self, screen) -> None:
         """
         Draw the progress bar and its components.
         """
@@ -50,7 +51,7 @@ class ProgressBar(Widget):
         if self._width > width:
             self.progress_label.draw(screen)
 
-    def update(self, window):
+    def update(self, window) -> Self:
         """
         Update the progress bar and its components.
         """
@@ -61,7 +62,7 @@ class ProgressBar(Widget):
         self.refresh()
         return self
 
-    def refresh(self):
+    def refresh(self) -> None:
         """
         Refresh the progress bar and its components.
         """
@@ -71,30 +72,30 @@ class ProgressBar(Widget):
         self.info_label.refresh()
         self.progress_label.refresh()
 
-    def center_horizontally(self, parent_x, parent_width):
+    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
         """
         Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
         """
-        self._x = parent_x + parent_width / 2 - self._width / 2
+        self._x = round(parent_x + parent_width / 2 - self._width / 2)
         self.refresh()
         return self
 
-    def center_vertically(self, parent_y, parent_height):
+    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
         """
         Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
         """
-        self._y = parent_y + parent_height / 2 - self._height / 2
+        self._y = round(parent_y + parent_height / 2 - self._height / 2)
         self.refresh()
         return self
 
-    def center(self, parent_x, parent_y, parent_width, parent_height):
+    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
         """
         Center the progress bar on both axes relative to the specified parent, then return the progress bar itself.
         """
         self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
         return self
 
-    def center_with_offset(self, parent_x, parent_y, parent_width, parent_height, x, y):
+    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
         """
         Center the progress bar with center() and offset it by x and y relative to the specified parent, then return the
         progress bar itself.
@@ -102,46 +103,46 @@ class ProgressBar(Widget):
         self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
         return self
 
-    def set_width(self, width):
+    def set_width(self, width: int) -> Self:
         """
         Set the width of the progress bar, then return the progress bar itself.
         """
         self._width = width
         return self
 
-    def get_width(self):
+    def get_width(self) -> int:
         """
         Return the width of the progress bar.
         """
         return self._width
 
-    def set_height(self, height):
+    def set_height(self, height: int) -> Self:
         """
         Set the height of the progress bar, then return the progress bar itself.
         """
         self._height = height
         return self
 
-    def get_height(self):
+    def get_height(self) -> int:
         """
         Return the height of the progress bar.
         """
         return self._height
 
-    def set_value(self, value):
+    def set_value(self, value: int) -> Self:
         """
         Set the value of the progress bar, then return the progress bar itself.
         """
         self._value = value
         return self
 
-    def get_value(self):
+    def get_value(self) -> int:
         """
         Return the value of the progress bar.
         """
         return self._value
 
-    def set_value_bounds(self, min_value=None, max_value=None):
+    def set_value_bounds(self, min_value: int | None = None, max_value: int | None = None) -> Self:
         """
         Set the value bounds of the progress bar (min/max values), then return the progress bar itself.
         """
@@ -151,59 +152,59 @@ class ProgressBar(Widget):
             self._max_value = max_value
         return self
 
-    def get_value_bounds(self):
+    def get_value_bounds(self) -> tuple[int, int]:
         """
         Return the value bounds of the progress bar (min/max values).
         """
         return self._min_value, self._max_value
 
-    def set_unfilled_colour(self, unfilled_colour):
+    def set_unfilled_colour(self, unfilled_colour: tuple[int, int, int]) -> Self:
         """
         Set the unfilled colour of the progress bar, then return the progress bar itself.
         """
         self._unfilled_colour = unfilled_colour
         return self
 
-    def get_unfilled_colour(self):
+    def get_unfilled_colour(self) -> tuple[int, int, int]:
         """
         Return the unfilled colour of the progress bar.
         """
         return self._unfilled_colour
 
-    def set_filled_start_colour(self, filled_start_colour):
+    def set_filled_start_colour(self, filled_start_colour: tuple[int, int, int]) -> Self:
         """
         Set the filled start colour of the progress bar, then return the progress bar itself.
         """
         self._filled_start_colour = filled_start_colour
         return self
 
-    def get_filled_start_colour(self):
+    def get_filled_start_colour(self) -> tuple[int, int, int]:
         """
         Return the filled start colour of the progress bar.
         """
         return self._filled_start_colour
 
-    def set_filled_end_color(self, filled_end_colour):
+    def set_filled_end_color(self, filled_end_colour: tuple[int, int, int]) -> Self:
         """
         Set the filled end colour of the progress bar, then return the progress bar itself.
         """
         self._filled_end_colour = filled_end_colour
         return self
 
-    def get_filled_end_colour(self):
+    def get_filled_end_colour(self) -> tuple[int, int, int]:
         """
         Return the filled end colour of the progress bar.
         """
         return self._filled_end_colour
 
-    def set_title(self, title):
+    def set_title(self, title: str) -> Self:
         """
         Set the title text of the progress bar, then return the progress bar itself.
         """
         self.info_label.set_text(title)
         return self
 
-    def get_title(self):
+    def get_title(self) -> str:
         """
         Return the title text of the progress bar.
         """

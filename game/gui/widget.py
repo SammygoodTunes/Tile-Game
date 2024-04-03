@@ -9,14 +9,14 @@ class Widget:
     Class for creating a widget.
     """
 
-    def __init__(self, x, y):
-        self._x = x
-        self._y = y
+    def __init__(self, x: int, y: int):
+        self._x: int = x
+        self._y: int = y
         self._colour = (255, 255, 255)
         self._enabled = False
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def set_x(self, x):
+    def set_x(self, x: int):
         """
         Set the x position of the widget, then return the widget itself.
         """
@@ -29,7 +29,7 @@ class Widget:
         """
         return self._x
 
-    def set_y(self, y):
+    def set_y(self, y: int):
         """
         Set the y position of the widget, then return the widget itself.
         """
@@ -42,21 +42,21 @@ class Widget:
         """
         return self._y
 
-    def offset_x(self, offset_x):
+    def offset_x(self, offset_x: int):
         """
         Set the x offset of the widget, then return the widget itself.
         """
         self._x += offset_x
         return self
 
-    def offset_y(self, offset_y):
+    def offset_y(self, offset_y: int):
         """
         Set the y offset of the widget, then return the widget itself.
         """
         self._y += offset_y
         return self
 
-    def offset(self, offset_x, offset_y):
+    def offset(self, offset_x: int, offset_y: int):
         """
         Set the x and y offsets of the widget, then return the widget itself.
         """
@@ -64,7 +64,7 @@ class Widget:
         self._y += offset_y
         return self
 
-    def set_state(self, state):
+    def set_state(self, state: bool):
         """
         Set the widget's visibility/interactivity.
         """
