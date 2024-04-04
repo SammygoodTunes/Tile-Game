@@ -13,67 +13,67 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d">__init__</link> (self, text=&quot;&quot;, x=0, y=0)</para>
+            <listitem><para>None <link linkend="_classgui_1_1label_1_1Label_1a9feb1022dc22361a9b2e3c2a3081fc8d">__init__</link> (self, str text=&quot;&quot;, int x=0, int y=0)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1label_1_1Label_1af46b5ace236ece8a1fd4d9b38ffe807e">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00">update</link> (self, window)</para>
+            <listitem><para>None <link linkend="_classgui_1_1label_1_1Label_1a64bd22662492899b10faa2c40939e2cc">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31">refresh</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1ae2a6b3cf84735c056e05ac95fa77db73">refresh</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1aa36758dd7e6ed6765f31c67b27412c4f">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1aa4f613e1ba63b8e70dafdd32f3543a01">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1af1b17f101a2c75c615cfd5e115b6a666">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a33909d4c7fce748494a1fdebd81562c4">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae">set_auto_font_size</link> (self, width, height, max_width, max_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1ac2b4a19c6711a56b608a38767d04e0eb">set_auto_font_size</link> (self, int width, int height, int max_width, int max_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c">set_font_size</link> (self, font_size)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1af28da5f176762264cf4cfd5895c640fb">set_font_size</link> (self, int font_size)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5">get_font_size</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a4031aa5da1e47db6a8eaeb49b091b86b">get_font_size</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8">set_font_sizes</link> (self, font_sizes)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a45a9efc866b5adaee3d05772bf735f69">set_font_sizes</link> (self, tuple[int, int, int] font_sizes)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492">get_font_sizes</link> (self)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1label_1_1Label_1a31e390eb99a11c3ae44a729a002efadc">get_font_sizes</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c">get_total_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a54fb37dc15305fc27be0616b76d136a4">get_total_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7">get_total_height</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1ab7e8102842c11e5e855fd09d576d8bd1">get_total_height</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2">set_text</link> (self, text)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a437c8da6d415ec593cc3f99a74b34102">set_text</link> (self, str text)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e">get_text</link> (self)</para>
+            <listitem><para>str <link linkend="_classgui_1_1label_1_1Label_1a006f315674bcd91daa9cabdad4b6ce0d">get_text</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e">set_antialiasing</link> (self, state)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1ab5fdd0eebff8b8ed8475ef89541f984e">set_antialiasing</link> (self, bool state)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c">has_antialiasing</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1label_1_1Label_1a379dc4a997c6d976b42f8be7f2d92b9c">has_antialiasing</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4">set_colour</link> (self, colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a353404ada4760a4c601dc73a918b070b">set_colour</link> (self, tuple[int, int, int] colour)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2">get_colour</link> (self)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1label_1_1Label_1a0544583c344be583e576c02629f3f462">get_colour</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221">set_shadow_x</link> (self, shadow_x)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1add668475059256a97b27c0ddfa15f736">set_shadow_x</link> (self, int shadow_x)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34">set_x</link> (self, x)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a395f40ec435f7ce2d8a9af1b443bb87b">set_x</link> (self, int x)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9">set_y</link> (self, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a6e62d10f219b72f7b37b484ddff339ff">set_y</link> (self, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f">get_shadow_x</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a045cbd760de3d1849a14d50de6d2d501">get_shadow_x</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7">set_shadow_y</link> (self, shadow_y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a9d13ed9b9c21ac315de12f4c892d9a93">set_shadow_y</link> (self, int shadow_y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5">get_shadow_y</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1aca71cd48d34ff8364ba522025b4ad56c">get_shadow_y</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363">set_shadow_x_offset</link> (self, offset)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1abf7042c7d87de77f8c484ae75050598e">set_shadow_x_offset</link> (self, offset)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84">set_shadow_y_offset</link> (self, offset)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1a2930d5eceb7ede6a0a0d0500845ab5dc">set_shadow_y_offset</link> (self, offset)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0">set_shadow_colour</link> (self, shadow_colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1label_1_1Label_1ac5aec8bf83f500f66501beda01d4988e">set_shadow_colour</link> (self, shadow_colour)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623">get_shadow_colour</link> (self)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1label_1_1Label_1a6d13aa54dc054476e3156806f977668d">get_shadow_colour</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -106,13 +106,13 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d">_text</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221">_shadow_x</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc">_shadow_y</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe">_shadow_colour</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025">_antialiasing</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221">_shadow_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc">_shadow_y</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74">_x</link></para>
 </listitem>
@@ -130,255 +130,255 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1label_1_1Label_1affdffa58f2e0af7313b9ed17794dae1d"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a9feb1022dc22361a9b2e3c2a3081fc8d"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.label.Label.__init__ ( self,  text = <computeroutput>&quot;&quot;</computeroutput>
-,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
+<para><computeroutput> None gui.label.Label.__init__ ( self, str  text = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a70e6917a0be8667e8f3abca493c80f62"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1af1b17f101a2c75c615cfd5e115b6a666"/><section>
     <title>center()</title>
 <indexterm><primary>center</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>center</secondary></indexterm>
-<para><computeroutput>gui.label.Label.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the label on both axes relative to the specified parent, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1ac01336a45221f664543e5086bfa51511"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aa36758dd7e6ed6765f31c67b27412c4f"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.label.Label.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the label horizontally relative to the specified parent, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a3c36ebc1b41a89404a1cba4517740d40"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aa4f613e1ba63b8e70dafdd32f3543a01"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.label.Label.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the label vertically relative to the specified parent, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1ac12c90884d190ea1bbc9749faf2a3262"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a33909d4c7fce748494a1fdebd81562c4"/><section>
     <title>center_with_offset()</title>
 <indexterm><primary>center_with_offset</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>center_with_offset</secondary></indexterm>
-<para><computeroutput>gui.label.Label.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Center the label with center() and offset it by x and y relative to the specified parent, then return the
 label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a9933031f25447cf910c1b2a00d3020e0"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1af46b5ace236ece8a1fd4d9b38ffe807e"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.label.Label.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.label.Label.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the label and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a35e7d5f1389514ce0f9c732967fc44a2"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a0544583c344be583e576c02629f3f462"/><section>
     <title>get_colour()</title>
 <indexterm><primary>get_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_colour</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_colour ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int, int] gui.label.Label.get_colour ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the label text&apos;s foreground colour.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1aa1ddbba389274987c4ccbe13b138bea5"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a4031aa5da1e47db6a8eaeb49b091b86b"/><section>
     <title>get_font_size()</title>
 <indexterm><primary>get_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_font_size</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_font_size ( self)</computeroutput></para>
+<para><computeroutput> int gui.label.Label.get_font_size ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the font size of the label.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a20cafc438068fc6cb257bbd9b4058492"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a31e390eb99a11c3ae44a729a002efadc"/><section>
     <title>get_font_sizes()</title>
 <indexterm><primary>get_font_sizes</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_font_sizes</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_font_sizes ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int, int] gui.label.Label.get_font_sizes ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the small, medium and large sizes of the label&apos;s text.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a47ec671f08ce33d763579cb793cbb623"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a6d13aa54dc054476e3156806f977668d"/><section>
     <title>get_shadow_colour()</title>
 <indexterm><primary>get_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_shadow_colour</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_shadow_colour ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int, int] gui.label.Label.get_shadow_colour ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the label text&apos;s shadow colour.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a199bc033d87038982c43f90d67d7255f"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a045cbd760de3d1849a14d50de6d2d501"/><section>
     <title>get_shadow_x()</title>
 <indexterm><primary>get_shadow_x</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_shadow_x</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_shadow_x ( self)</computeroutput></para>
+<para><computeroutput> int gui.label.Label.get_shadow_x ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the label text&apos;s shadow&apos;s x position.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1abac397461c17da75e0e2a396838b27d5"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1aca71cd48d34ff8364ba522025b4ad56c"/><section>
     <title>get_shadow_y()</title>
 <indexterm><primary>get_shadow_y</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_shadow_y</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_shadow_y ( self)</computeroutput></para>
+<para><computeroutput> int gui.label.Label.get_shadow_y ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the label text&apos;s shadow&apos;s y position.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a09d564e10fc87d2f67ad0bbebabcb80e"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a006f315674bcd91daa9cabdad4b6ce0d"/><section>
     <title>get_text()</title>
 <indexterm><primary>get_text</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_text</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_text ( self)</computeroutput></para>
+<para><computeroutput> str gui.label.Label.get_text ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the label&apos;s text.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a2c2202c45969e43a8d0de449b61bd8b7"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ab7e8102842c11e5e855fd09d576d8bd1"/><section>
     <title>get_total_height()</title>
 <indexterm><primary>get_total_height</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_total_height</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_total_height ( self)</computeroutput></para>
+<para><computeroutput> int gui.label.Label.get_total_height ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the total height of the label.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1afabf797c6e52037b3fd55ebe3a01b29c"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a54fb37dc15305fc27be0616b76d136a4"/><section>
     <title>get_total_width()</title>
 <indexterm><primary>get_total_width</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_total_width</secondary></indexterm>
-<para><computeroutput>gui.label.Label.get_total_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.label.Label.get_total_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the total width of the label.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1ad61a8dc161a3135a291cb786862a555c"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a379dc4a997c6d976b42f8be7f2d92b9c"/><section>
     <title>has_antialiasing()</title>
 <indexterm><primary>has_antialiasing</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>has_antialiasing</secondary></indexterm>
-<para><computeroutput>gui.label.Label.has_antialiasing ( self)</computeroutput></para>
+<para><computeroutput> bool gui.label.Label.has_antialiasing ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Returns True if the label has antialiasing enabled.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a80f18e5bde2fe969c7a17b67e15e0b31"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ae2a6b3cf84735c056e05ac95fa77db73"/><section>
     <title>refresh()</title>
 <indexterm><primary>refresh</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>refresh</secondary></indexterm>
-<para><computeroutput>gui.label.Label.refresh ( self)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.refresh ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the shadow&apos;s position of the label.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a0393a6d225c05fc1e284047d66d3707e"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ab5fdd0eebff8b8ed8475ef89541f984e"/><section>
     <title>set_antialiasing()</title>
 <indexterm><primary>set_antialiasing</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_antialiasing</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_antialiasing ( self,  state)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_antialiasing ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the antialiasing state of the label, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a8cefcd5c3032afbfd7391cf1aff023ae"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ac2b4a19c6711a56b608a38767d04e0eb"/><section>
     <title>set_auto_font_size()</title>
 <indexterm><primary>set_auto_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_auto_font_size</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_auto_font_size ( self,  width,  height,  max_width,  max_height)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_auto_font_size ( self, int width, int height, int max_width, int max_height)</computeroutput></para>
 <para><literallayout><computeroutput>Set the automatic font size of the label, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1aad977a70818937039f737cd5a85d60f4"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a353404ada4760a4c601dc73a918b070b"/><section>
     <title>set_colour()</title>
 <indexterm><primary>set_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_colour</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_colour ( self,  colour)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_colour ( self, tuple[int, int, int] colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s foreground colour, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a58c83c09a5e99af3548e967dea27cd3c"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1af28da5f176762264cf4cfd5895c640fb"/><section>
     <title>set_font_size()</title>
 <indexterm><primary>set_font_size</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_font_size</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_font_size ( self,  font_size)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_font_size ( self, int font_size)</computeroutput></para>
 <para><literallayout><computeroutput>Set the font size of the label, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a216e4b15ce58741e44cbebe76b69c5d8"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a45a9efc866b5adaee3d05772bf735f69"/><section>
     <title>set_font_sizes()</title>
 <indexterm><primary>set_font_sizes</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_font_sizes</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_font_sizes ( self,  font_sizes)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_font_sizes ( self, tuple[int, int, int] font_sizes)</computeroutput></para>
 <para><literallayout><computeroutput>Set the small, medium and large sizes of the label&apos;s text, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1af624ff8d824849e4108bd91a8c4f10d0"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1ac5aec8bf83f500f66501beda01d4988e"/><section>
     <title>set_shadow_colour()</title>
 <indexterm><primary>set_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_colour</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_shadow_colour ( self,  shadow_colour)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_shadow_colour ( self,  shadow_colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s shadow colour, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1adbf51c9267747097869f553fb0b21221"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1add668475059256a97b27c0ddfa15f736"/><section>
     <title>set_shadow_x()</title>
 <indexterm><primary>set_shadow_x</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_x</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_shadow_x ( self,  shadow_x)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_shadow_x ( self, int shadow_x)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s x position, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a791f72689240dcf28efb06597ff4c363"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1abf7042c7d87de77f8c484ae75050598e"/><section>
     <title>set_shadow_x_offset()</title>
 <indexterm><primary>set_shadow_x_offset</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_x_offset</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_shadow_x_offset ( self,  offset)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_shadow_x_offset ( self,  offset)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s x offset, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a56e4ca6da4c012cb39d47d7b73b4e3c7"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a9d13ed9b9c21ac315de12f4c892d9a93"/><section>
     <title>set_shadow_y()</title>
 <indexterm><primary>set_shadow_y</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_y</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_shadow_y ( self,  shadow_y)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_shadow_y ( self, int shadow_y)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s y position, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a5b7ae46b77def9d88cb2d12bc2597c84"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a2930d5eceb7ede6a0a0d0500845ab5dc"/><section>
     <title>set_shadow_y_offset()</title>
 <indexterm><primary>set_shadow_y_offset</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_y_offset</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_shadow_y_offset ( self,  offset)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_shadow_y_offset ( self,  offset)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s shadow&apos;s y offset, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a63e69165e5cfd70e5ca874b15748c3b2"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a437c8da6d415ec593cc3f99a74b34102"/><section>
     <title>set_text()</title>
 <indexterm><primary>set_text</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_text</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_text ( self,  text)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_text ( self, str text)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label&apos;s text, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1a5d8b1c32793f95dbaed7c7c371953c34"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a395f40ec435f7ce2d8a9af1b443bb87b"/><section>
     <title>set_x()</title>
 <indexterm><primary>set_x</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_x</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_x ( self,  x)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_x ( self, int x)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s x position, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1adb4ee67a243004360aeb16cc5f59dad9"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a6e62d10f219b72f7b37b484ddff339ff"/><section>
     <title>set_y()</title>
 <indexterm><primary>set_y</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_y</secondary></indexterm>
-<para><computeroutput>gui.label.Label.set_y ( self,  y)</computeroutput></para>
+<para><computeroutput> Self gui.label.Label.set_y ( self, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Set the label text&apos;s y position, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1label_1_1Label_1acdb83ce9b39701f9e0228a206564bd00"/><section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a64bd22662492899b10faa2c40939e2cc"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.label.Label.update ( self,  window)</computeroutput></para>
+<para><computeroutput> None gui.label.Label.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the label and its components.
 </computeroutput></literallayout> </para>
 </section>

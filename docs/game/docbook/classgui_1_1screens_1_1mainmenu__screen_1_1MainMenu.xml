@@ -13,13 +13,13 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a56c8ca31e7a9730bbc4c8834fd872b01">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aee97654ec71d417681af229d4027addb">window</link>)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aac05dd1e8dd9e79257f16d10d947c55d">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aee97654ec71d417681af229d4027addb">window</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aefaa4f9221befa3cced1a6b5e2e83876">draw</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a1c91343040acc025729811c5c4da70a8">draw</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a2f7017d23488315ba84f28de4848b8e5">update_ui</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad74963367b70d9c7a2f2d9c7cc763897">update_ui</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad272e9481ca0b24c532413f935e97cd1">set_state</link> (self, state)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1af0f12f424e0a2ab6efce4d71ffc62559">set_state</link> (self, bool state)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -47,33 +47,33 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a56c8ca31e7a9730bbc4c8834fd872b01"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aac05dd1e8dd9e79257f16d10d947c55d"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screens.mainmenu_screen.MainMenu</secondary></indexterm>
 <indexterm><primary>gui.screens.mainmenu_screen.MainMenu</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screens.mainmenu_screen.MainMenu.__init__ ( self,  window)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenu.__init__ ( self,  window)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1aefaa4f9221befa3cced1a6b5e2e83876"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a1c91343040acc025729811c5c4da70a8"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.screens.mainmenu_screen.MainMenu</secondary></indexterm>
 <indexterm><primary>gui.screens.mainmenu_screen.MainMenu</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.screens.mainmenu_screen.MainMenu.draw ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenu.draw ( self)</computeroutput></para>
 <para><literallayout><computeroutput>        Draw the screen and its components.</computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad272e9481ca0b24c532413f935e97cd1"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1af0f12f424e0a2ab6efce4d71ffc62559"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.mainmenu_screen.MainMenu</secondary></indexterm>
 <indexterm><primary>gui.screens.mainmenu_screen.MainMenu</primary><secondary>set_state</secondary></indexterm>
-<para><computeroutput>gui.screens.mainmenu_screen.MainMenu.set_state ( self,  state)</computeroutput></para>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenu.set_state ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>        Set the screen&apos;s visibility/interactivity.</computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1a2f7017d23488315ba84f28de4848b8e5"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu_1ad74963367b70d9c7a2f2d9c7cc763897"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screens.mainmenu_screen.MainMenu</secondary></indexterm>
 <indexterm><primary>gui.screens.mainmenu_screen.MainMenu</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>gui.screens.mainmenu_screen.MainMenu.update_ui ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenu.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>        Update the screen UI.</computeroutput></literallayout> </para>
 </section>
 </section>

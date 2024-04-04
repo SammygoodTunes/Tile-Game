@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceunit_1_1test__data" kind="namespace" language="Python">
+    <compoundname>unit::test_data</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a5e2cfa0df30c5c4bbecb81bb59832351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_data_folder_exists</definition>
+        <argsstring>()</argsstring>
+        <name>test_data_folder_exists</name>
+        <qualifiedname>unit.test_data.test_data_folder_exists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: data_folder_exists
+Desc: Tests if the data folder exists.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="21" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a86a71ab930ae9e07ad302ed5b9a12e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_game_properties_file_exists</definition>
+        <argsstring>()</argsstring>
+        <name>test_game_properties_file_exists</name>
+        <qualifiedname>unit.test_data.test_game_properties_file_exists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: game_properties_file_exists
+Desc: Tests if the game properties file exists.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a03ad00936e3bc2c2982751c63343daea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_get_game_properties_exists</definition>
+        <argsstring>()</argsstring>
+        <name>test_get_game_properties_exists</name>
+        <qualifiedname>unit.test_data.test_get_game_properties_exists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: get_game_properties_exists
+Desc: Tests if all game property keys exist in the game properties file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a7c198710a7bb79848f3568ea1954d463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_get_game_property</definition>
+        <argsstring>()</argsstring>
+        <name>test_get_game_property</name>
+        <qualifiedname>unit.test_data.test_get_game_property</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: get_game_property
+Desc: Tests if the get_game_property function returns the correct value from the key it was given.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="48" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a0546bce1417b5771869c6835e0ec2049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_get_game_properties</definition>
+        <argsstring>()</argsstring>
+        <name>test_get_game_properties</name>
+        <qualifiedname>unit.test_data.test_get_game_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: get_game_properties
+Desc: Tests if the get_game_properties function returns the correct keys and values.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="61" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="61" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1ab1a725d687668278a3799846bad635b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_item_creation</definition>
+        <argsstring>()</argsstring>
+        <name>test_item_creation</name>
+        <qualifiedname>unit.test_data.test_item_creation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: item_creation
+Desc: Tests if items are created correctly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="75" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1a6b74d1583d80413fc27df33bb3de2c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_mouse_properties</definition>
+        <argsstring>()</argsstring>
+        <name>test_mouse_properties</name>
+        <qualifiedname>unit.test_data.test_mouse_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: mouse_properties
+Desc: Tests if the mouse properties possess the same values defined in Mouse.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="89" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__data_1adbdab2f4033566a3ad992de6e6b47a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_data.test_tile_creation</definition>
+        <argsstring>()</argsstring>
+        <name>test_tile_creation</name>
+        <qualifiedname>unit.test_data.test_tile_creation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: tile_creation
+Desc: Tests if tiles are created correctly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="97" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" bodystart="97" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests dedicated to the data modules.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

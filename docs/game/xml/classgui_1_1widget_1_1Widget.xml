@@ -3,34 +3,6 @@
   <compounddef id="classgui_1_1widget_1_1Widget" kind="class" language="Python" prot="public">
     <compoundname>gui::widget::Widget</compoundname>
     <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b" prot="protected" static="no" mutable="no">
-        <type></type>
-        <definition>gui.widget.Widget::_x</definition>
-        <argsstring></argsstring>
-        <name>_x</name>
-        <qualifiedname>gui.widget.Widget._x</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="13" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7" prot="protected" static="no" mutable="no">
-        <type></type>
-        <definition>gui.widget.Widget::_y</definition>
-        <argsstring></argsstring>
-        <name>_y</name>
-        <qualifiedname>gui.widget.Widget._y</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="14" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32" prot="protected" static="no" mutable="no">
         <type></type>
         <definition>gui.widget.Widget::_colour</definition>
@@ -43,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="15" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9" prot="protected" static="no" mutable="no">
         <type></type>
@@ -57,14 +29,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="16" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.widget.Widget::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>gui.widget.Widget._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.widget.Widget::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>gui.widget.Widget._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="37" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a24edb4f7a55f5b0577ba35a646ca0267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.__init__</definition>
-        <argsstring>(self, x, y)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a94ee4a103c7277107b563908267b965b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.widget.Widget.__init__</definition>
+        <argsstring>(self, int x, int y)</argsstring>
         <name>__init__</name>
         <qualifiedname>gui.widget.Widget.__init__</qualifiedname>
         <param>
@@ -72,12 +72,12 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>x</type>
-          <defname>x</defname>
+          <type>int</type>
+          <declname>x</declname>
         </param>
         <param>
-          <type>y</type>
-          <defname>y</defname>
+          <type>int</type>
+          <declname>y</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -85,12 +85,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="12" bodyend="18"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="13" bodyend="19"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1ae77c617384133555a80b5b3c717aaef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.set_x</definition>
-        <argsstring>(self, x)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1accd73f1379d090ac71e3c55de0196367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.set_x</definition>
+        <argsstring>(self, int x)</argsstring>
         <name>set_x</name>
         <qualifiedname>gui.widget.Widget.set_x</qualifiedname>
         <param>
@@ -98,8 +98,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>x</type>
-          <defname>x</defname>
+          <type>int</type>
+          <declname>x</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -109,11 +109,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="19" bodyend="25"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="20" bodyend="26"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a3e4ede5b4e9332321d8476e925fa0762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.get_x</definition>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a9fcdeec3beccba569ca4444367d60708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int gui.widget.Widget.get_x</definition>
         <argsstring>(self)</argsstring>
         <name>get_x</name>
         <qualifiedname>gui.widget.Widget.get_x</qualifiedname>
@@ -129,12 +129,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="26" bodyend="31"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="27" bodyend="32"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a025bd1c3d2bf2e34245102cf57b02711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.set_y</definition>
-        <argsstring>(self, y)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a07add75ffe1f2e7b0ee0f196737b4425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.set_y</definition>
+        <argsstring>(self, int y)</argsstring>
         <name>set_y</name>
         <qualifiedname>gui.widget.Widget.set_y</qualifiedname>
         <param>
@@ -142,8 +142,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>y</type>
-          <defname>y</defname>
+          <type>int</type>
+          <declname>y</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -153,11 +153,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="32" bodyend="38"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="33" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a0a3954b3cfd39e0d349b0de06157a625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.get_y</definition>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a3d105f3dfd1accf6f976b78f56632d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int gui.widget.Widget.get_y</definition>
         <argsstring>(self)</argsstring>
         <name>get_y</name>
         <qualifiedname>gui.widget.Widget.get_y</qualifiedname>
@@ -173,12 +173,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="39" bodyend="44"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="40" bodyend="45"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.offset_x</definition>
-        <argsstring>(self, offset_x)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a534362bb979f3ecd80496cde67ea7e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.offset_x</definition>
+        <argsstring>(self, int offset_x)</argsstring>
         <name>offset_x</name>
         <qualifiedname>gui.widget.Widget.offset_x</qualifiedname>
         <param>
@@ -186,23 +186,23 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>offset_x</type>
-          <defname>offset_x</defname>
+          <type>int</type>
+          <declname>offset_x</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Set the x offset of the widget, then return the widget itself.
+<para><verbatim>Add an offset to the x position of the widget, then return the widget itself.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="45" bodyend="51"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="46" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.offset_y</definition>
-        <argsstring>(self, offset_y)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a54ac3feb8556761f48859be5f08f0325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.offset_y</definition>
+        <argsstring>(self, int offset_y)</argsstring>
         <name>offset_y</name>
         <qualifiedname>gui.widget.Widget.offset_y</qualifiedname>
         <param>
@@ -210,23 +210,23 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>offset_y</type>
-          <defname>offset_y</defname>
+          <type>int</type>
+          <declname>offset_y</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Set the y offset of the widget, then return the widget itself.
+<para><verbatim>Add an offset to the y position of the widget, then return the widget itself.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="52" bodyend="58"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="53" bodyend="59"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1a95322e497bbbeb382a13b818c9c7e05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.offset</definition>
-        <argsstring>(self, offset_x, offset_y)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1aeb8988d9cdd6c157c81c76c2844d19e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.offset</definition>
+        <argsstring>(self, int offset_x, int offset_y)</argsstring>
         <name>offset</name>
         <qualifiedname>gui.widget.Widget.offset</qualifiedname>
         <param>
@@ -234,27 +234,27 @@
           <defname>self</defname>
         </param>
         <param>
-          <type><ref refid="classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545" kindref="member">offset_x</ref></type>
-          <defname>offset_x</defname>
+          <type>int</type>
+          <declname>offset_x</declname>
         </param>
         <param>
-          <type><ref refid="classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee" kindref="member">offset_y</ref></type>
-          <defname>offset_y</defname>
+          <type>int</type>
+          <declname>offset_y</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Set the x and y offsets of the widget, then return the widget itself.
+<para><verbatim>Add an offset to the x and y positions of the widget, then return the widget itself.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="59" bodyend="66"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="60" bodyend="67"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1aa76094c5f639a2d12307526a93473e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.set_state</definition>
-        <argsstring>(self, state)</argsstring>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1ae641bcdc535cbe0bab1e4ef62901d02b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self gui.widget.Widget.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
         <name>set_state</name>
         <qualifiedname>gui.widget.Widget.set_state</qualifiedname>
         <param>
@@ -262,8 +262,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>state</type>
-          <defname>state</defname>
+          <type>bool</type>
+          <declname>state</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -273,11 +273,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="67" bodyend="77"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="68" bodyend="78"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1ad15780db5ddebdb35be013ea72d43108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.widget.Widget.get_state</definition>
+      <memberdef kind="function" id="classgui_1_1widget_1_1Widget_1aca52550356f44c7a7580bf6bc84afd1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool gui.widget.Widget.get_state</definition>
         <argsstring>(self)</argsstring>
         <name>get_state</name>
         <qualifiedname>gui.widget.Widget.get_state</qualifiedname>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="78" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="78" bodyend="83"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="79" bodyend="84"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -302,22 +302,22 @@
 <para><verbatim>Class for creating a widget.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="7" bodyend="83"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="8" bodyend="84"/>
     <listofallmembers>
-      <member refid="classgui_1_1widget_1_1Widget_1a24edb4f7a55f5b0577ba35a646ca0267" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>__init__</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a94ee4a103c7277107b563908267b965b" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>__init__</name></member>
       <member refid="classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32" prot="protected" virt="non-virtual"><scope>gui::widget::Widget</scope><name>_colour</name></member>
       <member refid="classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9" prot="protected" virt="non-virtual"><scope>gui::widget::Widget</scope><name>_enabled</name></member>
       <member refid="classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b" prot="protected" virt="non-virtual"><scope>gui::widget::Widget</scope><name>_x</name></member>
       <member refid="classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7" prot="protected" virt="non-virtual"><scope>gui::widget::Widget</scope><name>_y</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1ad15780db5ddebdb35be013ea72d43108" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_state</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a3e4ede5b4e9332321d8476e925fa0762" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_x</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a0a3954b3cfd39e0d349b0de06157a625" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_y</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a95322e497bbbeb382a13b818c9c7e05f" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a4ad238dd237ae78050512295244af545" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset_x</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a5929685f0a132c83d98164e06262f7ee" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset_y</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1aa76094c5f639a2d12307526a93473e9c" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_state</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1ae77c617384133555a80b5b3c717aaef8" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_x</name></member>
-      <member refid="classgui_1_1widget_1_1Widget_1a025bd1c3d2bf2e34245102cf57b02711" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_y</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1aca52550356f44c7a7580bf6bc84afd1b" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_state</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a9fcdeec3beccba569ca4444367d60708" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_x</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a3d105f3dfd1accf6f976b78f56632d64" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>get_y</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1aeb8988d9cdd6c157c81c76c2844d19e8" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a534362bb979f3ecd80496cde67ea7e27" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset_x</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a54ac3feb8556761f48859be5f08f0325" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>offset_y</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1ae641bcdc535cbe0bab1e4ef62901d02b" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_state</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1accd73f1379d090ac71e3c55de0196367" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_x</name></member>
+      <member refid="classgui_1_1widget_1_1Widget_1a07add75ffe1f2e7b0ee0f196737b4425" prot="public" virt="non-virtual"><scope>gui::widget::Widget</scope><name>set_y</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

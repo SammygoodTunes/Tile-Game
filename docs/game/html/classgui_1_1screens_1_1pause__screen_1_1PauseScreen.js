@@ -1,10 +1,10 @@
 var classgui_1_1screens_1_1pause__screen_1_1PauseScreen =
 [
-    [ "__init__", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a1950291d3944e4349fc2e02498433e85", null ],
-    [ "draw", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#af3741cc055726d25eb8d056f95a524e4", null ],
-    [ "initialise_surface", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a803c9a03a7948ec85987b7bdd91d194b", null ],
-    [ "set_state", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a7e4693e53d7750cb102a1cfe9df634bd", null ],
-    [ "update_ui", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a9fe40ec52a6c8a4f32da473e114db28f", null ],
+    [ "__init__", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a23e0bd774de7f8aa34d03d300c165c1f", null ],
+    [ "draw", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a4cf395c2e6593ff32201b4cfcd89cc90", null ],
+    [ "initialise_surface", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#af9f0bd315040b69738cbf37d82aa8d43", null ],
+    [ "set_state", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a573e5790473fee822fe76eae3581f206", null ],
+    [ "update_ui", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#abf41f59cdcb6ef4d52ca32411e6d46fb", null ],
     [ "faded_surface", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a20ac23e2b0df1df11c8be790f2d62045", null ],
     [ "options_button", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a84d2d01f4090bcf5962887efad26d48d", null ],
     [ "pause_label", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#af0fd2d6eb748f36699a83ff83992a890", null ],

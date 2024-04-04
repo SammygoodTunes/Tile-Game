@@ -13,35 +13,35 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7">__init__</link> (self, text=&quot;&quot;, x=0, y=0, width=200, height=50)</para>
+            <listitem><para>None <link linkend="_classgui_1_1button_1_1Button_1ad13b2bc2c8d0c1c1da48aafc46a50171">__init__</link> (self, str text=&quot;&quot;, int x=0, int y=0, int width=200, int height=50)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1button_1_1Button_1ae31acb9035ad99aad1ad51a071528e2a">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3">update</link> (self, window)</para>
+            <listitem><para>None <link linkend="_classgui_1_1button_1_1Button_1ac6a69a8c24628de64c7cab3e751b1712">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece">refresh</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1button_1_1Button_1a6e6f34320b647e3a8a3bd96734cf423a">refresh</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9">is_hovering_over</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1button_1_1Button_1ab12ec3a33ea513ee7edfc2f7f6516f39">is_hovering_over</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1a287bb69648ef4c76bf9aaa4f81fb39cf">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1a6f53f6fa3d30554d1ad76b7a89c3c9cc">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1a6bb438fba86f13ed523bea184d56fdb3">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1af080d67456fe6f5e5e392932fce40164">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40">set_width</link> (self, width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1a98640be81cf6f1d7be202d996871ada0">set_width</link> (self, int width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215">get_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1a0d6f5046a159ca556e7b480f270883ca">get_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647">set_height</link> (self, height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1aa7b646a6ea96569533ee9b7af5e9d133">set_height</link> (self, int height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5">get_height</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1button_1_1Button_1ab73b437fbc3916faa3e45c33c049a59e">get_height</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a">set_background_colour</link> (self, background_colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1button_1_1Button_1af2f283b949823d877f4cc8b441c57361">set_background_colour</link> (self, tuple[int, int, int] background_colour)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5">get_background_colour</link> (self)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1button_1_1Button_1ae80c340bf5537b4476916d2a68beced2">get_background_colour</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -88,129 +88,129 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a8659223823535aa6d63fde433d824bb7"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ad13b2bc2c8d0c1c1da48aafc46a50171"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.button.Button.__init__ ( self,  text = <computeroutput>&quot;&quot;</computeroutput>
-,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
-,  width = <computeroutput>200</computeroutput>
-,  height = <computeroutput>50</computeroutput>
+<para><computeroutput> None gui.button.Button.__init__ ( self, str  text = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  width = <computeroutput>200</computeroutput>
+, int  height = <computeroutput>50</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a99508833a455b3929dec5c20ae3a726b"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a6bb438fba86f13ed523bea184d56fdb3"/><section>
     <title>center()</title>
 <indexterm><primary>center</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>center</secondary></indexterm>
-<para><computeroutput>gui.button.Button.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the button on both axes relative to the specified parent, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1abdd3a99c35680c84a2963b202d7e60a2"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a287bb69648ef4c76bf9aaa4f81fb39cf"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.button.Button.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the button horizontally relative to the specified parent, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a04033395ddcbe9e4860e51aaa0679050"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a6f53f6fa3d30554d1ad76b7a89c3c9cc"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.button.Button.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the button vertically relative to the specified parent, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a7713e91be4659cb1b43518422c3cb6b6"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1af080d67456fe6f5e5e392932fce40164"/><section>
     <title>center_with_offset()</title>
 <indexterm><primary>center_with_offset</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>center_with_offset</secondary></indexterm>
-<para><computeroutput>gui.button.Button.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Center the button with center() and offset it by x and y relative to the specified parent, then return the
 button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a7c939d9306e52aaaaa9d7ce73610c9a3"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ae31acb9035ad99aad1ad51a071528e2a"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.button.Button.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.button.Button.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the button and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a2fc7139b6188d88745864eaa32c3e8c5"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ae80c340bf5537b4476916d2a68beced2"/><section>
     <title>get_background_colour()</title>
 <indexterm><primary>get_background_colour</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>get_background_colour</secondary></indexterm>
-<para><computeroutput>gui.button.Button.get_background_colour ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int, int] gui.button.Button.get_background_colour ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the background colour of the button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1ad56f85ea4bf61b9b0ab0babdce9696f5"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ab73b437fbc3916faa3e45c33c049a59e"/><section>
     <title>get_height()</title>
 <indexterm><primary>get_height</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>get_height</secondary></indexterm>
-<para><computeroutput>gui.button.Button.get_height ( self)</computeroutput></para>
+<para><computeroutput> int gui.button.Button.get_height ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the height of the button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a24ee55c265de3c34d4fd1467cc90e215"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a0d6f5046a159ca556e7b480f270883ca"/><section>
     <title>get_width()</title>
 <indexterm><primary>get_width</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>get_width</secondary></indexterm>
-<para><computeroutput>gui.button.Button.get_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.button.Button.get_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the width of the button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1ac901a127db42fc2d9134512f6a0145f9"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ab12ec3a33ea513ee7edfc2f7f6516f39"/><section>
     <title>is_hovering_over()</title>
 <indexterm><primary>is_hovering_over</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>is_hovering_over</secondary></indexterm>
-<para><computeroutput>gui.button.Button.is_hovering_over ( self)</computeroutput></para>
+<para><computeroutput> bool gui.button.Button.is_hovering_over ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the button or not.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a4a1cd0e83034851df1dd265ba193fece"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a6e6f34320b647e3a8a3bd96734cf423a"/><section>
     <title>refresh()</title>
 <indexterm><primary>refresh</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>refresh</secondary></indexterm>
-<para><computeroutput>gui.button.Button.refresh ( self)</computeroutput></para>
+<para><computeroutput> None gui.button.Button.refresh ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Refresh the button and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1aaee414621f1b71114274862cf929f77a"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1af2f283b949823d877f4cc8b441c57361"/><section>
     <title>set_background_colour()</title>
 <indexterm><primary>set_background_colour</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>set_background_colour</secondary></indexterm>
-<para><computeroutput>gui.button.Button.set_background_colour ( self,  background_colour)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.set_background_colour ( self, tuple[int, int, int] background_colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the background colour of the button, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a1a4279575612c53126ffb33b2854c647"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1aa7b646a6ea96569533ee9b7af5e9d133"/><section>
     <title>set_height()</title>
 <indexterm><primary>set_height</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>set_height</secondary></indexterm>
-<para><computeroutput>gui.button.Button.set_height ( self,  height)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.set_height ( self, int height)</computeroutput></para>
 <para><literallayout><computeroutput>Set the height of the button, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1a4fa3ffd996d519c83cdcbab823c37b40"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1a98640be81cf6f1d7be202d996871ada0"/><section>
     <title>set_width()</title>
 <indexterm><primary>set_width</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>set_width</secondary></indexterm>
-<para><computeroutput>gui.button.Button.set_width ( self,  width)</computeroutput></para>
+<para><computeroutput> Self gui.button.Button.set_width ( self, int width)</computeroutput></para>
 <para><literallayout><computeroutput>Set the width of the button, then return the button itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1button_1_1Button_1abefee36ddfd73c25a988a6017af3f6e3"/><section>
+<anchor xml:id="_classgui_1_1button_1_1Button_1ac6a69a8c24628de64c7cab3e751b1712"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.button.Button</secondary></indexterm>
 <indexterm><primary>gui.button.Button</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.button.Button.update ( self,  window)</computeroutput></para>
+<para><computeroutput> None gui.button.Button.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the button and its components.
 </computeroutput></literallayout> </para>
 </section>

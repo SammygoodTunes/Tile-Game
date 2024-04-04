@@ -13,55 +13,55 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a6feb7a3c802a6747f441d9bdee1b343a">__init__</link> (self, title=&quot;&quot;, x=0, y=0)</para>
+            <listitem><para>None <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a13c0cfba8bf479210814ef6aa0d9da25">__init__</link> (self, str title=&quot;&quot;, int x=0, int y=0)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a0e8fc31412f9292f4a022f162a3e63a5">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aeb55c8cf76c36f64c0b42782e630b11e">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae0c158eb433a54f62891a5fd9b9f7473">events</link> (self, e)</para>
+            <listitem><para>None <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1325e97ecce7e25512ed77a3bbbd4d63">events</link> (self, pygame.event.Event e)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a0c39097abd5d3919efcede0542e22cf3">update</link> (self, window)</para>
+            <listitem><para>None <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a7399be6c194813d0431e60222412b570">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a15f475425592f939195390303ccd1cc6">refresh</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a85a3bf8baa047cd43c135d356c1be872">refresh</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1abb35dbc8cb4efaf6e1ad6b9fa39139d9">is_hovering_over_button</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba0640b8128a4f843f91c115baab5bf4">is_hovering_over_button</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aca7d2ae0a3ba550be83e8afca66a0de8">is_hovering_over</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a2e18f39d331269453df6f0952417feaf">is_hovering_over</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a9397ddc8e93dd918bd1d6a748abcf0e1">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba62582988f9d76b3d3638a56566abf8">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aa9f9b1d93c8267394c605331f73b4ed9">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1adbd586cefec779b1190e9c188d059511">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a425fec61e90dc90a295d7923b8611243">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a89bc2d0330e7c967baa040f1c1f94016">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a155fc6d6d2b1433824971b528076025d">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a6f6499b04d951aaebb3f570b01c4ccd9">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ac46f278d63188648f4b6d7724fc8aa76">get_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a4eef9703d85dc4925c9d19c9523f7e21">get_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a8ece0a1afec090b809022824dea1ca52">get_height</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a02878e82c0f484029c4d652370489690">get_height</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afe3b6de6d7dee61fa0714ed77c260a04">get_bar_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afd8cd34418917c40588cc86d2db852d6">get_bar_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a7723bcc5dc6e8f36d7df8fc970a08e2b">set_title</link> (self, title)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afd9a02526adeb50a7bfafb9e290b4fe1">set_title</link> (self, str title)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae43725a892e2f3953e67d91ae880deac">get_title</link> (self)</para>
+            <listitem><para>str <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a88fe477b4a2009a3fbc549ab5fdaab97">get_title</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afdeae395ec2ddc35590f24f334abe89f">set_value_text</link> (self, text)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ab7274484ddd2ed0ef9ce6c33d27d8675">set_value_text</link> (self, str text)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae7be91420402beed8fdecb6f722e4bf8">get_value_text</link> (self)</para>
+            <listitem><para>str <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a80941149e315edf9e7bd0f4abff20eea">get_value_text</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a24abae808baeb869349c6a515bccd6ec">set_value</link> (self, value)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aad4de77c9db9063a0efdd0c7dd0772da">set_value</link> (self, int value)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a57658263c4be86bbcb49fc599d127339">get_value</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba621050b6c9aba016fd485b021a8734">get_value</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a97da16cda7a77dd4628ba9a45ad4918e">set_value_bounds</link> (self, min_value=None, max_value=None)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1af0110bd5288de41d14a7931f77d78e15">set_value_bounds</link> (self, int|None min_value=None, int|None max_value=None)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a01471892e536abafc4ba8f77bb6d948b">get_value_bounds</link> (self)</para>
+            <listitem><para>tuple[int, int] <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1921b59e721a30e9a505767ac843a301">get_value_bounds</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb4db83b71358c8ede8b62b540920df">button_held</link> (self, state)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aa81949c0c09cb3851d0ab1741f726d54">button_held</link> (self, bool state)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ac382ad3f3606e8707d551e2dc98655fb">is_button_held</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a2d646e692da0672152363ec3deda3a4c">is_button_held</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a8c87ea39158394af835cee7d06550bdd">get_step_in_pixels</link> (self)</para>
+            <listitem><para>float <link linkend="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1acc9abff370f5cf1bfde86bfc5c72d86a">get_step_in_pixels</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -126,212 +126,212 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a6feb7a3c802a6747f441d9bdee1b343a"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a13c0cfba8bf479210814ef6aa0d9da25"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.__init__ ( self,  title = <computeroutput>&quot;&quot;</computeroutput>
-,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
+<para><computeroutput> None gui.horizontal_slider.HorizontalSlider.__init__ ( self, str  title = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb4db83b71358c8ede8b62b540920df"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aa81949c0c09cb3851d0ab1741f726d54"/><section>
     <title>button_held()</title>
 <indexterm><primary>button_held</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>button_held</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.button_held ( self,  state)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.button_held ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set whether the horizontal slider&apos;s button is held or not, then return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a425fec61e90dc90a295d7923b8611243"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a89bc2d0330e7c967baa040f1c1f94016"/><section>
     <title>center()</title>
 <indexterm><primary>center</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>center</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the horizontal slider on both axes relative to the specified parent, then return the horizontal slider
 itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a9397ddc8e93dd918bd1d6a748abcf0e1"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba62582988f9d76b3d3638a56566abf8"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the horizontal slider horizontally relative to the specified parent, then return the horizontal slider
 itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aa9f9b1d93c8267394c605331f73b4ed9"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1adbd586cefec779b1190e9c188d059511"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the horizontal slider vertically relative to the specified parent, then return the horizontal slider
 itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a155fc6d6d2b1433824971b528076025d"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a6f6499b04d951aaebb3f570b01c4ccd9"/><section>
     <title>center_with_offset()</title>
 <indexterm><primary>center_with_offset</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>center_with_offset</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Center the horizontal slider with center() and offset it by x and y relative to the specified parent, then
 return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a0e8fc31412f9292f4a022f162a3e63a5"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aeb55c8cf76c36f64c0b42782e630b11e"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.horizontal_slider.HorizontalSlider.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the horizontal slider and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae0c158eb433a54f62891a5fd9b9f7473"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1325e97ecce7e25512ed77a3bbbd4d63"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.events ( self,  e)</computeroutput></para>
+<para><computeroutput> None gui.horizontal_slider.HorizontalSlider.events ( self, pygame.event.Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the horizontal slider events.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afe3b6de6d7dee61fa0714ed77c260a04"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afd8cd34418917c40588cc86d2db852d6"/><section>
     <title>get_bar_width()</title>
 <indexterm><primary>get_bar_width</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_bar_width</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_bar_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.horizontal_slider.HorizontalSlider.get_bar_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the width of the horizontal slider&apos;s bar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a8ece0a1afec090b809022824dea1ca52"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a02878e82c0f484029c4d652370489690"/><section>
     <title>get_height()</title>
 <indexterm><primary>get_height</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_height</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_height ( self)</computeroutput></para>
+<para><computeroutput> int gui.horizontal_slider.HorizontalSlider.get_height ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the height of the horizontal slider.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a8c87ea39158394af835cee7d06550bdd"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1acc9abff370f5cf1bfde86bfc5c72d86a"/><section>
     <title>get_step_in_pixels()</title>
 <indexterm><primary>get_step_in_pixels</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_step_in_pixels</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_step_in_pixels ( self)</computeroutput></para>
+<para><computeroutput> float gui.horizontal_slider.HorizontalSlider.get_step_in_pixels ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the number of pixels needed to move the horizontal slider&apos;s button from one value to the next.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae43725a892e2f3953e67d91ae880deac"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a88fe477b4a2009a3fbc549ab5fdaab97"/><section>
     <title>get_title()</title>
 <indexterm><primary>get_title</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_title</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_title ( self)</computeroutput></para>
+<para><computeroutput> str gui.horizontal_slider.HorizontalSlider.get_title ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the title label&apos;s text of the horizontal slider.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a57658263c4be86bbcb49fc599d127339"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba621050b6c9aba016fd485b021a8734"/><section>
     <title>get_value()</title>
 <indexterm><primary>get_value</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_value</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_value ( self)</computeroutput></para>
+<para><computeroutput> int gui.horizontal_slider.HorizontalSlider.get_value ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the value of the horizontal slider.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a01471892e536abafc4ba8f77bb6d948b"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a1921b59e721a30e9a505767ac843a301"/><section>
     <title>get_value_bounds()</title>
 <indexterm><primary>get_value_bounds</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_value_bounds</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_value_bounds ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int] gui.horizontal_slider.HorizontalSlider.get_value_bounds ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the value bounds of the horizontal slider (min/max value).
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ae7be91420402beed8fdecb6f722e4bf8"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a80941149e315edf9e7bd0f4abff20eea"/><section>
     <title>get_value_text()</title>
 <indexterm><primary>get_value_text</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_value_text</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_value_text ( self)</computeroutput></para>
+<para><computeroutput> str gui.horizontal_slider.HorizontalSlider.get_value_text ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the value label&apos;s text of the horizontal slider.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ac46f278d63188648f4b6d7724fc8aa76"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a4eef9703d85dc4925c9d19c9523f7e21"/><section>
     <title>get_width()</title>
 <indexterm><primary>get_width</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>get_width</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.get_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.horizontal_slider.HorizontalSlider.get_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the width of the horizontal slider.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ac382ad3f3606e8707d551e2dc98655fb"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a2d646e692da0672152363ec3deda3a4c"/><section>
     <title>is_button_held()</title>
 <indexterm><primary>is_button_held</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>is_button_held</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.is_button_held ( self)</computeroutput></para>
+<para><computeroutput> bool gui.horizontal_slider.HorizontalSlider.is_button_held ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the held state of the horizontal slider&apos;s button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aca7d2ae0a3ba550be83e8afca66a0de8"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a2e18f39d331269453df6f0952417feaf"/><section>
     <title>is_hovering_over()</title>
 <indexterm><primary>is_hovering_over</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>is_hovering_over</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.is_hovering_over ( self)</computeroutput></para>
+<para><computeroutput> bool gui.horizontal_slider.HorizontalSlider.is_hovering_over ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the horizontal slider or not.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1abb35dbc8cb4efaf6e1ad6b9fa39139d9"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aba0640b8128a4f843f91c115baab5bf4"/><section>
     <title>is_hovering_over_button()</title>
 <indexterm><primary>is_hovering_over_button</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>is_hovering_over_button</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.is_hovering_over_button ( self)</computeroutput></para>
+<para><computeroutput> bool gui.horizontal_slider.HorizontalSlider.is_hovering_over_button ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the horizontal slider&apos;s button or not.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a15f475425592f939195390303ccd1cc6"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a85a3bf8baa047cd43c135d356c1be872"/><section>
     <title>refresh()</title>
 <indexterm><primary>refresh</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>refresh</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.refresh ( self)</computeroutput></para>
+<para><computeroutput> None gui.horizontal_slider.HorizontalSlider.refresh ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Refresh the horizontal slider and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a7723bcc5dc6e8f36d7df8fc970a08e2b"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afd9a02526adeb50a7bfafb9e290b4fe1"/><section>
     <title>set_title()</title>
 <indexterm><primary>set_title</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>set_title</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.set_title ( self,  title)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.set_title ( self, str title)</computeroutput></para>
 <para><literallayout><computeroutput>Set the title&apos;s text of the horizontal slider, then return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a24abae808baeb869349c6a515bccd6ec"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1aad4de77c9db9063a0efdd0c7dd0772da"/><section>
     <title>set_value()</title>
 <indexterm><primary>set_value</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>set_value</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.set_value ( self,  value)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.set_value ( self, int value)</computeroutput></para>
 <para><literallayout><computeroutput>Set the value of the horizontal slider, then return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a97da16cda7a77dd4628ba9a45ad4918e"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1af0110bd5288de41d14a7931f77d78e15"/><section>
     <title>set_value_bounds()</title>
 <indexterm><primary>set_value_bounds</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>set_value_bounds</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.set_value_bounds ( self,  min_value = <computeroutput>None</computeroutput>
-,  max_value = <computeroutput>None</computeroutput>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.set_value_bounds ( self, int | None  min_value = <computeroutput>None</computeroutput>
+, int | None  max_value = <computeroutput>None</computeroutput>
 )</computeroutput></para>
 <para><literallayout><computeroutput>Set the value bounds of the horizontal slider (min/max value), then return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1afdeae395ec2ddc35590f24f334abe89f"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1ab7274484ddd2ed0ef9ce6c33d27d8675"/><section>
     <title>set_value_text()</title>
 <indexterm><primary>set_value_text</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>set_value_text</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.set_value_text ( self,  text)</computeroutput></para>
+<para><computeroutput> Self gui.horizontal_slider.HorizontalSlider.set_value_text ( self, str text)</computeroutput></para>
 <para><literallayout><computeroutput>Set the value label&apos;s text of the horizontal slider, then return the horizontal slider itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a0c39097abd5d3919efcede0542e22cf3"/><section>
+<anchor xml:id="_classgui_1_1horizontal__slider_1_1HorizontalSlider_1a7399be6c194813d0431e60222412b570"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>gui.horizontal_slider.HorizontalSlider</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.horizontal_slider.HorizontalSlider.update ( self,  window)</computeroutput></para>
+<para><computeroutput> None gui.horizontal_slider.HorizontalSlider.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the horizontal slider and its components.
 </computeroutput></literallayout> </para>
 </section>

@@ -5,11 +5,11 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a829121ba33b2be38e52f51cba1ee1b5f">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a9b95745348c0c8c9666abc1ca3942655">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a9b615f01f9598bc42bb8e95b8a2fd012">set_state</link> (self, state)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a4e34ab0ec5b211b46a05c37d07095f94">set_state</link> (self, bool state)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a859c6892098886fe7988546f07b4b9df">get_state</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1screens_1_1screen_1_1Screen_1a04e3d7a734977e0c5a46a6f9002cf4b0">get_state</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -28,27 +28,27 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a829121ba33b2be38e52f51cba1ee1b5f"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a9b95745348c0c8c9666abc1ca3942655"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screens.screen.Screen</secondary></indexterm>
 <indexterm><primary>gui.screens.screen.Screen</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screens.screen.Screen.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.screen.Screen.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a859c6892098886fe7988546f07b4b9df"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a04e3d7a734977e0c5a46a6f9002cf4b0"/><section>
     <title>get_state()</title>
 <indexterm><primary>get_state</primary><secondary>gui.screens.screen.Screen</secondary></indexterm>
 <indexterm><primary>gui.screens.screen.Screen</primary><secondary>get_state</secondary></indexterm>
-<para><computeroutput>gui.screens.screen.Screen.get_state ( self)</computeroutput></para>
+<para><computeroutput> bool gui.screens.screen.Screen.get_state ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the screen&apos;s visibility/interactivity state.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a9b615f01f9598bc42bb8e95b8a2fd012"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1screen_1_1Screen_1a4e34ab0ec5b211b46a05c37d07095f94"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.screen.Screen</secondary></indexterm>
 <indexterm><primary>gui.screens.screen.Screen</primary><secondary>set_state</secondary></indexterm>
-<para><computeroutput>gui.screens.screen.Screen.set_state ( self,  state)</computeroutput></para>
+<para><computeroutput> None gui.screens.screen.Screen.set_state ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
 </computeroutput></literallayout> </para>
 </section>

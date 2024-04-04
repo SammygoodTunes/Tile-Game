@@ -24,11 +24,11 @@
 <codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>camera<sp/>position<sp/>is<sp/>strictly<sp/>relative<sp/>to<sp/>the<sp/>center<sp/>of<sp/>the<sp/>screen.</highlight></codeline>
 <codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STEP_START<sp/>=<sp/>5</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STEP_STOP<sp/>=<sp/>3.5</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_THRESHOLD<sp/>=<sp/>0.001</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STEP_START:<sp/>float<sp/>=<sp/>5.0</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STEP_STOP:<sp/>float<sp/>=<sp/>3.5</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_THRESHOLD:<sp/>float<sp/>=<sp/>0.001</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1a01f6b29f8e611c5c13a0397ddae1b578" kindref="member">__init__</ref>(self,<sp/>speed=50):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1a43b2c940f68b419a8f708f923d82ea27" kindref="member">__init__</ref>(self,<sp/>speed:<sp/>int<sp/>=<sp/>50)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a7b280cd08560a20df275fd7102d1f9aa" kindref="member">x</ref><sp/>=<sp/>0</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a48356c93f349422fb7153ad1dedbf4cf" kindref="member">y</ref><sp/>=<sp/>0</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0" kindref="member">speed</ref><sp/>=<sp/>speed</highlight></codeline>
@@ -36,7 +36,7 @@
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf" kindref="member">velocity_y</ref><sp/>=<sp/>0</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&apos;Created<sp/>{__class__.__name__}<sp/>with<sp/>attributes<sp/>{self.__dict__}&apos;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1a2bef3fd77ce89936f91347e41e36cf60" kindref="member">events</ref>(self,<sp/>game):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0" kindref="member">events</ref>(self,<sp/>game)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Track<sp/>the<sp/>camera<sp/>events.</highlight></codeline>
 <codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -73,7 +73,7 @@
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf" kindref="member">velocity_y</ref><sp/>&lt;<sp/>0:</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf" kindref="member">velocity_y</ref><sp/>=<sp/>clamp(self.<ref refid="classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf" kindref="member">velocity_y</ref><sp/>+<sp/>Camera.VELOCITY_STEP_STOP<sp/>*<sp/>d,<sp/>-1,<sp/>0)</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1a272ca1cbd785f8858f623ca851a471a1" kindref="member">reset</ref>(self):</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1camera_1_1Camera_1ac1550203365008c4b71fea62a935d261" kindref="member">reset</ref>(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset<sp/>the<sp/>camera&apos;s<sp/>general<sp/>properties.</highlight></codeline>
 <codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>

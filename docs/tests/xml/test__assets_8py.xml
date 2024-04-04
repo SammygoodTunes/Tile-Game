@@ -2,14 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="test__assets_8py" kind="file" language="Python">
     <compoundname>test_assets.py</compoundname>
-    <innernamespace refid="namespacetests">tests</innernamespace>
-    <innernamespace refid="namespacetests_1_1test__assets">tests::test_assets</innernamespace>
+    <innernamespace refid="namespaceunit">unit</innernamespace>
+    <innernamespace refid="namespaceunit_1_1test__assets">unit::test_assets</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacetests" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="1" refid="namespaceunit" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="2"><highlight class="stringliteral">Tests<sp/>dedicated<sp/>to<sp/>the<sp/>assets.</highlight></codeline>
 <codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
@@ -58,6 +58,6 @@
 <codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>isfile(impr.files(assets)<sp/>/<sp/></highlight><highlight class="stringliteral">&apos;player.png&apos;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/tests/test_assets.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_assets.py"/>
   </compounddef>
 </doxygen>

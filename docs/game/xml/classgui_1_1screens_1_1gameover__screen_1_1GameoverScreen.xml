@@ -76,9 +76,9 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aff7245b0caed7dc237a6f579990d1ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.gameover_screen.GameoverScreen.__init__</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a28f4f0ca96ac79ac9d2b819bf29ed65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.gameover_screen.GameoverScreen.__init__</definition>
         <argsstring>(self, window)</argsstring>
         <name>__init__</name>
         <qualifiedname>gui.screens.gameover_screen.GameoverScreen.__init__</qualifiedname>
@@ -98,9 +98,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" bodystart="15" bodyend="23"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a170f36fdee00c80599e419852435f072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.gameover_screen.GameoverScreen.initialise_surface</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aca0f40e961bc932029352a5f641ffd0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.gameover_screen.GameoverScreen.initialise_surface</definition>
         <argsstring>(self)</argsstring>
         <name>initialise_surface</name>
         <qualifiedname>gui.screens.gameover_screen.GameoverScreen.initialise_surface</qualifiedname>
@@ -118,9 +118,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" bodystart="24" bodyend="32"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a18407249bb494ffb078e69e87c1fd439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.gameover_screen.GameoverScreen.draw</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af50df1869a233a6beb3bb7f32773766e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.gameover_screen.GameoverScreen.draw</definition>
         <argsstring>(self)</argsstring>
         <name>draw</name>
         <qualifiedname>gui.screens.gameover_screen.GameoverScreen.draw</qualifiedname>
@@ -138,9 +138,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" bodystart="33" bodyend="42"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aeb0ad3247f17d4744fed1f199d7eec5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.gameover_screen.GameoverScreen.update_ui</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a147032e884ee0a2a93fe540d75de27d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.gameover_screen.GameoverScreen.update_ui</definition>
         <argsstring>(self)</argsstring>
         <name>update_ui</name>
         <qualifiedname>gui.screens.gameover_screen.GameoverScreen.update_ui</qualifiedname>
@@ -158,10 +158,10 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" bodystart="43" bodyend="54"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a8c8b584d0f22300eed9b3790510e87b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.gameover_screen.GameoverScreen.set_state</definition>
-        <argsstring>(self, state)</argsstring>
+      <memberdef kind="function" id="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a8b960be3648726861771f80e532f8238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.gameover_screen.GameoverScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
         <name>set_state</name>
         <qualifiedname>gui.screens.gameover_screen.GameoverScreen.set_state</qualifiedname>
         <param>
@@ -169,8 +169,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>state</type>
-          <defname>state</defname>
+          <type>bool</type>
+          <declname>state</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -213,15 +213,15 @@
     </collaborationgraph>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/gameover_screen.py" bodystart="10" bodyend="63"/>
     <listofallmembers>
-      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aff7245b0caed7dc237a6f579990d1ccd" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>__init__</name></member>
-      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a18407249bb494ffb078e69e87c1fd439" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a28f4f0ca96ac79ac9d2b819bf29ed65a" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af50df1869a233a6beb3bb7f32773766e" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>draw</name></member>
       <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a895eafbe65e08cca56989ea319b89fd4" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>faded_surface</name></member>
       <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a260b6e57fae158bcce835166c92de31b" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>gameover_label</name></member>
-      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a170f36fdee00c80599e419852435f072" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aca0f40e961bc932029352a5f641ffd0b" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>initialise_surface</name></member>
       <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a238f3f5274334b41300f75b1c8e38ee1" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>quit_button</name></member>
       <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1abf873cc2cd7aef0a144ac991a2d4eae7" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>regen_button</name></member>
-      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a8c8b584d0f22300eed9b3790510e87b9" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>set_state</name></member>
-      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1aeb0ad3247f17d4744fed1f199d7eec5b" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a8b960be3648726861771f80e532f8238" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a147032e884ee0a2a93fe540d75de27d2" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>update_ui</name></member>
       <member refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a588999bfd563f13a908961556382801c" prot="public" virt="non-virtual"><scope>gui::screens::gameover_screen::GameoverScreen</scope><name>window</name></member>
     </listofallmembers>
   </compounddef>

@@ -5,11 +5,11 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classworld_1_1tile__manager_1_1TileManager_1a9b09d109a0765b9db72cd23a753535b3">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld_1_1tile__manager_1_1TileManager_1a0a8a8535b1e74429d76d428c521e8147">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1tile__manager_1_1TileManager_1a585b80cec433844ee69f062d57036ede">draw</link> (self, int x, int y, Tile tile, pygame.Surface screen)</para>
+            <listitem><para>None <link linkend="_classworld_1_1tile__manager_1_1TileManager_1a1911357031595eed17b0e9d339ed1440">draw</link> (self, int x, int y, Tile tile, Surface screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1tile__manager_1_1TileManager_1ac8144d403e67c8a295468a86e6de87ae">set_atlas</link> (self, str atlas_file)</para>
+            <listitem><para>None <link linkend="_classworld_1_1tile__manager_1_1TileManager_1a9d7c44377d9c27c03b8f8ac3aa76f599">set_atlas</link> (self, str atlas_file)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -39,27 +39,27 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1a9b09d109a0765b9db72cd23a753535b3"/><section>
+<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1a0a8a8535b1e74429d76d428c521e8147"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>world.tile_manager.TileManager</secondary></indexterm>
 <indexterm><primary>world.tile_manager.TileManager</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>world.tile_manager.TileManager.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None world.tile_manager.TileManager.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1a585b80cec433844ee69f062d57036ede"/><section>
+<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1a1911357031595eed17b0e9d339ed1440"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>world.tile_manager.TileManager</secondary></indexterm>
 <indexterm><primary>world.tile_manager.TileManager</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>world.tile_manager.TileManager.draw ( self, int x, int y, Tile tile, pygame.Surface screen)</computeroutput></para>
+<para><computeroutput> None world.tile_manager.TileManager.draw ( self, int x, int y, Tile tile, Surface screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw a tile to the screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1ac8144d403e67c8a295468a86e6de87ae"/><section>
+<anchor xml:id="_classworld_1_1tile__manager_1_1TileManager_1a9d7c44377d9c27c03b8f8ac3aa76f599"/><section>
     <title>set_atlas()</title>
 <indexterm><primary>set_atlas</primary><secondary>world.tile_manager.TileManager</secondary></indexterm>
 <indexterm><primary>world.tile_manager.TileManager</primary><secondary>set_atlas</secondary></indexterm>
-<para><computeroutput>world.tile_manager.TileManager.set_atlas ( self, str atlas_file)</computeroutput></para>
+<para><computeroutput> None world.tile_manager.TileManager.set_atlas ( self, str atlas_file)</computeroutput></para>
 <para><literallayout><computeroutput>Set the texture atlas.
 </computeroutput></literallayout> </para>
 </section>

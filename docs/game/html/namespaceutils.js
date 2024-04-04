@@ -19,8 +19,8 @@ var namespaceutils =
       [ "unknown_args", "namespaceutils_1_1logger.html#a02e42802c0a48b9cb365232c591f0a5b", null ]
     ] ],
     [ "tools", "namespaceutils_1_1tools.html", [
-      [ "error", "namespaceutils_1_1tools.html#a05ba38877bf5932d5a2f758e01c2a376", null ],
-      [ "success", "namespaceutils_1_1tools.html#ae600cae81f1f673da722244533f45370", null ],
-      [ "warning", "namespaceutils_1_1tools.html#aec33bd9d44934879c1fd061fe2a8c157", null ]
+      [ "error", "namespaceutils_1_1tools.html#a1735efce99a451d8dcb35bf32cb3bfc4", null ],
+      [ "success", "namespaceutils_1_1tools.html#a1afae592a510fe58e85ce3f3414fd15b", null ],
+      [ "warning", "namespaceutils_1_1tools.html#a36f8b31c2545c93da240850598c3e9e2", null ]
     ] ]
 ];

@@ -28,6 +28,7 @@ var hierarchy =
       [ "gui.screens.credits_screen.CreditsScreen", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", null ],
       [ "gui.screens.gameover_screen.GameoverScreen", "classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html", null ],
       [ "gui.screens.loading_screen.LoadingScreen", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html", null ],
+      [ "gui.screens.main_hud.MainHud", "classgui_1_1screens_1_1main__hud_1_1MainHud.html", null ],
       [ "gui.screens.mainmenu_screen.MainMenu", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html", null ],
       [ "gui.screens.options_screen.OptionsScreen", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html", null ],
       [ "gui.screens.pause_screen.PauseScreen", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html", null ]

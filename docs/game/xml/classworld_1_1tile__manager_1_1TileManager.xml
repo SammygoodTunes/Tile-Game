@@ -64,9 +64,9 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1a9b09d109a0765b9db72cd23a753535b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world.tile_manager.TileManager.__init__</definition>
+      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1a0a8a8535b1e74429d76d428c521e8147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None world.tile_manager.TileManager.__init__</definition>
         <argsstring>(self)</argsstring>
         <name>__init__</name>
         <qualifiedname>world.tile_manager.TileManager.__init__</qualifiedname>
@@ -82,10 +82,10 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="16" bodyend="21"/>
       </memberdef>
-      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1a585b80cec433844ee69f062d57036ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world.tile_manager.TileManager.draw</definition>
-        <argsstring>(self, int x, int y, Tile tile, pygame.Surface screen)</argsstring>
+      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1a1911357031595eed17b0e9d339ed1440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None world.tile_manager.TileManager.draw</definition>
+        <argsstring>(self, int x, int y, Tile tile, Surface screen)</argsstring>
         <name>draw</name>
         <qualifiedname>world.tile_manager.TileManager.draw</qualifiedname>
         <param>
@@ -105,7 +105,7 @@
           <declname>tile</declname>
         </param>
         <param>
-          <type>pygame.Surface</type>
+          <type>Surface</type>
           <declname>screen</declname>
         </param>
         <briefdescription>
@@ -118,9 +118,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="22" bodyend="34"/>
       </memberdef>
-      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1ac8144d403e67c8a295468a86e6de87ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world.tile_manager.TileManager.set_atlas</definition>
+      <memberdef kind="function" id="classworld_1_1tile__manager_1_1TileManager_1a9d7c44377d9c27c03b8f8ac3aa76f599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None world.tile_manager.TileManager.set_atlas</definition>
         <argsstring>(self, str atlas_file)</argsstring>
         <name>set_atlas</name>
         <qualifiedname>world.tile_manager.TileManager.set_atlas</qualifiedname>
@@ -151,11 +151,11 @@
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="9" bodyend="41"/>
     <listofallmembers>
-      <member refid="classworld_1_1tile__manager_1_1TileManager_1a9b09d109a0765b9db72cd23a753535b3" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>__init__</name></member>
+      <member refid="classworld_1_1tile__manager_1_1TileManager_1a0a8a8535b1e74429d76d428c521e8147" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>__init__</name></member>
       <member refid="classworld_1_1tile__manager_1_1TileManager_1a3b1586d515df9206e3881d1d2346d3ce" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>atlas</name></member>
-      <member refid="classworld_1_1tile__manager_1_1TileManager_1a585b80cec433844ee69f062d57036ede" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>draw</name></member>
+      <member refid="classworld_1_1tile__manager_1_1TileManager_1a1911357031595eed17b0e9d339ed1440" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>draw</name></member>
       <member refid="classworld_1_1tile__manager_1_1TileManager_1a4dacb6edf57b0d6a4ebd53c4198e6a86" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>height</name></member>
-      <member refid="classworld_1_1tile__manager_1_1TileManager_1ac8144d403e67c8a295468a86e6de87ae" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>set_atlas</name></member>
+      <member refid="classworld_1_1tile__manager_1_1TileManager_1a9d7c44377d9c27c03b8f8ac3aa76f599" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>set_atlas</name></member>
       <member refid="classworld_1_1tile__manager_1_1TileManager_1a506a88152094401caa313582d11f053d" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>SIZE</name></member>
       <member refid="classworld_1_1tile__manager_1_1TileManager_1a56992257aa33f961e3ca75d2e40020ff" prot="public" virt="non-virtual"><scope>world::tile_manager::TileManager</scope><name>width</name></member>
     </listofallmembers>

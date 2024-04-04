@@ -6,6 +6,8 @@
 <para><anchor xml:id="_md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README_1tests"/> All logical game-related and data-related tests are found here.</para>
 
 <para>Their purpose is to test the inner functionalities of the game and the existence of files used by it.</para>
+
+<para>Unit tests are found under the <computeroutput>unit/</computeroutput> directory, integrated tests are found under the <computeroutput>integrated/</computeroutput> directory.</para>
 <section xml:id="_md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README_1running-a-test">
 <title><title>Running a test</title></title>
 
@@ -30,11 +32,20 @@
 
 <para><itemizedlist>
 <listitem>
+<para>To run all tests of a certain type:</para>
+</listitem></itemizedlist>
+</para>
+
+<para><literallayout><computeroutput>pytest&#32;[unit|integrated]&#32;#&#32;Either&#32;unit&#32;or&#32;integrated
+</computeroutput></literallayout></para>
+
+<para><itemizedlist>
+<listitem>
 <para>To run tests in a specific module:</para>
 </listitem></itemizedlist>
 </para>
 
-<para><literallayout><computeroutput>pytest&#32;test_assets.py&#32;&#32;#&#32;Example
+<para><literallayout><computeroutput>pytest&#32;unit/test_assets.py&#32;&#32;#&#32;Example
 </computeroutput></literallayout></para>
 
 <para><itemizedlist>
@@ -43,11 +54,11 @@
 </listitem></itemizedlist>
 </para>
 
-<para><literallayout><computeroutput>pytest&#32;test_assets.py::test_assets_folder_exists&#32;&#32;#&#32;Example
+<para><literallayout><computeroutput>pytest&#32;unit/test_assets.py::test_assets_folder_exists&#32;&#32;#&#32;Example
 </computeroutput></literallayout></para>
 
 <para><blockquote>
-<para>&#8205;If you&apos;re in the root directory, make sure to add <computeroutput>tests/</computeroutput> to the path argument (e.g. <computeroutput>pytest <link linkend="_test__assets_8py">tests/test_assets.py</link></computeroutput>) or replace it entirely if the path is <computeroutput>.</computeroutput> (like the third command above). </para>
+<para>&#8205;If you&apos;re in the root directory, make sure to add <computeroutput>tests/</computeroutput> to the path argument (e.g. <computeroutput>pytest tests/test_assets.py</computeroutput>) or replace it entirely if the path is <computeroutput>.</computeroutput> (like the third command above). </para>
 </blockquote></para>
 </section>
 <section xml:id="_md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README_1information">

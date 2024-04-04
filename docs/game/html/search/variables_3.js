@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['camera_5flabel_0',['camera_label',['../classentity_1_1player_1_1Player.html#a86f01aaf02dcb947ece79eec82fef671',1,'entity::player::Player']]],
+  ['camera_5flabel_0',['camera_label',['../classgui_1_1screens_1_1main__hud_1_1MainHud.html#a28f87dfe39a2430500bc9f03cede6d82',1,'gui::screens::main_hud::MainHud']]],
   ['cobblestone_1',['COBBLESTONE',['../classdata_1_1tiles_1_1Tiles.html#a427eaea0c98bb2189293baa862b86aff',1,'data::tiles::Tiles']]],
   ['cobblestone_5fstairs_2',['COBBLESTONE_STAIRS',['../classdata_1_1tiles_1_1Tiles.html#aa12a438b6a08796f2639c23633b7b659',1,'data::tiles::Tiles']]],
   ['count_5fid_3',['count_id',['../classdata_1_1tiles_1_1Tile.html#ae024d64c513d0094acf45f3ae0fd5591',1,'data::tiles::Tile']]],

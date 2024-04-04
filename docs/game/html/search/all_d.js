@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['offset_0',['offset',['../classgui_1_1widget_1_1Widget.html#a95322e497bbbeb382a13b818c9c7e05f',1,'gui::widget::Widget']]],
-  ['offset_5fx_1',['offset_x',['../classgui_1_1checkbox_1_1Checkbox.html#a6661614b3fb9440da71af3d5e812045d',1,'gui.checkbox.Checkbox.offset_x()'],['../classgui_1_1widget_1_1Widget.html#a4ad238dd237ae78050512295244af545',1,'gui.widget.Widget.offset_x()']]],
-  ['offset_5fy_2',['offset_y',['../classgui_1_1checkbox_1_1Checkbox.html#ad335416247ec873ee6349c8161d9b370',1,'gui.checkbox.Checkbox.offset_y()'],['../classgui_1_1widget_1_1Widget.html#a5929685f0a132c83d98164e06262f7ee',1,'gui.widget.Widget.offset_y()']]],
+  ['offset_0',['offset',['../classgui_1_1widget_1_1Widget.html#aeb8988d9cdd6c157c81c76c2844d19e8',1,'gui::widget::Widget']]],
+  ['offset_5fx_1',['offset_x',['../classgui_1_1checkbox_1_1Checkbox.html#ae01383d9c465021e37d59e643c9d5682',1,'gui.checkbox.Checkbox.offset_x()'],['../classgui_1_1widget_1_1Widget.html#a534362bb979f3ecd80496cde67ea7e27',1,'gui.widget.Widget.offset_x()']]],
+  ['offset_5fy_2',['offset_y',['../classgui_1_1checkbox_1_1Checkbox.html#a09e0cf3ccc017a1a80787127f53d9caf',1,'gui.checkbox.Checkbox.offset_y()'],['../classgui_1_1widget_1_1Widget.html#a54ac3feb8556761f48859be5f08f0325',1,'gui.widget.Widget.offset_y()']]],
   ['old_5fheight_3',['old_height',['../classcore_1_1window_1_1Window.html#aad4b09675f0fe34863cda0d6ad43004c',1,'core::window::Window']]],
   ['old_5fwidth_4',['old_width',['../classcore_1_1window_1_1Window.html#aae3ba375fb7fdcb8ad493abc91871c4e',1,'core::window::Window']]],
   ['options_5fbutton_5',['options_button',['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a4dd3c7b29d509d3f6354ce14ec3b8144',1,'gui.screens.mainmenu_screen.MainMenu.options_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a84d2d01f4090bcf5962887efad26d48d',1,'gui.screens.pause_screen.PauseScreen.options_button']]],

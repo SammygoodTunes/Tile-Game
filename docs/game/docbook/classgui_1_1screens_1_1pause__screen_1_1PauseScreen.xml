@@ -13,15 +13,15 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b">window</link>)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a23e0bd774de7f8aa34d03d300c165c1f">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b">window</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b">initialise_surface</link> (self)</para>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af9f0bd315040b69738cbf37d82aa8d43">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4">draw</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a4cf395c2e6593ff32201b4cfcd89cc90">draw</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f">update_ui</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1abf41f59cdcb6ef4d52ca32411e6d46fb">update_ui</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd">set_state</link> (self, state)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a573e5790473fee822fe76eae3581f206">set_state</link> (self, bool state)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -50,43 +50,43 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a23e0bd774de7f8aa34d03d300c165c1f"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screens.pause_screen.PauseScreen.__init__ ( self,  window)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.pause_screen.PauseScreen.__init__ ( self,  window)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a4cf395c2e6593ff32201b4cfcd89cc90"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.screens.pause_screen.PauseScreen.draw ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.pause_screen.PauseScreen.draw ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af9f0bd315040b69738cbf37d82aa8d43"/><section>
     <title>initialise_surface()</title>
 <indexterm><primary>initialise_surface</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>initialise_surface</secondary></indexterm>
-<para><computeroutput>gui.screens.pause_screen.PauseScreen.initialise_surface ( self)</computeroutput></para>
+<para><computeroutput> Surface gui.screens.pause_screen.PauseScreen.initialise_surface ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the screen&apos;s surface.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a573e5790473fee822fe76eae3581f206"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>set_state</secondary></indexterm>
-<para><computeroutput>gui.screens.pause_screen.PauseScreen.set_state ( self,  state)</computeroutput></para>
+<para><computeroutput> None gui.screens.pause_screen.PauseScreen.set_state ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1abf41f59cdcb6ef4d52ca32411e6d46fb"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screens.pause_screen.PauseScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.pause_screen.PauseScreen</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>gui.screens.pause_screen.PauseScreen.update_ui ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.pause_screen.PauseScreen.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screen UI.
 </computeroutput></literallayout> </para>
 </section>

@@ -12,10 +12,11 @@ var searchData=
   ['gui_3a_3ascreens_3a_3acredits_5fscreen_9',['credits_screen',['../namespacegui_1_1screens_1_1credits__screen.html',1,'gui::screens']]],
   ['gui_3a_3ascreens_3a_3agameover_5fscreen_10',['gameover_screen',['../namespacegui_1_1screens_1_1gameover__screen.html',1,'gui::screens']]],
   ['gui_3a_3ascreens_3a_3aloading_5fscreen_11',['loading_screen',['../namespacegui_1_1screens_1_1loading__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3amainmenu_5fscreen_12',['mainmenu_screen',['../namespacegui_1_1screens_1_1mainmenu__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3aoptions_5fscreen_13',['options_screen',['../namespacegui_1_1screens_1_1options__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3apause_5fscreen_14',['pause_screen',['../namespacegui_1_1screens_1_1pause__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3ascreen_15',['screen',['../namespacegui_1_1screens_1_1screen.html',1,'gui::screens']]],
-  ['gui_3a_3aslot_16',['slot',['../namespacegui_1_1slot.html',1,'gui']]],
-  ['gui_3a_3awidget_17',['widget',['../namespacegui_1_1widget.html',1,'gui']]]
+  ['gui_3a_3ascreens_3a_3amain_5fhud_12',['main_hud',['../namespacegui_1_1screens_1_1main__hud.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3amainmenu_5fscreen_13',['mainmenu_screen',['../namespacegui_1_1screens_1_1mainmenu__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3aoptions_5fscreen_14',['options_screen',['../namespacegui_1_1screens_1_1options__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3apause_5fscreen_15',['pause_screen',['../namespacegui_1_1screens_1_1pause__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3ascreen_16',['screen',['../namespacegui_1_1screens_1_1screen.html',1,'gui::screens']]],
+  ['gui_3a_3aslot_17',['slot',['../namespacegui_1_1slot.html',1,'gui']]],
+  ['gui_3a_3awidget_18',['widget',['../namespacegui_1_1widget.html',1,'gui']]]
 ];

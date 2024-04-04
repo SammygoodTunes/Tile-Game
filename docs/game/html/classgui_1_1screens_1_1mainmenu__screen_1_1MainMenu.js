@@ -1,9 +1,9 @@
 var classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu =
 [
-    [ "__init__", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a56c8ca31e7a9730bbc4c8834fd872b01", null ],
-    [ "draw", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#aefaa4f9221befa3cced1a6b5e2e83876", null ],
-    [ "set_state", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#ad272e9481ca0b24c532413f935e97cd1", null ],
-    [ "update_ui", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a2f7017d23488315ba84f28de4848b8e5", null ],
+    [ "__init__", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#aac05dd1e8dd9e79257f16d10d947c55d", null ],
+    [ "draw", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a1c91343040acc025729811c5c4da70a8", null ],
+    [ "set_state", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#af0f12f424e0a2ab6efce4d71ffc62559", null ],
+    [ "update_ui", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#ad74963367b70d9c7a2f2d9c7cc763897", null ],
     [ "credits_button", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a8f45ff507b8af99824765c2eab57c3ac", null ],
     [ "options_button", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a4dd3c7b29d509d3f6354ce14ec3b8144", null ],
     [ "play_button", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#ae28bb5b9231c756133520eb4e60e55bc", null ],

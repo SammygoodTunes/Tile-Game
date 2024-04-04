@@ -2,12 +2,79 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="test__entity_8py" kind="file" language="Python">
     <compoundname>test_entity.py</compoundname>
+    <innernamespace refid="namespaceunit">unit</innernamespace>
+    <innernamespace refid="namespaceunit_1_1test__entity">unit::test_entity</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
+<codeline lineno="1" refid="namespaceunit_1_1test__entity" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Tests<sp/>dedicated<sp/>to<sp/>the<sp/>entity<sp/>modules.</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.entity.player<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Directions,<sp/>Player</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__entity_1a3e260b6211c70e6c906e1a68e0061f2a" kindref="member">test_player_creation</ref>():</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>player_creation</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>player<sp/>is<sp/>instantiated<sp/>correctly.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player<sp/>=<sp/>Player(-128,<sp/>128,<sp/>100)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.get_x()<sp/>==<sp/>-128</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.get_y()<sp/>==<sp/>128</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.speed<sp/>==<sp/>100</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__entity_1abbf98a0cc577a0eed994e565e9f4610d" kindref="member">test_player_reset</ref>():</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>player_reset</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>player&apos;s<sp/>general<sp/>attributes<sp/>reset<sp/>correctly.</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player<sp/>=<sp/>Player(-128,<sp/>128,<sp/>100)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.velocity_x,<sp/>dummy_player.velocity_y<sp/>=<sp/>1.0,<sp/>-1.0</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.set_health(0)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.hurt<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.reset()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.get_x()<sp/>==<sp/>dummy_player.get_y()<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.velocity_x<sp/>==<sp/>dummy_player.velocity_y<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.move<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.get_health()<sp/>==<sp/>100</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.hurt</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__entity_1a49ce3988baf011b5466cc2ed40738e0c" kindref="member">test_player_movement</ref>():</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>player_movement</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>player&apos;s<sp/>movement<sp/>verifiers<sp/>return<sp/>the<sp/>right<sp/>movement<sp/>state<sp/>of<sp/>the<sp/>player.</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player<sp/>=<sp/>Player()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.LEFT)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_player.is_moving_left()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_up()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.UP)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>Directions.LEFT)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_left()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>dummy_player.is_moving_up()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>Directions.UP)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.DOWN)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_up()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>dummy_player.is_moving_down()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>Directions.DOWN)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.RIGHT)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_up()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>dummy_player.is_moving_right()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>Directions.RIGHT)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_up()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_left()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_down()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>dummy_player.is_moving_right())</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.LEFT)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.UP)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.DOWN)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_player.move<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>Directions.RIGHT)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>(dummy_player.is_moving_up()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>dummy_player.is_moving_left()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dummy_player.is_moving_down()<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>dummy_player.is_moving_right())</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/tests/test_entity.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_entity.py"/>
   </compounddef>
 </doxygen>

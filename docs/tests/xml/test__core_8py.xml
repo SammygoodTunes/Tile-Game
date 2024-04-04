@@ -2,14 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="test__core_8py" kind="file" language="Python">
     <compoundname>test_core.py</compoundname>
-    <innernamespace refid="namespacetests">tests</innernamespace>
-    <innernamespace refid="namespacetests_1_1test__core">tests::test_core</innernamespace>
+    <innernamespace refid="namespaceunit">unit</innernamespace>
+    <innernamespace refid="namespaceunit_1_1test__core">unit::test_core</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacetests_1_1test__core" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="1" refid="namespaceunit_1_1test__core" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="2"><highlight class="stringliteral">Tests<sp/>dedicated<sp/>to<sp/>the<sp/>core<sp/>modules.</highlight></codeline>
 <codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
@@ -24,7 +24,7 @@
 <codeline lineno="13"><highlight class="normal">WINDOW_TEST_HEIGHT<sp/>=<sp/>600</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacetests_1_1test__core_1ad6486c1fd6e96f188feee3a434185f05" kindref="member">test_window_creation</ref>():</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__core_1aa827deffceebe1d34e87b5aea996c0fb" kindref="member">test_window_creation</ref>():</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>window_creation</highlight></codeline>
 <codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>window<sp/>is<sp/>created<sp/>correctly.</highlight></codeline>
@@ -41,7 +41,7 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>quit()</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacetests_1_1test__core_1a6875580f833cc5cf5dad090ddf6fbf80" kindref="member">test_window_fullscreen</ref>():</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__core_1ab8674a1b09928db5d97409ac983390b7" kindref="member">test_window_fullscreen</ref>():</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>window_fullscreen</highlight></codeline>
 <codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>fullscreen<sp/>feature<sp/>of<sp/>the<sp/>window<sp/>is<sp/>working<sp/>correctly.</highlight></codeline>
@@ -63,7 +63,7 @@
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>quit()</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacetests_1_1test__core_1ab5db7942a8a0d935a30a1f981e012d42" kindref="member">test_game_creation</ref>():</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__core_1a8518af59e6e672bea3e47806196e4e82" kindref="member">test_game_creation</ref>():</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>game_creation</highlight></codeline>
 <codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>game<sp/>object<sp/>is<sp/>instantiated<sp/>correctly.</highlight></codeline>
@@ -79,6 +79,6 @@
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>new_game.is_running()</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>quit()</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/tests/test_core.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py"/>
   </compounddef>
 </doxygen>

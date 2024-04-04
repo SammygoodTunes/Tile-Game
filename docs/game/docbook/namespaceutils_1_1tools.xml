@@ -5,37 +5,37 @@
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_namespaceutils_1_1tools_1a05ba38877bf5932d5a2f758e01c2a376">error</link> (str message)</para>
+            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a1735efce99a451d8dcb35bf32cb3bfc4">error</link> (str message)</para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1tools_1aec33bd9d44934879c1fd061fe2a8c157">warning</link> (str message)</para>
+            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a36f8b31c2545c93da240850598c3e9e2">warning</link> (str message)</para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1tools_1ae600cae81f1f673da722244533f45370">success</link> (str message)</para>
+            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a1afae592a510fe58e85ce3f3414fd15b">success</link> (str message)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_namespaceutils_1_1tools_1a05ba38877bf5932d5a2f758e01c2a376"/><section>
+<anchor xml:id="_namespaceutils_1_1tools_1a1735efce99a451d8dcb35bf32cb3bfc4"/><section>
     <title>error()</title>
 <indexterm><primary>error</primary><secondary>utils.tools</secondary></indexterm>
 <indexterm><primary>utils.tools</primary><secondary>error</secondary></indexterm>
-<para><computeroutput>utils.tools.error (str message)</computeroutput></para>
+<para><computeroutput> None utils.tools.error (str message)</computeroutput></para>
 <para><literallayout><computeroutput>Print an error message in red.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_namespaceutils_1_1tools_1ae600cae81f1f673da722244533f45370"/><section>
+<anchor xml:id="_namespaceutils_1_1tools_1a1afae592a510fe58e85ce3f3414fd15b"/><section>
     <title>success()</title>
 <indexterm><primary>success</primary><secondary>utils.tools</secondary></indexterm>
 <indexterm><primary>utils.tools</primary><secondary>success</secondary></indexterm>
-<para><computeroutput>utils.tools.success (str message)</computeroutput></para>
+<para><computeroutput> None utils.tools.success (str message)</computeroutput></para>
 <para><literallayout><computeroutput>Print a success message in green.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_namespaceutils_1_1tools_1aec33bd9d44934879c1fd061fe2a8c157"/><section>
+<anchor xml:id="_namespaceutils_1_1tools_1a36f8b31c2545c93da240850598c3e9e2"/><section>
     <title>warning()</title>
 <indexterm><primary>warning</primary><secondary>utils.tools</secondary></indexterm>
 <indexterm><primary>utils.tools</primary><secondary>warning</secondary></indexterm>
-<para><computeroutput>utils.tools.warning (str message)</computeroutput></para>
+<para><computeroutput> None utils.tools.warning (str message)</computeroutput></para>
 <para><literallayout><computeroutput>Print a warning message in yellow.
 </computeroutput></literallayout> </para>
 </section>

@@ -13,49 +13,53 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a97e3949b3aee79c153c6a8d67371bb12">__init__</link> (self, x=0, y=0)</para>
+            <listitem><para>None <link linkend="_classgui_1_1slot_1_1Slot_1acba71a06c80e86878af2991c237cbd94">__init__</link> (self, int x=0, int y=0)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a982136328f20e021108c7a708d19ab96">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1slot_1_1Slot_1a67eb34146144487255f6fc095990a261">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a1b92abe5a6888a4e4fc27666f14b7319">update</link> (self, window)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1adb696091417ac2c4beceb3cb9497a243">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a323fedae9f981eccfc5444ce21a90689">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1ae1afee7047ea4ba086cae1ee77f13580">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aa11add94da4df6ae37639e6fd6950b59">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a111ade4c68aa2f77b6cdfc4936e6f150">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1ae7f21b43e4a937ab5a97e6a162ad5727">select</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a1ac4d25b367cb7f04ad72a57ff796bb6">select</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1ae2fac4a282dd5a43375490ac4d8fa995">unselect</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a62dda66f8f090f3731a549721371fb12">unselect</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1ada12dff2980d6b4aaaf809dee1730fe6">get_selected</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1slot_1_1Slot_1ac30f07062c13f87aef84c6e1b3f8e2c1">is_selected</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a5e6879bd96eed171ade44a4ffdde4c29">set_width</link> (self, width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a9ea0464bdacb27f5212e8be827ce730e">set_width</link> (self, int width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1affa448f13d9b60d7f64e42f09f8f7596">get_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1slot_1_1Slot_1a0ca6c9378823acb29d1f93bc8b86ad50">get_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a48f00b67dead50a3f5618b4861ff23b5">set_height</link> (self, height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a090ac64eb233a4a60a6eb8a9b2d23401">set_height</link> (self, int height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a54947ec9c0e53c7c54539f57b574b450">get_height</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1slot_1_1Slot_1a7d7fe195531b9b4230b59340ea60c818">get_height</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a2af6372e4e26eed273c354bd36d73da3">set_inner_colour</link> (self, inner_colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1afb7f6479ebdbab1378e0107e23372b9c">set_inner_colour</link> (self, tuple[int, int, int] inner_colour)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a6b740c1e6e17e108cf2b73756649e7f6">get_inner_colour</link> (self)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1slot_1_1Slot_1a1fdacf6a96946021ac4378692f88df2f">get_inner_colour</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aef811bb518da0f5211fd9c3545c8561f">set_outline_colour</link> (self, outline_colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a8b4ea452f32cf386266f358008df4624">set_outline_colour</link> (self, tuple[int, int, int] outline_colour)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aa51a7372c5c2936547e9f5bfd3a3a050">set_inner_width</link> (self, inner_width)</para>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1slot_1_1Slot_1a278c347b31743f8f5d686aad03996783">get_outline_colour</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a40c6e728492a0cfd0836c9acced205e5">get_inner_width</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1ac056e19b31fc221ccadfbde663f06257">set_inner_width</link> (self, int inner_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a4c9b5831890ac5ac6da89533cf967158">get_outline_width</link> (self, outline_width)</para>
+            <listitem><para>int <link linkend="_classgui_1_1slot_1_1Slot_1a1b1c8535d945415ff7c19b83013d8288">get_inner_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a683e21b7ffa4b80fbae760f62c844a5b">set_item</link> (self, Item item)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a3dc0154e21914f6cd737fcd54d46d619">set_outline_width</link> (self, int outline_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a8123ce52213ba1d51c14eb6bb9fc06ff">get_item</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1slot_1_1Slot_1ac2de90cc9a5e986082c7f83ba170cffe">get_outline_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a9c8f96a68306cb4326f6ccb94e4a6320">get_item_asset</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a6b9b0f938fbbb3c15f8c4bbc93b3417a">set_item</link> (self, Item item)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1abe92873d6c1505251673d8de62840ec0">clear_item_asset</link> (self)</para>
+            <listitem><para>Item <link linkend="_classgui_1_1slot_1_1Slot_1ac37178f8cc86390e3a4cfcfbcd364321">get_item</link> (self)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgui_1_1slot_1_1Slot_1aa577b5798232f8a43061a0f5d87183af">get_item_asset</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1slot_1_1Slot_1a1b791267d9631e35b18e0c5fa53463ab">clear_item_asset</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -89,10 +93,6 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a37e33f467920674be3fd6fb0d7790bde">_fill_surface</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aee1b22f93bd58a03f9bc2e25c2135ffb">_item</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a1c648c12e35385068135d489e189cbb0">_item_asset</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aed81c9205b49a9ea4a40ad4ef07a8bbd">_item_count</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a0540dbc5a1c412ef482bb35543106dbf">_selected</link></para>
@@ -100,6 +100,10 @@
             <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a655a540a2f731c6e03284c909f4b6bde">_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1afa9defb74933c99f9e2364d25afdf585">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1aee1b22f93bd58a03f9bc2e25c2135ffb">_item</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1slot_1_1Slot_1a1c648c12e35385068135d489e189cbb0">_item_asset</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -111,181 +115,197 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a97e3949b3aee79c153c6a8d67371bb12"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1acba71a06c80e86878af2991c237cbd94"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.__init__ ( self,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
+<para><computeroutput> None gui.slot.Slot.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a323fedae9f981eccfc5444ce21a90689"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1ae1afee7047ea4ba086cae1ee77f13580"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the slot horizontally relative to the specified parent, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1aa11add94da4df6ae37639e6fd6950b59"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a111ade4c68aa2f77b6cdfc4936e6f150"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the slot vertically relative to the specified parent, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1abe92873d6c1505251673d8de62840ec0"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a1b791267d9631e35b18e0c5fa53463ab"/><section>
     <title>clear_item_asset()</title>
 <indexterm><primary>clear_item_asset</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>clear_item_asset</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.clear_item_asset ( self)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.clear_item_asset ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Clear the item asset of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a982136328f20e021108c7a708d19ab96"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a67eb34146144487255f6fc095990a261"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.slot.Slot.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the slot and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a54947ec9c0e53c7c54539f57b574b450"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a7d7fe195531b9b4230b59340ea60c818"/><section>
     <title>get_height()</title>
 <indexterm><primary>get_height</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_height</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_height ( self)</computeroutput></para>
+<para><computeroutput> int gui.slot.Slot.get_height ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the height of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a6b740c1e6e17e108cf2b73756649e7f6"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a1fdacf6a96946021ac4378692f88df2f"/><section>
     <title>get_inner_colour()</title>
 <indexterm><primary>get_inner_colour</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_inner_colour</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_inner_colour ( self)</computeroutput></para>
+<para><computeroutput> tuple[int, int, int] gui.slot.Slot.get_inner_colour ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the inner colour of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a40c6e728492a0cfd0836c9acced205e5"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a1b1c8535d945415ff7c19b83013d8288"/><section>
     <title>get_inner_width()</title>
 <indexterm><primary>get_inner_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_inner_width</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_inner_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.slot.Slot.get_inner_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the inner width of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a8123ce52213ba1d51c14eb6bb9fc06ff"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1ac37178f8cc86390e3a4cfcfbcd364321"/><section>
     <title>get_item()</title>
 <indexterm><primary>get_item</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_item</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_item ( self)</computeroutput></para>
+<para><computeroutput> Item gui.slot.Slot.get_item ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the item of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a9c8f96a68306cb4326f6ccb94e4a6320"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1aa577b5798232f8a43061a0f5d87183af"/><section>
     <title>get_item_asset()</title>
 <indexterm><primary>get_item_asset</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_item_asset</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_item_asset ( self)</computeroutput></para>
+<para><computeroutput> Surface gui.slot.Slot.get_item_asset ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the item asset of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a4c9b5831890ac5ac6da89533cf967158"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a278c347b31743f8f5d686aad03996783"/><section>
+    <title>get_outline_colour()</title>
+<indexterm><primary>get_outline_colour</primary><secondary>gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>gui.slot.Slot</primary><secondary>get_outline_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] gui.slot.Slot.get_outline_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the outline colour of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1ac2de90cc9a5e986082c7f83ba170cffe"/><section>
     <title>get_outline_width()</title>
 <indexterm><primary>get_outline_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_outline_width</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_outline_width ( self,  outline_width)</computeroutput></para>
+<para><computeroutput> int gui.slot.Slot.get_outline_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the outline width of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1ada12dff2980d6b4aaaf809dee1730fe6"/><section>
-    <title>get_selected()</title>
-<indexterm><primary>get_selected</primary><secondary>gui.slot.Slot</secondary></indexterm>
-<indexterm><primary>gui.slot.Slot</primary><secondary>get_selected</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_selected ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return whether the slot is selected or not.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1affa448f13d9b60d7f64e42f09f8f7596"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a0ca6c9378823acb29d1f93bc8b86ad50"/><section>
     <title>get_width()</title>
 <indexterm><primary>get_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>get_width</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.get_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.slot.Slot.get_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the width of the slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1ae7f21b43e4a937ab5a97e6a162ad5727"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1ac30f07062c13f87aef84c6e1b3f8e2c1"/><section>
+    <title>is_selected()</title>
+<indexterm><primary>is_selected</primary><secondary>gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>gui.slot.Slot</primary><secondary>is_selected</secondary></indexterm>
+<para><computeroutput> bool gui.slot.Slot.is_selected ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the slot is selected or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a1ac4d25b367cb7f04ad72a57ff796bb6"/><section>
     <title>select()</title>
 <indexterm><primary>select</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>select</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.select ( self)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.select ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Select the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a48f00b67dead50a3f5618b4861ff23b5"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a090ac64eb233a4a60a6eb8a9b2d23401"/><section>
     <title>set_height()</title>
 <indexterm><primary>set_height</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_height</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_height ( self,  height)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_height ( self, int height)</computeroutput></para>
 <para><literallayout><computeroutput>Set the height of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a2af6372e4e26eed273c354bd36d73da3"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1afb7f6479ebdbab1378e0107e23372b9c"/><section>
     <title>set_inner_colour()</title>
 <indexterm><primary>set_inner_colour</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_inner_colour</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_inner_colour ( self,  inner_colour)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_inner_colour ( self, tuple[int, int, int] inner_colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the inner colour of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1aa51a7372c5c2936547e9f5bfd3a3a050"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1ac056e19b31fc221ccadfbde663f06257"/><section>
     <title>set_inner_width()</title>
 <indexterm><primary>set_inner_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_inner_width</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_inner_width ( self,  inner_width)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_inner_width ( self, int inner_width)</computeroutput></para>
 <para><literallayout><computeroutput>Set the inner width of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a683e21b7ffa4b80fbae760f62c844a5b"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a6b9b0f938fbbb3c15f8c4bbc93b3417a"/><section>
     <title>set_item()</title>
 <indexterm><primary>set_item</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_item</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_item ( self, Item item)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_item ( self, Item item)</computeroutput></para>
 <para><literallayout><computeroutput>Set the item of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1aef811bb518da0f5211fd9c3545c8561f"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a8b4ea452f32cf386266f358008df4624"/><section>
     <title>set_outline_colour()</title>
 <indexterm><primary>set_outline_colour</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_outline_colour</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_outline_colour ( self,  outline_colour)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_outline_colour ( self, tuple[int, int, int] outline_colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the outline colour of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a5e6879bd96eed171ade44a4ffdde4c29"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a3dc0154e21914f6cd737fcd54d46d619"/><section>
+    <title>set_outline_width()</title>
+<indexterm><primary>set_outline_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>gui.slot.Slot</primary><secondary>set_outline_width</secondary></indexterm>
+<para><computeroutput> Self gui.slot.Slot.set_outline_width ( self, int outline_width)</computeroutput></para>
+<para><literallayout><computeroutput>Return the outline width of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a9ea0464bdacb27f5212e8be827ce730e"/><section>
     <title>set_width()</title>
 <indexterm><primary>set_width</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>set_width</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.set_width ( self,  width)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.set_width ( self, int width)</computeroutput></para>
 <para><literallayout><computeroutput>Set the width of the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1ae2fac4a282dd5a43375490ac4d8fa995"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1a62dda66f8f090f3731a549721371fb12"/><section>
     <title>unselect()</title>
 <indexterm><primary>unselect</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>unselect</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.unselect ( self)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.unselect ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Unselect the slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1slot_1_1Slot_1a1b92abe5a6888a4e4fc27666f14b7319"/><section>
+<anchor xml:id="_classgui_1_1slot_1_1Slot_1adb696091417ac2c4beceb3cb9497a243"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.slot.Slot</secondary></indexterm>
 <indexterm><primary>gui.slot.Slot</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.slot.Slot.update ( self,  window)</computeroutput></para>
+<para><computeroutput> Self gui.slot.Slot.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the slot and its components.
 </computeroutput></literallayout> </para>
 </section>

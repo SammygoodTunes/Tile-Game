@@ -97,6 +97,7 @@ $(function(){initNavTree('md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="tests"></a> All logical game-related and data-related tests are found here.</p>
 <p>Their purpose is to test the inner functionalities of the game and the existence of files used by it.</p>
+<p>Unit tests are found under the <code>unit/</code> directory, integrated tests are found under the <code>integrated/</code> directory.</p>
 <h1><a class="anchor" id="running-a-test"></a>
 Running a test</h1>
 <p>Install the required dependencies using (run in root dir):</p>
@@ -108,15 +109,19 @@ Running a test</h1>
 </ul>
 <div class="fragment"><div class="line">pytest .</div>
 </div><!-- fragment --><ul>
+<li>To run all tests of a certain type:</li>
+</ul>
+<div class="fragment"><div class="line">pytest [unit|integrated] # Either unit or integrated</div>
+</div><!-- fragment --><ul>
 <li>To run tests in a specific module:</li>
 </ul>
-<div class="fragment"><div class="line">pytest test_assets.py  # Example</div>
+<div class="fragment"><div class="line">pytest unit/test_assets.py  # Example</div>
 </div><!-- fragment --><ul>
 <li>To run a specific test of a module:</li>
 </ul>
-<div class="fragment"><div class="line">pytest test_assets.py::test_assets_folder_exists  # Example</div>
+<div class="fragment"><div class="line">pytest unit/test_assets.py::test_assets_folder_exists  # Example</div>
 </div><!-- fragment --><blockquote class="doxtable">
-<p>&zwj;If you're in the root directory, make sure to add <code>tests/</code> to the path argument (e.g. <code>pytest <a class="el" href="test__assets_8py.html">tests/test_assets.py</a></code>) or replace it entirely if the path is <code>.</code> (like the third command above). </p>
+<p>&zwj;If you're in the root directory, make sure to add <code>tests/</code> to the path argument (e.g. <code>pytest tests/test_assets.py</code>) or replace it entirely if the path is <code>.</code> (like the third command above). </p>
 </blockquote>
 <h1><a class="anchor" id="information"></a>
 Information</h1>

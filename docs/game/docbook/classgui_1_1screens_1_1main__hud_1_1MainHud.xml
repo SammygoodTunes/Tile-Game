@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud" xml:lang="en-US">
+<title>gui.screens.main_hud.MainHud Class Reference</title>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary></indexterm>
+<para>Inheritance diagram for gui.screens.main_hud.MainHud:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1main__hud_1_1MainHud.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1ab65975afab94199100353230aee2c543">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a46f706ce332d82b36e81e89c4084e5ca">game</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a820d703dbad7751bdeeec0f1f417e994">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a336198da2fe86be5b7f8aced8a97a5ec">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1ad4860f8494c37c8382d4c94daf0eeaf1">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a46f706ce332d82b36e81e89c4084e5ca">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a103dfa4be5d703e426f9d87d5215304e">surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a6816b1e75798357a96567f2ba222cfcf">score_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a28f87dfe39a2430500bc9f03cede6d82">camera_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a608513dded223b48b21409f6c6e32b11">position_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a8df59f4eb9303cd75c8c35a9c5c32051">regen_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a4432b7dd23d709959349df2357c62492">health_bar</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a2870c39dd19039df8e1fff11763d0e4a">hotbar</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the main (player) HUD.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1ab65975afab94199100353230aee2c543"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.main_hud.MainHud.__init__ ( self,  game)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a820d703dbad7751bdeeec0f1f417e994"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.main_hud.MainHud.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1ad4860f8494c37c8382d4c94daf0eeaf1"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.main_hud.MainHud.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a336198da2fe86be5b7f8aced8a97a5ec"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.main_hud.MainHud.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a28f87dfe39a2430500bc9f03cede6d82"/><section>
+    <title>camera_label</title>
+<indexterm><primary>camera_label</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>camera_label</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.camera_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a46f706ce332d82b36e81e89c4084e5ca"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.game</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a4432b7dd23d709959349df2357c62492"/><section>
+    <title>health_bar</title>
+<indexterm><primary>health_bar</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>health_bar</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.health_bar</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a2870c39dd19039df8e1fff11763d0e4a"/><section>
+    <title>hotbar</title>
+<indexterm><primary>hotbar</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>hotbar</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.hotbar</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a608513dded223b48b21409f6c6e32b11"/><section>
+    <title>position_label</title>
+<indexterm><primary>position_label</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>position_label</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.position_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a8df59f4eb9303cd75c8c35a9c5c32051"/><section>
+    <title>regen_button</title>
+<indexterm><primary>regen_button</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>regen_button</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.regen_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a6816b1e75798357a96567f2ba222cfcf"/><section>
+    <title>score_label</title>
+<indexterm><primary>score_label</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>score_label</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.score_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1main__hud_1_1MainHud_1a103dfa4be5d703e426f9d87d5215304e"/><section>
+    <title>surface</title>
+<indexterm><primary>surface</primary><secondary>gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>gui.screens.main_hud.MainHud</primary><secondary>surface</secondary></indexterm>
+<para><computeroutput>gui.screens.main_hud.MainHud.surface</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_main__hud_8py">main_hud.py</link></section>
+</section>

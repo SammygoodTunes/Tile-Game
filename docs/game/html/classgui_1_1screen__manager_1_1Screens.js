@@ -1,10 +1,10 @@
 var classgui_1_1screen__manager_1_1Screens =
 [
-    [ "__init__", "classgui_1_1screen__manager_1_1Screens.html#a95b1127a58160800fa91ec2b6ccea19a", null ],
-    [ "events", "classgui_1_1screen__manager_1_1Screens.html#a0cb039e4c4c56ccf0ce5d6c1bc1c62df", null ],
-    [ "link_game", "classgui_1_1screen__manager_1_1Screens.html#a0281763358f4f7e48381f0c234a8e9d5", null ],
-    [ "update", "classgui_1_1screen__manager_1_1Screens.html#ab7928128880020a3b2e8b2513041d8e6", null ],
-    [ "update_ui", "classgui_1_1screen__manager_1_1Screens.html#a36bbf4721605d77c0a6570fb3e504a49", null ],
+    [ "__init__", "classgui_1_1screen__manager_1_1Screens.html#ac38513e1f352ccf11a3b46fd1551e66a", null ],
+    [ "events", "classgui_1_1screen__manager_1_1Screens.html#ad342324e0590624fd372b8b6bdc1eba0", null ],
+    [ "link_game", "classgui_1_1screen__manager_1_1Screens.html#a045983a0aa666845dfa5d987970cce09", null ],
+    [ "update", "classgui_1_1screen__manager_1_1Screens.html#adc3e629bf8e030ada93ee213d3005445", null ],
+    [ "update_ui", "classgui_1_1screen__manager_1_1Screens.html#af3ae6d0328003f41625475d1be88dc4e", null ],
     [ "credits_screen", "classgui_1_1screen__manager_1_1Screens.html#a3fd9a3c6007911da53e19e1ba971d142", null ],
     [ "game", "classgui_1_1screen__manager_1_1Screens.html#a760e728fd8477a60e00babf949c9f276", null ],
     [ "gameover_screen", "classgui_1_1screen__manager_1_1Screens.html#a39700556405bddc8add791eec0add77d", null ],

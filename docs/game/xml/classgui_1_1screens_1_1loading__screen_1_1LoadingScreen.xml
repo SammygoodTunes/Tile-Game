@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="16" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a4aaba8723bcddab60d6cd11effa90694" prot="public" static="no" mutable="no">
         <type></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="17" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a778ae1de124d15eb79055db9f0ab4d2d" prot="public" static="no" mutable="no">
         <type></type>
@@ -44,13 +44,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="18" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="19" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1af3c86b1e1824776f2dd8778cbfc8fbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.__init__</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a4bd715f7d9f104e69cf7e7e52c5d98dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.loading_screen.LoadingScreen.__init__</definition>
         <argsstring>(self, window)</argsstring>
         <name>__init__</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.__init__</qualifiedname>
@@ -68,11 +68,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="14" bodyend="20"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="15" bodyend="21"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afe50c15cf7ce738de34cf18b5140ec4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.initialise_surface</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a229e523a6285889eac677920def74508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.loading_screen.LoadingScreen.initialise_surface</definition>
         <argsstring>(self)</argsstring>
         <name>initialise_surface</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.initialise_surface</qualifiedname>
@@ -88,12 +88,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="21" bodyend="28"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="22" bodyend="29"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a3a8d006ba85ea9bf3423c27dd706b896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.events</definition>
-        <argsstring>(self, e)</argsstring>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a15a81481b1939c1fca9edacbb7512be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.loading_screen.LoadingScreen.events</definition>
+        <argsstring>(self, Event e)</argsstring>
         <name>events</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.events</qualifiedname>
         <param>
@@ -101,8 +101,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>e</type>
-          <defname>e</defname>
+          <type>Event</type>
+          <declname>e</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -112,11 +112,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="29" bodyend="34"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="30" bodyend="35"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a1771e3fe0ce2281a19566a1cb1908415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.draw</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a8c519dc5f212f74c419e1c4f3ff7130f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.loading_screen.LoadingScreen.draw</definition>
         <argsstring>(self)</argsstring>
         <name>draw</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.draw</qualifiedname>
@@ -132,11 +132,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="35" bodyend="42"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="36" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a09ef38b59a02e043bff50f155d21886b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.update_ui</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a1c86b08e0cf8d055314c6da547628a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.loading_screen.LoadingScreen.update_ui</definition>
         <argsstring>(self)</argsstring>
         <name>update_ui</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.update_ui</qualifiedname>
@@ -152,12 +152,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="43" bodyend="50"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="44" bodyend="51"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1ae80d320d7aa3f824ea043b1391fa8b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.loading_screen.LoadingScreen.set_state</definition>
-        <argsstring>(self, state)</argsstring>
+      <memberdef kind="function" id="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1aff47a4873e09d6891004f9dcef36781b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.loading_screen.LoadingScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
         <name>set_state</name>
         <qualifiedname>gui.screens.loading_screen.LoadingScreen.set_state</qualifiedname>
         <param>
@@ -165,8 +165,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>state</type>
-          <defname>state</defname>
+          <type>bool</type>
+          <declname>state</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="51" bodyend="57"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="52" bodyend="58"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -207,16 +207,16 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="9" bodyend="57"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/loading_screen.py" bodystart="10" bodyend="58"/>
     <listofallmembers>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1af3c86b1e1824776f2dd8778cbfc8fbb4" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>__init__</name></member>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a1771e3fe0ce2281a19566a1cb1908415" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>draw</name></member>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a3a8d006ba85ea9bf3423c27dd706b896" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>events</name></member>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afe50c15cf7ce738de34cf18b5140ec4e" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a4bd715f7d9f104e69cf7e7e52c5d98dc" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a8c519dc5f212f74c419e1c4f3ff7130f" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a15a81481b1939c1fca9edacbb7512be5" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>events</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a229e523a6285889eac677920def74508" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>initialise_surface</name></member>
       <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a778ae1de124d15eb79055db9f0ab4d2d" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>progress_bar</name></member>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1ae80d320d7aa3f824ea043b1391fa8b0c" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1aff47a4873e09d6891004f9dcef36781b" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>set_state</name></member>
       <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a4aaba8723bcddab60d6cd11effa90694" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>surface</name></member>
-      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a09ef38b59a02e043bff50f155d21886b" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a1c86b08e0cf8d055314c6da547628a23" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>update_ui</name></member>
       <member refid="classgui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a8332647e7a5eeb88589c08ec1ee7c56e" prot="public" virt="non-virtual"><scope>gui::screens::loading_screen::LoadingScreen</scope><name>window</name></member>
     </listofallmembers>
   </compounddef>

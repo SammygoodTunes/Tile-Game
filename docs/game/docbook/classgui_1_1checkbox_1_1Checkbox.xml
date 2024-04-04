@@ -13,37 +13,37 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1ab101fe8e28380164610d25f8b5bed530">__init__</link> (self, title, x=0, y=0, checked=False)</para>
+            <listitem><para>None <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a85b7f0e05334b323b19f5c94faa33fda">__init__</link> (self, str title, int x=0, int y=0, bool checked=False)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a5496399b367e88e77e29f6ddb1dd8953">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a232fbfbe2108edf8f1c690fee86f656a">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a22bd258dd8db27a4f14d88a7cc5c84f1">events</link> (self, e)</para>
+            <listitem><para>None <link linkend="_classgui_1_1checkbox_1_1Checkbox_1ae170f9da1e9f45bcf0a6080631598187">events</link> (self, event.Event e)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a28283293b1edb1d7420369a1ffd81114">update</link> (self, window)</para>
+            <listitem><para>None <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a3f884234322a117e3e684f180a22b870">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a703fede72880d12c00e36c0fd5f37702">refresh</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1checkbox_1_1Checkbox_1abc739b26b50aae7a8a925821d123d047">refresh</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1af3a74841a689987e60cca4895111f7bd">is_hovering_over</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1checkbox_1_1Checkbox_1ab62d25b8dd13fa9f021097be56ef4609">is_hovering_over</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1ad96d023cdfbb128f3b7210c8b15ac17e">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1aab08134f030dccf570546a3f6b4c9ced">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1ad3d341a1364f3918104517363ad0e4b7">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a6637fdbdc418c6e82c1661168a724ff5">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a0bd1e426583a677a3e75af5c1206315a">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1ab9f493abf40f453ff20076b5fc9d9d9f">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a241d7198f83e42fa625750fab02e4344">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a77cfb3aa57cc064ce12a7f6ba83f5b72">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a4c6667353be675fbf2065827cb7c5017">set_size</link> (self, size)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1af00778191f913d063066a07b2dd269d9">set_size</link> (self, int size)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a70b94e87c7e18f4042f70bf4319f2383">get_size</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a13313ceae50fddf63504bcffcaebc831">get_size</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a67c6a4e00eec9dc8c0777d29996cb80f">set_checked</link> (self, state)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a1ad68d4075a876db63d53a063e01c933">set_checked</link> (self, bool state)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a8f961793ed77fd7bd2937a583bde4e81">is_checked</link> (self)</para>
+            <listitem><para>bool <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a28164852e7568f398f653707d1299eac">is_checked</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1a6661614b3fb9440da71af3d5e812045d">offset_x</link> (self, offset_x)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1ae01383d9c465021e37d59e643c9d5682">offset_x</link> (self, int offset_x)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1checkbox_1_1Checkbox_1ad335416247ec873ee6349c8161d9b370">offset_y</link> (self, offset_y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1checkbox_1_1Checkbox_1a09e0cf3ccc017a1a80787127f53d9caf">offset_y</link> (self, int offset_y)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -79,136 +79,136 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ab101fe8e28380164610d25f8b5bed530"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a85b7f0e05334b323b19f5c94faa33fda"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.__init__ ( self,  title,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
-,  checked = <computeroutput>False</computeroutput>
+<para><computeroutput> None gui.checkbox.Checkbox.__init__ ( self, str title, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, bool  checked = <computeroutput>False</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a0bd1e426583a677a3e75af5c1206315a"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ab9f493abf40f453ff20076b5fc9d9d9f"/><section>
     <title>center()</title>
 <indexterm><primary>center</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>center</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the checkbox on both axes relative to the specified parent, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ad96d023cdfbb128f3b7210c8b15ac17e"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1aab08134f030dccf570546a3f6b4c9ced"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the checkbox horizontally relative to the specified parent, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ad3d341a1364f3918104517363ad0e4b7"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a6637fdbdc418c6e82c1661168a724ff5"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the checkbox vertically relative to the specified parent, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a241d7198f83e42fa625750fab02e4344"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a77cfb3aa57cc064ce12a7f6ba83f5b72"/><section>
     <title>center_with_offset()</title>
 <indexterm><primary>center_with_offset</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>center_with_offset</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Center the checkbox with center() and offset it by x and y relative to the specified parent, then return the
 checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a5496399b367e88e77e29f6ddb1dd8953"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a232fbfbe2108edf8f1c690fee86f656a"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.checkbox.Checkbox.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the checkbox and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a22bd258dd8db27a4f14d88a7cc5c84f1"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ae170f9da1e9f45bcf0a6080631598187"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.events ( self,  e)</computeroutput></para>
+<para><computeroutput> None gui.checkbox.Checkbox.events ( self, event.Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the checkbox events.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a70b94e87c7e18f4042f70bf4319f2383"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a13313ceae50fddf63504bcffcaebc831"/><section>
     <title>get_size()</title>
 <indexterm><primary>get_size</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>get_size</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.get_size ( self)</computeroutput></para>
+<para><computeroutput> int gui.checkbox.Checkbox.get_size ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the size of the checkbox&apos;s button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a8f961793ed77fd7bd2937a583bde4e81"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a28164852e7568f398f653707d1299eac"/><section>
     <title>is_checked()</title>
 <indexterm><primary>is_checked</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>is_checked</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.is_checked ( self)</computeroutput></para>
+<para><computeroutput> bool gui.checkbox.Checkbox.is_checked ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the checked state of the checkbox&apos;s button.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1af3a74841a689987e60cca4895111f7bd"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ab62d25b8dd13fa9f021097be56ef4609"/><section>
     <title>is_hovering_over()</title>
 <indexterm><primary>is_hovering_over</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>is_hovering_over</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.is_hovering_over ( self)</computeroutput></para>
+<para><computeroutput> bool gui.checkbox.Checkbox.is_hovering_over ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the checkbox or not.
 The bounding box of the checkbox includes the button and the text.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a6661614b3fb9440da71af3d5e812045d"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ae01383d9c465021e37d59e643c9d5682"/><section>
     <title>offset_x()</title>
 <indexterm><primary>offset_x</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>offset_x</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.offset_x ( self,  offset_x)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.offset_x ( self, int offset_x)</computeroutput></para>
 <para><literallayout><computeroutput>Offset the checkbox on the x-axis, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1ad335416247ec873ee6349c8161d9b370"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a09e0cf3ccc017a1a80787127f53d9caf"/><section>
     <title>offset_y()</title>
 <indexterm><primary>offset_y</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>offset_y</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.offset_y ( self,  offset_y)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.offset_y ( self, int offset_y)</computeroutput></para>
 <para><literallayout><computeroutput>Offset the checkbox on the y-axis, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a703fede72880d12c00e36c0fd5f37702"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1abc739b26b50aae7a8a925821d123d047"/><section>
     <title>refresh()</title>
 <indexterm><primary>refresh</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>refresh</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.refresh ( self)</computeroutput></para>
+<para><computeroutput> None gui.checkbox.Checkbox.refresh ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Refresh the checkbox and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a67c6a4e00eec9dc8c0777d29996cb80f"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a1ad68d4075a876db63d53a063e01c933"/><section>
     <title>set_checked()</title>
 <indexterm><primary>set_checked</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>set_checked</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.set_checked ( self,  state)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.set_checked ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the checked state of the checkbox&apos;s button, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a4c6667353be675fbf2065827cb7c5017"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1af00778191f913d063066a07b2dd269d9"/><section>
     <title>set_size()</title>
 <indexterm><primary>set_size</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>set_size</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.set_size ( self,  size)</computeroutput></para>
+<para><computeroutput> Self gui.checkbox.Checkbox.set_size ( self, int size)</computeroutput></para>
 <para><literallayout><computeroutput>Set the size of the checkbox&apos;s button, then return the checkbox itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a28283293b1edb1d7420369a1ffd81114"/><section>
+<anchor xml:id="_classgui_1_1checkbox_1_1Checkbox_1a3f884234322a117e3e684f180a22b870"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>gui.checkbox.Checkbox</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.checkbox.Checkbox.update ( self,  window)</computeroutput></para>
+<para><computeroutput> None gui.checkbox.Checkbox.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the checkbox and its components.
 </computeroutput></literallayout> </para>
 </section>

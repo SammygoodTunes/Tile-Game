@@ -13,8 +13,6 @@
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6f31c9e9d5faa236ca145fcc52db8804">draw</link> (self, Game game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab34ee07b82270c286763fc01f75ae2ab">draw_ui</link> (self, Game game)</para>
-</listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a2031f6888af44110aadd4ba4dda29f48">draw_selection_grid</link> (self, Game game)</para>
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ae6497562697bafe8e2533da4604af7f6">update</link> (self, Game game, Map map_obj)</para>
@@ -86,21 +84,9 @@
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a3f635daf438f33bd15cbdf76aa030b4e">position_label</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a0a4205b05311ff2bcbe938bbabb1c8fb">regen_button</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a2c056b24552d7205d9d4bb2d7a72190b">health_bar</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a132a5d52135943fed9d183e9cf55e761">hotbar</link></para>
-</listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e">edges</link></para>
 </listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1afd2edb4a7f1c7115725c2c3f9f39f4b0">asset</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1af13567434a52171e6faa181eacabae6a">score_label</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a86f01aaf02dcb947ece79eec82fef671">camera_label</link></para>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32">main_hud</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link></para>
 </listitem>
@@ -211,14 +197,6 @@
 <indexterm><primary>entity.player.Player</primary><secondary>draw_selection_grid</secondary></indexterm>
 <para><computeroutput> None entity.player.Player.draw_selection_grid ( self, Game game)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the player tile selection grid to the screen.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ab34ee07b82270c286763fc01f75ae2ab"/><section>
-    <title>draw_ui()</title>
-<indexterm><primary>draw_ui</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>draw_ui</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.draw_ui ( self, Game game)</computeroutput></para>
-<para><literallayout><computeroutput>Draw the player GUI to the screen.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1ac466232dafbb6b3c1c2eebb1c2f81540"/><section>
@@ -493,11 +471,6 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <indexterm><primary>_y</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>_y</secondary></indexterm>
 <para><computeroutput>entity.player.Player._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1afd2edb4a7f1c7115725c2c3f9f39f4b0"/><section>
-    <title>asset</title>
-<indexterm><primary>asset</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>asset</secondary></indexterm>
-<para><computeroutput>entity.player.Player.asset</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1"/><section>
     <title>breaking</title>
 <indexterm><primary>breaking</primary><secondary>entity.player.Player</secondary></indexterm>
@@ -508,11 +481,6 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <indexterm><primary>breaking_tile</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>breaking_tile</secondary></indexterm>
 <para><computeroutput>entity.player.Player.breaking_tile</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a86f01aaf02dcb947ece79eec82fef671"/><section>
-    <title>camera_label</title>
-<indexterm><primary>camera_label</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>camera_label</secondary></indexterm>
-<para><computeroutput>entity.player.Player.camera_label</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a7af133b2468f2bdba4869a0b9b0d781f"/><section>
     <title>DAMAGE_TIMER</title>
 <indexterm><primary>DAMAGE_TIMER</primary><secondary>entity.player.Player</secondary></indexterm>
@@ -528,26 +496,21 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <indexterm><primary>health</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>health</secondary></indexterm>
 <para><computeroutput>entity.player.Player.health</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a2c056b24552d7205d9d4bb2d7a72190b"/><section>
-    <title>health_bar</title>
-<indexterm><primary>health_bar</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>health_bar</secondary></indexterm>
-<para><computeroutput>entity.player.Player.health_bar</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a"/><section>
     <title>height</title>
 <indexterm><primary>height</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>height</secondary></indexterm>
 <para><computeroutput>entity.player.Player.height</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a132a5d52135943fed9d183e9cf55e761"/><section>
-    <title>hotbar</title>
-<indexterm><primary>hotbar</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>hotbar</secondary></indexterm>
-<para><computeroutput>entity.player.Player.hotbar</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46"/><section>
     <title>hurt</title>
 <indexterm><primary>hurt</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>hurt</secondary></indexterm>
 <para><computeroutput>entity.player.Player.hurt</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32"/><section>
+    <title>main_hud</title>
+<indexterm><primary>main_hud</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>main_hud</secondary></indexterm>
+<para><computeroutput>entity.player.Player.main_hud</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a7af13c9b3a48f31142417667c8437afe"/><section>
     <title>MINING_TIMER</title>
 <indexterm><primary>MINING_TIMER</primary><secondary>entity.player.Player</secondary></indexterm>
@@ -558,26 +521,11 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <indexterm><primary>move</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>move</secondary></indexterm>
 <para><computeroutput>entity.player.Player.move</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a3f635daf438f33bd15cbdf76aa030b4e"/><section>
-    <title>position_label</title>
-<indexterm><primary>position_label</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>position_label</secondary></indexterm>
-<para><computeroutput>entity.player.Player.position_label</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2"/><section>
     <title>prev_selected_tile</title>
 <indexterm><primary>prev_selected_tile</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>prev_selected_tile</secondary></indexterm>
 <para><computeroutput>entity.player.Player.prev_selected_tile</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a0a4205b05311ff2bcbe938bbabb1c8fb"/><section>
-    <title>regen_button</title>
-<indexterm><primary>regen_button</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>regen_button</secondary></indexterm>
-<para><computeroutput>entity.player.Player.regen_button</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1af13567434a52171e6faa181eacabae6a"/><section>
-    <title>score_label</title>
-<indexterm><primary>score_label</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>score_label</secondary></indexterm>
-<para><computeroutput>entity.player.Player.score_label</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a4349d9fd6b507aaf1b2a29340146b225"/><section>
     <title>screen_x</title>
 <indexterm><primary>screen_x</primary><secondary>entity.player.Player</secondary></indexterm>

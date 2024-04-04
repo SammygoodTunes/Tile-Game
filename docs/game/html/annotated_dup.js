@@ -61,6 +61,9 @@ var annotated_dup =
         [ "loading_screen", "namespacegui_1_1screens_1_1loading__screen.html", [
           [ "LoadingScreen", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen" ]
         ] ],
+        [ "main_hud", "namespacegui_1_1screens_1_1main__hud.html", [
+          [ "MainHud", "classgui_1_1screens_1_1main__hud_1_1MainHud.html", "classgui_1_1screens_1_1main__hud_1_1MainHud" ]
+        ] ],
         [ "mainmenu_screen", "namespacegui_1_1screens_1_1mainmenu__screen.html", [
           [ "MainMenu", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu" ]
         ] ],

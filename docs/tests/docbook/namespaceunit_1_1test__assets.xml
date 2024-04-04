@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceunit_1_1test__assets" xml:lang="en-US">
+<title>unit.test_assets Namespace Reference</title>
+<indexterm><primary>unit.test_assets</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceunit_1_1test__assets_1a4f0edfd554bbf23061fcedfa4e70d0f9">test_assets_folder_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceunit_1_1test__assets_1af7c501837c69dc956404ed8182248fc6">test_atlas_asset_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceunit_1_1test__assets_1a377735ff98cc69dae38068a3f1f040bd">test_font_asset_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceunit_1_1test__assets_1a698d649beee612a32878046e5cbbb828">test_items_asset_exists</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceunit_1_1test__assets_1a18a14230e36ab61b3c3dfe61a256d43c">test_player_asset_exist</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Tests dedicated to the assets.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceunit_1_1test__assets_1a4f0edfd554bbf23061fcedfa4e70d0f9"/><section>
+    <title>test_assets_folder_exists()</title>
+<indexterm><primary>test_assets_folder_exists</primary><secondary>unit.test_assets</secondary></indexterm>
+<indexterm><primary>unit.test_assets</primary><secondary>test_assets_folder_exists</secondary></indexterm>
+<para><computeroutput>unit.test_assets.test_assets_folder_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: assets_folder_exists
+Desc: Tests if the asset folder exists.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceunit_1_1test__assets_1af7c501837c69dc956404ed8182248fc6"/><section>
+    <title>test_atlas_asset_exists()</title>
+<indexterm><primary>test_atlas_asset_exists</primary><secondary>unit.test_assets</secondary></indexterm>
+<indexterm><primary>unit.test_assets</primary><secondary>test_atlas_asset_exists</secondary></indexterm>
+<para><computeroutput>unit.test_assets.test_atlas_asset_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: atlas_asset_exists
+Desc: Tests if the atlas asset exists in the asset directory.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceunit_1_1test__assets_1a377735ff98cc69dae38068a3f1f040bd"/><section>
+    <title>test_font_asset_exists()</title>
+<indexterm><primary>test_font_asset_exists</primary><secondary>unit.test_assets</secondary></indexterm>
+<indexterm><primary>unit.test_assets</primary><secondary>test_font_asset_exists</secondary></indexterm>
+<para><computeroutput>unit.test_assets.test_font_asset_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: font_asset_exists
+Desc: Tests if the font asset exists in the asset directory.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceunit_1_1test__assets_1a698d649beee612a32878046e5cbbb828"/><section>
+    <title>test_items_asset_exists()</title>
+<indexterm><primary>test_items_asset_exists</primary><secondary>unit.test_assets</secondary></indexterm>
+<indexterm><primary>unit.test_assets</primary><secondary>test_items_asset_exists</secondary></indexterm>
+<para><computeroutput>unit.test_assets.test_items_asset_exists ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: items_asset_exists
+Desc: Tests if the items asset exists in the asset directory.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceunit_1_1test__assets_1a18a14230e36ab61b3c3dfe61a256d43c"/><section>
+    <title>test_player_asset_exist()</title>
+<indexterm><primary>test_player_asset_exist</primary><secondary>unit.test_assets</secondary></indexterm>
+<indexterm><primary>unit.test_assets</primary><secondary>test_player_asset_exist</secondary></indexterm>
+<para><computeroutput>unit.test_assets.test_player_asset_exist ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: player_asset_exists
+Desc: Tests if the player asset exists in the asset directory.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

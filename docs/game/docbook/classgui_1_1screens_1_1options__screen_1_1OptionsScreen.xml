@@ -13,17 +13,17 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a092ea997d61f4cf41fb4f3edf6573bea">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011">window</link>)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a715e30b2b88e3396218a24ef392bbab4">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011">window</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2d8e36ebf3113f59149c229c83a7b4b3">initialise_surface</link> (self)</para>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a71427e22384d8d0211d7e5e6a4e4ea8e">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a25b11a316c7a2520ba0103af2dc3dca1">events</link> (self, e)</para>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac76d2471f9896983b6946ada6f8bbc8f">events</link> (self, Event e)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5baa9b8acbb9e0b0728dfb5dc2f3b120">draw</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a121c4e9863310f4d0a0463d5e15973a7">draw</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5255a3b5a48e88a179b3f35c020c75ea">update_ui</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1cb47783b456a798f6b4444f5df4b090">update_ui</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6ca9eefe83c2369e26f4e5a2217b758c">set_state</link> (self, state)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1aeb7a8defb2fd8e67fac131116cba324c">set_state</link> (self, bool state)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -31,8 +31,6 @@
     <title>Public Attributes    </title>
         <itemizedlist>
             <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011">window</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abe9defab1457f1d39d9f1e01640b2340">game</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a4ca45e48ac6598bfb1bcdd0e64424778">faded_surface</link></para>
 </listitem>
@@ -63,51 +61,51 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a092ea997d61f4cf41fb4f3edf6573bea"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a715e30b2b88e3396218a24ef392bbab4"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.__init__ ( self,  window)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.options_screen.OptionsScreen.__init__ ( self,  window)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5baa9b8acbb9e0b0728dfb5dc2f3b120"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a121c4e9863310f4d0a0463d5e15973a7"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.draw ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.options_screen.OptionsScreen.draw ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a25b11a316c7a2520ba0103af2dc3dca1"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac76d2471f9896983b6946ada6f8bbc8f"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.events ( self,  e)</computeroutput></para>
+<para><computeroutput>gui.screens.options_screen.OptionsScreen.events ( self, Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the screen events.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2d8e36ebf3113f59149c229c83a7b4b3"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a71427e22384d8d0211d7e5e6a4e4ea8e"/><section>
     <title>initialise_surface()</title>
 <indexterm><primary>initialise_surface</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>initialise_surface</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.initialise_surface ( self)</computeroutput></para>
+<para><computeroutput> Surface gui.screens.options_screen.OptionsScreen.initialise_surface ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the screen&apos;s surface.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6ca9eefe83c2369e26f4e5a2217b758c"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1aeb7a8defb2fd8e67fac131116cba324c"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>set_state</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.set_state ( self,  state)</computeroutput></para>
+<para><computeroutput> None gui.screens.options_screen.OptionsScreen.set_state ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a5255a3b5a48e88a179b3f35c020c75ea"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1cb47783b456a798f6b4444f5df4b090"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.update_ui ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.options_screen.OptionsScreen.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screen UI.
 </computeroutput></literallayout> </para>
 </section>
@@ -139,11 +137,6 @@
 <indexterm><primary>fps_limit_slider</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>fps_limit_slider</secondary></indexterm>
 <para><computeroutput>gui.screens.options_screen.OptionsScreen.fps_limit_slider</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1abe9defab1457f1d39d9f1e01640b2340"/><section>
-    <title>game</title>
-<indexterm><primary>game</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>game</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.game</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1af61f700228227e1ccbe444dc919a6efc"/><section>
     <title>options_label</title>
 <indexterm><primary>options_label</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>

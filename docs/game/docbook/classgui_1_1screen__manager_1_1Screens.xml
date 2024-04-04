@@ -5,15 +5,15 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a95b1127a58160800fa91ec2b6ccea19a">__init__</link> (self, <link linkend="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646">window</link>)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1ac38513e1f352ccf11a3b46fd1551e66a">__init__</link> (self, <link linkend="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646">window</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a0281763358f4f7e48381f0c234a8e9d5">link_game</link> (self, game_obj)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1a045983a0aa666845dfa5d987970cce09">link_game</link> (self, game_obj)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a0cb039e4c4c56ccf0ce5d6c1bc1c62df">events</link> (self, e)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1ad342324e0590624fd372b8b6bdc1eba0">events</link> (self, pygame.event.Event e)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1ab7928128880020a3b2e8b2513041d8e6">update</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445">update</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a36bbf4721605d77c0a6570fb3e504a49">update_ui</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e">update_ui</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -48,44 +48,44 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a95b1127a58160800fa91ec2b6ccea19a"/><section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ac38513e1f352ccf11a3b46fd1551e66a"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.__init__ ( self,  window)</computeroutput></para></section>
+<para><computeroutput> None gui.screen_manager.Screens.__init__ ( self,  window)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a0cb039e4c4c56ccf0ce5d6c1bc1c62df"/><section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ad342324e0590624fd372b8b6bdc1eba0"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.events ( self,  e)</computeroutput></para>
+<para><computeroutput> None gui.screen_manager.Screens.events ( self, pygame.event.Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the events of the different screens.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a0281763358f4f7e48381f0c234a8e9d5"/><section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a045983a0aa666845dfa5d987970cce09"/><section>
     <title>link_game()</title>
 <indexterm><primary>link_game</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>link_game</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.link_game ( self,  game_obj)</computeroutput></para>
+<para><computeroutput> None gui.screen_manager.Screens.link_game ( self,  game_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Link the global game instance.
 TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ab7928128880020a3b2e8b2513041d8e6"/><section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.update ( self)</computeroutput></para>
+<para><computeroutput> None gui.screen_manager.Screens.update ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screens.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a36bbf4721605d77c0a6570fb3e504a49"/><section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.update_ui ( self)</computeroutput></para>
+<para><computeroutput> None gui.screen_manager.Screens.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screen UIs.
 </computeroutput></literallayout> </para>
 </section>

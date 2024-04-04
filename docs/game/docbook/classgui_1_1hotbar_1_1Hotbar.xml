@@ -13,57 +13,55 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1af0f0cc8c696ed3a76557576aac40e019">__init__</link> (self, x=0, y=0, slot_count=4)</para>
+            <listitem><para>None <link linkend="_classgui_1_1hotbar_1_1Hotbar_1afe10af6fc33679789e86616b78237206">__init__</link> (self, int x=0, int y=0, int slot_count=4)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a3ee70c578e0a3d36bac1b6f849798b96">init_slots</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1hotbar_1_1Hotbar_1aa9c0f309c9ef13779ab46463166e1522">init_slots</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1afc324b6d4aa5931161a9a2c2049acb7c">draw</link> (self, screen)</para>
+            <listitem><para>None <link linkend="_classgui_1_1hotbar_1_1Hotbar_1af581e17f5e6d6b8b8c0041c2261ee895">draw</link> (self, screen)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1afc7ad3745efbfaabb4e17ae6e8cdc9ed">update</link> (self, window)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a9cede322ad7ac64510b2f96aef514fde">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a79cc516f460382cfed9e398aa8a290b1">center_horizontally</link> (self, parent_x, parent_width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a08f9787431d20fb98fc35005caa6f80a">center_horizontally</link> (self, int parent_x, int parent_width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1abd74640f1ba310832546173e70b8a2ba">center_vertically</link> (self, parent_y, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ad604bedbb01952b8f243e4ca9f3668bd">center_vertically</link> (self, int parent_y, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a180a2a69b46f408c226fb28f069bba1d">center</link> (self, parent_x, parent_y, parent_width, parent_height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a26ef7289f8c41bdf0f4dbe6e79d638ca">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a0813702439bec0a204898ea375a16e32">center_with_offset</link> (self, parent_x, parent_y, parent_width, parent_height, x, y)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a9dae24ae5b33535a73e3e3e41701f536">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a301ecb774c59628739c62c103df2122a">set_spacing</link> (self, spacing)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a74e976dcb1fb4e2be3d7f648b5f42ddb">set_spacing</link> (self, int spacing)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a2c188bdc055f9a30ee341874b1531587">get_spacing</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ad37bcb8a6365be8c677ad1006d1c410d">get_spacing</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a0a17f238d8aa16bf3df70c9295bd12ff">set_width</link> (self, width)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a6d4d3954e43354e6259c92635b1bd728">set_width</link> (self, int width)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1acea2bb527842c232bda24409dc3178b7">get_width</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ac4f91e724d22126cfd2c2a39cbe07a54">get_width</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a5cb5f85c3c1641ba2412a7b1c182839c">set_height</link> (self, height)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a10809ba6a9fd15d7f1b863bd4a26e0bd">set_height</link> (self, int height)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1ac06491cc5b7a74a3acef5efbd07aef57">get_height</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a4063aee0359a5a46ed2ea798bf5d80a3">get_height</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1addf4f1da89c81e41444fe330a7bc96d9">select_slot</link> (self, slot_index)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a6f9fec8084da77f413d67ac980b53e9b">select_slot</link> (self, int slot_index)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a06a0ac306c018d1092fbc22b7372407d">unselect_slot</link> (self, slot_index)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a5d33d1abc05fc53e73fb81af1670cd88">unselect_slot</link> (self, int slot_index)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a85943f6cf3bf3a4b2ef4c35dba45f602">get_selected_slot</link> (self)</para>
+            <listitem><para>int <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a2284ba4b10a13cbd51154e93cc60752a">get_selected_slot</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1afbc070871dccddc4d3ca67d594369a7e">get_selected_slot_item</link> (self)</para>
+            <listitem><para>Items <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a3595614e7bce71db1403de696db40ff3">get_selected_slot_item</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a47425a5973646be41d10fd34c072d3e7">get_slot</link> (self, slot_index)</para>
+            <listitem><para>Slot <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ae2ee48425247dda7a70c01851f14914d">get_slot</link> (self, int slot_index)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a68c6ac0a9cd35918a5934003fc94616d">get_slots</link> (self)</para>
+            <listitem><para>list[Slot] <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a6a36fac88eb5a05642c922f6baf5c3db">get_slots</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1aef138d3ced00c7840e69e8c2997fc850">set_atlas</link> (self, atlas)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a23b3b0a5286d6dc7a8081e3f80359dae">set_atlas</link> (self, Surface atlas)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1aa13bb451536cd02e9590f340a57519d5">get_atlas</link> (self)</para>
+            <listitem><para>Surface <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ab23c5b7926540b485d326c4cf488f469">get_atlas</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a963d77db2e3e76254dab38079dff0907">_surface</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a3fca9353b21de2b871f95f060e4a5763">_spacing</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1ac91810209ec47d5e6275db80d44a9373">_width</link></para>
@@ -76,11 +74,13 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1abea700d752e69fede84f2d503ffce638">_selected_slot</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1abcf01fb2918db031cdc0950cccc1d7e0">_atlas</link></para>
+            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a963d77db2e3e76254dab38079dff0907">_surface</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a6608436fe817dbf27866089fabcdf70f">_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1a0403c2e79f7d5a3d567dc9f87c1b5bc0">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1hotbar_1_1Hotbar_1abcf01fb2918db031cdc0950cccc1d7e0">_atlas</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -92,183 +92,183 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1af0f0cc8c696ed3a76557576aac40e019"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1afe10af6fc33679789e86616b78237206"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.__init__ ( self,  x = <computeroutput>0</computeroutput>
-,  y = <computeroutput>0</computeroutput>
-,  slot_count = <computeroutput>4</computeroutput>
+<para><computeroutput> None gui.hotbar.Hotbar.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  slot_count = <computeroutput>4</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a180a2a69b46f408c226fb28f069bba1d"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a26ef7289f8c41bdf0f4dbe6e79d638ca"/><section>
     <title>center()</title>
 <indexterm><primary>center</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>center</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.center ( self,  parent_x,  parent_y,  parent_width,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the hotbar on both axes relative to the specified parent, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a79cc516f460382cfed9e398aa8a290b1"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a08f9787431d20fb98fc35005caa6f80a"/><section>
     <title>center_horizontally()</title>
 <indexterm><primary>center_horizontally</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>center_horizontally</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.center_horizontally ( self,  parent_x,  parent_width)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
 <para><literallayout><computeroutput>Center the hotbar horizontally relative to the specified parent, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1abd74640f1ba310832546173e70b8a2ba"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ad604bedbb01952b8f243e4ca9f3668bd"/><section>
     <title>center_vertically()</title>
 <indexterm><primary>center_vertically</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>center_vertically</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.center_vertically ( self,  parent_y,  parent_height)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
 <para><literallayout><computeroutput>Center the hotbar vertically relative to the specified parent, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a0813702439bec0a204898ea375a16e32"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a9dae24ae5b33535a73e3e3e41701f536"/><section>
     <title>center_with_offset()</title>
 <indexterm><primary>center_with_offset</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>center_with_offset</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.center_with_offset ( self,  parent_x,  parent_y,  parent_width,  parent_height,  x,  y)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Center the hotbar with center() and offset it by x and y relative to the specified parent, then return
 the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1afc324b6d4aa5931161a9a2c2049acb7c"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1af581e17f5e6d6b8b8c0041c2261ee895"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.draw ( self,  screen)</computeroutput></para>
+<para><computeroutput> None gui.hotbar.Hotbar.draw ( self,  screen)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the hotbar and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1aa13bb451536cd02e9590f340a57519d5"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ab23c5b7926540b485d326c4cf488f469"/><section>
     <title>get_atlas()</title>
 <indexterm><primary>get_atlas</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_atlas</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_atlas ( self)</computeroutput></para>
+<para><computeroutput> Surface gui.hotbar.Hotbar.get_atlas ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the texture atlas used by the hotbar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ac06491cc5b7a74a3acef5efbd07aef57"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a4063aee0359a5a46ed2ea798bf5d80a3"/><section>
     <title>get_height()</title>
 <indexterm><primary>get_height</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_height</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_height ( self)</computeroutput></para>
+<para><computeroutput> int gui.hotbar.Hotbar.get_height ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the height of the hotbar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a85943f6cf3bf3a4b2ef4c35dba45f602"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a2284ba4b10a13cbd51154e93cc60752a"/><section>
     <title>get_selected_slot()</title>
 <indexterm><primary>get_selected_slot</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_selected_slot</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_selected_slot ( self)</computeroutput></para>
+<para><computeroutput> int gui.hotbar.Hotbar.get_selected_slot ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the selected slot of the hotbar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1afbc070871dccddc4d3ca67d594369a7e"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a3595614e7bce71db1403de696db40ff3"/><section>
     <title>get_selected_slot_item()</title>
 <indexterm><primary>get_selected_slot_item</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_selected_slot_item</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_selected_slot_item ( self)</computeroutput></para>
+<para><computeroutput> Items gui.hotbar.Hotbar.get_selected_slot_item ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the item of the selected hotbar slot.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a47425a5973646be41d10fd34c072d3e7"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ae2ee48425247dda7a70c01851f14914d"/><section>
     <title>get_slot()</title>
 <indexterm><primary>get_slot</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_slot</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_slot ( self,  slot_index)</computeroutput></para>
+<para><computeroutput> Slot gui.hotbar.Hotbar.get_slot ( self, int slot_index)</computeroutput></para>
 <para><literallayout><computeroutput>Return the slot object of the hotbar at specified index.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a68c6ac0a9cd35918a5934003fc94616d"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a6a36fac88eb5a05642c922f6baf5c3db"/><section>
     <title>get_slots()</title>
 <indexterm><primary>get_slots</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_slots</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_slots ( self)</computeroutput></para>
+<para><computeroutput> list[Slot] gui.hotbar.Hotbar.get_slots ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return all hotbar slots.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a2c188bdc055f9a30ee341874b1531587"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ad37bcb8a6365be8c677ad1006d1c410d"/><section>
     <title>get_spacing()</title>
 <indexterm><primary>get_spacing</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_spacing</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_spacing ( self)</computeroutput></para>
+<para><computeroutput> int gui.hotbar.Hotbar.get_spacing ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the spacing between the hotbar&apos;s slots.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1acea2bb527842c232bda24409dc3178b7"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1ac4f91e724d22126cfd2c2a39cbe07a54"/><section>
     <title>get_width()</title>
 <indexterm><primary>get_width</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_width</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.get_width ( self)</computeroutput></para>
+<para><computeroutput> int gui.hotbar.Hotbar.get_width ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the width of the hotbar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a3ee70c578e0a3d36bac1b6f849798b96"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1aa9c0f309c9ef13779ab46463166e1522"/><section>
     <title>init_slots()</title>
 <indexterm><primary>init_slots</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>init_slots</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.init_slots ( self)</computeroutput></para>
+<para><computeroutput> None gui.hotbar.Hotbar.init_slots ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the hotbar&apos;s slots.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1addf4f1da89c81e41444fe330a7bc96d9"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a6f9fec8084da77f413d67ac980b53e9b"/><section>
     <title>select_slot()</title>
 <indexterm><primary>select_slot</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>select_slot</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.select_slot ( self,  slot_index)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.select_slot ( self, int slot_index)</computeroutput></para>
 <para><literallayout><computeroutput>Select a hotbar slot, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1aef138d3ced00c7840e69e8c2997fc850"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a23b3b0a5286d6dc7a8081e3f80359dae"/><section>
     <title>set_atlas()</title>
 <indexterm><primary>set_atlas</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>set_atlas</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.set_atlas ( self,  atlas)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.set_atlas ( self, Surface atlas)</computeroutput></para>
 <para><literallayout><computeroutput>Set the texture atlas that will be used by the hotbar, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a5cb5f85c3c1641ba2412a7b1c182839c"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a10809ba6a9fd15d7f1b863bd4a26e0bd"/><section>
     <title>set_height()</title>
 <indexterm><primary>set_height</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>set_height</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.set_height ( self,  height)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.set_height ( self, int height)</computeroutput></para>
 <para><literallayout><computeroutput>Set the height of the hotbar, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a301ecb774c59628739c62c103df2122a"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a74e976dcb1fb4e2be3d7f648b5f42ddb"/><section>
     <title>set_spacing()</title>
 <indexterm><primary>set_spacing</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>set_spacing</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.set_spacing ( self,  spacing)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.set_spacing ( self, int spacing)</computeroutput></para>
 <para><literallayout><computeroutput>Set the spacing between the hotbar&apos;s slots, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a0a17f238d8aa16bf3df70c9295bd12ff"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a6d4d3954e43354e6259c92635b1bd728"/><section>
     <title>set_width()</title>
 <indexterm><primary>set_width</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>set_width</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.set_width ( self,  width)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.set_width ( self, int width)</computeroutput></para>
 <para><literallayout><computeroutput>Set the width of the hotbar, then return the hotbar itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a06a0ac306c018d1092fbc22b7372407d"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a5d33d1abc05fc53e73fb81af1670cd88"/><section>
     <title>unselect_slot()</title>
 <indexterm><primary>unselect_slot</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>unselect_slot</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.unselect_slot ( self,  slot_index)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.unselect_slot ( self, int slot_index)</computeroutput></para>
 <para><literallayout><computeroutput>Unselect a hotbar slot, then return the slot itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1afc7ad3745efbfaabb4e17ae6e8cdc9ed"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a9cede322ad7ac64510b2f96aef514fde"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>gui.hotbar.Hotbar.update ( self,  window)</computeroutput></para>
+<para><computeroutput> Self gui.hotbar.Hotbar.update ( self,  window)</computeroutput></para>
 <para><literallayout><computeroutput>Update the hotbar and its components.
 </computeroutput></literallayout> </para>
 </section>

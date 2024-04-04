@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceunit_1_1test__core" kind="namespace" language="Python">
+    <compoundname>unit::test_core</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceunit_1_1test__core_1af5749fce9733cf21703d7c9f7e285d41" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int unit::test_core.WINDOW_TEST_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>WINDOW_TEST_WIDTH</name>
+        <qualifiedname>unit.test_core.WINDOW_TEST_WIDTH</qualifiedname>
+        <initializer>=  800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceunit_1_1test__core_1a29f26b43586ede34ec53304e418639a3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int unit::test_core.WINDOW_TEST_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>WINDOW_TEST_HEIGHT</name>
+        <qualifiedname>unit.test_core.WINDOW_TEST_HEIGHT</qualifiedname>
+        <initializer>=  600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceunit_1_1test__core_1aa827deffceebe1d34e87b5aea996c0fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_core.test_window_creation</definition>
+        <argsstring>()</argsstring>
+        <name>test_window_creation</name>
+        <qualifiedname>unit.test_core.test_window_creation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: window_creation
+Desc: Tests if the window is created correctly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" bodystart="16" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__core_1ab8674a1b09928db5d97409ac983390b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_core.test_window_fullscreen</definition>
+        <argsstring>()</argsstring>
+        <name>test_window_fullscreen</name>
+        <qualifiedname>unit.test_core.test_window_fullscreen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: window_fullscreen
+Desc: Tests if the fullscreen feature of the window is working correctly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" bodystart="33" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceunit_1_1test__core_1a8518af59e6e672bea3e47806196e4e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>unit.test_core.test_game_creation</definition>
+        <argsstring>()</argsstring>
+        <name>test_game_creation</name>
+        <qualifiedname>unit.test_core.test_game_creation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test: game_creation
+Desc: Tests if the game object is instantiated correctly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="55" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" bodystart="55" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tests dedicated to the core modules.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_core.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -90,9 +90,9 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.pause_screen.PauseScreen.__init__</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a23e0bd774de7f8aa34d03d300c165c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.pause_screen.PauseScreen.__init__</definition>
         <argsstring>(self, window)</argsstring>
         <name>__init__</name>
         <qualifiedname>gui.screens.pause_screen.PauseScreen.__init__</qualifiedname>
@@ -112,9 +112,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="15" bodyend="24"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.pause_screen.PauseScreen.initialise_surface</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af9f0bd315040b69738cbf37d82aa8d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.pause_screen.PauseScreen.initialise_surface</definition>
         <argsstring>(self)</argsstring>
         <name>initialise_surface</name>
         <qualifiedname>gui.screens.pause_screen.PauseScreen.initialise_surface</qualifiedname>
@@ -132,9 +132,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="25" bodyend="33"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.pause_screen.PauseScreen.draw</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a4cf395c2e6593ff32201b4cfcd89cc90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.pause_screen.PauseScreen.draw</definition>
         <argsstring>(self)</argsstring>
         <name>draw</name>
         <qualifiedname>gui.screens.pause_screen.PauseScreen.draw</qualifiedname>
@@ -152,9 +152,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="34" bodyend="44"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.pause_screen.PauseScreen.update_ui</definition>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1abf41f59cdcb6ef4d52ca32411e6d46fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.pause_screen.PauseScreen.update_ui</definition>
         <argsstring>(self)</argsstring>
         <name>update_ui</name>
         <qualifiedname>gui.screens.pause_screen.PauseScreen.update_ui</qualifiedname>
@@ -172,10 +172,10 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="45" bodyend="58"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>gui.screens.pause_screen.PauseScreen.set_state</definition>
-        <argsstring>(self, state)</argsstring>
+      <memberdef kind="function" id="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a573e5790473fee822fe76eae3581f206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.pause_screen.PauseScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
         <name>set_state</name>
         <qualifiedname>gui.screens.pause_screen.PauseScreen.set_state</qualifiedname>
         <param>
@@ -183,8 +183,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>state</type>
-          <defname>state</defname>
+          <type>bool</type>
+          <declname>state</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -227,16 +227,16 @@
     </collaborationgraph>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/pause_screen.py" bodystart="10" bodyend="68"/>
     <listofallmembers>
-      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a1950291d3944e4349fc2e02498433e85" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>__init__</name></member>
-      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af3741cc055726d25eb8d056f95a524e4" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a23e0bd774de7f8aa34d03d300c165c1f" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a4cf395c2e6593ff32201b4cfcd89cc90" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>draw</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a20ac23e2b0df1df11c8be790f2d62045" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>faded_surface</name></member>
-      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a803c9a03a7948ec85987b7bdd91d194b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af9f0bd315040b69738cbf37d82aa8d43" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>initialise_surface</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a84d2d01f4090bcf5962887efad26d48d" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>options_button</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1af0fd2d6eb748f36699a83ff83992a890" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>pause_label</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae35928eed3390fa8379b1023d2b8035b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>quit_button</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1afc7e5a7516ee6a502c66ce6f5aa2f6f4" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>resume_button</name></member>
-      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a7e4693e53d7750cb102a1cfe9df634bd" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>set_state</name></member>
-      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a9fe40ec52a6c8a4f32da473e114db28f" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a573e5790473fee822fe76eae3581f206" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1abf41f59cdcb6ef4d52ca32411e6d46fb" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>update_ui</name></member>
       <member refid="classgui_1_1screens_1_1pause__screen_1_1PauseScreen_1a69fb68f60a8e099b0280fa40659e290b" prot="public" virt="non-virtual"><scope>gui::screens::pause_screen::PauseScreen</scope><name>window</name></member>
     </listofallmembers>
   </compounddef>

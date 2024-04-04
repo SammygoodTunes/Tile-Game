@@ -1,34 +1,39 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
-  <compound refid="namespacetests" kind="namespace"><name>tests</name>
+  <compound refid="namespaceunit" kind="namespace"><name>unit</name>
   </compound>
-  <compound refid="namespacetests_1_1test__assets" kind="namespace"><name>tests::test_assets</name>
-    <member refid="namespacetests_1_1test__assets_1afbc364743a5f4962ade175d2c6ebddb9" kind="function"><name>test_assets_folder_exists</name></member>
-    <member refid="namespacetests_1_1test__assets_1a8679bb1b83791c070890d1cdcd6e7beb" kind="function"><name>test_atlas_asset_exists</name></member>
-    <member refid="namespacetests_1_1test__assets_1aa790a02c309ecffc7dab2b233fdba447" kind="function"><name>test_font_asset_exists</name></member>
-    <member refid="namespacetests_1_1test__assets_1a36deda0c82db3e61cea5c41bd3c2ce40" kind="function"><name>test_items_asset_exists</name></member>
-    <member refid="namespacetests_1_1test__assets_1a1471fa13608a84875f746ca5f7f6d571" kind="function"><name>test_player_asset_exist</name></member>
+  <compound refid="namespaceunit_1_1test__assets" kind="namespace"><name>unit::test_assets</name>
+    <member refid="namespaceunit_1_1test__assets_1a4f0edfd554bbf23061fcedfa4e70d0f9" kind="function"><name>test_assets_folder_exists</name></member>
+    <member refid="namespaceunit_1_1test__assets_1af7c501837c69dc956404ed8182248fc6" kind="function"><name>test_atlas_asset_exists</name></member>
+    <member refid="namespaceunit_1_1test__assets_1a377735ff98cc69dae38068a3f1f040bd" kind="function"><name>test_font_asset_exists</name></member>
+    <member refid="namespaceunit_1_1test__assets_1a698d649beee612a32878046e5cbbb828" kind="function"><name>test_items_asset_exists</name></member>
+    <member refid="namespaceunit_1_1test__assets_1a18a14230e36ab61b3c3dfe61a256d43c" kind="function"><name>test_player_asset_exist</name></member>
   </compound>
-  <compound refid="namespacetests_1_1test__core" kind="namespace"><name>tests::test_core</name>
-    <member refid="namespacetests_1_1test__core_1a6d2e31f3978abfa3696518c6ca2d7167" kind="variable"><name>WINDOW_TEST_WIDTH</name></member>
-    <member refid="namespacetests_1_1test__core_1a4f89b28aad5a93a9a951e1d392979552" kind="variable"><name>WINDOW_TEST_HEIGHT</name></member>
-    <member refid="namespacetests_1_1test__core_1ad6486c1fd6e96f188feee3a434185f05" kind="function"><name>test_window_creation</name></member>
-    <member refid="namespacetests_1_1test__core_1a6875580f833cc5cf5dad090ddf6fbf80" kind="function"><name>test_window_fullscreen</name></member>
-    <member refid="namespacetests_1_1test__core_1ab5db7942a8a0d935a30a1f981e012d42" kind="function"><name>test_game_creation</name></member>
+  <compound refid="namespaceunit_1_1test__core" kind="namespace"><name>unit::test_core</name>
+    <member refid="namespaceunit_1_1test__core_1af5749fce9733cf21703d7c9f7e285d41" kind="variable"><name>WINDOW_TEST_WIDTH</name></member>
+    <member refid="namespaceunit_1_1test__core_1a29f26b43586ede34ec53304e418639a3" kind="variable"><name>WINDOW_TEST_HEIGHT</name></member>
+    <member refid="namespaceunit_1_1test__core_1aa827deffceebe1d34e87b5aea996c0fb" kind="function"><name>test_window_creation</name></member>
+    <member refid="namespaceunit_1_1test__core_1ab8674a1b09928db5d97409ac983390b7" kind="function"><name>test_window_fullscreen</name></member>
+    <member refid="namespaceunit_1_1test__core_1a8518af59e6e672bea3e47806196e4e82" kind="function"><name>test_game_creation</name></member>
   </compound>
-  <compound refid="namespacetests_1_1test__data" kind="namespace"><name>tests::test_data</name>
-    <member refid="namespacetests_1_1test__data_1a90fdc87cb37eed87544ee49471f77697" kind="function"><name>test_data_folder_exists</name></member>
-    <member refid="namespacetests_1_1test__data_1aaa5bbd20effbe4d1987012ec5c6ede70" kind="function"><name>test_game_properties_file_exists</name></member>
-    <member refid="namespacetests_1_1test__data_1a6dc7cd9039a6a58a951ceb3adf55483b" kind="function"><name>test_get_game_properties_exists</name></member>
-    <member refid="namespacetests_1_1test__data_1a3de1a4bbd952aee9b36788bd37f2ef10" kind="function"><name>test_get_game_property</name></member>
-    <member refid="namespacetests_1_1test__data_1a5f0a77c7b139ccb8be17dc51a5951d88" kind="function"><name>test_get_game_properties</name></member>
-    <member refid="namespacetests_1_1test__data_1a13c5f23b51240722ff5103fbf9eca117" kind="function"><name>test_item_creation</name></member>
-    <member refid="namespacetests_1_1test__data_1a9ebe0f8c63f094485afa069bcc280ccf" kind="function"><name>test_mouse_properties</name></member>
-    <member refid="namespacetests_1_1test__data_1a4a469c4fe78d5e8b5ef80775db4de4be" kind="function"><name>test_tile_creation</name></member>
+  <compound refid="namespaceunit_1_1test__data" kind="namespace"><name>unit::test_data</name>
+    <member refid="namespaceunit_1_1test__data_1a5e2cfa0df30c5c4bbecb81bb59832351" kind="function"><name>test_data_folder_exists</name></member>
+    <member refid="namespaceunit_1_1test__data_1a86a71ab930ae9e07ad302ed5b9a12e2f" kind="function"><name>test_game_properties_file_exists</name></member>
+    <member refid="namespaceunit_1_1test__data_1a03ad00936e3bc2c2982751c63343daea" kind="function"><name>test_get_game_properties_exists</name></member>
+    <member refid="namespaceunit_1_1test__data_1a7c198710a7bb79848f3568ea1954d463" kind="function"><name>test_get_game_property</name></member>
+    <member refid="namespaceunit_1_1test__data_1a0546bce1417b5771869c6835e0ec2049" kind="function"><name>test_get_game_properties</name></member>
+    <member refid="namespaceunit_1_1test__data_1ab1a725d687668278a3799846bad635b8" kind="function"><name>test_item_creation</name></member>
+    <member refid="namespaceunit_1_1test__data_1a6b74d1583d80413fc27df33bb3de2c8b" kind="function"><name>test_mouse_properties</name></member>
+    <member refid="namespaceunit_1_1test__data_1adbdab2f4033566a3ad992de6e6b47a21" kind="function"><name>test_tile_creation</name></member>
   </compound>
-  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  <compound refid="namespaceunit_1_1test__entity" kind="namespace"><name>unit::test_entity</name>
+    <member refid="namespaceunit_1_1test__entity_1a3e260b6211c70e6c906e1a68e0061f2a" kind="function"><name>test_player_creation</name></member>
+    <member refid="namespaceunit_1_1test__entity_1abbf98a0cc577a0eed994e565e9f4610d" kind="function"><name>test_player_reset</name></member>
+    <member refid="namespaceunit_1_1test__entity_1a49ce3988baf011b5466cc2ed40738e0c" kind="function"><name>test_player_movement</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
   <compound refid="test__assets_8py" kind="file"><name>test_assets.py</name>
   </compound>
@@ -46,12 +51,8 @@
   </compound>
   <compound refid="md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README" kind="page"><name>md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README</name>
   </compound>
-  <compound refid="dir_f396504afdc959660871b003fa10164d" kind="dir"><name>Documents</name>
+  <compound refid="dir_59425e443f801f1f2fd8bbe4959a3ccf" kind="dir"><name>tests</name>
   </compound>
-  <compound refid="dir_a619e0bfc494d58dc0cd5d066ed00580" kind="dir"><name>Python</name>
-  </compound>
-  <compound refid="dir_c6ca87154f3f2ac61ad51db1b6ac64cc" kind="dir"><name>tests</name>
-  </compound>
-  <compound refid="dir_8161cb1c3f75593ad85673942ae990c5" kind="dir"><name>Tile-Game</name>
+  <compound refid="dir_7711e90abc3d4bd55823d9013a185d04" kind="dir"><name>unit</name>
   </compound>
 </doxygenindex>

@@ -252,10 +252,10 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/core/window.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/window.py" bodystart="48" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classcore_1_1window_1_1Window_1adef13943855e83e387b08ba95c8e04a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None core.window.Window.resize</definition>
-        <argsstring>(self, pygame.event.Event|pygame.event.EventType e)</argsstring>
+        <argsstring>(self, pygame.event.Event e)</argsstring>
         <name>resize</name>
         <qualifiedname>core.window.Window.resize</qualifiedname>
         <param>
@@ -263,7 +263,7 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>pygame.event.Event|pygame.event.EventType</type>
+          <type>pygame.event.Event</type>
           <declname>e</declname>
         </param>
         <briefdescription>
@@ -357,7 +357,7 @@
       <member refid="classcore_1_1window_1_1Window_1a99fdf8c1ee41e7abd9b63871cfa44c97" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>max_width</name></member>
       <member refid="classcore_1_1window_1_1Window_1aad4b09675f0fe34863cda0d6ad43004c" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>old_height</name></member>
       <member refid="classcore_1_1window_1_1Window_1aae3ba375fb7fdcb8ad493abc91871c4e" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>old_width</name></member>
-      <member refid="classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>resize</name></member>
+      <member refid="classcore_1_1window_1_1Window_1adef13943855e83e387b08ba95c8e04a5" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>resize</name></member>
       <member refid="classcore_1_1window_1_1Window_1ac55e7c57546c74a5b2a9a5c1328d9253" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>screen</name></member>
       <member refid="classcore_1_1window_1_1Window_1aa4a7a3199afe46692952dd1693594035" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>tick</name></member>
       <member refid="classcore_1_1window_1_1Window_1a5c5b643d7ea358aadfa7f1ea111afa9a" prot="public" virt="non-virtual"><scope>core::window::Window</scope><name>timer</name></member>

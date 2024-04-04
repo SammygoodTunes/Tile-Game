@@ -11,7 +11,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1aa4a7a3199afe46692952dd1693594035">tick</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9">resize</link> (self, pygame.event.Event|pygame.event.EventType e)</para>
+            <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1adef13943855e83e387b08ba95c8e04a5">resize</link> (self, pygame.event.Event e)</para>
 </listitem>
             <listitem><para>None <link linkend="_classcore_1_1window_1_1Window_1a63ff24d1d4169f8150a57c3f9e6ca98a">draw_fps</link> (self)</para>
 </listitem>
@@ -88,11 +88,11 @@
 <para><literallayout><computeroutput>Update and draw the FPS on-screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classcore_1_1window_1_1Window_1a83643d25849f935cc9983ed27c2951d9"/><section>
+<anchor xml:id="_classcore_1_1window_1_1Window_1adef13943855e83e387b08ba95c8e04a5"/><section>
     <title>resize()</title>
 <indexterm><primary>resize</primary><secondary>core.window.Window</secondary></indexterm>
 <indexterm><primary>core.window.Window</primary><secondary>resize</secondary></indexterm>
-<para><computeroutput> None core.window.Window.resize ( self, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
+<para><computeroutput> None core.window.Window.resize ( self, pygame.event.Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Update window dimensions on resize.
 </computeroutput></literallayout> </para>
 </section>

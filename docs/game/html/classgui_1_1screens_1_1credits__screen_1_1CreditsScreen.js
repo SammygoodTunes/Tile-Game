@@ -1,11 +1,11 @@
 var classgui_1_1screens_1_1credits__screen_1_1CreditsScreen =
 [
-    [ "__init__", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#abb304aaed7ca04e5f1463ceea53bbba7", null ],
-    [ "draw", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a50574c3798483946719e06b9bd7b7aaa", null ],
-    [ "events", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a68e8ef0bb0f6586240c45d26f7126a84", null ],
-    [ "initialise_surface", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#aadf73d2f0c2161a75fdf7978bf4d3a32", null ],
-    [ "set_state", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a3598afcebf456f3bbb239dbca72e0544", null ],
-    [ "update_ui", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a74f2d96c07df4818526ba314fc70f2d3", null ],
+    [ "__init__", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#ae7116c7633a689f55916b0473a44d5cd", null ],
+    [ "draw", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a29efbef125b729def6b1ff1325ac2aaa", null ],
+    [ "events", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#ab9d12bc8b026e8a36ae3dca399f9a12d", null ],
+    [ "initialise_surface", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#abf4a7e9e0555632901ff64a36c036f66", null ],
+    [ "set_state", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a90a26e9e39de1fcb1724d8d15163f534", null ],
+    [ "update_ui", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a007b3a457b02f5ffca8ab37b6e89f823", null ],
     [ "_enabled", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#ad4ac4b8f75722086347599d691ed714e", null ],
     [ "art_title_label", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#ab63efaf19e85e338b923679eae666250", null ],
     [ "art_value_label", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a66631ed7ad30a5d82e57af71283bd40d", null ],

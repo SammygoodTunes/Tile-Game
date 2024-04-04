@@ -13,6 +13,8 @@
 <codeline></codeline>
 <codeline><highlight class="normal">Their<sp/>purpose<sp/>is<sp/>to<sp/>test<sp/>the<sp/>inner<sp/>functionalities<sp/>of<sp/>the<sp/>game<sp/>and<sp/>the<sp/>existence<sp/>of<sp/>files<sp/>used<sp/>by<sp/>it.</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">Unit<sp/>tests<sp/>are<sp/>found<sp/>under<sp/>the<sp/>`unit/`<sp/>directory,<sp/>integrated<sp/>tests<sp/>are<sp/>found<sp/>under<sp/>the<sp/>`integrated/`<sp/>directory.</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Running<sp/>a<sp/>test</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Install<sp/>the<sp/>required<sp/>dependencies<sp/>using<sp/>(run<sp/>in<sp/>root<sp/>dir):</highlight></codeline>
@@ -33,16 +35,22 @@
 <codeline><highlight class="normal">pytest<sp/>.</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">-<sp/>To<sp/>run<sp/>all<sp/>tests<sp/>of<sp/>a<sp/>certain<sp/>type:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>[unit|integrated]<sp/>#<sp/>Either<sp/>unit<sp/>or<sp/>integrated</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">-<sp/>To<sp/>run<sp/>tests<sp/>in<sp/>a<sp/>specific<sp/>module:</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
-<codeline><highlight class="normal">pytest<sp/>test_assets.py<sp/><sp/>#<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>unit/test_assets.py<sp/><sp/>#<sp/>Example</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>To<sp/>run<sp/>a<sp/>specific<sp/>test<sp/>of<sp/>a<sp/>module:</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
-<codeline><highlight class="normal">pytest<sp/>test_assets.py::test_assets_folder_exists<sp/><sp/>#<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>unit/test_assets.py::test_assets_folder_exists<sp/><sp/>#<sp/>Example</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">&gt;<sp/>If<sp/>you&apos;re<sp/>in<sp/>the<sp/>root<sp/>directory,<sp/>make<sp/>sure<sp/>to<sp/>add<sp/>`tests/`<sp/>to<sp/>the<sp/>path<sp/>argument<sp/>(e.g.<sp/>`pytest<sp/>tests/test_assets.py`)<sp/>or<sp/>replace<sp/>it<sp/>entirely<sp/>if<sp/>the<sp/>path<sp/>is<sp/>`.`<sp/>(like<sp/>the<sp/>third<sp/>command<sp/>above).</highlight></codeline>

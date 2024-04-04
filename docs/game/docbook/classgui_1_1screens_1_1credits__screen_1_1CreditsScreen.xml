@@ -13,17 +13,17 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abb304aaed7ca04e5f1463ceea53bbba7">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606">window</link>)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae7116c7633a689f55916b0473a44d5cd">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606">window</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aadf73d2f0c2161a75fdf7978bf4d3a32">initialise_surface</link> (self)</para>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abf4a7e9e0555632901ff64a36c036f66">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a68e8ef0bb0f6586240c45d26f7126a84">events</link> (self, e)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab9d12bc8b026e8a36ae3dca399f9a12d">events</link> (self, Event e)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a50574c3798483946719e06b9bd7b7aaa">draw</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a29efbef125b729def6b1ff1325ac2aaa">draw</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a74f2d96c07df4818526ba314fc70f2d3">update_ui</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a007b3a457b02f5ffca8ab37b6e89f823">update_ui</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a3598afcebf456f3bbb239dbca72e0544">set_state</link> (self, state)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a90a26e9e39de1fcb1724d8d15163f534">set_state</link> (self, bool state)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -63,51 +63,51 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abb304aaed7ca04e5f1463ceea53bbba7"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae7116c7633a689f55916b0473a44d5cd"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.__init__ ( self,  window)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.credits_screen.CreditsScreen.__init__ ( self,  window)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a50574c3798483946719e06b9bd7b7aaa"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a29efbef125b729def6b1ff1325ac2aaa"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.draw ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.credits_screen.CreditsScreen.draw ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a68e8ef0bb0f6586240c45d26f7126a84"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab9d12bc8b026e8a36ae3dca399f9a12d"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.events ( self,  e)</computeroutput></para>
+<para><computeroutput> None gui.screens.credits_screen.CreditsScreen.events ( self, Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the screen events.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aadf73d2f0c2161a75fdf7978bf4d3a32"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1abf4a7e9e0555632901ff64a36c036f66"/><section>
     <title>initialise_surface()</title>
 <indexterm><primary>initialise_surface</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>initialise_surface</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.initialise_surface ( self)</computeroutput></para>
+<para><computeroutput> Surface gui.screens.credits_screen.CreditsScreen.initialise_surface ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the screen&apos;s surface.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a3598afcebf456f3bbb239dbca72e0544"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a90a26e9e39de1fcb1724d8d15163f534"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>set_state</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.set_state ( self,  state)</computeroutput></para>
+<para><computeroutput> None gui.screens.credits_screen.CreditsScreen.set_state ( self, bool state)</computeroutput></para>
 <para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a74f2d96c07df4818526ba314fc70f2d3"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a007b3a457b02f5ffca8ab37b6e89f823"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screens.credits_screen.CreditsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.credits_screen.CreditsScreen</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>gui.screens.credits_screen.CreditsScreen.update_ui ( self)</computeroutput></para>
+<para><computeroutput> None gui.screens.credits_screen.CreditsScreen.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screen GUI.
 </computeroutput></literallayout> </para>
 </section>

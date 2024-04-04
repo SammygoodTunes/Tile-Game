@@ -3,7 +3,7 @@ var classcore_1_1window_1_1Window =
     [ "__init__", "classcore_1_1window_1_1Window.html#a26a79dd4e0945c69a728d0395c2acfe0", null ],
     [ "clear", "classcore_1_1window_1_1Window.html#adfd518e4b0bd086241e90c9ded58ba8a", null ],
     [ "draw_fps", "classcore_1_1window_1_1Window.html#a63ff24d1d4169f8150a57c3f9e6ca98a", null ],
-    [ "resize", "classcore_1_1window_1_1Window.html#a83643d25849f935cc9983ed27c2951d9", null ],
+    [ "resize", "classcore_1_1window_1_1Window.html#adef13943855e83e387b08ba95c8e04a5", null ],
     [ "tick", "classcore_1_1window_1_1Window.html#aa4a7a3199afe46692952dd1693594035", null ],
     [ "toggle_fullscreen", "classcore_1_1window_1_1Window.html#aa00ad47630441b56e14f37b8b0fbd633", null ],
     [ "update_ui", "classcore_1_1window_1_1Window.html#a11c4d7abac1a6e9f8a8c79e7a3a5ad06", null ],

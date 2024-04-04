@@ -5,34 +5,34 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1ae3aa3f5249d6bae979f61192ad9a64a3">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a3af0faa7c4c5b967d5d7facd480e14dd">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a97036ade7f7a446c5137feb2c1cf5e21">generate</link> (self, int x, int y)</para>
+            <listitem><para>int <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a0d2040fe73a72fb6a75fc079e9c385f4">generate</link> (self, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd">noise</link> (self, int x, int y)</para>
+            <listitem><para>float <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aca8a220422f17a96df2b8ee2a38b727f">noise</link> (self, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6">smooth_noise</link> (self, int x, int y)</para>
+            <listitem><para>float <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1acaf2e929a19264091845fe3da68632d8">smooth_noise</link> (self, int x, int y)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4d30ff3c0d937cb39ce04873b188c86e">interpolate_noise</link> (self, float x, float y)</para>
+            <listitem><para>float <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a50f8493e546b1629786f7c4fc0084d53">interpolate_noise</link> (self, float x, float y)</para>
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1abac364758bfe84111f67b158c9e059fd">set_permutations</link> (self, list|tuple permutations)</para>
 </listitem>
             <listitem><para>list|tuple <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a01a3e9c4678b50f79312152fd43cbfa2">get_permutations</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a211c7c945aefc7c7fa5b5f0d9080e821">set_noise_intensity</link> (self, noise_intensity)</para>
+            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4ac9a32840865e544ee8b4dbda4926ab">set_noise_intensity</link> (self, int noise_intensity)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1ab804cfb24f146086f053ed6fe8bcd64a">get_noise_intensity</link> (self)</para>
+            <listitem><para>int <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a68f124034f48be633d746752d2daca4e">get_noise_intensity</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a26efcdfe232879ba5ca3635a229def1d">set_frequency</link> (self, frequency)</para>
+            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a597dfc42acacdb4fcecddad424c6ceb9">set_frequency</link> (self, float frequency)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a52162ec38a1d5dafcc07c7b9d65e3b04">get_frequency</link> (self)</para>
+            <listitem><para>float <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a026445db20f340dbe8cf536c6ebb2362">get_frequency</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60">cosine_interpolate</link> (a, b, x)</para>
+            <listitem><para>float <link linkend="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa690c498dfaa19e70d148ed76e158199">cosine_interpolate</link> (float a, float b, float x)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -68,43 +68,43 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1ae3aa3f5249d6bae979f61192ad9a64a3"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a3af0faa7c4c5b967d5d7facd480e14dd"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None world.synth.noise.PerlinNoise.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa5ce04355e05f4c8f20864af01a1eb60"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aa690c498dfaa19e70d148ed76e158199"/><section>
     <title>cosine_interpolate()</title>
 <indexterm><primary>cosine_interpolate</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>cosine_interpolate</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.cosine_interpolate ( a,  b,  x)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> float world.synth.noise.PerlinNoise.cosine_interpolate (float a, float b, float x)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Cosine interpolation.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a97036ade7f7a446c5137feb2c1cf5e21"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a0d2040fe73a72fb6a75fc079e9c385f4"/><section>
     <title>generate()</title>
 <indexterm><primary>generate</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>generate</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.generate ( self, int x, int y)</computeroutput></para>
+<para><computeroutput> int world.synth.noise.PerlinNoise.generate ( self, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Generate and return perlin noise data.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a52162ec38a1d5dafcc07c7b9d65e3b04"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a026445db20f340dbe8cf536c6ebb2362"/><section>
     <title>get_frequency()</title>
 <indexterm><primary>get_frequency</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>get_frequency</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.get_frequency ( self)</computeroutput></para>
+<para><computeroutput> float world.synth.noise.PerlinNoise.get_frequency ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the frequency.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1ab804cfb24f146086f053ed6fe8bcd64a"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a68f124034f48be633d746752d2daca4e"/><section>
     <title>get_noise_intensity()</title>
 <indexterm><primary>get_noise_intensity</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>get_noise_intensity</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.get_noise_intensity ( self)</computeroutput></para>
+<para><computeroutput> int world.synth.noise.PerlinNoise.get_noise_intensity ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the noise intensity.
 </computeroutput></literallayout> </para>
 </section>
@@ -116,35 +116,35 @@
 <para><literallayout><computeroutput>Return the permutations.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4d30ff3c0d937cb39ce04873b188c86e"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a50f8493e546b1629786f7c4fc0084d53"/><section>
     <title>interpolate_noise()</title>
 <indexterm><primary>interpolate_noise</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>interpolate_noise</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.interpolate_noise ( self, float x, float y)</computeroutput></para>
+<para><computeroutput> float world.synth.noise.PerlinNoise.interpolate_noise ( self, float x, float y)</computeroutput></para>
 <para><literallayout><computeroutput>Interpolate noise.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a6ed96e9a4bc4ed21f0a39507bbbff4cd"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1aca8a220422f17a96df2b8ee2a38b727f"/><section>
     <title>noise()</title>
 <indexterm><primary>noise</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>noise</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.noise ( self, int x, int y)</computeroutput></para>
+<para><computeroutput> float world.synth.noise.PerlinNoise.noise ( self, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Noise function.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a26efcdfe232879ba5ca3635a229def1d"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a597dfc42acacdb4fcecddad424c6ceb9"/><section>
     <title>set_frequency()</title>
 <indexterm><primary>set_frequency</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>set_frequency</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.set_frequency ( self,  frequency)</computeroutput></para>
+<para><computeroutput>world.synth.noise.PerlinNoise.set_frequency ( self, float frequency)</computeroutput></para>
 <para><literallayout><computeroutput>Set the frequency.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a211c7c945aefc7c7fa5b5f0d9080e821"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a4ac9a32840865e544ee8b4dbda4926ab"/><section>
     <title>set_noise_intensity()</title>
 <indexterm><primary>set_noise_intensity</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>set_noise_intensity</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.set_noise_intensity ( self,  noise_intensity)</computeroutput></para>
+<para><computeroutput>world.synth.noise.PerlinNoise.set_noise_intensity ( self, int noise_intensity)</computeroutput></para>
 <para><literallayout><computeroutput>Set the noise intensity.
 </computeroutput></literallayout> </para>
 </section>
@@ -156,11 +156,11 @@
 <para><literallayout><computeroutput>Set the permutations.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1a526bf9252f1acf08738e5e440ed708e6"/><section>
+<anchor xml:id="_classworld_1_1synth_1_1noise_1_1PerlinNoise_1acaf2e929a19264091845fe3da68632d8"/><section>
     <title>smooth_noise()</title>
 <indexterm><primary>smooth_noise</primary><secondary>world.synth.noise.PerlinNoise</secondary></indexterm>
 <indexterm><primary>world.synth.noise.PerlinNoise</primary><secondary>smooth_noise</secondary></indexterm>
-<para><computeroutput>world.synth.noise.PerlinNoise.smooth_noise ( self, int x, int y)</computeroutput></para>
+<para><computeroutput> float world.synth.noise.PerlinNoise.smooth_noise ( self, int x, int y)</computeroutput></para>
 <para><literallayout><computeroutput>Smooth noise function.
 </computeroutput></literallayout> </para>
 </section>
