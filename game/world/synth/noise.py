@@ -13,7 +13,7 @@ class PerlinNoise:
     NOISE_INTENSITY_RANGE = 2**16
     FREQ_ALTER_RANGE = 0.08
 
-    def __init__(self):
+    def __init__(self) -> None:
         self._permutations = list()
         self._persistence = 20
         self._octaves = 5
@@ -21,7 +21,7 @@ class PerlinNoise:
         self._frequency = 0.40 + uniform(-PerlinNoise.FREQ_ALTER_RANGE, PerlinNoise.FREQ_ALTER_RANGE)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def generate(self, x: int, y: int):
+    def generate(self, x: int, y: int) -> int:
         """
         Generate and return perlin noise data.
         """
@@ -32,7 +32,7 @@ class PerlinNoise:
             result += self.interpolate_noise(x * freq, y * freq) * amplitude
         return result
 
-    def noise(self, x: int, y: int):
+    def noise(self, x: int, y: int) -> float:
         """
         Noise function.
         """
@@ -40,7 +40,7 @@ class PerlinNoise:
         n = (n << 13) ^ n
         return 1.0 - ((n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0
 
-    def smooth_noise(self, x: int, y: int):
+    def smooth_noise(self, x: int, y: int) -> float:
         """
         Smooth noise function.
         """
@@ -49,7 +49,7 @@ class PerlinNoise:
                 + self.noise(x, y) / 4)
 
     @staticmethod
-    def cosine_interpolate(a, b, x):
+    def cosine_interpolate(a: float, b: float, x: float) -> float:
         """
         Cosine interpolation.
         """
@@ -57,7 +57,7 @@ class PerlinNoise:
         f = (1 - cos(ft)) * 0.5
         return a * (1 - f) + b * f
 
-    def interpolate_noise(self, x: float, y: float):
+    def interpolate_noise(self, x: float, y: float) -> float:
         """
         Interpolate noise.
         """
@@ -85,25 +85,25 @@ class PerlinNoise:
         """
         return self._permutations
 
-    def set_noise_intensity(self, noise_intensity):
+    def set_noise_intensity(self, noise_intensity: int):
         """
         Set the noise intensity.
         """
         self._noise_intensity = noise_intensity
 
-    def get_noise_intensity(self):
+    def get_noise_intensity(self) -> int:
         """
         Return the noise intensity.
         """
         return self._noise_intensity
 
-    def set_frequency(self, frequency):
+    def set_frequency(self, frequency: float):
         """
         Set the frequency.
         """
         self._frequency = frequency
 
-    def get_frequency(self):
+    def get_frequency(self) -> float:
         """
         Return the frequency.
         """

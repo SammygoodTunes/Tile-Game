@@ -1,8 +1,8 @@
 
+import game.data.data_manager as data_mng
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
-import game.data.data_manager as data_mng
 from game.utils.logger import logger
 
 
@@ -11,7 +11,7 @@ class MainMenu(Screen):
 	Class for creating the main menu screen.
 	"""
 
-	def __init__(self, window):
+	def __init__(self, window) -> None:
 		super().__init__()
 		self.window = window
 		self.title_label = Label(data_mng.get_game_property(data_mng.APP_NAME).strip()).set_font_sizes((15, 30, 50)).set_colour((200, 200, 255))
@@ -22,7 +22,7 @@ class MainMenu(Screen):
 		self.set_state(True)
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-	def draw(self):
+	def draw(self) -> None:
 		"""
 		Draw the screen and its components.
 		"""
@@ -33,7 +33,7 @@ class MainMenu(Screen):
 			self.credits_button.draw(self.window.screen)
 			self.quit_button.draw(self.window.screen)
 
-	def update_ui(self):
+	def update_ui(self) -> None:
 		"""
 		Update the screen UI.
 		"""
@@ -48,7 +48,7 @@ class MainMenu(Screen):
 		self.quit_button.update(self.window)
 		self.quit_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.play_button.get_height() + self.options_button.get_height() + self.credits_button.get_height() + 15)
 
-	def set_state(self, state):
+	def set_state(self, state: bool) -> None:
 		"""
 		Set the screen's visibility/interactivity.
 		"""

@@ -1,4 +1,6 @@
-import pygame
+
+from pygame import MOUSEBUTTONUP, Surface
+from pygame.event import Event
 
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -12,7 +14,7 @@ class CreditsScreen(Screen):
     Class for creating the credits screen.
     """
 
-    def __init__(self, window):
+    def __init__(self, window) -> None:
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
@@ -24,25 +26,25 @@ class CreditsScreen(Screen):
         self.back_button = Button("Back")
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def initialise_surface(self):
+    def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.
         """
-        surface = pygame.Surface((self.window.width, self.window.height))
+        surface = Surface((self.window.width, self.window.height))
         surface.fill((0, 0, 0))
         surface.set_alpha(96)
         return surface
 
-    def events(self, e):
+    def events(self, e: Event) -> None:
         """
         Track the screen events.
         """
-        if e.type == pygame.MOUSEBUTTONUP:
+        if e.type == MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
                 if self.back_button.is_hovering_over():
                     self._enabled = False
 
-    def draw(self):
+    def draw(self) -> None:
         """
         Draw the screen and its components.
         """
@@ -55,7 +57,7 @@ class CreditsScreen(Screen):
             self.art_value_label.draw(self.window.screen)
             self.back_button.draw(self.window.screen)
 
-    def update_ui(self):
+    def update_ui(self) -> None:
         """
         Update the screen GUI.
         """
@@ -76,7 +78,7 @@ class CreditsScreen(Screen):
         self.back_button.update(self.window)
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
 
-    def set_state(self, state):
+    def set_state(self, state: bool) -> None:
         """
         Set the screen's visibility/interactivity.
         """

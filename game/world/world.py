@@ -12,32 +12,32 @@ class World:
     Class for creating a world.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.tile_manager = TileManager()
         self._map = Map(256, 256)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def initialise(self, game):
+    def initialise(self, game) -> None:
         """
         Initialise the world.
         """
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
         self._map.regenerate(game)
 
-    def update(self, window_obj, player_obj):
+    def update(self, window_obj, player_obj) -> None:
         """
         Update the world.
         """
         if not window_obj.paused:
             self._map.update(window_obj, player_obj)
 
-    def update_ui(self):
+    def update_ui(self) -> None:
         """
         Update the world's UI (unused).
         """
         pass
 
-    def draw(self, game):
+    def draw(self, game) -> None:
         """
         Draw the world (map, tiles, etc.).
         """
@@ -57,7 +57,7 @@ class World:
         game.screen.blit(self._map.get_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
         game.screen.blit(self._map.get_dynatile_surface(), (true_x, true_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()))
 
-    def draw_wireframe(self, screen):
+    def draw_wireframe(self, screen) -> None:
         """
         Draw the wireframe of the world.
         """
@@ -70,7 +70,7 @@ class World:
                       (self._map.get_x(), self._map.get_y() + y * TileManager.SIZE),
                       (self._map.get_x() + self._map.get_width_in_pixels(), self._map.get_y() + y * TileManager.SIZE))
 
-    def get_map(self):
+    def get_map(self) -> Map:
         """
         Return the map.
         """

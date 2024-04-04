@@ -1,5 +1,5 @@
 
-import pygame
+from pygame import image, Surface
 
 from game.data.tiles import Tile
 from game.utils.exceptions import InvalidTextureAtlas
@@ -13,13 +13,13 @@ class TileManager:
 
     SIZE: int = 32
 
-    def __init__(self):
-        self.atlas: pygame.image = None
+    def __init__(self) -> None:
+        self.atlas: Surface | None = None
         self.width: int = 0
         self.height: int = 0
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, x: int, y: int, tile: Tile, screen: pygame.Surface):
+    def draw(self, x: int, y: int, tile: Tile, screen: Surface) -> None:
         """
         Draw a tile to the screen.
         """
@@ -32,9 +32,9 @@ class TileManager:
         # rotated_surface = pygame.transform.rotate(surface, randint(0, 3) * 90)
         # screen.blit(rotated_surface, (x, y, self.width, self.height))
 
-    def set_atlas(self, atlas_file: str):
+    def set_atlas(self, atlas_file: str) -> None:
         """
         Set the texture atlas.
         """
-        self.atlas = pygame.image.load(atlas_file)
+        self.atlas = image.load(atlas_file)
         self.width, self.height = self.atlas.get_rect().size

@@ -70,7 +70,7 @@ class MainHud(Screen):
         self.score_label.refresh()
         self.position_label.refresh()
 
-    def set_state(self, state):
+    def set_state(self, state: bool) -> None:
         """
         Set the screen's visibility/interactivity.
         """

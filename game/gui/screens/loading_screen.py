@@ -1,5 +1,6 @@
 
-from pygame import Surface, event, quit, QUIT, VIDEORESIZE
+from pygame import Surface
+from pygame.event import Event
 
 from game.gui.screens.screen import Screen
 from game.gui.progress_bar import ProgressBar
@@ -11,14 +12,14 @@ class LoadingScreen(Screen):
     Class for creating the loading screen.
     """
 
-    def __init__(self, window):
+    def __init__(self, window) -> None:
         super().__init__()
         self.window = window
         self.surface = self.initialise_surface()
         self.progress_bar = ProgressBar()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def initialise_surface(self):
+    def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.
         """
@@ -26,13 +27,13 @@ class LoadingScreen(Screen):
         surface.fill((0, 0, 0))
         return surface
 
-    def events(self, e):
+    def events(self, e: Event) -> None:
         """
         Track the screen events (unused).
         """
         pass
 
-    def draw(self):
+    def draw(self) -> None:
         """
         Draw the screen and its components
         """
@@ -40,7 +41,7 @@ class LoadingScreen(Screen):
             self.window.screen.blit(self.surface, (0, 0))
             self.progress_bar.draw(self.window.screen)
 
-    def update_ui(self):
+    def update_ui(self) -> None:
         """
         Update the screen UI.
         """
@@ -48,7 +49,7 @@ class LoadingScreen(Screen):
         self.progress_bar.update(self.window)
         self.progress_bar.center(0, 0, self.window.width, self.window.height)
 
-    def set_state(self, state):
+    def set_state(self, state: bool) -> None:
         """
         Set the screen's visibility/interactivity.
         """

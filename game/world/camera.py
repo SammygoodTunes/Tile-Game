@@ -12,11 +12,11 @@ class Camera:
     The camera position is strictly relative to the center of the screen.
     """
 
-    VELOCITY_STEP_START = 5
-    VELOCITY_STEP_STOP = 3.5
-    VELOCITY_THRESHOLD = 0.001
+    VELOCITY_STEP_START: float = 5.0
+    VELOCITY_STEP_STOP: float = 3.5
+    VELOCITY_THRESHOLD: float = 0.001
 
-    def __init__(self, speed=50):
+    def __init__(self, speed: int = 50) -> None:
         self.x = 0
         self.y = 0
         self.speed = speed
@@ -24,7 +24,7 @@ class Camera:
         self.velocity_y = 0
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def events(self, game):
+    def events(self, game) -> None:
         """
         Track the camera events.
         """
@@ -61,7 +61,7 @@ class Camera:
             elif self.velocity_y < 0:
                 self.velocity_y = clamp(self.velocity_y + Camera.VELOCITY_STEP_STOP * d, -1, 0)
 
-    def reset(self):
+    def reset(self) -> None:
         """
         Reset the camera's general properties.
         """

@@ -1,5 +1,6 @@
 
-import pygame
+from pygame import MOUSEBUTTONUP, Surface
+from pygame.event import Event
 
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -15,7 +16,7 @@ class OptionsScreen(Screen):
     Class for creating the options screen.
     """
 
-    def __init__(self, window):
+    def __init__(self, window) -> None:
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
@@ -26,30 +27,30 @@ class OptionsScreen(Screen):
         self.back_button = Button("Back")
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def initialise_surface(self):
+    def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.
         """
-        surface = pygame.Surface((self.window.width, self.window.height))
+        surface = Surface((self.window.width, self.window.height))
         surface.fill((0, 0, 0))
         surface.set_alpha(96)
         return surface
 
-    def events(self, e):
+    def events(self, e: Event):
         """
         Track the screen events.
         """
         self.fps_limit_slider.events(e)
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
-        if e.type == pygame.MOUSEBUTTONUP:
+        if e.type == MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
                 if self.back_button.is_hovering_over():
                     self._enabled = False
         if self.window.fps_cap != self.fps_limit_slider.get_value():
             self.window.fps_cap = self.fps_limit_slider.get_value()
 
-    def draw(self):
+    def draw(self) -> None:
         """
         Draw the screen and its components.
         """
@@ -61,7 +62,7 @@ class OptionsScreen(Screen):
             self.debug_info_box.draw(self.window.screen)
             self.back_button.draw(self.window.screen)
 
-    def update_ui(self):
+    def update_ui(self) -> None:
         """
         Update the screen UI.
         """
@@ -77,7 +78,7 @@ class OptionsScreen(Screen):
         self.back_button.update(self.window)
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
 
-    def set_state(self, state):
+    def set_state(self, state: bool) -> None:
         """
         Set the screen's visibility/interactivity.
         """
