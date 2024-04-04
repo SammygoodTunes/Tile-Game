@@ -70,14 +70,14 @@ class Player:
         self.main_hud = None
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def init(self, game: Game) -> None:
+    def init(self, game) -> None:
         """
         Define the player attributes that depend on the given game object.
         """
         self.main_hud = MainHud(game)
         self.main_hud.set_state(True)
 
-    def events(self, game: Game, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def events(self, game, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
         Track the player events.
         """
@@ -121,7 +121,7 @@ class Player:
             self.main_hud.hotbar.select_slot((self.main_hud.hotbar.get_selected_slot() - e.y) % len(self.main_hud.hotbar.get_slots()))
             self.main_hud.hotbar.init_slots()
 
-    def draw(self, game: Game) -> None:
+    def draw(self, game) -> None:
         """
         Draw the player to the screen.
         """
@@ -137,7 +137,7 @@ class Player:
             pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
-    def draw_selection_grid(self, game: Game) -> None:
+    def draw_selection_grid(self, game) -> None:
         """
         Draw the player tile selection grid to the screen.
         """
@@ -176,7 +176,7 @@ class Player:
                                             game.world.tile_manager.SIZE
                                         ), 2, 4)
 
-    def update(self, game: Game, map_obj: Map) -> None:
+    def update(self, game, map_obj: Map) -> None:
         """
         Update the player.
         """
@@ -285,13 +285,13 @@ class Player:
         else:
             self.move = 0
 
-    def update_ui(self, game: Game) -> None:
+    def update_ui(self, game) -> None:
         """
         Update the player GUI.
         """
         self.main_hud.update_ui()
 
-    def break_tile(self, game: Game) -> None:
+    def break_tile(self, game) -> None:
         """
         Break a map tile and update map surfaces.
         """
