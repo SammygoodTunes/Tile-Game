@@ -1,5 +1,4 @@
 
-from __future__ import annotations
 import math
 from importlib import resources as impr
 import pygame

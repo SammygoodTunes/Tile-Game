@@ -16,7 +16,7 @@ class Screens:
     Class for creating a collection of screens.
     """
 
-    def __init__(self, window):
+    def __init__(self, window) -> None:
         self.window = window
         self.game = None
         self.screen = self.window.screen
@@ -28,7 +28,7 @@ class Screens:
         self.gameover_screen = GameoverScreen(window)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def link_game(self, game_obj):
+    def link_game(self, game_obj) -> None:
         """
         Link the global game instance.
         TODO: Remove this, it isn't good practice. And it's dirty.
@@ -36,7 +36,7 @@ class Screens:
         self.game = game_obj
         self.options_screen.game = self.game
 
-    def events(self, e):
+    def events(self, e: pygame.event.Event) -> None:
         """
         Track the events of the different screens.
         """
@@ -100,7 +100,7 @@ class Screens:
                     self.window.paused = False
                     self.main_menu.set_state(True)
 
-    def update(self):
+    def update(self) -> None:
         """
         Update the screens.
         """
@@ -111,7 +111,7 @@ class Screens:
         self.credits_screen.draw()
         self.gameover_screen.draw()
 
-    def update_ui(self):
+    def update_ui(self) -> None:
         """
         Update the screen UIs.
         """
