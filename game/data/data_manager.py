@@ -1,5 +1,6 @@
 
 from importlib import resources as impr
+from typing import Iterator
 
 from game import data
 from game.utils.logger import logger
@@ -12,7 +13,7 @@ APP_NAME: str = "APP_NAME"
 APP_VERSION: str = "APP_VER"
 
 
-def get_game_properties():
+def get_game_properties() -> Iterator[str]:
     """
     Yield one game properties at a time from the game properties file.
     """
