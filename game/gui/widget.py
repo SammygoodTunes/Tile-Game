@@ -45,21 +45,21 @@ class Widget:
 
     def offset_x(self, offset_x: int) -> Self:
         """
-        Set the x offset of the widget, then return the widget itself.
+        Add an offset to the x position of the widget, then return the widget itself.
         """
         self._x += offset_x
         return self
 
     def offset_y(self, offset_y: int) -> Self:
         """
-        Set the y offset of the widget, then return the widget itself.
+        Add an offset to the y position of the widget, then return the widget itself.
         """
         self._y += offset_y
         return self
 
     def offset(self, offset_x: int, offset_y: int) -> Self:
         """
-        Set the x and y offsets of the widget, then return the widget itself.
+        Add an offset to the x and y positions of the widget, then return the widget itself.
         """
         self._x += offset_x
         self._y += offset_y
