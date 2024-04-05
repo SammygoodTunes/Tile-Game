@@ -37,3 +37,4 @@ def main() -> None:
 if __name__ == '__main__':
     logger.debug('Starting game...')
     main()
+    logger.debug('Closing game...')
