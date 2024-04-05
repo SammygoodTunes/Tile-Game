@@ -8,7 +8,6 @@ Author: SammygoodTunes
 Art: Pickmonde, SammygoodTunes
 """
 
-import argparse
 import faulthandler
 from pygame import init, quit, display
 
