@@ -58,6 +58,17 @@ python3 game/main.py --debug  # MacOS / Unix
 
 > Note that using this mode will significally impact the performance of the game, and therefore should not be used when playing normally.
 
+## Server
+
+You can start a Tile-Game server by running: 
+
+```bash
+python server\main.py  # Windows
+python3 server/main.py # MacOS / Unix
+```
+
+Section currently a work-in-progress.
+
 ## Information
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
