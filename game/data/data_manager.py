@@ -35,7 +35,7 @@ def get_game_property(game_property: str) -> str:
         key, value = prop.split(GAME_PROPERTIES_SEPARATOR)
         if key == game_property:
             logger.debug(f'Value of property {game_property} found: {value}')
-            return value
+            return value.strip()
         prop = next(get_game_properties_gen, None)
     logger.warning(f'No value for property {game_property} found.')
     return str()
