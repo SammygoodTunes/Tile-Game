@@ -6,7 +6,7 @@ from game.gui.button import Button
 from game.utils.logger import logger
 
 
-class MainMenu(Screen):
+class MainMenuScreen(Screen):
 	"""
 	Class for creating the main menu screen.
 	"""
