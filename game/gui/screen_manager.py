@@ -6,9 +6,10 @@ from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen
 from game.gui.screens.mainmenu_screen import MainMenuScreen
-from game.gui.screens.servermenu_screen import ServerMenuScreen
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
+from game.gui.screens.serverjoin_screen import ServerJoinScreen
+from game.gui.screens.servermenu_screen import ServerMenuScreen
 from game.utils.logger import logger
 
 
@@ -23,6 +24,7 @@ class Screens:
         self.screen = self.window.screen
         self.main_menu_screen = MainMenuScreen(window)
         self.server_menu_screen = ServerMenuScreen(window)
+        self.server_join_screen = ServerJoinScreen(window)
         self.loading_screen = LoadingScreen(window)
         self.pause_screen = PauseScreen(window)
         self.options_screen = OptionsScreen(window)
@@ -81,9 +83,16 @@ class Screens:
                 elif self.main_menu_screen.quit_button.is_hovering_over() and self.main_menu_screen.get_state():
                     self.window.stop()
 
+                elif self.server_menu_screen.join_button.is_hovering_over() and self.server_menu_screen.get_state():
+                    self.server_menu_screen.set_state(False)
+                    self.server_join_screen.set_state(True)
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
+
+                elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
+                    self.server_join_screen.set_state(False)
+                    self.server_menu_screen.set_state(True)
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
@@ -113,6 +122,7 @@ class Screens:
         """
         self.main_menu_screen.draw()
         self.server_menu_screen.draw()
+        self.server_join_screen.draw()
         self.loading_screen.draw()
         self.pause_screen.draw()
         self.options_screen.draw()
@@ -125,6 +135,7 @@ class Screens:
         """
         self.main_menu_screen.update_ui()
         self.server_menu_screen.update_ui()
+        self.server_join_screen.update_ui()
         self.loading_screen.update_ui()
         self.pause_screen.update_ui()
         self.options_screen.update_ui()
