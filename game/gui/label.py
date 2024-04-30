@@ -1,5 +1,6 @@
 
 from importlib import resources as impr
+from pygame import SRCALPHA, math
 from pygame.font import Font
 from typing import Self
 
@@ -27,6 +28,7 @@ class Label(Widget):
         self._shadow_x: int = self._x
         self._shadow_y: int = self._y
         self._shadow_colour = (0, 0, 0)
+        self._transparency = 1.0
         self._antialiasing = False
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -35,9 +37,10 @@ class Label(Widget):
         Draw the label and its components.
         """
         text_shadow = self.font.render(self._text, self._antialiasing, self._shadow_colour)
+        text_shadow.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
         text = self.font.render(self._text, self._antialiasing, self._colour)
-        screen.blit(text_shadow, (self._shadow_x, self._shadow_y))
-        screen.blit(text, (self._x, self._y))
+        screen.blit(text_shadow, (self._shadow_x, self._shadow_y), SRCALPHA)
+        screen.blit(text, (self._x, self._y), SRCALPHA)
 
     def update(self, window) -> None:
         """
@@ -246,3 +249,16 @@ class Label(Widget):
         Return the label text's shadow colour.
         """
         return self._shadow_colour
+
+    def set_transparency(self, transparency: float) -> Self:
+        """
+        Set the transparency of the label, then return the label itself.
+        """
+        self._transparency = transparency
+        return self
+
+    def get_transparency(self) -> float:
+        """
+        Return the transparency of the label.
+        """
+        return self._transparency
