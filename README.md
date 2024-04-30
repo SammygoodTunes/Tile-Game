@@ -56,7 +56,7 @@ python game\main.py --debug   # Windows
 python3 game/main.py --debug  # MacOS / Unix
 ```
 
-> Note that using this mode will significally impact the performance of the game, and therefore should not be used when playing normally.
+> Note that using this mode will significantly impact the performance of the game, and therefore should not be used when playing normally.
 
 ## Information
 
