@@ -1,12 +1,13 @@
 
-import logging
-import sys
 from os import path, mkdir
-import socket
 from threading import Thread
 from time import strftime
+import logging
+import socket
+import sys
 
 from data.data_manager import get_game_property, SERVER_VER, HOST, LOG_DIR, PORT
+from data.protocol import Protocol
 
 logger = logging.getLogger(__name__)
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,10 +17,10 @@ def client(conn, addr):
     print(f'Connection from: {addr}')
     running = True
     while running:
-        data = conn.recv(8).decode('utf-8')
+        data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
         if data:
             print(f'Message from {addr}: {data}')
-            if data == 'bye':
+            if data == Protocol.DISCONNECT_CMD.encode(Protocol.ENCODING):
                 running = False
     print(f'Connection {addr} closing')
     conn.close()
@@ -39,13 +40,11 @@ def main():
         ]
     )
 
-    logger.info(f'Version found: {SERVER_VER}')
-    logger.info(f'Starting server...')
+    logger.info(f'Starting server (v{get_game_property(SERVER_VER)})...')
 
     # Only IPv4 support for now
     # TODO: Add support for IPv6
     try:
-        running = True
         host = get_game_property(HOST)
         port = int(get_game_property(PORT))
 
@@ -55,6 +54,7 @@ def main():
         sock.bind((host, port))
         print(f'Started server on {host}')
         sock.listen()
+        logger.info(f'Server listening on port {port}')
         while running:
             conn, addr = sock.accept()
             thread = Thread(target=client, args=(conn, addr))
