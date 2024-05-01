@@ -73,7 +73,6 @@ class HorizontalSlider(Widget):
                 if self.is_hovering_over_button():
                     self._button_held = True
                 if self.is_hovering_over() and not self._button_held:
-                    print('update')
                     mouse_x, mouse_y = pygame.mouse.get_pos()
                     self._value = round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value
                     self._value = clamp(self._value, self._min_value, self._max_value)
