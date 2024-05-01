@@ -1,6 +1,6 @@
 
 from importlib import resources as impr
-from pygame import SRCALPHA, math
+from pygame import BLEND_ALPHA_SDL2, math
 from pygame.font import Font
 from typing import Self
 
@@ -25,10 +25,10 @@ class Label(Widget):
         self._font_size = Label.DEFAULT_FONT_SIZE_NORMAL
         self._font_sizes = (Label.DEFAULT_FONT_SIZE_SMALL, Label.DEFAULT_FONT_SIZE_NORMAL, Label.DEFAULT_FONT_SIZE_LARGE)
         self._text = text
+        self._colour = (255, 255, 255)
         self._shadow_x: int = self._x
         self._shadow_y: int = self._y
         self._shadow_colour = (0, 0, 0)
-        self._transparency = 1.0
         self._antialiasing = False
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -39,8 +39,9 @@ class Label(Widget):
         text_shadow = self.font.render(self._text, self._antialiasing, self._shadow_colour)
         text_shadow.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
         text = self.font.render(self._text, self._antialiasing, self._colour)
-        screen.blit(text_shadow, (self._shadow_x, self._shadow_y), SRCALPHA)
-        screen.blit(text, (self._x, self._y), SRCALPHA)
+        text.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
+        screen.blit(text_shadow, (self._shadow_x, self._shadow_y), special_flags=BLEND_ALPHA_SDL2)
+        screen.blit(text, (self._x, self._y), special_flags=BLEND_ALPHA_SDL2)
 
     def update(self, window) -> None:
         """
@@ -170,14 +171,14 @@ class Label(Widget):
 
     def set_colour(self, colour: tuple[int, int, int]) -> Self:
         """
-        Set the label text's foreground colour, then return the label itself.
+        Set the label's text colour, then return the label itself.
         """
         self._colour = colour
         return self
 
     def get_colour(self) -> tuple[int, int, int]:
         """
-        Return the label text's foreground colour.
+        Return the label's text colour.
         """
         return self._colour
 
@@ -239,26 +240,13 @@ class Label(Widget):
 
     def set_shadow_colour(self, shadow_colour) -> Self:
         """
-        Set the label text's shadow colour, then return the label itself.
+        Set the label's text shadow colour, then return the label itself.
         """
         self._shadow_colour = shadow_colour
         return self
 
     def get_shadow_colour(self) -> tuple[int, int, int]:
         """
-        Return the label text's shadow colour.
+        Return the label's text shadow colour.
         """
         return self._shadow_colour
-
-    def set_transparency(self, transparency: float) -> Self:
-        """
-        Set the transparency of the label, then return the label itself.
-        """
-        self._transparency = transparency
-        return self
-
-    def get_transparency(self) -> float:
-        """
-        Return the transparency of the label.
-        """
-        return self._transparency
