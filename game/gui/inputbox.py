@@ -96,7 +96,7 @@ class InputBox(Widget):
     def scroll_text(self):
         """
         Internal method for calculating how and when to scroll text when going beyond the input box.
-        I am aware of how awful it is. Why? because the larger the text, because O(n).
+        I am aware of how awful it is. Why? because O(n).
         What does that mean? the larger the text, the slower it gets! Very bad!
         Might not be that noticeable for small strings, but still...
         TODO: Make it better, fool.
