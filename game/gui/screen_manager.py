@@ -1,6 +1,7 @@
 
 import pygame
 
+from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.mouse_properties import Mouse
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
@@ -87,6 +88,7 @@ class Screens:
                 elif self.server_menu_screen.join_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.server_join_screen.set_state(True)
+                    pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
@@ -94,6 +96,7 @@ class Screens:
                 elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
                     self.server_join_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
+                    pygame.key.set_repeat()
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)

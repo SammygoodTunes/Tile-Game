@@ -1,6 +1,7 @@
 import pygame
-from pygame import mouse, draw, event, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, SRCALPHA
+from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, SRCALPHA
 from pygame.math import clamp
+from string import printable
 from typing import Self
 
 from game.gui.label import Widget, Label
@@ -47,9 +48,9 @@ class InputBox(Widget):
             if e.button == Mouse.LMB:
                 self._selected = self.is_hovering_over()
         if e.type == KEYDOWN and self._selected:
-            if e.key == K_BACKSPACE:
+            if key.get_pressed()[K_BACKSPACE]:
                 self._text_value = self._text_value[:-1]
-            else:
+            elif e.unicode in printable:
                 self._text_value += e.unicode
             self._text_label.set_text(self._text_value)
 
