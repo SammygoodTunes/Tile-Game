@@ -1,5 +1,5 @@
 import pygame
-from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, SRCALPHA
+from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, Surface, BLEND_ALPHA_SDL2
 from pygame.math import clamp
 from string import printable, digits
 from typing import Self
@@ -24,12 +24,13 @@ class InputBox(Widget):
         self._width = width
         self._height = height
         self._selected = False
-        self._background_colour = (255, 255, 255)
+        self._border_colour = (255, 255, 255)
+        self._background_colour = (0, 0, 0)
         self._text_value = text
         self._text_offset = 0
         self._max_text_length = 64
         self._authorised_chars = printable
-        self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((200, 200, 200)).set_transparency(0.5)
+        self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -37,7 +38,11 @@ class InputBox(Widget):
         """
         Draw the input box and its components.
         """
-        draw.rect(screen, self._background_colour, (self._x, self._y, self._width, self._height), 2)
+        background_surface = Surface((self._width, self._height))
+        background_surface.set_alpha(128)
+        draw.rect(background_surface, self._background_colour, (self._x, self._y, self._width, self._height))
+        screen.blit(background_surface, (self._x, self._y), special_flags=BLEND_ALPHA_SDL2)
+        draw.rect(screen, self._border_colour, (self._x, self._y, self._width, self._height), 2)
         if self._text_value.strip():
             self._text_label.draw(screen)
         else:
