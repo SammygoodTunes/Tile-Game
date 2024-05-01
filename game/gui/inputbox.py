@@ -19,14 +19,16 @@ class InputBox(Widget):
     MIN_HEIGHT = 25
     MAX_HEIGHT = 50
 
-    def __init__(self, text: str = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
+    def __init__(self, text: str = "", placeholder = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
         super().__init__(x, y)
         self._width = width
         self._height = height
         self._selected = False
         self._background_colour = (255, 255, 255)
         self._text_value = text
-        self._placeholder_label = Label("", 5, 0).set_font_sizes((8, 10, 12)).set_colour((200, 200, 200)).set_transparency(0.5)
+        self._text_offset = 0
+        self._max_text_length = 64
+        self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((200, 200, 200)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -50,24 +52,29 @@ class InputBox(Widget):
         if e.type == KEYDOWN and self._selected:
             if key.get_pressed()[K_BACKSPACE]:
                 self._text_value = self._text_value[:-1]
-            elif e.unicode in printable:
+                if self._text_offset > 0:
+                    self._text_offset -= 1
+            elif e.unicode in printable and len(self._text_value) < self._max_text_length:
                 self._text_value += e.unicode
-            self._text_label.set_text(self._text_value)
+            self.scroll_text()
+            self._text_label.set_text(self._text_value[self._text_offset:])
 
     def update(self, window) -> None:
         """
         Update the input box and its components.
         """
-        inputbox_width = clamp(window.width * 0.25, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH)
-        inputbox_height = clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT)
+        inputbox_width = int(clamp(window.width * 0.25, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
+        inputbox_height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
+        self._width = inputbox_width
+        self._height = inputbox_height
+        self.scroll_text()
+        self._text_label.set_text(self._text_value[self._text_offset:])
         self._placeholder_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._placeholder_label.center_vertically(self._y, self._height)
         self._placeholder_label.set_x(self._x + 5)
         self._text_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._text_label.center_vertically(self._y, self._height)
         self._text_label.set_x(self._x + 5)
-        self._width = inputbox_width
-        self._height = inputbox_height
         self.refresh()
 
     def refresh(self) -> None:
@@ -76,6 +83,23 @@ class InputBox(Widget):
         """
         self._placeholder_label.refresh()
         self._text_label.refresh()
+
+    def scroll_text(self):
+        """
+        Internal method for calculating how and when to scroll text when going beyond the input box.
+        I am aware of how awful it is. Why? because the larger the text, because O(n).
+        What does that mean? the larger the text, the slower it gets! Very bad!
+        Might not be that noticeable for small strings, but still...
+        TODO: Make it better, fool.
+        """
+        diff = self._text_label.font.size(self._text_value)[0] - (self._width - 10)
+        value = 0
+        if diff > 0 or (diff < 0 < self._text_offset):
+            for i, _ in enumerate(self._text_value):
+                value += self._text_label.font.size(self._text_value[i])[0]
+                if value >= diff + 5:
+                    self._text_offset = i
+                    break
 
     def is_hovering_over(self) -> bool:
         """
@@ -185,3 +209,16 @@ class InputBox(Widget):
         Return the label text of the input box.
         """
         return self._text_value
+
+    def set_max_text_length(self, max_text_length: int) -> Self:
+        """
+        Set the input box's max text length, then return the input box itself.
+        """
+        self._max_text_length = max_text_length
+        return self
+
+    def get_max_text_length(self) -> int:
+        """
+        Return the input box's max text length.
+        """
+        return self._max_text_length
