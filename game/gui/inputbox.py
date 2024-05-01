@@ -1,7 +1,7 @@
 import pygame
 from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, SRCALPHA
 from pygame.math import clamp
-from string import printable
+from string import printable, digits
 from typing import Self
 
 from game.gui.label import Widget, Label
@@ -28,6 +28,7 @@ class InputBox(Widget):
         self._text_value = text
         self._text_offset = 0
         self._max_text_length = 64
+        self._authorised_chars = printable
         self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((200, 200, 200)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
@@ -54,7 +55,7 @@ class InputBox(Widget):
                 self._text_value = self._text_value[:-1]
                 if self._text_offset > 0:
                     self._text_offset -= 1
-            elif e.unicode in printable and len(self._text_value) < self._max_text_length:
+            elif e.unicode in self._authorised_chars and len(self._text_value) < self._max_text_length:
                 self._text_value += e.unicode
             self.scroll_text()
             self._text_label.set_text(self._text_value[self._text_offset:])
@@ -100,6 +101,20 @@ class InputBox(Widget):
                 if value >= diff + 5:
                     self._text_offset = i
                     break
+
+    def authorise_only_ascii(self):
+        """
+        Authorise only ASCII characters in the input box, then return the input box itself.
+        """
+        self._authorised_chars = printable
+        return self
+
+    def authorise_only_numeric(self):
+        """
+        Authorise only numerical values (0-9) in the input box, then return the input box itself.
+        """
+        self._authorised_chars = digits
+        return self
 
     def is_hovering_over(self) -> bool:
         """

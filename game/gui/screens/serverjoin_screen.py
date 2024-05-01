@@ -20,8 +20,8 @@ class ServerJoinScreen(Screen):
 		self.window = window
 		self.faded_surface = self.initialise_surface()
 		self.subtitle_label = Label("Type the IP address and port of the server to join.").set_font_sizes((7, 8, 10)).set_colour((215, 215, 215))
-		self.ip_input = InputBox().set_placeholder_text("Server IP")
-		self.port_input = InputBox().set_placeholder_text("Port")
+		self.ip_input = InputBox(placeholder="Server IP").set_max_text_length(32)
+		self.port_input = InputBox(placeholder="Port").set_max_text_length(5).authorise_only_numeric()
 		self.back_button = Button("Back")
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
