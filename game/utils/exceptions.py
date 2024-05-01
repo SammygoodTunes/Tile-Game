@@ -25,3 +25,12 @@ class OutOfMapBounds(Exception):
 
     def __init__(self, message="Out of map boundaries, make sure to stay within them!") -> None:
         super().__init__(message)
+
+
+class InvalidGamePropertyValue(Exception):
+    """
+    Class for creating the exception caused by an invalid game property value.
+    """
+
+    def __init__(self, message):
+        super().__init__(f'Invalid game property value, expected: {message}')

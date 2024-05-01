@@ -3,6 +3,7 @@ from importlib import resources as impr
 from typing import Iterator
 
 from game import data
+from game.utils.exceptions import InvalidGamePropertyValue
 from game.utils.logger import logger
 
 # KEY=VALUE
@@ -11,6 +12,8 @@ GAME_PROPERTIES_SEPARATOR: str = '='
 
 APP_NAME: str = "APP_NAME"
 APP_VERSION: str = "APP_VER"
+KEY_DELAY: str = "KEY_DELAY"
+KEY_INTERVAL: str = "KEY_INTERVAL"
 
 
 def get_game_properties() -> Iterator[str]:
@@ -39,3 +42,14 @@ def get_game_property(game_property: str) -> str:
         prop = next(get_game_properties_gen, None)
     logger.warning(f'No value for property {game_property} found.')
     return str()
+
+
+def verify_game_property_values():
+    """
+    Check that the game property values entered in the file follow the requirements.
+    An exception is raised if one isn't followed.
+    """
+    if not get_game_property(KEY_DELAY).isnumeric():
+        raise InvalidGamePropertyValue('KEY_DELAY must be an integer')
+    if not get_game_property(KEY_INTERVAL).isnumeric():
+        raise InvalidGamePropertyValue('KEY_INTERVAL must be an integer')

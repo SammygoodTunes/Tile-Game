@@ -2,6 +2,7 @@
 from math import sin
 import pygame
 
+from game.data.data_manager import verify_game_property_values
 from game.core.window import Window
 from game.entity.player import Player
 from game.utils.logger import logger
@@ -23,6 +24,7 @@ class Game(Window):
         self.world: World = World()
         self.player.init(self)
         self.update_all_uis()
+        verify_game_property_values()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def update(self) -> None:
