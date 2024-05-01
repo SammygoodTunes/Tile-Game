@@ -15,7 +15,7 @@ class InputBox(Widget):
     """
 
     MIN_WIDTH = 25
-    MAX_WIDTH = 500
+    MAX_WIDTH = 800
     MIN_HEIGHT = 25
     MAX_HEIGHT = 50
 
@@ -69,10 +69,8 @@ class InputBox(Widget):
         """
         Update the input box and its components.
         """
-        inputbox_width = int(clamp(window.width * 0.25, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
-        inputbox_height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
-        self._width = inputbox_width
-        self._height = inputbox_height
+        self._width = int(clamp(window.width * 0.4, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
+        self._height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
         self.scroll_text()
         self._text_label.set_text(self._text_value[self._text_offset:])
         self._placeholder_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
