@@ -19,13 +19,14 @@ class InputBox(Widget):
     MIN_HEIGHT = 25
     MAX_HEIGHT = 50
 
-    def __init__(self, text: str = "", placeholder = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
+    def __init__(self, text: str = "", placeholder: str = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
         super().__init__(x, y)
         self._width = width
         self._height = height
         self._selected = False
         self._border_colour = (255, 255, 255)
         self._background_colour = (0, 0, 0)
+        self._cursor_colour = (190, 255, 10)
         self._text_value = text
         self._text_offset = 0
         self._max_text_length = 64
@@ -34,7 +35,7 @@ class InputBox(Widget):
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, screen) -> None:
+    def draw(self, screen: Surface) -> None:
         """
         Draw the input box and its components.
         """
@@ -47,6 +48,10 @@ class InputBox(Widget):
             self._text_label.draw(screen)
         elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:
             self._placeholder_label.draw(screen)
+        if self._selected:
+            draw.rect(screen, self._cursor_colour, (
+                self._x + self._text_label.get_total_width() + 4, self._y + 8,
+                2, self._height - 16))
 
     def events(self, e: event.Event) -> None:
         """
@@ -214,6 +219,19 @@ class InputBox(Widget):
         Return the background colour of the input box.
         """
         return self._background_colour
+
+    def set_cursor_colour(self, cursor_colour: tuple[int, int, int]) -> Self:
+        """
+        Set the cursor colour of the input box, then return the input box itself.
+        """
+        self._cursor_colour = cursor_colour
+        return self
+
+    def get_cursor_colour(self) -> tuple[int, int, int]:
+        """
+        Return the cursor colour of the input box.
+        """
+        return self._cursor_colour
 
     def set_placeholder_text(self, placeholder_text: str) -> Self:
         """
