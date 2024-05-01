@@ -13,8 +13,8 @@ class Widget:
     def __init__(self, x: int, y: int) -> None:
         self._x: int = x
         self._y: int = y
-        self._colour = (255, 255, 255)
-        self._enabled = False
+        self._transparency: float = 1.0
+        self._enabled: bool = False
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def set_x(self, x: int) -> Self:
@@ -65,9 +65,22 @@ class Widget:
         self._y += offset_y
         return self
 
+    def set_transparency(self, transparency: float) -> Self:
+        """
+        Set the widget's transparency, then return the widget itself.
+        """
+        self._transparency = transparency
+        return self
+
+    def get_transparency(self) -> float:
+        """
+        Return the widget's transparency.
+        """
+        return self._transparency
+
     def set_state(self, state: bool) -> Self:
         """
-        Set the widget's visibility/interactivity.
+        Set the widget's visibility/interactivity, then return the widget itself.
         """
         self._enabled = state
         logger.debug(
