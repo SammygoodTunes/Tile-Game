@@ -22,6 +22,7 @@ class ServerJoinScreen(Screen):
 		self.subtitle_label = Label("Type the IP address and port of the server to join.").set_font_sizes((7, 8, 10)).set_colour((215, 215, 215))
 		self.ip_input = InputBox(placeholder="Server IP").set_max_text_length(32)
 		self.port_input = InputBox(placeholder="Port").set_max_text_length(5).authorise_only_numeric()
+		self.join_button = Button("Join")
 		self.back_button = Button("Back")
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -50,6 +51,7 @@ class ServerJoinScreen(Screen):
 			self.subtitle_label.draw(self.window.screen)
 			self.ip_input.draw(self.window.screen)
 			self.port_input.draw(self.window.screen)
+			self.join_button.draw(self.window.screen)
 			self.back_button.draw(self.window.screen)
 
 	def update_ui(self) -> None:
@@ -63,8 +65,10 @@ class ServerJoinScreen(Screen):
 		self.ip_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ip_input.get_height())
 		self.port_input.update(self.window)
 		self.port_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, 5)
+		self.join_button.update(self.window)
+		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 10)
 		self.back_button.update(self.window)
-		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 10)
+		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 15)
 
 	def set_state(self, state: bool) -> None:
 		"""
@@ -74,4 +78,5 @@ class ServerJoinScreen(Screen):
 		self.subtitle_label.set_state(state)
 		self.ip_input.set_state(state)
 		self.port_input.set_state(state)
+		self.join_button.set_state(state)
 		self.back_button.set_state(state)
