@@ -45,7 +45,7 @@ class InputBox(Widget):
         draw.rect(screen, self._border_colour, (self._x, self._y, self._width, self._height), 2)
         if self._text_value.strip():
             self._text_label.draw(screen)
-        else:
+        elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:
             self._placeholder_label.draw(screen)
 
     def events(self, e: event.Event) -> None:
@@ -190,6 +190,19 @@ class InputBox(Widget):
         Return the height of the input box.
         """
         return self._height
+
+    def set_border_colour(self, border_colour: tuple[int, int, int]) -> Self:
+        """
+        Set the border colour of the input box, then return the input box itself.
+        """
+        self._border_colour = border_colour
+        return self
+
+    def get_border_colour(self) -> tuple[int, int, int]:
+        """
+        Return the border colour of the input box.
+        """
+        return self._border_colour
 
     def set_background_colour(self, background_colour: tuple[int, int, int]) -> Self:
         """
