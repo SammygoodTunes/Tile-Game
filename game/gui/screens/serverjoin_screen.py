@@ -1,5 +1,6 @@
 
 from pygame import Surface
+from pygame.event import Event
 
 import game.data.data_manager as data_mng
 from game.gui.screens.screen import Screen
@@ -32,6 +33,13 @@ class ServerJoinScreen(Screen):
 		surface.fill((0, 0, 0))
 		surface.set_alpha(96)
 		return surface
+
+	def events(self, e: Event) -> None:
+		"""
+		Track the screen events (unused).
+		"""
+		self.ip_input.events(e)
+		self.port_input.events(e)
 
 	def draw(self) -> None:
 		"""

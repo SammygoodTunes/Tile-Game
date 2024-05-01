@@ -44,6 +44,7 @@ class Screens:
         """
         Track the events of the different screens.
         """
+        self.server_join_screen.events(e)
         self.loading_screen.events(e)
         self.options_screen.events(e)
         self.credits_screen.events(e)

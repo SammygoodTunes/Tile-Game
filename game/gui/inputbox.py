@@ -46,11 +46,12 @@ class InputBox(Widget):
         if e.type == MOUSEBUTTONDOWN:
             if e.button == Mouse.LMB:
                 self._selected = self.is_hovering_over()
-        if e.type == KEYDOWN:
+        if e.type == KEYDOWN and self._selected:
             if e.key == K_BACKSPACE:
                 self._text_value = self._text_value[:-1]
-                return
-            self._text_value += e.unicode
+            else:
+                self._text_value += e.unicode
+            self._text_label.set_text(self._text_value)
 
     def update(self, window) -> None:
         """
@@ -62,7 +63,6 @@ class InputBox(Widget):
         self._placeholder_label.center_vertically(self._y, self._height)
         self._placeholder_label.set_x(self._x + 5)
         self._text_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
-        self._text_label.set_text(self._text_value)
         self._text_label.center_vertically(self._y, self._height)
         self._text_label.set_x(self._x + 5)
         self._width = inputbox_width
