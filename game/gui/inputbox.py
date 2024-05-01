@@ -25,7 +25,7 @@ class InputBox(Widget):
         self._selected = False
         self._background_colour = (255, 255, 255)
         self._text_value = text
-        self._placeholder_label = Label("", 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225))
+        self._placeholder_label = Label("", 5, 0).set_font_sizes((8, 10, 12)).set_colour((200, 200, 200)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -33,8 +33,6 @@ class InputBox(Widget):
         """
         Draw the input box and its components.
         """
-        self._placeholder_label.center_vertically(self._y, self._height)
-        self._text_label.center_vertically(self._y, self._height)
         draw.rect(screen, self._background_colour, (self._x, self._y, self._width, self._height), 2)
         if self._text_value.strip():
             self._text_label.draw(screen)
@@ -61,8 +59,12 @@ class InputBox(Widget):
         inputbox_width = clamp(window.width * 0.25, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH)
         inputbox_height = clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT)
         self._placeholder_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
+        self._placeholder_label.center_vertically(self._y, self._height)
+        self._placeholder_label.set_x(self._x + 5)
         self._text_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._text_label.set_text(self._text_value)
+        self._text_label.center_vertically(self._y, self._height)
+        self._text_label.set_x(self._x + 5)
         self._width = inputbox_width
         self._height = inputbox_height
         self.refresh()
