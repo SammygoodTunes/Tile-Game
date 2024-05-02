@@ -23,7 +23,8 @@ class Connection:
     def connect(self):
         try:
             self.state = Connection.PENDING
-            self.sock.connect((self.host, self.port))
+            print(self.host, socket.gethostbyname(socket.gethostname()))
+            self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
             self.state = Connection.SUCCESS
         except ConnectionRefusedError:
             self.state = Connection.REFUSED
