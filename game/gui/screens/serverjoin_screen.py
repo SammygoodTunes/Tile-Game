@@ -46,14 +46,15 @@ class ServerJoinScreen(Screen):
 		"""
 		Draw the screen and its components.
 		"""
-		if self._enabled:
-			self.window.screen.blit(self.faded_surface, (0, 0))
-			self.subtitle_label.draw(self.window.screen)
-			self.ip_input.draw(self.window.screen)
-			self.port_input.draw(self.window.screen)
-			if self.ip_input.get_text().strip() and self.port_input.get_text().strip():
-				self.join_button.draw(self.window.screen)
-			self.back_button.draw(self.window.screen)
+		if not self._enabled:
+			return
+		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
+		self.window.screen.blit(self.faded_surface, (0, 0))
+		self.subtitle_label.draw(self.window.screen)
+		self.ip_input.draw(self.window.screen)
+		self.port_input.draw(self.window.screen)
+		self.join_button.draw(self.window.screen)
+		self.back_button.draw(self.window.screen)
 
 	def update_ui(self) -> None:
 		"""

@@ -29,7 +29,9 @@ class Button(Widget):
         """
         Draw the button and its components.
         """
-        background_colour = self._background_colour if not self.is_hovering_over() else \
+        if not self._enabled:
+            return
+        background_colour = self._background_colour if not self.is_hovering_over() and self.get_state() else \
             (self._background_colour[0] // 2,
              self._background_colour[1] // 2,
              self._background_colour[2] // 2)
