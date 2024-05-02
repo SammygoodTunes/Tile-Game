@@ -41,6 +41,7 @@ class ServerJoinScreen(Screen):
 		"""
 		self.ip_input.events(e)
 		self.port_input.events(e)
+		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
 
 	def draw(self) -> None:
 		"""

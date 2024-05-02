@@ -66,7 +66,6 @@ class InputBox(Widget):
                 if self._text_offset > 0:
                     self._text_offset -= 1
             elif e.unicode in self._authorised_chars and e.unicode.isascii() and len(self._text_value) < self._max_text_length:
-                print(e.unicode)
                 self._text_value += e.unicode
             self.scroll_text()
             self._text_label.set_text(self._text_value[self._text_offset:])
