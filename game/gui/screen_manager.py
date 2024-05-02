@@ -98,14 +98,16 @@ class Screens:
                 elif self.server_join_screen.join_button.is_hovering_over() and self.server_join_screen.get_state():
                     self.server_join_screen.set_state(False)
                     self.server_connect_screen.set_state(True)
+                    self.server_connect_screen.back_button.set_state(False)
                     self.game.connection_handler.start_connection = True
                 elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
                     self.server_join_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
                     pygame.key.set_repeat()
 
-                elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.get_state():
+                elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
                     self.server_connect_screen.set_state(False)
+                    self.server_connect_screen.reset_info_label()
                     self.server_join_screen.set_state(True)
 
                 elif self.pause_screen.resume_button.is_hovering_over():
