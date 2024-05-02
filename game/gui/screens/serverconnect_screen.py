@@ -50,15 +50,20 @@ class ServerConnectScreen(Screen):
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
                                             self.back_button.get_height())
 
-    def update_info_label(self, message: int):
-        if message == Connection.PENDING:
+    def update_info_label(self, code: int):
+        if code == Connection.PENDING:
             self.info_label.set_text('Connecting to server...').set_colour((255, 255, 0))
-        elif message == Connection.SUCCESS:
+        elif code == Connection.SUCCESS:
             self.info_label.set_text('Connection successful.').set_colour((0, 255, 0))
-        elif message == Connection.REFUSED:
+        elif code == Connection.INVALID:
+            self.info_label.set_text('Unknown host.').set_colour((255, 0, 0))
+        elif code == Connection.REFUSED:
             self.info_label.set_text('Failed to connect to server.').set_colour((255, 0, 0))
-        elif message == Connection.TIMEOUT:
+        elif code == Connection.TIMEOUT:
             self.info_label.set_text('Connection timed out.').set_colour((255, 0, 0))
+        elif code == Connection.NOROUTE:
+            self.info_label.set_text('No route to host.').set_colour((255, 0, 0))
+
         self.update_ui()
 
     def set_state(self, state: bool) -> None:
