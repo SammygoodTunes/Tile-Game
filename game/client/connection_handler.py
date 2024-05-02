@@ -16,12 +16,8 @@ class ConnectionHandler:
     def update(self, join_screen: ServerJoinScreen, connection_screen: ServerConnectScreen):
         if self.start_connection:
             self.start_connection = False
-            try:
-                self.connection = Connection(join_screen.ip_input.get_text(),
-                                             int(join_screen.port_input.get_text()))
-                self.connection.start()
-            except ValueError:
-                self.connection = None
+            self.connection = Connection(join_screen.ip_input.get_text(), int(join_screen.port_input.get_text()))
+            self.connection.start()
 
         if self.connection:
             connection_state = self.connection.state
