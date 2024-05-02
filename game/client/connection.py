@@ -10,7 +10,7 @@ class Connection:
     Class for creating a server connection.
     """
 
-    PENDING, SUCCESS, REFUSED, TIMEOUT = range(0, 4)
+    PENDING, SUCCESS, INVALID, REFUSED, TIMEOUT, NOROUTE = range(0, 6)
 
     def __init__(self, host: str, port: int):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,6 +29,10 @@ class Connection:
             self.state = Connection.REFUSED
         except TimeoutError:
             self.state = Connection.TIMEOUT
+        except socket.gaierror:
+            self.state = Connection.INVALID
+        except OSError:
+            self.state = Connection.NOROUTE
 
     def start(self):
         connection_thread = Thread(target=self.connect)
