@@ -1,0 +1,8 @@
+
+class Protocol:
+    BUFFER_SIZE = 64
+    ENCODING = 'utf-8'
+
+    RECOGNITION_CMD_1 = 'TILEGAME'
+    RECOGNITION_CMD_2 = 'GAMETILE'
+    DISCONNECT_CMD = 'EXIT'

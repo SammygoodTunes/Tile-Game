@@ -3,6 +3,8 @@ import socket
 from threading import Thread
 
 from game.utils.logger import logger
+from game.network.protocol import Protocol
+from game.network.hasher import Hasher
 
 
 class Connection:
@@ -23,9 +25,13 @@ class Connection:
     def connect(self):
         try:
             self.state = Connection.PENDING
-            print(self.host, socket.gethostbyname(socket.gethostname()))
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
-            self.state = Connection.SUCCESS
+            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_1))
+            data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
+            if data and data == Hasher.hash(Protocol.RECOGNITION_CMD_2):
+                self.state = Connection.SUCCESS
+                return
+            self.state = Connection.REFUSED
         except ConnectionRefusedError:
             self.state = Connection.REFUSED
         except TimeoutError:
