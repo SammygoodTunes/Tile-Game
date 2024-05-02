@@ -2,6 +2,7 @@
 from math import sin
 import pygame
 
+from game.client.connection_handler import ConnectionHandler
 from game.data.data_manager import verify_game_property_values
 from game.core.window import Window
 from game.entity.player import Player
@@ -18,7 +19,9 @@ class Game(Window):
     def __init__(self, window_width: int, window_height: int) -> None:
         super().__init__(window_width, window_height)
         self._running: bool = True
+        self.start_game: bool = False
         self.screens.link_game(self)
+        self.connection_handler = ConnectionHandler()
         self.camera: Camera = Camera(speed=350)
         self.player: Player = Player(speed=350)
         self.world: World = World()
@@ -43,6 +46,7 @@ class Game(Window):
             self.player.update(self, self.world.get_map())
             self.world.update(self, self.player)
         else:
+            self.connection_handler.update(self.screens.server_join_screen, self.screens.server_connect_screen)
             self.clear((round(20 * sin(ticks / 5000) + 150), 
                         round(10 * sin(ticks / 2500) + 120),
                         235))

@@ -33,7 +33,6 @@ class Window:
                                  .set_shadow_x(self.width - 73).set_shadow_y(-6)
                                  .set_colour((240, 240, 240)).set_shadow_colour((25, 25, 25)))
         self.paused: bool = False
-        self.start_game: bool = False
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(title)

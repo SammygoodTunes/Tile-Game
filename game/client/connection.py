@@ -1,0 +1,36 @@
+
+import socket
+from threading import Thread
+
+from game.utils.logger import logger
+
+
+class Connection:
+    """
+    Class for creating a server connection.
+    """
+
+    PENDING, SUCCESS, REFUSED, TIMEOUT = range(0, 4)
+
+    def __init__(self, host: str, port: int):
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.settimeout(5.0)
+        self.host = host
+        self.port = port
+        self.state = None
+        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
+    def connect(self):
+        try:
+            self.state = Connection.PENDING
+            self.sock.connect((self.host, self.port))
+            self.state = Connection.SUCCESS
+        except ConnectionRefusedError:
+            self.state = Connection.REFUSED
+        except TimeoutError:
+            self.state = Connection.TIMEOUT
+
+    def start(self):
+        connection_thread = Thread(target=self.connect)
+        connection_thread.start()
+

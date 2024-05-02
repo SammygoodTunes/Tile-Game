@@ -10,6 +10,7 @@ from game.gui.screens.mainmenu_screen import MainMenuScreen
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
+from game.gui.screens.serverconnect_screen import ServerConnectScreen
 from game.gui.screens.servermenu_screen import ServerMenuScreen
 from game.utils.logger import logger
 
@@ -26,6 +27,7 @@ class Screens:
         self.main_menu_screen = MainMenuScreen(window)
         self.server_menu_screen = ServerMenuScreen(window)
         self.server_join_screen = ServerJoinScreen(window)
+        self.server_connect_screen = ServerConnectScreen(window)
         self.loading_screen = LoadingScreen(window)
         self.pause_screen = PauseScreen(window)
         self.options_screen = OptionsScreen(window)
@@ -93,10 +95,18 @@ class Screens:
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
 
+                elif self.server_join_screen.join_button.is_hovering_over() and self.server_join_screen.get_state():
+                    self.server_join_screen.set_state(False)
+                    self.server_connect_screen.set_state(True)
+                    self.game.connection_handler.start_connection = True
                 elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
                     self.server_join_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
                     pygame.key.set_repeat()
+
+                elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.get_state():
+                    self.server_connect_screen.set_state(False)
+                    self.server_join_screen.set_state(True)
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)
@@ -127,6 +137,7 @@ class Screens:
         self.main_menu_screen.draw()
         self.server_menu_screen.draw()
         self.server_join_screen.draw()
+        self.server_connect_screen.draw()
         self.loading_screen.draw()
         self.pause_screen.draw()
         self.options_screen.draw()
@@ -140,6 +151,7 @@ class Screens:
         self.main_menu_screen.update_ui()
         self.server_menu_screen.update_ui()
         self.server_join_screen.update_ui()
+        self.server_connect_screen.update_ui()
         self.loading_screen.update_ui()
         self.pause_screen.update_ui()
         self.options_screen.update_ui()
