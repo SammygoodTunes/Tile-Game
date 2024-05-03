@@ -106,7 +106,7 @@ class InputBox(Widget):
         if diff > 0 or (diff < 0 < self._text_offset):
             for i, _ in enumerate(self._text_value):
                 value += self._text_label.font.size(self._text_value[i])[0]
-                if value >= diff + 5:
+                if value >= diff + 10:
                     self._text_offset = i
                     break
 
