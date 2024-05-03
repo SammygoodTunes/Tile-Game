@@ -64,9 +64,11 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('Connection timed out.').set_colour((255, 0, 0))
         elif code == Connection.NOROUTE:
             self.info_label.set_text('No route to host.').set_colour((255, 0, 0))
+        elif code == Connection.GETDATA:
+            self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:
             self.info_label.set_text('Connecting to server...').set_colour((255, 255, 0))
-        self.back_button.set_state(code > 0)
+        self.back_button.set_state(code >= 0)
         self.update_ui()
 
     def reset_info_label(self):

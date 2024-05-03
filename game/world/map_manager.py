@@ -16,6 +16,10 @@ class Map:
     Class for creating a Map.
     """
 
+    STATE_GENMAP = 'GEN-MAP'
+    STATE_LDMAP = 'LD-MAP'
+    STATE_READY = 'READY'
+
     DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
                + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
                + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
@@ -23,6 +27,7 @@ class Map:
     SEED_RANGE: int = 2 ** 32
 
     def __init__(self, width: int, height: int) -> None:
+        self._state: tuple[str, int] = ('', 0)
         self._data: list = list()
         self._dynatile_data: list = list()
         self._seed = 0
@@ -35,11 +40,9 @@ class Map:
         self._ready = False
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
-        self.generate_data_event = Event()
-        self.load_data_event = Event()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def generate(self, game) -> None:
+    def generate(self) -> None:
         """
         Generate the map data.
         """
@@ -49,55 +52,13 @@ class Map:
         self._surface = Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
         self._dynatile_surface = Surface(
             (self._width * TileManager.SIZE, self._height * TileManager.SIZE), SRCALPHA, 32
-        ).convert_alpha()
-        game.screens.loading_screen.set_state(True)
+        )
+        # Convert_alpha each dynatile
+        # Somehow make a call to set loading screen state to True
 
+        self.set_state(Map.STATE_GENMAP)
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
-        game.screens.loading_screen.progress_bar.set_title("Generating map...")
-        update_thread = Thread(target=self._generate_data, args=(game,))
-        update_thread.start()
-
-        game.screens.loading_screen.update_ui()
-
-        while not self.generate_data_event.is_set():
-            game.update_loop()
-
-        game.screens.loading_screen.progress_bar.set_title("Loading map...")
-        update_thread = Thread(target=self._load_data, args=(game,))
-        update_thread.start()
-
-        game.screens.loading_screen.update_ui()
-
-        while not self.load_data_event.is_set():
-            game.update_loop()
-
-        if not self._data:
-            raise InvalidMapData
-
-        self.generate_data_event.clear()
-        self.load_data_event.clear()
-        game.update_all_uis()
-        game.player.set_ideal_spawnpoint(game.world.get_map(), game.camera)
-        game.screens.loading_screen.set_state(False)
-        self._ready = True
-
-    def regenerate(self, game) -> None:
-        """
-        Regenerate the map data.
-        """
-        self.randomise_seed()
-        self.perlin_noise = noise.PerlinNoise()
-        self._x = -self.get_width_in_pixels() // 2
-        self._y = -self.get_height_in_pixels() // 2
-        game.player.reset()
-        game.camera.reset()
-        self.generate(game)
-
-    def _generate_data(self, game) -> None:
-        """
-        Internal threaded method for generating map data.
-        """
-        game.screens.loading_screen.progress_bar.set_value(0)
+        # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
         for tile in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
@@ -124,25 +85,23 @@ class Map:
 
             if progress != round((tile + 1) / (self._width * self._height) * 100):
                 progress = round((tile + 1) / (self._width * self._height) * 100)
-                game.screens.loading_screen.progress_bar.set_value(progress)
-                logger.debug(f'Generating map data... {progress}%')
-        self.generate_data_event.set()
+                # Set the loading screen progress bar value to 'progress'
+                self.set_state(Map.STATE_GENMAP, progress)
+                logger.info(f'Generating map data... {progress}%')
 
-    def _load_data(self, game) -> None:
-        """
-        Internal threaded method for loading map data.
-        """
+        # Update the loading screen UI to update its info label text
+
+        # Handler info label on loading screen and set it to 'Loading map...'
         progress: int = -1
         for i, tile in enumerate(self._data):
             x: int = (i % self._width) * TileManager.SIZE
             y: int = TileManager.SIZE * (i // self._width)
-            game.world.tile_manager.draw(x, y, tile, self._surface)
+            # Call the tile manager to draw the tiles with params x, y, tile, self._surface
 
             if progress != round((i + 1) / len(self._data) * 100):
                 progress = round((i + 1) / len(self._data) * 100)
-                game.screens.loading_screen.progress_bar.set_value(progress)
-                logger.debug(f'Loading map data... {progress}%')
-        self.load_data_event.set()
+                self.set_state(Map.STATE_LDMAP, progress)
+                logger.info(f'Loading map data... {progress}%')
         '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
@@ -152,11 +111,46 @@ class Map:
                 index += 1
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''
 
+        # Update the loading screen UI to update its info label text
+
+        if not self._data:
+            raise InvalidMapData
+
+        # Update all game UIs
+        # Set the ideal spawnpoint of the player with params this map obj (self) and game camera
+        # Set the loading screen state to false
+        print("Done!")
+        self.set_state(Map.STATE_READY, 0)
+
+    def regenerate(self) -> None:
+        """
+        Regenerate the map data.
+        """
+        self.randomise_seed()
+        self.perlin_noise = noise.PerlinNoise()
+        self._x = -self.get_width_in_pixels() // 2
+        self._y = -self.get_height_in_pixels() // 2
+        # Call player and camera reset() here
+        self.generate()
+
     def update(self, window_obj, player_obj) -> None:
         """
         Update the map (unused).
         """
         pass
+
+    def set_state(self, state: str = '', value: int = 0) -> Self:
+        """
+        Set the state of the map manager, then return the map manager itself.
+        """
+        self._state = (state, value)
+        return self
+
+    def get_state(self) -> tuple[str, int]:
+        """
+        Return the state of the map manager.
+        """
+        return self._state
 
     def get_tile_pos(self, x: int, y: int) -> tuple[int, int]:
         """

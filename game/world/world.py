@@ -17,12 +17,12 @@ class World:
         self._map = Map(256, 256)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def initialise(self, game) -> None:
+    def initialise(self) -> None:
         """
         Initialise the world.
         """
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
-        self._map.regenerate(game)
+        self._map.regenerate()
 
     def update(self, window_obj, player_obj) -> None:
         """

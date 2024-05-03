@@ -22,6 +22,6 @@ class ConnectionHandler:
         if self.connection:
             connection_state = self.connection.state
             connection_screen.update_info_label(connection_state)
-            if connection_state != Connection.PENDING:
+            if connection_state >= 0:
                 self.connection = None
 
