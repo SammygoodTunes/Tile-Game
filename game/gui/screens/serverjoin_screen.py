@@ -41,6 +41,7 @@ class ServerJoinScreen(Screen):
 		"""
 		self.ip_input.events(e)
 		self.port_input.events(e)
+		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
 
 	def draw(self) -> None:
 		"""
@@ -48,7 +49,6 @@ class ServerJoinScreen(Screen):
 		"""
 		if not self._enabled:
 			return
-		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
 		self.window.screen.blit(self.faded_surface, (0, 0))
 		self.subtitle_label.draw(self.window.screen)
 		self.ip_input.draw(self.window.screen)
@@ -71,6 +71,7 @@ class ServerJoinScreen(Screen):
 		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 10)
 		self.back_button.update(self.window)
 		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 15)
+		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
 
 	def set_state(self, state: bool) -> None:
 		"""
