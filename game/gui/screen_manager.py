@@ -47,7 +47,8 @@ class Screens:
         """
         Track the events of the different screens.
         """
-        self.server_join_screen.events(e)
+        if self.server_join_screen.get_state():
+            self.server_join_screen.events(e)
         self.loading_screen.events(e)
         self.options_screen.events(e)
         self.credits_screen.events(e)
@@ -91,6 +92,9 @@ class Screens:
                     self.server_menu_screen.set_state(False)
                     self.server_join_screen.set_state(True)
                     pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
+                    self.server_join_screen.join_button.set_state(
+                        self.server_join_screen.ip_input.get_text().strip() and self.server_join_screen.port_input.get_text().strip()
+                    )
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
@@ -116,9 +120,10 @@ class Screens:
                 elif self.pause_screen.options_button.is_hovering_over():
                     self.pause_screen.set_state(False)
                     self.options_screen.set_state(True)
-                elif self.pause_screen.quit_button.is_hovering_over():
-                    self.window.start_game = False
+                elif self.pause_screen.disconnect_button.is_hovering_over():
+                    self.game.start_game = False
                     self.window.paused = False
+                    self.game.connection_handler.stop_connection = True
                     self.pause_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
 
@@ -128,7 +133,7 @@ class Screens:
                     self.game.player.set_health(100)
                 elif self.gameover_screen.quit_button.is_hovering_over():
                     self.gameover_screen.set_state(False)
-                    self.window.start_game = False
+                    self.game.start_game = False
                     self.window.paused = False
                     self.main_menu_screen.set_state(True)
 
