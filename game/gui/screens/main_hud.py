@@ -21,7 +21,6 @@ class MainHud(Screen):
         self.score_label = Label()
         self.camera_label = Label()
         self.position_label = Label(f"Player (XY): {self.game.player.get_x(): .0f} {self.game.player.get_y(): .0f}")
-        self.regen_button = Button("Regenerate").set_state(True)
         self.health_bar = ProgressBar(title="Player health").set_value(self.game.player.get_health()).set_state(True)
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
@@ -39,7 +38,6 @@ class MainHud(Screen):
                 self.position_label.draw(self.game.screen)
             self.score_label.set_text(f"Score: {self.game.player.score}")
             self.score_label.draw(self.game.screen)
-            self.regen_button.draw(self.game.screen)
             self.health_bar.draw(self.game.screen)
             self.hotbar.draw(self.game.screen)
 
@@ -48,13 +46,11 @@ class MainHud(Screen):
         Update the screen UI.
         """
         y: int = -8
-        self.regen_button.update(self.game)
         self.health_bar.update(self.game)
         self.hotbar.update(self.game)
         self.score_label.update(self.game)
         self.camera_label.update(self.game)
         self.position_label.update(self.game)
-        self.regen_button.set_x(self.game.width - self.regen_button.get_width() - 4).set_y(40)
         self.health_bar.center_horizontally(0, self.game.width).set_y(self.health_bar.get_height())
         self.hotbar.set_y(self.game.height - self.hotbar.get_height() - 16).center_horizontally(0, self.game.width)
         self.score_label.set_x(4)
@@ -65,7 +61,6 @@ class MainHud(Screen):
         y += self.camera_label.get_font_size() + 4
         self.position_label.set_x(4)
         self.position_label.set_y(y)
-        self.regen_button.refresh()
         self.health_bar.refresh()
         self.score_label.refresh()
         self.position_label.refresh()
@@ -78,6 +73,5 @@ class MainHud(Screen):
         self.score_label.set_state(state)
         self.camera_label.set_state(state)
         self.position_label.set_state(state)
-        self.regen_button.set_state(state)
         self.health_bar.set_state(state)
         self.hotbar.set_state(state)

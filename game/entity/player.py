@@ -92,10 +92,7 @@ class Player:
             self.move &= ~(1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
             self.move &= ~(1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
-            if self.main_hud.regen_button.is_hovering_over() and not game.screens.loading_screen.get_state():
-                game.world.get_map().regenerate(game)
-                self.health = 100
-            elif e.button == Mouse.LMB:
+            if e.button == Mouse.LMB:
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 game.world.get_map().tile_manager.draw(
