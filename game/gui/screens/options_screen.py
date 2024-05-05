@@ -76,7 +76,7 @@ class OptionsScreen(Screen):
         self.debug_info_box.update(self.window)
         self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 0)
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() * 2 + 5)
 
     def set_state(self, state: bool) -> None:
         """

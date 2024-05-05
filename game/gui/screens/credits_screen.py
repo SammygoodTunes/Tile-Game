@@ -76,7 +76,7 @@ class CreditsScreen(Screen):
         self.art_value_label.update(self.window)
         self.art_value_label.center_with_offset(0, 0, self.window.width, self.window.height, self.art_value_label.get_total_width() // 2 + 10, y)
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() + 5)
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() * 2 + 5)
 
     def set_state(self, state: bool) -> None:
         """
