@@ -19,7 +19,7 @@ class PauseScreen(Screen):
         self.pause_label = Label(text="Paused").center_horizontally(0, window.width)
         self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
-        self.quit_button = Button(text="Quit").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
+        self.disconnect_button = Button(text="Disconnect").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self) -> Surface:
@@ -40,7 +40,7 @@ class PauseScreen(Screen):
             self.pause_label.draw(self.window.screen)
             self.resume_button.draw(self.window.screen)
             self.options_button.draw(self.window.screen)
-            self.quit_button.draw(self.window.screen)
+            self.disconnect_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
@@ -50,11 +50,11 @@ class PauseScreen(Screen):
         self.pause_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_button.get_height() - 25 - self.pause_label.font.size(self.pause_label.get_text())[1])
         self.faded_surface = self.initialise_surface()
         self.resume_button.update(self.window)
-        self.resume_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.quit_button.get_height() - 5)
+        self.resume_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.disconnect_button.get_height() - 5)
         self.options_button.update(self.window)
         self.options_button.center(0, 0, self.window.width, self.window.height)
-        self.quit_button.update(self.window)
-        self.quit_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.options_button.get_height() + 5)
+        self.disconnect_button.update(self.window)
+        self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.options_button.get_height() + 5)
 
     def set_state(self, state: bool) -> None:
         """
@@ -64,4 +64,4 @@ class PauseScreen(Screen):
         self.pause_label.set_state(state)
         self.resume_button.set_state(state)
         self.options_button.set_state(state)
-        self.quit_button.set_state(state)
+        self.disconnect_button.set_state(state)
