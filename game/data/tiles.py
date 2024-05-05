@@ -26,6 +26,17 @@ class Tile:
     def __repr__(self):
         return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'
 
+    def __eq__(self, obj: Self):
+        if not isinstance(obj, Tile):
+            return False
+        return (
+            self._id == obj.get_id()
+            and self._xy == self.get_xy()
+            and self._resistance == self.get_resistance()
+            and self._damage == self.get_damage()
+            and self._damage_delay == self.get_damage_delay()
+        )
+
     def get_id(self):
         """
         Get the id of the tile.
