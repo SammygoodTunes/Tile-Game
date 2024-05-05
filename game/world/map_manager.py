@@ -17,7 +17,6 @@ class Map:
     """
 
     STATE_GENMAP = 'GEN-MAP'
-    STATE_LDMAP = 'LD-MAP'
     STATE_READY = 'READY'
 
     DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
@@ -28,6 +27,7 @@ class Map:
 
     def __init__(self, width: int, height: int) -> None:
         self._state: tuple[str, int] = ('', 0)
+        self.tile_manager = TileManager()
         self._data: list = list()
         self._dynatile_data: list = list()
         self._seed = 0
@@ -37,23 +37,26 @@ class Map:
         self._height = height
         self._surface = None
         self._dynatile_surface = None
-        self._ready = False
         self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
+    def initialise(self) -> None:
+        """
+        Initialise the map manager.
+        """
+        self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
+        self._surface = Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
+        self._dynatile_surface = Surface(
+            (self._width * TileManager.SIZE, self._height * TileManager.SIZE), SRCALPHA, 32
+        ).convert_alpha()
 
     def generate(self) -> None:
         """
         Generate the map data.
         """
-        self._ready = False
         self._data.clear()
         self._dynatile_data = [False] * self._width * self._height
-        self._surface = Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
-        self._dynatile_surface = Surface(
-            (self._width * TileManager.SIZE, self._height * TileManager.SIZE), SRCALPHA, 32
-        )
-        # Convert_alpha each dynatile
         # Somehow make a call to set loading screen state to True
 
         self.set_state(Map.STATE_GENMAP)
@@ -92,16 +95,6 @@ class Map:
         # Update the loading screen UI to update its info label text
 
         # Handler info label on loading screen and set it to 'Loading map...'
-        progress: int = -1
-        for i, tile in enumerate(self._data):
-            x: int = (i % self._width) * TileManager.SIZE
-            y: int = TileManager.SIZE * (i // self._width)
-            # Call the tile manager to draw the tiles with params x, y, tile, self._surface
-
-            if progress != round((i + 1) / len(self._data) * 100):
-                progress = round((i + 1) / len(self._data) * 100)
-                self.set_state(Map.STATE_LDMAP, progress)
-                logger.info(f'Loading map data... {progress}%')
         '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
@@ -121,6 +114,21 @@ class Map:
         # Set the loading screen state to false
         print("Done!")
         self.set_state(Map.STATE_READY, 0)
+
+    def load(self) -> None:
+        """
+        Draw the map tiles to the surface.
+        """
+        progress: int = -1
+        for i, tile in enumerate(self._data):
+            x: int = (i % self._width) * TileManager.SIZE
+            y: int = TileManager.SIZE * (i // self._width)
+            # Call the tile manager to draw the tiles with params x, y, tile, self._surface
+            self.tile_manager.draw(x, y, tile, self._surface)
+
+            if progress != round((i + 1) / len(self._data) * 100):
+                progress = round((i + 1) / len(self._data) * 100)
+                logger.info(f'Loading map data... {progress}%')
 
     def regenerate(self) -> None:
         """
@@ -181,12 +189,6 @@ class Map:
         """
         screen_x, screen_y = game.world.get_map().tile_to_world_pos(tile_x, tile_y)
         return screen_x - game.camera.x + game.width // 2, screen_y - game.camera.y + game.height // 2
-
-    def is_ready(self) -> bool:
-        """
-        Return whether the map is ready or not.
-        """
-        return self._ready
 
     def set_tile(self, tile_x: int, tile_y: int, tile: Tile) -> Self:
         """
