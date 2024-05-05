@@ -18,7 +18,6 @@ class Server:
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.world_handler: WorldHandler | None = None
 
-
     def client_handler(self, conn, addr):
         """
         Handle incoming server clients.
@@ -34,13 +33,15 @@ class Server:
                 elif data == Hasher.hash(Protocol.RECOGNITION_CMD_REQ):
                     print(f'Sending recognition message to {addr}')
                     conn.send(Hasher.enhash(Protocol.RECOGNITION_CMD_RES))
-                elif data == Hasher.hash(Protocol.MAPDATA_CMD_REQ):
-                    print(f'Sending map data to {addr}')
-                    compressed_map_data = Compressor.compress(self.world_handler.get_map_data())
-                    conn.send(Hasher.enhash(Protocol.MAPDATA_CMD_RES))
-                    conn.send(compressed_map_data + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_data) % Protocol.BUFFER_SIZE))
+                elif data == Hasher.hash(Protocol.MAPOBJ_CMD_REQ):
+                    print(f'Sending map to {addr}')
+                    compressed_map_obj = Compressor.compress(self.world_handler.get_world().get_map())
+                    conn.send(Hasher.enhash(Protocol.MAPOBJ_CMD_RES))
+                    conn.send(compressed_map_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_obj) % Protocol.BUFFER_SIZE))
                     conn.send(Hasher.enhash(Protocol.MAPREADY_CMD))
                     print(f'Sent!')
+                elif data == Hasher.hash(Protocol.DISCONNECT_CMD):
+                    running = False
         print(f'Connection {addr} closing')
         conn.close()
 
@@ -70,7 +71,6 @@ class Server:
         print(f'Started server on {host}')
         self.sock.listen()
         self.world_handler.create_world()
-        data = Compressor.compress(self.world_handler.get_map_data())
         while running:
             conn, addr = self.sock.accept()
             thread = Thread(target=self.client_handler, args=(conn, addr))
