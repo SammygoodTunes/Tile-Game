@@ -50,7 +50,7 @@ class ServerConnectScreen(Screen):
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
                                             self.back_button.get_height())
 
-    def update_info_label(self, code: int | None):
+    def update_info_label(self, code: int):
         """
         Update info label's text and colour based on received connection code, then update the screen UI.
         """
@@ -64,6 +64,10 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('Connection timed out.').set_colour((255, 0, 0))
         elif code == Connection.NOROUTE:
             self.info_label.set_text('No route to host.').set_colour((255, 0, 0))
+        elif code == Connection.DISCONNECTED:
+            self.info_label.set_text('Disconnected.').set_colour((255, 0, 0))
+        elif code == Connection.ERROR:
+            self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
         elif code == Connection.GETDATA:
             self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:
