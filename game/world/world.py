@@ -1,7 +1,7 @@
 
 from pygame import draw
+from typing import Self
 
-from game.data.tiles import Tile
 from game.utils.logger import logger
 from game.world.map_manager import Map
 from game.world.tile_manager import TileManager
@@ -13,7 +13,6 @@ class World:
     """
 
     def __init__(self) -> None:
-        self.tile_manager = TileManager()
         self._map = Map(256, 256)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -21,7 +20,12 @@ class World:
         """
         Initialise the world.
         """
-        self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
+        self._map.initialise()
+
+    def create(self) -> None:
+        """
+        Create the world.
+        """
         self._map.regenerate()
 
     def update(self, window_obj, player_obj) -> None:
@@ -69,6 +73,13 @@ class World:
                 draw.line(screen, (200, 200, 200),
                           (self._map.get_x(), self._map.get_y() + y * TileManager.SIZE),
                           (self._map.get_x() + self._map.get_width_in_pixels(), self._map.get_y() + y * TileManager.SIZE))
+
+    def set_map(self, _map: Map) -> Self:
+        """
+        Set the map, and return the world object itself.
+        """
+        self._map = _map
+        return self
 
     def get_map(self) -> Map:
         """
