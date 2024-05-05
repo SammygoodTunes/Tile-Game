@@ -98,9 +98,9 @@ class Player:
             elif e.button == Mouse.LMB:
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.tile_manager.draw(
-                    self.selected_tile_x * game.world.tile_manager.SIZE,
-                    self.selected_tile_y * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    self.selected_tile_x * game.world.get_map().tile_manager.SIZE,
+                    self.selected_tile_y * game.world.get_map().tile_manager.SIZE,
                     game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
                     game.world.get_map().get_dynatile_surface()
                 )
@@ -108,9 +108,9 @@ class Player:
             if e.button == Mouse.LMB:
                 self.breaking = False
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.tile_manager.draw(
-                    self.selected_tile_x * game.world.tile_manager.SIZE,
-                    self.selected_tile_y * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    self.selected_tile_x * game.world.get_map().tile_manager.SIZE,
+                    self.selected_tile_y * game.world.get_map().tile_manager.SIZE,
                     game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
                     game.world.get_map().get_dynatile_surface()
                 )
@@ -172,8 +172,8 @@ class Player:
                 pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
                                             self.selected_tile_sx,
                                             self.selected_tile_sy,
-                                            game.world.tile_manager.SIZE,
-                                            game.world.tile_manager.SIZE
+                                            game.world.get_map().tile_manager.SIZE,
+                                            game.world.get_map().tile_manager.SIZE
                                         ), 2, 4)
 
     def update(self, game, map_obj: Map) -> None:
@@ -252,9 +252,9 @@ class Player:
                 self.break_tile(game)
             else:
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.tile_manager.draw(
-                    self.prev_selected_tile[0] * game.world.tile_manager.SIZE,
-                    self.prev_selected_tile[1] * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
+                    self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
                     game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                     game.world.get_map().get_dynatile_surface()
                 )
@@ -307,9 +307,9 @@ class Player:
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
 
             if self.prev_selected_tile != (self.selected_tile_x, self.selected_tile_y):
-                game.world.tile_manager.draw(
-                    self.prev_selected_tile[0] * game.world.tile_manager.SIZE,
-                    self.prev_selected_tile[1] * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
+                    self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
                     game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                     game.world.get_map().get_dynatile_surface()
                 )
@@ -321,23 +321,23 @@ class Player:
             if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
                 game.world.get_map().set_dynatile(tile_x, tile_y, True)
                 game.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
-                game.world.tile_manager.draw(
-                    tile_x * game.world.tile_manager.SIZE,
-                    tile_y * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    tile_x * game.world.get_map().tile_manager.SIZE,
+                    tile_y * game.world.get_map().tile_manager.SIZE,
                     Tiles.PLAINS,
                     game.world.get_map().get_dynatile_surface()
                 )
                 logger.debug(f'Destroyed tile ({tile_x}, {tile_y}) of type {tile}')
             else:
-                game.world.tile_manager.draw(
-                    tile_x * game.world.tile_manager.SIZE,
-                    tile_y * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    tile_x * game.world.get_map().tile_manager.SIZE,
+                    tile_y * game.world.get_map().tile_manager.SIZE,
                     game.world.get_map().get_tile(tile_x, tile_y),
                     game.world.get_map().get_dynatile_surface()
                 )
-                game.world.tile_manager.draw(
-                    tile_x * game.world.tile_manager.SIZE,
-                    tile_y * game.world.tile_manager.SIZE,
+                game.world.get_map().tile_manager.draw(
+                    tile_x * game.world.get_map().tile_manager.SIZE,
+                    tile_y * game.world.get_map().tile_manager.SIZE,
                     Tiles.BREAK_TILES_ANIM[int((pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER]) / delay * (len(Tiles.BREAK_TILES_ANIM) - 1))],
                     game.world.get_map().get_dynatile_surface()
                 )
