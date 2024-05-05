@@ -35,7 +35,7 @@ class Game(Window):
         Update all child objects and core of the game.
         """
         ticks = pygame.time.get_ticks()
-        if self.start_game and self.world.get_map().is_ready():
+        if self.start_game:
             self.clear((140, 150, 235))
             self.world.draw(self)
             # self.world.draw_wireframe(self.screen)
@@ -46,10 +46,10 @@ class Game(Window):
             self.player.update(self, self.world.get_map())
             self.world.update(self, self.player)
         else:
-            self.connection_handler.update(self.screens.server_join_screen, self.screens.server_connect_screen)
             self.clear((round(20 * sin(ticks / 5000) + 150), 
                         round(10 * sin(ticks / 2500) + 120),
                         235))
+        self.connection_handler.update(self)
         self.all_events()
         self.screens.update()
         self.draw_fps() 
@@ -83,7 +83,7 @@ class Game(Window):
                 continue
             if e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
-            if not self.paused and self.start_game and self.world.get_map().is_ready():
+            if not self.paused and self.start_game:
                 self.player.events(self, e)
             self.screens.events(e)
         if not self.paused:
@@ -114,3 +114,5 @@ class Game(Window):
         Terminate the game.
         """
         self._running = False
+        if self.connection_handler.connection:
+            self.connection_handler.connection.disconnect()
