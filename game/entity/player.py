@@ -180,7 +180,7 @@ class Player:
         """
         Update the player.
         """
-        if not game.paused and not self.is_dead():
+        if not self.is_dead():
             d: float = game.clock.get_time() / 1000.0
             prev_x: int = self._x
             prev_y: int = self._y

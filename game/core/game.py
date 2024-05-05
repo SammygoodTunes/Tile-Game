@@ -86,8 +86,7 @@ class Game(Window):
             if not self.paused and self.start_game:
                 self.player.events(self, e)
             self.screens.events(e)
-        if not self.paused:
-            self.camera.events(self)
+        self.camera.events(self)
 
     def update_all_uis(self) -> None:
         """
