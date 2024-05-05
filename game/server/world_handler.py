@@ -8,16 +8,16 @@ class WorldHandler:
     """
 
     def __init__(self):
-        self.world: World = World()
+        self._world: World = World()
 
     def create_world(self):
         """
         Create a new server world.
         """
-        self.world.initialise()
+        self._world.create()
 
-    def get_map_data(self):
+    def get_world(self):
         """
-        Return the map data of the world.
+        Return the world object.
         """
-        return self.world.get_map().get_data()
+        return self._world
