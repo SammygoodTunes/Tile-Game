@@ -13,6 +13,7 @@ Currently in-development.
 - [**ZQSD**] -> Move player (temporary)
 - [**LMB**] -> Break cobblestone tiles
 - [**Mouse Wheel**] -> Switch item in hotbar
+- [**Space Bar**] -> Show map
 - [**Escape**] -> Pause menu
 - [**Alt+Enter**] -> Fullscreen mode
 
