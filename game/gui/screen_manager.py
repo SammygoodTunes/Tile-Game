@@ -1,8 +1,8 @@
 
 import pygame
-import socket
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
+from game.data.keys import Keys
 from game.data.mouse_properties import Mouse
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
@@ -53,6 +53,8 @@ class Screens:
         """
         keys = pygame.key.get_pressed()
 
+        self.map_screen.initialise_map()
+
         if self.server_join_screen.get_state():
             self.server_join_screen.events(e)
         self.loading_screen.events(e)
@@ -69,7 +71,7 @@ class Screens:
                 self.map_screen.set_state(False)
 
         if self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead() and not self.game.paused:
-            self.map_screen.set_state(keys[pygame.K_SPACE])
+            self.map_screen.set_state(keys[Keys.SHOW_MAP])
 
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
@@ -110,7 +112,7 @@ class Screens:
                     self.server_connect_screen.set_state(True)
                     self.server_connect_screen.back_button.set_state(False)
                     self.game.server.start()
-                    self.game.connection_handler.host = socket.gethostbyname(socket.gethostname())
+                    self.game.connection_handler.host = 'localhost'
                     self.game.connection_handler.port = 35000
                     self.game.connection_handler.start_connection = True
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
@@ -145,6 +147,7 @@ class Screens:
                     self.game.server.stop()
                     self.pause_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
+                    self.map_screen.reset_map()
 
                 elif self.gameover_screen.respawn_button.is_hovering_over():
                     self.gameover_screen.set_state(False)
