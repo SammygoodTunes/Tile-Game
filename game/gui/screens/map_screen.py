@@ -9,7 +9,6 @@ from game.gui.label import Label
 from game.utils.logger import logger
 
 
-
 class MapScreen(Screen):
     """
     Class for creating the map screen.
@@ -39,7 +38,6 @@ class MapScreen(Screen):
         """
         if self._got_map or self.game.world.get_map().get_state()[0] != MapStates.READY or not self.game.start_game:
             return
-        print("GET NEW MAP")
         coefficient = min(self.game.width / self.game.world.get_map().get_width_in_pixels() * 0.5,
                           self.game.height / self.game.world.get_map().get_height_in_pixels() * 0.5)
         self.scaled_map = smoothscale_by(self.game.world.get_map().get_surface(), round(coefficient, 2))
