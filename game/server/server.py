@@ -106,6 +106,7 @@ class Server:
             self.state = Server.IDLE
             self.test()
             print(f'Server closed.')
+            self.sock = None
             self.world_handler = None
 
     @staticmethod
