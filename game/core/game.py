@@ -118,3 +118,6 @@ class Game(Window):
         self._running = False
         if self.connection_handler.connection:
             self.connection_handler.connection.disconnect()
+        if self.server.sock:
+            self.server.stop()
+
