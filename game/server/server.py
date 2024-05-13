@@ -82,7 +82,7 @@ class Server:
         # Only IPv4 support for now
         # TODO: Add support for IPv6
 
-        host = socket.gethostbyname(socket.gethostname())
+        host = '0.0.0.0'
         port = 35000
 
         self.sock.bind((host, port))
