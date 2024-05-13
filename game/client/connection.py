@@ -42,6 +42,7 @@ class Connection:
             self.state = Connection.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
             self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
+            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
             if data and data == Hasher.hash(Protocol.RECOGNITION_CMD_RES):
                 self.sock.send(Hasher.enhash(Protocol.MAPOBJ_CMD_REQ))

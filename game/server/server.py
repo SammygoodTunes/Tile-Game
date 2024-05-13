@@ -20,7 +20,7 @@ class Server:
     def __init__(self):
         self.state = Server.IDLE
         self.player_count = 0
-        self.sock = None
+        self.sock: socket.socket | None = None
         self.timeout = 0
         self.world_handler: WorldHandler | None = None
 
@@ -28,6 +28,11 @@ class Server:
         """
         Handle incoming server clients.
         """
+        data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
+        if data != Hasher.hash(Protocol.RECOGNITION_CMD_REQ):
+            conn.close()
+            return
+        self.sock.settimeout(None)
         print(f'Connection from: {addr}')
         self.player_count += 1
         running = True
