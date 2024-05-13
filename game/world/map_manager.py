@@ -4,6 +4,7 @@ from random import randint, seed
 from threading import Thread, Event
 from typing import Self
 
+from game.data.states import MapStates
 from game.data.tiles import Tile, Tiles
 from game.utils.exceptions import InvalidMapData
 from game.utils.logger import logger
@@ -15,9 +16,6 @@ class Map:
     """
     Class for creating a Map.
     """
-
-    STATE_GENMAP = 'GEN-MAP'
-    STATE_READY = 'READY'
 
     DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
                + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
@@ -59,7 +57,7 @@ class Map:
         self._dynatile_data = [False] * self._width * self._height
         # Somehow make a call to set loading screen state to True
 
-        self.set_state(Map.STATE_GENMAP)
+        self.set_state(MapStates.GENMAP)
         print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
@@ -89,7 +87,7 @@ class Map:
             if progress != round((tile + 1) / (self._width * self._height) * 100):
                 progress = round((tile + 1) / (self._width * self._height) * 100)
                 # Set the loading screen progress bar value to 'progress'
-                self.set_state(Map.STATE_GENMAP, progress)
+                self.set_state(MapStates.GENMAP, progress)
                 logger.info(f'Generating map data... {progress}%')
 
         # Update the loading screen UI to update its info label text
@@ -113,7 +111,7 @@ class Map:
         # Set the ideal spawnpoint of the player with params this map obj (self) and game camera
         # Set the loading screen state to false
         print("Done!")
-        self.set_state(Map.STATE_READY, 0)
+        self.set_state(MapStates.READY, 0)
 
     def load(self) -> None:
         """
