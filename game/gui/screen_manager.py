@@ -1,5 +1,6 @@
 
 import pygame
+import socket
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.mouse_properties import Mouse
@@ -95,6 +96,14 @@ class Screens:
                     self.server_join_screen.join_button.set_state(
                         self.server_join_screen.ip_input.get_text().strip() and self.server_join_screen.port_input.get_text().strip()
                     )
+                elif self.server_menu_screen.create_button.is_hovering_over() and self.server_menu_screen.get_state():
+                    self.server_menu_screen.set_state(False)
+                    self.server_connect_screen.set_state(True)
+                    self.server_connect_screen.back_button.set_state(False)
+                    self.game.server.start()
+                    self.game.connection_handler.host = socket.gethostbyname(socket.gethostname())
+                    self.game.connection_handler.port = 35000
+                    self.game.connection_handler.start_connection = True
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
@@ -124,6 +133,7 @@ class Screens:
                     self.game.start_game = False
                     self.window.paused = False
                     self.game.connection_handler.stop_connection = True
+                    self.game.server.stop()
                     self.pause_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
 

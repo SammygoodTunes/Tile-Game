@@ -10,14 +10,16 @@ class ConnectionHandler:
     def __init__(self):
         self.start_connection = False
         self.stop_connection = False
+        self.host = None
+        self.port = None
         self.connection: Connection | None = None
 
     def update(self, game):
         if self.start_connection:
             self.start_connection = False
             self.connection = Connection(
-                game.screens.server_join_screen.ip_input.get_text(),
-                int(game.screens.server_join_screen.port_input.get_text()))
+                game.screens.server_join_screen.ip_input.get_text() if self.host is None else self.host,
+                int(game.screens.server_join_screen.port_input.get_text()) if self.port is None else self.port)
             self.connection.start(task=Tasks.CONNECT)
 
         if self.stop_connection:

@@ -6,6 +6,7 @@ from game.client.connection_handler import ConnectionHandler
 from game.data.data_manager import verify_game_property_values
 from game.core.window import Window
 from game.entity.player import Player
+from game.server.server import Server
 from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.world import World
@@ -22,6 +23,7 @@ class Game(Window):
         self.start_game: bool = False
         self.screens.link_game(self)
         self.connection_handler = ConnectionHandler()
+        self.server = Server()
         self.camera: Camera = Camera(speed=350)
         self.player: Player = Player(speed=350)
         self.world: World = World()
@@ -50,6 +52,7 @@ class Game(Window):
                         round(10 * sin(ticks / 2500) + 120),
                         235))
         self.connection_handler.update(self)
+        self.server.update()
         self.all_events()
         self.screens.update()
         self.draw_fps() 

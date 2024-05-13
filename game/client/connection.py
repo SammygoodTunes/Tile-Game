@@ -1,7 +1,7 @@
 
 import socket
 from threading import Thread
-from time import time, sleep
+from time import sleep
 
 from game.utils.logger import logger
 from game.network.protocol import Protocol
