@@ -8,6 +8,7 @@ from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen
 from game.gui.screens.mainmenu_screen import MainMenuScreen
+from game.gui.screens.map_screen import MapScreen
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
@@ -34,6 +35,7 @@ class Screens:
         self.options_screen = OptionsScreen(window)
         self.credits_screen = CreditsScreen(window)
         self.gameover_screen = GameoverScreen(window)
+        self.map_screen = MapScreen(window)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def link_game(self, game_obj) -> None:
@@ -43,11 +45,14 @@ class Screens:
         """
         self.game = game_obj
         self.options_screen.game = self.game
+        self.map_screen.game = self.game
 
     def events(self, e: pygame.event.Event) -> None:
         """
         Track the events of the different screens.
         """
+        keys = pygame.key.get_pressed()
+
         if self.server_join_screen.get_state():
             self.server_join_screen.events(e)
         self.loading_screen.events(e)
@@ -61,6 +66,10 @@ class Screens:
                 else:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                 self.window.paused = self.pause_screen.get_state()
+                self.map_screen.set_state(False)
+
+        if self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead() and not self.game.paused:
+            self.map_screen.set_state(keys[pygame.K_SPACE])
 
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == Mouse.LMB:
@@ -160,6 +169,7 @@ class Screens:
         self.options_screen.draw()
         self.credits_screen.draw()
         self.gameover_screen.draw()
+        self.map_screen.draw()
 
     def update_ui(self) -> None:
         """
@@ -174,4 +184,5 @@ class Screens:
         self.options_screen.update_ui()
         self.credits_screen.update_ui()
         self.gameover_screen.update_ui()
+        self.map_screen.update_ui()
 
