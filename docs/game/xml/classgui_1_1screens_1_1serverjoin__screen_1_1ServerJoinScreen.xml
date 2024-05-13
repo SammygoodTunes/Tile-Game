@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::serverjoin_screen::ServerJoinScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a3d0a647d738c068f039137ee1ef6dc42" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="20" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9330e75c21edfc569e1742be508b17fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="21" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af7584be0da0ef6a607223cb11f2e8fd3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::subtitle_label</definition>
+        <argsstring></argsstring>
+        <name>subtitle_label</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.subtitle_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="22" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a8b90426fbe5a71c9524ef2e05a45548f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::ip_input</definition>
+        <argsstring></argsstring>
+        <name>ip_input</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.ip_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="23" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a663b319401fdbe9291f93412568afe59" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::port_input</definition>
+        <argsstring></argsstring>
+        <name>port_input</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.port_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="24" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a904a9c01f6bef55aa056d12fd1fe16d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::join_button</definition>
+        <argsstring></argsstring>
+        <name>join_button</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.join_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="25" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a5ad829a2df0fab0327714fb60e9e21b1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.serverjoin_screen.ServerJoinScreen::back_button</definition>
+        <argsstring></argsstring>
+        <name>back_button</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.back_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="26" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aaa257f6df57749b89f3acfacedddcbbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.serverjoin_screen.ServerJoinScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a3d0a647d738c068f039137ee1ef6dc42" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="18" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a53df4da4e416b86adbbc7e95d18551b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.serverjoin_screen.ServerJoinScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Initialise the screen&apos;s surface.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="29" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ac716a5a691076de907755bb87725fa72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.serverjoin_screen.ServerJoinScreen.events</definition>
+        <argsstring>(self, Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Track the screen events (unused).</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="38" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="38" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ad2869dae354c8595dedb7c7627a5ff81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.serverjoin_screen.ServerJoinScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Draw the screen and its components.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="46" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="46" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a0b1e32ca33752e446103c5831aeafd30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Update the screen UI.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="59" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="59" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ae5a3462957d05daba951badec713ae10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.serverjoin_screen.ServerJoinScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.serverjoin_screen.ServerJoinScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the screen&apos;s visibility/interactivity.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/serverjoin_screen.py" line="76" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="76" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating the server join screen.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.serverjoin_screen.ServerJoinScreen</label>
+        <link refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.serverjoin_screen.ServerJoinScreen</label>
+        <link refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="game/gui/screens/serverjoin_screen.py" line="13" column="1" bodyfile="game/gui/screens/serverjoin_screen.py" bodystart="13" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aaa257f6df57749b89f3acfacedddcbbb" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a5ad829a2df0fab0327714fb60e9e21b1" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>back_button</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ad2869dae354c8595dedb7c7627a5ff81" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ac716a5a691076de907755bb87725fa72" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>events</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9330e75c21edfc569e1742be508b17fe" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a53df4da4e416b86adbbc7e95d18551b4" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a8b90426fbe5a71c9524ef2e05a45548f" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>ip_input</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a904a9c01f6bef55aa056d12fd1fe16d6" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>join_button</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a663b319401fdbe9291f93412568afe59" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>port_input</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ae5a3462957d05daba951badec713ae10" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af7584be0da0ef6a607223cb11f2e8fd3" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>subtitle_label</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a0b1e32ca33752e446103c5831aeafd30" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a3d0a647d738c068f039137ee1ef6dc42" prot="public" virt="non-virtual"><scope>gui::screens::serverjoin_screen::ServerJoinScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

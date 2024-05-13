@@ -1,6 +1,7 @@
 var classdata_1_1tiles_1_1Tile =
 [
     [ "__init__", "classdata_1_1tiles_1_1Tile.html#afdcaa0ad6217eab53901fd833c3d5198", null ],
+    [ "__eq__", "classdata_1_1tiles_1_1Tile.html#ad5f9c3839108c9c568330514b08bff23", null ],
     [ "__repr__", "classdata_1_1tiles_1_1Tile.html#af49fae56a7283e7e052e807a7a03ec65", null ],
     [ "get_damage", "classdata_1_1tiles_1_1Tile.html#ab339756ae7b4426da1aca54568779ac4", null ],
     [ "get_damage_delay", "classdata_1_1tiles_1_1Tile.html#a254e54f0f077b746015ffddcbd371c3c", null ],
@@ -13,6 +14,7 @@ var classdata_1_1tiles_1_1Tile =
     [ "set_xy", "classdata_1_1tiles_1_1Tile.html#a70401d1bd83c605f360e3b12f3f1a052", null ],
     [ "_damage", "classdata_1_1tiles_1_1Tile.html#adc27ab61885a1a82fd702ccf10c357dd", null ],
     [ "_damage_delay", "classdata_1_1tiles_1_1Tile.html#acc45b2ddb25c2a3823837066b8876eeb", null ],
+    [ "_id", "classdata_1_1tiles_1_1Tile.html#ace24a37f13a8dd90fa016c3edf47b9c0", null ],
     [ "_resistance", "classdata_1_1tiles_1_1Tile.html#a502bc2a8e36f885aee9b07ed147c8beb", null ],
     [ "_xy", "classdata_1_1tiles_1_1Tile.html#af448bc041fe7ed3f7cc30654a8b2726a", null ]
 ];

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classserver_1_1Server" kind="class" language="Python" prot="public">
+    <compoundname>server::Server</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>server.Server::IDLE</definition>
+        <argsstring></argsstring>
+        <name>IDLE</name>
+        <qualifiedname>server.Server.IDLE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="18" column="1" bodyfile="game/server/server.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>server.Server::RUNNING</definition>
+        <argsstring></argsstring>
+        <name>RUNNING</name>
+        <qualifiedname>server.Server.RUNNING</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="18" column="1" bodyfile="game/server/server.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>server.Server.state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="21" column="1" bodyfile="game/server/server.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::player_count</definition>
+        <argsstring></argsstring>
+        <name>player_count</name>
+        <qualifiedname>server.Server.player_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="22" column="1" bodyfile="game/server/server.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <qualifiedname>server.Server.timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="24" column="1" bodyfile="game/server/server.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::sock</definition>
+        <argsstring></argsstring>
+        <name>sock</name>
+        <qualifiedname>server.Server.sock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="70" column="1" bodyfile="game/server/server.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::world_handler</definition>
+        <argsstring></argsstring>
+        <name>world_handler</name>
+        <qualifiedname>server.Server.world_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="71" column="1" bodyfile="game/server/server.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classserver_1_1Server_1ab327c6453df454a2dce379bbb043dc94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>server.Server.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="20" column="1" bodyfile="game/server/server.py" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.client_handler</definition>
+        <argsstring>(self, conn, addr)</argsstring>
+        <name>client_handler</name>
+        <qualifiedname>server.Server.client_handler</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>addr</type>
+          <defname>addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle incoming server clients.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="27" column="1" bodyfile="game/server/server.py" bodystart="27" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <qualifiedname>server.Server.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="62" column="1" bodyfile="game/server/server.py" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <qualifiedname>server.Server.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run the server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="65" column="1" bodyfile="game/server/server.py" bodystart="65" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.start</definition>
+        <argsstring>(self)</argsstring>
+        <name>start</name>
+        <qualifiedname>server.Server.start</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="98" column="1" bodyfile="game/server/server.py" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <qualifiedname>server.Server.stop</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="103" column="1" bodyfile="game/server/server.py" bodystart="103" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>server.Server.test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>server.Server.test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/server.py" line="113" column="1" bodyfile="game/server/server.py" bodystart="113" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a new Server.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/server/server.py" line="13" column="1" bodyfile="game/server/server.py" bodystart="13" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classserver_1_1Server_1ab327c6453df454a2dce379bbb043dc94" prot="public" virt="non-virtual"><scope>server::Server</scope><name>__init__</name></member>
+      <member refid="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" prot="public" virt="non-virtual"><scope>server::Server</scope><name>client_handler</name></member>
+      <member refid="classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be" prot="public" virt="non-virtual"><scope>server::Server</scope><name>IDLE</name></member>
+      <member refid="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" prot="public" virt="non-virtual"><scope>server::Server</scope><name>player_count</name></member>
+      <member refid="classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8" prot="public" virt="non-virtual"><scope>server::Server</scope><name>run</name></member>
+      <member refid="classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e" prot="public" virt="non-virtual"><scope>server::Server</scope><name>RUNNING</name></member>
+      <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" prot="public" virt="non-virtual"><scope>server::Server</scope><name>sock</name></member>
+      <member refid="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" prot="public" virt="non-virtual"><scope>server::Server</scope><name>start</name></member>
+      <member refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" prot="public" virt="non-virtual"><scope>server::Server</scope><name>state</name></member>
+      <member refid="classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569" prot="public" virt="non-virtual"><scope>server::Server</scope><name>stop</name></member>
+      <member refid="classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a" prot="public" virt="non-virtual"><scope>server::Server</scope><name>test</name></member>
+      <member refid="classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb" prot="public" virt="non-virtual"><scope>server::Server</scope><name>timeout</name></member>
+      <member refid="classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f" prot="public" virt="non-virtual"><scope>server::Server</scope><name>update</name></member>
+      <member refid="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" prot="public" virt="non-virtual"><scope>server::Server</scope><name>world_handler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

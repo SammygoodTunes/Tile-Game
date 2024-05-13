@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1map__screen_1_1MapScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::map_screen::MapScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="19" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="20" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="21" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="40" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen::scaled_map</definition>
+        <argsstring></argsstring>
+        <name>scaled_map</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.scaled_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="41" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.map_screen.MapScreen.__init__</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" kindref="member">game</ref></type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="17" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="17" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.map_screen.MapScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="26" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gui.screens.map_screen.MapScreen.initialise_map</definition>
+        <argsstring>(self, bool force=False)</argsstring>
+        <name>initialise_map</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.initialise_map</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the map surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="35" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="35" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.map_screen.MapScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="47" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="47" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.map_screen.MapScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="61" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="61" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.map_screen.MapScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.map_screen.MapScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/map_screen.py" line="71" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="71" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the map screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.map_screen.MapScreen</label>
+        <link refid="classgui_1_1screens_1_1map__screen_1_1MapScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.map_screen.MapScreen</label>
+        <link refid="classgui_1_1screens_1_1map__screen_1_1MapScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="game/gui/screens/map_screen.py" line="12" column="1" bodyfile="game/gui/screens/map_screen.py" bodystart="12" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>game</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>initialise_map</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>map</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>scaled_map</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>title_label</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>update_ui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::mainmenu_screen::MainMenuScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="16" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a33c40251e5c8ee78268dd560416de3b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="17" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1abaf7a85900f5e28912577b1afde4d1f6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::play_button</definition>
+        <argsstring></argsstring>
+        <name>play_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.play_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="18" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a1e40def2aab27436cfed6475bb6113c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::options_button</definition>
+        <argsstring></argsstring>
+        <name>options_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.options_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="19" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b6c147847ab9e50449ea31b601b7c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::credits_button</definition>
+        <argsstring></argsstring>
+        <name>credits_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.credits_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="20" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ad0ca1061d9deccb1f16dfcf88027d354" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.mainmenu_screen.MainMenuScreen::quit_button</definition>
+        <argsstring></argsstring>
+        <name>quit_button</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.quit_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="21" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b149168df4dc670016d3736e6730f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.mainmenu_screen.MainMenuScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="14" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="14" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1aee88e09035a4ecceee833c3688f9b9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.mainmenu_screen.MainMenuScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Draw the screen and its components.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="25" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a697cfa380bddbe106fae5f4f16936fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.mainmenu_screen.MainMenuScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Update the screen UI.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="36" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="36" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8d4c44ca2c978fc64e525d86a25af5ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.mainmenu_screen.MainMenuScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.mainmenu_screen.MainMenuScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the screen&apos;s visibility/interactivity.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/mainmenu_screen.py" line="51" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="51" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating the main menu screen.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.mainmenu_screen.MainMenuScreen</label>
+        <link refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.mainmenu_screen.MainMenuScreen</label>
+        <link refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="game/gui/screens/mainmenu_screen.py" line="9" column="1" bodyfile="game/gui/screens/mainmenu_screen.py" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b149168df4dc670016d3736e6730f6" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b6c147847ab9e50449ea31b601b7c2" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>credits_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1aee88e09035a4ecceee833c3688f9b9c1" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a1e40def2aab27436cfed6475bb6113c7" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>options_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1abaf7a85900f5e28912577b1afde4d1f6" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>play_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ad0ca1061d9deccb1f16dfcf88027d354" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>quit_button</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8d4c44ca2c978fc64e525d86a25af5ae" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a33c40251e5c8ee78268dd560416de3b2" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>title_label</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a697cfa380bddbe106fae5f4f16936fb6" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0" prot="public" virt="non-virtual"><scope>gui::screens::mainmenu_screen::MainMenuScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

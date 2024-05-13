@@ -26,7 +26,13 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341">screen</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a647d8eb2c2e337efee82d04e499e4b7b">main_menu</link></para>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a5c9c71d40c9c04f17df2fd873b3397c6">main_menu_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a01a4aeb84d05d2e9bdf1573353581510">server_menu_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a2507ed22bdb1164d3ddb7a8475304ee8">server_join_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1ac3d979d0f81881cd048e7fbd8380fd00">server_connect_screen</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1afbdc3c8162678db8583aba629623222d">loading_screen</link></para>
 </listitem>
@@ -37,6 +43,8 @@
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a3fd9a3c6007911da53e19e1ba971d142">credits_screen</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a39700556405bddc8add791eec0add77d">gameover_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1ab7e41aaf3ab06d1379951c62c8d8d9dd">map_screen</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -112,11 +120,16 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 <indexterm><primary>loading_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>loading_screen</secondary></indexterm>
 <para><computeroutput>gui.screen_manager.Screens.loading_screen</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a647d8eb2c2e337efee82d04e499e4b7b"/><section>
-    <title>main_menu</title>
-<indexterm><primary>main_menu</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
-<indexterm><primary>gui.screen_manager.Screens</primary><secondary>main_menu</secondary></indexterm>
-<para><computeroutput>gui.screen_manager.Screens.main_menu</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a5c9c71d40c9c04f17df2fd873b3397c6"/><section>
+    <title>main_menu_screen</title>
+<indexterm><primary>main_menu_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>main_menu_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.main_menu_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ab7e41aaf3ab06d1379951c62c8d8d9dd"/><section>
+    <title>map_screen</title>
+<indexterm><primary>map_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>map_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.map_screen</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a1143bf620c4cc39f4933c5942596c749"/><section>
     <title>options_screen</title>
 <indexterm><primary>options_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
@@ -132,6 +145,21 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 <indexterm><primary>screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>screen</secondary></indexterm>
 <para><computeroutput>gui.screen_manager.Screens.screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ac3d979d0f81881cd048e7fbd8380fd00"/><section>
+    <title>server_connect_screen</title>
+<indexterm><primary>server_connect_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>server_connect_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.server_connect_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a2507ed22bdb1164d3ddb7a8475304ee8"/><section>
+    <title>server_join_screen</title>
+<indexterm><primary>server_join_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>server_join_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.server_join_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a01a4aeb84d05d2e9bdf1573353581510"/><section>
+    <title>server_menu_screen</title>
+<indexterm><primary>server_menu_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>server_menu_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.server_menu_screen</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646"/><section>
     <title>window</title>
 <indexterm><primary>window</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>

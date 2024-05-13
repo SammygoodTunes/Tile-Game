@@ -4,6 +4,34 @@
     <compoundname>core::game::Game</compoundname>
     <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
     <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>core.game.Game::connection_handler</definition>
+        <argsstring></argsstring>
+        <name>connection_handler</name>
+        <qualifiedname>core.game.Game.connection_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/core/game.py" line="25" column="1" bodyfile="game/core/game.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcore_1_1game_1_1Game_1abbd59111e59987b90d149e8aae23b0df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>core.game.Game::server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <qualifiedname>core.game.Game.server</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/core/game.py" line="26" column="1" bodyfile="game/core/game.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a" prot="public" static="no" mutable="no">
         <type></type>
         <definition>core.game.Game::player</definition>
@@ -16,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="42" bodyend="-1"/>
+        <location file="game/core/game.py" line="49" column="1" bodyfile="game/core/game.py" bodystart="49" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -32,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="109" bodyend="-1"/>
+        <location file="game/core/game.py" line="118" column="1" bodyfile="game/core/game.py" bodystart="118" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -60,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="17" bodyend="27"/>
+        <location file="game/core/game.py" line="20" column="1" bodyfile="game/core/game.py" bodystart="20" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1aec364c856e2f96a027fcd986f45ced06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -80,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="28" bodyend="51"/>
+        <location file="game/core/game.py" line="35" column="1" bodyfile="game/core/game.py" bodystart="35" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1ac8f599b19e7b6015ae0ca3b8146749f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -100,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="54" bodyend="62"/>
+        <location file="game/core/game.py" line="63" column="1" bodyfile="game/core/game.py" bodystart="63" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1af1f689367961a3e94a7202fe7283f556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -120,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="63" bodyend="84"/>
+        <location file="game/core/game.py" line="72" column="1" bodyfile="game/core/game.py" bodystart="72" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1a41a90447bd90d3f047d1d8668732bb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -140,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="85" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="85" bodyend="92"/>
+        <location file="game/core/game.py" line="94" column="1" bodyfile="game/core/game.py" bodystart="94" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -160,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="93" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="93" bodyend="98"/>
+        <location file="game/core/game.py" line="102" column="1" bodyfile="game/core/game.py" bodystart="102" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -180,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="99" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="99" bodyend="104"/>
+        <location file="game/core/game.py" line="108" column="1" bodyfile="game/core/game.py" bodystart="108" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -200,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="105" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="105" bodyend="110"/>
+        <location file="game/core/game.py" line="114" column="1" bodyfile="game/core/game.py" bodystart="114" bodyend="124"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -231,14 +259,16 @@
         <label>Window</label>
       </node>
     </collaborationgraph>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="12" bodyend="110"/>
+    <location file="game/core/game.py" line="15" column="1" bodyfile="game/core/game.py" bodystart="15" bodyend="124"/>
     <listofallmembers>
       <member refid="classcore_1_1game_1_1Game_1af8c9bb7a92a0c9db391cdd60548e3eb0" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>__init__</name></member>
       <member refid="classcore_1_1game_1_1Game_1a56b7ba477a2db36d3fb993849399f4db" prot="protected" virt="non-virtual"><scope>core::game::Game</scope><name>_running</name></member>
       <member refid="classcore_1_1game_1_1Game_1af1f689367961a3e94a7202fe7283f556" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>all_events</name></member>
+      <member refid="classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>connection_handler</name></member>
       <member refid="classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>is_debug_mode_enabled</name></member>
       <member refid="classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>is_running</name></member>
       <member refid="classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>player</name></member>
+      <member refid="classcore_1_1game_1_1Game_1abbd59111e59987b90d149e8aae23b0df" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>server</name></member>
       <member refid="classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>stop</name></member>
       <member refid="classcore_1_1game_1_1Game_1aec364c856e2f96a027fcd986f45ced06" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>update</name></member>
       <member refid="classcore_1_1game_1_1Game_1a41a90447bd90d3f047d1d8668732bb39" prot="public" virt="non-virtual"><scope>core::game::Game</scope><name>update_all_uis</name></member>

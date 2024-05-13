@@ -106,9 +106,13 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a81fdaf7b8096743d2b7f0a5b8819248d">_text</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8">_colour</link></para>
+</listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1addd2a7750b2e163cceafcbc1b9fb2afe">_shadow_colour</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025">_antialiasing</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a3059bb4e2f42cea99b967ffddf4c2146">_transparency</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221">_shadow_x</link></para>
 </listitem>
@@ -117,8 +121,6 @@
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74">_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf">_y</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1afe8829d70b24c3ff7d0927d66780d5b8">_colour</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -187,7 +189,7 @@ label itself.
 <indexterm><primary>get_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_colour</secondary></indexterm>
 <para><computeroutput> tuple[int, int, int] gui.label.Label.get_colour ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the label text&apos;s foreground colour.
+<para><literallayout><computeroutput>Return the label&apos;s text colour.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1a4031aa5da1e47db6a8eaeb49b091b86b"/><section>
@@ -211,7 +213,7 @@ label itself.
 <indexterm><primary>get_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>get_shadow_colour</secondary></indexterm>
 <para><computeroutput> tuple[int, int, int] gui.label.Label.get_shadow_colour ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the label text&apos;s shadow colour.
+<para><literallayout><computeroutput>Return the label&apos;s text shadow colour.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1a045cbd760de3d1849a14d50de6d2d501"/><section>
@@ -291,7 +293,7 @@ label itself.
 <indexterm><primary>set_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_colour</secondary></indexterm>
 <para><computeroutput> Self gui.label.Label.set_colour ( self, tuple[int, int, int] colour)</computeroutput></para>
-<para><literallayout><computeroutput>Set the label text&apos;s foreground colour, then return the label itself.
+<para><literallayout><computeroutput>Set the label&apos;s text colour, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1af28da5f176762264cf4cfd5895c640fb"/><section>
@@ -315,7 +317,7 @@ label itself.
 <indexterm><primary>set_shadow_colour</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>set_shadow_colour</secondary></indexterm>
 <para><computeroutput> Self gui.label.Label.set_shadow_colour ( self,  shadow_colour)</computeroutput></para>
-<para><literallayout><computeroutput>Set the label text&apos;s shadow colour, then return the label itself.
+<para><literallayout><computeroutput>Set the label&apos;s text shadow colour, then return the label itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1add668475059256a97b27c0ddfa15f736"/><section>
@@ -425,6 +427,11 @@ label itself.
 <indexterm><primary>_text</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>_text</secondary></indexterm>
 <para><computeroutput>gui.label.Label._text<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1label_1_1Label_1a3059bb4e2f42cea99b967ffddf4c2146"/><section>
+    <title>_transparency</title>
+<indexterm><primary>_transparency</primary><secondary>gui.label.Label</secondary></indexterm>
+<indexterm><primary>gui.label.Label</primary><secondary>_transparency</secondary></indexterm>
+<para><computeroutput>gui.label.Label._transparency<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74"/><section>
     <title>_x</title>
 <indexterm><primary>_x</primary><secondary>gui.label.Label</secondary></indexterm>

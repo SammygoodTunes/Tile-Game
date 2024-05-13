@@ -14,9 +14,11 @@
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_namespacedata_1_1data__manager_1a5623c40122236974b332d4eb874500f3">data.data_manager.get_game_properties</link> ()</para>
+            <listitem><para>Iterator[str] <link linkend="_namespacedata_1_1data__manager_1a1a60843f2e08f2f738a5734e8ae5e7f7">data.data_manager.get_game_properties</link> ()</para>
 </listitem>
             <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a43e25f7d8cf23845f2c2d4cda96dec44">data.data_manager.get_game_property</link> (str game_property)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedata_1_1data__manager_1a350c7fd79fb3452632880a4ccfa50e09">data.data_manager.verify_game_property_values</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -30,6 +32,10 @@
             <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1ac2133243c19bb0f31327690bd7eede7e">data.data_manager.APP_NAME</link> = &quot;APP_NAME&quot;</para>
 </listitem>
             <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a69806cab40be96b4184506965b37d628">data.data_manager.APP_VERSION</link> = &quot;APP_VER&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1a531193a87d7f817545570ddb8a1dcd0b">data.data_manager.KEY_DELAY</link> = &quot;KEY_DELAY&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedata_1_1data__manager_1ad646bade4ce065c25729ed279da6940e">data.data_manager.KEY_INTERVAL</link> = &quot;KEY_INTERVAL&quot;</para>
 </listitem>
         </itemizedlist>
 </simplesect>

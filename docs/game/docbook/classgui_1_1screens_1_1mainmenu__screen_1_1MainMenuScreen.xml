@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" xml:lang="en-US">
+<title>gui.screens.mainmenu_screen.MainMenuScreen Class Reference</title>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.mainmenu_screen.MainMenuScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b149168df4dc670016d3736e6730f6">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0">window</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1aee88e09035a4ecceee833c3688f9b9c1">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a697cfa380bddbe106fae5f4f16936fb6">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8d4c44ca2c978fc64e525d86a25af5ae">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a33c40251e5c8ee78268dd560416de3b2">title_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1abaf7a85900f5e28912577b1afde4d1f6">play_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a1e40def2aab27436cfed6475bb6113c7">options_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b6c147847ab9e50449ea31b601b7c2">credits_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ad0ca1061d9deccb1f16dfcf88027d354">quit_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>    Class for creating the main menu screen.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b149168df4dc670016d3736e6730f6"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenuScreen.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1aee88e09035a4ecceee833c3688f9b9c1"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenuScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Draw the screen and its components.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8d4c44ca2c978fc64e525d86a25af5ae"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenuScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the screen&apos;s visibility/interactivity.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a697cfa380bddbe106fae5f4f16936fb6"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.mainmenu_screen.MainMenuScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Update the screen UI.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b6c147847ab9e50449ea31b601b7c2"/><section>
+    <title>credits_button</title>
+<indexterm><primary>credits_button</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>credits_button</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.credits_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a1e40def2aab27436cfed6475bb6113c7"/><section>
+    <title>options_button</title>
+<indexterm><primary>options_button</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>options_button</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.options_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1abaf7a85900f5e28912577b1afde4d1f6"/><section>
+    <title>play_button</title>
+<indexterm><primary>play_button</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>play_button</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.play_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ad0ca1061d9deccb1f16dfcf88027d354"/><section>
+    <title>quit_button</title>
+<indexterm><primary>quit_button</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>quit_button</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.quit_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a33c40251e5c8ee78268dd560416de3b2"/><section>
+    <title>title_label</title>
+<indexterm><primary>title_label</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>title_label</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.title_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screens.mainmenu_screen.MainMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.mainmenu_screen.MainMenuScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screens.mainmenu_screen.MainMenuScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_mainmenu__screen_8py">mainmenu_screen.py</link></section>
+</section>

@@ -7,19 +7,25 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a9e94bb3ba03942ec9a9767b66d5dbe90">__init__</link> (self, int width, int height)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a7369b649ac42d853c864a0b32f72afe0">generate</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a97d5fe47529caf147ff4099f54664c2b">initialise</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1aa4e321901f49c1acded7f25304eb706e">regenerate</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a3432bbf28927dc49724ab386b91dbf54">generate</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1aa635d2aee2f4365f5244a15cdc330546">load</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a523ce6fea8a3dd518638c1f91be44d0f">regenerate</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a3751fc722c1e9fc58027f82953607ecd">update</link> (self, window_obj, player_obj)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classworld_1_1map__manager_1_1Map_1a5eafd6a7660ea1245bccb02a5584cab7">set_state</link> (self, str state=&apos;&apos;, int value=0)</para>
+</listitem>
+            <listitem><para>tuple[str, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a3d9fcdfb6bf84344c3215589d210ac15">get_state</link> (self)</para>
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a9a05cf8ef2769edb78ccf004c073a441">get_tile_pos</link> (self, int x, int y)</para>
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a253d1d819068cf08836e28cd2e2f14be">get_strict_tile_pos</link> (self, int x, int y)</para>
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a3aa9b82a7a4f5a8ae30ac6818aa9535f">tile_to_world_pos</link> (self, int tile_x, int tile_y)</para>
-</listitem>
-            <listitem><para>bool <link linkend="_classworld_1_1map__manager_1_1Map_1ae06bcc49ea03897d0274963f716ec759">is_ready</link> (self)</para>
 </listitem>
             <listitem><para>Self <link linkend="_classworld_1_1map__manager_1_1Map_1a406e46b444f631c620146164e9809dcf">set_tile</link> (self, int tile_x, int tile_y, Tile tile)</para>
 </listitem>
@@ -75,29 +81,22 @@
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a6b2d718e587266b42c43666336107d0d">tile_manager</link></para>
+</listitem>
             <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a53b89b13ce52b571e4198c5a11a65ae0">perlin_noise</link></para>
-</listitem>
-            <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1ad65d73642953633f7d900822c9c07787">generate_data_event</link></para>
-</listitem>
-            <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a1026345a49bbe0b7a681b090261cb82c">load_data_event</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
+            <listitem><para>str <link linkend="_classworld_1_1map__manager_1_1Map_1af960460c779002a338e9b4240d4240d8">STATE_GENMAP</link> = &apos;GEN-MAP&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classworld_1_1map__manager_1_1Map_1ad8bb21a5f1a18ca811ebf775d5d1dcc6">STATE_READY</link> = &apos;READY&apos;</para>
+</listitem>
             <listitem><para>tuple <link linkend="_classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3">DEFAULT</link></para>
 </listitem>
             <listitem><para>int <link linkend="_classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72">SEED_RANGE</link> = 2 ** 32</para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Protected Member Functions    </title>
-        <itemizedlist>
-            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a71699f68f79842e870739d89eec001e9">_generate_data</link> (self, game)</para>
-</listitem>
-            <listitem><para>None <link linkend="_classworld_1_1map__manager_1_1Map_1a47a83abc109f219f5146985bf9d6e55c">_load_data</link> (self, game)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -118,11 +117,11 @@
 </listitem>
             <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a71980cc400700fecfe72535098390515">_dynatile_surface</link></para>
 </listitem>
-            <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a268983063ebe899899eaa120f7829535">_ready</link></para>
-</listitem>
             <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a3115ee328e5316fff5e7a848851684dc">_dynatile_data</link></para>
 </listitem>
             <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a78803eb44858ece1544c3ae36e4476e2">_data</link></para>
+</listitem>
+            <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a92f7253cb43af6a0aea7a58cb88e524f">_state</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -142,27 +141,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a71699f68f79842e870739d89eec001e9"/><section>
-    <title>_generate_data()</title>
-<indexterm><primary>_generate_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>_generate_data</secondary></indexterm>
-<para><computeroutput> None world.map_manager.Map._generate_data ( self,  game)<computeroutput>[protected]</computeroutput></computeroutput></para>
-<para><literallayout><computeroutput>Internal threaded method for generating map data.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a47a83abc109f219f5146985bf9d6e55c"/><section>
-    <title>_load_data()</title>
-<indexterm><primary>_load_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>_load_data</secondary></indexterm>
-<para><computeroutput> None world.map_manager.Map._load_data ( self,  game)<computeroutput>[protected]</computeroutput></computeroutput></para>
-<para><literallayout><computeroutput>Internal threaded method for loading map data.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a7369b649ac42d853c864a0b32f72afe0"/><section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a3432bbf28927dc49724ab386b91dbf54"/><section>
     <title>generate()</title>
 <indexterm><primary>generate</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>generate</secondary></indexterm>
-<para><computeroutput> None world.map_manager.Map.generate ( self,  game)</computeroutput></para>
+<para><computeroutput> None world.map_manager.Map.generate ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Generate the map data.
 </computeroutput></literallayout> </para>
 </section>
@@ -220,6 +203,14 @@
 <indexterm><primary>world.map_manager.Map</primary><secondary>get_seed</secondary></indexterm>
 <para><computeroutput> int world.map_manager.Map.get_seed ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the map seed.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a3d9fcdfb6bf84344c3215589d210ac15"/><section>
+    <title>get_state()</title>
+<indexterm><primary>get_state</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>get_state</secondary></indexterm>
+<para><computeroutput> tuple[str, int] world.map_manager.Map.get_state ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the state of the map manager.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a253d1d819068cf08836e28cd2e2f14be"/><section>
@@ -286,12 +277,20 @@
 <para><literallayout><computeroutput>Return the y position of the map.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1ae06bcc49ea03897d0274963f716ec759"/><section>
-    <title>is_ready()</title>
-<indexterm><primary>is_ready</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>is_ready</secondary></indexterm>
-<para><computeroutput> bool world.map_manager.Map.is_ready ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return whether the map is ready or not.
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a97d5fe47529caf147ff4099f54664c2b"/><section>
+    <title>initialise()</title>
+<indexterm><primary>initialise</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>initialise</secondary></indexterm>
+<para><computeroutput> None world.map_manager.Map.initialise ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the map manager.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1aa635d2aee2f4365f5244a15cdc330546"/><section>
+    <title>load()</title>
+<indexterm><primary>load</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>load</secondary></indexterm>
+<para><computeroutput> None world.map_manager.Map.load ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the map tiles to the surface.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a884f04e840aaaebc7b95685856ac91ea"/><section>
@@ -302,11 +301,11 @@
 <para><literallayout><computeroutput>Randomise the map seed, then return the map manager itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1aa4e321901f49c1acded7f25304eb706e"/><section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a523ce6fea8a3dd518638c1f91be44d0f"/><section>
     <title>regenerate()</title>
 <indexterm><primary>regenerate</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>regenerate</secondary></indexterm>
-<para><computeroutput> None world.map_manager.Map.regenerate ( self,  game)</computeroutput></para>
+<para><computeroutput> None world.map_manager.Map.regenerate ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Regenerate the map data.
 </computeroutput></literallayout> </para>
 </section>
@@ -342,6 +341,16 @@ the map manager itself.
 <indexterm><primary>world.map_manager.Map</primary><secondary>set_seed</secondary></indexterm>
 <para><computeroutput> Self world.map_manager.Map.set_seed ( self, int _seed)</computeroutput></para>
 <para><literallayout><computeroutput>Set the map seed, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a5eafd6a7660ea1245bccb02a5584cab7"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> Self world.map_manager.Map.set_state ( self, str  state = <computeroutput>&apos;&apos;</computeroutput>
+, int  value = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the state of the map manager, then return the map manager itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a406e46b444f631c620146164e9809dcf"/><section>
@@ -415,16 +424,16 @@ the map manager itself.
 <indexterm><primary>_height</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>_height</secondary></indexterm>
 <para><computeroutput>world.map_manager.Map._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a268983063ebe899899eaa120f7829535"/><section>
-    <title>_ready</title>
-<indexterm><primary>_ready</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>_ready</secondary></indexterm>
-<para><computeroutput>world.map_manager.Map._ready<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763"/><section>
     <title>_seed</title>
 <indexterm><primary>_seed</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>_seed</secondary></indexterm>
 <para><computeroutput>world.map_manager.Map._seed<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a92f7253cb43af6a0aea7a58cb88e524f"/><section>
+    <title>_state</title>
+<indexterm><primary>_state</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>_state</secondary></indexterm>
+<para><computeroutput>world.map_manager.Map._state<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a42adbc36b9af00dcfdd57b2a0d1bd6e9"/><section>
     <title>_surface</title>
 <indexterm><primary>_surface</primary><secondary>world.map_manager.Map</secondary></indexterm>
@@ -453,16 +462,6 @@ the map manager itself.
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;[Tiles.DIRT&#32;<emphasis role="keywordflow">if</emphasis>&#32;randint(0,&#32;10)&#32;==&#32;0&#32;<emphasis role="keywordflow">else</emphasis>&#32;Tiles.PLAINS&#32;<emphasis role="keywordflow">for</emphasis>&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;range(1024)]
 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;[Tiles.DIRT&#32;<emphasis role="keywordflow">if</emphasis>&#32;randint(0,&#32;8)&#32;==&#32;0&#32;<emphasis role="keywordflow">else</emphasis>&#32;Tiles.COBBLESTONE&#32;<emphasis role="keywordflow">for</emphasis>&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;range(2048)])
 </programlisting></section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1ad65d73642953633f7d900822c9c07787"/><section>
-    <title>generate_data_event</title>
-<indexterm><primary>generate_data_event</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>generate_data_event</secondary></indexterm>
-<para><computeroutput>world.map_manager.Map.generate_data_event</computeroutput></para></section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a1026345a49bbe0b7a681b090261cb82c"/><section>
-    <title>load_data_event</title>
-<indexterm><primary>load_data_event</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>load_data_event</secondary></indexterm>
-<para><computeroutput>world.map_manager.Map.load_data_event</computeroutput></para></section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a53b89b13ce52b571e4198c5a11a65ae0"/><section>
     <title>perlin_noise</title>
 <indexterm><primary>perlin_noise</primary><secondary>world.map_manager.Map</secondary></indexterm>
@@ -473,6 +472,21 @@ the map manager itself.
 <indexterm><primary>SEED_RANGE</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>SEED_RANGE</secondary></indexterm>
 <para><computeroutput>int world.map_manager.Map.SEED_RANGE = 2 ** 32<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1af960460c779002a338e9b4240d4240d8"/><section>
+    <title>STATE_GENMAP</title>
+<indexterm><primary>STATE_GENMAP</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>STATE_GENMAP</secondary></indexterm>
+<para><computeroutput>str world.map_manager.Map.STATE_GENMAP = &apos;GEN-MAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1ad8bb21a5f1a18ca811ebf775d5d1dcc6"/><section>
+    <title>STATE_READY</title>
+<indexterm><primary>STATE_READY</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>STATE_READY</secondary></indexterm>
+<para><computeroutput>str world.map_manager.Map.STATE_READY = &apos;READY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a6b2d718e587266b42c43666336107d0d"/><section>
+    <title>tile_manager</title>
+<indexterm><primary>tile_manager</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>tile_manager</secondary></indexterm>
+<para><computeroutput>world.map_manager.Map.tile_manager</computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_map__manager_8py">map_manager.py</link></section>

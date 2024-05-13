@@ -39,6 +39,7 @@ var classgui_1_1label_1_1Label =
     [ "_shadow_x", "classgui_1_1label_1_1Label.html#aca5b26a75fdb25f80e832e62b735d221", null ],
     [ "_shadow_y", "classgui_1_1label_1_1Label.html#a82ace52f54fb7b92110a57dae5516fbc", null ],
     [ "_text", "classgui_1_1label_1_1Label.html#a81fdaf7b8096743d2b7f0a5b8819248d", null ],
+    [ "_transparency", "classgui_1_1label_1_1Label.html#a3059bb4e2f42cea99b967ffddf4c2146", null ],
     [ "_x", "classgui_1_1label_1_1Label.html#a70404c8558dab9696ee55357986faa74", null ],
     [ "_y", "classgui_1_1label_1_1Label.html#a08806fbaaaeca3cc531e2feaea5afcbf", null ],
     [ "font", "classgui_1_1label_1_1Label.html#a38f29d5b59526efa830235f2f838c3b6", null ]

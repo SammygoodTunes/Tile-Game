@@ -21,6 +21,10 @@
 </listitem>
             <listitem><para>Self <link linkend="_classgui_1_1widget_1_1Widget_1aeb8988d9cdd6c157c81c76c2844d19e8">offset</link> (self, int <link linkend="_classgui_1_1widget_1_1Widget_1a534362bb979f3ecd80496cde67ea7e27">offset_x</link>, int <link linkend="_classgui_1_1widget_1_1Widget_1a54ac3feb8556761f48859be5f08f0325">offset_y</link>)</para>
 </listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1widget_1_1Widget_1a100a7a70d0c2d4c9da70602aa5fc2191">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgui_1_1widget_1_1Widget_1a80e6d61e438c14b85c02a418a8ea2601">get_transparency</link> (self)</para>
+</listitem>
             <listitem><para>Self <link linkend="_classgui_1_1widget_1_1Widget_1ae641bcdc535cbe0bab1e4ef62901d02b">set_state</link> (self, bool state)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classgui_1_1widget_1_1Widget_1aca52550356f44c7a7580bf6bc84afd1b">get_state</link> (self)</para>
@@ -30,13 +34,13 @@
 <simplesect>
     <title>Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32">_colour</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9">_enabled</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b">_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1a902566f5db9922e98108aff93b3615d7">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1ae0f6823f206b8fe46ead35bf0bc4a1e4">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9">_enabled</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -62,6 +66,14 @@
 <indexterm><primary>gui.widget.Widget</primary><secondary>get_state</secondary></indexterm>
 <para><computeroutput> bool gui.widget.Widget.get_state ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the state of the widget&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a80e6d61e438c14b85c02a418a8ea2601"/><section>
+    <title>get_transparency()</title>
+<indexterm><primary>get_transparency</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>get_transparency</secondary></indexterm>
+<para><computeroutput> float gui.widget.Widget.get_transparency ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the widget&apos;s transparency.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1widget_1_1Widget_1a9fcdeec3beccba569ca4444367d60708"/><section>
@@ -109,7 +121,15 @@
 <indexterm><primary>set_state</primary><secondary>gui.widget.Widget</secondary></indexterm>
 <indexterm><primary>gui.widget.Widget</primary><secondary>set_state</secondary></indexterm>
 <para><computeroutput> Self gui.widget.Widget.set_state ( self, bool state)</computeroutput></para>
-<para><literallayout><computeroutput>Set the widget&apos;s visibility/interactivity.
+<para><literallayout><computeroutput>Set the widget&apos;s visibility/interactivity, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1a100a7a70d0c2d4c9da70602aa5fc2191"/><section>
+    <title>set_transparency()</title>
+<indexterm><primary>set_transparency</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>set_transparency</secondary></indexterm>
+<para><computeroutput> Self gui.widget.Widget.set_transparency ( self, float transparency)</computeroutput></para>
+<para><literallayout><computeroutput>Set the widget&apos;s transparency, then return the widget itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1widget_1_1Widget_1accd73f1379d090ac71e3c55de0196367"/><section>
@@ -131,16 +151,16 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classgui_1_1widget_1_1Widget_1a9d668818d9dbfae1adaf3774dbe82c32"/><section>
-    <title>_colour</title>
-<indexterm><primary>_colour</primary><secondary>gui.widget.Widget</secondary></indexterm>
-<indexterm><primary>gui.widget.Widget</primary><secondary>_colour</secondary></indexterm>
-<para><computeroutput>gui.widget.Widget._colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1widget_1_1Widget_1afacb3a7dcf6cc2a67bb81f01d83321c9"/><section>
     <title>_enabled</title>
 <indexterm><primary>_enabled</primary><secondary>gui.widget.Widget</secondary></indexterm>
 <indexterm><primary>gui.widget.Widget</primary><secondary>_enabled</secondary></indexterm>
 <para><computeroutput>gui.widget.Widget._enabled<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1widget_1_1Widget_1ae0f6823f206b8fe46ead35bf0bc4a1e4"/><section>
+    <title>_transparency</title>
+<indexterm><primary>_transparency</primary><secondary>gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>gui.widget.Widget</primary><secondary>_transparency</secondary></indexterm>
+<para><computeroutput>gui.widget.Widget._transparency<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1widget_1_1Widget_1a856a7d9d1423fd5adb30dfbd527c990b"/><section>
     <title>_x</title>
 <indexterm><primary>_x</primary><secondary>gui.widget.Widget</secondary></indexterm>

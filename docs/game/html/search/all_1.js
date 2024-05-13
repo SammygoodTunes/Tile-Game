@@ -8,5 +8,7 @@ var searchData=
   ['args_5',['args',['../namespaceutils_1_1logger.html#a8fac75a254e8e82403f13c14e77235f5',1,'utils::logger']]],
   ['art_5ftitle_5flabel_6',['art_title_label',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#ab63efaf19e85e338b923679eae666250',1,'gui::screens::credits_screen::CreditsScreen']]],
   ['art_5fvalue_5flabel_7',['art_value_label',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a66631ed7ad30a5d82e57af71283bd40d',1,'gui::screens::credits_screen::CreditsScreen']]],
-  ['atlas_8',['atlas',['../classworld_1_1tile__manager_1_1TileManager.html#a3b1586d515df9206e3881d1d2346d3ce',1,'world::tile_manager::TileManager']]]
+  ['atlas_8',['atlas',['../classworld_1_1tile__manager_1_1TileManager.html#a3b1586d515df9206e3881d1d2346d3ce',1,'world::tile_manager::TileManager']]],
+  ['authorise_5fonly_5fascii_9',['authorise_only_ascii',['../classgui_1_1inputbox_1_1InputBox.html#ac57a96f4427b78eefea80e8b4eb0981a',1,'gui::inputbox::InputBox']]],
+  ['authorise_5fonly_5fnumeric_10',['authorise_only_numeric',['../classgui_1_1inputbox_1_1InputBox.html#ac54c8df3fcc0d8f5836f7d24b80f7685',1,'gui::inputbox::InputBox']]]
 ];

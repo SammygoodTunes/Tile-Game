@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classclient_1_1connection_1_1Connection" kind="class" language="Python" prot="public">
+    <compoundname>client::connection::Connection</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a1907239099f73d1632226195a8b68526" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::IDLE</definition>
+        <argsstring></argsstring>
+        <name>IDLE</name>
+        <qualifiedname>client.connection.Connection.IDLE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="24" column="1" bodyfile="game/client/connection.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1af74b64340e03d51cf309926938c3c0ae" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::PENDING</definition>
+        <argsstring></argsstring>
+        <name>PENDING</name>
+        <qualifiedname>client.connection.Connection.PENDING</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="24" column="1" bodyfile="game/client/connection.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1ab470d9129d1b30383f631cd24d65b644" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::GETDATA</definition>
+        <argsstring></argsstring>
+        <name>GETDATA</name>
+        <qualifiedname>client.connection.Connection.GETDATA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="24" column="1" bodyfile="game/client/connection.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1aba5380138046c2b8689707004fb8eadc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>SUCCESS</name>
+        <qualifiedname>client.connection.Connection.SUCCESS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a67913fb103697a09ddecf932c2bf1dce" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::INVALID</definition>
+        <argsstring></argsstring>
+        <name>INVALID</name>
+        <qualifiedname>client.connection.Connection.INVALID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a799f27b585cdf25831d16e66edb0f11d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::REFUSED</definition>
+        <argsstring></argsstring>
+        <name>REFUSED</name>
+        <qualifiedname>client.connection.Connection.REFUSED</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a918e109c00054324fb13e1976cf69d65" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>TIMEOUT</name>
+        <qualifiedname>client.connection.Connection.TIMEOUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a12d1c1453ee8b7d2604477d7fb89fcc7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::NOROUTE</definition>
+        <argsstring></argsstring>
+        <name>NOROUTE</name>
+        <qualifiedname>client.connection.Connection.NOROUTE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a31868df13e07a117430c5a05779a025d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::DISCONNECTED</definition>
+        <argsstring></argsstring>
+        <name>DISCONNECTED</name>
+        <qualifiedname>client.connection.Connection.DISCONNECTED</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a3c656382c4bc50ee5889bf66150e93bd" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::ERROR</definition>
+        <argsstring></argsstring>
+        <name>ERROR</name>
+        <qualifiedname>client.connection.Connection.ERROR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="25" column="1" bodyfile="game/client/connection.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1af2a57ecdd41a44e47ff3b6fb4477f4a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::sock</definition>
+        <argsstring></argsstring>
+        <name>sock</name>
+        <qualifiedname>client.connection.Connection.sock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="28" column="1" bodyfile="game/client/connection.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>client.connection.Connection.host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="30" column="1" bodyfile="game/client/connection.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <qualifiedname>client.connection.Connection.port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="31" column="1" bodyfile="game/client/connection.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1ad9f4e9f9ed74153b831f6cdc8809e882" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>client.connection.Connection.state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="32" column="1" bodyfile="game/client/connection.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection.Connection::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>client.connection.Connection.data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="57" column="1" bodyfile="game/client/connection.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.connection.Connection.__init__</definition>
+        <argsstring>(self, str host, int port)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>client.connection.Connection.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="27" column="1" bodyfile="game/client/connection.py" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.connection.Connection.connect</definition>
+        <argsstring>(self)</argsstring>
+        <name>connect</name>
+        <qualifiedname>client.connection.Connection.connect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attempt to connect to a server with the provided host and port.
+Any errors or failures will raise specific exceptions.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="36" column="1" bodyfile="game/client/connection.py" bodystart="36" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.connection.Connection.disconnect</definition>
+        <argsstring>(self)</argsstring>
+        <name>disconnect</name>
+        <qualifiedname>client.connection.Connection.disconnect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attempt to disconnect from the server.
+Any errors or failures will raise specific exceptions.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="72" column="1" bodyfile="game/client/connection.py" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1connection_1_1Connection_1a0ee31fb242c4854ed7009f2bb5a4498a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.connection.Connection.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <qualifiedname>client.connection.Connection.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update and verify the connection every so often.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="82" column="1" bodyfile="game/client/connection.py" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1connection_1_1Connection_1a49cf3ee5b5378722e4fad69adfb9d0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.connection.Connection.start</definition>
+        <argsstring>(self, Tasks task)</argsstring>
+        <name>start</name>
+        <qualifiedname>client.connection.Connection.start</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classclient_1_1connection_1_1Tasks" kindref="compound">Tasks</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection.py" line="93" column="1" bodyfile="game/client/connection.py" bodystart="93" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a server connection.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/client/connection.py" line="19" column="1" bodyfile="game/client/connection.py" bodystart="19" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>__init__</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>connect</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>data</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>disconnect</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a31868df13e07a117430c5a05779a025d" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>DISCONNECTED</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a3c656382c4bc50ee5889bf66150e93bd" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>ERROR</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1ab470d9129d1b30383f631cd24d65b644" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>GETDATA</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>host</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a1907239099f73d1632226195a8b68526" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>IDLE</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a67913fb103697a09ddecf932c2bf1dce" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>INVALID</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a12d1c1453ee8b7d2604477d7fb89fcc7" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>NOROUTE</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1af74b64340e03d51cf309926938c3c0ae" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>PENDING</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>port</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a799f27b585cdf25831d16e66edb0f11d" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>REFUSED</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1af2a57ecdd41a44e47ff3b6fb4477f4a6" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>sock</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a49cf3ee5b5378722e4fad69adfb9d0e0" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>start</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1ad9f4e9f9ed74153b831f6cdc8809e882" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>state</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1aba5380138046c2b8689707004fb8eadc" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>SUCCESS</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a918e109c00054324fb13e1976cf69d65" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>TIMEOUT</name></member>
+      <member refid="classclient_1_1connection_1_1Connection_1a0ee31fb242c4854ed7009f2bb5a4498a" prot="public" virt="non-virtual"><scope>client::connection::Connection</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

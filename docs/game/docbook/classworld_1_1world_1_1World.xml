@@ -7,7 +7,9 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a27cd7ac7e724d94ced6f6fda4c8bac20">__init__</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a31d702c6800c6529d9a6e7ba9097f26f">initialise</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1adb6578b4bb9c0c1db59f8d13a7b8c86d">initialise</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4">create</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1aecdab0f9d5ff0fe3257383a23cd1882b">update</link> (self, window_obj, player_obj)</para>
 </listitem>
@@ -17,14 +19,9 @@
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a0102bf38a3ba02856be4fa7ca4b8146d">draw_wireframe</link> (self, screen)</para>
 </listitem>
-            <listitem><para>Map <link linkend="_classworld_1_1world_1_1World_1a1f37a6d79c65792e73ea45f774a7c687">get_map</link> (self)</para>
+            <listitem><para>Self <link linkend="_classworld_1_1world_1_1World_1ac0302db44c534535c97774cac3c47f25">set_map</link> (self, Map <link linkend="_classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11">_map</link>)</para>
 </listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Public Attributes    </title>
-        <itemizedlist>
-            <listitem><para><link linkend="_classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b">tile_manager</link></para>
+            <listitem><para>Map <link linkend="_classworld_1_1world_1_1World_1a1f37a6d79c65792e73ea45f774a7c687">get_map</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -51,6 +48,14 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4"/><section>
+    <title>create()</title>
+<indexterm><primary>create</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>create</secondary></indexterm>
+<para><computeroutput> None world.world.World.create ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Create the world.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classworld_1_1world_1_1World_1a64c65ad6c3aabc881591a7ce0691e048"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>world.world.World</secondary></indexterm>
@@ -75,12 +80,20 @@
 <para><literallayout><computeroutput>Return the map.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1world_1_1World_1a31d702c6800c6529d9a6e7ba9097f26f"/><section>
+<anchor xml:id="_classworld_1_1world_1_1World_1adb6578b4bb9c0c1db59f8d13a7b8c86d"/><section>
     <title>initialise()</title>
 <indexterm><primary>initialise</primary><secondary>world.world.World</secondary></indexterm>
 <indexterm><primary>world.world.World</primary><secondary>initialise</secondary></indexterm>
-<para><computeroutput> None world.world.World.initialise ( self,  game)</computeroutput></para>
+<para><computeroutput> None world.world.World.initialise ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the world.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1world_1_1World_1ac0302db44c534535c97774cac3c47f25"/><section>
+    <title>set_map()</title>
+<indexterm><primary>set_map</primary><secondary>world.world.World</secondary></indexterm>
+<indexterm><primary>world.world.World</primary><secondary>set_map</secondary></indexterm>
+<para><computeroutput> Self world.world.World.set_map ( self, Map _map)</computeroutput></para>
+<para><literallayout><computeroutput>Set the map, and return the world object itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1world_1_1World_1aecdab0f9d5ff0fe3257383a23cd1882b"/><section>
@@ -107,11 +120,6 @@
 <indexterm><primary>_map</primary><secondary>world.world.World</secondary></indexterm>
 <indexterm><primary>world.world.World</primary><secondary>_map</secondary></indexterm>
 <para><computeroutput>world.world.World._map<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1world_1_1World_1a1fd1f5084160b676a7aa9ea127ce901b"/><section>
-    <title>tile_manager</title>
-<indexterm><primary>tile_manager</primary><secondary>world.world.World</secondary></indexterm>
-<indexterm><primary>world.world.World</primary><secondary>tile_manager</secondary></indexterm>
-<para><computeroutput>world.world.World.tile_manager</computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_world_8py">world.py</link></section>

@@ -34,9 +34,9 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a260b6e57fae158bcce835166c92de31b">gameover_label</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1abf873cc2cd7aef0a144ac991a2d4eae7">regen_button</link></para>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a1327ab61dddb0e482c2167dec4f07d64">respawn_button</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a238f3f5274334b41300f75b1c8e38ee1">quit_button</link></para>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab7d336f0e9136a2504ec90a4577103f3">disconnect_button</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -91,6 +91,11 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab7d336f0e9136a2504ec90a4577103f3"/><section>
+    <title>disconnect_button</title>
+<indexterm><primary>disconnect_button</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.gameover_screen.GameoverScreen</primary><secondary>disconnect_button</secondary></indexterm>
+<para><computeroutput>gui.screens.gameover_screen.GameoverScreen.disconnect_button</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a895eafbe65e08cca56989ea319b89fd4"/><section>
     <title>faded_surface</title>
 <indexterm><primary>faded_surface</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
@@ -101,16 +106,11 @@
 <indexterm><primary>gameover_label</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.gameover_screen.GameoverScreen</primary><secondary>gameover_label</secondary></indexterm>
 <para><computeroutput>gui.screens.gameover_screen.GameoverScreen.gameover_label</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a238f3f5274334b41300f75b1c8e38ee1"/><section>
-    <title>quit_button</title>
-<indexterm><primary>quit_button</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.gameover_screen.GameoverScreen</primary><secondary>quit_button</secondary></indexterm>
-<para><computeroutput>gui.screens.gameover_screen.GameoverScreen.quit_button</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1abf873cc2cd7aef0a144ac991a2d4eae7"/><section>
-    <title>regen_button</title>
-<indexterm><primary>regen_button</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.gameover_screen.GameoverScreen</primary><secondary>regen_button</secondary></indexterm>
-<para><computeroutput>gui.screens.gameover_screen.GameoverScreen.regen_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a1327ab61dddb0e482c2167dec4f07d64"/><section>
+    <title>respawn_button</title>
+<indexterm><primary>respawn_button</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.gameover_screen.GameoverScreen</primary><secondary>respawn_button</secondary></indexterm>
+<para><computeroutput>gui.screens.gameover_screen.GameoverScreen.respawn_button</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a588999bfd563f13a908961556382801c"/><section>
     <title>window</title>
 <indexterm><primary>window</primary><secondary>gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>

@@ -9,6 +9,8 @@
 </listitem>
             <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1af49fae56a7283e7e052e807a7a03ec65">__repr__</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1ad5f9c3839108c9c568330514b08bff23">__eq__</link> (self, Self obj)</para>
+</listitem>
             <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1a13128318a7cca8880f9176a3135b52a4">get_id</link> (self)</para>
 </listitem>
             <listitem><para>Self <link linkend="_classdata_1_1tiles_1_1Tile_1a70401d1bd83c605f360e3b12f3f1a052">set_xy</link> (self, int x, int y)</para>
@@ -41,6 +43,8 @@
 <simplesect>
     <title>Protected Attributes    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1ace24a37f13a8dd90fa016c3edf47b9c0">_id</link></para>
+</listitem>
             <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1af448bc041fe7ed3f7cc30654a8b2726a">_xy</link></para>
 </listitem>
             <listitem><para><link linkend="_classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb">_resistance</link></para>
@@ -67,6 +71,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1ad5f9c3839108c9c568330514b08bff23"/><section>
+    <title>__eq__()</title>
+<indexterm><primary>__eq__</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>__eq__</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile.__eq__ ( self, Self obj)</computeroutput></para></section>
 <anchor xml:id="_classdata_1_1tiles_1_1Tile_1af49fae56a7283e7e052e807a7a03ec65"/><section>
     <title>__repr__()</title>
 <indexterm><primary>__repr__</primary><secondary>data.tiles.Tile</secondary></indexterm>
@@ -157,6 +166,11 @@
 <indexterm><primary>_damage_delay</primary><secondary>data.tiles.Tile</secondary></indexterm>
 <indexterm><primary>data.tiles.Tile</primary><secondary>_damage_delay</secondary></indexterm>
 <para><computeroutput>data.tiles.Tile._damage_delay<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1tiles_1_1Tile_1ace24a37f13a8dd90fa016c3edf47b9c0"/><section>
+    <title>_id</title>
+<indexterm><primary>_id</primary><secondary>data.tiles.Tile</secondary></indexterm>
+<indexterm><primary>data.tiles.Tile</primary><secondary>_id</secondary></indexterm>
+<para><computeroutput>data.tiles.Tile._id<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classdata_1_1tiles_1_1Tile_1a502bc2a8e36f885aee9b07ed147c8beb"/><section>
     <title>_resistance</title>
 <indexterm><primary>_resistance</primary><secondary>data.tiles.Tile</secondary></indexterm>

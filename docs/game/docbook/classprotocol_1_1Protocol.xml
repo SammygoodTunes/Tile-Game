@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classprotocol_1_1Protocol" xml:lang="en-US">
+<title>protocol.Protocol Class Reference</title>
+<indexterm><primary>protocol.Protocol</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f">BUFFER_SIZE</link> = 64</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca">ENCODING</link> = &apos;utf-8&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825">RECOGNITION_CMD_REQ</link> = &apos;TILEGAME&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c">RECOGNITION_CMD_RES</link> = &apos;GAMETILE&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0">MAPOBJ_CMD_REQ</link> = &apos;MAPOBJ&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70">MAPOBJ_CMD_RES</link> = &apos;OBJMAP&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9">MAPREADY_CMD</link> = &apos;MAPREADY&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1">VERIFY_CMD</link> = &apos;VERIFY&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0">DISCONNECT_CMD</link> = &apos;BYEBYE&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f"/><section>
+    <title>BUFFER_SIZE</title>
+<indexterm><primary>BUFFER_SIZE</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>BUFFER_SIZE</secondary></indexterm>
+<para><computeroutput>int protocol.Protocol.BUFFER_SIZE = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0"/><section>
+    <title>DISCONNECT_CMD</title>
+<indexterm><primary>DISCONNECT_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>DISCONNECT_CMD</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.DISCONNECT_CMD = &apos;BYEBYE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca"/><section>
+    <title>ENCODING</title>
+<indexterm><primary>ENCODING</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>ENCODING</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.ENCODING = &apos;utf-8&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0"/><section>
+    <title>MAPOBJ_CMD_REQ</title>
+<indexterm><primary>MAPOBJ_CMD_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPOBJ_CMD_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPOBJ_CMD_REQ = &apos;MAPOBJ&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70"/><section>
+    <title>MAPOBJ_CMD_RES</title>
+<indexterm><primary>MAPOBJ_CMD_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPOBJ_CMD_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPOBJ_CMD_RES = &apos;OBJMAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9"/><section>
+    <title>MAPREADY_CMD</title>
+<indexterm><primary>MAPREADY_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPREADY_CMD</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPREADY_CMD = &apos;MAPREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825"/><section>
+    <title>RECOGNITION_CMD_REQ</title>
+<indexterm><primary>RECOGNITION_CMD_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_CMD_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.RECOGNITION_CMD_REQ = &apos;TILEGAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c"/><section>
+    <title>RECOGNITION_CMD_RES</title>
+<indexterm><primary>RECOGNITION_CMD_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_CMD_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.RECOGNITION_CMD_RES = &apos;GAMETILE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1"/><section>
+    <title>VERIFY_CMD</title>
+<indexterm><primary>VERIFY_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>VERIFY_CMD</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.VERIFY_CMD = &apos;VERIFY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_protocol_8py">protocol.py</link></section>
+</section>

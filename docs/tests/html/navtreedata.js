@@ -25,9 +25,9 @@
 var NAVTREE =
 [
   [ "Tile-Game", "index.html", [
-    [ "Tests", "md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README.html", [
-      [ "Running a test", "md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README.html#running-a-test", null ],
-      [ "Information", "md__2home_2samuel_2Documents_2Python_2Tile-Game_2tests_2README.html#information", null ]
+    [ "Tests", "md_tests_2README.html", [
+      [ "Running a test", "md_tests_2README.html#running-a-test", null ],
+      [ "Information", "md_tests_2README.html#information", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1inputbox_1_1InputBox" xml:lang="en-US">
+<title>gui.inputbox.InputBox Class Reference</title>
+<indexterm><primary>gui.inputbox.InputBox</primary></indexterm>
+<para>Inheritance diagram for gui.inputbox.InputBox:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1inputbox_1_1InputBox.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1inputbox_1_1InputBox_1aa9513f7c90634fd931715e97b7fdc1d2">__init__</link> (self, str text=&quot;&quot;, str placeholder=&quot;&quot;, int x=0, int y=0, int width=200, int height=50)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1inputbox_1_1InputBox_1a053025a89e2dc36929034a88815d04bb">draw</link> (self, Surface screen)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1inputbox_1_1InputBox_1a776e793d1bc9eccb5d0f13bfedf9ce1f">events</link> (self, event.Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1inputbox_1_1InputBox_1aa35102241c800a14caff59deb46f807c">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1inputbox_1_1InputBox_1a7a354d8e3da15c5efdfbdd0b04c5f3ec">refresh</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a2e4482c1a676aee7def02d4020dd4b36">scroll_text</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1ac57a96f4427b78eefea80e8b4eb0981a">authorise_only_ascii</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1ac54c8df3fcc0d8f5836f7d24b80f7685">authorise_only_numeric</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54">is_selected</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1ae89d6403b38142610a183ea73490b879">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a1fe90ee4897bb29ca459b3579bc782d3">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1afb0af61a07451b829e64d3a358bcb9cf">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a8c7eae1b55b0fe3ab285dee83698504e">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a1a2c4718821c84375ba441a19be911bf">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1ad605852a9bc595dc58d44a0d11f719b1">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1aa7309a531b9dfdcb23b23f929d603ad8">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1a6cf8847fb1b6df2f858ddb55f1fc28f1">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a8cfc4f54b80a3fa809b4a9bd3bd142e8">set_border_colour</link> (self, tuple[int, int, int] border_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1inputbox_1_1InputBox_1a3919327e5aa86434afaf09ff8cdb0731">get_border_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a5e42571d6c4a589a42e8f5e53eaba5c0">set_background_colour</link> (self, tuple[int, int, int] background_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1inputbox_1_1InputBox_1ab5b738d08d11d7efdd7652656cc3ef71">get_background_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1ad646aefe9ffe4125bec5dc088d890b6f">set_cursor_colour</link> (self, tuple[int, int, int] cursor_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1inputbox_1_1InputBox_1a344f64839e2cc46b03ea3adaa72c311a">get_cursor_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a98e1e8f6e641040745dab50d51850cdf">set_placeholder_text</link> (self, str placeholder_text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgui_1_1inputbox_1_1InputBox_1a0665194885c1c6f2997345b934da5634">get_placeholder_text</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a8350a4541f0866fcedcd95ae433ca05e">set_text</link> (self, str text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgui_1_1inputbox_1_1InputBox_1a0bef6c732920711183f75210ad89d18c">get_text</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1aa45fe1ec84a31512580b07d726742eaf">set_max_text_length</link> (self, int max_text_length)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1af04c543bf2f7eeae04be8cf278a22cc2">get_max_text_length</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1aed90390dd4eb2baf60528df33cd21a30">MIN_WIDTH</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1a666974421dc3beb372b7c0e3f17fde42">MAX_WIDTH</link> = 800</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1a0e8ec1f1bbecf210678a30e4f21af16d">MIN_HEIGHT</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1a5470c323cd957c5094c225e59e5eb541">MAX_HEIGHT</link> = 50</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a9eb5a1604f3557a3ef15cae356bbd7b4">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1ab275a9732f7295652088557a49580474">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a093fce611e6d078b50b2cd6ad1675fd0">_selected</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a2757c59a5a34da3e81055da61d803c27">_border_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a5317eb9ccbe7f9db3845fca26e7b3863">_background_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a8323c5f4e451a1176ed26e184aa1077b">_cursor_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a5931d0d8e89f4cf8441f109b7119f78a">_text_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a890c84ba50a65bdc7d875205736d5f5b">_text_offset</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a9740436d4072e7201f217446da06d489">_max_text_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1ae7f510bdaa4761cd28d7428d020f0d48">_authorised_chars</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1aeadb07fc1b698101eb03affb525a6274">_placeholder_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a7e5a5259154ca3cb9cc0136f6f62e1a9">_text_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a3833e0f92d79e59ce499b24bae9bbea2">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a18d5ff06452d1f4c16a283382893f537">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating an input box.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aa9513f7c90634fd931715e97b7fdc1d2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.inputbox.InputBox.__init__ ( self, str  text = <computeroutput>&quot;&quot;</computeroutput>
+, str  placeholder = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  width = <computeroutput>200</computeroutput>
+, int  height = <computeroutput>50</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ac57a96f4427b78eefea80e8b4eb0981a"/><section>
+    <title>authorise_only_ascii()</title>
+<indexterm><primary>authorise_only_ascii</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>authorise_only_ascii</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox.authorise_only_ascii ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only ASCII characters in the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ac54c8df3fcc0d8f5836f7d24b80f7685"/><section>
+    <title>authorise_only_numeric()</title>
+<indexterm><primary>authorise_only_numeric</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>authorise_only_numeric</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox.authorise_only_numeric ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only numerical values (0-9) in the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1afb0af61a07451b829e64d3a358bcb9cf"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box on both axes relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ae89d6403b38142610a183ea73490b879"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box horizontally relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a1fe90ee4897bb29ca459b3579bc782d3"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box vertically relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a8c7eae1b55b0fe3ab285dee83698504e"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box with center() and offset it by x and y relative to the specified parent, then return the
+input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a053025a89e2dc36929034a88815d04bb"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.inputbox.InputBox.draw ( self, Surface screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the input box and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a776e793d1bc9eccb5d0f13bfedf9ce1f"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None gui.inputbox.InputBox.events ( self, event.Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the input box events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ab5b738d08d11d7efdd7652656cc3ef71"/><section>
+    <title>get_background_colour()</title>
+<indexterm><primary>get_background_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_background_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] gui.inputbox.InputBox.get_background_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the background colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a3919327e5aa86434afaf09ff8cdb0731"/><section>
+    <title>get_border_colour()</title>
+<indexterm><primary>get_border_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_border_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] gui.inputbox.InputBox.get_border_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the border colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a344f64839e2cc46b03ea3adaa72c311a"/><section>
+    <title>get_cursor_colour()</title>
+<indexterm><primary>get_cursor_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_cursor_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] gui.inputbox.InputBox.get_cursor_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the cursor colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a6cf8847fb1b6df2f858ddb55f1fc28f1"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int gui.inputbox.InputBox.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1af04c543bf2f7eeae04be8cf278a22cc2"/><section>
+    <title>get_max_text_length()</title>
+<indexterm><primary>get_max_text_length</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_max_text_length</secondary></indexterm>
+<para><computeroutput> int gui.inputbox.InputBox.get_max_text_length ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the input box&apos;s max text length.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a0665194885c1c6f2997345b934da5634"/><section>
+    <title>get_placeholder_text()</title>
+<indexterm><primary>get_placeholder_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_placeholder_text</secondary></indexterm>
+<para><computeroutput> str gui.inputbox.InputBox.get_placeholder_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the placeholder label text.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a0bef6c732920711183f75210ad89d18c"/><section>
+    <title>get_text()</title>
+<indexterm><primary>get_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_text</secondary></indexterm>
+<para><computeroutput> str gui.inputbox.InputBox.get_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ad605852a9bc595dc58d44a0d11f719b1"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int gui.inputbox.InputBox.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4"/><section>
+    <title>is_hovering_over()</title>
+<indexterm><primary>is_hovering_over</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>is_hovering_over</secondary></indexterm>
+<para><computeroutput> bool gui.inputbox.InputBox.is_hovering_over ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the input box or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54"/><section>
+    <title>is_selected()</title>
+<indexterm><primary>is_selected</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>is_selected</secondary></indexterm>
+<para><computeroutput> bool gui.inputbox.InputBox.is_selected ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the input box is selected or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a7a354d8e3da15c5efdfbdd0b04c5f3ec"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput> None gui.inputbox.InputBox.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the input box and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a2e4482c1a676aee7def02d4020dd4b36"/><section>
+    <title>scroll_text()</title>
+<indexterm><primary>scroll_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>scroll_text</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox.scroll_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Internal method for calculating how and when to scroll text when going beyond the input box.
+I am aware of how awful it is. Why? because O(n).
+What does that mean? the larger the text, the slower it gets! Very bad!
+Might not be that noticeable for small strings, but still...
+TODO: Make it better, fool.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a5e42571d6c4a589a42e8f5e53eaba5c0"/><section>
+    <title>set_background_colour()</title>
+<indexterm><primary>set_background_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_background_colour</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_background_colour ( self, tuple[int, int, int] background_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the background colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a8cfc4f54b80a3fa809b4a9bd3bd142e8"/><section>
+    <title>set_border_colour()</title>
+<indexterm><primary>set_border_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_border_colour</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_border_colour ( self, tuple[int, int, int] border_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the border colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ad646aefe9ffe4125bec5dc088d890b6f"/><section>
+    <title>set_cursor_colour()</title>
+<indexterm><primary>set_cursor_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_cursor_colour</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_cursor_colour ( self, tuple[int, int, int] cursor_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the cursor colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aa7309a531b9dfdcb23b23f929d603ad8"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aa45fe1ec84a31512580b07d726742eaf"/><section>
+    <title>set_max_text_length()</title>
+<indexterm><primary>set_max_text_length</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_max_text_length</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_max_text_length ( self, int max_text_length)</computeroutput></para>
+<para><literallayout><computeroutput>Set the input box&apos;s max text length, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a98e1e8f6e641040745dab50d51850cdf"/><section>
+    <title>set_placeholder_text()</title>
+<indexterm><primary>set_placeholder_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_placeholder_text</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_placeholder_text ( self, str placeholder_text)</computeroutput></para>
+<para><literallayout><computeroutput>Set the placeholder label text of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a8350a4541f0866fcedcd95ae433ca05e"/><section>
+    <title>set_text()</title>
+<indexterm><primary>set_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_text</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_text ( self, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a1a2c4718821c84375ba441a19be911bf"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aa35102241c800a14caff59deb46f807c"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None gui.inputbox.InputBox.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the input box and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ae7f510bdaa4761cd28d7428d020f0d48"/><section>
+    <title>_authorised_chars</title>
+<indexterm><primary>_authorised_chars</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_authorised_chars</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._authorised_chars<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a5317eb9ccbe7f9db3845fca26e7b3863"/><section>
+    <title>_background_colour</title>
+<indexterm><primary>_background_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_background_colour</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._background_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a2757c59a5a34da3e81055da61d803c27"/><section>
+    <title>_border_colour</title>
+<indexterm><primary>_border_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_border_colour</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._border_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a8323c5f4e451a1176ed26e184aa1077b"/><section>
+    <title>_cursor_colour</title>
+<indexterm><primary>_cursor_colour</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_cursor_colour</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._cursor_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ab275a9732f7295652088557a49580474"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a9740436d4072e7201f217446da06d489"/><section>
+    <title>_max_text_length</title>
+<indexterm><primary>_max_text_length</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_max_text_length</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._max_text_length<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aeadb07fc1b698101eb03affb525a6274"/><section>
+    <title>_placeholder_label</title>
+<indexterm><primary>_placeholder_label</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_placeholder_label</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._placeholder_label<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a093fce611e6d078b50b2cd6ad1675fd0"/><section>
+    <title>_selected</title>
+<indexterm><primary>_selected</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_selected</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._selected<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a7e5a5259154ca3cb9cc0136f6f62e1a9"/><section>
+    <title>_text_label</title>
+<indexterm><primary>_text_label</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_text_label</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._text_label<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a890c84ba50a65bdc7d875205736d5f5b"/><section>
+    <title>_text_offset</title>
+<indexterm><primary>_text_offset</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_text_offset</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._text_offset<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a5931d0d8e89f4cf8441f109b7119f78a"/><section>
+    <title>_text_value</title>
+<indexterm><primary>_text_value</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_text_value</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._text_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a9eb5a1604f3557a3ef15cae356bbd7b4"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a3833e0f92d79e59ce499b24bae9bbea2"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a18d5ff06452d1f4c16a283382893f537"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a5470c323cd957c5094c225e59e5eb541"/><section>
+    <title>MAX_HEIGHT</title>
+<indexterm><primary>MAX_HEIGHT</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>MAX_HEIGHT</secondary></indexterm>
+<para><computeroutput>int gui.inputbox.InputBox.MAX_HEIGHT = 50<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a666974421dc3beb372b7c0e3f17fde42"/><section>
+    <title>MAX_WIDTH</title>
+<indexterm><primary>MAX_WIDTH</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>MAX_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.inputbox.InputBox.MAX_WIDTH = 800<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a0e8ec1f1bbecf210678a30e4f21af16d"/><section>
+    <title>MIN_HEIGHT</title>
+<indexterm><primary>MIN_HEIGHT</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>MIN_HEIGHT</secondary></indexterm>
+<para><computeroutput>int gui.inputbox.InputBox.MIN_HEIGHT = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aed90390dd4eb2baf60528df33cd21a30"/><section>
+    <title>MIN_WIDTH</title>
+<indexterm><primary>MIN_WIDTH</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>MIN_WIDTH</secondary></indexterm>
+<para><computeroutput>int gui.inputbox.InputBox.MIN_WIDTH = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_inputbox_8py">inputbox.py</link></section>
+</section>

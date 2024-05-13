@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="8" bodyend="-1"/>
+        <location file="game/data/data_manager.py" line="10" column="1" bodyfile="game/data/data_manager.py" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedata_1_1data__manager_1a605877bc160ff810770b413ec1c66ce9" prot="public" static="no" mutable="no">
         <type>str</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="9" bodyend="-1"/>
+        <location file="game/data/data_manager.py" line="11" column="1" bodyfile="game/data/data_manager.py" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedata_1_1data__manager_1ac2133243c19bb0f31327690bd7eede7e" prot="public" static="no" mutable="no">
         <type>str</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="11" bodyend="-1"/>
+        <location file="game/data/data_manager.py" line="13" column="1" bodyfile="game/data/data_manager.py" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacedata_1_1data__manager_1a69806cab40be96b4184506965b37d628" prot="public" static="no" mutable="no">
         <type>str</type>
@@ -61,13 +61,43 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="12" bodyend="-1"/>
+        <location file="game/data/data_manager.py" line="14" column="1" bodyfile="game/data/data_manager.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedata_1_1data__manager_1a531193a87d7f817545570ddb8a1dcd0b" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str data::data_manager.KEY_DELAY</definition>
+        <argsstring></argsstring>
+        <name>KEY_DELAY</name>
+        <qualifiedname>data.data_manager.KEY_DELAY</qualifiedname>
+        <initializer>=  &quot;KEY_DELAY&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/data_manager.py" line="15" column="1" bodyfile="game/data/data_manager.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedata_1_1data__manager_1ad646bade4ce065c25729ed279da6940e" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str data::data_manager.KEY_INTERVAL</definition>
+        <argsstring></argsstring>
+        <name>KEY_INTERVAL</name>
+        <qualifiedname>data.data_manager.KEY_INTERVAL</qualifiedname>
+        <initializer>=  &quot;KEY_INTERVAL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/data_manager.py" line="16" column="1" bodyfile="game/data/data_manager.py" bodystart="16" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
-      <memberdef kind="function" id="namespacedata_1_1data__manager_1a5623c40122236974b332d4eb874500f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>data.data_manager.get_game_properties</definition>
+      <memberdef kind="function" id="namespacedata_1_1data__manager_1a1a60843f2e08f2f738a5734e8ae5e7f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[str]</type>
+        <definition> Iterator[str] data.data_manager.get_game_properties</definition>
         <argsstring>()</argsstring>
         <name>get_game_properties</name>
         <qualifiedname>data.data_manager.get_game_properties</qualifiedname>
@@ -79,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="15" bodyend="23"/>
+        <location file="game/data/data_manager.py" line="19" column="1" bodyfile="game/data/data_manager.py" bodystart="19" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="namespacedata_1_1data__manager_1a43e25f7d8cf23845f2c2d4cda96dec44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -99,13 +129,30 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" bodystart="24" bodyend="41"/>
+        <location file="game/data/data_manager.py" line="28" column="1" bodyfile="game/data/data_manager.py" bodystart="28" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedata_1_1data__manager_1a350c7fd79fb3452632880a4ccfa50e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>data.data_manager.verify_game_property_values</definition>
+        <argsstring>()</argsstring>
+        <name>verify_game_property_values</name>
+        <qualifiedname>data.data_manager.verify_game_property_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check that the game property values entered in the file follow the requirements.
+An exception is raised if one isn&apos;t followed.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/data_manager.py" line="47" column="1" bodyfile="game/data/data_manager.py" bodystart="47" bodyend="56"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/data_manager.py" line="1" column="1"/>
+    <location file="game/data/data_manager.py" line="1" column="1"/>
   </compounddef>
 </doxygen>

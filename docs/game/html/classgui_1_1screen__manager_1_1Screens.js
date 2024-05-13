@@ -9,9 +9,13 @@ var classgui_1_1screen__manager_1_1Screens =
     [ "game", "classgui_1_1screen__manager_1_1Screens.html#a760e728fd8477a60e00babf949c9f276", null ],
     [ "gameover_screen", "classgui_1_1screen__manager_1_1Screens.html#a39700556405bddc8add791eec0add77d", null ],
     [ "loading_screen", "classgui_1_1screen__manager_1_1Screens.html#afbdc3c8162678db8583aba629623222d", null ],
-    [ "main_menu", "classgui_1_1screen__manager_1_1Screens.html#a647d8eb2c2e337efee82d04e499e4b7b", null ],
+    [ "main_menu_screen", "classgui_1_1screen__manager_1_1Screens.html#a5c9c71d40c9c04f17df2fd873b3397c6", null ],
+    [ "map_screen", "classgui_1_1screen__manager_1_1Screens.html#ab7e41aaf3ab06d1379951c62c8d8d9dd", null ],
     [ "options_screen", "classgui_1_1screen__manager_1_1Screens.html#a1143bf620c4cc39f4933c5942596c749", null ],
     [ "pause_screen", "classgui_1_1screen__manager_1_1Screens.html#a89e66b9c8de4d304ffe2eab2bb9ab8b6", null ],
     [ "screen", "classgui_1_1screen__manager_1_1Screens.html#a5d22d72dd10f258d9281c700644f1341", null ],
+    [ "server_connect_screen", "classgui_1_1screen__manager_1_1Screens.html#ac3d979d0f81881cd048e7fbd8380fd00", null ],
+    [ "server_join_screen", "classgui_1_1screen__manager_1_1Screens.html#a2507ed22bdb1164d3ddb7a8475304ee8", null ],
+    [ "server_menu_screen", "classgui_1_1screen__manager_1_1Screens.html#a01a4aeb84d05d2e9bdf1573353581510", null ],
     [ "window", "classgui_1_1screen__manager_1_1Screens.html#aa042aec68a6a74fe382992081d33d646", null ]
 ];

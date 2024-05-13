@@ -1,5 +1,14 @@
 var annotated_dup =
 [
+    [ "client", "namespaceclient.html", [
+      [ "connection", "namespaceclient_1_1connection.html", [
+        [ "Connection", "classclient_1_1connection_1_1Connection.html", "classclient_1_1connection_1_1Connection" ],
+        [ "Tasks", "classclient_1_1connection_1_1Tasks.html", null ]
+      ] ],
+      [ "connection_handler", "namespaceclient_1_1connection__handler.html", [
+        [ "ConnectionHandler", "classclient_1_1connection__handler_1_1ConnectionHandler.html", "classclient_1_1connection__handler_1_1ConnectionHandler" ]
+      ] ]
+    ] ],
     [ "core", "namespacecore.html", [
       [ "game", "namespacecore_1_1game.html", [
         [ "Game", "classcore_1_1game_1_1Game.html", "classcore_1_1game_1_1Game" ]
@@ -42,6 +51,9 @@ var annotated_dup =
       [ "hotbar", "namespacegui_1_1hotbar.html", [
         [ "Hotbar", "classgui_1_1hotbar_1_1Hotbar.html", "classgui_1_1hotbar_1_1Hotbar" ]
       ] ],
+      [ "inputbox", "namespacegui_1_1inputbox.html", [
+        [ "InputBox", "classgui_1_1inputbox_1_1InputBox.html", "classgui_1_1inputbox_1_1InputBox" ]
+      ] ],
       [ "label", "namespacegui_1_1label.html", [
         [ "Label", "classgui_1_1label_1_1Label.html", "classgui_1_1label_1_1Label" ]
       ] ],
@@ -65,7 +77,10 @@ var annotated_dup =
           [ "MainHud", "classgui_1_1screens_1_1main__hud_1_1MainHud.html", "classgui_1_1screens_1_1main__hud_1_1MainHud" ]
         ] ],
         [ "mainmenu_screen", "namespacegui_1_1screens_1_1mainmenu__screen.html", [
-          [ "MainMenu", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu" ]
+          [ "MainMenuScreen", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" ]
+        ] ],
+        [ "map_screen", "namespacegui_1_1screens_1_1map__screen.html", [
+          [ "MapScreen", "classgui_1_1screens_1_1map__screen_1_1MapScreen.html", "classgui_1_1screens_1_1map__screen_1_1MapScreen" ]
         ] ],
         [ "options_screen", "namespacegui_1_1screens_1_1options__screen.html", [
           [ "OptionsScreen", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen" ]
@@ -75,6 +90,15 @@ var annotated_dup =
         ] ],
         [ "screen", "namespacegui_1_1screens_1_1screen.html", [
           [ "Screen", "classgui_1_1screens_1_1screen_1_1Screen.html", "classgui_1_1screens_1_1screen_1_1Screen" ]
+        ] ],
+        [ "serverconnect_screen", "namespacegui_1_1screens_1_1serverconnect__screen.html", [
+          [ "ServerConnectScreen", "classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html", "classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" ]
+        ] ],
+        [ "serverjoin_screen", "namespacegui_1_1screens_1_1serverjoin__screen.html", [
+          [ "ServerJoinScreen", "classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html", "classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" ]
+        ] ],
+        [ "servermenu_screen", "namespacegui_1_1screens_1_1servermenu__screen.html", [
+          [ "ServerMenuScreen", "classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", "classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" ]
         ] ]
       ] ],
       [ "slot", "namespacegui_1_1slot.html", [
@@ -84,8 +108,19 @@ var annotated_dup =
         [ "Widget", "classgui_1_1widget_1_1Widget.html", "classgui_1_1widget_1_1Widget" ]
       ] ]
     ] ],
+    [ "packet", "namespacepacket.html", [
+      [ "Compressor", "classpacket_1_1Compressor.html", null ],
+      [ "Hasher", "classpacket_1_1Hasher.html", null ]
+    ] ],
+    [ "protocol", "namespaceprotocol.html", [
+      [ "Protocol", "classprotocol_1_1Protocol.html", null ]
+    ] ],
+    [ "server", "namespaceserver.html", [
+      [ "Server", "classserver_1_1Server.html", "classserver_1_1Server" ]
+    ] ],
     [ "utils", "namespaceutils.html", [
       [ "exceptions", "namespaceutils_1_1exceptions.html", [
+        [ "InvalidGamePropertyValue", "classutils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classutils_1_1exceptions_1_1InvalidGamePropertyValue" ],
         [ "InvalidMapData", "classutils_1_1exceptions_1_1InvalidMapData.html", "classutils_1_1exceptions_1_1InvalidMapData" ],
         [ "InvalidTextureAtlas", "classutils_1_1exceptions_1_1InvalidTextureAtlas.html", "classutils_1_1exceptions_1_1InvalidTextureAtlas" ],
         [ "OutOfMapBounds", "classutils_1_1exceptions_1_1OutOfMapBounds.html", "classutils_1_1exceptions_1_1OutOfMapBounds" ]
@@ -112,5 +147,8 @@ var annotated_dup =
       [ "world", "namespaceworld_1_1world.html", [
         [ "World", "classworld_1_1world_1_1World.html", "classworld_1_1world_1_1World" ]
       ] ]
+    ] ],
+    [ "world_handler", "namespaceworld__handler.html", [
+      [ "WorldHandler", "classworld__handler_1_1WorldHandler.html", "classworld__handler_1_1WorldHandler" ]
     ] ]
 ];

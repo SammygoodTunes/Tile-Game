@@ -7,19 +7,19 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ac139a84f7aaa64b903c90bad4b2054d7">__init__</link> (self, int x=0, int y=0, int speed=50)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a182c972941e0be4cdb9f3e1d2c603bcb">init</link> (self, Game game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a0f4a06f686d279aacd4e4fd96145e964">init</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ac466232dafbb6b3c1c2eebb1c2f81540">events</link> (self, Game game, pygame.event.Event|pygame.event.EventType e)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a4954a632eb16382c5111f1df84aa09f5">events</link> (self, game, pygame.event.Event|pygame.event.EventType e)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6f31c9e9d5faa236ca145fcc52db8804">draw</link> (self, Game game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a088e799a0514065ae12b4a73f8af31d7">draw</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a2031f6888af44110aadd4ba4dda29f48">draw_selection_grid</link> (self, Game game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a25aae6183470550f61ac756e31065b38">draw_selection_grid</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ae6497562697bafe8e2533da4604af7f6">update</link> (self, Game game, Map map_obj)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54">update</link> (self, game, Map map_obj)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a1bee780368e9b2abaefc6bd525af713a">update_ui</link> (self, Game game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de">update_ui</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1aa381c9da96549e4d6c0089a471a40add">break_tile</link> (self, Game game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5">break_tile</link> (self, game)</para>
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb">reset</link> (self)</para>
 </listitem>
@@ -88,8 +88,6 @@
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32">main_hud</link></para>
 </listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link></para>
-</listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1">breaking</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3">selected_tile_x</link></para>
@@ -113,6 +111,8 @@
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5">velocity_y</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46">hurt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d">move</link></para>
 </listitem>
@@ -167,11 +167,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classentity_1_1player_1_1Player_1aa381c9da96549e4d6c0089a471a40add"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5"/><section>
     <title>break_tile()</title>
 <indexterm><primary>break_tile</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>break_tile</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.break_tile ( self, Game game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.break_tile ( self,  game)</computeroutput></para>
 <para><literallayout><computeroutput>Break a map tile and update map surfaces.
 </computeroutput></literallayout> </para>
 </section>
@@ -183,27 +183,27 @@
 <para><literallayout><computeroutput>Returns True if the player is able to access and break a breakable tile.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a6f31c9e9d5faa236ca145fcc52db8804"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a088e799a0514065ae12b4a73f8af31d7"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>draw</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.draw ( self, Game game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.draw ( self,  game)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the player to the screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a2031f6888af44110aadd4ba4dda29f48"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a25aae6183470550f61ac756e31065b38"/><section>
     <title>draw_selection_grid()</title>
 <indexterm><primary>draw_selection_grid</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>draw_selection_grid</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.draw_selection_grid ( self, Game game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.draw_selection_grid ( self,  game)</computeroutput></para>
 <para><literallayout><computeroutput>Draw the player tile selection grid to the screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ac466232dafbb6b3c1c2eebb1c2f81540"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a4954a632eb16382c5111f1df84aa09f5"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>events</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.events ( self, Game game, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.events ( self,  game, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the player events.
 </computeroutput></literallayout> </para>
 </section>
@@ -281,11 +281,11 @@ The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGH
 <para><literallayout><computeroutput>Returns True if the player has selected a breakable tile.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a182c972941e0be4cdb9f3e1d2c603bcb"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a0f4a06f686d279aacd4e4fd96145e964"/><section>
     <title>init()</title>
 <indexterm><primary>init</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>init</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.init ( self, Game game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.init ( self,  game)</computeroutput></para>
 <para><literallayout><computeroutput>Define the player attributes that depend on the given game object.
 </computeroutput></literallayout> </para>
 </section>
@@ -442,19 +442,19 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <para><literallayout><computeroutput>Set the player&apos;s y position, then return the player itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ae6497562697bafe8e2533da4604af7f6"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>update</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.update ( self, Game game, Map map_obj)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.update ( self,  game, Map map_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Update the player.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a1bee780368e9b2abaefc6bd525af713a"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.update_ui ( self, Game game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.update_ui ( self,  game)</computeroutput></para>
 <para><literallayout><computeroutput>Update the player GUI.
 </computeroutput></literallayout> </para>
 </section>

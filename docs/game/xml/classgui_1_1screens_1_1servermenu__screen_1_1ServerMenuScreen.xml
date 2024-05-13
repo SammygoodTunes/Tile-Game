@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" kind="class" language="Python" prot="public">
+    <compoundname>gui::screens::servermenu_screen::ServerMenuScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="18" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1adb5a395c1b959d6602d6f45a8a06feff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="19" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a196fc4c7ab65f483ca4f54ee2ce473f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::subtitle_label</definition>
+        <argsstring></argsstring>
+        <name>subtitle_label</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.subtitle_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="20" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a7fe795a9e069affcb4e4b9d14657e3b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::join_button</definition>
+        <argsstring></argsstring>
+        <name>join_button</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.join_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="21" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aac3b9fea4c727321dc2e90d89643f1c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::create_button</definition>
+        <argsstring></argsstring>
+        <name>create_button</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.create_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="23" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3096b952cc70c6b2b9f3e3f0426adfde" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.servermenu_screen.ServerMenuScreen::back_button</definition>
+        <argsstring></argsstring>
+        <name>back_button</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.back_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="25" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ab8af12110d837200847eead8043c50bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.servermenu_screen.ServerMenuScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="16" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3f65264f847cbc5695587bfe9c3efd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface gui.screens.servermenu_screen.ServerMenuScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Initialise the screen&apos;s surface.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="28" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1abc8edc71bbecced634d6df910c1d5a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.servermenu_screen.ServerMenuScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Draw the screen and its components.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="37" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a94e0525162f93858f1945588141e407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.servermenu_screen.ServerMenuScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Update the screen UI.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="48" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="48" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a97a1c71f46d23937379639133241e326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screens.servermenu_screen.ServerMenuScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>gui.screens.servermenu_screen.ServerMenuScreen.set_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>        Set the screen&apos;s visibility/interactivity.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/screens/servermenu_screen.py" line="62" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="62" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    Class for creating the server menu screen.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.servermenu_screen.ServerMenuScreen</label>
+        <link refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Screen</label>
+      </node>
+      <node id="1">
+        <label>gui.screens.servermenu_screen.ServerMenuScreen</label>
+        <link refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="game/gui/screens/servermenu_screen.py" line="11" column="1" bodyfile="game/gui/screens/servermenu_screen.py" bodystart="11" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ab8af12110d837200847eead8043c50bc" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>__init__</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3096b952cc70c6b2b9f3e3f0426adfde" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>back_button</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aac3b9fea4c727321dc2e90d89643f1c9" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>create_button</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1abc8edc71bbecced634d6df910c1d5a4f" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>draw</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1adb5a395c1b959d6602d6f45a8a06feff" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3f65264f847cbc5695587bfe9c3efd8f" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a7fe795a9e069affcb4e4b9d14657e3b5" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>join_button</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a97a1c71f46d23937379639133241e326" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>set_state</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a196fc4c7ab65f483ca4f54ee2ce473f8" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>subtitle_label</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a94e0525162f93858f1945588141e407d" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>update_ui</name></member>
+      <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba" prot="public" virt="non-virtual"><scope>gui::screens::servermenu_screen::ServerMenuScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

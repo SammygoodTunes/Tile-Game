@@ -34,6 +34,10 @@
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706">connection_handler</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcore_1_1game_1_1Game_1abbd59111e59987b90d149e8aae23b0df">server</link></para>
+</listitem>
             <listitem><para><link linkend="_classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a">player</link></para>
 </listitem>
         </itemizedlist>
@@ -125,11 +129,21 @@
 <indexterm><primary>_running</primary><secondary>core.game.Game</secondary></indexterm>
 <indexterm><primary>core.game.Game</primary><secondary>_running</secondary></indexterm>
 <para><computeroutput>core.game.Game._running<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706"/><section>
+    <title>connection_handler</title>
+<indexterm><primary>connection_handler</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>connection_handler</secondary></indexterm>
+<para><computeroutput>core.game.Game.connection_handler</computeroutput></para></section>
 <anchor xml:id="_classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a"/><section>
     <title>player</title>
 <indexterm><primary>player</primary><secondary>core.game.Game</secondary></indexterm>
 <indexterm><primary>core.game.Game</primary><secondary>player</secondary></indexterm>
 <para><computeroutput>core.game.Game.player</computeroutput></para></section>
+<anchor xml:id="_classcore_1_1game_1_1Game_1abbd59111e59987b90d149e8aae23b0df"/><section>
+    <title>server</title>
+<indexterm><primary>server</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>server</secondary></indexterm>
+<para><computeroutput>core.game.Game.server</computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_game_8py">game.py</link></section>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classprotocol_1_1Protocol" kind="class" language="Python" prot="public">
+    <compoundname>protocol::Protocol</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int protocol.Protocol::BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <qualifiedname>protocol.Protocol.BUFFER_SIZE</qualifiedname>
+        <initializer>=  64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="3" column="1" bodyfile="game/network/protocol.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::ENCODING</definition>
+        <argsstring></argsstring>
+        <name>ENCODING</name>
+        <qualifiedname>protocol.Protocol.ENCODING</qualifiedname>
+        <initializer>=  &apos;utf-8&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="4" column="1" bodyfile="game/network/protocol.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::RECOGNITION_CMD_REQ</definition>
+        <argsstring></argsstring>
+        <name>RECOGNITION_CMD_REQ</name>
+        <qualifiedname>protocol.Protocol.RECOGNITION_CMD_REQ</qualifiedname>
+        <initializer>=  &apos;TILEGAME&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="6" column="1" bodyfile="game/network/protocol.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::RECOGNITION_CMD_RES</definition>
+        <argsstring></argsstring>
+        <name>RECOGNITION_CMD_RES</name>
+        <qualifiedname>protocol.Protocol.RECOGNITION_CMD_RES</qualifiedname>
+        <initializer>=  &apos;GAMETILE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="7" column="1" bodyfile="game/network/protocol.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::MAPOBJ_CMD_REQ</definition>
+        <argsstring></argsstring>
+        <name>MAPOBJ_CMD_REQ</name>
+        <qualifiedname>protocol.Protocol.MAPOBJ_CMD_REQ</qualifiedname>
+        <initializer>=  &apos;MAPOBJ&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="8" column="1" bodyfile="game/network/protocol.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::MAPOBJ_CMD_RES</definition>
+        <argsstring></argsstring>
+        <name>MAPOBJ_CMD_RES</name>
+        <qualifiedname>protocol.Protocol.MAPOBJ_CMD_RES</qualifiedname>
+        <initializer>=  &apos;OBJMAP&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="9" column="1" bodyfile="game/network/protocol.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::MAPREADY_CMD</definition>
+        <argsstring></argsstring>
+        <name>MAPREADY_CMD</name>
+        <qualifiedname>protocol.Protocol.MAPREADY_CMD</qualifiedname>
+        <initializer>=  &apos;MAPREADY&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="10" column="1" bodyfile="game/network/protocol.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::VERIFY_CMD</definition>
+        <argsstring></argsstring>
+        <name>VERIFY_CMD</name>
+        <qualifiedname>protocol.Protocol.VERIFY_CMD</qualifiedname>
+        <initializer>=  &apos;VERIFY&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="11" column="1" bodyfile="game/network/protocol.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::DISCONNECT_CMD</definition>
+        <argsstring></argsstring>
+        <name>DISCONNECT_CMD</name>
+        <qualifiedname>protocol.Protocol.DISCONNECT_CMD</qualifiedname>
+        <initializer>=  &apos;BYEBYE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/network/protocol.py" line="12" column="1" bodyfile="game/network/protocol.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="game/network/protocol.py" line="2" column="1" bodyfile="game/network/protocol.py" bodystart="2" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>DISCONNECT_CMD</name></member>
+      <member refid="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>ENCODING</name></member>
+      <member refid="classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPOBJ_CMD_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPOBJ_CMD_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPREADY_CMD</name></member>
+      <member refid="classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_CMD_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_CMD_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>VERIFY_CMD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

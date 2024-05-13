@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classpacket_1_1Compressor" xml:lang="en-US">
+<title>packet.Compressor Class Reference</title>
+<indexterm><primary>packet.Compressor</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bytes <link linkend="_classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832">compress</link> (any obj)</para>
+</listitem>
+            <listitem><para>any <link linkend="_classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb">decompress</link> (bytes data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832"/><section>
+    <title>compress()</title>
+<indexterm><primary>compress</primary><secondary>packet.Compressor</secondary></indexterm>
+<indexterm><primary>packet.Compressor</primary><secondary>compress</secondary></indexterm>
+<para><computeroutput> bytes packet.Compressor.compress (any obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb"/><section>
+    <title>decompress()</title>
+<indexterm><primary>decompress</primary><secondary>packet.Compressor</secondary></indexterm>
+<indexterm><primary>packet.Compressor</primary><secondary>decompress</secondary></indexterm>
+<para><computeroutput> any packet.Compressor.decompress (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_packet_8py">packet.py</link></section>
+</section>

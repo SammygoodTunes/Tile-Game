@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" xml:lang="en-US">
+<title>gui.screens.servermenu_screen.ServerMenuScreen Class Reference</title>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.servermenu_screen.ServerMenuScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ab8af12110d837200847eead8043c50bc">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3f65264f847cbc5695587bfe9c3efd8f">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1abc8edc71bbecced634d6df910c1d5a4f">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a94e0525162f93858f1945588141e407d">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a97a1c71f46d23937379639133241e326">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1adb5a395c1b959d6602d6f45a8a06feff">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a196fc4c7ab65f483ca4f54ee2ce473f8">subtitle_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a7fe795a9e069affcb4e4b9d14657e3b5">join_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aac3b9fea4c727321dc2e90d89643f1c9">create_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3096b952cc70c6b2b9f3e3f0426adfde">back_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>    Class for creating the server menu screen.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ab8af12110d837200847eead8043c50bc"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.servermenu_screen.ServerMenuScreen.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1abc8edc71bbecced634d6df910c1d5a4f"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.servermenu_screen.ServerMenuScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Draw the screen and its components.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3f65264f847cbc5695587bfe9c3efd8f"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface gui.screens.servermenu_screen.ServerMenuScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Initialise the screen&apos;s surface.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a97a1c71f46d23937379639133241e326"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.servermenu_screen.ServerMenuScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the screen&apos;s visibility/interactivity.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a94e0525162f93858f1945588141e407d"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.servermenu_screen.ServerMenuScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Update the screen UI.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a3096b952cc70c6b2b9f3e3f0426adfde"/><section>
+    <title>back_button</title>
+<indexterm><primary>back_button</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>back_button</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.back_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aac3b9fea4c727321dc2e90d89643f1c9"/><section>
+    <title>create_button</title>
+<indexterm><primary>create_button</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>create_button</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.create_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1adb5a395c1b959d6602d6f45a8a06feff"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a7fe795a9e069affcb4e4b9d14657e3b5"/><section>
+    <title>join_button</title>
+<indexterm><primary>join_button</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>join_button</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.join_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a196fc4c7ab65f483ca4f54ee2ce473f8"/><section>
+    <title>subtitle_label</title>
+<indexterm><primary>subtitle_label</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>subtitle_label</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.subtitle_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a10de67af4717fde9eb8c41c105e31dba"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screens.servermenu_screen.ServerMenuScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servermenu_screen.ServerMenuScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screens.servermenu_screen.ServerMenuScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_servermenu__screen_8py">servermenu_screen.py</link></section>
+</section>

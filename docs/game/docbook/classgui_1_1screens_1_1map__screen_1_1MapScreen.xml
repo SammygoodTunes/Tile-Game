@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen" xml:lang="en-US">
+<title>gui.screens.map_screen.MapScreen Class Reference</title>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.map_screen.MapScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1map__screen_1_1MapScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c">game</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c">initialise_map</link> (self, bool force=False)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf">title_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf">map</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0">scaled_map</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the map screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.map_screen.MapScreen.__init__ ( self,  game)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.map_screen.MapScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c"/><section>
+    <title>initialise_map()</title>
+<indexterm><primary>initialise_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>initialise_map</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.initialise_map ( self, bool  force = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the map surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface gui.screens.map_screen.MapScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.map_screen.MapScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.map_screen.MapScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.game</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf"/><section>
+    <title>map</title>
+<indexterm><primary>map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>map</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.map</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0"/><section>
+    <title>scaled_map</title>
+<indexterm><primary>scaled_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>scaled_map</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.scaled_map</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf"/><section>
+    <title>title_label</title>
+<indexterm><primary>title_label</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>title_label</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen.title_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_map__screen_8py">map_screen.py</link></section>
+</section>

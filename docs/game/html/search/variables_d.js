@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['old_5fheight_0',['old_height',['../classcore_1_1window_1_1Window.html#aad4b09675f0fe34863cda0d6ad43004c',1,'core::window::Window']]],
-  ['old_5fwidth_1',['old_width',['../classcore_1_1window_1_1Window.html#aae3ba375fb7fdcb8ad493abc91871c4e',1,'core::window::Window']]],
-  ['options_5fbutton_2',['options_button',['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#a4dd3c7b29d509d3f6354ce14ec3b8144',1,'gui.screens.mainmenu_screen.MainMenu.options_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a84d2d01f4090bcf5962887efad26d48d',1,'gui.screens.pause_screen.PauseScreen.options_button']]],
-  ['options_5flabel_3',['options_label',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a327b52303034dc6fb89da8ed4723e67f',1,'gui.screens.credits_screen.CreditsScreen.options_label'],['../classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#af61f700228227e1ccbe444dc919a6efc',1,'gui.screens.options_screen.OptionsScreen.options_label']]],
-  ['options_5fscreen_4',['options_screen',['../classgui_1_1screen__manager_1_1Screens.html#a1143bf620c4cc39f4933c5942596c749',1,'gui::screen_manager::Screens']]]
+  ['main_5fhud_0',['main_hud',['../classentity_1_1player_1_1Player.html#acd7de28913b58f7ba402a1212e8e1b32',1,'entity::player::Player']]],
+  ['main_5fmenu_5fscreen_1',['main_menu_screen',['../classgui_1_1screen__manager_1_1Screens.html#a5c9c71d40c9c04f17df2fd873b3397c6',1,'gui::screen_manager::Screens']]],
+  ['map_2',['map',['../classgui_1_1screens_1_1map__screen_1_1MapScreen.html#a703d62ff406c6376e4df1f4d4248c2cf',1,'gui::screens::map_screen::MapScreen']]],
+  ['map_5fscreen_3',['map_screen',['../classgui_1_1screen__manager_1_1Screens.html#ab7e41aaf3ab06d1379951c62c8d8d9dd',1,'gui::screen_manager::Screens']]],
+  ['mapobj_5fcmd_5freq_4',['MAPOBJ_CMD_REQ',['../classprotocol_1_1Protocol.html#a0c75670c45111e5264c80cb624c198d0',1,'protocol::Protocol']]],
+  ['mapobj_5fcmd_5fres_5',['MAPOBJ_CMD_RES',['../classprotocol_1_1Protocol.html#ada103d4e5c11c03d64e168e408489c70',1,'protocol::Protocol']]],
+  ['mapready_5fcmd_6',['MAPREADY_CMD',['../classprotocol_1_1Protocol.html#ae641247dbba4278845beb0547d857fc9',1,'protocol::Protocol']]],
+  ['max_5fheight_7',['max_height',['../classcore_1_1window_1_1Window.html#ae19b9e047955f8ca433046efe2c83c84',1,'core::window::Window']]],
+  ['max_5fheight_8',['MAX_HEIGHT',['../classgui_1_1button_1_1Button.html#a1b58b70e42fb2c95eda456ea43fb5ddf',1,'gui.button.Button.MAX_HEIGHT'],['../classgui_1_1inputbox_1_1InputBox.html#a5470c323cd957c5094c225e59e5eb541',1,'gui.inputbox.InputBox.MAX_HEIGHT']]],
+  ['max_5fsize_9',['MAX_SIZE',['../classgui_1_1slot_1_1Slot.html#a125f92c71492082f06c27089c5ba0b52',1,'gui::slot::Slot']]],
+  ['max_5fwidth_10',['max_width',['../classcore_1_1window_1_1Window.html#a99fdf8c1ee41e7abd9b63871cfa44c97',1,'core::window::Window']]],
+  ['max_5fwidth_11',['MAX_WIDTH',['../classgui_1_1button_1_1Button.html#a13e5437ccc6ede08af775f445bc8a64c',1,'gui.button.Button.MAX_WIDTH'],['../classgui_1_1horizontal__slider_1_1HorizontalSlider.html#a0267855f1d66d13d860d8ec5b77a7c47',1,'gui.horizontal_slider.HorizontalSlider.MAX_WIDTH'],['../classgui_1_1inputbox_1_1InputBox.html#a666974421dc3beb372b7c0e3f17fde42',1,'gui.inputbox.InputBox.MAX_WIDTH'],['../classgui_1_1progress__bar_1_1ProgressBar.html#a7a5b67d3a3dcac49355f5505258a8f14',1,'gui.progress_bar.ProgressBar.MAX_WIDTH']]],
+  ['min_5fheight_12',['MIN_HEIGHT',['../classgui_1_1button_1_1Button.html#ad8d833b4a5233cfbf123a54dc339a4a0',1,'gui.button.Button.MIN_HEIGHT'],['../classgui_1_1inputbox_1_1InputBox.html#a0e8ec1f1bbecf210678a30e4f21af16d',1,'gui.inputbox.InputBox.MIN_HEIGHT']]],
+  ['min_5fsize_13',['MIN_SIZE',['../classgui_1_1slot_1_1Slot.html#a0feed12953ec4d3cd8a7c0e39aa3448e',1,'gui::slot::Slot']]],
+  ['min_5fwidth_14',['MIN_WIDTH',['../classgui_1_1button_1_1Button.html#abb34e41d38b186b00e1febcc94460861',1,'gui.button.Button.MIN_WIDTH'],['../classgui_1_1horizontal__slider_1_1HorizontalSlider.html#ad63eb302ce036359e85303404982aeef',1,'gui.horizontal_slider.HorizontalSlider.MIN_WIDTH'],['../classgui_1_1inputbox_1_1InputBox.html#aed90390dd4eb2baf60528df33cd21a30',1,'gui.inputbox.InputBox.MIN_WIDTH'],['../classgui_1_1progress__bar_1_1ProgressBar.html#afceac4be0ceabe34afd39ed9c411c1d7',1,'gui.progress_bar.ProgressBar.MIN_WIDTH']]],
+  ['mining_5ftimer_15',['MINING_TIMER',['../classentity_1_1player_1_1Player.html#a7af13c9b3a48f31142417667c8437afe',1,'entity::player::Player']]],
+  ['mmb_16',['MMB',['../classdata_1_1mouse__properties_1_1Mouse.html#a6237186b5cab962493a9b50b7ab4de22',1,'data.mouse_properties.Mouse.MMB'],['../classdata_1_1mouse__properties_1_1Mouse.html#af75a6c2c9e048eab5076846a19544504',1,'data.mouse_properties.Mouse.MMB']]],
+  ['move_17',['move',['../classentity_1_1player_1_1Player.html#ac450a4c66da2acb004a2954d6dfa3a4d',1,'entity::player::Player']]]
 ];

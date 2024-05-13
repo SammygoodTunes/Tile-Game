@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['quit_5fbutton_0',['quit_button',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#a238f3f5274334b41300f75b1c8e38ee1',1,'gui.screens.gameover_screen.GameoverScreen.quit_button'],['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenu.html#abb648ecca265cefff8063b22a02f9cf7',1,'gui.screens.mainmenu_screen.MainMenu.quit_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#ae35928eed3390fa8379b1023d2b8035b',1,'gui.screens.pause_screen.PauseScreen.quit_button']]]
+  ['old_5fheight_0',['old_height',['../classcore_1_1window_1_1Window.html#aad4b09675f0fe34863cda0d6ad43004c',1,'core::window::Window']]],
+  ['old_5fwidth_1',['old_width',['../classcore_1_1window_1_1Window.html#aae3ba375fb7fdcb8ad493abc91871c4e',1,'core::window::Window']]],
+  ['options_5fbutton_2',['options_button',['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a1e40def2aab27436cfed6475bb6113c7',1,'gui.screens.mainmenu_screen.MainMenuScreen.options_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a84d2d01f4090bcf5962887efad26d48d',1,'gui.screens.pause_screen.PauseScreen.options_button']]],
+  ['options_5flabel_3',['options_label',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a327b52303034dc6fb89da8ed4723e67f',1,'gui.screens.credits_screen.CreditsScreen.options_label'],['../classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#af61f700228227e1ccbe444dc919a6efc',1,'gui.screens.options_screen.OptionsScreen.options_label']]],
+  ['options_5fscreen_4',['options_screen',['../classgui_1_1screen__manager_1_1Screens.html#a1143bf620c4cc39f4933c5942596c749',1,'gui::screen_manager::Screens']]]
 ];

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classclient_1_1connection__handler_1_1ConnectionHandler" kind="class" language="Python" prot="public">
+    <compoundname>client::connection_handler::ConnectionHandler</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a66d231003c1ec24a06cf4a6aef863458" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler::start_connection</definition>
+        <argsstring></argsstring>
+        <name>start_connection</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.start_connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="11" column="1" bodyfile="game/client/connection_handler.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a58e0dcf127a69e2c04e4cf6dd8545edf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler::stop_connection</definition>
+        <argsstring></argsstring>
+        <name>stop_connection</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.stop_connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="12" column="1" bodyfile="game/client/connection_handler.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="13" column="1" bodyfile="game/client/connection_handler.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="14" column="1" bodyfile="game/client/connection_handler.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="20" column="1" bodyfile="game/client/connection_handler.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="10" column="1" bodyfile="game/client/connection_handler.py" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.connection_handler.ConnectionHandler.update</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>update</name>
+        <qualifiedname>client.connection_handler.ConnectionHandler.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/client/connection_handler.py" line="17" column="1" bodyfile="game/client/connection_handler.py" bodystart="17" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the connection handler.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/client/connection_handler.py" line="5" column="1" bodyfile="game/client/connection_handler.py" bodystart="5" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>__init__</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>connection</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>host</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>port</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a66d231003c1ec24a06cf4a6aef863458" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>start_connection</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a58e0dcf127a69e2c04e4cf6dd8545edf" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>stop_connection</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

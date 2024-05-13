@@ -101,10 +101,12 @@ $(function(){initNavTree('namespacedata_1_1data__manager.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5623c40122236974b332d4eb874500f3" id="r_a5623c40122236974b332d4eb874500f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5623c40122236974b332d4eb874500f3">get_game_properties</a> ()</td></tr>
-<tr class="separator:a5623c40122236974b332d4eb874500f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a60843f2e08f2f738a5734e8ae5e7f7" id="r_a1a60843f2e08f2f738a5734e8ae5e7f7"><td class="memItemLeft" align="right" valign="top">Iterator[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a60843f2e08f2f738a5734e8ae5e7f7">get_game_properties</a> ()</td></tr>
+<tr class="separator:a1a60843f2e08f2f738a5734e8ae5e7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e25f7d8cf23845f2c2d4cda96dec44" id="r_a43e25f7d8cf23845f2c2d4cda96dec44"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43e25f7d8cf23845f2c2d4cda96dec44">get_game_property</a> (str game_property)</td></tr>
 <tr class="separator:a43e25f7d8cf23845f2c2d4cda96dec44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350c7fd79fb3452632880a4ccfa50e09" id="r_a350c7fd79fb3452632880a4ccfa50e09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a350c7fd79fb3452632880a4ccfa50e09">verify_game_property_values</a> ()</td></tr>
+<tr class="separator:a350c7fd79fb3452632880a4ccfa50e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -116,16 +118,20 @@ Variables</h2></td></tr>
 <tr class="separator:ac2133243c19bb0f31327690bd7eede7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69806cab40be96b4184506965b37d628" id="r_a69806cab40be96b4184506965b37d628"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69806cab40be96b4184506965b37d628">APP_VERSION</a> = &quot;APP_VER&quot;</td></tr>
 <tr class="separator:a69806cab40be96b4184506965b37d628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531193a87d7f817545570ddb8a1dcd0b" id="r_a531193a87d7f817545570ddb8a1dcd0b"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a531193a87d7f817545570ddb8a1dcd0b">KEY_DELAY</a> = &quot;KEY_DELAY&quot;</td></tr>
+<tr class="separator:a531193a87d7f817545570ddb8a1dcd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad646bade4ce065c25729ed279da6940e" id="r_ad646bade4ce065c25729ed279da6940e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad646bade4ce065c25729ed279da6940e">KEY_INTERVAL</a> = &quot;KEY_INTERVAL&quot;</td></tr>
+<tr class="separator:ad646bade4ce065c25729ed279da6940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5623c40122236974b332d4eb874500f3" name="a5623c40122236974b332d4eb874500f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5623c40122236974b332d4eb874500f3">&#9670;&#160;</a></span>get_game_properties()</h2>
+<a id="a1a60843f2e08f2f738a5734e8ae5e7f7" name="a1a60843f2e08f2f738a5734e8ae5e7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a60843f2e08f2f738a5734e8ae5e7f7">&#9670;&#160;</a></span>get_game_properties()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">data.data_manager.get_game_properties </td>
+          <td class="memname"> Iterator[str] data.data_manager.get_game_properties </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -151,6 +157,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Get the value of a specified game_property key.
+</pre> 
+</div>
+</div>
+<a id="a350c7fd79fb3452632880a4ccfa50e09" name="a350c7fd79fb3452632880a4ccfa50e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350c7fd79fb3452632880a4ccfa50e09">&#9670;&#160;</a></span>verify_game_property_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">data.data_manager.verify_game_property_values </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Check that the game property values entered in the file follow the requirements.
+An exception is raised if one isn't followed.
 </pre> 
 </div>
 </div>
@@ -205,6 +230,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">str data.data_manager.GAME_PROPERTIES_SEPARATOR = '='</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a531193a87d7f817545570ddb8a1dcd0b" name="a531193a87d7f817545570ddb8a1dcd0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531193a87d7f817545570ddb8a1dcd0b">&#9670;&#160;</a></span>KEY_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str data.data_manager.KEY_DELAY = &quot;KEY_DELAY&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad646bade4ce065c25729ed279da6940e" name="ad646bade4ce065c25729ed279da6940e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad646bade4ce065c25729ed279da6940e">&#9670;&#160;</a></span>KEY_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str data.data_manager.KEY_INTERVAL = &quot;KEY_INTERVAL&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

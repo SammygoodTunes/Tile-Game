@@ -5,6 +5,7 @@
     <innerclass refid="classutils_1_1exceptions_1_1InvalidTextureAtlas" prot="public">utils::exceptions::InvalidTextureAtlas</innerclass>
     <innerclass refid="classutils_1_1exceptions_1_1InvalidMapData" prot="public">utils::exceptions::InvalidMapData</innerclass>
     <innerclass refid="classutils_1_1exceptions_1_1OutOfMapBounds" prot="public">utils::exceptions::OutOfMapBounds</innerclass>
+    <innerclass refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue" prot="public">utils::exceptions::InvalidGamePropertyValue</innerclass>
     <innernamespace refid="namespaceutils">utils</innernamespace>
     <innernamespace refid="namespaceutils_1_1exceptions">utils::exceptions</innernamespace>
     <briefdescription>
@@ -39,7 +40,16 @@
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1OutOfMapBounds_1ae7d362624f6f3f5e6663ff0f88186c86" kindref="member">__init__</ref>(self,<sp/>message=&quot;Out<sp/>of<sp/>map<sp/>boundaries,<sp/>make<sp/>sure<sp/>to<sp/>stay<sp/>within<sp/>them!&quot;)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1OutOfMapBounds_1ae7d362624f6f3f5e6663ff0f88186c86" kindref="member">__init__</ref>(message)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue" kindref="compound">InvalidGamePropertyValue</ref>(Exception):</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>the<sp/>exception<sp/>caused<sp/>by<sp/>an<sp/>invalid<sp/>game<sp/>property<sp/>value.</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue_1ac10b2c41160ed8ca56562d50588fb991" kindref="member">__init__</ref>(self,<sp/>message):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue_1ac10b2c41160ed8ca56562d50588fb991" kindref="member">__init__</ref>(f</highlight><highlight class="stringliteral">&apos;Invalid<sp/>game<sp/>property<sp/>value,<sp/>expected:<sp/>{message}&apos;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py"/>
+    <location file="game/utils/exceptions.py"/>
   </compounddef>
 </doxygen>

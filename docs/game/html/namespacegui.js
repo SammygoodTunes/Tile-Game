@@ -4,6 +4,7 @@ var namespacegui =
     [ "checkbox", "namespacegui_1_1checkbox.html", "namespacegui_1_1checkbox" ],
     [ "horizontal_slider", "namespacegui_1_1horizontal__slider.html", "namespacegui_1_1horizontal__slider" ],
     [ "hotbar", "namespacegui_1_1hotbar.html", "namespacegui_1_1hotbar" ],
+    [ "inputbox", "namespacegui_1_1inputbox.html", "namespacegui_1_1inputbox" ],
     [ "label", "namespacegui_1_1label.html", "namespacegui_1_1label" ],
     [ "progress_bar", "namespacegui_1_1progress__bar.html", "namespacegui_1_1progress__bar" ],
     [ "screen_manager", "namespacegui_1_1screen__manager.html", "namespacegui_1_1screen__manager" ],
