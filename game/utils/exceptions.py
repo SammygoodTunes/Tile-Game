@@ -34,3 +34,13 @@ class InvalidGamePropertyValue(Exception):
 
     def __init__(self, message):
         super().__init__(f'Invalid game property value, expected: {message}')
+
+
+class ZeroOrLessSpawnPlayerAttempts(Exception):
+    """
+    Class for creating the exception caused by setting the number of attempts to zero or less when finding an ideal
+    spawn point for the player.
+    """
+
+    def __init__(self, message="Number of attempts to choose player spawn point must be at least 1."):
+        super().__init__(message)
