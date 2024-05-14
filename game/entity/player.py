@@ -270,6 +270,7 @@ class Player:
             # Game over
             if self.is_dead():
                 self.health = 0
+                game.screens.map_screen.set_state(False)
                 game.screens.gameover_screen.set_state(True)
 
             self.main_hud.health_bar.set_value(self.health)
