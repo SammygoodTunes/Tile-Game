@@ -42,6 +42,7 @@ class MapScreen(Screen):
                                 self.game.height / self.game.world.get_map().get_height_in_pixels() * 0.5)
         self.scaled_map = smoothscale_by(self.game.world.get_map().get_surface(), round(coefficient, 2))
         self._got_map = True
+        self.update_ui()
 
     def reset_map(self) -> None:
         """
