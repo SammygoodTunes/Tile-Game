@@ -1,6 +1,6 @@
 from pygame import Surface
 
-from game.client.connection import Connection
+from game.data.states import ConnectionStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -54,21 +54,21 @@ class ServerConnectScreen(Screen):
         """
         Update info label's text and colour based on received connection code, then update the screen UI.
         """
-        if code == Connection.SUCCESS:
+        if code == ConnectionStates.SUCCESS:
             self.info_label.set_text('Connection successful.').set_colour((0, 255, 0))
-        elif code == Connection.INVALID:
+        elif code == ConnectionStates.INVALID:
             self.info_label.set_text('Unknown host.').set_colour((255, 0, 0))
-        elif code == Connection.REFUSED:
+        elif code == ConnectionStates.REFUSED:
             self.info_label.set_text('Failed to connect to server.').set_colour((255, 0, 0))
-        elif code == Connection.TIMEOUT:
+        elif code == ConnectionStates.TIMEOUT:
             self.info_label.set_text('Connection timed out.').set_colour((255, 0, 0))
-        elif code == Connection.NOROUTE:
+        elif code == ConnectionStates.NOROUTE:
             self.info_label.set_text('No route to host.').set_colour((255, 0, 0))
-        elif code == Connection.DISCONNECTED:
+        elif code == ConnectionStates.DISCONNECTED:
             self.info_label.set_text('Disconnected.').set_colour((255, 0, 0))
-        elif code == Connection.ERROR:
+        elif code == ConnectionStates.ERROR:
             self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
-        elif code == Connection.GETDATA:
+        elif code == ConnectionStates.GETDATA:
             self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:
             self.info_label.set_text('Connecting to server...').set_colour((255, 255, 0))

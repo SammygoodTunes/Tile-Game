@@ -1,5 +1,6 @@
 
 from game.client.connection import Connection, Tasks
+from game.data.states import ConnectionStates
 
 
 class ConnectionHandler:
@@ -35,7 +36,7 @@ class ConnectionHandler:
             game.screens.server_connect_screen.update_info_label(connection_state)
             if connection_state > 0:
                 self.connection = None
-            if connection_state == Connection.SUCCESS:
+            if connection_state == ConnectionStates.SUCCESS:
                 game.world.set_map(self.connection.data)
                 game.world.initialise()
                 game.world.get_map().load()
