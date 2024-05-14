@@ -2,6 +2,7 @@
 from pygame import Surface
 
 import game.data.data_manager as data_mng
+from game.data.properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -31,7 +32,7 @@ class ServerMenuScreen(Screen):
 		"""
 		surface = Surface((self.window.width, self.window.height))
 		surface.fill((0, 0, 0))
-		surface.set_alpha(96)
+		surface.set_alpha(ScreenProperties.ALPHA)
 		return surface
 
 	def draw(self) -> None:

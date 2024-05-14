@@ -2,6 +2,7 @@ from pygame.draw import rect, line
 from pygame.surface import Surface
 from pygame.transform import smoothscale_by
 
+from game.data.properties import ScreenProperties
 from game.data.states import MapStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -28,7 +29,7 @@ class MapScreen(Screen):
         """
         surface = Surface((self.game.width, self.game.height))
         surface.fill((0, 0, 0))
-        surface.set_alpha(96)
+        surface.set_alpha(ScreenProperties.ALPHA)
         return surface
 
     def initialise_map(self) -> None:

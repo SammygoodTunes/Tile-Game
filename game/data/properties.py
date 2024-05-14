@@ -1,4 +1,12 @@
 
+class ScreenProperties:
+    """
+    Class for screen properties
+    """
+
+    ALPHA = 128
+
+
 class MouseProperties:
     """
     Class for mouse properties.
