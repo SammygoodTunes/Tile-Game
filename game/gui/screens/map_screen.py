@@ -1,5 +1,4 @@
-
-from pygame.draw import rect
+from pygame.draw import rect, line
 from pygame.surface import Surface
 from pygame.transform import smoothscale_by
 
@@ -57,10 +56,32 @@ class MapScreen(Screen):
             self.game.screen.blit(self.faded_surface, (0, 0))
             self.title_label.draw(self.game.screen)
             self.game.screen.blit(self.scaled_map, (self.game.width // 2 - self.scaled_map.get_width() // 2,
-                                               self.game.height // 2 - self.scaled_map.get_height() // 2))
-            rect(self.game.screen, (255, 255, 255), (self.game.width // 2 - self.scaled_map.get_width() // 2 - 2,
-                                                     self.game.height // 2 - self.scaled_map.get_height() // 2 - 2,
-                                                     self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 4, 4)
+                                                    self.game.height // 2 - self.scaled_map.get_height() // 2))
+            line(self.game.screen, (170, 170, 170),
+                 (self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
+                  self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
+                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
+                 ), 2)
+            line(self.game.screen, (170, 170, 170), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2),
+                 (
+                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
+                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2
+                 ), 2)
+            line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                     self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                     self.game.width // 2 - self.scaled_map.get_width() // 2,
+                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
+                 ), 2)
+            line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                     self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
+                     self.game.height // 2 - self.scaled_map.get_height() // 2
+                 ), 2)
+            rect(self.game.screen, (0, 0, 0), (self.game.width // 2 - self.scaled_map.get_width() // 2 - 2,
+                                               self.game.height // 2 - self.scaled_map.get_height() // 2 - 2,
+                                               self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 2, 4)
 
     def update_ui(self) -> None:
         """
@@ -72,7 +93,8 @@ class MapScreen(Screen):
             self.scaled_map = smoothscale_by(self.game.world.get_map().get_surface(), round(coefficient, 2))
         self.faded_surface = self.initialise_surface()
         self.title_label.update(self.game)
-        self.title_label.center_with_offset(0, 0, self.game.width, self.game.height, 0, -self.scaled_map.get_height() // 2 - self.title_label.get_total_height() - 5)
+        self.title_label.center_with_offset(0, 0, self.game.width, self.game.height, 0,
+                                            -self.scaled_map.get_height() // 2 - self.title_label.get_total_height() - 5)
 
     def set_state(self, state: bool) -> None:
         """
