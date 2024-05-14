@@ -3,6 +3,7 @@ from threading import Thread
 import socket
 from time import time
 
+from game.data.states import ServerStates
 from game.network.protocol import Protocol
 from game.network.packet import Hasher, Compressor
 from game.server.world_handler import WorldHandler
@@ -15,10 +16,8 @@ class Server:
     Class for creating a new Server.
     """
 
-    IDLE, RUNNING = range(0, 2)
-
     def __init__(self):
-        self.state = Server.IDLE
+        self.state = ServerStates.IDLE
         self.player_count = 0
         self.sock: socket.socket | None = None
         self.timeout = 0
@@ -37,7 +36,7 @@ class Server:
         self.player_count += 1
         running = True
         while running:
-            if self.state == Server.IDLE:
+            if self.state == ServerStates.IDLE:
                 running = False
                 continue
             data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
@@ -66,7 +65,7 @@ class Server:
         """
         Run the server.
         """
-        self.state = Server.RUNNING
+        self.state = ServerStates.RUNNING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.world_handler = WorldHandler()
 
@@ -90,7 +89,7 @@ class Server:
         self.sock.listen()
         self.world_handler.create_world()
 
-        while self.state == Server.RUNNING:
+        while self.state == ServerStates.RUNNING:
             conn, addr = self.sock.accept()
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()
@@ -101,9 +100,9 @@ class Server:
         server_thread.start()
 
     def stop(self):
-        if self.state == Server.RUNNING:
+        if self.state == ServerStates.RUNNING:
             self.sock.close()
-            self.state = Server.IDLE
+            self.state = ServerStates.IDLE
             self.test()
             print(f'Server closed.')
             self.sock = None

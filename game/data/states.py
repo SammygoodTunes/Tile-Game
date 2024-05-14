@@ -13,3 +13,10 @@ class ConnectionStates:
     """
     IDLE, PENDING, GETDATA = range(-1, -4, -1)
     SUCCESS, INVALID, REFUSED, TIMEOUT, NOROUTE, DISCONNECTED, ERROR = range(0, 7)
+
+
+class ServerStates:
+    """
+    Server states.
+    """
+    IDLE, RUNNING = range(0, 2)
