@@ -591,24 +591,31 @@ class Player:
         """
         Find the ideal starting position for the player when creating a new map.
         By default, three consecutive failed attempts will replace the tile at the last randomised tile position
-        to grass and place the player there.
+        to plains and place the player there.
         Setting the number of attempts to anything less than 1 will raise an exception.
         """
         if nb_attempts < 1:
             raise ZeroOrLessSpawnPlayerAttempts
 
-        tx: int = 0
-        ty: int = 0
+        tile_x: int = 0
+        tile_y: int = 0
         bad_tiles = TileTypes.BREAKABLE + (Tiles.LAVA,)
         for i in range(nb_attempts):
-            tx = randint(0, map_obj.get_width_in_tiles() - 1)
-            ty = randint(0, map_obj.get_height_in_tiles() - 1)
-            tile_x, tile_y = map_obj.get_tile_pos(tx, ty)
+            tile_x = randint(0, map_obj.get_width_in_tiles() - 1)
+            tile_y = randint(0, map_obj.get_height_in_tiles() - 1)
+            print(tile_x, tile_y, map_obj.get_tile(tile_x, tile_y))
             if map_obj.get_tile(tile_x, tile_y) not in bad_tiles:
-                self._x, self._y = map_obj.tile_to_world_pos(tx, ty)
+                self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
                 camera_obj.x, camera_obj.y = self._x, self._y
                 return
-        map_obj.set_tile(tx, ty, Tiles.GRASS)
-        self._x, self._y = map_obj.tile_to_world_pos(tx, ty)
+        map_obj.set_dynatile(tile_x, tile_y, True)
+        map_obj.set_tile(tile_x, tile_y, Tiles.PLAINS)
+        map_obj.tile_manager.draw(
+            tile_x * map_obj.tile_manager.SIZE,
+            tile_y * map_obj.tile_manager.SIZE,
+            Tiles.PLAINS,
+            map_obj.get_dynatile_surface()
+        )
+        self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
         camera_obj.x, camera_obj.y = self._x, self._y
 
