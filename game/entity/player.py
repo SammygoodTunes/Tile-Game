@@ -81,16 +81,6 @@ class Player:
         """
         Track the player events.
         """
-        if e.type == pygame.KEYDOWN:
-            self.move |= (1 << Directions.LEFT) if e.key == pygame.K_q else self.move
-            self.move |= (1 << Directions.UP) if e.key == pygame.K_z else self.move
-            self.move |= (1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
-            self.move |= (1 << Directions.DOWN) if e.key == pygame.K_s else self.move
-        elif e.type == pygame.KEYUP:
-            self.move &= ~(1 << Directions.LEFT) if e.key == pygame.K_q else self.move
-            self.move &= ~(1 << Directions.UP) if e.key == pygame.K_z else self.move
-            self.move &= ~(1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
-            self.move &= ~(1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
             if e.button == MouseProperties.LMB:
                 self.breaking = True
@@ -177,111 +167,118 @@ class Player:
         """
         Update the player.
         """
-        if not self.is_dead():
-            d: float = game.clock.get_time() / 1000.0
-            prev_x: int = self._x
-            prev_y: int = self._y
-            speed: int = round(
-                self.speed // (int(not self.is_in_water(map_obj))
-                               + 1.5 * self.is_in_water(map_obj)
-                               + 1.5 * self.is_in_lava(map_obj))
-            )
-            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-            tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
-            walls = self.get_walls(map_obj)
+        if self.is_dead():
+            return
+        d: float = game.clock.get_time() / 1000.0
+        prev_x: int = self._x
+        prev_y: int = self._y
+        speed: int = round(
+            self.speed // (int(not self.is_in_water(map_obj))
+                           + 1.5 * self.is_in_water(map_obj)
+                           + 1.5 * self.is_in_lava(map_obj))
+        )
+        tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
+        tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
+        walls = self.get_walls(map_obj)
+        keys = pygame.key.get_pressed()
 
-            if self.velocity_x != 0:
-                self._x += speed * self.velocity_x * d
-            if self.velocity_y != 0:
-                self._y += speed * self.velocity_y * d
-
-            if self.is_moving_left():
-                self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)
-            if self.is_moving_right():
-                self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_START * d, -1, 1)
-            if self.is_moving_up():
-                self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, 1)
-            if self.is_moving_down():
-                self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, -1, 1)
-
-            if not self.is_moving_left() and not self.is_moving_right():
-                if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
-                    self.velocity_x = 0
-                if self.velocity_x > 0:
-                    self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_STOP * d, 0, 1)
-                elif self.velocity_x < 0:
-                    self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_STOP * d, -1, 0)
-
-            if not self.is_moving_up() and not self.is_moving_down():
-                if -0.0001 < self.velocity_y < 0.0001 and self.velocity_y != 0:
-                    self.velocity_y = 0
-                if self.velocity_y > 0:
-                    self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_STOP * d, 0, 1)
-                elif self.velocity_y < 0:
-                    self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, -1, 0)
-
-            # Player - map boundaries collision
-            if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
-                    self._y < map_obj.get_y() or self._y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
-                self._x = clamp(self._x, map_obj.get_x(), map_obj.get_x() + map_obj.get_width_in_pixels() - self.width)
-                self._y = clamp(self._y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
-                self.velocity_x = self.velocity_y = 0
-
-            # Player - wall collision
-            if walls[0] and self._x <= tile_wx:
-                self._x = tile_wx
-                self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
-            if walls[1] and self._x >= tile_wx:
-                self._x = tile_wx
-                self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
-            if walls[2] and self._y <= tile_wy:
-                self._y = tile_wy
-                self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
-            if walls[3] and self._y >= tile_wy:
-                self._y = tile_wy
-                self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
-
-            # Prevent wall-clipping when lagging
-            if self.is_in_wall(map_obj):
-                self._x, self._y = prev_x, prev_y
-
-            if self.breaking and self.can_break_breakable(map_obj):
-                self.break_tile(game)
-            else:
-                self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.get_map().tile_manager.draw(
-                    self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
-                    self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
-                    game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
-                    game.world.get_map().get_dynatile_surface()
-                )
-
-            # Update player health
-            if self.is_in_lethal_tile(map_obj):
-                tile_x, tile_y = game.world.get_map().get_tile_pos(self._x, self._y)
-                tile = game.world.get_map().get_tile(tile_x, tile_y)
-                if pygame.time.get_ticks() / 1000.0 - self.timers[Player.DAMAGE_TIMER] >= tile.get_damage_delay():
-                    self.health -= tile.get_damage()
-                    self.timers[Player.DAMAGE_TIMER] = pygame.time.get_ticks() / 1000.0
-                    self.hurt = True
-                else:
-                    self.hurt = False
-
-            # Game over
-            if self.is_dead():
-                self.health = 0
-                game.screens.map_screen.set_state(False)
-                game.screens.gameover_screen.set_state(True)
-
-            self.main_hud.health_bar.set_value(self.health)
-
-            self.edges[Directions.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
-            self.edges[Directions.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
-            self.edges[Directions.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
-            self.edges[Directions.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
-
+        if not game.paused:
+            self.move = self.move | (1 << Directions.LEFT) if keys[pygame.K_q] else self.move & ~(1 << Directions.LEFT)
+            self.move = self.move | (1 << Directions.UP) if keys[pygame.K_z] else self.move & ~(1 << Directions.UP)
+            self.move = self.move | (1 << Directions.RIGHT) if keys[pygame.K_d] else self.move & ~(1 << Directions.RIGHT)
+            self.move = self.move | (1 << Directions.DOWN) if keys[pygame.K_s] else self.move & ~(1 << Directions.DOWN)
         else:
             self.move = 0
+
+        if self.velocity_x != 0:
+            self._x += speed * self.velocity_x * d
+        if self.velocity_y != 0:
+            self._y += speed * self.velocity_y * d
+
+        if self.is_moving_left():
+            self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)
+        if self.is_moving_right():
+            self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_START * d, -1, 1)
+        if self.is_moving_up():
+            self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, 1)
+        if self.is_moving_down():
+            self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, -1, 1)
+
+        if not self.is_moving_left() and not self.is_moving_right():
+            if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
+                self.velocity_x = 0
+            if self.velocity_x > 0:
+                self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_STOP * d, 0, 1)
+            elif self.velocity_x < 0:
+                self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_STOP * d, -1, 0)
+
+        if not self.is_moving_up() and not self.is_moving_down():
+            if -0.0001 < self.velocity_y < 0.0001 and self.velocity_y != 0:
+                self.velocity_y = 0
+            if self.velocity_y > 0:
+                self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_STOP * d, 0, 1)
+            elif self.velocity_y < 0:
+                self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, -1, 0)
+
+        # Player - map boundaries collision
+        if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
+                self._y < map_obj.get_y() or self._y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
+            self._x = clamp(self._x, map_obj.get_x(), map_obj.get_x() + map_obj.get_width_in_pixels() - self.width)
+            self._y = clamp(self._y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
+            self.velocity_x = self.velocity_y = 0
+
+        # Player - wall collision
+        if walls[0] and self._x <= tile_wx:
+            self._x = tile_wx
+            self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
+        if walls[1] and self._x >= tile_wx:
+            self._x = tile_wx
+            self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
+        if walls[2] and self._y <= tile_wy:
+            self._y = tile_wy
+            self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
+        if walls[3] and self._y >= tile_wy:
+            self._y = tile_wy
+            self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
+
+        # Prevent wall-clipping when lagging
+        if self.is_in_wall(map_obj):
+            self._x, self._y = prev_x, prev_y
+
+        if self.breaking and self.can_break_breakable(map_obj):
+            self.break_tile(game)
+        else:
+            self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
+            game.world.get_map().tile_manager.draw(
+                self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
+                self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
+                game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
+                game.world.get_map().get_dynatile_surface()
+            )
+
+        # Update player health
+        if self.is_in_lethal_tile(map_obj):
+            tile_x, tile_y = game.world.get_map().get_tile_pos(self._x, self._y)
+            tile = game.world.get_map().get_tile(tile_x, tile_y)
+            if pygame.time.get_ticks() / 1000.0 - self.timers[Player.DAMAGE_TIMER] >= tile.get_damage_delay():
+                self.health -= tile.get_damage()
+                self.timers[Player.DAMAGE_TIMER] = pygame.time.get_ticks() / 1000.0
+                self.hurt = True
+            else:
+                self.hurt = False
+
+        # Game over
+        if self.is_dead():
+            self.health = 0
+            game.screens.map_screen.set_state(False)
+            game.screens.gameover_screen.set_state(True)
+
+        self.main_hud.health_bar.set_value(self.health)
+
+        self.edges[Directions.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
+        self.edges[Directions.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
+        self.edges[Directions.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
+        self.edges[Directions.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
 
     def update_ui(self, game) -> None:
         """
