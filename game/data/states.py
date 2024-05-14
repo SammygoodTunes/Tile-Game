@@ -19,4 +19,4 @@ class ServerStates:
     """
     Server states.
     """
-    IDLE, RUNNING = range(0, 2)
+    IDLE, STARTING, RUNNING = range(0, 3)

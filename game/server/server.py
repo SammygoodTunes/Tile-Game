@@ -65,7 +65,7 @@ class Server:
         """
         Run the server.
         """
-        self.state = ServerStates.RUNNING
+        self.state = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.world_handler = WorldHandler()
 
@@ -85,9 +85,11 @@ class Server:
         port = 35000
 
         self.sock.bind((host, port))
-        print(f'Started server on {host}')
+        print(f'Starting server on {host}')
         self.sock.listen()
         self.world_handler.create_world()
+
+        self.state = ServerStates.RUNNING
 
         while self.state == ServerStates.RUNNING:
             conn, addr = self.sock.accept()
