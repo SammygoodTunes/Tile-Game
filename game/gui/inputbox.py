@@ -5,7 +5,7 @@ from string import printable, digits
 from typing import Self
 
 from game.gui.label import Widget, Label
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.utils.logger import logger
 
 

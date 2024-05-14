@@ -7,7 +7,7 @@ from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.checkbox import Checkbox
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.utils.logger import logger
 
 

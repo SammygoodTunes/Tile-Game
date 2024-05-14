@@ -14,7 +14,7 @@ from game.data.data_manager import (
     APP_NAME,
     APP_VERSION)
 from game.data.items import Item
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.data.tiles import Tile
 
 

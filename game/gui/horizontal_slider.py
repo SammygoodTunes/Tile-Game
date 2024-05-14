@@ -3,7 +3,7 @@ import pygame
 from pygame.math import clamp
 from typing import Self
 
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.gui.label import Label
 from game.gui.widget import Widget
 from game.utils.logger import logger

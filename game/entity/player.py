@@ -8,7 +8,7 @@ from typing import Self
 
 from game import assets
 from game.data.items import Items
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
 from game.utils.logger import logger

@@ -3,7 +3,7 @@ import pygame
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen

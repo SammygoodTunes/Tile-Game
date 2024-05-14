@@ -5,7 +5,7 @@ from pygame.event import Event
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
-from game.data.mouse_properties import Mouse
+from game.data.properties import Mouse
 from game.utils.logger import logger
 
 
