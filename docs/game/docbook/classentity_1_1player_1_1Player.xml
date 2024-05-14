@@ -77,7 +77,7 @@
 </listitem>
             <listitem><para>list[bool] <link linkend="_classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28">get_walls</link> (self, Map map_obj)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab">set_ideal_spawnpoint</link> (self, Map map_obj, Camera camera_obj)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab">set_ideal_spawn_point</link> (self, Map map_obj, Camera camera_obj)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -418,10 +418,10 @@ The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGH
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab"/><section>
-    <title>set_ideal_spawnpoint()</title>
-<indexterm><primary>set_ideal_spawnpoint</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>set_ideal_spawnpoint</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.set_ideal_spawnpoint ( self, Map map_obj, Camera camera_obj)</computeroutput></para>
+    <title>set_ideal_spawn_point()</title>
+<indexterm><primary>set_ideal_spawn_point</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_ideal_spawn_point</secondary></indexterm>
+<para><computeroutput> None entity.player.Player.set_ideal_spawn_point ( self, Map map_obj, Camera camera_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Find the ideal starting position for the player when creating a new map.
 TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 </computeroutput></literallayout> </para>

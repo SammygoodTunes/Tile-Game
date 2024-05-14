@@ -11,6 +11,7 @@ from game.data.items import Items
 from game.data.properties import MouseProperties
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
+from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.map_manager import Map
@@ -586,16 +587,28 @@ class Player:
                 walls.append(False)
         return walls
 
-    def set_ideal_spawnpoint(self, map_obj: Map, camera_obj: Camera) -> None:
+    def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 3) -> None:
         """
         Find the ideal starting position for the player when creating a new map.
-        TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
+        By default, three consecutive failed attempts will replace the tile at the last randomised tile position
+        to grass and place the player there.
+        Setting the number of attempts to anything less than 1 will raise an exception.
         """
-        tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-        tiles = TileTypes.BREAKABLE + (Tiles.LAVA,)
-        while map_obj.get_tile(tile_x, tile_y) in tiles:
-            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
+        if nb_attempts < 1:
+            raise ZeroOrLessSpawnPlayerAttempts
+
+        tx: int = 0
+        ty: int = 0
+        bad_tiles = TileTypes.BREAKABLE + (Tiles.LAVA,)
+        for i in range(nb_attempts):
             tx = randint(0, map_obj.get_width_in_tiles() - 1)
             ty = randint(0, map_obj.get_height_in_tiles() - 1)
-            self._x, self._y = map_obj.tile_to_world_pos(tx, ty)
-            camera_obj.x, camera_obj.y = self._x, self._y
+            tile_x, tile_y = map_obj.get_tile_pos(tx, ty)
+            if map_obj.get_tile(tile_x, tile_y) not in bad_tiles:
+                self._x, self._y = map_obj.tile_to_world_pos(tx, ty)
+                camera_obj.x, camera_obj.y = self._x, self._y
+                return
+        map_obj.set_tile(tx, ty, Tiles.GRASS)
+        self._x, self._y = map_obj.tile_to_world_pos(tx, ty)
+        camera_obj.x, camera_obj.y = self._x, self._y
+

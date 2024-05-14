@@ -40,7 +40,7 @@ class ConnectionHandler:
                 game.world.set_map(self.connection.data)
                 game.world.initialise()
                 game.world.get_map().load()
-                game.player.set_ideal_spawnpoint(game.world.get_map(), game.camera)
+                game.player.set_ideal_spawn_point(game.world.get_map(), game.camera)
                 game.start_game = True
                 game.screens.server_connect_screen.set_state(False)
                 self.connection.start(task=Tasks.UPDATE)

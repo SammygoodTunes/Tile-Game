@@ -1204,10 +1204,10 @@ The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGH
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
-        <definition> None entity.player.Player.set_ideal_spawnpoint</definition>
+        <definition> None entity.player.Player.set_ideal_spawn_point</definition>
         <argsstring>(self, Map map_obj, Camera camera_obj)</argsstring>
-        <name>set_ideal_spawnpoint</name>
-        <qualifiedname>entity.player.Player.set_ideal_spawnpoint</qualifiedname>
+        <name>set_ideal_spawn_point</name>
+        <qualifiedname>entity.player.Player.set_ideal_spawn_point</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
@@ -1291,7 +1291,7 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
       <member refid="classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>selected_tile_x</name></member>
       <member refid="classentity_1_1player_1_1Player_1a83a224799adf0ed4558ae09811000dea" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>selected_tile_y</name></member>
       <member refid="classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_health</name></member>
-      <member refid="classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_ideal_spawnpoint</name></member>
+      <member refid="classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_ideal_spawn_point</name></member>
       <member refid="classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_x</name></member>
       <member refid="classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_y</name></member>
       <member refid="classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>TEXTURE</name></member>
