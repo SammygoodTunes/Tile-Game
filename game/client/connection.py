@@ -24,7 +24,7 @@ class Connection:
 
     def __init__(self, host: str, port: int):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.settimeout(5.0)
+        self.sock.settimeout(30.0)
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE
