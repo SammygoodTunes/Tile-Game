@@ -86,11 +86,11 @@ class MapScreen(Screen):
             center_point = (
                 self.game.width // 2 - self.scaled_map.get_width() // 2 + (
                     self.scaled_map.get_width() / self.game.world.get_map().get_width_in_pixels()
-                    * self.game.player.get_absolute_x(self.game.world.get_map())
+                    * (self.game.player.get_absolute_x(self.game.world.get_map()) + self.game.player.width // 2)
                 ),
                 self.game.height // 2 - self.scaled_map.get_height() // 2 + (
                     self.scaled_map.get_height() / self.game.world.get_map().get_height_in_pixels()
-                    * self.game.player.get_absolute_y(self.game.world.get_map())
+                    * (self.game.player.get_absolute_y(self.game.world.get_map()) + self.game.player.height // 2)
                 ),
             )
 
