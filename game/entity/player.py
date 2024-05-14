@@ -513,6 +513,20 @@ class Player:
         """
         return self._y
 
+    def get_absolute_x(self, map_obj: Map) -> int:
+        """
+        Return the player's x position as if the map's top-left corner were to be positioned at the origin (0, 0).
+        This signifies that the returned value will always be positive.
+        """
+        return self._x + map_obj.get_width_in_pixels() // 2
+
+    def get_absolute_y(self, map_obj: Map) -> int:
+        """
+        Return the player's y position as if the map's top-left corner were to be positioned at the origin (0, 0).
+        This signifies that the returned value will always be positive.
+        """
+        return self._y + map_obj.get_height_in_pixels() // 2
+
     def get_coefficient_from_center_x(self, parent_width: int) -> float:
         """
         Return the coefficient indicating how far the player is away from the horizontal center of the screen.
