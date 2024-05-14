@@ -8,7 +8,7 @@ from typing import Self
 
 from game import assets
 from game.data.items import Items
-from game.data.properties import Mouse
+from game.data.properties import MouseProperties
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
 from game.utils.logger import logger
@@ -92,7 +92,7 @@ class Player:
             self.move &= ~(1 << Directions.RIGHT) if e.key == pygame.K_d else self.move
             self.move &= ~(1 << Directions.DOWN) if e.key == pygame.K_s else self.move
         if e.type == pygame.MOUSEBUTTONDOWN:
-            if e.button == Mouse.LMB:
+            if e.button == MouseProperties.LMB:
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 game.world.get_map().tile_manager.draw(
@@ -102,7 +102,7 @@ class Player:
                     game.world.get_map().get_dynatile_surface()
                 )
         elif e.type == pygame.MOUSEBUTTONUP:
-            if e.button == Mouse.LMB:
+            if e.button == MouseProperties.LMB:
                 self.breaking = False
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 game.world.get_map().tile_manager.draw(
@@ -111,7 +111,7 @@ class Player:
                     game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
                     game.world.get_map().get_dynatile_surface()
                 )
-            if e.button == Mouse.RMB:
+            if e.button == MouseProperties.RMB:
                 pass
         if e.type == pygame.MOUSEWHEEL:
             self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())
@@ -435,7 +435,7 @@ class Player:
         """
         Returns True if the player is able to access and break a breakable tile.
         """
-        return (pygame.mouse.get_pressed()[Mouse.LMB - 1]
+        return (pygame.mouse.get_pressed()[MouseProperties.LMB - 1]
                 and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL
                 and self.has_selected_breakable(map_obj)
                 and not self.is_selected_breakable_obstructed(map_obj))

@@ -3,7 +3,7 @@ from pygame.draw import rect as draw_rect
 from pygame import event, mouse, MOUSEBUTTONDOWN
 from typing import Self
 
-from game.data.properties import Mouse
+from game.data.properties import MouseProperties
 from game.gui.label import Label
 from game.gui.widget import Widget
 from game.utils.logger import logger
@@ -37,7 +37,7 @@ class Checkbox(Widget):
         Track the checkbox events.
         """
         if e.type == MOUSEBUTTONDOWN:
-            if e.button == Mouse.LMB and self.is_hovering_over():
+            if e.button == MouseProperties.LMB and self.is_hovering_over():
                 self._checked = not self._checked
 
     def update(self, window) -> None:

@@ -1,5 +1,5 @@
 
-class Mouse:
+class MouseProperties:
     """
     Class for mouse properties.
     """

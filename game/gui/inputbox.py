@@ -5,7 +5,7 @@ from string import printable, digits
 from typing import Self
 
 from game.gui.label import Widget, Label
-from game.data.properties import Mouse
+from game.data.properties import MouseProperties
 from game.utils.logger import logger
 
 
@@ -58,7 +58,7 @@ class InputBox(Widget):
         Track the input box events.
         """
         if e.type == MOUSEBUTTONDOWN:
-            if e.button == Mouse.LMB:
+            if e.button == MouseProperties.LMB:
                 self._selected = self.is_hovering_over()
         if e.type == KEYDOWN and self._selected:
             if key.get_pressed()[K_BACKSPACE]:

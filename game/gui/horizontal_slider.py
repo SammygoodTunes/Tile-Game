@@ -3,7 +3,7 @@ import pygame
 from pygame.math import clamp
 from typing import Self
 
-from game.data.properties import Mouse
+from game.data.properties import MouseProperties
 from game.gui.label import Label
 from game.gui.widget import Widget
 from game.utils.logger import logger
@@ -66,10 +66,10 @@ class HorizontalSlider(Widget):
         Track the horizontal slider events.
         """
         if e.type == pygame.MOUSEBUTTONUP:
-            if e.button == Mouse.LMB:
+            if e.button == MouseProperties.LMB:
                 self._button_held = False
         if e.type == pygame.MOUSEBUTTONDOWN:
-            if e.button == Mouse.LMB:
+            if e.button == MouseProperties.LMB:
                 if self.is_hovering_over_button():
                     self._button_held = True
                 if self.is_hovering_over() and not self._button_held:
