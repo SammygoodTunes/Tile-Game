@@ -20,7 +20,7 @@ class MainHud(Screen):
         self.surface = Surface((self.game.width, self.game.height))
         self.score_label = Label()
         self.camera_label = Label()
-        self.position_label = Label(f"Player (XY): {self.game.player.get_x(): .0f} {self.game.player.get_y(): .0f}")
+        self.position_label = Label()
         self.health_bar = ProgressBar(title="Player health").set_value(self.game.player.get_health()).set_state(True)
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
@@ -31,9 +31,9 @@ class MainHud(Screen):
         """
         if self._enabled:
             if self.game.screens.options_screen.debug_info_box.is_checked():
-                self.camera_label.set_text(f"Camera (XY): {round(self.game.camera.x)} {round(self.game.camera.y)}")
+                self.camera_label.set_text(f"Camera (XY): {self.game.camera.x: .0f} {self.game.camera.y: .0f}")
                 self.position_label.set_text(
-                    f"Player (XY): {round(self.game.player.get_x())} {round(self.game.player.get_y())}")
+                    f"Player (XY): {self.game.player.get_x(): .0f} {self.game.player.get_y(): .0f}")
                 self.camera_label.draw(self.game.screen)
                 self.position_label.draw(self.game.screen)
             self.score_label.set_text(f"Score: {self.game.player.score}")
