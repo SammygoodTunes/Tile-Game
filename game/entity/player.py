@@ -604,19 +604,19 @@ class Player:
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         if tile_x > 0:
             walls[0] = map_obj.get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE  # Left
-        if tile_x < map_obj.get_width_in_pixels() - 1:
+        if tile_x < map_obj.get_width_in_tiles() - 1:
             walls[1] = map_obj.get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE  # Right
         if tile_y > 0:
             walls[2] = map_obj.get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE  # Up
-        if tile_y < map_obj.get_height_in_pixels() - 1:
+        if tile_y < map_obj.get_height_in_tiles() - 1:
             walls[3] = map_obj.get_tile(tile_x, tile_y + 1) in TileTypes.BREAKABLE  # Down
         if tile_x > 0 and tile_y > 0:
             walls[4] = map_obj.get_tile(tile_x - 1, tile_y - 1) in TileTypes.BREAKABLE  # Upper left
-        if tile_x < map_obj.get_width_in_pixels() - 1 and tile_y > 0:
+        if tile_x < map_obj.get_width_in_tiles() - 1 and tile_y > 0:
             walls[5] = map_obj.get_tile(tile_x + 1, tile_y - 1) in TileTypes.BREAKABLE  # Upper right
-        if tile_x > 0 and map_obj.get_height_in_pixels() - 1:
+        if tile_x > 0 and tile_y < map_obj.get_height_in_tiles() - 1:
             walls[6] = map_obj.get_tile(tile_x - 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower left
-        if tile_x < map_obj.get_width_in_pixels() - 1 and tile_y < map_obj.get_height_in_pixels() - 1:
+        if tile_x < map_obj.get_width_in_tiles() - 1 and tile_y < map_obj.get_height_in_tiles() - 1:
             walls[7] = map_obj.get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower right
         return walls
 
