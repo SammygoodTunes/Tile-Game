@@ -130,6 +130,10 @@ class Player:
             self.selected_tile_x = int(wx + map_width // 2)
             self.selected_tile_y = int(wy + map_height // 2)
 
+            if (self.selected_tile_x >= game.world.get_map().get_width_in_tiles() or self.selected_tile_x < 0
+                    or self.selected_tile_y >= game.world.get_map().get_height_in_tiles() or self.selected_tile_y < 0):
+                return
+
             if self.has_selected_breakable(game.world.get_map()) and not self.is_selected_breakable_obstructed(game.world.get_map()):
                 colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
                 pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
@@ -452,8 +456,10 @@ class Player:
         """
         Returns True if the selected breakable tile is obstructed by other tiles with collision.
         """
-        x0, y0 = map_obj.get_tile_pos(self._x, self._y)
+        tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
+        x0, y0 = tile_x, tile_y
         x1, y1 = self.selected_tile_x, self.selected_tile_y
+        print(self.selected_tile_x, self.selected_tile_y)
 
         # Bresenham (Thanks Wikipedia)
         dx = abs(x1 - x0)
@@ -465,8 +471,6 @@ class Player:
         while True:  # Nul à chier mais flm de corriger
             if not (x0 == x1 and y0 == y1) and map_obj.get_tile(x0, y0) in TileTypes.BREAKABLE:
                 return True
-            # wx, wy = game.world.get_map().tile_to_screen_pos(x0, y0)
-            # pygame.draw.rect(screen, (255, 255, 0), (wx, wy, 32, 32), 1, 3)
             if x0 == x1 and y0 == y1:
                 break
             e2 = 2 * error
@@ -487,9 +491,20 @@ class Player:
                     and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE
                     and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE):
                 return True
+            if tile_x > self.selected_tile_x and tile_y > self.selected_tile_y:
+                return (map_obj.get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                        and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE)
+            if tile_x < self.selected_tile_x and tile_y > self.selected_tile_y:
+                return (map_obj.get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                        and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y + 1) in TileTypes.BREAKABLE)
+            if tile_x > self.selected_tile_x and tile_y < self.selected_tile_y:
+                return (map_obj.get_tile(self.selected_tile_x + 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                        and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE)
+            if tile_x < self.selected_tile_x and tile_y < self.selected_tile_y:
+                return (map_obj.get_tile(self.selected_tile_x - 1, self.selected_tile_y) in TileTypes.BREAKABLE
+                        and map_obj.get_tile(self.selected_tile_x, self.selected_tile_y - 1) in TileTypes.BREAKABLE)
         except IndexError:
             return True
-        # pygame.draw.line(screen, (255, 0, 0), (self.screen_x + 16, self.screen_y + 16), (tile_x, tile_y), 3)
         return False
 
     def set_x(self, x: int) -> Self:
