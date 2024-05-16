@@ -610,10 +610,10 @@ class Player:
             walls[7] = map_obj.get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower right
         return walls
 
-    def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 3) -> None:
+    def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 5) -> None:
         """
         Find the ideal starting position for the player when creating a new map.
-        By default, three consecutive failed attempts will replace the tile at the last randomised tile position
+        By default, five consecutive failed attempts will replace the tile at the last randomised tile position
         to plains and place the player there.
         Setting the number of attempts to anything less than 1 will raise an exception.
         """
