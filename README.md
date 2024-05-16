@@ -1,6 +1,6 @@
 # Tile-Game
 
-A multiplayer tile-based game with procedural terrain generation (using the Perlin Noise algorithm).
+A tile-based multiplayer game with procedural terrain generation (using the Perlin Noise algorithm).
 
 Currently in-development.
 
