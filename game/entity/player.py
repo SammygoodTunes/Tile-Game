@@ -460,7 +460,6 @@ class Player:
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         x0, y0 = tile_x, tile_y
         x1, y1 = self.selected_tile_x, self.selected_tile_y
-        print(self.selected_tile_x, self.selected_tile_y)
 
         # Bresenham (Thanks Wikipedia)
         dx = abs(x1 - x0)
