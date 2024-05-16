@@ -63,11 +63,8 @@ class Server:
 
     def run(self):
         """
-        Run the server.
+        Run the server and listen for connections.
         """
-        self.state = ServerStates.STARTING
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.world_handler = WorldHandler()
 
         '''logging.basicConfig(
@@ -82,11 +79,6 @@ class Server:
         # Only IPv4 support for now
         # TODO: Add support for IPv6
 
-        host = '0.0.0.0'
-        port = 35000
-
-        self.sock.bind((host, port))
-        print(f'Starting server on {host}')
         self.sock.listen()
         self.world_handler.create_world()
 
@@ -98,7 +90,24 @@ class Server:
             thread.start()
 
     def start(self):
-        self.timeout = time()
+        """
+        Prepare the server.
+        """
+
+        self.state = ServerStates.STARTING
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+        host = '0.0.0.0'
+        port = 35000
+
+        try:
+            self.sock.bind((host, port))
+        except OSError:
+            self.state = ServerStates.FAIL
+            print(f'Server failed to start.')
+            return
+        print(f'Starting server on {host}')
         server_thread = Thread(target=self.run)
         server_thread.start()
 

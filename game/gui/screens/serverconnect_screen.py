@@ -19,6 +19,7 @@ class ServerConnectScreen(Screen):
         self.faded_surface = self.initialise_surface()
         self.info_label = Label()
         self.back_button = Button("Back")
+        self.default_screen = True
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise_surface(self) -> Surface:
@@ -55,6 +56,7 @@ class ServerConnectScreen(Screen):
         """
         Update info label's text and colour based on received connection code, then update the screen UI.
         """
+        self.default_screen = True
         if code == ConnectionStates.SUCCESS:
             self.info_label.set_text('Connection successful.').set_colour((0, 255, 0))
         elif code == ConnectionStates.INVALID:
@@ -69,6 +71,9 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('Disconnected.').set_colour((255, 0, 0))
         elif code == ConnectionStates.ERROR:
             self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
+        elif code == ConnectionStates.SERVFAIL:
+            self.info_label.set_text('A server is already running on this machine.').set_colour((255, 0, 0))
+            self.default_screen = False
         elif code == ConnectionStates.GETDATA:
             self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:

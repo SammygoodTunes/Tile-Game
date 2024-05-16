@@ -3,7 +3,7 @@ import pygame
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
-from game.data.states import MouseStates
+from game.data.states import MouseStates, ServerStates, ConnectionStates
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen
@@ -112,9 +112,14 @@ class Screens:
                     self.server_connect_screen.set_state(True)
                     self.server_connect_screen.back_button.set_state(False)
                     self.game.server.start()
-                    self.game.connection_handler.host = 'localhost'
-                    self.game.connection_handler.port = 35000
-                    self.game.connection_handler.start_connection = True
+                    if self.game.server.state != ServerStates.FAIL:
+                        self.game.connection_handler.host = 'localhost'
+                        self.game.connection_handler.port = 35000
+                        self.game.connection_handler.start_connection = True
+                    else:
+                        self.game.server.stop()
+                        self.server_connect_screen.back_button.set_state(True)
+                        self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
@@ -132,7 +137,10 @@ class Screens:
                 elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
                     self.server_connect_screen.set_state(False)
                     self.server_connect_screen.reset_info_label()
-                    self.server_join_screen.set_state(True)
+                    if self.server_connect_screen.default_screen:
+                        self.server_join_screen.set_state(True)
+                    else:
+                        self.server_menu_screen.set_state(True)
 
                 elif self.pause_screen.resume_button.is_hovering_over():
                     self.pause_screen.set_state(False)

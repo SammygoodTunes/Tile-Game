@@ -12,14 +12,14 @@ class ConnectionStates:
     Connection states.
     """
     IDLE, PENDING, GETDATA = range(-1, -4, -1)
-    SUCCESS, INVALID, REFUSED, TIMEOUT, NOROUTE, DISCONNECTED, ERROR = range(0, 7)
+    SUCCESS, INVALID, REFUSED, TIMEOUT, NOROUTE, DISCONNECTED, ERROR, SERVFAIL = range(0, 8)
 
 
 class ServerStates:
     """
     Server states.
     """
-    IDLE, STARTING, RUNNING = range(0, 3)
+    IDLE, STARTING, RUNNING, FAIL = range(0, 4)
 
 
 class MouseStates:
