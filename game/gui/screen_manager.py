@@ -62,7 +62,7 @@ class Screens:
         self.credits_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead():
+            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state() and not self.gameover_screen.get_state():
                 if self.options_screen.get_state():
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:

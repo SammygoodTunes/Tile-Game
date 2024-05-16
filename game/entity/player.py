@@ -156,6 +156,7 @@ class Player:
         Update the player.
         """
         if self.is_dead():
+            game.screens.gameover_screen.set_state(not game.paused)
             return
         d: float = game.clock.get_time() / 1000.0
         prev_x: int = self._x
@@ -288,7 +289,6 @@ class Player:
         if self.is_dead():
             self.health = 0
             game.screens.map_screen.set_state(False)
-            game.screens.gameover_screen.set_state(True)
 
         self.main_hud.health_bar.set_value(self.health)
 
