@@ -2,7 +2,8 @@
 Tests dedicated to the entity modules.
 """
 
-from game.entity.player import Directions, Player
+from game.entity.player import Player
+from game.data.states import PlayerStates
 
 
 def test_player_creation():
@@ -40,24 +41,24 @@ def test_player_movement():
     Desc: Tests if the player's movement verifiers return the right movement state of the player.
     """
     dummy_player = Player()
-    dummy_player.move |= (1 << Directions.LEFT)
+    dummy_player.move |= (1 << PlayerStates.LEFT)
     assert dummy_player.is_moving_left() and not dummy_player.is_moving_up()
-    dummy_player.move |= (1 << Directions.UP)
-    dummy_player.move &= ~(1 << Directions.LEFT)
+    dummy_player.move |= (1 << PlayerStates.UP)
+    dummy_player.move &= ~(1 << PlayerStates.LEFT)
     assert not dummy_player.is_moving_left() and dummy_player.is_moving_up()
-    dummy_player.move &= ~(1 << Directions.UP)
-    dummy_player.move |= (1 << Directions.DOWN)
+    dummy_player.move &= ~(1 << PlayerStates.UP)
+    dummy_player.move |= (1 << PlayerStates.DOWN)
     assert not dummy_player.is_moving_up() and dummy_player.is_moving_down()
-    dummy_player.move &= ~(1 << Directions.DOWN)
-    dummy_player.move |= (1 << Directions.RIGHT)
+    dummy_player.move &= ~(1 << PlayerStates.DOWN)
+    dummy_player.move |= (1 << PlayerStates.RIGHT)
     assert not dummy_player.is_moving_up() and dummy_player.is_moving_right()
-    dummy_player.move &= ~(1 << Directions.RIGHT)
+    dummy_player.move &= ~(1 << PlayerStates.RIGHT)
     assert (not dummy_player.is_moving_up() and not dummy_player.is_moving_left() and
             not dummy_player.is_moving_down() and not dummy_player.is_moving_right())
-    dummy_player.move |= (1 << Directions.LEFT)
-    dummy_player.move |= (1 << Directions.UP)
-    dummy_player.move |= (1 << Directions.DOWN)
-    dummy_player.move |= (1 << Directions.RIGHT)
+    dummy_player.move |= (1 << PlayerStates.LEFT)
+    dummy_player.move |= (1 << PlayerStates.UP)
+    dummy_player.move |= (1 << PlayerStates.DOWN)
+    dummy_player.move |= (1 << PlayerStates.RIGHT)
     assert (dummy_player.is_moving_up() and dummy_player.is_moving_left() and
             dummy_player.is_moving_down() and dummy_player.is_moving_right())
 

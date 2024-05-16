@@ -8,26 +8,13 @@ from typing import Self
 
 from game import assets
 from game.data.items import Items
-from game.data.states import MouseStates
+from game.data.states import MouseStates, PlayerStates
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
 from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger
 from game.world.camera import Camera
 from game.world.map_manager import Map
-
-
-class Directions:
-    """
-    Class for defining the directions of the player.
-    """
-
-    LEFT: int
-    RIGHT: int
-    UP: int
-    DOWN: int
-
-    DOWN, RIGHT, UP, LEFT = range(3, -1, -1)
 
 
 class Player:
@@ -185,10 +172,10 @@ class Player:
         keys = pygame.key.get_pressed()
 
         if not game.paused:
-            self.move = self.move | (1 << Directions.LEFT) if keys[pygame.K_q] else self.move & ~(1 << Directions.LEFT)
-            self.move = self.move | (1 << Directions.UP) if keys[pygame.K_z] else self.move & ~(1 << Directions.UP)
-            self.move = self.move | (1 << Directions.RIGHT) if keys[pygame.K_d] else self.move & ~(1 << Directions.RIGHT)
-            self.move = self.move | (1 << Directions.DOWN) if keys[pygame.K_s] else self.move & ~(1 << Directions.DOWN)
+            self.move = self.move | (1 << PlayerStates.LEFT) if keys[pygame.K_q] else self.move & ~(1 << PlayerStates.LEFT)
+            self.move = self.move | (1 << PlayerStates.UP) if keys[pygame.K_z] else self.move & ~(1 << PlayerStates.UP)
+            self.move = self.move | (1 << PlayerStates.RIGHT) if keys[pygame.K_d] else self.move & ~(1 << PlayerStates.RIGHT)
+            self.move = self.move | (1 << PlayerStates.DOWN) if keys[pygame.K_s] else self.move & ~(1 << PlayerStates.DOWN)
         else:
             self.move = 0
 
@@ -305,10 +292,10 @@ class Player:
 
         self.main_hud.health_bar.set_value(self.health)
 
-        self.edges[Directions.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
-        self.edges[Directions.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
-        self.edges[Directions.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
-        self.edges[Directions.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
+        self.edges[PlayerStates.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
+        self.edges[PlayerStates.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
+        self.edges[PlayerStates.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
+        self.edges[PlayerStates.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
 
     def update_ui(self, game) -> None:
         """
@@ -380,49 +367,49 @@ class Player:
         """
         Return True if the player is moving left.
         """
-        return bool((self.move >> Directions.LEFT) & 1)
+        return bool((self.move >> PlayerStates.LEFT) & 1)
 
     def is_moving_up(self) -> bool:
         """
         Return True if the player is moving up.
         """
-        return bool((self.move >> Directions.UP) & 1)
+        return bool((self.move >> PlayerStates.UP) & 1)
 
     def is_moving_right(self) -> bool:
         """
         Return True if the player is moving right.
         """
-        return bool((self.move >> Directions.RIGHT) & 1)
+        return bool((self.move >> PlayerStates.RIGHT) & 1)
 
     def is_moving_down(self) -> bool:
         """
         Return True if the player is moving down.
         """
-        return bool((self.move >> Directions.DOWN) & 1)
+        return bool((self.move >> PlayerStates.DOWN) & 1)
 
     def is_near_left_edge(self) -> bool:
         """
         Return True if the player is at the left-center of the screen.
         """
-        return self.edges[Directions.LEFT]
+        return self.edges[PlayerStates.LEFT]
 
     def is_near_top_edge(self) -> bool:
         """
         Return True if the player is at the top-center of the screen.
         """
-        return self.edges[Directions.UP]
+        return self.edges[PlayerStates.UP]
 
     def is_near_right_edge(self) -> bool:
         """
         Return True if the player is to the right-center of the screen.
         """
-        return self.edges[Directions.RIGHT]
+        return self.edges[PlayerStates.RIGHT]
 
     def is_near_bottom_edge(self) -> bool:
         """
         Return True if the player is to the bottom-center of the screen.
         """
-        return self.edges[Directions.DOWN]
+        return self.edges[PlayerStates.DOWN]
 
     def is_in_water(self, map_obj: Map) -> bool:
         """

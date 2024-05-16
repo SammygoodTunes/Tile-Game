@@ -28,3 +28,16 @@ class MouseStates:
     """
 
     LMB, MMB, RMB, SCROLL_UP, SCROLL_DOWN = range(1, 6)
+
+
+class PlayerStates:
+    """
+    Class for defining the directions of the player.
+    """
+
+    LEFT: int
+    RIGHT: int
+    UP: int
+    DOWN: int
+
+    DOWN, RIGHT, UP, LEFT = range(3, -1, -1)
