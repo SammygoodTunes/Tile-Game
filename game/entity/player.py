@@ -125,7 +125,7 @@ class Player:
             wx, wy = (game.camera.x - (center_x - mx)) // 32, (game.camera.y - (center_y - my)) // 32
 
             x, y = game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
-            self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2, y - camera_y + game.height // 2
+            self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2 + (camera_x < 0), y - camera_y + game.height // 2 + (camera_y < 0)
 
             self.selected_tile_x = int(wx + map_width // 2)
             self.selected_tile_y = int(wy + map_height // 2)
