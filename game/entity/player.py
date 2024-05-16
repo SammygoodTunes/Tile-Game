@@ -180,6 +180,7 @@ class Player:
         )
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
+        tile_size = game.world.get_map().tile_manager.SIZE
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
@@ -241,6 +242,34 @@ class Player:
         if walls[3] and self._y >= tile_wy:
             self._y = tile_wy
             self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
+        if walls[4] and self._x + 1 < tile_wx and self._y + 1 < tile_wy:
+            if abs(tile_wx - self._x) >= abs(tile_wy - self._y):
+                self._y = tile_wy - 1
+                self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
+            elif abs(tile_wx - self._x) < abs(tile_wy - self._y):
+                self._x = tile_wx - 1
+                self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
+        if walls[5] and self._x - 1 > tile_wx and self._y + 1 < tile_wy:
+            if abs(tile_wx - self._x) >= abs(tile_wy - self._y):
+                self._y = tile_wy - 1
+                self.velocity_y = 0 if self.velocity_y < 0 else self.velocity_y
+            elif abs(tile_wx - self._x) < abs(tile_wy - self._y):
+                self._x = tile_wx + 1
+                self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
+        if walls[6] and self._x + 1 < tile_wx and self._y - 1 > tile_wy:
+            if abs(tile_wx - self._x) >= abs(tile_wy - self._y):
+                self._y = tile_wy + 1
+                self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
+            elif abs(tile_wx - self._x) < abs(tile_wy - self._y):
+                self._x = tile_wx - 1
+                self.velocity_x = 0 if self.velocity_x < 0 else self.velocity_x
+        if walls[7] and self._x - 1 > tile_wx and self._y - 1 > tile_wy:
+            if abs(tile_wx - self._x) >= abs(tile_wy - self._y):
+                self._y = tile_wy + 1
+                self.velocity_y = 0 if self.velocity_y > 0 else self.velocity_y
+            elif abs(tile_wx - self._x) < abs(tile_wy - self._y):
+                self._x = tile_wx + 1
+                self.velocity_x = 0 if self.velocity_x > 0 else self.velocity_x
 
         # Prevent wall-clipping when lagging
         if self.is_in_wall(map_obj):
@@ -251,8 +280,8 @@ class Player:
         else:
             self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
             game.world.get_map().tile_manager.draw(
-                self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
-                self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
+                self.prev_selected_tile[0] * tile_size,
+                self.prev_selected_tile[1] * tile_size,
                 game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                 game.world.get_map().get_dynatile_surface()
             )
@@ -569,22 +598,26 @@ class Player:
         """
         Return the tiles of type BREAKABLE surrounding the player.
         This is used for determining what tiles the player could potentially collide with.
-        The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT).
+        The order of the tiles are LEFT, RIGHT, UP, DOWN, UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT.
         """
-        walls = []
-        try:
-            tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
-            walls.append(map_obj.get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE)  # Left
-            walls.append(map_obj.get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE)  # Right
-            walls.append(map_obj.get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE)  # Up
-            walls.append(map_obj.get_tile(tile_x, tile_y + 1) in TileTypes.BREAKABLE)  # Down
-            walls.append(map_obj.get_tile(tile_x - 1, tile_y - 1) in TileTypes.BREAKABLE)  # Upper left
-            walls.append(map_obj.get_tile(tile_x + 1, tile_y - 1) in TileTypes.BREAKABLE)  # Upper right
-            walls.append(map_obj.get_tile(tile_x - 1, tile_y + 1) in TileTypes.BREAKABLE)  # Lower left
-            walls.append(map_obj.get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE)  # Lower right
-        except IndexError:
-            for _ in range(4 - len(walls)):
-                walls.append(False)
+        walls = [False] * 8
+        tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
+        if tile_x > 0:
+            walls[0] = map_obj.get_tile(tile_x - 1, tile_y) in TileTypes.BREAKABLE  # Left
+        if tile_x < map_obj.get_width_in_pixels() - 1:
+            walls[1] = map_obj.get_tile(tile_x + 1, tile_y) in TileTypes.BREAKABLE  # Right
+        if tile_y > 0:
+            walls[2] = map_obj.get_tile(tile_x, tile_y - 1) in TileTypes.BREAKABLE  # Up
+        if tile_y < map_obj.get_height_in_pixels() - 1:
+            walls[3] = map_obj.get_tile(tile_x, tile_y + 1) in TileTypes.BREAKABLE  # Down
+        if tile_x > 0 and tile_y > 0:
+            walls[4] = map_obj.get_tile(tile_x - 1, tile_y - 1) in TileTypes.BREAKABLE  # Upper left
+        if tile_x < map_obj.get_width_in_pixels() - 1 and tile_y > 0:
+            walls[5] = map_obj.get_tile(tile_x + 1, tile_y - 1) in TileTypes.BREAKABLE  # Upper right
+        if tile_x > 0 and map_obj.get_height_in_pixels() - 1:
+            walls[6] = map_obj.get_tile(tile_x - 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower left
+        if tile_x < map_obj.get_width_in_pixels() - 1 and tile_y < map_obj.get_height_in_pixels() - 1:
+            walls[7] = map_obj.get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower right
         return walls
 
     def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 3) -> None:
