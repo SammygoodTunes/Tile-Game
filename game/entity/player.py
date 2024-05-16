@@ -626,7 +626,6 @@ class Player:
         for i in range(nb_attempts):
             tile_x = randint(0, map_obj.get_width_in_tiles() - 1)
             tile_y = randint(0, map_obj.get_height_in_tiles() - 1)
-            print(tile_x, tile_y, map_obj.get_tile(tile_x, tile_y))
             if map_obj.get_tile(tile_x, tile_y) not in bad_tiles:
                 self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
                 camera_obj.x, camera_obj.y = self._x, self._y
