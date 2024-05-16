@@ -117,24 +117,12 @@ class Player:
         Draw the player tile selection grid to the screen.
         """
         if not game.paused and not self.is_dead() and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL:
-            x: int
-            y: int
-            mx: int
-            my: int
-            wx: int
-            wy: int
-            center_x: int
-            center_y: int
-            map_width: int
-            map_height: int
-
             mx, my = pygame.mouse.get_pos()
-            center_x, center_y = round(game.width / 2), round(game.height / 2)
+            center_x, center_y = round(game.width // 2), round(game.height // 2)
             map_width, map_height = game.world.get_map().get_width_in_tiles(), game.world.get_map().get_height_in_tiles()
-            camera_x, camera_y = round(game.camera.x), round(game.camera.y)
+            camera_x, camera_y = int(game.camera.x), int(game.camera.y)
 
             wx, wy = (game.camera.x - (center_x - mx)) // 32, (game.camera.y - (center_y - my)) // 32
-            wx, wy = round(clamp(wx, -map_width // 2, map_width // 2 - 1)), round(clamp(wy, -map_height // 2, map_height // 2 - 1))
 
             x, y = game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
             self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2, y - camera_y + game.height // 2
