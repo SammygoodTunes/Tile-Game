@@ -6,7 +6,7 @@ from game.data.properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
-from game.data.properties import MouseProperties
+from game.data.states import MouseStates
 from game.utils.logger import logger
 
 
@@ -41,7 +41,7 @@ class CreditsScreen(Screen):
         Track the screen events.
         """
         if e.type == MOUSEBUTTONUP:
-            if e.button == MouseProperties.LMB:
+            if e.button == MouseStates.LMB:
                 if self.back_button.is_hovering_over():
                     self._enabled = False
 

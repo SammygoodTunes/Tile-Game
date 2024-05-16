@@ -14,7 +14,7 @@ from game.data.data_manager import (
     APP_NAME,
     APP_VERSION)
 from game.data.items import Item
-from game.data.properties import MouseProperties
+from game.data.states import MouseStates
 from game.data.tiles import Tile
 
 
@@ -91,7 +91,7 @@ def test_mouse_properties():
     Test: mouse_properties
     Desc: Tests if the mouse properties possess the same values defined in Mouse.
     """
-    assert (MouseProperties.LMB, MouseProperties.MMB, MouseProperties.RMB, MouseProperties.SCROLL_UP, MouseProperties.SCROLL_DOWN) == tuple(range(1, 6))
+    assert (MouseStates.LMB, MouseStates.MMB, MouseStates.RMB, MouseStates.SCROLL_UP, MouseStates.SCROLL_DOWN) == tuple(range(1, 6))
 
 
 def test_tile_creation():

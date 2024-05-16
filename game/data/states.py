@@ -20,3 +20,11 @@ class ServerStates:
     Server states.
     """
     IDLE, STARTING, RUNNING = range(0, 3)
+
+
+class MouseStates:
+    """
+    Mouse states.
+    """
+
+    LMB, MMB, RMB, SCROLL_UP, SCROLL_DOWN = range(1, 6)

@@ -3,7 +3,7 @@ import pygame
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
-from game.data.properties import MouseProperties
+from game.data.states import MouseStates
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen
@@ -74,7 +74,7 @@ class Screens:
             self.map_screen.set_state(keys[Keys.SHOW_MAP])
 
         if e.type == pygame.MOUSEBUTTONUP:
-            if e.button == MouseProperties.LMB:
+            if e.button == MouseStates.LMB:
                 if self.options_screen.back_button.is_hovering_over():
                     self.options_screen.set_state(False)
                     if self.game.start_game:
