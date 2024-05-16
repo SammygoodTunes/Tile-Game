@@ -346,7 +346,7 @@ class Player:
                     game.world.get_map().get_dynatile_surface()
                 )
 
-    def reset(self) -> None:
+    def reset(self, map_obj: Map, camera_obj: Camera) -> None:
         """
         Reset the player's general attributes.
         """
@@ -354,6 +354,7 @@ class Player:
         self.move = 0
         self.health = 100
         self.hurt = False
+        self.set_ideal_spawn_point(map_obj, camera_obj)
 
     def is_moving_left(self) -> bool:
         """

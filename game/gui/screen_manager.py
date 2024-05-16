@@ -151,7 +151,7 @@ class Screens:
 
                 elif self.gameover_screen.respawn_button.is_hovering_over():
                     self.gameover_screen.set_state(False)
-                    self.game.player.set_health(100)
+                    self.game.player.reset(self.game.world.get_map(), self.game.camera)
                 elif self.gameover_screen.disconnect_button.is_hovering_over():
                     self.game.start_game = False
                     self.window.paused = False
