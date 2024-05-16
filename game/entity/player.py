@@ -172,10 +172,10 @@ class Player:
         keys = pygame.key.get_pressed()
 
         if not game.paused:
-            self.move = self.move | (1 << PlayerStates.LEFT) if keys[pygame.K_q] else self.move & ~(1 << PlayerStates.LEFT)
-            self.move = self.move | (1 << PlayerStates.UP) if keys[pygame.K_z] else self.move & ~(1 << PlayerStates.UP)
-            self.move = self.move | (1 << PlayerStates.RIGHT) if keys[pygame.K_d] else self.move & ~(1 << PlayerStates.RIGHT)
-            self.move = self.move | (1 << PlayerStates.DOWN) if keys[pygame.K_s] else self.move & ~(1 << PlayerStates.DOWN)
+            self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[pygame.K_q] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
+            self.move = self.move | (1 << PlayerStates.MOVE_UP) if keys[pygame.K_z] else self.move & ~(1 << PlayerStates.MOVE_UP)
+            self.move = self.move | (1 << PlayerStates.MOVE_RIGHT) if keys[pygame.K_d] else self.move & ~(1 << PlayerStates.MOVE_RIGHT)
+            self.move = self.move | (1 << PlayerStates.MOVE_DOWN) if keys[pygame.K_s] else self.move & ~(1 << PlayerStates.MOVE_DOWN)
         else:
             self.move = 0
 
@@ -292,10 +292,10 @@ class Player:
 
         self.main_hud.health_bar.set_value(self.health)
 
-        self.edges[PlayerStates.LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
-        self.edges[PlayerStates.UP] = (self.screen_y <= game.height // 2 - self.height // 2)
-        self.edges[PlayerStates.DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
-        self.edges[PlayerStates.RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
+        self.edges[PlayerStates.MOVE_LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
+        self.edges[PlayerStates.MOVE_UP] = (self.screen_y <= game.height // 2 - self.height // 2)
+        self.edges[PlayerStates.MOVE_DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
+        self.edges[PlayerStates.MOVE_RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
 
     def update_ui(self, game) -> None:
         """
@@ -367,49 +367,49 @@ class Player:
         """
         Return True if the player is moving left.
         """
-        return bool((self.move >> PlayerStates.LEFT) & 1)
+        return bool((self.move >> PlayerStates.MOVE_LEFT) & 1)
 
     def is_moving_up(self) -> bool:
         """
         Return True if the player is moving up.
         """
-        return bool((self.move >> PlayerStates.UP) & 1)
+        return bool((self.move >> PlayerStates.MOVE_UP) & 1)
 
     def is_moving_right(self) -> bool:
         """
         Return True if the player is moving right.
         """
-        return bool((self.move >> PlayerStates.RIGHT) & 1)
+        return bool((self.move >> PlayerStates.MOVE_RIGHT) & 1)
 
     def is_moving_down(self) -> bool:
         """
         Return True if the player is moving down.
         """
-        return bool((self.move >> PlayerStates.DOWN) & 1)
+        return bool((self.move >> PlayerStates.MOVE_DOWN) & 1)
 
     def is_near_left_edge(self) -> bool:
         """
         Return True if the player is at the left-center of the screen.
         """
-        return self.edges[PlayerStates.LEFT]
+        return self.edges[PlayerStates.MOVE_LEFT]
 
     def is_near_top_edge(self) -> bool:
         """
         Return True if the player is at the top-center of the screen.
         """
-        return self.edges[PlayerStates.UP]
+        return self.edges[PlayerStates.MOVE_UP]
 
     def is_near_right_edge(self) -> bool:
         """
         Return True if the player is to the right-center of the screen.
         """
-        return self.edges[PlayerStates.RIGHT]
+        return self.edges[PlayerStates.MOVE_RIGHT]
 
     def is_near_bottom_edge(self) -> bool:
         """
         Return True if the player is to the bottom-center of the screen.
         """
-        return self.edges[PlayerStates.DOWN]
+        return self.edges[PlayerStates.MOVE_DOWN]
 
     def is_in_water(self, map_obj: Map) -> bool:
         """
@@ -585,7 +585,7 @@ class Player:
         """
         Return the tiles of type BREAKABLE surrounding the player.
         This is used for determining what tiles the player could potentially collide with.
-        The order of the tiles are LEFT, RIGHT, UP, DOWN, UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT.
+        The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE_LEFT, UPPER MOVE_RIGHT, LOWER MOVE_LEFT, LOWER MOVE_RIGHT.
         """
         walls = [False] * 8
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)

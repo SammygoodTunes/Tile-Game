@@ -32,12 +32,7 @@ class MouseStates:
 
 class PlayerStates:
     """
-    Class for defining the directions of the player.
+    Player states.
     """
 
-    LEFT: int
-    RIGHT: int
-    UP: int
-    DOWN: int
-
-    DOWN, RIGHT, UP, LEFT = range(3, -1, -1)
+    MOVE_DOWN, MOVE_RIGHT, MOVE_UP, MOVE_LEFT = range(3, -1, -1)
