@@ -116,7 +116,6 @@ class Server:
         server_thread.start()
 
     def stop(self):
-        print(self.state.value)
         if self.state.value > 0:
             self.sock.close()
             self.state.value = ServerStates.IDLE

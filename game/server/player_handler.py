@@ -1,5 +1,6 @@
 
 from game.entity.player import Player
+from game.utils.logger import logger
 
 
 class PlayerHandler:
@@ -21,6 +22,9 @@ class PlayerHandler:
 
     def untrack_player(self, player_name: str):
         index = next((i for i, p in enumerate(self._players) if p['name'] == player_name), None)
+        if index is None:
+            logger.debug(f'Player \'{player_name}\' could not be untracked, as they were not found in the player list.')
+            return
         self._players.pop(index)
 
     def get_players(self):

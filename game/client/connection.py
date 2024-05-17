@@ -6,6 +6,7 @@ from time import sleep
 from game.client.player_manager import PlayerManager
 from game.data.states import ConnectionStates
 from game.entity.player import Player
+from game.utils.exceptions import PlayerWithSameNameError
 from game.utils.logger import logger
 from game.network import builders
 from game.network.protocol import Protocol
@@ -48,25 +49,42 @@ class Connection:
             self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
             self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if data and data == Hasher.hash(Protocol.RECOGNITION_CMD_RES):
-                self.sock.send(Hasher.enhash(Protocol.MAPOBJ_CMD_REQ))
-            data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if data and data == Hasher.hash(Protocol.MAPOBJ_CMD_RES):
-                self.state = ConnectionStates.GETDATA
-                compressed_map_obj = b''
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-                while data != Hasher.enhash(Protocol.MAPREADY_CMD):
-                    compressed_map_obj += data
-                    data = self.sock.recv(Protocol.BUFFER_SIZE)
-                self.data = Compressor.decompress(compressed_map_obj.strip())
-                self.sock.send(Hasher.enhash(Protocol.PLAYERADD_CMD_REQ))
-                player = builders.build_player(self.player)
-                compressed_player_obj = Compressor.compress(player)
-                self.sock.send(compressed_player_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
-                self.sock.send(Hasher.enhash(Protocol.PLAYERADDREADY_CMD))
-                self.state = ConnectionStates.SUCCESS
+            if not data or data != Hasher.hash(Protocol.RECOGNITION_CMD_RES):
+                self.state = ConnectionStates.REFUSED
                 return
-            self.state = ConnectionStates.REFUSED
+            self.sock.send(Hasher.enhash(Protocol.MAPOBJ_CMD_REQ))
+            data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
+            if not data or data != Hasher.hash(Protocol.MAPOBJ_CMD_RES):
+                self.state = ConnectionStates.REFUSED
+                return
+            self.state = ConnectionStates.GETDATA
+            compressed_map_obj = b''
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            while data != Hasher.enhash(Protocol.MAPREADY_CMD):
+                compressed_map_obj += data
+                data = self.sock.recv(Protocol.BUFFER_SIZE)
+            self.data = Compressor.decompress(compressed_map_obj.strip())
+            self.sock.send(Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_REQ))
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            if not data or data != Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_RES):
+                self.state = ConnectionStates.REFUSED
+                return
+            compressed_players_obj = b''
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            while data != Hasher.enhash(Protocol.PLAYERSUPDATEREADY_CMD_RES):
+                compressed_players_obj += data
+                data = self.sock.recv(Protocol.BUFFER_SIZE)
+            players = Compressor.decompress(compressed_players_obj.strip())
+            self.sock.send(Hasher.enhash(Protocol.PLAYERADD_CMD_REQ))
+            player = builders.build_player(self.player)
+            if next((i for i, p in enumerate(players) if p['name'] == player['name']), None) is not None:
+                raise PlayerWithSameNameError
+            compressed_player_obj = Compressor.compress(player)
+            self.sock.send(compressed_player_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
+            self.sock.send(Hasher.enhash(Protocol.PLAYERADDREADY_CMD))
+            self.state = ConnectionStates.SUCCESS
+        except PlayerWithSameNameError:
+            self.state = ConnectionStates.BADNAME
         except ConnectionRefusedError:
             self.state = ConnectionStates.REFUSED
         except TimeoutError:
@@ -75,8 +93,6 @@ class Connection:
             self.state = ConnectionStates.INVALID
         except OSError:
             self.state = ConnectionStates.NOROUTE
-        except Exception:
-            self.state = ConnectionStates.ERROR
 
     def disconnect(self) -> None:
         """

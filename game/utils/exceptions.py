@@ -44,3 +44,12 @@ class ZeroOrLessSpawnPlayerAttempts(Exception):
 
     def __init__(self, message="Number of attempts to choose player spawn point must be at least 1."):
         super().__init__(message)
+
+
+class PlayerWithSameNameError(Exception):
+    """
+    Class for creating the exception caused by joining a server with an in-game name that is already taken.
+    """
+
+    def __init__(self, message="Your current player name is already taken, please change it."):
+        super().__init__(message)
