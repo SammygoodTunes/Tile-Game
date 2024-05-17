@@ -1,6 +1,6 @@
 
 from threading import Thread
-from multiprocessing import Process
+from multiprocessing import Process, Value
 import socket
 from time import time
 
@@ -20,7 +20,7 @@ class Server:
     """
 
     def __init__(self):
-        self.state = ServerStates.IDLE
+        self.state = Value('i', ServerStates.IDLE)
         self.player_count = 0
         self.sock: socket.socket | None = None
         self.timeout = 0
@@ -31,6 +31,7 @@ class Server:
         """
         Handle incoming server clients.
         """
+        player_name: str = str()
         data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
         if data != Hasher.hash(Protocol.RECOGNITION_CMD_REQ):
             conn.close()
@@ -40,25 +41,30 @@ class Server:
         self.player_count += 1
         running = True
         while running:
-            if self.state == ServerStates.IDLE:
+            try:
+                if self.state.value == ServerStates.IDLE:
+                    running = False
+                    continue
+                data = conn.recv(Protocol.BUFFER_SIZE)
+                # print(f'Message from {addr}: {data}')
+                running = not Requests.disconnection(data)
+                Requests.recognition(conn, addr, data)
+                Requests.map_data(conn, addr, self.world_handler, data)
+                name = Requests.player_tracking(conn, self.player_handler, data)
+                Requests.player_data(conn, self.player_handler, data)
+                Requests.player_update(conn, self.player_handler, data)
+                player_name = name if name else player_name
+            except ConnectionResetError:
                 running = False
-                continue
-            data = conn.recv(Protocol.BUFFER_SIZE)
-            # print(f'Message from {addr}: {data}')
-            running = not Requests.disconnection(data)
-            Requests.recognition(conn, addr, data)
-            Requests.map_data(conn, addr, self.world_handler, data)
-            Requests.player_tracking(conn, self.player_handler, data)
-            Requests.player_data(conn, self.player_handler, data)
-            Requests.player_update(conn, self.player_handler, data)
         print(f'Connection {addr} closing')
+        self.player_handler.untrack_player(player_name)
         self.player_count -= 1
         conn.close()
 
     def update(self):
         pass
 
-    def run(self):
+    def run(self, state):
         """
         Run the server and listen for connections.
         """
@@ -80,21 +86,25 @@ class Server:
         self.sock.listen()
         self.world_handler.create_world()
 
-        self.state = ServerStates.RUNNING
+        state.value = ServerStates.RUNNING
 
-        while self.state == ServerStates.RUNNING:
+        while state.value == ServerStates.RUNNING:
+            print('Listening')
             conn, addr = self.sock.accept()
+            print('accepted')
+            print('starting thread')
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()
+        print('Stopping server here')
 
     def start(self):
         """
         Prepare the server.
         """
 
-        self.state = ServerStates.STARTING
+        self.state = Value('i', ServerStates.STARTING)
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        #self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         host = '0.0.0.0'
         port = 35000
@@ -102,17 +112,19 @@ class Server:
         try:
             self.sock.bind((host, port))
         except OSError:
-            self.state = ServerStates.FAIL
+            self.state = Value('i', ServerStates.FAIL)
             print(f'Server failed to start.')
             return
         print(f'Starting server on {host}')
-        server_thread = Process(target=self.run)
+        server_thread = Process(target=self.run, args=(self.state,))
         server_thread.start()
 
     def stop(self):
-        if self.state == ServerStates.RUNNING:
+        print(self.state.value)
+        if self.state.value > 0:
             self.sock.close()
-            self.state = ServerStates.IDLE
+            self.state = Value('i', ServerStates.IDLE)
+            self.test()
             self.test()
             print(f'Server closed.')
             self.sock = None

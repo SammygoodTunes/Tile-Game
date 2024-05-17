@@ -25,6 +25,7 @@ class ConnectionHandler:
             self.connection.start(task=Tasks.CONNECT)
 
         if self.stop_connection:
+            print('Disconnecting from server.')
             self.stop_connection = False
             self.connection.disconnect()
             self.connection = None

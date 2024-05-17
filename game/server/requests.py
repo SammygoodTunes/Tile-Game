@@ -29,7 +29,7 @@ class Requests:
             print(f'Sent!')
 
     @staticmethod
-    def player_tracking(conn, player_handler, data: bytes) -> None:
+    def player_tracking(conn, player_handler, data: bytes) -> str:
         if data and data == Hasher.enhash(Protocol.PLAYERADD_CMD_REQ):
             conn.send(Hasher.enhash(Protocol.PLAYERADD_CMD_RES))
             compressed_player_obj = b''
@@ -37,7 +37,9 @@ class Requests:
             while data != Hasher.enhash(Protocol.PLAYERADDREADY_CMD):
                 compressed_player_obj += data
                 data = conn.recv(Protocol.BUFFER_SIZE)
-            player_handler.track_player(Compressor.decompress(compressed_player_obj.strip()))
+            return player_handler.track_player(Compressor.decompress(compressed_player_obj.strip()))
+        return str()
+
 
     @staticmethod
     def player_data(conn, player_handler, data: bytes) -> None:
