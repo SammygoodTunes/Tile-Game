@@ -1,5 +1,6 @@
 
 from threading import Thread
+from multiprocessing import Process
 import socket
 from time import time
 
@@ -43,7 +44,7 @@ class Server:
                 running = False
                 continue
             data = conn.recv(Protocol.BUFFER_SIZE)
-            print(f'Message from {addr}: {data}')
+            # print(f'Message from {addr}: {data}')
             running = not Requests.disconnection(conn)
             Requests.recognition(conn, addr, data)
             Requests.map_data(conn, addr, self.world_handler, data)
@@ -105,7 +106,7 @@ class Server:
             print(f'Server failed to start.')
             return
         print(f'Starting server on {host}')
-        server_thread = Thread(target=self.run)
+        server_thread = Process(target=self.run)
         server_thread.start()
 
     def stop(self):

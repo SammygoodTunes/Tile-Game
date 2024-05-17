@@ -32,8 +32,6 @@ class ConnectionHandler:
         if not self.connection:
             return
 
-        self.connection.player_manager.draw_players(game.player.get_player_name(), game)
-
         connection_state = self.connection.state
         if not game.start_game:
             game.screens.server_connect_screen.update_info_label(connection_state)
@@ -51,3 +49,6 @@ class ConnectionHandler:
         if connection_state > 0 and game.start_game:
             game.start_game = False
             game.screens.server_connect_screen.set_state(True)
+
+    def draw_other_players(self, game):
+        self.connection.player_manager.draw_players(game.player.get_player_name(), game)

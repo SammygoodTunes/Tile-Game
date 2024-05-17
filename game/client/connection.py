@@ -94,9 +94,15 @@ class Connection:
         """
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
-                sleep(3)
-                print('sending players update')
+                data = self.sock.recv(Protocol.BUFFER_SIZE)
+                if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_CMD_RES):
+                    compressed_player_obj = Compressor.compress(builders.build_player(self.player))
+                    self.sock.send(compressed_player_obj + b' ' * (
+                            Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
+                    self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATEREADY_CMD_RES))
+
                 self.sock.send(Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_REQ))
+                self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_CMD_REQ))
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
                 if data and data == Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_RES):
                     compressed_players_obj = b''
@@ -105,21 +111,7 @@ class Connection:
                         compressed_players_obj += data
                         data = self.sock.recv(Protocol.BUFFER_SIZE)
                     players = Compressor.decompress(compressed_players_obj.strip())
-                    print(f'Players: {players}')
                     self.player_manager.set_players(players)
-                sleep(3)
-                print(f'update player')
-                self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_CMD_REQ))
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-                if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_CMD_RES):
-                    print(f'got')
-                    compressed_player_obj = Compressor.compress(builders.build_player(self.player))
-                    print('sending com')
-                    self.sock.send(compressed_player_obj + b' ' * (
-                                Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
-                    print('sending ready')
-                    self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATEREADY_CMD_RES))
-
             except BrokenPipeError:
                 self.state = ConnectionStates.DISCONNECTED
 

@@ -1,5 +1,4 @@
 import pickle
-import dill
 from hashlib import sha256
 from pickle import dumps, loads
 import lzma
