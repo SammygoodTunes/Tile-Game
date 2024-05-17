@@ -5,6 +5,7 @@ import pygame
 from pygame.math import clamp
 from random import randint
 from typing import Self
+from time import time
 
 from game import assets
 from game.data.items import Items
@@ -31,8 +32,7 @@ class Player:
     DAMAGE_TIMER: int = 1
 
     def __init__(self, x: int = 0, y: int = 0, speed: int = 50) -> None:
-        super().__init__()
-        self.asset: pygame.Surface | None = None
+        self.asset: pygame.surface.Surface | None = None
         self._x: int = x
         self._y: int = y
         self.screen_x: int = x
@@ -56,6 +56,7 @@ class Player:
         self.edges = [False, False, False, False]
         self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
         self.main_hud = None
+        self.player_name = f'Player{int(time()) % 100}'
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init(self, game) -> None:
@@ -573,7 +574,7 @@ class Player:
 
     def set_health(self, health: int) -> Self:
         """
-        Set the player's health.
+        Set the player's health, then return the player itself.
         """
         self.health = health
         return self
@@ -583,6 +584,19 @@ class Player:
         Return the player's health.
         """
         return self.health
+
+    def set_player_name(self, player_name: str):
+        """
+        Set the player's in-game name, then return the player itself.
+        """
+        self.player_name = player_name
+        return self
+
+    def get_player_name(self):
+        """
+        Return the player's in-game name.
+        """
+        return self.player_name
 
     def get_walls(self, map_obj: Map) -> list[bool]:
         """

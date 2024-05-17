@@ -6,6 +6,8 @@ from time import time
 from game.data.states import ServerStates
 from game.network.protocol import Protocol
 from game.network.packet import Hasher, Compressor
+from game.server.player_handler import PlayerHandler
+from game.server.requests import Requests
 from game.server.world_handler import WorldHandler
 
 # logger = logging.getLogger(__name__)
@@ -22,6 +24,7 @@ class Server:
         self.sock: socket.socket | None = None
         self.timeout = 0
         self.world_handler: WorldHandler | None = None
+        self.player_handler: PlayerHandler | None = None
 
     def client_handler(self, conn, addr):
         """
@@ -39,21 +42,14 @@ class Server:
             if self.state == ServerStates.IDLE:
                 running = False
                 continue
-            data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if data:
-                print(f'Message from {addr}: {data}')
-                if data == Hasher.hash(Protocol.DISCONNECT_CMD):
-                    running = False
-                elif data == Hasher.hash(Protocol.RECOGNITION_CMD_REQ):
-                    print(f'Sending recognition message to {addr}')
-                    conn.send(Hasher.enhash(Protocol.RECOGNITION_CMD_RES))
-                elif data == Hasher.hash(Protocol.MAPOBJ_CMD_REQ):
-                    print(f'Sending map to {addr}')
-                    compressed_map_obj = Compressor.compress(self.world_handler.get_world().get_map())
-                    conn.send(Hasher.enhash(Protocol.MAPOBJ_CMD_RES))
-                    conn.send(compressed_map_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_obj) % Protocol.BUFFER_SIZE))
-                    conn.send(Hasher.enhash(Protocol.MAPREADY_CMD))
-                    print(f'Sent!')
+            data = conn.recv(Protocol.BUFFER_SIZE)
+            print(f'Message from {addr}: {data}')
+            running = not Requests.disconnection(conn)
+            Requests.recognition(conn, addr, data)
+            Requests.map_data(conn, addr, self.world_handler, data)
+            Requests.player_tracking(conn, self.player_handler, data)
+            Requests.player_data(conn, self.player_handler, data)
+            Requests.player_update(conn, self.player_handler, data)
         print(f'Connection {addr} closing')
         self.player_count -= 1
         conn.close()
@@ -66,6 +62,7 @@ class Server:
         Run the server and listen for connections.
         """
         self.world_handler = WorldHandler()
+        self.player_handler = PlayerHandler()
 
         '''logging.basicConfig(
             level=logging.INFO,

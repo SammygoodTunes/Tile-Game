@@ -21,6 +21,7 @@ class ConnectionHandler:
             self.connection = Connection(
                 game.screens.server_join_screen.ip_input.get_text() if self.host is None else self.host,
                 int(game.screens.server_join_screen.port_input.get_text()) if self.port is None else self.port)
+            self.connection.player = game.player
             self.connection.start(task=Tasks.CONNECT)
 
         if self.stop_connection:
@@ -30,6 +31,8 @@ class ConnectionHandler:
 
         if not self.connection:
             return
+
+        self.connection.player_manager.draw_players(game.player.get_player_name(), game)
 
         connection_state = self.connection.state
         if not game.start_game:

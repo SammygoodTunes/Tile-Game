@@ -1,8 +1,11 @@
 import pickle
+import dill
 from hashlib import sha256
 from pickle import dumps, loads
 import lzma
+import pygame
 
+from game.entity.player import Player
 from game.network.protocol import Protocol
 
 
