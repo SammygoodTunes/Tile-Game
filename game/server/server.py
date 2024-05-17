@@ -45,7 +45,7 @@ class Server:
                 continue
             data = conn.recv(Protocol.BUFFER_SIZE)
             # print(f'Message from {addr}: {data}')
-            running = not Requests.disconnection(conn)
+            running = not Requests.disconnection(data)
             Requests.recognition(conn, addr, data)
             Requests.map_data(conn, addr, self.world_handler, data)
             Requests.player_tracking(conn, self.player_handler, data)
