@@ -89,20 +89,16 @@ class Server:
         state.value = ServerStates.RUNNING
 
         while state.value == ServerStates.RUNNING:
-            print('Listening')
             conn, addr = self.sock.accept()
-            print('accepted')
-            print('starting thread')
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()
-        print('Stopping server here')
 
     def start(self):
         """
         Prepare the server.
         """
 
-        self.state = Value('i', ServerStates.STARTING)
+        self.state.value = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         #self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
@@ -112,7 +108,7 @@ class Server:
         try:
             self.sock.bind((host, port))
         except OSError:
-            self.state = Value('i', ServerStates.FAIL)
+            self.state.value = ServerStates.FAIL
             print(f'Server failed to start.')
             return
         print(f'Starting server on {host}')
@@ -123,7 +119,7 @@ class Server:
         print(self.state.value)
         if self.state.value > 0:
             self.sock.close()
-            self.state = Value('i', ServerStates.IDLE)
+            self.state.value = ServerStates.IDLE
             self.test()
             self.test()
             print(f'Server closed.')

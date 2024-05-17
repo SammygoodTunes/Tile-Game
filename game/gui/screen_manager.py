@@ -152,7 +152,6 @@ class Screens:
                     self.game.start_game = False
                     self.window.paused = False
                     self.game.connection_handler.stop_connection = True
-                    print('Stopping server as well')
                     self.game.server.stop()
                     self.pause_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
