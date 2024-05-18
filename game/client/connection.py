@@ -93,6 +93,9 @@ class Connection:
             self.state = ConnectionStates.INVALID
         except OSError:
             self.state = ConnectionStates.NOROUTE
+        except Exception as e:
+            logger.error(f'{e}')
+            self.state = ConnectionStates.ERROR
 
     def disconnect(self) -> None:
         """
@@ -102,7 +105,6 @@ class Connection:
         if self.state == ConnectionStates.SUCCESS:
             self.sock.send(Hasher.enhash(Protocol.DISCONNECT_CMD))
             self.state = ConnectionStates.IDLE
-            #self.sock.close()
 
     def update(self):
         """
