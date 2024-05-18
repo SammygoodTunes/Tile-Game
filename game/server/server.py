@@ -2,13 +2,14 @@
 from threading import Thread
 from multiprocessing import Process, Value
 import socket
-from time import time
+from time import sleep
 
+from game.data.properties import ServerProperties
 from game.data.states import ServerStates
 from game.network.protocol import Protocol
 from game.network.packet import Hasher, Compressor
 from game.server.player_handler import PlayerHandler
-from game.server.requests import Requests
+from game.server.tasks import Tasks
 from game.server.world_handler import WorldHandler
 
 # logger = logging.getLogger(__name__)
@@ -32,14 +33,16 @@ class Server:
         Handle incoming server clients.
         """
         player_name: str = str()
-        data = conn.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-        if data != Hasher.hash(Protocol.RECOGNITION_CMD_REQ):
-            conn.close()
-            return
-        self.sock.settimeout(None)
+        try:
+            running = Tasks.recognition(conn, addr)
+            Tasks.map_data(conn, addr, self.world_handler)
+            data = conn.recv(Protocol.BUFFER_SIZE)
+            if data and data == Hasher.enhash(Protocol.GAMEUPDATE_REQ):
+                Tasks.send_game_state(conn, self.player_handler)
+        except OSError:
+            running = False
         print(f'Connection from: {addr}')
         self.player_count += 1
-        running = True
         while running:
             try:
                 if self.state.value == ServerStates.IDLE:
@@ -47,14 +50,16 @@ class Server:
                     continue
                 data = conn.recv(Protocol.BUFFER_SIZE)
                 # print(f'Message from {addr}: {data}')
-                running = not Requests.disconnection(data)
-                Requests.recognition(conn, addr, data)
-                Requests.map_data(conn, addr, self.world_handler, data)
-                name = Requests.player_tracking(conn, self.player_handler, data)
-                Requests.player_data(conn, self.player_handler, data)
-                Requests.player_update(conn, self.player_handler, data)
+                running = not Tasks.disconnection(data)
+                name = Tasks.player_update(conn, self.player_handler, data)
+                Tasks.send_game_state(conn, self.player_handler)
                 player_name = name if name else player_name
+                sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:
+                running = False
+            except BrokenPipeError:
+                running = False
+            except OSError:
                 running = False
         print(f'Connection {addr} closing')
         self.player_handler.untrack_player(player_name)
@@ -100,7 +105,7 @@ class Server:
 
         self.state.value = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        #self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         host = '0.0.0.0'
         port = 35000

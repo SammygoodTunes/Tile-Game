@@ -174,9 +174,9 @@ class Player:
             self.move = 0
 
         if self.velocity_x != 0:
-            self._x += speed * self.velocity_x * d
+            self._x += round(speed * self.velocity_x * d)
         if self.velocity_y != 0:
-            self._y += speed * self.velocity_y * d
+            self._y += round(speed * self.velocity_y * d)
 
         if self.is_moving_left():
             self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)

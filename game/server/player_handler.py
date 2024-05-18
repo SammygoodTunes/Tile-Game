@@ -20,8 +20,12 @@ class PlayerHandler:
         logger.debug(f'Updating player \'{player["name"]}\'')
         index = next((i for i, p in enumerate(self._players) if p['name'] == player['name']), None)
         if index is None:
-            logger.debug(f'Player \'{player["name"]}\' could not be updated, as they were not found in the player list.')
-        self._players[index] = player
+            self.track_player(player)
+            return
+        self._players[index]['previous_x'] = self._players[index]['x']
+        self._players[index]['previous_y'] = self._players[index]['y']
+        self._players[index]['x'] = player['x']
+        self._players[index]['y'] = player['y']
 
     def untrack_player(self, player_name: str):
         logger.debug(f'Untracking player \'{player_name}\'')

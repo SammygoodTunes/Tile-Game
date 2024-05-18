@@ -25,7 +25,6 @@ class ConnectionHandler:
             self.connection.start(task=Tasks.CONNECT)
 
         if self.stop_connection:
-            print('Disconnecting from server.')
             self.stop_connection = False
             self.connection.disconnect()
             self.connection = None
@@ -52,5 +51,5 @@ class ConnectionHandler:
             game.screens.pause_screen.set_state(False)
             game.screens.server_connect_screen.set_state(True)
 
-    def draw_other_players(self, game):
-        self.connection.player_manager.draw_players(game.player.get_player_name(), game)
+    def draw_other_players(self, game, delta):
+        self.connection.player_manager.draw_players(game.player.get_player_name(), delta, game)

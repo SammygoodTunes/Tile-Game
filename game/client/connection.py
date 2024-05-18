@@ -2,8 +2,10 @@
 import socket
 from threading import Thread
 from time import sleep
+import traceback
 
 from game.client.player_manager import PlayerManager
+from game.data.properties import ServerProperties
 from game.data.states import ConnectionStates
 from game.entity.player import Player
 from game.utils.exceptions import PlayerWithSameNameError
@@ -36,6 +38,7 @@ class Connection:
         self.player_manager = PlayerManager()
         self.player: Player | None = None
         self.data: any = None
+        self.recv_player_update = True
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def connect(self) -> None:
@@ -46,42 +49,45 @@ class Connection:
         try:
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
-            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
-            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_CMD_REQ))
+            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if not data or data != Hasher.hash(Protocol.RECOGNITION_CMD_RES):
+            if not data or data != Hasher.hash(Protocol.RECOGNITION_RES):
                 self.state = ConnectionStates.REFUSED
                 return
-            self.sock.send(Hasher.enhash(Protocol.MAPOBJ_CMD_REQ))
+            self.sock.send(Hasher.enhash(Protocol.MAPDATA_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if not data or data != Hasher.hash(Protocol.MAPOBJ_CMD_RES):
+            if not data or data != Hasher.hash(Protocol.MAPDATA_RES):
                 self.state = ConnectionStates.REFUSED
                 return
             self.state = ConnectionStates.GETDATA
             compressed_map_obj = b''
             data = self.sock.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.MAPREADY_CMD):
+            while data != Hasher.enhash(Protocol.MAPDATA_READY_RES):
                 compressed_map_obj += data
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
             self.data = Compressor.decompress(compressed_map_obj.strip())
-            self.sock.send(Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_REQ))
+            self.sock.send(Hasher.enhash(Protocol.GAMEUPDATE_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE)
-            if not data or data != Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_RES):
+            if not data or data != Hasher.enhash(Protocol.GAMEUPDATE_RES):
                 self.state = ConnectionStates.REFUSED
                 return
             compressed_players_obj = b''
             data = self.sock.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.PLAYERSUPDATEREADY_CMD_RES):
+            while data != Hasher.enhash(Protocol.GAMEUPDATE_READY_RES):
                 compressed_players_obj += data
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
             players = Compressor.decompress(compressed_players_obj.strip())
-            self.sock.send(Hasher.enhash(Protocol.PLAYERADD_CMD_REQ))
+            self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_REQ))
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            if not data or data != Hasher.enhash(Protocol.PLAYERUPDATE_RES):
+                self.state = ConnectionStates.REFUSED
+                return
             player = builders.build_player(self.player)
             if next((i for i, p in enumerate(players) if p['name'] == player['name']), None) is not None:
                 raise PlayerWithSameNameError
             compressed_player_obj = Compressor.compress(player)
             self.sock.send(compressed_player_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
-            self.sock.send(Hasher.enhash(Protocol.PLAYERADDREADY_CMD))
+            self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_READY_RES))
             self.state = ConnectionStates.SUCCESS
         except PlayerWithSameNameError:
             self.state = ConnectionStates.BADNAME
@@ -93,8 +99,8 @@ class Connection:
             self.state = ConnectionStates.INVALID
         except OSError:
             self.state = ConnectionStates.NOROUTE
-        except Exception as e:
-            logger.error(f'{e}')
+        except Exception:
+            logger.error(f'{traceback.format_exc()}')
             self.state = ConnectionStates.ERROR
 
     def disconnect(self) -> None:
@@ -103,7 +109,8 @@ class Connection:
         Any errors or failures will raise specific exceptions.
         """
         if self.state == ConnectionStates.SUCCESS:
-            self.sock.send(Hasher.enhash(Protocol.DISCONNECT_CMD))
+            print('Disconnecting from server.')
+            self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
             self.state = ConnectionStates.IDLE
 
     def update(self):
@@ -112,24 +119,25 @@ class Connection:
         """
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
+                if self.recv_player_update:
+                    self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_REQ))
+                    self.recv_player_update = False
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
-                if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_CMD_RES):
+                if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_RES):
+                    self.recv_player_update = True
                     compressed_player_obj = Compressor.compress(builders.build_player(self.player))
                     self.sock.send(compressed_player_obj + b' ' * (
                             Protocol.BUFFER_SIZE - len(compressed_player_obj) % Protocol.BUFFER_SIZE))
-                    self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATEREADY_CMD_RES))
-
-                self.sock.send(Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_REQ))
-                self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_CMD_REQ))
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-                if data and data == Hasher.enhash(Protocol.PLAYERSUPDATE_CMD_RES):
+                    self.sock.send(Hasher.enhash(Protocol.PLAYERUPDATE_READY_RES))
+                elif data and data == Hasher.enhash(Protocol.GAMEUPDATE_RES):
                     compressed_players_obj = b''
                     data = self.sock.recv(Protocol.BUFFER_SIZE)
-                    while data != Hasher.enhash(Protocol.PLAYERSUPDATEREADY_CMD_RES):
+                    while data != Hasher.enhash(Protocol.GAMEUPDATE_READY_RES):
                         compressed_players_obj += data
                         data = self.sock.recv(Protocol.BUFFER_SIZE)
                     players = Compressor.decompress(compressed_players_obj.strip())
                     self.player_manager.set_players(players)
+                sleep(1 / ServerProperties.TICKS_PER_SECOND)
             except BrokenPipeError:
                 self.state = ConnectionStates.DISCONNECTED
             except OSError:

@@ -9,7 +9,9 @@ def build_player(player: Player) -> dict:
     return {
         'name': player.get_player_name(),
         'x': player.get_x(),
-        'y': player.get_y()
+        'y': player.get_y(),
+        'previous_x': 0,
+        'previous_y': 0
     }
 
 

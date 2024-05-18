@@ -41,7 +41,7 @@ class Game(Window):
             self.clear((140, 150, 235))
             self.world.draw(self)
             # self.world.draw_wireframe(self.screen)
-            self.connection_handler.draw_other_players(self)
+            self.connection_handler.draw_other_players(self, self.clock.get_time() / 1000.0)
             self.player.draw(self)
             self.player.draw_selection_grid(self)
             self.player.main_hud.draw()
