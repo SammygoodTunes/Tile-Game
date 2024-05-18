@@ -107,7 +107,9 @@ class Screens:
                     self.server_join_screen.set_state(True)
                     pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
                     self.server_join_screen.join_button.set_state(
-                        self.server_join_screen.ip_input.get_text().strip() and self.server_join_screen.port_input.get_text().strip()
+                        self.server_join_screen.ign_input.get_text().strip()
+                        and self.server_join_screen.ip_input.get_text().strip()
+                        and self.server_join_screen.port_input.get_text().strip()
                     )
                     self.server_join_screen.ign_input.set_text(self.game.player.get_player_name())
                     self.server_join_screen.update_ui()
