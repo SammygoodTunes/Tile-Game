@@ -20,11 +20,12 @@ class ServerJoinScreen(Screen):
 		super().__init__()
 		self.window = window
 		self.faded_surface = self.initialise_surface()
-		self.subtitle_label = Label("Type the IP address and port of the server to join.").set_font_sizes((7, 8, 10)).set_colour((215, 215, 215))
-		self.ip_input = InputBox(placeholder="Server IP").set_max_text_length(32)
-		self.port_input = InputBox(placeholder="Port").set_max_text_length(5).authorise_only_numeric()
-		self.join_button = Button("Join")
-		self.back_button = Button("Back")
+		self.join_label = Label("Join server")
+		self.ign_input = InputBox(placeholder='Player name').set_max_text_length(32)
+		self.ip_input = InputBox(placeholder='Server IP').set_max_text_length(32)
+		self.port_input = InputBox(placeholder='Port').set_max_text_length(5).authorise_only_numeric()
+		self.join_button = Button('Join')
+		self.back_button = Button('Back')
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def initialise_surface(self) -> Surface:
@@ -40,9 +41,14 @@ class ServerJoinScreen(Screen):
 		"""
 		Track the screen events (unused).
 		"""
+		self.ign_input.events(e)
 		self.ip_input.events(e)
 		self.port_input.events(e)
-		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
+		self.join_button.set_state(
+			self.ign_input.get_text().strip()
+			and self.ip_input.get_text().strip()
+			and self.port_input.get_text().strip()
+		)
 
 	def draw(self) -> None:
 		"""
@@ -51,7 +57,8 @@ class ServerJoinScreen(Screen):
 		if not self._enabled:
 			return
 		self.window.screen.blit(self.faded_surface, (0, 0))
-		self.subtitle_label.draw(self.window.screen)
+		self.join_label.draw(self.window.screen)
+		self.ign_input.draw(self.window.screen)
 		self.ip_input.draw(self.window.screen)
 		self.port_input.draw(self.window.screen)
 		self.join_button.draw(self.window.screen)
@@ -62,16 +69,18 @@ class ServerJoinScreen(Screen):
 		Update the screen UI.
 		"""
 		self.faded_surface = self.initialise_surface()
-		self.subtitle_label.update(self.window)
-		self.subtitle_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ip_input.get_height() - self.subtitle_label.get_total_height() * 3)
+		self.join_label.update(self.window)
+		self.join_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ip_input.get_height() - self.join_label.get_total_height() * 3)
+		self.ign_input.update(self.window)
+		self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ign_input.get_height() - 10)
 		self.ip_input.update(self.window)
-		self.ip_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ip_input.get_height())
+		self.ip_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -5)
 		self.port_input.update(self.window)
-		self.port_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, 5)
+		self.port_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height())
 		self.join_button.update(self.window)
-		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 10)
+		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 15)
 		self.back_button.update(self.window)
-		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 15)
+		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 20)
 		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
 
 	def set_state(self, state: bool) -> None:
@@ -79,7 +88,8 @@ class ServerJoinScreen(Screen):
 		Set the screen's visibility/interactivity.
 		"""
 		super().set_state(state)
-		self.subtitle_label.set_state(state)
+		self.join_label.set_state(state)
+		self.ign_input.set_state(state)
 		self.ip_input.set_state(state)
 		self.port_input.set_state(state)
 		self.join_button.set_state(state)

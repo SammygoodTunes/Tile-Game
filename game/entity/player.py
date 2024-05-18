@@ -56,7 +56,7 @@ class Player:
         self.edges = [False, False, False, False]
         self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
         self.main_hud = None
-        self.player_name = f'Player11'
+        self.player_name = str()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init(self, game) -> None:

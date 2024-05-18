@@ -102,7 +102,7 @@ class Connection:
         if self.state == ConnectionStates.SUCCESS:
             self.sock.send(Hasher.enhash(Protocol.DISCONNECT_CMD))
             self.state = ConnectionStates.IDLE
-            #self.sock.close()
+            self.sock.close()
 
     def update(self):
         """

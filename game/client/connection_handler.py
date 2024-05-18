@@ -21,6 +21,7 @@ class ConnectionHandler:
             self.connection = Connection(
                 game.screens.server_join_screen.ip_input.get_text() if self.host is None else self.host,
                 int(game.screens.server_join_screen.port_input.get_text()) if self.port is None else self.port)
+            game.player.set_player_name(game.screens.server_join_screen.ign_input.get_text().strip())
             self.connection.player = game.player
             self.connection.start(task=Tasks.CONNECT)
 
