@@ -144,7 +144,7 @@ class Screens:
                     self.server_connect_screen.set_state(True)
                     self.server_connect_screen.back_button.set_state(False)
                     self.game.server.start()
-                    if self.game.server.state != ServerStates.FAIL:
+                    if self.game.server.state.value != ServerStates.FAIL:
                         self.game.connection_handler.host = 'localhost'
                         self.game.connection_handler.port = 35000
                         self.game.connection_handler.start_connection = True
