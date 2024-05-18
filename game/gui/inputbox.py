@@ -1,7 +1,7 @@
 import pygame
 from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_RETURN, Surface, BLEND_ALPHA_SDL2
 from pygame.math import clamp
-from string import printable, digits
+from string import printable, digits, ascii_letters
 from typing import Self
 
 from game.gui.label import Widget, Label
@@ -122,6 +122,14 @@ class InputBox(Widget):
         Authorise only numerical values (0-9) in the input box, then return the input box itself.
         """
         self._authorised_chars = digits
+        return self
+
+    def authorise_only_alnum(self):
+        """
+        Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
+        This includes dashes (hyphens) and underscores.
+        """
+        self._authorised_chars = ascii_letters + digits + '-_'
         return self
 
     def is_hovering_over(self) -> bool:

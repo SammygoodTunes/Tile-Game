@@ -3,7 +3,7 @@ from pygame import Surface
 from pygame.event import Event
 
 import game.data.data_manager as data_mng
-from game.data.properties import ScreenProperties
+from game.data.properties import ScreenProperties, PlayerProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -21,7 +21,8 @@ class ServerCreateScreen(Screen):
         self.window = window
         self.faded_surface = self.initialise_surface()
         self.create_label = Label("Create server")
-        self.ign_input = InputBox(placeholder='Player name').set_max_text_length(32)
+        self.ign_input = (InputBox(placeholder='Player name').
+                          set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnum())
         self.create_button = Button('Create')
         self.back_button = Button('Back')
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')

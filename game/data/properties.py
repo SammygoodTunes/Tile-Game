@@ -1,4 +1,12 @@
 
+class PlayerProperties:
+    """
+    Class for player properties.
+    """
+
+    MAX_PLAYER_NAME_SIZE = 16
+
+
 class ScreenProperties:
     """
     Class for screen properties.
