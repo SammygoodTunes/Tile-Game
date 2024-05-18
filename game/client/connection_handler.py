@@ -21,7 +21,6 @@ class ConnectionHandler:
             self.connection = Connection(
                 game.screens.server_join_screen.ip_input.get_text() if self.host is None else self.host,
                 int(game.screens.server_join_screen.port_input.get_text()) if self.port is None else self.port)
-            game.player.set_player_name(game.screens.server_join_screen.ign_input.get_text().strip())
             self.connection.player = game.player
             self.connection.start(task=Tasks.CONNECT)
 
@@ -50,6 +49,7 @@ class ConnectionHandler:
 
         if connection_state > 0 and game.start_game:
             game.start_game = False
+            game.screens.pause_screen.set_state(False)
             game.screens.server_connect_screen.set_state(True)
 
     def draw_other_players(self, game):
