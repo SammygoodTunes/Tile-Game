@@ -2,7 +2,6 @@
 from pygame import Surface
 from pygame.event import Event
 
-import game.data.data_manager as data_mng
 from game.data.properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -81,7 +80,11 @@ class ServerJoinScreen(Screen):
 		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + 15)
 		self.back_button.update(self.window)
 		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 20)
-		self.join_button.set_state(self.ip_input.get_text().strip() and self.port_input.get_text().strip())
+		self.join_button.set_state(
+			self.ign_input.get_text().strip()
+			and self.ip_input.get_text().strip()
+			and self.port_input.get_text().strip()
+		)
 
 	def set_state(self, state: bool) -> None:
 		"""
