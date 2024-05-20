@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtasks_1_1Tasks" xml:lang="en-US">
+<title>tasks.Tasks Class Reference</title>
+<indexterm><primary>tasks.Tasks</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9">disconnection</link> (bytes data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047">recognition</link> (conn, addr)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d">map_data</link> (conn, addr, world_handler)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c">send_game_state</link> (conn, player_handler)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467">player_update</link> (conn, player_handler, bytes data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for regrouping all server-side requests.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9"/><section>
+    <title>disconnection()</title>
+<indexterm><primary>disconnection</primary><secondary>tasks.Tasks</secondary></indexterm>
+<indexterm><primary>tasks.Tasks</primary><secondary>disconnection</secondary></indexterm>
+<para><computeroutput> bool tasks.Tasks.disconnection (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d"/><section>
+    <title>map_data()</title>
+<indexterm><primary>map_data</primary><secondary>tasks.Tasks</secondary></indexterm>
+<indexterm><primary>tasks.Tasks</primary><secondary>map_data</secondary></indexterm>
+<para><computeroutput> None tasks.Tasks.map_data ( conn,  addr,  world_handler)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467"/><section>
+    <title>player_update()</title>
+<indexterm><primary>player_update</primary><secondary>tasks.Tasks</secondary></indexterm>
+<indexterm><primary>tasks.Tasks</primary><secondary>player_update</secondary></indexterm>
+<para><computeroutput> str tasks.Tasks.player_update ( conn,  player_handler, bytes data)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047"/><section>
+    <title>recognition()</title>
+<indexterm><primary>recognition</primary><secondary>tasks.Tasks</secondary></indexterm>
+<indexterm><primary>tasks.Tasks</primary><secondary>recognition</secondary></indexterm>
+<para><computeroutput> bool tasks.Tasks.recognition ( conn,  addr)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c"/><section>
+    <title>send_game_state()</title>
+<indexterm><primary>send_game_state</primary><secondary>tasks.Tasks</secondary></indexterm>
+<indexterm><primary>tasks.Tasks</primary><secondary>send_game_state</secondary></indexterm>
+<para><computeroutput> None tasks.Tasks.send_game_state ( conn,  player_handler)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_tasks_8py">tasks.py</link></section>
+</section>

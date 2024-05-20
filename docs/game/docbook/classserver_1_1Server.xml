@@ -11,7 +11,7 @@
 </listitem>
             <listitem><para><link linkend="_classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f">update</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8">run</link> (self)</para>
+            <listitem><para><link linkend="_classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b">run</link> (self, <link linkend="_classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f">state</link>)</para>
 </listitem>
             <listitem><para><link linkend="_classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33">start</link> (self)</para>
 </listitem>
@@ -35,18 +35,11 @@
 </listitem>
             <listitem><para><link linkend="_classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb">timeout</link></para>
 </listitem>
-            <listitem><para><link linkend="_classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a">sock</link></para>
-</listitem>
             <listitem><para><link linkend="_classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166">world_handler</link></para>
 </listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Static Public Attributes    </title>
-        <itemizedlist>
-            <listitem><para><link linkend="_classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be">IDLE</link></para>
+            <listitem><para><link linkend="_classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0">player_handler</link></para>
 </listitem>
-            <listitem><para><link linkend="_classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e">RUNNING</link></para>
+            <listitem><para><link linkend="_classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a">sock</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -74,19 +67,22 @@
 <para><literallayout><computeroutput>Handle incoming server clients.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8"/><section>
+<anchor xml:id="_classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b"/><section>
     <title>run()</title>
 <indexterm><primary>run</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>run</secondary></indexterm>
-<para><computeroutput>server.Server.run ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Run the server.
+<para><computeroutput>server.Server.run ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Run the server and listen for connections.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33"/><section>
     <title>start()</title>
 <indexterm><primary>start</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>start</secondary></indexterm>
-<para><computeroutput>server.Server.start ( self)</computeroutput></para></section>
+<para><computeroutput>server.Server.start ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Prepare the server.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569"/><section>
     <title>stop()</title>
 <indexterm><primary>stop</primary><secondary>server.Server</secondary></indexterm>
@@ -105,21 +101,16 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be"/><section>
-    <title>IDLE</title>
-<indexterm><primary>IDLE</primary><secondary>server.Server</secondary></indexterm>
-<indexterm><primary>server.Server</primary><secondary>IDLE</secondary></indexterm>
-<para><computeroutput>server.Server.IDLE<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8"/><section>
     <title>player_count</title>
 <indexterm><primary>player_count</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>player_count</secondary></indexterm>
 <para><computeroutput>server.Server.player_count</computeroutput></para></section>
-<anchor xml:id="_classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e"/><section>
-    <title>RUNNING</title>
-<indexterm><primary>RUNNING</primary><secondary>server.Server</secondary></indexterm>
-<indexterm><primary>server.Server</primary><secondary>RUNNING</secondary></indexterm>
-<para><computeroutput>server.Server.RUNNING<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0"/><section>
+    <title>player_handler</title>
+<indexterm><primary>player_handler</primary><secondary>server.Server</secondary></indexterm>
+<indexterm><primary>server.Server</primary><secondary>player_handler</secondary></indexterm>
+<para><computeroutput>server.Server.player_handler</computeroutput></para></section>
 <anchor xml:id="_classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a"/><section>
     <title>sock</title>
 <indexterm><primary>sock</primary><secondary>server.Server</secondary></indexterm>

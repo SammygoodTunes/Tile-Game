@@ -28,32 +28,11 @@
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1ad9f4e9f9ed74153b831f6cdc8809e882">state</link></para>
 </listitem>
+            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482">player_manager</link></para>
+</listitem>
+            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20">recv_player_update</link></para>
+</listitem>
             <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45">data</link></para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Static Public Attributes    </title>
-        <itemizedlist>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a1907239099f73d1632226195a8b68526">IDLE</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1af74b64340e03d51cf309926938c3c0ae">PENDING</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1ab470d9129d1b30383f631cd24d65b644">GETDATA</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1aba5380138046c2b8689707004fb8eadc">SUCCESS</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a67913fb103697a09ddecf932c2bf1dce">INVALID</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a799f27b585cdf25831d16e66edb0f11d">REFUSED</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a918e109c00054324fb13e1976cf69d65">TIMEOUT</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a12d1c1453ee8b7d2604477d7fb89fcc7">NOROUTE</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a31868df13e07a117430c5a05779a025d">DISCONNECTED</link></para>
-</listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a3c656382c4bc50ee5889bf66150e93bd">ERROR</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -112,56 +91,26 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>data</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>data</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.data</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a31868df13e07a117430c5a05779a025d"/><section>
-    <title>DISCONNECTED</title>
-<indexterm><primary>DISCONNECTED</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>DISCONNECTED</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.DISCONNECTED<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a3c656382c4bc50ee5889bf66150e93bd"/><section>
-    <title>ERROR</title>
-<indexterm><primary>ERROR</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>ERROR</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.ERROR<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1ab470d9129d1b30383f631cd24d65b644"/><section>
-    <title>GETDATA</title>
-<indexterm><primary>GETDATA</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>GETDATA</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.GETDATA<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a"/><section>
     <title>host</title>
 <indexterm><primary>host</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>host</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.host</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a1907239099f73d1632226195a8b68526"/><section>
-    <title>IDLE</title>
-<indexterm><primary>IDLE</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>IDLE</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.IDLE<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a67913fb103697a09ddecf932c2bf1dce"/><section>
-    <title>INVALID</title>
-<indexterm><primary>INVALID</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>INVALID</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.INVALID<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a12d1c1453ee8b7d2604477d7fb89fcc7"/><section>
-    <title>NOROUTE</title>
-<indexterm><primary>NOROUTE</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>NOROUTE</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.NOROUTE<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1af74b64340e03d51cf309926938c3c0ae"/><section>
-    <title>PENDING</title>
-<indexterm><primary>PENDING</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>PENDING</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.PENDING<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482"/><section>
+    <title>player_manager</title>
+<indexterm><primary>player_manager</primary><secondary>client.connection.Connection</secondary></indexterm>
+<indexterm><primary>client.connection.Connection</primary><secondary>player_manager</secondary></indexterm>
+<para><computeroutput>client.connection.Connection.player_manager</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829"/><section>
     <title>port</title>
 <indexterm><primary>port</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>port</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.port</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a799f27b585cdf25831d16e66edb0f11d"/><section>
-    <title>REFUSED</title>
-<indexterm><primary>REFUSED</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>REFUSED</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.REFUSED<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20"/><section>
+    <title>recv_player_update</title>
+<indexterm><primary>recv_player_update</primary><secondary>client.connection.Connection</secondary></indexterm>
+<indexterm><primary>client.connection.Connection</primary><secondary>recv_player_update</secondary></indexterm>
+<para><computeroutput>client.connection.Connection.recv_player_update</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1af2a57ecdd41a44e47ff3b6fb4477f4a6"/><section>
     <title>sock</title>
 <indexterm><primary>sock</primary><secondary>client.connection.Connection</secondary></indexterm>
@@ -172,16 +121,6 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>state</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>state</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.state</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1aba5380138046c2b8689707004fb8eadc"/><section>
-    <title>SUCCESS</title>
-<indexterm><primary>SUCCESS</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>SUCCESS</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.SUCCESS<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a918e109c00054324fb13e1976cf69d65"/><section>
-    <title>TIMEOUT</title>
-<indexterm><primary>TIMEOUT</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>TIMEOUT</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.TIMEOUT<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_connection_8py">connection.py</link></section>

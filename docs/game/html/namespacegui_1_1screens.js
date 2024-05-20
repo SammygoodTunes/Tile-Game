@@ -10,6 +10,7 @@ var namespacegui_1_1screens =
     [ "pause_screen", "namespacegui_1_1screens_1_1pause__screen.html", "namespacegui_1_1screens_1_1pause__screen" ],
     [ "screen", "namespacegui_1_1screens_1_1screen.html", "namespacegui_1_1screens_1_1screen" ],
     [ "serverconnect_screen", "namespacegui_1_1screens_1_1serverconnect__screen.html", "namespacegui_1_1screens_1_1serverconnect__screen" ],
+    [ "servercreate_screen", "namespacegui_1_1screens_1_1servercreate__screen.html", "namespacegui_1_1screens_1_1servercreate__screen" ],
     [ "serverjoin_screen", "namespacegui_1_1screens_1_1serverjoin__screen.html", "namespacegui_1_1screens_1_1serverjoin__screen" ],
     [ "servermenu_screen", "namespacegui_1_1screens_1_1servermenu__screen.html", "namespacegui_1_1screens_1_1servermenu__screen" ]
 ];

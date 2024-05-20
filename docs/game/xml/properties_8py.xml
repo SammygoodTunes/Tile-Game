@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="properties_8py" kind="file" language="Python">
+    <compoundname>properties.py</compoundname>
+    <innerclass refid="classdata_1_1properties_1_1PlayerProperties" prot="public">data::properties::PlayerProperties</innerclass>
+    <innerclass refid="classdata_1_1properties_1_1ScreenProperties" prot="public">data::properties::ScreenProperties</innerclass>
+    <innerclass refid="classdata_1_1properties_1_1ServerProperties" prot="public">data::properties::ServerProperties</innerclass>
+    <innernamespace refid="namespacedata">data</innernamespace>
+    <innernamespace refid="namespacedata_1_1properties">data::properties</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacedata_1_1properties" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="classdata_1_1properties_1_1PlayerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1properties_1_1PlayerProperties" kindref="compound">PlayerProperties</ref>:</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>player<sp/>properties.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_PLAYER_NAME_SIZE<sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdata_1_1properties_1_1ScreenProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1properties_1_1ScreenProperties" kindref="compound">ScreenProperties</ref>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>screen<sp/>properties.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ALPHA<sp/>=<sp/>128</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classdata_1_1properties_1_1ServerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1properties_1_1ServerProperties" kindref="compound">ServerProperties</ref>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>server<sp/>properties.</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>TICKS_PER_SECOND<sp/>=<sp/>20</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,9 @@
 var namespaces_dup =
 [
+    [ "builders", "namespacebuilders.html", [
+      [ "build_player", "namespacebuilders.html#a813379f63daeb04e8d6c34e2871ae22d", null ],
+      [ "unbuild_player", "namespacebuilders.html#a677ad2a4ab13b5bd3f864deddb1db86f", null ]
+    ] ],
     [ "client", "namespaceclient.html", "namespaceclient" ],
     [ "core", "namespacecore.html", "namespacecore" ],
     [ "data", "namespacedata.html", "namespacedata" ],
@@ -9,8 +13,10 @@ var namespaces_dup =
       [ "main", "namespacemain.html#aa7a58ac748c5293faa4d77a82b94d161", null ]
     ] ],
     [ "packet", "namespacepacket.html", "namespacepacket" ],
+    [ "player_handler", "namespaceplayer__handler.html", "namespaceplayer__handler" ],
     [ "protocol", "namespaceprotocol.html", "namespaceprotocol" ],
     [ "server", "namespaceserver.html", "namespaceserver" ],
+    [ "tasks", "namespacetasks.html", "namespacetasks" ],
     [ "utils", "namespaceutils.html", "namespaceutils" ],
     [ "world", "namespaceworld.html", "namespaceworld" ],
     [ "world_handler", "namespaceworld__handler.html", "namespaceworld__handler" ]

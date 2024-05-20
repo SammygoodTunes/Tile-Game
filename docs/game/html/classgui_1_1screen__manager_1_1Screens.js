@@ -15,6 +15,7 @@ var classgui_1_1screen__manager_1_1Screens =
     [ "pause_screen", "classgui_1_1screen__manager_1_1Screens.html#a89e66b9c8de4d304ffe2eab2bb9ab8b6", null ],
     [ "screen", "classgui_1_1screen__manager_1_1Screens.html#a5d22d72dd10f258d9281c700644f1341", null ],
     [ "server_connect_screen", "classgui_1_1screen__manager_1_1Screens.html#ac3d979d0f81881cd048e7fbd8380fd00", null ],
+    [ "server_create_screen", "classgui_1_1screen__manager_1_1Screens.html#ad459e5a44f3d18184c17ee5d421ac20d", null ],
     [ "server_join_screen", "classgui_1_1screen__manager_1_1Screens.html#a2507ed22bdb1164d3ddb7a8475304ee8", null ],
     [ "server_menu_screen", "classgui_1_1screen__manager_1_1Screens.html#a01a4aeb84d05d2e9bdf1573353581510", null ],
     [ "window", "classgui_1_1screen__manager_1_1Screens.html#aa042aec68a6a74fe382992081d33d646", null ]

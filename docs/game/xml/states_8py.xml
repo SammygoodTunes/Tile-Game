@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="states_8py" kind="file" language="Python">
+    <compoundname>states.py</compoundname>
+    <innerclass refid="classdata_1_1states_1_1MapStates" prot="public">data::states::MapStates</innerclass>
+    <innerclass refid="classdata_1_1states_1_1ConnectionStates" prot="public">data::states::ConnectionStates</innerclass>
+    <innerclass refid="classdata_1_1states_1_1ServerStates" prot="public">data::states::ServerStates</innerclass>
+    <innerclass refid="classdata_1_1states_1_1MouseStates" prot="public">data::states::MouseStates</innerclass>
+    <innerclass refid="classdata_1_1states_1_1PlayerStates" prot="public">data::states::PlayerStates</innerclass>
+    <innernamespace refid="namespacedata">data</innernamespace>
+    <innernamespace refid="namespacedata_1_1states">data::states</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacedata_1_1states" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="classdata_1_1states_1_1MapStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1MapStates" kindref="compound">MapStates</ref>:</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Map<sp/>states.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>GENMAP<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GEN-MAP&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>READY<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;READY&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdata_1_1states_1_1ConnectionStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1ConnectionStates" kindref="compound">ConnectionStates</ref>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Connection<sp/>states.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE,<sp/>PENDING,<sp/>GETDATA<sp/>=<sp/>range(-1,<sp/>-4,<sp/>-1)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>SUCCESS,<sp/>INVALID,<sp/>REFUSED,<sp/>TIMEOUT,<sp/>NOROUTE,<sp/>DISCONNECTED,<sp/>BADNAME,<sp/>ERROR,<sp/>SERVFAIL<sp/>=<sp/>range(0,<sp/>9)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classdata_1_1states_1_1ServerStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1ServerStates" kindref="compound">ServerStates</ref>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Server<sp/>states.</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE,<sp/>STARTING,<sp/>RUNNING,<sp/>FAIL<sp/>=<sp/>range(0,<sp/>4)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classdata_1_1states_1_1MouseStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1MouseStates" kindref="compound">MouseStates</ref>:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Mouse<sp/>states.</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>LMB,<sp/>MMB,<sp/>RMB,<sp/>SCROLL_UP,<sp/>SCROLL_DOWN<sp/>=<sp/>range(1,<sp/>6)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classdata_1_1states_1_1PlayerStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1PlayerStates" kindref="compound">PlayerStates</ref>:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Player<sp/>states.</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>MOVE_DOWN,<sp/>MOVE_RIGHT,<sp/>MOVE_UP,<sp/>MOVE_LEFT<sp/>=<sp/>range(3,<sp/>-1,<sp/>-1)</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states.py"/>
+  </compounddef>
+</doxygen>

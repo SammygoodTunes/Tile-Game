@@ -12,6 +12,8 @@ var namespacedata =
       [ "KEY_INTERVAL", "namespacedata_1_1data__manager.html#ad646bade4ce065c25729ed279da6940e", null ]
     ] ],
     [ "items", "namespacedata_1_1items.html", "namespacedata_1_1items" ],
-    [ "mouse_properties", "namespacedata_1_1mouse__properties.html", "namespacedata_1_1mouse__properties" ],
+    [ "keys", "namespacedata_1_1keys.html", "namespacedata_1_1keys" ],
+    [ "properties", "namespacedata_1_1properties.html", "namespacedata_1_1properties" ],
+    [ "states", "namespacedata_1_1states.html", "namespacedata_1_1states" ],
     [ "tiles", "namespacedata_1_1tiles.html", "namespacedata_1_1tiles" ]
 ];

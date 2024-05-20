@@ -9,22 +9,74 @@
 </listitem>
             <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca">ENCODING</link> = &apos;utf-8&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825">RECOGNITION_CMD_REQ</link> = &apos;TILEGAME&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6">RECOGNITION_REQ</link> = &apos;TILEGAME&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c">RECOGNITION_CMD_RES</link> = &apos;GAMETILE&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475">RECOGNITION_RES</link> = &apos;GAMETILE&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0">MAPOBJ_CMD_REQ</link> = &apos;MAPOBJ&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb">MAPDATA_REQ</link> = &apos;MAPDATA&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70">MAPOBJ_CMD_RES</link> = &apos;OBJMAP&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49">MAPDATA_RES</link> = &apos;DATAMAP&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9">MAPREADY_CMD</link> = &apos;MAPREADY&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3">MAPDATA_READY_RES</link> = &apos;MAPREADY&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1">VERIFY_CMD</link> = &apos;VERIFY&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9">PLAYERUPDATE_REQ</link> = &apos;UPDATEME&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0">DISCONNECT_CMD</link> = &apos;BYEBYE&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524">PLAYERUPDATE_RES</link> = &apos;MEUPDATE&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8">PLAYERUPDATE_READY_RES</link> = &apos;MEUPDATED&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826">GAMEUPDATE_REQ</link> = &apos;GAMEUPDATE&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f">GAMEUPDATE_RES</link> = &apos;UPDATEGAME&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965">GAMEUPDATE_READY_RES</link> = &apos;GAMEUPDATEREADY&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89">DISCONNECT_REQ</link> = &apos;BYEBYE&apos;</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for defining the protocol along with its request and response constants.
+
+Client-server connection process:
+
+    The interactions between the client and the server are fairly API-based.
+    Here are the interactions between the two in chronological order:
+
+    - The client asks for recognition by the server, and the server sends a response
+      back to the client - this ensures that the client is valid
+    - The client requests the server&apos;s map data, and the server sends a response
+      to indicate the start of the map&apos;s data, then the map data itself, and finally
+      a response to indicate the end of the data stream
+    - The client requests the current players online and their state, and the server
+      sends a response for the start of the data stream, then the data itself, then
+      a response for the end of the data stream
+    - The client requests its local player state to be updated on the server, and
+      the server responds with a response to indicate that it is ready - the client
+      then sends its player state to the server, then a response to indicate the end
+      of the data stream - this is mainly used to track the player as it won&apos;t exist
+      upon joining the server
+
+Client-server update process:
+
+    The update process between the client and server allows for the server&apos;s game state
+    to be synchronised with the clients&apos; throughout the lifespan of the connection.
+    Here is where the API-based architecture does not necessarily apply.
+    The server will repeatedly send to all clients, at a strict defined rate, its
+    current game state. Here are the different update tasks in order:
+
+    - If the client requests to disconnect from the server, the server will receive
+      the request and disconnect the client
+    - The client requests its local player state to be updated on the server, and
+      the server responds with a response to indicate that it is ready - the client
+      then sends its player state to the server, then a response to indicate the end
+      of the data stream
+    - The server sends its game state to the client, containing the state of all other
+      players, map data, etc
+</computeroutput></literallayout> </para>
+</section>
 <section>
 <title>Member Data Documentation</title>
 <anchor xml:id="_classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f"/><section>
@@ -32,46 +84,71 @@
 <indexterm><primary>BUFFER_SIZE</primary><secondary>protocol.Protocol</secondary></indexterm>
 <indexterm><primary>protocol.Protocol</primary><secondary>BUFFER_SIZE</secondary></indexterm>
 <para><computeroutput>int protocol.Protocol.BUFFER_SIZE = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0"/><section>
-    <title>DISCONNECT_CMD</title>
-<indexterm><primary>DISCONNECT_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>DISCONNECT_CMD</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.DISCONNECT_CMD = &apos;BYEBYE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89"/><section>
+    <title>DISCONNECT_REQ</title>
+<indexterm><primary>DISCONNECT_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>DISCONNECT_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.DISCONNECT_REQ = &apos;BYEBYE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca"/><section>
     <title>ENCODING</title>
 <indexterm><primary>ENCODING</primary><secondary>protocol.Protocol</secondary></indexterm>
 <indexterm><primary>protocol.Protocol</primary><secondary>ENCODING</secondary></indexterm>
 <para><computeroutput>str protocol.Protocol.ENCODING = &apos;utf-8&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0"/><section>
-    <title>MAPOBJ_CMD_REQ</title>
-<indexterm><primary>MAPOBJ_CMD_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>MAPOBJ_CMD_REQ</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.MAPOBJ_CMD_REQ = &apos;MAPOBJ&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70"/><section>
-    <title>MAPOBJ_CMD_RES</title>
-<indexterm><primary>MAPOBJ_CMD_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>MAPOBJ_CMD_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.MAPOBJ_CMD_RES = &apos;OBJMAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9"/><section>
-    <title>MAPREADY_CMD</title>
-<indexterm><primary>MAPREADY_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>MAPREADY_CMD</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.MAPREADY_CMD = &apos;MAPREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825"/><section>
-    <title>RECOGNITION_CMD_REQ</title>
-<indexterm><primary>RECOGNITION_CMD_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_CMD_REQ</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.RECOGNITION_CMD_REQ = &apos;TILEGAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c"/><section>
-    <title>RECOGNITION_CMD_RES</title>
-<indexterm><primary>RECOGNITION_CMD_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_CMD_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.RECOGNITION_CMD_RES = &apos;GAMETILE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1"/><section>
-    <title>VERIFY_CMD</title>
-<indexterm><primary>VERIFY_CMD</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>VERIFY_CMD</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.VERIFY_CMD = &apos;VERIFY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965"/><section>
+    <title>GAMEUPDATE_READY_RES</title>
+<indexterm><primary>GAMEUPDATE_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_READY_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.GAMEUPDATE_READY_RES = &apos;GAMEUPDATEREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826"/><section>
+    <title>GAMEUPDATE_REQ</title>
+<indexterm><primary>GAMEUPDATE_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.GAMEUPDATE_REQ = &apos;GAMEUPDATE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f"/><section>
+    <title>GAMEUPDATE_RES</title>
+<indexterm><primary>GAMEUPDATE_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.GAMEUPDATE_RES = &apos;UPDATEGAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3"/><section>
+    <title>MAPDATA_READY_RES</title>
+<indexterm><primary>MAPDATA_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_READY_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPDATA_READY_RES = &apos;MAPREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb"/><section>
+    <title>MAPDATA_REQ</title>
+<indexterm><primary>MAPDATA_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPDATA_REQ = &apos;MAPDATA&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49"/><section>
+    <title>MAPDATA_RES</title>
+<indexterm><primary>MAPDATA_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPDATA_RES = &apos;DATAMAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8"/><section>
+    <title>PLAYERUPDATE_READY_RES</title>
+<indexterm><primary>PLAYERUPDATE_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_READY_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_READY_RES = &apos;MEUPDATED&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9"/><section>
+    <title>PLAYERUPDATE_REQ</title>
+<indexterm><primary>PLAYERUPDATE_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_REQ = &apos;UPDATEME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524"/><section>
+    <title>PLAYERUPDATE_RES</title>
+<indexterm><primary>PLAYERUPDATE_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_RES = &apos;MEUPDATE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6"/><section>
+    <title>RECOGNITION_REQ</title>
+<indexterm><primary>RECOGNITION_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.RECOGNITION_REQ = &apos;TILEGAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475"/><section>
+    <title>RECOGNITION_RES</title>
+<indexterm><primary>RECOGNITION_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>RECOGNITION_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.RECOGNITION_RES = &apos;GAMETILE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_protocol_8py">protocol.py</link></section>

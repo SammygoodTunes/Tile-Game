@@ -25,7 +25,7 @@
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_NAME,</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_VERSION)</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.items<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Item</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.mouse_properties<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Mouse</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MouseStates</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.tiles<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tile</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
@@ -102,7 +102,7 @@
 <codeline lineno="91"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>mouse_properties</highlight></codeline>
 <codeline lineno="92"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>mouse<sp/>properties<sp/>possess<sp/>the<sp/>same<sp/>values<sp/>defined<sp/>in<sp/>Mouse.</highlight></codeline>
 <codeline lineno="93"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>(Mouse.LMB,<sp/>Mouse.MMB,<sp/>Mouse.RMB,<sp/>Mouse.SCROLL_UP,<sp/>Mouse.SCROLL_DOWN)<sp/>==<sp/>tuple(range(1,<sp/>6))</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>(MouseStates.LMB,<sp/>MouseStates.MMB,<sp/>MouseStates.RMB,<sp/>MouseStates.SCROLL_UP,<sp/>MouseStates.SCROLL_DOWN)<sp/>==<sp/>tuple(range(1,<sp/>6))</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__data_1adbdab2f4033566a3ad992de6e6b47a21" kindref="member">test_tile_creation</ref>():</highlight></codeline>
@@ -117,6 +117,6 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile.get_damage()<sp/>==<sp/>25</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile.get_damage_delay()<sp/>==<sp/>0.005</highlight></codeline>
     </programlisting>
-    <location file="tests/unit/test_data.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py"/>
   </compounddef>
 </doxygen>

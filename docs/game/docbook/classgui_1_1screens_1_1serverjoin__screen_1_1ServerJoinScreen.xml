@@ -34,7 +34,9 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9330e75c21edfc569e1742be508b17fe">faded_surface</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af7584be0da0ef6a607223cb11f2e8fd3">subtitle_label</link></para>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af80707a27ad5a2edbe8abecd762d6134">join_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a4f287ada8fb25d3bd65bafe5283e955f">ign_input</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a8b90426fbe5a71c9524ef2e05a45548f">ip_input</link></para>
 </listitem>
@@ -49,7 +51,8 @@
 <section>
 <title>Detailed Description</title>
 
-<para><literallayout><computeroutput>    Class for creating the server join screen.</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Class for creating the server join screen.
+</computeroutput></literallayout> </para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -66,35 +69,40 @@
 <indexterm><primary>draw</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>draw</secondary></indexterm>
 <para><computeroutput> None gui.screens.serverjoin_screen.ServerJoinScreen.draw ( self)</computeroutput></para>
-<para><literallayout><computeroutput>        Draw the screen and its components.</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ac716a5a691076de907755bb87725fa72"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None gui.screens.serverjoin_screen.ServerJoinScreen.events ( self, Event e)</computeroutput></para>
-<para><literallayout><computeroutput>        Track the screen events (unused).</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Track the screen events (unused).
+</computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a53df4da4e416b86adbbc7e95d18551b4"/><section>
     <title>initialise_surface()</title>
 <indexterm><primary>initialise_surface</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>initialise_surface</secondary></indexterm>
 <para><computeroutput> Surface gui.screens.serverjoin_screen.ServerJoinScreen.initialise_surface ( self)</computeroutput></para>
-<para><literallayout><computeroutput>        Initialise the screen&apos;s surface.</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ae5a3462957d05daba951badec713ae10"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>set_state</secondary></indexterm>
 <para><computeroutput> None gui.screens.serverjoin_screen.ServerJoinScreen.set_state ( self, bool state)</computeroutput></para>
-<para><literallayout><computeroutput>        Set the screen&apos;s visibility/interactivity.</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a0b1e32ca33752e446103c5831aeafd30"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>update_ui</secondary></indexterm>
 <para><computeroutput> None gui.screens.serverjoin_screen.ServerJoinScreen.update_ui ( self)</computeroutput></para>
-<para><literallayout><computeroutput>        Update the screen UI.</computeroutput></literallayout> </para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
 </section>
 </section>
 <section>
@@ -109,6 +117,11 @@
 <indexterm><primary>faded_surface</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>faded_surface</secondary></indexterm>
 <para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a4f287ada8fb25d3bd65bafe5283e955f"/><section>
+    <title>ign_input</title>
+<indexterm><primary>ign_input</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>ign_input</secondary></indexterm>
+<para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.ign_input</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a8b90426fbe5a71c9524ef2e05a45548f"/><section>
     <title>ip_input</title>
 <indexterm><primary>ip_input</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
@@ -119,16 +132,16 @@
 <indexterm><primary>join_button</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>join_button</secondary></indexterm>
 <para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.join_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af80707a27ad5a2edbe8abecd762d6134"/><section>
+    <title>join_label</title>
+<indexterm><primary>join_label</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>join_label</secondary></indexterm>
+<para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.join_label</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a663b319401fdbe9291f93412568afe59"/><section>
     <title>port_input</title>
 <indexterm><primary>port_input</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>port_input</secondary></indexterm>
 <para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.port_input</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af7584be0da0ef6a607223cb11f2e8fd3"/><section>
-    <title>subtitle_label</title>
-<indexterm><primary>subtitle_label</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>subtitle_label</secondary></indexterm>
-<para><computeroutput>gui.screens.serverjoin_screen.ServerJoinScreen.subtitle_label</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a3d0a647d738c068f039137ee1ef6dc42"/><section>
     <title>window</title>
 <indexterm><primary>window</primary><secondary>gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>

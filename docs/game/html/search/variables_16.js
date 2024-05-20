@@ -6,6 +6,5 @@ var searchData=
   ['velocity_5fthreshold_3',['VELOCITY_THRESHOLD',['../classworld_1_1camera_1_1Camera.html#a31d39b07d25a937932b9b1ee69b65f79',1,'world::camera::Camera']]],
   ['velocity_5fx_4',['velocity_x',['../classentity_1_1player_1_1Player.html#ac58660f5e4b6369f8d4280c720c67982',1,'entity.player.Player.velocity_x'],['../classworld_1_1camera_1_1Camera.html#a02bbd342c9ab95d90e2a07c74f525de8',1,'world.camera.Camera.velocity_x']]],
   ['velocity_5fy_5',['velocity_y',['../classentity_1_1player_1_1Player.html#a09943533b5e5a840bf012ebaabe7d7b5',1,'entity.player.Player.velocity_y'],['../classworld_1_1camera_1_1Camera.html#a14bec8032d4bfcc40717f7666dad10cf',1,'world.camera.Camera.velocity_y']]],
-  ['verify_5fcmd_6',['VERIFY_CMD',['../classprotocol_1_1Protocol.html#a053f0c421f7203160ae5f7b5d1412bf1',1,'protocol::Protocol']]],
-  ['void_7',['VOID',['../classdata_1_1tiles_1_1Tiles.html#a68f04d86463e769ff665e442858835ea',1,'data::tiles::Tiles']]]
+  ['void_6',['VOID',['../classdata_1_1tiles_1_1Tiles.html#a68f04d86463e769ff665e442858835ea',1,'data::tiles::Tiles']]]
 ];

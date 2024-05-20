@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" xml:lang="en-US">
+<title>gui.screens.servercreate_screen.ServerCreateScreen Class Reference</title>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.servercreate_screen.ServerCreateScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a832fafc3b0197c22e23980f65fd57c36">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a00ce6d5e6b2f32825a76857c26eff450">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a54a69b50910816c326b13beccdb354e0">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af4516b87d7319b77d16cc6454d5a713d">events</link> (self, Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afd819f2544bf1f690bbb242833bb129d">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a7da55e9aa3cfe8feb04f0e6c8d2c204e">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a5419e3d783adbc52bef3c03eef32c468">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a00ce6d5e6b2f32825a76857c26eff450">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a1a8d7a3d248e2aba5e98eed6242d7b1d">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aac751b219df1cd7ffad451ad5d362ffe">create_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a50f4eb7e411c5dfaa5bdf06170e42dc4">ign_input</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa24e8ea95b4c0e51949d8089551831a9">create_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a9f4a7c84086b614504e848b02ae2b158">back_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the server create screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a832fafc3b0197c22e23980f65fd57c36"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.servercreate_screen.ServerCreateScreen.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afd819f2544bf1f690bbb242833bb129d"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.servercreate_screen.ServerCreateScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af4516b87d7319b77d16cc6454d5a713d"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None gui.screens.servercreate_screen.ServerCreateScreen.events ( self, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the screen events (unused).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a54a69b50910816c326b13beccdb354e0"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface gui.screens.servercreate_screen.ServerCreateScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a5419e3d783adbc52bef3c03eef32c468"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.servercreate_screen.ServerCreateScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a7da55e9aa3cfe8feb04f0e6c8d2c204e"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.servercreate_screen.ServerCreateScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a9f4a7c84086b614504e848b02ae2b158"/><section>
+    <title>back_button</title>
+<indexterm><primary>back_button</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>back_button</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.back_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa24e8ea95b4c0e51949d8089551831a9"/><section>
+    <title>create_button</title>
+<indexterm><primary>create_button</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>create_button</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.create_button</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aac751b219df1cd7ffad451ad5d362ffe"/><section>
+    <title>create_label</title>
+<indexterm><primary>create_label</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>create_label</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.create_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a1a8d7a3d248e2aba5e98eed6242d7b1d"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a50f4eb7e411c5dfaa5bdf06170e42dc4"/><section>
+    <title>ign_input</title>
+<indexterm><primary>ign_input</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>ign_input</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.ign_input</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a00ce6d5e6b2f32825a76857c26eff450"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screens.servercreate_screen.ServerCreateScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_servercreate__screen_8py">servercreate_screen.py</link></section>
+</section>

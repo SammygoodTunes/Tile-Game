@@ -21,7 +21,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5">break_tile</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb">reset</link> (self)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a9049d1072511b52819c82110f333162c">reset</link> (self, Map map_obj, Camera camera_obj)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classentity_1_1player_1_1Player_1a394cf963598eef1f0f884aeffba2aa49">is_moving_left</link> (self)</para>
 </listitem>
@@ -63,6 +63,10 @@
 </listitem>
             <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1ad3cdd92868b226021ab2ba048c33ac08">get_y</link> (self)</para>
 </listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a9c817d804f63f0bb3c29f4f1d5f76bf0">get_absolute_x</link> (self, Map map_obj)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3">get_absolute_y</link> (self, Map map_obj)</para>
+</listitem>
             <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c">get_coefficient_from_center_x</link> (self, int parent_width)</para>
 </listitem>
             <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91">get_coefficient_from_center_y</link> (self, int parent_height)</para>
@@ -75,9 +79,13 @@
 </listitem>
             <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a5bb0ef0040a075e0571205fd39ad0900">get_health</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ae4fc63e35a74cd67ffc510e13e3a9712">set_player_name</link> (self, str <link linkend="_classentity_1_1player_1_1Player_1ae4f4074ba8094775ee931b0804d6c8e0">player_name</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a1967b97c6167082e966ccba4685a158d">get_player_name</link> (self)</para>
+</listitem>
             <listitem><para>list[bool] <link linkend="_classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28">get_walls</link> (self, Map map_obj)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab">set_ideal_spawn_point</link> (self, Map map_obj, Camera camera_obj)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c">set_ideal_spawn_point</link> (self, Map map_obj, Camera camera_obj, int nb_attempts=5)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -87,6 +95,8 @@
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e">edges</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32">main_hud</link></para>
+</listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ae4f4074ba8094775ee931b0804d6c8e0">player_name</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1">breaking</link></para>
 </listitem>
@@ -106,6 +116,8 @@
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516">selected_tile_sy</link></para>
 </listitem>
+            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d">move</link></para>
+</listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982">velocity_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5">velocity_y</link></para>
@@ -113,8 +125,6 @@
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46">hurt</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b">health</link></para>
-</listitem>
-            <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d">move</link></para>
 </listitem>
             <listitem><para><link linkend="_classentity_1_1player_1_1Player_1ad522fc5da677a4b49b8b83a789126460">breaking_tile</link></para>
 </listitem>
@@ -207,6 +217,24 @@
 <para><literallayout><computeroutput>Track the player events.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a9c817d804f63f0bb3c29f4f1d5f76bf0"/><section>
+    <title>get_absolute_x()</title>
+<indexterm><primary>get_absolute_x</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_absolute_x</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_absolute_x ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s x position as if the map&apos;s top-left corner were to be positioned at the origin (0, 0).
+This signifies that the returned value will always be positive.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3"/><section>
+    <title>get_absolute_y()</title>
+<indexterm><primary>get_absolute_y</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_absolute_y</secondary></indexterm>
+<para><computeroutput> int entity.player.Player.get_absolute_y ( self, Map map_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s y position as if the map&apos;s top-left corner were to be positioned at the origin (0, 0).
+This signifies that the returned value will always be positive.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c"/><section>
     <title>get_coefficient_from_center_x()</title>
 <indexterm><primary>get_coefficient_from_center_x</primary><secondary>entity.player.Player</secondary></indexterm>
@@ -229,6 +257,14 @@
 <indexterm><primary>entity.player.Player</primary><secondary>get_health</secondary></indexterm>
 <para><computeroutput> int entity.player.Player.get_health ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the player&apos;s health.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a1967b97c6167082e966ccba4685a158d"/><section>
+    <title>get_player_name()</title>
+<indexterm><primary>get_player_name</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>get_player_name</secondary></indexterm>
+<para><computeroutput>entity.player.Player.get_player_name ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the player&apos;s in-game name.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922"/><section>
@@ -254,7 +290,7 @@
 <para><computeroutput> list[bool] entity.player.Player.get_walls ( self, Map map_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Return the tiles of type BREAKABLE surrounding the player.
 This is used for determining what tiles the player could potentially collide with.
-The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGHT, LOWER LEFT, LOWER RIGHT).
+The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE_LEFT, UPPER MOVE_RIGHT, LOWER MOVE_LEFT, LOWER MOVE_RIGHT.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1ac2c38bcbbdfa79be01c575d9550994c6"/><section>
@@ -401,11 +437,11 @@ The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGH
 <para><literallayout><computeroutput>Returns True if the selected breakable tile is obstructed by other tiles with collision.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a9049d1072511b52819c82110f333162c"/><section>
     <title>reset()</title>
 <indexterm><primary>reset</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>reset</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.reset ( self)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.reset ( self, Map map_obj, Camera camera_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Reset the player&apos;s general attributes.
 </computeroutput></literallayout> </para>
 </section>
@@ -414,16 +450,27 @@ The order of the tiles are LEFT, RIGHT, UP, DOWN (unused: UPPER LEFT, UPPER RIGH
 <indexterm><primary>set_health</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>set_health</secondary></indexterm>
 <para><computeroutput> Self entity.player.Player.set_health ( self, int health)</computeroutput></para>
-<para><literallayout><computeroutput>Set the player&apos;s health.
+<para><literallayout><computeroutput>Set the player&apos;s health, then return the player itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c"/><section>
     <title>set_ideal_spawn_point()</title>
 <indexterm><primary>set_ideal_spawn_point</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>set_ideal_spawn_point</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.set_ideal_spawn_point ( self, Map map_obj, Camera camera_obj)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.set_ideal_spawn_point ( self, Map map_obj, Camera camera_obj, int  nb_attempts = <computeroutput>5</computeroutput>
+)</computeroutput></para>
 <para><literallayout><computeroutput>Find the ideal starting position for the player when creating a new map.
-TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
+By default, five consecutive failed attempts will replace the tile at the last randomised tile position
+to plains and place the player there.
+Setting the number of attempts to anything less than 1 will raise an exception.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ae4fc63e35a74cd67ffc510e13e3a9712"/><section>
+    <title>set_player_name()</title>
+<indexterm><primary>set_player_name</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>set_player_name</secondary></indexterm>
+<para><computeroutput>entity.player.Player.set_player_name ( self, str player_name)</computeroutput></para>
+<para><literallayout><computeroutput>Set the player&apos;s in-game name, then return the player itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3"/><section>
@@ -521,6 +568,11 @@ TODO: After a few failures, just clear a 3x3 space for the player to spawn in.
 <indexterm><primary>move</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>move</secondary></indexterm>
 <para><computeroutput>entity.player.Player.move</computeroutput></para></section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1ae4f4074ba8094775ee931b0804d6c8e0"/><section>
+    <title>player_name</title>
+<indexterm><primary>player_name</primary><secondary>entity.player.Player</secondary></indexterm>
+<indexterm><primary>entity.player.Player</primary><secondary>player_name</secondary></indexterm>
+<para><computeroutput>entity.player.Player.player_name</computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2"/><section>
     <title>prev_selected_tile</title>
 <indexterm><primary>prev_selected_tile</primary><secondary>entity.player.Player</secondary></indexterm>

@@ -26,6 +26,6 @@
 <codeline lineno="15"><highlight class="normal">logging.basicConfig(level=logging.DEBUG,<sp/>format=_format)<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.basicConfig(level=logging.INFO,<sp/>format=_format)</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
-    <location file="game/utils/logger.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/logger.py"/>
   </compounddef>
 </doxygen>

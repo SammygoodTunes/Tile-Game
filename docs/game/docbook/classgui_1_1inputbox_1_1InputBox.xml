@@ -29,6 +29,8 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1ac54c8df3fcc0d8f5836f7d24b80f7685">authorise_only_numeric</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a96f130e3a4913a74c2a7e3a228e45a11">authorise_only_alnum</link> (self)</para>
+</listitem>
             <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4">is_hovering_over</link> (self)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54">is_selected</link> (self)</para>
@@ -143,6 +145,15 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a96f130e3a4913a74c2a7e3a228e45a11"/><section>
+    <title>authorise_only_alnum()</title>
+<indexterm><primary>authorise_only_alnum</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>authorise_only_alnum</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox.authorise_only_alnum ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
+This includes dashes (hyphens) and underscores.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1ac57a96f4427b78eefea80e8b4eb0981a"/><section>
     <title>authorise_only_ascii()</title>
 <indexterm><primary>authorise_only_ascii</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>

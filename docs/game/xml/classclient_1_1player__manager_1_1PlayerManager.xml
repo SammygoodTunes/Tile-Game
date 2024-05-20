@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classclient_1_1player__manager_1_1PlayerManager" kind="class" language="Python" prot="public">
+    <compoundname>client::player_manager::PlayerManager</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.player_manager.PlayerManager::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <qualifiedname>client.player_manager.PlayerManager.players</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.player_manager.PlayerManager.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>client.player_manager.PlayerManager.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.player_manager.PlayerManager.set_players</definition>
+        <argsstring>(self, list players)</argsstring>
+        <name>set_players</name>
+        <qualifiedname>client.player_manager.PlayerManager.set_players</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.player_manager.PlayerManager.draw_players</definition>
+        <argsstring>(self, str player_name, float delta, game)</argsstring>
+        <name>draw_players</name>
+        <qualifiedname>client.player_manager.PlayerManager.draw_players</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>player_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="22" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for handling server players.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="10" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>draw_players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,6 +1,7 @@
 var classgui_1_1inputbox_1_1InputBox =
 [
     [ "__init__", "classgui_1_1inputbox_1_1InputBox.html#aa9513f7c90634fd931715e97b7fdc1d2", null ],
+    [ "authorise_only_alnum", "classgui_1_1inputbox_1_1InputBox.html#a96f130e3a4913a74c2a7e3a228e45a11", null ],
     [ "authorise_only_ascii", "classgui_1_1inputbox_1_1InputBox.html#ac57a96f4427b78eefea80e8b4eb0981a", null ],
     [ "authorise_only_numeric", "classgui_1_1inputbox_1_1InputBox.html#ac54c8df3fcc0d8f5836f7d24b80f7685", null ],
     [ "center", "classgui_1_1inputbox_1_1InputBox.html#afb0af61a07451b829e64d3a358bcb9cf", null ],

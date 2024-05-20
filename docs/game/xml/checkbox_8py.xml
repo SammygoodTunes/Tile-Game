@@ -15,7 +15,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pygame<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>event,<sp/>mouse,<sp/>MOUSEBUTTONDOWN</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Self</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.mouse_properties<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Mouse</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MouseStates</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.gui.label<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Label</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.gui.widget<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Widget</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.logger<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
@@ -49,7 +49,7 @@
 <codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Track<sp/>the<sp/>checkbox<sp/>events.</highlight></codeline>
 <codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>e.type<sp/>==<sp/>MOUSEBUTTONDOWN:</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>e.button<sp/>==<sp/>Mouse.LMB<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classgui_1_1checkbox_1_1Checkbox_1ab62d25b8dd13fa9f021097be56ef4609" kindref="member">is_hovering_over</ref>():</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>e.button<sp/>==<sp/>MouseStates.LMB<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classgui_1_1checkbox_1_1Checkbox_1ab62d25b8dd13fa9f021097be56ef4609" kindref="member">is_hovering_over</ref>():</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgui_1_1checkbox_1_1Checkbox_1a4c9532bd89a6956730e7b1766a34a210" kindref="member">_checked</ref><sp/>=<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>self.<ref refid="classgui_1_1checkbox_1_1Checkbox_1a4c9532bd89a6956730e7b1766a34a210" kindref="member">_checked</ref></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgui_1_1checkbox_1_1Checkbox_1a3f884234322a117e3e684f180a22b870" kindref="member">update</ref>(self,<sp/>window)<sp/>-&gt;<sp/>None:</highlight></codeline>
@@ -154,6 +154,6 @@
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgui_1_1checkbox_1_1Checkbox_1a95d0eb79513f4e91192fabae1b3bc069" kindref="member">title_label</ref>.set_shadow_y_offset(2)</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
     </programlisting>
-    <location file="game/gui/checkbox.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/checkbox.py"/>
   </compounddef>
 </doxygen>

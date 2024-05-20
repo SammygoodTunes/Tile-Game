@@ -90,10 +90,6 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classworld_1_1map__manager_1_1Map_1af960460c779002a338e9b4240d4240d8">STATE_GENMAP</link> = &apos;GEN-MAP&apos;</para>
-</listitem>
-            <listitem><para>str <link linkend="_classworld_1_1map__manager_1_1Map_1ad8bb21a5f1a18ca811ebf775d5d1dcc6">STATE_READY</link> = &apos;READY&apos;</para>
-</listitem>
             <listitem><para>tuple <link linkend="_classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3">DEFAULT</link></para>
 </listitem>
             <listitem><para>int <link linkend="_classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72">SEED_RANGE</link> = 2 ** 32</para>
@@ -472,16 +468,6 @@ the map manager itself.
 <indexterm><primary>SEED_RANGE</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>SEED_RANGE</secondary></indexterm>
 <para><computeroutput>int world.map_manager.Map.SEED_RANGE = 2 ** 32<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1af960460c779002a338e9b4240d4240d8"/><section>
-    <title>STATE_GENMAP</title>
-<indexterm><primary>STATE_GENMAP</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>STATE_GENMAP</secondary></indexterm>
-<para><computeroutput>str world.map_manager.Map.STATE_GENMAP = &apos;GEN-MAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1ad8bb21a5f1a18ca811ebf775d5d1dcc6"/><section>
-    <title>STATE_READY</title>
-<indexterm><primary>STATE_READY</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>STATE_READY</secondary></indexterm>
-<para><computeroutput>str world.map_manager.Map.STATE_READY = &apos;READY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1a6b2d718e587266b42c43666336107d0d"/><section>
     <title>tile_manager</title>
 <indexterm><primary>tile_manager</primary><secondary>world.map_manager.Map</secondary></indexterm>

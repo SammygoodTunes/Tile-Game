@@ -11,6 +11,7 @@ var dir_a7859cf717fdd6ac999eed8c591fb467 =
     [ "pause_screen.py", "pause__screen_8py.html", "pause__screen_8py" ],
     [ "screen.py", "screen_8py.html", "screen_8py" ],
     [ "serverconnect_screen.py", "serverconnect__screen_8py.html", "serverconnect__screen_8py" ],
+    [ "servercreate_screen.py", "servercreate__screen_8py.html", "servercreate__screen_8py" ],
     [ "serverjoin_screen.py", "serverjoin__screen_8py.html", "serverjoin__screen_8py" ],
     [ "servermenu_screen.py", "servermenu__screen_8py.html", "servermenu__screen_8py" ]
 ];

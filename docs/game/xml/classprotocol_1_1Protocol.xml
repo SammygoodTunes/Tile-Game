@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="3" column="1" bodyfile="game/network/protocol.py" bodystart="3" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" prot="public" static="yes" mutable="no">
         <type>str</type>
@@ -31,14 +31,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="4" column="1" bodyfile="game/network/protocol.py" bodystart="4" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="44" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::RECOGNITION_CMD_REQ</definition>
+        <definition>str protocol.Protocol::RECOGNITION_REQ</definition>
         <argsstring></argsstring>
-        <name>RECOGNITION_CMD_REQ</name>
-        <qualifiedname>protocol.Protocol.RECOGNITION_CMD_REQ</qualifiedname>
+        <name>RECOGNITION_REQ</name>
+        <qualifiedname>protocol.Protocol.RECOGNITION_REQ</qualifiedname>
         <initializer>=  &apos;TILEGAME&apos;</initializer>
         <briefdescription>
         </briefdescription>
@@ -46,14 +46,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="6" column="1" bodyfile="game/network/protocol.py" bodystart="6" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="46" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::RECOGNITION_CMD_RES</definition>
+        <definition>str protocol.Protocol::RECOGNITION_RES</definition>
         <argsstring></argsstring>
-        <name>RECOGNITION_CMD_RES</name>
-        <qualifiedname>protocol.Protocol.RECOGNITION_CMD_RES</qualifiedname>
+        <name>RECOGNITION_RES</name>
+        <qualifiedname>protocol.Protocol.RECOGNITION_RES</qualifiedname>
         <initializer>=  &apos;GAMETILE&apos;</initializer>
         <briefdescription>
         </briefdescription>
@@ -61,44 +61,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="7" column="1" bodyfile="game/network/protocol.py" bodystart="7" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="47" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::MAPOBJ_CMD_REQ</definition>
+        <definition>str protocol.Protocol::MAPDATA_REQ</definition>
         <argsstring></argsstring>
-        <name>MAPOBJ_CMD_REQ</name>
-        <qualifiedname>protocol.Protocol.MAPOBJ_CMD_REQ</qualifiedname>
-        <initializer>=  &apos;MAPOBJ&apos;</initializer>
+        <name>MAPDATA_REQ</name>
+        <qualifiedname>protocol.Protocol.MAPDATA_REQ</qualifiedname>
+        <initializer>=  &apos;MAPDATA&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="8" column="1" bodyfile="game/network/protocol.py" bodystart="8" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="48" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::MAPOBJ_CMD_RES</definition>
+        <definition>str protocol.Protocol::MAPDATA_RES</definition>
         <argsstring></argsstring>
-        <name>MAPOBJ_CMD_RES</name>
-        <qualifiedname>protocol.Protocol.MAPOBJ_CMD_RES</qualifiedname>
-        <initializer>=  &apos;OBJMAP&apos;</initializer>
+        <name>MAPDATA_RES</name>
+        <qualifiedname>protocol.Protocol.MAPDATA_RES</qualifiedname>
+        <initializer>=  &apos;DATAMAP&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="9" column="1" bodyfile="game/network/protocol.py" bodystart="9" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="49" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::MAPREADY_CMD</definition>
+        <definition>str protocol.Protocol::MAPDATA_READY_RES</definition>
         <argsstring></argsstring>
-        <name>MAPREADY_CMD</name>
-        <qualifiedname>protocol.Protocol.MAPREADY_CMD</qualifiedname>
+        <name>MAPDATA_READY_RES</name>
+        <qualifiedname>protocol.Protocol.MAPDATA_READY_RES</qualifiedname>
         <initializer>=  &apos;MAPREADY&apos;</initializer>
         <briefdescription>
         </briefdescription>
@@ -106,29 +106,104 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="10" column="1" bodyfile="game/network/protocol.py" bodystart="10" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="50" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::VERIFY_CMD</definition>
+        <definition>str protocol.Protocol::PLAYERUPDATE_REQ</definition>
         <argsstring></argsstring>
-        <name>VERIFY_CMD</name>
-        <qualifiedname>protocol.Protocol.VERIFY_CMD</qualifiedname>
-        <initializer>=  &apos;VERIFY&apos;</initializer>
+        <name>PLAYERUPDATE_REQ</name>
+        <qualifiedname>protocol.Protocol.PLAYERUPDATE_REQ</qualifiedname>
+        <initializer>=  &apos;UPDATEME&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="11" column="1" bodyfile="game/network/protocol.py" bodystart="11" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="51" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524" prot="public" static="yes" mutable="no">
         <type>str</type>
-        <definition>str protocol.Protocol::DISCONNECT_CMD</definition>
+        <definition>str protocol.Protocol::PLAYERUPDATE_RES</definition>
         <argsstring></argsstring>
-        <name>DISCONNECT_CMD</name>
-        <qualifiedname>protocol.Protocol.DISCONNECT_CMD</qualifiedname>
+        <name>PLAYERUPDATE_RES</name>
+        <qualifiedname>protocol.Protocol.PLAYERUPDATE_RES</qualifiedname>
+        <initializer>=  &apos;MEUPDATE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::PLAYERUPDATE_READY_RES</definition>
+        <argsstring></argsstring>
+        <name>PLAYERUPDATE_READY_RES</name>
+        <qualifiedname>protocol.Protocol.PLAYERUPDATE_READY_RES</qualifiedname>
+        <initializer>=  &apos;MEUPDATED&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::GAMEUPDATE_REQ</definition>
+        <argsstring></argsstring>
+        <name>GAMEUPDATE_REQ</name>
+        <qualifiedname>protocol.Protocol.GAMEUPDATE_REQ</qualifiedname>
+        <initializer>=  &apos;GAMEUPDATE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::GAMEUPDATE_RES</definition>
+        <argsstring></argsstring>
+        <name>GAMEUPDATE_RES</name>
+        <qualifiedname>protocol.Protocol.GAMEUPDATE_RES</qualifiedname>
+        <initializer>=  &apos;UPDATEGAME&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="55" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::GAMEUPDATE_READY_RES</definition>
+        <argsstring></argsstring>
+        <name>GAMEUPDATE_READY_RES</name>
+        <qualifiedname>protocol.Protocol.GAMEUPDATE_READY_RES</qualifiedname>
+        <initializer>=  &apos;GAMEUPDATEREADY&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str protocol.Protocol::DISCONNECT_REQ</definition>
+        <argsstring></argsstring>
+        <name>DISCONNECT_REQ</name>
+        <qualifiedname>protocol.Protocol.DISCONNECT_REQ</qualifiedname>
         <initializer>=  &apos;BYEBYE&apos;</initializer>
         <briefdescription>
         </briefdescription>
@@ -136,24 +211,67 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/protocol.py" line="12" column="1" bodyfile="game/network/protocol.py" bodystart="12" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="57" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>Class for defining the protocol along with its request and response constants.
+
+Client-server connection process:
+
+    The interactions between the client and the server are fairly API-based.
+    Here are the interactions between the two in chronological order:
+
+    - The client asks for recognition by the server, and the server sends a response
+      back to the client - this ensures that the client is valid
+    - The client requests the server&apos;s map data, and the server sends a response
+      to indicate the start of the map&apos;s data, then the map data itself, and finally
+      a response to indicate the end of the data stream
+    - The client requests the current players online and their state, and the server
+      sends a response for the start of the data stream, then the data itself, then
+      a response for the end of the data stream
+    - The client requests its local player state to be updated on the server, and
+      the server responds with a response to indicate that it is ready - the client
+      then sends its player state to the server, then a response to indicate the end
+      of the data stream - this is mainly used to track the player as it won&apos;t exist
+      upon joining the server
+
+Client-server update process:
+
+    The update process between the client and server allows for the server&apos;s game state
+    to be synchronised with the clients&apos; throughout the lifespan of the connection.
+    Here is where the API-based architecture does not necessarily apply.
+    The server will repeatedly send to all clients, at a strict defined rate, its
+    current game state. Here are the different update tasks in order:
+
+    - If the client requests to disconnect from the server, the server will receive
+      the request and disconnect the client
+    - The client requests its local player state to be updated on the server, and
+      the server responds with a response to indicate that it is ready - the client
+      then sends its player state to the server, then a response to indicate the end
+      of the data stream
+    - The server sends its game state to the client, containing the state of all other
+      players, map data, etc
+</verbatim> </para>
     </detaileddescription>
-    <location file="game/network/protocol.py" line="2" column="1" bodyfile="game/network/protocol.py" bodystart="2" bodyend="13"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py" bodystart="2" bodyend="58"/>
     <listofallmembers>
       <member refid="classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>BUFFER_SIZE</name></member>
-      <member refid="classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>DISCONNECT_CMD</name></member>
+      <member refid="classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>DISCONNECT_REQ</name></member>
       <member refid="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>ENCODING</name></member>
-      <member refid="classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPOBJ_CMD_REQ</name></member>
-      <member refid="classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPOBJ_CMD_RES</name></member>
-      <member refid="classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPREADY_CMD</name></member>
-      <member refid="classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_CMD_REQ</name></member>
-      <member refid="classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_CMD_RES</name></member>
-      <member refid="classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>VERIFY_CMD</name></member>
+      <member refid="classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>GAMEUPDATE_READY_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>GAMEUPDATE_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>GAMEUPDATE_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPDATA_READY_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPDATA_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>MAPDATA_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>PLAYERUPDATE_READY_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>PLAYERUPDATE_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>PLAYERUPDATE_RES</name></member>
+      <member refid="classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_REQ</name></member>
+      <member refid="classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475" prot="public" virt="non-virtual"><scope>protocol::Protocol</scope><name>RECOGNITION_RES</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

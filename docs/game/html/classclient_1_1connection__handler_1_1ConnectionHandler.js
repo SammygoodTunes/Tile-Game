@@ -1,6 +1,7 @@
 var classclient_1_1connection__handler_1_1ConnectionHandler =
 [
     [ "__init__", "classclient_1_1connection__handler_1_1ConnectionHandler.html#a54f603696d082fd79a0654abf463c0e9", null ],
+    [ "draw_other_players", "classclient_1_1connection__handler_1_1ConnectionHandler.html#a056aff561ca485cda4783d77e1d5eeac", null ],
     [ "update", "classclient_1_1connection__handler_1_1ConnectionHandler.html#ad5b5209beeac75d3732130d06b3f1824", null ],
     [ "connection", "classclient_1_1connection__handler_1_1ConnectionHandler.html#aac65aa778f30d9373399b2d5064da41c", null ],
     [ "host", "classclient_1_1connection__handler_1_1ConnectionHandler.html#a3881b572a384e786959062fc7add94ba", null ],

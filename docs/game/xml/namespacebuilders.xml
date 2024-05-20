@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebuilders" kind="namespace" language="Python">
+    <compoundname>builders</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebuilders_1a813379f63daeb04e8d6c34e2871ae22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict builders.build_player</definition>
+        <argsstring>(Player player)</argsstring>
+        <name>build_player</name>
+        <qualifiedname>builders.build_player</qualifiedname>
+        <param>
+          <type>Player</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Build a server player from a client player.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders.py" bodystart="5" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebuilders_1a677ad2a4ab13b5bd3f864deddb1db86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Player</type>
+        <definition> Player builders.unbuild_player</definition>
+        <argsstring>(Player player, dict player_dict)</argsstring>
+        <name>unbuild_player</name>
+        <qualifiedname>builders.unbuild_player</qualifiedname>
+        <param>
+          <type>Player</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>player_dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Un-build a server player to a client player.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders.py" bodystart="19" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

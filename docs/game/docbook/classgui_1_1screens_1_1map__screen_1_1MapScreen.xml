@@ -17,7 +17,9 @@
 </listitem>
             <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c">initialise_map</link> (self, bool force=False)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f">initialise_map</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a8796c2dd17d1c0830a05249f6c7fcedb">reset_map</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b">draw</link> (self)</para>
 </listitem>
@@ -36,9 +38,14 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf">title_label</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf">map</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0">scaled_map</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a1d3c16992701ab0e4740f39d905c6a21">_got_map</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -66,13 +73,12 @@
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f"/><section>
     <title>initialise_map()</title>
 <indexterm><primary>initialise_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>initialise_map</secondary></indexterm>
-<para><computeroutput>gui.screens.map_screen.MapScreen.initialise_map ( self, bool  force = <computeroutput>False</computeroutput>
-)</computeroutput></para>
-<para><literallayout><computeroutput>Initialise the map surface.
+<para><computeroutput> None gui.screens.map_screen.MapScreen.initialise_map ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s map component.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f"/><section>
@@ -81,6 +87,14 @@
 <indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>initialise_surface</secondary></indexterm>
 <para><computeroutput> Surface gui.screens.map_screen.MapScreen.initialise_surface ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a8796c2dd17d1c0830a05249f6c7fcedb"/><section>
+    <title>reset_map()</title>
+<indexterm><primary>reset_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>reset_map</secondary></indexterm>
+<para><computeroutput> None gui.screens.map_screen.MapScreen.reset_map ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the map attributes.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7"/><section>
@@ -102,6 +116,11 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a1d3c16992701ab0e4740f39d905c6a21"/><section>
+    <title>_got_map</title>
+<indexterm><primary>_got_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>_got_map</secondary></indexterm>
+<para><computeroutput>gui.screens.map_screen.MapScreen._got_map<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc"/><section>
     <title>faded_surface</title>
 <indexterm><primary>faded_surface</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
@@ -112,11 +131,6 @@
 <indexterm><primary>game</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>game</secondary></indexterm>
 <para><computeroutput>gui.screens.map_screen.MapScreen.game</computeroutput></para></section>
-<anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf"/><section>
-    <title>map</title>
-<indexterm><primary>map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.map_screen.MapScreen</primary><secondary>map</secondary></indexterm>
-<para><computeroutput>gui.screens.map_screen.MapScreen.map</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0"/><section>
     <title>scaled_map</title>
 <indexterm><primary>scaled_map</primary><secondary>gui.screens.map_screen.MapScreen</secondary></indexterm>

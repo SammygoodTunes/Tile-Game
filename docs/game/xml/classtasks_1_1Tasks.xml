@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtasks_1_1Tasks" kind="class" language="Python" prot="public">
+    <compoundname>tasks::Tasks</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool tasks.Tasks.disconnection</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>disconnection</name>
+        <qualifiedname>tasks.Tasks.disconnection</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool tasks.Tasks.recognition</definition>
+        <argsstring>(conn, addr)</argsstring>
+        <name>recognition</name>
+        <qualifiedname>tasks.Tasks.recognition</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>addr</type>
+          <defname>addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None tasks.Tasks.map_data</definition>
+        <argsstring>(conn, addr, world_handler)</argsstring>
+        <name>map_data</name>
+        <qualifiedname>tasks.Tasks.map_data</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>addr</type>
+          <defname>addr</defname>
+        </param>
+        <param>
+          <type>world_handler</type>
+          <defname>world_handler</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="24" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None tasks.Tasks.send_game_state</definition>
+        <argsstring>(conn, player_handler)</argsstring>
+        <name>send_game_state</name>
+        <qualifiedname>tasks.Tasks.send_game_state</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>player_handler</type>
+          <defname>player_handler</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str tasks.Tasks.player_update</definition>
+        <argsstring>(conn, player_handler, bytes data)</argsstring>
+        <name>player_update</name>
+        <qualifiedname>tasks.Tasks.player_update</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>player_handler</type>
+          <defname>player_handler</defname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="43" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for regrouping all server-side requests.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="5" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>disconnection</name></member>
+      <member refid="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>map_data</name></member>
+      <member refid="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>player_update</name></member>
+      <member refid="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>recognition</name></member>
+      <member refid="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>send_game_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

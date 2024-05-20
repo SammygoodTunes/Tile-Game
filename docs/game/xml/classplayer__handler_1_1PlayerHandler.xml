@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classplayer__handler_1_1PlayerHandler" kind="class" language="Python" prot="public">
+    <compoundname>player_handler::PlayerHandler</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>player_handler.PlayerHandler.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>player_handler.PlayerHandler.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str player_handler.PlayerHandler.track_player</definition>
+        <argsstring>(self, dict player)</argsstring>
+        <name>track_player</name>
+        <qualifiedname>player_handler.PlayerHandler.track_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>player_handler.PlayerHandler.update_player</definition>
+        <argsstring>(self, dict player)</argsstring>
+        <name>update_player</name>
+        <qualifiedname>player_handler.PlayerHandler.update_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>player_handler.PlayerHandler.untrack_player</definition>
+        <argsstring>(self, str player_name)</argsstring>
+        <name>untrack_player</name>
+        <qualifiedname>player_handler.PlayerHandler.untrack_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>player_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>player_handler.PlayerHandler.get_players</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_players</name>
+        <qualifiedname>player_handler.PlayerHandler.get_players</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="38" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the player handler.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="6" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>__init__</name></member>
+      <member refid="classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>get_players</name></member>
+      <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>track_player</name></member>
+      <member refid="classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>untrack_player</name></member>
+      <member refid="classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>update_player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

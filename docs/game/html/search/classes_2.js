@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['directions_0',['Directions',['../classentity_1_1player_1_1Directions.html',1,'entity::player']]]
+  ['game_0',['Game',['../classcore_1_1game_1_1Game.html',1,'core::game']]],
+  ['gameoverscreen_1',['GameoverScreen',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html',1,'gui::screens::gameover_screen']]]
 ];

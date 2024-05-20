@@ -2,36 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="classserver_1_1Server" kind="class" language="Python" prot="public">
     <compoundname>server::Server</compoundname>
-    <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be" prot="public" static="yes" mutable="no">
-        <type></type>
-        <definition>server.Server::IDLE</definition>
-        <argsstring></argsstring>
-        <name>IDLE</name>
-        <qualifiedname>server.Server.IDLE</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="game/server/server.py" line="18" column="1" bodyfile="game/server/server.py" bodystart="18" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e" prot="public" static="yes" mutable="no">
-        <type></type>
-        <definition>server.Server::RUNNING</definition>
-        <argsstring></argsstring>
-        <name>RUNNING</name>
-        <qualifiedname>server.Server.RUNNING</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="game/server/server.py" line="18" column="1" bodyfile="game/server/server.py" bodystart="18" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" prot="public" static="no" mutable="no">
         <type></type>
@@ -45,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="21" column="1" bodyfile="game/server/server.py" bodystart="21" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" prot="public" static="no" mutable="no">
         <type></type>
@@ -59,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="22" column="1" bodyfile="game/server/server.py" bodystart="22" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb" prot="public" static="no" mutable="no">
         <type></type>
@@ -73,21 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="24" column="1" bodyfile="game/server/server.py" bodystart="24" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>server.Server::sock</definition>
-        <argsstring></argsstring>
-        <name>sock</name>
-        <qualifiedname>server.Server.sock</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="game/server/server.py" line="70" column="1" bodyfile="game/server/server.py" bodystart="70" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" prot="public" static="no" mutable="no">
         <type></type>
@@ -101,7 +57,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="71" column="1" bodyfile="game/server/server.py" bodystart="71" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::player_handler</definition>
+        <argsstring></argsstring>
+        <name>player_handler</name>
+        <qualifiedname>server.Server.player_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>server.Server::sock</definition>
+        <argsstring></argsstring>
+        <name>sock</name>
+        <qualifiedname>server.Server.sock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="107" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="107" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -121,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="20" column="1" bodyfile="game/server/server.py" bodystart="20" bodyend="26"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="23" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -149,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="27" column="1" bodyfile="game/server/server.py" bodystart="27" bodyend="61"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="31" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -167,27 +151,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="62" column="1" bodyfile="game/server/server.py" bodystart="62" bodyend="64"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="69" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="69" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>server.Server.run</definition>
-        <argsstring>(self)</argsstring>
+        <argsstring>(self, state)</argsstring>
         <name>run</name>
         <qualifiedname>server.Server.run</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
         </param>
+        <param>
+          <type><ref refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" kindref="member">state</ref></type>
+          <defname>state</defname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Run the server.
+<para><verbatim>Run the server and listen for connections.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="65" column="1" bodyfile="game/server/server.py" bodystart="65" bodyend="97"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="72" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="72" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -202,10 +190,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Prepare the server.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="98" column="1" bodyfile="game/server/server.py" bodystart="98" bodyend="102"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="101" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="101" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -223,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="103" column="1" bodyfile="game/server/server.py" bodystart="103" bodyend="111"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="123" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="123" bodyend="132"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -239,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/server/server.py" line="113" column="1" bodyfile="game/server/server.py" bodystart="113" bodyend="120"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="134" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="134" bodyend="141"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -248,14 +238,13 @@
 <para><verbatim>Class for creating a new Server.
 </verbatim> </para>
     </detaileddescription>
-    <location file="game/server/server.py" line="13" column="1" bodyfile="game/server/server.py" bodystart="13" bodyend="120"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="18" bodyend="141"/>
     <listofallmembers>
       <member refid="classserver_1_1Server_1ab327c6453df454a2dce379bbb043dc94" prot="public" virt="non-virtual"><scope>server::Server</scope><name>__init__</name></member>
       <member refid="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" prot="public" virt="non-virtual"><scope>server::Server</scope><name>client_handler</name></member>
-      <member refid="classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be" prot="public" virt="non-virtual"><scope>server::Server</scope><name>IDLE</name></member>
       <member refid="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" prot="public" virt="non-virtual"><scope>server::Server</scope><name>player_count</name></member>
-      <member refid="classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8" prot="public" virt="non-virtual"><scope>server::Server</scope><name>run</name></member>
-      <member refid="classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e" prot="public" virt="non-virtual"><scope>server::Server</scope><name>RUNNING</name></member>
+      <member refid="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" prot="public" virt="non-virtual"><scope>server::Server</scope><name>player_handler</name></member>
+      <member refid="classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b" prot="public" virt="non-virtual"><scope>server::Server</scope><name>run</name></member>
       <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" prot="public" virt="non-virtual"><scope>server::Server</scope><name>sock</name></member>
       <member refid="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" prot="public" virt="non-virtual"><scope>server::Server</scope><name>start</name></member>
       <member refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" prot="public" virt="non-virtual"><scope>server::Server</scope><name>state</name></member>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" xml:lang="en-US">
+<title>utils.exceptions.ZeroOrLessSpawnPlayerAttempts Class Reference</title>
+<indexterm><primary>utils.exceptions.ZeroOrLessSpawnPlayerAttempts</primary></indexterm>
+<para>Inheritance diagram for utils.exceptions.ZeroOrLessSpawnPlayerAttempts:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e">__init__</link> (self, message=&quot;Number of attempts to choose player spawn point must be at least 1.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by setting the number of attempts to zero or less when finding an ideal
+spawn point for the player.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>utils.exceptions.ZeroOrLessSpawnPlayerAttempts</secondary></indexterm>
+<indexterm><primary>utils.exceptions.ZeroOrLessSpawnPlayerAttempts</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>utils.exceptions.ZeroOrLessSpawnPlayerAttempts.__init__ ( self,  message = <computeroutput>&quot;Number&#160;of&#160;attempts&#160;to&#160;choose&#160;player&#160;spawn&#160;point&#160;must&#160;be&#160;at&#160;least&#160;1.&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

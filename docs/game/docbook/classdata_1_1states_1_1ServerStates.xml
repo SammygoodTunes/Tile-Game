@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1states_1_1ServerStates" xml:lang="en-US">
+<title>data.states.ServerStates Class Reference</title>
+<indexterm><primary>data.states.ServerStates</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1states_1_1ServerStates_1ad2126c5ef5f89fcc07a79e01e2882a82">IDLE</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1states_1_1ServerStates_1a2acd5839d01405f7b4c1c779819f2f6b">STARTING</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1states_1_1ServerStates_1a610590d91aced0abf9ac396e8e556a3a">RUNNING</link></para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1states_1_1ServerStates_1a8a88efef2e955fc4f8c5a993228aaa36">FAIL</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Server states.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdata_1_1states_1_1ServerStates_1a8a88efef2e955fc4f8c5a993228aaa36"/><section>
+    <title>FAIL</title>
+<indexterm><primary>FAIL</primary><secondary>data.states.ServerStates</secondary></indexterm>
+<indexterm><primary>data.states.ServerStates</primary><secondary>FAIL</secondary></indexterm>
+<para><computeroutput>data.states.ServerStates.FAIL<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1states_1_1ServerStates_1ad2126c5ef5f89fcc07a79e01e2882a82"/><section>
+    <title>IDLE</title>
+<indexterm><primary>IDLE</primary><secondary>data.states.ServerStates</secondary></indexterm>
+<indexterm><primary>data.states.ServerStates</primary><secondary>IDLE</secondary></indexterm>
+<para><computeroutput>data.states.ServerStates.IDLE<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1states_1_1ServerStates_1a610590d91aced0abf9ac396e8e556a3a"/><section>
+    <title>RUNNING</title>
+<indexterm><primary>RUNNING</primary><secondary>data.states.ServerStates</secondary></indexterm>
+<indexterm><primary>data.states.ServerStates</primary><secondary>RUNNING</secondary></indexterm>
+<para><computeroutput>data.states.ServerStates.RUNNING<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1states_1_1ServerStates_1a2acd5839d01405f7b4c1c779819f2f6b"/><section>
+    <title>STARTING</title>
+<indexterm><primary>STARTING</primary><secondary>data.states.ServerStates</secondary></indexterm>
+<indexterm><primary>data.states.ServerStates</primary><secondary>STARTING</secondary></indexterm>
+<para><computeroutput>data.states.ServerStates.STARTING<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_states_8py">states.py</link></section>
+</section>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classplayer__handler_1_1PlayerHandler" xml:lang="en-US">
+<title>player_handler.PlayerHandler Class Reference</title>
+<indexterm><primary>player_handler.PlayerHandler</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b">track_player</link> (self, dict player)</para>
+</listitem>
+            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6">update_player</link> (self, dict player)</para>
+</listitem>
+            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e">untrack_player</link> (self, str player_name)</para>
+</listitem>
+            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d">get_players</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the player handler.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>player_handler.PlayerHandler.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d"/><section>
+    <title>get_players()</title>
+<indexterm><primary>get_players</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>get_players</secondary></indexterm>
+<para><computeroutput>player_handler.PlayerHandler.get_players ( self)</computeroutput></para></section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b"/><section>
+    <title>track_player()</title>
+<indexterm><primary>track_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>track_player</secondary></indexterm>
+<para><computeroutput> str player_handler.PlayerHandler.track_player ( self, dict player)</computeroutput></para></section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e"/><section>
+    <title>untrack_player()</title>
+<indexterm><primary>untrack_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>untrack_player</secondary></indexterm>
+<para><computeroutput>player_handler.PlayerHandler.untrack_player ( self, str player_name)</computeroutput></para></section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6"/><section>
+    <title>update_player()</title>
+<indexterm><primary>update_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>update_player</secondary></indexterm>
+<para><computeroutput>player_handler.PlayerHandler.update_player ( self, dict player)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_player__handler_8py">player_handler.py</link></section>
+</section>

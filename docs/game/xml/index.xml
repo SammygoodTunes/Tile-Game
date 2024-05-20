@@ -70,20 +70,12 @@
     <member refid="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" kind="function"><name>decompress</name></member>
   </compound>
   <compound refid="classclient_1_1connection_1_1Connection" kind="class"><name>client::connection::Connection</name>
-    <member refid="classclient_1_1connection_1_1Connection_1a1907239099f73d1632226195a8b68526" kind="variable"><name>IDLE</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1af74b64340e03d51cf309926938c3c0ae" kind="variable"><name>PENDING</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1ab470d9129d1b30383f631cd24d65b644" kind="variable"><name>GETDATA</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1aba5380138046c2b8689707004fb8eadc" kind="variable"><name>SUCCESS</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a67913fb103697a09ddecf932c2bf1dce" kind="variable"><name>INVALID</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a799f27b585cdf25831d16e66edb0f11d" kind="variable"><name>REFUSED</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a918e109c00054324fb13e1976cf69d65" kind="variable"><name>TIMEOUT</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a12d1c1453ee8b7d2604477d7fb89fcc7" kind="variable"><name>NOROUTE</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a31868df13e07a117430c5a05779a025d" kind="variable"><name>DISCONNECTED</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a3c656382c4bc50ee5889bf66150e93bd" kind="variable"><name>ERROR</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1af2a57ecdd41a44e47ff3b6fb4477f4a6" kind="variable"><name>sock</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a" kind="variable"><name>host</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829" kind="variable"><name>port</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1ad9f4e9f9ed74153b831f6cdc8809e882" kind="variable"><name>state</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482" kind="variable"><name>player_manager</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20" kind="variable"><name>recv_player_update</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45" kind="variable"><name>data</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3" kind="function"><name>__init__</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6" kind="function"><name>connect</name></member>
@@ -99,6 +91,21 @@
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" kind="variable"><name>connection</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" kind="function"><name>__init__</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" kind="function"><name>update</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a056aff561ca485cda4783d77e1d5eeac" kind="function"><name>draw_other_players</name></member>
+  </compound>
+  <compound refid="classdata_1_1states_1_1ConnectionStates" kind="class"><name>data::states::ConnectionStates</name>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a8879529ab2a94e4e8575e7e8d622574f" kind="variable"><name>IDLE</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a00dc78f16008df7b83880418629d915c" kind="variable"><name>PENDING</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a921287fd467d748441757caef28b8e18" kind="variable"><name>GETDATA</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a36669d354e48074d0d4ab254aea41b6c" kind="variable"><name>SUCCESS</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a8a1c9e2cbde057e99d66ec3600b0054b" kind="variable"><name>INVALID</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1aee03258b365b97b629ef80169903c469" kind="variable"><name>REFUSED</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a3b10303ab196b67c0143fc3740ff445e" kind="variable"><name>TIMEOUT</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a7a6bb479da2e80599b7507781a72bd4e" kind="variable"><name>NOROUTE</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1aac40084873bd373291d75f1f3eb1d2c9" kind="variable"><name>DISCONNECTED</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1ae4e2bd7713cf7152417f300d183a83ea" kind="variable"><name>BADNAME</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1af76ad321e357dab090d4e4877a2f7ba3" kind="variable"><name>ERROR</name></member>
+    <member refid="classdata_1_1states_1_1ConnectionStates_1a52fa3b886bfd2b4d44ad19de24628469" kind="variable"><name>SERVFAIL</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen" kind="class"><name>gui::screens::credits_screen::CreditsScreen</name>
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606" kind="variable"><name>window</name></member>
@@ -116,16 +123,6 @@
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a29efbef125b729def6b1ff1325ac2aaa" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a007b3a457b02f5ffca8ab37b6e89f823" kind="function"><name>update_ui</name></member>
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a90a26e9e39de1fcb1724d8d15163f534" kind="function"><name>set_state</name></member>
-  </compound>
-  <compound refid="classentity_1_1player_1_1Directions" kind="class"><name>entity::player::Directions</name>
-    <member refid="classentity_1_1player_1_1Directions_1a98b8e86d31b914041d94fbd88746e3eb" kind="variable"><name>LEFT</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1a3110a53da3973bda1eafe3c1cf36bd34" kind="variable"><name>RIGHT</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1a1eadf2828a908d0dd9ef6ca5ea1e0c39" kind="variable"><name>UP</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1ae5de22125a0d2f7df97c96c80a41f352" kind="variable"><name>DOWN</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1ac3c5f55432a1450eb89adfe39866e6d3" kind="variable"><name>DOWN</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1ab8234697f24a46154a7845e44c9bce6a" kind="variable"><name>RIGHT</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1a50f9fd03f59fa7fb40df13e598b7d274" kind="variable"><name>UP</name></member>
-    <member refid="classentity_1_1player_1_1Directions_1afd7a46960bba234c96eb365e86354067" kind="variable"><name>LEFT</name></member>
   </compound>
   <compound refid="classcore_1_1game_1_1Game" kind="class"><name>core::game::Game</name>
     <member refid="classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706" kind="variable"><name>connection_handler</name></member>
@@ -264,6 +261,7 @@
     <member refid="classgui_1_1inputbox_1_1InputBox_1a2e4482c1a676aee7def02d4020dd4b36" kind="function"><name>scroll_text</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ac57a96f4427b78eefea80e8b4eb0981a" kind="function"><name>authorise_only_ascii</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ac54c8df3fcc0d8f5836f7d24b80f7685" kind="function"><name>authorise_only_numeric</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a96f130e3a4913a74c2a7e3a228e45a11" kind="function"><name>authorise_only_alnum</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4" kind="function"><name>is_hovering_over</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54" kind="function"><name>is_selected</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ae89d6403b38142610a183ea73490b879" kind="function"><name>center_horizontally</name></member>
@@ -321,6 +319,9 @@
   </compound>
   <compound refid="classdata_1_1items_1_1ItemTypes" kind="class"><name>data::items::ItemTypes</name>
     <member refid="classdata_1_1items_1_1ItemTypes_1a781fe95471d8c41e51a9fab11c4c5bf4" kind="variable"><name>TOOLS</name></member>
+  </compound>
+  <compound refid="classdata_1_1keys_1_1Keys" kind="class"><name>data::keys::Keys</name>
+    <member refid="classdata_1_1keys_1_1Keys_1abac92fd9f1b0b06a124995d5fed173ca" kind="variable"><name>SHOW_MAP</name></member>
   </compound>
   <compound refid="classgui_1_1label_1_1Label" kind="class"><name>gui::label::Label</name>
     <member refid="classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a" kind="variable"><name>DEFAULT_FONT</name></member>
@@ -408,8 +409,6 @@
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8d4c44ca2c978fc64e525d86a25af5ae" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classworld_1_1map__manager_1_1Map" kind="class"><name>world::map_manager::Map</name>
-    <member refid="classworld_1_1map__manager_1_1Map_1af960460c779002a338e9b4240d4240d8" kind="variable"><name>STATE_GENMAP</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1ad8bb21a5f1a18ca811ebf775d5d1dcc6" kind="variable"><name>STATE_READY</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3" kind="variable"><name>DEFAULT</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72" kind="variable"><name>SEED_RANGE</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a6b2d718e587266b42c43666336107d0d" kind="variable"><name>tile_manager</name></member>
@@ -462,26 +461,46 @@
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" kind="variable"><name>game</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc" kind="variable"><name>faded_surface</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab66de5b12d46134f9f97dac2348da4cf" kind="variable"><name>title_label</name></member>
-    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a703d62ff406c6376e4df1f4d4248c2cf" kind="variable"><name>map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0" kind="variable"><name>scaled_map</name></member>
+    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a1d3c16992701ab0e4740f39d905c6a21" kind="variable"><name>_got_map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1af12eaf7b29421feb5d6c566a23e1555c" kind="function"><name>initialise_map</name></member>
+    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f" kind="function"><name>initialise_map</name></member>
+    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a8796c2dd17d1c0830a05249f6c7fcedb" kind="function"><name>reset_map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af" kind="function"><name>update_ui</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a4ebc2e87beab351bd23e3ff0d217e3d7" kind="function"><name>set_state</name></member>
   </compound>
-  <compound refid="classdata_1_1mouse__properties_1_1Mouse" kind="class"><name>data::mouse_properties::Mouse</name>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1aed53a8f4110eb882ae0491fc8b6d51d8" kind="variable"><name>LMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a6237186b5cab962493a9b50b7ab4de22" kind="variable"><name>MMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1adc2059c1936b84ed06ed0c1aac8a6de4" kind="variable"><name>RMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1aa46b316c697f0086535473b9b292788e" kind="variable"><name>SCROLL_UP</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a7d4e8c75c0e7068d191c88b8e2e25e2f" kind="variable"><name>SCROLL_DOWN</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a914adde24455b106116b50409f25cbfc" kind="variable"><name>LMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1af75a6c2c9e048eab5076846a19544504" kind="variable"><name>MMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a2086ff8d5ee55bdcc2c91de0be210b0e" kind="variable"><name>RMB</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a5be59c6b31be46eb349ea8e03b62b2ba" kind="variable"><name>SCROLL_UP</name></member>
-    <member refid="classdata_1_1mouse__properties_1_1Mouse_1a497c3cfdc87ee1e4a2a6217487f9a889" kind="variable"><name>SCROLL_DOWN</name></member>
+  <compound refid="classdata_1_1states_1_1MapStates" kind="class"><name>data::states::MapStates</name>
+    <member refid="classdata_1_1states_1_1MapStates_1a9c6503eb7e0820322b5b1d4397881008" kind="variable"><name>GENMAP</name></member>
+    <member refid="classdata_1_1states_1_1MapStates_1afb374e30cdd09b87abbd5eeb0c333274" kind="variable"><name>READY</name></member>
+  </compound>
+  <compound refid="classdata_1_1states_1_1MouseStates" kind="class"><name>data::states::MouseStates</name>
+    <member refid="classdata_1_1states_1_1MouseStates_1a77ad007b506c5845bfefb1e0bdc58fc9" kind="variable"><name>LMB</name></member>
+    <member refid="classdata_1_1states_1_1MouseStates_1a947c0d4d0ef4df5f42b2173778eaf058" kind="variable"><name>MMB</name></member>
+    <member refid="classdata_1_1states_1_1MouseStates_1a0a9774f575128e220b8bb1f2cdc85f9f" kind="variable"><name>RMB</name></member>
+    <member refid="classdata_1_1states_1_1MouseStates_1ab3bcca9c33a1d29c123a8aa595c33f7b" kind="variable"><name>SCROLL_UP</name></member>
+    <member refid="classdata_1_1states_1_1MouseStates_1a97e98f6c82a05bbf1d49c2fd22f70c03" kind="variable"><name>SCROLL_DOWN</name></member>
+  </compound>
+  <compound refid="classgui_1_1nametag_1_1NameTag" kind="class"><name>gui::nametag::NameTag</name>
+    <member refid="classgui_1_1nametag_1_1NameTag_1ab1676003a6c2687675cd8d5292cbb050" kind="variable"><name>_width</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1acee766f59b63cce320e35bb20de6f428" kind="variable"><name>_height</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a509fab8f263d4cded4ca355cca502991" kind="variable"><name>_faded_surface</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a8609d847f8c71589b8eeed1921d289c1" kind="variable"><name>_background_colour</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a2d0f27f5ac95c34015ca8c97f44eb457" kind="variable"><name>_y</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1ad0c3a4d1cd3ac70b980a634182c9bf65" kind="variable"><name>label</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a1d2611c9131089e2f0a0e588698883fa" kind="function"><name>__init__</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1ae4693e1c84ac50854c7b93ace0704d03" kind="function"><name>draw</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a5a4ac7fefae12782a7905909e03bd861" kind="function"><name>update</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a01a24981fe41b0e27bb48f0d02274cc7" kind="function"><name>refresh</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a2b6645a9d8f6b55ecaa93a4735ba7fb4" kind="function"><name>is_hovering_over</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1ac7c02d75d8a1f8928e970e4b718a9dfc" kind="function"><name>set_width</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a0a3a4d707710e2a485f12523508d1154" kind="function"><name>get_width</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a83283b262b818f75bddbc4c2f763a938" kind="function"><name>set_height</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a86e4c80d4156ead31866731f502ce3f0" kind="function"><name>get_height</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a9dfee5ca26298a253aceaae25b0e39bd" kind="function"><name>set_background_colour</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a50209d3963348d06ae4f9f4a34e5a3ea" kind="function"><name>get_background_colour</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a20b6225538473371a14af1478f0161e1" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen" kind="class"><name>gui::screens::options_screen::OptionsScreen</name>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a6a88c4633820ff06d701c8e314382011" kind="variable"><name>window</name></member>
@@ -545,6 +564,7 @@
     <member refid="classentity_1_1player_1_1Player_1a7af133b2468f2bdba4869a0b9b0d781f" kind="variable"><name>DAMAGE_TIMER</name></member>
     <member refid="classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e" kind="variable"><name>edges</name></member>
     <member refid="classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32" kind="variable"><name>main_hud</name></member>
+    <member refid="classentity_1_1player_1_1Player_1ae4f4074ba8094775ee931b0804d6c8e0" kind="variable"><name>player_name</name></member>
     <member refid="classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1" kind="variable"><name>breaking</name></member>
     <member refid="classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3" kind="variable"><name>selected_tile_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a83a224799adf0ed4558ae09811000dea" kind="variable"><name>selected_tile_y</name></member>
@@ -554,11 +574,11 @@
     <member refid="classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a" kind="variable"><name>height</name></member>
     <member refid="classentity_1_1player_1_1Player_1ad0d96f20cca2a9a493501cfcd39c1f80" kind="variable"><name>selected_tile_sx</name></member>
     <member refid="classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516" kind="variable"><name>selected_tile_sy</name></member>
+    <member refid="classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d" kind="variable"><name>move</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982" kind="variable"><name>velocity_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5" kind="variable"><name>velocity_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46" kind="variable"><name>hurt</name></member>
     <member refid="classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b" kind="variable"><name>health</name></member>
-    <member refid="classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d" kind="variable"><name>move</name></member>
     <member refid="classentity_1_1player_1_1Player_1ad522fc5da677a4b49b8b83a789126460" kind="variable"><name>breaking_tile</name></member>
     <member refid="classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2" kind="variable"><name>prev_selected_tile</name></member>
     <member refid="classentity_1_1player_1_1Player_1a812b0e8d385e586b89482e50aab85a83" kind="variable"><name>_x</name></member>
@@ -571,7 +591,7 @@
     <member refid="classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54" kind="function"><name>update</name></member>
     <member refid="classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de" kind="function"><name>update_ui</name></member>
     <member refid="classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5" kind="function"><name>break_tile</name></member>
-    <member refid="classentity_1_1player_1_1Player_1a6873c77bd7c714f7cdc394282424c0eb" kind="function"><name>reset</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a9049d1072511b52819c82110f333162c" kind="function"><name>reset</name></member>
     <member refid="classentity_1_1player_1_1Player_1a394cf963598eef1f0f884aeffba2aa49" kind="function"><name>is_moving_left</name></member>
     <member refid="classentity_1_1player_1_1Player_1aa3ac9680dd98c07f8e24cabf3990e5f3" kind="function"><name>is_moving_up</name></member>
     <member refid="classentity_1_1player_1_1Player_1ad943f7e66143bfa78ea42fa6cd8e6711" kind="function"><name>is_moving_right</name></member>
@@ -592,14 +612,43 @@
     <member refid="classentity_1_1player_1_1Player_1ac2c38bcbbdfa79be01c575d9550994c6" kind="function"><name>get_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc" kind="function"><name>set_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1ad3cdd92868b226021ab2ba048c33ac08" kind="function"><name>get_y</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a9c817d804f63f0bb3c29f4f1d5f76bf0" kind="function"><name>get_absolute_x</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3" kind="function"><name>get_absolute_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c" kind="function"><name>get_coefficient_from_center_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91" kind="function"><name>get_coefficient_from_center_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922" kind="function"><name>get_selected_tile_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a3aee04b005560bcb0cad8093b610a150" kind="function"><name>get_selected_tile_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35" kind="function"><name>set_health</name></member>
     <member refid="classentity_1_1player_1_1Player_1a5bb0ef0040a075e0571205fd39ad0900" kind="function"><name>get_health</name></member>
+    <member refid="classentity_1_1player_1_1Player_1ae4fc63e35a74cd67ffc510e13e3a9712" kind="function"><name>set_player_name</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a1967b97c6167082e966ccba4685a158d" kind="function"><name>get_player_name</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28" kind="function"><name>get_walls</name></member>
-    <member refid="classentity_1_1player_1_1Player_1ab0a191b61cfda4fcab257a267ceaaeab" kind="function"><name>set_ideal_spawn_point</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c" kind="function"><name>set_ideal_spawn_point</name></member>
+  </compound>
+  <compound refid="classplayer__handler_1_1PlayerHandler" kind="class"><name>player_handler::PlayerHandler</name>
+    <member refid="classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5" kind="function"><name>__init__</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" kind="function"><name>track_player</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6" kind="function"><name>update_player</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e" kind="function"><name>untrack_player</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d" kind="function"><name>get_players</name></member>
+  </compound>
+  <compound refid="classclient_1_1player__manager_1_1PlayerManager" kind="class"><name>client::player_manager::PlayerManager</name>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" kind="variable"><name>players</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" kind="function"><name>set_players</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" kind="function"><name>draw_players</name></member>
+  </compound>
+  <compound refid="classdata_1_1properties_1_1PlayerProperties" kind="class"><name>data::properties::PlayerProperties</name>
+    <member refid="classdata_1_1properties_1_1PlayerProperties_1a2797640a45b4e873b77d8a9c7486ba5d" kind="variable"><name>MAX_PLAYER_NAME_SIZE</name></member>
+  </compound>
+  <compound refid="classdata_1_1states_1_1PlayerStates" kind="class"><name>data::states::PlayerStates</name>
+    <member refid="classdata_1_1states_1_1PlayerStates_1a43b2a1147db13179627f1d1d0706fa83" kind="variable"><name>MOVE_DOWN</name></member>
+    <member refid="classdata_1_1states_1_1PlayerStates_1a15efef111ff825154cfdbfb0088c41ab" kind="variable"><name>MOVE_RIGHT</name></member>
+    <member refid="classdata_1_1states_1_1PlayerStates_1ae374ea36e8e1b40131980bad65f30f6d" kind="variable"><name>MOVE_UP</name></member>
+    <member refid="classdata_1_1states_1_1PlayerStates_1a964aaf19c418d74321b00fbd840c829f" kind="variable"><name>MOVE_LEFT</name></member>
+  </compound>
+  <compound refid="classutils_1_1exceptions_1_1PlayerWithSameNameError" kind="class"><name>utils::exceptions::PlayerWithSameNameError</name>
+    <member refid="classutils_1_1exceptions_1_1PlayerWithSameNameError_1a4d93bbc2a4e48fc575fdad48848104a1" kind="function"><name>__init__</name></member>
   </compound>
   <compound refid="classgui_1_1progress__bar_1_1ProgressBar" kind="class"><name>gui::progress_bar::ProgressBar</name>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1afceac4be0ceabe34afd39ed9c411c1d7" kind="variable"><name>MIN_WIDTH</name></member>
@@ -644,19 +693,27 @@
   <compound refid="classprotocol_1_1Protocol" kind="class"><name>protocol::Protocol</name>
     <member refid="classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f" kind="variable"><name>BUFFER_SIZE</name></member>
     <member refid="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" kind="variable"><name>ENCODING</name></member>
-    <member refid="classprotocol_1_1Protocol_1adf61d2ea9be08bde4343a7eec9e4b825" kind="variable"><name>RECOGNITION_CMD_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1a3d787f0135c0348aafdc05ec39c4394c" kind="variable"><name>RECOGNITION_CMD_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a0c75670c45111e5264c80cb624c198d0" kind="variable"><name>MAPOBJ_CMD_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1ada103d4e5c11c03d64e168e408489c70" kind="variable"><name>MAPOBJ_CMD_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1ae641247dbba4278845beb0547d857fc9" kind="variable"><name>MAPREADY_CMD</name></member>
-    <member refid="classprotocol_1_1Protocol_1a053f0c421f7203160ae5f7b5d1412bf1" kind="variable"><name>VERIFY_CMD</name></member>
-    <member refid="classprotocol_1_1Protocol_1a6717178f9a11eb5cb0eefc657bee29d0" kind="variable"><name>DISCONNECT_CMD</name></member>
+    <member refid="classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6" kind="variable"><name>RECOGNITION_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475" kind="variable"><name>RECOGNITION_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb" kind="variable"><name>MAPDATA_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49" kind="variable"><name>MAPDATA_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3" kind="variable"><name>MAPDATA_READY_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9" kind="variable"><name>PLAYERUPDATE_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524" kind="variable"><name>PLAYERUPDATE_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8" kind="variable"><name>PLAYERUPDATE_READY_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826" kind="variable"><name>GAMEUPDATE_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f" kind="variable"><name>GAMEUPDATE_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965" kind="variable"><name>GAMEUPDATE_READY_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89" kind="variable"><name>DISCONNECT_REQ</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1screen_1_1Screen" kind="class"><name>gui::screens::screen::Screen</name>
     <member refid="classgui_1_1screens_1_1screen_1_1Screen_1a91647fb53696a33b8740c8efa5fe6838" kind="variable"><name>_enabled</name></member>
     <member refid="classgui_1_1screens_1_1screen_1_1Screen_1a9b95745348c0c8c9666abc1ca3942655" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screens_1_1screen_1_1Screen_1a4e34ab0ec5b211b46a05c37d07095f94" kind="function"><name>set_state</name></member>
     <member refid="classgui_1_1screens_1_1screen_1_1Screen_1a04e3d7a734977e0c5a46a6f9002cf4b0" kind="function"><name>get_state</name></member>
+  </compound>
+  <compound refid="classdata_1_1properties_1_1ScreenProperties" kind="class"><name>data::properties::ScreenProperties</name>
+    <member refid="classdata_1_1properties_1_1ScreenProperties_1add3e60e51c1c4b3ca151948d296969e9" kind="variable"><name>ALPHA</name></member>
   </compound>
   <compound refid="classgui_1_1screen__manager_1_1Screens" kind="class"><name>gui::screen_manager::Screens</name>
     <member refid="classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646" kind="variable"><name>window</name></member>
@@ -665,6 +722,7 @@
     <member refid="classgui_1_1screen__manager_1_1Screens_1a5c9c71d40c9c04f17df2fd873b3397c6" kind="variable"><name>main_menu_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a01a4aeb84d05d2e9bdf1573353581510" kind="variable"><name>server_menu_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a2507ed22bdb1164d3ddb7a8475304ee8" kind="variable"><name>server_join_screen</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1ad459e5a44f3d18184c17ee5d421ac20d" kind="variable"><name>server_create_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1ac3d979d0f81881cd048e7fbd8380fd00" kind="variable"><name>server_connect_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1afbdc3c8162678db8583aba629623222d" kind="variable"><name>loading_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a89e66b9c8de4d304ffe2eab2bb9ab8b6" kind="variable"><name>pause_screen</name></member>
@@ -679,17 +737,16 @@
     <member refid="classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e" kind="function"><name>update_ui</name></member>
   </compound>
   <compound refid="classserver_1_1Server" kind="class"><name>server::Server</name>
-    <member refid="classserver_1_1Server_1a62bcc145aaa15a27439104928acae9be" kind="variable"><name>IDLE</name></member>
-    <member refid="classserver_1_1Server_1ab27db52f858ad62ea5beb814ed73ba0e" kind="variable"><name>RUNNING</name></member>
     <member refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" kind="variable"><name>state</name></member>
     <member refid="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" kind="variable"><name>player_count</name></member>
     <member refid="classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb" kind="variable"><name>timeout</name></member>
-    <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" kind="variable"><name>sock</name></member>
     <member refid="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" kind="variable"><name>world_handler</name></member>
+    <member refid="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" kind="variable"><name>player_handler</name></member>
+    <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" kind="variable"><name>sock</name></member>
     <member refid="classserver_1_1Server_1ab327c6453df454a2dce379bbb043dc94" kind="function"><name>__init__</name></member>
     <member refid="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" kind="function"><name>client_handler</name></member>
     <member refid="classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f" kind="function"><name>update</name></member>
-    <member refid="classserver_1_1Server_1a9a867c5133fb32470e22654243020fd8" kind="function"><name>run</name></member>
+    <member refid="classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b" kind="function"><name>run</name></member>
     <member refid="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" kind="function"><name>start</name></member>
     <member refid="classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569" kind="function"><name>stop</name></member>
     <member refid="classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a" kind="function"><name>test</name></member>
@@ -699,6 +756,7 @@
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a37012580623006fa87f224c00c689b8a" kind="variable"><name>faded_surface</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a5c9d33530a6383ee136175d3fe791e3c" kind="variable"><name>info_label</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a755305c749d1c8632c1fb8a55e0af4ab" kind="variable"><name>back_button</name></member>
+    <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad3da1c71fb82e41ec8cf74d026c180a6" kind="variable"><name>default_screen</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1af669104883607a0d0c7d62cae4cd5608" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a6cc1c919d3397a414031f532cf2e50c0" kind="function"><name>initialise_surface</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a05e828c649457688bca3d1e76f563991" kind="function"><name>draw</name></member>
@@ -707,10 +765,25 @@
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a40e1a5d3f5ca59c1f618a0c427a04e73" kind="function"><name>reset_info_label</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a879689c22af3f5ddfb4609bd6d66b287" kind="function"><name>set_state</name></member>
   </compound>
+  <compound refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" kind="class"><name>gui::screens::servercreate_screen::ServerCreateScreen</name>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a00ce6d5e6b2f32825a76857c26eff450" kind="variable"><name>window</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a1a8d7a3d248e2aba5e98eed6242d7b1d" kind="variable"><name>faded_surface</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aac751b219df1cd7ffad451ad5d362ffe" kind="variable"><name>create_label</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a50f4eb7e411c5dfaa5bdf06170e42dc4" kind="variable"><name>ign_input</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa24e8ea95b4c0e51949d8089551831a9" kind="variable"><name>create_button</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a9f4a7c84086b614504e848b02ae2b158" kind="variable"><name>back_button</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a832fafc3b0197c22e23980f65fd57c36" kind="function"><name>__init__</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a54a69b50910816c326b13beccdb354e0" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af4516b87d7319b77d16cc6454d5a713d" kind="function"><name>events</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afd819f2544bf1f690bbb242833bb129d" kind="function"><name>draw</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a7da55e9aa3cfe8feb04f0e6c8d2c204e" kind="function"><name>update_ui</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a5419e3d783adbc52bef3c03eef32c468" kind="function"><name>set_state</name></member>
+  </compound>
   <compound refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" kind="class"><name>gui::screens::serverjoin_screen::ServerJoinScreen</name>
     <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a3d0a647d738c068f039137ee1ef6dc42" kind="variable"><name>window</name></member>
     <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9330e75c21edfc569e1742be508b17fe" kind="variable"><name>faded_surface</name></member>
-    <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af7584be0da0ef6a607223cb11f2e8fd3" kind="variable"><name>subtitle_label</name></member>
+    <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af80707a27ad5a2edbe8abecd762d6134" kind="variable"><name>join_label</name></member>
+    <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a4f287ada8fb25d3bd65bafe5283e955f" kind="variable"><name>ign_input</name></member>
     <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a8b90426fbe5a71c9524ef2e05a45548f" kind="variable"><name>ip_input</name></member>
     <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a663b319401fdbe9291f93412568afe59" kind="variable"><name>port_input</name></member>
     <member refid="classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a904a9c01f6bef55aa056d12fd1fe16d6" kind="variable"><name>join_button</name></member>
@@ -734,6 +807,15 @@
     <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1abc8edc71bbecced634d6df910c1d5a4f" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a94e0525162f93858f1945588141e407d" kind="function"><name>update_ui</name></member>
     <member refid="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a97a1c71f46d23937379639133241e326" kind="function"><name>set_state</name></member>
+  </compound>
+  <compound refid="classdata_1_1properties_1_1ServerProperties" kind="class"><name>data::properties::ServerProperties</name>
+    <member refid="classdata_1_1properties_1_1ServerProperties_1a899059398c6ae1b8b6c9f380132f99d9" kind="variable"><name>TICKS_PER_SECOND</name></member>
+  </compound>
+  <compound refid="classdata_1_1states_1_1ServerStates" kind="class"><name>data::states::ServerStates</name>
+    <member refid="classdata_1_1states_1_1ServerStates_1ad2126c5ef5f89fcc07a79e01e2882a82" kind="variable"><name>IDLE</name></member>
+    <member refid="classdata_1_1states_1_1ServerStates_1a2acd5839d01405f7b4c1c779819f2f6b" kind="variable"><name>STARTING</name></member>
+    <member refid="classdata_1_1states_1_1ServerStates_1a610590d91aced0abf9ac396e8e556a3a" kind="variable"><name>RUNNING</name></member>
+    <member refid="classdata_1_1states_1_1ServerStates_1a8a88efef2e955fc4f8c5a993228aaa36" kind="variable"><name>FAIL</name></member>
   </compound>
   <compound refid="classgui_1_1slot_1_1Slot" kind="class"><name>gui::slot::Slot</name>
     <member refid="classgui_1_1slot_1_1Slot_1a0feed12953ec4d3cd8a7c0e39aa3448e" kind="variable"><name>MIN_SIZE</name></member>
@@ -781,6 +863,13 @@
   <compound refid="classclient_1_1connection_1_1Tasks" kind="class"><name>client::connection::Tasks</name>
     <member refid="classclient_1_1connection_1_1Tasks_1a169afd81333168557fd9e5998c875e1d" kind="variable"><name>CONNECT</name></member>
     <member refid="classclient_1_1connection_1_1Tasks_1acf9b2e7ab5176a0d2e69c2cd9926706e" kind="variable"><name>UPDATE</name></member>
+  </compound>
+  <compound refid="classtasks_1_1Tasks" kind="class"><name>tasks::Tasks</name>
+    <member refid="classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9" kind="function"><name>disconnection</name></member>
+    <member refid="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" kind="function"><name>recognition</name></member>
+    <member refid="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" kind="function"><name>map_data</name></member>
+    <member refid="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" kind="function"><name>send_game_state</name></member>
+    <member refid="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" kind="function"><name>player_update</name></member>
   </compound>
   <compound refid="classdata_1_1tiles_1_1Tile" kind="class"><name>data::tiles::Tile</name>
     <member refid="classdata_1_1tiles_1_1Tile_1af670485f472ebee22d83fe79976b45ef" kind="variable"><name>DEFAULT_ATLAS</name></member>
@@ -886,11 +975,20 @@
     <member refid="classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115" kind="function"><name>create_world</name></member>
     <member refid="classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5" kind="function"><name>get_world</name></member>
   </compound>
+  <compound refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" kind="class"><name>utils::exceptions::ZeroOrLessSpawnPlayerAttempts</name>
+    <member refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="namespacebuilders" kind="namespace"><name>builders</name>
+    <member refid="namespacebuilders_1a813379f63daeb04e8d6c34e2871ae22d" kind="function"><name>build_player</name></member>
+    <member refid="namespacebuilders_1a677ad2a4ab13b5bd3f864deddb1db86f" kind="function"><name>unbuild_player</name></member>
+  </compound>
   <compound refid="namespaceclient" kind="namespace"><name>client</name>
   </compound>
   <compound refid="namespaceclient_1_1connection" kind="namespace"><name>client::connection</name>
   </compound>
   <compound refid="namespaceclient_1_1connection__handler" kind="namespace"><name>client::connection_handler</name>
+  </compound>
+  <compound refid="namespaceclient_1_1player__manager" kind="namespace"><name>client::player_manager</name>
   </compound>
   <compound refid="namespacecore" kind="namespace"><name>core</name>
   </compound>
@@ -913,7 +1011,11 @@
   </compound>
   <compound refid="namespacedata_1_1items" kind="namespace"><name>data::items</name>
   </compound>
-  <compound refid="namespacedata_1_1mouse__properties" kind="namespace"><name>data::mouse_properties</name>
+  <compound refid="namespacedata_1_1keys" kind="namespace"><name>data::keys</name>
+  </compound>
+  <compound refid="namespacedata_1_1properties" kind="namespace"><name>data::properties</name>
+  </compound>
+  <compound refid="namespacedata_1_1states" kind="namespace"><name>data::states</name>
   </compound>
   <compound refid="namespacedata_1_1tiles" kind="namespace"><name>data::tiles</name>
   </compound>
@@ -934,6 +1036,8 @@
   <compound refid="namespacegui_1_1inputbox" kind="namespace"><name>gui::inputbox</name>
   </compound>
   <compound refid="namespacegui_1_1label" kind="namespace"><name>gui::label</name>
+  </compound>
+  <compound refid="namespacegui_1_1nametag" kind="namespace"><name>gui::nametag</name>
   </compound>
   <compound refid="namespacegui_1_1progress__bar" kind="namespace"><name>gui::progress_bar</name>
   </compound>
@@ -961,6 +1065,8 @@
   </compound>
   <compound refid="namespacegui_1_1screens_1_1serverconnect__screen" kind="namespace"><name>gui::screens::serverconnect_screen</name>
   </compound>
+  <compound refid="namespacegui_1_1screens_1_1servercreate__screen" kind="namespace"><name>gui::screens::servercreate_screen</name>
+  </compound>
   <compound refid="namespacegui_1_1screens_1_1serverjoin__screen" kind="namespace"><name>gui::screens::serverjoin_screen</name>
   </compound>
   <compound refid="namespacegui_1_1screens_1_1servermenu__screen" kind="namespace"><name>gui::screens::servermenu_screen</name>
@@ -974,9 +1080,13 @@
   </compound>
   <compound refid="namespacepacket" kind="namespace"><name>packet</name>
   </compound>
+  <compound refid="namespaceplayer__handler" kind="namespace"><name>player_handler</name>
+  </compound>
   <compound refid="namespaceprotocol" kind="namespace"><name>protocol</name>
   </compound>
   <compound refid="namespaceserver" kind="namespace"><name>server</name>
+  </compound>
+  <compound refid="namespacetasks" kind="namespace"><name>tasks</name>
   </compound>
   <compound refid="namespaceutils" kind="namespace"><name>utils</name>
   </compound>
@@ -1026,6 +1136,8 @@
   </compound>
   <compound refid="connection__handler_8py" kind="file"><name>connection_handler.py</name>
   </compound>
+  <compound refid="player__manager_8py" kind="file"><name>player_manager.py</name>
+  </compound>
   <compound refid="game_8py" kind="file"><name>game.py</name>
   </compound>
   <compound refid="window_8py" kind="file"><name>window.py</name>
@@ -1034,7 +1146,11 @@
   </compound>
   <compound refid="items_8py" kind="file"><name>items.py</name>
   </compound>
-  <compound refid="mouse__properties_8py" kind="file"><name>mouse_properties.py</name>
+  <compound refid="keys_8py" kind="file"><name>keys.py</name>
+  </compound>
+  <compound refid="properties_8py" kind="file"><name>properties.py</name>
+  </compound>
+  <compound refid="states_8py" kind="file"><name>states.py</name>
   </compound>
   <compound refid="tiles_8py" kind="file"><name>tiles.py</name>
   </compound>
@@ -1070,6 +1186,8 @@
   </compound>
   <compound refid="label_8py" kind="file"><name>label.py</name>
   </compound>
+  <compound refid="nametag_8py" kind="file"><name>nametag.py</name>
+  </compound>
   <compound refid="progress__bar_8py" kind="file"><name>progress_bar.py</name>
   </compound>
   <compound refid="screen__manager_8py" kind="file"><name>screen_manager.py</name>
@@ -1094,6 +1212,8 @@
   </compound>
   <compound refid="serverconnect__screen_8py" kind="file"><name>serverconnect_screen.py</name>
   </compound>
+  <compound refid="servercreate__screen_8py" kind="file"><name>servercreate_screen.py</name>
+  </compound>
   <compound refid="serverjoin__screen_8py" kind="file"><name>serverjoin_screen.py</name>
   </compound>
   <compound refid="servermenu__screen_8py" kind="file"><name>servermenu_screen.py</name>
@@ -1104,11 +1224,17 @@
   </compound>
   <compound refid="main_8py" kind="file"><name>main.py</name>
   </compound>
+  <compound refid="builders_8py" kind="file"><name>builders.py</name>
+  </compound>
   <compound refid="packet_8py" kind="file"><name>packet.py</name>
   </compound>
   <compound refid="protocol_8py" kind="file"><name>protocol.py</name>
   </compound>
+  <compound refid="player__handler_8py" kind="file"><name>player_handler.py</name>
+  </compound>
   <compound refid="server_8py" kind="file"><name>server.py</name>
+  </compound>
+  <compound refid="tasks_8py" kind="file"><name>tasks.py</name>
   </compound>
   <compound refid="world__handler_8py" kind="file"><name>world_handler.py</name>
   </compound>

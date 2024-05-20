@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['game_0',['Game',['../classcore_1_1game_1_1Game.html',1,'core::game']]],
-  ['gameoverscreen_1',['GameoverScreen',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html',1,'gui::screens::gameover_screen']]]
+  ['hasher_0',['Hasher',['../classpacket_1_1Hasher.html',1,'packet']]],
+  ['horizontalslider_1',['HorizontalSlider',['../classgui_1_1horizontal__slider_1_1HorizontalSlider.html',1,'gui::horizontal_slider']]],
+  ['hotbar_2',['Hotbar',['../classgui_1_1hotbar_1_1Hotbar.html',1,'gui::hotbar']]]
 ];
