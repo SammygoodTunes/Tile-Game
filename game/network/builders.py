@@ -11,7 +11,8 @@ def build_player(player: Player) -> dict:
         'x': player.get_x(),
         'y': player.get_y(),
         'previous_x': 0,
-        'previous_y': 0
+        'previous_y': 0,
+        'lerp': 0.0
     }
 
 
