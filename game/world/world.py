@@ -13,7 +13,7 @@ class World:
     """
 
     def __init__(self) -> None:
-        self._map = Map(256, 256)
+        self._map = Map(64, 64)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def initialise(self) -> None:
