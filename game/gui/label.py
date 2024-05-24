@@ -54,7 +54,7 @@ class Label(Widget):
         """
         Update the shadow's position of the label.
         """
-        self._shadow_x = self._x - 2
+        self._shadow_x = self._x + 2
         self._shadow_y = self._y + 2
         return self
 

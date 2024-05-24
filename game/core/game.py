@@ -49,9 +49,9 @@ class Game(Window):
             self.player.update(self, self.world.get_map())
             self.world.update(self, self.player)
         else:
-            self.clear((round(20 * sin(ticks / 5000) + 150), 
-                        round(10 * sin(ticks / 2500) + 120),
-                        235))
+            self.clear((round(20 * sin(ticks / 5000) + 100),
+                        round(10 * sin(ticks / 2500) + 80),
+                        150))
         self.connection_handler.update(self)
         self.server.update()
         self.all_events()
