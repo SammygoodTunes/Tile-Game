@@ -12,7 +12,7 @@ class Tile:
     Class for creating a map tile.
     """
 
-    DEFAULT_ATLAS: str = str(impr.files(assets) / "atlas.png")
+    DEFAULT_ATLAS: str = str(impr.files('assets') / "atlas.png")
     count_id = count()
 
     def __init__(self, x: int, y: int) -> None:

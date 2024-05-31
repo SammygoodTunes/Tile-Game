@@ -14,7 +14,7 @@ class Window:
     Class for creating the window frame in which the game will be contained.
     """
 
-    FONT_PATH: str = impr.files(assets) / "font.ttf"
+    FONT_PATH: str = impr.files('assets') / "font.ttf"
 
     def __init__(self, width: int, height: int, title: str = data_mng.get_game_property(data_mng.APP_NAME)) -> None:
         self.width: int = width

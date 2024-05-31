@@ -23,7 +23,7 @@ class Player:
     Class for creating a player.
     """
 
-    TEXTURE: str = str(impr.files(assets) / "player.png")
+    TEXTURE: str = str(impr.files('assets') / "player.png")
     VELOCITY_STEP_START: float = 4.5
     VELOCITY_STEP_STOP: float = 5.0
 
