@@ -259,7 +259,7 @@ class Player:
         if self.is_in_wall(map_obj):
             self._x, self._y = prev_x, prev_y
 
-        if self.breaking and self.can_break_breakable(map_obj):
+        if self.breaking and self.can_break_breakable(map_obj) and not game.paused:
             self.break_tile(game)
         else:
             self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
