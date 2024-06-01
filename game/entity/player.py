@@ -102,8 +102,8 @@ class Player:
         Draw the player to the screen.
         """
         if not self.is_dead():
-            self.screen_x = game.width / 2 - game.camera.x + self._x
-            self.screen_y = game.height / 2 - game.camera.y + self._y
+            self.screen_x = game.width / 2 - round(game.camera.x) + self._x
+            self.screen_y = game.height / 2 - round(game.camera.y) + self._y
             if self.is_in_lava(game.world.get_map()):
                 pygame.draw.rect(game.screen, (220, 200, 200), (self.screen_x, self.screen_y, self.width, self.height))
                 return
@@ -119,17 +119,17 @@ class Player:
         """
         if not game.paused and not self.is_dead() and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL:
             mx, my = pygame.mouse.get_pos()
-            center_x, center_y = round(game.width // 2), round(game.height // 2)
+            center_x, center_y = int(game.width // 2), int(game.height // 2)
             map_width, map_height = game.world.get_map().get_width_in_tiles(), game.world.get_map().get_height_in_tiles()
-            camera_x, camera_y = int(game.camera.x), int(game.camera.y)
 
-            wx, wy = (game.camera.x - (center_x - mx)) // 32, (game.camera.y - (center_y - my)) // 32
-
-            x, y = game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
-            self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2 + (camera_x < 0), y - camera_y + game.height // 2 + (camera_y < 0)
+            wx, wy = (round(game.camera.x) - (center_x - mx)) // 32, (round(game.camera.y) - (center_y - my)) // 32
 
             selected_tile_x = int(wx + map_width // 2)
             selected_tile_y = int(wy + map_height // 2)
+
+            self.selected_tile_sx, self.selected_tile_sy = game.world.get_map().tile_to_screen_pos(
+                game, selected_tile_x, selected_tile_y
+            )
 
             if (selected_tile_x >= game.world.get_map().get_width_in_tiles() or selected_tile_x < 0
                     or selected_tile_y >= game.world.get_map().get_height_in_tiles() or selected_tile_y < 0):

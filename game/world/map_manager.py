@@ -180,13 +180,12 @@ class Map:
         """
         return tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y
 
-    @staticmethod
-    def tile_to_screen_pos(game, tile_x: int, tile_y: int) -> tuple[int, int]:
+    def tile_to_screen_pos(self, game, tile_x: int, tile_y: int) -> tuple[int, int]:
         """
         Return the screen position of a tile position.
         """
-        screen_x, screen_y = game.world.get_map().tile_to_world_pos(tile_x, tile_y)
-        return screen_x - game.camera.x + game.width // 2, screen_y - game.camera.y + game.height // 2
+        world_x, world_y = self.tile_to_world_pos(tile_x, tile_y)
+        return round(world_x - game.camera.x + game.width // 2), round(world_y - game.camera.y + game.height // 2)
 
     def set_tile(self, tile_x: int, tile_y: int, tile: Tile) -> Self:
         """
