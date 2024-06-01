@@ -19,7 +19,7 @@ Currently in-development.
 
 ## Setup
 
-> Before installing the necessary modules, it is recommended to set up a virtual environment. This allows for a clean workspace and avoids installing packages to your actual environment.
+> Before installing the necessary modules, it is recommended to set up a virtual environment. This allows for a clean workspace and avoids installing packages to your global environment.
 
 Set up a new virtual environment. For the sake of conventions, we'll call ours `venv`:
 
