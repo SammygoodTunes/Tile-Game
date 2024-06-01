@@ -1,4 +1,5 @@
 
+from math import ceil
 from pygame import SRCALPHA, Surface
 from random import randint, seed
 from threading import Thread, Event
@@ -185,7 +186,7 @@ class Map:
         Return the screen position of a tile position.
         """
         world_x, world_y = self.tile_to_world_pos(tile_x, tile_y)
-        return round(world_x - game.camera.x + game.width // 2), round(world_y - game.camera.y + game.height // 2)
+        return int(game.width // 2 + world_x - int(game.camera.x)), int(game.height // 2 + world_y - int(game.camera.y))
 
     def set_tile(self, tile_x: int, tile_y: int, tile: Tile) -> Self:
         """

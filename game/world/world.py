@@ -46,8 +46,8 @@ class World:
         Draw the world (map, tiles, etc.).
         """
         _, _, width, height = game.screen.get_rect()
-        true_x = width / 2 - round(game.camera.x) + self._map.get_x()
-        true_y = height / 2 - round(game.camera.y) + self._map.get_y()
+        true_x = width // 2 - int(game.camera.x) + self._map.get_x()
+        true_y = height // 2 - int(game.camera.y) + self._map.get_y()
 
         # Culling applied
         '''
