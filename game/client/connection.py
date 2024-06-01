@@ -109,9 +109,11 @@ class Connection:
         Any errors or failures will raise specific exceptions.
         """
         if self.state == ConnectionStates.SUCCESS:
-            print('Disconnecting from server.')
-            self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
-            self.state = ConnectionStates.IDLE
+            try:
+                print('Disconnecting from server.')
+                self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
+            except (ConnectionResetError, BrokenPipeError):
+                self.state = ConnectionStates.IDLE
 
     def update(self):
         """
