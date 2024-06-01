@@ -112,6 +112,30 @@ class Game(Window):
         Return the state of the game's debug mode.
         """
         return self._debug
+
+    def crash(self, traceback: str) -> None:
+        """
+        Initiate crash screen and stop any running process.
+        Loop until user decides to quit the application.
+        """
+        self.stop()
+        self.screens.crash_screen.set_state(True)
+        self.screens.crash_screen.traceback_label.set_text(traceback)
+        self.screens.crash_screen.update_ui()
+        running = True
+        while running:
+            self.screen.fill((0, 0, 0))
+            for e in pygame.event.get():
+                if e.type == pygame.QUIT:
+                    running = False
+                if e.type == pygame.VIDEORESIZE:
+                    self.resize(e)
+                    self.screens.crash_screen.update_ui()
+                    continue
+                if e.type == pygame.VIDEOEXPOSE:
+                    self.screens.crash_screen.update_ui()
+            self.screens.crash_screen.draw()
+            self.tick()
     
     def stop(self) -> None:
         """

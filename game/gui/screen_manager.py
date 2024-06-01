@@ -4,6 +4,7 @@ import pygame
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
 from game.data.states import MouseStates, ServerStates, ConnectionStates
+from game.gui.screens.crash_screen import CrashScreen
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
 from game.gui.screens.loading_screen import LoadingScreen
@@ -27,6 +28,7 @@ class Screens:
         self.window = window
         self.game = None
         self.screen = self.window.screen
+        self.crash_screen = CrashScreen(window)
         self.main_menu_screen = MainMenuScreen(window)
         self.server_menu_screen = ServerMenuScreen(window)
         self.server_join_screen = ServerJoinScreen(window)
@@ -196,6 +198,7 @@ class Screens:
         """
         Update the screens.
         """
+        self.crash_screen.draw()
         self.main_menu_screen.draw()
         self.server_menu_screen.draw()
         self.server_join_screen.draw()
@@ -212,6 +215,7 @@ class Screens:
         """
         Update the screen UIs.
         """
+        self.crash_screen.update_ui()
         self.main_menu_screen.update_ui()
         self.server_menu_screen.update_ui()
         self.server_join_screen.update_ui()

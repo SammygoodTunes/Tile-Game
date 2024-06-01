@@ -10,6 +10,7 @@ Art: Pickmonde, SammygoodTunes
 
 import faulthandler
 from pygame import init, quit, display
+from traceback import format_exc
 
 from game.core.game import Game
 from game.utils.logger import logger
@@ -27,8 +28,11 @@ def main() -> None:
     height: int = width // 12 * 8
     game: Game = Game(width, height)
 
-    while game.is_running():
-        game.update()
+    try:
+        while game.is_running():
+            game.update()
+    except Exception:
+        game.crash(format_exc())
 
     quit()
 

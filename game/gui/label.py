@@ -36,12 +36,14 @@ class Label(Widget):
         """
         Draw the label and its components.
         """
-        text_shadow = self.font.render(self._text, self._antialiasing, self._shadow_colour)
-        text_shadow.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
-        text = self.font.render(self._text, self._antialiasing, self._colour)
-        text.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
-        screen.blit(text_shadow, (self._shadow_x, self._shadow_y), special_flags=BLEND_ALPHA_SDL2)
-        screen.blit(text, (self._x, self._y), special_flags=BLEND_ALPHA_SDL2)
+        lines = self._text.split('\n')
+        for i, line in enumerate(lines):
+            text_shadow = self.font.render(line, self._antialiasing, self._shadow_colour)
+            text_shadow.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
+            text = self.font.render(line, self._antialiasing, self._colour)
+            text.set_alpha(int(math.clamp(255 * self._transparency, 0, 255)))
+            screen.blit(text_shadow, (self._shadow_x, self._shadow_y + (i * self.get_total_height())), special_flags=BLEND_ALPHA_SDL2)
+            screen.blit(text, (self._x, self._y + (i * self.get_total_height())), special_flags=BLEND_ALPHA_SDL2)
 
     def update(self, window) -> None:
         """
