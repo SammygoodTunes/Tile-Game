@@ -128,12 +128,15 @@ class Player:
             x, y = game.world.get_map().tile_to_world_pos(wx + map_width // 2, wy + map_height // 2)
             self.selected_tile_sx, self.selected_tile_sy = x - camera_x + game.width // 2 + (camera_x < 0), y - camera_y + game.height // 2 + (camera_y < 0)
 
-            self.selected_tile_x = int(wx + map_width // 2)
-            self.selected_tile_y = int(wy + map_height // 2)
+            selected_tile_x = int(wx + map_width // 2)
+            selected_tile_y = int(wy + map_height // 2)
 
-            if (self.selected_tile_x >= game.world.get_map().get_width_in_tiles() or self.selected_tile_x < 0
-                    or self.selected_tile_y >= game.world.get_map().get_height_in_tiles() or self.selected_tile_y < 0):
+            if (selected_tile_x >= game.world.get_map().get_width_in_tiles() or selected_tile_x < 0
+                    or selected_tile_y >= game.world.get_map().get_height_in_tiles() or selected_tile_y < 0):
                 return
+
+            self.selected_tile_x = selected_tile_x
+            self.selected_tile_y = selected_tile_y
 
             if self.has_selected_breakable(game.world.get_map()) and not self.is_selected_breakable_obstructed(game.world.get_map()):
                 colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
