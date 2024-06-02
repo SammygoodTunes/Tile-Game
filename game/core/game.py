@@ -53,7 +53,6 @@ class Game(Window):
                         round(10 * sin(ticks / 2500) + 80),
                         150))
         self.connection_handler.update(self)
-        self.server.update()
         self.all_events()
         self.screens.update()
         self.draw_fps() 
@@ -106,12 +105,6 @@ class Game(Window):
         Return the running state of the game.
         """
         return self._running
-
-    def is_debug_mode_enabled(self) -> bool:
-        """
-        Return the state of the game's debug mode.
-        """
-        return self._debug
 
     def crash(self, traceback: str) -> None:
         """

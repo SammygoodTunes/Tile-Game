@@ -1,6 +1,7 @@
 
 from pygame.math import lerp, clamp
 from pygame.draw import rect
+from typing import Self
 
 from game.data.properties import ServerProperties
 from game.gui.label import Label
@@ -12,14 +13,20 @@ class PlayerManager:
     Class for handling server players.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.players = list()
 
-    def set_players(self, players: list):
+    def set_players(self, players: list) -> Self:
+        """
+        Set the players list and return the player manager itself.
+        """
         self.players = players
         return self
 
-    def draw_players(self, player_name: str, delta: float, game):
+    def draw_players(self, player_name: str, delta: float, game) -> None:
+        """
+        Draw to the screen each player present in the players list.
+        """
         for player in self.players:
             if player['name'] != player_name:
                 player['lerp'] = round(clamp(player['lerp'] + delta / (1 / ServerProperties.TICKS_PER_SECOND), 0.0, 1.0), 3)

@@ -7,16 +7,16 @@ class WorldHandler:
     Class for a creating the world handler.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self._world: World = World()
 
-    def create_world(self):
+    def create_world(self) -> None:
         """
         Create a new server world.
         """
         self._world.create()
 
-    def get_world(self):
+    def get_world(self) -> World:
         """
         Return the world object.
         """

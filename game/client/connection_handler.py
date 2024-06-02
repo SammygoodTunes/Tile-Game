@@ -8,14 +8,17 @@ class ConnectionHandler:
     Class for creating the connection handler.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.start_connection = False
         self.stop_connection = False
         self.host = None
         self.port = None
         self.connection: Connection | None = None
 
-    def update(self, game):
+    def update(self, game) -> None:
+        """
+        Keep track of the connection state.
+        """
         if self.start_connection:
             self.start_connection = False
             self.connection = Connection(
@@ -51,5 +54,9 @@ class ConnectionHandler:
             game.screens.pause_screen.set_state(False)
             game.screens.server_connect_screen.set_state(True)
 
-    def draw_other_players(self, game, delta):
+    def draw_other_players(self, game, delta) -> None:
+        """
+        Display all other server players.
+        We don't draw the main player as it is redundant.
+        """
         self.connection.player_manager.draw_players(game.player.get_player_name(), delta, game)

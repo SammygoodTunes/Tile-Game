@@ -37,7 +37,7 @@ class OptionsScreen(Screen):
         surface.set_alpha(ScreenProperties.ALPHA)
         return surface
 
-    def events(self, e: Event):
+    def events(self, e: Event) -> None:
         """
         Track the screen events.
         """

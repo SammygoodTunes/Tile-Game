@@ -9,10 +9,16 @@ class Tasks:
 
     @staticmethod
     def disconnection(data: bytes) -> bool:
+        """
+        Task for disconnecting a player.
+        """
         return data and data == Hasher.enhash(Protocol.DISCONNECT_REQ)
 
     @staticmethod
     def recognition(conn, addr) -> bool:
+        """
+        Task for checking for player authenticity.
+        """
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.RECOGNITION_REQ):
             print(f'Sending recognition message to {addr}')
@@ -22,6 +28,9 @@ class Tasks:
 
     @staticmethod
     def map_data(conn, addr, world_handler) -> None:
+        """
+        Task for sending map data to a client.
+        """
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.MAPDATA_REQ):
             print(f'Sending map to {addr}')
@@ -34,6 +43,9 @@ class Tasks:
 
     @staticmethod
     def send_game_state(conn, player_handler) -> None:
+        """
+        Task for sending the overall game state to a client.
+        """
         conn.send(Hasher.enhash(Protocol.GAMEUPDATE_RES))
         compressed_players_obj = Compressor.compress(player_handler.get_players())
         conn.send(compressed_players_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_players_obj) % Protocol.BUFFER_SIZE))
@@ -41,6 +53,9 @@ class Tasks:
 
     @staticmethod
     def player_update(conn, player_handler, data: bytes) -> str:
+        """
+        Task for receiving a client's player data.
+        """
         if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_REQ):
             conn.send(Hasher.enhash(Protocol.PLAYERUPDATE_RES))
             compressed_player_obj = b''

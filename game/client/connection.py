@@ -28,7 +28,7 @@ class Connection:
     Class for creating a server connection.
     """
 
-    def __init__(self, host: str, port: int):
+    def __init__(self, host: str, port: int) -> None:
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.settimeout(30.0)
         self.sock.setblocking(True)
@@ -115,7 +115,7 @@ class Connection:
             except (ConnectionResetError, BrokenPipeError):
                 self.state = ConnectionStates.IDLE
 
-    def update(self):
+    def update(self) -> None:
         """
         Update and verify the connection every so often.
         """
@@ -145,7 +145,7 @@ class Connection:
             except OSError:
                 self.state = ConnectionStates.DISCONNECTED
 
-    def start(self, task: Tasks):
+    def start(self, task: Tasks) -> None:
         connection_thread: Thread = Thread()
         if task == Tasks.CONNECT:
             connection_thread = Thread(target=self.connect)

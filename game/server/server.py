@@ -11,8 +11,7 @@ from game.network.packet import Hasher, Compressor
 from game.server.player_handler import PlayerHandler
 from game.server.tasks import Tasks
 from game.server.world_handler import WorldHandler
-
-# logger = logging.getLogger(__name__)
+from game.utils.logger import logger
 
 
 class Server:
@@ -20,7 +19,7 @@ class Server:
     Class for creating a new Server.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.state = Value('i', ServerStates.IDLE)
         self.player_count = 0
         self.sock: socket.socket | None = None
@@ -28,7 +27,7 @@ class Server:
         self.world_handler: WorldHandler | None = None
         self.player_handler: PlayerHandler | None = None
 
-    def client_handler(self, conn, addr):
+    def client_handler(self, conn, addr) -> None:
         """
         Handle incoming server clients.
         """
@@ -66,24 +65,12 @@ class Server:
         self.player_count -= 1
         conn.close()
 
-    def update(self):
-        pass
-
-    def run(self, state):
+    def run(self, state) -> None:
         """
         Run the server and listen for connections.
         """
         self.world_handler = WorldHandler()
         self.player_handler = PlayerHandler()
-
-        '''logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s [%(threadName)s] [%(levelname)s] - %(message)s',
-            handlers=[
-                logging.FileHandler(path.join(get_game_property(LOG_DIR), strftime('%d-%m-%Y-%H-%M-%S.log'))),
-                logging.StreamHandler(sys.stdout)
-            ]
-        )'''
 
         # Only IPv4 support for now
         # TODO: Add support for IPv6
@@ -98,7 +85,7 @@ class Server:
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()
 
-    def start(self):
+    def start(self) -> None:
         """
         Prepare the server.
         """
@@ -120,18 +107,25 @@ class Server:
         server_thread = Process(target=self.run, args=(self.state,))
         server_thread.start()
 
-    def stop(self):
+    def stop(self) -> None:
+        """
+        Stop the server if it's running, otherwise don't do anything.
+        """
         if self.state.value in (ServerStates.STARTING, ServerStates.RUNNING):
             self.sock.close()
             self.state.value = ServerStates.IDLE
             self.test()
             self.test()
-            print(f'Server closed.')
+            logger.info('Server closed.')
             self.sock = None
             self.world_handler = None
 
     @staticmethod
     def test():
+        """
+        Attempt to connect and send data to the server.
+        This is used after the server's closure to make sure it doesn't still think it's open; it's odd I know.
+        """
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((socket.gethostbyname(socket.gethostname()), 35000))

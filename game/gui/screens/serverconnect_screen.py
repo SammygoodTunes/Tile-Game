@@ -52,7 +52,7 @@ class ServerConnectScreen(Screen):
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
                                             self.back_button.get_height())
 
-    def update_info_label(self, code: int):
+    def update_info_label(self, code: int) -> None:
         """
         Update info label's text and colour based on received connection code, then update the screen UI.
         """
@@ -83,7 +83,10 @@ class ServerConnectScreen(Screen):
         self.back_button.set_state(code >= 0)
         self.update_ui()
 
-    def reset_info_label(self):
+    def reset_info_label(self) -> None:
+        """
+        Reset the information label back to its default state, then update the screen UI.
+        """
         self.info_label.set_text('Connecting to server...').set_colour((255, 255, 0))
         self.update_ui()
 
