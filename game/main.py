@@ -38,6 +38,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    logger.debug('Starting game...')
+    logger.info('Starting game...')
     main()
-    logger.debug('Closing game...')
+    logger.info('Closing game...')
