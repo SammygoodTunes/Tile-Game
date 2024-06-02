@@ -29,7 +29,7 @@ class Slot(Widget):
         self._outline_width = 3
         self._inner_width = 3
         self._fill_alpha = 100
-        self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
+        self._fill_surface = Surface((self._width - 4, self._height - 4), SRCALPHA, 32).convert_alpha()
         self._item: Item | None = None
         self._item_asset: Surface | None = None
         self._item_count = 0
@@ -43,9 +43,9 @@ class Slot(Widget):
         """
         fill_colour = (60, 40, 210) if self._selected else self._fill_colour
         inner_colour = self._inner_colour if self._selected else (128, 128, 128)
-        self._fill_surface.fill(fill_colour, (0, 0, self._width, self._height))
+        self._fill_surface.fill(fill_colour, (0, 0, self._width - 4, self._height - 4))
         self._fill_surface.set_alpha(self._fill_alpha)
-        screen.blit(self._fill_surface, (self._x, self._y, self._width, self._height))
+        screen.blit(self._fill_surface, (self._x + 2, self._y + 2, self._width - 4, self._height - 4))
 
         if self._item_asset is not None:
             item_asset = scale(self._item_asset, (self._width - 12, self._height - 12))
@@ -53,17 +53,17 @@ class Slot(Widget):
 
         rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
         rect(screen, inner_colour, (
-                                            self._x + self._outline_width - 1,
-                                            self._y + self._outline_width - 1,
-                                            self._width - self._outline_width - 1,
-                                            self._height - self._outline_width - 1
-                                        ), self._inner_width, 4)
+                                        self._x + self._outline_width - 1,
+                                        self._y + self._outline_width - 1,
+                                        self._width - self._outline_width - 1,
+                                        self._height - self._outline_width - 1
+                                    ), self._inner_width, 4)
         rect(screen, self._outline_colour, (
-                                                    self._x + self._outline_width - 1 + self._inner_width - 1,
-                                                    self._y + self._outline_width - 1 + self._inner_width - 1,
-                                                    self._width - self._outline_width - 1 - self._inner_width - 1,
-                                                    self._height - self._outline_width - 1 - self._inner_width - 1
-                                                ), self._outline_width, 4)
+                                                self._x + self._outline_width - 1 + self._inner_width - 1,
+                                                self._y + self._outline_width - 1 + self._inner_width - 1,
+                                                self._width - self._outline_width - 1 - self._inner_width - 1,
+                                                self._height - self._outline_width - 1 - self._inner_width - 1
+                                            ), self._outline_width, 4)
 
     def update(self, window) -> Self:
         """
