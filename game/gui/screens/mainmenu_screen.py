@@ -15,6 +15,7 @@ class MainMenuScreen(Screen):
 		super().__init__()
 		self.window = window
 		self.title_label = Label(data_mng.get_game_property(data_mng.APP_NAME).strip()).set_font_sizes((15, 30, 50)).set_colour((200, 200, 255))
+		self.version_label = Label(f'v{data_mng.get_game_property(data_mng.APP_VERSION).strip()}').set_font_sizes((8, 10, 12)).set_colour((255, 255, 10))
 		self.play_button = Button("Play")
 		self.options_button = Button("Options")
 		self.credits_button = Button("Credits")
@@ -28,6 +29,7 @@ class MainMenuScreen(Screen):
 		"""
 		if self._enabled:
 			self.title_label.draw(self.window.screen)
+			self.version_label.draw(self.window.screen)
 			self.play_button.draw(self.window.screen)
 			self.options_button.draw(self.window.screen)
 			self.credits_button.draw(self.window.screen)
@@ -39,6 +41,8 @@ class MainMenuScreen(Screen):
 		"""
 		self.title_label.update(self.window)
 		self.title_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.title_label.get_total_height())
+		self.version_label.update(self.window)
+		self.version_label.set_x(4).set_y(self.window.height - self.version_label.get_total_height())
 		self.play_button.update(self.window)
 		self.play_button.center(0, 0, self.window.width, self.window.height)
 		self.options_button.update(self.window)
@@ -54,6 +58,7 @@ class MainMenuScreen(Screen):
 		"""
 		super().set_state(state)
 		self.title_label.set_state(state)
+		self.version_label.set_state(state)
 		self.play_button.set_state(state)
 		self.options_button.set_state(state)
 		self.credits_button.set_state(state)

@@ -1,6 +1,7 @@
 
 from pygame.surface import Surface
 
+from game.data.data_manager import get_game_property, APP_VERSION
 from game.gui.button import Button
 from game.gui.hotbar import Hotbar
 from game.gui.label import Label
@@ -18,6 +19,8 @@ class MainHud(Screen):
         super().__init__()
         self.game = game
         self.surface = Surface((self.game.width, self.game.height))
+        self.version_label = Label(f'v{get_game_property(APP_VERSION).strip()}').set_font_sizes(
+            (8, 10, 12)).set_colour((255, 255, 10))
         self.score_label = Label()
         self.camera_label = Label()
         self.position_label = Label()
