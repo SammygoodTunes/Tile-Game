@@ -23,17 +23,15 @@
 </listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a02e42802c0a48b9cb365232c591f0a5b">unknown_args</link></para>
 </listitem>
-            <listitem><para>str <link linkend="_namespaceutils_1_1logger_1ad13bcb368eba9e7d49962b616e28032a">_format</link> = &apos;\t%(levelname)s(%(name)s) - %(asctime)s\t%(message)s&apos;</para>
+            <listitem><para>str <link linkend="_namespaceutils_1_1logger_1a87b73234ff668db6538b29f53c0eb0bc">log_dir</link> = &apos;logs&apos;</para>
 </listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a16adff53781de382d87b57d8d9b6114a">level</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1ad5352baf15f1491c71b0ea34e2950d1c">DEBUG</link></para>
-</listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a0283d9a06121f6dad7bca42bbdd87c3f">format</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1a23d5a328d45c501aa17fa0d0904c65e4">INFO</link></para>
+            <listitem><para><link linkend="_namespaceutils_1_1logger_1a2b08573992c971d322617fdcd42c0b60">handlers</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d">logger</link> = logging.getLogger(&apos;&apos;)</para>
+            <listitem><para><link linkend="_namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d">logger</link> = logging.getLogger(__file__)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -45,11 +43,6 @@
 </section>
 <section>
 <title>Variable Documentation</title>
-<anchor xml:id="_namespaceutils_1_1logger_1ad13bcb368eba9e7d49962b616e28032a"/><section>
-    <title>_format</title>
-<indexterm><primary>_format</primary><secondary>utils.logger</secondary></indexterm>
-<indexterm><primary>utils.logger</primary><secondary>_format</secondary></indexterm>
-<para><computeroutput>str utils.logger._format = &apos;\t%(levelname)s(%(name)s) - %(asctime)s\t%(message)s&apos;<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1a0385cbe58884f42e1edb3b3ddbe71228"/><section>
     <title>action</title>
 <indexterm><primary>action</primary><secondary>utils.logger</secondary></indexterm>
@@ -65,11 +58,6 @@
 <indexterm><primary>bool</primary><secondary>utils.logger</secondary></indexterm>
 <indexterm><primary>utils.logger</primary><secondary>bool</secondary></indexterm>
 <para><computeroutput>utils.logger.bool</computeroutput></para></section>
-<anchor xml:id="_namespaceutils_1_1logger_1ad5352baf15f1491c71b0ea34e2950d1c"/><section>
-    <title>DEBUG</title>
-<indexterm><primary>DEBUG</primary><secondary>utils.logger</secondary></indexterm>
-<indexterm><primary>utils.logger</primary><secondary>DEBUG</secondary></indexterm>
-<para><computeroutput>utils.logger.DEBUG</computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1aa98662d828f374539b8dfa934ac83524"/><section>
     <title>default</title>
 <indexterm><primary>default</primary><secondary>utils.logger</secondary></indexterm>
@@ -85,26 +73,31 @@
 <indexterm><primary>format</primary><secondary>utils.logger</secondary></indexterm>
 <indexterm><primary>utils.logger</primary><secondary>format</secondary></indexterm>
 <para><computeroutput>utils.logger.format</computeroutput></para></section>
+<anchor xml:id="_namespaceutils_1_1logger_1a2b08573992c971d322617fdcd42c0b60"/><section>
+    <title>handlers</title>
+<indexterm><primary>handlers</primary><secondary>utils.logger</secondary></indexterm>
+<indexterm><primary>utils.logger</primary><secondary>handlers</secondary></indexterm>
+<para><computeroutput>utils.logger.handlers</computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1ae647d6593460573620d04594e21b8262"/><section>
     <title>help</title>
 <indexterm><primary>help</primary><secondary>utils.logger</secondary></indexterm>
 <indexterm><primary>utils.logger</primary><secondary>help</secondary></indexterm>
 <para><computeroutput>utils.logger.help</computeroutput></para></section>
-<anchor xml:id="_namespaceutils_1_1logger_1a23d5a328d45c501aa17fa0d0904c65e4"/><section>
-    <title>INFO</title>
-<indexterm><primary>INFO</primary><secondary>utils.logger</secondary></indexterm>
-<indexterm><primary>utils.logger</primary><secondary>INFO</secondary></indexterm>
-<para><computeroutput>utils.logger.INFO</computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1a16adff53781de382d87b57d8d9b6114a"/><section>
     <title>level</title>
 <indexterm><primary>level</primary><secondary>utils.logger</secondary></indexterm>
 <indexterm><primary>utils.logger</primary><secondary>level</secondary></indexterm>
 <para><computeroutput>utils.logger.level</computeroutput></para></section>
+<anchor xml:id="_namespaceutils_1_1logger_1a87b73234ff668db6538b29f53c0eb0bc"/><section>
+    <title>log_dir</title>
+<indexterm><primary>log_dir</primary><secondary>utils.logger</secondary></indexterm>
+<indexterm><primary>utils.logger</primary><secondary>log_dir</secondary></indexterm>
+<para><computeroutput>str utils.logger.log_dir = &apos;logs&apos;</computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d"/><section>
     <title>logger</title>
 <indexterm><primary>logger</primary><secondary>utils.logger</secondary></indexterm>
 <indexterm><primary>utils.logger</primary><secondary>logger</secondary></indexterm>
-<para><computeroutput>utils.logger.logger = logging.getLogger(&apos;&apos;)</computeroutput></para></section>
+<para><computeroutput>utils.logger.logger = logging.getLogger(__file__)</computeroutput></para></section>
 <anchor xml:id="_namespaceutils_1_1logger_1a6f1c8cb3fb3c23859fec24f9c6fb25d6"/><section>
     <title>parser</title>
 <indexterm><primary>parser</primary><secondary>utils.logger</secondary></indexterm>

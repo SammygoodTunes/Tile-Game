@@ -1,8 +1,8 @@
 var classplayer__handler_1_1PlayerHandler =
 [
-    [ "__init__", "classplayer__handler_1_1PlayerHandler.html#af648c1cc0332b6385950ab851661f8f5", null ],
-    [ "get_players", "classplayer__handler_1_1PlayerHandler.html#ad76357732c7125dbe922e29e38b24c7d", null ],
+    [ "__init__", "classplayer__handler_1_1PlayerHandler.html#acc8cb1f51af5ece8ea509259fa29ce15", null ],
+    [ "get_players", "classplayer__handler_1_1PlayerHandler.html#af825dc85951c8114ec031f8cac54458d", null ],
     [ "track_player", "classplayer__handler_1_1PlayerHandler.html#af93f4adaac9ff092edc78122bd4b783b", null ],
-    [ "untrack_player", "classplayer__handler_1_1PlayerHandler.html#adad31e9dd9ee8d1d9de9345365b9e09e", null ],
-    [ "update_player", "classplayer__handler_1_1PlayerHandler.html#a6ddf7eeae0a39d76a561e02ec57744d6", null ]
+    [ "untrack_player", "classplayer__handler_1_1PlayerHandler.html#aa7b0692083c7f2655a4e8b74764e6811", null ],
+    [ "update_player", "classplayer__handler_1_1PlayerHandler.html#a5aa9ebbbe7ad594d11c9eeca29ed7ab9", null ]
 ];

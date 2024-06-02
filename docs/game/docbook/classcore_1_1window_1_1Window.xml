@@ -51,7 +51,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classcore_1_1window_1_1Window_1a9561c3b8721a421572fdaf342451fd45">FONT_PATH</link> = impr.files(assets) / &quot;font.ttf&quot;</para>
+            <listitem><para>str <link linkend="_classcore_1_1window_1_1Window_1a9561c3b8721a421572fdaf342451fd45">FONT_PATH</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -127,7 +127,7 @@
     <title>FONT_PATH</title>
 <indexterm><primary>FONT_PATH</primary><secondary>core.window.Window</secondary></indexterm>
 <indexterm><primary>core.window.Window</primary><secondary>FONT_PATH</secondary></indexterm>
-<para><computeroutput>str core.window.Window.FONT_PATH = impr.files(assets) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str core.window.Window.FONT_PATH = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classcore_1_1window_1_1Window_1a8c6963730828d030536d17c016ce5100"/><section>
     <title>fps_cap</title>
 <indexterm><primary>fps_cap</primary><secondary>core.window.Window</secondary></indexterm>

@@ -55,10 +55,10 @@ var NAVTREEINDEX =
 "classentity_1_1player_1_1Player.html#a47dd02c36e0afc9bb320ce3afef8abe3",
 "classgui_1_1horizontal__slider_1_1HorizontalSlider.html#acaa8d14d104af3f57bd37308321cd7c4",
 "classgui_1_1label_1_1Label.html#aca71cd48d34ff8364ba522025b4ad56c",
-"classgui_1_1screens_1_1main__hud_1_1MainHud.html#a28f87dfe39a2430500bc9f03cede6d82",
-"classgui_1_1slot_1_1Slot.html#a1b1c8535d945415ff7c19b83013d8288",
-"classworld_1_1map__manager_1_1Map.html#ab6cfab3e51e3ccf6243d4d43f214e278",
-"namespaceclient_1_1connection.html"
+"classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html#a1c86b08e0cf8d055314c6da547628a23",
+"classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html#a94e0525162f93858f1945588141e407d",
+"classworld_1_1map__manager_1_1Map.html#a53b89b13ce52b571e4198c5a11a65ae0",
+"loading__screen_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

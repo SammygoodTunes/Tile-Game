@@ -3,9 +3,9 @@
   <compounddef id="classworld__handler_1_1WorldHandler" kind="class" language="Python" prot="public">
     <compoundname>world_handler::WorldHandler</compoundname>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1aaa385917f3414f6a4c9ee2d219776642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world_handler.WorldHandler.__init__</definition>
+      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None world_handler.WorldHandler.__init__</definition>
         <argsstring>(self)</argsstring>
         <name>__init__</name>
         <qualifiedname>world_handler.WorldHandler.__init__</qualifiedname>
@@ -21,9 +21,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" bodystart="10" bodyend="12"/>
       </memberdef>
-      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world_handler.WorldHandler.create_world</definition>
+      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None world_handler.WorldHandler.create_world</definition>
         <argsstring>(self)</argsstring>
         <name>create_world</name>
         <qualifiedname>world_handler.WorldHandler.create_world</qualifiedname>
@@ -41,9 +41,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" bodystart="13" bodyend="18"/>
       </memberdef>
-      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>world_handler.WorldHandler.get_world</definition>
+      <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>World</type>
+        <definition> World world_handler.WorldHandler.get_world</definition>
         <argsstring>(self)</argsstring>
         <name>get_world</name>
         <qualifiedname>world_handler.WorldHandler.get_world</qualifiedname>
@@ -70,9 +70,9 @@
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" bodystart="5" bodyend="24"/>
     <listofallmembers>
-      <member refid="classworld__handler_1_1WorldHandler_1aaa385917f3414f6a4c9ee2d219776642" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>__init__</name></member>
-      <member refid="classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>create_world</name></member>
-      <member refid="classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>get_world</name></member>
+      <member refid="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>__init__</name></member>
+      <member refid="classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>create_world</name></member>
+      <member refid="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" prot="public" virt="non-virtual"><scope>world_handler::WorldHandler</scope><name>get_world</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

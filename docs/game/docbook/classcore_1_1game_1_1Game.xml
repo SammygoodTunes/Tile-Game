@@ -25,7 +25,7 @@
 </listitem>
             <listitem><para>bool <link linkend="_classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49">is_running</link> (self)</para>
 </listitem>
-            <listitem><para>bool <link linkend="_classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a">is_debug_mode_enabled</link> (self)</para>
+            <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1acc32f64c73cc86f99340e6f720440df0">crash</link> (self, str traceback)</para>
 </listitem>
             <listitem><para>None <link linkend="_classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642">stop</link> (self)</para>
 </listitem>
@@ -73,12 +73,13 @@
 <para><literallayout><computeroutput>Verify for any potential pygame events and update the targeted elements accordingly.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a"/><section>
-    <title>is_debug_mode_enabled()</title>
-<indexterm><primary>is_debug_mode_enabled</primary><secondary>core.game.Game</secondary></indexterm>
-<indexterm><primary>core.game.Game</primary><secondary>is_debug_mode_enabled</secondary></indexterm>
-<para><computeroutput> bool core.game.Game.is_debug_mode_enabled ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the state of the game&apos;s debug mode.
+<anchor xml:id="_classcore_1_1game_1_1Game_1acc32f64c73cc86f99340e6f720440df0"/><section>
+    <title>crash()</title>
+<indexterm><primary>crash</primary><secondary>core.game.Game</secondary></indexterm>
+<indexterm><primary>core.game.Game</primary><secondary>crash</secondary></indexterm>
+<para><computeroutput> None core.game.Game.crash ( self, str traceback)</computeroutput></para>
+<para><literallayout><computeroutput>Initiate crash screen and stop any running process.
+Loop until user decides to quit the application.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49"/><section>

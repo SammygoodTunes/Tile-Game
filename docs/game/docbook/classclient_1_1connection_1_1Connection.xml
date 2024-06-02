@@ -5,15 +5,15 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3">__init__</link> (self, str <link linkend="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a">host</link>, int <link linkend="_classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829">port</link>)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772">__init__</link> (self, str <link linkend="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a">host</link>, int <link linkend="_classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829">port</link>)</para>
 </listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6">connect</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1">disconnect</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a0ee31fb242c4854ed7009f2bb5a4498a">update</link> (self)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454">update</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a49cf3ee5b5378722e4fad69adfb9d0e0">start</link> (self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c">start</link> (self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -44,11 +44,11 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3"/><section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.__init__ ( self, str host, int port)</computeroutput></para></section>
+<para><computeroutput> None client.connection.Connection.__init__ ( self, str host, int port)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -70,16 +70,16 @@ Any errors or failures will raise specific exceptions.
 Any errors or failures will raise specific exceptions.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a49cf3ee5b5378722e4fad69adfb9d0e0"/><section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c"/><section>
     <title>start()</title>
 <indexterm><primary>start</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>start</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.start ( self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a0ee31fb242c4854ed7009f2bb5a4498a"/><section>
+<para><computeroutput> None client.connection.Connection.start ( self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.update ( self)</computeroutput></para>
+<para><computeroutput> None client.connection.Connection.update ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update and verify the connection every so often.
 </computeroutput></literallayout> </para>
 </section>

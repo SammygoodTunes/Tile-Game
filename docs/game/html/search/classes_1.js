@@ -6,5 +6,6 @@ var searchData=
   ['connection_3',['Connection',['../classclient_1_1connection_1_1Connection.html',1,'client::connection']]],
   ['connectionhandler_4',['ConnectionHandler',['../classclient_1_1connection__handler_1_1ConnectionHandler.html',1,'client::connection_handler']]],
   ['connectionstates_5',['ConnectionStates',['../classdata_1_1states_1_1ConnectionStates.html',1,'data::states']]],
-  ['creditsscreen_6',['CreditsScreen',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html',1,'gui::screens::credits_screen']]]
+  ['crashscreen_6',['CrashScreen',['../classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html',1,'gui::screens::crash_screen']]],
+  ['creditsscreen_7',['CreditsScreen',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html',1,'gui::screens::credits_screen']]]
 ];

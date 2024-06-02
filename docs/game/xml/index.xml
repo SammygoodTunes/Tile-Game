@@ -77,11 +77,11 @@
     <member refid="classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482" kind="variable"><name>player_manager</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20" kind="variable"><name>recv_player_update</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45" kind="variable"><name>data</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a9d0f51025249e39c0179a773bfc3cae3" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772" kind="function"><name>__init__</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6" kind="function"><name>connect</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1" kind="function"><name>disconnect</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a0ee31fb242c4854ed7009f2bb5a4498a" kind="function"><name>update</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a49cf3ee5b5378722e4fad69adfb9d0e0" kind="function"><name>start</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454" kind="function"><name>update</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c" kind="function"><name>start</name></member>
   </compound>
   <compound refid="classclient_1_1connection__handler_1_1ConnectionHandler" kind="class"><name>client::connection_handler::ConnectionHandler</name>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a66d231003c1ec24a06cf4a6aef863458" kind="variable"><name>start_connection</name></member>
@@ -89,9 +89,9 @@
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba" kind="variable"><name>host</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19" kind="variable"><name>port</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" kind="variable"><name>connection</name></member>
-    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" kind="function"><name>__init__</name></member>
-    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" kind="function"><name>update</name></member>
-    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a056aff561ca485cda4783d77e1d5eeac" kind="function"><name>draw_other_players</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a400024b267f4fc923aa43c8179f4fbee" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b" kind="function"><name>update</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a2e7b8060ab9979072aae5a367fb42ae9" kind="function"><name>draw_other_players</name></member>
   </compound>
   <compound refid="classdata_1_1states_1_1ConnectionStates" kind="class"><name>data::states::ConnectionStates</name>
     <member refid="classdata_1_1states_1_1ConnectionStates_1a8879529ab2a94e4e8575e7e8d622574f" kind="variable"><name>IDLE</name></member>
@@ -106,6 +106,17 @@
     <member refid="classdata_1_1states_1_1ConnectionStates_1ae4e2bd7713cf7152417f300d183a83ea" kind="variable"><name>BADNAME</name></member>
     <member refid="classdata_1_1states_1_1ConnectionStates_1af76ad321e357dab090d4e4877a2f7ba3" kind="variable"><name>ERROR</name></member>
     <member refid="classdata_1_1states_1_1ConnectionStates_1a52fa3b886bfd2b4d44ad19de24628469" kind="variable"><name>SERVFAIL</name></member>
+  </compound>
+  <compound refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen" kind="class"><name>gui::screens::crash_screen::CrashScreen</name>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad94ad231e3d194e7433ba2ef993bdd81" kind="variable"><name>window</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a9a880dfd23d8310c78f9f2e20b88938f" kind="variable"><name>surface</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a531796c0af516d54b2e57575dd383830" kind="variable"><name>crash_label</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1afbc339286855fb1528c4602fd2319be6" kind="variable"><name>traceback_label</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a42adf35cb62258af007c8b77962377d3" kind="function"><name>__init__</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad821e72a30ea7e04b9b1100fac9d61c4" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1adbd0851dc2e9a9c802901ce28779ef22" kind="function"><name>draw</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1abfdce45812a62f6d931312aed4cd768d" kind="function"><name>update_ui</name></member>
+    <member refid="classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a7a4761134ba5c223589a34a692b83fb5" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen" kind="class"><name>gui::screens::credits_screen::CreditsScreen</name>
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4d7306a3ca6a55212cd50bd35fc7d606" kind="variable"><name>window</name></member>
@@ -135,7 +146,7 @@
     <member refid="classcore_1_1game_1_1Game_1af1f689367961a3e94a7202fe7283f556" kind="function"><name>all_events</name></member>
     <member refid="classcore_1_1game_1_1Game_1a41a90447bd90d3f047d1d8668732bb39" kind="function"><name>update_all_uis</name></member>
     <member refid="classcore_1_1game_1_1Game_1ac3d64b9ca0a2370358763bf905b63d49" kind="function"><name>is_running</name></member>
-    <member refid="classcore_1_1game_1_1Game_1a48450d1df8c87cf9cc6883c88786f07a" kind="function"><name>is_debug_mode_enabled</name></member>
+    <member refid="classcore_1_1game_1_1Game_1acc32f64c73cc86f99340e6f720440df0" kind="function"><name>crash</name></member>
     <member refid="classcore_1_1game_1_1Game_1a91002bf67ff69209a07d2ff39a272642" kind="function"><name>stop</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen" kind="class"><name>gui::screens::gameover_screen::GameoverScreen</name>
@@ -337,8 +348,8 @@
     <member refid="classgui_1_1label_1_1Label_1a731cce01747ee245cdd61e74f5e66025" kind="variable"><name>_antialiasing</name></member>
     <member refid="classgui_1_1label_1_1Label_1a3059bb4e2f42cea99b967ffddf4c2146" kind="variable"><name>_transparency</name></member>
     <member refid="classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221" kind="variable"><name>_shadow_x</name></member>
-    <member refid="classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc" kind="variable"><name>_shadow_y</name></member>
     <member refid="classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74" kind="variable"><name>_x</name></member>
+    <member refid="classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc" kind="variable"><name>_shadow_y</name></member>
     <member refid="classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf" kind="variable"><name>_y</name></member>
     <member refid="classgui_1_1label_1_1Label_1a9feb1022dc22361a9b2e3c2a3081fc8d" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1label_1_1Label_1af46b5ace236ece8a1fd4d9b38ffe807e" kind="function"><name>draw</name></member>
@@ -386,6 +397,7 @@
   <compound refid="classgui_1_1screens_1_1main__hud_1_1MainHud" kind="class"><name>gui::screens::main_hud::MainHud</name>
     <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1a46f706ce332d82b36e81e89c4084e5ca" kind="variable"><name>game</name></member>
     <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1a103dfa4be5d703e426f9d87d5215304e" kind="variable"><name>surface</name></member>
+    <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1ad83dc14696f9691e625acdfbe65fc1da" kind="variable"><name>version_label</name></member>
     <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1a6816b1e75798357a96567f2ba222cfcf" kind="variable"><name>score_label</name></member>
     <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1a28f87dfe39a2430500bc9f03cede6d82" kind="variable"><name>camera_label</name></member>
     <member refid="classgui_1_1screens_1_1main__hud_1_1MainHud_1a608513dded223b48b21409f6c6e32b11" kind="variable"><name>position_label</name></member>
@@ -399,6 +411,7 @@
   <compound refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" kind="class"><name>gui::screens::mainmenu_screen::MainMenuScreen</name>
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a702cd034fea20f711692299cbfa326d0" kind="variable"><name>window</name></member>
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a33c40251e5c8ee78268dd560416de3b2" kind="variable"><name>title_label</name></member>
+    <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac665b184205c4e2cb2f87354bd33c51c" kind="variable"><name>version_label</name></member>
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1abaf7a85900f5e28912577b1afde4d1f6" kind="variable"><name>play_button</name></member>
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a1e40def2aab27436cfed6475bb6113c7" kind="variable"><name>options_button</name></member>
     <member refid="classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1ac7b6c147847ab9e50449ea31b601b7c2" kind="variable"><name>credits_button</name></member>
@@ -434,6 +447,7 @@
     <member refid="classworld_1_1map__manager_1_1Map_1a9a05cf8ef2769edb78ccf004c073a441" kind="function"><name>get_tile_pos</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a253d1d819068cf08836e28cd2e2f14be" kind="function"><name>get_strict_tile_pos</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a3aa9b82a7a4f5a8ae30ac6818aa9535f" kind="function"><name>tile_to_world_pos</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1a8e6d0f6af6fc63f97071d59967e58a1e" kind="function"><name>tile_to_screen_pos</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a406e46b444f631c620146164e9809dcf" kind="function"><name>set_tile</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ae597f285e50df73bb9dc7e4ed5e4c521" kind="function"><name>get_tile</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999" kind="function"><name>set_data</name></member>
@@ -455,7 +469,6 @@
     <member refid="classworld_1_1map__manager_1_1Map_1a51d05e3efe330c2aac66b6aae728a13f" kind="function"><name>get_height_in_pixels</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ac97ce61970efd47a7259c0305c69f963" kind="function"><name>get_surface</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ac6bcc533f8575e867df89cefdda3af82" kind="function"><name>get_dynatile_surface</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1a8b9f8333480325a0de941708c8c9fe0c" kind="function"><name>tile_to_screen_pos</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1map__screen_1_1MapScreen" kind="class"><name>gui::screens::map_screen::MapScreen</name>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" kind="variable"><name>game</name></member>
@@ -513,7 +526,7 @@
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad80c773113202a79c544dbf9f578a3ed" kind="variable"><name>_enabled</name></member>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a715e30b2b88e3396218a24ef392bbab4" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a71427e22384d8d0211d7e5e6a4e4ea8e" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac76d2471f9896983b6946ada6f8bbc8f" kind="function"><name>events</name></member>
+    <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a07f4b8b81f5ebca5b25cb1310b142408" kind="function"><name>events</name></member>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a121c4e9863310f4d0a0463d5e15973a7" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1cb47783b456a798f6b4444f5df4b090" kind="function"><name>update_ui</name></member>
     <member refid="classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1aeb7a8defb2fd8e67fac131116cba324c" kind="function"><name>set_state</name></member>
@@ -626,17 +639,17 @@
     <member refid="classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c" kind="function"><name>set_ideal_spawn_point</name></member>
   </compound>
   <compound refid="classplayer__handler_1_1PlayerHandler" kind="class"><name>player_handler::PlayerHandler</name>
-    <member refid="classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5" kind="function"><name>__init__</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15" kind="function"><name>__init__</name></member>
     <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" kind="function"><name>track_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6" kind="function"><name>update_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e" kind="function"><name>untrack_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d" kind="function"><name>get_players</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9" kind="function"><name>update_player</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" kind="function"><name>untrack_player</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" kind="function"><name>get_players</name></member>
   </compound>
   <compound refid="classclient_1_1player__manager_1_1PlayerManager" kind="class"><name>client::player_manager::PlayerManager</name>
     <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" kind="variable"><name>players</name></member>
-    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" kind="function"><name>__init__</name></member>
-    <member refid="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" kind="function"><name>set_players</name></member>
-    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" kind="function"><name>draw_players</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" kind="function"><name>set_players</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" kind="function"><name>draw_players</name></member>
   </compound>
   <compound refid="classdata_1_1properties_1_1PlayerProperties" kind="class"><name>data::properties::PlayerProperties</name>
     <member refid="classdata_1_1properties_1_1PlayerProperties_1a2797640a45b4e873b77d8a9c7486ba5d" kind="variable"><name>MAX_PLAYER_NAME_SIZE</name></member>
@@ -719,6 +732,7 @@
     <member refid="classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646" kind="variable"><name>window</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a760e728fd8477a60e00babf949c9f276" kind="variable"><name>game</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341" kind="variable"><name>screen</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1a7f9f2ac64100d470c0f8c2085e0d081a" kind="variable"><name>crash_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a5c9c71d40c9c04f17df2fd873b3397c6" kind="variable"><name>main_menu_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a01a4aeb84d05d2e9bdf1573353581510" kind="variable"><name>server_menu_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a2507ed22bdb1164d3ddb7a8475304ee8" kind="variable"><name>server_join_screen</name></member>
@@ -743,12 +757,11 @@
     <member refid="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" kind="variable"><name>world_handler</name></member>
     <member refid="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" kind="variable"><name>player_handler</name></member>
     <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" kind="variable"><name>sock</name></member>
-    <member refid="classserver_1_1Server_1ab327c6453df454a2dce379bbb043dc94" kind="function"><name>__init__</name></member>
-    <member refid="classserver_1_1Server_1af2abe324044a6775393bd35427e7800c" kind="function"><name>client_handler</name></member>
-    <member refid="classserver_1_1Server_1a8ade586e8db8330ccbd0e480de32252f" kind="function"><name>update</name></member>
-    <member refid="classserver_1_1Server_1ab65a1e55d75a270b3cdb91c02b6dfd7b" kind="function"><name>run</name></member>
-    <member refid="classserver_1_1Server_1a7712b83449d5e1ec1f2bb5c213e96e33" kind="function"><name>start</name></member>
-    <member refid="classserver_1_1Server_1a5a0c3ba67f389246cd2693b69218d569" kind="function"><name>stop</name></member>
+    <member refid="classserver_1_1Server_1a42ac00e97f8a10546ffe001251628258" kind="function"><name>__init__</name></member>
+    <member refid="classserver_1_1Server_1a7df3c004863b1ac9397cb735c4c786a2" kind="function"><name>client_handler</name></member>
+    <member refid="classserver_1_1Server_1a3daa3b38ecdbdef3bdce10e3262d1893" kind="function"><name>run</name></member>
+    <member refid="classserver_1_1Server_1a6ca9890bf15d0b70ea4a834b25b6ff83" kind="function"><name>start</name></member>
+    <member refid="classserver_1_1Server_1aead981f8958fcd6260c4a9209a4444f1" kind="function"><name>stop</name></member>
     <member refid="classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a" kind="function"><name>test</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" kind="class"><name>gui::screens::serverconnect_screen::ServerConnectScreen</name>
@@ -761,8 +774,8 @@
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a6cc1c919d3397a414031f532cf2e50c0" kind="function"><name>initialise_surface</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a05e828c649457688bca3d1e76f563991" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a49d9dd2ad9b68d639fe1d305a8e16f42" kind="function"><name>update_ui</name></member>
-    <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ac1aa1fc894786a53d03a248bc7a4caf5" kind="function"><name>update_info_label</name></member>
-    <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a40e1a5d3f5ca59c1f618a0c427a04e73" kind="function"><name>reset_info_label</name></member>
+    <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aae62ab2e221fdcbed91f723831c37b60" kind="function"><name>update_info_label</name></member>
+    <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a517ba42e18c021206597511d757870e8" kind="function"><name>reset_info_label</name></member>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a879689c22af3f5ddfb4609bd6d66b287" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" kind="class"><name>gui::screens::servercreate_screen::ServerCreateScreen</name>
@@ -971,9 +984,9 @@
     <member refid="classworld_1_1world_1_1World_1a1f37a6d79c65792e73ea45f774a7c687" kind="function"><name>get_map</name></member>
   </compound>
   <compound refid="classworld__handler_1_1WorldHandler" kind="class"><name>world_handler::WorldHandler</name>
-    <member refid="classworld__handler_1_1WorldHandler_1aaa385917f3414f6a4c9ee2d219776642" kind="function"><name>__init__</name></member>
-    <member refid="classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115" kind="function"><name>create_world</name></member>
-    <member refid="classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5" kind="function"><name>get_world</name></member>
+    <member refid="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" kind="function"><name>__init__</name></member>
+    <member refid="classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb" kind="function"><name>create_world</name></member>
+    <member refid="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" kind="function"><name>get_world</name></member>
   </compound>
   <compound refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" kind="class"><name>utils::exceptions::ZeroOrLessSpawnPlayerAttempts</name>
     <member refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e" kind="function"><name>__init__</name></member>
@@ -1045,6 +1058,8 @@
   </compound>
   <compound refid="namespacegui_1_1screens" kind="namespace"><name>gui::screens</name>
   </compound>
+  <compound refid="namespacegui_1_1screens_1_1crash__screen" kind="namespace"><name>gui::screens::crash_screen</name>
+  </compound>
   <compound refid="namespacegui_1_1screens_1_1credits__screen" kind="namespace"><name>gui::screens::credits_screen</name>
   </compound>
   <compound refid="namespacegui_1_1screens_1_1gameover__screen" kind="namespace"><name>gui::screens::gameover_screen</name>
@@ -1102,11 +1117,10 @@
     <member refid="namespaceutils_1_1logger_1ae647d6593460573620d04594e21b8262" kind="variable"><name>help</name></member>
     <member refid="namespaceutils_1_1logger_1a8fac75a254e8e82403f13c14e77235f5" kind="variable"><name>args</name></member>
     <member refid="namespaceutils_1_1logger_1a02e42802c0a48b9cb365232c591f0a5b" kind="variable"><name>unknown_args</name></member>
-    <member refid="namespaceutils_1_1logger_1ad13bcb368eba9e7d49962b616e28032a" kind="variable"><name>_format</name></member>
+    <member refid="namespaceutils_1_1logger_1a87b73234ff668db6538b29f53c0eb0bc" kind="variable"><name>log_dir</name></member>
     <member refid="namespaceutils_1_1logger_1a16adff53781de382d87b57d8d9b6114a" kind="variable"><name>level</name></member>
-    <member refid="namespaceutils_1_1logger_1ad5352baf15f1491c71b0ea34e2950d1c" kind="variable"><name>DEBUG</name></member>
     <member refid="namespaceutils_1_1logger_1a0283d9a06121f6dad7bca42bbdd87c3f" kind="variable"><name>format</name></member>
-    <member refid="namespaceutils_1_1logger_1a23d5a328d45c501aa17fa0d0904c65e4" kind="variable"><name>INFO</name></member>
+    <member refid="namespaceutils_1_1logger_1a2b08573992c971d322617fdcd42c0b60" kind="variable"><name>handlers</name></member>
     <member refid="namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d" kind="variable"><name>logger</name></member>
   </compound>
   <compound refid="namespaceutils_1_1tools" kind="namespace"><name>utils::tools</name>
@@ -1191,6 +1205,8 @@
   <compound refid="progress__bar_8py" kind="file"><name>progress_bar.py</name>
   </compound>
   <compound refid="screen__manager_8py" kind="file"><name>screen_manager.py</name>
+  </compound>
+  <compound refid="crash__screen_8py" kind="file"><name>crash_screen.py</name>
   </compound>
   <compound refid="credits__screen_8py" kind="file"><name>credits_screen.py</name>
   </compound>

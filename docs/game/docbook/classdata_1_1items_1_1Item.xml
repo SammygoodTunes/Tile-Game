@@ -28,7 +28,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classdata_1_1items_1_1Item_1a566cd55f53f32dffd0f3535368f4056f">DEFAULT_ATLAS</link> = str(impr.files(assets) / &quot;items.png&quot;)</para>
+            <listitem><para>str <link linkend="_classdata_1_1items_1_1Item_1a566cd55f53f32dffd0f3535368f4056f">DEFAULT_ATLAS</link> = str(impr.files(&apos;assets&apos;) / &quot;items.png&quot;)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -146,7 +146,7 @@
     <title>DEFAULT_ATLAS</title>
 <indexterm><primary>DEFAULT_ATLAS</primary><secondary>data.items.Item</secondary></indexterm>
 <indexterm><primary>data.items.Item</primary><secondary>DEFAULT_ATLAS</secondary></indexterm>
-<para><computeroutput>str data.items.Item.DEFAULT_ATLAS = str(impr.files(assets) / &quot;items.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str data.items.Item.DEFAULT_ATLAS = str(impr.files(&apos;assets&apos;) / &quot;items.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_items_8py">items.py</link></section>

@@ -46,6 +46,7 @@ var hierarchy =
     [ "world.world.World", "classworld_1_1world_1_1World.html", null ],
     [ "world_handler.WorldHandler", "classworld__handler_1_1WorldHandler.html", null ],
     [ "Screen", null, [
+      [ "gui.screens.crash_screen.CrashScreen", "classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html", null ],
       [ "gui.screens.credits_screen.CreditsScreen", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", null ],
       [ "gui.screens.gameover_screen.GameoverScreen", "classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html", null ],
       [ "gui.screens.loading_screen.LoadingScreen", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html", null ],

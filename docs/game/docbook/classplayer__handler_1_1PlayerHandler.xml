@@ -5,15 +5,15 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15">__init__</link> (self)</para>
 </listitem>
             <listitem><para>str <link linkend="_classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b">track_player</link> (self, dict player)</para>
 </listitem>
-            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6">update_player</link> (self, dict player)</para>
+            <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9">update_player</link> (self, dict player)</para>
 </listitem>
-            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e">untrack_player</link> (self, str player_name)</para>
+            <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811">untrack_player</link> (self, str player_name)</para>
 </listitem>
-            <listitem><para><link linkend="_classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d">get_players</link> (self)</para>
+            <listitem><para>list[dict] <link linkend="_classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d">get_players</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -25,34 +25,46 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af648c1cc0332b6385950ab851661f8f5"/><section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>player_handler.PlayerHandler.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None player_handler.PlayerHandler.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1ad76357732c7125dbe922e29e38b24c7d"/><section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d"/><section>
     <title>get_players()</title>
 <indexterm><primary>get_players</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>get_players</secondary></indexterm>
-<para><computeroutput>player_handler.PlayerHandler.get_players ( self)</computeroutput></para></section>
+<para><computeroutput> list[dict] player_handler.PlayerHandler.get_players ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the players list.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b"/><section>
     <title>track_player()</title>
 <indexterm><primary>track_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>track_player</secondary></indexterm>
-<para><computeroutput> str player_handler.PlayerHandler.track_player ( self, dict player)</computeroutput></para></section>
-<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1adad31e9dd9ee8d1d9de9345365b9e09e"/><section>
+<para><computeroutput> str player_handler.PlayerHandler.track_player ( self, dict player)</computeroutput></para>
+<para><literallayout><computeroutput>Track the specified player by adding them to the players list.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811"/><section>
     <title>untrack_player()</title>
 <indexterm><primary>untrack_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>untrack_player</secondary></indexterm>
-<para><computeroutput>player_handler.PlayerHandler.untrack_player ( self, str player_name)</computeroutput></para></section>
-<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1a6ddf7eeae0a39d76a561e02ec57744d6"/><section>
+<para><computeroutput> None player_handler.PlayerHandler.untrack_player ( self, str player_name)</computeroutput></para>
+<para><literallayout><computeroutput>Untrack the player by removing them from the players list, if possible.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9"/><section>
     <title>update_player()</title>
 <indexterm><primary>update_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>update_player</secondary></indexterm>
-<para><computeroutput>player_handler.PlayerHandler.update_player ( self, dict player)</computeroutput></para></section>
+<para><computeroutput> None player_handler.PlayerHandler.update_player ( self, dict player)</computeroutput></para>
+<para><literallayout><computeroutput>Update the player attributes with the received player object, if possible.
+</computeroutput></literallayout> </para>
+</section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_player__handler_8py">player_handler.py</link></section>

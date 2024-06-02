@@ -7,5 +7,6 @@ var searchData=
   ['velocity_5fx_4',['velocity_x',['../classentity_1_1player_1_1Player.html#ac58660f5e4b6369f8d4280c720c67982',1,'entity.player.Player.velocity_x'],['../classworld_1_1camera_1_1Camera.html#a02bbd342c9ab95d90e2a07c74f525de8',1,'world.camera.Camera.velocity_x']]],
   ['velocity_5fy_5',['velocity_y',['../classentity_1_1player_1_1Player.html#a09943533b5e5a840bf012ebaabe7d7b5',1,'entity.player.Player.velocity_y'],['../classworld_1_1camera_1_1Camera.html#a14bec8032d4bfcc40717f7666dad10cf',1,'world.camera.Camera.velocity_y']]],
   ['verify_5fgame_5fproperty_5fvalues_6',['verify_game_property_values',['../namespacedata_1_1data__manager.html#a350c7fd79fb3452632880a4ccfa50e09',1,'data::data_manager']]],
-  ['void_7',['VOID',['../classdata_1_1tiles_1_1Tiles.html#a68f04d86463e769ff665e442858835ea',1,'data::tiles::Tiles']]]
+  ['version_5flabel_7',['version_label',['../classgui_1_1screens_1_1main__hud_1_1MainHud.html#ad83dc14696f9691e625acdfbe65fc1da',1,'gui.screens.main_hud.MainHud.version_label'],['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#ac665b184205c4e2cb2f87354bd33c51c',1,'gui.screens.mainmenu_screen.MainMenuScreen.version_label']]],
+  ['void_8',['VOID',['../classdata_1_1tiles_1_1Tiles.html#a68f04d86463e769ff665e442858835ea',1,'data::tiles::Tiles']]]
 ];

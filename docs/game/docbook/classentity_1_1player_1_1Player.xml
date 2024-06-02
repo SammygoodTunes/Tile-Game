@@ -135,7 +135,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90">TEXTURE</link> = str(impr.files(assets) / &quot;player.png&quot;)</para>
+            <listitem><para>str <link linkend="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90">TEXTURE</link> = str(impr.files(&apos;assets&apos;) / &quot;player.png&quot;)</para>
 </listitem>
             <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4">VELOCITY_STEP_START</link> = 4.5</para>
 </listitem>
@@ -612,7 +612,7 @@ Setting the number of attempts to anything less than 1 will raise an exception.
     <title>TEXTURE</title>
 <indexterm><primary>TEXTURE</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>TEXTURE</secondary></indexterm>
-<para><computeroutput>str entity.player.Player.TEXTURE = str(impr.files(assets) / &quot;player.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str entity.player.Player.TEXTURE = str(impr.files(&apos;assets&apos;) / &quot;player.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f"/><section>
     <title>TIMERS_COUNT</title>
 <indexterm><primary>TIMERS_COUNT</primary><secondary>entity.player.Player</secondary></indexterm>

@@ -27,6 +27,8 @@
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a3aa9b82a7a4f5a8ae30ac6818aa9535f">tile_to_world_pos</link> (self, int tile_x, int tile_y)</para>
 </listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a8e6d0f6af6fc63f97071d59967e58a1e">tile_to_screen_pos</link> (self, game, int tile_x, int tile_y)</para>
+</listitem>
             <listitem><para>Self <link linkend="_classworld_1_1map__manager_1_1Map_1a406e46b444f631c620146164e9809dcf">set_tile</link> (self, int tile_x, int tile_y, Tile tile)</para>
 </listitem>
             <listitem><para>Tile <link linkend="_classworld_1_1map__manager_1_1Map_1ae597f285e50df73bb9dc7e4ed5e4c521">get_tile</link> (self, int tile_x, int tile_y)</para>
@@ -68,13 +70,6 @@
             <listitem><para>Surface <link linkend="_classworld_1_1map__manager_1_1Map_1ac97ce61970efd47a7259c0305c69f963">get_surface</link> (self)</para>
 </listitem>
             <listitem><para>Surface <link linkend="_classworld_1_1map__manager_1_1Map_1ac6bcc533f8575e867df89cefdda3af82">get_dynatile_surface</link> (self)</para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Static Public Member Functions    </title>
-        <itemizedlist>
-            <listitem><para>tuple[int, int] <link linkend="_classworld_1_1map__manager_1_1Map_1a8b9f8333480325a0de941708c8c9fe0c">tile_to_screen_pos</link> (game, int tile_x, int tile_y)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -373,11 +368,11 @@ the map manager itself.
 <para><literallayout><computeroutput>Set the y position of the map, then return the map manager itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a8b9f8333480325a0de941708c8c9fe0c"/><section>
+<anchor xml:id="_classworld_1_1map__manager_1_1Map_1a8e6d0f6af6fc63f97071d59967e58a1e"/><section>
     <title>tile_to_screen_pos()</title>
 <indexterm><primary>tile_to_screen_pos</primary><secondary>world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>world.map_manager.Map</primary><secondary>tile_to_screen_pos</secondary></indexterm>
-<para><computeroutput> tuple[int, int] world.map_manager.Map.tile_to_screen_pos ( game, int tile_x, int tile_y)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> tuple[int, int] world.map_manager.Map.tile_to_screen_pos ( self,  game, int tile_x, int tile_y)</computeroutput></para>
 <para><literallayout><computeroutput>Return the screen position of a tile position.
 </computeroutput></literallayout> </para>
 </section>

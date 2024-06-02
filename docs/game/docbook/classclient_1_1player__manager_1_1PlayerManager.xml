@@ -5,11 +5,11 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e">set_players</link> (self, list <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8">players</link>)</para>
+            <listitem><para>Self <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637">set_players</link> (self, list <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8">players</link>)</para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5">draw_players</link> (self, str player_name, float delta, game)</para>
+            <listitem><para>None <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84">draw_players</link> (self, str player_name, float delta, game)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -28,24 +28,30 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9"/><section>
+<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
 <indexterm><primary>client.player_manager.PlayerManager</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>client.player_manager.PlayerManager.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None client.player_manager.PlayerManager.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5"/><section>
+<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84"/><section>
     <title>draw_players()</title>
 <indexterm><primary>draw_players</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
 <indexterm><primary>client.player_manager.PlayerManager</primary><secondary>draw_players</secondary></indexterm>
-<para><computeroutput>client.player_manager.PlayerManager.draw_players ( self, str player_name, float delta,  game)</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e"/><section>
+<para><computeroutput> None client.player_manager.PlayerManager.draw_players ( self, str player_name, float delta,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw to the screen each player present in the players list.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637"/><section>
     <title>set_players()</title>
 <indexterm><primary>set_players</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
 <indexterm><primary>client.player_manager.PlayerManager</primary><secondary>set_players</secondary></indexterm>
-<para><computeroutput>client.player_manager.PlayerManager.set_players ( self, list players)</computeroutput></para></section>
+<para><computeroutput> Self client.player_manager.PlayerManager.set_players ( self, list players)</computeroutput></para>
+<para><literallayout><computeroutput>Set the players list and return the player manager itself.
+</computeroutput></literallayout> </para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>

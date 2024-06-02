@@ -9,7 +9,7 @@
         <argsstring></argsstring>
         <name>DEFAULT_ATLAS</name>
         <qualifiedname>data.tiles.Tile.DEFAULT_ATLAS</qualifiedname>
-        <initializer>=  str(impr.files(assets) / &quot;atlas.png&quot;)</initializer>
+        <initializer>=  str(impr.files(&apos;assets&apos;) / &quot;atlas.png&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

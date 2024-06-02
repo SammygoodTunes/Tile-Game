@@ -2,7 +2,7 @@ var classgui_1_1screens_1_1options__screen_1_1OptionsScreen =
 [
     [ "__init__", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a715e30b2b88e3396218a24ef392bbab4", null ],
     [ "draw", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a121c4e9863310f4d0a0463d5e15973a7", null ],
-    [ "events", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#ac76d2471f9896983b6946ada6f8bbc8f", null ],
+    [ "events", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a07f4b8b81f5ebca5b25cb1310b142408", null ],
     [ "initialise_surface", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a71427e22384d8d0211d7e5e6a4e4ea8e", null ],
     [ "set_state", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#aeb7a8defb2fd8e67fac131116cba324c", null ],
     [ "update_ui", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a1cb47783b456a798f6b4444f5df4b090", null ],

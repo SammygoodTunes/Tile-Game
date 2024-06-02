@@ -5,11 +5,11 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classworld__handler_1_1WorldHandler_1aaa385917f3414f6a4c9ee2d219776642">__init__</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115">create_world</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb">create_world</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5">get_world</link> (self)</para>
+            <listitem><para>World <link linkend="_classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4">get_world</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -21,27 +21,27 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classworld__handler_1_1WorldHandler_1aaa385917f3414f6a4c9ee2d219776642"/><section>
+<anchor xml:id="_classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>world_handler.WorldHandler</secondary></indexterm>
 <indexterm><primary>world_handler.WorldHandler</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>world_handler.WorldHandler.__init__ ( self)</computeroutput></para></section>
+<para><computeroutput> None world_handler.WorldHandler.__init__ ( self)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld__handler_1_1WorldHandler_1ae13f0fb058b1b4f1b8119269465b6115"/><section>
+<anchor xml:id="_classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb"/><section>
     <title>create_world()</title>
 <indexterm><primary>create_world</primary><secondary>world_handler.WorldHandler</secondary></indexterm>
 <indexterm><primary>world_handler.WorldHandler</primary><secondary>create_world</secondary></indexterm>
-<para><computeroutput>world_handler.WorldHandler.create_world ( self)</computeroutput></para>
+<para><computeroutput> None world_handler.WorldHandler.create_world ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Create a new server world.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classworld__handler_1_1WorldHandler_1ae0f815ae0ccb96ed02807c3f762b6bb5"/><section>
+<anchor xml:id="_classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4"/><section>
     <title>get_world()</title>
 <indexterm><primary>get_world</primary><secondary>world_handler.WorldHandler</secondary></indexterm>
 <indexterm><primary>world_handler.WorldHandler</primary><secondary>get_world</secondary></indexterm>
-<para><computeroutput>world_handler.WorldHandler.get_world ( self)</computeroutput></para>
+<para><computeroutput> World world_handler.WorldHandler.get_world ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the world object.
 </computeroutput></literallayout> </para>
 </section>

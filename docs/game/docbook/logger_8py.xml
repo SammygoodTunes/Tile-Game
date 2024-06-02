@@ -32,17 +32,15 @@
 </listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a02e42802c0a48b9cb365232c591f0a5b">utils.logger.unknown_args</link></para>
 </listitem>
-            <listitem><para>str <link linkend="_namespaceutils_1_1logger_1ad13bcb368eba9e7d49962b616e28032a">utils.logger._format</link> = &apos;\t%(levelname)s(%(name)s) - %(asctime)s\t%(message)s&apos;</para>
+            <listitem><para>str <link linkend="_namespaceutils_1_1logger_1a87b73234ff668db6538b29f53c0eb0bc">utils.logger.log_dir</link> = &apos;logs&apos;</para>
 </listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a16adff53781de382d87b57d8d9b6114a">utils.logger.level</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1ad5352baf15f1491c71b0ea34e2950d1c">utils.logger.DEBUG</link></para>
-</listitem>
             <listitem><para><link linkend="_namespaceutils_1_1logger_1a0283d9a06121f6dad7bca42bbdd87c3f">utils.logger.format</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1a23d5a328d45c501aa17fa0d0904c65e4">utils.logger.INFO</link></para>
+            <listitem><para><link linkend="_namespaceutils_1_1logger_1a2b08573992c971d322617fdcd42c0b60">utils.logger.handlers</link></para>
 </listitem>
-            <listitem><para><link linkend="_namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d">utils.logger.logger</link> = logging.getLogger(&apos;&apos;)</para>
+            <listitem><para><link linkend="_namespaceutils_1_1logger_1a88714182eaf8c92ef98bcd31cab4411d">utils.logger.logger</link> = logging.getLogger(__file__)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

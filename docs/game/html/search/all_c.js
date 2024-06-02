@@ -12,6 +12,7 @@ var searchData=
   ['loading_5fscreen_9',['loading_screen',['../classgui_1_1screen__manager_1_1Screens.html#afbdc3c8162678db8583aba629623222d',1,'gui::screen_manager::Screens']]],
   ['loading_5fscreen_2epy_10',['loading_screen.py',['../loading__screen_8py.html',1,'']]],
   ['loadingscreen_11',['LoadingScreen',['../classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html',1,'gui::screens::loading_screen']]],
-  ['logger_12',['logger',['../namespaceutils_1_1logger.html#a88714182eaf8c92ef98bcd31cab4411d',1,'utils::logger']]],
-  ['logger_2epy_13',['logger.py',['../logger_8py.html',1,'']]]
+  ['log_5fdir_12',['log_dir',['../namespaceutils_1_1logger.html#a87b73234ff668db6538b29f53c0eb0bc',1,'utils::logger']]],
+  ['logger_13',['logger',['../namespaceutils_1_1logger.html#a88714182eaf8c92ef98bcd31cab4411d',1,'utils::logger']]],
+  ['logger_2epy_14',['logger.py',['../logger_8py.html',1,'']]]
 ];

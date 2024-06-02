@@ -29,27 +29,42 @@
     <title>disconnection()</title>
 <indexterm><primary>disconnection</primary><secondary>tasks.Tasks</secondary></indexterm>
 <indexterm><primary>tasks.Tasks</primary><secondary>disconnection</secondary></indexterm>
-<para><computeroutput> bool tasks.Tasks.disconnection (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput> bool tasks.Tasks.disconnection (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for disconnecting a player.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d"/><section>
     <title>map_data()</title>
 <indexterm><primary>map_data</primary><secondary>tasks.Tasks</secondary></indexterm>
 <indexterm><primary>tasks.Tasks</primary><secondary>map_data</secondary></indexterm>
-<para><computeroutput> None tasks.Tasks.map_data ( conn,  addr,  world_handler)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput> None tasks.Tasks.map_data ( conn,  addr,  world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending map data to a client.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467"/><section>
     <title>player_update()</title>
 <indexterm><primary>player_update</primary><secondary>tasks.Tasks</secondary></indexterm>
 <indexterm><primary>tasks.Tasks</primary><secondary>player_update</secondary></indexterm>
-<para><computeroutput> str tasks.Tasks.player_update ( conn,  player_handler, bytes data)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput> str tasks.Tasks.player_update ( conn,  player_handler, bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for receiving a client&apos;s player data.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047"/><section>
     <title>recognition()</title>
 <indexterm><primary>recognition</primary><secondary>tasks.Tasks</secondary></indexterm>
 <indexterm><primary>tasks.Tasks</primary><secondary>recognition</secondary></indexterm>
-<para><computeroutput> bool tasks.Tasks.recognition ( conn,  addr)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput> bool tasks.Tasks.recognition ( conn,  addr)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for checking for player authenticity.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c"/><section>
     <title>send_game_state()</title>
 <indexterm><primary>send_game_state</primary><secondary>tasks.Tasks</secondary></indexterm>
 <indexterm><primary>tasks.Tasks</primary><secondary>send_game_state</secondary></indexterm>
-<para><computeroutput> None tasks.Tasks.send_game_state ( conn,  player_handler)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput> None tasks.Tasks.send_game_state ( conn,  player_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending the overall game state to a client.
+</computeroutput></literallayout> </para>
+</section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_tasks_8py">tasks.py</link></section>

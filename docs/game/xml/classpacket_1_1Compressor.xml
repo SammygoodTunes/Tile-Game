@@ -16,10 +16,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Compress an object to bytes.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="25" bodyend="27"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="37" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>any</type>
@@ -34,17 +36,23 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Decompress byte data to an object, if valid.
+Otherwise, return None.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="29" bodyend="31"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="44" bodyend="54"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>Class for compressing objects.
+Used for sending and receiving game data from the client/server.
+</verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="22" bodyend="31"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="30" bodyend="54"/>
     <listofallmembers>
       <member refid="classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832" prot="public" virt="non-virtual"><scope>packet::Compressor</scope><name>compress</name></member>
       <member refid="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" prot="public" virt="non-virtual"><scope>packet::Compressor</scope><name>decompress</name></member>

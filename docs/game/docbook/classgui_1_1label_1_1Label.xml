@@ -87,7 +87,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a">DEFAULT_FONT</link> = impr.files(assets) / &quot;font.ttf&quot;</para>
+            <listitem><para>str <link linkend="_classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a">DEFAULT_FONT</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
 </listitem>
             <listitem><para>int <link linkend="_classgui_1_1label_1_1Label_1a740ed9b0bf79e904ccba3fc0df2471cb">DEFAULT_FONT_SIZE_SMALL</link> = 8</para>
 </listitem>
@@ -116,9 +116,9 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1aca5b26a75fdb25f80e832e62b735d221">_shadow_x</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc">_shadow_y</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a70404c8558dab9696ee55357986faa74">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a82ace52f54fb7b92110a57dae5516fbc">_shadow_y</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1label_1_1Label_1a08806fbaaaeca3cc531e2feaea5afcbf">_y</link></para>
 </listitem>
@@ -446,7 +446,7 @@ label itself.
     <title>DEFAULT_FONT</title>
 <indexterm><primary>DEFAULT_FONT</primary><secondary>gui.label.Label</secondary></indexterm>
 <indexterm><primary>gui.label.Label</primary><secondary>DEFAULT_FONT</secondary></indexterm>
-<para><computeroutput>str gui.label.Label.DEFAULT_FONT = impr.files(assets) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str gui.label.Label.DEFAULT_FONT = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1label_1_1Label_1a4c991af9bdd850e36eaeb064f2595b45"/><section>
     <title>DEFAULT_FONT_SIZE_LARGE</title>
 <indexterm><primary>DEFAULT_FONT_SIZE_LARGE</primary><secondary>gui.label.Label</secondary></indexterm>

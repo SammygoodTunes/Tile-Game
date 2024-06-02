@@ -9,5 +9,6 @@ var classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen =
     [ "play_button", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#abaf7a85900f5e28912577b1afde4d1f6", null ],
     [ "quit_button", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#ad0ca1061d9deccb1f16dfcf88027d354", null ],
     [ "title_label", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a33c40251e5c8ee78268dd560416de3b2", null ],
+    [ "version_label", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#ac665b184205c4e2cb2f87354bd33c51c", null ],
     [ "window", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a702cd034fea20f711692299cbfa326d0", null ]
 ];

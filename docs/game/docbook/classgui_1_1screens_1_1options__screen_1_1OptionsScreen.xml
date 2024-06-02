@@ -17,7 +17,7 @@
 </listitem>
             <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a71427e22384d8d0211d7e5e6a4e4ea8e">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac76d2471f9896983b6946ada6f8bbc8f">events</link> (self, Event e)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a07f4b8b81f5ebca5b25cb1310b142408">events</link> (self, Event e)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a121c4e9863310f4d0a0463d5e15973a7">draw</link> (self)</para>
 </listitem>
@@ -77,11 +77,11 @@
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac76d2471f9896983b6946ada6f8bbc8f"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1options__screen_1_1OptionsScreen_1a07f4b8b81f5ebca5b25cb1310b142408"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.options_screen.OptionsScreen</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>gui.screens.options_screen.OptionsScreen.events ( self, Event e)</computeroutput></para>
+<para><computeroutput> None gui.screens.options_screen.OptionsScreen.events ( self, Event e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the screen events.
 </computeroutput></literallayout> </para>
 </section>

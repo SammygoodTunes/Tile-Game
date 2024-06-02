@@ -9,5 +9,6 @@ var searchData=
   ['timers_5fcount_6',['TIMERS_COUNT',['../classentity_1_1player_1_1Player.html#a98f5bc4681992c7cd11472765a041d8f',1,'entity::player::Player']]],
   ['title_5flabel_7',['title_label',['../classgui_1_1checkbox_1_1Checkbox.html#a95d0eb79513f4e91192fabae1b3bc069',1,'gui.checkbox.Checkbox.title_label'],['../classgui_1_1horizontal__slider_1_1HorizontalSlider.html#a739c8e0a1013335eafdd30bc2904f921',1,'gui.horizontal_slider.HorizontalSlider.title_label'],['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a33c40251e5c8ee78268dd560416de3b2',1,'gui.screens.mainmenu_screen.MainMenuScreen.title_label'],['../classgui_1_1screens_1_1map__screen_1_1MapScreen.html#ab66de5b12d46134f9f97dac2348da4cf',1,'gui.screens.map_screen.MapScreen.title_label']]],
   ['tools_8',['TOOLS',['../classdata_1_1items_1_1ItemTypes.html#a781fe95471d8c41e51a9fab11c4c5bf4',1,'data::items::ItemTypes']]],
-  ['type_9',['type',['../namespaceutils_1_1logger.html#aafe2565e1e055b32625737824222c663',1,'utils::logger']]]
+  ['traceback_5flabel_9',['traceback_label',['../classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html#afbc339286855fb1528c4602fd2319be6',1,'gui::screens::crash_screen::CrashScreen']]],
+  ['type_10',['type',['../namespaceutils_1_1logger.html#aafe2565e1e055b32625737824222c663',1,'utils::logger']]]
 ];

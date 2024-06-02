@@ -15,13 +15,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="16" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="17" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.player_manager.PlayerManager.__init__</definition>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.player_manager.PlayerManager.__init__</definition>
         <argsstring>(self)</argsstring>
         <name>__init__</name>
         <qualifiedname>client.player_manager.PlayerManager.__init__</qualifiedname>
@@ -35,11 +35,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="15" bodyend="17"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="16" bodyend="18"/>
       </memberdef>
-      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.player_manager.PlayerManager.set_players</definition>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self client.player_manager.PlayerManager.set_players</definition>
         <argsstring>(self, list players)</argsstring>
         <name>set_players</name>
         <qualifiedname>client.player_manager.PlayerManager.set_players</qualifiedname>
@@ -54,14 +54,16 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Set the players list and return the player manager itself.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="18" bodyend="21"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="19" bodyend="25"/>
       </memberdef>
-      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.player_manager.PlayerManager.draw_players</definition>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.player_manager.PlayerManager.draw_players</definition>
         <argsstring>(self, str player_name, float delta, game)</argsstring>
         <name>draw_players</name>
         <qualifiedname>client.player_manager.PlayerManager.draw_players</qualifiedname>
@@ -84,10 +86,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Draw to the screen each player present in the players list.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="22" bodyend="33"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="26" bodyend="40"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -96,12 +100,12 @@
 <para><verbatim>Class for handling server players.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="10" bodyend="33"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="11" bodyend="40"/>
     <listofallmembers>
-      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1951f12c72978c26efeeb8ef9d1df9f9" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
-      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a79cdd37d14c05c51f5df4f1f3cf9c6b5" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>draw_players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>draw_players</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>players</name></member>
-      <member refid="classclient_1_1player__manager_1_1PlayerManager_1aeba69aa863dd622420da5f6af158089e" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

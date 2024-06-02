@@ -5,6 +5,7 @@ var classgui_1_1screen__manager_1_1Screens =
     [ "link_game", "classgui_1_1screen__manager_1_1Screens.html#a045983a0aa666845dfa5d987970cce09", null ],
     [ "update", "classgui_1_1screen__manager_1_1Screens.html#adc3e629bf8e030ada93ee213d3005445", null ],
     [ "update_ui", "classgui_1_1screen__manager_1_1Screens.html#af3ae6d0328003f41625475d1be88dc4e", null ],
+    [ "crash_screen", "classgui_1_1screen__manager_1_1Screens.html#a7f9f2ac64100d470c0f8c2085e0d081a", null ],
     [ "credits_screen", "classgui_1_1screen__manager_1_1Screens.html#a3fd9a3c6007911da53e19e1ba971d142", null ],
     [ "game", "classgui_1_1screen__manager_1_1Screens.html#a760e728fd8477a60e00babf949c9f276", null ],
     [ "gameover_screen", "classgui_1_1screen__manager_1_1Screens.html#a39700556405bddc8add791eec0add77d", null ],

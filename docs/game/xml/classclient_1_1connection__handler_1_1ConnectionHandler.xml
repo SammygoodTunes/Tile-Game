@@ -71,13 +71,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="21" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="24" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.connection_handler.ConnectionHandler.__init__</definition>
+      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a400024b267f4fc923aa43c8179f4fbee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.connection_handler.ConnectionHandler.__init__</definition>
         <argsstring>(self)</argsstring>
         <name>__init__</name>
         <qualifiedname>client.connection_handler.ConnectionHandler.__init__</qualifiedname>
@@ -93,9 +93,9 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="11" bodyend="17"/>
       </memberdef>
-      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.connection_handler.ConnectionHandler.update</definition>
+      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.connection_handler.ConnectionHandler.update</definition>
         <argsstring>(self, game)</argsstring>
         <name>update</name>
         <qualifiedname>client.connection_handler.ConnectionHandler.update</qualifiedname>
@@ -110,14 +110,16 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Keep track of the connection state.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="18" bodyend="53"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="18" bodyend="56"/>
       </memberdef>
-      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a056aff561ca485cda4783d77e1d5eeac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>client.connection_handler.ConnectionHandler.draw_other_players</definition>
+      <memberdef kind="function" id="classclient_1_1connection__handler_1_1ConnectionHandler_1a2e7b8060ab9979072aae5a367fb42ae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None client.connection_handler.ConnectionHandler.draw_other_players</definition>
         <argsstring>(self, game, delta)</argsstring>
         <name>draw_other_players</name>
         <qualifiedname>client.connection_handler.ConnectionHandler.draw_other_players</qualifiedname>
@@ -136,10 +138,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Display all other server players.
+We don&apos;t draw the main player as it is redundant.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="54" bodyend="56"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="57" bodyend="63"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -148,16 +153,16 @@
 <para><verbatim>Class for creating the connection handler.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="6" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="6" bodyend="56"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="6" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="6" bodyend="63"/>
     <listofallmembers>
-      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a54f603696d082fd79a0654abf463c0e9" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>__init__</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a400024b267f4fc923aa43c8179f4fbee" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>__init__</name></member>
       <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>connection</name></member>
-      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a056aff561ca485cda4783d77e1d5eeac" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>draw_other_players</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a2e7b8060ab9979072aae5a367fb42ae9" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>draw_other_players</name></member>
       <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>host</name></member>
       <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>port</name></member>
       <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a66d231003c1ec24a06cf4a6aef863458" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>start_connection</name></member>
       <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a58e0dcf127a69e2c04e4cf6dd8545edf" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>stop_connection</name></member>
-      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1ad5b5209beeac75d3732130d06b3f1824" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>update</name></member>
+      <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b" prot="public" virt="non-virtual"><scope>client::connection_handler::ConnectionHandler</scope><name>update</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

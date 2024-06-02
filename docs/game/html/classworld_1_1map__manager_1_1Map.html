@@ -94,7 +94,6 @@ $(function(){initNavTree('classworld_1_1map__manager_1_1Map.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -127,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a253d1d819068cf08836e28cd2e2f14be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aa9b82a7a4f5a8ae30ac6818aa9535f" id="r_a3aa9b82a7a4f5a8ae30ac6818aa9535f"><td class="memItemLeft" align="right" valign="top">tuple[int, int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aa9b82a7a4f5a8ae30ac6818aa9535f">tile_to_world_pos</a> (self, int tile_x, int tile_y)</td></tr>
 <tr class="separator:a3aa9b82a7a4f5a8ae30ac6818aa9535f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6d0f6af6fc63f97071d59967e58a1e" id="r_a8e6d0f6af6fc63f97071d59967e58a1e"><td class="memItemLeft" align="right" valign="top">tuple[int, int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e6d0f6af6fc63f97071d59967e58a1e">tile_to_screen_pos</a> (self, game, int tile_x, int tile_y)</td></tr>
+<tr class="separator:a8e6d0f6af6fc63f97071d59967e58a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406e46b444f631c620146164e9809dcf" id="r_a406e46b444f631c620146164e9809dcf"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a406e46b444f631c620146164e9809dcf">set_tile</a> (self, int tile_x, int tile_y, Tile tile)</td></tr>
 <tr class="separator:a406e46b444f631c620146164e9809dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae597f285e50df73bb9dc7e4ed5e4c521" id="r_ae597f285e50df73bb9dc7e4ed5e4c521"><td class="memItemLeft" align="right" valign="top">Tile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae597f285e50df73bb9dc7e4ed5e4c521">get_tile</a> (self, int tile_x, int tile_y)</td></tr>
@@ -169,11 +170,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac97ce61970efd47a7259c0305c69f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6bcc533f8575e867df89cefdda3af82" id="r_ac6bcc533f8575e867df89cefdda3af82"><td class="memItemLeft" align="right" valign="top">Surface&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6bcc533f8575e867df89cefdda3af82">get_dynatile_surface</a> (self)</td></tr>
 <tr class="separator:ac6bcc533f8575e867df89cefdda3af82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8b9f8333480325a0de941708c8c9fe0c" id="r_a8b9f8333480325a0de941708c8c9fe0c"><td class="memItemLeft" align="right" valign="top">tuple[int, int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9f8333480325a0de941708c8c9fe0c">tile_to_screen_pos</a> (game, int tile_x, int tile_y)</td></tr>
-<tr class="separator:a8b9f8333480325a0de941708c8c9fe0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -859,18 +855,20 @@ the map manager itself.
 </pre> 
 </div>
 </div>
-<a id="a8b9f8333480325a0de941708c8c9fe0c" name="a8b9f8333480325a0de941708c8c9fe0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b9f8333480325a0de941708c8c9fe0c">&#9670;&#160;</a></span>tile_to_screen_pos()</h2>
+<a id="a8e6d0f6af6fc63f97071d59967e58a1e" name="a8e6d0f6af6fc63f97071d59967e58a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e6d0f6af6fc63f97071d59967e58a1e">&#9670;&#160;</a></span>tile_to_screen_pos()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"> tuple[int, int] world.map_manager.Map.tile_to_screen_pos </td>
           <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>game</em>, </span></td>
         </tr>
         <tr>
@@ -884,11 +882,6 @@ the map manager itself.
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tile_y</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <pre class="fragment">Return the screen position of a tile position.
 </pre> 

@@ -6,5 +6,6 @@ var searchData=
   ['level_3',['level',['../namespaceutils_1_1logger.html#a16adff53781de382d87b57d8d9b6114a',1,'utils::logger']]],
   ['lmb_4',['LMB',['../classdata_1_1states_1_1MouseStates.html#a77ad007b506c5845bfefb1e0bdc58fc9',1,'data::states::MouseStates']]],
   ['loading_5fscreen_5',['loading_screen',['../classgui_1_1screen__manager_1_1Screens.html#afbdc3c8162678db8583aba629623222d',1,'gui::screen_manager::Screens']]],
-  ['logger_6',['logger',['../namespaceutils_1_1logger.html#a88714182eaf8c92ef98bcd31cab4411d',1,'utils::logger']]]
+  ['log_5fdir_6',['log_dir',['../namespaceutils_1_1logger.html#a87b73234ff668db6538b29f53c0eb0bc',1,'utils::logger']]],
+  ['logger_7',['logger',['../namespaceutils_1_1logger.html#a88714182eaf8c92ef98bcd31cab4411d',1,'utils::logger']]]
 ];

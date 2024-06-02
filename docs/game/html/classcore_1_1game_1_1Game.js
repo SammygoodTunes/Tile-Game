@@ -2,7 +2,7 @@ var classcore_1_1game_1_1Game =
 [
     [ "__init__", "classcore_1_1game_1_1Game.html#af8c9bb7a92a0c9db391cdd60548e3eb0", null ],
     [ "all_events", "classcore_1_1game_1_1Game.html#af1f689367961a3e94a7202fe7283f556", null ],
-    [ "is_debug_mode_enabled", "classcore_1_1game_1_1Game.html#a48450d1df8c87cf9cc6883c88786f07a", null ],
+    [ "crash", "classcore_1_1game_1_1Game.html#acc32f64c73cc86f99340e6f720440df0", null ],
     [ "is_running", "classcore_1_1game_1_1Game.html#ac3d64b9ca0a2370358763bf905b63d49", null ],
     [ "stop", "classcore_1_1game_1_1Game.html#a91002bf67ff69209a07d2ff39a272642", null ],
     [ "update", "classcore_1_1game_1_1Game.html#aec364c856e2f96a027fcd986f45ced06", null ],

@@ -31,5 +31,5 @@ var searchData=
   ['stop_5fconnection_28',['stop_connection',['../classclient_1_1connection__handler_1_1ConnectionHandler.html#a58e0dcf127a69e2c04e4cf6dd8545edf',1,'client::connection_handler::ConnectionHandler']]],
   ['subtitle_5flabel_29',['subtitle_label',['../classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html#a196fc4c7ab65f483ca4f54ee2ce473f8',1,'gui::screens::servermenu_screen::ServerMenuScreen']]],
   ['success_30',['SUCCESS',['../classdata_1_1states_1_1ConnectionStates.html#a36669d354e48074d0d4ab254aea41b6c',1,'data::states::ConnectionStates']]],
-  ['surface_31',['surface',['../classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html#a4aaba8723bcddab60d6cd11effa90694',1,'gui.screens.loading_screen.LoadingScreen.surface'],['../classgui_1_1screens_1_1main__hud_1_1MainHud.html#a103dfa4be5d703e426f9d87d5215304e',1,'gui.screens.main_hud.MainHud.surface']]]
+  ['surface_31',['surface',['../classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html#a9a880dfd23d8310c78f9f2e20b88938f',1,'gui.screens.crash_screen.CrashScreen.surface'],['../classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html#a4aaba8723bcddab60d6cd11effa90694',1,'gui.screens.loading_screen.LoadingScreen.surface'],['../classgui_1_1screens_1_1main__hud_1_1MainHud.html#a103dfa4be5d703e426f9d87d5215304e',1,'gui.screens.main_hud.MainHud.surface']]]
 ];

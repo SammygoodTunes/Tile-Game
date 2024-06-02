@@ -1,6 +1,7 @@
 var dir_a7859cf717fdd6ac999eed8c591fb467 =
 [
     [ "__init__.py", "gui_2screens_2____init_____8py.html", null ],
+    [ "crash_screen.py", "crash__screen_8py.html", "crash__screen_8py" ],
     [ "credits_screen.py", "credits__screen_8py.html", "credits__screen_8py" ],
     [ "gameover_screen.py", "gameover__screen_8py.html", "gameover__screen_8py" ],
     [ "loading_screen.py", "loading__screen_8py.html", "loading__screen_8py" ],

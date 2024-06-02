@@ -30,6 +30,7 @@ var classworld_1_1map__manager_1_1Map =
     [ "set_tile", "classworld_1_1map__manager_1_1Map.html#a406e46b444f631c620146164e9809dcf", null ],
     [ "set_x", "classworld_1_1map__manager_1_1Map.html#ab6cfab3e51e3ccf6243d4d43f214e278", null ],
     [ "set_y", "classworld_1_1map__manager_1_1Map.html#ad617363e35390aab1fcb844223372cdd", null ],
+    [ "tile_to_screen_pos", "classworld_1_1map__manager_1_1Map.html#a8e6d0f6af6fc63f97071d59967e58a1e", null ],
     [ "tile_to_world_pos", "classworld_1_1map__manager_1_1Map.html#a3aa9b82a7a4f5a8ae30ac6818aa9535f", null ],
     [ "update", "classworld_1_1map__manager_1_1Map.html#a3751fc722c1e9fc58027f82953607ecd", null ],
     [ "_data", "classworld_1_1map__manager_1_1Map.html#a78803eb44858ece1544c3ae36e4476e2", null ],

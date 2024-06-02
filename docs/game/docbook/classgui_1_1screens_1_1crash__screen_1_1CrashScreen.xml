@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen" xml:lang="en-US">
+<title>gui.screens.crash_screen.CrashScreen Class Reference</title>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.crash_screen.CrashScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1crash__screen_1_1CrashScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a42adf35cb62258af007c8b77962377d3">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad94ad231e3d194e7433ba2ef993bdd81">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad821e72a30ea7e04b9b1100fac9d61c4">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1adbd0851dc2e9a9c802901ce28779ef22">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1abfdce45812a62f6d931312aed4cd768d">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a7a4761134ba5c223589a34a692b83fb5">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad94ad231e3d194e7433ba2ef993bdd81">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a9a880dfd23d8310c78f9f2e20b88938f">surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a531796c0af516d54b2e57575dd383830">crash_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1afbc339286855fb1528c4602fd2319be6">traceback_label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the crash screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a42adf35cb62258af007c8b77962377d3"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.crash_screen.CrashScreen.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1adbd0851dc2e9a9c802901ce28779ef22"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.crash_screen.CrashScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad821e72a30ea7e04b9b1100fac9d61c4"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface gui.screens.crash_screen.CrashScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a7a4761134ba5c223589a34a692b83fb5"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.crash_screen.CrashScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1abfdce45812a62f6d931312aed4cd768d"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.crash_screen.CrashScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a531796c0af516d54b2e57575dd383830"/><section>
+    <title>crash_label</title>
+<indexterm><primary>crash_label</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>crash_label</secondary></indexterm>
+<para><computeroutput>gui.screens.crash_screen.CrashScreen.crash_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1a9a880dfd23d8310c78f9f2e20b88938f"/><section>
+    <title>surface</title>
+<indexterm><primary>surface</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>surface</secondary></indexterm>
+<para><computeroutput>gui.screens.crash_screen.CrashScreen.surface</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1afbc339286855fb1528c4602fd2319be6"/><section>
+    <title>traceback_label</title>
+<indexterm><primary>traceback_label</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>traceback_label</secondary></indexterm>
+<para><computeroutput>gui.screens.crash_screen.CrashScreen.traceback_label</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad94ad231e3d194e7433ba2ef993bdd81"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>gui.screens.crash_screen.CrashScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.crash_screen.CrashScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>gui.screens.crash_screen.CrashScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_crash__screen_8py">crash_screen.py</link></section>
+</section>

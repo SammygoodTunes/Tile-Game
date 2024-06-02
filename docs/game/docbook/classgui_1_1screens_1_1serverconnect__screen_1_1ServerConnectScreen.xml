@@ -21,9 +21,9 @@
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a49d9dd2ad9b68d639fe1d305a8e16f42">update_ui</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ac1aa1fc894786a53d03a248bc7a4caf5">update_info_label</link> (self, int code)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aae62ab2e221fdcbed91f723831c37b60">update_info_label</link> (self, int code)</para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a40e1a5d3f5ca59c1f618a0c427a04e73">reset_info_label</link> (self)</para>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a517ba42e18c021206597511d757870e8">reset_info_label</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a879689c22af3f5ddfb4609bd6d66b287">set_state</link> (self, bool state)</para>
 </listitem>
@@ -76,11 +76,14 @@
 <para><literallayout><computeroutput>Initialise the screen&apos;s surface.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a40e1a5d3f5ca59c1f618a0c427a04e73"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a517ba42e18c021206597511d757870e8"/><section>
     <title>reset_info_label()</title>
 <indexterm><primary>reset_info_label</primary><secondary>gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>reset_info_label</secondary></indexterm>
-<para><computeroutput>gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label ( self)</computeroutput></para></section>
+<para><computeroutput> None gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the information label back to its default state, then update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a879689c22af3f5ddfb4609bd6d66b287"/><section>
     <title>set_state()</title>
 <indexterm><primary>set_state</primary><secondary>gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
@@ -89,11 +92,11 @@
 <para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ac1aa1fc894786a53d03a248bc7a4caf5"/><section>
+<anchor xml:id="_classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aae62ab2e221fdcbed91f723831c37b60"/><section>
     <title>update_info_label()</title>
 <indexterm><primary>update_info_label</primary><secondary>gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>update_info_label</secondary></indexterm>
-<para><computeroutput>gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label ( self, int code)</computeroutput></para>
+<para><computeroutput> None gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label ( self, int code)</computeroutput></para>
 <para><literallayout><computeroutput>Update info label&apos;s text and colour based on received connection code, then update the screen UI.
 </computeroutput></literallayout> </para>
 </section>

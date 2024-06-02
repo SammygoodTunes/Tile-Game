@@ -1,5 +1,6 @@
 var namespacegui_1_1screens =
 [
+    [ "crash_screen", "namespacegui_1_1screens_1_1crash__screen.html", "namespacegui_1_1screens_1_1crash__screen" ],
     [ "credits_screen", "namespacegui_1_1screens_1_1credits__screen.html", "namespacegui_1_1screens_1_1credits__screen" ],
     [ "gameover_screen", "namespacegui_1_1screens_1_1gameover__screen.html", "namespacegui_1_1screens_1_1gameover__screen" ],
     [ "loading_screen", "namespacegui_1_1screens_1_1loading__screen.html", "namespacegui_1_1screens_1_1loading__screen" ],

@@ -1,10 +1,10 @@
 var classclient_1_1connection_1_1Connection =
 [
-    [ "__init__", "classclient_1_1connection_1_1Connection.html#a9d0f51025249e39c0179a773bfc3cae3", null ],
+    [ "__init__", "classclient_1_1connection_1_1Connection.html#a68b19eec5d53430544138a8ab8c81772", null ],
     [ "connect", "classclient_1_1connection_1_1Connection.html#a47c9732a0c4f2f2a647f6cb1e9e96fb6", null ],
     [ "disconnect", "classclient_1_1connection_1_1Connection.html#aca91744db2d16331e7ff918f7dafcaf1", null ],
-    [ "start", "classclient_1_1connection_1_1Connection.html#a49cf3ee5b5378722e4fad69adfb9d0e0", null ],
-    [ "update", "classclient_1_1connection_1_1Connection.html#a0ee31fb242c4854ed7009f2bb5a4498a", null ],
+    [ "start", "classclient_1_1connection_1_1Connection.html#a068fcc48e7f328c29a6fd90070ef900c", null ],
+    [ "update", "classclient_1_1connection_1_1Connection.html#a2c91444fdc3edd43ded7f78b102ea454", null ],
     [ "data", "classclient_1_1connection_1_1Connection.html#a91c148311d86681e29899b6b0dab3d45", null ],
     [ "host", "classclient_1_1connection_1_1Connection.html#a3dd1ae73a85bb3510ace7f19a668195a", null ],
     [ "player_manager", "classclient_1_1connection_1_1Connection.html#a41ee5eb37ad37d8f9cb257225ee55482", null ],

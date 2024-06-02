@@ -10,5 +10,6 @@ var classgui_1_1screens_1_1main__hud_1_1MainHud =
     [ "hotbar", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#a2870c39dd19039df8e1fff11763d0e4a", null ],
     [ "position_label", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#a608513dded223b48b21409f6c6e32b11", null ],
     [ "score_label", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#a6816b1e75798357a96567f2ba222cfcf", null ],
-    [ "surface", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#a103dfa4be5d703e426f9d87d5215304e", null ]
+    [ "surface", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#a103dfa4be5d703e426f9d87d5215304e", null ],
+    [ "version_label", "classgui_1_1screens_1_1main__hud_1_1MainHud.html#ad83dc14696f9691e625acdfbe65fc1da", null ]
 ];
