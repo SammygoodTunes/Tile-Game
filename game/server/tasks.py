@@ -57,14 +57,19 @@ class Tasks:
         Task for receiving a client's player data.
         """
         if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_REQ):
+            print("Got player request, sending response")
             conn.send(Hasher.enhash(Protocol.PLAYERUPDATE_RES))
             compressed_player_obj = b''
             data: bytes = conn.recv(Protocol.BUFFER_SIZE)
             while data != Hasher.enhash(Protocol.PLAYERUPDATE_READY_RES):
+                print(b'Waiting for ready response: '+Hasher.enhash(Protocol.PLAYERUPDATE_READY_RES))
                 compressed_player_obj += data
                 data = conn.recv(Protocol.BUFFER_SIZE)
+            print('Got ready response, decompressing')
+            print(compressed_player_obj)
             player = Compressor.decompress(compressed_player_obj.strip())
             if player is None:
+                print("player is none, returning empty string")
                 return str()
             player_handler.update_player(player)
             return player['name']

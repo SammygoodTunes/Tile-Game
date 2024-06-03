@@ -21,7 +21,7 @@ class ServerCreateScreen(Screen):
         self.faded_surface = self.initialise_surface()
         self.create_label = Label("Create server")
         self.ign_input = (InputBox(placeholder='Player name').
-                          set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnum())
+                          set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
         self.create_button = Button('Create')
         self.back_button = Button('Back')

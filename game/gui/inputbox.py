@@ -127,6 +127,13 @@ class InputBox(Widget):
 
     def authorise_only_alnum(self):
         """
+        Authorise only alphanumerical values (a-zA-Z0-9), then return the input box itself.
+        """
+        self._authorised_chars = ascii_letters + digits
+        return self
+
+    def authorise_only_alnumlines(self):
+        """
         Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
         This includes dashes (hyphens) and underscores.
         """

@@ -114,21 +114,20 @@ class Server:
         if self.state.value in (ServerStates.STARTING, ServerStates.RUNNING):
             self.sock.close()
             self.state.value = ServerStates.IDLE
-            self.test()
-            self.test()
+            self.test(self.sock)
             logger.info('Server closed.')
             self.sock = None
             self.world_handler = None
 
     @staticmethod
-    def test():
+    def test(sock):
         """
         Attempt to connect and send data to the server.
         This is used after the server's closure to make sure it doesn't still think it's open; it's odd I know.
         """
         try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((socket.gethostbyname(socket.gethostname()), 35000))
             sock.send(Hasher.enhash('TEST'))
+            sock.close()
         except Exception:
             pass
