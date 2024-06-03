@@ -23,6 +23,8 @@ class PlayerHandler:
         """
         Update the player attributes with the received player object, if possible.
         """
+        if player is None:
+            return
         logger.debug(f'Updating player \'{player["name"]}\'')
         index = next((i for i, p in enumerate(self._players) if p['name'] == player['name']), None)
         if index is None:
