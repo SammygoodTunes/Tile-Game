@@ -5,9 +5,7 @@ import pygame
 from pygame.math import clamp
 from random import randint
 from typing import Self
-from time import time
 
-from game import assets
 from game.data.items import Items
 from game.data.states import MouseStates, PlayerStates
 from game.data.tiles import Tile, Tiles, TileTypes

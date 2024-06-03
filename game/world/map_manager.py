@@ -1,8 +1,6 @@
 
-from math import ceil
 from pygame import SRCALPHA, Surface
 from random import randint, seed
-from threading import Thread, Event
 from typing import Self
 
 from game.data.states import MapStates

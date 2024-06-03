@@ -1,4 +1,4 @@
-import pygame
+
 from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_RETURN, Surface, BLEND_ALPHA_SDL2
 from pygame.math import clamp
 from string import printable, digits, ascii_letters

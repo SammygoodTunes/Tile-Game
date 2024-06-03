@@ -4,7 +4,6 @@ from pygame import BLEND_ALPHA_SDL2, math
 from pygame.font import Font
 from typing import Self, Union
 
-from game import assets
 from game.gui.widget import Widget
 from game.utils.logger import logger
 

@@ -2,7 +2,6 @@
 from importlib import resources as impr
 from typing import Self
 
-from game import assets
 from game.utils.logger import logger
 
 

@@ -1,6 +1,5 @@
 
-from pygame import mouse, draw, Surface
-from pygame.math import clamp
+from pygame import mouse, Surface
 from typing import Self
 
 from game.gui.label import Widget, Label

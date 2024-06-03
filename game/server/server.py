@@ -7,7 +7,7 @@ from time import sleep
 from game.data.properties import ServerProperties
 from game.data.states import ServerStates
 from game.network.protocol import Protocol
-from game.network.packet import Hasher, Compressor
+from game.network.packet import Hasher
 from game.server.player_handler import PlayerHandler
 from game.server.tasks import Tasks
 from game.server.world_handler import WorldHandler

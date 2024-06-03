@@ -2,7 +2,6 @@
 from importlib import resources as impr
 import pygame
 
-from game import assets
 import game.data.data_manager as data_mng
 from game.gui.label import Label
 from game.gui.screen_manager import Screens

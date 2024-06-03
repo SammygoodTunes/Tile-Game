@@ -1,7 +1,6 @@
 
 from pygame import Surface
 
-import game.data.data_manager as data_mng
 from game.data.properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label

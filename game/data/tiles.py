@@ -3,7 +3,6 @@ from importlib import resources as impr
 from itertools import count
 from typing import Self
 
-from game import assets
 from game.utils.logger import logger
 
 

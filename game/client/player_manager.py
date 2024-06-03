@@ -4,7 +4,6 @@ from pygame.draw import rect
 from typing import Self
 
 from game.data.properties import ServerProperties
-from game.gui.label import Label
 from game.gui.nametag import NameTag
 
 

@@ -2,7 +2,6 @@
 from pygame import Surface
 from pygame.event import Event
 
-import game.data.data_manager as data_mng
 from game.data.properties import ScreenProperties, PlayerProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label

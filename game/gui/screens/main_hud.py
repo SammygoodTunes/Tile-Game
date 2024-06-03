@@ -2,7 +2,6 @@
 from pygame.surface import Surface
 
 from game.data.data_manager import get_game_property, APP_VERSION
-from game.gui.button import Button
 from game.gui.hotbar import Hotbar
 from game.gui.label import Label
 from game.gui.progress_bar import ProgressBar
