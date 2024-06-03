@@ -3,8 +3,6 @@ fix bug server randomly crashes when user disconnects and server closes because 
 reset player (health, score, etc) when creating new server
 player limit (10)
 player list (tab or another key)
-press escape in any submenu to go back to main menu
-press tab to go to next textbox of current screen in defined order
-press enter in join or create server screen to confirm (instead of pressing button)
+tab through input boxes by making container component and using input box ordering
 change look of players (keep 32x32 dim) -> customisation screen ?
 sync server<->client map (update map every n secs/min ?)
