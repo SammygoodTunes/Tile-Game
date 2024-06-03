@@ -1,4 +1,3 @@
-
 import pygame
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
@@ -68,20 +67,29 @@ class Screens:
         self.credits_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.loading_screen.get_state() and not self.gameover_screen.get_state():
+            if e.key == pygame.K_ESCAPE and self.game.start_game and not self.server_connect_screen.get_state() and not self.gameover_screen.get_state():
                 if self.options_screen.get_state():
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                 self.window.paused = self.pause_screen.get_state()
                 self.map_screen.set_state(False)
-            if e.key == pygame.K_ESCAPE and not self.game.start_game and not self.main_menu_screen.get_state():
+            if e.key == pygame.K_ESCAPE and not self.server_connect_screen.get_state() and not self.main_menu_screen.get_state() and not self.game.start_game:
                 self.server_menu_screen.set_state(False)
                 self.server_create_screen.set_state(False)
                 self.server_join_screen.set_state(False)
                 self.options_screen.set_state(False)
                 self.credits_screen.set_state(False)
                 self.main_menu_screen.set_state(True)
+
+            if e.key == pygame.K_RETURN:
+                if self.server_create_screen.get_state() and self.server_create_screen.create_button.get_state():
+                    self.task_create_server()
+                if self.server_join_screen.get_state() and self.server_join_screen.join_button.get_state():
+                    self.task_join_server()
+
+            if e.key == pygame.K_TAB:
+                self.task_tab()
 
         if self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead() and not self.game.paused:
             self.map_screen.set_state(keys[Keys.SHOW_MAP])
@@ -137,11 +145,7 @@ class Screens:
                     self.main_menu_screen.set_state(True)
 
                 elif self.server_join_screen.join_button.is_hovering_over() and self.server_join_screen.get_state():
-                    self.server_join_screen.set_state(False)
-                    self.server_connect_screen.set_state(True)
-                    self.server_connect_screen.back_button.set_state(False)
-                    self.game.connection_handler.start_connection = True
-                    self.game.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
+                    self.task_join_server()
                 elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
                     self.server_join_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
@@ -149,19 +153,7 @@ class Screens:
                     self.game.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
 
                 elif self.server_create_screen.create_button.is_hovering_over() and self.server_create_screen.get_state():
-                    self.server_create_screen.set_state(False)
-                    self.server_connect_screen.set_state(True)
-                    self.server_connect_screen.back_button.set_state(False)
-                    self.game.server.start()
-                    if self.game.server.state.value != ServerStates.FAIL:
-                        self.game.connection_handler.host = 'localhost'
-                        self.game.connection_handler.port = 35000
-                        self.game.connection_handler.start_connection = True
-                        self.game.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
-                    else:
-                        self.game.server.stop()
-                        self.server_connect_screen.back_button.set_state(True)
-                        self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
+                    self.task_create_server()
                 elif self.server_create_screen.back_button.is_hovering_over() and self.server_create_screen.get_state():
                     self.server_create_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
@@ -239,3 +231,47 @@ class Screens:
         self.gameover_screen.update_ui()
         self.map_screen.update_ui()
 
+    def task_tab(self) -> None:
+        if self.server_create_screen.get_state():
+            self.server_create_screen.ign_input.set_selected(not self.server_create_screen.ign_input.is_selected())
+        # FIXME: Allow tabbing for server join.
+        # TODO: Make this better by creating a container component and using input box ordering.
+        '''
+        if self.server_join_screen.get_state():
+            self.server_join_screen.ign_input.set_selected(
+                (not self.server_join_screen.ign_input.is_selected()
+                 and not self.server_join_screen.ip_input.is_selected()
+                 and not self.server_join_screen.port_input.is_selected())
+                or self.server_join_screen.ip_input.is_selected()
+            )
+            self.server_join_screen.ip_input.set_selected(self.server_join_screen.ign_input.is_selected())
+            self.server_join_screen.port_input.set_selected(self.server_join_screen.ip_input.is_selected())
+        '''
+
+    def task_create_server(self) -> None:
+        """
+        Screen task for creating a server.
+        """
+        self.server_create_screen.set_state(False)
+        self.server_connect_screen.set_state(True)
+        self.server_connect_screen.back_button.set_state(False)
+        self.game.server.start()
+        if self.game.server.state.value != ServerStates.FAIL:
+            self.game.connection_handler.host = 'localhost'
+            self.game.connection_handler.port = 35000
+            self.game.connection_handler.start_connection = True
+            self.game.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
+        else:
+            self.game.server.stop()
+            self.server_connect_screen.back_button.set_state(True)
+            self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
+
+    def task_join_server(self) -> None:
+        """
+        Screen task for joining a server.
+        """
+        self.server_join_screen.set_state(False)
+        self.server_connect_screen.set_state(True)
+        self.server_connect_screen.back_button.set_state(False)
+        self.game.connection_handler.start_connection = True
+        self.game.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())

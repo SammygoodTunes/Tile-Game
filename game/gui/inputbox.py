@@ -29,6 +29,7 @@ class InputBox(Widget):
         self._cursor_colour = (190, 255, 10)
         self._text_value = text
         self._text_offset = 0
+        self._order = 0
         self._max_text_length = 64
         self._authorised_chars = printable[:-5]
         self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
@@ -140,10 +141,18 @@ class InputBox(Widget):
         return (self._x <= mouse_x <= self._x + self._width and
                 self._y <= mouse_y <= self._y + self._height and self._enabled)
 
+    def set_selected(self, state) -> Self:
+        """
+        Set the selected state of the input box, then return the input box itself.
+        """
+        self._selected = state
+        return self
+
     def is_selected(self) -> bool:
         """
         Return whether the input box is selected or not.
         """
+        return self._selected
 
     def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
         """
@@ -279,3 +288,17 @@ class InputBox(Widget):
         Return the input box's max text length.
         """
         return self._max_text_length
+
+    def set_order(self, order: int) -> Self:
+        """
+        Set the order of the input box, then return the input box itself.
+        Used for tabbing between them.
+        """
+        self._order = order
+        return self
+
+    def get_order(self) -> int:
+        """
+        Return the order of the input box.
+        """
+        return self._order
