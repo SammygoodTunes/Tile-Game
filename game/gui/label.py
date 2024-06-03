@@ -17,7 +17,7 @@ class Label(Widget):
     DEFAULT_FONT = impr.files('assets') / "font.ttf"
     DEFAULT_FONT_SIZE_SMALL = 8
     DEFAULT_FONT_SIZE_NORMAL = 11
-    DEFAULT_FONT_SIZE_LARGE = 14
+    DEFAULT_FONT_SIZE_LARGE = 13
 
     def __init__(self, text: str = "", x: int = 0, y: int = 0) -> None:
         super().__init__(x, y)
