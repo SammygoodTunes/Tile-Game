@@ -75,6 +75,13 @@ class Screens:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                 self.window.paused = self.pause_screen.get_state()
                 self.map_screen.set_state(False)
+            if e.key == pygame.K_ESCAPE and not self.game.start_game and not self.main_menu_screen.get_state():
+                self.server_menu_screen.set_state(False)
+                self.server_create_screen.set_state(False)
+                self.server_join_screen.set_state(False)
+                self.options_screen.set_state(False)
+                self.credits_screen.set_state(False)
+                self.main_menu_screen.set_state(True)
 
         if self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead() and not self.game.paused:
             self.map_screen.set_state(keys[Keys.SHOW_MAP])
