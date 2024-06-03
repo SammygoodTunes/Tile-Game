@@ -64,6 +64,8 @@ class Tasks:
                 compressed_player_obj += data
                 data = conn.recv(Protocol.BUFFER_SIZE)
             player = Compressor.decompress(compressed_player_obj.strip())
+            if player is None:
+                return str()
             player_handler.update_player(player)
             return player['name']
         return str()

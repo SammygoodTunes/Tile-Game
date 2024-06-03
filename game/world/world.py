@@ -22,11 +22,11 @@ class World:
         """
         self._map.initialise()
 
-    def create(self) -> None:
+    def create(self, seed) -> None:
         """
         Create the world.
         """
-        self._map.regenerate()
+        self._map.regenerate(seed)
 
     def update(self, window_obj, player_obj) -> None:
         """

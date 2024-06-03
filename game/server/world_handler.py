@@ -10,11 +10,11 @@ class WorldHandler:
     def __init__(self) -> None:
         self._world: World = World()
 
-    def create_world(self) -> None:
+    def create_world(self, seed) -> None:
         """
         Create a new server world.
         """
-        self._world.create()
+        self._world.create(seed)
 
     def get_world(self) -> World:
         """

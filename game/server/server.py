@@ -65,7 +65,7 @@ class Server:
         self.player_count -= 1
         conn.close()
 
-    def run(self, state) -> None:
+    def run(self, state, _seed: str) -> None:
         """
         Run the server and listen for connections.
         """
@@ -76,7 +76,7 @@ class Server:
         # TODO: Add support for IPv6
 
         self.sock.listen()
-        self.world_handler.create_world()
+        self.world_handler.create_world(_seed)
 
         state.value = ServerStates.RUNNING
 
@@ -85,7 +85,7 @@ class Server:
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()
 
-    def start(self) -> None:
+    def start(self, _seed: str) -> None:
         """
         Prepare the server.
         """
@@ -104,7 +104,7 @@ class Server:
             print(f'Server failed to start.')
             return
         print(f'Starting server on {host}')
-        server_thread = Process(target=self.run, args=(self.state,))
+        server_thread = Process(target=self.run, args=(self.state, _seed))
         server_thread.start()
 
     def stop(self) -> None:

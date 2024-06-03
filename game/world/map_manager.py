@@ -1,6 +1,7 @@
 
 from pygame import SRCALPHA, Surface
-from random import randint, seed
+from random import choice, randint, seed
+from string import ascii_letters, digits
 from typing import Self
 
 from game.data.states import MapStates
@@ -20,21 +21,21 @@ class Map:
                + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
                + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
 
-    SEED_RANGE: int = 2 ** 32
+    SEED_LENGTH: int = 64
+    SEED_CHARS: str = ''.join(digits + ascii_letters)
 
     def __init__(self, width: int, height: int) -> None:
         self._state: tuple[str, int] = ('', 0)
         self.tile_manager = TileManager()
         self._data: list = list()
         self._dynatile_data: list = list()
-        self._seed = 0
+        self._seed: str = ''
         self._x = -width * TileManager.SIZE // 2
         self._y = -height * TileManager.SIZE // 2
         self._width = width
         self._height = height
         self._surface = None
         self._dynatile_surface = None
-        self.randomise_seed()
         self.perlin_noise = noise.PerlinNoise()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -127,11 +128,15 @@ class Map:
                 progress = round((i + 1) / len(self._data) * 100)
                 logger.info(f'Loading map data... {progress}%')
 
-    def regenerate(self) -> None:
+    def regenerate(self, _seed: str) -> None:
         """
         Regenerate the map data.
         """
-        self.randomise_seed()
+        if not _seed:
+            logger.info('Seed field empty, randomising seed.')
+            self.randomise_seed()
+        else:
+            self.set_seed(_seed)
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
@@ -247,11 +252,11 @@ class Map:
         """
         Randomise the map seed, then return the map manager itself.
         """
-        self._seed = randint(-Map.SEED_RANGE, Map.SEED_RANGE)
+        self._seed = ''.join(choice(Map.SEED_CHARS) for _ in range(Map.SEED_LENGTH))
         seed(self._seed)
         return self
 
-    def set_seed(self, _seed: int) -> Self:
+    def set_seed(self, _seed: str) -> Self:
         """
         Set the map seed, then return the map manager itself.
         """

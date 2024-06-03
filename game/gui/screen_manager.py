@@ -232,11 +232,12 @@ class Screens:
         self.map_screen.update_ui()
 
     def task_tab(self) -> None:
-        if self.server_create_screen.get_state():
-            self.server_create_screen.ign_input.set_selected(not self.server_create_screen.ign_input.is_selected())
+        pass
         # FIXME: Allow tabbing for server join.
         # TODO: Make this better by creating a container component and using input box ordering.
         '''
+        if self.server_create_screen.get_state():
+            self.server_create_screen.ign_input.set_selected(not self.server_create_screen.ign_input.is_selected())
         if self.server_join_screen.get_state():
             self.server_join_screen.ign_input.set_selected(
                 (not self.server_join_screen.ign_input.is_selected()
@@ -255,7 +256,7 @@ class Screens:
         self.server_create_screen.set_state(False)
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.back_button.set_state(False)
-        self.game.server.start()
+        self.game.server.start(self.server_create_screen.seed_input.get_text().strip())
         if self.game.server.state.value != ServerStates.FAIL:
             self.game.connection_handler.host = 'localhost'
             self.game.connection_handler.port = 35000
