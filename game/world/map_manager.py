@@ -57,7 +57,7 @@ class Map:
         # Somehow make a call to set loading screen state to True
 
         self.set_state(MapStates.GENMAP)
-        print(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
+        logger.info(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
         for tile in range(self._width * self._height):
