@@ -1,6 +1,5 @@
 add json world generation presets
 fix bug server randomly crashes when user disconnects and server closes because packet is being sent to closed server
-reset player (health, score, etc) when creating new server
 player limit (10)
 player list (tab or another key)
 tab through input boxes by making container component and using input box ordering
