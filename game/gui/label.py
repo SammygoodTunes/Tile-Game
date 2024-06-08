@@ -64,7 +64,7 @@ class Label(Widget):
         Center the label horizontally relative to the specified parent, then return the label itself.
         """
         width, height = self.font.size(self._text)
-        self._x = round(parent_x + parent_width / 2 - width / 2)
+        self._x = round(parent_x + parent_width // 2 - width // 2)
         self.refresh()
         return self
 
@@ -73,7 +73,7 @@ class Label(Widget):
         Center the label vertically relative to the specified parent, then return the label itself.
         """
         height = self.get_total_height() + 4  # Bad but seems to fix the centering
-        self._y = round(parent_y + parent_height / 2 - height / 2)
+        self._y = round(parent_y + parent_height // 2 - height // 2)
         self.refresh()
         return self
 
