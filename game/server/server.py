@@ -2,6 +2,7 @@
 from threading import Thread
 from multiprocessing import Process, Value
 import socket
+import select
 from time import sleep
 
 from game.data.properties import ServerProperties
@@ -81,9 +82,13 @@ class Server:
         state.value = ServerStates.RUNNING
 
         while state.value == ServerStates.RUNNING:
-            conn, addr = self.sock.accept()
-            thread = Thread(target=self.client_handler, args=(conn, addr))
-            thread.start()
+            readable, _, _ = select.select([self.sock], [], [self.sock], self.sock.gettimeout())
+            for r in readable:
+                if r is self.sock:
+                    self.sock.setblocking(False)
+                    conn, addr = self.sock.accept()
+                    thread = Thread(target=self.client_handler, args=(conn, addr))
+                    thread.start()
 
     def start(self, _seed: str) -> None:
         """
