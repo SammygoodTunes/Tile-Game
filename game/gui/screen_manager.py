@@ -81,6 +81,9 @@ class Screens:
                 self.options_screen.set_state(False)
                 self.credits_screen.set_state(False)
                 self.main_menu_screen.set_state(True)
+            if e.key == pygame.K_ESCAPE and self.server_connect_screen.get_state() and self.server_connect_screen.back_button.get_state():
+                self.server_connect_screen.set_state(False)
+                self.main_menu_screen.set_state(True)
 
             if e.key == pygame.K_RETURN:
                 if self.server_create_screen.get_state() and self.server_create_screen.create_button.get_state():
