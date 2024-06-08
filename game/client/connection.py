@@ -113,7 +113,8 @@ class Connection:
                 print('Disconnecting from server.')
                 self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
             except (ConnectionResetError, BrokenPipeError):
-                self.state = ConnectionStates.IDLE
+                pass
+            self.state = ConnectionStates.IDLE
 
     def update(self) -> None:
         """
