@@ -24,6 +24,7 @@ class Server:
         self.state = Value('i', ServerStates.IDLE)
         self.player_count = 0
         self.sock: socket.socket | None = None
+        self.server_thread: Process | None = None
         self.timeout = 0
         self.world_handler: WorldHandler | None = None
         self.player_handler: PlayerHandler | None = None
@@ -82,13 +83,10 @@ class Server:
         state.value = ServerStates.RUNNING
 
         while state.value == ServerStates.RUNNING:
-            readable, _, _ = select.select([self.sock], [], [self.sock], self.sock.gettimeout())
-            for r in readable:
-                if r is self.sock:
-                    self.sock.setblocking(False)
-                    conn, addr = self.sock.accept()
-                    thread = Thread(target=self.client_handler, args=(conn, addr))
-                    thread.start()
+            #self.sock.setblocking(False)
+            conn, addr = self.sock.accept()
+            thread = Thread(target=self.client_handler, args=(conn, addr))
+            thread.start()
 
     def start(self, _seed: str) -> None:
         """
@@ -109,14 +107,16 @@ class Server:
             logger.error(f'Server failed to start: {e}')
             return
         print(f'Starting server on {host}')
-        server_thread = Process(target=self.run, args=(self.state, _seed))
-        server_thread.start()
+        self.server_thread = Process(target=self.run, args=(self.state, _seed))
+        self.server_thread.start()
 
     def stop(self) -> None:
         """
         Stop the server if it's running, otherwise don't do anything.
         """
         if self.state.value in (ServerStates.STARTING, ServerStates.RUNNING):
+            if self.server_thread is not None:
+                self.server_thread.kill()
             self.sock.close()
             self.state.value = ServerStates.IDLE
             logger.info('Server closed.')
