@@ -45,6 +45,7 @@ class ConnectionHandler:
                 game.world.initialise()
                 game.world.get_map().load()
                 game.player.set_ideal_spawn_point(game.world.get_map(), game.camera)
+                game.paused = False
                 game.start_game = True
                 game.screens.server_connect_screen.set_state(False)
                 self.connection.start(task=Tasks.UPDATE)
