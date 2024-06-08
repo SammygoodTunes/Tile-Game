@@ -1,3 +1,6 @@
+improve synchronisation + lerp + socket disconnection (research)
+fix client still "paused" (can't move) when server closed and client has paused
+update map when joining server
 add json world generation presets
 fix bug server randomly crashes when user disconnects and server closes because packet is being sent to closed server
 player limit (10)
@@ -6,5 +9,5 @@ tab through input boxes by making container component and using input box orderi
 change look of players (keep 32x32 dim) -> customisation screen ?
 sync server<->client map (update map every n secs/min ?)
 move ign text box to some option screen
-add seed text box in server create screen
 center nametags
+change colour of health bar (blue <-> red)
