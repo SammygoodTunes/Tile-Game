@@ -1,8 +1,8 @@
 improve synchronisation + lerp + socket disconnection (research)
-fix client still "paused" (can't move) when server closed and client has paused
+make other players' position for client's perspective more precise (wobbly movement)
+escape in connection screen (when back button is visible) to return to main menu
 update map when joining server
 add json world generation presets
-fix bug server randomly crashes when user disconnects and server closes because packet is being sent to closed server
 player limit (10)
 player list (tab or another key)
 tab through input boxes by making container component and using input box ordering
