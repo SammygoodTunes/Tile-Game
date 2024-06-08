@@ -23,7 +23,10 @@ class MainHud(Screen):
         self.score_label = Label()
         self.camera_label = Label()
         self.position_label = Label()
-        self.health_bar = ProgressBar(title="Player health").set_value(self.game.player.get_health()).set_state(True)
+        self.health_bar = (ProgressBar(title="Player health", value=100)
+                           .set_value(self.game.player.get_health())
+                           .set_filled_end_colour((20, 131, 240))
+                           .set_state(True))
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 

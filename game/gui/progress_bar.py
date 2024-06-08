@@ -16,15 +16,20 @@ class ProgressBar(Widget):
     MIN_WIDTH = 25
     MAX_WIDTH = 500
 
-    def __init__(self, title: str = "", x: int = 0, y: int = 0) -> None:
+    def __init__(self, title: str = "",
+                 x: int = 0,
+                 y: int = 0,
+                 value: int = 0,
+                 min_value: int = 0,
+                 max_value: int = 100) -> None:
         super().__init__(x, y)
         self._width = 0
         self._height = 16
-        self._value = 0
-        self._min_value = 0
-        self._max_value = 100
+        self._value = value
+        self._min_value = min_value
+        self._max_value = max_value
         self._unfilled_colour = (50, 50, 50)
-        self._filled_start_colour = (255, 130, 120)
+        self._filled_start_colour = (255, 50, 80)
         self._filled_end_colour = (120, 255, 130)
         self.info_label = Label().set_font_sizes((8, 9, 10))
         self.info_label.set_text(title)
@@ -58,7 +63,7 @@ class ProgressBar(Widget):
         self.info_label.update(window)
         self.progress_label.update(window)
         self._width = clamp(window.width * 0.2, ProgressBar.MIN_WIDTH, ProgressBar.MAX_WIDTH)
-        self._height = self.progress_label.font.size(self.progress_label.get_text())[1] + 4
+        self._height = self.progress_label.font.size(self.progress_label.get_text())[1] + 8
         self.refresh()
         return self
 
@@ -184,7 +189,7 @@ class ProgressBar(Widget):
         """
         return self._filled_start_colour
 
-    def set_filled_end_color(self, filled_end_colour: tuple[int, int, int]) -> Self:
+    def set_filled_end_colour(self, filled_end_colour: tuple[int, int, int]) -> Self:
         """
         Set the filled end colour of the progress bar, then return the progress bar itself.
         """
