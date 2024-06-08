@@ -11,6 +11,7 @@ from game.gui.screens.mainmenu_screen import MainMenuScreen
 from game.gui.screens.map_screen import MapScreen
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
+from game.gui.screens.playerlist_screen import PlayerListScreen
 from game.gui.screens.servercreate_screen import ServerCreateScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
 from game.gui.screens.serverconnect_screen import ServerConnectScreen
@@ -39,6 +40,7 @@ class Screens:
         self.credits_screen = CreditsScreen(window)
         self.gameover_screen = GameoverScreen(window)
         self.map_screen = MapScreen(window)
+        self.player_list_screen = PlayerListScreen(window)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def link_game(self, game_obj) -> None:
@@ -49,6 +51,7 @@ class Screens:
         self.game = game_obj
         self.options_screen.game = self.game
         self.map_screen.game = self.game
+        self.player_list_screen.game = self.game
 
     def events(self, e: pygame.event.Event) -> None:
         """
@@ -73,7 +76,6 @@ class Screens:
                 else:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                 self.window.paused = self.pause_screen.get_state()
-                self.map_screen.set_state(False)
             if e.key == pygame.K_ESCAPE and not self.server_connect_screen.get_state() and not self.main_menu_screen.get_state() and not self.game.start_game:
                 self.server_menu_screen.set_state(False)
                 self.server_create_screen.set_state(False)
@@ -94,8 +96,12 @@ class Screens:
             if e.key == pygame.K_TAB:
                 self.task_tab()
 
-        if self.game.start_game and not self.loading_screen.get_state() and not self.game.player.is_dead() and not self.game.paused:
+        if self.game.start_game and not self.game.player.is_dead() and not self.game.paused:
             self.map_screen.set_state(keys[Keys.SHOW_MAP])
+            self.player_list_screen.set_state(keys[Keys.SHOW_PLAYERLIST])
+        else:
+            self.map_screen.set_state(False)
+            self.player_list_screen.set_state(False)
 
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
@@ -216,6 +222,7 @@ class Screens:
         self.credits_screen.draw()
         self.gameover_screen.draw()
         self.map_screen.draw()
+        self.player_list_screen.draw()
 
     def update_ui(self) -> None:
         """
@@ -233,6 +240,7 @@ class Screens:
         self.credits_screen.update_ui()
         self.gameover_screen.update_ui()
         self.map_screen.update_ui()
+        self.player_list_screen.update_ui(bypass=True)
 
     def task_tab(self) -> None:
         pass

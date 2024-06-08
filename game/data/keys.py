@@ -8,3 +8,4 @@ class Keys:
     """
 
     SHOW_MAP = pygame.K_SPACE
+    SHOW_PLAYERLIST = pygame.K_TAB

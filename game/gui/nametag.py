@@ -18,6 +18,7 @@ class NameTag(Widget):
         self._width = self.label.get_total_width() + 5
         self._height = self.label.get_total_height()
         self._faded_surface = Surface((self._width, self._height))
+        self.set_transparency(0.4)
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self, screen) -> None:
@@ -39,7 +40,7 @@ class NameTag(Widget):
         self.label.center_vertically(self._y, self._height)
         self._faded_surface = Surface((self._width, self._height))
         self._faded_surface.fill(self._background_colour)
-        self._faded_surface.set_alpha(96)
+        self._faded_surface.set_alpha(round(self._transparency * 255))
         self.refresh()
 
     def refresh(self) -> None:
@@ -55,6 +56,35 @@ class NameTag(Widget):
         mouse_x, mouse_y = mouse.get_pos()
         return (self._x <= mouse_x <= self._x + self._width and
                 self._y <= mouse_y <= self._y + self._height and self._enabled)
+
+    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
+        """
+        Center the nametag horizontally relative to the specified parent, then return the nametag itself.
+        """
+        self._x = round(parent_x + parent_width / 2 - self._width / 2)
+        return self
+
+    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
+        """
+        Center the nametag vertically relative to the specified parent, then return the nametag itself.
+        """
+        self._y = round(parent_y + parent_height / 2 - self._height / 2)
+        return self
+
+    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
+        """
+        Center the nametag on both axes relative to the specified parent, then return the nametag itself.
+        """
+        self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
+        return self
+
+    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
+        """
+        Center the nametag with center() and offset it by x and y relative to the specified parent, then return
+        the nametag itself.
+        """
+        self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
+        return self
 
     def set_width(self, width: int) -> Self:
         """
