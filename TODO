@@ -1,3 +1,5 @@
+authoritative server -> only requests from client to server and responses from server
+control and sync game state (player movement, etc) via server -> client predictions
 improve synchronisation + lerp
 update map when joining server
 add json world generation presets
