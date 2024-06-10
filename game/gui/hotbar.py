@@ -2,7 +2,7 @@
 from pygame import Surface, SRCALPHA
 from typing import Self
 
-from game.data.items import Items
+from game.data.items import Items, Item
 from game.gui.label import Label
 from game.gui.slot import Slot
 from game.gui.widget import Widget
@@ -32,6 +32,7 @@ class Hotbar(Widget):
         Initialise the hotbar's slots.
         """
         self._slots[0].set_item(Items.SHOVEL)
+        self._slots[1].set_item(Items.GUN)
         for i, slot in enumerate(self._slots):
             new_x_pos = slot.get_width() * i + self._spacing * i
             slot.set_x(new_x_pos)
@@ -150,7 +151,7 @@ class Hotbar(Widget):
         """
         return self._selected_slot
 
-    def get_selected_slot_item(self) -> Items:
+    def get_selected_slot_item(self) -> Item:
         """
         Return the item of the selected hotbar slot.
         """

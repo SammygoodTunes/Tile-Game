@@ -39,9 +39,9 @@ class PlayerListScreen(Screen):
         """
         Update the screen UI.
         """
-        if self.game.connection_handler.connection is None:
+        if self.game.client.connection_handler.connection is None:
             return
-        players = self.game.connection_handler.connection.player_manager.players
+        players = self.game.client.connection_handler.connection.player_manager.players
         if self._count == len(players) and not bypass:
             return
         height = 0

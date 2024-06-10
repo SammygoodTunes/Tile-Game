@@ -24,7 +24,7 @@ class MainHud(Screen):
         self.camera_label = Label()
         self.position_label = Label()
         self.health_bar = (ProgressBar(title="Player health", value=100)
-                           .set_value(self.game.player.get_health())
+                           .set_value(self.game.client.player.get_health())
                            .set_filled_end_colour((20, 131, 240))
                            .set_state(True))
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
@@ -36,12 +36,12 @@ class MainHud(Screen):
         """
         if self._enabled:
             if self.game.screens.options_screen.debug_info_box.is_checked():
-                self.camera_label.set_text(f"Camera (XY): {self.game.camera.x: .0f} {self.game.camera.y: .0f}")
+                self.camera_label.set_text(f"Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}")
                 self.position_label.set_text(
-                    f"Player (XY): {self.game.player.get_x(): .0f} {self.game.player.get_y(): .0f}")
+                    f"Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}")
                 self.camera_label.draw(self.game.screen)
                 self.position_label.draw(self.game.screen)
-            self.score_label.set_text(f"Score: {self.game.player.score}")
+            self.score_label.set_text(f"Score: {self.game.client.player.score}")
             self.score_label.draw(self.game.screen)
             self.health_bar.draw(self.game.screen)
             self.hotbar.draw(self.game.screen)

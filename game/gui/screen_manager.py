@@ -59,7 +59,7 @@ class Screens:
         """
         keys = pygame.key.get_pressed()
 
-        self.map_screen.initialise_map()
+        self.map_screen.initialise_map(self.game.client.world.get_map())
 
         if self.server_join_screen.get_state():
             self.server_join_screen.events(e)
@@ -96,7 +96,7 @@ class Screens:
             if e.key == pygame.K_TAB:
                 self.task_tab()
 
-        if self.game.start_game and not self.game.player.is_dead() and not self.game.paused:
+        if self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
             self.map_screen.set_state(keys[Keys.SHOW_MAP])
             self.player_list_screen.set_state(keys[Keys.SHOW_PLAYERLIST])
         else:
@@ -137,7 +137,7 @@ class Screens:
                         and self.server_join_screen.ip_input.get_text().strip()
                         and self.server_join_screen.port_input.get_text().strip()
                     )
-                    self.server_join_screen.ign_input.set_text(self.game.player.get_player_name())
+                    self.server_join_screen.ign_input.set_text(self.game.client.player.get_player_name())
                     self.server_join_screen.update_ui()
                 elif self.server_menu_screen.create_button.is_hovering_over() and self.server_menu_screen.get_state():
                     self.server_menu_screen.set_state(False)
@@ -146,7 +146,7 @@ class Screens:
                     self.server_create_screen.create_button.set_state(
                         bool(self.server_create_screen.ign_input.get_text().strip())
                     )
-                    self.server_create_screen.ign_input.set_text(self.game.player.get_player_name())
+                    self.server_create_screen.ign_input.set_text(self.game.client.player.get_player_name())
                     self.server_create_screen.update_ui()
 
                 elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
@@ -159,7 +159,7 @@ class Screens:
                     self.server_join_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
                     pygame.key.set_repeat()
-                    self.game.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
+                    self.game.client.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
 
                 elif self.server_create_screen.create_button.is_hovering_over() and self.server_create_screen.get_state():
                     self.task_create_server()
@@ -167,7 +167,7 @@ class Screens:
                     self.server_create_screen.set_state(False)
                     self.server_menu_screen.set_state(True)
                     pygame.key.set_repeat()
-                    self.game.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
+                    self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
 
                 elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
                     self.server_connect_screen.set_state(False)
@@ -186,25 +186,25 @@ class Screens:
                 elif self.pause_screen.disconnect_button.is_hovering_over():
                     self.game.start_game = False
                     self.game.paused = False
-                    self.game.connection_handler.stop_connection = True
+                    self.game.client.connection_handler.stop_connection = True
                     self.game.server.stop()
                     self.pause_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
                     self.map_screen.reset_map()
-                    self.game.player.reset(self.game.world.get_map(), self.game.camera)
+                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
 
                 elif self.gameover_screen.respawn_button.is_hovering_over():
                     self.gameover_screen.set_state(False)
-                    self.game.player.reset(self.game.world.get_map(), self.game.camera)
+                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
                 elif self.gameover_screen.disconnect_button.is_hovering_over():
                     self.game.start_game = False
                     self.game.paused = False
-                    self.game.connection_handler.stop_connection = True
+                    self.game.client.connection_handler.stop_connection = True
                     self.game.server.stop()
                     self.gameover_screen.set_state(False)
                     self.main_menu_screen.set_state(True)
                     self.map_screen.reset_map()
-                    self.game.player.reset(self.game.world.get_map(), self.game.camera)
+                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
 
     def update(self) -> None:
         """
@@ -269,10 +269,10 @@ class Screens:
         self.server_connect_screen.back_button.set_state(False)
         self.game.server.start(self.server_create_screen.seed_input.get_text().strip())
         if self.game.server.state.value != ServerStates.FAIL:
-            self.game.connection_handler.host = 'localhost'
-            self.game.connection_handler.port = 35000
-            self.game.connection_handler.start_connection = True
-            self.game.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
+            self.game.client.connection_handler.host = 'localhost'
+            self.game.client.connection_handler.port = 35000
+            self.game.client.connection_handler.player_name = self.server_create_screen.ign_input.get_text().strip()
+            self.game.client.connection_handler.start_connection = True
         else:
             self.game.server.stop()
             self.server_connect_screen.back_button.set_state(True)
@@ -285,5 +285,5 @@ class Screens:
         self.server_join_screen.set_state(False)
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.back_button.set_state(False)
-        self.game.connection_handler.start_connection = True
-        self.game.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
+        self.game.client.connection_handler.player_name = self.server_join_screen.ign_input.get_text().strip()
+        self.game.client.connection_handler.start_connection = True

@@ -61,9 +61,9 @@ def test_game_creation():
     init_font()
     new_game = Game(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
     assert isinstance(new_game, Window) and isinstance(new_game, Game)
-    assert new_game.camera is not None
-    assert new_game.player is not None
-    assert new_game.world is not None
+    assert new_game.client.camera is not None
+    assert new_game.client.player is not None
+    assert new_game.client.world is not None
     new_game.stop()
     assert not new_game.is_running()
     quit()

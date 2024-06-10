@@ -46,13 +46,13 @@ class World:
         Draw the world (map, tiles, etc.).
         """
         _, _, width, height = game.screen.get_rect()
-        true_x = width // 2 - int(game.camera.x) + self._map.get_x()
-        true_y = height // 2 - int(game.camera.y) + self._map.get_y()
+        true_x = width // 2 - int(game.client.camera.x) + self._map.get_x()
+        true_y = height // 2 - int(game.client.camera.y) + self._map.get_y()
 
         # Culling applied
         '''
-        culling_x = self.game.camera.x + self._map.get_width_in_pixels() / 2 - 200
-        culling_y = self.game.camera.y + self._map.get_height_in_pixels() / 2 - 200
+        culling_x = self.game.client.camera.x + self._map.get_width_in_pixels() / 2 - 200
+        culling_y = self.game.client.camera.y + self._map.get_height_in_pixels() / 2 - 200
         culling_width = 400
         culling_height = 400
         screen.blit(self._map.get_surface(), (true_x + culling_x, true_y + culling_y, self._map.get_width_in_pixels(), self._map.get_height_in_pixels()), (culling_x, culling_y, culling_width, culling_height))

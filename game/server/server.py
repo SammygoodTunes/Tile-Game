@@ -37,9 +37,9 @@ class Server:
         try:
             running = Tasks.recognition(conn, addr)
             Tasks.map_data(conn, addr, self.world_handler)
+            player_name = Tasks.player_join(conn, self.player_handler)
             data = conn.recv(Protocol.BUFFER_SIZE)
-            if data and data == Hasher.enhash(Protocol.GAMEUPDATE_REQ):
-                Tasks.send_game_state(conn, self.player_handler)
+            Tasks.game_state(conn, self.player_handler, data)
         except OSError:
             running = False
         print(f'Connection from: {addr}')
@@ -52,9 +52,8 @@ class Server:
                 data = conn.recv(Protocol.BUFFER_SIZE)
                 # print(f'Message from {addr}: {data}')
                 running = not Tasks.disconnection(data)
-                name = Tasks.player_update(conn, self.player_handler, data)
-                Tasks.send_game_state(conn, self.player_handler)
-                player_name = name if name else player_name
+                # Tasks.player_hit(conn, self.player_handler, data)
+                Tasks.game_state(conn, self.player_handler, data)
                 sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:
                 running = False
@@ -83,7 +82,6 @@ class Server:
         state.value = ServerStates.RUNNING
 
         while state.value == ServerStates.RUNNING:
-            #self.sock.setblocking(False)
             conn, addr = self.sock.accept()
             thread = Thread(target=self.client_handler, args=(conn, addr))
             thread.start()

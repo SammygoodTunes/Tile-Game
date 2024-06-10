@@ -51,3 +51,7 @@ class Compressor:
         except lzma.LZMAError as e:
             logger.error(f'Could not decompress: {e}')
         return None
+
+
+def fill(data: bytes) -> bytes:
+    return data + b' ' * (Protocol.BUFFER_SIZE - len(data))

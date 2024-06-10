@@ -1,3 +1,5 @@
+from game.data.items import Items
+from game.network.builders import PlayerBuilder
 from game.network.packet import Hasher, Compressor
 from game.network.protocol import Protocol
 
@@ -36,36 +38,59 @@ class Tasks:
             print(f'Sending map to {addr}')
             compressed_map_obj = Compressor.compress(world_handler.get_world().get_map())
             conn.send(Hasher.enhash(Protocol.MAPDATA_RES))
-            conn.send(
-                compressed_map_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_obj) % Protocol.BUFFER_SIZE))
-            conn.send(Hasher.enhash(Protocol.MAPDATA_READY_RES))
+            conn.send(compressed_map_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_obj) % Protocol.BUFFER_SIZE))
+            conn.send(Hasher.enhash(Protocol.MAPDATA_EOS))
             print(f'Sent!')
 
     @staticmethod
-    def send_game_state(conn, player_handler) -> None:
+    def player_join(conn, player_handler) -> str:
+        """
+        Task for joining a client player to the server.
+        Returns the received player name.
+        """
+        player_name: str = str()
+        data = conn.recv(Protocol.BUFFER_SIZE)
+        if data and data == Hasher.enhash(Protocol.PLAYERJOIN_REQ):
+            print('got player join request, sending response')
+            conn.send(Hasher.enhash(Protocol.PLAYERJOIN_RES))
+        data = conn.recv(Protocol.BUFFER_SIZE)
+        if data:
+            player_name = data.decode(Protocol.ENCODING)
+            player_dict = PlayerBuilder.create_player()
+            player_dict[PlayerBuilder.NAME_KEY] = player_name
+            player_handler.update_player(player_dict)
+            compressed_player = Compressor.compress(player_dict)
+            conn.send(Hasher.enhash(Protocol.PLAYEROBJ_RES))
+            conn.send(compressed_player + b' ' * (Protocol.BUFFER_SIZE - len(compressed_player) % Protocol.BUFFER_SIZE))
+            conn.send(Hasher.enhash(Protocol.PLAYEROBJ_EOS))
+        return player_name if player_name else str()
+
+    @staticmethod
+    def game_state(conn, player_handler, data: bytes) -> None:
         """
         Task for sending the overall game state to a client.
         """
+        if not data or data != Hasher.enhash(Protocol.GAMEUPDATE_REQ):
+            return
         conn.send(Hasher.enhash(Protocol.GAMEUPDATE_RES))
         compressed_players_obj = Compressor.compress(player_handler.get_players())
         conn.send(compressed_players_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_players_obj) % Protocol.BUFFER_SIZE))
-        conn.send(Hasher.enhash(Protocol.GAMEUPDATE_READY_RES))
+        conn.send(Hasher.enhash(Protocol.GAMEUPDATE_EOS))
 
     @staticmethod
-    def player_update(conn, player_handler, data: bytes) -> str:
-        """
-        Task for receiving a client's player data.
-        """
-        if data and data == Hasher.enhash(Protocol.PLAYERUPDATE_REQ):
-            conn.send(Hasher.enhash(Protocol.PLAYERUPDATE_RES))
-            compressed_player_obj = b''
-            data: bytes = conn.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.PLAYERUPDATE_READY_RES):
-                compressed_player_obj += data
-                data = conn.recv(Protocol.BUFFER_SIZE)
-            player = Compressor.decompress(compressed_player_obj.strip())
-            if player is None:
-                return str()
-            player_handler.update_player(player)
-            return player['name']
-        return str()
+    def player_hit(conn, player_handler, data: bytes) -> None:
+        if not data or data != Hasher.enhash(Protocol.HIT_REQ):
+            return
+        print('Server: Received hit request, sending response')
+        conn.send(Hasher.enhash(Protocol.HIT_RES))
+        print('Server: Sent hit response')
+        data = conn.recv(Protocol.BUFFER_SIZE)
+        print(f'Server: got {data}')
+        player = player_handler.get_player(data.decode(Protocol.ENCODING).strip())
+        if player is None:
+            print(f"player {data.strip()} not known")
+            return
+        print('Server: doing damage')
+        player['health'] = player['health'] - 5
+        player_handler.update_player(player)
+

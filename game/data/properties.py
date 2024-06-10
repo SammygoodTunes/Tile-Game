@@ -21,3 +21,11 @@ class ServerProperties:
     """
 
     TICKS_PER_SECOND = 20
+
+
+class WorldProperties:
+    """
+    Class for world properties.
+    """
+
+    SKY_COLOUR = (140, 150, 235)

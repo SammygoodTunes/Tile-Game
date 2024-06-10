@@ -2,14 +2,11 @@
 from math import sin
 import pygame
 
-from game.client.connection_handler import ConnectionHandler
-from game.data.data_manager import verify_game_property_values
+from game.client.client import Client
 from game.core.window import Window
-from game.entity.player import Player
+from game.data.data_manager import verify_game_property_values
 from game.server.server import Server
 from game.utils.logger import logger
-from game.world.camera import Camera
-from game.world.world import World
 
 
 class Game(Window):
@@ -22,37 +19,18 @@ class Game(Window):
         self._running: bool = True
         self.start_game: bool = False
         self.screens.link_game(self)
-        self.connection_handler = ConnectionHandler()
+        self.client = Client()
         self.server = Server()
-        self.camera: Camera = Camera(speed=350)
-        self.player: Player = Player(speed=350)
-        self.world: World = World()
-        self.player.init(self)
-        self.update_all_uis()
         verify_game_property_values()
+        self.client.initialise(self)
+        self.update_all_uis()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def update(self) -> None:
         """
         Update all child objects and core of the game.
         """
-        ticks = pygame.time.get_ticks()
-        if self.start_game:
-            self.clear((140, 150, 235))
-            self.world.draw(self)
-            # self.world.draw_wireframe(self.screen)
-            self.connection_handler.draw_other_players(self, self.clock.get_time() / 1000.0)
-            self.player.draw(self)
-            self.player.draw_selection_grid(self)
-            self.player.main_hud.draw()
-            
-            self.player.update(self, self.world.get_map())
-            self.world.update(self, self.player)
-        else:
-            self.clear((round(20 * sin(ticks / 5000) + 100),
-                        round(10 * sin(ticks / 2500) + 80),
-                        150))
-        self.connection_handler.update(self)
+        self.client.update(self)
         self.all_events()
         self.screens.update()
         self.draw_fps() 
@@ -86,19 +64,15 @@ class Game(Window):
                 continue
             if e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
-            if not self.paused and self.start_game:
-                self.player.events(self, e)
+            self.client.events(self, e)
             self.screens.events(e)
-        if not self.player.is_dead():
-            self.camera.events(self)
 
     def update_all_uis(self) -> None:
         """
         Update all the GUI-related elements.
         """
         self.update_ui()
-        self.player.update_ui(self)
-        self.world.update_ui()
+        self.client.update_ui(self)
 
     def is_running(self) -> bool:
         """
@@ -135,8 +109,7 @@ class Game(Window):
         Terminate the game.
         """
         self._running = False
-        if self.connection_handler.connection:
-            self.connection_handler.connection.disconnect()
+        self.client.stop()
         if self.server.sock:
             self.server.stop()
 

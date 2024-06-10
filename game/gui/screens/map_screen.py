@@ -32,15 +32,15 @@ class MapScreen(Screen):
         surface.set_alpha(ScreenProperties.ALPHA)
         return surface
 
-    def initialise_map(self) -> None:
+    def initialise_map(self, map) -> None:
         """
         Initialise the screen's map component.
         """
-        if self._got_map or self.game.world.get_map().get_state()[0] != MapStates.READY or not self.game.start_game:
+        if self._got_map or map.get_state()[0] != MapStates.READY or not self.game.start_game:
             return
-        coefficient = min(self.game.width / self.game.world.get_map().get_width_in_pixels() * 0.5,
-                          self.game.height / self.game.world.get_map().get_height_in_pixels() * 0.5)
-        self.scaled_map = smoothscale_by(self.game.world.get_map().get_surface(), round(coefficient, 2))
+        coefficient = min(self.game.width / map.get_width_in_pixels() * 0.5,
+                          self.game.height / map.get_height_in_pixels() * 0.5)
+        self.scaled_map = smoothscale_by(map.get_surface(), round(coefficient, 2))
         self._got_map = True
         self.update_ui()
 
@@ -86,12 +86,12 @@ class MapScreen(Screen):
                                                self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 2, 4)
             center_point = (
                 self.game.width // 2 - self.scaled_map.get_width() // 2 + (
-                        self.scaled_map.get_width() / self.game.world.get_map().get_width_in_pixels()
-                        * (self.game.player.get_absolute_x(self.game.world.get_map()) + self.game.player.width // 2)
+                        self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
+                        * (self.game.client.player.get_absolute_x(self.game.client.world.get_map()) + self.game.client.player.width // 2)
                 ),
                 self.game.height // 2 - self.scaled_map.get_height() // 2 + (
-                        self.scaled_map.get_height() / self.game.world.get_map().get_height_in_pixels()
-                        * (self.game.player.get_absolute_y(self.game.world.get_map()) + self.game.player.height // 2)
+                        self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
+                        * (self.game.client.player.get_absolute_y(self.game.client.world.get_map()) + self.game.client.player.height // 2)
                 ),
             )
 
@@ -104,9 +104,9 @@ class MapScreen(Screen):
         Update the screen UI.
         """
         if self._got_map:
-            coefficient = min(self.game.width / self.game.world.get_map().get_width_in_pixels() * 0.5,
-                              self.game.height / self.game.world.get_map().get_height_in_pixels() * 0.5)
-            self.scaled_map = smoothscale_by(self.game.world.get_map().get_surface(), round(coefficient, 2))
+            coefficient = min(self.game.width / self.game.client.world.get_map().get_width_in_pixels() * 0.5,
+                              self.game.height / self.game.client.world.get_map().get_height_in_pixels() * 0.5)
+            self.scaled_map = smoothscale_by(self.game.client.world.get_map().get_surface(), round(coefficient, 2))
         self.faded_surface = self.initialise_surface()
         self.title_label.update(self.game)
         self.title_label.center_with_offset(0, 0, self.game.width, self.game.height, 0,

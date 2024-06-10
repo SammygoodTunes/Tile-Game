@@ -35,6 +35,7 @@ class Player:
         self._y: int = y
         self.screen_x: int = x
         self.screen_y: int = y
+        self.pointing_at: tuple[int, int] = (0, 0)
         self.width: int = 32
         self.height: int = 32
         self.velocity_x: float = 0.0
@@ -64,7 +65,7 @@ class Player:
         self.main_hud = MainHud(game)
         self.main_hud.set_state(True)
 
-    def events(self, game, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def events(self, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
         Track the player events.
         """
@@ -72,21 +73,21 @@ class Player:
             if e.button == MouseStates.LMB:
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.get_map().tile_manager.draw(
-                    self.selected_tile_x * game.world.get_map().tile_manager.SIZE,
-                    self.selected_tile_y * game.world.get_map().tile_manager.SIZE,
-                    game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
-                    game.world.get_map().get_dynatile_surface()
+                map_obj.tile_manager.draw(
+                    self.selected_tile_x * map_obj.tile_manager.SIZE,
+                    self.selected_tile_y * map_obj.tile_manager.SIZE,
+                    map_obj.get_tile(self.selected_tile_x, self.selected_tile_y),
+                    map_obj.get_dynatile_surface()
                 )
         elif e.type == pygame.MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 self.breaking = False
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-                game.world.get_map().tile_manager.draw(
-                    self.selected_tile_x * game.world.get_map().tile_manager.SIZE,
-                    self.selected_tile_y * game.world.get_map().tile_manager.SIZE,
-                    game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y),
-                    game.world.get_map().get_dynatile_surface()
+                map_obj.tile_manager.draw(
+                    self.selected_tile_x * map_obj.tile_manager.SIZE,
+                    self.selected_tile_y * map_obj.tile_manager.SIZE,
+                    map_obj.get_tile(self.selected_tile_x, self.selected_tile_y),
+                    map_obj.get_dynatile_surface()
                 )
             if e.button == MouseStates.RMB:
                 pass
@@ -100,12 +101,12 @@ class Player:
         Draw the player to the screen.
         """
         if not self.is_dead():
-            self.screen_x = game.width / 2 - game.camera.x + self._x
-            self.screen_y = game.height / 2 - game.camera.y + self._y
-            if self.is_in_lava(game.world.get_map()):
+            self.screen_x = game.width / 2 - game.client.camera.x + self._x
+            self.screen_y = game.height / 2 - game.client.camera.y + self._y
+            if self.is_in_lava(game.client.world.get_map()):
                 pygame.draw.rect(game.screen, (220, 200, 200), (self.screen_x, self.screen_y, self.width, self.height))
                 return
-            if not self.is_in_water(game.world.get_map()):
+            if not self.is_in_water(game.client.world.get_map()):
                 pygame.draw.rect(game.screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
                 return
             pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
@@ -115,35 +116,54 @@ class Player:
         """
         Draw the player tile selection grid to the screen.
         """
-        if not game.paused and not self.is_dead() and self.main_hud.hotbar.get_selected_slot_item() == Items.SHOVEL:
-            mx, my = pygame.mouse.get_pos()
-            center_x, center_y = game.width // 2, game.height // 2
-            map_width, map_height = game.world.get_map().get_width_in_tiles(), game.world.get_map().get_height_in_tiles()
+        if game.paused or self.is_dead() or self.main_hud.hotbar.get_selected_slot_item() != Items.SHOVEL:
+            return
+        mx, my = pygame.mouse.get_pos()
+        center_x, center_y = game.width // 2, game.height // 2
+        map_width, map_height = game.client.world.get_map().get_width_in_tiles(), game.client.world.get_map().get_height_in_tiles()
 
-            wx, wy = (round(game.camera.x) - (center_x - mx)) // 32, (round(game.camera.y) - (center_y - my)) // 32
+        wx, wy = (round(game.client.camera.x) - (center_x - mx)) // 32, (round(game.client.camera.y) - (center_y - my)) // 32
 
-            selected_tile_x = wx + map_width // 2
-            selected_tile_y = wy + map_height // 2
+        selected_tile_x = wx + map_width // 2
+        selected_tile_y = wy + map_height // 2
 
-            self.selected_tile_sx, self.selected_tile_sy = game.world.get_map().tile_to_screen_pos(
-                game, selected_tile_x, selected_tile_y
+        self.selected_tile_sx, self.selected_tile_sy = game.client.world.get_map().tile_to_screen_pos(
+            game, selected_tile_x, selected_tile_y
+        )
+
+        if (selected_tile_x >= game.client.world.get_map().get_width_in_tiles() or selected_tile_x < 0
+                or selected_tile_y >= game.client.world.get_map().get_height_in_tiles() or selected_tile_y < 0):
+            return
+
+        self.selected_tile_x = selected_tile_x
+        self.selected_tile_y = selected_tile_y
+
+        if self.has_selected_breakable(game.client.world.get_map()) and not self.is_selected_breakable_obstructed(game.client.world.get_map()):
+            colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
+            pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
+                                        self.selected_tile_sx,
+                                        self.selected_tile_sy,
+                                        game.client.world.get_map().tile_manager.SIZE,
+                                        game.client.world.get_map().tile_manager.SIZE
+                                    ), 2, 4)
+
+    def draw_gun_pointer(self, game):
+        if game.paused or self.is_dead() or self.main_hud.hotbar.get_selected_slot_item() != Items.GUN:
+            return
+        mx, my = pygame.mouse.get_pos()
+        offset_x, offset_y = mx - self.screen_x - 16, my - self.screen_y - 16
+        length = int(math.sqrt(offset_x ** 2 + offset_y ** 2))
+        if length == 0:
+            return
+        slope_x, slope_y = offset_x / length, offset_y / length
+        for i in range(0, length // 5, 2):
+            colour_anim: int = round(127.5 * math.sin((pygame.time.get_ticks() - i * 10) / 64) + 127.5)
+            pygame.draw.line(
+                game.screen,
+                (255, colour_anim // 2, colour_anim // 2),
+                (self.screen_x + 16 + (slope_x * i * 5), self.screen_y + 16 + (slope_y * i * 5)),
+                (self.screen_x + 16 + (slope_x * (i + 1) * 5), self.screen_y + 16 + (slope_y * (i + 1) * 5)), 2
             )
-
-            if (selected_tile_x >= game.world.get_map().get_width_in_tiles() or selected_tile_x < 0
-                    or selected_tile_y >= game.world.get_map().get_height_in_tiles() or selected_tile_y < 0):
-                return
-
-            self.selected_tile_x = selected_tile_x
-            self.selected_tile_y = selected_tile_y
-
-            if self.has_selected_breakable(game.world.get_map()) and not self.is_selected_breakable_obstructed(game.world.get_map()):
-                colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
-                pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
-                                            self.selected_tile_sx,
-                                            self.selected_tile_sy,
-                                            game.world.get_map().tile_manager.SIZE,
-                                            game.world.get_map().tile_manager.SIZE
-                                        ), 2, 4)
 
     def update(self, game, map_obj: Map) -> None:
         """
@@ -160,9 +180,11 @@ class Player:
                            + 1.5 * self.is_in_water(map_obj)
                            + 1.5 * self.is_in_lava(map_obj))
         )
+        mx, my = pygame.mouse.get_pos()
+        self.pointing_at = (round(game.client.camera.x) - (game.width // 2 - mx), round(game.client.camera.y) - (game.height // 2 - my))
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
-        tile_size = game.world.get_map().tile_manager.SIZE
+        tile_size = game.client.world.get_map().tile_manager.SIZE
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
@@ -261,17 +283,17 @@ class Player:
             self.break_tile(game)
         else:
             self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-            game.world.get_map().tile_manager.draw(
+            game.client.world.get_map().tile_manager.draw(
                 self.prev_selected_tile[0] * tile_size,
                 self.prev_selected_tile[1] * tile_size,
-                game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
-                game.world.get_map().get_dynatile_surface()
+                game.client.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
+                game.client.world.get_map().get_dynatile_surface()
             )
 
         # Update player health
         if self.is_in_lethal_tile(map_obj):
-            tile_x, tile_y = game.world.get_map().get_tile_pos(self._x, self._y)
-            tile = game.world.get_map().get_tile(tile_x, tile_y)
+            tile_x, tile_y = game.client.world.get_map().get_tile_pos(self._x, self._y)
+            tile = game.client.world.get_map().get_tile(tile_x, tile_y)
             if pygame.time.get_ticks() / 1000.0 - self.timers[Player.DAMAGE_TIMER] >= tile.get_damage_delay():
                 self.health -= tile.get_damage()
                 self.timers[Player.DAMAGE_TIMER] = pygame.time.get_ticks() / 1000.0
@@ -307,45 +329,45 @@ class Player:
         tile_y: int
 
         tile_x, tile_y = self.selected_tile_x, self.selected_tile_y
-        if not game.world.get_map().get_dynatile(tile_x, tile_y) and game.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
+        if not game.client.world.get_map().get_dynatile(tile_x, tile_y) and game.client.world.get_map().get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
             if self.breaking_tile != (self.selected_tile_x, self.selected_tile_y):
                 self.breaking_tile = (self.selected_tile_x, self.selected_tile_y)
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
 
             if self.prev_selected_tile != (self.selected_tile_x, self.selected_tile_y):
-                game.world.get_map().tile_manager.draw(
-                    self.prev_selected_tile[0] * game.world.get_map().tile_manager.SIZE,
-                    self.prev_selected_tile[1] * game.world.get_map().tile_manager.SIZE,
-                    game.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
-                    game.world.get_map().get_dynatile_surface()
+                game.client.world.get_map().tile_manager.draw(
+                    self.prev_selected_tile[0] * game.client.world.get_map().tile_manager.SIZE,
+                    self.prev_selected_tile[1] * game.client.world.get_map().tile_manager.SIZE,
+                    game.client.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
+                    game.client.world.get_map().get_dynatile_surface()
                 )
                 self.prev_selected_tile = (self.selected_tile_x, self.selected_tile_y)
 
-            tile = game.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
+            tile = game.client.world.get_map().get_tile(self.selected_tile_x, self.selected_tile_y)
             delay = tile.get_resistance() / self.main_hud.hotbar.get_selected_slot_item().get_strength()
 
             if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
-                game.world.get_map().set_dynatile(tile_x, tile_y, True)
-                game.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
-                game.world.get_map().tile_manager.draw(
-                    tile_x * game.world.get_map().tile_manager.SIZE,
-                    tile_y * game.world.get_map().tile_manager.SIZE,
+                game.client.world.get_map().set_dynatile(tile_x, tile_y, True)
+                game.client.world.get_map().set_tile(tile_x, tile_y, Tiles.PLAINS)
+                game.client.world.get_map().tile_manager.draw(
+                    tile_x * game.client.world.get_map().tile_manager.SIZE,
+                    tile_y * game.client.world.get_map().tile_manager.SIZE,
                     Tiles.PLAINS,
-                    game.world.get_map().get_dynatile_surface()
+                    game.client.world.get_map().get_dynatile_surface()
                 )
                 logger.debug(f'Destroyed tile ({tile_x}, {tile_y}) of type {tile}')
             else:
-                game.world.get_map().tile_manager.draw(
-                    tile_x * game.world.get_map().tile_manager.SIZE,
-                    tile_y * game.world.get_map().tile_manager.SIZE,
-                    game.world.get_map().get_tile(tile_x, tile_y),
-                    game.world.get_map().get_dynatile_surface()
+                game.client.world.get_map().tile_manager.draw(
+                    tile_x * game.client.world.get_map().tile_manager.SIZE,
+                    tile_y * game.client.world.get_map().tile_manager.SIZE,
+                    game.client.world.get_map().get_tile(tile_x, tile_y),
+                    game.client.world.get_map().get_dynatile_surface()
                 )
-                game.world.get_map().tile_manager.draw(
-                    tile_x * game.world.get_map().tile_manager.SIZE,
-                    tile_y * game.world.get_map().tile_manager.SIZE,
+                game.client.world.get_map().tile_manager.draw(
+                    tile_x * game.client.world.get_map().tile_manager.SIZE,
+                    tile_y * game.client.world.get_map().tile_manager.SIZE,
                     Tiles.BREAK_TILES_ANIM[int((pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER]) / delay * (len(Tiles.BREAK_TILES_ANIM) - 1))],
-                    game.world.get_map().get_dynatile_surface()
+                    game.client.world.get_map().get_dynatile_surface()
                 )
 
     def reset(self, map_obj: Map, camera_obj: Camera) -> None:
@@ -433,6 +455,12 @@ class Player:
         """
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         return map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE
+
+    def get_held_item(self) -> bool:
+        """
+        Returns item held by player.
+        """
+        return self.main_hud.hotbar.get_selected_slot_item()
 
     def is_dead(self) -> bool:
         """
@@ -560,6 +588,12 @@ class Player:
         Return the coefficient indicating how far the player is away from the vertical center of the screen.
         """
         return 1 + abs(self.screen_y - parent_height // 2) / (parent_height // 2)
+
+    def get_pointing_at(self) -> tuple[int, int]:
+        """
+        Return the pointing-at position of the player.
+        """
+        return self.pointing_at
 
     def get_selected_tile_x(self) -> int:
         """

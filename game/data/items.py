@@ -19,6 +19,16 @@ class Item:
 		self._durability: int = -1
 		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
+	def __eq__(self, obj: Self):
+		if not isinstance(obj, Item):
+			return False
+		return (
+				self._xy == obj.get_xy()
+				and self._tooltip_name == self.get_tooltip_name()
+				and self._strength == self.get_strength()
+				and self._durability == self.get_durability()
+		)
+
 	def set_xy(self, x: int, y: int) -> Self:
 		"""
 		Set the texture coordinates of the item, then return the item itself.
@@ -78,7 +88,8 @@ class Items:
 	"""
 
 	AIR: Item = Item()
-	SHOVEL: Item = Item(x=1, tooltip_name="Shovel").set_strength(10).set_durability(200)
+	SHOVEL: Item = Item(x=1, tooltip_name="Shovel").set_strength(10)
+	GUN: Item = Item(x=2, tooltip_name="Gun").set_strength(5)
 
 
 class ItemTypes:
@@ -87,3 +98,4 @@ class ItemTypes:
 	"""
 
 	TOOLS: tuple[Items] = (Items.SHOVEL,)
+	WEAPONS: tuple[Items] = (Items.GUN,)
