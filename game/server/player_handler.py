@@ -1,5 +1,7 @@
 
-from game.entity.player import Player
+from time import time
+
+from game.network.builders import BaseBuilder, PlayerBuilder
 from game.utils.logger import logger
 
 
@@ -27,7 +29,7 @@ class PlayerHandler:
         if player is None:
             return
         logger.debug(f'Updating player \'{player["name"]}\'')
-        index = next((i for i, p in enumerate(self._players) if p['name'] == player['name']), None)
+        index = self.get_player(player['name'])['index']
         if index is None:
             self.track_player(player)
             return
@@ -39,14 +41,24 @@ class PlayerHandler:
         self._players[index]['health'] = player['health']
         self._players[index]['holding_item'] = player['holding_item']
 
+    """def move_player(self, player_move_packet):
+        index = self.get_player(player_move_packet[PlayerBuilder.NAME_KEY])['index']
+        if index is None:
+            return
+        print('calculating new player position')
+        delta = time() - player_move_packet[BaseBuilder.TIMESTAMP_KEY]
+        pos = (self._players[index]['x'], self._players[index]['y'])
+        new_pos = player_sim.calculate_new_pos(pos, player_move_packet[PlayerBuilder.DIRECTION_KEY], delta)
+        self._players[index]['x'], self._players[index]['y'] = new_pos
+        print(f'updating player pos from {pos} to {new_pos}')"""
+
     def untrack_player(self, player_name: str) -> None:
         """
         Untrack the player by removing them from the players list, if possible.
         """
         logger.debug(f'Untracking player \'{player_name}\'')
-        index = next((i for i, p in enumerate(self._players) if p['name'] == player_name), None)
+        index = self.get_player(player_name)['index']
         if index is None:
-            logger.debug(f'Player \'{player_name}\' could not be untracked, as they were not found in the player list.')
             return
         self._players.pop(index)
         logger.info(f'{player_name} left the server.')
@@ -57,11 +69,12 @@ class PlayerHandler:
         """
         return self._players
 
-    def get_player(self, player_name: str) -> dict | None:
+    def get_player(self, player_name: str) -> dict[str, int | dict | None]:
         """
         Return player dict by player name if they exist, None otherwise.
         """
         index = next((i for i, p in enumerate(self._players) if p['name'] == player_name), None)
         if index is not None:
-            return self._players[index]
-        return None
+            return {'index': index, 'player': self._players[index]}
+        logger.debug(f'Player \'{player_name}\' were not found in the player list.')
+        return {'index': None, 'player': None}

@@ -2,13 +2,11 @@
 from threading import Thread
 from multiprocessing import Process, Value
 import socket
-import select
 from time import sleep
 
 from game.data.properties import ServerProperties
 from game.data.states import ServerStates
 from game.network.protocol import Protocol
-from game.network.packet import Hasher
 from game.server.player_handler import PlayerHandler
 from game.server.tasks import Tasks
 from game.server.world_handler import WorldHandler
@@ -53,6 +51,7 @@ class Server:
                 # print(f'Message from {addr}: {data}')
                 running = not Tasks.disconnection(data)
                 # Tasks.player_hit(conn, self.player_handler, data)
+                Tasks.incoming_packets(conn, self.player_handler, data)
                 Tasks.game_state(conn, self.player_handler, data)
                 sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:

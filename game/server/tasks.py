@@ -1,6 +1,6 @@
 from game.data.items import Items
-from game.network.builders import PlayerBuilder
-from game.network.packet import Hasher, Compressor
+from game.network.builders import PlayerBuilder, BaseBuilder
+from game.network.packet import Hasher, Compressor, to_bytes
 from game.network.protocol import Protocol
 
 
@@ -76,6 +76,30 @@ class Tasks:
         compressed_players_obj = Compressor.compress(player_handler.get_players())
         conn.send(compressed_players_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_players_obj) % Protocol.BUFFER_SIZE))
         conn.send(Hasher.enhash(Protocol.GAMEUPDATE_EOS))
+
+    @staticmethod
+    def incoming_packets(conn, player_handler, data: bytes) -> None:
+        """
+        Task for handling incoming packets
+        """
+        if not data or data[:len(Protocol.PACKET_MAGIC)] != to_bytes(Protocol.PACKET_MAGIC):
+            return
+        print('incoming packet')
+        packet = b''
+        data = data[len(Protocol.PACKET_MAGIC):]
+        while data != Hasher.enhash(Protocol.PACKET_EOS):
+            print(f'Got data: {data}')
+            packet += data
+            data = conn.recv(Protocol.BUFFER_SIZE)
+        decompressed_packet = Compressor.decompress(packet)
+        if not isinstance(decompressed_packet, dict):
+            print('Packet received is not of instance \'dict\'')
+            return
+        print(decompressed_packet)
+        type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
+        print(f'Received packet of type {type_id}.')
+        # if type_id == BaseBuilder.PLAYER_MOVE_COMMAND_ID:
+        #    player_handler.move_player(decompressed_packet)
 
     @staticmethod
     def player_hit(conn, player_handler, data: bytes) -> None:

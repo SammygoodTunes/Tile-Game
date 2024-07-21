@@ -4,7 +4,7 @@ from pygame.event import Event
 from pygame.time import get_ticks
 
 from game.client.connection_handler import ConnectionHandler
-from game.data.properties import WorldProperties
+from game.data.properties import CameraProperties, PlayerProperties, WorldProperties
 from game.entity.player import Player
 from game.world.camera import Camera
 from game.world.world import World
@@ -17,8 +17,8 @@ class Client:
 
     def __init__(self):
         self.connection_handler = ConnectionHandler()
-        self.camera: Camera = Camera(speed=350)
-        self.player: Player = Player(speed=350)
+        self.camera: Camera = Camera(speed=CameraProperties.SPEED)
+        self.player: Player = Player(speed=PlayerProperties.SPEED)
         self.world: World = World()
 
     def initialise(self, game) -> None:
@@ -40,6 +40,7 @@ class Client:
             self.connection_handler.draw_other_players(game, game.clock.get_time() / 1000.0)
             self.player.draw(game)
             self.player.draw_selection_grid(game)
+            self.player.draw_gun_pointer(game)
             self.player.main_hud.draw()
             self.player.update(game, self.world.get_map())
             self.world.update(game, self.player)
@@ -54,7 +55,7 @@ class Client:
 
     def events(self, game, e: Event):
         if not game.paused and game.start_game:
-            self.player.events(self.world.get_map(), e)
+            self.player.events(self, self.world.get_map(), e)
 
     def stop(self):
         if self.connection_handler.connection:

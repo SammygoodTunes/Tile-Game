@@ -5,6 +5,15 @@ class PlayerProperties:
     """
 
     MAX_PLAYER_NAME_SIZE = 16
+    SPEED = 350
+
+
+class CameraProperties:
+    """
+    Class for camera properties.
+    """
+
+    SPEED = 350
 
 
 class ScreenProperties:

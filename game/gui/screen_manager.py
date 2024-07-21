@@ -264,6 +264,7 @@ class Screens:
         """
         Screen task for creating a server.
         """
+        pygame.key.set_repeat()
         self.server_create_screen.set_state(False)
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.back_button.set_state(False)
@@ -282,6 +283,7 @@ class Screens:
         """
         Screen task for joining a server.
         """
+        pygame.key.set_repeat()
         self.server_join_screen.set_state(False)
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.back_button.set_state(False)

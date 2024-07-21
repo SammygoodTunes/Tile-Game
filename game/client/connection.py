@@ -13,7 +13,7 @@ from game.utils.exceptions import PlayerWithSameNameError
 from game.utils.logger import logger
 from game.network import builders
 from game.network.protocol import Protocol
-from game.network.packet import Hasher, Compressor, fill
+from game.network.packet import Hasher, Compressor, fill, to_bytes
 
 
 class Tasks:
@@ -36,10 +36,9 @@ class Connection:
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE
+        self.packet_queue: list[dict] = list()  # FIFO
         self.player_manager = PlayerManager(client.player)
-        self.player: Player | None = None
         self.data: any = None
-        self.recv_player_update = True
         self.hit_player = str()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -125,6 +124,7 @@ class Connection:
             try:
                 print('Disconnecting from server.')
                 self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
+                self.packet_queue.clear()
             except (ConnectionResetError, BrokenPipeError):
                 pass
             self.state = ConnectionStates.IDLE
@@ -148,19 +148,26 @@ class Connection:
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
                 self.sock.send(Hasher.enhash(Protocol.GAMEUPDATE_REQ))
-                print('Sent game update request')
+
                 # make predictions about the game like player movement
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
                 if data and data == Hasher.enhash(Protocol.GAMEUPDATE_RES):
-                    print('Received game update response')
                     compressed_players_obj = b''
                     data = self.sock.recv(Protocol.BUFFER_SIZE)
                     while data != Hasher.enhash(Protocol.GAMEUPDATE_EOS):
                         compressed_players_obj += data
                         data = self.sock.recv(Protocol.BUFFER_SIZE)
                     players = Compressor.decompress(compressed_players_obj.strip())
-                    print(players)
                     self.player_manager.set_players(players)
+                    self.player_manager.build_local_player(self.player_manager.get_player(self.player_manager.local_player.get_player_name()))
+
+                # Handle queued packets
+                if self.packet_queue:
+                    print('Found packet in queue, sending.')
+                    self.sock.send(fill(to_bytes(Protocol.PACKET_MAGIC) + Compressor.compress(self.packet_queue[0])))
+                    self.sock.send(Hasher.enhash(Protocol.PACKET_EOS))
+                    self.packet_queue.pop(0)
+
                 '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
                     print('Client: received hit response, sending hit player name============================')
                     self.sock.send(fill(self.hit_player.encode(Protocol.ENCODING)))'''

@@ -7,9 +7,11 @@ from random import randint
 from typing import Self
 
 from game.data.items import Items
+from game.data.keys import Keys
 from game.data.states import MouseStates, PlayerStates
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
+from game.network.builders import PlayerBuilder
 from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger
 from game.world.camera import Camera
@@ -65,7 +67,7 @@ class Player:
         self.main_hud = MainHud(game)
         self.main_hud.set_state(True)
 
-    def events(self, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def events(self, client, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
         Track the player events.
         """
@@ -188,13 +190,21 @@ class Player:
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
+        comp_move = self.move
+
         if not game.paused:
-            self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[pygame.K_q] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
-            self.move = self.move | (1 << PlayerStates.MOVE_UP) if keys[pygame.K_z] else self.move & ~(1 << PlayerStates.MOVE_UP)
-            self.move = self.move | (1 << PlayerStates.MOVE_RIGHT) if keys[pygame.K_d] else self.move & ~(1 << PlayerStates.MOVE_RIGHT)
-            self.move = self.move | (1 << PlayerStates.MOVE_DOWN) if keys[pygame.K_s] else self.move & ~(1 << PlayerStates.MOVE_DOWN)
+            self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[Keys.MOVE_LEFT] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
+            self.move = self.move | (1 << PlayerStates.MOVE_UP) if keys[Keys.MOVE_UP] else self.move & ~(1 << PlayerStates.MOVE_UP)
+            self.move = self.move | (1 << PlayerStates.MOVE_RIGHT) if keys[Keys.MOVE_RIGHT] else self.move & ~(1 << PlayerStates.MOVE_RIGHT)
+            self.move = self.move | (1 << PlayerStates.MOVE_DOWN) if keys[Keys.MOVE_DOWN] else self.move & ~(1 << PlayerStates.MOVE_DOWN)
         else:
             self.move = 0
+
+        if self.move != comp_move:
+            player_move_packet = PlayerBuilder.build_player_move()
+            player_move_packet[PlayerBuilder.NAME_KEY] = self.player_name
+            player_move_packet[PlayerBuilder.DIRECTION_KEY] = self.move
+            game.client.connection_handler.queue_packet(player_move_packet)
 
         if self.velocity_x != 0:
             self._x += round(speed * self.velocity_x * d, 2)
@@ -283,7 +293,7 @@ class Player:
             self.break_tile(game)
         else:
             self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
-            game.client.world.get_map().tile_manager.draw(
+            map_obj.tile_manager.draw(
                 self.prev_selected_tile[0] * tile_size,
                 self.prev_selected_tile[1] * tile_size,
                 game.client.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),

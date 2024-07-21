@@ -76,3 +76,11 @@ class ConnectionHandler:
         We don't draw the main player as it is redundant.
         """
         self.connection.player_manager.draw_players(game.client.player.get_player_name(), delta, game)
+
+    def queue_packet(self, packet: dict) -> None:
+        if not self.connection:
+            print('Cannot queue packet as connection has not been started.')
+            return
+        self.connection.packet_queue.append(packet)
+        print(f'[{len(self.connection.packet_queue)}] Queued packet: {packet}')
+

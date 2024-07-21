@@ -54,4 +54,11 @@ class Compressor:
 
 
 def fill(data: bytes) -> bytes:
-    return data + b' ' * (Protocol.BUFFER_SIZE - len(data))
+    """
+    Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+    """
+    return data + b' ' * (Protocol.BUFFER_SIZE - len(data) % Protocol.BUFFER_SIZE)
+
+
+def to_bytes(data: str) -> bytes:
+    return bytes(data, encoding=Protocol.ENCODING)
