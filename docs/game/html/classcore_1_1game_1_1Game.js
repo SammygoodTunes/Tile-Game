@@ -9,7 +9,6 @@ var classcore_1_1game_1_1Game =
     [ "update_all_uis", "classcore_1_1game_1_1Game.html#a41a90447bd90d3f047d1d8668732bb39", null ],
     [ "update_loop", "classcore_1_1game_1_1Game.html#ac8f599b19e7b6015ae0ca3b8146749f5", null ],
     [ "_running", "classcore_1_1game_1_1Game.html#a56b7ba477a2db36d3fb993849399f4db", null ],
-    [ "connection_handler", "classcore_1_1game_1_1Game.html#a2504f9d88a3da97a6128c197456de706", null ],
-    [ "player", "classcore_1_1game_1_1Game.html#a16986b5eda83e2bb259873d59bbf978a", null ],
+    [ "client", "classcore_1_1game_1_1Game.html#a697716f7c17ef1262c6a33c27f5df76e", null ],
     [ "server", "classcore_1_1game_1_1Game.html#abbd59111e59987b90d149e8aae23b0df", null ]
 ];

@@ -4,6 +4,46 @@
     <compoundname>packet</compoundname>
     <innerclass refid="classpacket_1_1Compressor" prot="public">packet::Compressor</innerclass>
     <innerclass refid="classpacket_1_1Hasher" prot="public">packet::Hasher</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes packet.fill</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>fill</name>
+        <qualifiedname>packet.fill</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes packet.to_bytes</definition>
+        <argsstring>(str data)</argsstring>
+        <name>to_bytes</name>
+        <qualifiedname>packet.to_bytes</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="63" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

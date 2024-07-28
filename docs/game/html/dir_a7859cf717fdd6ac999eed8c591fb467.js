@@ -10,6 +10,7 @@ var dir_a7859cf717fdd6ac999eed8c591fb467 =
     [ "map_screen.py", "map__screen_8py.html", "map__screen_8py" ],
     [ "options_screen.py", "options__screen_8py.html", "options__screen_8py" ],
     [ "pause_screen.py", "pause__screen_8py.html", "pause__screen_8py" ],
+    [ "playerlist_screen.py", "playerlist__screen_8py.html", "playerlist__screen_8py" ],
     [ "screen.py", "screen_8py.html", "screen_8py" ],
     [ "serverconnect_screen.py", "serverconnect__screen_8py.html", "serverconnect__screen_8py" ],
     [ "servercreate_screen.py", "servercreate__screen_8py.html", "servercreate__screen_8py" ],

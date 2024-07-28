@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classdata_1_1items_1_1Item_1afebde3a259a32282ba3fbf3fb0859b32">__init__</link> (self, int x=0, int y=0, str tooltip_name=&apos;&apos;)</para>
 </listitem>
+            <listitem><para><link linkend="_classdata_1_1items_1_1Item_1a377cfef1501c88e6407c96bdb568d02a">__eq__</link> (self, Self obj)</para>
+</listitem>
             <listitem><para>Self <link linkend="_classdata_1_1items_1_1Item_1ae1d5dfd445e5197468a44d8f4b65f0f3">set_xy</link> (self, int x, int y)</para>
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classdata_1_1items_1_1Item_1aa63be91590e094ea06461f8585655e62">get_xy</link> (self)</para>
@@ -63,6 +65,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classdata_1_1items_1_1Item_1a377cfef1501c88e6407c96bdb568d02a"/><section>
+    <title>__eq__()</title>
+<indexterm><primary>__eq__</primary><secondary>data.items.Item</secondary></indexterm>
+<indexterm><primary>data.items.Item</primary><secondary>__eq__</secondary></indexterm>
+<para><computeroutput>data.items.Item.__eq__ ( self, Self obj)</computeroutput></para></section>
 <anchor xml:id="_classdata_1_1items_1_1Item_1ab75f86ada76a8eb49698a688e8d138a1"/><section>
     <title>get_durability()</title>
 <indexterm><primary>get_durability</primary><secondary>data.items.Item</secondary></indexterm>

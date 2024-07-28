@@ -11,8 +11,9 @@ var searchData=
   ['default_5ffont_5fsize_5fnormal_8',['DEFAULT_FONT_SIZE_NORMAL',['../classgui_1_1label_1_1Label.html#a8543898eaa97064dd7b4a4ef7667bada',1,'gui::label::Label']]],
   ['default_5ffont_5fsize_5fsmall_9',['DEFAULT_FONT_SIZE_SMALL',['../classgui_1_1label_1_1Label.html#a740ed9b0bf79e904ccba3fc0df2471cb',1,'gui::label::Label']]],
   ['default_5fscreen_10',['default_screen',['../classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html#ad3da1c71fb82e41ec8cf74d026c180a6',1,'gui::screens::serverconnect_screen::ServerConnectScreen']]],
-  ['dirt_11',['DIRT',['../classdata_1_1tiles_1_1Tiles.html#ae90cb83c9bf545f108259c160727d425',1,'data::tiles::Tiles']]],
-  ['disconnect_5fbutton_12',['disconnect_button',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#ab7d336f0e9136a2504ec90a4577103f3',1,'gui.screens.gameover_screen.GameoverScreen.disconnect_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#acb998426f0de1d077734c184a71cec81',1,'gui.screens.pause_screen.PauseScreen.disconnect_button']]],
-  ['disconnect_5freq_13',['DISCONNECT_REQ',['../classprotocol_1_1Protocol.html#a3718d4f320c9919768bde376392bbc89',1,'protocol::Protocol']]],
-  ['disconnected_14',['DISCONNECTED',['../classdata_1_1states_1_1ConnectionStates.html#aac40084873bd373291d75f1f3eb1d2c9',1,'data::states::ConnectionStates']]]
+  ['direction_5fkey_11',['DIRECTION_KEY',['../classbuilders_1_1PlayerBuilder.html#a169617d98b3d759bb802b21163d6d40e',1,'builders::PlayerBuilder']]],
+  ['dirt_12',['DIRT',['../classdata_1_1tiles_1_1Tiles.html#ae90cb83c9bf545f108259c160727d425',1,'data::tiles::Tiles']]],
+  ['disconnect_5fbutton_13',['disconnect_button',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#ab7d336f0e9136a2504ec90a4577103f3',1,'gui.screens.gameover_screen.GameoverScreen.disconnect_button'],['../classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html#acb998426f0de1d077734c184a71cec81',1,'gui.screens.pause_screen.PauseScreen.disconnect_button']]],
+  ['disconnect_5freq_14',['DISCONNECT_REQ',['../classprotocol_1_1Protocol.html#a3718d4f320c9919768bde376392bbc89',1,'protocol::Protocol']]],
+  ['disconnected_15',['DISCONNECTED',['../classdata_1_1states_1_1ConnectionStates.html#aac40084873bd373291d75f1f3eb1d2c9',1,'data::states::ConnectionStates']]]
 ];

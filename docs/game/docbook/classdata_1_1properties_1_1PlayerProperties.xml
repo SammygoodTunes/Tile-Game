@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>int <link linkend="_classdata_1_1properties_1_1PlayerProperties_1a2797640a45b4e873b77d8a9c7486ba5d">MAX_PLAYER_NAME_SIZE</link> = 16</para>
 </listitem>
+            <listitem><para>int <link linkend="_classdata_1_1properties_1_1PlayerProperties_1a9e0c30ec042c7591125c85b5d48b0d04">SPEED</link> = 350</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -22,6 +24,11 @@
 <indexterm><primary>MAX_PLAYER_NAME_SIZE</primary><secondary>data.properties.PlayerProperties</secondary></indexterm>
 <indexterm><primary>data.properties.PlayerProperties</primary><secondary>MAX_PLAYER_NAME_SIZE</secondary></indexterm>
 <para><computeroutput>int data.properties.PlayerProperties.MAX_PLAYER_NAME_SIZE = 16<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1properties_1_1PlayerProperties_1a9e0c30ec042c7591125c85b5d48b0d04"/><section>
+    <title>SPEED</title>
+<indexterm><primary>SPEED</primary><secondary>data.properties.PlayerProperties</secondary></indexterm>
+<indexterm><primary>data.properties.PlayerProperties</primary><secondary>SPEED</secondary></indexterm>
+<para><computeroutput>int data.properties.PlayerProperties.SPEED = 350<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_properties_8py">properties.py</link></section>

@@ -1,6 +1,7 @@
 var classdata_1_1items_1_1Item =
 [
     [ "__init__", "classdata_1_1items_1_1Item.html#afebde3a259a32282ba3fbf3fb0859b32", null ],
+    [ "__eq__", "classdata_1_1items_1_1Item.html#a377cfef1501c88e6407c96bdb568d02a", null ],
     [ "get_durability", "classdata_1_1items_1_1Item.html#ab75f86ada76a8eb49698a688e8d138a1", null ],
     [ "get_strength", "classdata_1_1items_1_1Item.html#a3c511e116b3905e486fe022a456b0958", null ],
     [ "get_tooltip_name", "classdata_1_1items_1_1Item.html#a312597a6fd569ab331d41945018d23ae", null ],

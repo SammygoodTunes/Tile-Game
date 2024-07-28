@@ -15,6 +15,8 @@
 </listitem>
             <listitem><para>list[dict] <link linkend="_classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d">get_players</link> (self)</para>
 </listitem>
+            <listitem><para>dict[str, int|dict|None] <link linkend="_classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e">get_player</link> (self, str player_name)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -33,6 +35,14 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e"/><section>
+    <title>get_player()</title>
+<indexterm><primary>get_player</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>get_player</secondary></indexterm>
+<para><computeroutput> dict[str, int | dict | None] player_handler.PlayerHandler.get_player ( self, str player_name)</computeroutput></para>
+<para><literallayout><computeroutput>Return player dict by player name if they exist, None otherwise.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d"/><section>
     <title>get_players()</title>
 <indexterm><primary>get_players</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>

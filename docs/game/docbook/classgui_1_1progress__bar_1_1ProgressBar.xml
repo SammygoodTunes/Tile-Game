@@ -13,7 +13,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>None <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a172547b58da9a99a3ecaf7063de1311b">__init__</link> (self, str title=&quot;&quot;, int x=0, int y=0)</para>
+            <listitem><para>None <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a31cd4ff91d527cd6e33415df74c4d39e">__init__</link> (self, str title=&quot;&quot;, int x=0, int y=0, int value=0, int min_value=0, int max_value=100)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a1a83cd8638e16dada779496c852c133e">draw</link> (self, screen)</para>
 </listitem>
@@ -53,7 +53,7 @@
 </listitem>
             <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a1de198240b28e4b49203a31d0547d6cc">get_filled_start_colour</link> (self)</para>
 </listitem>
-            <listitem><para>Self <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a158088dbdd5ec265b14ab8833d15012b">set_filled_end_color</link> (self, tuple[int, int, int] filled_end_colour)</para>
+            <listitem><para>Self <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1a5723c963743c2da47075ebce3331fe73">set_filled_end_colour</link> (self, tuple[int, int, int] filled_end_colour)</para>
 </listitem>
             <listitem><para>tuple[int, int, int] <link linkend="_classgui_1_1progress__bar_1_1ProgressBar_1ae783856ad351b8866714e9120ef0fa16">get_filled_end_colour</link> (self)</para>
 </listitem>
@@ -114,13 +114,16 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a172547b58da9a99a3ecaf7063de1311b"/><section>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a31cd4ff91d527cd6e33415df74c4d39e"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
 <indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput> None gui.progress_bar.ProgressBar.__init__ ( self, str  title = <computeroutput>&quot;&quot;</computeroutput>
 , int  x = <computeroutput>0</computeroutput>
 , int  y = <computeroutput>0</computeroutput>
+, int  value = <computeroutput>0</computeroutput>
+, int  min_value = <computeroutput>0</computeroutput>
+, int  max_value = <computeroutput>100</computeroutput>
 )</computeroutput></para></section>
 </section>
 <section>
@@ -238,11 +241,11 @@ progress bar itself.
 <para><literallayout><computeroutput>Refresh the progress bar and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a158088dbdd5ec265b14ab8833d15012b"/><section>
-    <title>set_filled_end_color()</title>
-<indexterm><primary>set_filled_end_color</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
-<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_filled_end_color</secondary></indexterm>
-<para><computeroutput> Self gui.progress_bar.ProgressBar.set_filled_end_color ( self, tuple[int, int, int] filled_end_colour)</computeroutput></para>
+<anchor xml:id="_classgui_1_1progress__bar_1_1ProgressBar_1a5723c963743c2da47075ebce3331fe73"/><section>
+    <title>set_filled_end_colour()</title>
+<indexterm><primary>set_filled_end_colour</primary><secondary>gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>gui.progress_bar.ProgressBar</primary><secondary>set_filled_end_colour</secondary></indexterm>
+<para><computeroutput> Self gui.progress_bar.ProgressBar.set_filled_end_colour ( self, tuple[int, int, int] filled_end_colour)</computeroutput></para>
 <para><literallayout><computeroutput>Set the filled end colour of the progress bar, then return the progress bar itself.
 </computeroutput></literallayout> </para>
 </section>

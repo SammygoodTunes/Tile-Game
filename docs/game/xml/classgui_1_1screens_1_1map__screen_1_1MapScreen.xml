@@ -120,15 +120,19 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="26" bodyend="34"/>
       </memberdef>
-      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a0510189e61545c6fef4d607d1a17f5e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None gui.screens.map_screen.MapScreen.initialise_map</definition>
-        <argsstring>(self)</argsstring>
+        <argsstring>(self, map)</argsstring>
         <name>initialise_map</name>
         <qualifiedname>gui.screens.map_screen.MapScreen.initialise_map</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
+        </param>
+        <param>
+          <type>map</type>
+          <defname>map</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -260,7 +264,7 @@
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>draw</name></member>
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a756ae80551179beb2a6ade09370308fc" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>faded_surface</name></member>
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1ab1c0e847e9d5c1e0459c713f50dfeb8c" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>game</name></member>
-      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>initialise_map</name></member>
+      <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a0510189e61545c6fef4d607d1a17f5e8" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>initialise_map</name></member>
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>initialise_surface</name></member>
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a8796c2dd17d1c0830a05249f6c7fcedb" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>reset_map</name></member>
       <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a9dd6df546a66558070470c0561de99e0" prot="public" virt="non-virtual"><scope>gui::screens::map_screen::MapScreen</scope><name>scaled_map</name></member>

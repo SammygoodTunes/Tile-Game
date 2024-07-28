@@ -7,9 +7,15 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a400024b267f4fc923aa43c8179f4fbee">__init__</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a55a5c1df06861962408280a4d8510a1f">events</link> (self, Event e)</para>
+</listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b">update</link> (self, game)</para>
 </listitem>
+            <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a995a76c4cdabdfa1db955cc8a8e1fb7d">update_ui</link> (self, game)</para>
+</listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a2e7b8060ab9979072aae5a367fb42ae9">draw_other_players</link> (self, game, delta)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a31e77764535a4ca36bdd89fafa10a0c0">queue_packet</link> (self, dict packet)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -23,6 +29,8 @@
             <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba">host</link></para>
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19">port</link></para>
+</listitem>
+            <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1a5dde09762c6786bbfcad789d11f6757c">player_name</link></para>
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c">connection</link></para>
 </listitem>
@@ -53,6 +61,16 @@
 We don&apos;t draw the main player as it is redundant.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1a55a5c1df06861962408280a4d8510a1f"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>client.connection_handler.ConnectionHandler</primary><secondary>events</secondary></indexterm>
+<para><computeroutput>client.connection_handler.ConnectionHandler.events ( self, Event e)</computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1a31e77764535a4ca36bdd89fafa10a0c0"/><section>
+    <title>queue_packet()</title>
+<indexterm><primary>queue_packet</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>client.connection_handler.ConnectionHandler</primary><secondary>queue_packet</secondary></indexterm>
+<para><computeroutput> None client.connection_handler.ConnectionHandler.queue_packet ( self, dict packet)</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
@@ -61,6 +79,11 @@ We don&apos;t draw the main player as it is redundant.
 <para><literallayout><computeroutput>Keep track of the connection state.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1a995a76c4cdabdfa1db955cc8a8e1fb7d"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>client.connection_handler.ConnectionHandler</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput>client.connection_handler.ConnectionHandler.update_ui ( self,  game)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -74,6 +97,11 @@ We don&apos;t draw the main player as it is redundant.
 <indexterm><primary>host</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>client.connection_handler.ConnectionHandler</primary><secondary>host</secondary></indexterm>
 <para><computeroutput>client.connection_handler.ConnectionHandler.host</computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1a5dde09762c6786bbfcad789d11f6757c"/><section>
+    <title>player_name</title>
+<indexterm><primary>player_name</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>client.connection_handler.ConnectionHandler</primary><secondary>player_name</secondary></indexterm>
+<para><computeroutput>client.connection_handler.ConnectionHandler.player_name</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19"/><section>
     <title>port</title>
 <indexterm><primary>port</primary><secondary>client.connection_handler.ConnectionHandler</secondary></indexterm>

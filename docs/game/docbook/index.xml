@@ -7,6 +7,7 @@
     <title>Namespace Documentation</title>
 <xi:include href="namespacebuilders.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceclient_1_1client.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient_1_1connection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient_1_1connection__handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient_1_1player__manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -42,6 +43,7 @@
 <xi:include href="namespacegui_1_1screens_1_1map__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacegui_1_1screens_1_1options__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacegui_1_1screens_1_1pause__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegui_1_1screens_1_1playerlist__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacegui_1_1screens_1_1screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacegui_1_1screens_1_1serverconnect__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacegui_1_1screens_1_1servercreate__screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -71,9 +73,12 @@
 </chapter>
 <chapter>
     <title>Class Documentation</title>
+    <xi:include href="classbuilders_1_1BaseBuilder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1button_1_1Button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld_1_1camera_1_1Camera.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classdata_1_1properties_1_1CameraProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1checkbox_1_1Checkbox.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classclient_1_1client_1_1Client.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classpacket_1_1Compressor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1connection_1_1Connection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1connection__handler_1_1ConnectionHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -108,7 +113,9 @@
     <xi:include href="classgui_1_1screens_1_1pause__screen_1_1PauseScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld_1_1synth_1_1noise_1_1PerlinNoise.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classentity_1_1player_1_1Player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbuilders_1_1PlayerBuilder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classplayer__handler_1_1PlayerHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1player__manager_1_1PlayerManager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1properties_1_1PlayerProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1states_1_1PlayerStates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -136,10 +143,12 @@
     <xi:include href="classcore_1_1window_1_1Window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld_1_1world_1_1World.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld__handler_1_1WorldHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classdata_1_1properties_1_1WorldProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>File Documentation</title>
+    <xi:include href="client_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="connection_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="connection__handler_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="player__manager_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -179,6 +188,7 @@
     <xi:include href="map__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="options__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="pause__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="playerlist__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="serverconnect__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="servercreate__screen_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

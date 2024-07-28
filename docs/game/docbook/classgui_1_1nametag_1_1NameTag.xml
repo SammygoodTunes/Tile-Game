@@ -23,6 +23,14 @@
 </listitem>
             <listitem><para>bool <link linkend="_classgui_1_1nametag_1_1NameTag_1a2b6645a9d8f6b55ecaa93a4735ba7fb4">is_hovering_over</link> (self)</para>
 </listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1nametag_1_1NameTag_1ac0b4f4cf2484d01b0fbaf83769a135e2">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1nametag_1_1NameTag_1a5f9306d9c6f816a2888b55f1f4b8adb4">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1nametag_1_1NameTag_1a4b23174266a460b713815b434721b293">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1nametag_1_1NameTag_1a28ff228b506e4e5a089e7236543c581e">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
             <listitem><para>Self <link linkend="_classgui_1_1nametag_1_1NameTag_1ac7c02d75d8a1f8928e970e4b718a9dfc">set_width</link> (self, int width)</para>
 </listitem>
             <listitem><para>int <link linkend="_classgui_1_1nametag_1_1NameTag_1a0a3a4d707710e2a485f12523508d1154">get_width</link> (self)</para>
@@ -49,13 +57,15 @@
 <simplesect>
     <title>Protected Attributes    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1a8609d847f8c71589b8eeed1921d289c1">_background_colour</link></para>
+</listitem>
             <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1ab1676003a6c2687675cd8d5292cbb050">_width</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1acee766f59b63cce320e35bb20de6f428">_height</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1a509fab8f263d4cded4ca355cca502991">_faded_surface</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1a8609d847f8c71589b8eeed1921d289c1">_background_colour</link></para>
+            <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1a4a25b5727cdc86eb2c6932e122d62126">_x</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1nametag_1_1NameTag_1a2d0f27f5ac95c34015ca8c97f44eb457">_y</link></para>
 </listitem>
@@ -80,6 +90,39 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1nametag_1_1NameTag_1a4b23174266a460b713815b434721b293"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>gui.nametag.NameTag</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self gui.nametag.NameTag.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag on both axes relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1nametag_1_1NameTag_1ac0b4f4cf2484d01b0fbaf83769a135e2"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>gui.nametag.NameTag</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self gui.nametag.NameTag.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag horizontally relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1nametag_1_1NameTag_1a5f9306d9c6f816a2888b55f1f4b8adb4"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>gui.nametag.NameTag</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self gui.nametag.NameTag.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag vertically relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1nametag_1_1NameTag_1a28ff228b506e4e5a089e7236543c581e"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>gui.nametag.NameTag</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self gui.nametag.NameTag.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag with center() and offset it by x and y relative to the specified parent, then return
+the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgui_1_1nametag_1_1NameTag_1ae4693e1c84ac50854c7b93ace0704d03"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
@@ -191,6 +234,11 @@
 <indexterm><primary>_width</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
 <indexterm><primary>gui.nametag.NameTag</primary><secondary>_width</secondary></indexterm>
 <para><computeroutput>gui.nametag.NameTag._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1nametag_1_1NameTag_1a4a25b5727cdc86eb2c6932e122d62126"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>gui.nametag.NameTag</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>gui.nametag.NameTag._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1nametag_1_1NameTag_1a2d0f27f5ac95c34015ca8c97f44eb457"/><section>
     <title>_y</title>
 <indexterm><primary>_y</primary><secondary>gui.nametag.NameTag</secondary></indexterm>

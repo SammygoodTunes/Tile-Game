@@ -11,6 +11,7 @@ var searchData=
   ['art_5fvalue_5flabel_8',['art_value_label',['../classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a66631ed7ad30a5d82e57af71283bd40d',1,'gui::screens::credits_screen::CreditsScreen']]],
   ['atlas_9',['atlas',['../classworld_1_1tile__manager_1_1TileManager.html#a3b1586d515df9206e3881d1d2346d3ce',1,'world::tile_manager::TileManager']]],
   ['authorise_5fonly_5falnum_10',['authorise_only_alnum',['../classgui_1_1inputbox_1_1InputBox.html#a96f130e3a4913a74c2a7e3a228e45a11',1,'gui::inputbox::InputBox']]],
-  ['authorise_5fonly_5fascii_11',['authorise_only_ascii',['../classgui_1_1inputbox_1_1InputBox.html#ac57a96f4427b78eefea80e8b4eb0981a',1,'gui::inputbox::InputBox']]],
-  ['authorise_5fonly_5fnumeric_12',['authorise_only_numeric',['../classgui_1_1inputbox_1_1InputBox.html#ac54c8df3fcc0d8f5836f7d24b80f7685',1,'gui::inputbox::InputBox']]]
+  ['authorise_5fonly_5falnumlines_11',['authorise_only_alnumlines',['../classgui_1_1inputbox_1_1InputBox.html#a463255a7004f5dcf22657b573e4f3a53',1,'gui::inputbox::InputBox']]],
+  ['authorise_5fonly_5fascii_12',['authorise_only_ascii',['../classgui_1_1inputbox_1_1InputBox.html#ac57a96f4427b78eefea80e8b4eb0981a',1,'gui::inputbox::InputBox']]],
+  ['authorise_5fonly_5fnumeric_13',['authorise_only_numeric',['../classgui_1_1inputbox_1_1InputBox.html#ac54c8df3fcc0d8f5836f7d24b80f7685',1,'gui::inputbox::InputBox']]]
 ];

@@ -47,7 +47,7 @@
 </listitem>
             <listitem><para>int <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a2284ba4b10a13cbd51154e93cc60752a">get_selected_slot</link> (self)</para>
 </listitem>
-            <listitem><para>Items <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a3595614e7bce71db1403de696db40ff3">get_selected_slot_item</link> (self)</para>
+            <listitem><para>Item <link linkend="_classgui_1_1hotbar_1_1Hotbar_1a7b4f9115712f0f4a9cec483f6e944dec">get_selected_slot_item</link> (self)</para>
 </listitem>
             <listitem><para>Slot <link linkend="_classgui_1_1hotbar_1_1Hotbar_1ae2ee48425247dda7a70c01851f14914d">get_slot</link> (self, int slot_index)</para>
 </listitem>
@@ -168,11 +168,11 @@ the hotbar itself.
 <para><literallayout><computeroutput>Return the selected slot of the hotbar.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a3595614e7bce71db1403de696db40ff3"/><section>
+<anchor xml:id="_classgui_1_1hotbar_1_1Hotbar_1a7b4f9115712f0f4a9cec483f6e944dec"/><section>
     <title>get_selected_slot_item()</title>
 <indexterm><primary>get_selected_slot_item</primary><secondary>gui.hotbar.Hotbar</secondary></indexterm>
 <indexterm><primary>gui.hotbar.Hotbar</primary><secondary>get_selected_slot_item</secondary></indexterm>
-<para><computeroutput> Items gui.hotbar.Hotbar.get_selected_slot_item ( self)</computeroutput></para>
+<para><computeroutput> Item gui.hotbar.Hotbar.get_selected_slot_item ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the item of the selected hotbar slot.
 </computeroutput></literallayout> </para>
 </section>

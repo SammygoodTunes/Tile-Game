@@ -7,7 +7,7 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053">__init__</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb">create_world</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00">create_world</link> (self, seed)</para>
 </listitem>
             <listitem><para>World <link linkend="_classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4">get_world</link> (self)</para>
 </listitem>
@@ -29,11 +29,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb"/><section>
+<anchor xml:id="_classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00"/><section>
     <title>create_world()</title>
 <indexterm><primary>create_world</primary><secondary>world_handler.WorldHandler</secondary></indexterm>
 <indexterm><primary>world_handler.WorldHandler</primary><secondary>create_world</secondary></indexterm>
-<para><computeroutput> None world_handler.WorldHandler.create_world ( self)</computeroutput></para>
+<para><computeroutput> None world_handler.WorldHandler.create_world ( self,  seed)</computeroutput></para>
 <para><literallayout><computeroutput>Create a new server world.
 </computeroutput></literallayout> </para>
 </section>

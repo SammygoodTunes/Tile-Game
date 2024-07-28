@@ -145,12 +145,12 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="19" bodyend="26"/>
       </memberdef>
-      <memberdef kind="function" id="classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classworld_1_1camera_1_1Camera_1ad57a3d2d809b075e977178cf522d9815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
-        <definition> None world.camera.Camera.events</definition>
+        <definition> None world.camera.Camera.update</definition>
         <argsstring>(self, game)</argsstring>
-        <name>events</name>
-        <qualifiedname>world.camera.Camera.events</qualifiedname>
+        <name>update</name>
+        <qualifiedname>world.camera.Camera.update</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
@@ -162,7 +162,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Track the camera events.
+<para><verbatim>Update the camera.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -200,9 +200,9 @@ The camera position is strictly relative to the center of the screen.
     <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="9" bodyend="69"/>
     <listofallmembers>
       <member refid="classworld_1_1camera_1_1Camera_1a43b2c940f68b419a8f708f923d82ea27" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>__init__</name></member>
-      <member refid="classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>events</name></member>
       <member refid="classworld_1_1camera_1_1Camera_1ac1550203365008c4b71fea62a935d261" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>reset</name></member>
       <member refid="classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>speed</name></member>
+      <member refid="classworld_1_1camera_1_1Camera_1ad57a3d2d809b075e977178cf522d9815" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>update</name></member>
       <member refid="classworld_1_1camera_1_1Camera_1a662c32ad462339e256b5de1272dc46fd" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>VELOCITY_STEP_START</name></member>
       <member refid="classworld_1_1camera_1_1Camera_1a18d16fd44b9f1bed2e210f3580f6d0a9" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>VELOCITY_STEP_STOP</name></member>
       <member refid="classworld_1_1camera_1_1Camera_1a31d39b07d25a937932b9b1ee69b65f79" prot="public" virt="non-virtual"><scope>world::camera::Camera</scope><name>VELOCITY_THRESHOLD</name></member>

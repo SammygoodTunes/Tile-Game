@@ -1,9 +1,6 @@
 var namespaces_dup =
 [
-    [ "builders", "namespacebuilders.html", [
-      [ "build_player", "namespacebuilders.html#a813379f63daeb04e8d6c34e2871ae22d", null ],
-      [ "unbuild_player", "namespacebuilders.html#a677ad2a4ab13b5bd3f864deddb1db86f", null ]
-    ] ],
+    [ "builders", "namespacebuilders.html", "namespacebuilders" ],
     [ "client", "namespaceclient.html", "namespaceclient" ],
     [ "core", "namespacecore.html", "namespacecore" ],
     [ "data", "namespacedata.html", "namespacedata" ],

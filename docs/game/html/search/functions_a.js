@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../namespacemain.html#aa7a58ac748c5293faa4d77a82b94d161',1,'main']]],
-  ['map_5fdata_1',['map_data',['../classtasks_1_1Tasks.html#ae9cdb17ba5e8fadcf1141c11e1710b7d',1,'tasks::Tasks']]]
+  ['link_5fgame_0',['link_game',['../classgui_1_1screen__manager_1_1Screens.html#a045983a0aa666845dfa5d987970cce09',1,'gui::screen_manager::Screens']]],
+  ['load_1',['load',['../classworld_1_1map__manager_1_1Map.html#aa635d2aee2f4365f5244a15cdc330546',1,'world::map_manager::Map']]]
 ];

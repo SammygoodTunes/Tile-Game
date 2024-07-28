@@ -1,6 +1,6 @@
 var classgui_1_1progress__bar_1_1ProgressBar =
 [
-    [ "__init__", "classgui_1_1progress__bar_1_1ProgressBar.html#a172547b58da9a99a3ecaf7063de1311b", null ],
+    [ "__init__", "classgui_1_1progress__bar_1_1ProgressBar.html#a31cd4ff91d527cd6e33415df74c4d39e", null ],
     [ "center", "classgui_1_1progress__bar_1_1ProgressBar.html#a1122c2b3fcff47dbbfcd6bf86ded10dd", null ],
     [ "center_horizontally", "classgui_1_1progress__bar_1_1ProgressBar.html#a2fd3780ec0cdcf39c8bcadde8c383494", null ],
     [ "center_vertically", "classgui_1_1progress__bar_1_1ProgressBar.html#a32bba58ba0c05bc0c92b306bf3337caf", null ],
@@ -15,7 +15,7 @@ var classgui_1_1progress__bar_1_1ProgressBar =
     [ "get_value_bounds", "classgui_1_1progress__bar_1_1ProgressBar.html#a9c7506fa1111e3e3c6ba5999d070c4a0", null ],
     [ "get_width", "classgui_1_1progress__bar_1_1ProgressBar.html#a5c3773a70fdc135a2580d7c72cd68f05", null ],
     [ "refresh", "classgui_1_1progress__bar_1_1ProgressBar.html#a53f4b6fa831f88af23985e90ccaafaed", null ],
-    [ "set_filled_end_color", "classgui_1_1progress__bar_1_1ProgressBar.html#a158088dbdd5ec265b14ab8833d15012b", null ],
+    [ "set_filled_end_colour", "classgui_1_1progress__bar_1_1ProgressBar.html#a5723c963743c2da47075ebce3331fe73", null ],
     [ "set_filled_start_colour", "classgui_1_1progress__bar_1_1ProgressBar.html#a87b0094db2512ff9a45263515a8d7d5b", null ],
     [ "set_height", "classgui_1_1progress__bar_1_1ProgressBar.html#a01e5acfddf08b0758a825a1cf954540b", null ],
     [ "set_title", "classgui_1_1progress__bar_1_1ProgressBar.html#a7d49e786fc36aed302c27b8c3dd11822", null ],

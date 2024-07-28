@@ -34,11 +34,11 @@
 <codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" kindref="member">_map</ref>.<ref refid="classworld_1_1world_1_1World_1adb6578b4bb9c0c1db59f8d13a7b8c86d" kindref="member">initialise</ref>()</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4" kindref="member">create</ref>(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1world_1_1World_1a19277ba9d6a65181e4e4349e890e1ae3" kindref="member">create</ref>(self,<sp/>seed)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Create<sp/>the<sp/>world.</highlight></codeline>
 <codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" kindref="member">_map</ref>.regenerate()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" kindref="member">_map</ref>.regenerate(seed)</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld_1_1world_1_1World_1aecdab0f9d5ff0fe3257383a23cd1882b" kindref="member">update</ref>(self,<sp/>window_obj,<sp/>player_obj)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
@@ -58,13 +58,13 @@
 <codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Draw<sp/>the<sp/>world<sp/>(map,<sp/>tiles,<sp/>etc.).</highlight></codeline>
 <codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_,<sp/>_,<sp/>width,<sp/>height<sp/>=<sp/>game.screen.get_rect()</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>true_x<sp/>=<sp/>width<sp/>//<sp/>2<sp/>-<sp/>int(game.camera.x)<sp/>+<sp/>self._map.get_x()</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>true_y<sp/>=<sp/>height<sp/>//<sp/>2<sp/>-<sp/>int(game.camera.y)<sp/>+<sp/>self._map.get_y()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>true_x<sp/>=<sp/>width<sp/>//<sp/>2<sp/>-<sp/>int(game.client.camera.x)<sp/>+<sp/>self._map.get_x()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>true_y<sp/>=<sp/>height<sp/>//<sp/>2<sp/>-<sp/>int(game.client.camera.y)<sp/>+<sp/>self._map.get_y()</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Culling<sp/>applied</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&apos;&apos;</highlight></codeline>
-<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_x<sp/>=<sp/>self.game.camera.x<sp/>+<sp/>self._map.get_width_in_pixels()<sp/>/<sp/>2<sp/>-<sp/>200</highlight></codeline>
-<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_y<sp/>=<sp/>self.game.camera.y<sp/>+<sp/>self._map.get_height_in_pixels()<sp/>/<sp/>2<sp/>-<sp/>200</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_x<sp/>=<sp/>self.game.client.camera.x<sp/>+<sp/>self._map.get_width_in_pixels()<sp/>/<sp/>2<sp/>-<sp/>200</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_y<sp/>=<sp/>self.game.client.camera.y<sp/>+<sp/>self._map.get_height_in_pixels()<sp/>/<sp/>2<sp/>-<sp/>200</highlight></codeline>
 <codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_width<sp/>=<sp/>400</highlight></codeline>
 <codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>culling_height<sp/>=<sp/>400</highlight></codeline>
 <codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screen.blit(self._map.get_surface(),<sp/>(true_x<sp/>+<sp/>culling_x,<sp/>true_y<sp/>+<sp/>culling_y,<sp/>self._map.get_width_in_pixels(),<sp/>self._map.get_height_in_pixels()),<sp/>(culling_x,<sp/>culling_y,<sp/>culling_width,<sp/>culling_height))</highlight></codeline>

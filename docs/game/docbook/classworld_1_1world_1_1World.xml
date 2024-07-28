@@ -9,7 +9,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1adb6578b4bb9c0c1db59f8d13a7b8c86d">initialise</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4">create</link> (self)</para>
+            <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1a19277ba9d6a65181e4e4349e890e1ae3">create</link> (self, seed)</para>
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1world_1_1World_1aecdab0f9d5ff0fe3257383a23cd1882b">update</link> (self, window_obj, player_obj)</para>
 </listitem>
@@ -48,11 +48,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4"/><section>
+<anchor xml:id="_classworld_1_1world_1_1World_1a19277ba9d6a65181e4e4349e890e1ae3"/><section>
     <title>create()</title>
 <indexterm><primary>create</primary><secondary>world.world.World</secondary></indexterm>
 <indexterm><primary>world.world.World</primary><secondary>create</secondary></indexterm>
-<para><computeroutput> None world.world.World.create ( self)</computeroutput></para>
+<para><computeroutput> None world.world.World.create ( self,  seed)</computeroutput></para>
 <para><literallayout><computeroutput>Create the world.
 </computeroutput></literallayout> </para>
 </section>

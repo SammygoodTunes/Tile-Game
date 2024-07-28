@@ -15,19 +15,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="17" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classclient_1_1player__manager_1_1PlayerManager_1addb331a64038f2aec153a9d0d789af5c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>client.player_manager.PlayerManager::local_player</definition>
+        <argsstring></argsstring>
+        <name>local_player</name>
+        <qualifiedname>client.player_manager.PlayerManager.local_player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="23" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a1b6ac2206b81407a722eea7d6e6cf15d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None client.player_manager.PlayerManager.__init__</definition>
-        <argsstring>(self)</argsstring>
+        <argsstring>(self, player)</argsstring>
         <name>__init__</name>
         <qualifiedname>client.player_manager.PlayerManager.__init__</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
+        </param>
+        <param>
+          <type>player</type>
+          <defname>player</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -35,7 +53,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="16" bodyend="18"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1ade912025a5624b372577c0f19299362a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>client.player_manager.PlayerManager.build_local_player</definition>
+        <argsstring>(self, dict player_dict)</argsstring>
+        <name>build_local_player</name>
+        <qualifiedname>client.player_manager.PlayerManager.build_local_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>player_dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="22" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -59,7 +99,55 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="19" bodyend="25"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict|None</type>
+        <definition> dict | None client.player_manager.PlayerManager.get_player</definition>
+        <argsstring>(self, str player_name)</argsstring>
+        <name>get_player</name>
+        <qualifiedname>client.player_manager.PlayerManager.get_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>player_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the player by player name if they exist, None otherwise.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aa9bba12818247c0e55a437c1963c0bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str client.player_manager.PlayerManager.hit_player</definition>
+        <argsstring>(self, str player_name)</argsstring>
+        <name>hit_player</name>
+        <qualifiedname>client.player_manager.PlayerManager.hit_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>player_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check and return the player that has been hit.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="41" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -91,19 +179,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="26" bodyend="40"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="57" bodyend="73"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><verbatim>Class for handling server players.
+<para><verbatim>Class for handling client player information.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="11" bodyend="40"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="13" bodyend="73"/>
     <listofallmembers>
-      <member refid="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1b6ac2206b81407a722eea7d6e6cf15d" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1ade912025a5624b372577c0f19299362a" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>build_local_player</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>draw_players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>get_player</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1aa9bba12818247c0e55a437c1963c0bb4" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>hit_player</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1addb331a64038f2aec153a9d0d789af5c" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>local_player</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>players</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
     </listofallmembers>

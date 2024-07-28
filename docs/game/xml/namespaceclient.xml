@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="namespaceclient" kind="namespace" language="Python">
     <compoundname>client</compoundname>
+    <innernamespace refid="namespaceclient_1_1client">client::client</innernamespace>
     <innernamespace refid="namespaceclient_1_1connection">client::connection</innernamespace>
     <innernamespace refid="namespaceclient_1_1connection__handler">client::connection_handler</innernamespace>
     <innernamespace refid="namespaceclient_1_1player__manager">client::player_manager</innernamespace>
@@ -9,6 +10,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="1" column="1"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="1" column="1"/>
   </compounddef>
 </doxygen>

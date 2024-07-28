@@ -11,4 +11,29 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bytes <link linkend="_namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8">fill</link> (bytes data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428">to_bytes</link> (str data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8"/><section>
+    <title>fill()</title>
+<indexterm><primary>fill</primary><secondary>packet</secondary></indexterm>
+<indexterm><primary>packet</primary><secondary>fill</secondary></indexterm>
+<para><computeroutput> bytes packet.fill (bytes data)</computeroutput></para>
+<para><literallayout><computeroutput>Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428"/><section>
+    <title>to_bytes()</title>
+<indexterm><primary>to_bytes</primary><secondary>packet</secondary></indexterm>
+<indexterm><primary>packet</primary><secondary>to_bytes</secondary></indexterm>
+<para><computeroutput> bytes packet.to_bytes (str data)</computeroutput></para></section>
+</section>
 </section>

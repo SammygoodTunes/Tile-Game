@@ -1,6 +1,9 @@
 var hierarchy =
 [
+    [ "builders.BaseBuilder", "classbuilders_1_1BaseBuilder.html", null ],
     [ "world.camera.Camera", "classworld_1_1camera_1_1Camera.html", null ],
+    [ "data.properties.CameraProperties", "classdata_1_1properties_1_1CameraProperties.html", null ],
+    [ "client.client.Client", "classclient_1_1client_1_1Client.html", null ],
     [ "packet.Compressor", "classpacket_1_1Compressor.html", null ],
     [ "client.connection.Connection", "classclient_1_1connection_1_1Connection.html", null ],
     [ "client.connection_handler.ConnectionHandler", "classclient_1_1connection__handler_1_1ConnectionHandler.html", null ],
@@ -24,6 +27,7 @@ var hierarchy =
     [ "data.states.MouseStates", "classdata_1_1states_1_1MouseStates.html", null ],
     [ "world.synth.noise.PerlinNoise", "classworld_1_1synth_1_1noise_1_1PerlinNoise.html", null ],
     [ "entity.player.Player", "classentity_1_1player_1_1Player.html", null ],
+    [ "builders.PlayerBuilder", "classbuilders_1_1PlayerBuilder.html", null ],
     [ "player_handler.PlayerHandler", "classplayer__handler_1_1PlayerHandler.html", null ],
     [ "client.player_manager.PlayerManager", "classclient_1_1player__manager_1_1PlayerManager.html", null ],
     [ "data.properties.PlayerProperties", "classdata_1_1properties_1_1PlayerProperties.html", null ],
@@ -45,6 +49,7 @@ var hierarchy =
     [ "core.window.Window", "classcore_1_1window_1_1Window.html", null ],
     [ "world.world.World", "classworld_1_1world_1_1World.html", null ],
     [ "world_handler.WorldHandler", "classworld__handler_1_1WorldHandler.html", null ],
+    [ "data.properties.WorldProperties", "classdata_1_1properties_1_1WorldProperties.html", null ],
     [ "Screen", null, [
       [ "gui.screens.crash_screen.CrashScreen", "classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html", null ],
       [ "gui.screens.credits_screen.CreditsScreen", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", null ],
@@ -55,6 +60,7 @@ var hierarchy =
       [ "gui.screens.map_screen.MapScreen", "classgui_1_1screens_1_1map__screen_1_1MapScreen.html", null ],
       [ "gui.screens.options_screen.OptionsScreen", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html", null ],
       [ "gui.screens.pause_screen.PauseScreen", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html", null ],
+      [ "gui.screens.playerlist_screen.PlayerListScreen", "classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html", null ],
       [ "gui.screens.serverconnect_screen.ServerConnectScreen", "classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html", null ],
       [ "gui.screens.servercreate_screen.ServerCreateScreen", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html", null ],
       [ "gui.screens.serverjoin_screen.ServerJoinScreen", "classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html", null ],

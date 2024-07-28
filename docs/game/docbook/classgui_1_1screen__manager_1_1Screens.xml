@@ -15,6 +15,12 @@
 </listitem>
             <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e">update_ui</link> (self)</para>
 </listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1ae1107724170417d919a6fec29ca23908">task_tab</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1adc4f57723a6f6c3ecb5e9f46c1906394">task_create_server</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screen__manager_1_1Screens_1aa9e5774e08d1801caab4477b80f5f680">task_join_server</link> (self)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -49,6 +55,8 @@
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a39700556405bddc8add791eec0add77d">gameover_screen</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1ab7e41aaf3ab06d1379951c62c8d8d9dd">map_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screen__manager_1_1Screens_1a0fbabd13fe50b63fd84187293ca49dce">player_list_screen</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -85,6 +93,27 @@
 TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1adc4f57723a6f6c3ecb5e9f46c1906394"/><section>
+    <title>task_create_server()</title>
+<indexterm><primary>task_create_server</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>task_create_server</secondary></indexterm>
+<para><computeroutput> None gui.screen_manager.Screens.task_create_server ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Screen task for creating a server.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1aa9e5774e08d1801caab4477b80f5f680"/><section>
+    <title>task_join_server()</title>
+<indexterm><primary>task_join_server</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>task_join_server</secondary></indexterm>
+<para><computeroutput> None gui.screen_manager.Screens.task_join_server ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Screen task for joining a server.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1ae1107724170417d919a6fec29ca23908"/><section>
+    <title>task_tab()</title>
+<indexterm><primary>task_tab</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>task_tab</secondary></indexterm>
+<para><computeroutput> None gui.screen_manager.Screens.task_tab ( self)</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
@@ -149,6 +178,11 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 <indexterm><primary>pause_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
 <indexterm><primary>gui.screen_manager.Screens</primary><secondary>pause_screen</secondary></indexterm>
 <para><computeroutput>gui.screen_manager.Screens.pause_screen</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a0fbabd13fe50b63fd84187293ca49dce"/><section>
+    <title>player_list_screen</title>
+<indexterm><primary>player_list_screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>gui.screen_manager.Screens</primary><secondary>player_list_screen</secondary></indexterm>
+<para><computeroutput>gui.screen_manager.Screens.player_list_screen</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341"/><section>
     <title>screen</title>
 <indexterm><primary>screen</primary><secondary>gui.screen_manager.Screens</secondary></indexterm>

@@ -58,14 +58,21 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>RECOGNITION_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GAMETILE&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>MAPDATA_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MAPDATA&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>MAPDATA_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;DATAMAP&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>MAPDATA_READY_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MAPREADY&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYERUPDATE_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;UPDATEME&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYERUPDATE_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MEUPDATE&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYERUPDATE_READY_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MEUPDATED&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GAMEUPDATE&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;UPDATEGAME&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_READY_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GAMEUPDATEREADY&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>DISCONNECT_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;BYEBYE&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>MAPDATA_EOS<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MAPREADY&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYERJOIN_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;IWANTTOJOIN&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYERJOIN_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;OKGIVEMEYOURNAME&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYEROBJ_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;HEREISPLAYER&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYEROBJ_EOS<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;PLAYEROBJREADY&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GAMEUPDATE&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;UPDATEGAME&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>GAMEUPDATE_EOS<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GAMEUPDATEREADY&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>PACKET_EOS<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;PACKETEND&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>DISCONNECT_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;BYEBYE&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>PACKET_MAGIC<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GPKT&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>HIT_REQ<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;HIT&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>HIT_RES<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;GOTHIT&apos;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/network/protocol.py"/>
   </compounddef>

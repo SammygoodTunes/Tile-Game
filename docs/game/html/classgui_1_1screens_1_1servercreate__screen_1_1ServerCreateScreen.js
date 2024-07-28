@@ -11,5 +11,6 @@ var classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen =
     [ "create_label", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#aac751b219df1cd7ffad451ad5d362ffe", null ],
     [ "faded_surface", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a1a8d7a3d248e2aba5e98eed6242d7b1d", null ],
     [ "ign_input", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a50f4eb7e411c5dfaa5bdf06170e42dc4", null ],
+    [ "seed_input", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a6774589cc932024ee23ab56a3e6cb485", null ],
     [ "window", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a00ce6d5e6b2f32825a76857c26eff450", null ]
 ];

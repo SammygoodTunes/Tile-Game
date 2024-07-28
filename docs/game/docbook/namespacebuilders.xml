@@ -3,31 +3,12 @@
 <title>builders Namespace Reference</title>
 <indexterm><primary>builders</primary></indexterm>
 <simplesect>
-    <title>Functions    </title>
+    <title>Classes    </title>
         <itemizedlist>
-            <listitem><para>dict <link linkend="_namespacebuilders_1a813379f63daeb04e8d6c34e2871ae22d">build_player</link> (Player player)</para>
+            <listitem><para>class <link linkend="_classbuilders_1_1BaseBuilder">BaseBuilder</link></para>
 </listitem>
-            <listitem><para>Player <link linkend="_namespacebuilders_1a677ad2a4ab13b5bd3f864deddb1db86f">unbuild_player</link> (Player player, dict player_dict)</para>
+            <listitem><para>class <link linkend="_classbuilders_1_1PlayerBuilder">PlayerBuilder</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
-<section>
-<title>Function Documentation</title>
-<anchor xml:id="_namespacebuilders_1a813379f63daeb04e8d6c34e2871ae22d"/><section>
-    <title>build_player()</title>
-<indexterm><primary>build_player</primary><secondary>builders</secondary></indexterm>
-<indexterm><primary>builders</primary><secondary>build_player</secondary></indexterm>
-<para><computeroutput> dict builders.build_player (Player player)</computeroutput></para>
-<para><literallayout><computeroutput>Build a server player from a client player.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_namespacebuilders_1a677ad2a4ab13b5bd3f864deddb1db86f"/><section>
-    <title>unbuild_player()</title>
-<indexterm><primary>unbuild_player</primary><secondary>builders</secondary></indexterm>
-<indexterm><primary>builders</primary><secondary>unbuild_player</secondary></indexterm>
-<para><computeroutput> Player builders.unbuild_player (Player player, dict player_dict)</computeroutput></para>
-<para><literallayout><computeroutput>Un-build a server player to a client player.
-</computeroutput></literallayout> </para>
-</section>
-</section>
 </section>

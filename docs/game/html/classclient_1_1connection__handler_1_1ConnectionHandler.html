@@ -104,10 +104,16 @@ $(function(){initNavTree('classclient_1_1connection__handler_1_1ConnectionHandle
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a400024b267f4fc923aa43c8179f4fbee" id="r_a400024b267f4fc923aa43c8179f4fbee"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a400024b267f4fc923aa43c8179f4fbee">__init__</a> (self)</td></tr>
 <tr class="separator:a400024b267f4fc923aa43c8179f4fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a5c1df06861962408280a4d8510a1f" id="r_a55a5c1df06861962408280a4d8510a1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55a5c1df06861962408280a4d8510a1f">events</a> (self, Event e)</td></tr>
+<tr class="separator:a55a5c1df06861962408280a4d8510a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9dc5d3876359b7f35ad588053e883b" id="r_a9e9dc5d3876359b7f35ad588053e883b"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e9dc5d3876359b7f35ad588053e883b">update</a> (self, game)</td></tr>
 <tr class="separator:a9e9dc5d3876359b7f35ad588053e883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995a76c4cdabdfa1db955cc8a8e1fb7d" id="r_a995a76c4cdabdfa1db955cc8a8e1fb7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a995a76c4cdabdfa1db955cc8a8e1fb7d">update_ui</a> (self, game)</td></tr>
+<tr class="separator:a995a76c4cdabdfa1db955cc8a8e1fb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7b8060ab9979072aae5a367fb42ae9" id="r_a2e7b8060ab9979072aae5a367fb42ae9"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e7b8060ab9979072aae5a367fb42ae9">draw_other_players</a> (self, game, delta)</td></tr>
 <tr class="separator:a2e7b8060ab9979072aae5a367fb42ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e77764535a4ca36bdd89fafa10a0c0" id="r_a31e77764535a4ca36bdd89fafa10a0c0"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31e77764535a4ca36bdd89fafa10a0c0">queue_packet</a> (self, dict packet)</td></tr>
+<tr class="separator:a31e77764535a4ca36bdd89fafa10a0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -119,6 +125,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3881b572a384e786959062fc7add94ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3593fcf8e265dc911be0c2b4195fe19" id="r_aa3593fcf8e265dc911be0c2b4195fe19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3593fcf8e265dc911be0c2b4195fe19">port</a></td></tr>
 <tr class="separator:aa3593fcf8e265dc911be0c2b4195fe19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dde09762c6786bbfcad789d11f6757c" id="r_a5dde09762c6786bbfcad789d11f6757c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dde09762c6786bbfcad789d11f6757c">player_name</a></td></tr>
+<tr class="separator:a5dde09762c6786bbfcad789d11f6757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac65aa778f30d9373399b2d5064da41c" id="r_aac65aa778f30d9373399b2d5064da41c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac65aa778f30d9373399b2d5064da41c">connection</a></td></tr>
 <tr class="separator:aac65aa778f30d9373399b2d5064da41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -171,6 +179,48 @@ We don't draw the main player as it is redundant.
 </pre> 
 </div>
 </div>
+<a id="a55a5c1df06861962408280a4d8510a1f" name="a55a5c1df06861962408280a4d8510a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a5c1df06861962408280a4d8510a1f">&#9670;&#160;</a></span>events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">client.connection_handler.ConnectionHandler.events </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Event</td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31e77764535a4ca36bdd89fafa10a0c0" name="a31e77764535a4ca36bdd89fafa10a0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e77764535a4ca36bdd89fafa10a0c0">&#9670;&#160;</a></span>queue_packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None client.connection_handler.ConnectionHandler.queue_packet </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict</td>          <td class="paramname"><span class="paramname"><em>packet</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9e9dc5d3876359b7f35ad588053e883b" name="a9e9dc5d3876359b7f35ad588053e883b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e9dc5d3876359b7f35ad588053e883b">&#9670;&#160;</a></span>update()</h2>
 
@@ -191,6 +241,27 @@ We don't draw the main player as it is redundant.
 </div><div class="memdoc">
 <pre class="fragment">Keep track of the connection state.
 </pre> 
+</div>
+</div>
+<a id="a995a76c4cdabdfa1db955cc8a8e1fb7d" name="a995a76c4cdabdfa1db955cc8a8e1fb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995a76c4cdabdfa1db955cc8a8e1fb7d">&#9670;&#160;</a></span>update_ui()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">client.connection_handler.ConnectionHandler.update_ui </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>game</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -216,6 +287,20 @@ We don't draw the main player as it is redundant.
       <table class="memname">
         <tr>
           <td class="memname">client.connection_handler.ConnectionHandler.host</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dde09762c6786bbfcad789d11f6757c" name="a5dde09762c6786bbfcad789d11f6757c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dde09762c6786bbfcad789d11f6757c">&#9670;&#160;</a></span>player_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">client.connection_handler.ConnectionHandler.player_name</td>
         </tr>
       </table>
 </div><div class="memdoc">

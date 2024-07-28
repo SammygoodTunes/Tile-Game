@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbuilders_1_1PlayerBuilder" xml:lang="en-US">
+<title>builders.PlayerBuilder Class Reference</title>
+<indexterm><primary>builders.PlayerBuilder</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_classbuilders_1_1PlayerBuilder_1a1f85f20c8a6618b8b5482430ef04fc1b">create_player</link> ()</para>
+</listitem>
+            <listitem><para>None <link linkend="_classbuilders_1_1PlayerBuilder_1ad8bf088f5ce3e74066b57653ce08297b">build_player</link> (player, dict player_dict)</para>
+</listitem>
+            <listitem><para><link linkend="_classbuilders_1_1PlayerBuilder_1a803b1b083dc40d8a9bfa8215c57dced9">build_player_move</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1aed059c92738e9a1234458ce937a712b4">NAME_KEY</link> = &apos;name&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a28daa26106b4b21aab73c3988a32fbb3">X_POS_KEY</link> = &apos;x&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a3b169911f17e437dd957b3889c39182a">Y_POS_KEY</link> = &apos;y&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a4a393c326106bf57d53c9bdd3de324d7">PREV_X_POS_KEY</link> = &apos;previous_x&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a61791f5aab549f71acae79b7bc1e343b">PREV_Y_POS_KEY</link> = &apos;previous_y&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a858d8f5ad9b2483da4393fdba6474fa0">LERP_KEY</link> = &apos;lerp&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a336f622bf2b943d9eb95a438c0272c60">POINTING_AT_POS_KEY</link> = &apos;pointing_at&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a0ed24bf3c3e5ea26e7b33eb0e35941e4">HEALTH_KEY</link> = &apos;health&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a6b54e0ab526d5905b44b2882e0ac3798">HOLDING_ITEM_KEY</link> = &apos;holding_item&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a169617d98b3d759bb802b21163d6d40e">DIRECTION_KEY</link> = &apos;direction&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a84cbcc9d1f24fb33b5df75f5f0421b66">VELOCITY_KEY</link> = &apos;velocity&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for the player packet builder.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1ad8bf088f5ce3e74066b57653ce08297b"/><section>
+    <title>build_player()</title>
+<indexterm><primary>build_player</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>build_player</secondary></indexterm>
+<para><computeroutput> None builders.PlayerBuilder.build_player ( player, dict player_dict)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Build the player object from a player packet.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a803b1b083dc40d8a9bfa8215c57dced9"/><section>
+    <title>build_player_move()</title>
+<indexterm><primary>build_player_move</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>build_player_move</secondary></indexterm>
+<para><computeroutput>builders.PlayerBuilder.build_player_move ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Build a player move packet.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a1f85f20c8a6618b8b5482430ef04fc1b"/><section>
+    <title>create_player()</title>
+<indexterm><primary>create_player</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>create_player</secondary></indexterm>
+<para><computeroutput> dict builders.PlayerBuilder.create_player ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Create a player packet.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a169617d98b3d759bb802b21163d6d40e"/><section>
+    <title>DIRECTION_KEY</title>
+<indexterm><primary>DIRECTION_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>DIRECTION_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.DIRECTION_KEY = &apos;direction&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a0ed24bf3c3e5ea26e7b33eb0e35941e4"/><section>
+    <title>HEALTH_KEY</title>
+<indexterm><primary>HEALTH_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>HEALTH_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.HEALTH_KEY = &apos;health&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a6b54e0ab526d5905b44b2882e0ac3798"/><section>
+    <title>HOLDING_ITEM_KEY</title>
+<indexterm><primary>HOLDING_ITEM_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>HOLDING_ITEM_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.HOLDING_ITEM_KEY = &apos;holding_item&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a858d8f5ad9b2483da4393fdba6474fa0"/><section>
+    <title>LERP_KEY</title>
+<indexterm><primary>LERP_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>LERP_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.LERP_KEY = &apos;lerp&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1aed059c92738e9a1234458ce937a712b4"/><section>
+    <title>NAME_KEY</title>
+<indexterm><primary>NAME_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>NAME_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.NAME_KEY = &apos;name&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a336f622bf2b943d9eb95a438c0272c60"/><section>
+    <title>POINTING_AT_POS_KEY</title>
+<indexterm><primary>POINTING_AT_POS_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>POINTING_AT_POS_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.POINTING_AT_POS_KEY = &apos;pointing_at&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a4a393c326106bf57d53c9bdd3de324d7"/><section>
+    <title>PREV_X_POS_KEY</title>
+<indexterm><primary>PREV_X_POS_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>PREV_X_POS_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.PREV_X_POS_KEY = &apos;previous_x&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a61791f5aab549f71acae79b7bc1e343b"/><section>
+    <title>PREV_Y_POS_KEY</title>
+<indexterm><primary>PREV_Y_POS_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>PREV_Y_POS_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.PREV_Y_POS_KEY = &apos;previous_y&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a84cbcc9d1f24fb33b5df75f5f0421b66"/><section>
+    <title>VELOCITY_KEY</title>
+<indexterm><primary>VELOCITY_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>VELOCITY_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.VELOCITY_KEY = &apos;velocity&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a28daa26106b4b21aab73c3988a32fbb3"/><section>
+    <title>X_POS_KEY</title>
+<indexterm><primary>X_POS_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>X_POS_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.X_POS_KEY = &apos;x&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a3b169911f17e437dd957b3889c39182a"/><section>
+    <title>Y_POS_KEY</title>
+<indexterm><primary>Y_POS_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>Y_POS_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.Y_POS_KEY = &apos;y&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_builders_8py">builders.py</link></section>
+</section>

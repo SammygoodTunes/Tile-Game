@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>tuple <link linkend="_classdata_1_1items_1_1ItemTypes_1a781fe95471d8c41e51a9fab11c4c5bf4">TOOLS</link> = (<link linkend="_classdata_1_1items_1_1Items_1a7c372332a60d7515f574f1957d697802">Items.SHOVEL</link>,)</para>
 </listitem>
+            <listitem><para>tuple <link linkend="_classdata_1_1items_1_1ItemTypes_1ae58dfa6261b98b6f9a6b63c86cde74ec">WEAPONS</link> = (<link linkend="_classdata_1_1items_1_1Items_1a4b65f0f6ef212bd2a5120d0d52d15c59">Items.GUN</link>,)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -21,6 +23,11 @@
 <indexterm><primary>TOOLS</primary><secondary>data.items.ItemTypes</secondary></indexterm>
 <indexterm><primary>data.items.ItemTypes</primary><secondary>TOOLS</secondary></indexterm>
 <para><computeroutput>tuple data.items.ItemTypes.TOOLS = (<link linkend="_classdata_1_1items_1_1Items_1a7c372332a60d7515f574f1957d697802">Items.SHOVEL</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdata_1_1items_1_1ItemTypes_1ae58dfa6261b98b6f9a6b63c86cde74ec"/><section>
+    <title>WEAPONS</title>
+<indexterm><primary>WEAPONS</primary><secondary>data.items.ItemTypes</secondary></indexterm>
+<indexterm><primary>data.items.ItemTypes</primary><secondary>WEAPONS</secondary></indexterm>
+<para><computeroutput>tuple data.items.ItemTypes.WEAPONS = (<link linkend="_classdata_1_1items_1_1Items_1a4b65f0f6ef212bd2a5120d0d52d15c59">Items.GUN</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_items_8py">items.py</link></section>

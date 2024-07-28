@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="11" bodyend="13"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="13" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="14" bodyend="21"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="16" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="22" bodyend="35"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="25" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="36" bodyend="46"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="55" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="55" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list[dict]</type>
@@ -111,7 +111,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="47" bodyend="52"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict[str, int|dict|None]</type>
+        <definition> dict[str, int | dict | None] player_handler.PlayerHandler.get_player</definition>
+        <argsstring>(self, str player_name)</argsstring>
+        <name>get_player</name>
+        <qualifiedname>player_handler.PlayerHandler.get_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>player_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return player dict by player name if they exist, None otherwise.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="72" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="72" bodyend="81"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -120,9 +144,10 @@
 <para><verbatim>Class for creating the player handler.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="6" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="6" bodyend="52"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/player_handler.py" bodystart="8" bodyend="81"/>
     <listofallmembers>
       <member refid="classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>__init__</name></member>
+      <member refid="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>get_player</name></member>
       <member refid="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>get_players</name></member>
       <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>track_player</name></member>
       <member refid="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>untrack_player</name></member>

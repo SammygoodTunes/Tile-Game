@@ -31,7 +31,11 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a96f130e3a4913a74c2a7e3a228e45a11">authorise_only_alnum</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a463255a7004f5dcf22657b573e4f3a53">authorise_only_alnumlines</link> (self)</para>
+</listitem>
             <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a0abef080be90cd939ade03b631b61966">set_selected</link> (self, state)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54">is_selected</link> (self)</para>
 </listitem>
@@ -75,6 +79,10 @@
 </listitem>
             <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1af04c543bf2f7eeae04be8cf278a22cc2">get_max_text_length</link> (self)</para>
 </listitem>
+            <listitem><para>Self <link linkend="_classgui_1_1inputbox_1_1InputBox_1a135a3363935fca9c1ecbd18d3ed7a50d">set_order</link> (self, int order)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgui_1_1inputbox_1_1InputBox_1a6fb7f2a31b5286e25e77e22a0b42148e">get_order</link> (self)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -108,6 +116,8 @@
             <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a5931d0d8e89f4cf8441f109b7119f78a">_text_value</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a890c84ba50a65bdc7d875205736d5f5b">_text_offset</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a3494d1bfa53a7de48ed0c47870cebe9e">_order</link></para>
 </listitem>
             <listitem><para><link linkend="_classgui_1_1inputbox_1_1InputBox_1a9740436d4072e7201f217446da06d489">_max_text_length</link></para>
 </listitem>
@@ -150,6 +160,14 @@
 <indexterm><primary>authorise_only_alnum</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>gui.inputbox.InputBox</primary><secondary>authorise_only_alnum</secondary></indexterm>
 <para><computeroutput>gui.inputbox.InputBox.authorise_only_alnum ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9), then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a463255a7004f5dcf22657b573e4f3a53"/><section>
+    <title>authorise_only_alnumlines()</title>
+<indexterm><primary>authorise_only_alnumlines</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>authorise_only_alnumlines</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox.authorise_only_alnumlines ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
 This includes dashes (hyphens) and underscores.
 </computeroutput></literallayout> </para>
@@ -259,6 +277,14 @@ input box itself.
 <para><literallayout><computeroutput>Return the input box&apos;s max text length.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a6fb7f2a31b5286e25e77e22a0b42148e"/><section>
+    <title>get_order()</title>
+<indexterm><primary>get_order</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>get_order</secondary></indexterm>
+<para><computeroutput> int gui.inputbox.InputBox.get_order ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the order of the input box.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a0665194885c1c6f2997345b934da5634"/><section>
     <title>get_placeholder_text()</title>
 <indexterm><primary>get_placeholder_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
@@ -359,12 +385,29 @@ TODO: Make it better, fool.
 <para><literallayout><computeroutput>Set the input box&apos;s max text length, then return the input box itself.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a135a3363935fca9c1ecbd18d3ed7a50d"/><section>
+    <title>set_order()</title>
+<indexterm><primary>set_order</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_order</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_order ( self, int order)</computeroutput></para>
+<para><literallayout><computeroutput>Set the order of the input box, then return the input box itself.
+Used for tabbing between them.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a98e1e8f6e641040745dab50d51850cdf"/><section>
     <title>set_placeholder_text()</title>
 <indexterm><primary>set_placeholder_text</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_placeholder_text</secondary></indexterm>
 <para><computeroutput> Self gui.inputbox.InputBox.set_placeholder_text ( self, str placeholder_text)</computeroutput></para>
 <para><literallayout><computeroutput>Set the placeholder label text of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a0abef080be90cd939ade03b631b61966"/><section>
+    <title>set_selected()</title>
+<indexterm><primary>set_selected</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>set_selected</secondary></indexterm>
+<para><computeroutput> Self gui.inputbox.InputBox.set_selected ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the selected state of the input box, then return the input box itself.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a8350a4541f0866fcedcd95ae433ca05e"/><section>
@@ -424,6 +467,11 @@ TODO: Make it better, fool.
 <indexterm><primary>_max_text_length</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>gui.inputbox.InputBox</primary><secondary>_max_text_length</secondary></indexterm>
 <para><computeroutput>gui.inputbox.InputBox._max_text_length<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1a3494d1bfa53a7de48ed0c47870cebe9e"/><section>
+    <title>_order</title>
+<indexterm><primary>_order</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>gui.inputbox.InputBox</primary><secondary>_order</secondary></indexterm>
+<para><computeroutput>gui.inputbox.InputBox._order<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1inputbox_1_1InputBox_1aeadb07fc1b698101eb03affb525a6274"/><section>
     <title>_placeholder_label</title>
 <indexterm><primary>_placeholder_label</primary><secondary>gui.inputbox.InputBox</secondary></indexterm>

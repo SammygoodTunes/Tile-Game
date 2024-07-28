@@ -20,11 +20,12 @@ var searchData=
   ['gui_3a_3ascreens_3a_3amap_5fscreen_17',['map_screen',['../namespacegui_1_1screens_1_1map__screen.html',1,'gui::screens']]],
   ['gui_3a_3ascreens_3a_3aoptions_5fscreen_18',['options_screen',['../namespacegui_1_1screens_1_1options__screen.html',1,'gui::screens']]],
   ['gui_3a_3ascreens_3a_3apause_5fscreen_19',['pause_screen',['../namespacegui_1_1screens_1_1pause__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3ascreen_20',['screen',['../namespacegui_1_1screens_1_1screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3aserverconnect_5fscreen_21',['serverconnect_screen',['../namespacegui_1_1screens_1_1serverconnect__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3aservercreate_5fscreen_22',['servercreate_screen',['../namespacegui_1_1screens_1_1servercreate__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3aserverjoin_5fscreen_23',['serverjoin_screen',['../namespacegui_1_1screens_1_1serverjoin__screen.html',1,'gui::screens']]],
-  ['gui_3a_3ascreens_3a_3aservermenu_5fscreen_24',['servermenu_screen',['../namespacegui_1_1screens_1_1servermenu__screen.html',1,'gui::screens']]],
-  ['gui_3a_3aslot_25',['slot',['../namespacegui_1_1slot.html',1,'gui']]],
-  ['gui_3a_3awidget_26',['widget',['../namespacegui_1_1widget.html',1,'gui']]]
+  ['gui_3a_3ascreens_3a_3aplayerlist_5fscreen_20',['playerlist_screen',['../namespacegui_1_1screens_1_1playerlist__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3ascreen_21',['screen',['../namespacegui_1_1screens_1_1screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3aserverconnect_5fscreen_22',['serverconnect_screen',['../namespacegui_1_1screens_1_1serverconnect__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3aservercreate_5fscreen_23',['servercreate_screen',['../namespacegui_1_1screens_1_1servercreate__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3aserverjoin_5fscreen_24',['serverjoin_screen',['../namespacegui_1_1screens_1_1serverjoin__screen.html',1,'gui::screens']]],
+  ['gui_3a_3ascreens_3a_3aservermenu_5fscreen_25',['servermenu_screen',['../namespacegui_1_1screens_1_1servermenu__screen.html',1,'gui::screens']]],
+  ['gui_3a_3aslot_26',['slot',['../namespacegui_1_1slot.html',1,'gui']]],
+  ['gui_3a_3awidget_27',['widget',['../namespacegui_1_1widget.html',1,'gui']]]
 ];

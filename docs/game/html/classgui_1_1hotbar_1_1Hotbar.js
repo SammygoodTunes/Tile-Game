@@ -9,7 +9,7 @@ var classgui_1_1hotbar_1_1Hotbar =
     [ "get_atlas", "classgui_1_1hotbar_1_1Hotbar.html#ab23c5b7926540b485d326c4cf488f469", null ],
     [ "get_height", "classgui_1_1hotbar_1_1Hotbar.html#a4063aee0359a5a46ed2ea798bf5d80a3", null ],
     [ "get_selected_slot", "classgui_1_1hotbar_1_1Hotbar.html#a2284ba4b10a13cbd51154e93cc60752a", null ],
-    [ "get_selected_slot_item", "classgui_1_1hotbar_1_1Hotbar.html#a3595614e7bce71db1403de696db40ff3", null ],
+    [ "get_selected_slot_item", "classgui_1_1hotbar_1_1Hotbar.html#a7b4f9115712f0f4a9cec483f6e944dec", null ],
     [ "get_slot", "classgui_1_1hotbar_1_1Hotbar.html#ae2ee48425247dda7a70c01851f14914d", null ],
     [ "get_slots", "classgui_1_1hotbar_1_1Hotbar.html#a6a36fac88eb5a05642c922f6baf5c3db", null ],
     [ "get_spacing", "classgui_1_1hotbar_1_1Hotbar.html#ad37bcb8a6365be8c677ad1006d1c410d", null ],

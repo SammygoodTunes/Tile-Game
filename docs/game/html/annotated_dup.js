@@ -1,6 +1,13 @@
 var annotated_dup =
 [
+    [ "builders", "namespacebuilders.html", [
+      [ "BaseBuilder", "classbuilders_1_1BaseBuilder.html", null ],
+      [ "PlayerBuilder", "classbuilders_1_1PlayerBuilder.html", null ]
+    ] ],
     [ "client", "namespaceclient.html", [
+      [ "client", "namespaceclient_1_1client.html", [
+        [ "Client", "classclient_1_1client_1_1Client.html", "classclient_1_1client_1_1Client" ]
+      ] ],
       [ "connection", "namespaceclient_1_1connection.html", [
         [ "Connection", "classclient_1_1connection_1_1Connection.html", "classclient_1_1connection_1_1Connection" ],
         [ "Tasks", "classclient_1_1connection_1_1Tasks.html", null ]
@@ -30,9 +37,11 @@ var annotated_dup =
         [ "Keys", "classdata_1_1keys_1_1Keys.html", null ]
       ] ],
       [ "properties", "namespacedata_1_1properties.html", [
+        [ "CameraProperties", "classdata_1_1properties_1_1CameraProperties.html", null ],
         [ "PlayerProperties", "classdata_1_1properties_1_1PlayerProperties.html", null ],
         [ "ScreenProperties", "classdata_1_1properties_1_1ScreenProperties.html", null ],
-        [ "ServerProperties", "classdata_1_1properties_1_1ServerProperties.html", null ]
+        [ "ServerProperties", "classdata_1_1properties_1_1ServerProperties.html", null ],
+        [ "WorldProperties", "classdata_1_1properties_1_1WorldProperties.html", null ]
       ] ],
       [ "states", "namespacedata_1_1states.html", [
         [ "ConnectionStates", "classdata_1_1states_1_1ConnectionStates.html", null ],
@@ -107,6 +116,9 @@ var annotated_dup =
         ] ],
         [ "pause_screen", "namespacegui_1_1screens_1_1pause__screen.html", [
           [ "PauseScreen", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen" ]
+        ] ],
+        [ "playerlist_screen", "namespacegui_1_1screens_1_1playerlist__screen.html", [
+          [ "PlayerListScreen", "classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html", "classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" ]
         ] ],
         [ "screen", "namespacegui_1_1screens_1_1screen.html", [
           [ "Screen", "classgui_1_1screens_1_1screen_1_1Screen.html", "classgui_1_1screens_1_1screen_1_1Screen" ]

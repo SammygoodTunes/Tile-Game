@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" xml:lang="en-US">
+<title>gui.screens.playerlist_screen.PlayerListScreen Class Reference</title>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary></indexterm>
+<para>Inheritance diagram for gui.screens.playerlist_screen.PlayerListScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a4ae2fcc9cf665453a72fd9961cef7389">__init__</link> (self, <link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52">game</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a151681d348eb502da9e899708a3a7325">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae3bc66bb4ffe41bd1a97a7a5c86a3924">update_ui</link> (self, bool bypass=False)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0d56888ad42287068db13805a8fe74bb">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1897f9da6605b22795ca16305c2e5c6b">title_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee">player_list</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd">_count</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031">_faded_surface</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the player list screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a4ae2fcc9cf665453a72fd9961cef7389"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None gui.screens.playerlist_screen.PlayerListScreen.__init__ ( self,  game)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a151681d348eb502da9e899708a3a7325"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None gui.screens.playerlist_screen.PlayerListScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0d56888ad42287068db13805a8fe74bb"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None gui.screens.playerlist_screen.PlayerListScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae3bc66bb4ffe41bd1a97a7a5c86a3924"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None gui.screens.playerlist_screen.PlayerListScreen.update_ui ( self, bool  bypass = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd"/><section>
+    <title>_count</title>
+<indexterm><primary>_count</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>_count</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen._count<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031"/><section>
+    <title>_faded_surface</title>
+<indexterm><primary>_faded_surface</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>_faded_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen._faded_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen.game</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee"/><section>
+    <title>player_list</title>
+<indexterm><primary>player_list</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>player_list</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen.player_list</computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1897f9da6605b22795ca16305c2e5c6b"/><section>
+    <title>title_label</title>
+<indexterm><primary>title_label</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>title_label</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen.title_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_playerlist__screen_8py">playerlist_screen.py</link></section>
+</section>

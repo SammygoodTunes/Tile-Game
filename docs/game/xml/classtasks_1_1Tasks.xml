@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="11" bodyend="16"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="13" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="18" bodyend="28"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="20" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -73,14 +73,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="30" bodyend="43"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="32" bodyend="44"/>
       </memberdef>
-      <memberdef kind="function" id="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>None</type>
-        <definition> None tasks.Tasks.send_game_state</definition>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1af4fb532b56342fc0750b624894092d1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str tasks.Tasks.player_join</definition>
         <argsstring>(conn, player_handler)</argsstring>
-        <name>send_game_state</name>
-        <qualifiedname>tasks.Tasks.send_game_state</qualifiedname>
+        <name>player_join</name>
+        <qualifiedname>tasks.Tasks.player_join</qualifiedname>
         <param>
           <type>conn</type>
           <defname>conn</defname>
@@ -92,19 +92,20 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Task for sending the overall game state to a client.
+<para><verbatim>Task for joining a client player to the server.
+Returns the received player name.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="45" bodyend="53"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="46" bodyend="67"/>
       </memberdef>
-      <memberdef kind="function" id="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>str</type>
-        <definition> str tasks.Tasks.player_update</definition>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1a0204de3c87b41f6539f68db66c8ad82d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None tasks.Tasks.game_state</definition>
         <argsstring>(conn, player_handler, bytes data)</argsstring>
-        <name>player_update</name>
-        <qualifiedname>tasks.Tasks.player_update</qualifiedname>
+        <name>game_state</name>
+        <qualifiedname>tasks.Tasks.game_state</qualifiedname>
         <param>
           <type>conn</type>
           <defname>conn</defname>
@@ -120,12 +121,66 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Task for receiving a client&apos;s player data.
+<para><verbatim>Task for sending the overall game state to a client.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="55" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="55" bodyend="70"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="69" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="69" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1aa45d81e2ff587261439c1cacf41c7fc1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None tasks.Tasks.incoming_packets</definition>
+        <argsstring>(conn, player_handler, bytes data)</argsstring>
+        <name>incoming_packets</name>
+        <qualifiedname>tasks.Tasks.incoming_packets</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>player_handler</type>
+          <defname>player_handler</defname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task for handling incoming packets
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="81" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classtasks_1_1Tasks_1ac4f529460f5c7a91e9ceae69a0485c16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None tasks.Tasks.player_hit</definition>
+        <argsstring>(conn, player_handler, bytes data)</argsstring>
+        <name>player_hit</name>
+        <qualifiedname>tasks.Tasks.player_hit</qualifiedname>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>player_handler</type>
+          <defname>player_handler</defname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="105" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="105" bodyend="121"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -134,13 +189,15 @@
 <para><verbatim>Class for regrouping all server-side requests.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="5" bodyend="70"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/tasks.py" bodystart="7" bodyend="121"/>
     <listofallmembers>
       <member refid="classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>disconnection</name></member>
+      <member refid="classtasks_1_1Tasks_1a0204de3c87b41f6539f68db66c8ad82d" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>game_state</name></member>
+      <member refid="classtasks_1_1Tasks_1aa45d81e2ff587261439c1cacf41c7fc1" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>incoming_packets</name></member>
       <member refid="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>map_data</name></member>
-      <member refid="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>player_update</name></member>
+      <member refid="classtasks_1_1Tasks_1ac4f529460f5c7a91e9ceae69a0485c16" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>player_hit</name></member>
+      <member refid="classtasks_1_1Tasks_1af4fb532b56342fc0750b624894092d1f" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>player_join</name></member>
       <member refid="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>recognition</name></member>
-      <member refid="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" prot="public" virt="non-virtual"><scope>tasks::Tasks</scope><name>send_game_state</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

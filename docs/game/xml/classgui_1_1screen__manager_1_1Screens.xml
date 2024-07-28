@@ -213,6 +213,20 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="42" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screen__manager_1_1Screens_1a0fbabd13fe50b63fd84187293ca49dce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screen_manager.Screens::player_list_screen</definition>
+        <argsstring></argsstring>
+        <name>player_list_screen</name>
+        <qualifiedname>gui.screen_manager.Screens.player_list_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1ac38513e1f352ccf11a3b46fd1551e66a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -235,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="27" bodyend="44"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="27" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1a045983a0aa666845dfa5d987970cce09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -260,7 +274,7 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="45" bodyend="53"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="46" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1ad342324e0590624fd372b8b6bdc1eba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -284,7 +298,7 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="54" bodyend="200"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="56" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -304,7 +318,7 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="201" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="201" bodyend="217"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="209" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="209" bodyend="226"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -324,7 +338,65 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="218" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="218" bodyend="235"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="227" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="227" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1ae1107724170417d919a6fec29ca23908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screen_manager.Screens.task_tab</definition>
+        <argsstring>(self)</argsstring>
+        <name>task_tab</name>
+        <qualifiedname>gui.screen_manager.Screens.task_tab</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="245" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="245" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1adc4f57723a6f6c3ecb5e9f46c1906394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screen_manager.Screens.task_create_server</definition>
+        <argsstring>(self)</argsstring>
+        <name>task_create_server</name>
+        <qualifiedname>gui.screen_manager.Screens.task_create_server</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Screen task for creating a server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="263" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="263" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classgui_1_1screen__manager_1_1Screens_1aa9e5774e08d1801caab4477b80f5f680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gui.screen_manager.Screens.task_join_server</definition>
+        <argsstring>(self)</argsstring>
+        <name>task_join_server</name>
+        <qualifiedname>gui.screen_manager.Screens.task_join_server</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Screen task for joining a server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="282" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="282" bodyend="292"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -333,7 +405,7 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 <para><verbatim>Class for creating a collection of screens.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="22" bodyend="235"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="22" bodyend="292"/>
     <listofallmembers>
       <member refid="classgui_1_1screen__manager_1_1Screens_1ac38513e1f352ccf11a3b46fd1551e66a" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>__init__</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a7f9f2ac64100d470c0f8c2085e0d081a" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>crash_screen</name></member>
@@ -347,11 +419,15 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
       <member refid="classgui_1_1screen__manager_1_1Screens_1ab7e41aaf3ab06d1379951c62c8d8d9dd" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>map_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a1143bf620c4cc39f4933c5942596c749" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>options_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a89e66b9c8de4d304ffe2eab2bb9ab8b6" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>pause_screen</name></member>
+      <member refid="classgui_1_1screen__manager_1_1Screens_1a0fbabd13fe50b63fd84187293ca49dce" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>player_list_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a5d22d72dd10f258d9281c700644f1341" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1ac3d979d0f81881cd048e7fbd8380fd00" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>server_connect_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1ad459e5a44f3d18184c17ee5d421ac20d" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>server_create_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a2507ed22bdb1164d3ddb7a8475304ee8" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>server_join_screen</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1a01a4aeb84d05d2e9bdf1573353581510" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>server_menu_screen</name></member>
+      <member refid="classgui_1_1screen__manager_1_1Screens_1adc4f57723a6f6c3ecb5e9f46c1906394" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>task_create_server</name></member>
+      <member refid="classgui_1_1screen__manager_1_1Screens_1aa9e5774e08d1801caab4477b80f5f680" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>task_join_server</name></member>
+      <member refid="classgui_1_1screen__manager_1_1Screens_1ae1107724170417d919a6fec29ca23908" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>task_tab</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>update</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>update_ui</name></member>
       <member refid="classgui_1_1screen__manager_1_1Screens_1aa042aec68a6a74fe382992081d33d646" prot="public" virt="non-virtual"><scope>gui::screen_manager::Screens</scope><name>window</name></member>

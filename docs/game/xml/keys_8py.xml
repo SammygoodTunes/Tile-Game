@@ -19,7 +19,12 @@
 <codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>regrouping<sp/>all<sp/>the<sp/>keys<sp/>associated<sp/>to<sp/>different<sp/>game<sp/>actions.</highlight></codeline>
 <codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>SHOW_MAP<sp/>=<sp/>pygame.K_SPACE</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>MOVE_LEFT<sp/>=<sp/>pygame.K_q</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>MOVE_RIGHT<sp/>=<sp/>pygame.K_d</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>MOVE_UP<sp/>=<sp/>pygame.K_z</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MOVE_DOWN<sp/>=<sp/>pygame.K_s</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>SHOW_MAP<sp/>=<sp/>pygame.K_SPACE</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>SHOW_PLAYERLIST<sp/>=<sp/>pygame.K_TAB</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py"/>
   </compounddef>

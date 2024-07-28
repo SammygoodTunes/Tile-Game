@@ -1,6 +1,10 @@
 var classgui_1_1nametag_1_1NameTag =
 [
     [ "__init__", "classgui_1_1nametag_1_1NameTag.html#a1d2611c9131089e2f0a0e588698883fa", null ],
+    [ "center", "classgui_1_1nametag_1_1NameTag.html#a4b23174266a460b713815b434721b293", null ],
+    [ "center_horizontally", "classgui_1_1nametag_1_1NameTag.html#ac0b4f4cf2484d01b0fbaf83769a135e2", null ],
+    [ "center_vertically", "classgui_1_1nametag_1_1NameTag.html#a5f9306d9c6f816a2888b55f1f4b8adb4", null ],
+    [ "center_with_offset", "classgui_1_1nametag_1_1NameTag.html#a28ff228b506e4e5a089e7236543c581e", null ],
     [ "draw", "classgui_1_1nametag_1_1NameTag.html#ae4693e1c84ac50854c7b93ace0704d03", null ],
     [ "get_background_colour", "classgui_1_1nametag_1_1NameTag.html#a50209d3963348d06ae4f9f4a34e5a3ea", null ],
     [ "get_height", "classgui_1_1nametag_1_1NameTag.html#a86e4c80d4156ead31866731f502ce3f0", null ],
@@ -16,6 +20,7 @@ var classgui_1_1nametag_1_1NameTag =
     [ "_faded_surface", "classgui_1_1nametag_1_1NameTag.html#a509fab8f263d4cded4ca355cca502991", null ],
     [ "_height", "classgui_1_1nametag_1_1NameTag.html#acee766f59b63cce320e35bb20de6f428", null ],
     [ "_width", "classgui_1_1nametag_1_1NameTag.html#ab1676003a6c2687675cd8d5292cbb050", null ],
+    [ "_x", "classgui_1_1nametag_1_1NameTag.html#a4a25b5727cdc86eb2c6932e122d62126", null ],
     [ "_y", "classgui_1_1nametag_1_1NameTag.html#a2d0f27f5ac95c34015ca8c97f44eb457", null ],
     [ "label", "classgui_1_1nametag_1_1NameTag.html#ad0c3a4d1cd3ac70b980a634182c9bf65", null ]
 ];

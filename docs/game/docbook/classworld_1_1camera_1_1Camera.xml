@@ -7,7 +7,7 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classworld_1_1camera_1_1Camera_1a43b2c940f68b419a8f708f923d82ea27">__init__</link> (self, int <link linkend="_classworld_1_1camera_1_1Camera_1a6b35c97cbd902c0b73e418b69cf8d2c0">speed</link>=50)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0">events</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classworld_1_1camera_1_1Camera_1ad57a3d2d809b075e977178cf522d9815">update</link> (self, game)</para>
 </listitem>
             <listitem><para>None <link linkend="_classworld_1_1camera_1_1Camera_1ac1550203365008c4b71fea62a935d261">reset</link> (self)</para>
 </listitem>
@@ -57,20 +57,20 @@ The camera position is strictly relative to the center of the screen.
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0"/><section>
-    <title>events()</title>
-<indexterm><primary>events</primary><secondary>world.camera.Camera</secondary></indexterm>
-<indexterm><primary>world.camera.Camera</primary><secondary>events</secondary></indexterm>
-<para><computeroutput> None world.camera.Camera.events ( self,  game)</computeroutput></para>
-<para><literallayout><computeroutput>Track the camera events.
-</computeroutput></literallayout> </para>
-</section>
 <anchor xml:id="_classworld_1_1camera_1_1Camera_1ac1550203365008c4b71fea62a935d261"/><section>
     <title>reset()</title>
 <indexterm><primary>reset</primary><secondary>world.camera.Camera</secondary></indexterm>
 <indexterm><primary>world.camera.Camera</primary><secondary>reset</secondary></indexterm>
 <para><computeroutput> None world.camera.Camera.reset ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Reset the camera&apos;s general properties.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classworld_1_1camera_1_1Camera_1ad57a3d2d809b075e977178cf522d9815"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>world.camera.Camera</secondary></indexterm>
+<indexterm><primary>world.camera.Camera</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None world.camera.Camera.update ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Update the camera.
 </computeroutput></literallayout> </para>
 </section>
 </section>

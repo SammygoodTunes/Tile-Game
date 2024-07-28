@@ -52,13 +52,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classentity_1_1player_1_1Player.html#a47dd02c36e0afc9bb320ce3afef8abe3",
-"classgui_1_1horizontal__slider_1_1HorizontalSlider.html#acaa8d14d104af3f57bd37308321cd7c4",
-"classgui_1_1label_1_1Label.html#aca71cd48d34ff8364ba522025b4ad56c",
-"classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html#a1c86b08e0cf8d055314c6da547628a23",
-"classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html#a94e0525162f93858f1945588141e407d",
-"classworld_1_1map__manager_1_1Map.html#a53b89b13ce52b571e4198c5a11a65ae0",
-"loading__screen_8py.html"
+"classdata_1_1tiles_1_1Tile.html#af448bc041fe7ed3f7cc30654a8b2726a",
+"classgui_1_1horizontal__slider_1_1HorizontalSlider.html#a2d646e692da0672152363ec3deda3a4c",
+"classgui_1_1label_1_1Label.html#a08806fbaaaeca3cc531e2feaea5afcbf",
+"classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html",
+"classgui_1_1screens_1_1screen_1_1Screen.html#a91647fb53696a33b8740c8efa5fe6838",
+"classserver_1_1Server.html#a0e2d97f90bd6f412eccfb647caf8913f",
+"data__manager_8py.html#a531193a87d7f817545570ddb8a1dcd0b",
+"tasks_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

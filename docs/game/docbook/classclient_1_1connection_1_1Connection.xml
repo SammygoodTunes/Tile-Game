@@ -5,15 +5,17 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772">__init__</link> (self, str <link linkend="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a">host</link>, int <link linkend="_classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829">port</link>)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a7bee1dc32d5f980c23c6462f35229074">__init__</link> (self, str <link linkend="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a">host</link>, int <link linkend="_classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829">port</link>, client)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6">connect</link> (self)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a38dee3b7f4d07e9a24e416f8861a0c96">connect</link> (self, str player_name)</para>
 </listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1">disconnect</link> (self)</para>
 </listitem>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a5b66f68b3a23c6af56484158838d9c93">events</link> (self, Event e)</para>
+</listitem>
             <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454">update</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c">start</link> (self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</para>
+            <listitem><para>None <link linkend="_classclient_1_1connection_1_1Connection_1acd2f962f7547a2c5249fad8ee03e3afa">start</link> (self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task, str player_name=&quot;&quot;)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -30,7 +32,7 @@
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482">player_manager</link></para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20">recv_player_update</link></para>
+            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a2fa2948ee563a0fd1bc9645069884b4e">hit_player</link></para>
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45">data</link></para>
 </listitem>
@@ -44,19 +46,19 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772"/><section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a7bee1dc32d5f980c23c6462f35229074"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput> None client.connection.Connection.__init__ ( self, str host, int port)</computeroutput></para></section>
+<para><computeroutput> None client.connection.Connection.__init__ ( self, str host, int port,  client)</computeroutput></para></section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6"/><section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a38dee3b7f4d07e9a24e416f8861a0c96"/><section>
     <title>connect()</title>
 <indexterm><primary>connect</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>connect</secondary></indexterm>
-<para><computeroutput> None client.connection.Connection.connect ( self)</computeroutput></para>
+<para><computeroutput> None client.connection.Connection.connect ( self, str player_name)</computeroutput></para>
 <para><literallayout><computeroutput>Attempt to connect to a server with the provided host and port.
 Any errors or failures will raise specific exceptions.
 </computeroutput></literallayout> </para>
@@ -70,11 +72,26 @@ Any errors or failures will raise specific exceptions.
 Any errors or failures will raise specific exceptions.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c"/><section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a5b66f68b3a23c6af56484158838d9c93"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>client.connection.Connection</secondary></indexterm>
+<indexterm><primary>client.connection.Connection</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None client.connection.Connection.events ( self, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>if e.type == pygame.MOUSEBUTTONDOWN:
+    if e.button == MouseStates.LMB:
+        hit_player = self.player_manager.hit_player(self.player.get_player_name())
+        if not hit_player:
+            return
+        print(f&quot;Hit player {hit_player}, sending packets to server&quot;)
+        self.hit_player = hit_player
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1acd2f962f7547a2c5249fad8ee03e3afa"/><section>
     <title>start()</title>
 <indexterm><primary>start</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>start</secondary></indexterm>
-<para><computeroutput> None client.connection.Connection.start ( self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task)</computeroutput></para></section>
+<para><computeroutput> None client.connection.Connection.start ( self, <link linkend="_classclient_1_1connection_1_1Tasks">Tasks</link> task, str  player_name = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>client.connection.Connection</secondary></indexterm>
@@ -91,6 +108,11 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>data</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>data</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.data</computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1a2fa2948ee563a0fd1bc9645069884b4e"/><section>
+    <title>hit_player</title>
+<indexterm><primary>hit_player</primary><secondary>client.connection.Connection</secondary></indexterm>
+<indexterm><primary>client.connection.Connection</primary><secondary>hit_player</secondary></indexterm>
+<para><computeroutput>client.connection.Connection.hit_player</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1a3dd1ae73a85bb3510ace7f19a668195a"/><section>
     <title>host</title>
 <indexterm><primary>host</primary><secondary>client.connection.Connection</secondary></indexterm>
@@ -106,11 +128,6 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>port</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>port</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.port</computeroutput></para></section>
-<anchor xml:id="_classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20"/><section>
-    <title>recv_player_update</title>
-<indexterm><primary>recv_player_update</primary><secondary>client.connection.Connection</secondary></indexterm>
-<indexterm><primary>client.connection.Connection</primary><secondary>recv_player_update</secondary></indexterm>
-<para><computeroutput>client.connection.Connection.recv_player_update</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1af2a57ecdd41a44e47ff3b6fb4477f4a6"/><section>
     <title>sock</title>
 <indexterm><primary>sock</primary><secondary>client.connection.Connection</secondary></indexterm>

@@ -9,18 +9,11 @@
 </listitem>
             <listitem><para>None <link linkend="_classserver_1_1Server_1a7df3c004863b1ac9397cb735c4c786a2">client_handler</link> (self, conn, addr)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classserver_1_1Server_1a3daa3b38ecdbdef3bdce10e3262d1893">run</link> (self, <link linkend="_classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f">state</link>)</para>
+            <listitem><para>None <link linkend="_classserver_1_1Server_1a716891b0e0ec7f4ec0b1f0fbc7362b72">run</link> (self, <link linkend="_classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f">state</link>, str _seed)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classserver_1_1Server_1a6ca9890bf15d0b70ea4a834b25b6ff83">start</link> (self)</para>
+            <listitem><para>None <link linkend="_classserver_1_1Server_1acb2086533d346fed646b17afc5edb96e">start</link> (self, str _seed)</para>
 </listitem>
             <listitem><para>None <link linkend="_classserver_1_1Server_1aead981f8958fcd6260c4a9209a4444f1">stop</link> (self)</para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Static Public Member Functions    </title>
-        <itemizedlist>
-            <listitem><para><link linkend="_classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a">test</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -38,6 +31,8 @@
             <listitem><para><link linkend="_classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0">player_handler</link></para>
 </listitem>
             <listitem><para><link linkend="_classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a">sock</link></para>
+</listitem>
+            <listitem><para><link linkend="_classserver_1_1Server_1a654681eb65527da3792df526ff2dde0a">server_thread</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -65,19 +60,19 @@
 <para><literallayout><computeroutput>Handle incoming server clients.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classserver_1_1Server_1a3daa3b38ecdbdef3bdce10e3262d1893"/><section>
+<anchor xml:id="_classserver_1_1Server_1a716891b0e0ec7f4ec0b1f0fbc7362b72"/><section>
     <title>run()</title>
 <indexterm><primary>run</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>run</secondary></indexterm>
-<para><computeroutput> None server.Server.run ( self,  state)</computeroutput></para>
+<para><computeroutput> None server.Server.run ( self,  state, str _seed)</computeroutput></para>
 <para><literallayout><computeroutput>Run the server and listen for connections.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classserver_1_1Server_1a6ca9890bf15d0b70ea4a834b25b6ff83"/><section>
+<anchor xml:id="_classserver_1_1Server_1acb2086533d346fed646b17afc5edb96e"/><section>
     <title>start()</title>
 <indexterm><primary>start</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>start</secondary></indexterm>
-<para><computeroutput> None server.Server.start ( self)</computeroutput></para>
+<para><computeroutput> None server.Server.start ( self, str _seed)</computeroutput></para>
 <para><literallayout><computeroutput>Prepare the server.
 </computeroutput></literallayout> </para>
 </section>
@@ -87,15 +82,6 @@
 <indexterm><primary>server.Server</primary><secondary>stop</secondary></indexterm>
 <para><computeroutput> None server.Server.stop ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Stop the server if it&apos;s running, otherwise don&apos;t do anything.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a"/><section>
-    <title>test()</title>
-<indexterm><primary>test</primary><secondary>server.Server</secondary></indexterm>
-<indexterm><primary>server.Server</primary><secondary>test</secondary></indexterm>
-<para><computeroutput>server.Server.test ( )<computeroutput>[static]</computeroutput></computeroutput></para>
-<para><literallayout><computeroutput>Attempt to connect and send data to the server.
-This is used after the server&apos;s closure to make sure it doesn&apos;t still think it&apos;s open; it&apos;s odd I know.
 </computeroutput></literallayout> </para>
 </section>
 </section>
@@ -111,6 +97,11 @@ This is used after the server&apos;s closure to make sure it doesn&apos;t still 
 <indexterm><primary>player_handler</primary><secondary>server.Server</secondary></indexterm>
 <indexterm><primary>server.Server</primary><secondary>player_handler</secondary></indexterm>
 <para><computeroutput>server.Server.player_handler</computeroutput></para></section>
+<anchor xml:id="_classserver_1_1Server_1a654681eb65527da3792df526ff2dde0a"/><section>
+    <title>server_thread</title>
+<indexterm><primary>server_thread</primary><secondary>server.Server</secondary></indexterm>
+<indexterm><primary>server.Server</primary><secondary>server_thread</secondary></indexterm>
+<para><computeroutput>server.Server.server_thread</computeroutput></para></section>
 <anchor xml:id="_classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a"/><section>
     <title>sock</title>
 <indexterm><primary>sock</primary><secondary>server.Server</secondary></indexterm>

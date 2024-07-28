@@ -9,6 +9,7 @@ var namespacegui_1_1screens =
     [ "map_screen", "namespacegui_1_1screens_1_1map__screen.html", "namespacegui_1_1screens_1_1map__screen" ],
     [ "options_screen", "namespacegui_1_1screens_1_1options__screen.html", "namespacegui_1_1screens_1_1options__screen" ],
     [ "pause_screen", "namespacegui_1_1screens_1_1pause__screen.html", "namespacegui_1_1screens_1_1pause__screen" ],
+    [ "playerlist_screen", "namespacegui_1_1screens_1_1playerlist__screen.html", "namespacegui_1_1screens_1_1playerlist__screen" ],
     [ "screen", "namespacegui_1_1screens_1_1screen.html", "namespacegui_1_1screens_1_1screen" ],
     [ "serverconnect_screen", "namespacegui_1_1screens_1_1serverconnect__screen.html", "namespacegui_1_1screens_1_1serverconnect__screen" ],
     [ "servercreate_screen", "namespacegui_1_1screens_1_1servercreate__screen.html", "namespacegui_1_1screens_1_1servercreate__screen" ],

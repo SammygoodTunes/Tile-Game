@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="classbuilders_1_1BaseBuilder" kind="class"><name>builders::BaseBuilder</name>
+    <member refid="classbuilders_1_1BaseBuilder_1ac2632b7e4098d14fd7f4528e81a243dc" kind="variable"><name>COMMAND_ID_KEY</name></member>
+    <member refid="classbuilders_1_1BaseBuilder_1afd9121c85978090fa2a2a7fa3736bcd1" kind="variable"><name>TIMESTAMP_KEY</name></member>
+  </compound>
   <compound refid="classgui_1_1button_1_1Button" kind="class"><name>gui::button::Button</name>
     <member refid="classgui_1_1button_1_1Button_1abb34e41d38b186b00e1febcc94460861" kind="variable"><name>MIN_WIDTH</name></member>
     <member refid="classgui_1_1button_1_1Button_1a13e5437ccc6ede08af775f445bc8a64c" kind="variable"><name>MAX_WIDTH</name></member>
@@ -37,8 +41,11 @@
     <member refid="classworld_1_1camera_1_1Camera_1a02bbd342c9ab95d90e2a07c74f525de8" kind="variable"><name>velocity_x</name></member>
     <member refid="classworld_1_1camera_1_1Camera_1a14bec8032d4bfcc40717f7666dad10cf" kind="variable"><name>velocity_y</name></member>
     <member refid="classworld_1_1camera_1_1Camera_1a43b2c940f68b419a8f708f923d82ea27" kind="function"><name>__init__</name></member>
-    <member refid="classworld_1_1camera_1_1Camera_1a2ba5914956fd5b26650fef1c476800e0" kind="function"><name>events</name></member>
+    <member refid="classworld_1_1camera_1_1Camera_1ad57a3d2d809b075e977178cf522d9815" kind="function"><name>update</name></member>
     <member refid="classworld_1_1camera_1_1Camera_1ac1550203365008c4b71fea62a935d261" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="classdata_1_1properties_1_1CameraProperties" kind="class"><name>data::properties::CameraProperties</name>
+    <member refid="classdata_1_1properties_1_1CameraProperties_1a612fd84d616770234ef720795d04e60c" kind="variable"><name>SPEED</name></member>
   </compound>
   <compound refid="classgui_1_1checkbox_1_1Checkbox" kind="class"><name>gui::checkbox::Checkbox</name>
     <member refid="classgui_1_1checkbox_1_1Checkbox_1a4c9532bd89a6956730e7b1766a34a210" kind="variable"><name>_checked</name></member>
@@ -65,6 +72,16 @@
     <member refid="classgui_1_1checkbox_1_1Checkbox_1ae01383d9c465021e37d59e643c9d5682" kind="function"><name>offset_x</name></member>
     <member refid="classgui_1_1checkbox_1_1Checkbox_1a09e0cf3ccc017a1a80787127f53d9caf" kind="function"><name>offset_y</name></member>
   </compound>
+  <compound refid="classclient_1_1client_1_1Client" kind="class"><name>client::client::Client</name>
+    <member refid="classclient_1_1client_1_1Client_1a83bd1c3bbdbe0441cd669f08c9b51b3d" kind="variable"><name>connection_handler</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a0056a44c44c34e44e96e617943189cd0" kind="variable"><name>player</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a01199bb717f5e206ec5ae687c0159622" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a9928b71fccf84e6742680a246892bb11" kind="function"><name>initialise</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a964fb77e54b4451531c3231543e754fe" kind="function"><name>update</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a45f8f601b22df1161e5c5e0fda2ad6c4" kind="function"><name>update_ui</name></member>
+    <member refid="classclient_1_1client_1_1Client_1af86265e17f201edb08fd522f9a8818b8" kind="function"><name>events</name></member>
+    <member refid="classclient_1_1client_1_1Client_1a49ea08ce0140bb81fcd6b118b56398d6" kind="function"><name>stop</name></member>
+  </compound>
   <compound refid="classpacket_1_1Compressor" kind="class"><name>packet::Compressor</name>
     <member refid="classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832" kind="function"><name>compress</name></member>
     <member refid="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" kind="function"><name>decompress</name></member>
@@ -75,23 +92,28 @@
     <member refid="classclient_1_1connection_1_1Connection_1a73ae3f752607556759c7471d02a2c829" kind="variable"><name>port</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1ad9f4e9f9ed74153b831f6cdc8809e882" kind="variable"><name>state</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482" kind="variable"><name>player_manager</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1afeaadf9318074041eca29cc3e3cc3c20" kind="variable"><name>recv_player_update</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a2fa2948ee563a0fd1bc9645069884b4e" kind="variable"><name>hit_player</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45" kind="variable"><name>data</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a68b19eec5d53430544138a8ab8c81772" kind="function"><name>__init__</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a47c9732a0c4f2f2a647f6cb1e9e96fb6" kind="function"><name>connect</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a7bee1dc32d5f980c23c6462f35229074" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a38dee3b7f4d07e9a24e416f8861a0c96" kind="function"><name>connect</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1aca91744db2d16331e7ff918f7dafcaf1" kind="function"><name>disconnect</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1a5b66f68b3a23c6af56484158838d9c93" kind="function"><name>events</name></member>
     <member refid="classclient_1_1connection_1_1Connection_1a2c91444fdc3edd43ded7f78b102ea454" kind="function"><name>update</name></member>
-    <member refid="classclient_1_1connection_1_1Connection_1a068fcc48e7f328c29a6fd90070ef900c" kind="function"><name>start</name></member>
+    <member refid="classclient_1_1connection_1_1Connection_1acd2f962f7547a2c5249fad8ee03e3afa" kind="function"><name>start</name></member>
   </compound>
   <compound refid="classclient_1_1connection__handler_1_1ConnectionHandler" kind="class"><name>client::connection_handler::ConnectionHandler</name>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a66d231003c1ec24a06cf4a6aef863458" kind="variable"><name>start_connection</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a58e0dcf127a69e2c04e4cf6dd8545edf" kind="variable"><name>stop_connection</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a3881b572a384e786959062fc7add94ba" kind="variable"><name>host</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aa3593fcf8e265dc911be0c2b4195fe19" kind="variable"><name>port</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a5dde09762c6786bbfcad789d11f6757c" kind="variable"><name>player_name</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1aac65aa778f30d9373399b2d5064da41c" kind="variable"><name>connection</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a400024b267f4fc923aa43c8179f4fbee" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a55a5c1df06861962408280a4d8510a1f" kind="function"><name>events</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a9e9dc5d3876359b7f35ad588053e883b" kind="function"><name>update</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a995a76c4cdabdfa1db955cc8a8e1fb7d" kind="function"><name>update_ui</name></member>
     <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a2e7b8060ab9979072aae5a367fb42ae9" kind="function"><name>draw_other_players</name></member>
+    <member refid="classclient_1_1connection__handler_1_1ConnectionHandler_1a31e77764535a4ca36bdd89fafa10a0c0" kind="function"><name>queue_packet</name></member>
   </compound>
   <compound refid="classdata_1_1states_1_1ConnectionStates" kind="class"><name>data::states::ConnectionStates</name>
     <member refid="classdata_1_1states_1_1ConnectionStates_1a8879529ab2a94e4e8575e7e8d622574f" kind="variable"><name>IDLE</name></member>
@@ -136,9 +158,8 @@
     <member refid="classgui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a90a26e9e39de1fcb1724d8d15163f534" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classcore_1_1game_1_1Game" kind="class"><name>core::game::Game</name>
-    <member refid="classcore_1_1game_1_1Game_1a2504f9d88a3da97a6128c197456de706" kind="variable"><name>connection_handler</name></member>
+    <member refid="classcore_1_1game_1_1Game_1a697716f7c17ef1262c6a33c27f5df76e" kind="variable"><name>client</name></member>
     <member refid="classcore_1_1game_1_1Game_1abbd59111e59987b90d149e8aae23b0df" kind="variable"><name>server</name></member>
-    <member refid="classcore_1_1game_1_1Game_1a16986b5eda83e2bb259873d59bbf978a" kind="variable"><name>player</name></member>
     <member refid="classcore_1_1game_1_1Game_1a56b7ba477a2db36d3fb993849399f4db" kind="variable"><name>_running</name></member>
     <member refid="classcore_1_1game_1_1Game_1af8c9bb7a92a0c9db391cdd60548e3eb0" kind="function"><name>__init__</name></member>
     <member refid="classcore_1_1game_1_1Game_1aec364c856e2f96a027fcd986f45ced06" kind="function"><name>update</name></member>
@@ -239,7 +260,7 @@
     <member refid="classgui_1_1hotbar_1_1Hotbar_1a6f9fec8084da77f413d67ac980b53e9b" kind="function"><name>select_slot</name></member>
     <member refid="classgui_1_1hotbar_1_1Hotbar_1a5d33d1abc05fc53e73fb81af1670cd88" kind="function"><name>unselect_slot</name></member>
     <member refid="classgui_1_1hotbar_1_1Hotbar_1a2284ba4b10a13cbd51154e93cc60752a" kind="function"><name>get_selected_slot</name></member>
-    <member refid="classgui_1_1hotbar_1_1Hotbar_1a3595614e7bce71db1403de696db40ff3" kind="function"><name>get_selected_slot_item</name></member>
+    <member refid="classgui_1_1hotbar_1_1Hotbar_1a7b4f9115712f0f4a9cec483f6e944dec" kind="function"><name>get_selected_slot_item</name></member>
     <member refid="classgui_1_1hotbar_1_1Hotbar_1ae2ee48425247dda7a70c01851f14914d" kind="function"><name>get_slot</name></member>
     <member refid="classgui_1_1hotbar_1_1Hotbar_1a6a36fac88eb5a05642c922f6baf5c3db" kind="function"><name>get_slots</name></member>
     <member refid="classgui_1_1hotbar_1_1Hotbar_1a23b3b0a5286d6dc7a8081e3f80359dae" kind="function"><name>set_atlas</name></member>
@@ -258,6 +279,7 @@
     <member refid="classgui_1_1inputbox_1_1InputBox_1a8323c5f4e451a1176ed26e184aa1077b" kind="variable"><name>_cursor_colour</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a5931d0d8e89f4cf8441f109b7119f78a" kind="variable"><name>_text_value</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a890c84ba50a65bdc7d875205736d5f5b" kind="variable"><name>_text_offset</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a3494d1bfa53a7de48ed0c47870cebe9e" kind="variable"><name>_order</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a9740436d4072e7201f217446da06d489" kind="variable"><name>_max_text_length</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ae7f510bdaa4761cd28d7428d020f0d48" kind="variable"><name>_authorised_chars</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1aeadb07fc1b698101eb03affb525a6274" kind="variable"><name>_placeholder_label</name></member>
@@ -273,7 +295,9 @@
     <member refid="classgui_1_1inputbox_1_1InputBox_1ac57a96f4427b78eefea80e8b4eb0981a" kind="function"><name>authorise_only_ascii</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ac54c8df3fcc0d8f5836f7d24b80f7685" kind="function"><name>authorise_only_numeric</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a96f130e3a4913a74c2a7e3a228e45a11" kind="function"><name>authorise_only_alnum</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a463255a7004f5dcf22657b573e4f3a53" kind="function"><name>authorise_only_alnumlines</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ace99137daa377e4bac45217c3ce5e1b4" kind="function"><name>is_hovering_over</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a0abef080be90cd939ade03b631b61966" kind="function"><name>set_selected</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a35c41f01602b2a19d4171709f2263a54" kind="function"><name>is_selected</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1ae89d6403b38142610a183ea73490b879" kind="function"><name>center_horizontally</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1a1fe90ee4897bb29ca459b3579bc782d3" kind="function"><name>center_vertically</name></member>
@@ -295,6 +319,8 @@
     <member refid="classgui_1_1inputbox_1_1InputBox_1a0bef6c732920711183f75210ad89d18c" kind="function"><name>get_text</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1aa45fe1ec84a31512580b07d726742eaf" kind="function"><name>set_max_text_length</name></member>
     <member refid="classgui_1_1inputbox_1_1InputBox_1af04c543bf2f7eeae04be8cf278a22cc2" kind="function"><name>get_max_text_length</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a135a3363935fca9c1ecbd18d3ed7a50d" kind="function"><name>set_order</name></member>
+    <member refid="classgui_1_1inputbox_1_1InputBox_1a6fb7f2a31b5286e25e77e22a0b42148e" kind="function"><name>get_order</name></member>
   </compound>
   <compound refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue" kind="class"><name>utils::exceptions::InvalidGamePropertyValue</name>
     <member refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue_1ac10b2c41160ed8ca56562d50588fb991" kind="function"><name>__init__</name></member>
@@ -312,6 +338,7 @@
     <member refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" kind="variable"><name>_strength</name></member>
     <member refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" kind="variable"><name>_durability</name></member>
     <member refid="classdata_1_1items_1_1Item_1afebde3a259a32282ba3fbf3fb0859b32" kind="function"><name>__init__</name></member>
+    <member refid="classdata_1_1items_1_1Item_1a377cfef1501c88e6407c96bdb568d02a" kind="function"><name>__eq__</name></member>
     <member refid="classdata_1_1items_1_1Item_1ae1d5dfd445e5197468a44d8f4b65f0f3" kind="function"><name>set_xy</name></member>
     <member refid="classdata_1_1items_1_1Item_1aa63be91590e094ea06461f8585655e62" kind="function"><name>get_xy</name></member>
     <member refid="classdata_1_1items_1_1Item_1abbfa7f9b0c87234039796f933a76fb7e" kind="function"><name>set_tooltip_name</name></member>
@@ -327,12 +354,19 @@
   <compound refid="classdata_1_1items_1_1Items" kind="class"><name>data::items::Items</name>
     <member refid="classdata_1_1items_1_1Items_1a2a2e91edadba7644c284c0b007bb2c67" kind="variable"><name>AIR</name></member>
     <member refid="classdata_1_1items_1_1Items_1a7c372332a60d7515f574f1957d697802" kind="variable"><name>SHOVEL</name></member>
+    <member refid="classdata_1_1items_1_1Items_1a4b65f0f6ef212bd2a5120d0d52d15c59" kind="variable"><name>GUN</name></member>
   </compound>
   <compound refid="classdata_1_1items_1_1ItemTypes" kind="class"><name>data::items::ItemTypes</name>
     <member refid="classdata_1_1items_1_1ItemTypes_1a781fe95471d8c41e51a9fab11c4c5bf4" kind="variable"><name>TOOLS</name></member>
+    <member refid="classdata_1_1items_1_1ItemTypes_1ae58dfa6261b98b6f9a6b63c86cde74ec" kind="variable"><name>WEAPONS</name></member>
   </compound>
   <compound refid="classdata_1_1keys_1_1Keys" kind="class"><name>data::keys::Keys</name>
+    <member refid="classdata_1_1keys_1_1Keys_1a1982e01562b1bfaf76f7a88799dd1868" kind="variable"><name>MOVE_LEFT</name></member>
+    <member refid="classdata_1_1keys_1_1Keys_1a0bf21b7b5a30cb897e2bfec0d3bafd05" kind="variable"><name>MOVE_RIGHT</name></member>
+    <member refid="classdata_1_1keys_1_1Keys_1ad91da61d1fc0b24807428d64abb2db9f" kind="variable"><name>MOVE_UP</name></member>
+    <member refid="classdata_1_1keys_1_1Keys_1a70c8d9d34422f55270f8e477c405dbe7" kind="variable"><name>MOVE_DOWN</name></member>
     <member refid="classdata_1_1keys_1_1Keys_1abac92fd9f1b0b06a124995d5fed173ca" kind="variable"><name>SHOW_MAP</name></member>
+    <member refid="classdata_1_1keys_1_1Keys_1a168201414247a83c58aeba9fbba26ef7" kind="variable"><name>SHOW_PLAYERLIST</name></member>
   </compound>
   <compound refid="classgui_1_1label_1_1Label" kind="class"><name>gui::label::Label</name>
     <member refid="classgui_1_1label_1_1Label_1aedd8fab44def628f79dba60a91e5856a" kind="variable"><name>DEFAULT_FONT</name></member>
@@ -423,10 +457,10 @@
   </compound>
   <compound refid="classworld_1_1map__manager_1_1Map" kind="class"><name>world::map_manager::Map</name>
     <member refid="classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3" kind="variable"><name>DEFAULT</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1a2945bc9b24412ad925952b46388ebc72" kind="variable"><name>SEED_RANGE</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1a15377758122a9baa54dca992e19e957a" kind="variable"><name>SEED_LENGTH</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1aecf1d43811bb673efe17bea518890e93" kind="variable"><name>SEED_CHARS</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a6b2d718e587266b42c43666336107d0d" kind="variable"><name>tile_manager</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a53b89b13ce52b571e4198c5a11a65ae0" kind="variable"><name>perlin_noise</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763" kind="variable"><name>_seed</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a16a61bf50eec085775edada296091b4c" kind="variable"><name>_x</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1adfbf908d6b22c9b28e77a555bdb561f9" kind="variable"><name>_y</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1afc5aee00ce6d3b7e1cb048bcf908967a" kind="variable"><name>_width</name></member>
@@ -436,11 +470,12 @@
     <member refid="classworld_1_1map__manager_1_1Map_1a3115ee328e5316fff5e7a848851684dc" kind="variable"><name>_dynatile_data</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a78803eb44858ece1544c3ae36e4476e2" kind="variable"><name>_data</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a92f7253cb43af6a0aea7a58cb88e524f" kind="variable"><name>_state</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1a01af2afc789d9c88b716d3c784911763" kind="variable"><name>_seed</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a9e94bb3ba03942ec9a9767b66d5dbe90" kind="function"><name>__init__</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a97d5fe47529caf147ff4099f54664c2b" kind="function"><name>initialise</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a3432bbf28927dc49724ab386b91dbf54" kind="function"><name>generate</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1aa635d2aee2f4365f5244a15cdc330546" kind="function"><name>load</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1a523ce6fea8a3dd518638c1f91be44d0f" kind="function"><name>regenerate</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1aba53765e85dfc066f31d65721b625a25" kind="function"><name>regenerate</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a3751fc722c1e9fc58027f82953607ecd" kind="function"><name>update</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a5eafd6a7660ea1245bccb02a5584cab7" kind="function"><name>set_state</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a3d9fcdfb6bf84344c3215589d210ac15" kind="function"><name>get_state</name></member>
@@ -457,7 +492,7 @@
     <member refid="classworld_1_1map__manager_1_1Map_1af7cf16d45cecfaf54de6b6da3c2ad0de" kind="function"><name>set_dynatile</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ae7ee08704c02be7114501cb4f80b71c0" kind="function"><name>get_dynatile</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a884f04e840aaaebc7b95685856ac91ea" kind="function"><name>randomise_seed</name></member>
-    <member refid="classworld_1_1map__manager_1_1Map_1ac28823d42a7a20a08e3ab64533efef35" kind="function"><name>set_seed</name></member>
+    <member refid="classworld_1_1map__manager_1_1Map_1a5d4be34cb68b903179d090be55cf954a" kind="function"><name>set_seed</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a10b30211404a9f942a8d7aeeab42e159" kind="function"><name>get_seed</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1ab6cfab3e51e3ccf6243d4d43f214e278" kind="function"><name>set_x</name></member>
     <member refid="classworld_1_1map__manager_1_1Map_1a3bdfdcfce9c3a8fafa565a9afb7ed440" kind="function"><name>get_x</name></member>
@@ -478,7 +513,7 @@
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a1d3c16992701ab0e4740f39d905c6a21" kind="variable"><name>_got_map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a78b1cbfd4dfab2c3bf3bc4c39e89d473" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a10d545fcd26146708bcc308e07c1b70f" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a5b6cb672eb53e9cceda0364b9964249f" kind="function"><name>initialise_map</name></member>
+    <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a0510189e61545c6fef4d607d1a17f5e8" kind="function"><name>initialise_map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a8796c2dd17d1c0830a05249f6c7fcedb" kind="function"><name>reset_map</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a6874a8de8950fc1c55924235f7beec9b" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1screens_1_1map__screen_1_1MapScreen_1a16a45d5df0b0a344ec4c5087c63c57af" kind="function"><name>update_ui</name></member>
@@ -496,10 +531,11 @@
     <member refid="classdata_1_1states_1_1MouseStates_1a97e98f6c82a05bbf1d49c2fd22f70c03" kind="variable"><name>SCROLL_DOWN</name></member>
   </compound>
   <compound refid="classgui_1_1nametag_1_1NameTag" kind="class"><name>gui::nametag::NameTag</name>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a8609d847f8c71589b8eeed1921d289c1" kind="variable"><name>_background_colour</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1ab1676003a6c2687675cd8d5292cbb050" kind="variable"><name>_width</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1acee766f59b63cce320e35bb20de6f428" kind="variable"><name>_height</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a509fab8f263d4cded4ca355cca502991" kind="variable"><name>_faded_surface</name></member>
-    <member refid="classgui_1_1nametag_1_1NameTag_1a8609d847f8c71589b8eeed1921d289c1" kind="variable"><name>_background_colour</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a4a25b5727cdc86eb2c6932e122d62126" kind="variable"><name>_x</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a2d0f27f5ac95c34015ca8c97f44eb457" kind="variable"><name>_y</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1ad0c3a4d1cd3ac70b980a634182c9bf65" kind="variable"><name>label</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a1d2611c9131089e2f0a0e588698883fa" kind="function"><name>__init__</name></member>
@@ -507,6 +543,10 @@
     <member refid="classgui_1_1nametag_1_1NameTag_1a5a4ac7fefae12782a7905909e03bd861" kind="function"><name>update</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a01a24981fe41b0e27bb48f0d02274cc7" kind="function"><name>refresh</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a2b6645a9d8f6b55ecaa93a4735ba7fb4" kind="function"><name>is_hovering_over</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1ac0b4f4cf2484d01b0fbaf83769a135e2" kind="function"><name>center_horizontally</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a5f9306d9c6f816a2888b55f1f4b8adb4" kind="function"><name>center_vertically</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a4b23174266a460b713815b434721b293" kind="function"><name>center</name></member>
+    <member refid="classgui_1_1nametag_1_1NameTag_1a28ff228b506e4e5a089e7236543c581e" kind="function"><name>center_with_offset</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1ac7c02d75d8a1f8928e970e4b718a9dfc" kind="function"><name>set_width</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a0a3a4d707710e2a485f12523508d1154" kind="function"><name>get_width</name></member>
     <member refid="classgui_1_1nametag_1_1NameTag_1a83283b262b818f75bddbc4c2f763a938" kind="function"><name>set_height</name></member>
@@ -587,6 +627,7 @@
     <member refid="classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a" kind="variable"><name>height</name></member>
     <member refid="classentity_1_1player_1_1Player_1ad0d96f20cca2a9a493501cfcd39c1f80" kind="variable"><name>selected_tile_sx</name></member>
     <member refid="classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516" kind="variable"><name>selected_tile_sy</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a0b8d8dcde32c63da2850a813c18288f0" kind="variable"><name>pointing_at</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d" kind="variable"><name>move</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982" kind="variable"><name>velocity_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5" kind="variable"><name>velocity_y</name></member>
@@ -598,9 +639,10 @@
     <member refid="classentity_1_1player_1_1Player_1a8bc344ca55089329a9e4e6db79eaf2a3" kind="variable"><name>_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac139a84f7aaa64b903c90bad4b2054d7" kind="function"><name>__init__</name></member>
     <member refid="classentity_1_1player_1_1Player_1a0f4a06f686d279aacd4e4fd96145e964" kind="function"><name>init</name></member>
-    <member refid="classentity_1_1player_1_1Player_1a4954a632eb16382c5111f1df84aa09f5" kind="function"><name>events</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a2346c5d44122191f45246a361aa8f0cc" kind="function"><name>events</name></member>
     <member refid="classentity_1_1player_1_1Player_1a088e799a0514065ae12b4a73f8af31d7" kind="function"><name>draw</name></member>
     <member refid="classentity_1_1player_1_1Player_1a25aae6183470550f61ac756e31065b38" kind="function"><name>draw_selection_grid</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a844c4cb1da3e650125e1f0a5b519051e" kind="function"><name>draw_gun_pointer</name></member>
     <member refid="classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54" kind="function"><name>update</name></member>
     <member refid="classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de" kind="function"><name>update_ui</name></member>
     <member refid="classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5" kind="function"><name>break_tile</name></member>
@@ -617,6 +659,7 @@
     <member refid="classentity_1_1player_1_1Player_1afa56e7928f74c7a41867f01728582528" kind="function"><name>is_in_lava</name></member>
     <member refid="classentity_1_1player_1_1Player_1ac2a32dfc71633031a14e53dd50a1c01a" kind="function"><name>is_in_lethal_tile</name></member>
     <member refid="classentity_1_1player_1_1Player_1ae81cad8591f0b46786088a12f8ec7519" kind="function"><name>is_in_wall</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a777988331f4291d4628fbb51a162ea20" kind="function"><name>get_held_item</name></member>
     <member refid="classentity_1_1player_1_1Player_1a745d4beb0c9c6a6859283ad99233b3d9" kind="function"><name>is_dead</name></member>
     <member refid="classentity_1_1player_1_1Player_1a9c673e4056ff93b088c2a53e7ee9baeb" kind="function"><name>can_break_breakable</name></member>
     <member refid="classentity_1_1player_1_1Player_1a5f011e6d3f71afd6dde810615da1e5f4" kind="function"><name>has_selected_breakable</name></member>
@@ -629,6 +672,7 @@
     <member refid="classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3" kind="function"><name>get_absolute_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c" kind="function"><name>get_coefficient_from_center_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91" kind="function"><name>get_coefficient_from_center_y</name></member>
+    <member refid="classentity_1_1player_1_1Player_1a1cb32b0d2d3b61d18ffa23503786ef8d" kind="function"><name>get_pointing_at</name></member>
     <member refid="classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922" kind="function"><name>get_selected_tile_x</name></member>
     <member refid="classentity_1_1player_1_1Player_1a3aee04b005560bcb0cad8093b610a150" kind="function"><name>get_selected_tile_y</name></member>
     <member refid="classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35" kind="function"><name>set_health</name></member>
@@ -638,21 +682,54 @@
     <member refid="classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28" kind="function"><name>get_walls</name></member>
     <member refid="classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c" kind="function"><name>set_ideal_spawn_point</name></member>
   </compound>
+  <compound refid="classbuilders_1_1PlayerBuilder" kind="class"><name>builders::PlayerBuilder</name>
+    <member refid="classbuilders_1_1PlayerBuilder_1aed059c92738e9a1234458ce937a712b4" kind="variable"><name>NAME_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a28daa26106b4b21aab73c3988a32fbb3" kind="variable"><name>X_POS_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a3b169911f17e437dd957b3889c39182a" kind="variable"><name>Y_POS_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a4a393c326106bf57d53c9bdd3de324d7" kind="variable"><name>PREV_X_POS_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a61791f5aab549f71acae79b7bc1e343b" kind="variable"><name>PREV_Y_POS_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a858d8f5ad9b2483da4393fdba6474fa0" kind="variable"><name>LERP_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a336f622bf2b943d9eb95a438c0272c60" kind="variable"><name>POINTING_AT_POS_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a0ed24bf3c3e5ea26e7b33eb0e35941e4" kind="variable"><name>HEALTH_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a6b54e0ab526d5905b44b2882e0ac3798" kind="variable"><name>HOLDING_ITEM_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a169617d98b3d759bb802b21163d6d40e" kind="variable"><name>DIRECTION_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a84cbcc9d1f24fb33b5df75f5f0421b66" kind="variable"><name>VELOCITY_KEY</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a1f85f20c8a6618b8b5482430ef04fc1b" kind="function"><name>create_player</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1ad8bf088f5ce3e74066b57653ce08297b" kind="function"><name>build_player</name></member>
+    <member refid="classbuilders_1_1PlayerBuilder_1a803b1b083dc40d8a9bfa8215c57dced9" kind="function"><name>build_player_move</name></member>
+  </compound>
   <compound refid="classplayer__handler_1_1PlayerHandler" kind="class"><name>player_handler::PlayerHandler</name>
     <member refid="classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15" kind="function"><name>__init__</name></member>
     <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" kind="function"><name>track_player</name></member>
     <member refid="classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9" kind="function"><name>update_player</name></member>
     <member refid="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" kind="function"><name>untrack_player</name></member>
     <member refid="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" kind="function"><name>get_players</name></member>
+    <member refid="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" kind="function"><name>get_player</name></member>
+  </compound>
+  <compound refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" kind="class"><name>gui::screens::playerlist_screen::PlayerListScreen</name>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52" kind="variable"><name>game</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1897f9da6605b22795ca16305c2e5c6b" kind="variable"><name>title_label</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee" kind="variable"><name>player_list</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd" kind="variable"><name>_count</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031" kind="variable"><name>_faded_surface</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a4ae2fcc9cf665453a72fd9961cef7389" kind="function"><name>__init__</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a151681d348eb502da9e899708a3a7325" kind="function"><name>draw</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae3bc66bb4ffe41bd1a97a7a5c86a3924" kind="function"><name>update_ui</name></member>
+    <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0d56888ad42287068db13805a8fe74bb" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classclient_1_1player__manager_1_1PlayerManager" kind="class"><name>client::player_manager::PlayerManager</name>
     <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" kind="variable"><name>players</name></member>
-    <member refid="classclient_1_1player__manager_1_1PlayerManager_1aecdc9d283d9b84b12bda8ca2fd0d9fb2" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1addb331a64038f2aec153a9d0d789af5c" kind="variable"><name>local_player</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1b6ac2206b81407a722eea7d6e6cf15d" kind="function"><name>__init__</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1ade912025a5624b372577c0f19299362a" kind="function"><name>build_local_player</name></member>
     <member refid="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" kind="function"><name>set_players</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf" kind="function"><name>get_player</name></member>
+    <member refid="classclient_1_1player__manager_1_1PlayerManager_1aa9bba12818247c0e55a437c1963c0bb4" kind="function"><name>hit_player</name></member>
     <member refid="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" kind="function"><name>draw_players</name></member>
   </compound>
   <compound refid="classdata_1_1properties_1_1PlayerProperties" kind="class"><name>data::properties::PlayerProperties</name>
     <member refid="classdata_1_1properties_1_1PlayerProperties_1a2797640a45b4e873b77d8a9c7486ba5d" kind="variable"><name>MAX_PLAYER_NAME_SIZE</name></member>
+    <member refid="classdata_1_1properties_1_1PlayerProperties_1a9e0c30ec042c7591125c85b5d48b0d04" kind="variable"><name>SPEED</name></member>
   </compound>
   <compound refid="classdata_1_1states_1_1PlayerStates" kind="class"><name>data::states::PlayerStates</name>
     <member refid="classdata_1_1states_1_1PlayerStates_1a43b2a1147db13179627f1d1d0706fa83" kind="variable"><name>MOVE_DOWN</name></member>
@@ -678,7 +755,7 @@
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a9c4dfad17946ee8bb8c85c695e06b005" kind="variable"><name>_y</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a5f25f62703f41ac7da7932ca81ea18ff" kind="variable"><name>info_label</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a674b2dc5d4de4cb63d4ab727880b2bca" kind="variable"><name>progress_label</name></member>
-    <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a172547b58da9a99a3ecaf7063de1311b" kind="function"><name>__init__</name></member>
+    <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a31cd4ff91d527cd6e33415df74c4d39e" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a1a83cd8638e16dada779496c852c133e" kind="function"><name>draw</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1ad73cc0915d296876b44eddcace112dc0" kind="function"><name>update</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a53f4b6fa831f88af23985e90ccaafaed" kind="function"><name>refresh</name></member>
@@ -698,7 +775,7 @@
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a44dfe35726208d5bd19ec9969661a8d8" kind="function"><name>get_unfilled_colour</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a87b0094db2512ff9a45263515a8d7d5b" kind="function"><name>set_filled_start_colour</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a1de198240b28e4b49203a31d0547d6cc" kind="function"><name>get_filled_start_colour</name></member>
-    <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a158088dbdd5ec265b14ab8833d15012b" kind="function"><name>set_filled_end_color</name></member>
+    <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a5723c963743c2da47075ebce3331fe73" kind="function"><name>set_filled_end_colour</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1ae783856ad351b8866714e9120ef0fa16" kind="function"><name>get_filled_end_colour</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1a7d49e786fc36aed302c27b8c3dd11822" kind="function"><name>set_title</name></member>
     <member refid="classgui_1_1progress__bar_1_1ProgressBar_1acff9dfb070c479618e24f7949518214f" kind="function"><name>get_title</name></member>
@@ -710,14 +787,19 @@
     <member refid="classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475" kind="variable"><name>RECOGNITION_RES</name></member>
     <member refid="classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb" kind="variable"><name>MAPDATA_REQ</name></member>
     <member refid="classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49" kind="variable"><name>MAPDATA_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3" kind="variable"><name>MAPDATA_READY_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9" kind="variable"><name>PLAYERUPDATE_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524" kind="variable"><name>PLAYERUPDATE_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8" kind="variable"><name>PLAYERUPDATE_READY_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1abd78d2b449b3d76967e99684f45aaa44" kind="variable"><name>MAPDATA_EOS</name></member>
+    <member refid="classprotocol_1_1Protocol_1aae8e99e61e6661fca1fb2c143f9fe44c" kind="variable"><name>PLAYERJOIN_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1a353807614a7c826deecd5bf7286c54bf" kind="variable"><name>PLAYERJOIN_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a29daf5259b30594b7d1cf3f2a2201746" kind="variable"><name>PLAYEROBJ_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a1618e5c329245bc398e934a166e5eb22" kind="variable"><name>PLAYEROBJ_EOS</name></member>
     <member refid="classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826" kind="variable"><name>GAMEUPDATE_REQ</name></member>
     <member refid="classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f" kind="variable"><name>GAMEUPDATE_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965" kind="variable"><name>GAMEUPDATE_READY_RES</name></member>
+    <member refid="classprotocol_1_1Protocol_1a2a683bb4272ba56cc48539cb3b05e346" kind="variable"><name>GAMEUPDATE_EOS</name></member>
+    <member refid="classprotocol_1_1Protocol_1a91db0ccf5e9a0839a9130b7ad7bfd44e" kind="variable"><name>PACKET_EOS</name></member>
     <member refid="classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89" kind="variable"><name>DISCONNECT_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1a60a230725182b3663d8b7a3f04b25318" kind="variable"><name>PACKET_MAGIC</name></member>
+    <member refid="classprotocol_1_1Protocol_1af71c8485dbdc7dea4366ee3481159739" kind="variable"><name>HIT_REQ</name></member>
+    <member refid="classprotocol_1_1Protocol_1abd738de2b1186d4e64ce825294b8ad58" kind="variable"><name>HIT_RES</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1screen_1_1Screen" kind="class"><name>gui::screens::screen::Screen</name>
     <member refid="classgui_1_1screens_1_1screen_1_1Screen_1a91647fb53696a33b8740c8efa5fe6838" kind="variable"><name>_enabled</name></member>
@@ -744,11 +826,15 @@
     <member refid="classgui_1_1screen__manager_1_1Screens_1a3fd9a3c6007911da53e19e1ba971d142" kind="variable"><name>credits_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a39700556405bddc8add791eec0add77d" kind="variable"><name>gameover_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1ab7e41aaf3ab06d1379951c62c8d8d9dd" kind="variable"><name>map_screen</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1a0fbabd13fe50b63fd84187293ca49dce" kind="variable"><name>player_list_screen</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1ac38513e1f352ccf11a3b46fd1551e66a" kind="function"><name>__init__</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1a045983a0aa666845dfa5d987970cce09" kind="function"><name>link_game</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1ad342324e0590624fd372b8b6bdc1eba0" kind="function"><name>events</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1adc3e629bf8e030ada93ee213d3005445" kind="function"><name>update</name></member>
     <member refid="classgui_1_1screen__manager_1_1Screens_1af3ae6d0328003f41625475d1be88dc4e" kind="function"><name>update_ui</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1ae1107724170417d919a6fec29ca23908" kind="function"><name>task_tab</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1adc4f57723a6f6c3ecb5e9f46c1906394" kind="function"><name>task_create_server</name></member>
+    <member refid="classgui_1_1screen__manager_1_1Screens_1aa9e5774e08d1801caab4477b80f5f680" kind="function"><name>task_join_server</name></member>
   </compound>
   <compound refid="classserver_1_1Server" kind="class"><name>server::Server</name>
     <member refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" kind="variable"><name>state</name></member>
@@ -757,12 +843,12 @@
     <member refid="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" kind="variable"><name>world_handler</name></member>
     <member refid="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" kind="variable"><name>player_handler</name></member>
     <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" kind="variable"><name>sock</name></member>
+    <member refid="classserver_1_1Server_1a654681eb65527da3792df526ff2dde0a" kind="variable"><name>server_thread</name></member>
     <member refid="classserver_1_1Server_1a42ac00e97f8a10546ffe001251628258" kind="function"><name>__init__</name></member>
     <member refid="classserver_1_1Server_1a7df3c004863b1ac9397cb735c4c786a2" kind="function"><name>client_handler</name></member>
-    <member refid="classserver_1_1Server_1a3daa3b38ecdbdef3bdce10e3262d1893" kind="function"><name>run</name></member>
-    <member refid="classserver_1_1Server_1a6ca9890bf15d0b70ea4a834b25b6ff83" kind="function"><name>start</name></member>
+    <member refid="classserver_1_1Server_1a716891b0e0ec7f4ec0b1f0fbc7362b72" kind="function"><name>run</name></member>
+    <member refid="classserver_1_1Server_1acb2086533d346fed646b17afc5edb96e" kind="function"><name>start</name></member>
     <member refid="classserver_1_1Server_1aead981f8958fcd6260c4a9209a4444f1" kind="function"><name>stop</name></member>
-    <member refid="classserver_1_1Server_1a3dfcd7ae9bd584525cdc3ce4e5c8e57a" kind="function"><name>test</name></member>
   </compound>
   <compound refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" kind="class"><name>gui::screens::serverconnect_screen::ServerConnectScreen</name>
     <member refid="classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a5eb56eb66e656c2e8c1a52eea12bda20" kind="variable"><name>window</name></member>
@@ -783,6 +869,7 @@
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a1a8d7a3d248e2aba5e98eed6242d7b1d" kind="variable"><name>faded_surface</name></member>
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aac751b219df1cd7ffad451ad5d362ffe" kind="variable"><name>create_label</name></member>
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a50f4eb7e411c5dfaa5bdf06170e42dc4" kind="variable"><name>ign_input</name></member>
+    <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6774589cc932024ee23ab56a3e6cb485" kind="variable"><name>seed_input</name></member>
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa24e8ea95b4c0e51949d8089551831a9" kind="variable"><name>create_button</name></member>
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a9f4a7c84086b614504e848b02ae2b158" kind="variable"><name>back_button</name></member>
     <member refid="classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a832fafc3b0197c22e23980f65fd57c36" kind="function"><name>__init__</name></member>
@@ -881,8 +968,10 @@
     <member refid="classtasks_1_1Tasks_1a8be67ab0d4ca593f4eeed27524ba1bb9" kind="function"><name>disconnection</name></member>
     <member refid="classtasks_1_1Tasks_1a96e72bb9da06e389a163e97cc57f3047" kind="function"><name>recognition</name></member>
     <member refid="classtasks_1_1Tasks_1ae9cdb17ba5e8fadcf1141c11e1710b7d" kind="function"><name>map_data</name></member>
-    <member refid="classtasks_1_1Tasks_1a41354fa9cd24d7cf5bd8d42571f9fa9c" kind="function"><name>send_game_state</name></member>
-    <member refid="classtasks_1_1Tasks_1a1993ea554e53f676117a89350d758467" kind="function"><name>player_update</name></member>
+    <member refid="classtasks_1_1Tasks_1af4fb532b56342fc0750b624894092d1f" kind="function"><name>player_join</name></member>
+    <member refid="classtasks_1_1Tasks_1a0204de3c87b41f6539f68db66c8ad82d" kind="function"><name>game_state</name></member>
+    <member refid="classtasks_1_1Tasks_1aa45d81e2ff587261439c1cacf41c7fc1" kind="function"><name>incoming_packets</name></member>
+    <member refid="classtasks_1_1Tasks_1ac4f529460f5c7a91e9ceae69a0485c16" kind="function"><name>player_hit</name></member>
   </compound>
   <compound refid="classdata_1_1tiles_1_1Tile" kind="class"><name>data::tiles::Tile</name>
     <member refid="classdata_1_1tiles_1_1Tile_1af670485f472ebee22d83fe79976b45ef" kind="variable"><name>DEFAULT_ATLAS</name></member>
@@ -975,7 +1064,7 @@
     <member refid="classworld_1_1world_1_1World_1aa46caf2414a4d24ab88409c4099c6a11" kind="variable"><name>_map</name></member>
     <member refid="classworld_1_1world_1_1World_1a27cd7ac7e724d94ced6f6fda4c8bac20" kind="function"><name>__init__</name></member>
     <member refid="classworld_1_1world_1_1World_1adb6578b4bb9c0c1db59f8d13a7b8c86d" kind="function"><name>initialise</name></member>
-    <member refid="classworld_1_1world_1_1World_1a48716f61d6a7aa183e5b4f97e8fcdde4" kind="function"><name>create</name></member>
+    <member refid="classworld_1_1world_1_1World_1a19277ba9d6a65181e4e4349e890e1ae3" kind="function"><name>create</name></member>
     <member refid="classworld_1_1world_1_1World_1aecdab0f9d5ff0fe3257383a23cd1882b" kind="function"><name>update</name></member>
     <member refid="classworld_1_1world_1_1World_1ad0002f4ca80035a8933afda2a95616cd" kind="function"><name>update_ui</name></member>
     <member refid="classworld_1_1world_1_1World_1a64c65ad6c3aabc881591a7ce0691e048" kind="function"><name>draw</name></member>
@@ -985,17 +1074,20 @@
   </compound>
   <compound refid="classworld__handler_1_1WorldHandler" kind="class"><name>world_handler::WorldHandler</name>
     <member refid="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" kind="function"><name>__init__</name></member>
-    <member refid="classworld__handler_1_1WorldHandler_1ada931ada427da5faa09d2c9ef83104bb" kind="function"><name>create_world</name></member>
+    <member refid="classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00" kind="function"><name>create_world</name></member>
     <member refid="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" kind="function"><name>get_world</name></member>
+  </compound>
+  <compound refid="classdata_1_1properties_1_1WorldProperties" kind="class"><name>data::properties::WorldProperties</name>
+    <member refid="classdata_1_1properties_1_1WorldProperties_1aa27a5c957e8fe4b6546a026cca34a812" kind="variable"><name>SKY_COLOUR</name></member>
   </compound>
   <compound refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" kind="class"><name>utils::exceptions::ZeroOrLessSpawnPlayerAttempts</name>
     <member refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e" kind="function"><name>__init__</name></member>
   </compound>
   <compound refid="namespacebuilders" kind="namespace"><name>builders</name>
-    <member refid="namespacebuilders_1a813379f63daeb04e8d6c34e2871ae22d" kind="function"><name>build_player</name></member>
-    <member refid="namespacebuilders_1a677ad2a4ab13b5bd3f864deddb1db86f" kind="function"><name>unbuild_player</name></member>
   </compound>
   <compound refid="namespaceclient" kind="namespace"><name>client</name>
+  </compound>
+  <compound refid="namespaceclient_1_1client" kind="namespace"><name>client::client</name>
   </compound>
   <compound refid="namespaceclient_1_1connection" kind="namespace"><name>client::connection</name>
   </compound>
@@ -1076,6 +1168,8 @@
   </compound>
   <compound refid="namespacegui_1_1screens_1_1pause__screen" kind="namespace"><name>gui::screens::pause_screen</name>
   </compound>
+  <compound refid="namespacegui_1_1screens_1_1playerlist__screen" kind="namespace"><name>gui::screens::playerlist_screen</name>
+  </compound>
   <compound refid="namespacegui_1_1screens_1_1screen" kind="namespace"><name>gui::screens::screen</name>
   </compound>
   <compound refid="namespacegui_1_1screens_1_1serverconnect__screen" kind="namespace"><name>gui::screens::serverconnect_screen</name>
@@ -1094,6 +1188,8 @@
     <member refid="namespacemain_1aa7a58ac748c5293faa4d77a82b94d161" kind="function"><name>main</name></member>
   </compound>
   <compound refid="namespacepacket" kind="namespace"><name>packet</name>
+    <member refid="namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8" kind="function"><name>fill</name></member>
+    <member refid="namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428" kind="function"><name>to_bytes</name></member>
   </compound>
   <compound refid="namespaceplayer__handler" kind="namespace"><name>player_handler</name>
   </compound>
@@ -1145,6 +1241,8 @@
   <compound refid="namespaceworld_1_1world" kind="namespace"><name>world::world</name>
   </compound>
   <compound refid="namespaceworld__handler" kind="namespace"><name>world_handler</name>
+  </compound>
+  <compound refid="client_8py" kind="file"><name>client.py</name>
   </compound>
   <compound refid="connection_8py" kind="file"><name>connection.py</name>
   </compound>
@@ -1223,6 +1321,8 @@
   <compound refid="options__screen_8py" kind="file"><name>options_screen.py</name>
   </compound>
   <compound refid="pause__screen_8py" kind="file"><name>pause_screen.py</name>
+  </compound>
+  <compound refid="playerlist__screen_8py" kind="file"><name>playerlist_screen.py</name>
   </compound>
   <compound refid="screen_8py" kind="file"><name>screen.py</name>
   </compound>

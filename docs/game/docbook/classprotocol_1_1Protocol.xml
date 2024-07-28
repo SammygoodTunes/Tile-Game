@@ -17,21 +17,31 @@
 </listitem>
             <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49">MAPDATA_RES</link> = &apos;DATAMAP&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3">MAPDATA_READY_RES</link> = &apos;MAPREADY&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1abd78d2b449b3d76967e99684f45aaa44">MAPDATA_EOS</link> = &apos;MAPREADY&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9">PLAYERUPDATE_REQ</link> = &apos;UPDATEME&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1aae8e99e61e6661fca1fb2c143f9fe44c">PLAYERJOIN_REQ</link> = &apos;IWANTTOJOIN&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524">PLAYERUPDATE_RES</link> = &apos;MEUPDATE&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a353807614a7c826deecd5bf7286c54bf">PLAYERJOIN_RES</link> = &apos;OKGIVEMEYOURNAME&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8">PLAYERUPDATE_READY_RES</link> = &apos;MEUPDATED&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a29daf5259b30594b7d1cf3f2a2201746">PLAYEROBJ_RES</link> = &apos;HEREISPLAYER&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a1618e5c329245bc398e934a166e5eb22">PLAYEROBJ_EOS</link> = &apos;PLAYEROBJREADY&apos;</para>
 </listitem>
             <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826">GAMEUPDATE_REQ</link> = &apos;GAMEUPDATE&apos;</para>
 </listitem>
             <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1abd626005c256b2e391ed4ca9b872d30f">GAMEUPDATE_RES</link> = &apos;UPDATEGAME&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965">GAMEUPDATE_READY_RES</link> = &apos;GAMEUPDATEREADY&apos;</para>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a2a683bb4272ba56cc48539cb3b05e346">GAMEUPDATE_EOS</link> = &apos;GAMEUPDATEREADY&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a91db0ccf5e9a0839a9130b7ad7bfd44e">PACKET_EOS</link> = &apos;PACKETEND&apos;</para>
 </listitem>
             <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89">DISCONNECT_REQ</link> = &apos;BYEBYE&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1a60a230725182b3663d8b7a3f04b25318">PACKET_MAGIC</link> = &apos;GPKT&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1af71c8485dbdc7dea4366ee3481159739">HIT_REQ</link> = &apos;HIT&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classprotocol_1_1Protocol_1abd738de2b1186d4e64ce825294b8ad58">HIT_RES</link> = &apos;GOTHIT&apos;</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -94,11 +104,11 @@ Client-server update process:
 <indexterm><primary>ENCODING</primary><secondary>protocol.Protocol</secondary></indexterm>
 <indexterm><primary>protocol.Protocol</primary><secondary>ENCODING</secondary></indexterm>
 <para><computeroutput>str protocol.Protocol.ENCODING = &apos;utf-8&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a630bbdc99954b702b8920b0431444965"/><section>
-    <title>GAMEUPDATE_READY_RES</title>
-<indexterm><primary>GAMEUPDATE_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_READY_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.GAMEUPDATE_READY_RES = &apos;GAMEUPDATEREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a2a683bb4272ba56cc48539cb3b05e346"/><section>
+    <title>GAMEUPDATE_EOS</title>
+<indexterm><primary>GAMEUPDATE_EOS</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_EOS</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.GAMEUPDATE_EOS = &apos;GAMEUPDATEREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classprotocol_1_1Protocol_1a5e9a3ca466f5a306200ad3e715a90826"/><section>
     <title>GAMEUPDATE_REQ</title>
 <indexterm><primary>GAMEUPDATE_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
@@ -109,11 +119,21 @@ Client-server update process:
 <indexterm><primary>GAMEUPDATE_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
 <indexterm><primary>protocol.Protocol</primary><secondary>GAMEUPDATE_RES</secondary></indexterm>
 <para><computeroutput>str protocol.Protocol.GAMEUPDATE_RES = &apos;UPDATEGAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1ae1db3aac81461b7b0d3baa00439ee5f3"/><section>
-    <title>MAPDATA_READY_RES</title>
-<indexterm><primary>MAPDATA_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_READY_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.MAPDATA_READY_RES = &apos;MAPREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1af71c8485dbdc7dea4366ee3481159739"/><section>
+    <title>HIT_REQ</title>
+<indexterm><primary>HIT_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>HIT_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.HIT_REQ = &apos;HIT&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1abd738de2b1186d4e64ce825294b8ad58"/><section>
+    <title>HIT_RES</title>
+<indexterm><primary>HIT_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>HIT_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.HIT_RES = &apos;GOTHIT&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1abd78d2b449b3d76967e99684f45aaa44"/><section>
+    <title>MAPDATA_EOS</title>
+<indexterm><primary>MAPDATA_EOS</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_EOS</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.MAPDATA_EOS = &apos;MAPREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb"/><section>
     <title>MAPDATA_REQ</title>
 <indexterm><primary>MAPDATA_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
@@ -124,21 +144,36 @@ Client-server update process:
 <indexterm><primary>MAPDATA_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
 <indexterm><primary>protocol.Protocol</primary><secondary>MAPDATA_RES</secondary></indexterm>
 <para><computeroutput>str protocol.Protocol.MAPDATA_RES = &apos;DATAMAP&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a7eff072b2b5848e572b4ee9599426df8"/><section>
-    <title>PLAYERUPDATE_READY_RES</title>
-<indexterm><primary>PLAYERUPDATE_READY_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_READY_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_READY_RES = &apos;MEUPDATED&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a323eafd7919edc902d55817c64e4bea9"/><section>
-    <title>PLAYERUPDATE_REQ</title>
-<indexterm><primary>PLAYERUPDATE_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_REQ</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_REQ = &apos;UPDATEME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classprotocol_1_1Protocol_1a9ad26553e30810b8c727c23c24936524"/><section>
-    <title>PLAYERUPDATE_RES</title>
-<indexterm><primary>PLAYERUPDATE_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
-<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERUPDATE_RES</secondary></indexterm>
-<para><computeroutput>str protocol.Protocol.PLAYERUPDATE_RES = &apos;MEUPDATE&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a91db0ccf5e9a0839a9130b7ad7bfd44e"/><section>
+    <title>PACKET_EOS</title>
+<indexterm><primary>PACKET_EOS</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PACKET_EOS</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PACKET_EOS = &apos;PACKETEND&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a60a230725182b3663d8b7a3f04b25318"/><section>
+    <title>PACKET_MAGIC</title>
+<indexterm><primary>PACKET_MAGIC</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PACKET_MAGIC</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PACKET_MAGIC = &apos;GPKT&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1aae8e99e61e6661fca1fb2c143f9fe44c"/><section>
+    <title>PLAYERJOIN_REQ</title>
+<indexterm><primary>PLAYERJOIN_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERJOIN_REQ</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYERJOIN_REQ = &apos;IWANTTOJOIN&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a353807614a7c826deecd5bf7286c54bf"/><section>
+    <title>PLAYERJOIN_RES</title>
+<indexterm><primary>PLAYERJOIN_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYERJOIN_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYERJOIN_RES = &apos;OKGIVEMEYOURNAME&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a1618e5c329245bc398e934a166e5eb22"/><section>
+    <title>PLAYEROBJ_EOS</title>
+<indexterm><primary>PLAYEROBJ_EOS</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYEROBJ_EOS</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYEROBJ_EOS = &apos;PLAYEROBJREADY&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classprotocol_1_1Protocol_1a29daf5259b30594b7d1cf3f2a2201746"/><section>
+    <title>PLAYEROBJ_RES</title>
+<indexterm><primary>PLAYEROBJ_RES</primary><secondary>protocol.Protocol</secondary></indexterm>
+<indexterm><primary>protocol.Protocol</primary><secondary>PLAYEROBJ_RES</secondary></indexterm>
+<para><computeroutput>str protocol.Protocol.PLAYEROBJ_RES = &apos;HEREISPLAYER&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6"/><section>
     <title>RECOGNITION_REQ</title>
 <indexterm><primary>RECOGNITION_REQ</primary><secondary>protocol.Protocol</secondary></indexterm>
