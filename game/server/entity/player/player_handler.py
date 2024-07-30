@@ -2,6 +2,7 @@
 from time import time
 
 from game.network.builders import BaseBuilder, PlayerBuilder
+from game.server.entity.player import player_sim
 from game.utils.logger import logger
 
 
@@ -41,7 +42,7 @@ class PlayerHandler:
         self._players[index]['health'] = player['health']
         self._players[index]['holding_item'] = player['holding_item']
 
-    """def move_player(self, player_move_packet):
+    def move_player(self, player_move_packet):
         index = self.get_player(player_move_packet[PlayerBuilder.NAME_KEY])['index']
         if index is None:
             return
@@ -50,7 +51,7 @@ class PlayerHandler:
         pos = (self._players[index]['x'], self._players[index]['y'])
         new_pos = player_sim.calculate_new_pos(pos, player_move_packet[PlayerBuilder.DIRECTION_KEY], delta)
         self._players[index]['x'], self._players[index]['y'] = new_pos
-        print(f'updating player pos from {pos} to {new_pos}')"""
+        print(f'updating player pos from {pos} to {new_pos}')
 
     def untrack_player(self, player_name: str) -> None:
         """

@@ -98,8 +98,8 @@ class Tasks:
         print(decompressed_packet)
         type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
         print(f'Received packet of type {type_id}.')
-        # if type_id == BaseBuilder.PLAYER_MOVE_COMMAND_ID:
-        #    player_handler.move_player(decompressed_packet)
+        if type_id == BaseBuilder.PLAYER_MOVE_COMMAND_ID:
+            player_handler.move_player(decompressed_packet)
 
     @staticmethod
     def player_hit(conn, player_handler, data: bytes) -> None:
