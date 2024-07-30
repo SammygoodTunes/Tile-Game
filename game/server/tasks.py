@@ -84,20 +84,20 @@ class Tasks:
         """
         if not data or data[:len(Protocol.PACKET_MAGIC)] != to_bytes(Protocol.PACKET_MAGIC):
             return
-        print('incoming packet')
+        #print('incoming packet')
         packet = b''
         data = data[len(Protocol.PACKET_MAGIC):]
         while data != Hasher.enhash(Protocol.PACKET_EOS):
-            print(f'Got data: {data}')
+            #print(f'Got data: {data}')
             packet += data
             data = conn.recv(Protocol.BUFFER_SIZE)
         decompressed_packet = Compressor.decompress(packet)
         if not isinstance(decompressed_packet, dict):
             print('Packet received is not of instance \'dict\'')
             return
-        print(decompressed_packet)
+        #print(decompressed_packet)
         type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
-        print(f'Received packet of type {type_id}.')
+        #print(f'Received packet of type {type_id}.')
         if type_id == BaseBuilder.PLAYER_MOVE_COMMAND_ID:
             player_handler.move_player(decompressed_packet)
 

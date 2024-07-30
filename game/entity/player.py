@@ -1,6 +1,5 @@
 
 import math
-from importlib import resources as impr
 import pygame
 from pygame.math import clamp
 from random import randint
@@ -8,6 +7,7 @@ from typing import Self
 
 from game.data.items import Items
 from game.data.keys import Keys
+from game.data.properties import PlayerProperties
 from game.data.states import MouseStates, PlayerStates
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
@@ -22,10 +22,6 @@ class Player:
     """
     Class for creating a player.
     """
-
-    TEXTURE: str = str(impr.files('assets') / "player.png")
-    VELOCITY_STEP_START: float = 4.5
-    VELOCITY_STEP_STOP: float = 5.0
 
     TIMERS_COUNT: int = 2
     MINING_TIMER: int = 0
@@ -212,29 +208,29 @@ class Player:
             self._y += round(speed * self.velocity_y * d, 2)
 
         if self.is_moving_left():
-            self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_START * d, -1, 1)
+            self.velocity_x = clamp(self.velocity_x - PlayerProperties.VELOCITY_STEP_START * d, -1, 1)
         if self.is_moving_right():
-            self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_START * d, -1, 1)
+            self.velocity_x = clamp(self.velocity_x + PlayerProperties.VELOCITY_STEP_START * d, -1, 1)
         if self.is_moving_up():
-            self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_START * d, -1, 1)
+            self.velocity_y = clamp(self.velocity_y - PlayerProperties.VELOCITY_STEP_START * d, -1, 1)
         if self.is_moving_down():
-            self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_START * d, -1, 1)
+            self.velocity_y = clamp(self.velocity_y + PlayerProperties.VELOCITY_STEP_START * d, -1, 1)
 
         if not self.is_moving_left() and not self.is_moving_right():
             if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
                 self.velocity_x = 0
             if self.velocity_x > 0:
-                self.velocity_x = clamp(self.velocity_x - Player.VELOCITY_STEP_STOP * d, 0, 1)
+                self.velocity_x = clamp(self.velocity_x - PlayerProperties.VELOCITY_STEP_STOP * d, 0, 1)
             elif self.velocity_x < 0:
-                self.velocity_x = clamp(self.velocity_x + Player.VELOCITY_STEP_STOP * d, -1, 0)
+                self.velocity_x = clamp(self.velocity_x + PlayerProperties.VELOCITY_STEP_STOP * d, -1, 0)
 
         if not self.is_moving_up() and not self.is_moving_down():
             if -0.0001 < self.velocity_y < 0.0001 and self.velocity_y != 0:
                 self.velocity_y = 0
             if self.velocity_y > 0:
-                self.velocity_y = clamp(self.velocity_y - Player.VELOCITY_STEP_STOP * d, 0, 1)
+                self.velocity_y = clamp(self.velocity_y - PlayerProperties.VELOCITY_STEP_STOP * d, 0, 1)
             elif self.velocity_y < 0:
-                self.velocity_y = clamp(self.velocity_y + Player.VELOCITY_STEP_STOP * d, -1, 0)
+                self.velocity_y = clamp(self.velocity_y + PlayerProperties.VELOCITY_STEP_STOP * d, -1, 0)
 
         # Player - map boundaries collision
         if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
