@@ -1,4 +1,7 @@
 
+from importlib import resources as impr
+
+
 class PlayerProperties:
     """
     Class for player properties.
@@ -6,6 +9,9 @@ class PlayerProperties:
 
     MAX_PLAYER_NAME_SIZE = 16
     SPEED = 350
+    TEXTURE: str = str(impr.files('assets') / "player.png")
+    VELOCITY_STEP_START: float = 4.5
+    VELOCITY_STEP_STOP: float = 5.0
 
 
 class CameraProperties:
