@@ -52,7 +52,7 @@ class Server:
                 running = not Tasks.disconnection(data)
                 # Tasks.player_hit(conn, self.player_handler, data)
                 Tasks.incoming_packets(conn, self.player_handler, data)
-                Tasks.game_state(conn, self.player_handler, data)
+                #Tasks.game_state(conn, self.player_handler, data)
                 sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:
                 running = False

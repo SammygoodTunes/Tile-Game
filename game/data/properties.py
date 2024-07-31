@@ -12,6 +12,7 @@ class PlayerProperties:
     TEXTURE: str = str(impr.files('assets') / "player.png")
     VELOCITY_START_DURATION: float = 0.25
     VELOCITY_STOP_DURATION: float = 0.25
+    VELOCITY_THRESHOLD: float = 0.0001
 
 
 class CameraProperties:
@@ -20,6 +21,9 @@ class CameraProperties:
     """
 
     SPEED = 350
+    VELOCITY_START_DURATION: float = 0.25
+    VELOCITY_STOP_DURATION: float = 0.15
+    VELOCITY_THRESHOLD: float = 10
 
 
 class ScreenProperties:

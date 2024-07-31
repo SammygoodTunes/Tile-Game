@@ -217,7 +217,7 @@ class Player:
             self.velocity_y = clamp(self.velocity_y + d / PlayerProperties.VELOCITY_START_DURATION, -1, 1)
 
         if not self.is_moving_left() and not self.is_moving_right():
-            if -0.0001 < self.velocity_x < 0.0001 and self.velocity_x != 0:
+            if -PlayerProperties.VELOCITY_THRESHOLD < self.velocity_x < PlayerProperties.VELOCITY_THRESHOLD and self.velocity_x != 0:
                 self.velocity_x = 0
             if self.velocity_x > 0:
                 self.velocity_x = clamp(self.velocity_x - d / PlayerProperties.VELOCITY_STOP_DURATION, 0, 1)
@@ -225,7 +225,7 @@ class Player:
                 self.velocity_x = clamp(self.velocity_x + d / PlayerProperties.VELOCITY_STOP_DURATION, -1, 0)
 
         if not self.is_moving_up() and not self.is_moving_down():
-            if -0.0001 < self.velocity_y < 0.0001 and self.velocity_y != 0:
+            if -PlayerProperties.VELOCITY_THRESHOLD < self.velocity_y < PlayerProperties.VELOCITY_THRESHOLD and self.velocity_y != 0:
                 self.velocity_y = 0
             if self.velocity_y > 0:
                 self.velocity_y = clamp(self.velocity_y - d / PlayerProperties.VELOCITY_STOP_DURATION, 0, 1)
