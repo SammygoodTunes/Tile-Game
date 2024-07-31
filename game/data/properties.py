@@ -10,8 +10,8 @@ class PlayerProperties:
     MAX_PLAYER_NAME_SIZE = 16
     SPEED = 350
     TEXTURE: str = str(impr.files('assets') / "player.png")
-    VELOCITY_STEP_START: float = 4.5
-    VELOCITY_STEP_STOP: float = 5.0
+    VELOCITY_START_DURATION: float = 0.25
+    VELOCITY_STOP_DURATION: float = 0.25
 
 
 class CameraProperties:
