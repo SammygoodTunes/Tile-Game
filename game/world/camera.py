@@ -1,8 +1,9 @@
-
+import pygame.key
 from pygame import K_UP, K_DOWN, K_LEFT, K_RIGHT
 from pygame import key
 from pygame.math import clamp
 
+from game.data.keys import Keys
 from game.data.properties import CameraProperties
 from game.utils.logger import logger
 
@@ -26,6 +27,7 @@ class Camera:
         Update the camera.
         """
         d: float = game.clock.get_time() / 1000.0
+        keys = pygame.key.get_pressed()
 
         if self.velocity_x != 0:
             self.x += self.speed * game.client.player.get_coefficient_from_center_x(game.width) * self.velocity_x * d
@@ -34,29 +36,28 @@ class Camera:
 
         print(f'{self.velocity_x=} {self.velocity_y=}')
 
-        if game.client.player.is_near_left_edge():
+        if keys[Keys.MOVE_LEFT] and game.client.player.is_near_left_edge():
             self.velocity_x = clamp(self.velocity_x - d / CameraProperties.VELOCITY_START_DURATION, -1, 1)
-        elif game.client.player.is_near_right_edge():
+        elif keys[Keys.MOVE_RIGHT] and game.client.player.is_near_right_edge():
             self.velocity_x = clamp(self.velocity_x + d / CameraProperties.VELOCITY_START_DURATION, -1, 1)
+        elif self.velocity_x > d:
+            self.velocity_x = clamp(self.velocity_x - d / CameraProperties.VELOCITY_STOP_DURATION, 0, 1)
+        elif self.velocity_x < d:
+            self.velocity_x = clamp(self.velocity_x + d / CameraProperties.VELOCITY_STOP_DURATION, -1, 0)
         else:
-            if -CameraProperties.VELOCITY_THRESHOLD / d < self.velocity_x < CameraProperties.VELOCITY_THRESHOLD / d and self.velocity_x != 0:
-                self.velocity_x = 0
-            elif self.velocity_x > 0:
-                self.velocity_x = clamp(self.velocity_x - d / CameraProperties.VELOCITY_STOP_DURATION, 0, 1)
-            elif self.velocity_x < 0:
-                self.velocity_x = clamp(self.velocity_x + d / CameraProperties.VELOCITY_STOP_DURATION, -1, 0)
+            self.velocity_x = 0
 
-        if game.client.player.is_near_top_edge():
+        if keys[Keys.MOVE_UP] and game.client.player.is_near_top_edge():
             self.velocity_y = clamp(self.velocity_y - d / CameraProperties.VELOCITY_START_DURATION, -1, 1)
-        elif game.client.player.is_near_bottom_edge():
+        elif keys[Keys.MOVE_DOWN] and game.client.player.is_near_bottom_edge():
             self.velocity_y = clamp(self.velocity_y + d / CameraProperties.VELOCITY_START_DURATION, -1, 1)
+        elif self.velocity_y > d:
+            self.velocity_y = clamp(self.velocity_y - d / CameraProperties.VELOCITY_STOP_DURATION, 0, 1)
+        elif self.velocity_y < d:
+            self.velocity_y = clamp(self.velocity_y + d / CameraProperties.VELOCITY_STOP_DURATION, -1, 0)
         else:
-            if -CameraProperties.VELOCITY_THRESHOLD / d < self.velocity_y < CameraProperties.VELOCITY_THRESHOLD / d and self.velocity_y != 0:
-                self.velocity_y = 0
-            elif self.velocity_y > 0:
-                self.velocity_y = clamp(self.velocity_y - d / CameraProperties.VELOCITY_STOP_DURATION, 0, 1)
-            elif self.velocity_y < 0:
-                self.velocity_y = clamp(self.velocity_y + d / CameraProperties.VELOCITY_STOP_DURATION, -1, 0)
+            self.velocity_y = 0
+
 
     def reset(self) -> None:
         """
