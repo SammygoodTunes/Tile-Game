@@ -182,11 +182,6 @@ class Player:
         else:
             speed = PlayerProperties.SPEED
 
-        speed: int = round(
-            self.speed // (int(not self.is_in_water(map_obj))
-                           + 1.5 * self.is_in_water(map_obj)
-                           + 1.5 * self.is_in_lava(map_obj))
-        )
         mx, my = pygame.mouse.get_pos()
         self.pointing_at = (round(game.client.camera.x) - (game.width // 2 - mx), round(game.client.camera.y) - (game.height // 2 - my))
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
