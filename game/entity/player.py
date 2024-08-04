@@ -154,13 +154,14 @@ class Player:
         if length == 0:
             return
         slope_x, slope_y = offset_x / length, offset_y / length
-        for i in range(0, length // 5, 2):
+        line_length = 16
+        for i in range(0, length // line_length, 2):
             colour_anim: int = round(127.5 * math.sin((pygame.time.get_ticks() - i * 10) / 64) + 127.5)
             pygame.draw.line(
                 game.screen,
                 (255, colour_anim // 2, colour_anim // 2),
-                (self.screen_x + 16 + (slope_x * i * 5), self.screen_y + 16 + (slope_y * i * 5)),
-                (self.screen_x + 16 + (slope_x * (i + 1) * 5), self.screen_y + 16 + (slope_y * (i + 1) * 5)), 2
+                (self.screen_x + 16 + (slope_x * i * line_length), self.screen_y + 16 + (slope_y * i * line_length)),
+                (self.screen_x + 16 + (slope_x * (i + 1) * line_length), self.screen_y + 16 + (slope_y * (i + 1) * line_length)), 2
             )
 
     def update(self, game, map_obj: Map) -> None:
