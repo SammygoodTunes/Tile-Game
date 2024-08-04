@@ -89,7 +89,7 @@ class Items:
 
 	AIR: Item = Item()
 	SHOVEL: Item = Item(x=1, tooltip_name="Shovel").set_strength(10)
-	GUN: Item = Item(x=2, tooltip_name="Gun").set_strength(5)
+	GUN: Item = Item(x=2, tooltip_name="Gun")
 
 
 class ItemTypes:

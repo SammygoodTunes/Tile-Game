@@ -49,7 +49,7 @@ class Slot(Widget):
 
         if self._item_asset is not None:
             item_asset = scale(self._item_asset, (self._width - 12, self._height - 12))
-            screen.blit(item_asset, (4, 4, self._width, self._height))
+            screen.blit(item_asset, (self._x + 4, self._y + 4, self._width, self._height))
 
         rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
         rect(screen, inner_colour, (
@@ -191,7 +191,7 @@ class Slot(Widget):
         """
         self._item = item
         self._item_asset = Surface((ItemManager.SIZE, ItemManager.SIZE), SRCALPHA, 32).convert_alpha()
-        self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (self._x, self._y, ItemManager.SIZE, ItemManager.SIZE),
+        self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (0, 0, ItemManager.SIZE, ItemManager.SIZE),
                     (ItemManager.SIZE * item.get_xy()[0], ItemManager.SIZE * item.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
         return self
 

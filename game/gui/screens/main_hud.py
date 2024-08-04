@@ -28,6 +28,7 @@ class MainHud(Screen):
                            .set_filled_end_colour((20, 131, 240))
                            .set_state(True))
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
+        self.hotbar.init_slots()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self) -> None:

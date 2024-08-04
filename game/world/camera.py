@@ -34,8 +34,6 @@ class Camera:
         if self.velocity_y != 0:
             self.y += self.speed * game.client.player.get_coefficient_from_center_y(game.height) * self.velocity_y * d
 
-        print(f'{self.velocity_x=} {self.velocity_y=}')
-
         if keys[Keys.MOVE_LEFT] and game.client.player.is_near_left_edge():
             self.velocity_x = clamp(self.velocity_x - d / CameraProperties.VELOCITY_START_DURATION, -1, 1)
         elif keys[Keys.MOVE_RIGHT] and game.client.player.is_near_right_edge():

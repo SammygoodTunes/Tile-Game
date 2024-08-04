@@ -24,13 +24,13 @@ class Hotbar(Widget):
         self._tooltip = Label("")
         self._selected_slot = 0
         self._atlas: Surface | None = None
-        self.init_slots()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def init_slots(self) -> None:
         """
         Initialise the hotbar's slots.
         """
+        self._surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
         self._slots[0].set_item(Items.SHOVEL)
         self._slots[1].set_item(Items.GUN)
         for i, slot in enumerate(self._slots):
@@ -38,7 +38,6 @@ class Hotbar(Widget):
             slot.set_x(new_x_pos)
             self._width = new_x_pos + slot.get_width()
             self._height = slot.get_height()
-        self._surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
         for slot in self._slots:
             slot.draw(self._surface)
         self._tooltip.set_text(self.get_selected_slot_item().get_tooltip_name())
