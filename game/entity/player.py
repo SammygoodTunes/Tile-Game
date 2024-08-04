@@ -173,11 +173,15 @@ class Player:
         d: float = game.clock.get_time() / 1000.0
         prev_x: int = self._x
         prev_y: int = self._y
-        speed: int = round(
-            self.speed // (int(not self.is_in_water(map_obj))
-                           + 1.5 * self.is_in_water(map_obj)
-                           + 1.5 * self.is_in_lava(map_obj))
-        )
+
+        speed: int
+        if self.is_in_water(map_obj):
+            speed = PlayerProperties.SPEED_IN_WATER
+        elif self.is_in_lava(map_obj):
+            speed = PlayerProperties.SPEED_IN_LAVA
+        else:
+            speed = PlayerProperties.SPEED
+
         mx, my = pygame.mouse.get_pos()
         self.pointing_at = (round(game.client.camera.x) - (game.width // 2 - mx), round(game.client.camera.y) - (game.height // 2 - my))
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)

@@ -56,7 +56,6 @@ class Camera:
         else:
             self.velocity_y = 0
 
-
     def reset(self) -> None:
         """
         Reset the camera's general properties.
