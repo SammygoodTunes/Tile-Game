@@ -63,7 +63,7 @@ class Player:
         self.main_hud = MainHud(game)
         self.main_hud.set_state(True)
 
-    def events(self, client, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def events(self, game, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
         Track the player events.
         """
@@ -93,6 +93,7 @@ class Player:
             self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())
             self.main_hud.hotbar.select_slot((self.main_hud.hotbar.get_selected_slot() - e.y) % len(self.main_hud.hotbar.get_slots()))
             self.main_hud.hotbar.init_slots()
+            self.main_hud.hotbar.update(game)
 
     def draw(self, game) -> None:
         """

@@ -55,7 +55,7 @@ class Client:
 
     def events(self, game, e: Event):
         if not game.paused and game.start_game:
-            self.player.events(self, self.world.get_map(), e)
+            self.player.events(game, self.world.get_map(), e)
 
     def stop(self):
         if self.connection_handler.connection:
