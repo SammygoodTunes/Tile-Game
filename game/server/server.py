@@ -8,7 +8,7 @@ from game.data.properties import ServerProperties
 from game.data.states import ServerStates
 from game.network.protocol import Protocol
 from game.server.entity.player.player_handler import PlayerHandler
-from game.server.tasks import Tasks
+from game.server.tasks import ServerTasks
 from game.server.world_handler import WorldHandler
 from game.utils.logger import logger
 
@@ -33,11 +33,12 @@ class Server:
         """
         player_name: str = str()
         try:
-            running = Tasks.recognition(conn, addr)
-            Tasks.map_data(conn, addr, self.world_handler)
-            player_name = Tasks.player_join(conn, self.player_handler)
-            data = conn.recv(Protocol.BUFFER_SIZE)
-            Tasks.game_state(conn, self.player_handler, data)
+            running = ServerTasks.recognition(conn, addr)
+            ServerTasks.map_data(conn, addr, self.world_handler)
+            player_name = ServerTasks.player_join(conn, self.player_handler)
+            ServerTasks.local_game_state(conn)
+            ServerTasks.incoming_packets(conn, self.player_handler)
+            ServerTasks.game_state(conn, self.player_handler)
         except OSError:
             running = False
         print(f'Connection from: {addr}')
@@ -47,12 +48,13 @@ class Server:
                 if self.state.value == ServerStates.IDLE:
                     running = False
                     continue
+                ServerTasks.local_game_state(conn)
                 data = conn.recv(Protocol.BUFFER_SIZE)
-                # print(f'Message from {addr}: {data}')
-                running = not Tasks.disconnection(data)
+                #print(f'Message from {addr}: {data}')
+                running = not ServerTasks.disconnection(data)
                 # Tasks.player_hit(conn, self.player_handler, data)
-                Tasks.incoming_packets(conn, self.player_handler, data)
-                #Tasks.game_state(conn, self.player_handler, data)
+                ServerTasks.incoming_packets(conn, self.player_handler)
+                ServerTasks.game_state(conn, self.player_handler)
                 sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:
                 running = False

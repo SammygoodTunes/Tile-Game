@@ -6,6 +6,11 @@ from game.network.protocol import Protocol
 from game.utils.logger import logger
 
 
+class Packet:
+
+    DATA_SIZE = 4
+
+
 class Hasher:
     """
     Class for hashing packets.
@@ -61,4 +66,13 @@ def fill(data: bytes) -> bytes:
 
 
 def to_bytes(data: str) -> bytes:
+    """
+    Return string as bytes encoded with protocol's chosen encoding.
+    """
     return bytes(data, encoding=Protocol.ENCODING)
+
+def hex_len(data: bytes) -> bytes:
+    """
+    Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+    """
+    return to_bytes(f'{len(data):0{Packet.DATA_SIZE}x}')

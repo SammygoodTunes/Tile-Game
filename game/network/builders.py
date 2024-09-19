@@ -6,20 +6,18 @@ class BaseBuilder:
     """
     Base class for packet building
     """
-
     COMMAND_ID_KEY = 'id'
     TIMESTAMP_KEY = 'timestamp'
 
     (
-        PLAYER_MOVE_COMMAND_ID
-    ) = 1
+        PLAYER_POSITION_UPDATE_COMMAND
+    ) = 0
 
 
 class PlayerBuilder:
     """
     Class for the player packet builder.
     """
-
     NAME_KEY = 'name'
     X_POS_KEY = 'x'
     Y_POS_KEY = 'y'
@@ -31,6 +29,7 @@ class PlayerBuilder:
     HOLDING_ITEM_KEY = 'holding_item'
     DIRECTION_KEY = 'direction'
     VELOCITY_KEY = 'velocity'
+    DATA_KEY = 'data'
 
     @staticmethod
     def create_player() -> dict:
@@ -60,15 +59,14 @@ class PlayerBuilder:
         player.set_health(player_dict[PlayerBuilder.HEALTH_KEY])
 
     @staticmethod
-    def build_player_move():
+    def build_player_update_position_packet(player) -> dict:
         """
-        Build a player move packet.
+        Create an empty player position update packet.
         """
         return {
-            BaseBuilder.COMMAND_ID_KEY: BaseBuilder.PLAYER_MOVE_COMMAND_ID,
+            BaseBuilder.COMMAND_ID_KEY: BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND,
             BaseBuilder.TIMESTAMP_KEY: time(),
-            PlayerBuilder.NAME_KEY: '',
-            PlayerBuilder.DIRECTION_KEY: 0
+            PlayerBuilder.NAME_KEY: player.get_player_name(),
+            PlayerBuilder.X_POS_KEY: player.get_x(),
+            PlayerBuilder.Y_POS_KEY: player.get_y()
         }
-
-

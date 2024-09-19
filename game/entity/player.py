@@ -192,7 +192,7 @@ class Player:
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
-        comp_move = self.move
+        # comp_move = self.move
 
         if not game.paused:
             self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[Keys.MOVE_LEFT] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
@@ -202,11 +202,11 @@ class Player:
         else:
             self.move = 0
 
-        if self.move != comp_move:
+        '''if self.move != comp_move:
             player_move_packet = PlayerBuilder.build_player_move()
             player_move_packet[PlayerBuilder.NAME_KEY] = self.player_name
             player_move_packet[PlayerBuilder.DIRECTION_KEY] = self.move
-            game.client.connection_handler.queue_packet(player_move_packet)
+            game.client.connection_handler.queue_packet(player_move_packet)'''
 
         if self.velocity_x != 0:
             self._x += round(speed * self.velocity_x * d, 2)

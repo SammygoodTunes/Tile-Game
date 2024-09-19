@@ -20,13 +20,23 @@ class PlayerManager:
         self.players = list()
 
     def build_local_player(self, player_dict: dict):
+        """
+        Build the local player from a player packet.
+        """
         PlayerBuilder.build_player(self.local_player, player_dict)
 
-    def set_players(self, players: list) -> Self:
+    def packetise_player(self) -> dict:
+        """
+        Return a data-complete player packet.
+        """
+        return PlayerBuilder.build_player_update_position_packet(self.local_player)
+
+    def set_players(self, players: list | None) -> Self:
         """
         Set the players list and return the player manager itself.
         """
-        self.players = players
+        if players is not None:
+            self.players = players
         return self
 
     def get_player(self, player_name: str) -> dict | None:

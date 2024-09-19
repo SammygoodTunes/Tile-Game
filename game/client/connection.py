@@ -1,4 +1,5 @@
-import pygame
+
+from math import ceil
 from pygame.event import Event
 import socket
 from threading import Thread
@@ -6,14 +7,13 @@ from time import sleep
 import traceback
 
 from game.client.player_manager import PlayerManager
+from game.client.tasks import ClientTasks
 from game.data.properties import ServerProperties
-from game.data.states import ConnectionStates, MouseStates
-from game.entity.player import Player
+from game.data.states import ConnectionStates
 from game.utils.exceptions import PlayerWithSameNameError
 from game.utils.logger import logger
-from game.network import builders
 from game.network.protocol import Protocol
-from game.network.packet import Hasher, Compressor, fill, to_bytes
+from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
 
 
 class Tasks:
@@ -50,53 +50,31 @@ class Connection:
         try:
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
-            self.sock.send(Hasher.enhash(Protocol.RECOGNITION_REQ))
-            data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if not data or data != Hasher.hash(Protocol.RECOGNITION_RES):
+            if not ClientTasks.recognition(self.sock):
                 self.state = ConnectionStates.REFUSED
                 return
-            self.sock.send(Hasher.enhash(Protocol.MAPDATA_REQ))
-            data = self.sock.recv(Protocol.BUFFER_SIZE).decode(Protocol.ENCODING)
-            if not data or data != Hasher.hash(Protocol.MAPDATA_RES):
+            if not ClientTasks.map_data(self.sock):
                 self.state = ConnectionStates.REFUSED
                 return
             self.state = ConnectionStates.GETDATA
-            compressed_map_obj = b''
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.MAPDATA_EOS):
-                compressed_map_obj += data
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-            self.data = Compressor.decompress(compressed_map_obj.strip())
+            self.data = ClientTasks.get_map_data(self.sock)
 
-            self.sock.send(Hasher.enhash(Protocol.PLAYERJOIN_REQ))
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            if not data or data != Hasher.enhash(Protocol.PLAYERJOIN_RES):
+            if not ClientTasks.player_join(self.sock):
                 self.state = ConnectionStates.REFUSED
                 return
-            self.sock.send(player_name.encode(Protocol.ENCODING))
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            if not data and data != Hasher.enhash(Protocol.PLAYEROBJ_RES):
-                self.state = ConnectionStates.REFUSED
-                return
-            compressed_player_obj = b''
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.PLAYEROBJ_EOS):
-                compressed_player_obj += data
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-            player_obj = Compressor.decompress(compressed_player_obj)
-            self.player_manager.build_local_player(player_obj)
 
-            self.sock.send(Hasher.enhash(Protocol.GAMEUPDATE_REQ))
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            if not data or data != Hasher.enhash(Protocol.GAMEUPDATE_RES):
+            if not ClientTasks.send_player_name(self.sock, player_name):
                 self.state = ConnectionStates.REFUSED
                 return
-            compressed_players_obj = b''
-            data = self.sock.recv(Protocol.BUFFER_SIZE)
-            while data != Hasher.enhash(Protocol.GAMEUPDATE_EOS):
-                compressed_players_obj += data
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-            self.player_manager.set_players(Compressor.decompress(compressed_players_obj.strip()))
+
+            self.player_manager.local_player.set_player_name(player_name)
+
+            if not ClientTasks.send_local_player(self.sock, self.player_manager):
+                self.state = ConnectionStates.REFUSED
+                return
+
+            self.player_manager.set_players(ClientTasks.get_global_game_state(self.sock))
+
             if self.player_manager.get_player(player_name=player_name) is None:
                 self.state = ConnectionStates.REFUSED
                 raise PlayerWithSameNameError
@@ -147,26 +125,13 @@ class Connection:
         """
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
-                self.sock.send(Hasher.enhash(Protocol.GAMEUPDATE_REQ))
-
-                # make predictions about the game like player movement
+                self.sock.send(Hasher.enhash(Protocol.SENDGLGAME_REQ))
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
-                if data and data == Hasher.enhash(Protocol.GAMEUPDATE_RES):
-                    compressed_players_obj = b''
-                    data = self.sock.recv(Protocol.BUFFER_SIZE)
-                    while data != Hasher.enhash(Protocol.GAMEUPDATE_EOS):
-                        compressed_players_obj += data
-                        data = self.sock.recv(Protocol.BUFFER_SIZE)
-                    players = Compressor.decompress(compressed_players_obj.strip())
-                    self.player_manager.set_players(players)
-                    self.player_manager.build_local_player(self.player_manager.get_player(self.player_manager.local_player.get_player_name()))
 
-                # Handle queued packets
-                if self.packet_queue:
-                    print('Found packet in queue, sending.')
-                    self.sock.send(fill(to_bytes(Protocol.PACKET_MAGIC) + Compressor.compress(self.packet_queue[0])))
-                    self.sock.send(Hasher.enhash(Protocol.PACKET_EOS))
-                    self.packet_queue.pop(0)
+                ClientTasks.send_local_player(self.sock, self.player_manager, data=data)
+
+                players = ClientTasks.get_global_game_state(self.sock, data=data)
+                self.player_manager.set_players(players)
 
                 '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
                     print('Client: received hit response, sending hit player name============================')

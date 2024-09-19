@@ -1,10 +1,14 @@
+
+from math import ceil
+
 from game.data.items import Items
 from game.network.builders import PlayerBuilder, BaseBuilder
-from game.network.packet import Hasher, Compressor, to_bytes
+from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol
+from game.utils.logger import logger
 
 
-class Tasks:
+class ServerTasks:
     """
     Class for regrouping all server-side requests.
     """
@@ -38,7 +42,7 @@ class Tasks:
             print(f'Sending map to {addr}')
             compressed_map_obj = Compressor.compress(world_handler.get_world().get_map())
             conn.send(Hasher.enhash(Protocol.MAPDATA_RES))
-            conn.send(compressed_map_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_map_obj) % Protocol.BUFFER_SIZE))
+            conn.send(fill(compressed_map_obj))
             conn.send(Hasher.enhash(Protocol.MAPDATA_EOS))
             print(f'Sent!')
 
@@ -51,7 +55,6 @@ class Tasks:
         player_name: str = str()
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.PLAYERJOIN_REQ):
-            print('got player join request, sending response')
             conn.send(Hasher.enhash(Protocol.PLAYERJOIN_RES))
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data:
@@ -59,47 +62,54 @@ class Tasks:
             player_dict = PlayerBuilder.create_player()
             player_dict[PlayerBuilder.NAME_KEY] = player_name
             player_handler.update_player(player_dict)
-            compressed_player = Compressor.compress(player_dict)
             conn.send(Hasher.enhash(Protocol.PLAYEROBJ_RES))
-            conn.send(compressed_player + b' ' * (Protocol.BUFFER_SIZE - len(compressed_player) % Protocol.BUFFER_SIZE))
-            conn.send(Hasher.enhash(Protocol.PLAYEROBJ_EOS))
-        return player_name if player_name else str()
+        return player_name
 
     @staticmethod
-    def game_state(conn, player_handler, data: bytes) -> None:
+    def local_game_state(conn):
+        """
+        Task for requesting a local game state. This is only for specific needs like player data.
+        """
+        conn.send(Hasher.enhash(Protocol.SENDLCGAME_REQ))
+
+    @staticmethod
+    def game_state(conn, player_handler) -> None:
         """
         Task for sending the overall game state to a client.
         """
-        if not data or data != Hasher.enhash(Protocol.GAMEUPDATE_REQ):
+        data = conn.recv(Protocol.BUFFER_SIZE)
+        if not data or data != Hasher.enhash(Protocol.SENDGLGAME_REQ):
             return
-        conn.send(Hasher.enhash(Protocol.GAMEUPDATE_RES))
+        conn.send(Hasher.enhash(Protocol.SENDGLGAME_RES))
         compressed_players_obj = Compressor.compress(player_handler.get_players())
-        conn.send(compressed_players_obj + b' ' * (Protocol.BUFFER_SIZE - len(compressed_players_obj) % Protocol.BUFFER_SIZE))
-        conn.send(Hasher.enhash(Protocol.GAMEUPDATE_EOS))
+        conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
 
     @staticmethod
-    def incoming_packets(conn, player_handler, data: bytes) -> None:
+    def incoming_packets(conn, player_handler) -> None:
         """
-        Task for handling incoming packets
+        Task for handling incoming packets.
         """
+        data = conn.recv(Protocol.BUFFER_SIZE)
         if not data or data[:len(Protocol.PACKET_MAGIC)] != to_bytes(Protocol.PACKET_MAGIC):
             return
-        #print('incoming packet')
-        packet = b''
-        data = data[len(Protocol.PACKET_MAGIC):]
-        while data != Hasher.enhash(Protocol.PACKET_EOS):
-            #print(f'Got data: {data}')
-            packet += data
-            data = conn.recv(Protocol.BUFFER_SIZE)
-        decompressed_packet = Compressor.decompress(packet)
-        if not isinstance(decompressed_packet, dict):
-            print('Packet received is not of instance \'dict\'')
+        length = int(data[len(Protocol.PACKET_MAGIC):len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE], 16)
+        if not length:
             return
-        #print(decompressed_packet)
+        packet = b''
+        data = data[len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE:]
+        length += len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE
+        for i in range(ceil(length / Protocol.BUFFER_SIZE)):
+            if i != 0:
+                data = conn.recv(Protocol.BUFFER_SIZE)
+            packet += data
+        decompressed_packet = Compressor.decompress(packet.strip())
+        if not isinstance(decompressed_packet, dict):
+            logger.warning('Packet received is not of instance \'dict\', ignoring.')
+            return
         type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
         #print(f'Received packet of type {type_id}.')
-        if type_id == BaseBuilder.PLAYER_MOVE_COMMAND_ID:
-            player_handler.move_player(decompressed_packet)
+        if type_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
+            player_handler.update_player_position(decompressed_packet)
 
     @staticmethod
     def player_hit(conn, player_handler, data: bytes) -> None:
