@@ -70,31 +70,30 @@ class ServerTasks:
         """
         Task for requesting a local game state. This is only for specific needs like player data.
         """
-        conn.send(Hasher.enhash(Protocol.SENDLCGAME_REQ))
+        conn.send(Hasher.enhash(Protocol.LCGAME_REQ))
 
     @staticmethod
-    def game_state(conn, player_handler) -> None:
+    def game_state(conn, data: bytes, player_handler) -> None:
         """
         Task for sending the overall game state to a client.
         """
-        data = conn.recv(Protocol.BUFFER_SIZE)
-        if not data or data != Hasher.enhash(Protocol.SENDGLGAME_REQ):
+        if not data or data != Hasher.enhash(Protocol.GLGAME_REQ):
             return
-        conn.send(Hasher.enhash(Protocol.SENDGLGAME_RES))
+        conn.send(Hasher.enhash(Protocol.GLGAME_RES))
         compressed_players_obj = Compressor.compress(player_handler.get_players())
         conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
 
     @staticmethod
-    def incoming_packets(conn, player_handler) -> None:
+    def incoming_packets(conn, data: bytes, player_handler) -> bool:
         """
         Task for handling incoming packets.
+        Return True if packet is received and is valid, otherwise False
         """
-        data = conn.recv(Protocol.BUFFER_SIZE)
         if not data or data[:len(Protocol.PACKET_MAGIC)] != to_bytes(Protocol.PACKET_MAGIC):
-            return
+            return False
         length = int(data[len(Protocol.PACKET_MAGIC):len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE], 16)
         if not length:
-            return
+            return False
         packet = b''
         data = data[len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE:]
         length += len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE
@@ -105,11 +104,12 @@ class ServerTasks:
         decompressed_packet = Compressor.decompress(packet.strip())
         if not isinstance(decompressed_packet, dict):
             logger.warning('Packet received is not of instance \'dict\', ignoring.')
-            return
+            return False
         type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
-        #print(f'Received packet of type {type_id}.')
+        conn.send(Hasher.enhash(Protocol.PACKETRECV_RES))
         if type_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
             player_handler.update_player_position(decompressed_packet)
+        return True
 
     @staticmethod
     def player_hit(conn, player_handler, data: bytes) -> None:

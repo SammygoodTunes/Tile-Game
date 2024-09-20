@@ -47,7 +47,6 @@ class PlayerHandler:
         """
         if not player_packet:
             return
-        print(player_packet)
         index = self.get_player(player_packet['name'])['index']
         if index is None:
             self.track_player(player_packet)
@@ -56,6 +55,7 @@ class PlayerHandler:
         self._players[index]['previous_y'] = self._players[index]['y']
         self._players[index]['x'] = player_packet['x']
         self._players[index]['y'] = player_packet['y']
+        #print("Server Players:", self._players)
 
 
     def untrack_player(self, player_name: str) -> None:

@@ -37,24 +37,28 @@ class Server:
             ServerTasks.map_data(conn, addr, self.world_handler)
             player_name = ServerTasks.player_join(conn, self.player_handler)
             ServerTasks.local_game_state(conn)
-            ServerTasks.incoming_packets(conn, self.player_handler)
-            ServerTasks.game_state(conn, self.player_handler)
+            data = conn.recv(Protocol.BUFFER_SIZE)
+            ServerTasks.incoming_packets(conn, data, self.player_handler)
+            data = conn.recv(Protocol.BUFFER_SIZE)
+            ServerTasks.game_state(conn, data, self.player_handler)
         except OSError:
             running = False
         print(f'Connection from: {addr}')
         self.player_count += 1
+        success: bool = True
         while running:
             try:
                 if self.state.value == ServerStates.IDLE:
                     running = False
                     continue
-                ServerTasks.local_game_state(conn)
                 data = conn.recv(Protocol.BUFFER_SIZE)
                 #print(f'Message from {addr}: {data}')
                 running = not ServerTasks.disconnection(data)
                 # Tasks.player_hit(conn, self.player_handler, data)
-                ServerTasks.incoming_packets(conn, self.player_handler)
-                ServerTasks.game_state(conn, self.player_handler)
+                ServerTasks.game_state(conn, data, self.player_handler)
+                if success:
+                    ServerTasks.local_game_state(conn)
+                success = ServerTasks.incoming_packets(conn, data, self.player_handler)
                 sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
             except ConnectionResetError:
                 running = False

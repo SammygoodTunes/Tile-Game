@@ -73,6 +73,7 @@ class Connection:
                 self.state = ConnectionStates.REFUSED
                 return
 
+            self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
             self.player_manager.set_players(ClientTasks.get_global_game_state(self.sock))
 
             if self.player_manager.get_player(player_name=player_name) is None:
@@ -123,15 +124,17 @@ class Connection:
         """
         Update and verify the connection every so often.
         """
+        success: bool = True
+
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
-                self.sock.send(Hasher.enhash(Protocol.SENDGLGAME_REQ))
-                data = self.sock.recv(Protocol.BUFFER_SIZE)
-
-                ClientTasks.send_local_player(self.sock, self.player_manager, data=data)
-
-                players = ClientTasks.get_global_game_state(self.sock, data=data)
+                if success:
+                    self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
+                players = ClientTasks.get_global_game_state(self.sock)
                 self.player_manager.set_players(players)
+                success = players is not None
+                if success:
+                    ClientTasks.send_local_player(self.sock, self.player_manager)
 
                 '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
                     print('Client: received hit response, sending hit player name============================')

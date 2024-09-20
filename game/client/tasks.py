@@ -63,38 +63,35 @@ class ClientTasks:
         return data and data == Hasher.enhash(Protocol.PLAYEROBJ_RES)
 
     @staticmethod
-    def send_local_player(sock, player_manager, data=None) -> bool:
+    def send_local_player(sock, player_manager) -> bool:
         """
         Task for sending the local player to the server.
-        Return True if the local player packet is sent, otherwise False.
+        Return True if the local player packet was sent to and received by the server, otherwise False.
         """
-        if data is None:
-            data = sock.recv(Protocol.BUFFER_SIZE)
-        if not data or data != Hasher.enhash(Protocol.SENDLCGAME_REQ):
+        data = sock.recv(Protocol.BUFFER_SIZE)
+        if not data or data != Hasher.enhash(Protocol.LCGAME_REQ):
             return False
         packet = player_manager.packetise_player()
         sock.send(fill(to_bytes(Protocol.PACKET_MAGIC) + hex_len(Compressor.compress(packet)) + Compressor.compress(packet)))
-        return True
+        data = sock.recv(Protocol.BUFFER_SIZE)
+        return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)
 
     @staticmethod
-    def get_global_game_state(sock, data=None) -> list | None:
+    def get_global_game_state(sock) -> list | None:
         """
         Task for receiving the global server-side game state.
         Return the game state list object if received successfully, otherwise None.
         """
-        if data is None:
-            sock.send(Hasher.enhash(Protocol.SENDGLGAME_REQ))
-            data = sock.recv(Protocol.BUFFER_SIZE)
-        if not data or data != Hasher.enhash(Protocol.SENDGLGAME_RES):
+        data = sock.recv(Protocol.BUFFER_SIZE)
+        if not data or data != Hasher.enhash(Protocol.GLGAME_RES):
             return None
 
         compressed_players_obj = b''
         data = sock.recv(Protocol.BUFFER_SIZE)
-        length = int(data[:Packet.DATA_SIZE], 16) + Packet.DATA_SIZE
+        length = int(data[:Packet.DATA_SIZE], 16) + Packet.DATA_SIZE + 1
         data = data[Packet.DATA_SIZE:]
         for i in range(ceil(length / Protocol.BUFFER_SIZE)):
             if i != 0:
                 data = sock.recv(Protocol.BUFFER_SIZE)
             compressed_players_obj += data
-        print(Compressor.decompress(compressed_players_obj.strip()))
         return Compressor.decompress(compressed_players_obj.strip())
