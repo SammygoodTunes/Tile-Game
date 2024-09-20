@@ -3,6 +3,7 @@ from math import ceil
 from game.data.states import ConnectionStates
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
 from game.network.protocol import Protocol
+from game.utils.exceptions import PlayerWithSameNameError
 
 
 class ClientTasks:
@@ -57,9 +58,12 @@ class ClientTasks:
     def send_player_name(sock, player_name) -> bool:
         """
         Task for sending the client's name to the server.
+        Raise exception when player name is already taken.
         """
         sock.send(player_name.encode(Protocol.ENCODING))
         data = sock.recv(Protocol.BUFFER_SIZE)
+        if data == Hasher.enhash(Protocol.NAMEALREXIST_ERR):
+            raise PlayerWithSameNameError
         return data and data == Hasher.enhash(Protocol.PLAYEROBJ_RES)
 
     @staticmethod

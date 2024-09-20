@@ -59,9 +59,12 @@ class Connection:
             self.state = ConnectionStates.GETDATA
             self.data = ClientTasks.get_map_data(self.sock)
 
-            if not ClientTasks.player_join(self.sock):
-                self.state = ConnectionStates.REFUSED
-                return
+            try:
+                if not ClientTasks.player_join(self.sock):
+                    self.state = ConnectionStates.REFUSED
+                    return
+            except PlayerWithSameNameError:
+                raise PlayerWithSameNameError
 
             if not ClientTasks.send_player_name(self.sock, player_name):
                 self.state = ConnectionStates.REFUSED
@@ -69,16 +72,13 @@ class Connection:
 
             self.player_manager.local_player.set_player_name(player_name)
 
+            self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
+            self.player_manager.set_players(ClientTasks.get_global_game_state(self.sock))
+
             if not ClientTasks.send_local_player(self.sock, self.player_manager):
                 self.state = ConnectionStates.REFUSED
                 return
 
-            self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
-            self.player_manager.set_players(ClientTasks.get_global_game_state(self.sock))
-
-            if self.player_manager.get_player(player_name=player_name) is None:
-                self.state = ConnectionStates.REFUSED
-                raise PlayerWithSameNameError
             self.state = ConnectionStates.SUCCESS
         except PlayerWithSameNameError:
             self.state = ConnectionStates.BADNAME

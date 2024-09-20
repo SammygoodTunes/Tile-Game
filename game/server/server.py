@@ -36,11 +36,11 @@ class Server:
             running = ServerTasks.recognition(conn, addr)
             ServerTasks.map_data(conn, addr, self.world_handler)
             player_name = ServerTasks.player_join(conn, self.player_handler)
+            data = conn.recv(Protocol.BUFFER_SIZE)
+            ServerTasks.game_state(conn, data, self.player_handler)
             ServerTasks.local_game_state(conn)
             data = conn.recv(Protocol.BUFFER_SIZE)
             ServerTasks.incoming_packets(conn, data, self.player_handler)
-            data = conn.recv(Protocol.BUFFER_SIZE)
-            ServerTasks.game_state(conn, data, self.player_handler)
         except OSError:
             running = False
         print(f'Connection from: {addr}')

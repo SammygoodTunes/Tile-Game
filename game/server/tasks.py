@@ -54,15 +54,19 @@ class ServerTasks:
         """
         player_name: str = str()
         data = conn.recv(Protocol.BUFFER_SIZE)
-        if data and data == Hasher.enhash(Protocol.PLAYERJOIN_REQ):
+        if not data or data == Hasher.enhash(Protocol.PLAYERJOIN_REQ):
             conn.send(Hasher.enhash(Protocol.PLAYERJOIN_RES))
         data = conn.recv(Protocol.BUFFER_SIZE)
-        if data:
-            player_name = data.decode(Protocol.ENCODING)
-            player_dict = PlayerBuilder.create_player()
-            player_dict[PlayerBuilder.NAME_KEY] = player_name
-            player_handler.update_player(player_dict)
-            conn.send(Hasher.enhash(Protocol.PLAYEROBJ_RES))
+        if not data:
+            return str()
+        player_name = data.decode(Protocol.ENCODING)
+        player_dict = PlayerBuilder.create_player()
+        player_dict[PlayerBuilder.NAME_KEY] = player_name
+        if player_handler.get_player(player_name)['index'] is not None:
+            conn.send(Hasher.enhash(Protocol.NAMEALREXIST_ERR))
+            return str()
+        player_handler.track_player(player_dict)
+        conn.send(Hasher.enhash(Protocol.PLAYEROBJ_RES))
         return player_name
 
     @staticmethod

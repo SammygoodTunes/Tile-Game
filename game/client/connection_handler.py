@@ -82,5 +82,4 @@ class ConnectionHandler:
             print('Cannot queue packet as connection has not been started.')
             return
         self.connection.packet_queue.append(packet)
-        print(f'[{len(self.connection.packet_queue)}] Queued packet: {packet}')
 
