@@ -23,7 +23,7 @@ class CreditsScreen(Screen):
         self.prog_title_label = Label("Programming by:")
         self.art_title_label = Label("Art by:")
         self.prog_value_label = Label("SammygoodTunes").set_colour((255, 255, 0))
-        self.art_value_label = Label("Pickmonde, SammygoodTunes").set_colour((255, 255, 0))
+        self.art_value_label = Label("Pickmonde\nJatzylap\nSammygoodTunes").set_colour((255, 255, 0))
         self.back_button = Button("Back")
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 

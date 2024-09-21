@@ -1,7 +1,7 @@
 
 from pygame import Surface
 
-from game.data.properties import ScreenProperties
+from game.data.properties import ScreenProperties, ServerProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.nametag import NameTag
@@ -19,7 +19,8 @@ class PlayerListScreen(Screen):
         self.title_label = Label('Player list')
         self.player_list: tuple[NameTag] = tuple()
         self._faded_surface: Surface = Surface((0, 0))
-        self._count = 0
+        self._playercount_surface: Surface = Surface((0, 0))
+        self.count_label = Label('ONLINE   0/10').set_font_sizes((7, 8, 9)).set_colour((0, 255, 0))
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
     def draw(self) -> None:
@@ -29,9 +30,12 @@ class PlayerListScreen(Screen):
         self.update_ui()
         if not self._enabled:
             return
-        self.game.screen.blit(self._faded_surface, (self.game.width // 2 - self._faded_surface.get_width() // 2,
-                                                    self.game.height // 2 - self._faded_surface.get_height() // 2))
+        self.game.screen.blit(self._faded_surface, (self.game.width / 2 - self._faded_surface.get_width() / 2,
+                                                    self.game.height / 2 - self._faded_surface.get_height() / 2))
+        self.game.screen.blit(self._playercount_surface, (self.game.width / 2 + self._faded_surface.get_width() / 2 - self._playercount_surface.get_width(),
+                                                          self.game.height / 2 - self._faded_surface.get_height() / 2 - self._playercount_surface.get_height()))
         self.title_label.draw(self.game.screen)
+        self.count_label.draw(self.game.screen)
         for nametag in self.player_list:
             nametag.draw(self.game.screen)
 
@@ -42,12 +46,11 @@ class PlayerListScreen(Screen):
         if self.game.client.connection_handler.connection is None:
             return
         players = self.game.client.connection_handler.connection.player_manager.players
-        if self._count == len(players) and not bypass:
-            return
         height = 0
-        self._count = len(players)
         self.player_list = tuple()
+        self.count_label.set_text(f'ONLINE   {len(players)}/{ServerProperties.MAX_PLAYERS}')
         self.title_label.update(self.game)
+        self.count_label.update(self.game)
         for player in players:
             nametag = (NameTag(player['name']).center_horizontally(0, self.game.width).set_state(True))
             nametag.set_y(height)
@@ -55,10 +58,21 @@ class PlayerListScreen(Screen):
             height += nametag.get_height()
             self.player_list += (nametag,)
         self.title_label.center_horizontally(0, self.game.width)
-        self._faded_surface = Surface((self.game.width // 2, height + self.title_label.get_total_height() + 10))
+        self.count_label.center_horizontally(
+            self.game.width / 2 + self._faded_surface.get_width() / 2 - self._playercount_surface.get_width(),
+            self._playercount_surface.get_width()
+        )
+        self.count_label.center_vertically(
+            self.game.height / 2 - self._faded_surface.get_height() / 2 - self._playercount_surface.get_height(),
+            self._playercount_surface.get_height()
+        )
+        self._faded_surface = Surface((self.game.width / 2, height + self.title_label.get_total_height() + 10))
         self._faded_surface.fill((0, 0, 0))
         self._faded_surface.set_alpha(ScreenProperties.ALPHA)
-        self.title_label.set_y(self.game.height // 2 - self._faded_surface.get_height() // 2)
+        self._playercount_surface = Surface((self.count_label.get_total_width() + 20, self.count_label.get_total_height() + 10))
+        self._playercount_surface.fill((0, 0, 0))
+        self._playercount_surface.set_alpha(ScreenProperties.ALPHA)
+        self.title_label.set_y(self.game.height / 2 - self._faded_surface.get_height() / 2)
         for i, nametag in enumerate(self.player_list):
             nametag.set_y(self.title_label.get_y() + self.title_label.get_total_height() + i * nametag.get_height())
             nametag.update(self.game)
@@ -69,5 +83,6 @@ class PlayerListScreen(Screen):
         """
         super().set_state(state)
         self.title_label.set_state(state)
+        self.count_label.set_state(state)
         for nametag in self.player_list:
             nametag.set_state(state)
