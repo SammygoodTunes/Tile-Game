@@ -71,6 +71,8 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('Disconnected.').set_colour((255, 0, 0))
         elif code == ConnectionStates.BADNAME:
             self.info_label.set_text('Player name is already taken.').set_colour((255, 0, 0))
+        elif code == ConnectionStates.MAXIMUM:
+            self.info_label.set_text('Server is full. Come back later!').set_colour((255, 0, 0))
         elif code == ConnectionStates.ERROR:
             self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
         elif code == ConnectionStates.SERVFAIL:

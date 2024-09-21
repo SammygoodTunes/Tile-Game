@@ -10,7 +10,7 @@ from game.client.player_manager import PlayerManager
 from game.client.tasks import ClientTasks
 from game.data.properties import ServerProperties
 from game.data.states import ConnectionStates
-from game.utils.exceptions import PlayerWithSameNameError
+from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
 from game.network.protocol import Protocol
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
@@ -59,12 +59,9 @@ class Connection:
             self.state = ConnectionStates.GETDATA
             self.data = ClientTasks.get_map_data(self.sock)
 
-            try:
-                if not ClientTasks.player_join(self.sock):
-                    self.state = ConnectionStates.REFUSED
-                    return
-            except PlayerWithSameNameError:
-                raise PlayerWithSameNameError
+            if not ClientTasks.player_join(self.sock):
+                self.state = ConnectionStates.REFUSED
+                return
 
             if not ClientTasks.send_player_name(self.sock, player_name):
                 self.state = ConnectionStates.REFUSED
@@ -80,8 +77,10 @@ class Connection:
                 return
 
             self.state = ConnectionStates.SUCCESS
-        except PlayerWithSameNameError:
+        except PlayerNameAlreadyExists:
             self.state = ConnectionStates.BADNAME
+        except MaxPlayersReached:
+            self.state = ConnectionStates.MAXIMUM
         except ConnectionRefusedError:
             self.state = ConnectionStates.REFUSED
         except TimeoutError:

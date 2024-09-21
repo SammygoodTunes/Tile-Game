@@ -46,10 +46,19 @@ class ZeroOrLessSpawnPlayerAttempts(Exception):
         super().__init__(message)
 
 
-class PlayerWithSameNameError(Exception):
+class PlayerNameAlreadyExists(Exception):
     """
     Class for creating the exception caused by joining a server with an in-game name that is already taken.
     """
 
     def __init__(self, message="Your current player name is already taken, please change it."):
+        super().__init__(message)
+
+
+class MaxPlayersReached(Exception):
+    """
+    Class for creating the exception caused by reaching the maximum player count of a server.
+    """
+
+    def __init__(self, message="The player number limit has been reached, please come back later."):
         super().__init__(message)

@@ -2,9 +2,11 @@
 from math import ceil
 
 from game.data.items import Items
+from game.data.properties import ServerProperties
 from game.network.builders import PlayerBuilder, BaseBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol
+from game.server.entity.player.player_handler import PlayerHandler
 from game.utils.logger import logger
 
 
@@ -47,12 +49,11 @@ class ServerTasks:
             print(f'Sent!')
 
     @staticmethod
-    def player_join(conn, player_handler) -> str:
+    def player_join(conn, player_handler: PlayerHandler) -> str:
         """
         Task for joining a client player to the server.
         Returns the received player name.
         """
-        player_name: str = str()
         data = conn.recv(Protocol.BUFFER_SIZE)
         if not data or data == Hasher.enhash(Protocol.PLAYERJOIN_REQ):
             conn.send(Hasher.enhash(Protocol.PLAYERJOIN_RES))
@@ -64,6 +65,9 @@ class ServerTasks:
         player_dict[PlayerBuilder.NAME_KEY] = player_name
         if player_handler.get_player(player_name)['index'] is not None:
             conn.send(Hasher.enhash(Protocol.NAMEALREXIST_ERR))
+            return str()
+        if len(player_handler.get_players()) >= ServerProperties.MAX_PLAYERS:
+            conn.send(Hasher.enhash(Protocol.MAXPLAYERS_ERR))
             return str()
         player_handler.track_player(player_dict)
         conn.send(Hasher.enhash(Protocol.PLAYEROBJ_RES))
@@ -77,7 +81,7 @@ class ServerTasks:
         conn.send(Hasher.enhash(Protocol.LCGAME_REQ))
 
     @staticmethod
-    def game_state(conn, data: bytes, player_handler) -> None:
+    def game_state(conn, data: bytes, player_handler: PlayerHandler) -> None:
         """
         Task for sending the overall game state to a client.
         """
@@ -88,7 +92,7 @@ class ServerTasks:
         conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
 
     @staticmethod
-    def incoming_packets(conn, data: bytes, player_handler) -> bool:
+    def incoming_packets(conn, data: bytes, player_handler: PlayerHandler) -> bool:
         """
         Task for handling incoming packets.
         Return True if packet is received and is valid, otherwise False
@@ -116,7 +120,7 @@ class ServerTasks:
         return True
 
     @staticmethod
-    def player_hit(conn, player_handler, data: bytes) -> None:
+    def player_hit(conn, data: bytes, player_handler: PlayerHandler) -> None:
         if not data or data != Hasher.enhash(Protocol.HIT_REQ):
             return
         print('Server: Received hit request, sending response')

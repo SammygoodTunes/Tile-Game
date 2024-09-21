@@ -3,7 +3,7 @@ from math import ceil
 from game.data.states import ConnectionStates
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
 from game.network.protocol import Protocol
-from game.utils.exceptions import PlayerWithSameNameError
+from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 
 
 class ClientTasks:
@@ -63,7 +63,9 @@ class ClientTasks:
         sock.send(player_name.encode(Protocol.ENCODING))
         data = sock.recv(Protocol.BUFFER_SIZE)
         if data == Hasher.enhash(Protocol.NAMEALREXIST_ERR):
-            raise PlayerWithSameNameError
+            raise PlayerNameAlreadyExists
+        if data == Hasher.enhash(Protocol.MAXPLAYERS_ERR):
+            raise MaxPlayersReached
         return data and data == Hasher.enhash(Protocol.PLAYEROBJ_RES)
 
     @staticmethod
