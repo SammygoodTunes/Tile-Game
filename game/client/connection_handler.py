@@ -3,6 +3,7 @@ from pygame.event import Event
 
 from game.client.connection import Connection, Tasks
 from game.data.states import ConnectionStates
+from game.gui.label import Label
 
 
 class ConnectionHandler:
@@ -65,11 +66,6 @@ class ConnectionHandler:
             game.screens.pause_screen.set_state(False)
             game.screens.server_connect_screen.set_state(True)
 
-    def update_ui(self, game):
-        if not self.connection:
-            return
-        self.connection.player_manager.player.update_ui(game)
-
     def draw_other_players(self, game, delta) -> None:
         """
         Display all other server players.
@@ -78,8 +74,15 @@ class ConnectionHandler:
         self.connection.player_manager.draw_players(game.client.player.get_player_name(), delta, game)
 
     def queue_packet(self, packet: dict) -> None:
+        """
+        Queue a packet in the packet queue.
+        """
         if not self.connection:
             print('Cannot queue packet as connection has not been started.')
             return
         self.connection.packet_queue.append(packet)
 
+    def get_ping(self) -> int:
+        if not self.connection:
+            return 0
+        return self.connection.ping

@@ -49,14 +49,23 @@ class Client:
             return
         game.clear((round(20 * sin(ticks / 5000) + 100), round(10 * sin(ticks / 2500) + 80), 150))
 
-    def update_ui(self, game):
-        self.player.update_ui(game)
+    def update_ui(self):
+        """
+        Update the client UI.
+        """
+        self.player.update_ui()
         self.world.update_ui()
 
     def events(self, game, e: Event):
+        """
+        Handle the client events.
+        """
         if not game.paused and game.start_game:
             self.player.events(game, self.world.get_map(), e)
 
     def stop(self):
+        """
+        Stop the client connection.
+        """
         if self.connection_handler.connection:
             self.connection_handler.connection.disconnect()

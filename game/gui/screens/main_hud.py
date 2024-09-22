@@ -21,6 +21,7 @@ class MainHud(Screen):
         self.version_label = Label(f'v{get_game_property(APP_VERSION).strip()}').set_font_sizes(
             (8, 10, 12)).set_colour((255, 255, 10))
         self.score_label = Label()
+        self.ping_label = Label()
         self.camera_label = Label()
         self.position_label = Label()
         self.health_bar = (ProgressBar(title="Player health", value=100)
@@ -42,8 +43,12 @@ class MainHud(Screen):
                     f"Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}")
                 self.camera_label.draw(self.game.screen)
                 self.position_label.draw(self.game.screen)
-            self.score_label.set_text(f"Score: {self.game.client.player.score}")
+            self.score_label.set_text(f'Score: {self.game.client.player.score}')
+            self.ping_label.set_text(f'Ping: {self.game.client.connection_handler.get_ping()} (ms)')
+            self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
+            self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 2)
             self.score_label.draw(self.game.screen)
+            self.ping_label.draw(self.game.screen)
             self.health_bar.draw(self.game.screen)
             self.hotbar.draw(self.game.screen)
 
@@ -55,6 +60,7 @@ class MainHud(Screen):
         self.health_bar.update(self.game)
         self.hotbar.update(self.game)
         self.score_label.update(self.game)
+        self.ping_label.update(self.game)
         self.camera_label.update(self.game)
         self.position_label.update(self.game)
         self.health_bar.center_horizontally(0, self.game.width).set_y(self.health_bar.get_height())
@@ -68,6 +74,7 @@ class MainHud(Screen):
         self.position_label.set_x(4)
         self.position_label.set_y(y)
         self.health_bar.refresh()
+        self.ping_label.refresh()
         self.score_label.refresh()
         self.position_label.refresh()
 
@@ -77,6 +84,7 @@ class MainHud(Screen):
         """
         super().set_state(state)
         self.score_label.set_state(state)
+        self.ping_label.set_state(state)
         self.camera_label.set_state(state)
         self.position_label.set_state(state)
         self.health_bar.set_state(state)

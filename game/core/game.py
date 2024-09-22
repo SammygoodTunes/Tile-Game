@@ -72,7 +72,7 @@ class Game(Window):
         Update all the GUI-related elements.
         """
         self.update_ui()
-        self.client.update_ui(self)
+        self.client.update_ui()
 
     def is_running(self) -> bool:
         """

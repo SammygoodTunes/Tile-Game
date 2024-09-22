@@ -325,7 +325,7 @@ class Player:
         self.edges[PlayerStates.MOVE_DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
         self.edges[PlayerStates.MOVE_RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
 
-    def update_ui(self, game) -> None:
+    def update_ui(self) -> None:
         """
         Update the player GUI.
         """

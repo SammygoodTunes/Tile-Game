@@ -3,7 +3,7 @@ from math import ceil
 from pygame.event import Event
 import socket
 from threading import Thread
-from time import sleep
+from time import sleep, time
 import traceback
 
 from game.client.player_manager import PlayerManager
@@ -39,6 +39,7 @@ class Connection:
         self.packet_queue: list[dict] = list()  # FIFO
         self.player_manager = PlayerManager(client.player)
         self.data: any = None
+        self.ping: int = 0
         self.hit_player = str()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -124,9 +125,11 @@ class Connection:
         Update and verify the connection every so often.
         """
         success: bool = True
+        self.sock.settimeout(10.0)
 
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
+                packet_recv_timestamp = time()
                 if success:
                     self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
                 players = ClientTasks.get_global_game_state(self.sock)
@@ -138,7 +141,10 @@ class Connection:
                 '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
                     print('Client: received hit response, sending hit player name============================')
                     self.sock.send(fill(self.hit_player.encode(Protocol.ENCODING)))'''
+                self.ping = round((time() - packet_recv_timestamp) * 1000)
                 sleep(1 / ServerProperties.TICKS_PER_SECOND)
+            except TimeoutError:
+                self.state = ConnectionStates.TIMEOUT
             except BrokenPipeError:
                 self.state = ConnectionStates.DISCONNECTED
             except OSError:
