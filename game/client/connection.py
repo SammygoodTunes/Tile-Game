@@ -30,8 +30,8 @@ class XSocket(socket.socket):
 
     def __init__(self, family=socket.AF_INET, type_=socket.SOCK_STREAM, proto=0, fileno=None):
         super().__init__(family, type_, proto, fileno)
-        self._sent = 0
-        self._recv = 0
+        self._sent: int = 0
+        self._recv: int = 0
 
     def send(self, buffer: bytes, flags: int = 0) -> int:
         """

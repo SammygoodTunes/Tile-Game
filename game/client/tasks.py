@@ -49,7 +49,7 @@ class ClientTasks:
         Task for joining a player to the server.
         Return True if the response from the server is received, otherwise False.
         """
-        bytes_sent = sock.send(Hasher.enhash(Protocol.PLAYERJOIN_REQ))
+        sock.send(Hasher.enhash(Protocol.PLAYERJOIN_REQ))
         data = sock.recv(Protocol.BUFFER_SIZE)
         return data and data == Hasher.enhash(Protocol.PLAYERJOIN_RES)
 

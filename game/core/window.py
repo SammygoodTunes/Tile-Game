@@ -72,9 +72,9 @@ class Window:
         if self.screens.options_screen.show_fps_box.is_checked():
             if self.timer != pygame.time.get_ticks() // 1000:
                 self.fps_label.set_text(f"FPS: {self.clock.get_fps(): .0f}")
-                self.fps_label.set_x(self.width - self.fps_label.get_total_width() - 4)
-                self.fps_label.set_y(-8)
                 self.timer = pygame.time.get_ticks() // 1000
+            self.fps_label.set_x(self.width - self.fps_label.get_total_width() - 4)
+            self.fps_label.set_y(-8)
             self.fps_label.draw(self.screen)
 
     def update_ui(self) -> None:
