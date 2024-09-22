@@ -2,6 +2,11 @@
 # Server logs
 game/logs/
 
+# PyInstaller
+dist/
+build/
+*.spec
+
 # Python cache
 __pycache__/
 */__pycache__/
