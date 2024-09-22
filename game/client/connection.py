@@ -1,5 +1,4 @@
 
-from math import ceil
 from pygame.event import Event
 import socket
 from threading import Thread
@@ -13,7 +12,7 @@ from game.data.states import ConnectionStates
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
 from game.network.protocol import Protocol
-from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
+from game.network.packet import Hasher
 
 
 class Tasks:
@@ -24,13 +23,52 @@ class Tasks:
     CONNECT, UPDATE = range(0, 2)
 
 
+class XSocket(socket.socket):
+    """
+    Class for socket with extra byte counter.
+    """
+
+    def __init__(self, family=socket.AF_INET, type_=socket.SOCK_STREAM, proto=0, fileno=None):
+        super().__init__(family, type_, proto, fileno)
+        self._sent = 0
+        self._recv = 0
+
+    def send(self, buffer: bytes, flags: int = 0) -> int:
+        """
+        Override socket send with counter.
+        """
+        bufsize = super().send(buffer, flags)
+        self._sent += bufsize
+        return bufsize
+
+    def recv(self, bufsize: int, flags: int = 0) -> bytes:
+        """
+        Override socket recv with counter.
+        """
+        buffer = super().recv(bufsize, flags)
+        self._recv += len(buffer)
+        return buffer
+
+    def get_sent(self) -> int:
+        """
+        Get total bytes sent to the server since the existence of the socket.
+        """
+        return self._sent
+
+    def get_recv(self) -> int:
+        """
+        Get total bytes received from the server since the existence of the socket.
+        """
+        return self._recv
+
+
 class Connection:
     """
     Class for creating a server connection.
     """
 
     def __init__(self, host: str, port: int, client) -> None:
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock = XSocket()
         self.sock.settimeout(30.0)
         self.sock.setblocking(True)
         self.host = host
@@ -40,6 +78,7 @@ class Connection:
         self.player_manager = PlayerManager(client.player)
         self.data: any = None
         self.ping: int = 0
+        self.total_data_sent: int = 0 # in bytes
         self.hit_player = str()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 

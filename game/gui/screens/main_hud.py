@@ -22,6 +22,8 @@ class MainHud(Screen):
             (8, 10, 12)).set_colour((255, 255, 10))
         self.score_label = Label()
         self.ping_label = Label()
+        self.data_sent_label = Label()
+        self.data_recv_label = Label()
         self.camera_label = Label()
         self.position_label = Label()
         self.health_bar = (ProgressBar(title="Player health", value=100)
@@ -36,19 +38,30 @@ class MainHud(Screen):
         """
         Draw the screen and its components.
         """
+        c_handler = self.game.client.connection_handler
         if self._enabled:
             if self.game.screens.options_screen.debug_info_box.is_checked():
-                self.camera_label.set_text(f"Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}")
+                self.data_sent_label.set_text(f'Data sent: {c_handler.get_total_data_sent():.3f} MB')
+                self.data_recv_label.set_text(f'Data received: {c_handler.get_total_data_received():.3f} MB')
+                self.camera_label.set_text(f'Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
                 self.position_label.set_text(
-                    f"Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}")
+                    f'Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
+                self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
+                self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
+                self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 4)
+                self.data_sent_label.set_x(self.game.width - self.data_sent_label.get_total_width() - 2)
+                self.data_sent_label.set_y(self.ping_label.get_y() + self.ping_label.get_total_height() // 2 + 2)
+                self.data_recv_label.set_x(self.game.width - self.data_recv_label.get_total_width() - 2)
+                self.data_recv_label.set_y(
+                    self.data_sent_label.get_y() + self.data_sent_label.get_total_height() // 2 + 2
+                )
+                self.ping_label.draw(self.game.screen)
+                self.data_sent_label.draw(self.game.screen)
+                self.data_recv_label.draw(self.game.screen)
                 self.camera_label.draw(self.game.screen)
                 self.position_label.draw(self.game.screen)
             self.score_label.set_text(f'Score: {self.game.client.player.score}')
-            self.ping_label.set_text(f'Ping: {self.game.client.connection_handler.get_ping()} (ms)')
-            self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
-            self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 2)
             self.score_label.draw(self.game.screen)
-            self.ping_label.draw(self.game.screen)
             self.health_bar.draw(self.game.screen)
             self.hotbar.draw(self.game.screen)
 
@@ -61,6 +74,8 @@ class MainHud(Screen):
         self.hotbar.update(self.game)
         self.score_label.update(self.game)
         self.ping_label.update(self.game)
+        self.data_sent_label.update(self.game)
+        self.data_recv_label.update(self.game)
         self.camera_label.update(self.game)
         self.position_label.update(self.game)
         self.health_bar.center_horizontally(0, self.game.width).set_y(self.health_bar.get_height())
@@ -75,6 +90,8 @@ class MainHud(Screen):
         self.position_label.set_y(y)
         self.health_bar.refresh()
         self.ping_label.refresh()
+        self.data_sent_label.refresh()
+        self.data_recv_label.refresh()
         self.score_label.refresh()
         self.position_label.refresh()
 
@@ -85,6 +102,8 @@ class MainHud(Screen):
         super().set_state(state)
         self.score_label.set_state(state)
         self.ping_label.set_state(state)
+        self.data_sent_label.set_state(state)
+        self.data_recv_label.set_state(state)
         self.camera_label.set_state(state)
         self.position_label.set_state(state)
         self.health_bar.set_state(state)

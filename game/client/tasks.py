@@ -1,6 +1,5 @@
 from math import ceil
 
-from game.data.states import ConnectionStates
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
 from game.network.protocol import Protocol
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
@@ -50,7 +49,7 @@ class ClientTasks:
         Task for joining a player to the server.
         Return True if the response from the server is received, otherwise False.
         """
-        sock.send(Hasher.enhash(Protocol.PLAYERJOIN_REQ))
+        bytes_sent = sock.send(Hasher.enhash(Protocol.PLAYERJOIN_REQ))
         data = sock.recv(Protocol.BUFFER_SIZE)
         return data and data == Hasher.enhash(Protocol.PLAYERJOIN_RES)
 

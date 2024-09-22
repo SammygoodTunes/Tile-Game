@@ -90,6 +90,22 @@ class ConnectionHandler:
             return 0
         return self.connection.ping
 
+    def get_total_data_sent(self) -> float:
+        """
+        Get the total data sent to the server, rounded to megabytes (not mebibytes).
+        """
+        if not self.connection:
+            return 0.0
+        return self.connection.sock.get_sent() / 1_000_000.0
+
+    def get_total_data_received(self) -> float:
+        """
+        Get the total data received from the server, rounded to megabytes (not mebibytes).
+        """
+        if not self.connection:
+            return 0.0
+        return self.connection.sock.get_recv() / 1_000_000.0
+
     def get_players(self) -> list:
         """
         Get the current players in the server, otherwise return an empty list if no connection has been established.

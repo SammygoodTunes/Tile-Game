@@ -28,9 +28,8 @@ class Window:
         self.timer: int = 0
         self.font: pygame.font.Font = pygame.font.Font(Window.FONT_PATH, 11)
         self.screens: Screens = Screens(self)
-        self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8)
-                                 .set_shadow_x(self.width - 73).set_shadow_y(-6)
-                                 .set_colour((240, 240, 240)).set_shadow_colour((25, 25, 25)))
+        self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8))
+
         self.paused: bool = False
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
@@ -73,6 +72,8 @@ class Window:
         if self.screens.options_screen.show_fps_box.is_checked():
             if self.timer != pygame.time.get_ticks() // 1000:
                 self.fps_label.set_text(f"FPS: {self.clock.get_fps(): .0f}")
+                self.fps_label.set_x(self.width - self.fps_label.get_total_width() - 4)
+                self.fps_label.set_y(-8)
                 self.timer = pygame.time.get_ticks() // 1000
             self.fps_label.draw(self.screen)
 
@@ -80,9 +81,8 @@ class Window:
         """
         Update all window GUI widgets.
         """
-        self.fps_label.set_auto_font_size(self.width, self.height, self.max_width, self.max_height)
-        self.fps_label.set_x(self.width - (self.fps_label.get_font_size() * 7) - 4).set_shadow_x(self.width - (self.fps_label.get_font_size() * 7) - 4 - 2)
-        self.fps_label.set_y(-self.fps_label.get_font_size() + 4).set_shadow_y(-self.fps_label.get_font_size() + 6)
+        self.fps_label.update(self)
+        self.fps_label.refresh()
         self.screens.update_ui()
 
     def toggle_fullscreen(self) -> None:
