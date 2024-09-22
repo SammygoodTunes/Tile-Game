@@ -19,11 +19,13 @@ class CreditsScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.options_label = Label("Credits")
-        self.prog_title_label = Label("Programming by:")
-        self.art_title_label = Label("Art by:")
-        self.prog_value_label = Label("SammygoodTunes").set_colour((255, 255, 0))
-        self.art_value_label = Label("Pickmonde\nJatzylap\nSammygoodTunes").set_colour((255, 255, 0))
+        self.options_label = Label('Credits')
+        self.prog_title_label = Label('Programming by:')
+        self.art_title_label = Label('Art by:')
+        self.font_title_label = Label('Font by:')
+        self.prog_value_label = Label('SammygoodTunes').set_colour((255, 255, 0))
+        self.art_value_label = Label('Pickmonde\nJatzylap\nSammygoodTunes').set_colour((255, 255, 0))
+        self.font_value_label = Label('OmegaPC777').set_colour((255, 255, 0))
         self.back_button = Button("Back")
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
@@ -56,13 +58,15 @@ class CreditsScreen(Screen):
             self.prog_value_label.draw(self.window.screen)
             self.art_title_label.draw(self.window.screen)
             self.art_value_label.draw(self.window.screen)
+            self.font_title_label.draw(self.window.screen)
+            self.font_value_label.draw(self.window.screen)
             self.back_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen GUI.
         """
-        y = -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1]
+        y = -50 - 40 - self.options_label.font.size(self.options_label.get_text())[1]
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
         self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
@@ -76,8 +80,14 @@ class CreditsScreen(Screen):
         self.art_title_label.center_with_offset(0, 0, self.window.width, self.window.height, -self.art_title_label.get_total_width() // 2 - 10, y)
         self.art_value_label.update(self.window)
         self.art_value_label.center_with_offset(0, 0, self.window.width, self.window.height, self.art_value_label.get_total_width() // 2 + 10, y)
+        y += self.font_title_label.get_total_height() * 3
+        self.font_title_label.update(self.window)
+        self.font_title_label.center_with_offset(0, 0, self.window.width, self.window.height, -self.font_title_label.get_total_width() // 2 - 10, y)
+        self.font_value_label.update(self.window)
+        self.font_value_label.center_with_offset(0, 0, self.window.width, self.window.height, self.font_value_label.get_total_width() // 2 + 10, y)
+        y += 20 + self.font_value_label.get_total_height()
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() * 2 + 5)
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
 
     def set_state(self, state: bool) -> None:
         """
@@ -89,4 +99,6 @@ class CreditsScreen(Screen):
         self.prog_value_label.set_state(state)
         self.art_title_label.set_state(state)
         self.art_value_label.set_state(state)
+        self.font_title_label.set_state(state)
+        self.font_value_label.set_state(state)
         self.back_button.set_state(state)
