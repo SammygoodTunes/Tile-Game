@@ -6,6 +6,7 @@ from game.data.properties import ScreenProperties
 from game.data.states import MapStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
+from game.network.builders import PlayerBuilder
 from game.utils.logger import logger
 
 
@@ -84,20 +85,40 @@ class MapScreen(Screen):
             rect(self.game.screen, (0, 0, 0), (self.game.width // 2 - self.scaled_map.get_width() // 2 - 2,
                                                self.game.height // 2 - self.scaled_map.get_height() // 2 - 2,
                                                self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 2, 4)
-            center_point = (
-                self.game.width // 2 - self.scaled_map.get_width() // 2 + (
-                        self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
-                        * (self.game.client.player.get_absolute_x(self.game.client.world.get_map()) + self.game.client.player.width // 2)
-                ),
-                self.game.height // 2 - self.scaled_map.get_height() // 2 + (
-                        self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
-                        * (self.game.client.player.get_absolute_y(self.game.client.world.get_map()) + self.game.client.player.height // 2)
-                ),
-            )
 
-            circle(self.game.screen, (255, 0, 0), center_point, 5)
-            circle(self.game.screen, (255, 255, 255), center_point, 5, 2)
-            circle(self.game.screen, (0, 0, 0), center_point, 6, 2)
+
+            for player in self.game.client.connection_handler.get_players():
+                is_client_player = player[PlayerBuilder.NAME_KEY] == self.game.client.player.get_player_name()
+                if is_client_player:
+                    center_point = (
+                        self.game.width // 2 - self.scaled_map.get_width() // 2 + (
+                                self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
+                                * (self.game.client.player.get_absolute_x(
+                            self.game.client.world.get_map()) + self.game.client.player.width // 2)
+                        ),
+                        self.game.height // 2 - self.scaled_map.get_height() // 2 + (
+                                self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
+                                * (self.game.client.player.get_absolute_y(
+                            self.game.client.world.get_map()) + self.game.client.player.height // 2)
+                        ),
+                    )
+                else:
+                    center_point = (
+                        self.game.width // 2 - self.scaled_map.get_width() // 2 + (
+                                self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
+                                * (int(player[PlayerBuilder.X_POS_KEY]) + self.game.client.world.get_map().get_width_in_pixels() // 2
+                                + self.game.client.player.width // 2)
+                        ),
+                        self.game.height // 2 - self.scaled_map.get_height() // 2 + (
+                                self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
+                                * (int(player[PlayerBuilder.Y_POS_KEY]) + self.game.client.world.get_map().get_height_in_pixels() // 2
+                                + self.game.client.player.height // 2)
+                        ),
+                    )
+
+                circle(self.game.screen, (255 * is_client_player, 0, 255 * (not is_client_player)), center_point, 5)
+                circle(self.game.screen, (255, 255, 255), center_point, 5, 2)
+                circle(self.game.screen, (0, 0, 0), center_point, 6, 2)
 
     def update_ui(self) -> None:
         """

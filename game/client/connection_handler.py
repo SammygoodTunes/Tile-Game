@@ -83,6 +83,17 @@ class ConnectionHandler:
         self.connection.packet_queue.append(packet)
 
     def get_ping(self) -> int:
+        """
+        Get the connection ping, only if a connection has been established.
+        """
         if not self.connection:
             return 0
         return self.connection.ping
+
+    def get_players(self) -> list:
+        """
+        Get the current players in the server, otherwise return an empty list if no connection has been established.
+        """
+        if not self.connection:
+            return list()
+        return self.connection.player_manager.players
