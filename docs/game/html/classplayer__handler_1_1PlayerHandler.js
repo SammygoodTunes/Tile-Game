@@ -5,5 +5,6 @@ var classplayer__handler_1_1PlayerHandler =
     [ "get_players", "classplayer__handler_1_1PlayerHandler.html#af825dc85951c8114ec031f8cac54458d", null ],
     [ "track_player", "classplayer__handler_1_1PlayerHandler.html#af93f4adaac9ff092edc78122bd4b783b", null ],
     [ "untrack_player", "classplayer__handler_1_1PlayerHandler.html#aa7b0692083c7f2655a4e8b74764e6811", null ],
-    [ "update_player", "classplayer__handler_1_1PlayerHandler.html#a5aa9ebbbe7ad594d11c9eeca29ed7ab9", null ]
+    [ "update_player", "classplayer__handler_1_1PlayerHandler.html#a5aa9ebbbe7ad594d11c9eeca29ed7ab9", null ],
+    [ "update_player_position", "classplayer__handler_1_1PlayerHandler.html#a8c5305bf833d4e0c378ad68eee4148e7", null ]
 ];

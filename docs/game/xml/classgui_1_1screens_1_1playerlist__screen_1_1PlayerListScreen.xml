@@ -32,6 +32,20 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="19" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad898ef5e919ba91aea5f1ba71cfe3c7f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.playerlist_screen.PlayerListScreen::count_label</definition>
+        <argsstring></argsstring>
+        <name>count_label</name>
+        <qualifiedname>gui.screens.playerlist_screen.PlayerListScreen.count_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee" prot="public" static="no" mutable="no">
         <type></type>
         <definition>gui.screens.playerlist_screen.PlayerListScreen::player_list</definition>
@@ -44,24 +58,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="49" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="50" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd" prot="protected" static="no" mutable="no">
-        <type></type>
-        <definition>gui.screens.playerlist_screen.PlayerListScreen::_count</definition>
-        <argsstring></argsstring>
-        <name>_count</name>
-        <qualifiedname>gui.screens.playerlist_screen.PlayerListScreen._count</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="22" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031" prot="protected" static="no" mutable="no">
         <type></type>
         <definition>gui.screens.playerlist_screen.PlayerListScreen::_faded_surface</definition>
@@ -74,7 +74,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="32" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6d11c7346a698f6c669c55f2507eabd5" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gui.screens.playerlist_screen.PlayerListScreen::_playercount_surface</definition>
+        <argsstring></argsstring>
+        <name>_playercount_surface</name>
+        <qualifiedname>gui.screens.playerlist_screen.PlayerListScreen._playercount_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="35" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -98,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="16" bodyend="24"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="16" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a151681d348eb502da9e899708a3a7325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -118,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="25" bodyend="37"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="26" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae3bc66bb4ffe41bd1a97a7a5c86a3924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -143,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="38" bodyend="65"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="42" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0d56888ad42287068db13805a8fe74bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -167,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="66" bodyend="74"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="80" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="80" bodyend="89"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -198,11 +212,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="11" bodyend="74"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="11" bodyend="89"/>
     <listofallmembers>
       <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a4ae2fcc9cf665453a72fd9961cef7389" prot="public" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>__init__</name></member>
-      <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd" prot="protected" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>_count</name></member>
       <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031" prot="protected" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>_faded_surface</name></member>
+      <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6d11c7346a698f6c669c55f2507eabd5" prot="protected" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>_playercount_surface</name></member>
+      <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad898ef5e919ba91aea5f1ba71cfe3c7f" prot="public" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>count_label</name></member>
       <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a151681d348eb502da9e899708a3a7325" prot="public" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>draw</name></member>
       <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52" prot="public" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>game</name></member>
       <member refid="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee" prot="public" virt="non-virtual"><scope>gui::screens::playerlist_screen::PlayerListScreen</scope><name>player_list</name></member>

@@ -28,7 +28,7 @@
 <codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Connection<sp/>states.</highlight></codeline>
 <codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE,<sp/>PENDING,<sp/>GETDATA<sp/>=<sp/>range(-1,<sp/>-4,<sp/>-1)</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>SUCCESS,<sp/>INVALID,<sp/>REFUSED,<sp/>TIMEOUT,<sp/>NOROUTE,<sp/>DISCONNECTED,<sp/>BADNAME,<sp/>ERROR,<sp/>SERVFAIL<sp/>=<sp/>range(0,<sp/>9)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>SUCCESS,<sp/>INVALID,<sp/>REFUSED,<sp/>TIMEOUT,<sp/>NOROUTE,<sp/>DISCONNECTED,<sp/>BADNAME,<sp/>MAXIMUM,<sp/>ERROR,<sp/>SERVFAIL<sp/>=<sp/>range(0,<sp/>10)</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="classdata_1_1states_1_1ServerStates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1states_1_1ServerStates" kindref="compound">ServerStates</ref>:</highlight></codeline>

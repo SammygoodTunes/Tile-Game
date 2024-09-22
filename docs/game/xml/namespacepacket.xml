@@ -4,6 +4,7 @@
     <compoundname>packet</compoundname>
     <innerclass refid="classpacket_1_1Compressor" prot="public">packet::Compressor</innerclass>
     <innerclass refid="classpacket_1_1Hasher" prot="public">packet::Hasher</innerclass>
+    <innerclass refid="classpacket_1_1Packet" prot="public">packet::Packet</innerclass>
     <sectiondef kind="func">
       <memberdef kind="function" id="namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -23,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="56" bodyend="62"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="61" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="61" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -38,10 +39,32 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Return string as bytes encoded with protocol&apos;s chosen encoding.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="63" bodyend="65"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepacket_1ae33b14a366ec431061961eee5fd3e6b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes packet.hex_len</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>hex_len</name>
+        <qualifiedname>packet.hex_len</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="74" bodyend="79"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

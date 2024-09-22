@@ -10,5 +10,6 @@ var searchData=
   ['servermenuscreen_7',['ServerMenuScreen',['../classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html',1,'gui::screens::servermenu_screen']]],
   ['serverproperties_8',['ServerProperties',['../classdata_1_1properties_1_1ServerProperties.html',1,'data::properties']]],
   ['serverstates_9',['ServerStates',['../classdata_1_1states_1_1ServerStates.html',1,'data::states']]],
-  ['slot_10',['Slot',['../classgui_1_1slot_1_1Slot.html',1,'gui::slot']]]
+  ['servertasks_10',['ServerTasks',['../classtasks_1_1ServerTasks.html',1,'tasks']]],
+  ['slot_11',['Slot',['../classgui_1_1slot_1_1Slot.html',1,'gui::slot']]]
 ];

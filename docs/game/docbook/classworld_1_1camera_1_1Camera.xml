@@ -28,17 +28,6 @@
 </listitem>
         </itemizedlist>
 </simplesect>
-<simplesect>
-    <title>Static Public Attributes    </title>
-        <itemizedlist>
-            <listitem><para>float <link linkend="_classworld_1_1camera_1_1Camera_1a662c32ad462339e256b5de1272dc46fd">VELOCITY_STEP_START</link> = 5.0</para>
-</listitem>
-            <listitem><para>float <link linkend="_classworld_1_1camera_1_1Camera_1a18d16fd44b9f1bed2e210f3580f6d0a9">VELOCITY_STEP_STOP</link> = 3.5</para>
-</listitem>
-            <listitem><para>float <link linkend="_classworld_1_1camera_1_1Camera_1a31d39b07d25a937932b9b1ee69b65f79">VELOCITY_THRESHOLD</link> = 0.001</para>
-</listitem>
-        </itemizedlist>
-</simplesect>
 <section>
 <title>Detailed Description</title>
 
@@ -81,21 +70,6 @@ The camera position is strictly relative to the center of the screen.
 <indexterm><primary>speed</primary><secondary>world.camera.Camera</secondary></indexterm>
 <indexterm><primary>world.camera.Camera</primary><secondary>speed</secondary></indexterm>
 <para><computeroutput>world.camera.Camera.speed</computeroutput></para></section>
-<anchor xml:id="_classworld_1_1camera_1_1Camera_1a662c32ad462339e256b5de1272dc46fd"/><section>
-    <title>VELOCITY_STEP_START</title>
-<indexterm><primary>VELOCITY_STEP_START</primary><secondary>world.camera.Camera</secondary></indexterm>
-<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_STEP_START</secondary></indexterm>
-<para><computeroutput>float world.camera.Camera.VELOCITY_STEP_START = 5.0<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1camera_1_1Camera_1a18d16fd44b9f1bed2e210f3580f6d0a9"/><section>
-    <title>VELOCITY_STEP_STOP</title>
-<indexterm><primary>VELOCITY_STEP_STOP</primary><secondary>world.camera.Camera</secondary></indexterm>
-<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_STEP_STOP</secondary></indexterm>
-<para><computeroutput>float world.camera.Camera.VELOCITY_STEP_STOP = 3.5<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classworld_1_1camera_1_1Camera_1a31d39b07d25a937932b9b1ee69b65f79"/><section>
-    <title>VELOCITY_THRESHOLD</title>
-<indexterm><primary>VELOCITY_THRESHOLD</primary><secondary>world.camera.Camera</secondary></indexterm>
-<indexterm><primary>world.camera.Camera</primary><secondary>VELOCITY_THRESHOLD</secondary></indexterm>
-<para><computeroutput>float world.camera.Camera.VELOCITY_THRESHOLD = 0.001<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classworld_1_1camera_1_1Camera_1a02bbd342c9ab95d90e2a07c74f525de8"/><section>
     <title>velocity_x</title>
 <indexterm><primary>velocity_x</primary><secondary>world.camera.Camera</secondary></indexterm>

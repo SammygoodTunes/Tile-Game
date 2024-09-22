@@ -11,6 +11,8 @@
 </listitem>
             <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9">update_player</link> (self, dict player)</para>
 </listitem>
+            <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1a8c5305bf833d4e0c378ad68eee4148e7">update_player_position</link> (self, dict player_packet)</para>
+</listitem>
             <listitem><para>None <link linkend="_classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811">untrack_player</link> (self, str player_name)</para>
 </listitem>
             <listitem><para>list[dict] <link linkend="_classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d">get_players</link> (self)</para>
@@ -73,6 +75,14 @@
 <indexterm><primary>player_handler.PlayerHandler</primary><secondary>update_player</secondary></indexterm>
 <para><computeroutput> None player_handler.PlayerHandler.update_player ( self, dict player)</computeroutput></para>
 <para><literallayout><computeroutput>Update the player attributes with the received player object, if possible.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classplayer__handler_1_1PlayerHandler_1a8c5305bf833d4e0c378ad68eee4148e7"/><section>
+    <title>update_player_position()</title>
+<indexterm><primary>update_player_position</primary><secondary>player_handler.PlayerHandler</secondary></indexterm>
+<indexterm><primary>player_handler.PlayerHandler</primary><secondary>update_player_position</secondary></indexterm>
+<para><computeroutput> None player_handler.PlayerHandler.update_player_position ( self, dict player_packet)</computeroutput></para>
+<para><literallayout><computeroutput>Update the player position attribute with the received player packet, if possible.
 </computeroutput></literallayout> </para>
 </section>
 <para>

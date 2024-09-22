@@ -5,6 +5,8 @@
 <simplesect>
     <title>Classes    </title>
         <itemizedlist>
+            <listitem><para>class <link linkend="_classpacket_1_1Packet">packet.Packet</link></para>
+</listitem>
             <listitem><para>class <link linkend="_classpacket_1_1Hasher">packet.Hasher</link></para>
 </listitem>
             <listitem><para>class <link linkend="_classpacket_1_1Compressor">packet.Compressor</link></para>
@@ -24,6 +26,8 @@
             <listitem><para>bytes <link linkend="_namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8">packet.fill</link> (bytes data)</para>
 </listitem>
             <listitem><para>bytes <link linkend="_namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428">packet.to_bytes</link> (str data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_namespacepacket_1ae33b14a366ec431061961eee5fd3e6b2">packet.hex_len</link> (bytes data)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

@@ -17,6 +17,9 @@ var annotated_dup =
       ] ],
       [ "player_manager", "namespaceclient_1_1player__manager.html", [
         [ "PlayerManager", "classclient_1_1player__manager_1_1PlayerManager.html", "classclient_1_1player__manager_1_1PlayerManager" ]
+      ] ],
+      [ "tasks", "namespaceclient_1_1tasks.html", [
+        [ "ClientTasks", "classclient_1_1tasks_1_1ClientTasks.html", null ]
       ] ]
     ] ],
     [ "core", "namespacecore.html", [
@@ -145,7 +148,8 @@ var annotated_dup =
     ] ],
     [ "packet", "namespacepacket.html", [
       [ "Compressor", "classpacket_1_1Compressor.html", null ],
-      [ "Hasher", "classpacket_1_1Hasher.html", null ]
+      [ "Hasher", "classpacket_1_1Hasher.html", null ],
+      [ "Packet", "classpacket_1_1Packet.html", null ]
     ] ],
     [ "player_handler", "namespaceplayer__handler.html", [
       [ "PlayerHandler", "classplayer__handler_1_1PlayerHandler.html", "classplayer__handler_1_1PlayerHandler" ]
@@ -157,15 +161,16 @@ var annotated_dup =
       [ "Server", "classserver_1_1Server.html", "classserver_1_1Server" ]
     ] ],
     [ "tasks", "namespacetasks.html", [
-      [ "Tasks", "classtasks_1_1Tasks.html", null ]
+      [ "ServerTasks", "classtasks_1_1ServerTasks.html", null ]
     ] ],
     [ "utils", "namespaceutils.html", [
       [ "exceptions", "namespaceutils_1_1exceptions.html", [
         [ "InvalidGamePropertyValue", "classutils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classutils_1_1exceptions_1_1InvalidGamePropertyValue" ],
         [ "InvalidMapData", "classutils_1_1exceptions_1_1InvalidMapData.html", "classutils_1_1exceptions_1_1InvalidMapData" ],
         [ "InvalidTextureAtlas", "classutils_1_1exceptions_1_1InvalidTextureAtlas.html", "classutils_1_1exceptions_1_1InvalidTextureAtlas" ],
+        [ "MaxPlayersReached", "classutils_1_1exceptions_1_1MaxPlayersReached.html", "classutils_1_1exceptions_1_1MaxPlayersReached" ],
         [ "OutOfMapBounds", "classutils_1_1exceptions_1_1OutOfMapBounds.html", "classutils_1_1exceptions_1_1OutOfMapBounds" ],
-        [ "PlayerWithSameNameError", "classutils_1_1exceptions_1_1PlayerWithSameNameError.html", "classutils_1_1exceptions_1_1PlayerWithSameNameError" ],
+        [ "PlayerNameAlreadyExists", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists.html", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists" ],
         [ "ZeroOrLessSpawnPlayerAttempts", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" ]
       ] ]
     ] ],

@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>int <link linkend="_classdata_1_1properties_1_1ServerProperties_1a899059398c6ae1b8b6c9f380132f99d9">TICKS_PER_SECOND</link> = 20</para>
 </listitem>
+            <listitem><para>int <link linkend="_classdata_1_1properties_1_1ServerProperties_1ae065f646bae5be9c646d1be5e9a0077e">MAX_PLAYERS</link> = 10</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -17,6 +19,11 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classdata_1_1properties_1_1ServerProperties_1ae065f646bae5be9c646d1be5e9a0077e"/><section>
+    <title>MAX_PLAYERS</title>
+<indexterm><primary>MAX_PLAYERS</primary><secondary>data.properties.ServerProperties</secondary></indexterm>
+<indexterm><primary>data.properties.ServerProperties</primary><secondary>MAX_PLAYERS</secondary></indexterm>
+<para><computeroutput>int data.properties.ServerProperties.MAX_PLAYERS = 10<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classdata_1_1properties_1_1ServerProperties_1a899059398c6ae1b8b6c9f380132f99d9"/><section>
     <title>TICKS_PER_SECOND</title>
 <indexterm><primary>TICKS_PER_SECOND</primary><secondary>data.properties.ServerProperties</secondary></indexterm>

@@ -9,6 +9,7 @@ var classclient_1_1connection_1_1Connection =
     [ "data", "classclient_1_1connection_1_1Connection.html#a91c148311d86681e29899b6b0dab3d45", null ],
     [ "hit_player", "classclient_1_1connection_1_1Connection.html#a2fa2948ee563a0fd1bc9645069884b4e", null ],
     [ "host", "classclient_1_1connection_1_1Connection.html#a3dd1ae73a85bb3510ace7f19a668195a", null ],
+    [ "ping", "classclient_1_1connection_1_1Connection.html#aa94fd2fba7edffd8f05fd1a8df5994ed", null ],
     [ "player_manager", "classclient_1_1connection_1_1Connection.html#a41ee5eb37ad37d8f9cb257225ee55482", null ],
     [ "port", "classclient_1_1connection_1_1Connection.html#a73ae3f752607556759c7471d02a2c829", null ],
     [ "sock", "classclient_1_1connection_1_1Connection.html#af2a57ecdd41a44e47ff3b6fb4477f4a6", null ],

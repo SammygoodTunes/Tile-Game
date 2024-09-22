@@ -106,8 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b6ac2206b81407a722eea7d6e6cf15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade912025a5624b372577c0f19299362a" id="r_ade912025a5624b372577c0f19299362a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade912025a5624b372577c0f19299362a">build_local_player</a> (self, dict player_dict)</td></tr>
 <tr class="separator:ade912025a5624b372577c0f19299362a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd96a0b0b44a1b687adedc89638be637" id="r_abd96a0b0b44a1b687adedc89638be637"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd96a0b0b44a1b687adedc89638be637">set_players</a> (self, list <a class="el" href="#af1beec3304a4275ba2eb412f7b8e18d8">players</a>)</td></tr>
-<tr class="separator:abd96a0b0b44a1b687adedc89638be637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218d5d5e98012838266b55675aeab9be" id="r_a218d5d5e98012838266b55675aeab9be"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218d5d5e98012838266b55675aeab9be">packetise_player</a> (self)</td></tr>
+<tr class="separator:a218d5d5e98012838266b55675aeab9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec10a67d6adb673ab54e37f00b3c081" id="r_a4ec10a67d6adb673ab54e37f00b3c081"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ec10a67d6adb673ab54e37f00b3c081">set_players</a> (self, list|None <a class="el" href="#af1beec3304a4275ba2eb412f7b8e18d8">players</a>)</td></tr>
+<tr class="separator:a4ec10a67d6adb673ab54e37f00b3c081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3803f52663ccb8643da90386a57c93cf" id="r_a3803f52663ccb8643da90386a57c93cf"><td class="memItemLeft" align="right" valign="top">dict|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3803f52663ccb8643da90386a57c93cf">get_player</a> (self, str player_name)</td></tr>
 <tr class="separator:a3803f52663ccb8643da90386a57c93cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bba12818247c0e55a437c1963c0bb4" id="r_aa9bba12818247c0e55a437c1963c0bb4"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9bba12818247c0e55a437c1963c0bb4">hit_player</a> (self, str player_name)</td></tr>
@@ -165,7 +167,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">Build the local player from a player packet.
+</pre> 
 </div>
 </div>
 <a id="a5815f94898516806e1610bc2ddf6af84" name="a5815f94898516806e1610bc2ddf6af84"></a>
@@ -244,8 +247,26 @@ Public Attributes</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="abd96a0b0b44a1b687adedc89638be637" name="abd96a0b0b44a1b687adedc89638be637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd96a0b0b44a1b687adedc89638be637">&#9670;&#160;</a></span>set_players()</h2>
+<a id="a218d5d5e98012838266b55675aeab9be" name="a218d5d5e98012838266b55675aeab9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218d5d5e98012838266b55675aeab9be">&#9670;&#160;</a></span>packetise_player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict client.player_manager.PlayerManager.packetise_player </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return a data-complete player packet.
+</pre> 
+</div>
+</div>
+<a id="a4ec10a67d6adb673ab54e37f00b3c081" name="a4ec10a67d6adb673ab54e37f00b3c081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec10a67d6adb673ab54e37f00b3c081">&#9670;&#160;</a></span>set_players()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +279,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">list</td>          <td class="paramname"><span class="paramname"><em>players</em></span>&#160;)</td>
+          <td class="paramtype">list | None</td>          <td class="paramname"><span class="paramname"><em>players</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

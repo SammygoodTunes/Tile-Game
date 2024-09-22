@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classutils_1_1exceptions_1_1MaxPlayersReached" xml:lang="en-US">
+<title>utils.exceptions.MaxPlayersReached Class Reference</title>
+<indexterm><primary>utils.exceptions.MaxPlayersReached</primary></indexterm>
+<para>Inheritance diagram for utils.exceptions.MaxPlayersReached:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classutils_1_1exceptions_1_1MaxPlayersReached.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classutils_1_1exceptions_1_1MaxPlayersReached_1a32719cbd2e57c8bcd4a7c4f7453f7132">__init__</link> (self, message=&quot;The player number limit has been reached, please come back later.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by reaching the maximum player count of a server.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classutils_1_1exceptions_1_1MaxPlayersReached_1a32719cbd2e57c8bcd4a7c4f7453f7132"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>utils.exceptions.MaxPlayersReached</secondary></indexterm>
+<indexterm><primary>utils.exceptions.MaxPlayersReached</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>utils.exceptions.MaxPlayersReached.__init__ ( self,  message = <computeroutput>&quot;The&#160;player&#160;number&#160;limit&#160;has&#160;been&#160;reached,&#160;please&#160;come&#160;back&#160;later.&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

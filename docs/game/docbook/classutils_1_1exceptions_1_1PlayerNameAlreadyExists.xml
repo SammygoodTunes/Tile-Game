@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classutils_1_1exceptions_1_1PlayerNameAlreadyExists" xml:lang="en-US">
+<title>utils.exceptions.PlayerNameAlreadyExists Class Reference</title>
+<indexterm><primary>utils.exceptions.PlayerNameAlreadyExists</primary></indexterm>
+<para>Inheritance diagram for utils.exceptions.PlayerNameAlreadyExists:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classutils_1_1exceptions_1_1PlayerNameAlreadyExists.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classutils_1_1exceptions_1_1PlayerNameAlreadyExists_1a544eebd11d0dded23020bdde1c0bfb11">__init__</link> (self, message=&quot;Your current player name is already taken, please change it.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by joining a server with an in-game name that is already taken.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classutils_1_1exceptions_1_1PlayerNameAlreadyExists_1a544eebd11d0dded23020bdde1c0bfb11"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>utils.exceptions.PlayerNameAlreadyExists</secondary></indexterm>
+<indexterm><primary>utils.exceptions.PlayerNameAlreadyExists</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>utils.exceptions.PlayerNameAlreadyExists.__init__ ( self,  message = <computeroutput>&quot;Your&#160;current&#160;player&#160;name&#160;is&#160;already&#160;taken,&#160;please&#160;change&#160;it.&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

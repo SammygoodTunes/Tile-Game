@@ -9,7 +9,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a0f4a06f686d279aacd4e4fd96145e964">init</link> (self, game)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a2346c5d44122191f45246a361aa8f0cc">events</link> (self, client, map_obj, pygame.event.Event|pygame.event.EventType e)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1afd7ec41e0803d4914f8273e37e877998">events</link> (self, game, map_obj, pygame.event.Event|pygame.event.EventType e)</para>
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a088e799a0514065ae12b4a73f8af31d7">draw</link> (self, game)</para>
 </listitem>
@@ -19,7 +19,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54">update</link> (self, game, Map map_obj)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de">update_ui</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a7ece2718b2026baeffbfd07f25aae393">update_ui</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5">break_tile</link> (self, game)</para>
 </listitem>
@@ -143,12 +143,6 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90">TEXTURE</link> = str(impr.files(&apos;assets&apos;) / &quot;player.png&quot;)</para>
-</listitem>
-            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4">VELOCITY_STEP_START</link> = 4.5</para>
-</listitem>
-            <listitem><para>float <link linkend="_classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca">VELOCITY_STEP_STOP</link> = 5.0</para>
-</listitem>
             <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f">TIMERS_COUNT</link> = 2</para>
 </listitem>
             <listitem><para>int <link linkend="_classentity_1_1player_1_1Player_1a7af13c9b3a48f31142417667c8437afe">MINING_TIMER</link> = 0</para>
@@ -222,11 +216,11 @@
 <para><literallayout><computeroutput>Draw the player tile selection grid to the screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a2346c5d44122191f45246a361aa8f0cc"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1afd7ec41e0803d4914f8273e37e877998"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>events</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.events ( self,  client,  map_obj, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.events ( self,  game,  map_obj, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
 <para><literallayout><computeroutput>Track the player events.
 </computeroutput></literallayout> </para>
 </section>
@@ -526,11 +520,11 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <para><literallayout><computeroutput>Update the player.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de"/><section>
+<anchor xml:id="_classentity_1_1player_1_1Player_1a7ece2718b2026baeffbfd07f25aae393"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput> None entity.player.Player.update_ui ( self,  game)</computeroutput></para>
+<para><computeroutput> None entity.player.Player.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the player GUI.
 </computeroutput></literallayout> </para>
 </section>
@@ -642,26 +636,11 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <indexterm><primary>selected_tile_y</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>selected_tile_y</secondary></indexterm>
 <para><computeroutput>entity.player.Player.selected_tile_y</computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90"/><section>
-    <title>TEXTURE</title>
-<indexterm><primary>TEXTURE</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>TEXTURE</secondary></indexterm>
-<para><computeroutput>str entity.player.Player.TEXTURE = str(impr.files(&apos;assets&apos;) / &quot;player.png&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f"/><section>
     <title>TIMERS_COUNT</title>
 <indexterm><primary>TIMERS_COUNT</primary><secondary>entity.player.Player</secondary></indexterm>
 <indexterm><primary>entity.player.Player</primary><secondary>TIMERS_COUNT</secondary></indexterm>
 <para><computeroutput>int entity.player.Player.TIMERS_COUNT = 2<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4"/><section>
-    <title>VELOCITY_STEP_START</title>
-<indexterm><primary>VELOCITY_STEP_START</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>VELOCITY_STEP_START</secondary></indexterm>
-<para><computeroutput>float entity.player.Player.VELOCITY_STEP_START = 4.5<computeroutput>[static]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca"/><section>
-    <title>VELOCITY_STEP_STOP</title>
-<indexterm><primary>VELOCITY_STEP_STOP</primary><secondary>entity.player.Player</secondary></indexterm>
-<indexterm><primary>entity.player.Player</primary><secondary>VELOCITY_STEP_STOP</secondary></indexterm>
-<para><computeroutput>float entity.player.Player.VELOCITY_STEP_STOP = 5.0<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982"/><section>
     <title>velocity_x</title>
 <indexterm><primary>velocity_x</primary><secondary>entity.player.Player</secondary></indexterm>

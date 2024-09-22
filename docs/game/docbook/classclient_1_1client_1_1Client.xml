@@ -11,7 +11,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classclient_1_1client_1_1Client_1a964fb77e54b4451531c3231543e754fe">update</link> (self, game)</para>
 </listitem>
-            <listitem><para><link linkend="_classclient_1_1client_1_1Client_1a45f8f601b22df1161e5c5e0fda2ad6c4">update_ui</link> (self, game)</para>
+            <listitem><para><link linkend="_classclient_1_1client_1_1Client_1abf95fc8789d391f4ae892dc42f308772">update_ui</link> (self)</para>
 </listitem>
             <listitem><para><link linkend="_classclient_1_1client_1_1Client_1af86265e17f201edb08fd522f9a8818b8">events</link> (self, game, Event e)</para>
 </listitem>
@@ -48,7 +48,10 @@
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>client.client.Client</secondary></indexterm>
 <indexterm><primary>client.client.Client</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>client.client.Client.events ( self,  game, Event e)</computeroutput></para></section>
+<para><computeroutput>client.client.Client.events ( self,  game, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Handle the client events.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classclient_1_1client_1_1Client_1a9928b71fccf84e6742680a246892bb11"/><section>
     <title>initialise()</title>
 <indexterm><primary>initialise</primary><secondary>client.client.Client</secondary></indexterm>
@@ -61,7 +64,10 @@
     <title>stop()</title>
 <indexterm><primary>stop</primary><secondary>client.client.Client</secondary></indexterm>
 <indexterm><primary>client.client.Client</primary><secondary>stop</secondary></indexterm>
-<para><computeroutput>client.client.Client.stop ( self)</computeroutput></para></section>
+<para><computeroutput>client.client.Client.stop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Stop the client connection.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classclient_1_1client_1_1Client_1a964fb77e54b4451531c3231543e754fe"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>client.client.Client</secondary></indexterm>
@@ -70,11 +76,14 @@
 <para><literallayout><computeroutput>Update the client.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classclient_1_1client_1_1Client_1a45f8f601b22df1161e5c5e0fda2ad6c4"/><section>
+<anchor xml:id="_classclient_1_1client_1_1Client_1abf95fc8789d391f4ae892dc42f308772"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>client.client.Client</secondary></indexterm>
 <indexterm><primary>client.client.Client</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput>client.client.Client.update_ui ( self,  game)</computeroutput></para></section>
+<para><computeroutput>client.client.Client.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the client UI.
+</computeroutput></literallayout> </para>
+</section>
 </section>
 <section>
 <title>Member Data Documentation</title>

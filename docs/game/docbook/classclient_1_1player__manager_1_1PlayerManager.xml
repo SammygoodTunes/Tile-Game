@@ -9,7 +9,9 @@
 </listitem>
             <listitem><para><link linkend="_classclient_1_1player__manager_1_1PlayerManager_1ade912025a5624b372577c0f19299362a">build_local_player</link> (self, dict player_dict)</para>
 </listitem>
-            <listitem><para>Self <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637">set_players</link> (self, list <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8">players</link>)</para>
+            <listitem><para>dict <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a218d5d5e98012838266b55675aeab9be">packetise_player</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a4ec10a67d6adb673ab54e37f00b3c081">set_players</link> (self, list|None <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8">players</link>)</para>
 </listitem>
             <listitem><para>dict|None <link linkend="_classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf">get_player</link> (self, str player_name)</para>
 </listitem>
@@ -48,7 +50,10 @@
     <title>build_local_player()</title>
 <indexterm><primary>build_local_player</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
 <indexterm><primary>client.player_manager.PlayerManager</primary><secondary>build_local_player</secondary></indexterm>
-<para><computeroutput>client.player_manager.PlayerManager.build_local_player ( self, dict player_dict)</computeroutput></para></section>
+<para><computeroutput>client.player_manager.PlayerManager.build_local_player ( self, dict player_dict)</computeroutput></para>
+<para><literallayout><computeroutput>Build the local player from a player packet.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84"/><section>
     <title>draw_players()</title>
 <indexterm><primary>draw_players</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
@@ -73,11 +78,19 @@
 <para><literallayout><computeroutput>Check and return the player that has been hit.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637"/><section>
+<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a218d5d5e98012838266b55675aeab9be"/><section>
+    <title>packetise_player()</title>
+<indexterm><primary>packetise_player</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
+<indexterm><primary>client.player_manager.PlayerManager</primary><secondary>packetise_player</secondary></indexterm>
+<para><computeroutput> dict client.player_manager.PlayerManager.packetise_player ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return a data-complete player packet.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classclient_1_1player__manager_1_1PlayerManager_1a4ec10a67d6adb673ab54e37f00b3c081"/><section>
     <title>set_players()</title>
 <indexterm><primary>set_players</primary><secondary>client.player_manager.PlayerManager</secondary></indexterm>
 <indexterm><primary>client.player_manager.PlayerManager</primary><secondary>set_players</secondary></indexterm>
-<para><computeroutput> Self client.player_manager.PlayerManager.set_players ( self, list players)</computeroutput></para>
+<para><computeroutput> Self client.player_manager.PlayerManager.set_players ( self, list | None players)</computeroutput></para>
 <para><literallayout><computeroutput>Set the players list and return the player manager itself.
 </computeroutput></literallayout> </para>
 </section>

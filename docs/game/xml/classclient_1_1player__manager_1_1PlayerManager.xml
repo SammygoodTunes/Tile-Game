@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="23" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="26" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -72,15 +72,37 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Build the local player from a player packet.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="22" bodyend="24"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="22" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a218d5d5e98012838266b55675aeab9be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict client.player_manager.PlayerManager.packetise_player</definition>
+        <argsstring>(self)</argsstring>
+        <name>packetise_player</name>
+        <qualifiedname>client.player_manager.PlayerManager.packetise_player</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a data-complete player packet.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a4ec10a67d6adb673ab54e37f00b3c081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
         <definition> Self client.player_manager.PlayerManager.set_players</definition>
-        <argsstring>(self, list players)</argsstring>
+        <argsstring>(self, list|None players)</argsstring>
         <name>set_players</name>
         <qualifiedname>client.player_manager.PlayerManager.set_players</qualifiedname>
         <param>
@@ -88,7 +110,7 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>list</type>
+          <type>list|None</type>
           <declname>players</declname>
         </param>
         <briefdescription>
@@ -99,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="25" bodyend="31"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="34" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>dict|None</type>
@@ -123,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="32" bodyend="40"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="42" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1aa9bba12818247c0e55a437c1963c0bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -147,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="41" bodyend="56"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="51" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classclient_1_1player__manager_1_1PlayerManager_1a5815f94898516806e1610bc2ddf6af84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -179,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="57" bodyend="73"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="67" bodyend="83"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -188,7 +210,7 @@
 <para><verbatim>Class for handling client player information.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="13" bodyend="73"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/player_manager.py" bodystart="13" bodyend="83"/>
     <listofallmembers>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1a1b6ac2206b81407a722eea7d6e6cf15d" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>__init__</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1ade912025a5624b372577c0f19299362a" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>build_local_player</name></member>
@@ -196,8 +218,9 @@
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1a3803f52663ccb8643da90386a57c93cf" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>get_player</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1aa9bba12818247c0e55a437c1963c0bb4" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>hit_player</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1addb331a64038f2aec153a9d0d789af5c" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>local_player</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a218d5d5e98012838266b55675aeab9be" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>packetise_player</name></member>
       <member refid="classclient_1_1player__manager_1_1PlayerManager_1af1beec3304a4275ba2eb412f7b8e18d8" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>players</name></member>
-      <member refid="classclient_1_1player__manager_1_1PlayerManager_1abd96a0b0b44a1b687adedc89638be637" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
+      <member refid="classclient_1_1player__manager_1_1PlayerManager_1a4ec10a67d6adb673ab54e37f00b3c081" prot="public" virt="non-virtual"><scope>client::player_manager::PlayerManager</scope><name>set_players</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

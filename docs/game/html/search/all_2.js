@@ -12,7 +12,7 @@ var searchData=
   ['buffer_5fsize_9',['BUFFER_SIZE',['../classprotocol_1_1Protocol.html#aff93bad72686094bd542056fa4b3a97f',1,'protocol::Protocol']]],
   ['build_5flocal_5fplayer_10',['build_local_player',['../classclient_1_1player__manager_1_1PlayerManager.html#ade912025a5624b372577c0f19299362a',1,'client::player_manager::PlayerManager']]],
   ['build_5fplayer_11',['build_player',['../classbuilders_1_1PlayerBuilder.html#ad8bf088f5ce3e74066b57653ce08297b',1,'builders::PlayerBuilder']]],
-  ['build_5fplayer_5fmove_12',['build_player_move',['../classbuilders_1_1PlayerBuilder.html#a803b1b083dc40d8a9bfa8215c57dced9',1,'builders::PlayerBuilder']]],
+  ['build_5fplayer_5fupdate_5fposition_5fpacket_12',['build_player_update_position_packet',['../classbuilders_1_1PlayerBuilder.html#a5ff8fc48dde0ba34256ab2f2adb946dd',1,'builders::PlayerBuilder']]],
   ['builders_13',['builders',['../namespacebuilders.html',1,'']]],
   ['builders_2epy_14',['builders.py',['../builders_8py.html',1,'']]],
   ['button_15',['Button',['../classgui_1_1button_1_1Button.html',1,'gui::button']]],

@@ -143,6 +143,20 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states.py" bodystart="15" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdata_1_1states_1_1ConnectionStates_1a3eb50272d20294a2c052b38cc7f819ad" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>data.states.ConnectionStates::MAXIMUM</definition>
+        <argsstring></argsstring>
+        <name>MAXIMUM</name>
+        <qualifiedname>data.states.ConnectionStates.MAXIMUM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classdata_1_1states_1_1ConnectionStates_1af76ad321e357dab090d4e4877a2f7ba3" prot="public" static="yes" mutable="no">
         <type></type>
         <definition>data.states.ConnectionStates::ERROR</definition>
@@ -186,6 +200,7 @@
       <member refid="classdata_1_1states_1_1ConnectionStates_1a921287fd467d748441757caef28b8e18" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>GETDATA</name></member>
       <member refid="classdata_1_1states_1_1ConnectionStates_1a8879529ab2a94e4e8575e7e8d622574f" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>IDLE</name></member>
       <member refid="classdata_1_1states_1_1ConnectionStates_1a8a1c9e2cbde057e99d66ec3600b0054b" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>INVALID</name></member>
+      <member refid="classdata_1_1states_1_1ConnectionStates_1a3eb50272d20294a2c052b38cc7f819ad" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>MAXIMUM</name></member>
       <member refid="classdata_1_1states_1_1ConnectionStates_1a7a6bb479da2e80599b7507781a72bd4e" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>NOROUTE</name></member>
       <member refid="classdata_1_1states_1_1ConnectionStates_1a00dc78f16008df7b83880418629d915c" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>PENDING</name></member>
       <member refid="classdata_1_1states_1_1ConnectionStates_1aee03258b365b97b629ef80169903c469" prot="public" virt="non-virtual"><scope>data::states::ConnectionStates</scope><name>REFUSED</name></member>

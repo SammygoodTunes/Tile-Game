@@ -16,7 +16,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="16" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1properties_1_1CameraProperties_1ad415634f8c8a644ec6c55a042fa920bb" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float data.properties.CameraProperties::VELOCITY_START_DURATION</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_START_DURATION</name>
+        <qualifiedname>data.properties.CameraProperties.VELOCITY_START_DURATION</qualifiedname>
+        <initializer>=  0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdata_1_1properties_1_1CameraProperties_1a9504487d6e8973e5b915bbe81fafd2f5" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float data.properties.CameraProperties::VELOCITY_STOP_DURATION</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_STOP_DURATION</name>
+        <qualifiedname>data.properties.CameraProperties.VELOCITY_STOP_DURATION</qualifiedname>
+        <initializer>=  0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="27" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -25,9 +55,11 @@
 <para><verbatim>Class for camera properties.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="11" bodyend="18"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties.py" bodystart="20" bodyend="29"/>
     <listofallmembers>
       <member refid="classdata_1_1properties_1_1CameraProperties_1a612fd84d616770234ef720795d04e60c" prot="public" virt="non-virtual"><scope>data::properties::CameraProperties</scope><name>SPEED</name></member>
+      <member refid="classdata_1_1properties_1_1CameraProperties_1ad415634f8c8a644ec6c55a042fa920bb" prot="public" virt="non-virtual"><scope>data::properties::CameraProperties</scope><name>VELOCITY_START_DURATION</name></member>
+      <member refid="classdata_1_1properties_1_1CameraProperties_1a9504487d6e8973e5b915bbe81fafd2f5" prot="public" virt="non-virtual"><scope>data::properties::CameraProperties</scope><name>VELOCITY_STOP_DURATION</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

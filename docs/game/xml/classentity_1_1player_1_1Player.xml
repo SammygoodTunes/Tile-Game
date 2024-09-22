@@ -3,51 +3,6 @@
   <compounddef id="classentity_1_1player_1_1Player" kind="class" language="Python" prot="public">
     <compoundname>entity::player::Player</compoundname>
     <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90" prot="public" static="yes" mutable="no">
-        <type>str</type>
-        <definition>str entity.player.Player::TEXTURE</definition>
-        <argsstring></argsstring>
-        <name>TEXTURE</name>
-        <qualifiedname>entity.player.Player.TEXTURE</qualifiedname>
-        <initializer>=  str(impr.files(&apos;assets&apos;) / &quot;player.png&quot;)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="26" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4" prot="public" static="yes" mutable="no">
-        <type>float</type>
-        <definition>float entity.player.Player::VELOCITY_STEP_START</definition>
-        <argsstring></argsstring>
-        <name>VELOCITY_STEP_START</name>
-        <qualifiedname>entity.player.Player.VELOCITY_STEP_START</qualifiedname>
-        <initializer>=  4.5</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="27" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca" prot="public" static="yes" mutable="no">
-        <type>float</type>
-        <definition>float entity.player.Player::VELOCITY_STEP_STOP</definition>
-        <argsstring></argsstring>
-        <name>VELOCITY_STEP_STOP</name>
-        <qualifiedname>entity.player.Player.VELOCITY_STEP_STOP</qualifiedname>
-        <initializer>=  5.0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="28" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f" prot="public" static="yes" mutable="no">
         <type>int</type>
         <definition>int entity.player.Player::TIMERS_COUNT</definition>
@@ -61,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="30" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a7af13c9b3a48f31142417667c8437afe" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -76,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="31" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a7af133b2468f2bdba4869a0b9b0d781f" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -91,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="32" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="28" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -107,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="57" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1acd7de28913b58f7ba402a1212e8e1b32" prot="public" static="no" mutable="no">
         <type></type>
@@ -121,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="59" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="55" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ae4f4074ba8094775ee931b0804d6c8e0" prot="public" static="no" mutable="no">
         <type></type>
@@ -135,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="60" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a76c5eb04178532378bda31fd8c9fabb1" prot="public" static="no" mutable="no">
         <type></type>
@@ -149,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="76" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="72" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1acea40772d8313c9bbbe0152c55c582d3" prot="public" static="no" mutable="no">
         <type></type>
@@ -163,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="81" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="77" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a83a224799adf0ed4558ae09811000dea" prot="public" static="no" mutable="no">
         <type></type>
@@ -177,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="81" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="77" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a4349d9fd6b507aaf1b2a29340146b225" prot="public" static="no" mutable="no">
         <type></type>
@@ -191,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="106" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="106" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="103" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a259d03b6b673fcb71a3bb54db391b280" prot="public" static="no" mutable="no">
         <type></type>
@@ -205,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="107" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="107" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="104" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a74b6d7e01d8202946ea62d150fa31174" prot="public" static="no" mutable="no">
         <type></type>
@@ -219,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="109" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="106" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a8d94cdcaafe3ccb6794b10353cf37a2a" prot="public" static="no" mutable="no">
         <type></type>
@@ -233,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="109" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="106" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ad0d96f20cca2a9a493501cfcd39c1f80" prot="public" static="no" mutable="no">
         <type></type>
@@ -247,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="132" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="132" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="129" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a85f42508b3b7da3f481fb7513e320516" prot="public" static="no" mutable="no">
         <type></type>
@@ -261,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="132" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="132" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="129" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a0b8d8dcde32c63da2850a813c18288f0" prot="public" static="no" mutable="no">
         <type></type>
@@ -275,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="186" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="186" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="188" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ac450a4c66da2acb004a2954d6dfa3a4d" prot="public" static="no" mutable="no">
         <type></type>
@@ -289,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="196" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="196" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="198" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982" prot="public" static="no" mutable="no">
         <type></type>
@@ -303,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="215" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="215" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="217" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5" prot="public" static="no" mutable="no">
         <type></type>
@@ -317,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="219" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="219" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="221" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a7c2e96872afe60714eaeb261bc639e46" prot="public" static="no" mutable="no">
         <type></type>
@@ -331,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="310" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="310" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="312" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a66255d70b37666e0a0995d54d22fe25b" prot="public" static="no" mutable="no">
         <type></type>
@@ -345,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="316" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="316" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="318" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="318" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1ad522fc5da677a4b49b8b83a789126460" prot="public" static="no" mutable="no">
         <type></type>
@@ -359,7 +314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="344" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="344" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="346" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a23aeaaf5c001a9706ae30533b56a79c2" prot="public" static="no" mutable="no">
         <type></type>
@@ -373,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="354" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="354" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="356" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="356" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -389,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="242" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="242" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="244" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classentity_1_1player_1_1Player_1a8bc344ca55089329a9e4e6db79eaf2a3" prot="protected" static="no" mutable="no">
         <type></type>
@@ -403,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="243" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="243" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="245" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="245" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -438,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="34" bodyend="62"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="30" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a0f4a06f686d279aacd4e4fd96145e964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -462,12 +417,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="63" bodyend="69"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="59" bodyend="65"/>
       </memberdef>
-      <memberdef kind="function" id="classentity_1_1player_1_1Player_1a2346c5d44122191f45246a361aa8f0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classentity_1_1player_1_1Player_1afd7ec41e0803d4914f8273e37e877998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None entity.player.Player.events</definition>
-        <argsstring>(self, client, map_obj, pygame.event.Event|pygame.event.EventType e)</argsstring>
+        <argsstring>(self, game, map_obj, pygame.event.Event|pygame.event.EventType e)</argsstring>
         <name>events</name>
         <qualifiedname>entity.player.Player.events</qualifiedname>
         <param>
@@ -475,8 +430,8 @@
           <defname>self</defname>
         </param>
         <param>
-          <type>client</type>
-          <defname>client</defname>
+          <type>game</type>
+          <defname>game</defname>
         </param>
         <param>
           <type>map_obj</type>
@@ -494,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="70" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="70" bodyend="100"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="66" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a088e799a0514065ae12b4a73f8af31d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -518,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="101" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="101" bodyend="116"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="98" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="98" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a25aae6183470550f61ac756e31065b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -542,7 +497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="117" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="117" bodyend="151"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="114" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="114" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a844c4cb1da3e650125e1f0a5b519051e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -564,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="152" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="152" bodyend="169"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="149" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="149" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -592,21 +547,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="170" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="170" bodyend="325"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="168" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="168" bodyend="327"/>
       </memberdef>
-      <memberdef kind="function" id="classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classentity_1_1player_1_1Player_1a7ece2718b2026baeffbfd07f25aae393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None entity.player.Player.update_ui</definition>
-        <argsstring>(self, game)</argsstring>
+        <argsstring>(self)</argsstring>
         <name>update_ui</name>
         <qualifiedname>entity.player.Player.update_ui</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
-        </param>
-        <param>
-          <type>game</type>
-          <defname>game</defname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -616,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="326" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="326" bodyend="331"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="328" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="328" bodyend="333"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a0dea8ed7462593a16c35b885e7610af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -640,7 +591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="332" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="332" bodyend="382"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="334" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="334" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a9049d1072511b52819c82110f333162c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -668,7 +619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="383" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="383" bodyend="392"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="385" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="385" bodyend="394"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a394cf963598eef1f0f884aeffba2aa49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -688,7 +639,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="393" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="393" bodyend="398"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="395" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="395" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1aa3ac9680dd98c07f8e24cabf3990e5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -708,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="399" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="399" bodyend="404"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="401" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="401" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ad943f7e66143bfa78ea42fa6cd8e6711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -728,7 +679,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="405" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="405" bodyend="410"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="407" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="407" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a2acb0f55e61c149a8d56d6848e60a34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -748,7 +699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="411" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="411" bodyend="416"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="413" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="413" bodyend="418"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a984baf0e2cabf4e92ff99f205d4722e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -768,7 +719,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="417" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="417" bodyend="422"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="419" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="419" bodyend="424"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1afc0d3650583ad35f979974148d1324b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -788,7 +739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="423" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="423" bodyend="428"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="425" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="425" bodyend="430"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a595200451bbc4a0a14d0eafb092b13df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -808,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="429" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="429" bodyend="434"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="431" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="431" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a5dc1059f5d598433a83e59d6d634149b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -828,7 +779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="435" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="435" bodyend="440"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="437" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="437" bodyend="442"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1acfb6dea96f615b76de23b4501748b3d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -852,7 +803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="441" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="441" bodyend="447"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="443" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="443" bodyend="449"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1afa56e7928f74c7a41867f01728582528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -876,7 +827,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="448" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="448" bodyend="454"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="450" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="450" bodyend="456"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ac2a32dfc71633031a14e53dd50a1c01a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -900,7 +851,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="455" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="455" bodyend="461"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="457" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="457" bodyend="463"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ae81cad8591f0b46786088a12f8ec7519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -924,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="462" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="462" bodyend="468"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="464" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="464" bodyend="470"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a777988331f4291d4628fbb51a162ea20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -944,7 +895,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="469" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="469" bodyend="474"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="471" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="471" bodyend="476"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a745d4beb0c9c6a6859283ad99233b3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -964,7 +915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="475" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="475" bodyend="480"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="477" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="477" bodyend="482"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a9c673e4056ff93b088c2a53e7ee9baeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -988,7 +939,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="481" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="481" bodyend="489"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="483" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="483" bodyend="491"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a5f011e6d3f71afd6dde810615da1e5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1012,7 +963,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="490" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="490" bodyend="495"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="492" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="492" bodyend="497"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a69fe13ed1e333933c482d6e17e027a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1036,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="496" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="496" bodyend="549"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="498" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="498" bodyend="551"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1060,7 +1011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="550" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="550" bodyend="556"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="552" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="552" bodyend="558"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ac2c38bcbbdfa79be01c575d9550994c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1080,7 +1031,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="557" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="557" bodyend="562"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="559" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="559" bodyend="564"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1104,7 +1055,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="563" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="563" bodyend="569"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="565" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="565" bodyend="571"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ad3cdd92868b226021ab2ba048c33ac08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1124,7 +1075,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="570" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="570" bodyend="575"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="572" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="572" bodyend="577"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a9c817d804f63f0bb3c29f4f1d5f76bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1149,7 +1100,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="576" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="576" bodyend="582"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="578" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="578" bodyend="584"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1174,7 +1125,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="583" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="583" bodyend="589"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="585" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="585" bodyend="591"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1198,7 +1149,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="590" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="590" bodyend="595"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="592" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="592" bodyend="597"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a6ca5781f68338b47e35bb26da6946b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1222,7 +1173,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="596" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="596" bodyend="601"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="598" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="598" bodyend="603"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a1cb32b0d2d3b61d18ffa23503786ef8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>tuple[int, int]</type>
@@ -1242,7 +1193,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="602" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="602" bodyend="607"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="604" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="604" bodyend="609"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a3a630be721afa939ca6d89d6a78fd922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1262,7 +1213,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="608" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="608" bodyend="613"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="610" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="610" bodyend="615"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a3aee04b005560bcb0cad8093b610a150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1282,7 +1233,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="614" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="614" bodyend="619"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="616" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="616" bodyend="621"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a75cc08262c70587846d3cbce9893ee35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1306,7 +1257,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="620" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="620" bodyend="626"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="622" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="622" bodyend="628"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a5bb0ef0040a075e0571205fd39ad0900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1326,7 +1277,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="627" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="627" bodyend="632"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="629" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="629" bodyend="634"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ae4fc63e35a74cd67ffc510e13e3a9712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1350,7 +1301,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="633" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="633" bodyend="639"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="635" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="635" bodyend="641"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a1967b97c6167082e966ccba4685a158d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1370,7 +1321,7 @@ This signifies that the returned value will always be positive.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="640" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="640" bodyend="645"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="642" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="642" bodyend="647"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1ac10043eefe29f294838ea59340469d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list[bool]</type>
@@ -1396,7 +1347,7 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="646" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="646" bodyend="671"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="648" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="648" bodyend="673"/>
       </memberdef>
       <memberdef kind="function" id="classentity_1_1player_1_1Player_1a8243c65f9bd680eb4cfebbc72d71e59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -1432,7 +1383,7 @@ Setting the number of attempts to anything less than 1 will raise an exception.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="672" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="672" bodyend="703"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="674" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="674" bodyend="705"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1441,7 +1392,7 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <para><verbatim>Class for creating a player.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="21" bodyend="703"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="21" bodyend="705"/>
     <listofallmembers>
       <member refid="classentity_1_1player_1_1Player_1ac139a84f7aaa64b903c90bad4b2054d7" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>__init__</name></member>
       <member refid="classentity_1_1player_1_1Player_1a812b0e8d385e586b89482e50aab85a83" prot="protected" virt="non-virtual"><scope>entity::player::Player</scope><name>_x</name></member>
@@ -1455,7 +1406,7 @@ Setting the number of attempts to anything less than 1 will raise an exception.
       <member refid="classentity_1_1player_1_1Player_1a844c4cb1da3e650125e1f0a5b519051e" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>draw_gun_pointer</name></member>
       <member refid="classentity_1_1player_1_1Player_1a25aae6183470550f61ac756e31065b38" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>draw_selection_grid</name></member>
       <member refid="classentity_1_1player_1_1Player_1a248253a14c31f4a9581577d3b841744e" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>edges</name></member>
-      <member refid="classentity_1_1player_1_1Player_1a2346c5d44122191f45246a361aa8f0cc" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>events</name></member>
+      <member refid="classentity_1_1player_1_1Player_1afd7ec41e0803d4914f8273e37e877998" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>events</name></member>
       <member refid="classentity_1_1player_1_1Player_1a9c817d804f63f0bb3c29f4f1d5f76bf0" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>get_absolute_x</name></member>
       <member refid="classentity_1_1player_1_1Player_1a47dd02c36e0afc9bb320ce3afef8abe3" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>get_absolute_y</name></member>
       <member refid="classentity_1_1player_1_1Player_1a232af0ed90134e1b72bd0e79c1d9f92c" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>get_coefficient_from_center_x</name></member>
@@ -1506,12 +1457,9 @@ Setting the number of attempts to anything less than 1 will raise an exception.
       <member refid="classentity_1_1player_1_1Player_1ae4fc63e35a74cd67ffc510e13e3a9712" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_player_name</name></member>
       <member refid="classentity_1_1player_1_1Player_1a4d8a6bbc1f2497cc29c3e02a78cb8dd3" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_x</name></member>
       <member refid="classentity_1_1player_1_1Player_1aa11fbaaaabcddb008afbed71a1f0bfbc" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>set_y</name></member>
-      <member refid="classentity_1_1player_1_1Player_1ad7916d7ad31dda17ed1ce6514d71bf90" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>TEXTURE</name></member>
       <member refid="classentity_1_1player_1_1Player_1a98f5bc4681992c7cd11472765a041d8f" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>TIMERS_COUNT</name></member>
       <member refid="classentity_1_1player_1_1Player_1a48bea1ff1a5d946a280ed8124b1c1f54" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>update</name></member>
-      <member refid="classentity_1_1player_1_1Player_1aa9721930d79c737dc08d5621d40f27de" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>update_ui</name></member>
-      <member refid="classentity_1_1player_1_1Player_1a802150959fc26c6f37ad51537af5b7b4" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>VELOCITY_STEP_START</name></member>
-      <member refid="classentity_1_1player_1_1Player_1ab91a8623b8434f3e158f51c7bf947aca" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>VELOCITY_STEP_STOP</name></member>
+      <member refid="classentity_1_1player_1_1Player_1a7ece2718b2026baeffbfd07f25aae393" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>update_ui</name></member>
       <member refid="classentity_1_1player_1_1Player_1ac58660f5e4b6369f8d4280c720c67982" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>velocity_x</name></member>
       <member refid="classentity_1_1player_1_1Player_1a09943533b5e5a840bf012ebaabe7d7b5" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>velocity_y</name></member>
       <member refid="classentity_1_1player_1_1Player_1a74b6d7e01d8202946ea62d150fa31174" prot="public" virt="non-virtual"><scope>entity::player::Player</scope><name>width</name></member>

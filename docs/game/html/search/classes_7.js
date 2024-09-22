@@ -5,5 +5,6 @@ var searchData=
   ['map_2',['Map',['../classworld_1_1map__manager_1_1Map.html',1,'world::map_manager']]],
   ['mapscreen_3',['MapScreen',['../classgui_1_1screens_1_1map__screen_1_1MapScreen.html',1,'gui::screens::map_screen']]],
   ['mapstates_4',['MapStates',['../classdata_1_1states_1_1MapStates.html',1,'data::states']]],
-  ['mousestates_5',['MouseStates',['../classdata_1_1states_1_1MouseStates.html',1,'data::states']]]
+  ['maxplayersreached_5',['MaxPlayersReached',['../classutils_1_1exceptions_1_1MaxPlayersReached.html',1,'utils::exceptions']]],
+  ['mousestates_6',['MouseStates',['../classdata_1_1states_1_1MouseStates.html',1,'data::states']]]
 ];

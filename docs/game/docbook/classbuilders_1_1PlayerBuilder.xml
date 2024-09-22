@@ -9,7 +9,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classbuilders_1_1PlayerBuilder_1ad8bf088f5ce3e74066b57653ce08297b">build_player</link> (player, dict player_dict)</para>
 </listitem>
-            <listitem><para><link linkend="_classbuilders_1_1PlayerBuilder_1a803b1b083dc40d8a9bfa8215c57dced9">build_player_move</link> ()</para>
+            <listitem><para>dict <link linkend="_classbuilders_1_1PlayerBuilder_1a5ff8fc48dde0ba34256ab2f2adb946dd">build_player_update_position_packet</link> (player)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -38,6 +38,8 @@
 </listitem>
             <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1a84cbcc9d1f24fb33b5df75f5f0421b66">VELOCITY_KEY</link> = &apos;velocity&apos;</para>
 </listitem>
+            <listitem><para>str <link linkend="_classbuilders_1_1PlayerBuilder_1aa8f2da6a76acc7a883bf1933109a0636">DATA_KEY</link> = &apos;data&apos;</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -56,12 +58,12 @@
 <para><literallayout><computeroutput>Build the player object from a player packet.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a803b1b083dc40d8a9bfa8215c57dced9"/><section>
-    <title>build_player_move()</title>
-<indexterm><primary>build_player_move</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
-<indexterm><primary>builders.PlayerBuilder</primary><secondary>build_player_move</secondary></indexterm>
-<para><computeroutput>builders.PlayerBuilder.build_player_move ( )<computeroutput>[static]</computeroutput></computeroutput></para>
-<para><literallayout><computeroutput>Build a player move packet.
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1a5ff8fc48dde0ba34256ab2f2adb946dd"/><section>
+    <title>build_player_update_position_packet()</title>
+<indexterm><primary>build_player_update_position_packet</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>build_player_update_position_packet</secondary></indexterm>
+<para><computeroutput> dict builders.PlayerBuilder.build_player_update_position_packet ( player)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Create an empty player position update packet.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classbuilders_1_1PlayerBuilder_1a1f85f20c8a6618b8b5482430ef04fc1b"/><section>
@@ -75,6 +77,11 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classbuilders_1_1PlayerBuilder_1aa8f2da6a76acc7a883bf1933109a0636"/><section>
+    <title>DATA_KEY</title>
+<indexterm><primary>DATA_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>builders.PlayerBuilder</primary><secondary>DATA_KEY</secondary></indexterm>
+<para><computeroutput>str builders.PlayerBuilder.DATA_KEY = &apos;data&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classbuilders_1_1PlayerBuilder_1a169617d98b3d759bb802b21163d6d40e"/><section>
     <title>DIRECTION_KEY</title>
 <indexterm><primary>DIRECTION_KEY</primary><secondary>builders.PlayerBuilder</secondary></indexterm>

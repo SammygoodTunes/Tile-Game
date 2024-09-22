@@ -36,6 +36,8 @@
 </listitem>
             <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1a91c148311d86681e29899b6b0dab3d45">data</link></para>
 </listitem>
+            <listitem><para><link linkend="_classclient_1_1connection_1_1Connection_1aa94fd2fba7edffd8f05fd1a8df5994ed">ping</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -118,6 +120,11 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>host</primary><secondary>client.connection.Connection</secondary></indexterm>
 <indexterm><primary>client.connection.Connection</primary><secondary>host</secondary></indexterm>
 <para><computeroutput>client.connection.Connection.host</computeroutput></para></section>
+<anchor xml:id="_classclient_1_1connection_1_1Connection_1aa94fd2fba7edffd8f05fd1a8df5994ed"/><section>
+    <title>ping</title>
+<indexterm><primary>ping</primary><secondary>client.connection.Connection</secondary></indexterm>
+<indexterm><primary>client.connection.Connection</primary><secondary>ping</secondary></indexterm>
+<para><computeroutput>client.connection.Connection.ping</computeroutput></para></section>
 <anchor xml:id="_classclient_1_1connection_1_1Connection_1a41ee5eb37ad37d8f9cb257225ee55482"/><section>
     <title>player_manager</title>
 <indexterm><primary>player_manager</primary><secondary>client.connection.Connection</secondary></indexterm>

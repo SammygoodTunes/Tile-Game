@@ -106,8 +106,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a1f85f20c8a6618b8b5482430ef04fc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8bf088f5ce3e74066b57653ce08297b" id="r_ad8bf088f5ce3e74066b57653ce08297b"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8bf088f5ce3e74066b57653ce08297b">build_player</a> (player, dict player_dict)</td></tr>
 <tr class="separator:ad8bf088f5ce3e74066b57653ce08297b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803b1b083dc40d8a9bfa8215c57dced9" id="r_a803b1b083dc40d8a9bfa8215c57dced9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a803b1b083dc40d8a9bfa8215c57dced9">build_player_move</a> ()</td></tr>
-<tr class="separator:a803b1b083dc40d8a9bfa8215c57dced9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff8fc48dde0ba34256ab2f2adb946dd" id="r_a5ff8fc48dde0ba34256ab2f2adb946dd"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff8fc48dde0ba34256ab2f2adb946dd">build_player_update_position_packet</a> (player)</td></tr>
+<tr class="separator:a5ff8fc48dde0ba34256ab2f2adb946dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -133,6 +133,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a169617d98b3d759bb802b21163d6d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84cbcc9d1f24fb33b5df75f5f0421b66" id="r_a84cbcc9d1f24fb33b5df75f5f0421b66"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84cbcc9d1f24fb33b5df75f5f0421b66">VELOCITY_KEY</a> = 'velocity'</td></tr>
 <tr class="separator:a84cbcc9d1f24fb33b5df75f5f0421b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f2da6a76acc7a883bf1933109a0636" id="r_aa8f2da6a76acc7a883bf1933109a0636"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f2da6a76acc7a883bf1933109a0636">DATA_KEY</a> = 'data'</td></tr>
+<tr class="separator:aa8f2da6a76acc7a883bf1933109a0636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Class for the player packet builder.
@@ -167,8 +169,8 @@ Static Public Attributes</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="a803b1b083dc40d8a9bfa8215c57dced9" name="a803b1b083dc40d8a9bfa8215c57dced9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a803b1b083dc40d8a9bfa8215c57dced9">&#9670;&#160;</a></span>build_player_move()</h2>
+<a id="a5ff8fc48dde0ba34256ab2f2adb946dd" name="a5ff8fc48dde0ba34256ab2f2adb946dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff8fc48dde0ba34256ab2f2adb946dd">&#9670;&#160;</a></span>build_player_update_position_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,9 +179,9 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">builders.PlayerBuilder.build_player_move </td>
+          <td class="memname"> dict builders.PlayerBuilder.build_player_update_position_packet </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -189,7 +191,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">Build a player move packet.
+<pre class="fragment">Create an empty player position update packet.
 </pre> 
 </div>
 </div>
@@ -220,6 +222,28 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa8f2da6a76acc7a883bf1933109a0636" name="aa8f2da6a76acc7a883bf1933109a0636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f2da6a76acc7a883bf1933109a0636">&#9670;&#160;</a></span>DATA_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str builders.PlayerBuilder.DATA_KEY = 'data'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a169617d98b3d759bb802b21163d6d40e" name="a169617d98b3d759bb802b21163d6d40e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a169617d98b3d759bb802b21163d6d40e">&#9670;&#160;</a></span>DIRECTION_KEY</h2>
 

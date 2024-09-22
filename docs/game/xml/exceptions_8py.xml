@@ -7,7 +7,8 @@
     <innerclass refid="classutils_1_1exceptions_1_1OutOfMapBounds" prot="public">utils::exceptions::OutOfMapBounds</innerclass>
     <innerclass refid="classutils_1_1exceptions_1_1InvalidGamePropertyValue" prot="public">utils::exceptions::InvalidGamePropertyValue</innerclass>
     <innerclass refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" prot="public">utils::exceptions::ZeroOrLessSpawnPlayerAttempts</innerclass>
-    <innerclass refid="classutils_1_1exceptions_1_1PlayerWithSameNameError" prot="public">utils::exceptions::PlayerWithSameNameError</innerclass>
+    <innerclass refid="classutils_1_1exceptions_1_1PlayerNameAlreadyExists" prot="public">utils::exceptions::PlayerNameAlreadyExists</innerclass>
+    <innerclass refid="classutils_1_1exceptions_1_1MaxPlayersReached" prot="public">utils::exceptions::MaxPlayersReached</innerclass>
     <innernamespace refid="namespaceutils">utils</innernamespace>
     <innernamespace refid="namespaceutils_1_1exceptions">utils::exceptions</innernamespace>
     <briefdescription>
@@ -63,13 +64,22 @@
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a968cce178a3a065bd892d4cd51aef30e" kindref="member">__init__</ref>(message)</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="classutils_1_1exceptions_1_1PlayerWithSameNameError" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1PlayerWithSameNameError" kindref="compound">PlayerWithSameNameError</ref>(Exception):</highlight></codeline>
+<codeline lineno="49" refid="classutils_1_1exceptions_1_1PlayerNameAlreadyExists" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1PlayerNameAlreadyExists" kindref="compound">PlayerNameAlreadyExists</ref>(Exception):</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>the<sp/>exception<sp/>caused<sp/>by<sp/>joining<sp/>a<sp/>server<sp/>with<sp/>an<sp/>in-game<sp/>name<sp/>that<sp/>is<sp/>already<sp/>taken.</highlight></codeline>
 <codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1PlayerWithSameNameError_1a4d93bbc2a4e48fc575fdad48848104a1" kindref="member">__init__</ref>(self,<sp/>message=&quot;Your<sp/>current<sp/>player<sp/>name<sp/>is<sp/>already<sp/>taken,<sp/>please<sp/>change<sp/>it.&quot;):</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1PlayerWithSameNameError_1a4d93bbc2a4e48fc575fdad48848104a1" kindref="member">__init__</ref>(message)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1PlayerNameAlreadyExists_1a544eebd11d0dded23020bdde1c0bfb11" kindref="member">__init__</ref>(self,<sp/>message=&quot;Your<sp/>current<sp/>player<sp/>name<sp/>is<sp/>already<sp/>taken,<sp/>please<sp/>change<sp/>it.&quot;):</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1PlayerNameAlreadyExists_1a544eebd11d0dded23020bdde1c0bfb11" kindref="member">__init__</ref>(message)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classutils_1_1exceptions_1_1MaxPlayersReached" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1MaxPlayersReached" kindref="compound">MaxPlayersReached</ref>(Exception):</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>the<sp/>exception<sp/>caused<sp/>by<sp/>reaching<sp/>the<sp/>maximum<sp/>player<sp/>count<sp/>of<sp/>a<sp/>server.</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classutils_1_1exceptions_1_1MaxPlayersReached_1a32719cbd2e57c8bcd4a7c4f7453f7132" kindref="member">__init__</ref>(self,<sp/>message=&quot;The<sp/>player<sp/>number<sp/>limit<sp/>has<sp/>been<sp/>reached,<sp/>please<sp/>come<sp/>back<sp/>later.&quot;):</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classutils_1_1exceptions_1_1MaxPlayersReached_1a32719cbd2e57c8bcd4a7c4f7453f7132" kindref="member">__init__</ref>(message)</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/exceptions.py"/>
   </compounddef>

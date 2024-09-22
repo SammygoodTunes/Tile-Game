@@ -1,4 +1,4 @@
 var namespacetasks =
 [
-    [ "Tasks", "classtasks_1_1Tasks.html", null ]
+    [ "ServerTasks", "classtasks_1_1ServerTasks.html", null ]
 ];

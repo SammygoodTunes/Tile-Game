@@ -30,6 +30,8 @@
 </listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1897f9da6605b22795ca16305c2e5c6b">title_label</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad898ef5e919ba91aea5f1ba71cfe3c7f">count_label</link></para>
+</listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a449b2e45832e5669525ede69db0212ee">player_list</link></para>
 </listitem>
         </itemizedlist>
@@ -37,9 +39,9 @@
 <simplesect>
     <title>Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd">_count</link></para>
-</listitem>
             <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031">_faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6d11c7346a698f6c669c55f2507eabd5">_playercount_surface</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -87,16 +89,21 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1aae8d8a861add6a642ec8189fd51072dd"/><section>
-    <title>_count</title>
-<indexterm><primary>_count</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
-<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>_count</secondary></indexterm>
-<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen._count<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6f6dadeb56a4444382590dbcb6138031"/><section>
     <title>_faded_surface</title>
 <indexterm><primary>_faded_surface</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
 <indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>_faded_surface</secondary></indexterm>
 <para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen._faded_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a6d11c7346a698f6c669c55f2507eabd5"/><section>
+    <title>_playercount_surface</title>
+<indexterm><primary>_playercount_surface</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>_playercount_surface</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen._playercount_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad898ef5e919ba91aea5f1ba71cfe3c7f"/><section>
+    <title>count_label</title>
+<indexterm><primary>count_label</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
+<indexterm><primary>gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>count_label</secondary></indexterm>
+<para><computeroutput>gui.screens.playerlist_screen.PlayerListScreen.count_label</computeroutput></para></section>
 <anchor xml:id="_classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a1b312ec7203dd1d3c94ae67a64eeac52"/><section>
     <title>game</title>
 <indexterm><primary>game</primary><secondary>gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>

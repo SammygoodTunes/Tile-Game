@@ -105,6 +105,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpacket_1_1Hasher.html">Hasher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpacket_1_1Packet.html">Packet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -112,6 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9103f651f74a6ef11e41e64aa60342b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d5d8ce870fb383fc368eabd7a6d428" id="r_a77d5d8ce870fb383fc368eabd7a6d428"><td class="memItemLeft" align="right" valign="top">bytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d5d8ce870fb383fc368eabd7a6d428">to_bytes</a> (str data)</td></tr>
 <tr class="separator:a77d5d8ce870fb383fc368eabd7a6d428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33b14a366ec431061961eee5fd3e6b2" id="r_ae33b14a366ec431061961eee5fd3e6b2"><td class="memItemLeft" align="right" valign="top">bytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33b14a366ec431061961eee5fd3e6b2">hex_len</a> (bytes data)</td></tr>
+<tr class="separator:ae33b14a366ec431061961eee5fd3e6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a9103f651f74a6ef11e41e64aa60342b8" name="a9103f651f74a6ef11e41e64aa60342b8"></a>
@@ -132,6 +136,24 @@ Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
+<a id="ae33b14a366ec431061961eee5fd3e6b2" name="ae33b14a366ec431061961eee5fd3e6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33b14a366ec431061961eee5fd3e6b2">&#9670;&#160;</a></span>hex_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bytes packet.hex_len </td>
+          <td>(</td>
+          <td class="paramtype">bytes</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+</pre> 
+</div>
+</div>
 <a id="a77d5d8ce870fb383fc368eabd7a6d428" name="a77d5d8ce870fb383fc368eabd7a6d428"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77d5d8ce870fb383fc368eabd7a6d428">&#9670;&#160;</a></span>to_bytes()</h2>
 
@@ -146,7 +168,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">Return string as bytes encoded with protocol's chosen encoding.
+</pre> 
 </div>
 </div>
 </div><!-- contents -->

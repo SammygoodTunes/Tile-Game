@@ -11,6 +11,7 @@
 <xi:include href="namespaceclient_1_1connection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient_1_1connection__handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespaceclient_1_1player__manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceclient_1_1tasks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacecore.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacecore_1_1game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacecore_1_1window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -79,6 +80,7 @@
     <xi:include href="classdata_1_1properties_1_1CameraProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1checkbox_1_1Checkbox.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1client_1_1Client.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classclient_1_1tasks_1_1ClientTasks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classpacket_1_1Compressor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1connection_1_1Connection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1connection__handler_1_1ConnectionHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -106,10 +108,12 @@
     <xi:include href="classworld_1_1map__manager_1_1Map.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1screens_1_1map__screen_1_1MapScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1states_1_1MapStates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classutils_1_1exceptions_1_1MaxPlayersReached.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1states_1_1MouseStates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1nametag_1_1NameTag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1screens_1_1options__screen_1_1OptionsScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classutils_1_1exceptions_1_1OutOfMapBounds.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classpacket_1_1Packet.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1screens_1_1pause__screen_1_1PauseScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld_1_1synth_1_1noise_1_1PerlinNoise.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classentity_1_1player_1_1Player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -117,9 +121,9 @@
     <xi:include href="classplayer__handler_1_1PlayerHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1player__manager_1_1PlayerManager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classutils_1_1exceptions_1_1PlayerNameAlreadyExists.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1properties_1_1PlayerProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1states_1_1PlayerStates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="classutils_1_1exceptions_1_1PlayerWithSameNameError.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1progress__bar_1_1ProgressBar.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classprotocol_1_1Protocol.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1screens_1_1screen_1_1Screen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -132,9 +136,9 @@
     <xi:include href="classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1properties_1_1ServerProperties.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1states_1_1ServerStates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classtasks_1_1ServerTasks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classgui_1_1slot_1_1Slot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classclient_1_1connection_1_1Tasks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="classtasks_1_1Tasks.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1tiles_1_1Tile.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classworld_1_1tile__manager_1_1TileManager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classdata_1_1tiles_1_1Tiles.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -152,6 +156,8 @@
     <xi:include href="connection_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="connection__handler_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="player__manager_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="client_2tasks_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="server_2tasks_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="game_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="window_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="data__manager_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -202,7 +208,6 @@
     <xi:include href="protocol_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="player__handler_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="server_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="tasks_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="world__handler_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="exceptions_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="logger_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
