@@ -18,8 +18,10 @@ class MainHud(Screen):
         super().__init__()
         self.game = game
         self.surface = Surface((self.game.width, self.game.height))
-        self.version_label = Label(f'v{get_game_property(APP_VERSION).strip()}').set_font_sizes(
-            (8, 10, 12)).set_colour((255, 255, 10))
+        self.version_label = (Label(f'v{get_game_property(APP_VERSION).strip()}')
+                              .set_font_sizes((8, 10, 12))
+                              .set_colour((255, 255, 10))
+                              .set_x(4))
         self.score_label = Label()
         self.ping_label = Label()
         self.data_sent_label = Label()
@@ -64,6 +66,7 @@ class MainHud(Screen):
             self.score_label.draw(self.game.screen)
             self.health_bar.draw(self.game.screen)
             self.hotbar.draw(self.game.screen)
+            self.version_label.draw(self.game.screen)
 
     def update_ui(self) -> None:
         """
@@ -78,6 +81,7 @@ class MainHud(Screen):
         self.data_recv_label.update(self.game)
         self.camera_label.update(self.game)
         self.position_label.update(self.game)
+        self.version_label.update(self.game)
         self.health_bar.center_horizontally(0, self.game.width).set_y(self.health_bar.get_height())
         self.hotbar.set_y(self.game.height - self.hotbar.get_height() - 16).center_horizontally(0, self.game.width)
         self.score_label.set_x(4)
@@ -88,12 +92,7 @@ class MainHud(Screen):
         y += self.camera_label.get_font_size() + 4
         self.position_label.set_x(4)
         self.position_label.set_y(y)
-        self.health_bar.refresh()
-        self.ping_label.refresh()
-        self.data_sent_label.refresh()
-        self.data_recv_label.refresh()
-        self.score_label.refresh()
-        self.position_label.refresh()
+        self.version_label.set_y(self.game.height - self.version_label.get_total_height())
 
     def set_state(self, state: bool) -> None:
         """
@@ -106,5 +105,6 @@ class MainHud(Screen):
         self.data_recv_label.set_state(state)
         self.camera_label.set_state(state)
         self.position_label.set_state(state)
+        self.version_label.set_state(state)
         self.health_bar.set_state(state)
         self.hotbar.set_state(state)
