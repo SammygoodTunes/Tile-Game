@@ -33,6 +33,7 @@ class ScreenProperties:
     """
 
     ALPHA = 128
+    PRONOUNCED_ALPHA = 160
 
 
 class ServerProperties:

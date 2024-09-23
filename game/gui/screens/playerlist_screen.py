@@ -69,9 +69,9 @@ class PlayerListScreen(Screen):
         self._faded_surface = Surface((self.game.width / 2, height + self.title_label.get_total_height() + 10))
         self._faded_surface.fill((0, 0, 0))
         self._faded_surface.set_alpha(ScreenProperties.ALPHA)
-        self._playercount_surface = Surface((self.count_label.get_total_width() + 20, self.count_label.get_total_height() + 10))
+        self._playercount_surface = Surface((self.count_label.get_total_width() + 10, self.count_label.get_total_height() + 5))
         self._playercount_surface.fill((0, 0, 0))
-        self._playercount_surface.set_alpha(ScreenProperties.ALPHA)
+        self._playercount_surface.set_alpha(ScreenProperties.PRONOUNCED_ALPHA)
         self.title_label.set_y(self.game.height / 2 - self._faded_surface.get_height() / 2)
         for i, nametag in enumerate(self.player_list):
             nametag.set_y(self.title_label.get_y() + self.title_label.get_total_height() + i * nametag.get_height())

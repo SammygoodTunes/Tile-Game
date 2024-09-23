@@ -78,21 +78,14 @@ class InputBox(Widget):
         self._width = int(clamp(window.width * 0.4, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
         self._height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
         self.scroll_text()
+        self._text_label.update(window)
+        self._placeholder_label.update(window)
         self._text_label.set_text(self._text_value[self._text_offset:])
         self._placeholder_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._placeholder_label.center_vertically(self._y, self._height)
         self._placeholder_label.set_x(self._x + 5)
-        self._text_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._text_label.center_vertically(self._y, self._height)
         self._text_label.set_x(self._x + 5)
-        self.refresh()
-
-    def refresh(self) -> None:
-        """
-        Refresh the input box and its components.
-        """
-        self._placeholder_label.refresh()
-        self._text_label.refresh()
 
     def scroll_text(self):
         """
@@ -166,7 +159,6 @@ class InputBox(Widget):
         Center the input box horizontally relative to the specified parent, then return the input box itself.
         """
         self._x = round(parent_x + parent_width / 2 - self._width / 2)
-        self.refresh()
         return self
 
     def center_vertically(self, parent_y: int, parent_height: int) -> Self:
@@ -174,7 +166,6 @@ class InputBox(Widget):
         Center the input box vertically relative to the specified parent, then return the input box itself.
         """
         self._y = round(parent_y + parent_height / 2 - self._height / 2)
-        self.refresh()
         return self
 
     def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:

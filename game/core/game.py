@@ -54,16 +54,18 @@ class Game(Window):
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 self.stop()
-            if e.type == pygame.KEYDOWN:
+            elif e.type == pygame.KEYDOWN:
                 if e.key == pygame.K_RETURN and pygame.key.get_mods() & pygame.KMOD_ALT:
                     self.toggle_fullscreen()
                     self.update_all_uis()
-            if e.type == pygame.VIDEORESIZE:
+                    continue
+            elif e.type == pygame.VIDEORESIZE:
                 self.resize(e)
                 self.update_all_uis()
                 continue
-            if e.type == pygame.VIDEOEXPOSE:
+            elif e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
+                continue
             self.client.events(self, e)
             self.screens.events(e)
 
