@@ -11,7 +11,6 @@ from game.data.properties import PlayerProperties
 from game.data.states import MouseStates, PlayerStates
 from game.data.tiles import Tile, Tiles, TileTypes
 from game.gui.screens.main_hud import MainHud
-from game.network.builders import PlayerBuilder
 from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger
 from game.world.camera import Camera
@@ -239,11 +238,12 @@ class Player:
                 self.velocity_y = clamp(self.velocity_y + d / PlayerProperties.VELOCITY_STOP_DURATION, -1, 0)
 
         # Player - map boundaries collision
-        if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width or \
-                self._y < map_obj.get_y() or self._y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
+        if self._x < map_obj.get_x() or self._x > map_obj.get_x() + map_obj.get_width_in_pixels() - self.width:
             self._x = clamp(self._x, map_obj.get_x(), map_obj.get_x() + map_obj.get_width_in_pixels() - self.width)
+            self.velocity_x = 0
+        if self._y < map_obj.get_y() or self._y > map_obj.get_y() + map_obj.get_height_in_pixels() - self.height:
             self._y = clamp(self._y, map_obj.get_y(), map_obj.get_y() + map_obj.get_height_in_pixels() - self.height)
-            self.velocity_x = self.velocity_y = 0
+            self.velocity_y = 0
 
         # Player - wall collision
         if walls[0] and self._x <= tile_wx:
