@@ -2,7 +2,7 @@
 
 A tile-based multiplayer game with procedural terrain generation (using the Perlin Noise algorithm).
 
-Currently in-development.
+Currently in development.
 
 ## Preview
 
