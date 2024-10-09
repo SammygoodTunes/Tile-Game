@@ -3,7 +3,9 @@ from pygame.event import Event
 
 from game.client.connection import Connection, Tasks
 from game.data.states import ConnectionStates
+from game.data.structures import TileStructure
 from game.gui.label import Label
+from game.world.map_manager import Map
 
 
 class ConnectionHandler:
@@ -52,7 +54,11 @@ class ConnectionHandler:
             if connection_state > 0:
                 self.connection = None
             if connection_state == ConnectionStates.SUCCESS:
-                game.client.world.set_map(self.connection.data)
+                width, height = self.connection.data[0], self.connection.data[1]
+                tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE
+                game.client.world.set_map(Map(width, height))
+                game.client.world.get_map().set_tile_data(self.connection.data[2:tile_data_pos])
+                game.client.world.get_map().set_dynatile_data(self.connection.data[tile_data_pos + 1:])
                 game.client.world.initialise()
                 game.client.world.get_map().load()
                 game.client.player.set_ideal_spawn_point(game.client.world.get_map(), game.client.camera)

@@ -590,10 +590,10 @@
       </memberdef>
       <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
-        <definition> Self world.map_manager.Map.set_data</definition>
+        <definition> Self world.map_manager.Map.set_compressed_data</definition>
         <argsstring>(self, list[Tile] data)</argsstring>
-        <name>set_data</name>
-        <qualifiedname>world.map_manager.Map.set_data</qualifiedname>
+        <name>set_compressed_data</name>
+        <qualifiedname>world.map_manager.Map.set_compressed_data</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
@@ -616,10 +616,10 @@ Use default map data if no data is provided.
       </memberdef>
       <memberdef kind="function" id="classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list[Tile]</type>
-        <definition> list[Tile] world.map_manager.Map.get_data</definition>
+        <definition> list[Tile] world.map_manager.Map.get_compressed_data</definition>
         <argsstring>(self)</argsstring>
-        <name>get_data</name>
-        <qualifiedname>world.map_manager.Map.get_data</qualifiedname>
+        <name>get_compressed_data</name>
+        <qualifiedname>world.map_manager.Map.get_compressed_data</qualifiedname>
         <param>
           <type>self</type>
           <defname>self</defname>
@@ -1034,7 +1034,7 @@ the map manager itself.
       <member refid="classworld_1_1map__manager_1_1Map_1adfbf908d6b22c9b28e77a555bdb561f9" prot="protected" virt="non-virtual"><scope>world::map_manager::Map</scope><name>_y</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1a8eae51ab1efade491c363b863816dfb3" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>DEFAULT</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1a3432bbf28927dc49724ab386b91dbf54" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>generate</name></member>
-      <member refid="classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_compressed_data</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1ae7ee08704c02be7114501cb4f80b71c0" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1ac32ec46d7942e7762a1d628b300e1d37" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile_data</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1ac6bcc533f8575e867df89cefdda3af82" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>get_dynatile_surface</name></member>
@@ -1057,7 +1057,7 @@ the map manager itself.
       <member refid="classworld_1_1map__manager_1_1Map_1aba53765e85dfc066f31d65721b625a25" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>regenerate</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1aecf1d43811bb673efe17bea518890e93" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>SEED_CHARS</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1a15377758122a9baa54dca992e19e957a" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>SEED_LENGTH</name></member>
-      <member refid="classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_data</name></member>
+      <member refid="classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_compressed_data</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1af7cf16d45cecfaf54de6b6da3c2ad0de" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_dynatile</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1a3fb29639865be0fa6481292397341eb1" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_dynatile_data</name></member>
       <member refid="classworld_1_1map__manager_1_1Map_1a5d4be34cb68b903179d090be55cf954a" prot="public" virt="non-virtual"><scope>world::map_manager::Map</scope><name>set_seed</name></member>

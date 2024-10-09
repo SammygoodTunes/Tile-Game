@@ -1,11 +1,14 @@
 
+from math import ceil
 from pygame import SRCALPHA, Surface
 from random import choice, randint, seed
 from string import ascii_letters, digits
 from typing import Self
 
 from game.data.states import MapStates
+from game.data.structures import TileStructure
 from game.data.tiles import Tile, Tiles
+from game.network.protocol import Protocol
 from game.utils.exceptions import InvalidMapData
 from game.utils.logger import logger
 from game.world.synth import noise
@@ -17,18 +20,14 @@ class Map:
     Class for creating a Map.
     """
 
-    DEFAULT = ([Tiles.GRASS if randint(0, 8) == 0 else Tiles.PLAINS for x in range(2048)]
-               + [Tiles.DIRT if randint(0, 10) == 0 else Tiles.PLAINS for x in range(1024)]
-               + [Tiles.DIRT if randint(0, 8) == 0 else Tiles.COBBLESTONE for x in range(2048)])
-
     SEED_LENGTH: int = 64
     SEED_CHARS: str = ''.join(digits + ascii_letters)
 
     def __init__(self, width: int, height: int) -> None:
         self._state: tuple[str, int] = ('', 0)
         self.tile_manager = TileManager()
-        self._data: list = list()
-        self._dynatile_data: list = list()
+        self._dynatile_data: bytes = b''
+        self._tile_data: bytes = b''
         self._seed: str = ''
         self._x = -width * TileManager.SIZE // 2
         self._y = -height * TileManager.SIZE // 2
@@ -53,30 +52,32 @@ class Map:
         """
         Generate the map data.
         """
-        self._data.clear()
-        self._dynatile_data = [False] * self._width * self._height
+        self._tile_data = b''
+        self._dynatile_data = b'\x00' * ceil(self._width * self._height / 8)
         # Somehow make a call to set loading screen state to True
 
         self.set_state(MapStates.GENMAP)
         logger.info(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
-        for tile in range(self._width * self._height):
-            noise_value = self.perlin_noise.generate(tile % self._width, tile // self._height)
+        for tile_index in range(self._width * self._height):
+            noise_value = self.perlin_noise.generate(tile_index % self._width, tile_index // self._height)
+            tile: Tile
             if noise_value < -1500:
-                self._data.append(Tiles.WATER)
+                tile = Tiles.WATER
             elif -1500 <= noise_value < -1000:
-                self._data.append(Tiles.SAND)
+                tile = Tiles.SAND
             elif -1000 <= noise_value < -600:
-                self._data.append(Tiles.DIRT)
+                tile = Tiles.DIRT
             elif -600 <= noise_value < 0:
-                self._data.append(Tiles.GRASS)
+                tile = Tiles.GRASS
             elif 0 <= noise_value < 500:
-                self._data.append(Tiles.PLAINS)
+                tile = Tiles.PLAINS
             elif 1280 <= noise_value < 1550:
-                self._data.append(Tiles.LAVA)
+                tile = Tiles.LAVA
             else:
-                self._data.append(Tiles.COBBLESTONE)
+                tile = Tiles.COBBLESTONE
+            self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
 
             '''if tile > 0:
                 if self._data[tile - offset - 1][0] == self._data[tile - offset][0]:
@@ -84,11 +85,13 @@ class Map:
                     self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
                     offset += 1'''
 
-            if progress != round((tile + 1) / (self._width * self._height) * 100):
-                progress = round((tile + 1) / (self._width * self._height) * 100)
-                # Set the loading screen progress bar value to 'progress'
-                self.set_state(MapStates.GENMAP, progress)
-                logger.info(f'Generating map data... {progress}%')
+            current_progress = round((tile_index + 1) / (self._width * self._height) * 100)
+            if progress == current_progress:
+                continue
+            progress = current_progress
+            # Set the loading screen progress bar value to 'progress'
+            self.set_state(MapStates.GENMAP, progress)
+            logger.info(f'Generating map data... {progress}%')
 
         # Update the loading screen UI to update its info label text
 
@@ -104,29 +107,36 @@ class Map:
 
         # Update the loading screen UI to update its info label text
 
-        if not self._data:
+        if not self._tile_data:
             raise InvalidMapData
 
         # Update all game UIs
         # Set the ideal spawnpoint of the player with params this map obj (self) and game camera
         # Set the loading screen state to false
         print("Done!")
-        self.set_state(MapStates.READY, 0)
 
     def load(self) -> None:
         """
         Draw the map tiles to the surface.
         """
         progress: int = -1
-        for i, tile in enumerate(self._data):
+        for i in range(len(self._tile_data) // TileStructure.TILE_BYTE_SIZE):
             x: int = (i % self._width) * TileManager.SIZE
             y: int = TileManager.SIZE * (i // self._width)
             # Call the tile manager to draw the tiles with params x, y, tile, self._surface
+            tile = Tile().decompress(
+                int.from_bytes(
+                    self._tile_data[i * TileStructure.TILE_BYTE_SIZE:i * TileStructure.TILE_BYTE_SIZE + TileStructure.TILE_BYTE_SIZE]
+                )
+            )
             self.tile_manager.draw(x, y, tile, self._surface)
 
-            if progress != round((i + 1) / len(self._data) * 100):
-                progress = round((i + 1) / len(self._data) * 100)
-                logger.info(f'Loading map data... {progress}%')
+            current_progress = round((i + 1) / len(self._tile_data) // TileStructure.TILE_BYTE_SIZE * 100)
+            if progress == current_progress:
+                continue
+            progress = current_progress
+            logger.info(f'Loading map data... {progress}%')
+        self.set_state(MapStates.READY, 0)
 
     def regenerate(self, _seed: str) -> None:
         """
@@ -191,62 +201,78 @@ class Map:
         world_x, world_y = self.tile_to_world_pos(tile_x, tile_y)
         return int(game.width // 2 + world_x - int(game.client.camera.x)), int(game.height // 2 + world_y - int(game.client.camera.y))
 
-    def set_tile(self, tile_x: int, tile_y: int, tile: Tile) -> Self:
+    def set_tile(self, tile_x: int, tile_y: int, tile: Tile | int) -> Self:
         """
         Set the tile at specified x and y tile positions and of specified tile type, then return the map manager itself.
         """
-        self._data[tile_x % self._width + tile_y * self._width] = tile
+        if isinstance(tile, Tile):
+            tile = tile.compress()
+        pos = TileStructure.TILE_BYTE_SIZE * (tile_x % self._width + tile_y * self._width)
+        self._tile_data = (
+                self._tile_data[:pos]
+                + int.to_bytes(tile, length=TileStructure.TILE_BYTE_SIZE)
+                + self._tile_data[pos + TileStructure.TILE_BYTE_SIZE:]
+        )
         return self
 
     def get_tile(self, tile_x: int, tile_y: int) -> Tile:
         """
         Return the tile at specified x and y tile positions.
         """
-        return self._data[tile_x % self._width + tile_y * self._width]
+        pos = TileStructure.TILE_BYTE_SIZE * (tile_x % self._width + tile_y * self._width)
+        return Tile().decompress(int.from_bytes(self._tile_data[pos:pos + TileStructure.TILE_BYTE_SIZE]))
 
-    def set_data(self, data: list[Tile]) -> Self:
+    def set_tile_data(self, tile_data: bytes) -> Self:
         """
-        Set the map data, then return the map manager itself.
-        Use default map data if no data is provided.
+        Set the map's tile data, then return the map manager itself.
         """
-        if data:
-            self._data = data
-        else:
-            self._data = Map.DEFAULT
+        self._tile_data = tile_data
         return self
 
-    def get_data(self) -> list[Tile]:
+    def get_tile_data(self) -> bytes:
         """
-        Return the map data.
+        Return the map's tile data.
         """
-        return self._data
+        return self._tile_data
 
-    def set_dynatile_data(self, dynatile_data: list[bool]):
+    def set_dynatile_data(self, dynatile_data: bytes):
         """
-        Set the dynamic tile data, then return the map manager itself.
+        Set the map's dynamic tile data, then return the map manager itself.
         """
         self._dynatile_data = dynatile_data
         return self
 
-    def get_dynatile_data(self) -> list[bool]:
+    def get_dynatile_data(self) -> bytes:
         """
-        Get the dynamic tile data.
+        Get the map's dynamic tile data.
         """
         return self._dynatile_data
 
-    def set_dynatile(self, x: int, y: int, state: bool) -> Self:
+    def set_dynatile(self, tile_x: int, tile_y: int, tile_state: bool) -> Self:
         """
         Set the dynamic tile at specified x and y tile positions and of specified used state (bool), then return
         the map manager itself.
         """
-        self._dynatile_data[y * self._width + x % self._width] = state
+        byte_pos = (tile_x % self._width + tile_y * self._width) // 8
+        new_tile_byte = (
+            self._dynatile_data[byte_pos]
+            | (1 << 0x8 - (tile_x % self._width + tile_y * self._width) % 8)) if tile_state else (
+            self._dynatile_data[byte_pos] & ~(1 << 0x8 - (tile_x % self._width + tile_y * self._width) % 8)
+        )
+        self._dynatile_data = (
+                self._dynatile_data[:byte_pos]
+                + int.to_bytes(new_tile_byte)
+                + self._dynatile_data[byte_pos + 1:]
+        )
         return self
 
-    def get_dynatile(self, x: int, y: int) -> bool:
+    def get_dynatile(self, tile_x: int, tile_y: int) -> bool:
         """
         Return the dynamic tile at specified x and y tile positions.
         """
-        return self._dynatile_data[y * self._width + x % self._width]
+        array_index = tile_x % self._width + tile_y * self._width
+        byte_pos = array_index // 8
+        return bool(self._dynatile_data[byte_pos] >> (0x8 - array_index % 8) & 1)
 
     def randomise_seed(self) -> Self:
         """

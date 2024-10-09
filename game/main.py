@@ -9,6 +9,11 @@ Art: Pickmonde, SammygoodTunes
 """
 
 import faulthandler
+import cProfile
+import io
+import pstats
+from pstats import SortKey
+
 from pygame import init, quit, display
 from traceback import format_exc
 
@@ -21,6 +26,9 @@ def main() -> None:
     Here is where it all begun...
     """
     faulthandler.enable()
+
+    # pr = cProfile.Profile()
+    # pr.enable()
 
     init()
 
@@ -35,6 +43,14 @@ def main() -> None:
         game.crash(format_exc())
 
     quit()
+
+    #pr.disable()
+
+    '''s = io.StringIO()
+    sortby = SortKey.CUMULATIVE
+    ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+    ps.print_stats()
+    print(s.getvalue())'''
 
 
 if __name__ == '__main__':

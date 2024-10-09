@@ -3,10 +3,12 @@ from math import ceil
 
 from game.data.items import Items
 from game.data.properties import ServerProperties
+from game.data.structures import MapStructure
 from game.network.builders import PlayerBuilder, BaseBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol
 from game.server.entity.player.player_handler import PlayerHandler
+from game.server.world_handler import WorldHandler
 from game.utils.logger import logger
 
 
@@ -35,16 +37,21 @@ class ServerTasks:
         return False
 
     @staticmethod
-    def map_data(conn, addr, world_handler) -> None:
+    def map_data(conn, addr, world_handler: WorldHandler) -> None:
         """
         Task for sending map data to a client.
         """
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.MAPDATA_REQ):
             print(f'Sending map to {addr}')
-            compressed_map_obj = Compressor.compress(world_handler.get_world().get_map())
+            compressed_data_obj = Compressor.compress(
+                int.to_bytes(world_handler.get_world().get_map().get_width_in_tiles(), length=MapStructure.MAP_WIDTH_BYTE_SIZE)
+                + int.to_bytes(world_handler.get_world().get_map().get_height_in_tiles(), length=MapStructure.MAP_HEIGHT_BYTE_SIZE)
+                + world_handler.get_world().get_map().get_tile_data()
+                + world_handler.get_world().get_map().get_dynatile_data()
+            )
             conn.send(Hasher.enhash(Protocol.MAPDATA_RES))
-            conn.send(fill(compressed_map_obj))
+            conn.send(fill(compressed_data_obj))
             conn.send(Hasher.enhash(Protocol.MAPDATA_EOS))
             print(f'Sent!')
 

@@ -105,3 +105,14 @@ def test_tile_creation():
     assert dummy_tile.get_resistance() == 150
     assert dummy_tile.get_damage() == 25
     assert dummy_tile.get_damage_delay() == 0.005
+
+
+def test_tile_compression():
+    """
+    Test: map_compression
+    Desc: Tests if the map compression and decompression algorithms work as intended.
+    """
+    dummy_tile = Tile(x=5, y=7).set_resistance(50).set_damage(4).set_damage_delay(0.1)
+    compressed_tile_value = dummy_tile.compress()
+    decompressed_tile = Tile().decompress(compressed_tile_value)
+    assert dummy_tile == decompressed_tile

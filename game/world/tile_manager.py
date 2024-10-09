@@ -19,12 +19,14 @@ class TileManager:
         self.height: int = 0
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
-    def draw(self, x: int, y: int, tile: Tile, screen: Surface) -> None:
+    def draw(self, x: int, y: int, tile: Tile | int, screen: Surface) -> None:
         """
         Draw a tile to the screen.
         """
         if self.atlas is None:
             raise InvalidTextureAtlas
+        if isinstance(tile, int):
+            tile = Tile().decompress(tile)
         # surface = pygame.Surface((TileManager.SIZE, TileManager.SIZE))
         screen.blit(self.atlas,
                     (x, y, self.width, self.height),

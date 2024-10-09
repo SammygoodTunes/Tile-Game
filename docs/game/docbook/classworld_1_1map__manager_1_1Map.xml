@@ -33,9 +33,9 @@
 </listitem>
             <listitem><para>Tile <link linkend="_classworld_1_1map__manager_1_1Map_1ae597f285e50df73bb9dc7e4ed5e4c521">get_tile</link> (self, int tile_x, int tile_y)</para>
 </listitem>
-            <listitem><para>Self <link linkend="_classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999">set_data</link> (self, list[Tile] data)</para>
+            <listitem><para>Self <link linkend="_classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999">set_compressed_data</link> (self, list[Tile] data)</para>
 </listitem>
-            <listitem><para>list[Tile] <link linkend="_classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d">get_data</link> (self)</para>
+            <listitem><para>list[Tile] <link linkend="_classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d">get_compressed_data</link> (self)</para>
 </listitem>
             <listitem><para><link linkend="_classworld_1_1map__manager_1_1Map_1a3fb29639865be0fa6481292397341eb1">set_dynatile_data</link> (self, list[bool] dynatile_data)</para>
 </listitem>
@@ -143,10 +143,10 @@
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1aebd35b48367f484ee520fd73dbc08f1d"/><section>
-    <title>get_data()</title>
-<indexterm><primary>get_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>get_data</secondary></indexterm>
-<para><computeroutput> list[Tile] world.map_manager.Map.get_data ( self)</computeroutput></para>
+    <title>get_compressed_data()</title>
+<indexterm><primary>get_compressed_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>get_compressed_data</secondary></indexterm>
+<para><computeroutput> list[Tile] world.map_manager.Map.get_compressed_data ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the map data.
 </computeroutput></literallayout> </para>
 </section>
@@ -303,10 +303,10 @@
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classworld_1_1map__manager_1_1Map_1ad4fcc93d55eb976fd386f571688e5999"/><section>
-    <title>set_data()</title>
-<indexterm><primary>set_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
-<indexterm><primary>world.map_manager.Map</primary><secondary>set_data</secondary></indexterm>
-<para><computeroutput> Self world.map_manager.Map.set_data ( self, list[Tile] data)</computeroutput></para>
+    <title>set_compressed_data()</title>
+<indexterm><primary>set_compressed_data</primary><secondary>world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>world.map_manager.Map</primary><secondary>set_compressed_data</secondary></indexterm>
+<para><computeroutput> Self world.map_manager.Map.set_compressed_data ( self, list[Tile] data)</computeroutput></para>
 <para><literallayout><computeroutput>Set the map data, then return the map manager itself.
 Use default map data if no data is provided.
 </computeroutput></literallayout> </para>

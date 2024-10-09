@@ -11,7 +11,7 @@ class PlayerProperties:
     SPEED = 350
     SPEED_IN_WATER = SPEED // 2
     SPEED_IN_LAVA = SPEED // 3
-    TEXTURE: str = str(impr.files('assets') / "player.png")
+    TEXTURE: str = "assets/player.png"
     VELOCITY_START_DURATION: float = 0.25
     VELOCITY_STOP_DURATION: float = 0.25
     VELOCITY_THRESHOLD: float = 0.0001
@@ -51,3 +51,17 @@ class WorldProperties:
     """
 
     SKY_COLOUR = (140, 150, 235)
+    MAX_MAP_WIDTH = 256
+    MAX_MAP_HEIGHT = 256
+
+class TileProperties:
+    """
+    Class for tile properties.
+    """
+
+    TILE_ID_MAX = 63
+    TILE_X_MAX = 7
+    TILE_Y_MAX = 7
+    TILE_RESISTANCE_MAX = 63
+    TILE_DAMAGE_MAX = 127
+    TILE_DAMAGE_DELAY_MAX = 0.8 * 10
