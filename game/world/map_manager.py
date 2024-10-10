@@ -33,8 +33,8 @@ class Map:
         self._y = -height * TileManager.SIZE // 2
         self._width = width
         self._height = height
-        self._surface = None
-        self._dynatile_surface = None
+        self._surface: Surface | None = None
+        self._dynatile_surface: Surface | None = None
         self.perlin_noise = noise.PerlinNoise()
         logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
