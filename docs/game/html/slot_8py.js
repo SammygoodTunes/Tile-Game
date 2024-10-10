@@ -1,4 +1,4 @@
 var slot_8py =
 [
-    [ "gui.slot.Slot", "classgui_1_1slot_1_1Slot.html", "classgui_1_1slot_1_1Slot" ]
+    [ "game.gui.slot.Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", "classgame_1_1gui_1_1slot_1_1Slot" ]
 ];

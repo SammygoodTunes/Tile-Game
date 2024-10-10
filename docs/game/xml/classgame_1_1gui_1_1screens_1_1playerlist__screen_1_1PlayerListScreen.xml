@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::screens::playerlist_screen::PlayerListScreen</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" prot="public" virt="non-virtual">game.gui.screens.screen.Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a008367ff0b46e930bb8bad463d37a0ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1acc828d9391694ec117c5aac61d0b6a55" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::count_label</definition>
+        <argsstring></argsstring>
+        <name>count_label</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.count_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae836f062990d9e5ec045ff8bcb6c68d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::player_list</definition>
+        <argsstring></argsstring>
+        <name>player_list</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.player_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0e127d37018dadc1c1b170bb33b1044c" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::_faded_surface</definition>
+        <argsstring></argsstring>
+        <name>_faded_surface</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen._faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad33b79a0cb1e7187da2d42dd8eaa3943" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.playerlist_screen.PlayerListScreen::_playercount_surface</definition>
+        <argsstring></argsstring>
+        <name>_playercount_surface</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen._playercount_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.playerlist_screen.PlayerListScreen.__init__</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" kindref="member">game</ref></type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.playerlist_screen.PlayerListScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="27" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1afcb756851c0e019215971f85d97caf5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</definition>
+        <argsstring>(self, bool bypass=False)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bypass</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="43" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.playerlist_screen.PlayerListScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.screens.playerlist_screen.PlayerListScreen.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="81" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the player list screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.screens.playerlist_screen.PlayerListScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.screens.playerlist_screen.PlayerListScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="12" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0e127d37018dadc1c1b170bb33b1044c" prot="protected" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>_faded_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad33b79a0cb1e7187da2d42dd8eaa3943" prot="protected" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>_playercount_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1acc828d9391694ec117c5aac61d0b6a55" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>count_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>game</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae836f062990d9e5ec045ff8bcb6c68d4" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>player_list</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a008367ff0b46e930bb8bad463d37a0ab" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>title_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1afcb756851c0e019215971f85d97caf5a" prot="public" virt="non-virtual"><scope>game::gui::screens::playerlist_screen::PlayerListScreen</scope><name>update_ui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

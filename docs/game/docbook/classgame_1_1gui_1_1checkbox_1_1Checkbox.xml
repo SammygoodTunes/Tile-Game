@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox" xml:lang="en-US">
+<title>game.gui.checkbox.Checkbox Class Reference</title>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary></indexterm>
+<para>Inheritance diagram for game.gui.checkbox.Checkbox:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1checkbox_1_1Checkbox.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca">__init__</link> (self, str title, int x=0, int y=0, bool checked=False)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4e9941a71af74c2b017a4020da98b242">events</link> (self, event.Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af7192c00b134098860b32d56e90d43ba">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560">refresh</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aced045dab7ae0a13d18ffbe2ea8833e4">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4af175514354965243cf3e59a30dfa7e">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a48e3c16eed12127c17c9c0652a593a41">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5e0b189acb3ab800dced15219d568bf5">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a9f82b245f9f436f2a06a95f18e6d7981">set_size</link> (self, int size)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1afe84fa368285768043d7556aade4a311">get_size</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1afa62234706018622e52dad722516b3ea">set_checked</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8abc79fd7b0d4d58b4d60814b33ff2ef">is_checked</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365">offset_y</link> (self, int offset_y)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a17e45c0472de1b42d71f1f56340689ee">title_label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1acb85c8a47e5aaee6c95382ea9b141b87">_checked</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5ddc88a9c78934c7ac370d5f8677e07e">_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa2ee9702ca589b64a319e2217ca6f0d3">_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aba500c541f1143d723410e9b4d254900">_spacing</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a checkbox.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.checkbox.Checkbox.__init__ ( self, str title, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, bool  checked = <computeroutput>False</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">game.gui.widget.Widget</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a48e3c16eed12127c17c9c0652a593a41"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the checkbox on both axes relative to the specified parent, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aced045dab7ae0a13d18ffbe2ea8833e4"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the checkbox horizontally relative to the specified parent, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4af175514354965243cf3e59a30dfa7e"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the checkbox vertically relative to the specified parent, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5e0b189acb3ab800dced15219d568bf5"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the checkbox with center() and offset it by x and y relative to the specified parent, then return the
+checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.checkbox.Checkbox.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the checkbox and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4e9941a71af74c2b017a4020da98b242"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None game.gui.checkbox.Checkbox.events ( self, event.Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the checkbox events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1afe84fa368285768043d7556aade4a311"/><section>
+    <title>get_size()</title>
+<indexterm><primary>get_size</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>get_size</secondary></indexterm>
+<para><computeroutput> int game.gui.checkbox.Checkbox.get_size ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the size of the checkbox&apos;s button.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8abc79fd7b0d4d58b4d60814b33ff2ef"/><section>
+    <title>is_checked()</title>
+<indexterm><primary>is_checked</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>is_checked</secondary></indexterm>
+<para><computeroutput> bool game.gui.checkbox.Checkbox.is_checked ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the checked state of the checkbox&apos;s button.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7"/><section>
+    <title>is_hovering_over()</title>
+<indexterm><primary>is_hovering_over</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>is_hovering_over</secondary></indexterm>
+<para><computeroutput> bool game.gui.checkbox.Checkbox.is_hovering_over ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the checkbox or not.
+The bounding box of the checkbox includes the button and the text.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10"/><section>
+    <title>offset_x()</title>
+<indexterm><primary>offset_x</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>offset_x</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.offset_x ( self, int offset_x)</computeroutput></para>
+<para><literallayout><computeroutput>Offset the checkbox on the x-axis, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">game.gui.widget.Widget</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365"/><section>
+    <title>offset_y()</title>
+<indexterm><primary>offset_y</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>offset_y</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.offset_y ( self, int offset_y)</computeroutput></para>
+<para><literallayout><computeroutput>Offset the checkbox on the y-axis, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">game.gui.widget.Widget</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput> None game.gui.checkbox.Checkbox.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the checkbox and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1afa62234706018622e52dad722516b3ea"/><section>
+    <title>set_checked()</title>
+<indexterm><primary>set_checked</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>set_checked</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.set_checked ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the checked state of the checkbox&apos;s button, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a9f82b245f9f436f2a06a95f18e6d7981"/><section>
+    <title>set_size()</title>
+<indexterm><primary>set_size</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>set_size</secondary></indexterm>
+<para><computeroutput> Self game.gui.checkbox.Checkbox.set_size ( self, int size)</computeroutput></para>
+<para><literallayout><computeroutput>Set the size of the checkbox&apos;s button, then return the checkbox itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af7192c00b134098860b32d56e90d43ba"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.gui.checkbox.Checkbox.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the checkbox and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1acb85c8a47e5aaee6c95382ea9b141b87"/><section>
+    <title>_checked</title>
+<indexterm><primary>_checked</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_checked</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._checked<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5ddc88a9c78934c7ac370d5f8677e07e"/><section>
+    <title>_colour</title>
+<indexterm><primary>_colour</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_colour</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa2ee9702ca589b64a319e2217ca6f0d3"/><section>
+    <title>_size</title>
+<indexterm><primary>_size</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_size</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._size<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aba500c541f1143d723410e9b4d254900"/><section>
+    <title>_spacing</title>
+<indexterm><primary>_spacing</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_spacing</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._spacing<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a17e45c0472de1b42d71f1f56340689ee"/><section>
+    <title>title_label</title>
+<indexterm><primary>title_label</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>title_label</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox.title_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_checkbox_8py">checkbox.py</link></section>
+</section>

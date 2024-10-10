@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties" kind="class" language="Python" prot="public">
+    <compoundname>game::data::properties::world_properties::WorldProperties</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.properties.world_properties.WorldProperties::SKY_COLOUR</definition>
+        <argsstring></argsstring>
+        <name>SKY_COLOUR</name>
+        <qualifiedname>game.data.properties.world_properties.WorldProperties.SKY_COLOUR</qualifiedname>
+        <initializer>=  (140, 150, 235)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6358265daff4cc2e40b6900a0cf4af5d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.world_properties.WorldProperties::MAX_MAP_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MAX_MAP_WIDTH</name>
+        <qualifiedname>game.data.properties.world_properties.WorldProperties.MAX_MAP_WIDTH</qualifiedname>
+        <initializer>=  256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1afe206b60ee200f9503d8ec25b95038be" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.world_properties.WorldProperties::MAX_MAP_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MAX_MAP_HEIGHT</name>
+        <qualifiedname>game.data.properties.world_properties.WorldProperties.MAX_MAP_HEIGHT</qualifiedname>
+        <initializer>=  256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for world properties.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/world_properties.py" bodystart="2" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1afe206b60ee200f9503d8ec25b95038be" prot="public" virt="non-virtual"><scope>game::data::properties::world_properties::WorldProperties</scope><name>MAX_MAP_HEIGHT</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6358265daff4cc2e40b6900a0cf4af5d" prot="public" virt="non-virtual"><scope>game::data::properties::world_properties::WorldProperties</scope><name>MAX_MAP_WIDTH</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec" prot="public" virt="non-virtual"><scope>game::data::properties::world_properties::WorldProperties</scope><name>SKY_COLOUR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

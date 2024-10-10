@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item" xml:lang="en-US">
+<title>game.data.items.item.Item Class Reference</title>
+<indexterm><primary>game.data.items.item.Item</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e">__init__</link> (self, int x=0, int y=0, str tooltip_name=&apos;&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a105eb54fb24cbacc253151a5bc98d71c">__eq__</link> (self, Self obj)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1afe3409288c96cf97b673ba253c9dffa3">set_xy</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1ac15db489621ee3ce73cbbc45879d0431">get_xy</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a4ca7b1407fdae5b205beb5ff0f8ed5d7">set_tooltip_name</link> (self, str tooltip_name)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a5fc891eccdbeba1dd2b87528503b2c85">get_tooltip_name</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a0e93970e69af3de3ef03682882c8406f">set_strength</link> (self, int strength)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1aa8c99b57755fac7b808bfc053df0761b">get_strength</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1ad989a7dee2db34b51b03f080728742a7">set_durability</link> (self, int durability)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1aa6ced4cedf61b5e5016bb5cbc3f2804a">get_durability</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1aae7c708724427e60900af0114a99c71f">DEFAULT_ATLAS</link> = &quot;assets/items.png&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a67e843ccd65aa49d1469af96bee57182">_xy</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028">_tooltip_name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835">_strength</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113">_durability</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>    Class for creating a usable item.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.data.items.item.Item.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, str  tooltip_name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a105eb54fb24cbacc253151a5bc98d71c"/><section>
+    <title>__eq__()</title>
+<indexterm><primary>__eq__</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>__eq__</secondary></indexterm>
+<para><computeroutput>game.data.items.item.Item.__eq__ ( self, Self obj)</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1aa6ced4cedf61b5e5016bb5cbc3f2804a"/><section>
+    <title>get_durability()</title>
+<indexterm><primary>get_durability</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>get_durability</secondary></indexterm>
+<para><computeroutput> int game.data.items.item.Item.get_durability ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Return the durability of the item.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1aa8c99b57755fac7b808bfc053df0761b"/><section>
+    <title>get_strength()</title>
+<indexterm><primary>get_strength</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>get_strength</secondary></indexterm>
+<para><computeroutput> int game.data.items.item.Item.get_strength ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Return the strength of the item.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a5fc891eccdbeba1dd2b87528503b2c85"/><section>
+    <title>get_tooltip_name()</title>
+<indexterm><primary>get_tooltip_name</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>get_tooltip_name</secondary></indexterm>
+<para><computeroutput> str game.data.items.item.Item.get_tooltip_name ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Return the tooltip name of the item.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1ac15db489621ee3ce73cbbc45879d0431"/><section>
+    <title>get_xy()</title>
+<indexterm><primary>get_xy</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>get_xy</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.data.items.item.Item.get_xy ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Return the texture coordinates of the item.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1ad989a7dee2db34b51b03f080728742a7"/><section>
+    <title>set_durability()</title>
+<indexterm><primary>set_durability</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>set_durability</secondary></indexterm>
+<para><computeroutput> Self game.data.items.item.Item.set_durability ( self, int durability)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the durability of the item, then return the item itself.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a0e93970e69af3de3ef03682882c8406f"/><section>
+    <title>set_strength()</title>
+<indexterm><primary>set_strength</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>set_strength</secondary></indexterm>
+<para><computeroutput> Self game.data.items.item.Item.set_strength ( self, int strength)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the strength of the item, then return the item itself.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a4ca7b1407fdae5b205beb5ff0f8ed5d7"/><section>
+    <title>set_tooltip_name()</title>
+<indexterm><primary>set_tooltip_name</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>set_tooltip_name</secondary></indexterm>
+<para><computeroutput> Self game.data.items.item.Item.set_tooltip_name ( self, str tooltip_name)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the tooltip name of the item, then return the item itself.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1afe3409288c96cf97b673ba253c9dffa3"/><section>
+    <title>set_xy()</title>
+<indexterm><primary>set_xy</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>set_xy</secondary></indexterm>
+<para><computeroutput> Self game.data.items.item.Item.set_xy ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>        Set the texture coordinates of the item, then return the item itself.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113"/><section>
+    <title>_durability</title>
+<indexterm><primary>_durability</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>_durability</secondary></indexterm>
+<para><computeroutput>game.data.items.item.Item._durability<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835"/><section>
+    <title>_strength</title>
+<indexterm><primary>_strength</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>_strength</secondary></indexterm>
+<para><computeroutput>game.data.items.item.Item._strength<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028"/><section>
+    <title>_tooltip_name</title>
+<indexterm><primary>_tooltip_name</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>_tooltip_name</secondary></indexterm>
+<para><computeroutput>game.data.items.item.Item._tooltip_name<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1a67e843ccd65aa49d1469af96bee57182"/><section>
+    <title>_xy</title>
+<indexterm><primary>_xy</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>_xy</secondary></indexterm>
+<para><computeroutput>game.data.items.item.Item._xy<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1items_1_1item_1_1Item_1aae7c708724427e60900af0114a99c71f"/><section>
+    <title>DEFAULT_ATLAS</title>
+<indexterm><primary>DEFAULT_ATLAS</primary><secondary>game.data.items.item.Item</secondary></indexterm>
+<indexterm><primary>game.data.items.item.Item</primary><secondary>DEFAULT_ATLAS</secondary></indexterm>
+<para><computeroutput>str game.data.items.item.Item.DEFAULT_ATLAS = &quot;assets/items.png&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_item_8py">item.py</link></section>
+</section>

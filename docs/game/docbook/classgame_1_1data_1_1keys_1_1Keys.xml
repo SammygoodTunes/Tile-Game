@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1data_1_1keys_1_1Keys" xml:lang="en-US">
+<title>game.data.keys.Keys Class Reference</title>
+<indexterm><primary>game.data.keys.Keys</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1a7bf50fb18167f3c98e201bd646dbb722">MOVE_LEFT</link> = pygame.K_q</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1ad7d0b2167fc881075bb395c5e5e0f3a5">MOVE_RIGHT</link> = pygame.K_d</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1af994bd4258194ac7acb85e96a977c6f0">MOVE_UP</link> = pygame.K_z</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1afade1026de2fd0d4ec77543d35643f9e">MOVE_DOWN</link> = pygame.K_s</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1ae2ffd6552d3594216d313a818d2a6903">SHOW_MAP</link> = pygame.K_SPACE</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1keys_1_1Keys_1af303c93444827219120d692a615fb923">SHOW_PLAYERLIST</link> = pygame.K_TAB</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for regrouping all the keys associated to different game actions.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1afade1026de2fd0d4ec77543d35643f9e"/><section>
+    <title>MOVE_DOWN</title>
+<indexterm><primary>MOVE_DOWN</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>MOVE_DOWN</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.MOVE_DOWN = pygame.K_s<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1a7bf50fb18167f3c98e201bd646dbb722"/><section>
+    <title>MOVE_LEFT</title>
+<indexterm><primary>MOVE_LEFT</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>MOVE_LEFT</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.MOVE_LEFT = pygame.K_q<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1ad7d0b2167fc881075bb395c5e5e0f3a5"/><section>
+    <title>MOVE_RIGHT</title>
+<indexterm><primary>MOVE_RIGHT</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>MOVE_RIGHT</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.MOVE_RIGHT = pygame.K_d<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1af994bd4258194ac7acb85e96a977c6f0"/><section>
+    <title>MOVE_UP</title>
+<indexterm><primary>MOVE_UP</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>MOVE_UP</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.MOVE_UP = pygame.K_z<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1ae2ffd6552d3594216d313a818d2a6903"/><section>
+    <title>SHOW_MAP</title>
+<indexterm><primary>SHOW_MAP</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>SHOW_MAP</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.SHOW_MAP = pygame.K_SPACE<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1keys_1_1Keys_1af303c93444827219120d692a615fb923"/><section>
+    <title>SHOW_PLAYERLIST</title>
+<indexterm><primary>SHOW_PLAYERLIST</primary><secondary>game.data.keys.Keys</secondary></indexterm>
+<indexterm><primary>game.data.keys.Keys</primary><secondary>SHOW_PLAYERLIST</secondary></indexterm>
+<para><computeroutput>game.data.keys.Keys.SHOW_PLAYERLIST = pygame.K_TAB<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_keys_8py">keys.py</link></section>
+</section>

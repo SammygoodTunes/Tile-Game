@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds" xml:lang="en-US">
+<title>game.utils.exceptions.OutOfMapBounds Class Reference</title>
+<indexterm><primary>game.utils.exceptions.OutOfMapBounds</primary></indexterm>
+<para>Inheritance diagram for game.utils.exceptions.OutOfMapBounds:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds_1a3c6ca7c3cace8096cf29033eda46d3b1">__init__</link> (self, message=&quot;Out of map boundaries, make sure to stay within them!&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the exception caused by overflowing the map data array.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds_1a3c6ca7c3cace8096cf29033eda46d3b1"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.utils.exceptions.OutOfMapBounds</secondary></indexterm>
+<indexterm><primary>game.utils.exceptions.OutOfMapBounds</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.utils.exceptions.OutOfMapBounds.__init__ ( self,  message = <computeroutput>&quot;Out&#160;of&#160;map&#160;boundaries,&#160;make&#160;sure&#160;to&#160;stay&#160;within&#160;them!&quot;</computeroutput>
+)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_exceptions_8py">exceptions.py</link></section>
+</section>

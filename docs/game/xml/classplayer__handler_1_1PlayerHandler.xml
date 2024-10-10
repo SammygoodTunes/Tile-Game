@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="13" bodyend="15"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="10" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="16" bodyend="24"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="13" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="25" bodyend="42"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="22" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a8c5305bf833d4e0c378ad68eee4148e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="43" bodyend="58"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="40" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="59" bodyend="69"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="56" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list[dict]</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="70" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="70" bodyend="75"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="67" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>dict[str, int|dict|None]</type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="76" bodyend="85"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="73" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="73" bodyend="82"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -168,7 +168,7 @@
 <para><verbatim>Class for creating the player handler.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="8" bodyend="85"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/entity/player/player_handler.py" bodystart="5" bodyend="82"/>
     <listofallmembers>
       <member refid="classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>__init__</name></member>
       <member refid="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" prot="public" virt="non-virtual"><scope>player_handler::PlayerHandler</scope><name>get_player</name></member>

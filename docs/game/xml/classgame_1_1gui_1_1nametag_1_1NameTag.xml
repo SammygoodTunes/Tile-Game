@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1nametag_1_1NameTag" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::nametag::NameTag</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1widget_1_1Widget" prot="public" virt="non-virtual">game.gui.widget.Widget</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a915301acb6d999742ec609dce861de4f" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_background_colour</definition>
+        <argsstring></argsstring>
+        <name>_background_colour</name>
+        <qualifiedname>game.gui.nametag.NameTag._background_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>game.gui.nametag.NameTag._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>game.gui.nametag.NameTag._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a97f09fccb4294b1e8c0acfc14d7b9f23" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_faded_surface</definition>
+        <argsstring></argsstring>
+        <name>_faded_surface</name>
+        <qualifiedname>game.gui.nametag.NameTag._faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>game.gui.nametag.NameTag._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>game.gui.nametag.NameTag._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a3424c61e3dd38049fa9b9d6e1c483790" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.nametag.NameTag::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>game.gui.nametag.NameTag.label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.nametag.NameTag.__init__</definition>
+        <argsstring>(self, str text=&quot;&quot;, int x=0, int y=0)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.nametag.NameTag.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="14" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.nametag.NameTag.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.nametag.NameTag.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the nametag and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.nametag.NameTag.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.gui.nametag.NameTag.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the nametag and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="34" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a67c27b59776a17258243b2ae1dbad583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.nametag.NameTag.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>game.gui.nametag.NameTag.refresh</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Refresh the nametag and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="46" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.gui.nametag.NameTag.is_hovering_over</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hovering_over</name>
+        <qualifiedname>game.gui.nametag.NameTag.is_hovering_over</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the user&apos;s mouse cursor is hovering over the nametag or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.center_horizontally</definition>
+        <argsstring>(self, int parent_x, int parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>game.gui.nametag.NameTag.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the nametag horizontally relative to the specified parent, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.center_vertically</definition>
+        <argsstring>(self, int parent_y, int parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>game.gui.nametag.NameTag.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the nametag vertically relative to the specified parent, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a23a20c52321ed86dd28dc85379a9f35f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.center</definition>
+        <argsstring>(self, int parent_x, int parent_y, int parent_width, int parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>game.gui.nametag.NameTag.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the nametag on both axes relative to the specified parent, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.center_with_offset</definition>
+        <argsstring>(self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>game.gui.nametag.NameTag.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the nametag with center() and offset it by x and y relative to the specified parent, then return
+the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.set_width</definition>
+        <argsstring>(self, int width)</argsstring>
+        <name>set_width</name>
+        <qualifiedname>game.gui.nametag.NameTag.set_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the width of the nametag, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="89" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.nametag.NameTag.get_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width</name>
+        <qualifiedname>game.gui.nametag.NameTag.get_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the nametag.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.set_height</definition>
+        <argsstring>(self, int height)</argsstring>
+        <name>set_height</name>
+        <qualifiedname>game.gui.nametag.NameTag.set_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the height of the nametag, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="102" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.nametag.NameTag.get_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height</name>
+        <qualifiedname>game.gui.nametag.NameTag.get_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the nametag.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a4acac4a04de2fb1e9b004061a2511f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.set_background_colour</definition>
+        <argsstring>(self, tuple[int, int, int] background_colour)</argsstring>
+        <name>set_background_colour</name>
+        <qualifiedname>game.gui.nametag.NameTag.set_background_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tuple</type>
+          <declname>background_colour</declname>
+          <array>[int, int, int]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the background colour of the nametag, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="115" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a2196325c8563fa2e8a3d27217d197ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[int, int, int]</type>
+        <definition> tuple[int, int, int] game.gui.nametag.NameTag.get_background_colour</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_background_colour</name>
+        <qualifiedname>game.gui.nametag.NameTag.get_background_colour</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the background colour of the nametag.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="122" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.nametag.NameTag.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.nametag.NameTag.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the state of the nametag and its components, then return the nametag itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="128" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="128" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a nametag.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.nametag.NameTag</label>
+        <link refid="classgame_1_1gui_1_1nametag_1_1NameTag"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.nametag.NameTag</label>
+        <link refid="classgame_1_1gui_1_1nametag_1_1NameTag"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/nametag.py" bodystart="9" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a915301acb6d999742ec609dce861de4f" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_background_colour</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a97f09fccb4294b1e8c0acfc14d7b9f23" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_faded_surface</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_height</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_width</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_x</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" prot="protected" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>_y</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a23a20c52321ed86dd28dc85379a9f35f" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>center</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>center_horizontally</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>center_vertically</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>center_with_offset</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a2196325c8563fa2e8a3d27217d197ab1" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>get_background_colour</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>get_height</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>get_width</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>is_hovering_over</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3424c61e3dd38049fa9b9d6e1c483790" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>label</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a67c27b59776a17258243b2ae1dbad583" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>refresh</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a4acac4a04de2fb1e9b004061a2511f98" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>set_background_colour</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>set_height</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>set_width</name></member>
+      <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" prot="public" virt="non-virtual"><scope>game::gui::nametag::NameTag</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

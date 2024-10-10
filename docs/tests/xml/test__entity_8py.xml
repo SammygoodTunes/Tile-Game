@@ -14,7 +14,7 @@
 <codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.entity.player<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Player</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PlayerStates</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states.player_states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PlayerStates</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__entity_1a3e260b6211c70e6c906e1a68e0061f2a" kindref="member">test_player_creation</ref>():</highlight></codeline>

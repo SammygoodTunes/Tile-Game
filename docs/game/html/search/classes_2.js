@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['game_0',['Game',['../classcore_1_1game_1_1Game.html',1,'core::game']]],
-  ['gameoverscreen_1',['GameoverScreen',['../classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html',1,'gui::screens::gameover_screen']]]
+  ['dynatilestructure_0',['DynatileStructure',['../classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html',1,'game::data::structures::tile_structure']]]
 ];

@@ -2,20 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="data__manager_8py" kind="file" language="Python">
     <compoundname>data_manager.py</compoundname>
-    <innernamespace refid="namespacedata">data</innernamespace>
-    <innernamespace refid="namespacedata_1_1data__manager">data::data_manager</innernamespace>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1data__manager">game::data::data_manager</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacedata" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data" refkind="compound"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>importlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>resources<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>impr</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Iterator</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>data</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.exceptions<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>InvalidGamePropertyValue</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.logger<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1exceptions" kindref="compound">game.utils.exceptions</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>InvalidGamePropertyValue</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1logger" kindref="compound">game.utils.logger</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>KEY=VALUE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal">GAME_PROPERTIES_FILE:<sp/>str<sp/>=<sp/>str(impr.files(data)<sp/>/<sp/></highlight><highlight class="stringliteral">&quot;catchncage.properties&quot;</highlight><highlight class="normal">)</highlight></codeline>

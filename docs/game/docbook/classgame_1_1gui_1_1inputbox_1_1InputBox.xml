@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox" xml:lang="en-US">
+<title>game.gui.inputbox.InputBox Class Reference</title>
+<indexterm><primary>game.gui.inputbox.InputBox</primary></indexterm>
+<para>Inheritance diagram for game.gui.inputbox.InputBox:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1inputbox_1_1InputBox.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3a9ccdb5c9be01a1f80b400e71638a30">__init__</link> (self, str text=&quot;&quot;, str placeholder=&quot;&quot;, int x=0, int y=0, int width=200, int height=50)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a69d1435c73da5cadaf115bad31facc47">draw</link> (self, Surface screen)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ad8d90fe692a18fe6fd253f67c06fe77a">events</link> (self, event.Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af">update</link> (self, window)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a73afa55e833db7a64798dc2ee6efc00d">scroll_text</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1614d1cde516217425c78d7c7d0782b5">authorise_only_ascii</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac293574688113dc4aac32d02b45480e6">authorise_only_numeric</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4f694fa75694304ffb3f649584df8352">authorise_only_alnum</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a843adad0762a296df5ae71dd091a694f">authorise_only_alnumlines</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a6b6e6356f3a6d31d6c825a135d09e19c">set_selected</link> (self, state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a766eb438a7ea5e46465a47cee690e112">is_selected</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afeb96871a259083d74f93fb330641718">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a07b42a26abffdf97b61193759b857a44">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a89a154c4bac9fbf3c5c0fca57ceefb78">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a392281136e4375a4ffdb32e3d1bb4ffc">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aafb42694feb1ca6402cf9307b9d691a4">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a80b8c17f74361b79c79df66222270ed6">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1affd240538547017976fd18ba7c1f4162">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a718f37e5cecfb65dfe8edbac6bd03049">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a68f04d1438077757605588b65e9f78a7">set_border_colour</link> (self, tuple[int, int, int] border_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a95c1fa6676d9153afe7688af8da5e9cc">get_border_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4811195d09697d2f2480ab2f69ed599d">set_background_colour</link> (self, tuple[int, int, int] background_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac12e9f827b5b6c4cc6c58295f6ce02f5">get_background_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a70b4dfb1f49e5d140788abf26942cb8d">set_cursor_colour</link> (self, tuple[int, int, int] cursor_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3aa2feeda3d4ec45c4dd31f194191e60">get_cursor_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1abe10aa1865cf9aa10215697ce7376580">set_placeholder_text</link> (self, str placeholder_text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5b6ce862e16452c48bb003b875b1903b">get_placeholder_text</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5932dac0c748de434c799853b4164d44">set_text</link> (self, str text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a07bb8400f7a5c20c9bfd856d404c8a2f">get_text</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a46810e9b4d8614c8d8e036d3f82c70e8">set_max_text_length</link> (self, int max_text_length)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a8ea9e658d677b9c24c27310b27c8302b">get_max_text_length</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a56539eddb2835035dd16a9758dc9dfb6">set_order</link> (self, int order)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afc4d7567ca599322eae916034eb38f6a">get_order</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1f0c7204aaa8cb45a56a6d18e340b9bb">MIN_WIDTH</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ac85061cbb62995f3fd42e4c6ff766b">MAX_WIDTH</link> = 800</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac0004afc845ced53f9eeb2c945cd3d4a">MIN_HEIGHT</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a693b3785929c17886c0de20bff0b92e1">MAX_HEIGHT</link> = 50</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a862bef629b0acdab4c1a2c0ce1848cd7">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ae22eae3247e1a40239a509ea22069178">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4c14d659b5b8233c5af994157c848f81">_selected</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5632310414c375d4196baefceac4bd98">_border_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a783a9669768dd0373066cc948660feb1">_background_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3fabc4fd25aa89ddbeabb7e931c4588c">_cursor_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac06f3e9d5f5f7a4fb0ce767378380abc">_text_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afa322ad401b822a95ff49f0dc074e4ca">_text_offset</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaf642443641ac6cc0307fb24107e313b">_order</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ade7956ce8695803263b51f56b640b2">_max_text_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a38b5b2278e1d9dcaee70d7abb131d050">_authorised_chars</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1adbca92c8cb84bf617ce88b424c639b9a">_placeholder_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a108e74023581dd95be86348603165c78">_text_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating an input box.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3a9ccdb5c9be01a1f80b400e71638a30"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.inputbox.InputBox.__init__ ( self, str  text = <computeroutput>&quot;&quot;</computeroutput>
+, str  placeholder = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  width = <computeroutput>200</computeroutput>
+, int  height = <computeroutput>50</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4f694fa75694304ffb3f649584df8352"/><section>
+    <title>authorise_only_alnum()</title>
+<indexterm><primary>authorise_only_alnum</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_alnum</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_alnum ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9), then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a843adad0762a296df5ae71dd091a694f"/><section>
+    <title>authorise_only_alnumlines()</title>
+<indexterm><primary>authorise_only_alnumlines</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_alnumlines</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_alnumlines ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
+This includes dashes (hyphens) and underscores.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1614d1cde516217425c78d7c7d0782b5"/><section>
+    <title>authorise_only_ascii()</title>
+<indexterm><primary>authorise_only_ascii</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_ascii</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_ascii ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only ASCII characters in the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac293574688113dc4aac32d02b45480e6"/><section>
+    <title>authorise_only_numeric()</title>
+<indexterm><primary>authorise_only_numeric</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_numeric</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_numeric ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only numerical values (0-9) in the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a89a154c4bac9fbf3c5c0fca57ceefb78"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box on both axes relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afeb96871a259083d74f93fb330641718"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box horizontally relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a07b42a26abffdf97b61193759b857a44"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box vertically relative to the specified parent, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a392281136e4375a4ffdb32e3d1bb4ffc"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the input box with center() and offset it by x and y relative to the specified parent, then return the
+input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a69d1435c73da5cadaf115bad31facc47"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.inputbox.InputBox.draw ( self, Surface screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the input box and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ad8d90fe692a18fe6fd253f67c06fe77a"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None game.gui.inputbox.InputBox.events ( self, event.Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the input box events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac12e9f827b5b6c4cc6c58295f6ce02f5"/><section>
+    <title>get_background_colour()</title>
+<indexterm><primary>get_background_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_background_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.inputbox.InputBox.get_background_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the background colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a95c1fa6676d9153afe7688af8da5e9cc"/><section>
+    <title>get_border_colour()</title>
+<indexterm><primary>get_border_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_border_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.inputbox.InputBox.get_border_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the border colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3aa2feeda3d4ec45c4dd31f194191e60"/><section>
+    <title>get_cursor_colour()</title>
+<indexterm><primary>get_cursor_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_cursor_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.inputbox.InputBox.get_cursor_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the cursor colour of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a718f37e5cecfb65dfe8edbac6bd03049"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int game.gui.inputbox.InputBox.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a8ea9e658d677b9c24c27310b27c8302b"/><section>
+    <title>get_max_text_length()</title>
+<indexterm><primary>get_max_text_length</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_max_text_length</secondary></indexterm>
+<para><computeroutput> int game.gui.inputbox.InputBox.get_max_text_length ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the input box&apos;s max text length.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afc4d7567ca599322eae916034eb38f6a"/><section>
+    <title>get_order()</title>
+<indexterm><primary>get_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_order</secondary></indexterm>
+<para><computeroutput> int game.gui.inputbox.InputBox.get_order ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the order of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5b6ce862e16452c48bb003b875b1903b"/><section>
+    <title>get_placeholder_text()</title>
+<indexterm><primary>get_placeholder_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_placeholder_text</secondary></indexterm>
+<para><computeroutput> str game.gui.inputbox.InputBox.get_placeholder_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the placeholder label text.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a07bb8400f7a5c20c9bfd856d404c8a2f"/><section>
+    <title>get_text()</title>
+<indexterm><primary>get_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_text</secondary></indexterm>
+<para><computeroutput> str game.gui.inputbox.InputBox.get_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the label text of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a80b8c17f74361b79c79df66222270ed6"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int game.gui.inputbox.InputBox.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the input box.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908"/><section>
+    <title>is_hovering_over()</title>
+<indexterm><primary>is_hovering_over</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>is_hovering_over</secondary></indexterm>
+<para><computeroutput> bool game.gui.inputbox.InputBox.is_hovering_over ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the input box or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a766eb438a7ea5e46465a47cee690e112"/><section>
+    <title>is_selected()</title>
+<indexterm><primary>is_selected</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>is_selected</secondary></indexterm>
+<para><computeroutput> bool game.gui.inputbox.InputBox.is_selected ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the input box is selected or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a73afa55e833db7a64798dc2ee6efc00d"/><section>
+    <title>scroll_text()</title>
+<indexterm><primary>scroll_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>scroll_text</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox.scroll_text ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Internal method for calculating how and when to scroll text when going beyond the input box.
+I am aware of how awful it is. Why? because O(n).
+What does that mean? the larger the text, the slower it gets! Very bad!
+Might not be that noticeable for small strings, but still...
+TODO: Make it better, fool.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4811195d09697d2f2480ab2f69ed599d"/><section>
+    <title>set_background_colour()</title>
+<indexterm><primary>set_background_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_background_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_background_colour ( self, tuple[int, int, int] background_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the background colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a68f04d1438077757605588b65e9f78a7"/><section>
+    <title>set_border_colour()</title>
+<indexterm><primary>set_border_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_border_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_border_colour ( self, tuple[int, int, int] border_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the border colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a70b4dfb1f49e5d140788abf26942cb8d"/><section>
+    <title>set_cursor_colour()</title>
+<indexterm><primary>set_cursor_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_cursor_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_cursor_colour ( self, tuple[int, int, int] cursor_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the cursor colour of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1affd240538547017976fd18ba7c1f4162"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a46810e9b4d8614c8d8e036d3f82c70e8"/><section>
+    <title>set_max_text_length()</title>
+<indexterm><primary>set_max_text_length</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_max_text_length</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_max_text_length ( self, int max_text_length)</computeroutput></para>
+<para><literallayout><computeroutput>Set the input box&apos;s max text length, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a56539eddb2835035dd16a9758dc9dfb6"/><section>
+    <title>set_order()</title>
+<indexterm><primary>set_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_order</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_order ( self, int order)</computeroutput></para>
+<para><literallayout><computeroutput>Set the order of the input box, then return the input box itself.
+Used for tabbing between them.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1abe10aa1865cf9aa10215697ce7376580"/><section>
+    <title>set_placeholder_text()</title>
+<indexterm><primary>set_placeholder_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_placeholder_text</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_placeholder_text ( self, str placeholder_text)</computeroutput></para>
+<para><literallayout><computeroutput>Set the placeholder label text of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a6b6e6356f3a6d31d6c825a135d09e19c"/><section>
+    <title>set_selected()</title>
+<indexterm><primary>set_selected</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_selected</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_selected ( self,  state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the selected state of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5932dac0c748de434c799853b4164d44"/><section>
+    <title>set_text()</title>
+<indexterm><primary>set_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_text</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_text ( self, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Set the label text of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aafb42694feb1ca6402cf9307b9d691a4"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the input box, then return the input box itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.gui.inputbox.InputBox.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the input box and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a38b5b2278e1d9dcaee70d7abb131d050"/><section>
+    <title>_authorised_chars</title>
+<indexterm><primary>_authorised_chars</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_authorised_chars</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._authorised_chars<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a783a9669768dd0373066cc948660feb1"/><section>
+    <title>_background_colour</title>
+<indexterm><primary>_background_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_background_colour</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._background_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5632310414c375d4196baefceac4bd98"/><section>
+    <title>_border_colour</title>
+<indexterm><primary>_border_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_border_colour</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._border_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3fabc4fd25aa89ddbeabb7e931c4588c"/><section>
+    <title>_cursor_colour</title>
+<indexterm><primary>_cursor_colour</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_cursor_colour</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._cursor_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ae22eae3247e1a40239a509ea22069178"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ade7956ce8695803263b51f56b640b2"/><section>
+    <title>_max_text_length</title>
+<indexterm><primary>_max_text_length</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_max_text_length</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._max_text_length<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaf642443641ac6cc0307fb24107e313b"/><section>
+    <title>_order</title>
+<indexterm><primary>_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_order</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._order<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1adbca92c8cb84bf617ce88b424c639b9a"/><section>
+    <title>_placeholder_label</title>
+<indexterm><primary>_placeholder_label</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_placeholder_label</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._placeholder_label<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4c14d659b5b8233c5af994157c848f81"/><section>
+    <title>_selected</title>
+<indexterm><primary>_selected</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_selected</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._selected<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a108e74023581dd95be86348603165c78"/><section>
+    <title>_text_label</title>
+<indexterm><primary>_text_label</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_text_label</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._text_label<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afa322ad401b822a95ff49f0dc074e4ca"/><section>
+    <title>_text_offset</title>
+<indexterm><primary>_text_offset</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_text_offset</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._text_offset<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac06f3e9d5f5f7a4fb0ce767378380abc"/><section>
+    <title>_text_value</title>
+<indexterm><primary>_text_value</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_text_value</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._text_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a862bef629b0acdab4c1a2c0ce1848cd7"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a693b3785929c17886c0de20bff0b92e1"/><section>
+    <title>MAX_HEIGHT</title>
+<indexterm><primary>MAX_HEIGHT</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>MAX_HEIGHT</secondary></indexterm>
+<para><computeroutput>int game.gui.inputbox.InputBox.MAX_HEIGHT = 50<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ac85061cbb62995f3fd42e4c6ff766b"/><section>
+    <title>MAX_WIDTH</title>
+<indexterm><primary>MAX_WIDTH</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>MAX_WIDTH</secondary></indexterm>
+<para><computeroutput>int game.gui.inputbox.InputBox.MAX_WIDTH = 800<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac0004afc845ced53f9eeb2c945cd3d4a"/><section>
+    <title>MIN_HEIGHT</title>
+<indexterm><primary>MIN_HEIGHT</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>MIN_HEIGHT</secondary></indexterm>
+<para><computeroutput>int game.gui.inputbox.InputBox.MIN_HEIGHT = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1f0c7204aaa8cb45a56a6d18e340b9bb"/><section>
+    <title>MIN_WIDTH</title>
+<indexterm><primary>MIN_WIDTH</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>MIN_WIDTH</secondary></indexterm>
+<para><computeroutput>int game.gui.inputbox.InputBox.MIN_WIDTH = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_inputbox_8py">inputbox.py</link></section>
+</section>

@@ -1,10 +1,10 @@
 var exceptions_8py =
 [
-    [ "utils.exceptions.InvalidTextureAtlas", "classutils_1_1exceptions_1_1InvalidTextureAtlas.html", "classutils_1_1exceptions_1_1InvalidTextureAtlas" ],
-    [ "utils.exceptions.InvalidMapData", "classutils_1_1exceptions_1_1InvalidMapData.html", "classutils_1_1exceptions_1_1InvalidMapData" ],
-    [ "utils.exceptions.OutOfMapBounds", "classutils_1_1exceptions_1_1OutOfMapBounds.html", "classutils_1_1exceptions_1_1OutOfMapBounds" ],
-    [ "utils.exceptions.InvalidGamePropertyValue", "classutils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classutils_1_1exceptions_1_1InvalidGamePropertyValue" ],
-    [ "utils.exceptions.ZeroOrLessSpawnPlayerAttempts", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" ],
-    [ "utils.exceptions.PlayerNameAlreadyExists", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists.html", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists" ],
-    [ "utils.exceptions.MaxPlayersReached", "classutils_1_1exceptions_1_1MaxPlayersReached.html", "classutils_1_1exceptions_1_1MaxPlayersReached" ]
+    [ "game.utils.exceptions.InvalidTextureAtlas", "classgame_1_1utils_1_1exceptions_1_1InvalidTextureAtlas.html", "classgame_1_1utils_1_1exceptions_1_1InvalidTextureAtlas" ],
+    [ "game.utils.exceptions.InvalidMapData", "classgame_1_1utils_1_1exceptions_1_1InvalidMapData.html", "classgame_1_1utils_1_1exceptions_1_1InvalidMapData" ],
+    [ "game.utils.exceptions.OutOfMapBounds", "classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds.html", "classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds" ],
+    [ "game.utils.exceptions.InvalidGamePropertyValue", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue" ],
+    [ "game.utils.exceptions.ZeroOrLessSpawnPlayerAttempts", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" ],
+    [ "game.utils.exceptions.PlayerNameAlreadyExists", "classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists.html", "classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists" ],
+    [ "game.utils.exceptions.MaxPlayersReached", "classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached.html", "classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached" ]
 ];

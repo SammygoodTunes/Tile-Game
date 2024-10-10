@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager" xml:lang="en-US">
+<title>game.world.tile_manager.TileManager Class Reference</title>
+<indexterm><primary>game.world.tile_manager.TileManager</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1abc5d48cf847a7bd6f78500e8d6dd1596">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293">draw</link> (self, int x, int y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link>|int tile, Surface screen)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d">set_atlas</link> (self, str atlas_file)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119">atlas</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd">width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc">height</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1tile__manager_1_1TileManager_1aad0ef5dc30de92298d02a2a2b79f33bd">SIZE</link> = 32</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a tile manager.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1abc5d48cf847a7bd6f78500e8d6dd1596"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.world.tile_manager.TileManager.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.world.tile_manager.TileManager.draw ( self, int x, int y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> | int tile, Surface screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw a tile to the screen.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d"/><section>
+    <title>set_atlas()</title>
+<indexterm><primary>set_atlas</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>set_atlas</secondary></indexterm>
+<para><computeroutput> None game.world.tile_manager.TileManager.set_atlas ( self, str atlas_file)</computeroutput></para>
+<para><literallayout><computeroutput>Set the texture atlas.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119"/><section>
+    <title>atlas</title>
+<indexterm><primary>atlas</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>atlas</secondary></indexterm>
+<para><computeroutput>game.world.tile_manager.TileManager.atlas</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc"/><section>
+    <title>height</title>
+<indexterm><primary>height</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>game.world.tile_manager.TileManager.height</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1aad0ef5dc30de92298d02a2a2b79f33bd"/><section>
+    <title>SIZE</title>
+<indexterm><primary>SIZE</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>SIZE</secondary></indexterm>
+<para><computeroutput>int game.world.tile_manager.TileManager.SIZE = 32<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd"/><section>
+    <title>width</title>
+<indexterm><primary>width</primary><secondary>game.world.tile_manager.TileManager</secondary></indexterm>
+<indexterm><primary>game.world.tile_manager.TileManager</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>game.world.tile_manager.TileManager.width</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_tile__manager_8py">tile_manager.py</link></section>
+</section>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates" kind="class" language="Python" prot="public">
+    <compoundname>game::data::states::player_states::PlayerStates</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1a10533251170493b75a33e3c589954f66" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.states.player_states.PlayerStates::MOVE_DOWN</definition>
+        <argsstring></argsstring>
+        <name>MOVE_DOWN</name>
+        <qualifiedname>game.data.states.player_states.PlayerStates.MOVE_DOWN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1ac8a94aa990c85eedce43ab49fc9d11ab" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.states.player_states.PlayerStates::MOVE_RIGHT</definition>
+        <argsstring></argsstring>
+        <name>MOVE_RIGHT</name>
+        <qualifiedname>game.data.states.player_states.PlayerStates.MOVE_RIGHT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1a65fef5386e2b1ba45bf5363d70f2692c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.states.player_states.PlayerStates::MOVE_UP</definition>
+        <argsstring></argsstring>
+        <name>MOVE_UP</name>
+        <qualifiedname>game.data.states.player_states.PlayerStates.MOVE_UP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1aebd846ae0bb459650d7a27b6499b52d3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.states.player_states.PlayerStates::MOVE_LEFT</definition>
+        <argsstring></argsstring>
+        <name>MOVE_LEFT</name>
+        <qualifiedname>game.data.states.player_states.PlayerStates.MOVE_LEFT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Player states.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/states/player_states.py" bodystart="2" bodyend="8"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1a10533251170493b75a33e3c589954f66" prot="public" virt="non-virtual"><scope>game::data::states::player_states::PlayerStates</scope><name>MOVE_DOWN</name></member>
+      <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1aebd846ae0bb459650d7a27b6499b52d3" prot="public" virt="non-virtual"><scope>game::data::states::player_states::PlayerStates</scope><name>MOVE_LEFT</name></member>
+      <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1ac8a94aa990c85eedce43ab49fc9d11ab" prot="public" virt="non-virtual"><scope>game::data::states::player_states::PlayerStates</scope><name>MOVE_RIGHT</name></member>
+      <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1a65fef5386e2b1ba45bf5363d70f2692c" prot="public" virt="non-virtual"><scope>game::data::states::player_states::PlayerStates</scope><name>MOVE_UP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

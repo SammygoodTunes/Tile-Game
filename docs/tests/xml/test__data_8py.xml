@@ -24,9 +24,9 @@
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>GAME_PROPERTIES_SEPARATOR,</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_NAME,</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_VERSION)</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.items<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Item</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MouseStates</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.tiles<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tile</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.items.item<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Item</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.states.mouse_states<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MouseStates</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.data.tiles.tile<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tile</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__data_1a5e2cfa0df30c5c4bbecb81bb59832351" kindref="member">test_data_folder_exists</ref>():</highlight></codeline>
@@ -116,6 +116,17 @@
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile.get_resistance()<sp/>==<sp/>150</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile.get_damage()<sp/>==<sp/>25</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile.get_damage_delay()<sp/>==<sp/>0.005</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceunit_1_1test__data_1a92bbe22b40fdad24527186d54308ad6d" kindref="member">test_tile_compression</ref>():</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Test:<sp/>map_compression</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Desc:<sp/>Tests<sp/>if<sp/>the<sp/>map<sp/>compression<sp/>and<sp/>decompression<sp/>algorithms<sp/>work<sp/>as<sp/>intended.</highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>dummy_tile<sp/>=<sp/>Tile(x=5,<sp/>y=7).set_resistance(50).set_damage(4).set_damage_delay(0.1)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>compressed_tile_value<sp/>=<sp/>dummy_tile.compress()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>decompressed_tile<sp/>=<sp/>Tile().decompress(compressed_tile_value)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>dummy_tile<sp/>==<sp/>decompressed_tile</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/tests/unit/test_data.py"/>
   </compounddef>

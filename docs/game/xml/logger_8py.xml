@@ -2,14 +2,15 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="logger_8py" kind="file" language="Python">
     <compoundname>logger.py</compoundname>
-    <innernamespace refid="namespaceutils">utils</innernamespace>
-    <innernamespace refid="namespaceutils_1_1logger">utils::logger</innernamespace>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1utils">game::utils</innernamespace>
+    <innernamespace refid="namespacegame_1_1utils_1_1logger">game::utils::logger</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespaceutils_1_1logger" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1utils_1_1logger" refkind="compound"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="3"><highlight class="stringliteral">Logger<sp/>for<sp/>logging<sp/>debug<sp/>info,<sp/>warnings<sp/>and<sp/>errors.</highlight></codeline>
 <codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>

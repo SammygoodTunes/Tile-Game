@@ -5,20 +5,18 @@
 <simplesect>
     <title>Namespaces    </title>
         <itemizedlist>
-            <listitem><para>namespace <link linkend="_namespaceutils">utils</link></para>
+            <listitem><para>namespace <link linkend="_namespacegame">game</link></para>
 </listitem>
-            <listitem><para>namespace <link linkend="_namespaceutils_1_1tools">utils.tools</link></para>
+            <listitem><para>namespace <link linkend="_namespacegame_1_1utils">game.utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegame_1_1utils_1_1tools">game.utils.tools</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a1735efce99a451d8dcb35bf32cb3bfc4">utils.tools.error</link> (str message)</para>
-</listitem>
-            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a36f8b31c2545c93da240850598c3e9e2">utils.tools.warning</link> (str message)</para>
-</listitem>
-            <listitem><para>None <link linkend="_namespaceutils_1_1tools_1a1afae592a510fe58e85ce3f3414fd15b">utils.tools.success</link> (str message)</para>
+            <listitem><para>int <link linkend="_namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655">game.utils.tools.c_log2</link> (SupportsFloat|SupportsIndex x)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

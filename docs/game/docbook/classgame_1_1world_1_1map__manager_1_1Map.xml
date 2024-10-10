@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1world_1_1map__manager_1_1Map" xml:lang="en-US">
+<title>game.world.map_manager.Map Class Reference</title>
+<indexterm><primary>game.world.map_manager.Map</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ad60668d43d3559eaa25fb68456ee78ae">__init__</link> (self, int width, int height)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33">initialise</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54">generate</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a">load</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b">regenerate</link> (self, str <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff">_seed</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a6b051f326ce3661026eb053dcfb487e9">update</link> (self, window_obj, player_obj)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e">set_state</link> (self, str state=&apos;&apos;, int value=0)</para>
+</listitem>
+            <listitem><para>tuple[str, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4">get_state</link> (self)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3">get_tile_pos</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749">get_strict_tile_pos</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384">tile_to_world_pos</link> (self, int tile_x, int tile_y)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c">tile_to_screen_pos</link> (self, game, int tile_x, int tile_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f">set_tile</link> (self, int tile_x, int tile_y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link>|int tile)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a">get_tile</link> (self, int tile_x, int tile_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48">set_tile_data</link> (self, bytes tile_data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e">get_tile_data</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915">set_dynatile_data</link> (self, bytes dynatile_data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c">get_dynatile_data</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff">set_dynatile</link> (self, int tile_x, int tile_y, bool tile_state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a52f0bf1418ce0b52f60121af1c9dd476">get_dynatile</link> (self, int tile_x, int tile_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a">randomise_seed</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0">set_seed</link> (self, str <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff">_seed</link>)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aa4d89c484d67fe6e6c799d20f5f9f89f">get_seed</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ae5b7f0ee6b21722807ce056bcf16e910">get_width_in_tiles</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab">get_width_in_pixels</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394">get_height_in_tiles</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4">get_height_in_pixels</link> (self)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e">get_surface</link> (self)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a3e996531503c10a2d9a19090892697b6">get_dynatile_surface</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ae05bee64f7588d9209ffda50a90b0177">tile_manager</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a036869a3bbb94d647da0f77f54d06b3e">perlin_noise</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ad1e3aa0feee769e63b4e73fc3d02008b">SEED_LENGTH</link> = 64</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aeab516b524910f14da035ae3a4d78333">SEED_CHARS</link> = &apos;&apos;.join(digits + ascii_letters)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a3d1eacf7249d4f4c1d25be82c751f5a4">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a353323335bca6e621dfd591c07c0a7d9">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427">_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7">_dynatile_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59">_tile_data</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb">_dynatile_data</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d">_state</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff">_seed</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a Map.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ad60668d43d3559eaa25fb68456ee78ae"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.__init__ ( self, int width, int height)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54"/><section>
+    <title>generate()</title>
+<indexterm><primary>generate</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>generate</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.generate ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Generate the map data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a52f0bf1418ce0b52f60121af1c9dd476"/><section>
+    <title>get_dynatile()</title>
+<indexterm><primary>get_dynatile</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_dynatile</secondary></indexterm>
+<para><computeroutput> bool game.world.map_manager.Map.get_dynatile ( self, int tile_x, int tile_y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the dynamic tile at specified x and y tile positions.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c"/><section>
+    <title>get_dynatile_data()</title>
+<indexterm><primary>get_dynatile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_dynatile_data</secondary></indexterm>
+<para><computeroutput> bytes game.world.map_manager.Map.get_dynatile_data ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Get the map&apos;s dynamic tile data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a3e996531503c10a2d9a19090892697b6"/><section>
+    <title>get_dynatile_surface()</title>
+<indexterm><primary>get_dynatile_surface</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_dynatile_surface</secondary></indexterm>
+<para><computeroutput> Surface game.world.map_manager.Map.get_dynatile_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map&apos;s dynamic surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4"/><section>
+    <title>get_height_in_pixels()</title>
+<indexterm><primary>get_height_in_pixels</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_height_in_pixels</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_height_in_pixels ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the map in pixels.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394"/><section>
+    <title>get_height_in_tiles()</title>
+<indexterm><primary>get_height_in_tiles</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_height_in_tiles</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_height_in_tiles ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the map in tiles.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa4d89c484d67fe6e6c799d20f5f9f89f"/><section>
+    <title>get_seed()</title>
+<indexterm><primary>get_seed</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_seed</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_seed ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map seed.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4"/><section>
+    <title>get_state()</title>
+<indexterm><primary>get_state</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_state</secondary></indexterm>
+<para><computeroutput> tuple[str, int] game.world.map_manager.Map.get_state ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the state of the map manager.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749"/><section>
+    <title>get_strict_tile_pos()</title>
+<indexterm><primary>get_strict_tile_pos</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_strict_tile_pos</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.world.map_manager.Map.get_strict_tile_pos ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the strict tile position of a world position
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e"/><section>
+    <title>get_surface()</title>
+<indexterm><primary>get_surface</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_surface</secondary></indexterm>
+<para><computeroutput> Surface game.world.map_manager.Map.get_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a"/><section>
+    <title>get_tile()</title>
+<indexterm><primary>get_tile</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_tile</secondary></indexterm>
+<para><computeroutput> <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> game.world.map_manager.Map.get_tile ( self, int tile_x, int tile_y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the tile at specified x and y tile positions.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e"/><section>
+    <title>get_tile_data()</title>
+<indexterm><primary>get_tile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_tile_data</secondary></indexterm>
+<para><computeroutput> bytes game.world.map_manager.Map.get_tile_data ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map&apos;s tile data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3"/><section>
+    <title>get_tile_pos()</title>
+<indexterm><primary>get_tile_pos</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_tile_pos</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.world.map_manager.Map.get_tile_pos ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the tile position of a world position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab"/><section>
+    <title>get_width_in_pixels()</title>
+<indexterm><primary>get_width_in_pixels</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_width_in_pixels</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_width_in_pixels ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the map in pixels.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ae5b7f0ee6b21722807ce056bcf16e910"/><section>
+    <title>get_width_in_tiles()</title>
+<indexterm><primary>get_width_in_tiles</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_width_in_tiles</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_width_in_tiles ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the map in tiles.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a"/><section>
+    <title>get_x()</title>
+<indexterm><primary>get_x</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_x</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the x position of the map.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372"/><section>
+    <title>get_y()</title>
+<indexterm><primary>get_y</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>get_y</secondary></indexterm>
+<para><computeroutput> int game.world.map_manager.Map.get_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the y position of the map.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33"/><section>
+    <title>initialise()</title>
+<indexterm><primary>initialise</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>initialise</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.initialise ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the map manager.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a"/><section>
+    <title>load()</title>
+<indexterm><primary>load</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>load</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.load ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the map tiles to the surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a"/><section>
+    <title>randomise_seed()</title>
+<indexterm><primary>randomise_seed</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>randomise_seed</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.randomise_seed ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Randomise the map seed, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b"/><section>
+    <title>regenerate()</title>
+<indexterm><primary>regenerate</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>regenerate</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.regenerate ( self, str _seed)</computeroutput></para>
+<para><literallayout><computeroutput>Regenerate the map data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff"/><section>
+    <title>set_dynatile()</title>
+<indexterm><primary>set_dynatile</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_dynatile</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_dynatile ( self, int tile_x, int tile_y, bool tile_state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the dynamic tile at specified x and y tile positions and of specified used state (bool), then return
+the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915"/><section>
+    <title>set_dynatile_data()</title>
+<indexterm><primary>set_dynatile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_dynatile_data</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map.set_dynatile_data ( self, bytes dynatile_data)</computeroutput></para>
+<para><literallayout><computeroutput>Set the map&apos;s dynamic tile data, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0"/><section>
+    <title>set_seed()</title>
+<indexterm><primary>set_seed</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_seed</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_seed ( self, str _seed)</computeroutput></para>
+<para><literallayout><computeroutput>Set the map seed, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_state ( self, str  state = <computeroutput>&apos;&apos;</computeroutput>
+, int  value = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the state of the map manager, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f"/><section>
+    <title>set_tile()</title>
+<indexterm><primary>set_tile</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_tile</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_tile ( self, int tile_x, int tile_y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> | int tile)</computeroutput></para>
+<para><literallayout><computeroutput>Set the tile at specified x and y tile positions and of specified tile type, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48"/><section>
+    <title>set_tile_data()</title>
+<indexterm><primary>set_tile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_tile_data</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_tile_data ( self, bytes tile_data)</computeroutput></para>
+<para><literallayout><computeroutput>Set the map&apos;s tile data, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8"/><section>
+    <title>set_x()</title>
+<indexterm><primary>set_x</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_x</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_x ( self, int x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the x position of the map, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559"/><section>
+    <title>set_y()</title>
+<indexterm><primary>set_y</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>set_y</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.set_y ( self, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the y position of the map, then return the map manager itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c"/><section>
+    <title>tile_to_screen_pos()</title>
+<indexterm><primary>tile_to_screen_pos</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>tile_to_screen_pos</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.world.map_manager.Map.tile_to_screen_pos ( self,  game, int tile_x, int tile_y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the screen position of a tile position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384"/><section>
+    <title>tile_to_world_pos()</title>
+<indexterm><primary>tile_to_world_pos</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>tile_to_world_pos</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.world.map_manager.Map.tile_to_world_pos ( self, int tile_x, int tile_y)</computeroutput></para>
+<para><literallayout><computeroutput>Return the world position of a tile position.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a6b051f326ce3661026eb053dcfb487e9"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.world.map_manager.Map.update ( self,  window_obj,  player_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Update the map (unused).
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb"/><section>
+    <title>_dynatile_data</title>
+<indexterm><primary>_dynatile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_dynatile_data</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._dynatile_data<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7"/><section>
+    <title>_dynatile_surface</title>
+<indexterm><primary>_dynatile_surface</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_dynatile_surface</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._dynatile_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a353323335bca6e621dfd591c07c0a7d9"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff"/><section>
+    <title>_seed</title>
+<indexterm><primary>_seed</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_seed</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._seed<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d"/><section>
+    <title>_state</title>
+<indexterm><primary>_state</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_state</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._state<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427"/><section>
+    <title>_surface</title>
+<indexterm><primary>_surface</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_surface</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59"/><section>
+    <title>_tile_data</title>
+<indexterm><primary>_tile_data</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_tile_data</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._tile_data<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a3d1eacf7249d4f4c1d25be82c751f5a4"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a036869a3bbb94d647da0f77f54d06b3e"/><section>
+    <title>perlin_noise</title>
+<indexterm><primary>perlin_noise</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>perlin_noise</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map.perlin_noise</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aeab516b524910f14da035ae3a4d78333"/><section>
+    <title>SEED_CHARS</title>
+<indexterm><primary>SEED_CHARS</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>SEED_CHARS</secondary></indexterm>
+<para><computeroutput>str game.world.map_manager.Map.SEED_CHARS = &apos;&apos;.join(digits + ascii_letters)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ad1e3aa0feee769e63b4e73fc3d02008b"/><section>
+    <title>SEED_LENGTH</title>
+<indexterm><primary>SEED_LENGTH</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>SEED_LENGTH</secondary></indexterm>
+<para><computeroutput>int game.world.map_manager.Map.SEED_LENGTH = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1ae05bee64f7588d9209ffda50a90b0177"/><section>
+    <title>tile_manager</title>
+<indexterm><primary>tile_manager</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>tile_manager</secondary></indexterm>
+<para><computeroutput>game.world.map_manager.Map.tile_manager</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_map__manager_8py">map_manager.py</link></section>
+</section>

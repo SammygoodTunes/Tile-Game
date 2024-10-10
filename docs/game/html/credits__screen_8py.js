@@ -1,4 +1,4 @@
 var credits__screen_8py =
 [
-    [ "gui.screens.credits_screen.CreditsScreen", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen" ]
+    [ "game.gui.screens.credits_screen.CreditsScreen", "classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", "classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen" ]
 ];

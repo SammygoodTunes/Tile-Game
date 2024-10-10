@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queue_5fpacket_0',['queue_packet',['../classclient_1_1connection__handler_1_1ConnectionHandler.html#a31e77764535a4ca36bdd89fafa10a0c0',1,'client::connection_handler::ConnectionHandler']]],
-  ['quit_5fbutton_1',['quit_button',['../classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#ad0ca1061d9deccb1f16dfcf88027d354',1,'gui::screens::mainmenu_screen::MainMenuScreen']]]
+  ['queue_5fpacket_0',['queue_packet',['../classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#ab03435b7059eccfdd11e6680f4823383',1,'game::client::connection_handler::ConnectionHandler']]],
+  ['quit_5fbutton_1',['quit_button',['../classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a6e3d75ac3ced833cceb22f9f4d69ee71',1,'game::gui::screens::mainmenu_screen::MainMenuScreen']]]
 ];

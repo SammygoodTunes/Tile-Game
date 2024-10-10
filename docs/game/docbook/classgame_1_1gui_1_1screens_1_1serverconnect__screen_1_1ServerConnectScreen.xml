@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" xml:lang="en-US">
+<title>game.gui.screens.serverconnect_screen.ServerConnectScreen Class Reference</title>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.serverconnect_screen.ServerConnectScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431">__init__</link> (self, <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf">update_info_label</link> (self, int code)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b">reset_info_label</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74">info_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854">back_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf">default_screen</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the server connection screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.__init__ ( self,  window)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">game.gui.screens.screen.Screen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface game.gui.screens.serverconnect_screen.ServerConnectScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b"/><section>
+    <title>reset_info_label()</title>
+<indexterm><primary>reset_info_label</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>reset_info_label</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the information label back to its default state, then update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf"/><section>
+    <title>update_info_label()</title>
+<indexterm><primary>update_info_label</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>update_info_label</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label ( self, int code)</computeroutput></para>
+<para><literallayout><computeroutput>Update info label&apos;s text and colour based on received connection code, then update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854"/><section>
+    <title>back_button</title>
+<indexterm><primary>back_button</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>back_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.back_button</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf"/><section>
+    <title>default_screen</title>
+<indexterm><primary>default_screen</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>default_screen</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.default_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74"/><section>
+    <title>info_label</title>
+<indexterm><primary>info_label</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>info_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.info_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_serverconnect__screen_8py">serverconnect_screen.py</link></section>
+</section>

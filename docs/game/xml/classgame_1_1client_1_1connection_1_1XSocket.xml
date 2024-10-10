@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1client_1_1connection_1_1XSocket" kind="class" language="Python" prot="public">
+    <compoundname>game::client::connection::XSocket</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">socket.socket</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a704194709e981247c1d6abf006897995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.connection.XSocket.__init__</definition>
+        <argsstring>(self, family=socket.AF_INET, type_=socket.SOCK_STREAM, proto=0, fileno=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.client.connection.XSocket.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>family</type>
+          <defname>family</defname>
+          <defval>socket.AF_INET</defval>
+        </param>
+        <param>
+          <type>type_</type>
+          <defname>type_</defname>
+          <defval>socket.SOCK_STREAM</defval>
+        </param>
+        <param>
+          <type>proto</type>
+          <defname>proto</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>fileno</type>
+          <defname>fileno</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a0a54d87e8264abd2f07f86f95465ed33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.client.connection.XSocket.send</definition>
+        <argsstring>(self, bytes buffer, int flags=0)</argsstring>
+        <name>send</name>
+        <qualifiedname>game.client.connection.XSocket.send</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Override socket send with counter.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a4ed82c79b5050f2ff2b6db32d5d020b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.client.connection.XSocket.recv</definition>
+        <argsstring>(self, int bufsize, int flags=0)</argsstring>
+        <name>recv</name>
+        <qualifiedname>game.client.connection.XSocket.recv</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Override socket recv with counter.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1ac96855344e594b36d9218ba7505ca184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.client.connection.XSocket.get_sent</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_sent</name>
+        <qualifiedname>game.client.connection.XSocket.get_sent</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get total bytes sent to the server since the existence of the socket.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a9bc2910b61d89f6f664528497c91131a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.client.connection.XSocket.get_recv</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_recv</name>
+        <qualifiedname>game.client.connection.XSocket.get_recv</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get total bytes received from the server since the existence of the socket.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="58" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="58" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for socket with extra byte counter.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.client.connection.XSocket</label>
+        <link refid="classgame_1_1client_1_1connection_1_1XSocket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>socket::socket</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.client.connection.XSocket</label>
+        <link refid="classgame_1_1client_1_1connection_1_1XSocket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>socket::socket</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="26" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgame_1_1client_1_1connection_1_1XSocket_1a704194709e981247c1d6abf006897995" prot="public" virt="non-virtual"><scope>game::client::connection::XSocket</scope><name>__init__</name></member>
+      <member refid="classgame_1_1client_1_1connection_1_1XSocket_1a9bc2910b61d89f6f664528497c91131a" prot="public" virt="non-virtual"><scope>game::client::connection::XSocket</scope><name>get_recv</name></member>
+      <member refid="classgame_1_1client_1_1connection_1_1XSocket_1ac96855344e594b36d9218ba7505ca184" prot="public" virt="non-virtual"><scope>game::client::connection::XSocket</scope><name>get_sent</name></member>
+      <member refid="classgame_1_1client_1_1connection_1_1XSocket_1a4ed82c79b5050f2ff2b6db32d5d020b6" prot="public" virt="non-virtual"><scope>game::client::connection::XSocket</scope><name>recv</name></member>
+      <member refid="classgame_1_1client_1_1connection_1_1XSocket_1a0a54d87e8264abd2f07f86f95465ed33" prot="public" virt="non-virtual"><scope>game::client::connection::XSocket</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

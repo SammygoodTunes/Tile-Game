@@ -51,15 +51,15 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classdata_1_1tiles_1_1Tile.html#ace24a37f13a8dd90fa016c3edf47b9c0",
-"classgui_1_1horizontal__slider_1_1HorizontalSlider.html#a13c0cfba8bf479210814ef6aa0d9da25",
-"classgui_1_1label_1_1Label.html#a02a1c71ace980ee201275a2cfae9699a",
-"classgui_1_1screen__manager_1_1Screens.html#ae1107724170417d919a6fec29ca23908",
-"classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html#ad898ef5e919ba91aea5f1ba71cfe3c7f",
-"classplayer__handler_1_1PlayerHandler.html#aa7b0692083c7f2655a4e8b74764e6811",
-"classworld__handler_1_1WorldHandler.html#a3cf2034344ab2915d1d0f9f6210275d4",
-"noise_8py.html"
+"____init_____8py.html",
+"classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html",
+"classgame_1_1gui_1_1checkbox_1_1Checkbox.html#aa2ee9702ca589b64a319e2217ca6f0d3",
+"classgame_1_1gui_1_1inputbox_1_1InputBox.html#ac12e9f827b5b6c4cc6c58295f6ce02f5",
+"classgame_1_1gui_1_1screen__manager_1_1Screens.html#a4cf731e07f3d05d83103c89f6e78a578",
+"classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a2a91632193725b9f5f16a19bb675fbc6",
+"classgame_1_1gui_1_1widget_1_1Widget.html#a4f84985e9d82c4547a7183b380283ccd",
+"classplayer__handler_1_1PlayerHandler.html#af93f4adaac9ff092edc78122bd4b783b",
+"namespacegame_1_1gui_1_1checkbox.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

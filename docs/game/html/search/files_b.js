@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['options_5fscreen_2epy_0',['options_screen.py',['../options__screen_8py.html',1,'']]]
+  ['nametag_2epy_0',['nametag.py',['../nametag_8py.html',1,'']]],
+  ['noise_2epy_1',['noise.py',['../noise_8py.html',1,'']]]
 ];

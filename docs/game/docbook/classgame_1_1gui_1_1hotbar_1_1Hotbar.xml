@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar" xml:lang="en-US">
+<title>game.gui.hotbar.Hotbar Class Reference</title>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary></indexterm>
+<para>Inheritance diagram for game.gui.hotbar.Hotbar:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1hotbar_1_1Hotbar.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d">__init__</link> (self, int x=0, int y=0, int slot_count=4)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afae7b0a5c9183ba44f563b05fcf24209">init_slots</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1abe34cc11ee2dfa051dec6f297cfeea60">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1142265b8fc7b7c44858793b5a9331f1">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae488ec2de5de4553d42faae7eb17f715">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afd5aad4e0a13c7ced00611862b7ff178">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1adcfd57ce413ec117b3b7ff6e0a2069d6">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ad1e279b7a2c7d4f3b7671250054aecb2">set_spacing</link> (self, int spacing)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3c207f0345bad805b1f51e9ad7181290">get_spacing</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af5776e3620adff40802cefb00f46e39d">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a79f9c7b1abe5cb25bcb03625e79a3e32">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a02b50c4d3dbedc881dd12f89b05ef8fa">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a842ddd0ebfa5af0f3b049816cbe4e08c">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a6060234d8969fd0cc3415cdf87576c37">select_slot</link> (self, int slot_index)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1f49a32b10881bedc9a501bb3b93b79f">unselect_slot</link> (self, int slot_index)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1abdfa7104cc8afde0bab2ea632fea4ea3">get_selected_slot</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a106b145b313cffed3f794134b443e046">get_selected_slot_item</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot">Slot</link> <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1000c51f59021da0c0ebed47fa02e594">get_slot</link> (self, int slot_index)</para>
+</listitem>
+            <listitem><para>list[<link linkend="_classgame_1_1gui_1_1slot_1_1Slot">Slot</link>] <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1aee4918dacd0ecbe0a65c41d5048b856a">get_slots</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a413c2077d1bf25e1edf8613f84000bf0">set_atlas</link> (self, Surface atlas)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af4deda99d3446b0947dbb106c5633f59">get_atlas</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link> (self, int offset_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a06b35335ca2c40710cb96fc6023b9a11">_spacing</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afa65e3a0df821b2d1f20953a44b47293">_slots</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1acc4032a56db713cac8cf1ea3a4ae1dfb">_tooltip</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5e15b0b772517251eaf8de65a648b49a">_selected_slot</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224">_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3d6e48d6329f61680f908051c9e1952f">_atlas</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a hotbar.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.hotbar.Hotbar.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  slot_count = <computeroutput>4</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">game.gui.widget.Widget</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afd5aad4e0a13c7ced00611862b7ff178"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the hotbar on both axes relative to the specified parent, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1142265b8fc7b7c44858793b5a9331f1"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the hotbar horizontally relative to the specified parent, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae488ec2de5de4553d42faae7eb17f715"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the hotbar vertically relative to the specified parent, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1adcfd57ce413ec117b3b7ff6e0a2069d6"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the hotbar with center() and offset it by x and y relative to the specified parent, then return
+the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1abe34cc11ee2dfa051dec6f297cfeea60"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.hotbar.Hotbar.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the hotbar and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af4deda99d3446b0947dbb106c5633f59"/><section>
+    <title>get_atlas()</title>
+<indexterm><primary>get_atlas</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_atlas</secondary></indexterm>
+<para><computeroutput> Surface game.gui.hotbar.Hotbar.get_atlas ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the texture atlas used by the hotbar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a842ddd0ebfa5af0f3b049816cbe4e08c"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int game.gui.hotbar.Hotbar.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the hotbar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1abdfa7104cc8afde0bab2ea632fea4ea3"/><section>
+    <title>get_selected_slot()</title>
+<indexterm><primary>get_selected_slot</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_selected_slot</secondary></indexterm>
+<para><computeroutput> int game.gui.hotbar.Hotbar.get_selected_slot ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the selected slot of the hotbar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a106b145b313cffed3f794134b443e046"/><section>
+    <title>get_selected_slot_item()</title>
+<indexterm><primary>get_selected_slot_item</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_selected_slot_item</secondary></indexterm>
+<para><computeroutput> <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> game.gui.hotbar.Hotbar.get_selected_slot_item ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the item of the selected hotbar slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1000c51f59021da0c0ebed47fa02e594"/><section>
+    <title>get_slot()</title>
+<indexterm><primary>get_slot</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_slot</secondary></indexterm>
+<para><computeroutput> <link linkend="_classgame_1_1gui_1_1slot_1_1Slot">Slot</link> game.gui.hotbar.Hotbar.get_slot ( self, int slot_index)</computeroutput></para>
+<para><literallayout><computeroutput>Return the slot object of the hotbar at specified index.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1aee4918dacd0ecbe0a65c41d5048b856a"/><section>
+    <title>get_slots()</title>
+<indexterm><primary>get_slots</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_slots</secondary></indexterm>
+<para><computeroutput> list[<link linkend="_classgame_1_1gui_1_1slot_1_1Slot">Slot</link>] game.gui.hotbar.Hotbar.get_slots ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return all hotbar slots.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3c207f0345bad805b1f51e9ad7181290"/><section>
+    <title>get_spacing()</title>
+<indexterm><primary>get_spacing</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_spacing</secondary></indexterm>
+<para><computeroutput> int game.gui.hotbar.Hotbar.get_spacing ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the spacing between the hotbar&apos;s slots.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a79f9c7b1abe5cb25bcb03625e79a3e32"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int game.gui.hotbar.Hotbar.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the hotbar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afae7b0a5c9183ba44f563b05fcf24209"/><section>
+    <title>init_slots()</title>
+<indexterm><primary>init_slots</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>init_slots</secondary></indexterm>
+<para><computeroutput> None game.gui.hotbar.Hotbar.init_slots ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the hotbar&apos;s slots.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a6060234d8969fd0cc3415cdf87576c37"/><section>
+    <title>select_slot()</title>
+<indexterm><primary>select_slot</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>select_slot</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.select_slot ( self, int slot_index)</computeroutput></para>
+<para><literallayout><computeroutput>Select a hotbar slot, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a413c2077d1bf25e1edf8613f84000bf0"/><section>
+    <title>set_atlas()</title>
+<indexterm><primary>set_atlas</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>set_atlas</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.set_atlas ( self, Surface atlas)</computeroutput></para>
+<para><literallayout><computeroutput>Set the texture atlas that will be used by the hotbar, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a02b50c4d3dbedc881dd12f89b05ef8fa"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the hotbar, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ad1e279b7a2c7d4f3b7671250054aecb2"/><section>
+    <title>set_spacing()</title>
+<indexterm><primary>set_spacing</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>set_spacing</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.set_spacing ( self, int spacing)</computeroutput></para>
+<para><literallayout><computeroutput>Set the spacing between the hotbar&apos;s slots, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af5776e3620adff40802cefb00f46e39d"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the hotbar, then return the hotbar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1f49a32b10881bedc9a501bb3b93b79f"/><section>
+    <title>unselect_slot()</title>
+<indexterm><primary>unselect_slot</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>unselect_slot</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.unselect_slot ( self, int slot_index)</computeroutput></para>
+<para><literallayout><computeroutput>Unselect a hotbar slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> Self game.gui.hotbar.Hotbar.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the hotbar and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3d6e48d6329f61680f908051c9e1952f"/><section>
+    <title>_atlas</title>
+<indexterm><primary>_atlas</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_atlas</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._atlas<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5e15b0b772517251eaf8de65a648b49a"/><section>
+    <title>_selected_slot</title>
+<indexterm><primary>_selected_slot</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_selected_slot</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._selected_slot<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1afa65e3a0df821b2d1f20953a44b47293"/><section>
+    <title>_slots</title>
+<indexterm><primary>_slots</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_slots</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._slots<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a06b35335ca2c40710cb96fc6023b9a11"/><section>
+    <title>_spacing</title>
+<indexterm><primary>_spacing</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_spacing</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._spacing<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224"/><section>
+    <title>_surface</title>
+<indexterm><primary>_surface</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_surface</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1acc4032a56db713cac8cf1ea3a4ae1dfb"/><section>
+    <title>_tooltip</title>
+<indexterm><primary>_tooltip</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_tooltip</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._tooltip<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.hotbar.Hotbar</secondary></indexterm>
+<indexterm><primary>game.gui.hotbar.Hotbar</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.hotbar.Hotbar._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_hotbar_8py">hotbar.py</link></section>
+</section>

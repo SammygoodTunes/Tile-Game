@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure" kind="class" language="Python" prot="public">
+    <compoundname>game::data::structures::tile_structure::TileStructure</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_ID_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_ID_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_ID_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1aa3ac69e394e7d36adcf1c9f35e690b4a" kindref="member">TileProperties.TILE_ID_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_X_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_X_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_X_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae56545999866a3f29439a408ef097cee" kindref="member">TileProperties.TILE_X_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_Y_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_Y_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_Y_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae4ce97e387eeb40e312be726ba798fab" kindref="member">TileProperties.TILE_Y_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_RESISTANCE_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_RESISTANCE_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_RESISTANCE_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a4053726e4fbe7e134c4d925e19afff05" kindref="member">TileProperties.TILE_RESISTANCE_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_DAMAGE_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_DAMAGE_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a70972c17941e97d4c66d00b0e61db4c8" kindref="member">TileProperties.TILE_DAMAGE_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_DAMAGE_DELAY_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_DAMAGE_DELAY_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_DELAY_BYTE_SIZE</qualifiedname>
+        <initializer>=  c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a9a0c3c286a01280a98a62a16e9c01daa" kindref="member">TileProperties.TILE_DAMAGE_DELAY_MAX</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.TileStructure::TILE_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TILE_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_BYTE_SIZE</qualifiedname>
+        <initializer>=  int(ceil((
+        <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4" kindref="member">TILE_ID_BYTE_SIZE</ref>
+        + <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e" kindref="member">TILE_X_BYTE_SIZE</ref>
+        + <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af" kindref="member">TILE_Y_BYTE_SIZE</ref>
+        + <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8" kindref="member">TILE_RESISTANCE_BYTE_SIZE</ref>
+        + <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891" kindref="member">TILE_DAMAGE_BYTE_SIZE</ref>
+        + <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace" kindref="member">TILE_DAMAGE_DELAY_BYTE_SIZE</ref>
+    ) / 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_ID_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_ID_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_ID_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d" kindref="member">TILE_BYTE_SIZE</ref> * 8 - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4" kindref="member">TILE_ID_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_X_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_X_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_X_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c" kindref="member">TILE_ID_BYTE_POS</ref> - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e" kindref="member">TILE_X_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_Y_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_Y_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_Y_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd" kindref="member">TILE_X_BYTE_POS</ref> - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af" kindref="member">TILE_Y_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_RESISTANCE_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_RESISTANCE_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_RESISTANCE_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd" kindref="member">TILE_Y_BYTE_POS</ref> - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8" kindref="member">TILE_RESISTANCE_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_DAMAGE_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_DAMAGE_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9" kindref="member">TILE_RESISTANCE_BYTE_POS</ref> - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891" kindref="member">TILE_DAMAGE_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1abf6127ed23c210e7df559b4295e783c4" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.TileStructure::TILE_DAMAGE_DELAY_BYTE_POS</definition>
+        <argsstring></argsstring>
+        <name>TILE_DAMAGE_DELAY_BYTE_POS</name>
+        <qualifiedname>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_DELAY_BYTE_POS</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833" kindref="member">TILE_DAMAGE_BYTE_POS</ref> - <ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace" kindref="member">TILE_DAMAGE_DELAY_BYTE_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Byte structure for the tile.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="7" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_DAMAGE_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_DAMAGE_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1abf6127ed23c210e7df559b4295e783c4" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_DAMAGE_DELAY_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_DAMAGE_DELAY_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_ID_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_ID_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_RESISTANCE_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_RESISTANCE_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_X_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_X_BYTE_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_Y_BYTE_POS</name></member>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::TileStructure</scope><name>TILE_Y_BYTE_SIZE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure" kind="class" language="Python" prot="public">
+    <compoundname>game::data::structures::tile_structure::DynatileStructure</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a793e9944bef55bdb0b56023aaf082f4e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.structures.tile_structure.DynatileStructure::DYNATILE_STATE_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DYNATILE_STATE_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.DynatileStructure.DYNATILE_STATE_BYTE_SIZE</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Byte structure for the dynamic tile.
+No pre-defined dynatile byte size as it can vary.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="36" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a793e9944bef55bdb0b56023aaf082f4e" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::DynatileStructure</scope><name>DYNATILE_STATE_BYTE_SIZE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

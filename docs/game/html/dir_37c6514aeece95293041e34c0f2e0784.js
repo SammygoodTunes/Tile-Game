@@ -9,5 +9,6 @@ var dir_37c6514aeece95293041e34c0f2e0784 =
     [ "server", "dir_b8076a4cb681e2f7837b41b28b4c92e4.html", "dir_b8076a4cb681e2f7837b41b28b4c92e4" ],
     [ "utils", "dir_bc0b6c19bcf95f9c3d8e8793eb64ecfb.html", "dir_bc0b6c19bcf95f9c3d8e8793eb64ecfb" ],
     [ "world", "dir_1e67665e7c4a6bf3ba9475d62fdc650b.html", "dir_1e67665e7c4a6bf3ba9475d62fdc650b" ],
+    [ "__init__.py", "____init_____8py.html", null ],
     [ "main.py", "main_8py.html", "main_8py" ]
 ];

@@ -10,7 +10,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1" refid="namespaceworld__handler" refkind="compound"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.world.world<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>World</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1world_1_1world" kindref="compound">game.world.world</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>World</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="classworld__handler_1_1WorldHandler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworld__handler_1_1WorldHandler" kindref="compound">WorldHandler</ref>:</highlight></codeline>
@@ -19,7 +19,7 @@
 <codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" kindref="member">__init__</ref>(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._world:<sp/>World<sp/>=<sp/>World()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._world:<sp/>World<sp/>=<sp/><ref refid="classgame_1_1world_1_1world_1_1World" kindref="compound">World</ref>()</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00" kindref="member">create_world</ref>(self,<sp/>seed)<sp/>-&gt;<sp/>None:</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>

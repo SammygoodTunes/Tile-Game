@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag" xml:lang="en-US">
+<title>game.gui.nametag.NameTag Class Reference</title>
+<indexterm><primary>game.gui.nametag.NameTag</primary></indexterm>
+<para>Inheritance diagram for game.gui.nametag.NameTag:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1nametag_1_1NameTag.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523">__init__</link> (self, str text=&quot;&quot;, int x=0, int y=0)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a67c27b59776a17258243b2ae1dbad583">refresh</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275">is_hovering_over</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a23a20c52321ed86dd28dc85379a9f35f">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a4acac4a04de2fb1e9b004061a2511f98">set_background_colour</link> (self, tuple[int, int, int] background_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a2196325c8563fa2e8a3d27217d197ab1">get_background_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link> (self, int offset_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a3424c61e3dd38049fa9b9d6e1c483790">label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a915301acb6d999742ec609dce861de4f">_background_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a97f09fccb4294b1e8c0acfc14d7b9f23">_faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a nametag.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.nametag.NameTag.__init__ ( self, str  text = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">game.gui.widget.Widget</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a23a20c52321ed86dd28dc85379a9f35f"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag on both axes relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag horizontally relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag vertically relative to the specified parent, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the nametag with center() and offset it by x and y relative to the specified parent, then return
+the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.nametag.NameTag.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the nametag and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a2196325c8563fa2e8a3d27217d197ab1"/><section>
+    <title>get_background_colour()</title>
+<indexterm><primary>get_background_colour</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>get_background_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.nametag.NameTag.get_background_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the background colour of the nametag.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int game.gui.nametag.NameTag.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the nametag.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int game.gui.nametag.NameTag.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the nametag.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275"/><section>
+    <title>is_hovering_over()</title>
+<indexterm><primary>is_hovering_over</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>is_hovering_over</secondary></indexterm>
+<para><computeroutput> bool game.gui.nametag.NameTag.is_hovering_over ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the user&apos;s mouse cursor is hovering over the nametag or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a67c27b59776a17258243b2ae1dbad583"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput> None game.gui.nametag.NameTag.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the nametag and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a4acac4a04de2fb1e9b004061a2511f98"/><section>
+    <title>set_background_colour()</title>
+<indexterm><primary>set_background_colour</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>set_background_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.set_background_colour ( self, tuple[int, int, int] background_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the background colour of the nametag, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the nametag, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the state of the nametag and its components, then return the nametag itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">game.gui.widget.Widget</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.nametag.NameTag.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the nametag, then return the nametag itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.gui.nametag.NameTag.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the nametag and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a915301acb6d999742ec609dce861de4f"/><section>
+    <title>_background_colour</title>
+<indexterm><primary>_background_colour</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_background_colour</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._background_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a97f09fccb4294b1e8c0acfc14d7b9f23"/><section>
+    <title>_faded_surface</title>
+<indexterm><primary>_faded_surface</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_faded_surface</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._faded_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1nametag_1_1NameTag_1a3424c61e3dd38049fa9b9d6e1c483790"/><section>
+    <title>label</title>
+<indexterm><primary>label</primary><secondary>game.gui.nametag.NameTag</secondary></indexterm>
+<indexterm><primary>game.gui.nametag.NameTag</primary><secondary>label</secondary></indexterm>
+<para><computeroutput>game.gui.nametag.NameTag.label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_nametag_8py">nametag.py</link></section>
+</section>

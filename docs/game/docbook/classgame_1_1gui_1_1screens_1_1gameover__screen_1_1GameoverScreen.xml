@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen" xml:lang="en-US">
+<title>game.gui.screens.gameover_screen.GameoverScreen Class Reference</title>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.gameover_screen.GameoverScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a44785518dd4d86fa600f8c2b2602fb63">__init__</link> (self, <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af5dc4a30765cb1ca31ba70664ccde8d7">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab406c39cd1c9737837bc8c1e64abfc9e">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af5dc4a30765cb1ca31ba70664ccde8d7">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1acd411cf7943016b0c9bd4698734b973f">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a9f5d8a6926c58645c7acb19939b07e3d">gameover_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a3af7f91700998108d39945c71620a181">respawn_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a110b5a4bcf4fe83c5c8ee53755673cf8">disconnect_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the game-over screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a44785518dd4d86fa600f8c2b2602fb63"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.gameover_screen.GameoverScreen.__init__ ( self,  window)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">game.gui.screens.screen.Screen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.gameover_screen.GameoverScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab406c39cd1c9737837bc8c1e64abfc9e"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface game.gui.screens.gameover_screen.GameoverScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.gameover_screen.GameoverScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.gameover_screen.GameoverScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a110b5a4bcf4fe83c5c8ee53755673cf8"/><section>
+    <title>disconnect_button</title>
+<indexterm><primary>disconnect_button</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>disconnect_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.gameover_screen.GameoverScreen.disconnect_button</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1acd411cf7943016b0c9bd4698734b973f"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>game.gui.screens.gameover_screen.GameoverScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a9f5d8a6926c58645c7acb19939b07e3d"/><section>
+    <title>gameover_label</title>
+<indexterm><primary>gameover_label</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>gameover_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.gameover_screen.GameoverScreen.gameover_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a3af7f91700998108d39945c71620a181"/><section>
+    <title>respawn_button</title>
+<indexterm><primary>respawn_button</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>respawn_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.gameover_screen.GameoverScreen.respawn_button</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af5dc4a30765cb1ca31ba70664ccde8d7"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>game.gui.screens.gameover_screen.GameoverScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.gameover_screen.GameoverScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>game.gui.screens.gameover_screen.GameoverScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_gameover__screen_8py">gameover_screen.py</link></section>
+</section>

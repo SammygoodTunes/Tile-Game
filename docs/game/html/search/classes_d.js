@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['widget_0',['Widget',['../classgui_1_1widget_1_1Widget.html',1,'gui::widget']]],
-  ['window_1',['Window',['../classcore_1_1window_1_1Window.html',1,'core::window']]],
-  ['world_2',['World',['../classworld_1_1world_1_1World.html',1,'world::world']]],
-  ['worldhandler_3',['WorldHandler',['../classworld__handler_1_1WorldHandler.html',1,'world_handler']]],
-  ['worldproperties_4',['WorldProperties',['../classdata_1_1properties_1_1WorldProperties.html',1,'data::properties']]]
+  ['tasks_0',['Tasks',['../classgame_1_1client_1_1connection_1_1Tasks.html',1,'game::client::connection']]],
+  ['tile_1',['Tile',['../classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html',1,'game::data::tiles::tile']]],
+  ['tilemanager_2',['TileManager',['../classgame_1_1world_1_1tile__manager_1_1TileManager.html',1,'game::world::tile_manager']]],
+  ['tileproperties_3',['TileProperties',['../classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties.html',1,'game::data::properties::tile_properties']]],
+  ['tiles_4',['Tiles',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html',1,'game::data::tiles::tiles']]],
+  ['tilestructure_5',['TileStructure',['../classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure.html',1,'game::data::structures::tile_structure']]],
+  ['tiletypes_6',['TileTypes',['../classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes.html',1,'game::data::tiles::tile_types']]]
 ];

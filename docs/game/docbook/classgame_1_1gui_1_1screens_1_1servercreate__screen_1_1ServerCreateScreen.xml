@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" xml:lang="en-US">
+<title>game.gui.screens.servercreate_screen.ServerCreateScreen Class Reference</title>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.servercreate_screen.ServerCreateScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749">__init__</link> (self, <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1abaf6c6e26d56989d12e959f7f127dd83">events</link> (self, Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a095ce4ff134515029940365865adaa02">faded_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af136da39e7862cc8d50bb6e1dccdb64b">create_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afc280a7c3eb56f0a12e4f3f5e3bfe533">ign_input</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40">seed_input</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea">create_button</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39">back_button</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the server create screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.__init__ ( self,  window)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">game.gui.screens.screen.Screen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1abaf6c6e26d56989d12e959f7f127dd83"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.events ( self, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the screen events (unused).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface game.gui.screens.servercreate_screen.ServerCreateScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39"/><section>
+    <title>back_button</title>
+<indexterm><primary>back_button</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>back_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.back_button</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea"/><section>
+    <title>create_button</title>
+<indexterm><primary>create_button</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>create_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.create_button</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af136da39e7862cc8d50bb6e1dccdb64b"/><section>
+    <title>create_label</title>
+<indexterm><primary>create_label</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>create_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.create_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a095ce4ff134515029940365865adaa02"/><section>
+    <title>faded_surface</title>
+<indexterm><primary>faded_surface</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>faded_surface</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.faded_surface</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afc280a7c3eb56f0a12e4f3f5e3bfe533"/><section>
+    <title>ign_input</title>
+<indexterm><primary>ign_input</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>ign_input</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.ign_input</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40"/><section>
+    <title>seed_input</title>
+<indexterm><primary>seed_input</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>seed_input</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.seed_input</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_servercreate__screen_8py">servercreate_screen.py</link></section>
+</section>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="map__structure_8py" kind="file" language="Python">
+    <compoundname>map_structure.py</compoundname>
+    <innerclass refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure" prot="public">game::data::structures::map_structure::MapStructure</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1structures">game::data::structures</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1structures_1_1map__structure">game::data::structures::map_structure</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1structures" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ceil</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1properties_1_1world__properties" kindref="compound">game.data.properties.world_properties</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WorldProperties</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1tools" kindref="compound">game.utils.tools</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>c_log2</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure" kindref="compound">MapStructure</ref>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Byte<sp/>structure<sp/>for<sp/>the<sp/>world<sp/>map.</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_WIDTH_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_WIDTH)<sp/>/<sp/>8))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_HEIGHT_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_HEIGHT)<sp/>/<sp/>8))</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/map_structure.py"/>
+  </compounddef>
+</doxygen>

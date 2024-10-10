@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::screens::map_screen::MapScreen</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" prot="public" virt="non-virtual">game.gui.screens.screen.Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.map_screen.MapScreen::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a0dbc99d28421d583777089f0d21b9b63" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.map_screen.MapScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1afe0705c8d97a997398c1146efcec24a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.map_screen.MapScreen::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad5d990b35ebf9bbdb4e6035775ae61e6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.map_screen.MapScreen::scaled_map</definition>
+        <argsstring></argsstring>
+        <name>scaled_map</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.scaled_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a2ac550f7a125ec5f509c8212a6d59b29" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.map_screen.MapScreen::_got_map</definition>
+        <argsstring></argsstring>
+        <name>_got_map</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen._got_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a46279bdc6356142989203c173850afee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.__init__</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" kindref="member">game</ref></type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface game.gui.screens.map_screen.MapScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa7aae311467c4b796b2b3b41e6706aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.initialise_map</definition>
+        <argsstring>(self, map)</argsstring>
+        <name>initialise_map</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.initialise_map</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map</type>
+          <defname>map</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s map component.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="36" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa634dc82e657c3c85dedbe61b218c226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.reset_map</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset_map</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.reset_map</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Reset the map attributes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="54" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="123" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="123" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.map_screen.MapScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.screens.map_screen.MapScreen.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="136" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="136" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the map screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.screens.map_screen.MapScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.screens.map_screen.MapScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/map_screen.py" bodystart="13" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a46279bdc6356142989203c173850afee" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a2ac550f7a125ec5f509c8212a6d59b29" prot="protected" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>_got_map</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a0dbc99d28421d583777089f0d21b9b63" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>faded_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>game</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa7aae311467c4b796b2b3b41e6706aea" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>initialise_map</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa634dc82e657c3c85dedbe61b218c226" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>reset_map</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad5d990b35ebf9bbdb4e6035775ae61e6" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>scaled_map</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1afe0705c8d97a997398c1146efcec24a3" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>title_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" prot="public" virt="non-virtual"><scope>game::gui::screens::map_screen::MapScreen</scope><name>update_ui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

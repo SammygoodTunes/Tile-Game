@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1world_1_1camera_1_1Camera" kind="class" language="Python" prot="public">
+    <compoundname>game::world::camera::Camera</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1world_1_1camera_1_1Camera_1ae10c6874d29fb07cd7e8e06dad0f0a49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.camera.Camera::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>game.world.camera.Camera.x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1camera_1_1Camera_1a99a26fbecba64e501f22fdf7a52c6239" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.camera.Camera::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>game.world.camera.Camera.y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1camera_1_1Camera_1a8f094c9d91047281cf03d34d97b6fe73" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.camera.Camera::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <qualifiedname>game.world.camera.Camera.speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1camera_1_1Camera_1a90533b6ffebb40ef781bd1858893ec16" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.camera.Camera::velocity_x</definition>
+        <argsstring></argsstring>
+        <name>velocity_x</name>
+        <qualifiedname>game.world.camera.Camera.velocity_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1camera_1_1Camera_1ae31d2e23d424dd423fc877ee02be36c5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.camera.Camera::velocity_y</definition>
+        <argsstring></argsstring>
+        <name>velocity_y</name>
+        <qualifiedname>game.world.camera.Camera.velocity_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1world_1_1camera_1_1Camera_1a2fcc1ef461b62caa38bd0b33ad00b738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.camera.Camera.__init__</definition>
+        <argsstring>(self, int speed=50)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.world.camera.Camera.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speed</declname>
+          <defval>50</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1world_1_1camera_1_1Camera_1adfaa3eb83b0760458eccc4806acfdb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.camera.Camera.update</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.world.camera.Camera.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the camera.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="23" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1world_1_1camera_1_1Camera_1af09f22c8feb452112dd8821cf1db73e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.camera.Camera.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <qualifiedname>game.world.camera.Camera.reset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Reset the camera&apos;s general properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="57" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a camera.
+The camera position is strictly relative to the center of the screen.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" bodystart="9" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1a2fcc1ef461b62caa38bd0b33ad00b738" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>__init__</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1af09f22c8feb452112dd8821cf1db73e8" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>reset</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1a8f094c9d91047281cf03d34d97b6fe73" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>speed</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1adfaa3eb83b0760458eccc4806acfdb2b" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>update</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1a90533b6ffebb40ef781bd1858893ec16" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>velocity_x</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1ae31d2e23d424dd423fc877ee02be36c5" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>velocity_y</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1ae10c6874d29fb07cd7e8e06dad0f0a49" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>x</name></member>
+      <member refid="classgame_1_1world_1_1camera_1_1Camera_1a99a26fbecba64e501f22fdf7a52c6239" prot="public" virt="non-virtual"><scope>game::world::camera::Camera</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

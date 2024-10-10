@@ -1,4 +1,4 @@
 var hotbar_8py =
 [
-    [ "gui.hotbar.Hotbar", "classgui_1_1hotbar_1_1Hotbar.html", "classgui_1_1hotbar_1_1Hotbar" ]
+    [ "game.gui.hotbar.Hotbar", "classgame_1_1gui_1_1hotbar_1_1Hotbar.html", "classgame_1_1gui_1_1hotbar_1_1Hotbar" ]
 ];

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes" kind="class" language="Python" prot="public">
+    <compoundname>game::data::tiles::tile_types::TileTypes</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a81104731b627eae3c281d9135c842421" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.tiles.tile_types.TileTypes::PLACEABLE</definition>
+        <argsstring></argsstring>
+        <name>PLACEABLE</name>
+        <qualifiedname>game.data.tiles.tile_types.TileTypes.PLACEABLE</qualifiedname>
+        <initializer>=  (<ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1af41b867ad797e6998dea83ffb0986a1c" kindref="member">Tiles.GRASS</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>,
+                               <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a6e98802eb2a384e9f2f812c4d1a3c731" kindref="member">Tiles.COBBLESTONE_STAIRS</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a41d80124f783e89ddeb26094db8234f1" kindref="member">Tiles.FIRESTONE</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a018f4b3f9add026159ec987c2468bf4c" kindref="member">Tiles.WATER</ref>, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.tiles.tile_types.TileTypes::BREAKABLE</definition>
+        <argsstring></argsstring>
+        <name>BREAKABLE</name>
+        <qualifiedname>game.data.tiles.tile_types.TileTypes.BREAKABLE</qualifiedname>
+        <initializer>=  (<ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.tiles.tile_types.TileTypes::LETHAL</definition>
+        <argsstring></argsstring>
+        <name>LETHAL</name>
+        <qualifiedname>game.data.tiles.tile_types.TileTypes.LETHAL</qualifiedname>
+        <initializer>=  (<ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for regrouping tiles into different categories.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="4" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="4" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac" prot="public" virt="non-virtual"><scope>game::data::tiles::tile_types::TileTypes</scope><name>BREAKABLE</name></member>
+      <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4" prot="public" virt="non-virtual"><scope>game::data::tiles::tile_types::TileTypes</scope><name>LETHAL</name></member>
+      <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a81104731b627eae3c281d9135c842421" prot="public" virt="non-virtual"><scope>game::data::tiles::tile_types::TileTypes</scope><name>PLACEABLE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

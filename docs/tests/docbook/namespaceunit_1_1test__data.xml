@@ -21,6 +21,8 @@
 </listitem>
             <listitem><para><link linkend="_namespaceunit_1_1test__data_1adbdab2f4033566a3ad992de6e6b47a21">test_tile_creation</link> ()</para>
 </listitem>
+            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a92bbe22b40fdad24527186d54308ad6d">test_tile_compression</link> ()</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -92,6 +94,15 @@ Desc: Tests if items are created correctly.
 <para><computeroutput>unit.test_data.test_mouse_properties ( )</computeroutput></para>
 <para><literallayout><computeroutput>Test: mouse_properties
 Desc: Tests if the mouse properties possess the same values defined in Mouse.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceunit_1_1test__data_1a92bbe22b40fdad24527186d54308ad6d"/><section>
+    <title>test_tile_compression()</title>
+<indexterm><primary>test_tile_compression</primary><secondary>unit.test_data</secondary></indexterm>
+<indexterm><primary>unit.test_data</primary><secondary>test_tile_compression</secondary></indexterm>
+<para><computeroutput>unit.test_data.test_tile_compression ( )</computeroutput></para>
+<para><literallayout><computeroutput>Test: map_compression
+Desc: Tests if the map compression and decompression algorithms work as intended.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_namespaceunit_1_1test__data_1adbdab2f4033566a3ad992de6e6b47a21"/><section>

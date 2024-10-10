@@ -1,4 +1,4 @@
 var button_8py =
 [
-    [ "gui.button.Button", "classgui_1_1button_1_1Button.html", "classgui_1_1button_1_1Button" ]
+    [ "game.gui.button.Button", "classgame_1_1gui_1_1button_1_1Button.html", "classgame_1_1gui_1_1button_1_1Button" ]
 ];

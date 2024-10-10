@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1core_1_1game_1_1Game" xml:lang="en-US">
+<title>game.core.game.Game Class Reference</title>
+<indexterm><primary>game.core.game.Game</primary></indexterm>
+<para>Inheritance diagram for game.core.game.Game:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1core_1_1game_1_1Game.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9">__init__</link> (self, int window_width, int window_height)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad">update</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1a1aae5d34f93a9cd86ef8f4749c7b1227">update_loop</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c">all_events</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9">update_all_uis</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1core_1_1game_1_1Game_1acd7539fb6cadb1ca2713dbcd1123befa">is_running</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7">crash</link> (self, str traceback)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c">stop</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1core_1_1window_1_1Window">game.core.window.Window</link>        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6">clear</link> (self, tuple[int, int, int] colour)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a1d31402845db3549a13d8a5748661771">tick</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a0e438a403216d30673771bf0b1bb810a">resize</link> (self, pygame.event.Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1ac19611f83ab29c8f3acfee6cb4442862">draw_fps</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1ae4bae785468a31b4142dd168b702ec36">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a0c7491171079a59dd7d4a7892bd75909">toggle_fullscreen</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94">client</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628">server</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classgame_1_1core_1_1window_1_1Window">game.core.window.Window</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd">width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54">height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1abed4ca18c1a47d144000c98aab671c44">halt_refresh</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1aabf9a47512b5ff475011a1a036910d00">fps_cap</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1ab92583298f34b8b8b9235d0ca764dd4b">screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1a64a43e7af5c7dbf05144a7d98ea7a7a6">timer</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1a49860a297457a26a186138c7489b3aea">fullscreen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1ac137470f44be458eebc83b0ea0cf5268">old_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1window_1_1Window_1aa7b97bc5dd4b5ec1182a26bee1d17f4f">old_height</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c">_running</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Attributes inherited from <link linkend="_classgame_1_1core_1_1window_1_1Window">game.core.window.Window</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef">FONT_PATH</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for managing a game instance.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.__init__ ( self, int window_width, int window_height)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be">game.core.window.Window</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c"/><section>
+    <title>all_events()</title>
+<indexterm><primary>all_events</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>all_events</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.all_events ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Verify for any potential pygame events and update the targeted elements accordingly.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7"/><section>
+    <title>crash()</title>
+<indexterm><primary>crash</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>crash</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.crash ( self, str traceback)</computeroutput></para>
+<para><literallayout><computeroutput>Initiate crash screen and stop any running process.
+Loop until user decides to quit the application.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1acd7539fb6cadb1ca2713dbcd1123befa"/><section>
+    <title>is_running()</title>
+<indexterm><primary>is_running</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>is_running</secondary></indexterm>
+<para><computeroutput> bool game.core.game.Game.is_running ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the running state of the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.stop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Terminate the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.update ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update all child objects and core of the game.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9"/><section>
+    <title>update_all_uis()</title>
+<indexterm><primary>update_all_uis</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>update_all_uis</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.update_all_uis ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update all the GUI-related elements.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a1aae5d34f93a9cd86ef8f4749c7b1227"/><section>
+    <title>update_loop()</title>
+<indexterm><primary>update_loop</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>update_loop</secondary></indexterm>
+<para><computeroutput> None game.core.game.Game.update_loop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Like the standard update loop, but only used for threaded tasks.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c"/><section>
+    <title>_running</title>
+<indexterm><primary>_running</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>_running</secondary></indexterm>
+<para><computeroutput>game.core.game.Game._running<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94"/><section>
+    <title>client</title>
+<indexterm><primary>client</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>client</secondary></indexterm>
+<para><computeroutput>game.core.game.Game.client</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628"/><section>
+    <title>server</title>
+<indexterm><primary>server</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>server</secondary></indexterm>
+<para><computeroutput>game.core.game.Game.server</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_game_8py">game.py</link></section>
+</section>

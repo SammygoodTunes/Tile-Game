@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['main_2epy_0',['main.py',['../main_8py.html',1,'']]],
-  ['main_5fhud_2epy_1',['main_hud.py',['../main__hud_8py.html',1,'']]],
-  ['mainmenu_5fscreen_2epy_2',['mainmenu_screen.py',['../mainmenu__screen_8py.html',1,'']]],
-  ['map_5fmanager_2epy_3',['map_manager.py',['../map__manager_8py.html',1,'']]],
-  ['map_5fscreen_2epy_4',['map_screen.py',['../map__screen_8py.html',1,'']]]
+  ['label_2epy_0',['label.py',['../label_8py.html',1,'']]],
+  ['loading_5fscreen_2epy_1',['loading_screen.py',['../loading__screen_8py.html',1,'']]],
+  ['logger_2epy_2',['logger.py',['../logger_8py.html',1,'']]]
 ];

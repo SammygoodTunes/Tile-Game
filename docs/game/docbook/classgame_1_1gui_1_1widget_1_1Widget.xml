@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1widget_1_1Widget" xml:lang="en-US">
+<title>game.gui.widget.Widget Class Reference</title>
+<indexterm><primary>game.gui.widget.Widget</primary></indexterm>
+<para>Inheritance diagram for game.gui.widget.Widget:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1widget_1_1Widget.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">__init__</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link> (self, int offset_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a widget.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.widget.Widget.__init__ ( self, int x, int y)</computeroutput></para><para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a">game.gui.slot.Slot</link>, <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d">game.gui.hotbar.Hotbar</link>, <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a59df44863e58294eaced06a343104318">game.gui.label.Label</link>, <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523">game.gui.nametag.NameTag</link>, <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca">game.gui.checkbox.Checkbox</link>, <link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a">game.gui.horizontal_slider.HorizontalSlider</link>, and <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90">game.gui.progress_bar.ProgressBar</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad"/><section>
+    <title>get_state()</title>
+<indexterm><primary>get_state</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>get_state</secondary></indexterm>
+<para><computeroutput> bool game.gui.widget.Widget.get_state ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the state of the widget&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e"/><section>
+    <title>get_transparency()</title>
+<indexterm><primary>get_transparency</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>get_transparency</secondary></indexterm>
+<para><computeroutput> float game.gui.widget.Widget.get_transparency ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the widget&apos;s transparency.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571"/><section>
+    <title>get_x()</title>
+<indexterm><primary>get_x</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>get_x</secondary></indexterm>
+<para><computeroutput> int game.gui.widget.Widget.get_x ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the x position of the widget.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117"/><section>
+    <title>get_y()</title>
+<indexterm><primary>get_y</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>get_y</secondary></indexterm>
+<para><computeroutput> int game.gui.widget.Widget.get_y ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the y position of the widget.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba"/><section>
+    <title>offset()</title>
+<indexterm><primary>offset</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.offset ( self, int offset_x, int offset_y)</computeroutput></para>
+<para><literallayout><computeroutput>Add an offset to the x and y positions of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c"/><section>
+    <title>offset_x()</title>
+<indexterm><primary>offset_x</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>offset_x</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.offset_x ( self, int offset_x)</computeroutput></para>
+<para><literallayout><computeroutput>Add an offset to the x position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10">game.gui.checkbox.Checkbox</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef"/><section>
+    <title>offset_y()</title>
+<indexterm><primary>offset_y</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>offset_y</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.offset_y ( self, int offset_y)</computeroutput></para>
+<para><literallayout><computeroutput>Add an offset to the y position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365">game.gui.checkbox.Checkbox</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the widget&apos;s visibility/interactivity, then return the widget itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37">game.gui.nametag.NameTag</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc"/><section>
+    <title>set_transparency()</title>
+<indexterm><primary>set_transparency</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>set_transparency</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.set_transparency ( self, float transparency)</computeroutput></para>
+<para><literallayout><computeroutput>Set the widget&apos;s transparency, then return the widget itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf"/><section>
+    <title>set_x()</title>
+<indexterm><primary>set_x</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>set_x</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.set_x ( self, int x)</computeroutput></para>
+<para><literallayout><computeroutput>Set the x position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a45549935ada48813236dfac7503a5616">game.gui.label.Label</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a"/><section>
+    <title>set_y()</title>
+<indexterm><primary>set_y</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>set_y</secondary></indexterm>
+<para><computeroutput> Self game.gui.widget.Widget.set_y ( self, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Set the y position of the widget, then return the widget itself.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1label_1_1Label_1ab8a8311cc9c68eabd1cf7c983bcd8f19">game.gui.label.Label</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd"/><section>
+    <title>_enabled</title>
+<indexterm><primary>_enabled</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>_enabled</secondary></indexterm>
+<para><computeroutput>game.gui.widget.Widget._enabled<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2"/><section>
+    <title>_transparency</title>
+<indexterm><primary>_transparency</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>_transparency</secondary></indexterm>
+<para><computeroutput>game.gui.widget.Widget._transparency<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.widget.Widget._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
+<indexterm><primary>game.gui.widget.Widget</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.widget.Widget._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_widget_8py">widget.py</link></section>
+</section>

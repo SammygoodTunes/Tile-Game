@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1world_1_1tile__manager_1_1TileManager" kind="class" language="Python" prot="public">
+    <compoundname>game::world::tile_manager::TileManager</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1aad0ef5dc30de92298d02a2a2b79f33bd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.world.tile_manager.TileManager::SIZE</definition>
+        <argsstring></argsstring>
+        <name>SIZE</name>
+        <qualifiedname>game.world.tile_manager.TileManager.SIZE</qualifiedname>
+        <initializer>=  32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.tile_manager.TileManager::atlas</definition>
+        <argsstring></argsstring>
+        <name>atlas</name>
+        <qualifiedname>game.world.tile_manager.TileManager.atlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.tile_manager.TileManager::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>game.world.tile_manager.TileManager.width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.tile_manager.TileManager::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>game.world.tile_manager.TileManager.height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1abc5d48cf847a7bd6f78500e8d6dd1596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.tile_manager.TileManager.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.world.tile_manager.TileManager.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.tile_manager.TileManager.draw</definition>
+        <argsstring>(self, int x, int y, Tile|int tile, Surface screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.world.tile_manager.TileManager.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>|int</type>
+          <declname>tile</declname>
+        </param>
+        <param>
+          <type>Surface</type>
+          <declname>screen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw a tile to the screen.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="22" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.world.tile_manager.TileManager.set_atlas</definition>
+        <argsstring>(self, str atlas_file)</argsstring>
+        <name>set_atlas</name>
+        <qualifiedname>game.world.tile_manager.TileManager.set_atlas</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>atlas_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the texture atlas.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="34" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a tile manager.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="9" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1abc5d48cf847a7bd6f78500e8d6dd1596" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>__init__</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>atlas</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>draw</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>height</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>set_atlas</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aad0ef5dc30de92298d02a2a2b79f33bd" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>SIZE</name></member>
+      <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" prot="public" virt="non-virtual"><scope>game::world::tile_manager::TileManager</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

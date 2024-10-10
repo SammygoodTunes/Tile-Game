@@ -46,7 +46,7 @@
         <location file="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/world_handler.py" bodystart="13" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>World</type>
+        <type><ref refid="classgame_1_1world_1_1world_1_1World" kindref="compound">World</ref></type>
         <definition> World world_handler.WorldHandler.get_world</definition>
         <argsstring>(self)</argsstring>
         <name>get_world</name>

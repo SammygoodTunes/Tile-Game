@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1slot_1_1Slot" xml:lang="en-US">
+<title>game.gui.slot.Slot Class Reference</title>
+<indexterm><primary>game.gui.slot.Slot</primary></indexterm>
+<para>Inheritance diagram for game.gui.slot.Slot:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1slot_1_1Slot.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a">__init__</link> (self, int x=0, int y=0)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a2178d5af7d6d88e7544d24e0dd7e7a1e">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a131de6d18c585e85917a90834180cc0d">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1aaa5290040947381cde1a6e849d1cf225">select</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a6ad05e26f6b579b2e4ce4953d8b476ec">unselect</link> (self)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a17c0515b994a97fab7468ed558461c69">is_selected</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a442c39586b03ea2d157aae4c1c98f383">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1af097740a99121252078c4ec462abfb3d">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a15a3e38eea2151165a9fe58fc47a2607">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1aeb415ac5365d2007815c634194b53739">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a784b8317765aae18feecca1957de898d">set_inner_colour</link> (self, tuple[int, int, int] inner_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a2d66622897bfdfb7420fcf89aabe927f">get_inner_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ad14e0d041350598a1540d7d86e25145c">set_outline_colour</link> (self, tuple[int, int, int] outline_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a685c873fc6f9c237230a162a9a7a0349">get_outline_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a470fd746200756e0500babb33cd25ee9">set_inner_width</link> (self, int inner_width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a0c1bddd96a19417f80303a35de419c9f">get_inner_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a640aa458117c4d2614e7a4c7f461bdcb">set_outline_width</link> (self, int outline_width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a6018c94ee88b322bcf2b4f21b735acdd">get_outline_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a2506fe080ad9429efc69c366b4d4c276">set_item</link> (self, <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> item)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1afd03bdd463da2963e0c497764aa7c3ce">get_item</link> (self)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a5a5347ba9a38017c54e814df0fc1da66">get_item_asset</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ab9ba1b8502f27c34e2c8015b4262815e">clear_item_asset</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link> (self, int offset_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a81d05a827571de62c36eb0e9b379faf5">MIN_SIZE</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1acd9bc7129575d89798be2b4b1bc4c013">MAX_SIZE</link> = 75</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a23282e62499327a7f6385871fb8144e2">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a0b20dcd9a0005acd652eefcb90a4eefa">_outline_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a024c0c622e7ddf062b5aa0f8a019f237">_inner_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ab22a2141e80040e37aa7e5594e51da35">_fill_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a828f81a033e5c3a36cb398e99620685d">_outline_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ab8341de258536f9699c1cbf8d6161a5c">_inner_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a33a8266955f3cf4417a5a052c0d56beb">_fill_alpha</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ae07c31f43ace3f5308dcc040114a17ca">_fill_surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1ad6db80e17eaa38a4354b4769513eb6e6">_item_count</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a43ff4e05c098b50b0bce87e511f0ab99">_selected</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1af82c98bc46d39f992648dfe36d6cf961">_item</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a880dc85d27ceb3671c65d42d7a5f9a0a">_item_asset</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a slot.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.slot.Slot.__init__ ( self, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">game.gui.widget.Widget</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the slot horizontally relative to the specified parent, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a131de6d18c585e85917a90834180cc0d"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the slot vertically relative to the specified parent, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ab9ba1b8502f27c34e2c8015b4262815e"/><section>
+    <title>clear_item_asset()</title>
+<indexterm><primary>clear_item_asset</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>clear_item_asset</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.clear_item_asset ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Clear the item asset of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.slot.Slot.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the slot and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1aeb415ac5365d2007815c634194b53739"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int game.gui.slot.Slot.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a2d66622897bfdfb7420fcf89aabe927f"/><section>
+    <title>get_inner_colour()</title>
+<indexterm><primary>get_inner_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_inner_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.slot.Slot.get_inner_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the inner colour of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a0c1bddd96a19417f80303a35de419c9f"/><section>
+    <title>get_inner_width()</title>
+<indexterm><primary>get_inner_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_inner_width</secondary></indexterm>
+<para><computeroutput> int game.gui.slot.Slot.get_inner_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the inner width of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1afd03bdd463da2963e0c497764aa7c3ce"/><section>
+    <title>get_item()</title>
+<indexterm><primary>get_item</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_item</secondary></indexterm>
+<para><computeroutput> <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> game.gui.slot.Slot.get_item ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the item of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a5a5347ba9a38017c54e814df0fc1da66"/><section>
+    <title>get_item_asset()</title>
+<indexterm><primary>get_item_asset</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_item_asset</secondary></indexterm>
+<para><computeroutput> Surface game.gui.slot.Slot.get_item_asset ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the item asset of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a685c873fc6f9c237230a162a9a7a0349"/><section>
+    <title>get_outline_colour()</title>
+<indexterm><primary>get_outline_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_outline_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.slot.Slot.get_outline_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the outline colour of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a6018c94ee88b322bcf2b4f21b735acdd"/><section>
+    <title>get_outline_width()</title>
+<indexterm><primary>get_outline_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_outline_width</secondary></indexterm>
+<para><computeroutput> int game.gui.slot.Slot.get_outline_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the outline width of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1af097740a99121252078c4ec462abfb3d"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int game.gui.slot.Slot.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a17c0515b994a97fab7468ed558461c69"/><section>
+    <title>is_selected()</title>
+<indexterm><primary>is_selected</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>is_selected</secondary></indexterm>
+<para><computeroutput> bool game.gui.slot.Slot.is_selected ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return whether the slot is selected or not.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1aaa5290040947381cde1a6e849d1cf225"/><section>
+    <title>select()</title>
+<indexterm><primary>select</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>select</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.select ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Select the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a15a3e38eea2151165a9fe58fc47a2607"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a784b8317765aae18feecca1957de898d"/><section>
+    <title>set_inner_colour()</title>
+<indexterm><primary>set_inner_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_inner_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_inner_colour ( self, tuple[int, int, int] inner_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the inner colour of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a470fd746200756e0500babb33cd25ee9"/><section>
+    <title>set_inner_width()</title>
+<indexterm><primary>set_inner_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_inner_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_inner_width ( self, int inner_width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the inner width of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a2506fe080ad9429efc69c366b4d4c276"/><section>
+    <title>set_item()</title>
+<indexterm><primary>set_item</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_item</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_item ( self, <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item">Item</link> item)</computeroutput></para>
+<para><literallayout><computeroutput>Set the item of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ad14e0d041350598a1540d7d86e25145c"/><section>
+    <title>set_outline_colour()</title>
+<indexterm><primary>set_outline_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_outline_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_outline_colour ( self, tuple[int, int, int] outline_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the outline colour of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a640aa458117c4d2614e7a4c7f461bdcb"/><section>
+    <title>set_outline_width()</title>
+<indexterm><primary>set_outline_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_outline_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_outline_width ( self, int outline_width)</computeroutput></para>
+<para><literallayout><computeroutput>Return the outline width of the slot.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a442c39586b03ea2d157aae4c1c98f383"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a6ad05e26f6b579b2e4ce4953d8b476ec"/><section>
+    <title>unselect()</title>
+<indexterm><primary>unselect</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>unselect</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.unselect ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Unselect the slot, then return the slot itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a2178d5af7d6d88e7544d24e0dd7e7a1e"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> Self game.gui.slot.Slot.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the slot and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a33a8266955f3cf4417a5a052c0d56beb"/><section>
+    <title>_fill_alpha</title>
+<indexterm><primary>_fill_alpha</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_fill_alpha</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._fill_alpha<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ab22a2141e80040e37aa7e5594e51da35"/><section>
+    <title>_fill_colour</title>
+<indexterm><primary>_fill_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_fill_colour</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._fill_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ae07c31f43ace3f5308dcc040114a17ca"/><section>
+    <title>_fill_surface</title>
+<indexterm><primary>_fill_surface</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_fill_surface</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._fill_surface<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a23282e62499327a7f6385871fb8144e2"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a024c0c622e7ddf062b5aa0f8a019f237"/><section>
+    <title>_inner_colour</title>
+<indexterm><primary>_inner_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_inner_colour</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._inner_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ab8341de258536f9699c1cbf8d6161a5c"/><section>
+    <title>_inner_width</title>
+<indexterm><primary>_inner_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_inner_width</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._inner_width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1af82c98bc46d39f992648dfe36d6cf961"/><section>
+    <title>_item</title>
+<indexterm><primary>_item</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_item</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._item<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a880dc85d27ceb3671c65d42d7a5f9a0a"/><section>
+    <title>_item_asset</title>
+<indexterm><primary>_item_asset</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_item_asset</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._item_asset<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1ad6db80e17eaa38a4354b4769513eb6e6"/><section>
+    <title>_item_count</title>
+<indexterm><primary>_item_count</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_item_count</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._item_count<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a0b20dcd9a0005acd652eefcb90a4eefa"/><section>
+    <title>_outline_colour</title>
+<indexterm><primary>_outline_colour</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_outline_colour</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._outline_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a828f81a033e5c3a36cb398e99620685d"/><section>
+    <title>_outline_width</title>
+<indexterm><primary>_outline_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_outline_width</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._outline_width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a43ff4e05c098b50b0bce87e511f0ab99"/><section>
+    <title>_selected</title>
+<indexterm><primary>_selected</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_selected</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._selected<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.slot.Slot._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1acd9bc7129575d89798be2b4b1bc4c013"/><section>
+    <title>MAX_SIZE</title>
+<indexterm><primary>MAX_SIZE</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>MAX_SIZE</secondary></indexterm>
+<para><computeroutput>int game.gui.slot.Slot.MAX_SIZE = 75<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1slot_1_1Slot_1a81d05a827571de62c36eb0e9b379faf5"/><section>
+    <title>MIN_SIZE</title>
+<indexterm><primary>MIN_SIZE</primary><secondary>game.gui.slot.Slot</secondary></indexterm>
+<indexterm><primary>game.gui.slot.Slot</primary><secondary>MIN_SIZE</secondary></indexterm>
+<para><computeroutput>int game.gui.slot.Slot.MIN_SIZE = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_slot_8py">slot.py</link></section>
+</section>

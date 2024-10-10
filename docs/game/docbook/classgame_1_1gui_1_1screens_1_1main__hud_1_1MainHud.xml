@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud" xml:lang="en-US">
+<title>game.gui.screens.main_hud.MainHud Class Reference</title>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.main_hud.MainHud:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98">__init__</link> (self, <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038">game</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a00ddbcaa573976be5d37adce7b64069d">surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a502763bd9fa43829f6f4d2efd598b5f0">version_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afa83ede926b5a0c220de284f4dea2ff1">score_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6ab0779645d5a6f7aa25af437d3fec90">ping_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6403bf54e30b79ff6bd4ec3c5f175c95">data_sent_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1ae2f64ec14e2e3b63318125355bef8cca">data_recv_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a839a5a66185c9caa47f976dac5d0866c">camera_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a233b47332b590b76150aa78b43bf8cf0">position_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a3fe5202f27e23f36940e2dd0f4866141">health_bar</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a7325a91cab08dbacc92c12f110ae6641">hotbar</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the main (player) HUD.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.main_hud.MainHud.__init__ ( self,  game)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">game.gui.screens.screen.Screen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.main_hud.MainHud.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.main_hud.MainHud.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.main_hud.MainHud.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a839a5a66185c9caa47f976dac5d0866c"/><section>
+    <title>camera_label</title>
+<indexterm><primary>camera_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>camera_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.camera_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1ae2f64ec14e2e3b63318125355bef8cca"/><section>
+    <title>data_recv_label</title>
+<indexterm><primary>data_recv_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>data_recv_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.data_recv_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6403bf54e30b79ff6bd4ec3c5f175c95"/><section>
+    <title>data_sent_label</title>
+<indexterm><primary>data_sent_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>data_sent_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.data_sent_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.game</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a3fe5202f27e23f36940e2dd0f4866141"/><section>
+    <title>health_bar</title>
+<indexterm><primary>health_bar</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>health_bar</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.health_bar</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a7325a91cab08dbacc92c12f110ae6641"/><section>
+    <title>hotbar</title>
+<indexterm><primary>hotbar</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>hotbar</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.hotbar</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6ab0779645d5a6f7aa25af437d3fec90"/><section>
+    <title>ping_label</title>
+<indexterm><primary>ping_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>ping_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.ping_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a233b47332b590b76150aa78b43bf8cf0"/><section>
+    <title>position_label</title>
+<indexterm><primary>position_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>position_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.position_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afa83ede926b5a0c220de284f4dea2ff1"/><section>
+    <title>score_label</title>
+<indexterm><primary>score_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>score_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.score_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a00ddbcaa573976be5d37adce7b64069d"/><section>
+    <title>surface</title>
+<indexterm><primary>surface</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>surface</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.surface</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a502763bd9fa43829f6f4d2efd598b5f0"/><section>
+    <title>version_label</title>
+<indexterm><primary>version_label</primary><secondary>game.gui.screens.main_hud.MainHud</secondary></indexterm>
+<indexterm><primary>game.gui.screens.main_hud.MainHud</primary><secondary>version_label</secondary></indexterm>
+<para><computeroutput>game.gui.screens.main_hud.MainHud.version_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_main__hud_8py">main_hud.py</link></section>
+</section>

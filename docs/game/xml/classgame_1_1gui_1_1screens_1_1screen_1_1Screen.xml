@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::screens::screen::Screen</compoundname>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen" prot="public" virt="non-virtual">game.gui.screens.crash_screen.CrashScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen" prot="public" virt="non-virtual">game.gui.screens.credits_screen.CreditsScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen" prot="public" virt="non-virtual">game.gui.screens.gameover_screen.GameoverScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen" prot="public" virt="non-virtual">game.gui.screens.loading_screen.LoadingScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud" prot="public" virt="non-virtual">game.gui.screens.main_hud.MainHud</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" prot="public" virt="non-virtual">game.gui.screens.mainmenu_screen.MainMenuScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen" prot="public" virt="non-virtual">game.gui.screens.map_screen.MapScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen" prot="public" virt="non-virtual">game.gui.screens.options_screen.OptionsScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen" prot="public" virt="non-virtual">game.gui.screens.pause_screen.PauseScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" prot="public" virt="non-virtual">game.gui.screens.playerlist_screen.PlayerListScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" prot="public" virt="non-virtual">game.gui.screens.serverconnect_screen.ServerConnectScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" prot="public" virt="non-virtual">game.gui.screens.servercreate_screen.ServerCreateScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" prot="public" virt="non-virtual">game.gui.screens.serverjoin_screen.ServerJoinScreen</derivedcompoundref>
+    <derivedcompoundref refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" prot="public" virt="non-virtual">game.gui.screens.servermenu_screen.ServerMenuScreen</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.screen.Screen::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <qualifiedname>game.gui.screens.screen.Screen._enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.screen.Screen.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.screens.screen.Screen.__init__</qualifiedname>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a46279bdc6356142989203c173850afee">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1adb353c26ec380c794b577f4505287938">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a67089a5565487dfcd3a253a2211166ec">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a44785518dd4d86fa600f8c2b2602fb63">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a978955f0494dc09d359930043a5de26c">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a0bcb7e1d5705bf75a9fc51f7b3fdc7ee">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1bef66c3a1d109560905b309c665fb8f">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a50441ac19860cd01320ae4d021089bcc">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aaf1320b8b7623a5ccda590afa4be2b85">__init__</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ae1fb89341ce74ee39e865c136cdada05">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.screen.Screen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.screens.screen.Screen.set_state</qualifiedname>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832">set_state</reimplementedby>
+        <reimplementedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15">set_state</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.gui.screens.screen.Screen.get_state</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_state</name>
+        <qualifiedname>game.gui.screens.screen.Screen.get_state</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the screen&apos;s visibility/interactivity state.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.crash_screen.CrashScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>game.gui.screens.credits_screen.CreditsScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>game.gui.screens.gameover_screen.GameoverScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>game.gui.screens.loading_screen.LoadingScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>game.gui.screens.main_hud.MainHud</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>game.gui.screens.mainmenu_screen.MainMenuScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>game.gui.screens.map_screen.MapScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>game.gui.screens.options_screen.OptionsScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>game.gui.screens.pause_screen.PauseScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>game.gui.screens.playerlist_screen.PlayerListScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>game.gui.screens.serverconnect_screen.ServerConnectScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>game.gui.screens.servercreate_screen.ServerCreateScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>game.gui.screens.serverjoin_screen.ServerJoinScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>game.gui.screens.servermenu_screen.ServerMenuScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/screen.py" bodystart="5" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad" prot="public" virt="non-virtual"><scope>game::gui::screens::screen::Screen</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" prot="protected" virt="non-virtual"><scope>game::gui::screens::screen::Screen</scope><name>_enabled</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d" prot="public" virt="non-virtual"><scope>game::gui::screens::screen::Screen</scope><name>get_state</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc" prot="public" virt="non-virtual"><scope>game::gui::screens::screen::Screen</scope><name>set_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

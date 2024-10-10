@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise" xml:lang="en-US">
+<title>game.world.synth.noise.PerlinNoise Class Reference</title>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8883ce27329a1b49fe1756820779c169">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0">generate</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547">noise</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c">smooth_noise</link> (self, int x, int y)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d">interpolate_noise</link> (self, float x, float y)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a1b7d68791c323566f56c89e5e51ab6ed">set_permutations</link> (self, list|tuple permutations)</para>
+</listitem>
+            <listitem><para>list|tuple <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf">get_permutations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa0f2430fc99d2c46e28b311d64d2194f">set_noise_intensity</link> (self, int noise_intensity)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac">get_noise_intensity</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137">set_frequency</link> (self, float frequency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a897f1ec1d78aca4f103ffedc2def39e6">get_frequency</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ab4f93a8deee339eebd4cd4c2d6fcf25a">cosine_interpolate</link> (float a, float b, float x)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a4643d1067f84ca8b16e8e771d66d0202">NOISE_INTENSITY_RANGE</link> = 2**16</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a22bbd121a8184d8415953c4175a4f6a6">FREQ_ALTER_RANGE</link> = 0.08</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855">_permutations</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648">_persistence</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0">_octaves</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182">_noise_intensity</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642">_frequency</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating an instance of the perlin noise algorithm.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8883ce27329a1b49fe1756820779c169"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.world.synth.noise.PerlinNoise.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ab4f93a8deee339eebd4cd4c2d6fcf25a"/><section>
+    <title>cosine_interpolate()</title>
+<indexterm><primary>cosine_interpolate</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>cosine_interpolate</secondary></indexterm>
+<para><computeroutput> float game.world.synth.noise.PerlinNoise.cosine_interpolate (float a, float b, float x)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Cosine interpolation.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0"/><section>
+    <title>generate()</title>
+<indexterm><primary>generate</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>generate</secondary></indexterm>
+<para><computeroutput> int game.world.synth.noise.PerlinNoise.generate ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Generate and return perlin noise data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a897f1ec1d78aca4f103ffedc2def39e6"/><section>
+    <title>get_frequency()</title>
+<indexterm><primary>get_frequency</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>get_frequency</secondary></indexterm>
+<para><computeroutput> float game.world.synth.noise.PerlinNoise.get_frequency ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the frequency.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac"/><section>
+    <title>get_noise_intensity()</title>
+<indexterm><primary>get_noise_intensity</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>get_noise_intensity</secondary></indexterm>
+<para><computeroutput> int game.world.synth.noise.PerlinNoise.get_noise_intensity ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the noise intensity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf"/><section>
+    <title>get_permutations()</title>
+<indexterm><primary>get_permutations</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>get_permutations</secondary></indexterm>
+<para><computeroutput> list | tuple game.world.synth.noise.PerlinNoise.get_permutations ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the permutations.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d"/><section>
+    <title>interpolate_noise()</title>
+<indexterm><primary>interpolate_noise</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>interpolate_noise</secondary></indexterm>
+<para><computeroutput> float game.world.synth.noise.PerlinNoise.interpolate_noise ( self, float x, float y)</computeroutput></para>
+<para><literallayout><computeroutput>Interpolate noise.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547"/><section>
+    <title>noise()</title>
+<indexterm><primary>noise</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>noise</secondary></indexterm>
+<para><computeroutput> float game.world.synth.noise.PerlinNoise.noise ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Noise function.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137"/><section>
+    <title>set_frequency()</title>
+<indexterm><primary>set_frequency</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>set_frequency</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise.set_frequency ( self, float frequency)</computeroutput></para>
+<para><literallayout><computeroutput>Set the frequency.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa0f2430fc99d2c46e28b311d64d2194f"/><section>
+    <title>set_noise_intensity()</title>
+<indexterm><primary>set_noise_intensity</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>set_noise_intensity</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise.set_noise_intensity ( self, int noise_intensity)</computeroutput></para>
+<para><literallayout><computeroutput>Set the noise intensity.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a1b7d68791c323566f56c89e5e51ab6ed"/><section>
+    <title>set_permutations()</title>
+<indexterm><primary>set_permutations</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>set_permutations</secondary></indexterm>
+<para><computeroutput> None game.world.synth.noise.PerlinNoise.set_permutations ( self, list | tuple permutations)</computeroutput></para>
+<para><literallayout><computeroutput>Set the permutations.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c"/><section>
+    <title>smooth_noise()</title>
+<indexterm><primary>smooth_noise</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>smooth_noise</secondary></indexterm>
+<para><computeroutput> float game.world.synth.noise.PerlinNoise.smooth_noise ( self, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Smooth noise function.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642"/><section>
+    <title>_frequency</title>
+<indexterm><primary>_frequency</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>_frequency</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise._frequency<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182"/><section>
+    <title>_noise_intensity</title>
+<indexterm><primary>_noise_intensity</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>_noise_intensity</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise._noise_intensity<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0"/><section>
+    <title>_octaves</title>
+<indexterm><primary>_octaves</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>_octaves</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise._octaves<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855"/><section>
+    <title>_permutations</title>
+<indexterm><primary>_permutations</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>_permutations</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise._permutations<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648"/><section>
+    <title>_persistence</title>
+<indexterm><primary>_persistence</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>_persistence</secondary></indexterm>
+<para><computeroutput>game.world.synth.noise.PerlinNoise._persistence<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a22bbd121a8184d8415953c4175a4f6a6"/><section>
+    <title>FREQ_ALTER_RANGE</title>
+<indexterm><primary>FREQ_ALTER_RANGE</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>FREQ_ALTER_RANGE</secondary></indexterm>
+<para><computeroutput>float game.world.synth.noise.PerlinNoise.FREQ_ALTER_RANGE = 0.08<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a4643d1067f84ca8b16e8e771d66d0202"/><section>
+    <title>NOISE_INTENSITY_RANGE</title>
+<indexterm><primary>NOISE_INTENSITY_RANGE</primary><secondary>game.world.synth.noise.PerlinNoise</secondary></indexterm>
+<indexterm><primary>game.world.synth.noise.PerlinNoise</primary><secondary>NOISE_INTENSITY_RANGE</secondary></indexterm>
+<para><computeroutput>int game.world.synth.noise.PerlinNoise.NOISE_INTENSITY_RANGE = 2**16<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_noise_8py">noise.py</link></section>
+</section>

@@ -4,146 +4,226 @@ var annotated_dup =
       [ "BaseBuilder", "classbuilders_1_1BaseBuilder.html", null ],
       [ "PlayerBuilder", "classbuilders_1_1PlayerBuilder.html", null ]
     ] ],
-    [ "client", "namespaceclient.html", [
-      [ "client", "namespaceclient_1_1client.html", [
-        [ "Client", "classclient_1_1client_1_1Client.html", "classclient_1_1client_1_1Client" ]
-      ] ],
-      [ "connection", "namespaceclient_1_1connection.html", [
-        [ "Connection", "classclient_1_1connection_1_1Connection.html", "classclient_1_1connection_1_1Connection" ],
-        [ "Tasks", "classclient_1_1connection_1_1Tasks.html", null ]
-      ] ],
-      [ "connection_handler", "namespaceclient_1_1connection__handler.html", [
-        [ "ConnectionHandler", "classclient_1_1connection__handler_1_1ConnectionHandler.html", "classclient_1_1connection__handler_1_1ConnectionHandler" ]
-      ] ],
-      [ "player_manager", "namespaceclient_1_1player__manager.html", [
-        [ "PlayerManager", "classclient_1_1player__manager_1_1PlayerManager.html", "classclient_1_1player__manager_1_1PlayerManager" ]
-      ] ],
-      [ "tasks", "namespaceclient_1_1tasks.html", [
-        [ "ClientTasks", "classclient_1_1tasks_1_1ClientTasks.html", null ]
-      ] ]
-    ] ],
-    [ "core", "namespacecore.html", [
-      [ "game", "namespacecore_1_1game.html", [
-        [ "Game", "classcore_1_1game_1_1Game.html", "classcore_1_1game_1_1Game" ]
-      ] ],
-      [ "window", "namespacecore_1_1window.html", [
-        [ "Window", "classcore_1_1window_1_1Window.html", "classcore_1_1window_1_1Window" ]
-      ] ]
-    ] ],
-    [ "data", "namespacedata.html", [
-      [ "items", "namespacedata_1_1items.html", [
-        [ "Item", "classdata_1_1items_1_1Item.html", "classdata_1_1items_1_1Item" ],
-        [ "Items", "classdata_1_1items_1_1Items.html", null ],
-        [ "ItemTypes", "classdata_1_1items_1_1ItemTypes.html", null ]
-      ] ],
-      [ "keys", "namespacedata_1_1keys.html", [
-        [ "Keys", "classdata_1_1keys_1_1Keys.html", null ]
-      ] ],
-      [ "properties", "namespacedata_1_1properties.html", [
-        [ "CameraProperties", "classdata_1_1properties_1_1CameraProperties.html", null ],
-        [ "PlayerProperties", "classdata_1_1properties_1_1PlayerProperties.html", null ],
-        [ "ScreenProperties", "classdata_1_1properties_1_1ScreenProperties.html", null ],
-        [ "ServerProperties", "classdata_1_1properties_1_1ServerProperties.html", null ],
-        [ "WorldProperties", "classdata_1_1properties_1_1WorldProperties.html", null ]
-      ] ],
-      [ "states", "namespacedata_1_1states.html", [
-        [ "ConnectionStates", "classdata_1_1states_1_1ConnectionStates.html", null ],
-        [ "MapStates", "classdata_1_1states_1_1MapStates.html", null ],
-        [ "MouseStates", "classdata_1_1states_1_1MouseStates.html", null ],
-        [ "PlayerStates", "classdata_1_1states_1_1PlayerStates.html", null ],
-        [ "ServerStates", "classdata_1_1states_1_1ServerStates.html", null ]
-      ] ],
-      [ "tiles", "namespacedata_1_1tiles.html", [
-        [ "Tile", "classdata_1_1tiles_1_1Tile.html", "classdata_1_1tiles_1_1Tile" ],
-        [ "Tiles", "classdata_1_1tiles_1_1Tiles.html", null ],
-        [ "TileTypes", "classdata_1_1tiles_1_1TileTypes.html", null ]
-      ] ]
-    ] ],
-    [ "entity", "namespaceentity.html", [
-      [ "player", "namespaceentity_1_1player.html", [
-        [ "Player", "classentity_1_1player_1_1Player.html", "classentity_1_1player_1_1Player" ]
-      ] ]
-    ] ],
-    [ "gui", "namespacegui.html", [
-      [ "button", "namespacegui_1_1button.html", [
-        [ "Button", "classgui_1_1button_1_1Button.html", "classgui_1_1button_1_1Button" ]
-      ] ],
-      [ "checkbox", "namespacegui_1_1checkbox.html", [
-        [ "Checkbox", "classgui_1_1checkbox_1_1Checkbox.html", "classgui_1_1checkbox_1_1Checkbox" ]
-      ] ],
-      [ "horizontal_slider", "namespacegui_1_1horizontal__slider.html", [
-        [ "HorizontalSlider", "classgui_1_1horizontal__slider_1_1HorizontalSlider.html", "classgui_1_1horizontal__slider_1_1HorizontalSlider" ]
-      ] ],
-      [ "hotbar", "namespacegui_1_1hotbar.html", [
-        [ "Hotbar", "classgui_1_1hotbar_1_1Hotbar.html", "classgui_1_1hotbar_1_1Hotbar" ]
-      ] ],
-      [ "inputbox", "namespacegui_1_1inputbox.html", [
-        [ "InputBox", "classgui_1_1inputbox_1_1InputBox.html", "classgui_1_1inputbox_1_1InputBox" ]
-      ] ],
-      [ "label", "namespacegui_1_1label.html", [
-        [ "Label", "classgui_1_1label_1_1Label.html", "classgui_1_1label_1_1Label" ]
-      ] ],
-      [ "nametag", "namespacegui_1_1nametag.html", [
-        [ "NameTag", "classgui_1_1nametag_1_1NameTag.html", "classgui_1_1nametag_1_1NameTag" ]
-      ] ],
-      [ "progress_bar", "namespacegui_1_1progress__bar.html", [
-        [ "ProgressBar", "classgui_1_1progress__bar_1_1ProgressBar.html", "classgui_1_1progress__bar_1_1ProgressBar" ]
-      ] ],
-      [ "screen_manager", "namespacegui_1_1screen__manager.html", [
-        [ "Screens", "classgui_1_1screen__manager_1_1Screens.html", "classgui_1_1screen__manager_1_1Screens" ]
-      ] ],
-      [ "screens", "namespacegui_1_1screens.html", [
-        [ "crash_screen", "namespacegui_1_1screens_1_1crash__screen.html", [
-          [ "CrashScreen", "classgui_1_1screens_1_1crash__screen_1_1CrashScreen.html", "classgui_1_1screens_1_1crash__screen_1_1CrashScreen" ]
+    [ "game", "namespacegame.html", [
+      [ "client", "namespacegame_1_1client.html", [
+        [ "client", "namespacegame_1_1client_1_1client.html", [
+          [ "Client", "classgame_1_1client_1_1client_1_1Client.html", "classgame_1_1client_1_1client_1_1Client" ]
         ] ],
-        [ "credits_screen", "namespacegui_1_1screens_1_1credits__screen.html", [
-          [ "CreditsScreen", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", "classgui_1_1screens_1_1credits__screen_1_1CreditsScreen" ]
+        [ "connection", "namespacegame_1_1client_1_1connection.html", [
+          [ "Connection", "classgame_1_1client_1_1connection_1_1Connection.html", "classgame_1_1client_1_1connection_1_1Connection" ],
+          [ "Tasks", "classgame_1_1client_1_1connection_1_1Tasks.html", null ],
+          [ "XSocket", "classgame_1_1client_1_1connection_1_1XSocket.html", "classgame_1_1client_1_1connection_1_1XSocket" ]
         ] ],
-        [ "gameover_screen", "namespacegui_1_1screens_1_1gameover__screen.html", [
-          [ "GameoverScreen", "classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html", "classgui_1_1screens_1_1gameover__screen_1_1GameoverScreen" ]
+        [ "connection_handler", "namespacegame_1_1client_1_1connection__handler.html", [
+          [ "ConnectionHandler", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler" ]
         ] ],
-        [ "loading_screen", "namespacegui_1_1screens_1_1loading__screen.html", [
-          [ "LoadingScreen", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen.html", "classgui_1_1screens_1_1loading__screen_1_1LoadingScreen" ]
+        [ "player_manager", "namespacegame_1_1client_1_1player__manager.html", [
+          [ "PlayerManager", "classgame_1_1client_1_1player__manager_1_1PlayerManager.html", "classgame_1_1client_1_1player__manager_1_1PlayerManager" ]
         ] ],
-        [ "main_hud", "namespacegui_1_1screens_1_1main__hud.html", [
-          [ "MainHud", "classgui_1_1screens_1_1main__hud_1_1MainHud.html", "classgui_1_1screens_1_1main__hud_1_1MainHud" ]
-        ] ],
-        [ "mainmenu_screen", "namespacegui_1_1screens_1_1mainmenu__screen.html", [
-          [ "MainMenuScreen", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html", "classgui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" ]
-        ] ],
-        [ "map_screen", "namespacegui_1_1screens_1_1map__screen.html", [
-          [ "MapScreen", "classgui_1_1screens_1_1map__screen_1_1MapScreen.html", "classgui_1_1screens_1_1map__screen_1_1MapScreen" ]
-        ] ],
-        [ "options_screen", "namespacegui_1_1screens_1_1options__screen.html", [
-          [ "OptionsScreen", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen.html", "classgui_1_1screens_1_1options__screen_1_1OptionsScreen" ]
-        ] ],
-        [ "pause_screen", "namespacegui_1_1screens_1_1pause__screen.html", [
-          [ "PauseScreen", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen.html", "classgui_1_1screens_1_1pause__screen_1_1PauseScreen" ]
-        ] ],
-        [ "playerlist_screen", "namespacegui_1_1screens_1_1playerlist__screen.html", [
-          [ "PlayerListScreen", "classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html", "classgui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" ]
-        ] ],
-        [ "screen", "namespacegui_1_1screens_1_1screen.html", [
-          [ "Screen", "classgui_1_1screens_1_1screen_1_1Screen.html", "classgui_1_1screens_1_1screen_1_1Screen" ]
-        ] ],
-        [ "serverconnect_screen", "namespacegui_1_1screens_1_1serverconnect__screen.html", [
-          [ "ServerConnectScreen", "classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html", "classgui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" ]
-        ] ],
-        [ "servercreate_screen", "namespacegui_1_1screens_1_1servercreate__screen.html", [
-          [ "ServerCreateScreen", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html", "classgui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" ]
-        ] ],
-        [ "serverjoin_screen", "namespacegui_1_1screens_1_1serverjoin__screen.html", [
-          [ "ServerJoinScreen", "classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html", "classgui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" ]
-        ] ],
-        [ "servermenu_screen", "namespacegui_1_1screens_1_1servermenu__screen.html", [
-          [ "ServerMenuScreen", "classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", "classgui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" ]
+        [ "tasks", "namespacegame_1_1client_1_1tasks.html", [
+          [ "ClientTasks", "classgame_1_1client_1_1tasks_1_1ClientTasks.html", null ]
         ] ]
       ] ],
-      [ "slot", "namespacegui_1_1slot.html", [
-        [ "Slot", "classgui_1_1slot_1_1Slot.html", "classgui_1_1slot_1_1Slot" ]
+      [ "core", "namespacegame_1_1core.html", [
+        [ "game", "namespacegame_1_1core_1_1game.html", [
+          [ "Game", "classgame_1_1core_1_1game_1_1Game.html", "classgame_1_1core_1_1game_1_1Game" ]
+        ] ],
+        [ "window", "namespacegame_1_1core_1_1window.html", [
+          [ "Window", "classgame_1_1core_1_1window_1_1Window.html", "classgame_1_1core_1_1window_1_1Window" ]
+        ] ]
       ] ],
-      [ "widget", "namespacegui_1_1widget.html", [
-        [ "Widget", "classgui_1_1widget_1_1Widget.html", "classgui_1_1widget_1_1Widget" ]
+      [ "data", "namespacegame_1_1data.html", [
+        [ "items", "namespacegame_1_1data_1_1items.html", [
+          [ "item", "namespacegame_1_1data_1_1items_1_1item.html", [
+            [ "Item", "classgame_1_1data_1_1items_1_1item_1_1Item.html", "classgame_1_1data_1_1items_1_1item_1_1Item" ]
+          ] ],
+          [ "item_types", "namespacegame_1_1data_1_1items_1_1item__types.html", [
+            [ "ItemTypes", "classgame_1_1data_1_1items_1_1item__types_1_1ItemTypes.html", null ]
+          ] ],
+          [ "items", "namespacegame_1_1data_1_1items_1_1items.html", [
+            [ "Items", "classgame_1_1data_1_1items_1_1items_1_1Items.html", null ]
+          ] ]
+        ] ],
+        [ "keys", "namespacegame_1_1data_1_1keys.html", [
+          [ "Keys", "classgame_1_1data_1_1keys_1_1Keys.html", null ]
+        ] ],
+        [ "properties", "namespacegame_1_1data_1_1properties.html", [
+          [ "camera_properties", "namespacegame_1_1data_1_1properties_1_1camera__properties.html", [
+            [ "CameraProperties", "classgame_1_1data_1_1properties_1_1camera__properties_1_1CameraProperties.html", null ]
+          ] ],
+          [ "player_properties", "namespacegame_1_1data_1_1properties_1_1player__properties.html", [
+            [ "PlayerProperties", "classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties.html", null ]
+          ] ],
+          [ "screen_properties", "namespacegame_1_1data_1_1properties_1_1screen__properties.html", [
+            [ "ScreenProperties", "classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties.html", null ]
+          ] ],
+          [ "server_properties", "namespacegame_1_1data_1_1properties_1_1server__properties.html", [
+            [ "ServerProperties", "classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties.html", null ]
+          ] ],
+          [ "tile_properties", "namespacegame_1_1data_1_1properties_1_1tile__properties.html", [
+            [ "TileProperties", "classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties.html", null ]
+          ] ],
+          [ "world_properties", "namespacegame_1_1data_1_1properties_1_1world__properties.html", [
+            [ "WorldProperties", "classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html", null ]
+          ] ]
+        ] ],
+        [ "states", "namespacegame_1_1data_1_1states.html", [
+          [ "connection_states", "namespacegame_1_1data_1_1states_1_1connection__states.html", [
+            [ "ConnectionStates", "classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html", null ]
+          ] ],
+          [ "map_states", "namespacegame_1_1data_1_1states_1_1map__states.html", [
+            [ "MapStates", "classgame_1_1data_1_1states_1_1map__states_1_1MapStates.html", null ]
+          ] ],
+          [ "mouse_states", "namespacegame_1_1data_1_1states_1_1mouse__states.html", [
+            [ "MouseStates", "classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html", null ]
+          ] ],
+          [ "player_states", "namespacegame_1_1data_1_1states_1_1player__states.html", [
+            [ "PlayerStates", "classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates.html", null ]
+          ] ],
+          [ "server_states", "namespacegame_1_1data_1_1states_1_1server__states.html", [
+            [ "ServerStates", "classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html", null ]
+          ] ]
+        ] ],
+        [ "structures", "namespacegame_1_1data_1_1structures.html", [
+          [ "map_structure", "namespacegame_1_1data_1_1structures_1_1map__structure.html", [
+            [ "MapStructure", "classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html", null ]
+          ] ],
+          [ "tile_structure", "namespacegame_1_1data_1_1structures_1_1tile__structure.html", [
+            [ "DynatileStructure", "classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html", null ],
+            [ "TileStructure", "classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure.html", null ]
+          ] ]
+        ] ],
+        [ "tiles", "namespacegame_1_1data_1_1tiles.html", [
+          [ "tile", "namespacegame_1_1data_1_1tiles_1_1tile.html", [
+            [ "Tile", "classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html", "classgame_1_1data_1_1tiles_1_1tile_1_1Tile" ]
+          ] ],
+          [ "tile_types", "namespacegame_1_1data_1_1tiles_1_1tile__types.html", [
+            [ "TileTypes", "classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes.html", null ]
+          ] ],
+          [ "tiles", "namespacegame_1_1data_1_1tiles_1_1tiles.html", [
+            [ "Tiles", "classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "entity", "namespacegame_1_1entity.html", [
+        [ "player", "namespacegame_1_1entity_1_1player.html", [
+          [ "Player", "classgame_1_1entity_1_1player_1_1Player.html", "classgame_1_1entity_1_1player_1_1Player" ]
+        ] ]
+      ] ],
+      [ "gui", "namespacegame_1_1gui.html", [
+        [ "button", "namespacegame_1_1gui_1_1button.html", [
+          [ "Button", "classgame_1_1gui_1_1button_1_1Button.html", "classgame_1_1gui_1_1button_1_1Button" ]
+        ] ],
+        [ "checkbox", "namespacegame_1_1gui_1_1checkbox.html", [
+          [ "Checkbox", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html", "classgame_1_1gui_1_1checkbox_1_1Checkbox" ]
+        ] ],
+        [ "horizontal_slider", "namespacegame_1_1gui_1_1horizontal__slider.html", [
+          [ "HorizontalSlider", "classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider.html", "classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider" ]
+        ] ],
+        [ "hotbar", "namespacegame_1_1gui_1_1hotbar.html", [
+          [ "Hotbar", "classgame_1_1gui_1_1hotbar_1_1Hotbar.html", "classgame_1_1gui_1_1hotbar_1_1Hotbar" ]
+        ] ],
+        [ "inputbox", "namespacegame_1_1gui_1_1inputbox.html", [
+          [ "InputBox", "classgame_1_1gui_1_1inputbox_1_1InputBox.html", "classgame_1_1gui_1_1inputbox_1_1InputBox" ]
+        ] ],
+        [ "label", "namespacegame_1_1gui_1_1label.html", [
+          [ "Label", "classgame_1_1gui_1_1label_1_1Label.html", "classgame_1_1gui_1_1label_1_1Label" ]
+        ] ],
+        [ "nametag", "namespacegame_1_1gui_1_1nametag.html", [
+          [ "NameTag", "classgame_1_1gui_1_1nametag_1_1NameTag.html", "classgame_1_1gui_1_1nametag_1_1NameTag" ]
+        ] ],
+        [ "progress_bar", "namespacegame_1_1gui_1_1progress__bar.html", [
+          [ "ProgressBar", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar" ]
+        ] ],
+        [ "screen_manager", "namespacegame_1_1gui_1_1screen__manager.html", [
+          [ "Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", "classgame_1_1gui_1_1screen__manager_1_1Screens" ]
+        ] ],
+        [ "screens", "namespacegame_1_1gui_1_1screens.html", [
+          [ "crash_screen", "namespacegame_1_1gui_1_1screens_1_1crash__screen.html", [
+            [ "CrashScreen", "classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen.html", "classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen" ]
+          ] ],
+          [ "credits_screen", "namespacegame_1_1gui_1_1screens_1_1credits__screen.html", [
+            [ "CreditsScreen", "classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", "classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen" ]
+          ] ],
+          [ "gameover_screen", "namespacegame_1_1gui_1_1screens_1_1gameover__screen.html", [
+            [ "GameoverScreen", "classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html", "classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen" ]
+          ] ],
+          [ "loading_screen", "namespacegame_1_1gui_1_1screens_1_1loading__screen.html", [
+            [ "LoadingScreen", "classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen.html", "classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen" ]
+          ] ],
+          [ "main_hud", "namespacegame_1_1gui_1_1screens_1_1main__hud.html", [
+            [ "MainHud", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud" ]
+          ] ],
+          [ "mainmenu_screen", "namespacegame_1_1gui_1_1screens_1_1mainmenu__screen.html", [
+            [ "MainMenuScreen", "classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html", "classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" ]
+          ] ],
+          [ "map_screen", "namespacegame_1_1gui_1_1screens_1_1map__screen.html", [
+            [ "MapScreen", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen" ]
+          ] ],
+          [ "options_screen", "namespacegame_1_1gui_1_1screens_1_1options__screen.html", [
+            [ "OptionsScreen", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen" ]
+          ] ],
+          [ "pause_screen", "namespacegame_1_1gui_1_1screens_1_1pause__screen.html", [
+            [ "PauseScreen", "classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html", "classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen" ]
+          ] ],
+          [ "playerlist_screen", "namespacegame_1_1gui_1_1screens_1_1playerlist__screen.html", [
+            [ "PlayerListScreen", "classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html", "classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" ]
+          ] ],
+          [ "screen", "namespacegame_1_1gui_1_1screens_1_1screen.html", [
+            [ "Screen", "classgame_1_1gui_1_1screens_1_1screen_1_1Screen.html", "classgame_1_1gui_1_1screens_1_1screen_1_1Screen" ]
+          ] ],
+          [ "serverconnect_screen", "namespacegame_1_1gui_1_1screens_1_1serverconnect__screen.html", [
+            [ "ServerConnectScreen", "classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html", "classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" ]
+          ] ],
+          [ "servercreate_screen", "namespacegame_1_1gui_1_1screens_1_1servercreate__screen.html", [
+            [ "ServerCreateScreen", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" ]
+          ] ],
+          [ "serverjoin_screen", "namespacegame_1_1gui_1_1screens_1_1serverjoin__screen.html", [
+            [ "ServerJoinScreen", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" ]
+          ] ],
+          [ "servermenu_screen", "namespacegame_1_1gui_1_1screens_1_1servermenu__screen.html", [
+            [ "ServerMenuScreen", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" ]
+          ] ]
+        ] ],
+        [ "slot", "namespacegame_1_1gui_1_1slot.html", [
+          [ "Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", "classgame_1_1gui_1_1slot_1_1Slot" ]
+        ] ],
+        [ "widget", "namespacegame_1_1gui_1_1widget.html", [
+          [ "Widget", "classgame_1_1gui_1_1widget_1_1Widget.html", "classgame_1_1gui_1_1widget_1_1Widget" ]
+        ] ]
+      ] ],
+      [ "utils", "namespacegame_1_1utils.html", [
+        [ "exceptions", "namespacegame_1_1utils_1_1exceptions.html", [
+          [ "InvalidGamePropertyValue", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue" ],
+          [ "InvalidMapData", "classgame_1_1utils_1_1exceptions_1_1InvalidMapData.html", "classgame_1_1utils_1_1exceptions_1_1InvalidMapData" ],
+          [ "InvalidTextureAtlas", "classgame_1_1utils_1_1exceptions_1_1InvalidTextureAtlas.html", "classgame_1_1utils_1_1exceptions_1_1InvalidTextureAtlas" ],
+          [ "MaxPlayersReached", "classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached.html", "classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached" ],
+          [ "OutOfMapBounds", "classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds.html", "classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds" ],
+          [ "PlayerNameAlreadyExists", "classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists.html", "classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists" ],
+          [ "ZeroOrLessSpawnPlayerAttempts", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" ]
+        ] ]
+      ] ],
+      [ "world", "namespacegame_1_1world.html", [
+        [ "camera", "namespacegame_1_1world_1_1camera.html", [
+          [ "Camera", "classgame_1_1world_1_1camera_1_1Camera.html", "classgame_1_1world_1_1camera_1_1Camera" ]
+        ] ],
+        [ "item_manager", "namespacegame_1_1world_1_1item__manager.html", [
+          [ "ItemManager", "classgame_1_1world_1_1item__manager_1_1ItemManager.html", null ]
+        ] ],
+        [ "map_manager", "namespacegame_1_1world_1_1map__manager.html", [
+          [ "Map", "classgame_1_1world_1_1map__manager_1_1Map.html", "classgame_1_1world_1_1map__manager_1_1Map" ]
+        ] ],
+        [ "synth", "namespacegame_1_1world_1_1synth.html", [
+          [ "noise", "namespacegame_1_1world_1_1synth_1_1noise.html", [
+            [ "PerlinNoise", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise" ]
+          ] ]
+        ] ],
+        [ "tile_manager", "namespacegame_1_1world_1_1tile__manager.html", [
+          [ "TileManager", "classgame_1_1world_1_1tile__manager_1_1TileManager.html", "classgame_1_1world_1_1tile__manager_1_1TileManager" ]
+        ] ],
+        [ "world", "namespacegame_1_1world_1_1world.html", [
+          [ "World", "classgame_1_1world_1_1world_1_1World.html", "classgame_1_1world_1_1world_1_1World" ]
+        ] ]
       ] ]
     ] ],
     [ "packet", "namespacepacket.html", [
@@ -162,39 +242,6 @@ var annotated_dup =
     ] ],
     [ "tasks", "namespacetasks.html", [
       [ "ServerTasks", "classtasks_1_1ServerTasks.html", null ]
-    ] ],
-    [ "utils", "namespaceutils.html", [
-      [ "exceptions", "namespaceutils_1_1exceptions.html", [
-        [ "InvalidGamePropertyValue", "classutils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classutils_1_1exceptions_1_1InvalidGamePropertyValue" ],
-        [ "InvalidMapData", "classutils_1_1exceptions_1_1InvalidMapData.html", "classutils_1_1exceptions_1_1InvalidMapData" ],
-        [ "InvalidTextureAtlas", "classutils_1_1exceptions_1_1InvalidTextureAtlas.html", "classutils_1_1exceptions_1_1InvalidTextureAtlas" ],
-        [ "MaxPlayersReached", "classutils_1_1exceptions_1_1MaxPlayersReached.html", "classutils_1_1exceptions_1_1MaxPlayersReached" ],
-        [ "OutOfMapBounds", "classutils_1_1exceptions_1_1OutOfMapBounds.html", "classutils_1_1exceptions_1_1OutOfMapBounds" ],
-        [ "PlayerNameAlreadyExists", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists.html", "classutils_1_1exceptions_1_1PlayerNameAlreadyExists" ],
-        [ "ZeroOrLessSpawnPlayerAttempts", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", "classutils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" ]
-      ] ]
-    ] ],
-    [ "world", "namespaceworld.html", [
-      [ "camera", "namespaceworld_1_1camera.html", [
-        [ "Camera", "classworld_1_1camera_1_1Camera.html", "classworld_1_1camera_1_1Camera" ]
-      ] ],
-      [ "item_manager", "namespaceworld_1_1item__manager.html", [
-        [ "ItemManager", "classworld_1_1item__manager_1_1ItemManager.html", null ]
-      ] ],
-      [ "map_manager", "namespaceworld_1_1map__manager.html", [
-        [ "Map", "classworld_1_1map__manager_1_1Map.html", "classworld_1_1map__manager_1_1Map" ]
-      ] ],
-      [ "synth", "namespaceworld_1_1synth.html", [
-        [ "noise", "namespaceworld_1_1synth_1_1noise.html", [
-          [ "PerlinNoise", "classworld_1_1synth_1_1noise_1_1PerlinNoise.html", "classworld_1_1synth_1_1noise_1_1PerlinNoise" ]
-        ] ]
-      ] ],
-      [ "tile_manager", "namespaceworld_1_1tile__manager.html", [
-        [ "TileManager", "classworld_1_1tile__manager_1_1TileManager.html", "classworld_1_1tile__manager_1_1TileManager" ]
-      ] ],
-      [ "world", "namespaceworld_1_1world.html", [
-        [ "World", "classworld_1_1world_1_1World.html", "classworld_1_1world_1_1World" ]
-      ] ]
     ] ],
     [ "world_handler", "namespaceworld__handler.html", [
       [ "WorldHandler", "classworld__handler_1_1WorldHandler.html", "classworld__handler_1_1WorldHandler" ]

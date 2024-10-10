@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen" xml:lang="en-US">
+<title>game.gui.screens.screen.Screen Class Reference</title>
+<indexterm><primary>game.gui.screens.screen.Screen</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.screen.Screen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1screen_1_1Screen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.screen.Screen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.screen.Screen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.screen.Screen.__init__ ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98">game.gui.screens.main_hud.MainHud</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a46279bdc6356142989203c173850afee">game.gui.screens.map_screen.MapScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b">game.gui.screens.playerlist_screen.PlayerListScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1adb353c26ec380c794b577f4505287938">game.gui.screens.crash_screen.CrashScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a67089a5565487dfcd3a253a2211166ec">game.gui.screens.credits_screen.CreditsScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a44785518dd4d86fa600f8c2b2602fb63">game.gui.screens.gameover_screen.GameoverScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a978955f0494dc09d359930043a5de26c">game.gui.screens.loading_screen.LoadingScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a0bcb7e1d5705bf75a9fc51f7b3fdc7ee">game.gui.screens.mainmenu_screen.MainMenuScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1bef66c3a1d109560905b309c665fb8f">game.gui.screens.options_screen.OptionsScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a50441ac19860cd01320ae4d021089bcc">game.gui.screens.pause_screen.PauseScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431">game.gui.screens.serverconnect_screen.ServerConnectScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749">game.gui.screens.servercreate_screen.ServerCreateScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aaf1320b8b7623a5ccda590afa4be2b85">game.gui.screens.serverjoin_screen.ServerJoinScreen</link>, and <link linkend="_classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ae1fb89341ce74ee39e865c136cdada05">game.gui.screens.servermenu_screen.ServerMenuScreen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d"/><section>
+    <title>get_state()</title>
+<indexterm><primary>get_state</primary><secondary>game.gui.screens.screen.Screen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.screen.Screen</primary><secondary>get_state</secondary></indexterm>
+<para><computeroutput> bool game.gui.screens.screen.Screen.get_state ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the screen&apos;s visibility/interactivity state.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.screen.Screen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.screen.Screen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.screen.Screen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41">game.gui.screens.crash_screen.CrashScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3">game.gui.screens.credits_screen.CreditsScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec">game.gui.screens.gameover_screen.GameoverScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6">game.gui.screens.loading_screen.LoadingScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92">game.gui.screens.main_hud.MainHud</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee">game.gui.screens.mainmenu_screen.MainMenuScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83">game.gui.screens.map_screen.MapScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23">game.gui.screens.options_screen.OptionsScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c">game.gui.screens.pause_screen.PauseScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e">game.gui.screens.playerlist_screen.PlayerListScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d">game.gui.screens.serverconnect_screen.ServerConnectScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97">game.gui.screens.servercreate_screen.ServerCreateScreen</link>, <link linkend="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832">game.gui.screens.serverjoin_screen.ServerJoinScreen</link>, and <link linkend="_classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15">game.gui.screens.servermenu_screen.ServerMenuScreen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479"/><section>
+    <title>_enabled</title>
+<indexterm><primary>_enabled</primary><secondary>game.gui.screens.screen.Screen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.screen.Screen</primary><secondary>_enabled</secondary></indexterm>
+<para><computeroutput>game.gui.screens.screen.Screen._enabled<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_screen_8py">screen.py</link></section>
+</section>

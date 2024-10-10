@@ -1,4 +1,4 @@
 var game_8py =
 [
-    [ "core.game.Game", "classcore_1_1game_1_1Game.html", "classcore_1_1game_1_1Game" ]
+    [ "game.core.game.Game", "classgame_1_1core_1_1game_1_1Game.html", "classgame_1_1core_1_1game_1_1Game" ]
 ];

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="tile__types_8py" kind="file" language="Python">
+    <compoundname>tile_types.py</compoundname>
+    <innerclass refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes" prot="public">game::data::tiles::tile_types::TileTypes</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1tiles">game::data::tiles</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1tiles_1_1tile__types">game::data::tiles::tile_types</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1tiles_1_1tile__types" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1tiles_1_1tiles" kindref="compound">game.data.tiles.tiles</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tiles</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes" kindref="compound">TileTypes</ref>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>regrouping<sp/>tiles<sp/>into<sp/>different<sp/>categories.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>PLACEABLE:<sp/>tuple[Tiles]<sp/>=<sp/>(Tiles.GRASS,<sp/>Tiles.PLAINS,<sp/>Tiles.DIRT,<sp/>Tiles.COBBLESTONE,<sp/>Tiles.SAND,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tiles.COBBLESTONE_STAIRS,<sp/>Tiles.FIRESTONE,<sp/>Tiles.WATER,<sp/>Tiles.LAVA)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>BREAKABLE:<sp/>tuple[Tiles]<sp/>=<sp/>(Tiles.COBBLESTONE,)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>LETHAL:<sp/>tuple[Tiles]<sp/>=<sp/>(Tiles.LAVA,)</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py"/>
+  </compounddef>
+</doxygen>

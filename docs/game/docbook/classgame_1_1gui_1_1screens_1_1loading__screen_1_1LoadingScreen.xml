@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen" xml:lang="en-US">
+<title>game.gui.screens.loading_screen.LoadingScreen Class Reference</title>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary></indexterm>
+<para>Inheritance diagram for game.gui.screens.loading_screen.LoadingScreen:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a978955f0494dc09d359930043a5de26c">__init__</link> (self, <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a81d9adfeaf3f4a4a818d7169310a139b">window</link>)</para>
+</listitem>
+            <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a05a246452c77351c0c2b96d499de2a5e">initialise_surface</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1aba76c7a6923a57a5710b5a8c89c38d8a">events</link> (self, Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a66cf74cdc7843141d25d00af6f8d687c">draw</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6">set_state</link> (self, bool state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a81d9adfeaf3f4a4a818d7169310a139b">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1af288482c074f8aafb2a11d176e8d70ad">surface</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a5d0fc25bc4844b2a150d318b6b436e24">progress_bar</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen">game.gui.screens.screen.Screen</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating the loading screen.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a978955f0494dc09d359930043a5de26c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.loading_screen.LoadingScreen.__init__ ( self,  window)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">game.gui.screens.screen.Screen</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a66cf74cdc7843141d25d00af6f8d687c"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.loading_screen.LoadingScreen.draw ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the screen and its components
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1aba76c7a6923a57a5710b5a8c89c38d8a"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.loading_screen.LoadingScreen.events ( self, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Track the screen events (unused).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a05a246452c77351c0c2b96d499de2a5e"/><section>
+    <title>initialise_surface()</title>
+<indexterm><primary>initialise_surface</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>initialise_surface</secondary></indexterm>
+<para><computeroutput> Surface game.gui.screens.loading_screen.LoadingScreen.initialise_surface ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the screen&apos;s surface.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.loading_screen.LoadingScreen.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Set the screen&apos;s visibility/interactivity.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.gui.screens.loading_screen.LoadingScreen.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a5d0fc25bc4844b2a150d318b6b436e24"/><section>
+    <title>progress_bar</title>
+<indexterm><primary>progress_bar</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>progress_bar</secondary></indexterm>
+<para><computeroutput>game.gui.screens.loading_screen.LoadingScreen.progress_bar</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1af288482c074f8aafb2a11d176e8d70ad"/><section>
+    <title>surface</title>
+<indexterm><primary>surface</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>surface</secondary></indexterm>
+<para><computeroutput>game.gui.screens.loading_screen.LoadingScreen.surface</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a81d9adfeaf3f4a4a818d7169310a139b"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>game.gui.screens.loading_screen.LoadingScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.loading_screen.LoadingScreen</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>game.gui.screens.loading_screen.LoadingScreen.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_loading__screen_8py">loading_screen.py</link></section>
+</section>

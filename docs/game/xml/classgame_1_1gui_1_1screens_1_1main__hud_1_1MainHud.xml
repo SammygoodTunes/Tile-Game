@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::screens::main_hud::MainHud</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" prot="public" virt="non-virtual">game.gui.screens.screen.Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a00ddbcaa573976be5d37adce7b64069d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::surface</definition>
+        <argsstring></argsstring>
+        <name>surface</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a502763bd9fa43829f6f4d2efd598b5f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::version_label</definition>
+        <argsstring></argsstring>
+        <name>version_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.version_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afa83ede926b5a0c220de284f4dea2ff1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::score_label</definition>
+        <argsstring></argsstring>
+        <name>score_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.score_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6ab0779645d5a6f7aa25af437d3fec90" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::ping_label</definition>
+        <argsstring></argsstring>
+        <name>ping_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.ping_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6403bf54e30b79ff6bd4ec3c5f175c95" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::data_sent_label</definition>
+        <argsstring></argsstring>
+        <name>data_sent_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.data_sent_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1ae2f64ec14e2e3b63318125355bef8cca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::data_recv_label</definition>
+        <argsstring></argsstring>
+        <name>data_recv_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.data_recv_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a839a5a66185c9caa47f976dac5d0866c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::camera_label</definition>
+        <argsstring></argsstring>
+        <name>camera_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.camera_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a233b47332b590b76150aa78b43bf8cf0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::position_label</definition>
+        <argsstring></argsstring>
+        <name>position_label</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.position_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a3fe5202f27e23f36940e2dd0f4866141" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::health_bar</definition>
+        <argsstring></argsstring>
+        <name>health_bar</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.health_bar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a7325a91cab08dbacc92c12f110ae6641" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.main_hud.MainHud::hotbar</definition>
+        <argsstring></argsstring>
+        <name>hotbar</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.hotbar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.main_hud.MainHud.__init__</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" kindref="member">game</ref></type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="17" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.main_hud.MainHud.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="39" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.main_hud.MainHud.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="71" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="71" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.main_hud.MainHud.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.screens.main_hud.MainHud.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="97" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="97" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the main (player) HUD.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.screens.main_hud.MainHud</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.screens.main_hud.MainHud</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/main_hud.py" bodystart="12" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a839a5a66185c9caa47f976dac5d0866c" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>camera_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1ae2f64ec14e2e3b63318125355bef8cca" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>data_recv_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6403bf54e30b79ff6bd4ec3c5f175c95" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>data_sent_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>game</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a3fe5202f27e23f36940e2dd0f4866141" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>health_bar</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a7325a91cab08dbacc92c12f110ae6641" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>hotbar</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6ab0779645d5a6f7aa25af437d3fec90" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>ping_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a233b47332b590b76150aa78b43bf8cf0" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>position_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afa83ede926b5a0c220de284f4dea2ff1" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>score_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a00ddbcaa573976be5d37adce7b64069d" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>update_ui</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a502763bd9fa43829f6f4d2efd598b5f0" prot="public" virt="non-virtual"><scope>game::gui::screens::main_hud::MainHud</scope><name>version_label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

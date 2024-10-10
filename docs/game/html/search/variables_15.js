@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unknown_5fargs_0',['unknown_args',['../namespaceutils_1_1logger.html#a02e42802c0a48b9cb365232c591f0a5b',1,'utils::logger']]],
-  ['update_1',['UPDATE',['../classclient_1_1connection_1_1Tasks.html#acf9b2e7ab5176a0d2e69c2cd9926706e',1,'client::connection::Tasks']]]
+  ['unknown_5fargs_0',['unknown_args',['../namespacegame_1_1utils_1_1logger.html#a6618c6eb62cbf0b28673fcdc8384a2f7',1,'game::utils::logger']]],
+  ['update_1',['UPDATE',['../classgame_1_1client_1_1connection_1_1Tasks.html#ab9b6002c84a03956e747889595d1f53b',1,'game::client::connection::Tasks']]]
 ];

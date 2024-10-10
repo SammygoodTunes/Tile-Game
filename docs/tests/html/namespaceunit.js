@@ -22,6 +22,7 @@ var namespaceunit =
       [ "test_get_game_property", "namespaceunit_1_1test__data.html#a7c198710a7bb79848f3568ea1954d463", null ],
       [ "test_item_creation", "namespaceunit_1_1test__data.html#ab1a725d687668278a3799846bad635b8", null ],
       [ "test_mouse_properties", "namespaceunit_1_1test__data.html#a6b74d1583d80413fc27df33bb3de2c8b", null ],
+      [ "test_tile_compression", "namespaceunit_1_1test__data.html#a92bbe22b40fdad24527186d54308ad6d", null ],
       [ "test_tile_creation", "namespaceunit_1_1test__data.html#adbdab2f4033566a3ad992de6e6b47a21", null ]
     ] ],
     [ "test_entity", "namespaceunit_1_1test__entity.html", [

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1client_1_1client_1_1Client" xml:lang="en-US">
+<title>game.client.client.Client Class Reference</title>
+<indexterm><primary>game.client.client.Client</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1a98e94d95bb79b4c509d59a5320ac2a6e">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1client_1_1Client_1a45113087d5a92fa359a00b1a9357ea3c">initialise</link> (self, game)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298">update</link> (self, game)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab">events</link> (self, game, Event e)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3">stop</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d">connection_handler</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1client_1_1Client_1aed9270fce6526346a1441a81a97cae22">player</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for all client-related tasks like client-side rendering and handling the connection.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1a98e94d95bb79b4c509d59a5320ac2a6e"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>events</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.events ( self,  game, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Handle the client events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1a45113087d5a92fa359a00b1a9357ea3c"/><section>
+    <title>initialise()</title>
+<indexterm><primary>initialise</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>initialise</secondary></indexterm>
+<para><computeroutput> None game.client.client.Client.initialise ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Initialise the client.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.stop ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Stop the client connection.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.client.client.Client.update ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Update the client.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the client UI.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d"/><section>
+    <title>connection_handler</title>
+<indexterm><primary>connection_handler</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>connection_handler</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.connection_handler</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1client_1_1Client_1aed9270fce6526346a1441a81a97cae22"/><section>
+    <title>player</title>
+<indexterm><primary>player</primary><secondary>game.client.client.Client</secondary></indexterm>
+<indexterm><primary>game.client.client.Client</primary><secondary>player</secondary></indexterm>
+<para><computeroutput>game.client.client.Client.player</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_client_8py">client.py</link></section>
+</section>

@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar" xml:lang="en-US">
+<title>game.gui.progress_bar.ProgressBar Class Reference</title>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary></indexterm>
+<para>Inheritance diagram for game.gui.progress_bar.ProgressBar:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgame_1_1gui_1_1progress__bar_1_1ProgressBar.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90">__init__</link> (self, str title=&quot;&quot;, int x=0, int y=0, int value=0, int min_value=0, int max_value=100)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a467f14307fc15206f7589730c027ea48">draw</link> (self, screen)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ae53164bec67983d952dc1214fa8dfa46">update</link> (self, window)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c">refresh</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a25d5d1da3e7864c2d9500dfebe3662fb">center_horizontally</link> (self, int parent_x, int parent_width)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a939391229d592589742d73d85c6b8dfa">center_vertically</link> (self, int parent_y, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4a1dc60c8e0f5a440ab65f8caaef8fab">center</link> (self, int parent_x, int parent_y, int parent_width, int parent_height)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a312d3ba3a087d497c1eeeb2fd12d9a42">center_with_offset</link> (self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a12126b702a67b92a851feea6dc355ff4">set_width</link> (self, int width)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8cab9f55f22fd81647e47f089531dec6">get_width</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ac24123cdded2751e9ddba4a1e19c2362">set_height</link> (self, int height)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a9729d52fbe892237fea4ff6c37ca61fb">get_height</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1afd6d7fc5d684580cc75cda7a5e83d268">set_value</link> (self, int value)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a037e78c01f2f7b592cee7096696881c1">get_value</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1acfd1cd8b4d1fbc87f0c258cb25aef717">set_value_bounds</link> (self, int|None min_value=None, int|None max_value=None)</para>
+</listitem>
+            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1adb161c5d20267748e7e398041331573f">get_value_bounds</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ada997f87cbaab4d3c4eb1cd3d559c9d6">set_unfilled_colour</link> (self, tuple[int, int, int] unfilled_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a7b719383e4c2bd9186edc9921b49f5a0">get_unfilled_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8f9720a9c103a300cbde7c7457ab2430">set_filled_start_colour</link> (self, tuple[int, int, int] filled_start_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a33d57ac6962e7be9d0a880827fcaa09b">get_filled_start_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1af932b2657a64b8a853ba0ddae0a3cc69">set_filled_end_colour</link> (self, tuple[int, int, int] filled_end_colour)</para>
+</listitem>
+            <listitem><para>tuple[int, int, int] <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad86d47421a644aa5678617b7f3df1a37">get_filled_end_colour</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a53683c89ee453e1baeaab66ed9adc473">set_title</link> (self, str title)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4ac2d564b625ab44b18eb99b725bb4d3">get_title</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf">set_x</link> (self, int x)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571">get_x</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a">set_y</link> (self, int y)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117">get_y</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link> (self, int offset_x)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link> (self, int offset_y)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba">offset</link> (self, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c">offset_x</link>, int <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef">offset_y</link>)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a79615e609d0e9277d9a421812dfbc6c9">info_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a246290d0b72c3df344a22957ac5e56da">progress_label</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a2f8fadaff0accbf832d0e4fac7b410">MIN_WIDTH</link> = 25</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a20b33028b9363b9f52679e92f8d4bc27">MAX_WIDTH</link> = 500</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca">_width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a3b8c67354d096ac536d1927b97da4184">_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1aa56ce001cdade6ab7b91bb6d82b0f143">_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a34e9e742e09b0ebd72f7ec199b3d522f">_min_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a7c138ee3cdf90ca02e9c527da0ab8fbe">_max_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a0b28e369ae3f54424aa8cfc7591d2abb">_unfilled_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a30ee3124de3d1fa412c06f52d1bd49c5">_filled_start_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a20ea3ebb8bf467ff19dcd71daace9d">_filled_end_colour</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5">_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743">_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2">_transparency</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd">_enabled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a progress bar
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.gui.progress_bar.ProgressBar.__init__ ( self, str  title = <computeroutput>&quot;&quot;</computeroutput>
+, int  x = <computeroutput>0</computeroutput>
+, int  y = <computeroutput>0</computeroutput>
+, int  value = <computeroutput>0</computeroutput>
+, int  min_value = <computeroutput>0</computeroutput>
+, int  max_value = <computeroutput>100</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">game.gui.widget.Widget</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4a1dc60c8e0f5a440ab65f8caaef8fab"/><section>
+    <title>center()</title>
+<indexterm><primary>center</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>center</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.center ( self, int parent_x, int parent_y, int parent_width, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar on both axes relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a25d5d1da3e7864c2d9500dfebe3662fb"/><section>
+    <title>center_horizontally()</title>
+<indexterm><primary>center_horizontally</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>center_horizontally</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.center_horizontally ( self, int parent_x, int parent_width)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a939391229d592589742d73d85c6b8dfa"/><section>
+    <title>center_vertically()</title>
+<indexterm><primary>center_vertically</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>center_vertically</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.center_vertically ( self, int parent_y, int parent_height)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a312d3ba3a087d497c1eeeb2fd12d9a42"/><section>
+    <title>center_with_offset()</title>
+<indexterm><primary>center_with_offset</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>center_with_offset</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.center_with_offset ( self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</computeroutput></para>
+<para><literallayout><computeroutput>Center the progress bar with center() and offset it by x and y relative to the specified parent, then return the
+progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a467f14307fc15206f7589730c027ea48"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput> None game.gui.progress_bar.ProgressBar.draw ( self,  screen)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad86d47421a644aa5678617b7f3df1a37"/><section>
+    <title>get_filled_end_colour()</title>
+<indexterm><primary>get_filled_end_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_filled_end_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.progress_bar.ProgressBar.get_filled_end_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the filled end colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a33d57ac6962e7be9d0a880827fcaa09b"/><section>
+    <title>get_filled_start_colour()</title>
+<indexterm><primary>get_filled_start_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_filled_start_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.progress_bar.ProgressBar.get_filled_start_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the filled start colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a9729d52fbe892237fea4ff6c37ca61fb"/><section>
+    <title>get_height()</title>
+<indexterm><primary>get_height</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_height</secondary></indexterm>
+<para><computeroutput> int game.gui.progress_bar.ProgressBar.get_height ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the height of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4ac2d564b625ab44b18eb99b725bb4d3"/><section>
+    <title>get_title()</title>
+<indexterm><primary>get_title</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_title</secondary></indexterm>
+<para><computeroutput> str game.gui.progress_bar.ProgressBar.get_title ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the title text of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a7b719383e4c2bd9186edc9921b49f5a0"/><section>
+    <title>get_unfilled_colour()</title>
+<indexterm><primary>get_unfilled_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_unfilled_colour</secondary></indexterm>
+<para><computeroutput> tuple[int, int, int] game.gui.progress_bar.ProgressBar.get_unfilled_colour ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the unfilled colour of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a037e78c01f2f7b592cee7096696881c1"/><section>
+    <title>get_value()</title>
+<indexterm><primary>get_value</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_value</secondary></indexterm>
+<para><computeroutput> int game.gui.progress_bar.ProgressBar.get_value ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the value of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1adb161c5d20267748e7e398041331573f"/><section>
+    <title>get_value_bounds()</title>
+<indexterm><primary>get_value_bounds</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_value_bounds</secondary></indexterm>
+<para><computeroutput> tuple[int, int] game.gui.progress_bar.ProgressBar.get_value_bounds ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the value bounds of the progress bar (min/max values).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8cab9f55f22fd81647e47f089531dec6"/><section>
+    <title>get_width()</title>
+<indexterm><primary>get_width</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>get_width</secondary></indexterm>
+<para><computeroutput> int game.gui.progress_bar.ProgressBar.get_width ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the width of the progress bar.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c"/><section>
+    <title>refresh()</title>
+<indexterm><primary>refresh</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>refresh</secondary></indexterm>
+<para><computeroutput> None game.gui.progress_bar.ProgressBar.refresh ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1af932b2657a64b8a853ba0ddae0a3cc69"/><section>
+    <title>set_filled_end_colour()</title>
+<indexterm><primary>set_filled_end_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_filled_end_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_filled_end_colour ( self, tuple[int, int, int] filled_end_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the filled end colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8f9720a9c103a300cbde7c7457ab2430"/><section>
+    <title>set_filled_start_colour()</title>
+<indexterm><primary>set_filled_start_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_filled_start_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_filled_start_colour ( self, tuple[int, int, int] filled_start_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the filled start colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ac24123cdded2751e9ddba4a1e19c2362"/><section>
+    <title>set_height()</title>
+<indexterm><primary>set_height</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_height</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_height ( self, int height)</computeroutput></para>
+<para><literallayout><computeroutput>Set the height of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a53683c89ee453e1baeaab66ed9adc473"/><section>
+    <title>set_title()</title>
+<indexterm><primary>set_title</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_title</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_title ( self, str title)</computeroutput></para>
+<para><literallayout><computeroutput>Set the title text of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ada997f87cbaab4d3c4eb1cd3d559c9d6"/><section>
+    <title>set_unfilled_colour()</title>
+<indexterm><primary>set_unfilled_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_unfilled_colour</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_unfilled_colour ( self, tuple[int, int, int] unfilled_colour)</computeroutput></para>
+<para><literallayout><computeroutput>Set the unfilled colour of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1afd6d7fc5d684580cc75cda7a5e83d268"/><section>
+    <title>set_value()</title>
+<indexterm><primary>set_value</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_value</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_value ( self, int value)</computeroutput></para>
+<para><literallayout><computeroutput>Set the value of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1acfd1cd8b4d1fbc87f0c258cb25aef717"/><section>
+    <title>set_value_bounds()</title>
+<indexterm><primary>set_value_bounds</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_value_bounds</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_value_bounds ( self, int | None  min_value = <computeroutput>None</computeroutput>
+, int | None  max_value = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the value bounds of the progress bar (min/max values), then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a12126b702a67b92a851feea6dc355ff4"/><section>
+    <title>set_width()</title>
+<indexterm><primary>set_width</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>set_width</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.set_width ( self, int width)</computeroutput></para>
+<para><literallayout><computeroutput>Set the width of the progress bar, then return the progress bar itself.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ae53164bec67983d952dc1214fa8dfa46"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> Self game.gui.progress_bar.ProgressBar.update ( self,  window)</computeroutput></para>
+<para><literallayout><computeroutput>Update the progress bar and its components.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a20ea3ebb8bf467ff19dcd71daace9d"/><section>
+    <title>_filled_end_colour</title>
+<indexterm><primary>_filled_end_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_filled_end_colour</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._filled_end_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a30ee3124de3d1fa412c06f52d1bd49c5"/><section>
+    <title>_filled_start_colour</title>
+<indexterm><primary>_filled_start_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_filled_start_colour</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._filled_start_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a3b8c67354d096ac536d1927b97da4184"/><section>
+    <title>_height</title>
+<indexterm><primary>_height</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_height</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._height<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a7c138ee3cdf90ca02e9c527da0ab8fbe"/><section>
+    <title>_max_value</title>
+<indexterm><primary>_max_value</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_max_value</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._max_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a34e9e742e09b0ebd72f7ec199b3d522f"/><section>
+    <title>_min_value</title>
+<indexterm><primary>_min_value</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_min_value</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._min_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a0b28e369ae3f54424aa8cfc7591d2abb"/><section>
+    <title>_unfilled_colour</title>
+<indexterm><primary>_unfilled_colour</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_unfilled_colour</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._unfilled_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1aa56ce001cdade6ab7b91bb6d82b0f143"/><section>
+    <title>_value</title>
+<indexterm><primary>_value</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_value</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca"/><section>
+    <title>_width</title>
+<indexterm><primary>_width</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_width</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._width<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e"/><section>
+    <title>_x</title>
+<indexterm><primary>_x</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_x</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._x<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5"/><section>
+    <title>_y</title>
+<indexterm><primary>_y</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>_y</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a79615e609d0e9277d9a421812dfbc6c9"/><section>
+    <title>info_label</title>
+<indexterm><primary>info_label</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>info_label</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar.info_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a20b33028b9363b9f52679e92f8d4bc27"/><section>
+    <title>MAX_WIDTH</title>
+<indexterm><primary>MAX_WIDTH</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>MAX_WIDTH</secondary></indexterm>
+<para><computeroutput>int game.gui.progress_bar.ProgressBar.MAX_WIDTH = 500<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a2f8fadaff0accbf832d0e4fac7b410"/><section>
+    <title>MIN_WIDTH</title>
+<indexterm><primary>MIN_WIDTH</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>MIN_WIDTH</secondary></indexterm>
+<para><computeroutput>int game.gui.progress_bar.ProgressBar.MIN_WIDTH = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a246290d0b72c3df344a22957ac5e56da"/><section>
+    <title>progress_label</title>
+<indexterm><primary>progress_label</primary><secondary>game.gui.progress_bar.ProgressBar</secondary></indexterm>
+<indexterm><primary>game.gui.progress_bar.ProgressBar</primary><secondary>progress_label</secondary></indexterm>
+<para><computeroutput>game.gui.progress_bar.ProgressBar.progress_label</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_progress__bar_8py">progress_bar.py</link></section>
+</section>

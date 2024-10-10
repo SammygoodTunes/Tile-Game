@@ -1,4 +1,4 @@
 var tile__manager_8py =
 [
-    [ "world.tile_manager.TileManager", "classworld_1_1tile__manager_1_1TileManager.html", "classworld_1_1tile__manager_1_1TileManager" ]
+    [ "game.world.tile_manager.TileManager", "classgame_1_1world_1_1tile__manager_1_1TileManager.html", "classgame_1_1world_1_1tile__manager_1_1TileManager" ]
 ];

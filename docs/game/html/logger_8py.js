@@ -1,17 +1,17 @@
 var logger_8py =
 [
-    [ "action", "logger_8py.html#a0385cbe58884f42e1edb3b3ddbe71228", null ],
-    [ "args", "logger_8py.html#a8fac75a254e8e82403f13c14e77235f5", null ],
-    [ "bool", "logger_8py.html#ae912b9db3c0568b1d3bb4ec3dbed807b", null ],
-    [ "default", "logger_8py.html#aa98662d828f374539b8dfa934ac83524", null ],
-    [ "False", "logger_8py.html#aabeccff62250d2346f2f18e785aeb8e7", null ],
-    [ "format", "logger_8py.html#a0283d9a06121f6dad7bca42bbdd87c3f", null ],
-    [ "handlers", "logger_8py.html#a2b08573992c971d322617fdcd42c0b60", null ],
-    [ "help", "logger_8py.html#ae647d6593460573620d04594e21b8262", null ],
-    [ "level", "logger_8py.html#a16adff53781de382d87b57d8d9b6114a", null ],
-    [ "log_dir", "logger_8py.html#a87b73234ff668db6538b29f53c0eb0bc", null ],
-    [ "logger", "logger_8py.html#a88714182eaf8c92ef98bcd31cab4411d", null ],
-    [ "parser", "logger_8py.html#a6f1c8cb3fb3c23859fec24f9c6fb25d6", null ],
-    [ "type", "logger_8py.html#aafe2565e1e055b32625737824222c663", null ],
-    [ "unknown_args", "logger_8py.html#a02e42802c0a48b9cb365232c591f0a5b", null ]
+    [ "action", "logger_8py.html#add7c4472e569df4ff2365e25c6d16082", null ],
+    [ "args", "logger_8py.html#aaab1ff8bb6a0cda4b32bd8e8530e1657", null ],
+    [ "bool", "logger_8py.html#af4be9408791cfa638b6958e8d1ead642", null ],
+    [ "default", "logger_8py.html#a09dc4608f37c8f0e5a6bd661abcfc757", null ],
+    [ "False", "logger_8py.html#a392bf60c63874709faeead0993f0701a", null ],
+    [ "format", "logger_8py.html#ad70ca485578aeac4071a9e55b67e46fa", null ],
+    [ "handlers", "logger_8py.html#ad20ddf069666f3d1233be3c362e6dafb", null ],
+    [ "help", "logger_8py.html#a3560ff9d04ebf79b49d54e5aa19ee2b4", null ],
+    [ "level", "logger_8py.html#aa63d38d66f3f7c2207d9dd7781df6f1d", null ],
+    [ "log_dir", "logger_8py.html#aae9db829f03e92d02c0e3602abf824b0", null ],
+    [ "logger", "logger_8py.html#aee1dd5f7a553b5ee79a331f39137883d", null ],
+    [ "parser", "logger_8py.html#a35faba1d427b555c3629253b9bfc667f", null ],
+    [ "type", "logger_8py.html#a98335ff318d912187a2e8e9257f572fc", null ],
+    [ "unknown_args", "logger_8py.html#a6618c6eb62cbf0b28673fcdc8384a2f7", null ]
 ];

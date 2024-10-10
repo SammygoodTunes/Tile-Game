@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure" xml:lang="en-US">
+<title>game.data.structures.tile_structure.TileStructure Class Reference</title>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4">TILE_ID_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1aa3ac69e394e7d36adcf1c9f35e690b4a">TileProperties.TILE_ID_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e">TILE_X_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae56545999866a3f29439a408ef097cee">TileProperties.TILE_X_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af">TILE_Y_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae4ce97e387eeb40e312be726ba798fab">TileProperties.TILE_Y_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8">TILE_RESISTANCE_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a4053726e4fbe7e134c4d925e19afff05">TileProperties.TILE_RESISTANCE_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891">TILE_DAMAGE_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a70972c17941e97d4c66d00b0e61db4c8">TileProperties.TILE_DAMAGE_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace">TILE_DAMAGE_DELAY_BYTE_SIZE</link> = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a9a0c3c286a01280a98a62a16e9c01daa">TileProperties.TILE_DAMAGE_DELAY_MAX</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d">TILE_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c">TILE_ID_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d">TILE_BYTE_SIZE</link> * 8 - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4">TILE_ID_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd">TILE_X_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c">TILE_ID_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e">TILE_X_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd">TILE_Y_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd">TILE_X_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af">TILE_Y_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9">TILE_RESISTANCE_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd">TILE_Y_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8">TILE_RESISTANCE_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833">TILE_DAMAGE_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9">TILE_RESISTANCE_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891">TILE_DAMAGE_BYTE_SIZE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1abf6127ed23c210e7df559b4295e783c4">TILE_DAMAGE_DELAY_BYTE_POS</link> = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833">TILE_DAMAGE_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace">TILE_DAMAGE_DELAY_BYTE_SIZE</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Byte structure for the tile.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d"/><section>
+    <title>TILE_BYTE_SIZE</title>
+<indexterm><primary>TILE_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_BYTE_SIZE<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;int(ceil((
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TILE_ID_BYTE_SIZE
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;TILE_X_BYTE_SIZE
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;TILE_Y_BYTE_SIZE
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;TILE_RESISTANCE_BYTE_SIZE
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;TILE_DAMAGE_BYTE_SIZE
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;+&#32;TILE_DAMAGE_DELAY_BYTE_SIZE
+&#32;&#32;&#32;&#32;)&#32;/&#32;8))
+</programlisting></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833"/><section>
+    <title>TILE_DAMAGE_BYTE_POS</title>
+<indexterm><primary>TILE_DAMAGE_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_DAMAGE_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9">TILE_RESISTANCE_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891">TILE_DAMAGE_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891"/><section>
+    <title>TILE_DAMAGE_BYTE_SIZE</title>
+<indexterm><primary>TILE_DAMAGE_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_DAMAGE_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a70972c17941e97d4c66d00b0e61db4c8">TileProperties.TILE_DAMAGE_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1abf6127ed23c210e7df559b4295e783c4"/><section>
+    <title>TILE_DAMAGE_DELAY_BYTE_POS</title>
+<indexterm><primary>TILE_DAMAGE_DELAY_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_DAMAGE_DELAY_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_DELAY_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a64816f41535135c0509f81a6b2261833">TILE_DAMAGE_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace">TILE_DAMAGE_DELAY_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace"/><section>
+    <title>TILE_DAMAGE_DELAY_BYTE_SIZE</title>
+<indexterm><primary>TILE_DAMAGE_DELAY_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_DAMAGE_DELAY_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_DAMAGE_DELAY_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a9a0c3c286a01280a98a62a16e9c01daa">TileProperties.TILE_DAMAGE_DELAY_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c"/><section>
+    <title>TILE_ID_BYTE_POS</title>
+<indexterm><primary>TILE_ID_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_ID_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_ID_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d">TILE_BYTE_SIZE</link> * 8 - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4">TILE_ID_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4"/><section>
+    <title>TILE_ID_BYTE_SIZE</title>
+<indexterm><primary>TILE_ID_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_ID_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_ID_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1aa3ac69e394e7d36adcf1c9f35e690b4a">TileProperties.TILE_ID_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9"/><section>
+    <title>TILE_RESISTANCE_BYTE_POS</title>
+<indexterm><primary>TILE_RESISTANCE_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_RESISTANCE_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_RESISTANCE_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd">TILE_Y_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8">TILE_RESISTANCE_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8"/><section>
+    <title>TILE_RESISTANCE_BYTE_SIZE</title>
+<indexterm><primary>TILE_RESISTANCE_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_RESISTANCE_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_RESISTANCE_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a4053726e4fbe7e134c4d925e19afff05">TileProperties.TILE_RESISTANCE_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd"/><section>
+    <title>TILE_X_BYTE_POS</title>
+<indexterm><primary>TILE_X_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_X_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_X_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c">TILE_ID_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e">TILE_X_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e"/><section>
+    <title>TILE_X_BYTE_SIZE</title>
+<indexterm><primary>TILE_X_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_X_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_X_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae56545999866a3f29439a408ef097cee">TileProperties.TILE_X_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd"/><section>
+    <title>TILE_Y_BYTE_POS</title>
+<indexterm><primary>TILE_Y_BYTE_POS</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_Y_BYTE_POS</secondary></indexterm>
+<para><computeroutput>int game.data.structures.tile_structure.TileStructure.TILE_Y_BYTE_POS = <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd">TILE_X_BYTE_POS</link> - <link linkend="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af">TILE_Y_BYTE_SIZE</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af"/><section>
+    <title>TILE_Y_BYTE_SIZE</title>
+<indexterm><primary>TILE_Y_BYTE_SIZE</primary><secondary>game.data.structures.tile_structure.TileStructure</secondary></indexterm>
+<indexterm><primary>game.data.structures.tile_structure.TileStructure</primary><secondary>TILE_Y_BYTE_SIZE</secondary></indexterm>
+<para><computeroutput>game.data.structures.tile_structure.TileStructure.TILE_Y_BYTE_SIZE = c_log2(<link linkend="_classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae4ce97e387eeb40e312be726ba798fab">TileProperties.TILE_Y_MAX</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_tile__structure_8py">tile_structure.py</link></section>
+</section>

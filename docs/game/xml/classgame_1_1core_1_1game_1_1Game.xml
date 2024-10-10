@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1core_1_1game_1_1Game" kind="class" language="Python" prot="public">
+    <compoundname>game::core::game::Game</compoundname>
+    <basecompoundref refid="classgame_1_1core_1_1window_1_1Window" prot="public" virt="non-virtual">game.core.window.Window</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.core.game.Game::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>game.core.game.Game.client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.core.game.Game::server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <qualifiedname>game.core.game.Game.server</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.core.game.Game::_running</definition>
+        <argsstring></argsstring>
+        <name>_running</name>
+        <qualifiedname>game.core.game.Game._running</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="113" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.__init__</definition>
+        <argsstring>(self, int window_width, int window_height)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.core.game.Game.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.core.game.Game.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update all child objects and core of the game.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1a1aae5d34f93a9cd86ef8f4749c7b1227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.update_loop</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_loop</name>
+        <qualifiedname>game.core.game.Game.update_loop</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Like the standard update loop, but only used for threaded tasks.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.all_events</definition>
+        <argsstring>(self)</argsstring>
+        <name>all_events</name>
+        <qualifiedname>game.core.game.Game.all_events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Verify for any potential pygame events and update the targeted elements accordingly.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="50" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.update_all_uis</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_all_uis</name>
+        <qualifiedname>game.core.game.Game.update_all_uis</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update all the GUI-related elements.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="72" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1acd7539fb6cadb1ca2713dbcd1123befa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.core.game.Game.is_running</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_running</name>
+        <qualifiedname>game.core.game.Game.is_running</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the running state of the game.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.crash</definition>
+        <argsstring>(self, str traceback)</argsstring>
+        <name>crash</name>
+        <qualifiedname>game.core.game.Game.crash</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>traceback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initiate crash screen and stop any running process.
+Loop until user decides to quit the application.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="85" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="85" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.core.game.Game.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <qualifiedname>game.core.game.Game.stop</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Terminate the game.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="109" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="109" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for managing a game instance.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.core.game.Game</label>
+        <link refid="classgame_1_1core_1_1game_1_1Game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.core.window.Window</label>
+        <link refid="classgame_1_1core_1_1window_1_1Window"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.core.game.Game</label>
+        <link refid="classgame_1_1core_1_1game_1_1Game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.core.window.Window</label>
+        <link refid="classgame_1_1core_1_1window_1_1Window"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="12" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>__init__</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c" prot="protected" virt="non-virtual"><scope>game::core::game::Game</scope><name>_running</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>all_events</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>client</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>crash</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1acd7539fb6cadb1ca2713dbcd1123befa" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>is_running</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>server</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>stop</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>update</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>update_all_uis</name></member>
+      <member refid="classgame_1_1core_1_1game_1_1Game_1a1aae5d34f93a9cd86ef8f4749c7b1227" prot="public" virt="non-virtual"><scope>game::core::game::Game</scope><name>update_loop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

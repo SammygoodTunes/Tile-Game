@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1keys_1_1Keys" kind="class" language="Python" prot="public">
+    <compoundname>game::data::keys::Keys</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1a7bf50fb18167f3c98e201bd646dbb722" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::MOVE_LEFT</definition>
+        <argsstring></argsstring>
+        <name>MOVE_LEFT</name>
+        <qualifiedname>game.data.keys.Keys.MOVE_LEFT</qualifiedname>
+        <initializer>=  pygame.K_q</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1ad7d0b2167fc881075bb395c5e5e0f3a5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::MOVE_RIGHT</definition>
+        <argsstring></argsstring>
+        <name>MOVE_RIGHT</name>
+        <qualifiedname>game.data.keys.Keys.MOVE_RIGHT</qualifiedname>
+        <initializer>=  pygame.K_d</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1af994bd4258194ac7acb85e96a977c6f0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::MOVE_UP</definition>
+        <argsstring></argsstring>
+        <name>MOVE_UP</name>
+        <qualifiedname>game.data.keys.Keys.MOVE_UP</qualifiedname>
+        <initializer>=  pygame.K_z</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1afade1026de2fd0d4ec77543d35643f9e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::MOVE_DOWN</definition>
+        <argsstring></argsstring>
+        <name>MOVE_DOWN</name>
+        <qualifiedname>game.data.keys.Keys.MOVE_DOWN</qualifiedname>
+        <initializer>=  pygame.K_s</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1ae2ffd6552d3594216d313a818d2a6903" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::SHOW_MAP</definition>
+        <argsstring></argsstring>
+        <name>SHOW_MAP</name>
+        <qualifiedname>game.data.keys.Keys.SHOW_MAP</qualifiedname>
+        <initializer>=  pygame.K_SPACE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1keys_1_1Keys_1af303c93444827219120d692a615fb923" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.keys.Keys::SHOW_PLAYERLIST</definition>
+        <argsstring></argsstring>
+        <name>SHOW_PLAYERLIST</name>
+        <qualifiedname>game.data.keys.Keys.SHOW_PLAYERLIST</qualifiedname>
+        <initializer>=  pygame.K_TAB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for regrouping all the keys associated to different game actions.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" line="5" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/keys.py" bodystart="5" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1afade1026de2fd0d4ec77543d35643f9e" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>MOVE_DOWN</name></member>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1a7bf50fb18167f3c98e201bd646dbb722" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>MOVE_LEFT</name></member>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1ad7d0b2167fc881075bb395c5e5e0f3a5" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>MOVE_RIGHT</name></member>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1af994bd4258194ac7acb85e96a977c6f0" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>MOVE_UP</name></member>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1ae2ffd6552d3594216d313a818d2a6903" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>SHOW_MAP</name></member>
+      <member refid="classgame_1_1data_1_1keys_1_1Keys_1af303c93444827219120d692a615fb923" prot="public" virt="non-virtual"><scope>game::data::keys::Keys</scope><name>SHOW_PLAYERLIST</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

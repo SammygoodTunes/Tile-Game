@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::screens::servercreate_screen::ServerCreateScreen</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" prot="public" virt="non-virtual">game.gui.screens.screen.Screen</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a095ce4ff134515029940365865adaa02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::faded_surface</definition>
+        <argsstring></argsstring>
+        <name>faded_surface</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.faded_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af136da39e7862cc8d50bb6e1dccdb64b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::create_label</definition>
+        <argsstring></argsstring>
+        <name>create_label</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.create_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afc280a7c3eb56f0a12e4f3f5e3bfe533" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::ign_input</definition>
+        <argsstring></argsstring>
+        <name>ign_input</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.ign_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::seed_input</definition>
+        <argsstring></argsstring>
+        <name>seed_input</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.seed_input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::create_button</definition>
+        <argsstring></argsstring>
+        <name>create_button</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.create_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screens.servercreate_screen.ServerCreateScreen::back_button</definition>
+        <argsstring></argsstring>
+        <name>back_button</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.back_button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.servercreate_screen.ServerCreateScreen.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="19" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface game.gui.screens.servercreate_screen.ServerCreateScreen.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the screen&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1abaf6c6e26d56989d12e959f7f127dd83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.servercreate_screen.ServerCreateScreen.events</definition>
+        <argsstring>(self, Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Track the screen events (unused).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.servercreate_screen.ServerCreateScreen.draw</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="48" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="61" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="61" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the screen&apos;s visibility/interactivity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="79" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the server create screen.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.screens.servercreate_screen.ServerCreateScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.screens.servercreate_screen.ServerCreateScreen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.screens.screen.Screen</label>
+        <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/servercreate_screen.py" bodystart="14" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>back_button</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>create_button</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af136da39e7862cc8d50bb6e1dccdb64b" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>create_label</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1abaf6c6e26d56989d12e959f7f127dd83" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>events</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a095ce4ff134515029940365865adaa02" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>faded_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afc280a7c3eb56f0a12e4f3f5e3bfe533" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>ign_input</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>seed_input</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>update_ui</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26" prot="public" virt="non-virtual"><scope>game::gui::screens::servercreate_screen::ServerCreateScreen</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

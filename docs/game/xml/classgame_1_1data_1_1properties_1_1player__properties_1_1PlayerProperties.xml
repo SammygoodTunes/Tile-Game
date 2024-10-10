@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties" kind="class" language="Python" prot="public">
+    <compoundname>game::data::properties::player_properties::PlayerProperties</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a8c1c7e8322db2aa5a6eefd8c5aa3c7b9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.player_properties.PlayerProperties::MAX_PLAYER_NAME_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_PLAYER_NAME_SIZE</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.MAX_PLAYER_NAME_SIZE</qualifiedname>
+        <initializer>=  16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1aa5e31c2dea1719f4e60942cd87d0fb27" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.player_properties.PlayerProperties::SPEED</definition>
+        <argsstring></argsstring>
+        <name>SPEED</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.SPEED</qualifiedname>
+        <initializer>=  350</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a9a38e28a82acdf9ad814282e09ae4214" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.player_properties.PlayerProperties::SPEED_IN_WATER</definition>
+        <argsstring></argsstring>
+        <name>SPEED_IN_WATER</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.SPEED_IN_WATER</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1aa5e31c2dea1719f4e60942cd87d0fb27" kindref="member">SPEED</ref> // 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a390a165882b6f479f3a3922b3334926b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.data.properties.player_properties.PlayerProperties::SPEED_IN_LAVA</definition>
+        <argsstring></argsstring>
+        <name>SPEED_IN_LAVA</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.SPEED_IN_LAVA</qualifiedname>
+        <initializer>=  <ref refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1aa5e31c2dea1719f4e60942cd87d0fb27" kindref="member">SPEED</ref> // 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a16b6717e80f52582619155ee9809fc06" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str game.data.properties.player_properties.PlayerProperties::TEXTURE</definition>
+        <argsstring></argsstring>
+        <name>TEXTURE</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.TEXTURE</qualifiedname>
+        <initializer>=  &quot;assets/player.png&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1ad1edaac593713a83d26ff76b3dd1b884" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float game.data.properties.player_properties.PlayerProperties::VELOCITY_START_DURATION</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_START_DURATION</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.VELOCITY_START_DURATION</qualifiedname>
+        <initializer>=  0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a2d005ca308df6d2cf7e32d1de8726b7a" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float game.data.properties.player_properties.PlayerProperties::VELOCITY_STOP_DURATION</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_STOP_DURATION</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.VELOCITY_STOP_DURATION</qualifiedname>
+        <initializer>=  0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a57a6dd3de936286da1d65e90644872a6" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float game.data.properties.player_properties.PlayerProperties::VELOCITY_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>VELOCITY_THRESHOLD</name>
+        <qualifiedname>game.data.properties.player_properties.PlayerProperties.VELOCITY_THRESHOLD</qualifiedname>
+        <initializer>=  0.0001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for player properties.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py" bodystart="2" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a8c1c7e8322db2aa5a6eefd8c5aa3c7b9" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>MAX_PLAYER_NAME_SIZE</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1aa5e31c2dea1719f4e60942cd87d0fb27" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>SPEED</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a390a165882b6f479f3a3922b3334926b" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>SPEED_IN_LAVA</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a9a38e28a82acdf9ad814282e09ae4214" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>SPEED_IN_WATER</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a16b6717e80f52582619155ee9809fc06" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>TEXTURE</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1ad1edaac593713a83d26ff76b3dd1b884" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>VELOCITY_START_DURATION</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a2d005ca308df6d2cf7e32d1de8726b7a" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>VELOCITY_STOP_DURATION</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a57a6dd3de936286da1d65e90644872a6" prot="public" virt="non-virtual"><scope>game::data::properties::player_properties::PlayerProperties</scope><name>VELOCITY_THRESHOLD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

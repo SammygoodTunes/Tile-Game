@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler" kind="class" language="Python" prot="public">
+    <compoundname>game::client::connection_handler::ConnectionHandler</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa24d118a28181bd05ddf05b6aa87cf1a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::start_connection</definition>
+        <argsstring></argsstring>
+        <name>start_connection</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.start_connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ae8010e5bc8a9e9de70bc6250ad6e413c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::stop_connection</definition>
+        <argsstring></argsstring>
+        <name>stop_connection</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.stop_connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab370549f7b1ffa33f1f7badadb04043b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aba689bc6b3ed2e0fc3cc86c9120f1960" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.port</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9418be6421d13539a51b6ae73220aca7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::player_name</definition>
+        <argsstring></argsstring>
+        <name>player_name</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.player_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ad5b0e835ddac9c7158ab05d6308a97ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.connection_handler.ConnectionHandler.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a61897249eb0ba4d05b5005f80b16bdb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.connection_handler.ConnectionHandler.events</definition>
+        <argsstring>(self, Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.connection_handler.ConnectionHandler.update</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Keep track of the connection state.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="28" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.connection_handler.ConnectionHandler.draw_other_players</definition>
+        <argsstring>(self, game, delta)</argsstring>
+        <name>draw_other_players</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.draw_other_players</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <param>
+          <type>delta</type>
+          <defname>delta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Display all other server players.
+We don&apos;t draw the main player as it is redundant.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab03435b7059eccfdd11e6680f4823383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.connection_handler.ConnectionHandler.queue_packet</definition>
+        <argsstring>(self, dict packet)</argsstring>
+        <name>queue_packet</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.queue_packet</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Queue a packet in the packet queue.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.client.connection_handler.ConnectionHandler.get_ping</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_ping</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.get_ping</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the connection ping, only if a connection has been established.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="90" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float game.client.connection_handler.ConnectionHandler.get_total_data_sent</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_total_data_sent</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.get_total_data_sent</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the total data sent to the server, rounded to megabytes (not mebibytes).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="98" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float game.client.connection_handler.ConnectionHandler.get_total_data_received</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_total_data_received</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.get_total_data_received</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the total data received from the server, rounded to megabytes (not mebibytes).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="106" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="106" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list game.client.connection_handler.ConnectionHandler.get_players</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_players</name>
+        <qualifiedname>game.client.connection_handler.ConnectionHandler.get_players</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the current players in the server, otherwise return an empty list if no connection has been established.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="114" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="114" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating the connection handler.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="10" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ad5b0e835ddac9c7158ab05d6308a97ae" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>__init__</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>connection</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>draw_other_players</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a61897249eb0ba4d05b5005f80b16bdb8" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>events</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>get_ping</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>get_players</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>get_total_data_received</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>get_total_data_sent</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab370549f7b1ffa33f1f7badadb04043b" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>host</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9418be6421d13539a51b6ae73220aca7" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>player_name</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aba689bc6b3ed2e0fc3cc86c9120f1960" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>port</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab03435b7059eccfdd11e6680f4823383" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>queue_packet</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa24d118a28181bd05ddf05b6aa87cf1a" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>start_connection</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ae8010e5bc8a9e9de70bc6250ad6e413c" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>stop_connection</name></member>
+      <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e" prot="public" virt="non-virtual"><scope>game::client::connection_handler::ConnectionHandler</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

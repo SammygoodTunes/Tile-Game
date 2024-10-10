@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1client_1_1client_1_1Client" kind="class" language="Python" prot="public">
+    <compoundname>game::client::client::Client</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.client.Client::connection_handler</definition>
+        <argsstring></argsstring>
+        <name>connection_handler</name>
+        <qualifiedname>game.client.client.Client.connection_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1client_1_1Client_1aed9270fce6526346a1441a81a97cae22" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.client.Client::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>game.client.client.Client.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a98e94d95bb79b4c509d59a5320ac2a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.client.Client.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.client.client.Client.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a45113087d5a92fa359a00b1a9357ea3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.client.Client.initialise</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>initialise</name>
+        <qualifiedname>game.client.client.Client.initialise</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the client.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.client.Client.update</definition>
+        <argsstring>(self, game)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.client.client.Client.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the client.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="32" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.client.Client.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.client.client.Client.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the client UI.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.client.Client.events</definition>
+        <argsstring>(self, game, Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.client.client.Client.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game</type>
+          <defname>game</defname>
+        </param>
+        <param>
+          <type>Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle the client events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="61" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.client.client.Client.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <qualifiedname>game.client.client.Client.stop</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Stop the client connection.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="68" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for all client-related tasks like client-side rendering and handling the connection.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="15" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1a98e94d95bb79b4c509d59a5320ac2a6e" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>__init__</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>connection_handler</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>events</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1a45113087d5a92fa359a00b1a9357ea3c" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>initialise</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1aed9270fce6526346a1441a81a97cae22" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>player</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>stop</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>update</name></member>
+      <member refid="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>update_ui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

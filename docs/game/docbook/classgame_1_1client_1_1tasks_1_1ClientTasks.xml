@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks" xml:lang="en-US">
+<title>game.client.tasks.ClientTasks Class Reference</title>
+<indexterm><primary>game.client.tasks.ClientTasks</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a687269af093982a745ab9e074bcb905d">recognition</link> (sock)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962">map_data</link> (sock)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638">get_map_data</link> (sock)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1afca576e562ad4e6cb4c168c193cff851">player_join</link> (sock)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c">send_player_name</link> (sock, player_name)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0">send_local_player</link> (sock, player_manager)</para>
+</listitem>
+            <listitem><para>list|None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94">get_global_game_state</link> (sock)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for regrouping all client-side requests.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94"/><section>
+    <title>get_global_game_state()</title>
+<indexterm><primary>get_global_game_state</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>get_global_game_state</secondary></indexterm>
+<para><computeroutput> list | None game.client.tasks.ClientTasks.get_global_game_state ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for receiving the global server-side game state.
+Return the game state list object if received successfully, otherwise None.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638"/><section>
+    <title>get_map_data()</title>
+<indexterm><primary>get_map_data</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>get_map_data</secondary></indexterm>
+<para><computeroutput> bytes game.client.tasks.ClientTasks.get_map_data ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for receiving the map data object and decompressing it.
+Return the decompressed map data object once received.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962"/><section>
+    <title>map_data()</title>
+<indexterm><primary>map_data</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>map_data</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.map_data ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for requesting the map data.
+Return True if the map data response from the server was received successfully, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1afca576e562ad4e6cb4c168c193cff851"/><section>
+    <title>player_join()</title>
+<indexterm><primary>player_join</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>player_join</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.player_join ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for joining a player to the server.
+Return True if the response from the server is received, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a687269af093982a745ab9e074bcb905d"/><section>
+    <title>recognition()</title>
+<indexterm><primary>recognition</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>recognition</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.recognition ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for client authenticity.
+Return True if the client&apos;s connection was successful, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0"/><section>
+    <title>send_local_player()</title>
+<indexterm><primary>send_local_player</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>send_local_player</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.send_local_player ( sock,  player_manager)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending the local player to the server.
+Return True if the local player packet was sent to and received by the server, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c"/><section>
+    <title>send_player_name()</title>
+<indexterm><primary>send_player_name</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>send_player_name</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.send_player_name ( sock,  player_name)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending the client&apos;s name to the server.
+Raise exception when player name is already taken.
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_client_2tasks_8py">client/tasks.py</link></section>
+</section>

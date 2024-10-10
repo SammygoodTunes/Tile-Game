@@ -2,19 +2,20 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="keys_8py" kind="file" language="Python">
     <compoundname>keys.py</compoundname>
-    <innerclass refid="classdata_1_1keys_1_1Keys" prot="public">data::keys::Keys</innerclass>
-    <innernamespace refid="namespacedata">data</innernamespace>
-    <innernamespace refid="namespacedata_1_1keys">data::keys</innernamespace>
+    <innerclass refid="classgame_1_1data_1_1keys_1_1Keys" prot="public">game::data::keys::Keys</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1keys">game::data::keys</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacedata_1_1keys" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1keys" refkind="compound"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pygame</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="classdata_1_1keys_1_1Keys" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1keys_1_1Keys" kindref="compound">Keys</ref>:</highlight></codeline>
+<codeline lineno="5" refid="classgame_1_1data_1_1keys_1_1Keys" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1keys_1_1Keys" kindref="compound">Keys</ref>:</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>regrouping<sp/>all<sp/>the<sp/>keys<sp/>associated<sp/>to<sp/>different<sp/>game<sp/>actions.</highlight></codeline>
 <codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>

@@ -9,7 +9,7 @@
 </listitem>
             <listitem><para>bool <link linkend="_classtasks_1_1ServerTasks_1a00318ea07ce8a908bd583ada1cf66578">recognition</link> (conn, addr)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classtasks_1_1ServerTasks_1a36a1d145a0473fb3e9386b12d549b5b0">map_data</link> (conn, addr, world_handler)</para>
+            <listitem><para>None <link linkend="_classtasks_1_1ServerTasks_1a4deb1545cf43f2d1bd810705373a03b1">map_data</link> (conn, addr, WorldHandler world_handler)</para>
 </listitem>
             <listitem><para>str <link linkend="_classtasks_1_1ServerTasks_1a823900d288e2d302e5a16058e36a83ce">player_join</link> (conn, PlayerHandler player_handler)</para>
 </listitem>
@@ -64,11 +64,11 @@ Return True if packet is received and is valid, otherwise False
 <para><literallayout><computeroutput>Task for requesting a local game state. This is only for specific needs like player data.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classtasks_1_1ServerTasks_1a36a1d145a0473fb3e9386b12d549b5b0"/><section>
+<anchor xml:id="_classtasks_1_1ServerTasks_1a4deb1545cf43f2d1bd810705373a03b1"/><section>
     <title>map_data()</title>
 <indexterm><primary>map_data</primary><secondary>tasks.ServerTasks</secondary></indexterm>
 <indexterm><primary>tasks.ServerTasks</primary><secondary>map_data</secondary></indexterm>
-<para><computeroutput> None tasks.ServerTasks.map_data ( conn,  addr,  world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> None tasks.ServerTasks.map_data ( conn,  addr, WorldHandler world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for sending map data to a client.
 </computeroutput></literallayout> </para>
 </section>

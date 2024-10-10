@@ -1,0 +1,972 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::horizontal_slider::HorizontalSlider</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1widget_1_1Widget" prot="public" virt="non-virtual">game.gui.widget.Widget</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a6bcc5ebc6be1e91c48f3dbbd408ba829" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.gui.horizontal_slider.HorizontalSlider::MIN_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MIN_WIDTH</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.MIN_WIDTH</qualifiedname>
+        <initializer>=  50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5e7107862cfecb88dd5a902bd93ab776" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.gui.horizontal_slider.HorizontalSlider::MAX_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MAX_WIDTH</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.MAX_WIDTH</qualifiedname>
+        <initializer>=  350</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_width</definition>
+        <argsstring></argsstring>
+        <name>_width</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_height</definition>
+        <argsstring></argsstring>
+        <name>_height</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a40b2b5df695d1c0b2623eebca71b0a3e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a138d5795084bec71a5129dd71361412b" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_min_value</definition>
+        <argsstring></argsstring>
+        <name>_min_value</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._min_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae0a498aab1a1372d04ef48537ed1e284" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_max_value</definition>
+        <argsstring></argsstring>
+        <name>_max_value</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._max_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff42d68be001be897b5d68bae5d271c" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_bar_colour</definition>
+        <argsstring></argsstring>
+        <name>_bar_colour</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._bar_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8b6c6dad5407729d27ee454affcafd21" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_bar_width</definition>
+        <argsstring></argsstring>
+        <name>_bar_width</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._bar_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1af4b9c0c995ad6e3ddabeb63d68e855e6" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_button_colour</definition>
+        <argsstring></argsstring>
+        <name>_button_colour</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._button_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8619d8bfbd46d458f639b3504b1dbe01" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_button_outline_colour</definition>
+        <argsstring></argsstring>
+        <name>_button_outline_colour</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._button_outline_colour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa6b3283bb63bae6d446a2e73b60ceb1f" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_button_radius</definition>
+        <argsstring></argsstring>
+        <name>_button_radius</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._button_radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a84c33ef97da5d0d91ff52bf0f3657951" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_button_radius_hovered</definition>
+        <argsstring></argsstring>
+        <name>_button_radius_hovered</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._button_radius_hovered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1a3c64557479e19899886091e0ad678e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_button_held</definition>
+        <argsstring></argsstring>
+        <name>_button_held</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._button_held</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider._enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="112" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aacb094054e4841755fcaca62e2263a09" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::title_label</definition>
+        <argsstring></argsstring>
+        <name>title_label</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.title_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acd2a8b23433d6cb45afc2e84e0ae9490" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.horizontal_slider.HorizontalSlider::value_label</definition>
+        <argsstring></argsstring>
+        <name>value_label</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.value_label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.horizontal_slider.HorizontalSlider.__init__</definition>
+        <argsstring>(self, str title=&quot;&quot;, int x=0, int y=0)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>title</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="20" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3d23ebc12dcf90b3c32d35c3295ed1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.horizontal_slider.HorizontalSlider.draw</definition>
+        <argsstring>(self, screen)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the horizontal slider and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="38" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.horizontal_slider.HorizontalSlider.events</definition>
+        <argsstring>(self, pygame.event.Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pygame.event.Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Track the horizontal slider events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="64" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5fca4d74ac207551515165e0aa520135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.horizontal_slider.HorizontalSlider.update</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the horizontal slider and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="83" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="83" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aaf9542342e7bcd0a4b4453836b250870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.horizontal_slider.HorizontalSlider.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.refresh</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Refresh the horizontal slider and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="92" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="92" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hovering_over_button</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the user&apos;s mouse cursor is hovering over the horizontal slider&apos;s button or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="103" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="103" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hovering_over</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return whether the user&apos;s mouse cursor is hovering over the horizontal slider or not.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="114" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acdfa96e85b85a28d8131213b0809ea97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.center_horizontally</definition>
+        <argsstring>(self, int parent_x, int parent_width)</argsstring>
+        <name>center_horizontally</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.center_horizontally</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the horizontal slider horizontally relative to the specified parent, then return the horizontal slider
+itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="123" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="123" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a702d9e1f3915c4dd1a7b4167c3be146c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.center_vertically</definition>
+        <argsstring>(self, int parent_y, int parent_height)</argsstring>
+        <name>center_vertically</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.center_vertically</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the horizontal slider vertically relative to the specified parent, then return the horizontal slider
+itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="132" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="132" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a19cf3019ae51d403fe8f817e1d05b765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.center</definition>
+        <argsstring>(self, int parent_x, int parent_y, int parent_width, int parent_height)</argsstring>
+        <name>center</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.center</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the horizontal slider on both axes relative to the specified parent, then return the horizontal slider
+itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="141" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="141" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a25853dd6cc2aada74d438e3b65037261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.center_with_offset</definition>
+        <argsstring>(self, int parent_x, int parent_y, int parent_width, int parent_height, int x, int y)</argsstring>
+        <name>center_with_offset</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.center_with_offset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parent_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Center the horizontal slider with center() and offset it by x and y relative to the specified parent, then
+return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="150" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8318735add313690e5ee82448493b537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.horizontal_slider.HorizontalSlider.get_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_width</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the horizontal slider.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="159" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="159" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa9b163abc659ce80fd4495c7197ff8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.horizontal_slider.HorizontalSlider.get_height</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_height</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_height</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the height of the horizontal slider.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="165" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="165" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb2678ae542d14b9ac6c352b19999eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.horizontal_slider.HorizontalSlider.get_bar_width</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_bar_width</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_bar_width</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the width of the horizontal slider&apos;s bar.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="171" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a79cb7f080c154d09dc1d2b04a8341bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.set_title</definition>
+        <argsstring>(self, str title)</argsstring>
+        <name>set_title</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.set_title</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the title&apos;s text of the horizontal slider, then return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="177" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="177" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4b0c6393ad577663fbf1d8455c67d0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str game.gui.horizontal_slider.HorizontalSlider.get_title</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_title</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_title</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the title label&apos;s text of the horizontal slider.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="184" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="184" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1adca8fcacb62fed59f83cc9a1c3c928bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.set_value_text</definition>
+        <argsstring>(self, str text)</argsstring>
+        <name>set_value_text</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.set_value_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the value label&apos;s text of the horizontal slider, then return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="190" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="190" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abc6d6954e8af1c187e191207546bf33c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str game.gui.horizontal_slider.HorizontalSlider.get_value_text</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_value_text</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_value_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the value label&apos;s text of the horizontal slider.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="197" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a693dc26cf52953e6e121c99b3379cacd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.set_value</definition>
+        <argsstring>(self, int value)</argsstring>
+        <name>set_value</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.set_value</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the value of the horizontal slider, then return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="203" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="203" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae42cf58eecc3c18498e2634c023dd510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int game.gui.horizontal_slider.HorizontalSlider.get_value</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_value</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_value</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the value of the horizontal slider.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="210" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="210" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a7bcad49c62e20bc7cfaf17b5939d0992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.set_value_bounds</definition>
+        <argsstring>(self, int|None min_value=None, int|None max_value=None)</argsstring>
+        <name>set_value_bounds</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.set_value_bounds</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int|None</type>
+          <declname>min_value</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>int|None</type>
+          <declname>max_value</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the value bounds of the horizontal slider (min/max value), then return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="216" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="216" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aac96777eba3fb8317d6f4fbe5384abbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[int, int]</type>
+        <definition> tuple[int, int] game.gui.horizontal_slider.HorizontalSlider.get_value_bounds</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_value_bounds</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_value_bounds</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the value bounds of the horizontal slider (min/max value).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="226" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="226" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae91d47ebc9cd19414da22a72c6fc134a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.horizontal_slider.HorizontalSlider.button_held</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>button_held</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.button_held</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set whether the horizontal slider&apos;s button is held or not, then return the horizontal slider itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="232" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="232" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a86eabf059a2620ce546fd8fd2c010f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool game.gui.horizontal_slider.HorizontalSlider.is_button_held</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_button_held</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.is_button_held</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the held state of the horizontal slider&apos;s button.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="239" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8e43a3ae1a3b86ac5b09c29aa0beb8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float game.gui.horizontal_slider.HorizontalSlider.get_step_in_pixels</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_step_in_pixels</name>
+        <qualifiedname>game.gui.horizontal_slider.HorizontalSlider.get_step_in_pixels</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the number of pixels needed to move the horizontal slider&apos;s button from one value to the next.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="245" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="245" bodyend="250"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a horizontal slider.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.horizontal_slider.HorizontalSlider</label>
+        <link refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.horizontal_slider.HorizontalSlider</label>
+        <link refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/horizontal_slider.py" bodystart="12" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff42d68be001be897b5d68bae5d271c" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_bar_colour</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8b6c6dad5407729d27ee454affcafd21" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_bar_width</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1af4b9c0c995ad6e3ddabeb63d68e855e6" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_button_colour</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1a3c64557479e19899886091e0ad678e" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_button_held</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8619d8bfbd46d458f639b3504b1dbe01" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_button_outline_colour</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa6b3283bb63bae6d446a2e73b60ceb1f" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_button_radius</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a84c33ef97da5d0d91ff52bf0f3657951" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_button_radius_hovered</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_enabled</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_height</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae0a498aab1a1372d04ef48537ed1e284" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_max_value</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a138d5795084bec71a5129dd71361412b" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_min_value</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a40b2b5df695d1c0b2623eebca71b0a3e" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_value</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_width</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_x</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" prot="protected" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>_y</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae91d47ebc9cd19414da22a72c6fc134a" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>button_held</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a19cf3019ae51d403fe8f817e1d05b765" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>center</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acdfa96e85b85a28d8131213b0809ea97" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>center_horizontally</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a702d9e1f3915c4dd1a7b4167c3be146c" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>center_vertically</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a25853dd6cc2aada74d438e3b65037261" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>center_with_offset</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3d23ebc12dcf90b3c32d35c3295ed1ee" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>events</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb2678ae542d14b9ac6c352b19999eb" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_bar_width</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa9b163abc659ce80fd4495c7197ff8d9" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_height</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8e43a3ae1a3b86ac5b09c29aa0beb8fe" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_step_in_pixels</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4b0c6393ad577663fbf1d8455c67d0ca" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_title</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae42cf58eecc3c18498e2634c023dd510" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_value</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aac96777eba3fb8317d6f4fbe5384abbd" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_value_bounds</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abc6d6954e8af1c187e191207546bf33c" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_value_text</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8318735add313690e5ee82448493b537" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>get_width</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a86eabf059a2620ce546fd8fd2c010f85" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>is_button_held</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>is_hovering_over</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>is_hovering_over_button</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5e7107862cfecb88dd5a902bd93ab776" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>MAX_WIDTH</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a6bcc5ebc6be1e91c48f3dbbd408ba829" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>MIN_WIDTH</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aaf9542342e7bcd0a4b4453836b250870" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>refresh</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a79cb7f080c154d09dc1d2b04a8341bea" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>set_title</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a693dc26cf52953e6e121c99b3379cacd" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>set_value</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a7bcad49c62e20bc7cfaf17b5939d0992" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>set_value_bounds</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1adca8fcacb62fed59f83cc9a1c3c928bc" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>set_value_text</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aacb094054e4841755fcaca62e2263a09" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>title_label</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5fca4d74ac207551515165e0aa520135" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>update</name></member>
+      <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acd2a8b23433d6cb45afc2e84e0ae9490" prot="public" virt="non-virtual"><scope>game::gui::horizontal_slider::HorizontalSlider</scope><name>value_label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,4 @@
 var world_8py =
 [
-    [ "world.world.World", "classworld_1_1world_1_1World.html", "classworld_1_1world_1_1World" ]
+    [ "game.world.world.World", "classgame_1_1world_1_1world_1_1World.html", "classgame_1_1world_1_1world_1_1World" ]
 ];

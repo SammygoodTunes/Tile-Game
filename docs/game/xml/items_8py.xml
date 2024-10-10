@@ -2,118 +2,28 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="items_8py" kind="file" language="Python">
     <compoundname>items.py</compoundname>
-    <innerclass refid="classdata_1_1items_1_1Item" prot="public">data::items::Item</innerclass>
-    <innerclass refid="classdata_1_1items_1_1Items" prot="public">data::items::Items</innerclass>
-    <innerclass refid="classdata_1_1items_1_1ItemTypes" prot="public">data::items::ItemTypes</innerclass>
-    <innernamespace refid="namespacedata">data</innernamespace>
-    <innernamespace refid="namespacedata_1_1items">data::items</innernamespace>
+    <innerclass refid="classgame_1_1data_1_1items_1_1items_1_1Items" prot="public">game::data::items::items::Items</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1items">game::data::items</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1items_1_1items">game::data::items::items</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacedata_1_1items" refkind="compound"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>importlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>resources<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>impr</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Self</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.utils.logger<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8" refid="classdata_1_1items_1_1Item" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>:</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>usable<sp/>item.</highlight></codeline>
-<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>DEFAULT_ATLAS:<sp/>str<sp/>=<sp/>str(impr.files(</highlight><highlight class="stringliteral">&apos;assets&apos;</highlight><highlight class="normal">)<sp/>/<sp/></highlight><highlight class="stringliteral">&quot;items.png&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1afebde3a259a32282ba3fbf3fb0859b32" kindref="member">__init__</ref>(self,<sp/>x:<sp/>int<sp/>=<sp/>0,<sp/>y:<sp/>int<sp/>=<sp/>0,<sp/>tooltip_name:<sp/>str<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" kindref="member">_xy</ref>:<sp/>tuple[int,<sp/>int]<sp/>=<sp/>(x,<sp/>y)</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" kindref="member">_tooltip_name</ref>:<sp/>str<sp/>=<sp/>tooltip_name</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" kindref="member">_strength</ref>:<sp/>int<sp/>=<sp/>0</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" kindref="member">_durability</ref>:<sp/>int<sp/>=<sp/>-1</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&apos;Created<sp/>{__class__.__name__}<sp/>with<sp/>attributes<sp/>{self.__dict__}&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1a377cfef1501c88e6407c96bdb568d02a" kindref="member">__eq__</ref>(self,<sp/>obj:<sp/>Self):</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>isinstance(obj,<sp/>Item):</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" kindref="member">_xy</ref><sp/>==<sp/>obj.get_xy()</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" kindref="member">_tooltip_name</ref><sp/>==<sp/>self.<ref refid="classdata_1_1items_1_1Item_1a312597a6fd569ab331d41945018d23ae" kindref="member">get_tooltip_name</ref>()</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" kindref="member">_strength</ref><sp/>==<sp/>self.<ref refid="classdata_1_1items_1_1Item_1a3c511e116b3905e486fe022a456b0958" kindref="member">get_strength</ref>()</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" kindref="member">_durability</ref><sp/>==<sp/>self.<ref refid="classdata_1_1items_1_1Item_1ab75f86ada76a8eb49698a688e8d138a1" kindref="member">get_durability</ref>()</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1ae1d5dfd445e5197468a44d8f4b65f0f3" kindref="member">set_xy</ref>(self,<sp/>x:<sp/>int,<sp/>y:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>texture<sp/>coordinates<sp/>of<sp/>the<sp/>item,<sp/>then<sp/>return<sp/>the<sp/>item<sp/>itself.</highlight></codeline>
-<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" kindref="member">_xy</ref><sp/>=<sp/>(x,<sp/>y)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1aa63be91590e094ea06461f8585655e62" kindref="member">get_xy</ref>(self)<sp/>-&gt;<sp/>tuple[int,<sp/>int]:</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>texture<sp/>coordinates<sp/>of<sp/>the<sp/>item.</highlight></codeline>
-<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1a3f2c0e8a21234d65bf18eaf16427ec15" kindref="member">_xy</ref></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1abbfa7f9b0c87234039796f933a76fb7e" kindref="member">set_tooltip_name</ref>(self,<sp/>tooltip_name:<sp/>str)<sp/>-&gt;<sp/>Self:</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>tooltip<sp/>name<sp/>of<sp/>the<sp/>item,<sp/>then<sp/>return<sp/>the<sp/>item<sp/>itself.</highlight></codeline>
-<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" kindref="member">_tooltip_name</ref><sp/>=<sp/>tooltip_name</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1a312597a6fd569ab331d41945018d23ae" kindref="member">get_tooltip_name</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>tooltip<sp/>name<sp/>of<sp/>the<sp/>item.</highlight></codeline>
-<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aa1af65db5371813364ce470e09bc0f6e" kindref="member">_tooltip_name</ref></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1a074e468e3807c5ef2e3557d3402e75b3" kindref="member">set_strength</ref>(self,<sp/>strength:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>strength<sp/>of<sp/>the<sp/>item,<sp/>then<sp/>return<sp/>the<sp/>item<sp/>itself.</highlight></codeline>
-<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" kindref="member">_strength</ref><sp/>=<sp/>strength</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1a3c511e116b3905e486fe022a456b0958" kindref="member">get_strength</ref>(self)<sp/>-&gt;<sp/>int:</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>strength<sp/>of<sp/>the<sp/>item.</highlight></codeline>
-<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1aee647c5b06143b0403770cbf687e5fd9" kindref="member">_strength</ref></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1afd7bd8b362de30f899eb53a03eb97c1d" kindref="member">set_durability</ref>(self,<sp/>durability:<sp/>int)<sp/>-&gt;<sp/>Self:</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set<sp/>the<sp/>durability<sp/>of<sp/>the<sp/>item,<sp/>then<sp/>return<sp/>the<sp/>item<sp/>itself.</highlight></codeline>
-<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" kindref="member">_durability</ref><sp/>=<sp/>durability</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Item_1ab75f86ada76a8eb49698a688e8d138a1" kindref="member">get_durability</ref>(self)<sp/>-&gt;<sp/>int:</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="80"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>durability<sp/>of<sp/>the<sp/>item.</highlight></codeline>
-<codeline lineno="81"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdata_1_1items_1_1Item_1acc4ec77b133e445b6164aa92f07e521d" kindref="member">_durability</ref></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="classdata_1_1items_1_1Items" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1Items" kindref="compound">Items</ref>:</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>collection<sp/>of<sp/>items.</highlight></codeline>
-<codeline lineno="88"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>AIR:<sp/>Item<sp/>=<sp/><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>()</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>SHOVEL:<sp/>Item<sp/>=<sp/><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>(x=1,<sp/>tooltip_name=</highlight><highlight class="stringliteral">&quot;Shovel&quot;</highlight><highlight class="normal">).set_strength(10)</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>GUN:<sp/>Item<sp/>=<sp/><ref refid="classdata_1_1items_1_1Item" kindref="compound">Item</ref>(x=2,<sp/>tooltip_name=</highlight><highlight class="stringliteral">&quot;Gun&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="classdata_1_1items_1_1ItemTypes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdata_1_1items_1_1ItemTypes" kindref="compound">ItemTypes</ref>:</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="97"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>regrouping<sp/>items<sp/>into<sp/>different<sp/>categories.</highlight></codeline>
-<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>TOOLS:<sp/>tuple[Items]<sp/>=<sp/>(Items.SHOVEL,)</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>WEAPONS:<sp/>tuple[Items]<sp/>=<sp/>(Items.GUN,)</highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1items_1_1items" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1items_1_1item" kindref="compound">game.data.items.item</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Item</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classgame_1_1data_1_1items_1_1items_1_1Items" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1items_1_1items_1_1Items" kindref="compound">Items</ref>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>collection<sp/>of<sp/>items.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>AIR:<sp/>Item<sp/>=<sp/><ref refid="classgame_1_1data_1_1items_1_1item_1_1Item" kindref="compound">Item</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>SHOVEL:<sp/>Item<sp/>=<sp/><ref refid="classgame_1_1data_1_1items_1_1item_1_1Item" kindref="compound">Item</ref>(x=1,<sp/>tooltip_name=</highlight><highlight class="stringliteral">&quot;Shovel&quot;</highlight><highlight class="normal">).set_strength(10)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>GUN:<sp/>Item<sp/>=<sp/><ref refid="classgame_1_1data_1_1items_1_1item_1_1Item" kindref="compound">Item</ref>(x=2,<sp/>tooltip_name=</highlight><highlight class="stringliteral">&quot;Gun&quot;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/items.py"/>
   </compounddef>
 </doxygen>

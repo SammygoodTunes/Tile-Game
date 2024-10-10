@@ -9,7 +9,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00">create_world</link> (self, seed)</para>
 </listitem>
-            <listitem><para>World <link linkend="_classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4">get_world</link> (self)</para>
+            <listitem><para><link linkend="_classgame_1_1world_1_1world_1_1World">World</link> <link linkend="_classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4">get_world</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -41,7 +41,7 @@
     <title>get_world()</title>
 <indexterm><primary>get_world</primary><secondary>world_handler.WorldHandler</secondary></indexterm>
 <indexterm><primary>world_handler.WorldHandler</primary><secondary>get_world</secondary></indexterm>
-<para><computeroutput> World world_handler.WorldHandler.get_world ( self)</computeroutput></para>
+<para><computeroutput> <link linkend="_classgame_1_1world_1_1world_1_1World">World</link> world_handler.WorldHandler.get_world ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the world object.
 </computeroutput></literallayout> </para>
 </section>

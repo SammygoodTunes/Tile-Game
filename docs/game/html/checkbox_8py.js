@@ -1,4 +1,4 @@
 var checkbox_8py =
 [
-    [ "gui.checkbox.Checkbox", "classgui_1_1checkbox_1_1Checkbox.html", "classgui_1_1checkbox_1_1Checkbox" ]
+    [ "game.gui.checkbox.Checkbox", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html", "classgame_1_1gui_1_1checkbox_1_1Checkbox" ]
 ];
