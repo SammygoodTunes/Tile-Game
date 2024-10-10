@@ -2,7 +2,9 @@ import pygame
 
 from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
-from game.data.states import MouseStates, ServerStates, ConnectionStates
+from game.data.states.connection_states import ConnectionStates
+from game.data.states.server_states import ServerStates
+from game.data.states.mouse_states import MouseStates
 from game.gui.screens.crash_screen import CrashScreen
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen

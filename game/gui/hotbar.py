@@ -2,7 +2,8 @@
 from pygame import Surface, SRCALPHA
 from typing import Self
 
-from game.data.items import Items, Item
+from game.data.items.items import Items
+from game.data.items.item import Item
 from game.gui.label import Label
 from game.gui.slot import Slot
 from game.gui.widget import Widget

@@ -2,13 +2,13 @@
 from pygame import MOUSEBUTTONUP, Surface
 from pygame.event import Event
 
-from game.data.properties import ScreenProperties
+from game.data.properties.screen_properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.checkbox import Checkbox
-from game.data.states import MouseStates
+from game.data.states.mouse_states import MouseStates
 from game.utils.logger import logger
 
 

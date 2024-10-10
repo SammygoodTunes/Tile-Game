@@ -1,7 +1,8 @@
 from pygame import Surface
 from pygame.event import Event
 
-from game.data.properties import ScreenProperties, PlayerProperties
+from game.data.properties.player_properties import PlayerProperties
+from game.data.properties.screen_properties import ScreenProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button

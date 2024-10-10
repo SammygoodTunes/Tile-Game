@@ -2,9 +2,8 @@
 from pygame.event import Event
 
 from game.client.connection import Connection, Tasks
-from game.data.states import ConnectionStates
-from game.data.structures import TileStructure
-from game.gui.label import Label
+from game.data.states.connection_states import ConnectionStates
+from game.data.structures.tile_structure import TileStructure
 from game.world.map_manager import Map
 
 

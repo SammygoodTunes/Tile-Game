@@ -4,7 +4,9 @@ from pygame.event import Event
 from pygame.time import get_ticks
 
 from game.client.connection_handler import ConnectionHandler
-from game.data.properties import CameraProperties, PlayerProperties, WorldProperties
+from game.data.properties.player_properties import PlayerProperties
+from game.data.properties.camera_properties import CameraProperties
+from game.data.properties.world_properties import WorldProperties
 from game.entity.player import Player
 from game.world.camera import Camera
 from game.world.world import World

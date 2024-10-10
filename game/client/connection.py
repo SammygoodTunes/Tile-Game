@@ -7,9 +7,8 @@ import traceback
 
 from game.client.player_manager import PlayerManager
 from game.client.tasks import ClientTasks
-from game.data.properties import ServerProperties
-from game.data.states import ConnectionStates
-from game.server.server import Server
+from game.data.properties.server_properties import ServerProperties
+from game.data.states.connection_states import ConnectionStates
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
 from game.network.protocol import Protocol

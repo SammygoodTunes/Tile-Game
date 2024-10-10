@@ -5,11 +5,14 @@ from pygame.math import clamp
 from random import randint
 from typing import Self
 
-from game.data.items import Items
+from game.data.items.items import Items
 from game.data.keys import Keys
-from game.data.properties import PlayerProperties
-from game.data.states import MouseStates, PlayerStates
-from game.data.tiles import Tile, Tiles, TileTypes
+from game.data.properties.player_properties import PlayerProperties
+from game.data.states.mouse_states import MouseStates
+from game.data.states.player_states import PlayerStates
+from game.data.tiles.tiles import Tiles
+from game.data.tiles.tile import Tile
+from game.data.tiles.tile_types import TileTypes
 from game.gui.screens.main_hud import MainHud
 from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger

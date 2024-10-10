@@ -1,7 +1,7 @@
 
 from pygame import image, Surface
 
-from game.data.tiles import Tile
+from game.data.tiles.tile import Tile
 from game.utils.exceptions import InvalidTextureAtlas
 from game.utils.logger import logger
 

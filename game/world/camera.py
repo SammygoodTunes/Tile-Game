@@ -1,10 +1,8 @@
 import pygame.key
-from pygame import K_UP, K_DOWN, K_LEFT, K_RIGHT
-from pygame import key
 from pygame.math import clamp
 
 from game.data.keys import Keys
-from game.data.properties import CameraProperties
+from game.data.properties.camera_properties import CameraProperties
 from game.utils.logger import logger
 
 

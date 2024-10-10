@@ -13,9 +13,9 @@ from game.data.data_manager import (
     GAME_PROPERTIES_SEPARATOR,
     APP_NAME,
     APP_VERSION)
-from game.data.items import Item
-from game.data.states import MouseStates
-from game.data.tiles import Tile
+from game.data.items.item import Item
+from game.data.states.mouse_states import MouseStates
+from game.data.tiles.tile import Tile
 
 
 def test_data_folder_exists():

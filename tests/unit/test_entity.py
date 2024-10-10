@@ -3,7 +3,7 @@ Tests dedicated to the entity modules.
 """
 
 from game.entity.player import Player
-from game.data.states import PlayerStates
+from game.data.states.player_states import PlayerStates
 
 
 def test_player_creation():

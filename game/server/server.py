@@ -4,8 +4,8 @@ from multiprocessing import Process, Value
 import socket
 from time import sleep, time
 
-from game.data.properties import ServerProperties
-from game.data.states import ServerStates
+from game.data.properties.server_properties import ServerProperties
+from game.data.states.server_states import ServerStates
 from game.network.protocol import Protocol
 from game.server.entity.player.player_handler import PlayerHandler
 from game.server.tasks import ServerTasks

@@ -1,8 +1,8 @@
 
 from math import ceil
 
-from game.data.properties import ServerProperties
-from game.data.structures import MapStructure
+from game.data.properties.server_properties import ServerProperties
+from game.data.structures.map_structure import MapStructure
 from game.network.builders import PlayerBuilder, BaseBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol

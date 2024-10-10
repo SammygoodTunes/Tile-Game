@@ -1,7 +1,7 @@
 from pygame import Surface
 
-from game.data.properties import ScreenProperties
-from game.data.states import ConnectionStates
+from game.data.properties.screen_properties import ScreenProperties
+from game.data.states.connection_states import ConnectionStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button

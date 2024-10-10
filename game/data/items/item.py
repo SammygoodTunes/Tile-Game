@@ -1,4 +1,3 @@
-
 from typing import Self
 
 from game.utils.logger import logger
@@ -79,22 +78,3 @@ class Item:
 		Return the durability of the item.
 		"""
 		return self._durability
-
-
-class Items:
-	"""
-	Class for creating a collection of items.
-	"""
-
-	AIR: Item = Item()
-	SHOVEL: Item = Item(x=1, tooltip_name="Shovel").set_strength(10)
-	GUN: Item = Item(x=2, tooltip_name="Gun")
-
-
-class ItemTypes:
-	"""
-	Class for regrouping items into different categories.
-	"""
-
-	TOOLS: tuple[Items] = (Items.SHOVEL,)
-	WEAPONS: tuple[Items] = (Items.GUN,)

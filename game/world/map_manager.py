@@ -1,14 +1,14 @@
 
 from math import ceil
 from pygame import SRCALPHA, Surface
-from random import choice, randint, seed
+from random import choice, seed
 from string import ascii_letters, digits
 from typing import Self
 
-from game.data.states import MapStates
-from game.data.structures import TileStructure
-from game.data.tiles import Tile, Tiles
-from game.network.protocol import Protocol
+from game.data.states.map_states import MapStates
+from game.data.structures.tile_structure import TileStructure
+from game.data.tiles.tiles import Tiles
+from game.data.tiles.tile import Tile
 from game.utils.exceptions import InvalidMapData
 from game.utils.logger import logger
 from game.world.synth import noise

@@ -3,7 +3,7 @@ from pygame.draw import rect as draw_rect
 from pygame import event, mouse, MOUSEBUTTONDOWN
 from typing import Self
 
-from game.data.states import MouseStates
+from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
 from game.gui.widget import Widget
 from game.utils.logger import logger

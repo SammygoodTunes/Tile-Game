@@ -3,8 +3,8 @@ from pygame.math import lerp, clamp
 from pygame.draw import rect
 from typing import Self
 
-from game.data.items import Items
-from game.data.properties import ServerProperties
+from game.data.items.items import Items
+from game.data.properties.server_properties import ServerProperties
 from game.entity.player import Player
 from game.gui.nametag import NameTag
 from game.network.builders import PlayerBuilder

@@ -1,7 +1,8 @@
 
 from pygame import Surface
 
-from game.data.properties import ScreenProperties, ServerProperties
+from game.data.properties.screen_properties import ScreenProperties
+from game.data.properties.server_properties import ServerProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.nametag import NameTag

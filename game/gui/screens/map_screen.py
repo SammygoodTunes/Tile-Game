@@ -2,8 +2,8 @@ from pygame.draw import rect, line, circle
 from pygame.surface import Surface
 from pygame.transform import smoothscale_by
 
-from game.data.properties import ScreenProperties
-from game.data.states import MapStates
+from game.data.properties.screen_properties import ScreenProperties
+from game.data.states.map_states import MapStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.network.builders import PlayerBuilder
