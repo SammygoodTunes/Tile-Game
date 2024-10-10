@@ -256,8 +256,8 @@ class Map:
         byte_pos = (tile_x % self._width + tile_y * self._width) // 8
         new_tile_byte = (
             self._dynatile_data[byte_pos]
-            | (1 << 0x8 - (tile_x % self._width + tile_y * self._width) % 8)) if tile_state else (
-            self._dynatile_data[byte_pos] & ~(1 << 0x8 - (tile_x % self._width + tile_y * self._width) % 8)
+            | (1 << 0x7 - (tile_x % self._width + tile_y * self._width) % 8)) if tile_state else (
+            self._dynatile_data[byte_pos] & ~(1 << 0x7 - (tile_x % self._width + tile_y * self._width) % 8)
         )
         self._dynatile_data = (
                 self._dynatile_data[:byte_pos]
@@ -272,7 +272,7 @@ class Map:
         """
         array_index = tile_x % self._width + tile_y * self._width
         byte_pos = array_index // 8
-        return bool(self._dynatile_data[byte_pos] >> (0x8 - array_index % 8) & 1)
+        return bool(self._dynatile_data[byte_pos] >> (0x7 - array_index % 8) & 1)
 
     def randomise_seed(self) -> Self:
         """
