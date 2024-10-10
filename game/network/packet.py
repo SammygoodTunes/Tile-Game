@@ -7,7 +7,9 @@ from game.utils.logger import logger
 
 
 class Packet:
-
+    """
+    Class for determining the properties of the packet header.
+    """
     DATA_SIZE = 4
 
 

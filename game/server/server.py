@@ -2,7 +2,7 @@
 from threading import Thread
 from multiprocessing import Process, Value
 import socket
-from time import sleep
+from time import sleep, time
 
 from game.data.properties import ServerProperties
 from game.data.states import ServerStates
@@ -48,6 +48,7 @@ class Server:
         success: bool = True
         while running:
             try:
+                start_tile = time()
                 if self.state.value == ServerStates.IDLE:
                     running = False
                     continue
@@ -59,7 +60,9 @@ class Server:
                 if success:
                     ServerTasks.local_game_state(conn)
                 success = ServerTasks.incoming_packets(conn, data, self.player_handler)
-                sleep(1.0 / ServerProperties.TICKS_PER_SECOND)
+                wait = time() - start_tile
+                if wait < 1 / ServerProperties.TICKS_PER_SECOND:
+                    sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
             except ConnectionResetError:
                 running = False
             except BrokenPipeError:

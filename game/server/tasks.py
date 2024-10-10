@@ -1,7 +1,6 @@
 
 from math import ceil
 
-from game.data.items import Items
 from game.data.properties import ServerProperties
 from game.data.structures import MapStructure
 from game.network.builders import PlayerBuilder, BaseBuilder

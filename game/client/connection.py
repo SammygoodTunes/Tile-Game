@@ -9,6 +9,7 @@ from game.client.player_manager import PlayerManager
 from game.client.tasks import ClientTasks
 from game.data.properties import ServerProperties
 from game.data.states import ConnectionStates
+from game.server.server import Server
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
 from game.network.protocol import Protocol
@@ -181,7 +182,9 @@ class Connection:
                     print('Client: received hit response, sending hit player name============================')
                     self.sock.send(fill(self.hit_player.encode(Protocol.ENCODING)))'''
                 self.ping = round((time() - packet_recv_timestamp) * 1000)
-                sleep(1 / ServerProperties.TICKS_PER_SECOND)
+                wait = time() - packet_recv_timestamp
+                if wait < 1 / ServerProperties.TICKS_PER_SECOND:
+                    sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
             except TimeoutError:
                 self.state = ConnectionStates.TIMEOUT
             except BrokenPipeError:
