@@ -23,7 +23,6 @@ class PlayerListScreen(Screen):
         self._playercount_surface: Surface = Surface((0, 0))
         self.count_label = Label('ONLINE   0/10').set_font_sizes((7, 8, 9)).set_colour((0, 255, 0))
 
-
     def draw(self) -> None:
         """
         Draw the screen and its components.

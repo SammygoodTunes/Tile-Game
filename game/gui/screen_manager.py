@@ -44,7 +44,6 @@ class Screens:
         self.map_screen = MapScreen(window)
         self.player_list_screen = PlayerListScreen(window)
 
-
     def link_game(self, game_obj) -> None:
         """
         Link the global game instance.

@@ -10,7 +10,6 @@ class Screen:
     def __init__(self) -> None:
         self._enabled = False
 
-
     def set_state(self, state: bool) -> None:
         """
         Set the screen's visibility/interactivity.

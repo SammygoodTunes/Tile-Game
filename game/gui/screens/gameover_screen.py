@@ -21,7 +21,6 @@ class GameoverScreen(Screen):
         self.respawn_button = Button(text="Respawn")
         self.disconnect_button = Button(text="Disconnect")
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

@@ -25,7 +25,6 @@ class Game(Window):
         self.client.initialise(self)
         self.update_all_uis()
 
-
     def update(self) -> None:
         """
         Update all child objects and core of the game.

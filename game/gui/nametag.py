@@ -20,7 +20,6 @@ class NameTag(Widget):
         self._faded_surface = Surface((self._width, self._height))
         self.set_transparency(0.4)
 
-
     def draw(self, screen) -> None:
         """
         Draw the nametag and its components.

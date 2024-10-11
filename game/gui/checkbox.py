@@ -22,7 +22,6 @@ class Checkbox(Widget):
         self._spacing = 8
         self.title_label = Label(title, self._x + self._size + self._spacing, self._y).set_font_sizes((7, 8, 10))
 
-
     def draw(self, screen) -> None:
         """
         Draw the checkbox and its components.

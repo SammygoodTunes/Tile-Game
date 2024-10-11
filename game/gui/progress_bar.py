@@ -35,7 +35,6 @@ class ProgressBar(Widget):
         self.info_label.set_text(title)
         self.progress_label = Label(text=f"{self._value}/{self._max_value}").set_font_sizes((7, 8, 9))
 
-
     def draw(self, screen) -> None:
         """
         Draw the progress bar and its components.

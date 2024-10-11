@@ -18,7 +18,6 @@ class TileManager:
         self.width: int = 0
         self.height: int = 0
 
-
     def draw(self, x: int, y: int, tile: Tile | int, screen: Surface) -> None:
         """
         Draw a tile to the screen.

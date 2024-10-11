@@ -27,7 +27,6 @@ class OptionsScreen(Screen):
         self.debug_info_box = Checkbox("Show debug info", checked=False)
         self.back_button = Button("Back")
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

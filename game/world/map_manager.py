@@ -37,7 +37,6 @@ class Map:
         self._dynatile_surface: Surface | None = None
         self.perlin_noise = noise.PerlinNoise()
 
-
     def initialise(self) -> None:
         """
         Initialise the map manager.

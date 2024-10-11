@@ -23,7 +23,6 @@ class MapScreen(Screen):
         self.title_label = Label('Map')
         self.scaled_map: Surface = Surface((0, 0))
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

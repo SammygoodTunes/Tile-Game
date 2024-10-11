@@ -21,7 +21,6 @@ class ServerConnectScreen(Screen):
         self.back_button = Button("Back")
         self.default_screen = True
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

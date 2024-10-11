@@ -35,7 +35,6 @@ class Window:
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(title)
 
-
     def clear(self, colour: tuple[int, int, int]) -> None:
         """
         Clear the screen with the specified colour.

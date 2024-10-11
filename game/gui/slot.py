@@ -37,7 +37,6 @@ class Slot(Widget):
         self._selected = False
         self.set_item(Items.AIR)
 
-
     def draw(self, screen) -> None:
         """
         Draw the slot and its components.

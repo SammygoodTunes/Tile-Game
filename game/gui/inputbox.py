@@ -35,7 +35,6 @@ class InputBox(Widget):
         self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
 
-
     def draw(self, screen: Surface) -> None:
         """
         Draw the input box and its components.

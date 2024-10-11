@@ -35,7 +35,6 @@ class MainHud(Screen):
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.hotbar.init_slots()
 
-
     def draw(self) -> None:
         """
         Draw the screen and its components.

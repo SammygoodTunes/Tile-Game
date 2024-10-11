@@ -28,7 +28,6 @@ class CreditsScreen(Screen):
         self.font_value_label = Label('OmegaPC777').set_colour((255, 255, 0))
         self.back_button = Button("Back")
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

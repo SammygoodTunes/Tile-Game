@@ -22,7 +22,6 @@ class PauseScreen(Screen):
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
         self.disconnect_button = Button(text="Disconnect").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

@@ -18,7 +18,6 @@ class LoadingScreen(Screen):
         self.surface = self.initialise_surface()
         self.progress_bar = ProgressBar()
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

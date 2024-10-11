@@ -15,7 +15,6 @@ class World:
     def __init__(self) -> None:
         self._map = Map(64, 64)
 
-
     def initialise(self) -> None:
         """
         Initialise the world.

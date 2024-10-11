@@ -27,7 +27,6 @@ class ServerCreateScreen(Screen):
         self.create_button = Button('Create')
         self.back_button = Button('Back')
 
-
     def initialise_surface(self) -> Surface:
         """
         Initialise the screen's surface.

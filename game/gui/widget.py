@@ -16,7 +16,6 @@ class Widget:
         self._transparency: float = 1.0
         self._enabled: bool = False
 
-
     def set_x(self, x: int) -> Self:
         """
         Set the x position of the widget, then return the widget itself.

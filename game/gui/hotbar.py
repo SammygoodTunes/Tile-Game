@@ -26,7 +26,6 @@ class Hotbar(Widget):
         self._selected_slot = 0
         self._atlas: Surface | None = None
 
-
     def init_slots(self) -> None:
         """
         Initialise the hotbar's slots.

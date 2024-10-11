@@ -24,7 +24,6 @@ class Button(Widget):
         self._background_colour = (255, 255, 255)
         self.label = Label(text, 0, 0).set_font_sizes((8, 10, 12))
 
-
     def draw(self, screen) -> None:
         """
         Draw the button and its components.

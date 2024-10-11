@@ -26,7 +26,6 @@ class MainMenuScreen(Screen):
         self.quit_button = Button("Quit")
         self.set_state(True)
 
-
     def draw(self) -> None:
         """
         Draw the screen and its components.

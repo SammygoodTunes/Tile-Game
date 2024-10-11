@@ -30,7 +30,6 @@ class Label(Widget):
         self._shadow_colour = (0, 0, 0)
         self._antialiasing = False
 
-
     def draw(self, screen) -> None:
         """
         Draw the label and its components.

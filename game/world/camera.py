@@ -19,7 +19,6 @@ class Camera:
         self.velocity_x = 0
         self.velocity_y = 0
 
-
     def update(self, game) -> None:
         """
         Update the camera.

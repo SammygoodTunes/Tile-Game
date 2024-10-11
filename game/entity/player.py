@@ -57,7 +57,6 @@ class Player:
         self.main_hud = None
         self.player_name = str()
 
-
     def init(self, game) -> None:
         """
         Define the player attributes that depend on the given game object.
