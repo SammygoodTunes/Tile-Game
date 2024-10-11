@@ -26,7 +26,7 @@ def main() -> None:
     """
     Here is where it all begun...
     """
-    faulthandler.enable()
+    # faulthandler.enable()
 
     # pr = cProfile.Profile()
     # pr.enable()
@@ -55,10 +55,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    if sys.stderr is None:
-        stream = io.StringIO()
-        sys.stdout = stream
-        sys.stderr = stream
     logger.info('Starting game...')
     main()
     logger.info('Closing game...')
