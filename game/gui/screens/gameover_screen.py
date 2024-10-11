@@ -34,16 +34,19 @@ class GameoverScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.faded_surface, (0, 0))
-            self.gameover_label.draw(self.window.screen)
-            self.respawn_button.draw(self.window.screen)
-            self.disconnect_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.faded_surface, (0, 0))
+        self.gameover_label.draw(self.window.screen)
+        self.respawn_button.draw(self.window.screen)
+        self.disconnect_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen.
         """
+        if not self._enabled:
+            return
         self.faded_surface = self.initialise_surface()
         self.gameover_label.update(self.window)
         self.gameover_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.respawn_button.get_height() - 25 - self.gameover_label.get_total_height())
@@ -60,3 +63,4 @@ class GameoverScreen(Screen):
         self.gameover_label.set_state(state)
         self.respawn_button.set_state(state)
         self.disconnect_button.set_state(state)
+        if state: self.update_ui()

@@ -50,21 +50,24 @@ class CreditsScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.faded_surface, (0, 0))
-            self.options_label.draw(self.window.screen)
-            self.prog_title_label.draw(self.window.screen)
-            self.prog_value_label.draw(self.window.screen)
-            self.art_title_label.draw(self.window.screen)
-            self.art_value_label.draw(self.window.screen)
-            self.font_title_label.draw(self.window.screen)
-            self.font_value_label.draw(self.window.screen)
-            self.back_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.faded_surface, (0, 0))
+        self.options_label.draw(self.window.screen)
+        self.prog_title_label.draw(self.window.screen)
+        self.prog_value_label.draw(self.window.screen)
+        self.art_title_label.draw(self.window.screen)
+        self.art_value_label.draw(self.window.screen)
+        self.font_title_label.draw(self.window.screen)
+        self.font_value_label.draw(self.window.screen)
+        self.back_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen GUI.
         """
+        if not self._enabled:
+            return
         y = -50 - 40 - self.options_label.font.size(self.options_label.get_text())[1]
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
@@ -101,3 +104,4 @@ class CreditsScreen(Screen):
         self.font_title_label.set_state(state)
         self.font_value_label.set_state(state)
         self.back_button.set_state(state)
+        if state: self.update_ui()

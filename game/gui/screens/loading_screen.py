@@ -36,14 +36,17 @@ class LoadingScreen(Screen):
         """
         Draw the screen and its components
         """
-        if self._enabled:
-            self.window.screen.blit(self.surface, (0, 0))
-            self.progress_bar.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.surface, (0, 0))
+        self.progress_bar.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.surface = self.initialise_surface()
         self.progress_bar.update(self.window)
         self.progress_bar.center(0, 0, self.window.width, self.window.height)
@@ -54,3 +57,4 @@ class LoadingScreen(Screen):
         """
         super().set_state(state)
         self.progress_bar.set_state(state)
+        if state: self.update_ui()

@@ -37,17 +37,20 @@ class ServerMenuScreen(Screen):
 		"""
 		Draw the screen and its components.
 		"""
-		if self._enabled:
-			self.window.screen.blit(self.faded_surface, (0, 0))
-			self.subtitle_label.draw(self.window.screen)
-			self.join_button.draw(self.window.screen)
-			self.create_button.draw(self.window.screen)
-			self.back_button.draw(self.window.screen)
+		if not self._enabled:
+			return
+		self.window.screen.blit(self.faded_surface, (0, 0))
+		self.subtitle_label.draw(self.window.screen)
+		self.join_button.draw(self.window.screen)
+		self.create_button.draw(self.window.screen)
+		self.back_button.draw(self.window.screen)
 
 	def update_ui(self) -> None:
 		"""
 		Update the screen UI.
 		"""
+		if not self._enabled:
+			return
 		self.faded_surface = self.initialise_surface()
 		self.subtitle_label.update(self.window)
 		self.subtitle_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.join_button.get_height() - self.subtitle_label.get_total_height() * 3)
@@ -67,3 +70,4 @@ class ServerMenuScreen(Screen):
 		self.join_button.set_state(state)
 		self.create_button.set_state(state)
 		self.back_button.set_state(state)
+		if state: self.update_ui()

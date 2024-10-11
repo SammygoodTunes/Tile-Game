@@ -43,7 +43,7 @@ class PlayerListScreen(Screen):
         """
         Update the screen UI.
         """
-        if self.game.client.connection_handler.connection is None:
+        if not self._enabled or self.game.client.connection_handler.connection is None:
             return
         players = self.game.client.connection_handler.connection.player_manager.players
         height = 0
@@ -86,3 +86,4 @@ class PlayerListScreen(Screen):
         self.count_label.set_state(state)
         for nametag in self.player_list:
             nametag.set_state(state)
+        if state: self.update_ui()

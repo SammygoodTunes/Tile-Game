@@ -61,6 +61,8 @@ class ServerCreateScreen(Screen):
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.faded_surface = self.initialise_surface()
         self.create_label.update(self.window)
         self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.create_label.get_total_height() * 3)
@@ -85,3 +87,4 @@ class ServerCreateScreen(Screen):
         self.seed_input.set_state(state)
         self.create_button.set_state(state)
         self.back_button.set_state(state)
+        if state: self.update_ui()

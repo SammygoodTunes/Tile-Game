@@ -58,18 +58,21 @@ class OptionsScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.faded_surface, (0, 0))
-            self.options_label.draw(self.window.screen)
-            self.fps_limit_slider.draw(self.window.screen)
-            self.show_fps_box.draw(self.window.screen)
-            self.debug_info_box.draw(self.window.screen)
-            self.back_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.faded_surface, (0, 0))
+        self.options_label.draw(self.window.screen)
+        self.fps_limit_slider.draw(self.window.screen)
+        self.show_fps_box.draw(self.window.screen)
+        self.debug_info_box.draw(self.window.screen)
+        self.back_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
         self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1])
@@ -92,3 +95,4 @@ class OptionsScreen(Screen):
         self.show_fps_box.set_state(state)
         self.debug_info_box.set_state(state)
         self.back_button.set_state(state)
+        if state: self.update_ui()

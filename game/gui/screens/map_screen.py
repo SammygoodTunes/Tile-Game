@@ -54,75 +54,78 @@ class MapScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.game.screen.blit(self.faded_surface, (0, 0))
-            self.title_label.draw(self.game.screen)
-            self.game.screen.blit(self.scaled_map, (self.game.width // 2 - self.scaled_map.get_width() // 2,
-                                                    self.game.height // 2 - self.scaled_map.get_height() // 2))
-            line(self.game.screen, (170, 170, 170),
-                 (self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
-                  self.game.height // 2 - self.scaled_map.get_height() // 2), (
-                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
-                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
-                 ), 2)
-            line(self.game.screen, (170, 170, 170), (self.game.width // 2 - self.scaled_map.get_width() // 2,
-                                                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2),
-                 (
-                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
-                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2
-                 ), 2)
-            line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
-                                                     self.game.height // 2 - self.scaled_map.get_height() // 2), (
-                     self.game.width // 2 - self.scaled_map.get_width() // 2,
-                     self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
-                 ), 2)
-            line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
-                                                     self.game.height // 2 - self.scaled_map.get_height() // 2), (
-                     self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
-                     self.game.height // 2 - self.scaled_map.get_height() // 2
-                 ), 2)
-            rect(self.game.screen, (0, 0, 0), (self.game.width // 2 - self.scaled_map.get_width() // 2 - 2,
-                                               self.game.height // 2 - self.scaled_map.get_height() // 2 - 2,
-                                               self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 2, 4)
+        if not self._enabled:
+            return
+        self.game.screen.blit(self.faded_surface, (0, 0))
+        self.title_label.draw(self.game.screen)
+        self.game.screen.blit(self.scaled_map, (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                self.game.height // 2 - self.scaled_map.get_height() // 2))
+        line(self.game.screen, (170, 170, 170),
+             (self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
+              self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                 self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width() - 2,
+                 self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
+             ), 2)
+        line(self.game.screen, (170, 170, 170), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                 self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2),
+             (
+                 self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
+                 self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height() - 2
+             ), 2)
+        line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                 self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                 self.game.width // 2 - self.scaled_map.get_width() // 2,
+                 self.game.height // 2 - self.scaled_map.get_height() // 2 + self.scaled_map.get_height()
+             ), 2)
+        line(self.game.screen, (225, 225, 225), (self.game.width // 2 - self.scaled_map.get_width() // 2,
+                                                 self.game.height // 2 - self.scaled_map.get_height() // 2), (
+                 self.game.width // 2 - self.scaled_map.get_width() // 2 + self.scaled_map.get_width(),
+                 self.game.height // 2 - self.scaled_map.get_height() // 2
+             ), 2)
+        rect(self.game.screen, (0, 0, 0), (self.game.width // 2 - self.scaled_map.get_width() // 2 - 2,
+                                           self.game.height // 2 - self.scaled_map.get_height() // 2 - 2,
+                                           self.scaled_map.get_width() + 4, self.scaled_map.get_height() + 4), 2, 4)
 
 
-            for player in self.game.client.connection_handler.get_players():
-                is_client_player = player[PlayerBuilder.NAME_KEY] == self.game.client.player.get_player_name()
-                if is_client_player:
-                    center_point = (
-                        self.game.width // 2 - self.scaled_map.get_width() // 2 + (
-                                self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
-                                * (self.game.client.player.get_absolute_x(
-                            self.game.client.world.get_map()) + self.game.client.player.width // 2)
-                        ),
-                        self.game.height // 2 - self.scaled_map.get_height() // 2 + (
-                                self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
-                                * (self.game.client.player.get_absolute_y(
-                            self.game.client.world.get_map()) + self.game.client.player.height // 2)
-                        ),
-                    )
-                else:
-                    center_point = (
-                        self.game.width // 2 - self.scaled_map.get_width() // 2 + (
-                                self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
-                                * (int(player[PlayerBuilder.X_POS_KEY]) + self.game.client.world.get_map().get_width_in_pixels() // 2
-                                + self.game.client.player.width // 2)
-                        ),
-                        self.game.height // 2 - self.scaled_map.get_height() // 2 + (
-                                self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
-                                * (int(player[PlayerBuilder.Y_POS_KEY]) + self.game.client.world.get_map().get_height_in_pixels() // 2
-                                + self.game.client.player.height // 2)
-                        ),
-                    )
+        for player in self.game.client.connection_handler.get_players():
+            is_client_player = player[PlayerBuilder.NAME_KEY] == self.game.client.player.get_player_name()
+            if is_client_player:
+                center_point = (
+                    self.game.width // 2 - self.scaled_map.get_width() // 2 + (
+                            self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
+                            * (self.game.client.player.get_absolute_x(
+                        self.game.client.world.get_map()) + self.game.client.player.width // 2)
+                    ),
+                    self.game.height // 2 - self.scaled_map.get_height() // 2 + (
+                            self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
+                            * (self.game.client.player.get_absolute_y(
+                        self.game.client.world.get_map()) + self.game.client.player.height // 2)
+                    ),
+                )
+            else:
+                center_point = (
+                    self.game.width // 2 - self.scaled_map.get_width() // 2 + (
+                            self.scaled_map.get_width() / self.game.client.world.get_map().get_width_in_pixels()
+                            * (int(player[PlayerBuilder.X_POS_KEY]) + self.game.client.world.get_map().get_width_in_pixels() // 2
+                            + self.game.client.player.width // 2)
+                    ),
+                    self.game.height // 2 - self.scaled_map.get_height() // 2 + (
+                            self.scaled_map.get_height() / self.game.client.world.get_map().get_height_in_pixels()
+                            * (int(player[PlayerBuilder.Y_POS_KEY]) + self.game.client.world.get_map().get_height_in_pixels() // 2
+                            + self.game.client.player.height // 2)
+                    ),
+                )
 
-                circle(self.game.screen, (255 * is_client_player, 0, 255 * (not is_client_player)), center_point, 5)
-                circle(self.game.screen, (255, 255, 255), center_point, 5, 2)
-                circle(self.game.screen, (0, 0, 0), center_point, 6, 2)
+            circle(self.game.screen, (255 * is_client_player, 0, 255 * (not is_client_player)), center_point, 5)
+            circle(self.game.screen, (255, 255, 255), center_point, 5, 2)
+            circle(self.game.screen, (0, 0, 0), center_point, 6, 2)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         if self._got_map:
             coefficient = min(self.game.width / self.game.client.world.get_map().get_width_in_pixels() * 0.5,
                               self.game.height / self.game.client.world.get_map().get_height_in_pixels() * 0.5)
@@ -138,3 +141,4 @@ class MapScreen(Screen):
         """
         super().set_state(state)
         self.title_label.set_state(state)
+        if state: self.update_ui()

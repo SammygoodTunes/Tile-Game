@@ -67,6 +67,8 @@ class ServerJoinScreen(Screen):
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.faded_surface = self.initialise_surface()
         self.join_label.update(self.window)
         self.join_label.center_with_offset(0, 0, self.window.width, self.window.height, 0,
@@ -101,3 +103,4 @@ class ServerJoinScreen(Screen):
         self.port_input.set_state(state)
         self.join_button.set_state(state)
         self.back_button.set_state(state)
+        if state: self.update_ui()

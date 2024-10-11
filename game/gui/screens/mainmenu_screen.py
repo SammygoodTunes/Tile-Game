@@ -30,18 +30,21 @@ class MainMenuScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.title_label.draw(self.window.screen)
-            self.version_label.draw(self.window.screen)
-            self.play_button.draw(self.window.screen)
-            self.options_button.draw(self.window.screen)
-            self.credits_button.draw(self.window.screen)
-            self.quit_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.title_label.draw(self.window.screen)
+        self.version_label.draw(self.window.screen)
+        self.play_button.draw(self.window.screen)
+        self.options_button.draw(self.window.screen)
+        self.credits_button.draw(self.window.screen)
+        self.quit_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.title_label.update(self.window)
         self.title_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.title_label.get_total_height())
         self.version_label.update(self.window)
@@ -66,3 +69,4 @@ class MainMenuScreen(Screen):
         self.options_button.set_state(state)
         self.credits_button.set_state(state)
         self.quit_button.set_state(state)
+        if state: self.update_ui()

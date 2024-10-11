@@ -30,15 +30,18 @@ class CrashScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.surface, (0, 0))
-            self.traceback_label.draw(self.window.screen)
-            self.crash_label.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.surface, (0, 0))
+        self.traceback_label.draw(self.window.screen)
+        self.crash_label.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.crash_label.update(self.window)
         self.crash_label.set_y(24).center_horizontally(0, self.window.width)
         self.traceback_label.update(self.window)
@@ -52,3 +55,4 @@ class CrashScreen(Screen):
         super().set_state(state)
         self.crash_label.set_state(state)
         self.traceback_label.set_state(state)
+        if state: self.update_ui()

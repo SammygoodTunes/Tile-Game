@@ -34,15 +34,18 @@ class ServerConnectScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.faded_surface, (0, 0))
-            self.info_label.draw(self.window.screen)
-            self.back_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.faded_surface, (0, 0))
+        self.info_label.draw(self.window.screen)
+        self.back_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.faded_surface = self.initialise_surface()
         self.info_label.update(self.window)
         self.info_label.center_with_offset(0, 0, self.window.width, self.window.height, 0,
@@ -98,3 +101,4 @@ class ServerConnectScreen(Screen):
         super().set_state(state)
         self.info_label.set_state(state)
         self.back_button.set_state(state)
+        if state: self.update_ui()

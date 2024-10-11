@@ -35,17 +35,20 @@ class PauseScreen(Screen):
         """
         Draw the screen and its components.
         """
-        if self._enabled:
-            self.window.screen.blit(self.faded_surface, (0, 0))
-            self.pause_label.draw(self.window.screen)
-            self.resume_button.draw(self.window.screen)
-            self.options_button.draw(self.window.screen)
-            self.disconnect_button.draw(self.window.screen)
+        if not self._enabled:
+            return
+        self.window.screen.blit(self.faded_surface, (0, 0))
+        self.pause_label.draw(self.window.screen)
+        self.resume_button.draw(self.window.screen)
+        self.options_button.draw(self.window.screen)
+        self.disconnect_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         self.pause_label.update(self.window)
         self.pause_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_button.get_height() - 25 - self.pause_label.font.size(self.pause_label.get_text())[1])
         self.faded_surface = self.initialise_surface()
@@ -65,3 +68,4 @@ class PauseScreen(Screen):
         self.resume_button.set_state(state)
         self.options_button.set_state(state)
         self.disconnect_button.set_state(state)
+        if state: self.update_ui()

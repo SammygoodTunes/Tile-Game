@@ -40,37 +40,40 @@ class MainHud(Screen):
         Draw the screen and its components.
         """
         c_handler = self.game.client.connection_handler
-        if self._enabled:
-            if self.game.screens.options_screen.debug_info_box.is_checked():
-                self.data_sent_label.set_text(f'Data sent: {c_handler.get_total_data_sent():.3f} MB')
-                self.data_recv_label.set_text(f'Data received: {c_handler.get_total_data_received():.3f} MB')
-                self.camera_label.set_text(f'Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
-                self.position_label.set_text(
-                    f'Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
-                self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
-                self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
-                self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 4)
-                self.data_sent_label.set_x(self.game.width - self.data_sent_label.get_total_width() - 2)
-                self.data_sent_label.set_y(self.ping_label.get_y() + self.ping_label.get_total_height() // 2 + 2)
-                self.data_recv_label.set_x(self.game.width - self.data_recv_label.get_total_width() - 2)
-                self.data_recv_label.set_y(
-                    self.data_sent_label.get_y() + self.data_sent_label.get_total_height() // 2 + 2
-                )
-                self.ping_label.draw(self.game.screen)
-                self.data_sent_label.draw(self.game.screen)
-                self.data_recv_label.draw(self.game.screen)
-                self.camera_label.draw(self.game.screen)
-                self.position_label.draw(self.game.screen)
-            self.score_label.set_text(f'Score: {self.game.client.player.score}')
-            self.score_label.draw(self.game.screen)
-            self.health_bar.draw(self.game.screen)
-            self.hotbar.draw(self.game.screen)
-            self.version_label.draw(self.game.screen)
+        if not self._enabled:
+            return
+        if self.game.screens.options_screen.debug_info_box.is_checked():
+            self.data_sent_label.set_text(f'Data sent: {c_handler.get_total_data_sent():.3f} MB')
+            self.data_recv_label.set_text(f'Data received: {c_handler.get_total_data_received():.3f} MB')
+            self.camera_label.set_text(f'Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
+            self.position_label.set_text(
+                f'Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
+            self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
+            self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
+            self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 4)
+            self.data_sent_label.set_x(self.game.width - self.data_sent_label.get_total_width() - 2)
+            self.data_sent_label.set_y(self.ping_label.get_y() + self.ping_label.get_total_height() // 2 + 2)
+            self.data_recv_label.set_x(self.game.width - self.data_recv_label.get_total_width() - 2)
+            self.data_recv_label.set_y(
+                self.data_sent_label.get_y() + self.data_sent_label.get_total_height() // 2 + 2
+            )
+            self.ping_label.draw(self.game.screen)
+            self.data_sent_label.draw(self.game.screen)
+            self.data_recv_label.draw(self.game.screen)
+            self.camera_label.draw(self.game.screen)
+            self.position_label.draw(self.game.screen)
+        self.score_label.set_text(f'Score: {self.game.client.player.score}')
+        self.score_label.draw(self.game.screen)
+        self.health_bar.draw(self.game.screen)
+        self.hotbar.draw(self.game.screen)
+        self.version_label.draw(self.game.screen)
 
     def update_ui(self) -> None:
         """
         Update the screen UI.
         """
+        if not self._enabled:
+            return
         y: int = -8
         self.health_bar.update(self.game)
         self.hotbar.update(self.game)
@@ -107,3 +110,4 @@ class MainHud(Screen):
         self.version_label.set_state(state)
         self.health_bar.set_state(state)
         self.hotbar.set_state(state)
+        if state: self.update_ui()
