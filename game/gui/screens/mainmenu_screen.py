@@ -1,5 +1,5 @@
 import pygame.time
-from numpy import exp, cos, pi
+from numpy import exp, cos, pi, absolute
 
 import game.data.data_manager as data_mng
 from game.gui.screens.screen import Screen
@@ -42,7 +42,7 @@ class MainMenuScreen(Screen):
             self.window.width,
             self.window.height,
             0,
-            -self.title_label.get_total_height() - (abs(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250))
+            -self.title_label.get_total_height() - (absolute(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250))
 
         self.title_label.draw(self.window.screen)
         self.version_label.draw(self.window.screen)
