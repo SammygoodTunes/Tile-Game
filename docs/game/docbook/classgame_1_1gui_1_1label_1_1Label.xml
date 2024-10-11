@@ -107,7 +107,7 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widge
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a5406d9b47d39cfe8caa033c11235524e">DEFAULT_FONT</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1label_1_1Label_1a3556619579260214f8ca0e3846b7d851">DEFAULT_FONT</link> = resource_dir(&apos;game/assets/font.ttf&apos;)</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a5b08064fb7c66db349b99cc0624d8e01">DEFAULT_FONT_SIZE_SMALL</link> = 8</para>
 </listitem>
@@ -478,11 +478,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a15c930
 <indexterm><primary>_y</primary><secondary>game.gui.label.Label</secondary></indexterm>
 <indexterm><primary>game.gui.label.Label</primary><secondary>_y</secondary></indexterm>
 <para><computeroutput>game.gui.label.Label._y<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classgame_1_1gui_1_1label_1_1Label_1a5406d9b47d39cfe8caa033c11235524e"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1label_1_1Label_1a3556619579260214f8ca0e3846b7d851"/><section>
     <title>DEFAULT_FONT</title>
 <indexterm><primary>DEFAULT_FONT</primary><secondary>game.gui.label.Label</secondary></indexterm>
 <indexterm><primary>game.gui.label.Label</primary><secondary>DEFAULT_FONT</secondary></indexterm>
-<para><computeroutput>str game.gui.label.Label.DEFAULT_FONT = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>game.gui.label.Label.DEFAULT_FONT = resource_dir(&apos;game/assets/font.ttf&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1label_1_1Label_1a3ab0f11b121f3c5931c773741cd84616"/><section>
     <title>DEFAULT_FONT_SIZE_LARGE</title>
 <indexterm><primary>DEFAULT_FONT_SIZE_LARGE</primary><secondary>game.gui.label.Label</secondary></indexterm>

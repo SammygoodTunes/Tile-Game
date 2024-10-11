@@ -13,7 +13,7 @@
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a390a165882b6f479f3a3922b3334926b">SPEED_IN_LAVA</link> = <link linkend="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1aa5e31c2dea1719f4e60942cd87d0fb27">SPEED</link> // 3</para>
 </listitem>
-            <listitem><para>str <link linkend="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a16b6717e80f52582619155ee9809fc06">TEXTURE</link> = &quot;assets/player.png&quot;</para>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1a16b6717e80f52582619155ee9809fc06">TEXTURE</link> = resource_dir(&apos;game/assets/player.png&apos;)</para>
 </listitem>
             <listitem><para>float <link linkend="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1ad1edaac593713a83d26ff76b3dd1b884">VELOCITY_START_DURATION</link> = 0.25</para>
 </listitem>
@@ -55,7 +55,7 @@
     <title>TEXTURE</title>
 <indexterm><primary>TEXTURE</primary><secondary>game.data.properties.player_properties.PlayerProperties</secondary></indexterm>
 <indexterm><primary>game.data.properties.player_properties.PlayerProperties</primary><secondary>TEXTURE</secondary></indexterm>
-<para><computeroutput>str game.data.properties.player_properties.PlayerProperties.TEXTURE = &quot;assets/player.png&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str game.data.properties.player_properties.PlayerProperties.TEXTURE = resource_dir(&apos;game/assets/player.png&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties_1ad1edaac593713a83d26ff76b3dd1b884"/><section>
     <title>VELOCITY_START_DURATION</title>
 <indexterm><primary>VELOCITY_START_DURATION</primary><secondary>game.data.properties.player_properties.PlayerProperties</secondary></indexterm>

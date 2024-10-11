@@ -4,13 +4,14 @@ var searchData=
   ['fail_1',['FAIL',['../classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html#a644d53d50aa946448cd10245de9155d3',1,'game::data::states::server_states::ServerStates']]],
   ['false_2',['False',['../namespacegame_1_1utils_1_1logger.html#a392bf60c63874709faeead0993f0701a',1,'game::utils::logger']]],
   ['firestone_3',['FIRESTONE',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a41d80124f783e89ddeb26094db8234f1',1,'game::data::tiles::tiles::Tiles']]],
-  ['font_4',['font',['../classgame_1_1gui_1_1label_1_1Label.html#ad12281cd4c2b2e0032b133b666942af8',1,'game::gui::label::Label']]],
-  ['font_5fpath_5',['FONT_PATH',['../classgame_1_1core_1_1window_1_1Window.html#a19329968a1be8985284cdcf8889f83ef',1,'game::core::window::Window']]],
-  ['font_5ftitle_5flabel_6',['font_title_label',['../classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a34423c29cdea381e71a835f91e7bd1d8',1,'game::gui::screens::credits_screen::CreditsScreen']]],
-  ['font_5fvalue_5flabel_7',['font_value_label',['../classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#aea08c20fdd5776262c4cc8d7a0005ff1',1,'game::gui::screens::credits_screen::CreditsScreen']]],
-  ['format_8',['format',['../namespacegame_1_1utils_1_1logger.html#ad70ca485578aeac4071a9e55b67e46fa',1,'game::utils::logger']]],
-  ['fps_5fcap_9',['fps_cap',['../classgame_1_1core_1_1window_1_1Window.html#aabf9a47512b5ff475011a1a036910d00',1,'game::core::window::Window']]],
-  ['fps_5flimit_5fslider_10',['fps_limit_slider',['../classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#ad75b98028886b9b37357df42cc435720',1,'game::gui::screens::options_screen::OptionsScreen']]],
-  ['freq_5falter_5frange_11',['FREQ_ALTER_RANGE',['../classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a22bbd121a8184d8415953c4175a4f6a6',1,'game::world::synth::noise::PerlinNoise']]],
-  ['fullscreen_12',['fullscreen',['../classgame_1_1core_1_1window_1_1Window.html#a49860a297457a26a186138c7489b3aea',1,'game::core::window::Window']]]
+  ['focused_4',['focused',['../classgame_1_1core_1_1game_1_1Game.html#ac40481a45b422162aa68b51c44c8f8ce',1,'game::core::game::Game']]],
+  ['font_5',['font',['../classgame_1_1gui_1_1label_1_1Label.html#ad12281cd4c2b2e0032b133b666942af8',1,'game::gui::label::Label']]],
+  ['font_5fpath_6',['FONT_PATH',['../classgame_1_1core_1_1window_1_1Window.html#a19329968a1be8985284cdcf8889f83ef',1,'game::core::window::Window']]],
+  ['font_5ftitle_5flabel_7',['font_title_label',['../classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#a34423c29cdea381e71a835f91e7bd1d8',1,'game::gui::screens::credits_screen::CreditsScreen']]],
+  ['font_5fvalue_5flabel_8',['font_value_label',['../classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html#aea08c20fdd5776262c4cc8d7a0005ff1',1,'game::gui::screens::credits_screen::CreditsScreen']]],
+  ['format_9',['format',['../namespacegame_1_1utils_1_1logger.html#ad70ca485578aeac4071a9e55b67e46fa',1,'game::utils::logger']]],
+  ['fps_5fcap_10',['fps_cap',['../classgame_1_1core_1_1window_1_1Window.html#aabf9a47512b5ff475011a1a036910d00',1,'game::core::window::Window']]],
+  ['fps_5flimit_5fslider_11',['fps_limit_slider',['../classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#ad75b98028886b9b37357df42cc435720',1,'game::gui::screens::options_screen::OptionsScreen']]],
+  ['freq_5falter_5frange_12',['FREQ_ALTER_RANGE',['../classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a22bbd121a8184d8415953c4175a4f6a6',1,'game::world::synth::noise::PerlinNoise']]],
+  ['fullscreen_13',['fullscreen',['../classgame_1_1core_1_1window_1_1Window.html#a49860a297457a26a186138c7489b3aea',1,'game::core::window::Window']]]
 ];

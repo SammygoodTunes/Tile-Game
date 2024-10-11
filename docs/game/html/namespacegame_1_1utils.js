@@ -18,6 +18,7 @@ var namespacegame_1_1utils =
       [ "unknown_args", "namespacegame_1_1utils_1_1logger.html#a6618c6eb62cbf0b28673fcdc8384a2f7", null ]
     ] ],
     [ "tools", "namespacegame_1_1utils_1_1tools.html", [
-      [ "c_log2", "namespacegame_1_1utils_1_1tools.html#a3ed44a775ed03df2f15a1e2a26fe2655", null ]
+      [ "c_log2", "namespacegame_1_1utils_1_1tools.html#a3ed44a775ed03df2f15a1e2a26fe2655", null ],
+      [ "resource_dir", "namespacegame_1_1utils_1_1tools.html#a89cc06dcdc3a15b60cbb72bb0d3005ef", null ]
     ] ]
 ];

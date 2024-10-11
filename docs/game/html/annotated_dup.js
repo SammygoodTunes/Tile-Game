@@ -51,6 +51,9 @@ var annotated_dup =
           [ "camera_properties", "namespacegame_1_1data_1_1properties_1_1camera__properties.html", [
             [ "CameraProperties", "classgame_1_1data_1_1properties_1_1camera__properties_1_1CameraProperties.html", null ]
           ] ],
+          [ "game_properties", "namespacegame_1_1data_1_1properties_1_1game__properties.html", [
+            [ "GameProperties", "classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html", null ]
+          ] ],
           [ "player_properties", "namespacegame_1_1data_1_1properties_1_1player__properties.html", [
             [ "PlayerProperties", "classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties.html", null ]
           ] ],

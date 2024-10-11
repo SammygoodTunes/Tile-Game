@@ -52,6 +52,8 @@ Public Member Functions inherited from <link linkend="_classgame_1_1core_1_1wind
 </listitem>
             <listitem><para><link linkend="_classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628">server</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1core_1_1game_1_1Game_1ac40481a45b422162aa68b51c44c8f8ce">focused</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 Public Attributes inherited from <link linkend="_classgame_1_1core_1_1window_1_1Window">game.core.window.Window</link>        <itemizedlist>
@@ -84,7 +86,7 @@ Public Attributes inherited from <link linkend="_classgame_1_1core_1_1window_1_1
 <simplesect>
     <title>Additional Inherited Members    </title>
 Static Public Attributes inherited from <link linkend="_classgame_1_1core_1_1window_1_1Window">game.core.window.Window</link>        <itemizedlist>
-            <listitem><para>str <link linkend="_classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef">FONT_PATH</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
+            <listitem><para>str <link linkend="_classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef">FONT_PATH</link> = resource_dir(&apos;game/assets/font.ttf&apos;)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -101,7 +103,7 @@ Static Public Attributes inherited from <link linkend="_classgame_1_1core_1_1win
 <indexterm><primary>__init__</primary><secondary>game.core.game.Game</secondary></indexterm>
 <indexterm><primary>game.core.game.Game</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput> None game.core.game.Game.__init__ ( self, int window_width, int window_height)</computeroutput></para><para>
-Reimplemented from <link linkend="_classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be">game.core.window.Window</link>.</para>
+Reimplemented from <link linkend="_classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2">game.core.window.Window</link>.</para>
 </section>
 </section>
 <section>
@@ -176,6 +178,11 @@ Loop until user decides to quit the application.
 <indexterm><primary>client</primary><secondary>game.core.game.Game</secondary></indexterm>
 <indexterm><primary>game.core.game.Game</primary><secondary>client</secondary></indexterm>
 <para><computeroutput>game.core.game.Game.client</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1ac40481a45b422162aa68b51c44c8f8ce"/><section>
+    <title>focused</title>
+<indexterm><primary>focused</primary><secondary>game.core.game.Game</secondary></indexterm>
+<indexterm><primary>game.core.game.Game</primary><secondary>focused</secondary></indexterm>
+<para><computeroutput>game.core.game.Game.focused</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628"/><section>
     <title>server</title>
 <indexterm><primary>server</primary><secondary>game.core.game.Game</secondary></indexterm>

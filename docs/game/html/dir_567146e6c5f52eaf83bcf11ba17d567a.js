@@ -6,6 +6,5 @@ var dir_567146e6c5f52eaf83bcf11ba17d567a =
     [ "structures", "dir_eccfc24682ef79e86296997e6081dd9b.html", "dir_eccfc24682ef79e86296997e6081dd9b" ],
     [ "tiles", "dir_1c62cad95607efae3e3ae5982a1feb40.html", "dir_1c62cad95607efae3e3ae5982a1feb40" ],
     [ "__init__.py", "data_2____init_____8py.html", null ],
-    [ "data_manager.py", "data__manager_8py.html", "data__manager_8py" ],
     [ "keys.py", "keys_8py.html", "keys_8py" ]
 ];

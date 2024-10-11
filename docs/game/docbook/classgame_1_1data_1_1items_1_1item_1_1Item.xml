@@ -30,7 +30,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1aae7c708724427e60900af0114a99c71f">DEFAULT_ATLAS</link> = &quot;assets/items.png&quot;</para>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1items_1_1item_1_1Item_1aae7c708724427e60900af0114a99c71f">DEFAULT_ATLAS</link> = resource_dir(&apos;game/assets/items.png&apos;)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -153,7 +153,7 @@
     <title>DEFAULT_ATLAS</title>
 <indexterm><primary>DEFAULT_ATLAS</primary><secondary>game.data.items.item.Item</secondary></indexterm>
 <indexterm><primary>game.data.items.item.Item</primary><secondary>DEFAULT_ATLAS</secondary></indexterm>
-<para><computeroutput>str game.data.items.item.Item.DEFAULT_ATLAS = &quot;assets/items.png&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str game.data.items.item.Item.DEFAULT_ATLAS = resource_dir(&apos;game/assets/items.png&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_item_8py">item.py</link></section>

@@ -112,8 +112,8 @@ Inheritance diagram for game.core.window.Window:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab0a23f6e035bd80321a09899f65101be" id="r_ab0a23f6e035bd80321a09899f65101be"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0a23f6e035bd80321a09899f65101be">__init__</a> (self, int <a class="el" href="#a17e8bda4323a1cf02db736841b8920dd">width</a>, int <a class="el" href="#a55507931f2179fb75459586c09388f54">height</a>, str title=data_mng.get_game_property(data_mng.APP_NAME))</td></tr>
-<tr class="separator:ab0a23f6e035bd80321a09899f65101be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251ea5f2cc30696ed8600054f62619e2" id="r_a251ea5f2cc30696ed8600054f62619e2"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a251ea5f2cc30696ed8600054f62619e2">__init__</a> (self, int <a class="el" href="#a17e8bda4323a1cf02db736841b8920dd">width</a>, int <a class="el" href="#a55507931f2179fb75459586c09388f54">height</a>)</td></tr>
+<tr class="separator:a251ea5f2cc30696ed8600054f62619e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54733b22062312b63cbdc3a965b500e6" id="r_a54733b22062312b63cbdc3a965b500e6"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54733b22062312b63cbdc3a965b500e6">clear</a> (self, tuple[int, int, int] colour)</td></tr>
 <tr class="separator:a54733b22062312b63cbdc3a965b500e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d31402845db3549a13d8a5748661771" id="r_a1d31402845db3549a13d8a5748661771"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d31402845db3549a13d8a5748661771">tick</a> (self)</td></tr>
@@ -150,14 +150,14 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a19329968a1be8985284cdcf8889f83ef" id="r_a19329968a1be8985284cdcf8889f83ef"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19329968a1be8985284cdcf8889f83ef">FONT_PATH</a> = impr.files('assets') / &quot;font.ttf&quot;</td></tr>
+<tr class="memitem:a19329968a1be8985284cdcf8889f83ef" id="r_a19329968a1be8985284cdcf8889f83ef"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19329968a1be8985284cdcf8889f83ef">FONT_PATH</a> = resource_dir('game/assets/font.ttf')</td></tr>
 <tr class="separator:a19329968a1be8985284cdcf8889f83ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Class for creating the window frame in which the game will be contained.
 </pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab0a23f6e035bd80321a09899f65101be" name="ab0a23f6e035bd80321a09899f65101be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0a23f6e035bd80321a09899f65101be">&#9670;&#160;</a></span>__init__()</h2>
+<a id="a251ea5f2cc30696ed8600054f62619e2" name="a251ea5f2cc30696ed8600054f62619e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ea5f2cc30696ed8600054f62619e2">&#9670;&#160;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,12 +175,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">str </td>          <td class="paramname"><span class="paramname"><em>title</em><span class="paramdefsep"> = </span><span class="paramdefval">data_mng.get_game_property(data_mng.APP_NAME)</span></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,7 +312,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">str game.core.window.Window.FONT_PATH = impr.files('assets') / &quot;font.ttf&quot;</td>
+          <td class="memname">str game.core.window.Window.FONT_PATH = resource_dir('game/assets/font.ttf')</td>
         </tr>
       </table>
   </td>

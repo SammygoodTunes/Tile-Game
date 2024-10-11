@@ -17,7 +17,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f">draw</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1afcb756851c0e019215971f85d97caf5a">update_ui</link> (self, bool bypass=False)</para>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001">update_ui</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e">set_state</link> (self, bool state)</para>
 </listitem>
@@ -89,12 +89,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <para>
 Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc">game.gui.screens.screen.Screen</link>.</para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1afcb756851c0e019215971f85d97caf5a"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001"/><section>
     <title>update_ui()</title>
 <indexterm><primary>update_ui</primary><secondary>game.gui.screens.playerlist_screen.PlayerListScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.playerlist_screen.PlayerListScreen</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput> None game.gui.screens.playerlist_screen.PlayerListScreen.update_ui ( self, bool  bypass = <computeroutput>False</computeroutput>
-)</computeroutput></para>
+<para><computeroutput> None game.gui.screens.playerlist_screen.PlayerListScreen.update_ui ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Update the screen UI.
 </computeroutput></literallayout> </para>
 </section>

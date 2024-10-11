@@ -1,6 +1,6 @@
 var classgame_1_1core_1_1window_1_1Window =
 [
-    [ "__init__", "classgame_1_1core_1_1window_1_1Window.html#ab0a23f6e035bd80321a09899f65101be", null ],
+    [ "__init__", "classgame_1_1core_1_1window_1_1Window.html#a251ea5f2cc30696ed8600054f62619e2", null ],
     [ "clear", "classgame_1_1core_1_1window_1_1Window.html#a54733b22062312b63cbdc3a965b500e6", null ],
     [ "draw_fps", "classgame_1_1core_1_1window_1_1Window.html#ac19611f83ab29c8f3acfee6cb4442862", null ],
     [ "resize", "classgame_1_1core_1_1window_1_1Window.html#a0e438a403216d30673771bf0b1bb810a", null ],

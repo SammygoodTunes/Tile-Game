@@ -9,7 +9,7 @@ var searchData=
   ['debug_5finfo_5fbox_6',['debug_info_box',['../classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#aaccf0955f621c932e9f8088b73e8e7a9',1,'game::gui::screens::options_screen::OptionsScreen']]],
   ['default_7',['default',['../namespacegame_1_1utils_1_1logger.html#a09dc4608f37c8f0e5a6bd661abcfc757',1,'game::utils::logger']]],
   ['default_5fatlas_8',['DEFAULT_ATLAS',['../classgame_1_1data_1_1items_1_1item_1_1Item.html#aae7c708724427e60900af0114a99c71f',1,'game.data.items.item.Item.DEFAULT_ATLAS'],['../classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html#ad0b1894c1684fe8f7a0b65d16f607fbd',1,'game.data.tiles.tile.Tile.DEFAULT_ATLAS']]],
-  ['default_5ffont_9',['DEFAULT_FONT',['../classgame_1_1gui_1_1label_1_1Label.html#a5406d9b47d39cfe8caa033c11235524e',1,'game::gui::label::Label']]],
+  ['default_5ffont_9',['DEFAULT_FONT',['../classgame_1_1gui_1_1label_1_1Label.html#a3556619579260214f8ca0e3846b7d851',1,'game::gui::label::Label']]],
   ['default_5ffont_5fsize_5flarge_10',['DEFAULT_FONT_SIZE_LARGE',['../classgame_1_1gui_1_1label_1_1Label.html#a3ab0f11b121f3c5931c773741cd84616',1,'game::gui::label::Label']]],
   ['default_5ffont_5fsize_5fnormal_11',['DEFAULT_FONT_SIZE_NORMAL',['../classgame_1_1gui_1_1label_1_1Label.html#a2d3e87f45467cfebfaeddcbd270b84ae',1,'game::gui::label::Label']]],
   ['default_5ffont_5fsize_5fsmall_12',['DEFAULT_FONT_SIZE_SMALL',['../classgame_1_1gui_1_1label_1_1Label.html#a5b08064fb7c66db349b99cc0624d8e01',1,'game::gui::label::Label']]],

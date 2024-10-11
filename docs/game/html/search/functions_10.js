@@ -9,5 +9,6 @@ var searchData=
   ['reset_5finfo_5flabel_6',['reset_info_label',['../classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html#ad8331e211329d45a117b496acc69f15b',1,'game::gui::screens::serverconnect_screen::ServerConnectScreen']]],
   ['reset_5fmap_7',['reset_map',['../classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#aa634dc82e657c3c85dedbe61b218c226',1,'game::gui::screens::map_screen::MapScreen']]],
   ['resize_8',['resize',['../classgame_1_1core_1_1window_1_1Window.html#a0e438a403216d30673771bf0b1bb810a',1,'game::core::window::Window']]],
-  ['run_9',['run',['../classserver_1_1Server.html#a716891b0e0ec7f4ec0b1f0fbc7362b72',1,'server::Server']]]
+  ['resource_5fdir_9',['resource_dir',['../namespacegame_1_1utils_1_1tools.html#a89cc06dcdc3a15b60cbb72bb0d3005ef',1,'game::utils::tools']]],
+  ['run_10',['run',['../classserver_1_1Server.html#a716891b0e0ec7f4ec0b1f0fbc7362b72',1,'server::Server']]]
 ];

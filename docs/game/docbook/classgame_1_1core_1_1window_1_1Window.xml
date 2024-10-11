@@ -13,7 +13,7 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be">__init__</link> (self, int <link linkend="_classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd">width</link>, int <link linkend="_classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54">height</link>, str title=data_mng.get_game_property(data_mng.APP_NAME))</para>
+            <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2">__init__</link> (self, int <link linkend="_classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd">width</link>, int <link linkend="_classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54">height</link>)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6">clear</link> (self, tuple[int, int, int] colour)</para>
 </listitem>
@@ -55,7 +55,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef">FONT_PATH</link> = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;</para>
+            <listitem><para>str <link linkend="_classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef">FONT_PATH</link> = resource_dir(&apos;game/assets/font.ttf&apos;)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -67,12 +67,11 @@
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be"/><section>
+<anchor xml:id="_classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>game.core.window.Window</secondary></indexterm>
 <indexterm><primary>game.core.window.Window</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput> None game.core.window.Window.__init__ ( self, int width, int height, str  title = <computeroutput>data_mng.get_game_property(data_mng.APP_NAME)</computeroutput>
-)</computeroutput></para><para>
+<para><computeroutput> None game.core.window.Window.__init__ ( self, int width, int height)</computeroutput></para><para>
 Reimplemented in <link linkend="_classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9">game.core.game.Game</link>.</para>
 </section>
 </section>
@@ -133,7 +132,7 @@ Reimplemented in <link linkend="_classgame_1_1core_1_1game_1_1Game_1aaccb123b84b
     <title>FONT_PATH</title>
 <indexterm><primary>FONT_PATH</primary><secondary>game.core.window.Window</secondary></indexterm>
 <indexterm><primary>game.core.window.Window</primary><secondary>FONT_PATH</secondary></indexterm>
-<para><computeroutput>str game.core.window.Window.FONT_PATH = impr.files(&apos;assets&apos;) / &quot;font.ttf&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str game.core.window.Window.FONT_PATH = resource_dir(&apos;game/assets/font.ttf&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1core_1_1window_1_1Window_1aabf9a47512b5ff475011a1a036910d00"/><section>
     <title>fps_cap</title>
 <indexterm><primary>fps_cap</primary><secondary>game.core.window.Window</secondary></indexterm>

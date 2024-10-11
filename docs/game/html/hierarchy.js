@@ -19,6 +19,7 @@ var hierarchy =
       [ "game.utils.exceptions.PlayerNameAlreadyExists", "classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists.html", null ],
       [ "game.utils.exceptions.ZeroOrLessSpawnPlayerAttempts", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", null ]
     ] ],
+    [ "game.data.properties.game_properties.GameProperties", "classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html", null ],
     [ "packet.Hasher", "classpacket_1_1Hasher.html", null ],
     [ "game.data.items.item.Item", "classgame_1_1data_1_1items_1_1item_1_1Item.html", null ],
     [ "game.world.item_manager.ItemManager", "classgame_1_1world_1_1item__manager_1_1ItemManager.html", null ],

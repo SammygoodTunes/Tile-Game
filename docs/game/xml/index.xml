@@ -178,6 +178,7 @@
   <compound refid="classgame_1_1core_1_1game_1_1Game" kind="class"><name>game::core::game::Game</name>
     <member refid="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" kind="variable"><name>client</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628" kind="variable"><name>server</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1ac40481a45b422162aa68b51c44c8f8ce" kind="variable"><name>focused</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c" kind="variable"><name>_running</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad" kind="function"><name>update</name></member>
@@ -199,6 +200,12 @@
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" kind="function"><name>set_state</name></member>
+  </compound>
+  <compound refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties" kind="class"><name>game::data::properties::game_properties::GameProperties</name>
+    <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1ae4c99bc1cde46c8445af986d4d102549" kind="variable"><name>APP_NAME</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a29dec71ac57560f91bc5f5277f32fa91" kind="variable"><name>APP_VER</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a11aff4ecff67ba4acd6fd5f405bb9c66" kind="variable"><name>KEY_DELAY</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a4e2627118d7ae2243cb1c662cf17045a" kind="variable"><name>KEY_INTERVAL</name></member>
   </compound>
   <compound refid="classpacket_1_1Hasher" kind="class"><name>packet::Hasher</name>
     <member refid="classpacket_1_1Hasher_1a392ea5de974cdf1c56e2b8ddecb410eb" kind="function"><name>hash</name></member>
@@ -386,7 +393,7 @@
     <member refid="classgame_1_1data_1_1keys_1_1Keys_1af303c93444827219120d692a615fb923" kind="variable"><name>SHOW_PLAYERLIST</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1label_1_1Label" kind="class"><name>game::gui::label::Label</name>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a5406d9b47d39cfe8caa033c11235524e" kind="variable"><name>DEFAULT_FONT</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a3556619579260214f8ca0e3846b7d851" kind="variable"><name>DEFAULT_FONT</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a5b08064fb7c66db349b99cc0624d8e01" kind="variable"><name>DEFAULT_FONT_SIZE_SMALL</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a2d3e87f45467cfebfaeddcbd270b84ae" kind="variable"><name>DEFAULT_FONT_SIZE_NORMAL</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a3ab0f11b121f3c5931c773741cd84616" kind="variable"><name>DEFAULT_FONT_SIZE_LARGE</name></member>
@@ -743,7 +750,7 @@
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad33b79a0cb1e7187da2d42dd8eaa3943" kind="variable"><name>_playercount_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1afcb756851c0e019215971f85d97caf5a" kind="function"><name>update_ui</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1client_1_1player__manager_1_1PlayerManager" kind="class"><name>game::client::player_manager::PlayerManager</name>
@@ -1119,7 +1126,7 @@
     <member refid="classgame_1_1core_1_1window_1_1Window_1a49860a297457a26a186138c7489b3aea" kind="variable"><name>fullscreen</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1ac137470f44be458eebc83b0ea0cf5268" kind="variable"><name>old_width</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1aa7b97bc5dd4b5ec1182a26bee1d17f4f" kind="variable"><name>old_height</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1ab0a23f6e035bd80321a09899f65101be" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" kind="function"><name>clear</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a1d31402845db3549a13d8a5748661771" kind="function"><name>tick</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a0e438a403216d30673771bf0b1bb810a" kind="function"><name>resize</name></member>
@@ -1163,6 +1170,9 @@
   </compound>
   <compound refid="namespacegame" kind="namespace"><name>game</name>
   </compound>
+  <compound refid="namespacegame_1_1____main____" kind="namespace"><name>game::__main__</name>
+    <member refid="namespacegame_1_1____main_____1a6073d6beda9636d842b38615bad8b8ab" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="namespacegame_1_1client" kind="namespace"><name>game::client</name>
   </compound>
   <compound refid="namespacegame_1_1client_1_1client" kind="namespace"><name>game::client::client</name>
@@ -1183,17 +1193,6 @@
   </compound>
   <compound refid="namespacegame_1_1data" kind="namespace"><name>game::data</name>
   </compound>
-  <compound refid="namespacegame_1_1data_1_1data__manager" kind="namespace"><name>game::data::data_manager</name>
-    <member refid="namespacegame_1_1data_1_1data__manager_1ad49100db2528e257da62127b3897aed9" kind="variable"><name>GAME_PROPERTIES_FILE</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1aea9c548407eaa0a010fa166c5bb7c140" kind="variable"><name>GAME_PROPERTIES_SEPARATOR</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1af1cb7ee1fd2b0132bb546f57051d0951" kind="variable"><name>APP_NAME</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1af2ded03d2e4f9c2e5eace87dc0ac4ac9" kind="variable"><name>APP_VERSION</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1aaa8fd60796069be87ee9d99983b6a994" kind="variable"><name>KEY_DELAY</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1a32d858a3ec266134927650263b5249d0" kind="variable"><name>KEY_INTERVAL</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1ac1b3a4746fada7a18779747bca7b4fde" kind="function"><name>get_game_properties</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1ab6d23b9dd1104d97c8f98bd80f888a39" kind="function"><name>get_game_property</name></member>
-    <member refid="namespacegame_1_1data_1_1data__manager_1af39030728b711ba8672e24245b4fdd2b" kind="function"><name>verify_game_property_values</name></member>
-  </compound>
   <compound refid="namespacegame_1_1data_1_1items" kind="namespace"><name>game::data::items</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1items_1_1item" kind="namespace"><name>game::data::items::item</name>
@@ -1207,6 +1206,8 @@
   <compound refid="namespacegame_1_1data_1_1properties" kind="namespace"><name>game::data::properties</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1properties_1_1camera__properties" kind="namespace"><name>game::data::properties::camera_properties</name>
+  </compound>
+  <compound refid="namespacegame_1_1data_1_1properties_1_1game__properties" kind="namespace"><name>game::data::properties::game_properties</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1properties_1_1player__properties" kind="namespace"><name>game::data::properties::player_properties</name>
   </compound>
@@ -1304,9 +1305,6 @@
   </compound>
   <compound refid="namespacegame_1_1gui_1_1widget" kind="namespace"><name>game::gui::widget</name>
   </compound>
-  <compound refid="namespacegame_1_1main" kind="namespace"><name>game::main</name>
-    <member refid="namespacegame_1_1main_1ad1622dfa723ea441096cb2c5d2f7a906" kind="function"><name>main</name></member>
-  </compound>
   <compound refid="namespacegame_1_1utils" kind="namespace"><name>game::utils</name>
   </compound>
   <compound refid="namespacegame_1_1utils_1_1exceptions" kind="namespace"><name>game::utils::exceptions</name>
@@ -1329,6 +1327,7 @@
   </compound>
   <compound refid="namespacegame_1_1utils_1_1tools" kind="namespace"><name>game::utils::tools</name>
     <member refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" kind="function"><name>c_log2</name></member>
+    <member refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" kind="function"><name>resource_dir</name></member>
   </compound>
   <compound refid="namespacegame_1_1world" kind="namespace"><name>game::world</name>
   </compound>
@@ -1363,6 +1362,8 @@
   </compound>
   <compound refid="namespaceworld__handler" kind="namespace"><name>world_handler</name>
   </compound>
+  <compound refid="____main_____8py" kind="file"><name>__main__.py</name>
+  </compound>
   <compound refid="client_8py" kind="file"><name>client.py</name>
   </compound>
   <compound refid="connection_8py" kind="file"><name>connection.py</name>
@@ -1379,8 +1380,6 @@
   </compound>
   <compound refid="window_8py" kind="file"><name>window.py</name>
   </compound>
-  <compound refid="data__manager_8py" kind="file"><name>data_manager.py</name>
-  </compound>
   <compound refid="item_8py" kind="file"><name>item.py</name>
   </compound>
   <compound refid="item__types_8py" kind="file"><name>item_types.py</name>
@@ -1390,6 +1389,8 @@
   <compound refid="keys_8py" kind="file"><name>keys.py</name>
   </compound>
   <compound refid="camera__properties_8py" kind="file"><name>camera_properties.py</name>
+  </compound>
+  <compound refid="game__properties_8py" kind="file"><name>game_properties.py</name>
   </compound>
   <compound refid="player__properties_8py" kind="file"><name>player_properties.py</name>
   </compound>
@@ -1504,8 +1505,6 @@
   <compound refid="slot_8py" kind="file"><name>slot.py</name>
   </compound>
   <compound refid="widget_8py" kind="file"><name>widget.py</name>
-  </compound>
-  <compound refid="main_8py" kind="file"><name>main.py</name>
   </compound>
   <compound refid="builders_8py" kind="file"><name>builders.py</name>
   </compound>

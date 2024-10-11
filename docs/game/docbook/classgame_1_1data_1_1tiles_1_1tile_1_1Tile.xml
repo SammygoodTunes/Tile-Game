@@ -38,7 +38,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>str <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1ad0b1894c1684fe8f7a0b65d16f607fbd">DEFAULT_ATLAS</link> = &quot;assets/atlas.png&quot;</para>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1ad0b1894c1684fe8f7a0b65d16f607fbd">DEFAULT_ATLAS</link> = resource_dir(&apos;game/assets/atlas.png&apos;)</para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aadcc96d6ea4bacf369a8483fabf1c1fc">count_id</link> = count()</para>
 </listitem>
@@ -212,7 +212,7 @@
     <title>DEFAULT_ATLAS</title>
 <indexterm><primary>DEFAULT_ATLAS</primary><secondary>game.data.tiles.tile.Tile</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile.Tile</primary><secondary>DEFAULT_ATLAS</secondary></indexterm>
-<para><computeroutput>str game.data.tiles.tile.Tile.DEFAULT_ATLAS = &quot;assets/atlas.png&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str game.data.tiles.tile.Tile.DEFAULT_ATLAS = resource_dir(&apos;game/assets/atlas.png&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_tile_8py">tile.py</link></section>

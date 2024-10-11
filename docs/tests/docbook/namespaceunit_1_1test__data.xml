@@ -5,16 +5,6 @@
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a5e2cfa0df30c5c4bbecb81bb59832351">test_data_folder_exists</link> ()</para>
-</listitem>
-            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a86a71ab930ae9e07ad302ed5b9a12e2f">test_game_properties_file_exists</link> ()</para>
-</listitem>
-            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a03ad00936e3bc2c2982751c63343daea">test_get_game_properties_exists</link> ()</para>
-</listitem>
-            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a7c198710a7bb79848f3568ea1954d463">test_get_game_property</link> ()</para>
-</listitem>
-            <listitem><para><link linkend="_namespaceunit_1_1test__data_1a0546bce1417b5771869c6835e0ec2049">test_get_game_properties</link> ()</para>
-</listitem>
             <listitem><para><link linkend="_namespaceunit_1_1test__data_1ab1a725d687668278a3799846bad635b8">test_item_creation</link> ()</para>
 </listitem>
             <listitem><para><link linkend="_namespaceunit_1_1test__data_1a6b74d1583d80413fc27df33bb3de2c8b">test_mouse_properties</link> ()</para>
@@ -33,51 +23,6 @@
 </section>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_namespaceunit_1_1test__data_1a5e2cfa0df30c5c4bbecb81bb59832351"/><section>
-    <title>test_data_folder_exists()</title>
-<indexterm><primary>test_data_folder_exists</primary><secondary>unit.test_data</secondary></indexterm>
-<indexterm><primary>unit.test_data</primary><secondary>test_data_folder_exists</secondary></indexterm>
-<para><computeroutput>unit.test_data.test_data_folder_exists ( )</computeroutput></para>
-<para><literallayout><computeroutput>Test: data_folder_exists
-Desc: Tests if the data folder exists.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_namespaceunit_1_1test__data_1a86a71ab930ae9e07ad302ed5b9a12e2f"/><section>
-    <title>test_game_properties_file_exists()</title>
-<indexterm><primary>test_game_properties_file_exists</primary><secondary>unit.test_data</secondary></indexterm>
-<indexterm><primary>unit.test_data</primary><secondary>test_game_properties_file_exists</secondary></indexterm>
-<para><computeroutput>unit.test_data.test_game_properties_file_exists ( )</computeroutput></para>
-<para><literallayout><computeroutput>Test: game_properties_file_exists
-Desc: Tests if the game properties file exists.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_namespaceunit_1_1test__data_1a0546bce1417b5771869c6835e0ec2049"/><section>
-    <title>test_get_game_properties()</title>
-<indexterm><primary>test_get_game_properties</primary><secondary>unit.test_data</secondary></indexterm>
-<indexterm><primary>unit.test_data</primary><secondary>test_get_game_properties</secondary></indexterm>
-<para><computeroutput>unit.test_data.test_get_game_properties ( )</computeroutput></para>
-<para><literallayout><computeroutput>Test: get_game_properties
-Desc: Tests if the get_game_properties function returns the correct keys and values.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_namespaceunit_1_1test__data_1a03ad00936e3bc2c2982751c63343daea"/><section>
-    <title>test_get_game_properties_exists()</title>
-<indexterm><primary>test_get_game_properties_exists</primary><secondary>unit.test_data</secondary></indexterm>
-<indexterm><primary>unit.test_data</primary><secondary>test_get_game_properties_exists</secondary></indexterm>
-<para><computeroutput>unit.test_data.test_get_game_properties_exists ( )</computeroutput></para>
-<para><literallayout><computeroutput>Test: get_game_properties_exists
-Desc: Tests if all game property keys exist in the game properties file.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_namespaceunit_1_1test__data_1a7c198710a7bb79848f3568ea1954d463"/><section>
-    <title>test_get_game_property()</title>
-<indexterm><primary>test_get_game_property</primary><secondary>unit.test_data</secondary></indexterm>
-<indexterm><primary>unit.test_data</primary><secondary>test_get_game_property</secondary></indexterm>
-<para><computeroutput>unit.test_data.test_get_game_property ( )</computeroutput></para>
-<para><literallayout><computeroutput>Test: get_game_property
-Desc: Tests if the get_game_property function returns the correct value from the key it was given.
-</computeroutput></literallayout> </para>
-</section>
 <anchor xml:id="_namespaceunit_1_1test__data_1ab1a725d687668278a3799846bad635b8"/><section>
     <title>test_item_creation()</title>
 <indexterm><primary>test_item_creation</primary><secondary>unit.test_data</secondary></indexterm>

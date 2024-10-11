@@ -7,6 +7,8 @@
         <itemizedlist>
             <listitem><para>int <link linkend="_namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655">c_log2</link> (SupportsFloat|SupportsIndex x)</para>
 </listitem>
+            <listitem><para><link linkend="_namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef">resource_dir</link> (str directory)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -16,5 +18,10 @@
 <indexterm><primary>c_log2</primary><secondary>game.utils.tools</secondary></indexterm>
 <indexterm><primary>game.utils.tools</primary><secondary>c_log2</secondary></indexterm>
 <para><computeroutput> int game.utils.tools.c_log2 (SupportsFloat | SupportsIndex x)</computeroutput></para></section>
+<anchor xml:id="_namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef"/><section>
+    <title>resource_dir()</title>
+<indexterm><primary>resource_dir</primary><secondary>game.utils.tools</secondary></indexterm>
+<indexterm><primary>game.utils.tools</primary><secondary>resource_dir</secondary></indexterm>
+<para><computeroutput>game.utils.tools.resource_dir (str directory)</computeroutput></para></section>
 </section>
 </section>

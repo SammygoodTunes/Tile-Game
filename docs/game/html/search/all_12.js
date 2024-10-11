@@ -13,9 +13,10 @@ var searchData=
   ['reset_5finfo_5flabel_10',['reset_info_label',['../classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html#ad8331e211329d45a117b496acc69f15b',1,'game::gui::screens::serverconnect_screen::ServerConnectScreen']]],
   ['reset_5fmap_11',['reset_map',['../classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#aa634dc82e657c3c85dedbe61b218c226',1,'game::gui::screens::map_screen::MapScreen']]],
   ['resize_12',['resize',['../classgame_1_1core_1_1window_1_1Window.html#a0e438a403216d30673771bf0b1bb810a',1,'game::core::window::Window']]],
-  ['respawn_5fbutton_13',['respawn_button',['../classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#a3af7f91700998108d39945c71620a181',1,'game::gui::screens::gameover_screen::GameoverScreen']]],
-  ['resume_5fbutton_14',['resume_button',['../classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a16d18c54f4a3fcae49ed88068d845fd3',1,'game::gui::screens::pause_screen::PauseScreen']]],
-  ['rmb_15',['RMB',['../classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html#a5fe6d79e3e959c869c2cd96b42ac3fba',1,'game::data::states::mouse_states::MouseStates']]],
-  ['run_16',['run',['../classserver_1_1Server.html#a716891b0e0ec7f4ec0b1f0fbc7362b72',1,'server::Server']]],
-  ['running_17',['RUNNING',['../classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html#a3ef49896b69b7cf794b7c15baaa0620e',1,'game::data::states::server_states::ServerStates']]]
+  ['resource_5fdir_13',['resource_dir',['../namespacegame_1_1utils_1_1tools.html#a89cc06dcdc3a15b60cbb72bb0d3005ef',1,'game::utils::tools']]],
+  ['respawn_5fbutton_14',['respawn_button',['../classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#a3af7f91700998108d39945c71620a181',1,'game::gui::screens::gameover_screen::GameoverScreen']]],
+  ['resume_5fbutton_15',['resume_button',['../classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a16d18c54f4a3fcae49ed88068d845fd3',1,'game::gui::screens::pause_screen::PauseScreen']]],
+  ['rmb_16',['RMB',['../classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html#a5fe6d79e3e959c869c2cd96b42ac3fba',1,'game::data::states::mouse_states::MouseStates']]],
+  ['run_17',['run',['../classserver_1_1Server.html#a716891b0e0ec7f4ec0b1f0fbc7362b72',1,'server::Server']]],
+  ['running_18',['RUNNING',['../classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html#a3ef49896b69b7cf794b7c15baaa0620e',1,'game::data::states::server_states::ServerStates']]]
 ];

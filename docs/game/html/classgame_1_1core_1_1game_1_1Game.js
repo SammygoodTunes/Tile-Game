@@ -10,5 +10,6 @@ var classgame_1_1core_1_1game_1_1Game =
     [ "update_loop", "classgame_1_1core_1_1game_1_1Game.html#a1aae5d34f93a9cd86ef8f4749c7b1227", null ],
     [ "_running", "classgame_1_1core_1_1game_1_1Game.html#a582bded063a50acf0a78c537fa448f6c", null ],
     [ "client", "classgame_1_1core_1_1game_1_1Game.html#ae64b7fe54eebd9997fa0720b6e84ec94", null ],
+    [ "focused", "classgame_1_1core_1_1game_1_1Game.html#ac40481a45b422162aa68b51c44c8f8ce", null ],
     [ "server", "classgame_1_1core_1_1game_1_1Game.html#a4409fc4bab20a58fd167645e86010628", null ]
 ];
