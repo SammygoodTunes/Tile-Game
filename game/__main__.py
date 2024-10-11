@@ -12,6 +12,7 @@ import faulthandler
 import cProfile
 import io
 import pstats
+import sys
 from pstats import SortKey
 
 from pygame import init, quit, display
@@ -54,6 +55,10 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+    if sys.stderr is None:
+        stream = io.StringIO()
+        sys.stdout = stream
+        sys.stderr = stream
     logger.info('Starting game...')
     main()
     logger.info('Closing game...')
