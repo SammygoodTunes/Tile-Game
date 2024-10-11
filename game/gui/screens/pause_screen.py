@@ -52,12 +52,13 @@ class PauseScreen(Screen):
         self.pause_label.update(self.window)
         self.pause_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_button.get_height() - 25 - self.pause_label.font.size(self.pause_label.get_text())[1])
         self.faded_surface = self.initialise_surface()
-        self.resume_button.update(self.window)
-        self.resume_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.disconnect_button.get_height() - 5)
         self.options_button.update(self.window)
         self.options_button.center(0, 0, self.window.width, self.window.height)
         self.disconnect_button.update(self.window)
         self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.options_button.get_height() + 5)
+        self.resume_button.update(self.window)
+        self.resume_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.disconnect_button.get_height() - 5)
+
 
     def set_state(self, state: bool) -> None:
         """

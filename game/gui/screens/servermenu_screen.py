@@ -55,9 +55,9 @@ class ServerMenuScreen(Screen):
 		self.subtitle_label.update(self.window)
 		self.subtitle_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.join_button.get_height() - self.subtitle_label.get_total_height() * 3)
 		self.join_button.update(self.window)
-		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, int(-self.create_button.get_width() // 1.5), -self.join_button.get_height())
+		self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, int(-self.join_button.get_width() // 1.5), -self.join_button.get_height())
 		self.create_button.update(self.window)
-		self.create_button.center_with_offset(0, 0, self.window.width, self.window.height, int(self.join_button.get_width() // 1.5), -self.join_button.get_height())
+		self.create_button.center_with_offset(0, 0, self.window.width, self.window.height, int(self.create_button.get_width() // 1.5), -self.join_button.get_height())
 		self.back_button.update(self.window)
 		self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.join_button.get_height() + self.create_button.get_height() + 10)
 
