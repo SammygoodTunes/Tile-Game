@@ -192,7 +192,7 @@ class Player:
 
         # comp_move = self.move
 
-        if not game.paused:
+        if not game.paused and game.focused:
             self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[Keys.MOVE_LEFT] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
             self.move = self.move | (1 << PlayerStates.MOVE_UP) if keys[Keys.MOVE_UP] else self.move & ~(1 << PlayerStates.MOVE_UP)
             self.move = self.move | (1 << PlayerStates.MOVE_RIGHT) if keys[Keys.MOVE_RIGHT] else self.move & ~(1 << PlayerStates.MOVE_RIGHT)

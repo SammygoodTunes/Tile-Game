@@ -51,10 +51,12 @@ class Game(Window):
         """
         Verify for any potential pygame events and update the targeted elements accordingly.
         """
+        print(self.focused)
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 self.stop()
             elif e.type == pygame.KEYDOWN:
+                self.focused = True
                 if e.key == pygame.K_RETURN and pygame.key.get_mods() & pygame.KMOD_ALT:
                     self.toggle_fullscreen()
                     self.update_all_uis()
@@ -62,9 +64,13 @@ class Game(Window):
             elif e.type == pygame.VIDEORESIZE:
                 self.resize(e)
                 self.update_all_uis()
+                self.focused = False
+                pygame.event.clear(pygame.KEYDOWN)
                 continue
             elif e.type == pygame.VIDEOEXPOSE:
                 self.update_all_uis()
+                self.focused = False
+                pygame.event.clear(pygame.KEYDOWN)
                 continue
             self.client.events(self, e)
             self.screens.events(e)

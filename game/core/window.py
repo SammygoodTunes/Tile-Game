@@ -29,7 +29,7 @@ class Window:
         self.font: pygame.font.Font = pygame.font.Font(Window.FONT_PATH, 11)
         self.screens: Screens = Screens(self)
         self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8))
-
+        self.focused: bool = True
         self.paused: bool = False
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
