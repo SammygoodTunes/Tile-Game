@@ -100,12 +100,16 @@ class Screens:
             if e.key == pygame.K_TAB:
                 self.task_tab()
 
-        if self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
-            self.map_screen.set_state(keys[Keys.SHOW_MAP])
-            self.player_list_screen.set_state(keys[Keys.SHOW_PLAYERLIST])
-        else:
-            self.map_screen.set_state(False)
-            self.player_list_screen.set_state(False)
+            if e.key == Keys.SHOW_MAP and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
+                self.map_screen.set_state(True)
+            if e.key == Keys.SHOW_PLAYERLIST and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
+                self.player_list_screen.set_state(True)
+
+        if e.type == pygame.KEYUP:
+            if e.key == Keys.SHOW_MAP and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
+                self.map_screen.set_state(False)
+            if e.key == Keys.SHOW_PLAYERLIST and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
+                self.player_list_screen.set_state(False)
 
         if e.type != pygame.MOUSEBUTTONUP:
             return
@@ -211,6 +215,8 @@ class Screens:
             self.gameover_screen.set_state(False)
             self.main_menu_screen.set_state(True)
             self.map_screen.reset_map()
+            self.map_screen.set_state(False)
+            self.player_list_screen.set_state(False)
             self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
 
     def update(self) -> None:

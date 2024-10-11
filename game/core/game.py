@@ -23,7 +23,6 @@ class Game(Window):
         self.server = Server()
         verify_game_property_values()
         self.client.initialise(self)
-        self.update_all_uis()
 
     def update(self) -> None:
         """

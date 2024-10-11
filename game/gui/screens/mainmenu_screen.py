@@ -1,9 +1,10 @@
+import pygame.time
+from numpy import exp, cos, pi
 
 import game.data.data_manager as data_mng
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
-from game.utils.logger import logger
 
 
 class MainMenuScreen(Screen):
@@ -24,6 +25,7 @@ class MainMenuScreen(Screen):
         self.options_button = Button("Options")
         self.credits_button = Button("Credits")
         self.quit_button = Button("Quit")
+        self.title_label_time: float = pygame.time.get_ticks() / 1000.0
         self.set_state(True)
 
     def draw(self) -> None:
@@ -32,6 +34,16 @@ class MainMenuScreen(Screen):
         """
         if not self._enabled:
             return
+        label_time = pygame.time.get_ticks() / 1000.0 - self.title_label_time
+        self.title_label.update(self.window)
+        self.title_label.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            -self.title_label.get_total_height() - (abs(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250))
+
         self.title_label.draw(self.window.screen)
         self.version_label.draw(self.window.screen)
         self.play_button.draw(self.window.screen)
@@ -45,8 +57,7 @@ class MainMenuScreen(Screen):
         """
         if not self._enabled:
             return
-        self.title_label.update(self.window)
-        self.title_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.title_label.get_total_height())
+
         self.version_label.update(self.window)
         self.version_label.set_x(4).set_y(self.window.height - self.version_label.get_total_height())
         self.play_button.update(self.window)
@@ -70,3 +81,4 @@ class MainMenuScreen(Screen):
         self.credits_button.set_state(state)
         self.quit_button.set_state(state)
         if state: self.update_ui()
+        self.title_label_time: float = pygame.time.get_ticks() / 1000.0
