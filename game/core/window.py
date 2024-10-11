@@ -15,7 +15,7 @@ class Window:
 
     FONT_PATH: str = resource_dir('game/assets/font.ttf')
 
-    def __init__(self, width: int, height: int, title: str = GameProperties.APP_NAME) -> None:
+    def __init__(self, width: int, height: int) -> None:
         self.width: int = width
         self.height: int = height
         self.old_width: int = width
@@ -33,7 +33,7 @@ class Window:
         self.paused: bool = False
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
-        pygame.display.set_caption(title)
+        pygame.display.set_caption(f'{GameProperties.APP_NAME} v{GameProperties.APP_VER}')
 
     def clear(self, colour: tuple[int, int, int]) -> None:
         """
