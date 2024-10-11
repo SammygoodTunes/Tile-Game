@@ -79,6 +79,8 @@ class Screens:
                     self.options_screen.set_state(not self.options_screen.get_state())
                 else:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
+                    self.map_screen.set_state(False)
+                    self.player_list_screen.set_state(False)
                 self.window.paused = self.pause_screen.get_state()
             if e.key == pygame.K_ESCAPE and not self.server_connect_screen.get_state() and not self.main_menu_screen.get_state() and not self.game.start_game:
                 self.server_menu_screen.set_state(False)
@@ -214,7 +216,6 @@ class Screens:
             self.game.server.stop()
             self.gameover_screen.set_state(False)
             self.main_menu_screen.set_state(True)
-            self.map_screen.reset_map()
             self.map_screen.set_state(False)
             self.player_list_screen.set_state(False)
             self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
