@@ -71,7 +71,7 @@ class PlayerManager:
         for player in self.players:
             if player['name'] == player_name:
                 continue
-            player['lerp'] = round(clamp(player['lerp'] + delta / (1 / ServerProperties.TICKS_PER_SECOND), 0.0, 1.0), 3)
+            #player['lerp'] = round(clamp(player['lerp'] + 0.1, 0.0, 1.0), 3)
             screen_x = round(game.width // 2 - int(game.client.camera.x) + round(lerp(player['previous_x'], player['x'], player['lerp']), 2))
             screen_y = round(game.height // 2 - int(game.client.camera.y) + round(lerp(player['previous_y'], player['y'], player['lerp']), 2))
             rect(game.screen, (200, 200, 220), (screen_x, screen_y, 32, 32))
