@@ -6,7 +6,6 @@ from game.data.properties.server_properties import ServerProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.nametag import NameTag
-from game.utils.logger import logger
 
 
 class PlayerListScreen(Screen):
@@ -39,7 +38,7 @@ class PlayerListScreen(Screen):
         for nametag in self.player_list:
             nametag.draw(self.game.screen)
 
-    def update_ui(self, bypass: bool = False) -> None:
+    def update_ui(self) -> None:
         """
         Update the screen UI.
         """

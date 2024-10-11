@@ -1,9 +1,7 @@
-import pygame.key
+
 from pygame.math import clamp
 
-from game.data.keys import Keys
 from game.data.properties.camera_properties import CameraProperties
-from game.utils.logger import logger
 
 
 class Camera:

@@ -2,7 +2,6 @@
 from pygame import draw
 from typing import Self
 
-from game.utils.logger import logger
 from game.world.map_manager import Map
 from game.world.tile_manager import TileManager
 

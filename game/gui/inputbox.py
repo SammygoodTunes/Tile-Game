@@ -6,7 +6,6 @@ from typing import Self
 
 from game.gui.label import Widget, Label
 from game.data.states.mouse_states import MouseStates
-from game.utils.logger import logger
 
 
 class InputBox(Widget):

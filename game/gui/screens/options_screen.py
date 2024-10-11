@@ -9,7 +9,6 @@ from game.gui.button import Button
 from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.checkbox import Checkbox
 from game.data.states.mouse_states import MouseStates
-from game.utils.logger import logger
 
 
 class OptionsScreen(Screen):

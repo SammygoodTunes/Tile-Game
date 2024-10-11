@@ -1,5 +1,4 @@
 
-
 class InvalidTextureAtlas(Exception):
     """
     Class for creating the exception caused by loading an invalid texture atlas.

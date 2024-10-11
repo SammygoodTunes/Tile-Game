@@ -5,7 +5,6 @@ from game.data.states.connection_states import ConnectionStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
-from game.utils.logger import logger
 
 
 class ServerConnectScreen(Screen):

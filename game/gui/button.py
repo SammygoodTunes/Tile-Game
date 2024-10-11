@@ -4,7 +4,6 @@ from pygame.math import clamp
 from typing import Self
 
 from game.gui.label import Widget, Label
-from game.utils.logger import logger
 
 
 class Button(Widget):

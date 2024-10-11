@@ -3,7 +3,6 @@ from typing import Self
 
 from game.data.properties.tile_properties import TileProperties
 from game.data.structures.tile_structure import TileStructure as tS
-from game.utils.logger import logger
 
 
 class Tile:

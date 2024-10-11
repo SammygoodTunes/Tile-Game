@@ -7,7 +7,6 @@ from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 from game.data.states.mouse_states import MouseStates
-from game.utils.logger import logger
 
 
 class CreditsScreen(Screen):

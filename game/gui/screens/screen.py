@@ -1,7 +1,4 @@
 
-from game.utils.logger import logger
-
-
 class Screen:
     """
     Class for creating a screen.

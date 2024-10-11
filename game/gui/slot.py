@@ -9,7 +9,6 @@ from game.data.items.items import Items
 from game.data.items.item import Item
 from game.gui.widget import Widget
 from game.world.item_manager import ItemManager
-from game.utils.logger import logger
 
 
 class Slot(Widget):

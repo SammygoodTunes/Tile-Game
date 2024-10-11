@@ -1,11 +1,9 @@
 
-from importlib import resources as impr
 from pygame import BLEND_ALPHA_SDL2, math
 from pygame.font import Font
-from typing import Self, Union
+from typing import Self
 
 from game.gui.widget import Widget
-from game.utils.logger import logger
 
 
 class Label(Widget):
@@ -13,7 +11,7 @@ class Label(Widget):
     Class for creating a label.
     """
 
-    DEFAULT_FONT = impr.files('assets') / "font.ttf"
+    DEFAULT_FONT = 'assets/font.ttf'
     DEFAULT_FONT_SIZE_SMALL = 8
     DEFAULT_FONT_SIZE_NORMAL = 11
     DEFAULT_FONT_SIZE_LARGE = 13

@@ -7,7 +7,6 @@ from game.data.items.item import Item
 from game.gui.label import Label
 from game.gui.slot import Slot
 from game.gui.widget import Widget
-from game.utils.logger import logger
 
 
 class Hotbar(Widget):

@@ -4,7 +4,6 @@ from pygame.event import Event
 
 from game.gui.screens.screen import Screen
 from game.gui.progress_bar import ProgressBar
-from game.utils.logger import logger
 
 
 class LoadingScreen(Screen):

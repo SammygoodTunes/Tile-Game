@@ -2,8 +2,6 @@
 from math import cos, pi
 from random import randint, uniform
 
-from game.utils.logger import logger
-
 
 class PerlinNoise:
     """

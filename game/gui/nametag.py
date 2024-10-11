@@ -3,7 +3,6 @@ from pygame import mouse, Surface
 from typing import Self
 
 from game.gui.label import Widget, Label
-from game.utils.logger import logger
 
 
 class NameTag(Widget):

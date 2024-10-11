@@ -7,7 +7,6 @@ from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.inputbox import InputBox
-from game.utils.logger import logger
 
 
 class ServerJoinScreen(Screen):

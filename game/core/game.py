@@ -1,12 +1,9 @@
 
-from math import sin
 import pygame
 
 from game.client.client import Client
 from game.core.window import Window
-from game.data.data_manager import verify_game_property_values
 from game.server.server import Server
-from game.utils.logger import logger
 
 
 class Game(Window):
@@ -21,7 +18,6 @@ class Game(Window):
         self.screens.link_game(self)
         self.client = Client()
         self.server = Server()
-        verify_game_property_values()
         self.client.initialise(self)
 
     def update(self) -> None:

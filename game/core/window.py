@@ -1,8 +1,7 @@
 
-from importlib import resources as impr
 import pygame
 
-import game.data.data_manager as data_mng
+from game.data.properties.game_properties import GameProperties
 from game.gui.label import Label
 from game.gui.screen_manager import Screens
 from game.utils.logger import logger
@@ -13,9 +12,9 @@ class Window:
     Class for creating the window frame in which the game will be contained.
     """
 
-    FONT_PATH: str = impr.files('assets') / "font.ttf"
+    FONT_PATH: str = 'assets/font.ttf'
 
-    def __init__(self, width: int, height: int, title: str = data_mng.get_game_property(data_mng.APP_NAME)) -> None:
+    def __init__(self, width: int, height: int, title: str = GameProperties.APP_NAME) -> None:
         self.width: int = width
         self.height: int = height
         self.old_width: int = width

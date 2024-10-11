@@ -1,7 +1,7 @@
 import pygame
 
-from game.data.data_manager import get_game_property, KEY_DELAY, KEY_INTERVAL
 from game.data.keys import Keys
+from game.data.properties.game_properties import GameProperties
 from game.data.states.connection_states import ConnectionStates
 from game.data.states.server_states import ServerStates
 from game.data.states.mouse_states import MouseStates
@@ -18,7 +18,6 @@ from game.gui.screens.servercreate_screen import ServerCreateScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
 from game.gui.screens.serverconnect_screen import ServerConnectScreen
 from game.gui.screens.servermenu_screen import ServerMenuScreen
-from game.utils.logger import logger
 
 
 class Screens:
@@ -144,7 +143,7 @@ class Screens:
         elif self.server_menu_screen.join_button.is_hovering_over() and self.server_menu_screen.get_state():
             self.server_menu_screen.set_state(False)
             self.server_join_screen.set_state(True)
-            pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
+            pygame.key.set_repeat(GameProperties.KEY_DELAY, GameProperties.KEY_INTERVAL)
             self.server_join_screen.join_button.set_state(
                 self.server_join_screen.ign_input.get_text().strip()
                 and self.server_join_screen.ip_input.get_text().strip()
@@ -155,7 +154,7 @@ class Screens:
         elif self.server_menu_screen.create_button.is_hovering_over() and self.server_menu_screen.get_state():
             self.server_menu_screen.set_state(False)
             self.server_create_screen.set_state(True)
-            pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
+            pygame.key.set_repeat(GameProperties.KEY_DELAY, GameProperties.KEY_INTERVAL)
             self.server_create_screen.create_button.set_state(
                 bool(self.server_create_screen.ign_input.get_text().strip())
             )
@@ -254,7 +253,7 @@ class Screens:
         self.credits_screen.update_ui()
         self.gameover_screen.update_ui()
         self.map_screen.update_ui()
-        self.player_list_screen.update_ui(bypass=True)
+        self.player_list_screen.update_ui()
 
     def task_tab(self) -> None:
         pass

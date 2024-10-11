@@ -6,7 +6,6 @@ from typing import Self
 from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
 from game.gui.widget import Widget
-from game.utils.logger import logger
 
 
 class Checkbox(Widget):

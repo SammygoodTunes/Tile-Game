@@ -1,7 +1,7 @@
 import pygame.time
 from numpy import exp, cos, pi, absolute
 
-import game.data.data_manager as data_mng
+from game.data.properties.game_properties import GameProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -15,10 +15,10 @@ class MainMenuScreen(Screen):
     def __init__(self, window) -> None:
         super().__init__()
         self.window = window
-        self.title_label = (Label(data_mng.get_game_property(data_mng.APP_NAME).strip())
+        self.title_label = (Label(GameProperties.APP_NAME)
                             .set_font_sizes((15, 30, 50))
                             .set_colour((200, 200, 255)))
-        self.version_label = (Label(f'v{data_mng.get_game_property(data_mng.APP_VERSION).strip()}')
+        self.version_label = (Label(f'v{GameProperties.APP_VER}')
                               .set_font_sizes((8, 10, 12))
                               .set_colour((255, 255, 10)))
         self.play_button = Button("Play")

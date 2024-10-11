@@ -1,12 +1,11 @@
 
 from pygame.surface import Surface
 
-from game.data.data_manager import get_game_property, APP_VERSION
+from game.data.properties.game_properties import GameProperties
 from game.gui.hotbar import Hotbar
 from game.gui.label import Label
 from game.gui.progress_bar import ProgressBar
 from game.gui.screens.screen import Screen
-from game.utils.logger import logger
 
 
 class MainHud(Screen):
@@ -18,7 +17,7 @@ class MainHud(Screen):
         super().__init__()
         self.game = game
         self.surface = Surface((self.game.width, self.game.height))
-        self.version_label = (Label(f'v{get_game_property(APP_VERSION).strip()}')
+        self.version_label = (Label(f'v{GameProperties.APP_VER}')
                               .set_font_sizes((8, 10, 12))
                               .set_colour((255, 255, 10))
                               .set_x(4))
