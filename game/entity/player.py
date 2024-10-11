@@ -339,7 +339,7 @@ class Player:
         tile: Tile = _map.get_tile(self.selected_tile_x, self.selected_tile_y)
         delay: float = tile.get_resistance() / self.main_hud.hotbar.get_selected_slot_item().get_strength()
 
-        if 0 > tile_x >= _map.get_width_in_tiles() or 0 > tile_y >= _map.get_height_in_tiles():
+        if not 0 <= tile_x < _map.get_width_in_tiles() or not 0 <= tile_y < _map.get_height_in_tiles():
             return
         if _map.get_dynatile(tile_x, tile_y) or not _map.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
             return
