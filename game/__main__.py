@@ -11,6 +11,7 @@ Art: Pickmonde, Jatzylap, SammygoodTunes
 import faulthandler
 import cProfile
 import io
+import multiprocessing
 import pstats
 import sys
 from pstats import SortKey
@@ -30,6 +31,8 @@ def main() -> None:
 
     # pr = cProfile.Profile()
     # pr.enable()
+
+    multiprocessing.freeze_support()
 
     init()
 
