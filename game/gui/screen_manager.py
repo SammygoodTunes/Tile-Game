@@ -66,9 +66,12 @@ class Screens:
             self.server_join_screen.events(e)
         if self.server_create_screen.get_state():
             self.server_create_screen.events(e)
-        self.loading_screen.events(e)
-        self.options_screen.events(e)
-        self.credits_screen.events(e)
+        if self.loading_screen.get_state():
+            self.loading_screen.events(e)
+        if self.options_screen.get_state():
+            self.options_screen.events(e)
+        if self.credits_screen.get_state():
+            self.credits_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_ESCAPE and self.game.start_game and not self.server_connect_screen.get_state() and not self.gameover_screen.get_state():
@@ -104,108 +107,111 @@ class Screens:
             self.map_screen.set_state(False)
             self.player_list_screen.set_state(False)
 
+        if e.type != pygame.MOUSEBUTTONUP:
+            return
         if e.type == pygame.MOUSEBUTTONUP:
-            if e.button == MouseStates.LMB:
-                if self.options_screen.back_button.is_hovering_over():
-                    self.options_screen.set_state(False)
-                    if self.game.start_game:
-                        self.pause_screen.set_state(True)
-                    else:
-                        self.main_menu_screen.set_state(True)
+            if e.button != MouseStates.LMB:
+                return
 
-                elif self.credits_screen.back_button.is_hovering_over():
-                    self.credits_screen.set_state(False)
-                    self.main_menu_screen.set_state(True)
+        if self.main_menu_screen.play_button.is_hovering_over() and self.main_menu_screen.get_state():
+            self.main_menu_screen.set_state(False)
+            self.server_menu_screen.set_state(True)
+        elif self.main_menu_screen.options_button.is_hovering_over() and self.main_menu_screen.get_state():
+            self.options_screen.set_state(True)
+            self.main_menu_screen.set_state(False)
+        elif self.main_menu_screen.credits_button.is_hovering_over() and self.main_menu_screen.get_state():
+            self.credits_screen.set_state(True)
+            self.main_menu_screen.set_state(False)
+        elif self.main_menu_screen.quit_button.is_hovering_over() and self.main_menu_screen.get_state():
+            self.window.stop()
 
-                elif self.main_menu_screen.play_button.is_hovering_over() and self.main_menu_screen.get_state():
-                    self.main_menu_screen.set_state(False)
-                    self.server_menu_screen.set_state(True)
-                elif self.main_menu_screen.options_button.is_hovering_over() and self.main_menu_screen.get_state():
-                    self.options_screen.set_state(True)
-                    self.main_menu_screen.set_state(False)
-                elif self.main_menu_screen.credits_button.is_hovering_over() and self.main_menu_screen.get_state():
-                    self.credits_screen.set_state(True)
-                    self.main_menu_screen.set_state(False)
-                elif self.main_menu_screen.quit_button.is_hovering_over() and self.main_menu_screen.get_state():
-                    self.window.stop()
+        elif self.options_screen.back_button.is_hovering_over():
+            self.options_screen.set_state(False)
+            if self.game.start_game:
+                self.pause_screen.set_state(True)
+                return
+            self.main_menu_screen.set_state(True)
+        elif self.credits_screen.back_button.is_hovering_over():
+            self.credits_screen.set_state(False)
+            self.main_menu_screen.set_state(True)
 
-                elif self.server_menu_screen.join_button.is_hovering_over() and self.server_menu_screen.get_state():
-                    self.server_menu_screen.set_state(False)
-                    self.server_join_screen.set_state(True)
-                    pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
-                    self.server_join_screen.join_button.set_state(
-                        self.server_join_screen.ign_input.get_text().strip()
-                        and self.server_join_screen.ip_input.get_text().strip()
-                        and self.server_join_screen.port_input.get_text().strip()
-                    )
-                    self.server_join_screen.ign_input.set_text(self.game.client.player.get_player_name())
-                    self.server_join_screen.update_ui()
-                elif self.server_menu_screen.create_button.is_hovering_over() and self.server_menu_screen.get_state():
-                    self.server_menu_screen.set_state(False)
-                    self.server_create_screen.set_state(True)
-                    pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
-                    self.server_create_screen.create_button.set_state(
-                        bool(self.server_create_screen.ign_input.get_text().strip())
-                    )
-                    self.server_create_screen.ign_input.set_text(self.game.client.player.get_player_name())
-                    self.server_create_screen.update_ui()
+        elif self.server_menu_screen.join_button.is_hovering_over() and self.server_menu_screen.get_state():
+            self.server_menu_screen.set_state(False)
+            self.server_join_screen.set_state(True)
+            pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
+            self.server_join_screen.join_button.set_state(
+                self.server_join_screen.ign_input.get_text().strip()
+                and self.server_join_screen.ip_input.get_text().strip()
+                and self.server_join_screen.port_input.get_text().strip()
+            )
+            self.server_join_screen.ign_input.set_text(self.game.client.player.get_player_name())
+            self.server_join_screen.update_ui()
+        elif self.server_menu_screen.create_button.is_hovering_over() and self.server_menu_screen.get_state():
+            self.server_menu_screen.set_state(False)
+            self.server_create_screen.set_state(True)
+            pygame.key.set_repeat(int(get_game_property(KEY_DELAY)), int(get_game_property(KEY_INTERVAL)))
+            self.server_create_screen.create_button.set_state(
+                bool(self.server_create_screen.ign_input.get_text().strip())
+            )
+            self.server_create_screen.ign_input.set_text(self.game.client.player.get_player_name())
+            self.server_create_screen.update_ui()
 
-                elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
-                    self.server_menu_screen.set_state(False)
-                    self.main_menu_screen.set_state(True)
+        elif self.server_menu_screen.back_button.is_hovering_over() and self.server_menu_screen.get_state():
+            self.server_menu_screen.set_state(False)
+            self.main_menu_screen.set_state(True)
 
-                elif self.server_join_screen.join_button.is_hovering_over() and self.server_join_screen.get_state():
-                    self.task_join_server()
-                elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
-                    self.server_join_screen.set_state(False)
-                    self.server_menu_screen.set_state(True)
-                    pygame.key.set_repeat()
-                    self.game.client.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
+        elif self.server_join_screen.join_button.is_hovering_over() and self.server_join_screen.get_state():
+            self.task_join_server()
+        elif self.server_join_screen.back_button.is_hovering_over() and self.server_join_screen.get_state():
+            self.server_join_screen.set_state(False)
+            self.server_menu_screen.set_state(True)
+            pygame.key.set_repeat()
+            self.game.client.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
 
-                elif self.server_create_screen.create_button.is_hovering_over() and self.server_create_screen.get_state():
-                    self.task_create_server()
-                elif self.server_create_screen.back_button.is_hovering_over() and self.server_create_screen.get_state():
-                    self.server_create_screen.set_state(False)
-                    self.server_menu_screen.set_state(True)
-                    pygame.key.set_repeat()
-                    self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
+        elif self.server_create_screen.create_button.is_hovering_over() and self.server_create_screen.get_state():
+            self.task_create_server()
+        elif self.server_create_screen.back_button.is_hovering_over() and self.server_create_screen.get_state():
+            self.server_create_screen.set_state(False)
+            self.server_menu_screen.set_state(True)
+            pygame.key.set_repeat()
+            self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
 
-                elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
-                    self.server_connect_screen.set_state(False)
-                    self.server_connect_screen.reset_info_label()
-                    if self.server_connect_screen.default_screen:
-                        self.server_join_screen.set_state(True)
-                    else:
-                        self.server_menu_screen.set_state(True)
+        elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
+            self.server_connect_screen.set_state(False)
+            self.server_connect_screen.reset_info_label()
+            if self.server_connect_screen.default_screen:
+                self.server_join_screen.set_state(True)
+                return
+            self.server_menu_screen.set_state(True)
 
-                elif self.pause_screen.resume_button.is_hovering_over():
-                    self.pause_screen.set_state(False)
-                    self.window.paused = False
-                elif self.pause_screen.options_button.is_hovering_over():
-                    self.pause_screen.set_state(False)
-                    self.options_screen.set_state(True)
-                elif self.pause_screen.disconnect_button.is_hovering_over():
-                    self.game.start_game = False
-                    self.game.paused = False
-                    self.game.client.connection_handler.stop_connection = True
-                    self.game.server.stop()
-                    self.pause_screen.set_state(False)
-                    self.main_menu_screen.set_state(True)
-                    self.map_screen.reset_map()
-                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+        elif self.pause_screen.resume_button.is_hovering_over() and self.pause_screen.get_state():
+            self.pause_screen.set_state(False)
+            self.window.paused = False
+        elif self.pause_screen.options_button.is_hovering_over() and self.pause_screen.get_state():
+            self.pause_screen.set_state(False)
+            self.options_screen.set_state(True)
+        elif self.pause_screen.disconnect_button.is_hovering_over() and self.pause_screen.get_state():
+            self.game.start_game = False
+            self.game.paused = False
+            self.game.client.connection_handler.stop_connection = True
+            self.game.server.stop()
+            self.pause_screen.set_state(False)
+            self.main_menu_screen.set_state(True)
+            self.map_screen.reset_map()
+            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
 
-                elif self.gameover_screen.respawn_button.is_hovering_over():
-                    self.gameover_screen.set_state(False)
-                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
-                elif self.gameover_screen.disconnect_button.is_hovering_over():
-                    self.game.start_game = False
-                    self.game.paused = False
-                    self.game.client.connection_handler.stop_connection = True
-                    self.game.server.stop()
-                    self.gameover_screen.set_state(False)
-                    self.main_menu_screen.set_state(True)
-                    self.map_screen.reset_map()
-                    self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+        elif self.gameover_screen.respawn_button.is_hovering_over() and self.gameover_screen.get_state():
+            self.gameover_screen.set_state(False)
+            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+        elif self.gameover_screen.disconnect_button.is_hovering_over() and self.gameover_screen.get_state():
+            self.game.start_game = False
+            self.game.paused = False
+            self.game.client.connection_handler.stop_connection = True
+            self.game.server.stop()
+            self.gameover_screen.set_state(False)
+            self.main_menu_screen.set_state(True)
+            self.map_screen.reset_map()
+            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
 
     def update(self) -> None:
         """

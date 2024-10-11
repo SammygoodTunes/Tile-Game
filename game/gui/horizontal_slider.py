@@ -77,7 +77,7 @@ class HorizontalSlider(Widget):
                     self._value = clamp(self._value, self._min_value, self._max_value)
         if e.type == pygame.MOUSEWHEEL and self.is_hovering_over():
             self._value = clamp(self._value + e.y, self._min_value, self._max_value)
-        self.value_label.set_text(f"{self._value} FPS")
+        self.value_label.set_text(f'{self._value}')
 
     def update(self, window) -> None:
         """

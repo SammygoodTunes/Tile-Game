@@ -22,7 +22,7 @@ class Window:
         self.old_height: int = height
         self.max_width: int = pygame.display.Info().current_w
         self.max_height: int = pygame.display.Info().current_h
-        self.screen: pygame.Surface | pygame.SurfaceType = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE)
+        self.screen: pygame.Surface | pygame.SurfaceType = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8)
         self.fps_cap: int = 200
         self.clock: pygame.time.Clock() = pygame.time.Clock()
         self.timer: int = 0
@@ -62,7 +62,7 @@ class Window:
             self.width, self.height = self.screen.get_size()
         else:
             self.width, self.height = e.w, e.h
-            self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE | pygame.DOUBLEBUF)
+            self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8)
 
     def draw_fps(self) -> None:
         """
@@ -97,5 +97,5 @@ class Window:
             self.width = self.old_width
             self.height = self.old_height
         self.screen = pygame.display.set_mode(
-            (self.width, self.height), pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE
+            (self.width, self.height), pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE, 8
         )

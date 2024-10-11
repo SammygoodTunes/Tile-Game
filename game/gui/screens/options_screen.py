@@ -22,7 +22,10 @@ class OptionsScreen(Screen):
         self.window = window
         self.faded_surface = self.initialise_surface()
         self.options_label = Label("Options")
-        self.fps_limit_slider = HorizontalSlider("FPS Limit").set_value(window.fps_cap).set_value_bounds(10, 1000)
+        self.fps_limit_slider = (HorizontalSlider("FPS Limit")
+                                 .set_value(window.fps_cap)
+                                 .set_value_text(f'{window.fps_cap} FPS')
+                                 .set_value_bounds(10, 1000))
         self.show_fps_box = Checkbox("Show FPS", checked=True)
         self.debug_info_box = Checkbox("Show debug info", checked=False)
         self.back_button = Button("Back")
@@ -49,6 +52,7 @@ class OptionsScreen(Screen):
                     self._enabled = False
         if self.window.fps_cap != self.fps_limit_slider.get_value():
             self.window.fps_cap = self.fps_limit_slider.get_value()
+        self.fps_limit_slider.set_value_text(f'{self.window.fps_cap} FPS')
 
     def draw(self) -> None:
         """

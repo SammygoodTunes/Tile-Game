@@ -20,7 +20,6 @@ class PerlinNoise:
         self._noise_intensity = randint(-PerlinNoise.NOISE_INTENSITY_RANGE, PerlinNoise.NOISE_INTENSITY_RANGE)
         self._frequency = 0.40 + uniform(-PerlinNoise.FREQ_ALTER_RANGE, PerlinNoise.FREQ_ALTER_RANGE)
 
-
     def generate(self, x: int, y: int) -> int:
         """
         Generate and return perlin noise data.

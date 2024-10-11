@@ -34,5 +34,5 @@ class TileManager:
         """
         Set the texture atlas.
         """
-        self.atlas = image.load(atlas_file)
+        self.atlas = image.load(atlas_file).convert()
         self.width, self.height = self.atlas.get_rect().size
