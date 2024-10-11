@@ -4,6 +4,8 @@ A tile-based multiplayer game with procedural terrain generation (using the Perl
 
 Currently in development.
 
+Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)**.
+
 ## Preview
 
 ![Preview](https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/main/docs/ss.png)
@@ -60,6 +62,9 @@ python3 -m game --debug  # MacOS / Unix
 > Note that using this mode will significantly impact the performance of the game, and therefore should not be used when playing normally.
 
 ## Information
+
+Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
+
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
