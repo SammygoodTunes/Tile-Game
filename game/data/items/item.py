@@ -1,4 +1,5 @@
 from typing import Self
+from game.utils.tools import resource_dir
 
 
 class Item:
@@ -6,7 +7,7 @@ class Item:
 	Class for creating a usable item.
 	"""
 
-	DEFAULT_ATLAS: str = 'game/assets/items.png'
+	DEFAULT_ATLAS: str = resource_dir('game/assets/items.png')
 
 	def __init__(self, x: int = 0, y: int = 0, tooltip_name: str = '') -> None:
 		self._xy: tuple[int, int] = (x, y)

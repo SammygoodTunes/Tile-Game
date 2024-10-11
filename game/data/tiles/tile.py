@@ -3,6 +3,7 @@ from typing import Self
 
 from game.data.properties.tile_properties import TileProperties
 from game.data.structures.tile_structure import TileStructure as tS
+from game.utils.tools import resource_dir
 
 
 class Tile:
@@ -10,7 +11,7 @@ class Tile:
     Class for creating a map tile.
     """
 
-    DEFAULT_ATLAS: str = 'game/assets/atlas.png'
+    DEFAULT_ATLAS: str = resource_dir('game/assets/atlas.png')
     count_id = count()
 
     def __init__(self, x: int = 0, y: int = 0) -> None:

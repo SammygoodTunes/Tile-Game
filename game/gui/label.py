@@ -4,6 +4,7 @@ from pygame.font import Font
 from typing import Self
 
 from game.gui.widget import Widget
+from game.utils.tools import resource_dir
 
 
 class Label(Widget):
@@ -11,7 +12,7 @@ class Label(Widget):
     Class for creating a label.
     """
 
-    DEFAULT_FONT = 'game/assets/font.ttf'
+    DEFAULT_FONT = resource_dir('game/assets/font.ttf')
     DEFAULT_FONT_SIZE_SMALL = 8
     DEFAULT_FONT_SIZE_NORMAL = 11
     DEFAULT_FONT_SIZE_LARGE = 13

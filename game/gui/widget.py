@@ -82,10 +82,7 @@ class Widget:
         Set the widget's visibility/interactivity, then return the widget itself.
         """
         self._enabled = state
-        logger.debug(
-            f'Setting {__class__.__name__} called by {inspect.stack()[1][0].f_locals["self"].__class__.__name__}'
-            f' at {inspect.stack()[1].code_context[0].strip()} to {state}'
-        )
+        logger.debug(f'Setting {__class__.__name__} to {state}')
         return self
 
     def get_state(self) -> bool:
