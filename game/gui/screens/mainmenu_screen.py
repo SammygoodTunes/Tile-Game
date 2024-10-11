@@ -25,7 +25,7 @@ class MainMenuScreen(Screen):
         self.credits_button = Button("Credits")
         self.quit_button = Button("Quit")
         self.set_state(True)
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self) -> None:
         """

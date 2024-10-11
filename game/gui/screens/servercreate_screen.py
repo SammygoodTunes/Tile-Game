@@ -26,7 +26,7 @@ class ServerCreateScreen(Screen):
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
         self.create_button = Button('Create')
         self.back_button = Button('Back')
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

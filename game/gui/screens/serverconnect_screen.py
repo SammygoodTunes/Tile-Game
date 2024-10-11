@@ -20,7 +20,7 @@ class ServerConnectScreen(Screen):
         self.info_label = Label()
         self.back_button = Button("Back")
         self.default_screen = True
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

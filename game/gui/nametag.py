@@ -19,7 +19,7 @@ class NameTag(Widget):
         self._height = self.label.get_total_height()
         self._faded_surface = Surface((self._width, self._height))
         self.set_transparency(0.4)
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, screen) -> None:
         """

@@ -25,7 +25,7 @@ class Tile:
         assert 0 <= self._resistance <= TileProperties.TILE_RESISTANCE_MAX, f'Invalid tile resistance: {self._resistance}'
         assert 0 <= self._damage <= TileProperties.TILE_DAMAGE_MAX, f'Invalid tile damage: {self._damage}'
         assert 0 <= self._damage_delay <= TileProperties.TILE_DAMAGE_DELAY_MAX, f'Invalid tile damage delay: {self._damage_delay}'
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def __repr__(self):
         return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'

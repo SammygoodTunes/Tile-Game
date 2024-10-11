@@ -24,7 +24,7 @@ class Game(Window):
         verify_game_property_values()
         self.client.initialise(self)
         self.update_all_uis()
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def update(self) -> None:
         """
@@ -51,7 +51,6 @@ class Game(Window):
         """
         Verify for any potential pygame events and update the targeted elements accordingly.
         """
-        print(self.focused)
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 self.stop()

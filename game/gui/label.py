@@ -29,7 +29,7 @@ class Label(Widget):
         self._shadow_y: int = self._y
         self._shadow_colour = (0, 0, 0)
         self._antialiasing = False
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, screen) -> None:
         """

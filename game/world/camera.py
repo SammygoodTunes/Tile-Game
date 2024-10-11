@@ -18,7 +18,7 @@ class Camera:
         self.speed = speed
         self.velocity_x = 0
         self.velocity_y = 0
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def update(self, game) -> None:
         """

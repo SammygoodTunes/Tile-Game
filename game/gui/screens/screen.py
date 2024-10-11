@@ -9,7 +9,7 @@ class Screen:
 
     def __init__(self) -> None:
         self._enabled = False
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def set_state(self, state: bool) -> None:
         """

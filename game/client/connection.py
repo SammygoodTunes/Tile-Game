@@ -80,7 +80,7 @@ class Connection:
         self.ping: int = 0
         self.total_data_sent: int = 0 # in bytes
         self.hit_player = str()
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def connect(self, player_name: str) -> None:
         """

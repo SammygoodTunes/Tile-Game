@@ -22,7 +22,7 @@ class MapScreen(Screen):
         self.faded_surface = self.initialise_surface()
         self.title_label = Label('Map')
         self.scaled_map: Surface = Surface((0, 0))
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

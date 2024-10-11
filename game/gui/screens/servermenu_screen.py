@@ -23,7 +23,6 @@ class ServerMenuScreen(Screen):
 		self.create_button = Button("Create server").set_background_colour((150, 255, 160))
 		self.create_button.label.set_colour((190, 255, 200))
 		self.back_button = Button("Back")
-		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def initialise_surface(self) -> Surface:
 		"""

@@ -15,7 +15,6 @@ class Item:
 		self._tooltip_name: str = tooltip_name
 		self._strength: int = 0
 		self._durability: int = -1
-		logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
 
 	def __eq__(self, obj: Self):
 		if not isinstance(obj, Item):

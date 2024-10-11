@@ -23,7 +23,7 @@ class Button(Widget):
         self._height = height
         self._background_colour = (255, 255, 255)
         self.label = Label(text, 0, 0).set_font_sizes((8, 10, 12))
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, screen) -> None:
         """

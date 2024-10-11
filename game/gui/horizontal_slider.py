@@ -33,7 +33,7 @@ class HorizontalSlider(Widget):
         self._button_held = False
         self.title_label = Label(title, 0, self._y - 40).set_font_sizes((7, 8, 10))
         self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((6, 7, 8))
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, screen) -> None:
         """

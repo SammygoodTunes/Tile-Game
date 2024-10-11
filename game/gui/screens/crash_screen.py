@@ -17,7 +17,7 @@ class CrashScreen(Screen):
         self.surface = self.initialise_surface()
         self.crash_label = Label(text="The game crashed").center_horizontally(0, window.width)
         self.traceback_label = Label().set_colour((255, 50, 50)).set_shadow_colour((50, 0, 00))
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

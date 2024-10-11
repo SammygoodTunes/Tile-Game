@@ -17,7 +17,7 @@ class TileManager:
         self.atlas: Surface | None = None
         self.width: int = 0
         self.height: int = 0
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, x: int, y: int, tile: Tile | int, screen: Surface) -> None:
         """

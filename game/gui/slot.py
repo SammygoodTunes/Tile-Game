@@ -36,7 +36,7 @@ class Slot(Widget):
         self._item_count = 0
         self._selected = False
         self.set_item(Items.AIR)
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self, screen) -> None:
         """

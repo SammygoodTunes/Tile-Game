@@ -27,7 +27,7 @@ class CreditsScreen(Screen):
         self.art_value_label = Label('Pickmonde\nJatzylap\nSammygoodTunes').set_colour((255, 255, 0))
         self.font_value_label = Label('OmegaPC777').set_colour((255, 255, 0))
         self.back_button = Button("Back")
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

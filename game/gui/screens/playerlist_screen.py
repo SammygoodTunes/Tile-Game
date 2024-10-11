@@ -22,7 +22,7 @@ class PlayerListScreen(Screen):
         self._faded_surface: Surface = Surface((0, 0))
         self._playercount_surface: Surface = Surface((0, 0))
         self.count_label = Label('ONLINE   0/10').set_font_sizes((7, 8, 9)).set_colour((0, 255, 0))
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def draw(self) -> None:
         """

@@ -26,7 +26,7 @@ class ServerJoinScreen(Screen):
         self.port_input = InputBox(placeholder='Port').set_max_text_length(5).authorise_only_numeric()
         self.join_button = Button('Join')
         self.back_button = Button('Back')
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

@@ -25,7 +25,7 @@ class Hotbar(Widget):
         self._tooltip = Label("")
         self._selected_slot = 0
         self._atlas: Surface | None = None
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def init_slots(self) -> None:
         """

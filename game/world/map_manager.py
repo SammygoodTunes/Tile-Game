@@ -36,7 +36,7 @@ class Map:
         self._surface: Surface | None = None
         self._dynatile_surface: Surface | None = None
         self.perlin_noise = noise.PerlinNoise()
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise(self) -> None:
         """

@@ -34,7 +34,7 @@ class Window:
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(title)
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def clear(self, colour: tuple[int, int, int]) -> None:
         """

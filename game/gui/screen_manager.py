@@ -43,7 +43,7 @@ class Screens:
         self.gameover_screen = GameoverScreen(window)
         self.map_screen = MapScreen(window)
         self.player_list_screen = PlayerListScreen(window)
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def link_game(self, game_obj) -> None:
         """

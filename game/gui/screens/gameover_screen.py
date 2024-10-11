@@ -20,7 +20,7 @@ class GameoverScreen(Screen):
         self.gameover_label = Label(text="You died.")
         self.respawn_button = Button(text="Respawn")
         self.disconnect_button = Button(text="Disconnect")
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

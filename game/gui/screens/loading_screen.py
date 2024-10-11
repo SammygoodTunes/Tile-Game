@@ -17,7 +17,7 @@ class LoadingScreen(Screen):
         self.window = window
         self.surface = self.initialise_surface()
         self.progress_bar = ProgressBar()
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def initialise_surface(self) -> Surface:
         """

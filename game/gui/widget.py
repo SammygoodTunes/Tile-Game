@@ -15,7 +15,7 @@ class Widget:
         self._y: int = y
         self._transparency: float = 1.0
         self._enabled: bool = False
-        logger.debug(f'Created {__class__.__name__} with attributes {self.__dict__}')
+
 
     def set_x(self, x: int) -> Self:
         """
