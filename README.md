@@ -44,8 +44,8 @@ pip install -e .
 Run the game using:
 
 ```bash
-python game\main.py   # Windows
-python3 game/main.py  # MacOS / Unix
+python -m game  # Windows
+python3 -m game # MacOS / Unix
 ```
 
 ### Debug mode
@@ -53,8 +53,8 @@ python3 game/main.py  # MacOS / Unix
 If you wish to launch the game with extra debugging information, use the `--debug` or `-d` flag:
 
 ```bash
-python game\main.py --debug   # Windows
-python3 game/main.py --debug  # MacOS / Unix
+python -m game --debug   # Windows
+python3 -m game --debug  # MacOS / Unix
 ```
 
 > Note that using this mode will significantly impact the performance of the game, and therefore should not be used when playing normally.

@@ -12,7 +12,7 @@ class Window:
     Class for creating the window frame in which the game will be contained.
     """
 
-    FONT_PATH: str = 'assets/font.ttf'
+    FONT_PATH: str = 'game/assets/font.ttf'
 
     def __init__(self, width: int, height: int, title: str = GameProperties.APP_NAME) -> None:
         self.width: int = width

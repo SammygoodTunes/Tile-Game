@@ -10,7 +10,7 @@ class Tile:
     Class for creating a map tile.
     """
 
-    DEFAULT_ATLAS: str = "assets/atlas.png"
+    DEFAULT_ATLAS: str = 'game/assets/atlas.png'
     count_id = count()
 
     def __init__(self, x: int = 0, y: int = 0) -> None:
