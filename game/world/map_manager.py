@@ -1,10 +1,16 @@
 
 from math import ceil
+from time import time
+
+import pygame.time
 from pygame import SRCALPHA, Surface
 from random import choice, seed
 from string import ascii_letters, digits
 from typing import Self
 
+from game.data.properties.game_properties import GameProperties
+from game.data.properties.tile_properties import TileProperties
+from game.data.properties.world_properties import WorldProperties
 from game.data.states.map_states import MapStates
 from game.data.structures.tile_structure import TileStructure
 from game.data.tiles.tiles import Tiles
@@ -24,13 +30,15 @@ class Map:
     SEED_CHARS: str = ''.join(digits + ascii_letters)
 
     def __init__(self, width: int, height: int) -> None:
+        assert WorldProperties.MIN_MAP_WIDTH <= width <= WorldProperties.MAX_MAP_WIDTH, 'Unauthorised map dimensions'
+        assert WorldProperties.MIN_MAP_HEIGHT <= height <= WorldProperties.MAX_MAP_HEIGHT, 'Unauthorised map dimensions'
         self._state: tuple[str, int] = ('', 0)
         self.tile_manager = TileManager()
         self._dynatile_data: bytes = b''
         self._tile_data: bytes = b''
         self._seed: str = ''
-        self._x = -width * TileManager.SIZE // 2
-        self._y = -height * TileManager.SIZE // 2
+        self._x = -width * TileProperties.TILE_SIZE // 2
+        self._y = -height * TileProperties.TILE_SIZE // 2
         self._width = width
         self._height = height
         self._surface: Surface | None = None
@@ -42,9 +50,9 @@ class Map:
         Initialise the map manager.
         """
         self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
-        self._surface = Surface((self._width * TileManager.SIZE, self._height * TileManager.SIZE))
+        self._surface = Surface((self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE))
         self._dynatile_surface = Surface(
-            (self._width * TileManager.SIZE, self._height * TileManager.SIZE), SRCALPHA, 32
+            (self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE), SRCALPHA, 32
         ).convert_alpha()
 
     def generate(self) -> None:
@@ -59,6 +67,7 @@ class Map:
         logger.info(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
+        timer = time()
         for tile_index in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile_index % self._width, tile_index // self._height)
             tile: Tile
@@ -90,16 +99,17 @@ class Map:
             progress = current_progress
             # Set the loading screen progress bar value to 'progress'
             self.set_state(MapStates.GENMAP, progress)
-            logger.info(f'Generating map data... {progress}%')
-
+            if time() - timer > GameProperties.LOGGER_DELAY:
+                logger.info(f'Generating map data... {progress}%')
+                timer = time()
         # Update the loading screen UI to update its info label text
 
         # Handler info label on loading screen and set it to 'Loading map...'
         '''index = 0
         for i, tile in enumerate(self._data):
             for _ in range(tile[1]):
-                x: int = (index % self._width) * TileManager.SIZE
-                y: int = TileManager.SIZE * (index // self._width)
+                x: int = (index % self._width) * TileManager.TILE_SIZE
+                y: int = TileManager.TILE_SIZE * (index // self._width)
                 self.game.client.world.tile_manager.draw(x, y, tile[0], self._surface)
                 index += 1
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''
@@ -116,25 +126,26 @@ class Map:
 
     def load(self) -> None:
         """
-        Draw the map tiles to the surface.
+        Decompress and draw the map tiles to the surface.
         """
         progress: int = -1
+        timer = time()
         for i in range(len(self._tile_data) // TileStructure.TILE_BYTE_SIZE):
-            x: int = (i % self._width) * TileManager.SIZE
-            y: int = TileManager.SIZE * (i // self._width)
-            # Call the tile manager to draw the tiles with params x, y, tile, self._surface
+            x: int = (i % self._width) * TileProperties.TILE_SIZE
+            y: int = TileProperties.TILE_SIZE * (i // self._width)
             tile = Tile().decompress(
                 int.from_bytes(
                     self._tile_data[i * TileStructure.TILE_BYTE_SIZE:i * TileStructure.TILE_BYTE_SIZE + TileStructure.TILE_BYTE_SIZE]
                 )
             )
             self.tile_manager.draw(x, y, tile, self._surface)
-
-            current_progress = round((i + 1) / len(self._tile_data) // TileStructure.TILE_BYTE_SIZE * 100)
+            current_progress = round((i + 1) / (len(self._tile_data) // TileStructure.TILE_BYTE_SIZE) * 100)
             if progress == current_progress:
                 continue
             progress = current_progress
-            logger.info(f'Loading map data... {progress}%')
+            if time() - timer > GameProperties.LOGGER_DELAY:
+                logger.info(f'Loading map data... {progress}%')
+                timer = time()
         self.set_state(MapStates.READY, 0)
 
     def regenerate(self, _seed: str) -> None:
@@ -175,23 +186,23 @@ class Map:
         """
         Return the tile position of a world position.
         """
-        tile_x = round((x - self._x) / TileManager.SIZE)
-        tile_y = round((y - self._y) / TileManager.SIZE)
+        tile_x = round((x - self._x) / TileProperties.TILE_SIZE)
+        tile_y = round((y - self._y) / TileProperties.TILE_SIZE)
         return tile_x, tile_y
 
     def get_strict_tile_pos(self, x: int, y: int) -> tuple[int, int]:
         """
         Return the strict tile position of a world position
         """
-        tile_x = round(x - self._x) // TileManager.SIZE
-        tile_y = round(y - self._y) // TileManager.SIZE
+        tile_x = round(x - self._x) // TileProperties.TILE_SIZE
+        tile_y = round(y - self._y) // TileProperties.TILE_SIZE
         return tile_x, tile_y
 
     def tile_to_world_pos(self, tile_x: int, tile_y: int) -> tuple[int, int]:
         """
         Return the world position of a tile position.
         """
-        return tile_x * TileManager.SIZE + self._x, tile_y * TileManager.SIZE + self._y
+        return tile_x * TileProperties.TILE_SIZE + self._x, tile_y * TileProperties.TILE_SIZE + self._y
 
     def tile_to_screen_pos(self, game, tile_x: int, tile_y: int) -> tuple[int, int]:
         """
@@ -331,7 +342,7 @@ class Map:
         """
         Return the width of the map in pixels.
         """
-        return self._width * TileManager.SIZE
+        return self._width * TileProperties.TILE_SIZE
 
     def get_height_in_tiles(self) -> int:
         """
@@ -343,7 +354,7 @@ class Map:
         """
         Return the height of the map in pixels.
         """
-        return self._height * TileManager.SIZE
+        return self._height * TileProperties.TILE_SIZE
 
     def get_surface(self) -> Surface:
         """

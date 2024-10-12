@@ -2,7 +2,9 @@
 from pygame.event import Event
 
 from game.client.connection import Connection, Tasks
+from game.data.properties.world_properties import WorldProperties
 from game.data.states.connection_states import ConnectionStates
+from game.data.structures.map_structure import MapStructure
 from game.data.structures.tile_structure import TileStructure
 from game.world.map_manager import Map
 
@@ -53,10 +55,15 @@ class ConnectionHandler:
             if connection_state > 0:
                 self.connection = None
             if connection_state == ConnectionStates.SUCCESS:
-                width, height = self.connection.data[0], self.connection.data[1]
+                width, height = (
+                    self.connection.data[MapStructure.MAP_WIDTH_BYTE_SIZE - 1],
+                    self.connection.data[MapStructure.MAP_HEIGHT_BYTE_SIZE * 2 - 1]
+                )
                 tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE + 2
                 game.client.world.set_map(Map(width, height))
-                game.client.world.get_map().set_tile_data(self.connection.data[2:tile_data_pos])
+                game.client.world.get_map().set_tile_data(
+                    self.connection.data[MapStructure.MAP_WIDTH_BYTE_SIZE + MapStructure.MAP_HEIGHT_BYTE_SIZE:tile_data_pos]
+                )
                 game.client.world.get_map().set_dynatile_data(self.connection.data[tile_data_pos:])
                 game.client.world.initialise()
                 game.client.world.get_map().load()

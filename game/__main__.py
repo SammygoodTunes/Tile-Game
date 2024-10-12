@@ -3,12 +3,12 @@
 
 """
 Project: Tile Game
-Version: 0.0.1a
+Version: 0.0.2a
 Author: SammygoodTunes
 Art: Pickmonde, Jatzylap, SammygoodTunes
+Font: OmegaPC777
 """
 
-import faulthandler
 import cProfile
 import io
 import multiprocessing
@@ -27,7 +27,6 @@ def main() -> None:
     """
     Here is where it all begun...
     """
-    # faulthandler.enable()
 
     # pr = cProfile.Profile()
     # pr.enable()

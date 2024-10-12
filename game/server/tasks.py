@@ -94,7 +94,7 @@ class ServerTasks:
         if not data or data != Hasher.enhash(Protocol.GLGAME_REQ):
             return
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
-        compressed_players_obj = Compressor.compress(player_handler.get_players())
+        compressed_players_obj = Compressor.compress(player_handler.get_players(compressed=True))
         conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
 
     @staticmethod

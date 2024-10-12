@@ -4,6 +4,7 @@ class TileProperties:
     Class for tile properties.
     """
 
+    TILE_SIZE = 32
     TILE_ID_MAX = 63
     TILE_X_MAX = 7
     TILE_Y_MAX = 7

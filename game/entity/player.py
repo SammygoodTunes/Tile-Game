@@ -8,6 +8,7 @@ from typing import Self
 from game.data.items.items import Items
 from game.data.keys import Keys
 from game.data.properties.player_properties import PlayerProperties
+from game.data.properties.tile_properties import TileProperties
 from game.data.states.mouse_states import MouseStates
 from game.data.states.player_states import PlayerStates
 from game.data.tiles.tiles import Tiles
@@ -35,7 +36,6 @@ class Player:
         self._y: int = y
         self.screen_x: int = x
         self.screen_y: int = y
-        self.pointing_at: tuple[int, int] = (0, 0)
         self.width: int = 32
         self.height: int = 32
         self.velocity_x: float = 0.0
@@ -73,8 +73,8 @@ class Player:
                 self.breaking = True
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 map_obj.tile_manager.draw(
-                    self.selected_tile_x * map_obj.tile_manager.SIZE,
-                    self.selected_tile_y * map_obj.tile_manager.SIZE,
+                    self.selected_tile_x * TileProperties.TILE_SIZE,
+                    self.selected_tile_y * TileProperties.TILE_SIZE,
                     map_obj.get_tile(self.selected_tile_x, self.selected_tile_y),
                     map_obj.get_dynatile_surface()
                 )
@@ -83,8 +83,8 @@ class Player:
                 self.breaking = False
                 self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
                 map_obj.tile_manager.draw(
-                    self.selected_tile_x * map_obj.tile_manager.SIZE,
-                    self.selected_tile_y * map_obj.tile_manager.SIZE,
+                    self.selected_tile_x * TileProperties.TILE_SIZE,
+                    self.selected_tile_y * TileProperties.TILE_SIZE,
                     map_obj.get_tile(self.selected_tile_x, self.selected_tile_y),
                     map_obj.get_dynatile_surface()
                 )
@@ -139,8 +139,8 @@ class Player:
             pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
                                         self.selected_tile_sx,
                                         self.selected_tile_sy,
-                                        game.client.world.get_map().tile_manager.SIZE,
-                                        game.client.world.get_map().tile_manager.SIZE
+                                        TileProperties.TILE_SIZE,
+                                        TileProperties.TILE_SIZE
                                     ), 2, 4)
 
     def draw_gun_pointer(self, game):
@@ -182,10 +182,8 @@ class Player:
             speed = PlayerProperties.SPEED
 
         mx, my = pygame.mouse.get_pos()
-        self.pointing_at = (round(game.client.camera.x) - (game.width // 2 - mx), round(game.client.camera.y) - (game.height // 2 - my))
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
-        tile_size = game.client.world.get_map().tile_manager.SIZE
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
@@ -294,8 +292,8 @@ class Player:
         else:
             self.timers[Player.MINING_TIMER] = pygame.time.get_ticks() / 1000.0
             map_obj.tile_manager.draw(
-                self.prev_selected_tile[0] * tile_size,
-                self.prev_selected_tile[1] * tile_size,
+                self.prev_selected_tile[0] * TileProperties.TILE_SIZE,
+                self.prev_selected_tile[1] * TileProperties.TILE_SIZE,
                 game.client.world.get_map().get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                 game.client.world.get_map().get_dynatile_surface()
             )
@@ -350,8 +348,8 @@ class Player:
 
         if self.prev_selected_tile != (self.selected_tile_x, self.selected_tile_y):
             _map.tile_manager.draw(
-                self.prev_selected_tile[0] * _map.tile_manager.SIZE,
-                self.prev_selected_tile[1] * _map.tile_manager.SIZE,
+                self.prev_selected_tile[0] * TileProperties.TILE_SIZE,
+                self.prev_selected_tile[1] * TileProperties.TILE_SIZE,
                 _map.get_tile(self.prev_selected_tile[0], self.prev_selected_tile[1]),
                 _map.get_dynatile_surface()
             )
@@ -365,8 +363,8 @@ class Player:
 
 
         _map.tile_manager.draw(
-            tile_x * _map.tile_manager.SIZE,
-            tile_y * _map.tile_manager.SIZE,
+            tile_x * TileProperties.TILE_SIZE,
+            tile_y * TileProperties.TILE_SIZE,
             Tiles.BREAK_TILES_ANIM[
                 int((pygame.time.get_ticks() / 1000.0
                      - self.timers[Player.MINING_TIMER])
@@ -593,12 +591,6 @@ class Player:
         """
         return 1 + abs(self.screen_y - parent_height // 2) / (parent_height // 2)
 
-    def get_pointing_at(self) -> tuple[int, int]:
-        """
-        Return the pointing-at position of the player.
-        """
-        return self.pointing_at
-
     def get_selected_tile_x(self) -> int:
         """
         Return the selected tile's x position.
@@ -686,8 +678,8 @@ class Player:
         map_obj.set_dynatile(tile_x, tile_y, True)
         map_obj.set_tile(tile_x, tile_y, Tiles.PLAINS)
         map_obj.tile_manager.draw(
-            tile_x * map_obj.tile_manager.SIZE,
-            tile_y * map_obj.tile_manager.SIZE,
+            tile_x * TileProperties.TILE_SIZE,
+            tile_y * TileProperties.TILE_SIZE,
             Tiles.PLAINS,
             map_obj.get_dynatile_surface()
         )

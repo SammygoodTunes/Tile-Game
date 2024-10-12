@@ -2,6 +2,7 @@
 from pygame import draw
 from typing import Self
 
+from game.data.properties.tile_properties import TileProperties
 from game.world.map_manager import Map
 from game.world.tile_manager import TileManager
 
@@ -65,12 +66,12 @@ class World:
             """
             for x in range(self._map.get_width_in_tiles() + 1):
                 draw.line(screen, (200, 200, 200),
-                          (self._map.get_x() + x * TileManager.SIZE, self._map.get_y()),
-                          (self._map.get_x() + x * TileManager.SIZE, self._map.get_y() + self._map.get_height_in_pixels()))
+                          (self._map.get_x() + x * TileProperties.TILE_SIZE, self._map.get_y()),
+                          (self._map.get_x() + x * TileProperties.TILE_SIZE, self._map.get_y() + self._map.get_height_in_pixels()))
             for y in range(self._map.get_height_in_tiles() + 1):
                 draw.line(screen, (200, 200, 200),
-                          (self._map.get_x(), self._map.get_y() + y * TileManager.SIZE),
-                          (self._map.get_x() + self._map.get_width_in_pixels(), self._map.get_y() + y * TileManager.SIZE))
+                          (self._map.get_x(), self._map.get_y() + y * TileProperties.TILE_SIZE),
+                          (self._map.get_x() + self._map.get_width_in_pixels(), self._map.get_y() + y * TileProperties.TILE_SIZE))
 
     def set_map(self, _map: Map) -> Self:
         """

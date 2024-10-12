@@ -1,6 +1,7 @@
 
 from pygame import image, Surface
 
+from game.data.properties.tile_properties import TileProperties
 from game.data.tiles.tile import Tile
 from game.utils.exceptions import InvalidTextureAtlas
 
@@ -9,8 +10,6 @@ class TileManager:
     """
     Class for creating a tile manager.
     """
-
-    SIZE: int = 32
 
     def __init__(self) -> None:
         self.atlas: Surface | None = None
@@ -25,9 +24,11 @@ class TileManager:
             raise InvalidTextureAtlas
         if isinstance(tile, int):
             tile = Tile().decompress(tile)
-        screen.blit(self.atlas,
-                    (x, y, self.width, self.height),
-                    (TileManager.SIZE * tile.get_xy()[0], TileManager.SIZE * tile.get_xy()[1], TileManager.SIZE, TileManager.SIZE))
+        screen.blit(self.atlas,(x, y, self.width, self.height),(
+            TileProperties.TILE_SIZE * tile.get_xy()[0],
+            TileProperties.TILE_SIZE * tile.get_xy()[1],
+            TileProperties.TILE_SIZE,
+            TileProperties.TILE_SIZE))
 
     def set_atlas(self, atlas_file: str) -> None:
         """

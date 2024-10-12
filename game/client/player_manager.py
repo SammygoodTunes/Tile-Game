@@ -31,12 +31,22 @@ class PlayerManager:
         """
         return PlayerBuilder.build_player_update_position_packet(self.local_player)
 
-    def set_players(self, players: list | None) -> Self:
+    def set_players(self, players: list | bytes | None) -> Self:
         """
         Set the players list and return the player manager itself.
         """
-        if players is not None:
-            self.players = players
+        if players is None:
+            return self
+        if isinstance(players, bytes):
+            data_pos = players.index(b'\x00') + 1
+            lengths = list(players[:data_pos - 1])
+            decompressed_players = []
+            for length in lengths:
+                decompressed_players.append(PlayerBuilder.decompress_player(players[data_pos:data_pos + length]))
+                data_pos += length
+            self.players = decompressed_players
+            return self
+        self.players = players
         return self
 
     def get_player(self, player_name: str) -> dict | None:
@@ -47,22 +57,6 @@ class PlayerManager:
         if index is not None:
             return self.players[index]
         return None
-
-    def hit_player(self, player_name: str) -> str:
-        """
-        Check and return the player that has been hit.
-        """
-        player = self.get_player(player_name)
-        if player is None:
-            return str()
-        for p in self.players:
-            if p['name'] == player['name']:
-                continue
-            if (p['x'] <= player['pointing_at'][0] <= p['x'] + 32
-                    and p['y'] <= player['pointing_at'][1] <= p['y'] + 32
-                    and player['holding_item'] == Items.GUN):
-                return p['name']
-        return str()
 
     def draw_players(self, player_name: str, delta: float, game) -> None:
         """

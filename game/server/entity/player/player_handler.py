@@ -1,4 +1,4 @@
-
+from game.network.builders import PlayerBuilder
 from game.utils.logger import logger
 
 
@@ -33,9 +33,7 @@ class PlayerHandler:
         self._players[index]['previous_y'] = self._players[index]['y']
         self._players[index]['x'] = player['x']
         self._players[index]['y'] = player['y']
-        self._players[index]['pointing_at'] = player['pointing_at']
         self._players[index]['health'] = player['health']
-        self._players[index]['holding_item'] = player['holding_item']
 
     def update_player_position(self, player_packet: dict) -> None:
         """
@@ -52,7 +50,6 @@ class PlayerHandler:
         self._players[index]['x'] = player_packet['x']
         self._players[index]['y'] = player_packet['y']
 
-
     def untrack_player(self, player_name: str) -> None:
         """
         Untrack the player by removing them from the players list, if possible.
@@ -64,10 +61,18 @@ class PlayerHandler:
         self._players.pop(index)
         logger.info(f'{player_name} left the server.')
 
-    def get_players(self) -> list[dict]:
+    def get_players(self, compressed=False) -> list[dict] | bytes:
         """
         Return the players list.
         """
+        if compressed:
+            return b''.join(
+                int.to_bytes(len(PlayerBuilder.compress_player(player)))
+                for player in self._players
+            ) + b'\x00' + b''.join(
+                PlayerBuilder.compress_player(player)
+                for player in self._players
+            )
         return self._players
 
     def get_player(self, player_name: str) -> dict[str, int | dict | None]:

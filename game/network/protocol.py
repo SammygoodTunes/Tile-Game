@@ -1,7 +1,6 @@
 
 class Protocol:
     """
-    TODO: Update this docstring
     Class for defining the protocol along with its request and response constants.
 
     Client-server connection process:
