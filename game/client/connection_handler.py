@@ -57,16 +57,15 @@ class ConnectionHandler:
             if connection_state == ConnectionStates.SUCCESS:
                 height_pos = MapStructure.MAP_WIDTH_BYTE_SIZE + MapStructure.MAP_HEIGHT_BYTE_SIZE
                 width, height = (
-                    int.from_bytes(self.connection.data[:MapStructure.MAP_WIDTH_BYTE_SIZE]),
-                    int.from_bytes(self.connection.data[MapStructure.MAP_WIDTH_BYTE_SIZE:height_pos])
+                    int.from_bytes(self.connection.data[:MapStructure.MAP_WIDTH_BYTE_SIZE]) + 1,
+                    int.from_bytes(self.connection.data[MapStructure.MAP_WIDTH_BYTE_SIZE:height_pos]) + 1
                 )
-                print(self.connection.data[:10])
-                tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE * 2
+                tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE + 2
                 game.client.world.set_map(Map(width, height))
                 game.client.world.get_map().set_tile_data(
                     self.connection.data[height_pos:tile_data_pos]
                 )
-                game.client.world.get_map().set_dynatile_data(self.connection.data[tile_data_pos + 1:])
+                game.client.world.get_map().set_dynatile_data(self.connection.data[tile_data_pos:])
                 game.client.world.initialise()
                 game.client.world.get_map().load()
                 game.client.player.set_ideal_spawn_point(game.client.world.get_map(), game.client.camera)

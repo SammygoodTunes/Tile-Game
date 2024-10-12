@@ -1,11 +1,9 @@
 
 from math import ceil
-from time import time
-
-import pygame.time
 from pygame import SRCALPHA, Surface
 from random import choice, seed
 from string import ascii_letters, digits
+from time import time
 from typing import Self
 
 from game.data.properties.game_properties import GameProperties
@@ -67,7 +65,7 @@ class Map:
         logger.info(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
-        timer = time()
+        timer = time() - GameProperties.LOGGER_DELAY
         for tile_index in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile_index % self._width, tile_index // self._height)
             tile: Tile
@@ -122,14 +120,13 @@ class Map:
         # Update all game UIs
         # Set the ideal spawnpoint of the player with params this map obj (self) and game camera
         # Set the loading screen state to false
-        print("Done!")
 
     def load(self) -> None:
         """
         Decompress and draw the map tiles to the surface.
         """
         progress: int = -1
-        timer = time()
+        timer = time() - GameProperties.LOGGER_DELAY
         for i in range(len(self._tile_data) // TileStructure.TILE_BYTE_SIZE):
             x: int = (i % self._width) * TileProperties.TILE_SIZE
             y: int = TileProperties.TILE_SIZE * (i // self._width)
@@ -146,6 +143,7 @@ class Map:
             if time() - timer > GameProperties.LOGGER_DELAY:
                 logger.info(f'Loading map data... {progress}%')
                 timer = time()
+        logger.info('Done!')
         self.set_state(MapStates.READY, 0)
 
     def regenerate(self, _seed: str) -> None:
@@ -300,7 +298,7 @@ class Map:
         seed(_seed)
         return self
 
-    def get_seed(self) -> int:
+    def get_seed(self) -> str:
         """
         Return the map seed.
         """
