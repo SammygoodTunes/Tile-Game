@@ -20,13 +20,12 @@ def test_window_creation():
     """
     init_display()
     init_font()
-    new_window = Window(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT, title='Dummy window')
+    new_window = Window(WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
     assert isinstance(new_window, Window)
     assert new_window.width == WINDOW_TEST_WIDTH
     assert new_window.height == WINDOW_TEST_HEIGHT
     assert new_window.screen.get_rect() == Rect(0, 0, WINDOW_TEST_WIDTH, WINDOW_TEST_HEIGHT)
     assert new_window.font is not None
-    assert get_caption()[0] == 'Dummy window'
     quit()
 
 

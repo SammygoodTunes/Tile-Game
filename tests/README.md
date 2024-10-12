@@ -35,13 +35,13 @@ pytest [unit|integrated] # Either unit or integrated
 - To run tests in a specific module:
 
 ```bash
-pytest unit/test_assets.py  # Example
+pytest unit/test_core.py  # Example
 ```
 
 - To run a specific test of a module:
 
 ```bash
-pytest unit/test_assets.py::test_assets_folder_exists  # Example
+pytest unit/test_core.py::test_window_creation  # Example
 ```
 
 > If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest tests/test_assets.py`) or replace it entirely if the path is `.` (like the third command above).
