@@ -118,30 +118,35 @@ class Player:
         """
         if game.paused or self.is_dead() or self.main_hud.hotbar.get_selected_slot_item() != Items.SHOVEL:
             return
+        _map = game.client.world.get_map()
         mx, my = pygame.mouse.get_pos()
         center_x, center_y = game.width // 2, game.height // 2
-        map_width, map_height = game.client.world.get_map().get_width_in_tiles(), game.client.world.get_map().get_height_in_tiles()
+        map_width, map_height = _map.get_width_in_tiles(), _map.get_height_in_tiles()
 
         wx, wy = (round(game.client.camera.x) - (center_x - mx)) // 32, (round(game.client.camera.y) - (center_y - my)) // 32
 
         selected_tile_x = wx + map_width // 2
         selected_tile_y = wy + map_height // 2
 
-        self.selected_tile_sx, self.selected_tile_sy = game.client.world.get_map().tile_to_screen_pos(
+        self.selected_tile_sx, self.selected_tile_sy = _map.tile_to_screen_pos(
             game, selected_tile_x, selected_tile_y
         )
 
         self.selected_tile_x = selected_tile_x
         self.selected_tile_y = selected_tile_y
 
-        if self.has_selected_breakable(game.client.world.get_map()) and not self.is_selected_breakable_obstructed(game.client.world.get_map()):
-            colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
-            pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
-                                        self.selected_tile_sx,
-                                        self.selected_tile_sy,
-                                        TileProperties.TILE_SIZE,
-                                        TileProperties.TILE_SIZE
-                                    ), 2, 4)
+        if not 0 <= self.selected_tile_x < _map.get_width_in_tiles() or not 0 <= self.selected_tile_y < _map.get_height_in_tiles():
+            return
+        if not self.has_selected_breakable(game.client.world.get_map()) or self.is_selected_breakable_obstructed(game.client.world.get_map()):
+            return
+
+        colour_anim: int = round(127.5 * math.sin(pygame.time.get_ticks() / 128) + 127.5)
+        pygame.draw.rect(game.screen, (255, colour_anim, colour_anim), (
+                                    self.selected_tile_sx,
+                                    self.selected_tile_sy,
+                                    TileProperties.TILE_SIZE,
+                                    TileProperties.TILE_SIZE
+                                ), 2, 4)
 
     def draw_gun_pointer(self, game):
         if game.paused or self.is_dead() or self.main_hud.hotbar.get_selected_slot_item() != Items.GUN:
