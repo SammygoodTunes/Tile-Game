@@ -1,13 +1,11 @@
 
-from pygame.math import lerp, clamp
+from pygame.math import lerp
 from pygame.draw import rect
 from typing import Self
 
-from game.data.items.items import Items
-from game.data.properties.server_properties import ServerProperties
 from game.entity.player import Player
 from game.gui.nametag import NameTag
-from game.network.builders import PlayerBuilder
+from game.network.builders import PlayerBuilder, BaseBuilder
 
 
 class PlayerManager:
@@ -24,12 +22,6 @@ class PlayerManager:
         Build the local player from a player packet.
         """
         PlayerBuilder.build_player(self.local_player, player_dict)
-
-    def packetise_player(self) -> dict:
-        """
-        Return a data-complete player packet.
-        """
-        return PlayerBuilder.build_player_update_position_packet(self.local_player)
 
     def set_players(self, players: list | bytes | None) -> Self:
         """

@@ -20,7 +20,7 @@ if not path.exists(log_dir):
 
 logging.basicConfig(
     level=logging.DEBUG if args.debug else logging.INFO,
-    format='\t%(levelname)s(%(filename)s) - %(asctime)s\t%(message)s',
+    format='\t%(levelname)s - %(asctime)s\t%(message)s',
     handlers=[
         logging.FileHandler(path.join(log_dir, strftime('%d-%m-%Y-%H-%M-%S.log'))),
         logging.StreamHandler(stdout)

@@ -1,5 +1,7 @@
 from math import ceil
 
+from game.client.player_manager import PlayerManager
+from game.network.builders import BaseBuilder, PlayerBuilder
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
 from game.network.protocol import Protocol
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
@@ -68,7 +70,7 @@ class ClientTasks:
         return data and data == Hasher.enhash(Protocol.PLAYEROBJ_RES)
 
     @staticmethod
-    def send_local_player(sock, player_manager) -> bool:
+    def send_local_player(sock, player_manager: PlayerManager) -> bool:
         """
         Task for sending the local player to the server.
         Return True if the local player packet was sent to and received by the server, otherwise False.
@@ -76,13 +78,16 @@ class ClientTasks:
         data = sock.recv(Protocol.BUFFER_SIZE)
         if not data or data != Hasher.enhash(Protocol.LCGAME_REQ):
             return False
-        packet = player_manager.packetise_player()
-        sock.send(fill(to_bytes(Protocol.PACKET_MAGIC) + hex_len(Compressor.compress(packet)) + Compressor.compress(packet)))
+        packet = PlayerBuilder.get_compressed_player_packet(
+            BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND,
+            player_manager.local_player
+        )
+        sock.send(fill(to_bytes(Protocol.PACKET_MAGIC) + hex_len(packet) + packet))
         data = sock.recv(Protocol.BUFFER_SIZE)
         return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)
 
     @staticmethod
-    def get_global_game_state(sock) -> list | None:
+    def get_global_game_state(sock) -> bytes | None:
         """
         Task for receiving the global server-side game state.
         Return the game state list object if received successfully, otherwise None.
@@ -99,4 +104,4 @@ class ClientTasks:
             if i != 0:
                 data = sock.recv(Protocol.BUFFER_SIZE)
             compressed_players_obj += data
-        return Compressor.decompress(compressed_players_obj.strip())
+        return compressed_players_obj.strip()

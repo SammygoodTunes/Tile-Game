@@ -43,7 +43,7 @@ class Server:
             ServerTasks.incoming_packets(conn, data, self.player_handler)
         except OSError:
             running = False
-        print(f'Connection from: {addr}')
+        logger.info(f'Connection from: {addr}')
         self.player_count += 1
         success: bool = True
         while running:
@@ -69,7 +69,7 @@ class Server:
                 running = False
             except OSError:
                 running = False
-        print(f'Connection {addr} closing')
+        logger.info(f'Connection {addr} closing')
         self.player_handler.untrack_player(player_name)
         self.player_count -= 1
         conn.close()
@@ -112,7 +112,7 @@ class Server:
             self.state.value = ServerStates.FAIL
             logger.error(f'Server failed to start: {e}')
             return
-        print(f'Starting server on {host}')
+        logger.info(f'Starting server on {host}')
         self.server_thread = Process(target=self.run, args=(self.state, _seed))
         self.server_thread.start()
 

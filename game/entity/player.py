@@ -159,6 +159,8 @@ class Player:
         slope_x, slope_y = offset_x / length, offset_y / length
         line_length = 16
         for i in range(0, length // line_length, 2):
+            if i > 7:
+                break
             colour_anim: int = round(127.5 * math.sin((pygame.time.get_ticks() - i * 10) / 64) + 127.5)
             pygame.draw.line(game.screen,(255, colour_anim // 2, colour_anim // 2),(
                     self.screen_x + 16 + (slope_x * i * line_length),

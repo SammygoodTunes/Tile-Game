@@ -140,7 +140,7 @@ class Connection:
         """
         if self.state == ConnectionStates.SUCCESS:
             try:
-                print('Disconnecting from server.')
+                logger.info('Disconnecting from server.')
                 self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
                 self.packet_queue.clear()
             except (ConnectionResetError, BrokenPipeError):

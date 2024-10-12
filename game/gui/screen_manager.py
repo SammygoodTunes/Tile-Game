@@ -57,8 +57,6 @@ class Screens:
         """
         Track the events of the different screens.
         """
-        keys = pygame.key.get_pressed()
-
         self.map_screen.initialise_map(self.game.client.world.get_map())
 
         if self.server_join_screen.get_state():
@@ -112,11 +110,11 @@ class Screens:
             if e.key == Keys.SHOW_PLAYERLIST and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
                 self.player_list_screen.set_state(False)
 
-        if e.type != pygame.MOUSEBUTTONUP:
-            return
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button != MouseStates.LMB:
                 return
+        else:
+            return
 
         if self.main_menu_screen.play_button.is_hovering_over() and self.main_menu_screen.get_state():
             self.main_menu_screen.set_state(False)

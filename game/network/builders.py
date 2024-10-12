@@ -53,17 +53,45 @@ class PlayerBuilder:
         player.set_health(player_dict[PlayerBuilder.HEALTH_KEY])
 
     @staticmethod
-    def build_player_update_position_packet(player) -> dict:
+    def get_compressed_player_packet(command_id: int, player) -> bytes:
         """
-        Create an empty player position update packet.
+        Return a compressed update player packet from the attributes of the given player object.
         """
-        return {
-            BaseBuilder.COMMAND_ID_KEY: BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND,
-            BaseBuilder.TIMESTAMP_KEY: time(),
-            PlayerBuilder.NAME_KEY: player.get_player_name(),
-            PlayerBuilder.X_POS_KEY: player.get_x(),
-            PlayerBuilder.Y_POS_KEY: player.get_y()
-        }
+        assert command_id == 0, f'Invalid command ID: {command_id}'
+        base = int.to_bytes(command_id) + b''.join(int.to_bytes(ord(c) - ord('-') + 2) for c in player.get_player_name())
+        if command_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
+            x = int.to_bytes(round(player.get_x()), length=PlayerStructure.PLAYER_X_BYTE_SIZE, signed=True)
+            y = int.to_bytes(round(player.get_y()), length=PlayerStructure.PLAYER_Y_BYTE_SIZE, signed=True)
+            return base + b'\x01' + x + y
+
+    @staticmethod
+    def get_decompressed_player_packet(bytes_obj: bytes) -> dict:
+        """
+        Return a player dict from a player bytes object.
+        """
+        assert bytes_obj[0] == 0, f'Invalid command ID: {bytes_obj[0]}'
+        name_pos = bytes_obj.index(b'\x01') + 1
+        if bytes_obj[0] == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
+            x_pos = name_pos
+            y_pos = x_pos + PlayerStructure.PLAYER_X_BYTE_SIZE
+            return {
+                PlayerBuilder.NAME_KEY: ''.join(chr(c + ord('-') - 2) for c in bytes_obj[1:bytes_obj.index(b'\x01')]),
+                PlayerBuilder.X_POS_KEY: int.from_bytes(bytes_obj[x_pos:x_pos + PlayerStructure.PLAYER_X_BYTE_SIZE], signed=True),
+                PlayerBuilder.Y_POS_KEY: int.from_bytes(bytes_obj[y_pos:y_pos + PlayerStructure.PLAYER_Y_BYTE_SIZE], signed=True),
+            }
+
+    @staticmethod
+    def update_player_from_packet(bytes_obj: bytes, player) -> None:
+        """
+        Automatically update a player object from a player bytes object.
+        """
+        player_dict = PlayerBuilder.get_decompressed_player_packet(bytes_obj)
+        if PlayerBuilder.NAME_KEY in player_dict:
+            player.set_player_name(player_dict.get(PlayerBuilder.NAME_KEY))
+        if PlayerBuilder.X_POS_KEY in player_dict:
+            player.set_x(player_dict.get(PlayerBuilder.X_POS_KEY))
+        if PlayerBuilder.Y_POS_KEY in player_dict:
+            player.set_y(player_dict.get(PlayerBuilder.Y_POS_KEY))
 
     @staticmethod
     def compress_player(player: dict) -> bytes:

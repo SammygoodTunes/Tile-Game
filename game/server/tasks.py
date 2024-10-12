@@ -94,7 +94,7 @@ class ServerTasks:
         if not data or data != Hasher.enhash(Protocol.GLGAME_REQ):
             return
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
-        compressed_players_obj = Compressor.compress(player_handler.get_players(compressed=True))
+        compressed_players_obj = player_handler.get_players(compressed=True)
         conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
 
     @staticmethod
@@ -115,11 +115,8 @@ class ServerTasks:
             if i != 0:
                 data = conn.recv(Protocol.BUFFER_SIZE)
             packet += data
-        decompressed_packet = Compressor.decompress(packet.strip())
-        if not isinstance(decompressed_packet, dict):
-            logger.warning('Packet received is not of instance \'dict\', ignoring.')
-            return False
-        type_id = decompressed_packet[BaseBuilder.COMMAND_ID_KEY]
+        decompressed_packet = PlayerBuilder.get_decompressed_player_packet(packet)
+        type_id = packet[0]
         conn.send(Hasher.enhash(Protocol.PACKETRECV_RES))
         if type_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
             player_handler.update_player_position(decompressed_packet)
