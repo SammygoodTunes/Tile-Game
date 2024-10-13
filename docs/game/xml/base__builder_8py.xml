@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="base__builder_8py" kind="file" language="Python">
+    <compoundname>base_builder.py</compoundname>
+    <innerclass refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" prot="public">game::network::builders::base_builder::BaseBuilder</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1network">game::network</innernamespace>
+    <innernamespace refid="namespacegame_1_1network_1_1builders">game::network::builders</innernamespace>
+    <innernamespace refid="namespacegame_1_1network_1_1builders_1_1base__builder">game::network::builders::base_builder</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1network" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" kindref="compound">BaseBuilder</ref>:</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Base<sp/>class<sp/>for<sp/>packet<sp/>building</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>COMMAND_ID_KEY<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>TIMESTAMP_KEY<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;timestamp&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>COMMAND_ID_MAX<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>COMMAND_ID_RANGE<sp/>=<sp/>range(0,<sp/>COMMAND_ID_MAX<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>COMMAND_ID_OFFSET<sp/>=<sp/>0x1d</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PLAYER_POSITION_UPDATE_COMMAND,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PLAYER_TILE_BREAK_COMMAND,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>)<sp/>=<sp/>COMMAND_ID_RANGE</highlight></codeline>
+    </programlisting>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py"/>
+  </compounddef>
+</doxygen>

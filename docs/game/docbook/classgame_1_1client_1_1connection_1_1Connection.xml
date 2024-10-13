@@ -32,9 +32,11 @@
 </listitem>
             <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a6d1e87c40d72bb27d61d06c07d23bfb5">player_manager</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf">world_manager</link></para>
+</listitem>
             <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc">hit_player</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a1d74a2a0b190a7f9e79a4c83eac281d9">data</link></para>
+            <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5">packet_queue</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4">ping</link></para>
 </listitem>
@@ -105,11 +107,6 @@ Any errors or failures will raise specific exceptions.
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a1d74a2a0b190a7f9e79a4c83eac281d9"/><section>
-    <title>data</title>
-<indexterm><primary>data</primary><secondary>game.client.connection.Connection</secondary></indexterm>
-<indexterm><primary>game.client.connection.Connection</primary><secondary>data</secondary></indexterm>
-<para><computeroutput>game.client.connection.Connection.data</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc"/><section>
     <title>hit_player</title>
 <indexterm><primary>hit_player</primary><secondary>game.client.connection.Connection</secondary></indexterm>
@@ -120,6 +117,11 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>host</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>host</secondary></indexterm>
 <para><computeroutput>game.client.connection.Connection.host</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5"/><section>
+    <title>packet_queue</title>
+<indexterm><primary>packet_queue</primary><secondary>game.client.connection.Connection</secondary></indexterm>
+<indexterm><primary>game.client.connection.Connection</primary><secondary>packet_queue</secondary></indexterm>
+<para><computeroutput>game.client.connection.Connection.packet_queue</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4"/><section>
     <title>ping</title>
 <indexterm><primary>ping</primary><secondary>game.client.connection.Connection</secondary></indexterm>
@@ -145,6 +147,11 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>state</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>state</secondary></indexterm>
 <para><computeroutput>game.client.connection.Connection.state</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf"/><section>
+    <title>world_manager</title>
+<indexterm><primary>world_manager</primary><secondary>game.client.connection.Connection</secondary></indexterm>
+<indexterm><primary>game.client.connection.Connection</primary><secondary>world_manager</secondary></indexterm>
+<para><computeroutput>game.client.connection.Connection.world_manager</computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_connection_8py">connection.py</link></section>

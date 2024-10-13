@@ -24,34 +24,34 @@
 <codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Byte<sp/>structure<sp/>for<sp/>the<sp/>tile.</highlight></codeline>
 <codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_ID_MAX)</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_X_MAX)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_Y_MAX)</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_RESISTANCE_MAX)</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_DAMAGE_MAX)</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_BYTE_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_DAMAGE_DELAY_MAX)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_ID_MAX)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_X_MAX)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_Y_MAX)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_RESISTANCE_MAX)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_DAMAGE_MAX)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_BIT_SIZE<sp/>=<sp/>c_log2(TileProperties.TILE_DAMAGE_DELAY_MAX)</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_BYTE_SIZE<sp/>=<sp/>int(ceil((</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TILE_ID_BYTE_SIZE</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_X_BYTE_SIZE</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_Y_BYTE_SIZE</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_RESISTANCE_BYTE_SIZE</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_DAMAGE_BYTE_SIZE</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_DAMAGE_DELAY_BYTE_SIZE</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TILE_ID_BIT_SIZE</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_X_BIT_SIZE</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_Y_BIT_SIZE</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_RESISTANCE_BIT_SIZE</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_DAMAGE_BIT_SIZE</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>TILE_DAMAGE_DELAY_BIT_SIZE</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>)<sp/>/<sp/>8))</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_BYTE_POS<sp/>=<sp/>TILE_BYTE_SIZE<sp/>*<sp/>8<sp/>-<sp/>TILE_ID_BYTE_SIZE</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_BYTE_POS<sp/>=<sp/>TILE_ID_BYTE_POS<sp/>-<sp/>TILE_X_BYTE_SIZE</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_BYTE_POS<sp/>=<sp/>TILE_X_BYTE_POS<sp/>-<sp/>TILE_Y_BYTE_SIZE</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_BYTE_POS<sp/>=<sp/>TILE_Y_BYTE_POS<sp/>-<sp/>TILE_RESISTANCE_BYTE_SIZE</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_BYTE_POS<sp/>=<sp/>TILE_RESISTANCE_BYTE_POS<sp/>-<sp/>TILE_DAMAGE_BYTE_SIZE</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_BYTE_POS<sp/>=<sp/>TILE_DAMAGE_BYTE_POS<sp/>-<sp/>TILE_DAMAGE_DELAY_BYTE_SIZE</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_BYTE_POS<sp/>=<sp/>TILE_BYTE_SIZE<sp/>*<sp/>8<sp/>-<sp/>TILE_ID_BIT_SIZE</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_BYTE_POS<sp/>=<sp/>TILE_ID_BYTE_POS<sp/>-<sp/>TILE_X_BIT_SIZE</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_BYTE_POS<sp/>=<sp/>TILE_X_BYTE_POS<sp/>-<sp/>TILE_Y_BIT_SIZE</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_BYTE_POS<sp/>=<sp/>TILE_Y_BYTE_POS<sp/>-<sp/>TILE_RESISTANCE_BIT_SIZE</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_BYTE_POS<sp/>=<sp/>TILE_RESISTANCE_BYTE_POS<sp/>-<sp/>TILE_DAMAGE_BIT_SIZE</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_BYTE_POS<sp/>=<sp/>TILE_DAMAGE_BYTE_POS<sp/>-<sp/>TILE_DAMAGE_DELAY_BIT_SIZE</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36" refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure" kindref="compound">DynatileStructure</ref>:</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Byte<sp/>structure<sp/>for<sp/>the<sp/>dynamic<sp/>tile.</highlight></codeline>
-<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>No<sp/>pre-defined<sp/>dynatile<sp/>byte<sp/>size<sp/>as<sp/>it<sp/>can<sp/>vary.</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>No<sp/>pre-defined<sp/>dynatile<sp/>bit<sp/>size<sp/>as<sp/>it<sp/>can<sp/>vary.</highlight></codeline>
 <codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>DYNATILE_STATE_BYTE_SIZE<sp/>=<sp/>1</highlight></codeline>

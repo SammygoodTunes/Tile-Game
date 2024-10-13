@@ -29,6 +29,8 @@
 </listitem>
             <listitem><para>tuple[int, int] <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c">tile_to_screen_pos</link> (self, game, int tile_x, int tile_y)</para>
 </listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588">draw_tile</link> (self, int tile_x, int tile_y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link>|int tile)</para>
+</listitem>
             <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f">set_tile</link> (self, int tile_x, int tile_y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link>|int tile)</para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a">get_tile</link> (self, int tile_x, int tile_y)</para>
@@ -49,7 +51,7 @@
 </listitem>
             <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0">set_seed</link> (self, str <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff">_seed</link>)</para>
 </listitem>
-            <listitem><para>int <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1aa4d89c484d67fe6e6c799d20f5f9f89f">get_seed</link> (self)</para>
+            <listitem><para>str <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc">get_seed</link> (self)</para>
 </listitem>
             <listitem><para>Self <link linkend="_classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8">set_x</link> (self, int x)</para>
 </listitem>
@@ -132,6 +134,11 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588"/><section>
+    <title>draw_tile()</title>
+<indexterm><primary>draw_tile</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
+<indexterm><primary>game.world.map_manager.Map</primary><secondary>draw_tile</secondary></indexterm>
+<para><computeroutput> Self game.world.map_manager.Map.draw_tile ( self, int tile_x, int tile_y, <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile">Tile</link> | int tile)</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54"/><section>
     <title>generate()</title>
 <indexterm><primary>generate</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
@@ -180,11 +187,11 @@
 <para><literallayout><computeroutput>Return the height of the map in tiles.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1aa4d89c484d67fe6e6c799d20f5f9f89f"/><section>
+<anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc"/><section>
     <title>get_seed()</title>
 <indexterm><primary>get_seed</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>game.world.map_manager.Map</primary><secondary>get_seed</secondary></indexterm>
-<para><computeroutput> int game.world.map_manager.Map.get_seed ( self)</computeroutput></para>
+<para><computeroutput> str game.world.map_manager.Map.get_seed ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the map seed.
 </computeroutput></literallayout> </para>
 </section>
@@ -281,7 +288,7 @@
 <indexterm><primary>load</primary><secondary>game.world.map_manager.Map</secondary></indexterm>
 <indexterm><primary>game.world.map_manager.Map</primary><secondary>load</secondary></indexterm>
 <para><computeroutput> None game.world.map_manager.Map.load ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Draw the map tiles to the surface.
+<para><literallayout><computeroutput>Decompress and draw the map tiles to the surface.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a"/><section>

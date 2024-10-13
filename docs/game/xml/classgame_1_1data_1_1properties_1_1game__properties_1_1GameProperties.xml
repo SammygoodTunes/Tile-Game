@@ -24,7 +24,7 @@
         <argsstring></argsstring>
         <name>APP_VER</name>
         <qualifiedname>game.data.properties.game_properties.GameProperties.APP_VER</qualifiedname>
-        <initializer>=  &apos;0.0.1a&apos;</initializer>
+        <initializer>=  &apos;0.0.2a&apos;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -63,6 +63,21 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" bodystart="10" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a35d897d12f4af9ca113f0b25b0fdfe93" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float game.data.properties.game_properties.GameProperties::LOGGER_DELAY</definition>
+        <argsstring></argsstring>
+        <name>LOGGER_DELAY</name>
+        <qualifiedname>game.data.properties.game_properties.GameProperties.LOGGER_DELAY</qualifiedname>
+        <initializer>=  0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -70,12 +85,13 @@
 <para><verbatim>Class for the main game properties.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" bodystart="2" bodyend="11"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/game_properties.py" bodystart="2" bodyend="12"/>
     <listofallmembers>
       <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1ae4c99bc1cde46c8445af986d4d102549" prot="public" virt="non-virtual"><scope>game::data::properties::game_properties::GameProperties</scope><name>APP_NAME</name></member>
       <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a29dec71ac57560f91bc5f5277f32fa91" prot="public" virt="non-virtual"><scope>game::data::properties::game_properties::GameProperties</scope><name>APP_VER</name></member>
       <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a11aff4ecff67ba4acd6fd5f405bb9c66" prot="public" virt="non-virtual"><scope>game::data::properties::game_properties::GameProperties</scope><name>KEY_DELAY</name></member>
       <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a4e2627118d7ae2243cb1c662cf17045a" prot="public" virt="non-virtual"><scope>game::data::properties::game_properties::GameProperties</scope><name>KEY_INTERVAL</name></member>
+      <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a35d897d12f4af9ca113f0b25b0fdfe93" prot="public" virt="non-virtual"><scope>game::data::properties::game_properties::GameProperties</scope><name>LOGGER_DELAY</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

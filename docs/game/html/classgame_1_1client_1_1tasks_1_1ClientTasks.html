@@ -111,16 +111,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afca576e562ad4e6cb4c168c193cff851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f262a813e52fa80e2fb0d9ad5792d4c" id="r_a0f262a813e52fa80e2fb0d9ad5792d4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f262a813e52fa80e2fb0d9ad5792d4c">send_player_name</a> (sock, player_name)</td></tr>
 <tr class="separator:a0f262a813e52fa80e2fb0d9ad5792d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbe3b0372517152b265a2f22817bdd0" id="r_a5fbe3b0372517152b265a2f22817bdd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fbe3b0372517152b265a2f22817bdd0">send_local_player</a> (sock, player_manager)</td></tr>
-<tr class="separator:a5fbe3b0372517152b265a2f22817bdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a156d17ee2a03e9664b54cd364474ed94" id="r_a156d17ee2a03e9664b54cd364474ed94"><td class="memItemLeft" align="right" valign="top">list|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a156d17ee2a03e9664b54cd364474ed94">get_global_game_state</a> (sock)</td></tr>
-<tr class="separator:a156d17ee2a03e9664b54cd364474ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bf9c24cf39aeec541979d2a2f86891" id="r_a66bf9c24cf39aeec541979d2a2f86891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66bf9c24cf39aeec541979d2a2f86891">send_local_player</a> (sock, <a class="el" href="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html">PlayerManager</a> player_manager)</td></tr>
+<tr class="separator:a66bf9c24cf39aeec541979d2a2f86891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b6aff7a1891fbc51a3556744b5e5df" id="r_a44b6aff7a1891fbc51a3556744b5e5df"><td class="memItemLeft" align="right" valign="top">bytes|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b6aff7a1891fbc51a3556744b5e5df">get_global_game_state</a> (sock)</td></tr>
+<tr class="separator:a44b6aff7a1891fbc51a3556744b5e5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225e51e9f541f78aa77f26a69d8a871f" id="r_a225e51e9f541f78aa77f26a69d8a871f"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225e51e9f541f78aa77f26a69d8a871f">check_packet_queue</a> (sock, list[bytes] queue)</td></tr>
+<tr class="separator:a225e51e9f541f78aa77f26a69d8a871f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Class for regrouping all client-side requests.
 </pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a156d17ee2a03e9664b54cd364474ed94" name="a156d17ee2a03e9664b54cd364474ed94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a156d17ee2a03e9664b54cd364474ed94">&#9670;&#160;</a></span>get_global_game_state()</h2>
+<a id="a225e51e9f541f78aa77f26a69d8a871f" name="a225e51e9f541f78aa77f26a69d8a871f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225e51e9f541f78aa77f26a69d8a871f">&#9670;&#160;</a></span>check_packet_queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +131,39 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"> list | None game.client.tasks.ClientTasks.get_global_game_state </td>
+          <td class="memname"> None game.client.tasks.ClientTasks.check_packet_queue </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sock</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[bytes]</td>          <td class="paramname"><span class="paramname"><em>queue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Task for verifying the packet queue.
+If a packet is present, take the first one, send it to the server and remove it from the queue.
+[FIFO]
+</pre> 
+</div>
+</div>
+<a id="a44b6aff7a1891fbc51a3556744b5e5df" name="a44b6aff7a1891fbc51a3556744b5e5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b6aff7a1891fbc51a3556744b5e5df">&#9670;&#160;</a></span>get_global_game_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bytes | None game.client.tasks.ClientTasks.get_global_game_state </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sock</em></span></td><td>)</td>
           <td></td>
@@ -254,8 +288,8 @@ Return True if the client's connection was successful, otherwise False.
 </pre> 
 </div>
 </div>
-<a id="a5fbe3b0372517152b265a2f22817bdd0" name="a5fbe3b0372517152b265a2f22817bdd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fbe3b0372517152b265a2f22817bdd0">&#9670;&#160;</a></span>send_local_player()</h2>
+<a id="a66bf9c24cf39aeec541979d2a2f86891" name="a66bf9c24cf39aeec541979d2a2f86891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66bf9c24cf39aeec541979d2a2f86891">&#9670;&#160;</a></span>send_local_player()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +305,7 @@ Return True if the client's connection was successful, otherwise False.
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>player_manager</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html">PlayerManager</a></td>          <td class="paramname"><span class="paramname"><em>player_manager</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

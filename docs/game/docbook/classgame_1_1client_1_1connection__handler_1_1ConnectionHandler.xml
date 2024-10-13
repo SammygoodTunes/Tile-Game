@@ -13,7 +13,7 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c">draw_other_players</link> (self, game, delta)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab03435b7059eccfdd11e6680f4823383">queue_packet</link> (self, dict packet)</para>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e">queue_packet</link> (self, bytes packet)</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff">get_ping</link> (self)</para>
 </listitem>
@@ -104,11 +104,11 @@ We don&apos;t draw the main player as it is redundant.
 <para><literallayout><computeroutput>Get the total data sent to the server, rounded to megabytes (not mebibytes).
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab03435b7059eccfdd11e6680f4823383"/><section>
+<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e"/><section>
     <title>queue_packet()</title>
 <indexterm><primary>queue_packet</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>queue_packet</secondary></indexterm>
-<para><computeroutput> None game.client.connection_handler.ConnectionHandler.queue_packet ( self, dict packet)</computeroutput></para>
+<para><computeroutput> None game.client.connection_handler.ConnectionHandler.queue_packet ( self, bytes packet)</computeroutput></para>
 <para><literallayout><computeroutput>Queue a packet in the packet queue.
 </computeroutput></literallayout> </para>
 </section>

@@ -32,7 +32,7 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal">logging.basicConfig(</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>level=logging.DEBUG<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.INFO,</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s(%(name)s)<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>handlers=[</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.FileHandler(path.join(log_dir,<sp/>strftime(</highlight><highlight class="stringliteral">&apos;%d-%m-%Y-%H-%M-%S.log&apos;</highlight><highlight class="normal">))),</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.StreamHandler(stdout)</highlight></codeline>

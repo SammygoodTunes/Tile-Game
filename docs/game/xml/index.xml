@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
-  <compound refid="classbuilders_1_1BaseBuilder" kind="class"><name>builders::BaseBuilder</name>
-    <member refid="classbuilders_1_1BaseBuilder_1ac2632b7e4098d14fd7f4528e81a243dc" kind="variable"><name>COMMAND_ID_KEY</name></member>
-    <member refid="classbuilders_1_1BaseBuilder_1afd9121c85978090fa2a2a7fa3736bcd1" kind="variable"><name>TIMESTAMP_KEY</name></member>
+  <compound refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" kind="class"><name>game::network::builders::base_builder::BaseBuilder</name>
+    <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1aa783db2353eb81dedf09e7f815199a1c" kind="variable"><name>COMMAND_ID_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a93354937303d82e021019c69fbce3988" kind="variable"><name>TIMESTAMP_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45" kind="variable"><name>COMMAND_ID_MAX</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a03dea91227a5a62ca620452fe38b5e34" kind="variable"><name>COMMAND_ID_RANGE</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff" kind="variable"><name>COMMAND_ID_OFFSET</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1button_1_1Button" kind="class"><name>game::gui::button::Button</name>
     <member refid="classgame_1_1gui_1_1button_1_1Button_1ae330ee669579f1b229ee2a9c1b8b28de" kind="variable"><name>MIN_WIDTH</name></member>
@@ -87,12 +90,13 @@
     <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638" kind="function"><name>get_map_data</name></member>
     <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1afca576e562ad4e6cb4c168c193cff851" kind="function"><name>player_join</name></member>
     <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c" kind="function"><name>send_player_name</name></member>
-    <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0" kind="function"><name>send_local_player</name></member>
-    <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94" kind="function"><name>get_global_game_state</name></member>
+    <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891" kind="function"><name>send_local_player</name></member>
+    <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df" kind="function"><name>get_global_game_state</name></member>
+    <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f" kind="function"><name>check_packet_queue</name></member>
   </compound>
-  <compound refid="classpacket_1_1Compressor" kind="class"><name>packet::Compressor</name>
-    <member refid="classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832" kind="function"><name>compress</name></member>
-    <member refid="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" kind="function"><name>decompress</name></member>
+  <compound refid="classgame_1_1network_1_1packet_1_1Compressor" kind="class"><name>game::network::packet::Compressor</name>
+    <member refid="classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92" kind="function"><name>compress</name></member>
+    <member refid="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" kind="function"><name>decompress</name></member>
   </compound>
   <compound refid="classgame_1_1client_1_1connection_1_1Connection" kind="class"><name>game::client::connection::Connection</name>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1ac3cf9b3987df0fa43db124648130b405" kind="variable"><name>sock</name></member>
@@ -100,8 +104,9 @@
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1a8783c776a0ff2cd2f9e719f0f49bad83" kind="variable"><name>port</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" kind="variable"><name>state</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1a6d1e87c40d72bb27d61d06c07d23bfb5" kind="variable"><name>player_manager</name></member>
+    <member refid="classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf" kind="variable"><name>world_manager</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc" kind="variable"><name>hit_player</name></member>
-    <member refid="classgame_1_1client_1_1connection_1_1Connection_1a1d74a2a0b190a7f9e79a4c83eac281d9" kind="variable"><name>data</name></member>
+    <member refid="classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5" kind="variable"><name>packet_queue</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4" kind="variable"><name>ping</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1a29c4cd88c4c57df0e169fa6a25e4e6dc" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Connection_1a93611f10e5e0270288865d9f89907431" kind="function"><name>connect</name></member>
@@ -121,7 +126,7 @@
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a61897249eb0ba4d05b5005f80b16bdb8" kind="function"><name>events</name></member>
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e" kind="function"><name>update</name></member>
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c" kind="function"><name>draw_other_players</name></member>
-    <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ab03435b7059eccfdd11e6680f4823383" kind="function"><name>queue_packet</name></member>
+    <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e" kind="function"><name>queue_packet</name></member>
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff" kind="function"><name>get_ping</name></member>
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396" kind="function"><name>get_total_data_sent</name></member>
     <member refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c" kind="function"><name>get_total_data_received</name></member>
@@ -206,10 +211,11 @@
     <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a29dec71ac57560f91bc5f5277f32fa91" kind="variable"><name>APP_VER</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a11aff4ecff67ba4acd6fd5f405bb9c66" kind="variable"><name>KEY_DELAY</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a4e2627118d7ae2243cb1c662cf17045a" kind="variable"><name>KEY_INTERVAL</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a35d897d12f4af9ca113f0b25b0fdfe93" kind="variable"><name>LOGGER_DELAY</name></member>
   </compound>
-  <compound refid="classpacket_1_1Hasher" kind="class"><name>packet::Hasher</name>
-    <member refid="classpacket_1_1Hasher_1a392ea5de974cdf1c56e2b8ddecb410eb" kind="function"><name>hash</name></member>
-    <member refid="classpacket_1_1Hasher_1afd277303108c54869b36889d84575d0a" kind="function"><name>enhash</name></member>
+  <compound refid="classgame_1_1network_1_1packet_1_1Hasher" kind="class"><name>game::network::packet::Hasher</name>
+    <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46" kind="function"><name>hash</name></member>
+    <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" kind="function"><name>enhash</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider" kind="class"><name>game::gui::horizontal_slider::HorizontalSlider</name>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a6bcc5ebc6be1e91c48f3dbbd408ba829" kind="variable"><name>MIN_WIDTH</name></member>
@@ -509,6 +515,7 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" kind="function"><name>get_strict_tile_pos</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" kind="function"><name>tile_to_world_pos</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c" kind="function"><name>tile_to_screen_pos</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" kind="function"><name>draw_tile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f" kind="function"><name>set_tile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" kind="function"><name>get_tile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48" kind="function"><name>set_tile_data</name></member>
@@ -519,7 +526,7 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a52f0bf1418ce0b52f60121af1c9dd476" kind="function"><name>get_dynatile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a" kind="function"><name>randomise_seed</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" kind="function"><name>set_seed</name></member>
-    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa4d89c484d67fe6e6c799d20f5f9f89f" kind="function"><name>get_seed</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc" kind="function"><name>get_seed</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" kind="function"><name>set_x</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" kind="function"><name>get_x</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" kind="function"><name>set_y</name></member>
@@ -607,8 +614,8 @@
   <compound refid="classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds" kind="class"><name>game::utils::exceptions::OutOfMapBounds</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds_1a3c6ca7c3cace8096cf29033eda46d3b1" kind="function"><name>__init__</name></member>
   </compound>
-  <compound refid="classpacket_1_1Packet" kind="class"><name>packet::Packet</name>
-    <member refid="classpacket_1_1Packet_1a7ff4c1e9f48fbc209a118565e582501a" kind="variable"><name>DATA_SIZE</name></member>
+  <compound refid="classgame_1_1network_1_1packet_1_1Packet" kind="class"><name>game::network::packet::Packet</name>
+    <member refid="classgame_1_1network_1_1packet_1_1Packet_1a80136bc38bf90af14697e265c9e37853" kind="variable"><name>DATA_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen" kind="class"><name>game::gui::screens::pause_screen::PauseScreen</name>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae5a116be437ff2207f7500c58f56aafc" kind="variable"><name>window</name></member>
@@ -660,7 +667,6 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a2164a28b704f306525e2bd418ff9edcc" kind="variable"><name>height</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a2ea4452a85c32dbcacd64f8dc303445e" kind="variable"><name>selected_tile_sx</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ac0a712c853a6aafbe0bed8f3ac419d0e" kind="variable"><name>selected_tile_sy</name></member>
-    <member refid="classgame_1_1entity_1_1player_1_1Player_1a6ef3a3c756e685a7e9906b8b8f30f74f" kind="variable"><name>pointing_at</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" kind="variable"><name>move</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a55d2fdcd55a9ca3a892fcaf492938d8f" kind="variable"><name>velocity_x</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a60f15050023a3f3cb7890fb2459576ce" kind="variable"><name>velocity_y</name></member>
@@ -668,6 +674,7 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" kind="variable"><name>health</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1aaf14809a75dfd272eac4ddcf173423c0" kind="variable"><name>breaking_tile</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a68d1e857e5771b3761bea1f59478a00d" kind="variable"><name>prev_selected_tile</name></member>
+    <member refid="classgame_1_1entity_1_1player_1_1Player_1a04deaa657e48911162bbd714490fa2e3" kind="variable"><name>prev_broken_tile</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" kind="function"><name>__init__</name></member>
@@ -705,7 +712,6 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ab41bb73c1768538bd41a72014e0ed484" kind="function"><name>get_absolute_y</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a9ce825a37b7be7556a88d1f9405c4f60" kind="function"><name>get_coefficient_from_center_x</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1aa4067e093443bd5303a96e38da1fd0f3" kind="function"><name>get_coefficient_from_center_y</name></member>
-    <member refid="classgame_1_1entity_1_1player_1_1Player_1ae688ddd7f0b378aebf4c212746a0e1d3" kind="function"><name>get_pointing_at</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a063430d89c29fe2dfb8011a575b8e817" kind="function"><name>get_selected_tile_x</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ae097f71f869a6a0fa85067f64f4429cd" kind="function"><name>get_selected_tile_y</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ab2affeeb76b2f4d913dc3c20eae05bcb" kind="function"><name>set_health</name></member>
@@ -715,31 +721,31 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" kind="function"><name>get_walls</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" kind="function"><name>set_ideal_spawn_point</name></member>
   </compound>
-  <compound refid="classbuilders_1_1PlayerBuilder" kind="class"><name>builders::PlayerBuilder</name>
-    <member refid="classbuilders_1_1PlayerBuilder_1aed059c92738e9a1234458ce937a712b4" kind="variable"><name>NAME_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a28daa26106b4b21aab73c3988a32fbb3" kind="variable"><name>X_POS_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a3b169911f17e437dd957b3889c39182a" kind="variable"><name>Y_POS_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a4a393c326106bf57d53c9bdd3de324d7" kind="variable"><name>PREV_X_POS_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a61791f5aab549f71acae79b7bc1e343b" kind="variable"><name>PREV_Y_POS_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a858d8f5ad9b2483da4393fdba6474fa0" kind="variable"><name>LERP_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a336f622bf2b943d9eb95a438c0272c60" kind="variable"><name>POINTING_AT_POS_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a0ed24bf3c3e5ea26e7b33eb0e35941e4" kind="variable"><name>HEALTH_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a6b54e0ab526d5905b44b2882e0ac3798" kind="variable"><name>HOLDING_ITEM_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a169617d98b3d759bb802b21163d6d40e" kind="variable"><name>DIRECTION_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a84cbcc9d1f24fb33b5df75f5f0421b66" kind="variable"><name>VELOCITY_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1aa8f2da6a76acc7a883bf1933109a0636" kind="variable"><name>DATA_KEY</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a1f85f20c8a6618b8b5482430ef04fc1b" kind="function"><name>create_player</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1ad8bf088f5ce3e74066b57653ce08297b" kind="function"><name>build_player</name></member>
-    <member refid="classbuilders_1_1PlayerBuilder_1a5ff8fc48dde0ba34256ab2f2adb946dd" kind="function"><name>build_player_update_position_packet</name></member>
+  <compound refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder" kind="class"><name>game::network::builders::player_builder::PlayerBuilder</name>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af585f79b36a4b1b92d9714016f94c904" kind="variable"><name>NAME_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6493661738907d4be8d6a439c2dbc1a8" kind="variable"><name>X_POS_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab3e3803c9a6ae5e2a58ed8216749c2c2" kind="variable"><name>Y_POS_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae81af21fbce606e5892dabc33efede85" kind="variable"><name>PREV_X_POS_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae756e95f2f88f3a138f41e9465be0c38" kind="variable"><name>PREV_Y_POS_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1add98f10c31dff2b33378dfd79087ba5c" kind="variable"><name>LERP_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1afe2d1780ad3c9b699a4478fce3b411df" kind="variable"><name>HEALTH_KEY</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab7af888a2afea9c3c93cdf81ff0c8324" kind="variable"><name>BROKEN_TILE_X</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1aa930f4b5afc89358fe82d9f41ab1cc34" kind="variable"><name>BROKEN_TILE_Y</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a9d904e3c2451a0f0d8db97483872637b" kind="function"><name>create_player</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ad26a37becdfb4488788b7c04dd435811" kind="function"><name>get_compressed_player_packet</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ac051f0d3ad578e5c755bc77ef8f3251a" kind="function"><name>get_decompressed_player_packet</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a8a303ac86877fcbe9d8abdecc02d3827" kind="function"><name>update_player_from_packet</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6406a117b9113b4eebb6f25ea4a1b773" kind="function"><name>compress_player</name></member>
+    <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af699273a7bd4ed1d35af2f6392ba6a7e" kind="function"><name>decompress_player</name></member>
   </compound>
-  <compound refid="classplayer__handler_1_1PlayerHandler" kind="class"><name>player_handler::PlayerHandler</name>
-    <member refid="classplayer__handler_1_1PlayerHandler_1acc8cb1f51af5ece8ea509259fa29ce15" kind="function"><name>__init__</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1af93f4adaac9ff092edc78122bd4b783b" kind="function"><name>track_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1a5aa9ebbbe7ad594d11c9eeca29ed7ab9" kind="function"><name>update_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1a8c5305bf833d4e0c378ad68eee4148e7" kind="function"><name>update_player_position</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1aa7b0692083c7f2655a4e8b74764e6811" kind="function"><name>untrack_player</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1af825dc85951c8114ec031f8cac54458d" kind="function"><name>get_players</name></member>
-    <member refid="classplayer__handler_1_1PlayerHandler_1a509e90cc5e66a97a1e7eadeb750bb59e" kind="function"><name>get_player</name></member>
+  <compound refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler" kind="class"><name>game::server::handlers::player_handler::PlayerHandler</name>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1ae999d67d70232d98bb3b7ad7e406c213" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a89772c37efb35f3c96f885973d691cc2" kind="function"><name>track_player</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a8beaeda4293d61add2c5ad60aa686330" kind="function"><name>update_player</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a6837884ad2f222fb0f265f512b24f54f" kind="function"><name>update_player_position</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a7065c27ebf8828f7fcf764372cb1e4b8" kind="function"><name>untrack_player</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1af1f5db300737ec2ee990c86bd0b1ebda" kind="function"><name>get_players</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1aad24aa31f72cb1cb7c0eccd4843b50dd" kind="function"><name>get_player</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" kind="class"><name>game::gui::screens::playerlist_screen::PlayerListScreen</name>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" kind="variable"><name>game</name></member>
@@ -753,16 +759,12 @@
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" kind="function"><name>set_state</name></member>
   </compound>
-  <compound refid="classgame_1_1client_1_1player__manager_1_1PlayerManager" kind="class"><name>game::client::player_manager::PlayerManager</name>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a58c508d4d8dff76d14ce4eaea5909df7" kind="variable"><name>players</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1aba58767434cfcc5390b1dc7f9faa45f9" kind="variable"><name>local_player</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a381e680ed78dc5025970fdc5963c7ced" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1ad7d2ac42f57767bd1f1687a34107b3f8" kind="function"><name>build_local_player</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a3eee907bb7480965774c008c9c17d24a" kind="function"><name>packetise_player</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a7f9ed3d5e8ecdf9629100d6e40bcc887" kind="function"><name>set_players</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a95a99d27ffa49ef8a68ea5f767210741" kind="function"><name>get_player</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1aa39e1fedcb1ba5e7388092e4d7409ac0" kind="function"><name>hit_player</name></member>
-    <member refid="classgame_1_1client_1_1player__manager_1_1PlayerManager_1a4167935069391208bd113282e7312090" kind="function"><name>draw_players</name></member>
+  <compound refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager" kind="class"><name>game::client::managers::player_manager::PlayerManager</name>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" kind="variable"><name>players</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1aea1e8a9d8735c640577ae3530ac39770" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a8d489e6d42e4da6545d1c16b642a309d" kind="function"><name>set_players</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" kind="function"><name>get_player</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1ab6e9f58108300a5c841b8df374b1e8a4" kind="function"><name>draw_players</name></member>
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists" kind="class"><name>game::utils::exceptions::PlayerNameAlreadyExists</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists_1a33383c76fb3a7f4d2923e110d8d43ae8" kind="function"><name>__init__</name></member>
@@ -782,6 +784,13 @@
     <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1ac8a94aa990c85eedce43ab49fc9d11ab" kind="variable"><name>MOVE_RIGHT</name></member>
     <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1a65fef5386e2b1ba45bf5363d70f2692c" kind="variable"><name>MOVE_UP</name></member>
     <member refid="classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates_1aebd846ae0bb459650d7a27b6499b52d3" kind="variable"><name>MOVE_LEFT</name></member>
+  </compound>
+  <compound refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure" kind="class"><name>game::data::structures::player_structure::PlayerStructure</name>
+    <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1a7c8689636006887dd88777f448d1b098" kind="variable"><name>PLAYER_NAME_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1a1e786510119a35276c6c89b5491859a1" kind="variable"><name>PLAYER_X_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1ae91d051b41e114eafb33f818c86ceedd" kind="variable"><name>PLAYER_Y_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1a9652886bbcbedf56e47f71649a8d8630" kind="variable"><name>PLAYER_BROKEN_TILE_X_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1ac52f9406cc9d963399a680876acae73f" kind="variable"><name>PLAYER_BROKEN_TILE_Y_BYTE_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar" kind="class"><name>game::gui::progress_bar::ProgressBar</name>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a2f8fadaff0accbf832d0e4fac7b410" kind="variable"><name>MIN_WIDTH</name></member>
@@ -823,31 +832,32 @@
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a53683c89ee453e1baeaab66ed9adc473" kind="function"><name>set_title</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4ac2d564b625ab44b18eb99b725bb4d3" kind="function"><name>get_title</name></member>
   </compound>
-  <compound refid="classprotocol_1_1Protocol" kind="class"><name>protocol::Protocol</name>
-    <member refid="classprotocol_1_1Protocol_1aff93bad72686094bd542056fa4b3a97f" kind="variable"><name>BUFFER_SIZE</name></member>
-    <member refid="classprotocol_1_1Protocol_1a47a32e99ea42411c26a505b8583307ca" kind="variable"><name>ENCODING</name></member>
-    <member refid="classprotocol_1_1Protocol_1a150a16ebf63adab5c7f3a74ff62c1af6" kind="variable"><name>RECOGNITION_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1addf9a283a8d812dc4a2277b001150475" kind="variable"><name>RECOGNITION_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a48178f2f781ff5c6f032a62d49f203fb" kind="variable"><name>MAPDATA_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1ab1830ae6614ead19cbf25a56a21a2e49" kind="variable"><name>MAPDATA_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1abd78d2b449b3d76967e99684f45aaa44" kind="variable"><name>MAPDATA_EOS</name></member>
-    <member refid="classprotocol_1_1Protocol_1aae8e99e61e6661fca1fb2c143f9fe44c" kind="variable"><name>PLAYERJOIN_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1a353807614a7c826deecd5bf7286c54bf" kind="variable"><name>PLAYERJOIN_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a29daf5259b30594b7d1cf3f2a2201746" kind="variable"><name>PLAYEROBJ_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a04c315520c817adcba7b179c08441b52" kind="variable"><name>LCGAME_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1a2bf94ab27c2eae5fd341d4ec2f3ecae0" kind="variable"><name>LCGAME_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a8c7e8645b60ee52dd4265d73601c6f86" kind="variable"><name>LCGAME_EOS</name></member>
-    <member refid="classprotocol_1_1Protocol_1a7cacaa6fde82217e690f2f4624924217" kind="variable"><name>GLGAME_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1ac8ff7277b4a9599aa4bdd6a0553d5545" kind="variable"><name>GLGAME_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1aac73dc70364f46bc59ab103dc25c7f74" kind="variable"><name>GLGAME_EOS</name></member>
-    <member refid="classprotocol_1_1Protocol_1ae40cfe087b6b9ee06440e45c6eb1bfc0" kind="variable"><name>PACKETRECV_RES</name></member>
-    <member refid="classprotocol_1_1Protocol_1a91db0ccf5e9a0839a9130b7ad7bfd44e" kind="variable"><name>PACKET_EOS</name></member>
-    <member refid="classprotocol_1_1Protocol_1a3718d4f320c9919768bde376392bbc89" kind="variable"><name>DISCONNECT_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1a311e8f855effc6bb2db9d9e6b21fc9aa" kind="variable"><name>NAMEALREXIST_ERR</name></member>
-    <member refid="classprotocol_1_1Protocol_1ae14733b89e4813442f9bd709023c3f41" kind="variable"><name>MAXPLAYERS_ERR</name></member>
-    <member refid="classprotocol_1_1Protocol_1a60a230725182b3663d8b7a3f04b25318" kind="variable"><name>PACKET_MAGIC</name></member>
-    <member refid="classprotocol_1_1Protocol_1af71c8485dbdc7dea4366ee3481159739" kind="variable"><name>HIT_REQ</name></member>
-    <member refid="classprotocol_1_1Protocol_1abd738de2b1186d4e64ce825294b8ad58" kind="variable"><name>HIT_RES</name></member>
+  <compound refid="classgame_1_1network_1_1protocol_1_1Protocol" kind="class"><name>game::network::protocol::Protocol</name>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1ab3853c9099a03b882400c46099a32116" kind="variable"><name>BUFFER_SIZE</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1af717c43e26aa883f0c38d405da001337" kind="variable"><name>ENCODING</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a31cccf27083b76193b12e5ab0beccc1e" kind="variable"><name>RECOGNITION_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a20cd223198e18f823430416b54028b5a" kind="variable"><name>RECOGNITION_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a3e9b538f6291418638a9ee37fe39cd77" kind="variable"><name>MAPDATA_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1aaae11d1962ab2281707355ec7f2dafed" kind="variable"><name>MAPDATA_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1ae0bc6985ecd60ee79a2bafe8b1d8a845" kind="variable"><name>MAPDATA_EOS</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a81fb66fdcdb24bb0d5c9efa01a615796" kind="variable"><name>PLAYERJOIN_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a0b8698e29466f39505b0c4807b9a16f2" kind="variable"><name>PLAYERJOIN_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a63a8ff252a34babcb94bc11b64f1db45" kind="variable"><name>PLAYEROBJ_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1ac8de784dcbf567b3fd28019d1b950d24" kind="variable"><name>LCGAME_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a46a63e60229fe39805a81caff00f0a10" kind="variable"><name>LCGAME_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a283396e740b973541550b3ee3ac45242" kind="variable"><name>LCGAME_EOS</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a9056e841e399a7893495447516b0ea4a" kind="variable"><name>GLGAME_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1af532cb9e9cc8d7c4f5904a193f05ea04" kind="variable"><name>GLGAME_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a5b50dfa4b51c7443f018415f481af03f" kind="variable"><name>GLGAME_EOS</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a55954a4f0ff7ab29dab2bc0b9f19c596" kind="variable"><name>PACKETRECV_RES</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a4a80d382e75bd15a29561a1696b93210" kind="variable"><name>PACKET_EOS</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a51374d6f41d403c8049c372af0a28614" kind="variable"><name>DISCONNECT_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1ac810774dba312d167219aa7577c9f964" kind="variable"><name>NAMEALREXIST_ERR</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a2571c25b4c646c1bc011497210afb963" kind="variable"><name>MAXPLAYERS_ERR</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a5438cdf2a21d48a205566424142a15ff" kind="variable"><name>CPACKET_MAGIC</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a63baa85b2052543f64e46afaa4dfd6d0" kind="variable"><name>SPACKET_MAGIC</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a3b42a2f3c79ccacba4bf986f98d19576" kind="variable"><name>HIT_REQ</name></member>
+    <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a6cff977cc729d5b6f07ee1b6297a3a74" kind="variable"><name>HIT_RES</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" kind="class"><name>game::gui::screens::screen::Screen</name>
     <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" kind="variable"><name>_enabled</name></member>
@@ -885,19 +895,19 @@
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" kind="function"><name>task_create_server</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" kind="function"><name>task_join_server</name></member>
   </compound>
-  <compound refid="classserver_1_1Server" kind="class"><name>server::Server</name>
-    <member refid="classserver_1_1Server_1a0e2d97f90bd6f412eccfb647caf8913f" kind="variable"><name>state</name></member>
-    <member refid="classserver_1_1Server_1a0e212d35e08ee45c84c689a77ed372b8" kind="variable"><name>player_count</name></member>
-    <member refid="classserver_1_1Server_1a2cf5f9c4d91edf810bf5d1c92ae83efb" kind="variable"><name>timeout</name></member>
-    <member refid="classserver_1_1Server_1aec6add2a80194c93a1a2ecfc7b94a166" kind="variable"><name>world_handler</name></member>
-    <member refid="classserver_1_1Server_1a4531604c7fac446912b6eb5fe2befad0" kind="variable"><name>player_handler</name></member>
-    <member refid="classserver_1_1Server_1a2830902cea4a4aba37d9d2a62ee3ab6a" kind="variable"><name>sock</name></member>
-    <member refid="classserver_1_1Server_1a654681eb65527da3792df526ff2dde0a" kind="variable"><name>server_thread</name></member>
-    <member refid="classserver_1_1Server_1a42ac00e97f8a10546ffe001251628258" kind="function"><name>__init__</name></member>
-    <member refid="classserver_1_1Server_1a7df3c004863b1ac9397cb735c4c786a2" kind="function"><name>client_handler</name></member>
-    <member refid="classserver_1_1Server_1a716891b0e0ec7f4ec0b1f0fbc7362b72" kind="function"><name>run</name></member>
-    <member refid="classserver_1_1Server_1acb2086533d346fed646b17afc5edb96e" kind="function"><name>start</name></member>
-    <member refid="classserver_1_1Server_1aead981f8958fcd6260c4a9209a4444f1" kind="function"><name>stop</name></member>
+  <compound refid="classgame_1_1server_1_1server_1_1Server" kind="class"><name>game::server::server::Server</name>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" kind="variable"><name>state</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a115f47f2b8f5bf4e0f16ce0cdc5f7fcd" kind="variable"><name>player_count</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a3542a5b340fb56366bcf2fead8fb1c0d" kind="variable"><name>timeout</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a" kind="variable"><name>world_handler</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1adf7a7396794698015a0907efd5dfb892" kind="variable"><name>player_handler</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" kind="variable"><name>sock</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" kind="variable"><name>server_thread</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a26a3c9e7f7150b919b98721fb469a9fb" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" kind="function"><name>client_handler</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" kind="function"><name>run</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a" kind="function"><name>start</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" kind="function"><name>stop</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" kind="class"><name>game::gui::screens::serverconnect_screen::ServerConnectScreen</name>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8" kind="variable"><name>window</name></member>
@@ -967,15 +977,15 @@
     <member refid="classgame_1_1data_1_1states_1_1server__states_1_1ServerStates_1a3ef49896b69b7cf794b7c15baaa0620e" kind="variable"><name>RUNNING</name></member>
     <member refid="classgame_1_1data_1_1states_1_1server__states_1_1ServerStates_1a644d53d50aa946448cd10245de9155d3" kind="variable"><name>FAIL</name></member>
   </compound>
-  <compound refid="classtasks_1_1ServerTasks" kind="class"><name>tasks::ServerTasks</name>
-    <member refid="classtasks_1_1ServerTasks_1a8e86ed40cbd1f85d21f6adffa13272e2" kind="function"><name>disconnection</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a00318ea07ce8a908bd583ada1cf66578" kind="function"><name>recognition</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a4deb1545cf43f2d1bd810705373a03b1" kind="function"><name>map_data</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a823900d288e2d302e5a16058e36a83ce" kind="function"><name>player_join</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a95f654dba2825c202756c04b9678b187" kind="function"><name>local_game_state</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a00c7c8448aabe93244aced59557d4d08" kind="function"><name>game_state</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a5a8b03e7c3d20c74f5b5b7c6ef366f29" kind="function"><name>incoming_packets</name></member>
-    <member refid="classtasks_1_1ServerTasks_1a59b32d7c7f26fc0d7f35b5cda5f3094e" kind="function"><name>player_hit</name></member>
+  <compound refid="classgame_1_1server_1_1tasks_1_1ServerTasks" kind="class"><name>game::server::tasks::ServerTasks</name>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a35859adae74c4be55c5f41782ff5afbe" kind="function"><name>disconnection</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a66bb2ef81e9310189d714782a5c4edc2" kind="function"><name>recognition</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a7792ac1c63453dd0ff749ce56427da60" kind="function"><name>map_data</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1aefe4ca0583f7a791d681277a66d7df08" kind="function"><name>player_join</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a6b3cba63bddb1dec319fbcefbf3fdf30" kind="function"><name>local_game_state</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1aa6d02bcc37fdeb56da2e02a77657046c" kind="function"><name>game_state</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a4d4ad352431f484c7908c93d0481af07" kind="function"><name>incoming_packets</name></member>
+    <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a04779d8b5faa5a935c6a92463b498536" kind="function"><name>player_hit</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1slot_1_1Slot" kind="class"><name>game::gui::slot::Slot</name>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a81d05a827571de62c36eb0e9b379faf5" kind="variable"><name>MIN_SIZE</name></member>
@@ -1048,7 +1058,6 @@
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aec9ac1784f2cc4f6a8e09f2d1eca5181" kind="function"><name>get_damage_delay</name></member>
   </compound>
   <compound refid="classgame_1_1world_1_1tile__manager_1_1TileManager" kind="class"><name>game::world::tile_manager::TileManager</name>
-    <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aad0ef5dc30de92298d02a2a2b79f33bd" kind="variable"><name>SIZE</name></member>
     <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119" kind="variable"><name>atlas</name></member>
     <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" kind="variable"><name>width</name></member>
     <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" kind="variable"><name>height</name></member>
@@ -1057,6 +1066,7 @@
     <member refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" kind="function"><name>set_atlas</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" kind="class"><name>game::data::properties::tile_properties::TileProperties</name>
+    <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a5886781baffa413c3d27eae51cff9af5" kind="variable"><name>TILE_SIZE</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1aa3ac69e394e7d36adcf1c9f35e690b4a" kind="variable"><name>TILE_ID_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae56545999866a3f29439a408ef097cee" kind="variable"><name>TILE_X_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae4ce97e387eeb40e312be726ba798fab" kind="variable"><name>TILE_Y_MAX</name></member>
@@ -1078,12 +1088,12 @@
     <member refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a02ec6cab40e2f551e921e36cf511b604" kind="variable"><name>BREAK_TILES_ANIM</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure" kind="class"><name>game::data::structures::tile_structure::TileStructure</name>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1acd9aa430837505ad9b0cca8834afe8a4" kind="variable"><name>TILE_ID_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a1d51ee269867b610adda38675a476f8e" kind="variable"><name>TILE_X_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe49c2c4080a7f6e628dbd01dafa51af" kind="variable"><name>TILE_Y_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a30b3434467afcbf8c376d540d6d807b8" kind="variable"><name>TILE_RESISTANCE_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a248b8c7acb5a7ad8ee654e9c7b8e5891" kind="variable"><name>TILE_DAMAGE_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6b8de535e0a3d19425d4bc9683894ace" kind="variable"><name>TILE_DAMAGE_DELAY_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ad01b38f72c36b8b1c5cb8cb84b60800f" kind="variable"><name>TILE_ID_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1aef0ea95d61de74b4d089d2bdd3931855" kind="variable"><name>TILE_X_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6bc09b5f5d78a9e44e1ee09b79a02b0f" kind="variable"><name>TILE_Y_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe755904ce548057978187f2c0032885" kind="variable"><name>TILE_RESISTANCE_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a70222d85b0fb9ea1479bede749dfdb1c" kind="variable"><name>TILE_DAMAGE_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a9c8f60c6557484d5b4da3020c05ec710" kind="variable"><name>TILE_DAMAGE_DELAY_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d" kind="variable"><name>TILE_BYTE_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c" kind="variable"><name>TILE_ID_BYTE_POS</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd" kind="variable"><name>TILE_X_BYTE_POS</name></member>
@@ -1146,13 +1156,27 @@
     <member refid="classgame_1_1world_1_1world_1_1World_1ad447eb8f35595b162dab7ebf065fabb9" kind="function"><name>set_map</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1acab48c8c323c9ab9efa6ede83f85b4e2" kind="function"><name>get_map</name></member>
   </compound>
-  <compound refid="classworld__handler_1_1WorldHandler" kind="class"><name>world_handler::WorldHandler</name>
-    <member refid="classworld__handler_1_1WorldHandler_1adf68f6e1b858660eca91d121cc560053" kind="function"><name>__init__</name></member>
-    <member refid="classworld__handler_1_1WorldHandler_1a8f410d3d936ce731a8d4b49cc277be00" kind="function"><name>create_world</name></member>
-    <member refid="classworld__handler_1_1WorldHandler_1a3cf2034344ab2915d1d0f9f6210275d4" kind="function"><name>get_world</name></member>
+  <compound refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler" kind="class"><name>game::server::handlers::world_handler::WorldHandler</name>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a4fe6e3d90fd3f095278c71b0ff14ba96" kind="variable"><name>_queue</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6932665d2fe7917c7fe47407586e2807" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a2b82f5c8199fb6cea131c6e26c1ab4f3" kind="function"><name>create_world</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8" kind="function"><name>update_broken_tile</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1adf31f015349d05fa2648309431beb404" kind="function"><name>is_queue_empty</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a3e2163b125def907287628fd74ae4f78" kind="function"><name>clean_queue</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aec4f0f8f564934d0dab80a7d227b9fc2" kind="function"><name>get_queue</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8" kind="function"><name>get_world</name></member>
+  </compound>
+  <compound refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" kind="class"><name>game::client::managers::world_manager::WorldManager</name>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" kind="variable"><name>local_world</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab8ebd22410821d56704993c0490ada7f" kind="variable"><name>queue_offset</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a648286e0e40df5ae203b247835c13ab7" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" kind="function"><name>build_world_from_bytes</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a47ad7da07b748a447234e4c694f877c6" kind="function"><name>update_broken_tiles</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties" kind="class"><name>game::data::properties::world_properties::WorldProperties</name>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec" kind="variable"><name>SKY_COLOUR</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6edb49f25bd6f52391d707f731d42ab2" kind="variable"><name>MIN_MAP_WIDTH</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a66e29d2983c81dfe50002915977aed20" kind="variable"><name>MIN_MAP_HEIGHT</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6358265daff4cc2e40b6900a0cf4af5d" kind="variable"><name>MAX_MAP_WIDTH</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1afe206b60ee200f9503d8ec25b95038be" kind="variable"><name>MAX_MAP_HEIGHT</name></member>
   </compound>
@@ -1165,8 +1189,6 @@
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts" kind="class"><name>game::utils::exceptions::ZeroOrLessSpawnPlayerAttempts</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts_1a4ca3b3e651469b42f266ccd923490bf0" kind="function"><name>__init__</name></member>
-  </compound>
-  <compound refid="namespacebuilders" kind="namespace"><name>builders</name>
   </compound>
   <compound refid="namespacegame" kind="namespace"><name>game</name>
   </compound>
@@ -1181,7 +1203,11 @@
   </compound>
   <compound refid="namespacegame_1_1client_1_1connection__handler" kind="namespace"><name>game::client::connection_handler</name>
   </compound>
-  <compound refid="namespacegame_1_1client_1_1player__manager" kind="namespace"><name>game::client::player_manager</name>
+  <compound refid="namespacegame_1_1client_1_1managers" kind="namespace"><name>game::client::managers</name>
+  </compound>
+  <compound refid="namespacegame_1_1client_1_1managers_1_1player__manager" kind="namespace"><name>game::client::managers::player_manager</name>
+  </compound>
+  <compound refid="namespacegame_1_1client_1_1managers_1_1world__manager" kind="namespace"><name>game::client::managers::world_manager</name>
   </compound>
   <compound refid="namespacegame_1_1client_1_1tasks" kind="namespace"><name>game::client::tasks</name>
   </compound>
@@ -1234,6 +1260,8 @@
   <compound refid="namespacegame_1_1data_1_1structures" kind="namespace"><name>game::data::structures</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1structures_1_1map__structure" kind="namespace"><name>game::data::structures::map_structure</name>
+  </compound>
+  <compound refid="namespacegame_1_1data_1_1structures_1_1player__structure" kind="namespace"><name>game::data::structures::player_structure</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1structures_1_1tile__structure" kind="namespace"><name>game::data::structures::tile_structure</name>
   </compound>
@@ -1305,6 +1333,33 @@
   </compound>
   <compound refid="namespacegame_1_1gui_1_1widget" kind="namespace"><name>game::gui::widget</name>
   </compound>
+  <compound refid="namespacegame_1_1network" kind="namespace"><name>game::network</name>
+  </compound>
+  <compound refid="namespacegame_1_1network_1_1builders" kind="namespace"><name>game::network::builders</name>
+  </compound>
+  <compound refid="namespacegame_1_1network_1_1builders_1_1base__builder" kind="namespace"><name>game::network::builders::base_builder</name>
+  </compound>
+  <compound refid="namespacegame_1_1network_1_1builders_1_1player__builder" kind="namespace"><name>game::network::builders::player_builder</name>
+  </compound>
+  <compound refid="namespacegame_1_1network_1_1packet" kind="namespace"><name>game::network::packet</name>
+    <member refid="namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6" kind="function"><name>fill</name></member>
+    <member refid="namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9" kind="function"><name>to_bytes</name></member>
+    <member refid="namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19" kind="function"><name>hex_len</name></member>
+  </compound>
+  <compound refid="namespacegame_1_1network_1_1protocol" kind="namespace"><name>game::network::protocol</name>
+  </compound>
+  <compound refid="namespacegame_1_1server" kind="namespace"><name>game::server</name>
+  </compound>
+  <compound refid="namespacegame_1_1server_1_1handlers" kind="namespace"><name>game::server::handlers</name>
+  </compound>
+  <compound refid="namespacegame_1_1server_1_1handlers_1_1player__handler" kind="namespace"><name>game::server::handlers::player_handler</name>
+  </compound>
+  <compound refid="namespacegame_1_1server_1_1handlers_1_1world__handler" kind="namespace"><name>game::server::handlers::world_handler</name>
+  </compound>
+  <compound refid="namespacegame_1_1server_1_1server" kind="namespace"><name>game::server::server</name>
+  </compound>
+  <compound refid="namespacegame_1_1server_1_1tasks" kind="namespace"><name>game::server::tasks</name>
+  </compound>
   <compound refid="namespacegame_1_1utils" kind="namespace"><name>game::utils</name>
   </compound>
   <compound refid="namespacegame_1_1utils_1_1exceptions" kind="namespace"><name>game::utils::exceptions</name>
@@ -1345,22 +1400,7 @@
   </compound>
   <compound refid="namespacegame_1_1world_1_1world" kind="namespace"><name>game::world::world</name>
   </compound>
-  <compound refid="namespacepacket" kind="namespace"><name>packet</name>
-    <member refid="namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8" kind="function"><name>fill</name></member>
-    <member refid="namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428" kind="function"><name>to_bytes</name></member>
-    <member refid="namespacepacket_1ae33b14a366ec431061961eee5fd3e6b2" kind="function"><name>hex_len</name></member>
-  </compound>
-  <compound refid="namespaceplayer__handler" kind="namespace"><name>player_handler</name>
-  </compound>
-  <compound refid="namespaceprotocol" kind="namespace"><name>protocol</name>
-  </compound>
-  <compound refid="namespaceserver" kind="namespace"><name>server</name>
-  </compound>
   <compound refid="namespacesocket" kind="namespace"><name>socket</name>
-  </compound>
-  <compound refid="namespacetasks" kind="namespace"><name>tasks</name>
-  </compound>
-  <compound refid="namespaceworld__handler" kind="namespace"><name>world_handler</name>
   </compound>
   <compound refid="____main_____8py" kind="file"><name>__main__.py</name>
   </compound>
@@ -1371,6 +1411,8 @@
   <compound refid="connection__handler_8py" kind="file"><name>connection_handler.py</name>
   </compound>
   <compound refid="player__manager_8py" kind="file"><name>player_manager.py</name>
+  </compound>
+  <compound refid="world__manager_8py" kind="file"><name>world_manager.py</name>
   </compound>
   <compound refid="client_2tasks_8py" kind="file"><name>client/tasks.py</name>
   </compound>
@@ -1414,6 +1456,8 @@
   </compound>
   <compound refid="map__structure_8py" kind="file"><name>map_structure.py</name>
   </compound>
+  <compound refid="player__structure_8py" kind="file"><name>player_structure.py</name>
+  </compound>
   <compound refid="tile__structure_8py" kind="file"><name>tile_structure.py</name>
   </compound>
   <compound refid="tile_8py" kind="file"><name>tile.py</name>
@@ -1427,6 +1471,8 @@
   <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
   <compound refid="client_2____init_____8py" kind="file"><name>client/__init__.py</name>
+  </compound>
+  <compound refid="client_2managers_2____init_____8py" kind="file"><name>client/managers/__init__.py</name>
   </compound>
   <compound refid="core_2____init_____8py" kind="file"><name>core/__init__.py</name>
   </compound>
@@ -1447,6 +1493,14 @@
   <compound refid="gui_2____init_____8py" kind="file"><name>gui/__init__.py</name>
   </compound>
   <compound refid="gui_2screens_2____init_____8py" kind="file"><name>gui/screens/__init__.py</name>
+  </compound>
+  <compound refid="network_2____init_____8py" kind="file"><name>network/__init__.py</name>
+  </compound>
+  <compound refid="network_2builders_2____init_____8py" kind="file"><name>network/builders/__init__.py</name>
+  </compound>
+  <compound refid="server_2____init_____8py" kind="file"><name>server/__init__.py</name>
+  </compound>
+  <compound refid="server_2handlers_2____init_____8py" kind="file"><name>server/handlers/__init__.py</name>
   </compound>
   <compound refid="utils_2____init_____8py" kind="file"><name>utils/__init__.py</name>
   </compound>
@@ -1506,7 +1560,9 @@
   </compound>
   <compound refid="widget_8py" kind="file"><name>widget.py</name>
   </compound>
-  <compound refid="builders_8py" kind="file"><name>builders.py</name>
+  <compound refid="base__builder_8py" kind="file"><name>base_builder.py</name>
+  </compound>
+  <compound refid="player__builder_8py" kind="file"><name>player_builder.py</name>
   </compound>
   <compound refid="packet_8py" kind="file"><name>packet.py</name>
   </compound>
@@ -1514,9 +1570,9 @@
   </compound>
   <compound refid="player__handler_8py" kind="file"><name>player_handler.py</name>
   </compound>
-  <compound refid="server_8py" kind="file"><name>server.py</name>
-  </compound>
   <compound refid="world__handler_8py" kind="file"><name>world_handler.py</name>
+  </compound>
+  <compound refid="server_8py" kind="file"><name>server.py</name>
   </compound>
   <compound refid="exceptions_8py" kind="file"><name>exceptions.py</name>
   </compound>
@@ -1536,6 +1592,8 @@
   </compound>
   <compound refid="world_8py" kind="file"><name>world.py</name>
   </compound>
+  <compound refid="dir_3c939434752ab941ec6524ed10da1407" kind="dir"><name>builders</name>
+  </compound>
   <compound refid="dir_6e4de05662227adfb71964c9b362ed35" kind="dir"><name>client</name>
   </compound>
   <compound refid="dir_fbfca0b62adf0c3e88b5ee06948e73e0" kind="dir"><name>core</name>
@@ -1544,17 +1602,17 @@
   </compound>
   <compound refid="dir_64bd7f63a19dc0213e8c4c2bef5c5709" kind="dir"><name>entity</name>
   </compound>
-  <compound refid="dir_e2ca3ddf830360ccedcdc6fc5c069047" kind="dir"><name>entity</name>
-  </compound>
   <compound refid="dir_37c6514aeece95293041e34c0f2e0784" kind="dir"><name>game</name>
   </compound>
   <compound refid="dir_30f0e11966908ed6eeb892bc6b7fc310" kind="dir"><name>gui</name>
   </compound>
+  <compound refid="dir_9d9456993d9b14e013bf56514181eb4d" kind="dir"><name>handlers</name>
+  </compound>
   <compound refid="dir_dfcd93edd39b176b9fdf3ce508a24a90" kind="dir"><name>items</name>
   </compound>
-  <compound refid="dir_70b22e7852cf745b7dc1e62814304e85" kind="dir"><name>network</name>
+  <compound refid="dir_426d44d6ea2aaed9d5f275a68b33fc73" kind="dir"><name>managers</name>
   </compound>
-  <compound refid="dir_8e861fabe3eb27c48c1e1845bba0d924" kind="dir"><name>player</name>
+  <compound refid="dir_70b22e7852cf745b7dc1e62814304e85" kind="dir"><name>network</name>
   </compound>
   <compound refid="dir_17906ac6fff5e795e330e3ec70eda062" kind="dir"><name>properties</name>
   </compound>

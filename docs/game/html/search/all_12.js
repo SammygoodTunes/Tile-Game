@@ -2,9 +2,9 @@ var searchData=
 [
   ['randomise_5fseed_0',['randomise_seed',['../classgame_1_1world_1_1map__manager_1_1Map.html#a8df8c4c0fff8f94ca48bd04a3ef4b09a',1,'game::world::map_manager::Map']]],
   ['ready_1',['READY',['../classgame_1_1data_1_1states_1_1map__states_1_1MapStates.html#a2e8120326beb7026660ba3d304175b91',1,'game::data::states::map_states::MapStates']]],
-  ['recognition_2',['recognition',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html#a687269af093982a745ab9e074bcb905d',1,'game.client.tasks.ClientTasks.recognition()'],['../classtasks_1_1ServerTasks.html#a00318ea07ce8a908bd583ada1cf66578',1,'tasks.ServerTasks.recognition()']]],
-  ['recognition_5freq_3',['RECOGNITION_REQ',['../classprotocol_1_1Protocol.html#a150a16ebf63adab5c7f3a74ff62c1af6',1,'protocol::Protocol']]],
-  ['recognition_5fres_4',['RECOGNITION_RES',['../classprotocol_1_1Protocol.html#addf9a283a8d812dc4a2277b001150475',1,'protocol::Protocol']]],
+  ['recognition_2',['recognition',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html#a687269af093982a745ab9e074bcb905d',1,'game.client.tasks.ClientTasks.recognition()'],['../classgame_1_1server_1_1tasks_1_1ServerTasks.html#a66bb2ef81e9310189d714782a5c4edc2',1,'game.server.tasks.ServerTasks.recognition()']]],
+  ['recognition_5freq_3',['RECOGNITION_REQ',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a31cccf27083b76193b12e5ab0beccc1e',1,'game::network::protocol::Protocol']]],
+  ['recognition_5fres_4',['RECOGNITION_RES',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a20cd223198e18f823430416b54028b5a',1,'game::network::protocol::Protocol']]],
   ['recv_5',['recv',['../classgame_1_1client_1_1connection_1_1XSocket.html#a4ed82c79b5050f2ff2b6db32d5d020b6',1,'game::client::connection::XSocket']]],
   ['refresh_6',['refresh',['../classgame_1_1gui_1_1button_1_1Button.html#a9c5c150ae2d4212152a40e82c4e90888',1,'game.gui.button.Button.refresh()'],['../classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a3255bd82bb9df14e9faae38552082560',1,'game.gui.checkbox.Checkbox.refresh()'],['../classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider.html#aaf9542342e7bcd0a4b4453836b250870',1,'game.gui.horizontal_slider.HorizontalSlider.refresh()'],['../classgame_1_1gui_1_1label_1_1Label.html#a063b12e5b550f738fad5285fdb21d206',1,'game.gui.label.Label.refresh()'],['../classgame_1_1gui_1_1nametag_1_1NameTag.html#a67c27b59776a17258243b2ae1dbad583',1,'game.gui.nametag.NameTag.refresh()'],['../classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html#a41e5d3858dc7a13b7a50f89d212c464c',1,'game.gui.progress_bar.ProgressBar.refresh()']]],
   ['refused_7',['REFUSED',['../classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html#a075936a29aa0e24d0d0177b760e38a80',1,'game::data::states::connection_states::ConnectionStates']]],
@@ -17,6 +17,6 @@ var searchData=
   ['respawn_5fbutton_14',['respawn_button',['../classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#a3af7f91700998108d39945c71620a181',1,'game::gui::screens::gameover_screen::GameoverScreen']]],
   ['resume_5fbutton_15',['resume_button',['../classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a16d18c54f4a3fcae49ed88068d845fd3',1,'game::gui::screens::pause_screen::PauseScreen']]],
   ['rmb_16',['RMB',['../classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html#a5fe6d79e3e959c869c2cd96b42ac3fba',1,'game::data::states::mouse_states::MouseStates']]],
-  ['run_17',['run',['../classserver_1_1Server.html#a716891b0e0ec7f4ec0b1f0fbc7362b72',1,'server::Server']]],
+  ['run_17',['run',['../classgame_1_1server_1_1server_1_1Server.html#a0e167e4693f3e9bd2864239a3b1633da',1,'game::server::server::Server']]],
   ['running_18',['RUNNING',['../classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html#a3ef49896b69b7cf794b7c15baaa0620e',1,'game::data::states::server_states::ServerStates']]]
 ];

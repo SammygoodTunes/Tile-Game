@@ -2,66 +2,68 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="packet_8py" kind="file" language="Python">
     <compoundname>packet.py</compoundname>
-    <innerclass refid="classpacket_1_1Packet" prot="public">packet::Packet</innerclass>
-    <innerclass refid="classpacket_1_1Hasher" prot="public">packet::Hasher</innerclass>
-    <innerclass refid="classpacket_1_1Compressor" prot="public">packet::Compressor</innerclass>
-    <innernamespace refid="namespacepacket">packet</innernamespace>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Packet" prot="public">game::network::packet::Packet</innerclass>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Hasher" prot="public">game::network::packet::Hasher</innerclass>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Compressor" prot="public">game::network::packet::Compressor</innerclass>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1network">game::network</innernamespace>
+    <innernamespace refid="namespacegame_1_1network_1_1packet">game::network::packet</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacepacket" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pickle</highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1network_1_1packet" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pickle</highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>hashlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sha256</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>lzma</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>game.network.protocol<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Protocol</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1network_1_1protocol" kindref="compound">game.network.protocol</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Protocol</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1logger" kindref="compound">game.utils.logger</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="classpacket_1_1Packet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Packet" kindref="compound">Packet</ref>:</highlight></codeline>
+<codeline lineno="9" refid="classgame_1_1network_1_1packet_1_1Packet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Packet" kindref="compound">Packet</ref>:</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>determining<sp/>the<sp/>properties<sp/>of<sp/>the<sp/>packet<sp/>header.</highlight></codeline>
 <codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>DATA_SIZE<sp/>=<sp/>4</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="classpacket_1_1Hasher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Hasher" kindref="compound">Hasher</ref>:</highlight></codeline>
+<codeline lineno="16" refid="classgame_1_1network_1_1packet_1_1Hasher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Hasher" kindref="compound">Hasher</ref>:</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>hashing<sp/>packets.</highlight></codeline>
 <codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Used<sp/>for<sp/>sending<sp/>and<sp/>receiving<sp/>protocol<sp/>commands<sp/>from<sp/>the<sp/>client/server.</highlight></codeline>
 <codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Hasher_1a392ea5de974cdf1c56e2b8ddecb410eb" kindref="member">hash</ref>(packet:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46" kindref="member">hash</ref>(packet:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hash<sp/>a<sp/>packet.</highlight></codeline>
 <codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sha256(packet.encode(Protocol.ENCODING)).hexdigest()</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Hasher_1afd277303108c54869b36889d84575d0a" kindref="member">enhash</ref>(packet:<sp/>str)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" kindref="member">enhash</ref>(packet:<sp/>str)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hash<sp/>and<sp/>encode<sp/>(Protocol.ENCODING)<sp/>a<sp/>packet.</highlight></codeline>
 <codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sha256(packet.encode(Protocol.ENCODING)).hexdigest().encode(Protocol.ENCODING)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="classpacket_1_1Compressor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Compressor" kindref="compound">Compressor</ref>:</highlight></codeline>
+<codeline lineno="37" refid="classgame_1_1network_1_1packet_1_1Compressor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Compressor" kindref="compound">Compressor</ref>:</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>compressing<sp/>objects.</highlight></codeline>
 <codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Used<sp/>for<sp/>sending<sp/>and<sp/>receiving<sp/>game<sp/>data<sp/>from<sp/>the<sp/>client/server.</highlight></codeline>
 <codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Compressor_1a32acd45588b1c395cdb48fc77cd47832" kindref="member">compress</ref>(obj:<sp/>any)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92" kindref="member">compress</ref>(obj:<sp/>any)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Compress<sp/>an<sp/>object<sp/>to<sp/>bytes.</highlight></codeline>
 <codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lzma.compress(pickle.dumps(obj))</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpacket_1_1Compressor_1a6cf8baba36e0de6a491d862997ab27cb" kindref="member">decompress</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>any:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" kindref="member">decompress</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>any:</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Decompress<sp/>byte<sp/>data<sp/>to<sp/>an<sp/>object,<sp/>if<sp/>valid.</highlight></codeline>
 <codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Otherwise,<sp/>return<sp/>None.</highlight></codeline>
@@ -73,20 +75,20 @@
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8" kindref="member">fill</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6" kindref="member">fill</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Fill<sp/>the<sp/>packet<sp/>with<sp/>empty<sp/>data<sp/>if<sp/>its<sp/>size<sp/>is<sp/>not<sp/>a<sp/>multiple<sp/>of<sp/>BUFFER_SIZE.</highlight></codeline>
 <codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data<sp/>+<sp/>b</highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>*<sp/>(Protocol.BUFFER_SIZE<sp/>-<sp/>len(data)<sp/>%<sp/>Protocol.BUFFER_SIZE)</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428" kindref="member">to_bytes</ref>(data:<sp/>str)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9" kindref="member">to_bytes</ref>(data:<sp/>str)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>string<sp/>as<sp/>bytes<sp/>encoded<sp/>with<sp/>protocol&apos;s<sp/>chosen<sp/>encoding.</highlight></codeline>
 <codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bytes(data,<sp/>encoding=Protocol.ENCODING)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacepacket_1ae33b14a366ec431061961eee5fd3e6b2" kindref="member">hex_len</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19" kindref="member">hex_len</ref>(data:<sp/>bytes)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
 <codeline lineno="78"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>length<sp/>of<sp/>data<sp/>in<sp/>hex.<sp/>Used<sp/>in<sp/>packet<sp/>header<sp/>for<sp/>determining<sp/>data<sp/>size.<sp/>Max<sp/>length<sp/>is<sp/>of<sp/>SIZE<sp/>/<sp/>2<sp/>bytes.</highlight></codeline>
 <codeline lineno="79"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>

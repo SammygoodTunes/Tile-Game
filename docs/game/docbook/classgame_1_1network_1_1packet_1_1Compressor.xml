@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1network_1_1packet_1_1Compressor" xml:lang="en-US">
+<title>game.network.packet.Compressor Class Reference</title>
+<indexterm><primary>game.network.packet.Compressor</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bytes <link linkend="_classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92">compress</link> (any obj)</para>
+</listitem>
+            <listitem><para>any <link linkend="_classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723">decompress</link> (bytes data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for compressing objects.
+Used for sending and receiving game data from the client/server.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92"/><section>
+    <title>compress()</title>
+<indexterm><primary>compress</primary><secondary>game.network.packet.Compressor</secondary></indexterm>
+<indexterm><primary>game.network.packet.Compressor</primary><secondary>compress</secondary></indexterm>
+<para><computeroutput> bytes game.network.packet.Compressor.compress (any obj)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Compress an object to bytes.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723"/><section>
+    <title>decompress()</title>
+<indexterm><primary>decompress</primary><secondary>game.network.packet.Compressor</secondary></indexterm>
+<indexterm><primary>game.network.packet.Compressor</primary><secondary>decompress</secondary></indexterm>
+<para><computeroutput> any game.network.packet.Compressor.decompress (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Decompress byte data to an object, if valid.
+Otherwise, return None.
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_packet_8py">packet.py</link></section>
+</section>

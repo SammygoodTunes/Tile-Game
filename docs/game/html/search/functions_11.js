@@ -4,7 +4,7 @@ var searchData=
   ['select_1',['select',['../classgame_1_1gui_1_1slot_1_1Slot.html#aaa5290040947381cde1a6e849d1cf225',1,'game::gui::slot::Slot']]],
   ['select_5fslot_2',['select_slot',['../classgame_1_1gui_1_1hotbar_1_1Hotbar.html#a6060234d8969fd0cc3415cdf87576c37',1,'game::gui::hotbar::Hotbar']]],
   ['send_3',['send',['../classgame_1_1client_1_1connection_1_1XSocket.html#a0a54d87e8264abd2f07f86f95465ed33',1,'game::client::connection::XSocket']]],
-  ['send_5flocal_5fplayer_4',['send_local_player',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html#a5fbe3b0372517152b265a2f22817bdd0',1,'game::client::tasks::ClientTasks']]],
+  ['send_5flocal_5fplayer_4',['send_local_player',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html#a66bf9c24cf39aeec541979d2a2f86891',1,'game::client::tasks::ClientTasks']]],
   ['send_5fplayer_5fname_5',['send_player_name',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html#a0f262a813e52fa80e2fb0d9ad5792d4c',1,'game::client::tasks::ClientTasks']]],
   ['set_5fantialiasing_6',['set_antialiasing',['../classgame_1_1gui_1_1label_1_1Label.html#a9ec612a14fbba386c08fbc4997cbbb6e',1,'game::gui::label::Label']]],
   ['set_5fatlas_7',['set_atlas',['../classgame_1_1gui_1_1hotbar_1_1Hotbar.html#a413c2077d1bf25e1edf8613f84000bf0',1,'game.gui.hotbar.Hotbar.set_atlas()'],['../classgame_1_1world_1_1tile__manager_1_1TileManager.html#a36d357fe59f04d2cc5124b45c1b23e4d',1,'game.world.tile_manager.TileManager.set_atlas()']]],
@@ -39,7 +39,7 @@ var searchData=
   ['set_5fpermutations_36',['set_permutations',['../classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a1b7d68791c323566f56c89e5e51ab6ed',1,'game::world::synth::noise::PerlinNoise']]],
   ['set_5fplaceholder_5ftext_37',['set_placeholder_text',['../classgame_1_1gui_1_1inputbox_1_1InputBox.html#abe10aa1865cf9aa10215697ce7376580',1,'game::gui::inputbox::InputBox']]],
   ['set_5fplayer_5fname_38',['set_player_name',['../classgame_1_1entity_1_1player_1_1Player.html#a658c904f6950d8a6b4330a45420e5cd9',1,'game::entity::player::Player']]],
-  ['set_5fplayers_39',['set_players',['../classgame_1_1client_1_1player__manager_1_1PlayerManager.html#a7f9ed3d5e8ecdf9629100d6e40bcc887',1,'game::client::player_manager::PlayerManager']]],
+  ['set_5fplayers_39',['set_players',['../classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html#a8d489e6d42e4da6545d1c16b642a309d',1,'game::client::managers::player_manager::PlayerManager']]],
   ['set_5fresistance_40',['set_resistance',['../classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html#a92d3170631cd85311c425947f3685841',1,'game::data::tiles::tile::Tile']]],
   ['set_5fseed_41',['set_seed',['../classgame_1_1world_1_1map__manager_1_1Map.html#adc86ef6fd43e59817c4868fd50349dc0',1,'game::world::map_manager::Map']]],
   ['set_5fselected_42',['set_selected',['../classgame_1_1gui_1_1inputbox_1_1InputBox.html#a6b6e6356f3a6d31d6c825a135d09e19c',1,'game::gui::inputbox::InputBox']]],
@@ -67,6 +67,6 @@ var searchData=
   ['set_5fxy_64',['set_xy',['../classgame_1_1data_1_1items_1_1item_1_1Item.html#afe3409288c96cf97b673ba253c9dffa3',1,'game.data.items.item.Item.set_xy()'],['../classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html#a5bc50553c7afc4d48525208c32627462',1,'game.data.tiles.tile.Tile.set_xy()']]],
   ['set_5fy_65',['set_y',['../classgame_1_1entity_1_1player_1_1Player.html#ae64ca646603c8b9a03b716ce202a36fe',1,'game.entity.player.Player.set_y()'],['../classgame_1_1gui_1_1label_1_1Label.html#ab8a8311cc9c68eabd1cf7c983bcd8f19',1,'game.gui.label.Label.set_y()'],['../classgame_1_1gui_1_1widget_1_1Widget.html#a15c930c777ed581488c9cc8666b9734a',1,'game.gui.widget.Widget.set_y()'],['../classgame_1_1world_1_1map__manager_1_1Map.html#abfa512fc695fbc68b41de1bc6a23a559',1,'game.world.map_manager.Map.set_y()']]],
   ['smooth_5fnoise_66',['smooth_noise',['../classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a26dab3b7ad94998b3a6d9603be07289c',1,'game::world::synth::noise::PerlinNoise']]],
-  ['start_67',['start',['../classgame_1_1client_1_1connection_1_1Connection.html#a895bd3122b3a99c86291efac73ad6ef0',1,'game.client.connection.Connection.start()'],['../classserver_1_1Server.html#acb2086533d346fed646b17afc5edb96e',1,'server.Server.start()']]],
-  ['stop_68',['stop',['../classgame_1_1client_1_1client_1_1Client.html#aeba4f31315d488c27e9990d45f0273c3',1,'game.client.client.Client.stop()'],['../classgame_1_1core_1_1game_1_1Game.html#a8fa056f9a3b1dc59865db056d318fb5c',1,'game.core.game.Game.stop()'],['../classserver_1_1Server.html#aead981f8958fcd6260c4a9209a4444f1',1,'server.Server.stop()']]]
+  ['start_67',['start',['../classgame_1_1client_1_1connection_1_1Connection.html#a895bd3122b3a99c86291efac73ad6ef0',1,'game.client.connection.Connection.start()'],['../classgame_1_1server_1_1server_1_1Server.html#a18ee5bdbf5a23f82401e040602241c5a',1,'game.server.server.Server.start()']]],
+  ['stop_68',['stop',['../classgame_1_1client_1_1client_1_1Client.html#aeba4f31315d488c27e9990d45f0273c3',1,'game.client.client.Client.stop()'],['../classgame_1_1core_1_1game_1_1Game.html#a8fa056f9a3b1dc59865db056d318fb5c',1,'game.core.game.Game.stop()'],['../classgame_1_1server_1_1server_1_1Server.html#a7c08f636ef0a732f91ba3b2be5b39cba',1,'game.server.server.Server.stop()']]]
 ];

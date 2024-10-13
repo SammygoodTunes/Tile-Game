@@ -52,14 +52,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html",
-"classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a8abc79fd7b0d4d58b4d60814b33ff2ef",
-"classgame_1_1gui_1_1inputbox_1_1InputBox.html#aafb42694feb1ca6402cf9307b9d691a4",
-"classgame_1_1gui_1_1screen__manager_1_1Screens.html#a3e27697b40f7c8a39d431793f72ede31",
-"classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a16d18c54f4a3fcae49ed88068d845fd3",
-"classgame_1_1gui_1_1widget_1_1Widget.html#a1fbce299d94fa570b9fdf342de8d14bc",
-"classplayer__handler_1_1PlayerHandler.html#aa7b0692083c7f2655a4e8b74764e6811",
-"namespacegame_1_1gui_1_1screens_1_1credits__screen.html"
+"classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html",
+"classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a72c3ca9733f5ed403a6a6ad6ebe527e7",
+"classgame_1_1gui_1_1inputbox_1_1InputBox.html#aaf642443641ac6cc0307fb24107e313b",
+"classgame_1_1gui_1_1screen__manager_1_1Screens.html#a3de9bfb00da046f70e7abdc80c729c72",
+"classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html",
+"classgame_1_1gui_1_1widget_1_1Widget.html#a15c930c777ed581488c9cc8666b9734a",
+"classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a1b7d68791c323566f56c89e5e51ab6ed",
+"namespacegame_1_1data_1_1structures.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

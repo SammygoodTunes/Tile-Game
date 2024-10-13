@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks" xml:lang="en-US">
+<title>game.server.tasks.ServerTasks Class Reference</title>
+<indexterm><primary>game.server.tasks.ServerTasks</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a35859adae74c4be55c5f41782ff5afbe">disconnection</link> (bytes data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a66bb2ef81e9310189d714782a5c4edc2">recognition</link> (conn, addr)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a7792ac1c63453dd0ff749ce56427da60">map_data</link> (conn, addr, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1aefe4ca0583f7a791d681277a66d7df08">player_join</link> (conn, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler)</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a6b3cba63bddb1dec319fbcefbf3fdf30">local_game_state</link> (conn)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1aa6d02bcc37fdeb56da2e02a77657046c">game_state</link> (conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a4d4ad352431f484c7908c93d0481af07">incoming_packets</link> (conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a04779d8b5faa5a935c6a92463b498536">player_hit</link> (conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for regrouping all server-side requests.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a35859adae74c4be55c5f41782ff5afbe"/><section>
+    <title>disconnection()</title>
+<indexterm><primary>disconnection</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>disconnection</secondary></indexterm>
+<para><computeroutput> bool game.server.tasks.ServerTasks.disconnection (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for disconnecting a player.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1aa6d02bcc37fdeb56da2e02a77657046c"/><section>
+    <title>game_state()</title>
+<indexterm><primary>game_state</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>game_state</secondary></indexterm>
+<para><computeroutput> None game.server.tasks.ServerTasks.game_state ( conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending the overall game state to a client.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a4d4ad352431f484c7908c93d0481af07"/><section>
+    <title>incoming_packets()</title>
+<indexterm><primary>incoming_packets</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>incoming_packets</secondary></indexterm>
+<para><computeroutput> bool game.server.tasks.ServerTasks.incoming_packets ( conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for handling incoming packets.
+Return True if packet is received and is valid, otherwise False
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a6b3cba63bddb1dec319fbcefbf3fdf30"/><section>
+    <title>local_game_state()</title>
+<indexterm><primary>local_game_state</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>local_game_state</secondary></indexterm>
+<para><computeroutput>game.server.tasks.ServerTasks.local_game_state ( conn)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for requesting a local game state. This is only for specific needs like player data.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a7792ac1c63453dd0ff749ce56427da60"/><section>
+    <title>map_data()</title>
+<indexterm><primary>map_data</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>map_data</secondary></indexterm>
+<para><computeroutput> None game.server.tasks.ServerTasks.map_data ( conn,  addr, <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler">WorldHandler</link> world_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for sending map data to a client.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a04779d8b5faa5a935c6a92463b498536"/><section>
+    <title>player_hit()</title>
+<indexterm><primary>player_hit</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>player_hit</secondary></indexterm>
+<para><computeroutput> None game.server.tasks.ServerTasks.player_hit ( conn, bytes data, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1aefe4ca0583f7a791d681277a66d7df08"/><section>
+    <title>player_join()</title>
+<indexterm><primary>player_join</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>player_join</secondary></indexterm>
+<para><computeroutput> str game.server.tasks.ServerTasks.player_join ( conn, <link linkend="_classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler">PlayerHandler</link> player_handler)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for joining a client player to the server.
+Returns the received player name.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1tasks_1_1ServerTasks_1a66bb2ef81e9310189d714782a5c4edc2"/><section>
+    <title>recognition()</title>
+<indexterm><primary>recognition</primary><secondary>game.server.tasks.ServerTasks</secondary></indexterm>
+<indexterm><primary>game.server.tasks.ServerTasks</primary><secondary>recognition</secondary></indexterm>
+<para><computeroutput> bool game.server.tasks.ServerTasks.recognition ( conn,  addr)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for checking for player authenticity.
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_server_2tasks_8py">server/tasks.py</link></section>
+</section>

@@ -15,9 +15,11 @@
 </listitem>
             <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c">send_player_name</link> (sock, player_name)</para>
 </listitem>
-            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0">send_local_player</link> (sock, player_manager)</para>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891">send_local_player</link> (sock, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)</para>
 </listitem>
-            <listitem><para>list|None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94">get_global_game_state</link> (sock)</para>
+            <listitem><para>bytes|None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df">get_global_game_state</link> (sock)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f">check_packet_queue</link> (sock, list[bytes] queue)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -29,11 +31,21 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f"/><section>
+    <title>check_packet_queue()</title>
+<indexterm><primary>check_packet_queue</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>check_packet_queue</secondary></indexterm>
+<para><computeroutput> None game.client.tasks.ClientTasks.check_packet_queue ( sock, list[bytes] queue)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for verifying the packet queue.
+If a packet is present, take the first one, send it to the server and remove it from the queue.
+[FIFO]
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df"/><section>
     <title>get_global_game_state()</title>
 <indexterm><primary>get_global_game_state</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>get_global_game_state</secondary></indexterm>
-<para><computeroutput> list | None game.client.tasks.ClientTasks.get_global_game_state ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> bytes | None game.client.tasks.ClientTasks.get_global_game_state ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for receiving the global server-side game state.
 Return the game state list object if received successfully, otherwise None.
 </computeroutput></literallayout> </para>
@@ -74,11 +86,11 @@ Return True if the response from the server is received, otherwise False.
 Return True if the client&apos;s connection was successful, otherwise False.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891"/><section>
     <title>send_local_player()</title>
 <indexterm><primary>send_local_player</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>send_local_player</secondary></indexterm>
-<para><computeroutput> bool game.client.tasks.ClientTasks.send_local_player ( sock,  player_manager)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> bool game.client.tasks.ClientTasks.send_local_player ( sock, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for sending the local player to the server.
 Return True if the local player packet was sent to and received by the server, otherwise False.
 </computeroutput></literallayout> </para>

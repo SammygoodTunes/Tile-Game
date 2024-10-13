@@ -1,12 +1,5 @@
 var namespaceunit =
 [
-    [ "test_assets", "namespaceunit_1_1test__assets.html", [
-      [ "test_assets_folder_exists", "namespaceunit_1_1test__assets.html#a4f0edfd554bbf23061fcedfa4e70d0f9", null ],
-      [ "test_atlas_asset_exists", "namespaceunit_1_1test__assets.html#af7c501837c69dc956404ed8182248fc6", null ],
-      [ "test_font_asset_exists", "namespaceunit_1_1test__assets.html#a377735ff98cc69dae38068a3f1f040bd", null ],
-      [ "test_items_asset_exists", "namespaceunit_1_1test__assets.html#a698d649beee612a32878046e5cbbb828", null ],
-      [ "test_player_asset_exist", "namespaceunit_1_1test__assets.html#a18a14230e36ab61b3c3dfe61a256d43c", null ]
-    ] ],
     [ "test_core", "namespaceunit_1_1test__core.html", [
       [ "test_game_creation", "namespaceunit_1_1test__core.html#a8518af59e6e672bea3e47806196e4e82", null ],
       [ "test_window_creation", "namespaceunit_1_1test__core.html#aa827deffceebe1d34e87b5aea996c0fb", null ],

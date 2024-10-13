@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1network_1_1packet_1_1Hasher" kind="class" language="Python" prot="public">
+    <compoundname>game::network::packet::Hasher</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str game.network.packet.Hasher.hash</definition>
+        <argsstring>(str packet)</argsstring>
+        <name>hash</name>
+        <qualifiedname>game.network.packet.Hasher.hash</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Hash a packet.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.network.packet.Hasher.enhash</definition>
+        <argsstring>(str packet)</argsstring>
+        <name>enhash</name>
+        <qualifiedname>game.network.packet.Hasher.enhash</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Hash and encode (Protocol.ENCODING) a packet.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="30" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for hashing packets.
+Used for sending and receiving protocol commands from the client/server.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="16" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" prot="public" virt="non-virtual"><scope>game::network::packet::Hasher</scope><name>enhash</name></member>
+      <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46" prot="public" virt="non-virtual"><scope>game::network::packet::Hasher</scope><name>hash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -12,9 +12,12 @@ var searchData=
   ['world_2epy_9',['world.py',['../world_8py.html',1,'']]],
   ['world_2f_5f_5finit_5f_5f_2epy_10',['__init__.py',['../world_2____init_____8py.html',1,'']]],
   ['world_2fsynth_2f_5f_5finit_5f_5f_2epy_11',['__init__.py',['../world_2synth_2____init_____8py.html',1,'']]],
-  ['world_5fhandler_12',['world_handler',['../namespaceworld__handler.html',1,'world_handler'],['../classserver_1_1Server.html#aec6add2a80194c93a1a2ecfc7b94a166',1,'server.Server.world_handler']]],
+  ['world_5fhandler_12',['world_handler',['../classgame_1_1server_1_1server_1_1Server.html#ad92b403abc4a240ad0757acf0771ec4a',1,'game::server::server::Server']]],
   ['world_5fhandler_2epy_13',['world_handler.py',['../world__handler_8py.html',1,'']]],
-  ['world_5fproperties_2epy_14',['world_properties.py',['../world__properties_8py.html',1,'']]],
-  ['worldhandler_15',['WorldHandler',['../classworld__handler_1_1WorldHandler.html',1,'world_handler']]],
-  ['worldproperties_16',['WorldProperties',['../classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html',1,'game::data::properties::world_properties']]]
+  ['world_5fmanager_14',['world_manager',['../classgame_1_1client_1_1connection_1_1Connection.html#a331149fc2e24cb2ca3af1353b14c84bf',1,'game::client::connection::Connection']]],
+  ['world_5fmanager_2epy_15',['world_manager.py',['../world__manager_8py.html',1,'']]],
+  ['world_5fproperties_2epy_16',['world_properties.py',['../world__properties_8py.html',1,'']]],
+  ['worldhandler_17',['WorldHandler',['../classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html',1,'game::server::handlers::world_handler']]],
+  ['worldmanager_18',['WorldManager',['../classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html',1,'game::client::managers::world_manager']]],
+  ['worldproperties_19',['WorldProperties',['../classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html',1,'game::data::properties::world_properties']]]
 ];

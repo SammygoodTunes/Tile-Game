@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder" xml:lang="en-US">
+<title>game.network.builders.player_builder.PlayerBuilder Class Reference</title>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a9d904e3c2451a0f0d8db97483872637b">create_player</link> ()</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ad26a37becdfb4488788b7c04dd435811">get_compressed_player_packet</link> (int command_id, player)</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ac051f0d3ad578e5c755bc77ef8f3251a">get_decompressed_player_packet</link> (bytes bytes_obj)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a8a303ac86877fcbe9d8abdecc02d3827">update_player_from_packet</link> (bytes bytes_obj, player)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6406a117b9113b4eebb6f25ea4a1b773">compress_player</link> (dict player)</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af699273a7bd4ed1d35af2f6392ba6a7e">decompress_player</link> (bytes bytes_obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af585f79b36a4b1b92d9714016f94c904">NAME_KEY</link> = &apos;name&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6493661738907d4be8d6a439c2dbc1a8">X_POS_KEY</link> = &apos;x&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab3e3803c9a6ae5e2a58ed8216749c2c2">Y_POS_KEY</link> = &apos;y&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae81af21fbce606e5892dabc33efede85">PREV_X_POS_KEY</link> = &apos;previous_x&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae756e95f2f88f3a138f41e9465be0c38">PREV_Y_POS_KEY</link> = &apos;previous_y&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1add98f10c31dff2b33378dfd79087ba5c">LERP_KEY</link> = &apos;lerp&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1afe2d1780ad3c9b699a4478fce3b411df">HEALTH_KEY</link> = &apos;health&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab7af888a2afea9c3c93cdf81ff0c8324">BROKEN_TILE_X</link> = &apos;broken_tile_x&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1aa930f4b5afc89358fe82d9f41ab1cc34">BROKEN_TILE_Y</link> = &apos;broken_tile_y&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for the player packet builder.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6406a117b9113b4eebb6f25ea4a1b773"/><section>
+    <title>compress_player()</title>
+<indexterm><primary>compress_player</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>compress_player</secondary></indexterm>
+<para><computeroutput> bytes game.network.builders.player_builder.PlayerBuilder.compress_player (dict player)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Compress a player dict into small, compact bytes object.
+TODO: Use UUIDs instead of names
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a9d904e3c2451a0f0d8db97483872637b"/><section>
+    <title>create_player()</title>
+<indexterm><primary>create_player</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>create_player</secondary></indexterm>
+<para><computeroutput> dict game.network.builders.player_builder.PlayerBuilder.create_player ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Create a player packet.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af699273a7bd4ed1d35af2f6392ba6a7e"/><section>
+    <title>decompress_player()</title>
+<indexterm><primary>decompress_player</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>decompress_player</secondary></indexterm>
+<para><computeroutput> dict game.network.builders.player_builder.PlayerBuilder.decompress_player (bytes bytes_obj)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Decompress a player bytes object back to a player dict.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ad26a37becdfb4488788b7c04dd435811"/><section>
+    <title>get_compressed_player_packet()</title>
+<indexterm><primary>get_compressed_player_packet</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>get_compressed_player_packet</secondary></indexterm>
+<para><computeroutput> bytes game.network.builders.player_builder.PlayerBuilder.get_compressed_player_packet (int command_id,  player)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Return a compressed update player packet from the attributes of the given player object.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ac051f0d3ad578e5c755bc77ef8f3251a"/><section>
+    <title>get_decompressed_player_packet()</title>
+<indexterm><primary>get_decompressed_player_packet</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>get_decompressed_player_packet</secondary></indexterm>
+<para><computeroutput> dict game.network.builders.player_builder.PlayerBuilder.get_decompressed_player_packet (bytes bytes_obj)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Return a player dict from a player bytes object.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a8a303ac86877fcbe9d8abdecc02d3827"/><section>
+    <title>update_player_from_packet()</title>
+<indexterm><primary>update_player_from_packet</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>update_player_from_packet</secondary></indexterm>
+<para><computeroutput> None game.network.builders.player_builder.PlayerBuilder.update_player_from_packet (bytes bytes_obj,  player)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Automatically update a player object from a player bytes object.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab7af888a2afea9c3c93cdf81ff0c8324"/><section>
+    <title>BROKEN_TILE_X</title>
+<indexterm><primary>BROKEN_TILE_X</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>BROKEN_TILE_X</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.BROKEN_TILE_X = &apos;broken_tile_x&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1aa930f4b5afc89358fe82d9f41ab1cc34"/><section>
+    <title>BROKEN_TILE_Y</title>
+<indexterm><primary>BROKEN_TILE_Y</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>BROKEN_TILE_Y</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.BROKEN_TILE_Y = &apos;broken_tile_y&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1afe2d1780ad3c9b699a4478fce3b411df"/><section>
+    <title>HEALTH_KEY</title>
+<indexterm><primary>HEALTH_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>HEALTH_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.HEALTH_KEY = &apos;health&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1add98f10c31dff2b33378dfd79087ba5c"/><section>
+    <title>LERP_KEY</title>
+<indexterm><primary>LERP_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>LERP_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.LERP_KEY = &apos;lerp&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af585f79b36a4b1b92d9714016f94c904"/><section>
+    <title>NAME_KEY</title>
+<indexterm><primary>NAME_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>NAME_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.NAME_KEY = &apos;name&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae81af21fbce606e5892dabc33efede85"/><section>
+    <title>PREV_X_POS_KEY</title>
+<indexterm><primary>PREV_X_POS_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>PREV_X_POS_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.PREV_X_POS_KEY = &apos;previous_x&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ae756e95f2f88f3a138f41e9465be0c38"/><section>
+    <title>PREV_Y_POS_KEY</title>
+<indexterm><primary>PREV_Y_POS_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>PREV_Y_POS_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.PREV_Y_POS_KEY = &apos;previous_y&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1a6493661738907d4be8d6a439c2dbc1a8"/><section>
+    <title>X_POS_KEY</title>
+<indexterm><primary>X_POS_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>X_POS_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.X_POS_KEY = &apos;x&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1ab3e3803c9a6ae5e2a58ed8216749c2c2"/><section>
+    <title>Y_POS_KEY</title>
+<indexterm><primary>Y_POS_KEY</primary><secondary>game.network.builders.player_builder.PlayerBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.player_builder.PlayerBuilder</primary><secondary>Y_POS_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.player_builder.PlayerBuilder.Y_POS_KEY = &apos;y&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_player__builder_8py">player_builder.py</link></section>
+</section>

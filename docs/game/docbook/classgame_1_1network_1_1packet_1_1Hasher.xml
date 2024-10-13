@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1network_1_1packet_1_1Hasher" xml:lang="en-US">
+<title>game.network.packet.Hasher Class Reference</title>
+<indexterm><primary>game.network.packet.Hasher</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46">hash</link> (str packet)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c">enhash</link> (str packet)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for hashing packets.
+Used for sending and receiving protocol commands from the client/server.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c"/><section>
+    <title>enhash()</title>
+<indexterm><primary>enhash</primary><secondary>game.network.packet.Hasher</secondary></indexterm>
+<indexterm><primary>game.network.packet.Hasher</primary><secondary>enhash</secondary></indexterm>
+<para><computeroutput> bytes game.network.packet.Hasher.enhash (str packet)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Hash and encode (Protocol.ENCODING) a packet.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46"/><section>
+    <title>hash()</title>
+<indexterm><primary>hash</primary><secondary>game.network.packet.Hasher</secondary></indexterm>
+<indexterm><primary>game.network.packet.Hasher</primary><secondary>hash</secondary></indexterm>
+<para><computeroutput> str game.network.packet.Hasher.hash (str packet)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Hash a packet.
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_packet_8py">packet.py</link></section>
+</section>

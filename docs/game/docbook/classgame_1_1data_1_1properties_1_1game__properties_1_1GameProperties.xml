@@ -7,11 +7,13 @@
         <itemizedlist>
             <listitem><para>str <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1ae4c99bc1cde46c8445af986d4d102549">APP_NAME</link> = &apos;untitled game&apos;</para>
 </listitem>
-            <listitem><para>str <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a29dec71ac57560f91bc5f5277f32fa91">APP_VER</link> = &apos;0.0.1a&apos;</para>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a29dec71ac57560f91bc5f5277f32fa91">APP_VER</link> = &apos;0.0.2a&apos;</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a11aff4ecff67ba4acd6fd5f405bb9c66">KEY_DELAY</link> = 500</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a4e2627118d7ae2243cb1c662cf17045a">KEY_INTERVAL</link> = 25</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a35d897d12f4af9ca113f0b25b0fdfe93">LOGGER_DELAY</link> = 0.5</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -32,7 +34,7 @@
     <title>APP_VER</title>
 <indexterm><primary>APP_VER</primary><secondary>game.data.properties.game_properties.GameProperties</secondary></indexterm>
 <indexterm><primary>game.data.properties.game_properties.GameProperties</primary><secondary>APP_VER</secondary></indexterm>
-<para><computeroutput>str game.data.properties.game_properties.GameProperties.APP_VER = &apos;0.0.1a&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>str game.data.properties.game_properties.GameProperties.APP_VER = &apos;0.0.2a&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a11aff4ecff67ba4acd6fd5f405bb9c66"/><section>
     <title>KEY_DELAY</title>
 <indexterm><primary>KEY_DELAY</primary><secondary>game.data.properties.game_properties.GameProperties</secondary></indexterm>
@@ -43,6 +45,11 @@
 <indexterm><primary>KEY_INTERVAL</primary><secondary>game.data.properties.game_properties.GameProperties</secondary></indexterm>
 <indexterm><primary>game.data.properties.game_properties.GameProperties</primary><secondary>KEY_INTERVAL</secondary></indexterm>
 <para><computeroutput>int game.data.properties.game_properties.GameProperties.KEY_INTERVAL = 25<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties_1a35d897d12f4af9ca113f0b25b0fdfe93"/><section>
+    <title>LOGGER_DELAY</title>
+<indexterm><primary>LOGGER_DELAY</primary><secondary>game.data.properties.game_properties.GameProperties</secondary></indexterm>
+<indexterm><primary>game.data.properties.game_properties.GameProperties</primary><secondary>LOGGER_DELAY</secondary></indexterm>
+<para><computeroutput>float game.data.properties.game_properties.GameProperties.LOGGER_DELAY = 0.5<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_game__properties_8py">game_properties.py</link></section>

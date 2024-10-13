@@ -22,7 +22,7 @@ Return True if the client&apos;s connection was successful, otherwise False.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="14" bodyend="22"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="18" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -43,7 +43,7 @@ Return True if the map data response from the server was received successfully, 
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="24" bodyend="32"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="28" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -64,7 +64,7 @@ Return the decompressed map data object once received.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="34" bodyend="45"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="38" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1afca576e562ad4e6cb4c168c193cff851" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -85,7 +85,7 @@ Return True if the response from the server is received, otherwise False.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="47" bodyend="55"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="51" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -110,12 +110,12 @@ Raise exception when player name is already taken.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="57" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="57" bodyend="69"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="61" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="61" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition> bool game.client.tasks.ClientTasks.send_local_player</definition>
-        <argsstring>(sock, player_manager)</argsstring>
+        <argsstring>(sock, PlayerManager player_manager)</argsstring>
         <name>send_local_player</name>
         <qualifiedname>game.client.tasks.ClientTasks.send_local_player</qualifiedname>
         <param>
@@ -123,8 +123,8 @@ Raise exception when player name is already taken.
           <defname>sock</defname>
         </param>
         <param>
-          <type>player_manager</type>
-          <defname>player_manager</defname>
+          <type><ref refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager" kindref="compound">PlayerManager</ref></type>
+          <declname>player_manager</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -135,11 +135,11 @@ Return True if the local player packet was sent to and received by the server, o
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="71" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="71" bodyend="83"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="75" bodyend="90"/>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>list|None</type>
-        <definition> list | None game.client.tasks.ClientTasks.get_global_game_state</definition>
+      <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes|None</type>
+        <definition> bytes | None game.client.tasks.ClientTasks.get_global_game_state</definition>
         <argsstring>(sock)</argsstring>
         <name>get_global_game_state</name>
         <qualifiedname>game.client.tasks.ClientTasks.get_global_game_state</qualifiedname>
@@ -156,7 +156,34 @@ Return the game state list object if received successfully, otherwise None.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="85" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="85" bodyend="103"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="92" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="92" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.tasks.ClientTasks.check_packet_queue</definition>
+        <argsstring>(sock, list[bytes] queue)</argsstring>
+        <name>check_packet_queue</name>
+        <qualifiedname>game.client.tasks.ClientTasks.check_packet_queue</qualifiedname>
+        <param>
+          <type>sock</type>
+          <defname>sock</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>queue</declname>
+          <array>[bytes]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task for verifying the packet queue.
+If a packet is present, take the first one, send it to the server and remove it from the queue.
+[FIFO]
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="111" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="111" bodyend="121"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -165,14 +192,15 @@ Return the game state list object if received successfully, otherwise None.
 <para><verbatim>Class for regrouping all client-side requests.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="8" bodyend="103"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/tasks.py" bodystart="12" bodyend="121"/>
     <listofallmembers>
-      <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a156d17ee2a03e9664b54cd364474ed94" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>get_global_game_state</name></member>
+      <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>check_packet_queue</name></member>
+      <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>get_global_game_state</name></member>
       <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>get_map_data</name></member>
       <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>map_data</name></member>
       <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1afca576e562ad4e6cb4c168c193cff851" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>player_join</name></member>
       <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a687269af093982a745ab9e074bcb905d" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>recognition</name></member>
-      <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a5fbe3b0372517152b265a2f22817bdd0" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>send_local_player</name></member>
+      <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>send_local_player</name></member>
       <member refid="classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c" prot="public" virt="non-virtual"><scope>game::client::tasks::ClientTasks</scope><name>send_player_name</name></member>
     </listofallmembers>
   </compounddef>

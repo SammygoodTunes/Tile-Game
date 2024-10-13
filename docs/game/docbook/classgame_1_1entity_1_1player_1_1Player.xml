@@ -75,8 +75,6 @@
 </listitem>
             <listitem><para>float <link linkend="_classgame_1_1entity_1_1player_1_1Player_1aa4067e093443bd5303a96e38da1fd0f3">get_coefficient_from_center_y</link> (self, int parent_height)</para>
 </listitem>
-            <listitem><para>tuple[int, int] <link linkend="_classgame_1_1entity_1_1player_1_1Player_1ae688ddd7f0b378aebf4c212746a0e1d3">get_pointing_at</link> (self)</para>
-</listitem>
             <listitem><para>int <link linkend="_classgame_1_1entity_1_1player_1_1Player_1a063430d89c29fe2dfb8011a575b8e817">get_selected_tile_x</link> (self)</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1entity_1_1player_1_1Player_1ae097f71f869a6a0fa85067f64f4429cd">get_selected_tile_y</link> (self)</para>
@@ -122,8 +120,6 @@
 </listitem>
             <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1ac0a712c853a6aafbe0bed8f3ac419d0e">selected_tile_sy</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1a6ef3a3c756e685a7e9906b8b8f30f74f">pointing_at</link></para>
-</listitem>
             <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4">move</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1a55d2fdcd55a9ca3a892fcaf492938d8f">velocity_x</link></para>
@@ -137,6 +133,8 @@
             <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1aaf14809a75dfd272eac4ddcf173423c0">breaking_tile</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1a68d1e857e5771b3761bea1f59478a00d">prev_selected_tile</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1a04deaa657e48911162bbd714490fa2e3">prev_broken_tile</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -280,14 +278,6 @@ This signifies that the returned value will always be positive.
 <indexterm><primary>game.entity.player.Player</primary><secondary>get_player_name</secondary></indexterm>
 <para><computeroutput>game.entity.player.Player.get_player_name ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the player&apos;s in-game name.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1ae688ddd7f0b378aebf4c212746a0e1d3"/><section>
-    <title>get_pointing_at()</title>
-<indexterm><primary>get_pointing_at</primary><secondary>game.entity.player.Player</secondary></indexterm>
-<indexterm><primary>game.entity.player.Player</primary><secondary>get_pointing_at</secondary></indexterm>
-<para><computeroutput> tuple[int, int] game.entity.player.Player.get_pointing_at ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the pointing-at position of the player.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a063430d89c29fe2dfb8011a575b8e817"/><section>
@@ -596,11 +586,11 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <indexterm><primary>player_name</primary><secondary>game.entity.player.Player</secondary></indexterm>
 <indexterm><primary>game.entity.player.Player</primary><secondary>player_name</secondary></indexterm>
 <para><computeroutput>game.entity.player.Player.player_name</computeroutput></para></section>
-<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a6ef3a3c756e685a7e9906b8b8f30f74f"/><section>
-    <title>pointing_at</title>
-<indexterm><primary>pointing_at</primary><secondary>game.entity.player.Player</secondary></indexterm>
-<indexterm><primary>game.entity.player.Player</primary><secondary>pointing_at</secondary></indexterm>
-<para><computeroutput>game.entity.player.Player.pointing_at</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a04deaa657e48911162bbd714490fa2e3"/><section>
+    <title>prev_broken_tile</title>
+<indexterm><primary>prev_broken_tile</primary><secondary>game.entity.player.Player</secondary></indexterm>
+<indexterm><primary>game.entity.player.Player</primary><secondary>prev_broken_tile</secondary></indexterm>
+<para><computeroutput>game.entity.player.Player.prev_broken_tile</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a68d1e857e5771b3761bea1f59478a00d"/><section>
     <title>prev_selected_tile</title>
 <indexterm><primary>prev_selected_tile</primary><secondary>game.entity.player.Player</secondary></indexterm>

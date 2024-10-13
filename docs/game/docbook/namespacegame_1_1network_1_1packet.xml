@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegame_1_1network_1_1packet" xml:lang="en-US">
+<title>game.network.packet Namespace Reference</title>
+<indexterm><primary>game.network.packet</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Compressor">Compressor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Hasher">Hasher</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Packet">Packet</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6">fill</link> (bytes data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9">to_bytes</link> (str data)</para>
+</listitem>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19">hex_len</link> (bytes data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6"/><section>
+    <title>fill()</title>
+<indexterm><primary>fill</primary><secondary>game.network.packet</secondary></indexterm>
+<indexterm><primary>game.network.packet</primary><secondary>fill</secondary></indexterm>
+<para><computeroutput> bytes game.network.packet.fill (bytes data)</computeroutput></para>
+<para><literallayout><computeroutput>Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19"/><section>
+    <title>hex_len()</title>
+<indexterm><primary>hex_len</primary><secondary>game.network.packet</secondary></indexterm>
+<indexterm><primary>game.network.packet</primary><secondary>hex_len</secondary></indexterm>
+<para><computeroutput> bytes game.network.packet.hex_len (bytes data)</computeroutput></para>
+<para><literallayout><computeroutput>Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9"/><section>
+    <title>to_bytes()</title>
+<indexterm><primary>to_bytes</primary><secondary>game.network.packet</secondary></indexterm>
+<indexterm><primary>game.network.packet</primary><secondary>to_bytes</secondary></indexterm>
+<para><computeroutput> bytes game.network.packet.to_bytes (str data)</computeroutput></para>
+<para><literallayout><computeroutput>Return string as bytes encoded with protocol&apos;s chosen encoding.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

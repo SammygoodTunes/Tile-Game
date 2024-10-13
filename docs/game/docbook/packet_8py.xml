@@ -5,29 +5,33 @@
 <simplesect>
     <title>Classes    </title>
         <itemizedlist>
-            <listitem><para>class <link linkend="_classpacket_1_1Packet">packet.Packet</link></para>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Packet">game.network.packet.Packet</link></para>
 </listitem>
-            <listitem><para>class <link linkend="_classpacket_1_1Hasher">packet.Hasher</link></para>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Hasher">game.network.packet.Hasher</link></para>
 </listitem>
-            <listitem><para>class <link linkend="_classpacket_1_1Compressor">packet.Compressor</link></para>
+            <listitem><para>class <link linkend="_classgame_1_1network_1_1packet_1_1Compressor">game.network.packet.Compressor</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Namespaces    </title>
         <itemizedlist>
-            <listitem><para>namespace <link linkend="_namespacepacket">packet</link></para>
+            <listitem><para>namespace <link linkend="_namespacegame">game</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegame_1_1network">game.network</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegame_1_1network_1_1packet">game.network.packet</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para>bytes <link linkend="_namespacepacket_1a9103f651f74a6ef11e41e64aa60342b8">packet.fill</link> (bytes data)</para>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6">game.network.packet.fill</link> (bytes data)</para>
 </listitem>
-            <listitem><para>bytes <link linkend="_namespacepacket_1a77d5d8ce870fb383fc368eabd7a6d428">packet.to_bytes</link> (str data)</para>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9">game.network.packet.to_bytes</link> (str data)</para>
 </listitem>
-            <listitem><para>bytes <link linkend="_namespacepacket_1ae33b14a366ec431061961eee5fd3e6b2">packet.hex_len</link> (bytes data)</para>
+            <listitem><para>bytes <link linkend="_namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19">game.network.packet.hex_len</link> (bytes data)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

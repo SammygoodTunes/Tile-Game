@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" xml:lang="en-US">
+<title>game.network.builders.base_builder.BaseBuilder Class Reference</title>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1aa783db2353eb81dedf09e7f815199a1c">COMMAND_ID_KEY</link> = &apos;id&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a93354937303d82e021019c69fbce3988">TIMESTAMP_KEY</link> = &apos;timestamp&apos;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45">COMMAND_ID_MAX</link> = 1</para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a03dea91227a5a62ca620452fe38b5e34">COMMAND_ID_RANGE</link> = range(0, <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45">COMMAND_ID_MAX</link> + 1)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff">COMMAND_ID_OFFSET</link> = 0x1d</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Base class for packet building
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1aa783db2353eb81dedf09e7f815199a1c"/><section>
+    <title>COMMAND_ID_KEY</title>
+<indexterm><primary>COMMAND_ID_KEY</primary><secondary>game.network.builders.base_builder.BaseBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary><secondary>COMMAND_ID_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.base_builder.BaseBuilder.COMMAND_ID_KEY = &apos;id&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45"/><section>
+    <title>COMMAND_ID_MAX</title>
+<indexterm><primary>COMMAND_ID_MAX</primary><secondary>game.network.builders.base_builder.BaseBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary><secondary>COMMAND_ID_MAX</secondary></indexterm>
+<para><computeroutput>int game.network.builders.base_builder.BaseBuilder.COMMAND_ID_MAX = 1<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff"/><section>
+    <title>COMMAND_ID_OFFSET</title>
+<indexterm><primary>COMMAND_ID_OFFSET</primary><secondary>game.network.builders.base_builder.BaseBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary><secondary>COMMAND_ID_OFFSET</secondary></indexterm>
+<para><computeroutput>int game.network.builders.base_builder.BaseBuilder.COMMAND_ID_OFFSET = 0x1d<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a03dea91227a5a62ca620452fe38b5e34"/><section>
+    <title>COMMAND_ID_RANGE</title>
+<indexterm><primary>COMMAND_ID_RANGE</primary><secondary>game.network.builders.base_builder.BaseBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary><secondary>COMMAND_ID_RANGE</secondary></indexterm>
+<para><computeroutput>game.network.builders.base_builder.BaseBuilder.COMMAND_ID_RANGE = range(0, <link linkend="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45">COMMAND_ID_MAX</link> + 1)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a93354937303d82e021019c69fbce3988"/><section>
+    <title>TIMESTAMP_KEY</title>
+<indexterm><primary>TIMESTAMP_KEY</primary><secondary>game.network.builders.base_builder.BaseBuilder</secondary></indexterm>
+<indexterm><primary>game.network.builders.base_builder.BaseBuilder</primary><secondary>TIMESTAMP_KEY</secondary></indexterm>
+<para><computeroutput>str game.network.builders.base_builder.BaseBuilder.TIMESTAMP_KEY = &apos;timestamp&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_base__builder_8py">base_builder.py</link></section>
+</section>

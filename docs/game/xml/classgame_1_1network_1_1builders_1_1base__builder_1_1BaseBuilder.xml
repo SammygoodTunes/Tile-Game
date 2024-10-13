@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder" kind="class" language="Python" prot="public">
+    <compoundname>game::network::builders::base_builder::BaseBuilder</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1aa783db2353eb81dedf09e7f815199a1c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str game.network.builders.base_builder.BaseBuilder::COMMAND_ID_KEY</definition>
+        <argsstring></argsstring>
+        <name>COMMAND_ID_KEY</name>
+        <qualifiedname>game.network.builders.base_builder.BaseBuilder.COMMAND_ID_KEY</qualifiedname>
+        <initializer>=  &apos;id&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="6" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a93354937303d82e021019c69fbce3988" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str game.network.builders.base_builder.BaseBuilder::TIMESTAMP_KEY</definition>
+        <argsstring></argsstring>
+        <name>TIMESTAMP_KEY</name>
+        <qualifiedname>game.network.builders.base_builder.BaseBuilder.TIMESTAMP_KEY</qualifiedname>
+        <initializer>=  &apos;timestamp&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.network.builders.base_builder.BaseBuilder::COMMAND_ID_MAX</definition>
+        <argsstring></argsstring>
+        <name>COMMAND_ID_MAX</name>
+        <qualifiedname>game.network.builders.base_builder.BaseBuilder.COMMAND_ID_MAX</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="9" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a03dea91227a5a62ca620452fe38b5e34" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.network.builders.base_builder.BaseBuilder::COMMAND_ID_RANGE</definition>
+        <argsstring></argsstring>
+        <name>COMMAND_ID_RANGE</name>
+        <qualifiedname>game.network.builders.base_builder.BaseBuilder.COMMAND_ID_RANGE</qualifiedname>
+        <initializer>=  range(0, <ref refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45" kindref="member">COMMAND_ID_MAX</ref> + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.network.builders.base_builder.BaseBuilder::COMMAND_ID_OFFSET</definition>
+        <argsstring></argsstring>
+        <name>COMMAND_ID_OFFSET</name>
+        <qualifiedname>game.network.builders.base_builder.BaseBuilder.COMMAND_ID_OFFSET</qualifiedname>
+        <initializer>=  0x1d</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for packet building
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/builders/base_builder.py" bodystart="2" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1aa783db2353eb81dedf09e7f815199a1c" prot="public" virt="non-virtual"><scope>game::network::builders::base_builder::BaseBuilder</scope><name>COMMAND_ID_KEY</name></member>
+      <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a295061c955e311503a4814188c806a45" prot="public" virt="non-virtual"><scope>game::network::builders::base_builder::BaseBuilder</scope><name>COMMAND_ID_MAX</name></member>
+      <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff" prot="public" virt="non-virtual"><scope>game::network::builders::base_builder::BaseBuilder</scope><name>COMMAND_ID_OFFSET</name></member>
+      <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a03dea91227a5a62ca620452fe38b5e34" prot="public" virt="non-virtual"><scope>game::network::builders::base_builder::BaseBuilder</scope><name>COMMAND_ID_RANGE</name></member>
+      <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1a93354937303d82e021019c69fbce3988" prot="public" virt="non-virtual"><scope>game::network::builders::base_builder::BaseBuilder</scope><name>TIMESTAMP_KEY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

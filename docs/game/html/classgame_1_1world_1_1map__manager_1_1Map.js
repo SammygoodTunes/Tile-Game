@@ -1,13 +1,14 @@
 var classgame_1_1world_1_1map__manager_1_1Map =
 [
     [ "__init__", "classgame_1_1world_1_1map__manager_1_1Map.html#ad60668d43d3559eaa25fb68456ee78ae", null ],
+    [ "draw_tile", "classgame_1_1world_1_1map__manager_1_1Map.html#af598c523baecdb8813abcad8c13f2588", null ],
     [ "generate", "classgame_1_1world_1_1map__manager_1_1Map.html#aa51037fbb4ada30daba597eff4e49a54", null ],
     [ "get_dynatile", "classgame_1_1world_1_1map__manager_1_1Map.html#a52f0bf1418ce0b52f60121af1c9dd476", null ],
     [ "get_dynatile_data", "classgame_1_1world_1_1map__manager_1_1Map.html#ab82a1b2978d184c9d4e242dd5ac8842c", null ],
     [ "get_dynatile_surface", "classgame_1_1world_1_1map__manager_1_1Map.html#a3e996531503c10a2d9a19090892697b6", null ],
     [ "get_height_in_pixels", "classgame_1_1world_1_1map__manager_1_1Map.html#aba8858dbdcba63bc03f18a27ef16a1b4", null ],
     [ "get_height_in_tiles", "classgame_1_1world_1_1map__manager_1_1Map.html#a3688fd2be056d5996e88d34b1683a394", null ],
-    [ "get_seed", "classgame_1_1world_1_1map__manager_1_1Map.html#aa4d89c484d67fe6e6c799d20f5f9f89f", null ],
+    [ "get_seed", "classgame_1_1world_1_1map__manager_1_1Map.html#a33d6fc1feb01e1dcb83a470b5a1f6bcc", null ],
     [ "get_state", "classgame_1_1world_1_1map__manager_1_1Map.html#ade567d71d8c613c5041371354bf6dda4", null ],
     [ "get_strict_tile_pos", "classgame_1_1world_1_1map__manager_1_1Map.html#aa16fcc3055b0619bf13fa4a72198e749", null ],
     [ "get_surface", "classgame_1_1world_1_1map__manager_1_1Map.html#af49c0926afb19003d3e90b23955cae4e", null ],

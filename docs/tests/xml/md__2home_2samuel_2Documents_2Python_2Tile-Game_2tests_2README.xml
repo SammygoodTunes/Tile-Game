@@ -32,13 +32,13 @@
 <listitem><para>To run tests in a specific module:</para>
 </listitem></itemizedlist>
 </para>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">pytest<sp/>unit/test_assets.py<sp/><sp/>#<sp/>Example</highlight></codeline>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">pytest<sp/>unit/test_core.py<sp/><sp/>#<sp/>Example</highlight></codeline>
 </programlisting></para>
 <para><itemizedlist>
 <listitem><para>To run a specific test of a module:</para>
 </listitem></itemizedlist>
 </para>
-<para><programlisting filename=".bash"><codeline><highlight class="normal">pytest<sp/>unit/test_assets.py::test_assets_folder_exists<sp/><sp/>#<sp/>Example</highlight></codeline>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">pytest<sp/>unit/test_core.py::test_window_creation<sp/><sp/>#<sp/>Example</highlight></codeline>
 </programlisting></para>
 <para><blockquote><para><zwj/>If you&apos;re in the root directory, make sure to add <computeroutput>tests/</computeroutput> to the path argument (e.g. <computeroutput>pytest tests/test_assets.py</computeroutput>) or replace it entirely if the path is <computeroutput>.</computeroutput> (like the third command above). </para>
 </blockquote></para>

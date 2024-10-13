@@ -44,13 +44,13 @@
 <codeline><highlight class="normal">-<sp/>To<sp/>run<sp/>tests<sp/>in<sp/>a<sp/>specific<sp/>module:</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
-<codeline><highlight class="normal">pytest<sp/>unit/test_assets.py<sp/><sp/>#<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>unit/test_core.py<sp/><sp/>#<sp/>Example</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>To<sp/>run<sp/>a<sp/>specific<sp/>test<sp/>of<sp/>a<sp/>module:</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
-<codeline><highlight class="normal">pytest<sp/>unit/test_assets.py::test_assets_folder_exists<sp/><sp/>#<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">pytest<sp/>unit/test_core.py::test_window_creation<sp/><sp/>#<sp/>Example</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">&gt;<sp/>If<sp/>you&apos;re<sp/>in<sp/>the<sp/>root<sp/>directory,<sp/>make<sp/>sure<sp/>to<sp/>add<sp/>`tests/`<sp/>to<sp/>the<sp/>path<sp/>argument<sp/>(e.g.<sp/>`pytest<sp/>tests/test_assets.py`)<sp/>or<sp/>replace<sp/>it<sp/>entirely<sp/>if<sp/>the<sp/>path<sp/>is<sp/>`.`<sp/>(like<sp/>the<sp/>third<sp/>command<sp/>above).</highlight></codeline>

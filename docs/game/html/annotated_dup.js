@@ -1,9 +1,5 @@
 var annotated_dup =
 [
-    [ "builders", "namespacebuilders.html", [
-      [ "BaseBuilder", "classbuilders_1_1BaseBuilder.html", null ],
-      [ "PlayerBuilder", "classbuilders_1_1PlayerBuilder.html", null ]
-    ] ],
     [ "game", "namespacegame.html", [
       [ "client", "namespacegame_1_1client.html", [
         [ "client", "namespacegame_1_1client_1_1client.html", [
@@ -17,8 +13,13 @@ var annotated_dup =
         [ "connection_handler", "namespacegame_1_1client_1_1connection__handler.html", [
           [ "ConnectionHandler", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler" ]
         ] ],
-        [ "player_manager", "namespacegame_1_1client_1_1player__manager.html", [
-          [ "PlayerManager", "classgame_1_1client_1_1player__manager_1_1PlayerManager.html", "classgame_1_1client_1_1player__manager_1_1PlayerManager" ]
+        [ "managers", "namespacegame_1_1client_1_1managers.html", [
+          [ "player_manager", "namespacegame_1_1client_1_1managers_1_1player__manager.html", [
+            [ "PlayerManager", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager" ]
+          ] ],
+          [ "world_manager", "namespacegame_1_1client_1_1managers_1_1world__manager.html", [
+            [ "WorldManager", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" ]
+          ] ]
         ] ],
         [ "tasks", "namespacegame_1_1client_1_1tasks.html", [
           [ "ClientTasks", "classgame_1_1client_1_1tasks_1_1ClientTasks.html", null ]
@@ -90,6 +91,9 @@ var annotated_dup =
         [ "structures", "namespacegame_1_1data_1_1structures.html", [
           [ "map_structure", "namespacegame_1_1data_1_1structures_1_1map__structure.html", [
             [ "MapStructure", "classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html", null ]
+          ] ],
+          [ "player_structure", "namespacegame_1_1data_1_1structures_1_1player__structure.html", [
+            [ "PlayerStructure", "classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure.html", null ]
           ] ],
           [ "tile_structure", "namespacegame_1_1data_1_1structures_1_1tile__structure.html", [
             [ "DynatileStructure", "classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html", null ],
@@ -195,6 +199,40 @@ var annotated_dup =
           [ "Widget", "classgame_1_1gui_1_1widget_1_1Widget.html", "classgame_1_1gui_1_1widget_1_1Widget" ]
         ] ]
       ] ],
+      [ "network", "namespacegame_1_1network.html", [
+        [ "builders", "namespacegame_1_1network_1_1builders.html", [
+          [ "base_builder", "namespacegame_1_1network_1_1builders_1_1base__builder.html", [
+            [ "BaseBuilder", "classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder.html", null ]
+          ] ],
+          [ "player_builder", "namespacegame_1_1network_1_1builders_1_1player__builder.html", [
+            [ "PlayerBuilder", "classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder.html", null ]
+          ] ]
+        ] ],
+        [ "packet", "namespacegame_1_1network_1_1packet.html", [
+          [ "Compressor", "classgame_1_1network_1_1packet_1_1Compressor.html", null ],
+          [ "Hasher", "classgame_1_1network_1_1packet_1_1Hasher.html", null ],
+          [ "Packet", "classgame_1_1network_1_1packet_1_1Packet.html", null ]
+        ] ],
+        [ "protocol", "namespacegame_1_1network_1_1protocol.html", [
+          [ "Protocol", "classgame_1_1network_1_1protocol_1_1Protocol.html", null ]
+        ] ]
+      ] ],
+      [ "server", "namespacegame_1_1server.html", [
+        [ "handlers", "namespacegame_1_1server_1_1handlers.html", [
+          [ "player_handler", "namespacegame_1_1server_1_1handlers_1_1player__handler.html", [
+            [ "PlayerHandler", "classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler.html", "classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler" ]
+          ] ],
+          [ "world_handler", "namespacegame_1_1server_1_1handlers_1_1world__handler.html", [
+            [ "WorldHandler", "classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html", "classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler" ]
+          ] ]
+        ] ],
+        [ "server", "namespacegame_1_1server_1_1server.html", [
+          [ "Server", "classgame_1_1server_1_1server_1_1Server.html", "classgame_1_1server_1_1server_1_1Server" ]
+        ] ],
+        [ "tasks", "namespacegame_1_1server_1_1tasks.html", [
+          [ "ServerTasks", "classgame_1_1server_1_1tasks_1_1ServerTasks.html", null ]
+        ] ]
+      ] ],
       [ "utils", "namespacegame_1_1utils.html", [
         [ "exceptions", "namespacegame_1_1utils_1_1exceptions.html", [
           [ "InvalidGamePropertyValue", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue.html", "classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue" ],
@@ -228,25 +266,5 @@ var annotated_dup =
           [ "World", "classgame_1_1world_1_1world_1_1World.html", "classgame_1_1world_1_1world_1_1World" ]
         ] ]
       ] ]
-    ] ],
-    [ "packet", "namespacepacket.html", [
-      [ "Compressor", "classpacket_1_1Compressor.html", null ],
-      [ "Hasher", "classpacket_1_1Hasher.html", null ],
-      [ "Packet", "classpacket_1_1Packet.html", null ]
-    ] ],
-    [ "player_handler", "namespaceplayer__handler.html", [
-      [ "PlayerHandler", "classplayer__handler_1_1PlayerHandler.html", "classplayer__handler_1_1PlayerHandler" ]
-    ] ],
-    [ "protocol", "namespaceprotocol.html", [
-      [ "Protocol", "classprotocol_1_1Protocol.html", null ]
-    ] ],
-    [ "server", "namespaceserver.html", [
-      [ "Server", "classserver_1_1Server.html", "classserver_1_1Server" ]
-    ] ],
-    [ "tasks", "namespacetasks.html", [
-      [ "ServerTasks", "classtasks_1_1ServerTasks.html", null ]
-    ] ],
-    [ "world_handler", "namespaceworld__handler.html", [
-      [ "WorldHandler", "classworld__handler_1_1WorldHandler.html", "classworld__handler_1_1WorldHandler" ]
     ] ]
 ];

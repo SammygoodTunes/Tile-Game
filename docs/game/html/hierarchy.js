@@ -1,11 +1,11 @@
 var hierarchy =
 [
-    [ "builders.BaseBuilder", "classbuilders_1_1BaseBuilder.html", null ],
+    [ "game.network.builders.base_builder.BaseBuilder", "classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder.html", null ],
     [ "game.world.camera.Camera", "classgame_1_1world_1_1camera_1_1Camera.html", null ],
     [ "game.data.properties.camera_properties.CameraProperties", "classgame_1_1data_1_1properties_1_1camera__properties_1_1CameraProperties.html", null ],
     [ "game.client.client.Client", "classgame_1_1client_1_1client_1_1Client.html", null ],
     [ "game.client.tasks.ClientTasks", "classgame_1_1client_1_1tasks_1_1ClientTasks.html", null ],
-    [ "packet.Compressor", "classpacket_1_1Compressor.html", null ],
+    [ "game.network.packet.Compressor", "classgame_1_1network_1_1packet_1_1Compressor.html", null ],
     [ "game.client.connection.Connection", "classgame_1_1client_1_1connection_1_1Connection.html", null ],
     [ "game.client.connection_handler.ConnectionHandler", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html", null ],
     [ "game.data.states.connection_states.ConnectionStates", "classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html", null ],
@@ -20,7 +20,7 @@ var hierarchy =
       [ "game.utils.exceptions.ZeroOrLessSpawnPlayerAttempts", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", null ]
     ] ],
     [ "game.data.properties.game_properties.GameProperties", "classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html", null ],
-    [ "packet.Hasher", "classpacket_1_1Hasher.html", null ],
+    [ "game.network.packet.Hasher", "classgame_1_1network_1_1packet_1_1Hasher.html", null ],
     [ "game.data.items.item.Item", "classgame_1_1data_1_1items_1_1item_1_1Item.html", null ],
     [ "game.world.item_manager.ItemManager", "classgame_1_1world_1_1item__manager_1_1ItemManager.html", null ],
     [ "game.data.items.items.Items", "classgame_1_1data_1_1items_1_1items_1_1Items.html", null ],
@@ -30,15 +30,16 @@ var hierarchy =
     [ "game.data.states.map_states.MapStates", "classgame_1_1data_1_1states_1_1map__states_1_1MapStates.html", null ],
     [ "game.data.structures.map_structure.MapStructure", "classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html", null ],
     [ "game.data.states.mouse_states.MouseStates", "classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html", null ],
-    [ "packet.Packet", "classpacket_1_1Packet.html", null ],
+    [ "game.network.packet.Packet", "classgame_1_1network_1_1packet_1_1Packet.html", null ],
     [ "game.world.synth.noise.PerlinNoise", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html", null ],
     [ "game.entity.player.Player", "classgame_1_1entity_1_1player_1_1Player.html", null ],
-    [ "builders.PlayerBuilder", "classbuilders_1_1PlayerBuilder.html", null ],
-    [ "player_handler.PlayerHandler", "classplayer__handler_1_1PlayerHandler.html", null ],
-    [ "game.client.player_manager.PlayerManager", "classgame_1_1client_1_1player__manager_1_1PlayerManager.html", null ],
+    [ "game.network.builders.player_builder.PlayerBuilder", "classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder.html", null ],
+    [ "game.server.handlers.player_handler.PlayerHandler", "classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler.html", null ],
+    [ "game.client.managers.player_manager.PlayerManager", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html", null ],
     [ "game.data.properties.player_properties.PlayerProperties", "classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties.html", null ],
     [ "game.data.states.player_states.PlayerStates", "classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates.html", null ],
-    [ "protocol.Protocol", "classprotocol_1_1Protocol.html", null ],
+    [ "game.data.structures.player_structure.PlayerStructure", "classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure.html", null ],
+    [ "game.network.protocol.Protocol", "classgame_1_1network_1_1protocol_1_1Protocol.html", null ],
     [ "game.gui.screens.screen.Screen", "classgame_1_1gui_1_1screens_1_1screen_1_1Screen.html", [
       [ "game.gui.screens.crash_screen.CrashScreen", "classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen.html", null ],
       [ "game.gui.screens.credits_screen.CreditsScreen", "classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html", null ],
@@ -57,10 +58,10 @@ var hierarchy =
     ] ],
     [ "game.data.properties.screen_properties.ScreenProperties", "classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties.html", null ],
     [ "game.gui.screen_manager.Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", null ],
-    [ "server.Server", "classserver_1_1Server.html", null ],
+    [ "game.server.server.Server", "classgame_1_1server_1_1server_1_1Server.html", null ],
     [ "game.data.properties.server_properties.ServerProperties", "classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties.html", null ],
     [ "game.data.states.server_states.ServerStates", "classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html", null ],
-    [ "tasks.ServerTasks", "classtasks_1_1ServerTasks.html", null ],
+    [ "game.server.tasks.ServerTasks", "classgame_1_1server_1_1tasks_1_1ServerTasks.html", null ],
     [ "socket.socket", null, [
       [ "game.client.connection.XSocket", "classgame_1_1client_1_1connection_1_1XSocket.html", null ]
     ] ],
@@ -84,7 +85,8 @@ var hierarchy =
       [ "game.core.game.Game", "classgame_1_1core_1_1game_1_1Game.html", null ]
     ] ],
     [ "game.world.world.World", "classgame_1_1world_1_1world_1_1World.html", null ],
-    [ "world_handler.WorldHandler", "classworld__handler_1_1WorldHandler.html", null ],
+    [ "game.server.handlers.world_handler.WorldHandler", "classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html", null ],
+    [ "game.client.managers.world_manager.WorldManager", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html", null ],
     [ "game.data.properties.world_properties.WorldProperties", "classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html", null ],
     [ "Widget", null, [
       [ "game.gui.button.Button", "classgame_1_1gui_1_1button_1_1Button.html", null ],

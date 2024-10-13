@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa51065dd3b757d500fb6e92e31ae2384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004168af2d7f74856b5c74a317e8af2c" id="r_a004168af2d7f74856b5c74a317e8af2c"><td class="memItemLeft" align="right" valign="top">tuple[int, int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004168af2d7f74856b5c74a317e8af2c">tile_to_screen_pos</a> (self, game, int tile_x, int tile_y)</td></tr>
 <tr class="separator:a004168af2d7f74856b5c74a317e8af2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af598c523baecdb8813abcad8c13f2588" id="r_af598c523baecdb8813abcad8c13f2588"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af598c523baecdb8813abcad8c13f2588">draw_tile</a> (self, int tile_x, int tile_y, <a class="el" href="classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html">Tile</a>|int tile)</td></tr>
+<tr class="separator:af598c523baecdb8813abcad8c13f2588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac069dad41fb76c4d26891bce73e9582f" id="r_ac069dad41fb76c4d26891bce73e9582f"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac069dad41fb76c4d26891bce73e9582f">set_tile</a> (self, int tile_x, int tile_y, <a class="el" href="classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html">Tile</a>|int tile)</td></tr>
 <tr class="separator:ac069dad41fb76c4d26891bce73e9582f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb41d5adee36094b41375e6b21e99d2a" id="r_acb41d5adee36094b41375e6b21e99d2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html">Tile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb41d5adee36094b41375e6b21e99d2a">get_tile</a> (self, int tile_x, int tile_y)</td></tr>
@@ -148,8 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8df8c4c0fff8f94ca48bd04a3ef4b09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc86ef6fd43e59817c4868fd50349dc0" id="r_adc86ef6fd43e59817c4868fd50349dc0"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc86ef6fd43e59817c4868fd50349dc0">set_seed</a> (self, str <a class="el" href="#af1268f9cdb3dae87d5808d844529d8ff">_seed</a>)</td></tr>
 <tr class="separator:adc86ef6fd43e59817c4868fd50349dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d89c484d67fe6e6c799d20f5f9f89f" id="r_aa4d89c484d67fe6e6c799d20f5f9f89f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4d89c484d67fe6e6c799d20f5f9f89f">get_seed</a> (self)</td></tr>
-<tr class="separator:aa4d89c484d67fe6e6c799d20f5f9f89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d6fc1feb01e1dcb83a470b5a1f6bcc" id="r_a33d6fc1feb01e1dcb83a470b5a1f6bcc"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33d6fc1feb01e1dcb83a470b5a1f6bcc">get_seed</a> (self)</td></tr>
+<tr class="separator:a33d6fc1feb01e1dcb83a470b5a1f6bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af247c231fe60acfd1a0817d06a9ee4c8" id="r_af247c231fe60acfd1a0817d06a9ee4c8"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af247c231fe60acfd1a0817d06a9ee4c8">set_x</a> (self, int x)</td></tr>
 <tr class="separator:af247c231fe60acfd1a0817d06a9ee4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c275138e72bf7980a31c739735ed54a" id="r_a2c275138e72bf7980a31c739735ed54a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c275138e72bf7980a31c739735ed54a">get_x</a> (self)</td></tr>
@@ -238,6 +240,37 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af598c523baecdb8813abcad8c13f2588" name="af598c523baecdb8813abcad8c13f2588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af598c523baecdb8813abcad8c13f2588">&#9670;&#160;</a></span>draw_tile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self game.world.map_manager.Map.draw_tile </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tile_x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tile_y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html">Tile</a> | int</td>          <td class="paramname"><span class="paramname"><em>tile</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa51037fbb4ada30daba597eff4e49a54" name="aa51037fbb4ada30daba597eff4e49a54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa51037fbb4ada30daba597eff4e49a54">&#9670;&#160;</a></span>generate()</h2>
 
@@ -355,14 +388,14 @@ Protected Attributes</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="aa4d89c484d67fe6e6c799d20f5f9f89f" name="aa4d89c484d67fe6e6c799d20f5f9f89f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d89c484d67fe6e6c799d20f5f9f89f">&#9670;&#160;</a></span>get_seed()</h2>
+<a id="a33d6fc1feb01e1dcb83a470b5a1f6bcc" name="a33d6fc1feb01e1dcb83a470b5a1f6bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d6fc1feb01e1dcb83a470b5a1f6bcc">&#9670;&#160;</a></span>get_seed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> int game.world.map_manager.Map.get_seed </td>
+          <td class="memname"> str game.world.map_manager.Map.get_seed </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
           <td></td>
@@ -612,7 +645,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Draw the map tiles to the surface.
+<pre class="fragment">Decompress and draw the map tiles to the surface.
 </pre> 
 </div>
 </div>

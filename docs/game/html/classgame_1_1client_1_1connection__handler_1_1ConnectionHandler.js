@@ -7,7 +7,7 @@ var classgame_1_1client_1_1connection__handler_1_1ConnectionHandler =
     [ "get_players", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a05a17a8bf51c681e48e1f725128e2ef0", null ],
     [ "get_total_data_received", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a2b5c66e058e64f32fd52053e6037343c", null ],
     [ "get_total_data_sent", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a1b46f9d68b5269a93de18daa6abbb396", null ],
-    [ "queue_packet", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#ab03435b7059eccfdd11e6680f4823383", null ],
+    [ "queue_packet", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#aff1b218da48985b0832833a62e80fd5e", null ],
     [ "update", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a12957bd10af4618be226f16c39680f8e", null ],
     [ "connection", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a106769da52e14cd02cb39c9ea68f78e1", null ],
     [ "host", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#ab370549f7b1ffa33f1f7badadb04043b", null ],

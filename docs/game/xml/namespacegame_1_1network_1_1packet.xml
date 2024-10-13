@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegame_1_1network_1_1packet" kind="namespace" language="Python">
+    <compoundname>game::network::packet</compoundname>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Compressor" prot="public">game::network::packet::Compressor</innerclass>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Hasher" prot="public">game::network::packet::Hasher</innerclass>
+    <innerclass refid="classgame_1_1network_1_1packet_1_1Packet" prot="public">game::network::packet::Packet</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.network.packet.fill</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>fill</name>
+        <qualifiedname>game.network.packet.fill</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.network.packet.to_bytes</definition>
+        <argsstring>(str data)</argsstring>
+        <name>to_bytes</name>
+        <qualifiedname>game.network.packet.to_bytes</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return string as bytes encoded with protocol&apos;s chosen encoding.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="70" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="70" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.network.packet.hex_len</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>hex_len</name>
+        <qualifiedname>game.network.packet.hex_len</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="76" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -174,8 +174,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9ce825a37b7be7556a88d1f9405c4f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4067e093443bd5303a96e38da1fd0f3" id="r_aa4067e093443bd5303a96e38da1fd0f3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4067e093443bd5303a96e38da1fd0f3">get_coefficient_from_center_y</a> (self, int parent_height)</td></tr>
 <tr class="separator:aa4067e093443bd5303a96e38da1fd0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae688ddd7f0b378aebf4c212746a0e1d3" id="r_ae688ddd7f0b378aebf4c212746a0e1d3"><td class="memItemLeft" align="right" valign="top">tuple[int, int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae688ddd7f0b378aebf4c212746a0e1d3">get_pointing_at</a> (self)</td></tr>
-<tr class="separator:ae688ddd7f0b378aebf4c212746a0e1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063430d89c29fe2dfb8011a575b8e817" id="r_a063430d89c29fe2dfb8011a575b8e817"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a063430d89c29fe2dfb8011a575b8e817">get_selected_tile_x</a> (self)</td></tr>
 <tr class="separator:a063430d89c29fe2dfb8011a575b8e817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae097f71f869a6a0fa85067f64f4429cd" id="r_ae097f71f869a6a0fa85067f64f4429cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae097f71f869a6a0fa85067f64f4429cd">get_selected_tile_y</a> (self)</td></tr>
@@ -219,8 +217,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2ea4452a85c32dbcacd64f8dc303445e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a712c853a6aafbe0bed8f3ac419d0e" id="r_ac0a712c853a6aafbe0bed8f3ac419d0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a712c853a6aafbe0bed8f3ac419d0e">selected_tile_sy</a></td></tr>
 <tr class="separator:ac0a712c853a6aafbe0bed8f3ac419d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef3a3c756e685a7e9906b8b8f30f74f" id="r_a6ef3a3c756e685a7e9906b8b8f30f74f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ef3a3c756e685a7e9906b8b8f30f74f">pointing_at</a></td></tr>
-<tr class="separator:a6ef3a3c756e685a7e9906b8b8f30f74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7403c5b46cf5543a9ce9deeb32b20b4" id="r_ab7403c5b46cf5543a9ce9deeb32b20b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7403c5b46cf5543a9ce9deeb32b20b4">move</a></td></tr>
 <tr class="separator:ab7403c5b46cf5543a9ce9deeb32b20b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d2fdcd55a9ca3a892fcaf492938d8f" id="r_a55d2fdcd55a9ca3a892fcaf492938d8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d2fdcd55a9ca3a892fcaf492938d8f">velocity_x</a></td></tr>
@@ -235,6 +231,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aaf14809a75dfd272eac4ddcf173423c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68d1e857e5771b3761bea1f59478a00d" id="r_a68d1e857e5771b3761bea1f59478a00d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68d1e857e5771b3761bea1f59478a00d">prev_selected_tile</a></td></tr>
 <tr class="separator:a68d1e857e5771b3761bea1f59478a00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04deaa657e48911162bbd714490fa2e3" id="r_a04deaa657e48911162bbd714490fa2e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04deaa657e48911162bbd714490fa2e3">prev_broken_tile</a></td></tr>
+<tr class="separator:a04deaa657e48911162bbd714490fa2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -569,24 +567,6 @@ This signifies that the returned value will always be positive.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Return the player's in-game name.
-</pre> 
-</div>
-</div>
-<a id="ae688ddd7f0b378aebf4c212746a0e1d3" name="ae688ddd7f0b378aebf4c212746a0e1d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae688ddd7f0b378aebf4c212746a0e1d3">&#9670;&#160;</a></span>get_pointing_at()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> tuple[int, int] game.entity.player.Player.get_pointing_at </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Return the pointing-at position of the player.
 </pre> 
 </div>
 </div>
@@ -1412,14 +1392,14 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 
 </div>
 </div>
-<a id="a6ef3a3c756e685a7e9906b8b8f30f74f" name="a6ef3a3c756e685a7e9906b8b8f30f74f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ef3a3c756e685a7e9906b8b8f30f74f">&#9670;&#160;</a></span>pointing_at</h2>
+<a id="a04deaa657e48911162bbd714490fa2e3" name="a04deaa657e48911162bbd714490fa2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04deaa657e48911162bbd714490fa2e3">&#9670;&#160;</a></span>prev_broken_tile</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">game.entity.player.Player.pointing_at</td>
+          <td class="memname">game.entity.player.Player.prev_broken_tile</td>
         </tr>
       </table>
 </div><div class="memdoc">

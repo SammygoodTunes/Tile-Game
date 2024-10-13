@@ -4,10 +4,10 @@ var searchData=
   ['label_1',['label',['../classgame_1_1gui_1_1button_1_1Button.html#a9c50f5cebf45e8a9ea4cbc40f699815d',1,'game.gui.button.Button.label'],['../classgame_1_1gui_1_1nametag_1_1NameTag.html#a3424c61e3dd38049fa9b9d6e1c483790',1,'game.gui.nametag.NameTag.label']]],
   ['label_2epy_2',['label.py',['../label_8py.html',1,'']]],
   ['lava_3',['LAVA',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a57f2c637faaff64733583c0a147e54fa',1,'game::data::tiles::tiles::Tiles']]],
-  ['lcgame_5feos_4',['LCGAME_EOS',['../classprotocol_1_1Protocol.html#a8c7e8645b60ee52dd4265d73601c6f86',1,'protocol::Protocol']]],
-  ['lcgame_5freq_5',['LCGAME_REQ',['../classprotocol_1_1Protocol.html#a04c315520c817adcba7b179c08441b52',1,'protocol::Protocol']]],
-  ['lcgame_5fres_6',['LCGAME_RES',['../classprotocol_1_1Protocol.html#a2bf94ab27c2eae5fd341d4ec2f3ecae0',1,'protocol::Protocol']]],
-  ['lerp_5fkey_7',['LERP_KEY',['../classbuilders_1_1PlayerBuilder.html#a858d8f5ad9b2483da4393fdba6474fa0',1,'builders::PlayerBuilder']]],
+  ['lcgame_5feos_4',['LCGAME_EOS',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a283396e740b973541550b3ee3ac45242',1,'game::network::protocol::Protocol']]],
+  ['lcgame_5freq_5',['LCGAME_REQ',['../classgame_1_1network_1_1protocol_1_1Protocol.html#ac8de784dcbf567b3fd28019d1b950d24',1,'game::network::protocol::Protocol']]],
+  ['lcgame_5fres_6',['LCGAME_RES',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a46a63e60229fe39805a81caff00f0a10',1,'game::network::protocol::Protocol']]],
+  ['lerp_5fkey_7',['LERP_KEY',['../classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder.html#add98f10c31dff2b33378dfd79087ba5c',1,'game::network::builders::player_builder::PlayerBuilder']]],
   ['lethal_8',['LETHAL',['../classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes.html#a127968cdf33a8647a9a39a18cbe797f4',1,'game::data::tiles::tile_types::TileTypes']]],
   ['level_9',['level',['../namespacegame_1_1utils_1_1logger.html#aa63d38d66f3f7c2207d9dd7781df6f1d',1,'game::utils::logger']]],
   ['link_5fgame_10',['link_game',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a5c7d48365fbfd99627990d0c5ac6a9cd',1,'game::gui::screen_manager::Screens']]],
@@ -16,9 +16,10 @@ var searchData=
   ['loading_5fscreen_13',['loading_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a4cf731e07f3d05d83103c89f6e78a578',1,'game::gui::screen_manager::Screens']]],
   ['loading_5fscreen_2epy_14',['loading_screen.py',['../loading__screen_8py.html',1,'']]],
   ['loadingscreen_15',['LoadingScreen',['../classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen.html',1,'game::gui::screens::loading_screen']]],
-  ['local_5fgame_5fstate_16',['local_game_state',['../classtasks_1_1ServerTasks.html#a95f654dba2825c202756c04b9678b187',1,'tasks::ServerTasks']]],
-  ['local_5fplayer_17',['local_player',['../classgame_1_1client_1_1player__manager_1_1PlayerManager.html#aba58767434cfcc5390b1dc7f9faa45f9',1,'game::client::player_manager::PlayerManager']]],
+  ['local_5fgame_5fstate_16',['local_game_state',['../classgame_1_1server_1_1tasks_1_1ServerTasks.html#a6b3cba63bddb1dec319fbcefbf3fdf30',1,'game::server::tasks::ServerTasks']]],
+  ['local_5fworld_17',['local_world',['../classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html#ab33122caa942952eedf5819876a45c0c',1,'game::client::managers::world_manager::WorldManager']]],
   ['log_5fdir_18',['log_dir',['../namespacegame_1_1utils_1_1logger.html#aae9db829f03e92d02c0e3602abf824b0',1,'game::utils::logger']]],
   ['logger_19',['logger',['../namespacegame_1_1utils_1_1logger.html#aee1dd5f7a553b5ee79a331f39137883d',1,'game::utils::logger']]],
-  ['logger_2epy_20',['logger.py',['../logger_8py.html',1,'']]]
+  ['logger_2epy_20',['logger.py',['../logger_8py.html',1,'']]],
+  ['logger_5fdelay_21',['LOGGER_DELAY',['../classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html#a35d897d12f4af9ca113f0b25b0fdfe93',1,'game::data::properties::game_properties::GameProperties']]]
 ];

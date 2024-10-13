@@ -5,7 +5,7 @@ var searchData=
   ['checkbox_2',['Checkbox',['../classgame_1_1gui_1_1checkbox_1_1Checkbox.html',1,'game::gui::checkbox']]],
   ['client_3',['Client',['../classgame_1_1client_1_1client_1_1Client.html',1,'game::client::client']]],
   ['clienttasks_4',['ClientTasks',['../classgame_1_1client_1_1tasks_1_1ClientTasks.html',1,'game::client::tasks']]],
-  ['compressor_5',['Compressor',['../classpacket_1_1Compressor.html',1,'packet']]],
+  ['compressor_5',['Compressor',['../classgame_1_1network_1_1packet_1_1Compressor.html',1,'game::network::packet']]],
   ['connection_6',['Connection',['../classgame_1_1client_1_1connection_1_1Connection.html',1,'game::client::connection']]],
   ['connectionhandler_7',['ConnectionHandler',['../classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html',1,'game::client::connection_handler']]],
   ['connectionstates_8',['ConnectionStates',['../classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html',1,'game::data::states::connection_states']]],

@@ -7,6 +7,10 @@
         <itemizedlist>
             <listitem><para>tuple <link linkend="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec">SKY_COLOUR</link> = (140, 150, 235)</para>
 </listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6edb49f25bd6f52391d707f731d42ab2">MIN_MAP_WIDTH</link> = 64</para>
+</listitem>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a66e29d2983c81dfe50002915977aed20">MIN_MAP_HEIGHT</link> = 64</para>
+</listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6358265daff4cc2e40b6900a0cf4af5d">MAX_MAP_WIDTH</link> = 256</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1afe206b60ee200f9503d8ec25b95038be">MAX_MAP_HEIGHT</link> = 256</para>
@@ -31,6 +35,16 @@
 <indexterm><primary>MAX_MAP_WIDTH</primary><secondary>game.data.properties.world_properties.WorldProperties</secondary></indexterm>
 <indexterm><primary>game.data.properties.world_properties.WorldProperties</primary><secondary>MAX_MAP_WIDTH</secondary></indexterm>
 <para><computeroutput>int game.data.properties.world_properties.WorldProperties.MAX_MAP_WIDTH = 256<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a66e29d2983c81dfe50002915977aed20"/><section>
+    <title>MIN_MAP_HEIGHT</title>
+<indexterm><primary>MIN_MAP_HEIGHT</primary><secondary>game.data.properties.world_properties.WorldProperties</secondary></indexterm>
+<indexterm><primary>game.data.properties.world_properties.WorldProperties</primary><secondary>MIN_MAP_HEIGHT</secondary></indexterm>
+<para><computeroutput>int game.data.properties.world_properties.WorldProperties.MIN_MAP_HEIGHT = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6edb49f25bd6f52391d707f731d42ab2"/><section>
+    <title>MIN_MAP_WIDTH</title>
+<indexterm><primary>MIN_MAP_WIDTH</primary><secondary>game.data.properties.world_properties.WorldProperties</secondary></indexterm>
+<indexterm><primary>game.data.properties.world_properties.WorldProperties</primary><secondary>MIN_MAP_WIDTH</secondary></indexterm>
+<para><computeroutput>int game.data.properties.world_properties.WorldProperties.MIN_MAP_WIDTH = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec"/><section>
     <title>SKY_COLOUR</title>
 <indexterm><primary>SKY_COLOUR</primary><secondary>game.data.properties.world_properties.WorldProperties</secondary></indexterm>

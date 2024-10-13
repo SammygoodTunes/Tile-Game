@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1network_1_1packet_1_1Compressor" kind="class" language="Python" prot="public">
+    <compoundname>game::network::packet::Compressor</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes game.network.packet.Compressor.compress</definition>
+        <argsstring>(any obj)</argsstring>
+        <name>compress</name>
+        <qualifiedname>game.network.packet.Compressor.compress</qualifiedname>
+        <param>
+          <type>any</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Compress an object to bytes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>any</type>
+        <definition> any game.network.packet.Compressor.decompress</definition>
+        <argsstring>(bytes data)</argsstring>
+        <name>decompress</name>
+        <qualifiedname>game.network.packet.Compressor.decompress</qualifiedname>
+        <param>
+          <type>bytes</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Decompress byte data to an object, if valid.
+Otherwise, return None.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="51" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="51" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for compressing objects.
+Used for sending and receiving game data from the client/server.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="37" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92" prot="public" virt="non-virtual"><scope>game::network::packet::Compressor</scope><name>compress</name></member>
+      <member refid="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" prot="public" virt="non-virtual"><scope>game::network::packet::Compressor</scope><name>decompress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

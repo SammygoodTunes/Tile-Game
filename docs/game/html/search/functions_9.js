@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['incoming_5fpackets_0',['incoming_packets',['../classtasks_1_1ServerTasks.html#a5a8b03e7c3d20c74f5b5b7c6ef366f29',1,'tasks::ServerTasks']]],
+  ['incoming_5fpackets_0',['incoming_packets',['../classgame_1_1server_1_1tasks_1_1ServerTasks.html#a4d4ad352431f484c7908c93d0481af07',1,'game::server::tasks::ServerTasks']]],
   ['init_1',['init',['../classgame_1_1entity_1_1player_1_1Player.html#a85b9c464f574f467e4d471c83fcdd3c3',1,'game::entity::player::Player']]],
   ['init_5fslots_2',['init_slots',['../classgame_1_1gui_1_1hotbar_1_1Hotbar.html#afae7b0a5c9183ba44f563b05fcf24209',1,'game::gui::hotbar::Hotbar']]],
   ['initialise_3',['initialise',['../classgame_1_1client_1_1client_1_1Client.html#a45113087d5a92fa359a00b1a9357ea3c',1,'game.client.client.Client.initialise()'],['../classgame_1_1world_1_1map__manager_1_1Map.html#a23d6af5b8254325a8574b7f6aec98f33',1,'game.world.map_manager.Map.initialise()'],['../classgame_1_1world_1_1world_1_1World.html#a8ca860e5275616969f385eb0ab5a8a2b',1,'game.world.world.World.initialise()']]],
@@ -24,7 +24,8 @@ var searchData=
   ['is_5fnear_5fleft_5fedge_21',['is_near_left_edge',['../classgame_1_1entity_1_1player_1_1Player.html#acb5069f24d6a8e7ea7b64757e81a8e7f',1,'game::entity::player::Player']]],
   ['is_5fnear_5fright_5fedge_22',['is_near_right_edge',['../classgame_1_1entity_1_1player_1_1Player.html#a766dbc331ec2340ca5bfaa233039fd34',1,'game::entity::player::Player']]],
   ['is_5fnear_5ftop_5fedge_23',['is_near_top_edge',['../classgame_1_1entity_1_1player_1_1Player.html#a7d9645a49400425f95273daec0a26245',1,'game::entity::player::Player']]],
-  ['is_5frunning_24',['is_running',['../classgame_1_1core_1_1game_1_1Game.html#acd7539fb6cadb1ca2713dbcd1123befa',1,'game::core::game::Game']]],
-  ['is_5fselected_25',['is_selected',['../classgame_1_1gui_1_1inputbox_1_1InputBox.html#a766eb438a7ea5e46465a47cee690e112',1,'game.gui.inputbox.InputBox.is_selected()'],['../classgame_1_1gui_1_1slot_1_1Slot.html#a17c0515b994a97fab7468ed558461c69',1,'game.gui.slot.Slot.is_selected()']]],
-  ['is_5fselected_5fbreakable_5fobstructed_26',['is_selected_breakable_obstructed',['../classgame_1_1entity_1_1player_1_1Player.html#afda0c94794ba73e26cc6a560ed4ba54a',1,'game::entity::player::Player']]]
+  ['is_5fqueue_5fempty_24',['is_queue_empty',['../classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html#adf31f015349d05fa2648309431beb404',1,'game::server::handlers::world_handler::WorldHandler']]],
+  ['is_5frunning_25',['is_running',['../classgame_1_1core_1_1game_1_1Game.html#acd7539fb6cadb1ca2713dbcd1123befa',1,'game::core::game::Game']]],
+  ['is_5fselected_26',['is_selected',['../classgame_1_1gui_1_1inputbox_1_1InputBox.html#a766eb438a7ea5e46465a47cee690e112',1,'game.gui.inputbox.InputBox.is_selected()'],['../classgame_1_1gui_1_1slot_1_1Slot.html#a17c0515b994a97fab7468ed558461c69',1,'game.gui.slot.Slot.is_selected()']]],
+  ['is_5fselected_5fbreakable_5fobstructed_27',['is_selected_breakable_obstructed',['../classgame_1_1entity_1_1player_1_1Player.html#afda0c94794ba73e26cc6a560ed4ba54a',1,'game::entity::player::Player']]]
 ];
