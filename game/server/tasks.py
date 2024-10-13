@@ -87,12 +87,12 @@ class ServerTasks:
         conn.send(Hasher.enhash(Protocol.LCGAME_REQ))
 
     @staticmethod
-    def game_state(conn, data: bytes, player_handler: PlayerHandler, world_handler: WorldHandler) -> None:
+    def game_state(conn, data: bytes, player_handler: PlayerHandler, world_handler: WorldHandler) -> bool:
         """
         Task for sending the overall game state to a client.
         """
         if not data or data != Hasher.enhash(Protocol.GLGAME_REQ):
-            return
+            return False
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
         compressed_players_obj = player_handler.get_players(compressed=True)
         compressed_map_data_obj = b''
@@ -100,6 +100,7 @@ class ServerTasks:
             compressed_map_data_obj = world_handler.get_queue()
         data = int.to_bytes(len(compressed_players_obj)) + compressed_players_obj + compressed_map_data_obj
         conn.send(fill(hex_len(data) + data))
+        return True
 
     @staticmethod
     def incoming_packets(conn, data: bytes, player_handler: PlayerHandler, world_handler: WorldHandler) -> bool:

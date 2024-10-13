@@ -43,9 +43,9 @@ class Server:
             ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)
         except OSError:
             running = False
+
         logger.info(f'Connection from: {addr}')
         self.player_count += 1
-        success: bool = True
         while running:
             try:
                 start_tile = time()
@@ -53,16 +53,16 @@ class Server:
                     running = False
                     continue
                 data = conn.recv(Protocol.BUFFER_SIZE)
-                #print(f'Message from {addr}: {data}')
+
                 running = not ServerTasks.disconnection(data)
-                # Tasks.player_hit(conn, self.player_handler, data)
-                ServerTasks.game_state(conn, data, self.player_handler, self.world_handler)
-                if success:
+                if ServerTasks.game_state(conn, data, self.player_handler, self.world_handler):
                     ServerTasks.local_game_state(conn)
-                success = ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)
+                ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)
+
                 wait = time() - start_tile
-                if wait < 1 / ServerProperties.TICKS_PER_SECOND:
-                    sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
+                if not wait < 1 / ServerProperties.TICKS_PER_SECOND:
+                    continue
+                sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
             except ConnectionResetError:
                 running = False
             except BrokenPipeError:
@@ -101,7 +101,7 @@ class Server:
 
         self.state.value = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         host = '0.0.0.0'
         port = 35000

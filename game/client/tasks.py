@@ -72,12 +72,11 @@ class ClientTasks:
         return data and data == Hasher.enhash(Protocol.PLAYEROBJ_RES)
 
     @staticmethod
-    def send_local_player(sock, player_manager: PlayerManager) -> bool:
+    def send_local_player(sock, data: bytes, player_manager: PlayerManager) -> bool:
         """
         Task for sending the local player to the server.
         Return True if the local player packet was sent to and received by the server, otherwise False.
         """
-        data = sock.recv(Protocol.BUFFER_SIZE)
         if not data or data != Hasher.enhash(Protocol.LCGAME_REQ):
             return False
         packet = PlayerBuilder.get_compressed_player_packet(
@@ -85,36 +84,53 @@ class ClientTasks:
             player_manager.local_player
         )
         sock.send(fill(to_bytes(Protocol.SPACKET_MAGIC) + hex_len(packet) + packet))
-        data = sock.recv(Protocol.BUFFER_SIZE)
+        return True
+
+    @staticmethod
+    def confirm_local_player(data: bytes):
+        """
+        Task for confirming the reception of the local player sent to the server.
+        Return True if the server received the player packet, otherwise False.
+        """
         return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)
 
     @staticmethod
-    def get_global_game_state(sock) -> bytes | None:
+    def get_global_game_state(sock, data: bytes) -> bytes | None:
         """
         Task for receiving the global server-side game state.
         Return the game state list object if received successfully, otherwise None.
         """
-        data = sock.recv(Protocol.BUFFER_SIZE)
         if not data or data != Hasher.enhash(Protocol.GLGAME_RES):
             return None
         compressed_game_state = b''
         data = sock.recv(Protocol.BUFFER_SIZE)
         length = int(data[:Packet.DATA_SIZE], 16)
+        n_packets = ceil(length / Protocol.BUFFER_SIZE)
         data = data[Packet.DATA_SIZE:Packet.DATA_SIZE + length]
-        for i in range(ceil(length / Protocol.BUFFER_SIZE)):
-            if i != 0:
-                data = sock.recv(Protocol.BUFFER_SIZE)
+        if n_packets == 1:
+            return data
+        for i in range(n_packets):
+            if i != 0: data = sock.recv(Protocol.BUFFER_SIZE)[:length - i * Protocol.BUFFER_SIZE + 4]
             compressed_game_state += data
         return compressed_game_state
 
     @staticmethod
-    def check_packet_queue(sock, queue: list[bytes]) -> None:
+    def check_packet_queue(sock, queue: list[bytes]) -> bool:
         """
         Task for verifying the packet queue.
         If a packet is present, take the first one, send it to the server and remove it from the queue.
         [FIFO]
         """
         if not queue:
-            return
+            return False
         sock.send(fill(to_bytes(Protocol.SPACKET_MAGIC) + hex_len(queue[0]) + queue[0]))
         queue.pop(0)
+        return True
+
+    @staticmethod
+    def confirm_queued_packet(data):
+        """
+        Task for confirming the reception of the queued packet that was sent to the server.
+        Return True if the server received the queued packet, otherwise False.
+        """
+        return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)

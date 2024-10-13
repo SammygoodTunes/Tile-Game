@@ -111,14 +111,21 @@ class Connection:
             self.player_manager.local_player.set_player_name(player_name)
 
             self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
-            game_state = ClientTasks.get_global_game_state(self.sock)
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            game_state = ClientTasks.get_global_game_state(self.sock, data)
             players = game_state[1:game_state[0] + 1]
             map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
             self.player_manager.set_players(players)
             if map_state:
                 self.world_manager.update_broken_tiles(map_state)
 
-            if not ClientTasks.send_local_player(self.sock, self.player_manager):
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            if not ClientTasks.send_local_player(self.sock, data, self.player_manager):
+                self.state = ConnectionStates.REFUSED
+                return
+
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            if not ClientTasks.confirm_local_player(data):
                 self.state = ConnectionStates.REFUSED
                 return
 
@@ -144,14 +151,18 @@ class Connection:
         Attempt to disconnect from the server.
         Any errors or failures will raise specific exceptions.
         """
-        if self.state == ConnectionStates.SUCCESS:
-            try:
-                logger.info('Disconnecting from server.')
-                self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
-                self.packet_queue.clear()
-            except (ConnectionResetError, BrokenPipeError):
-                pass
-            self.state = ConnectionStates.IDLE
+        if not self.state in [
+            ConnectionStates.SUCCESS,
+            ConnectionStates.TIMEOUT
+        ]:
+            return
+        try:
+            logger.info('Disconnecting from server.')
+            self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
+            self.packet_queue.clear()
+        except (ConnectionResetError, BrokenPipeError):
+            pass
+        self.state = ConnectionStates.IDLE
 
     def events(self, e: Event) -> None:
         """
@@ -169,31 +180,38 @@ class Connection:
         """
         Update and verify the connection every so often.
         """
-        success: bool = True
+        _local_player_sent: bool = False
+        _queued_packet_sent: bool = False
+        _players_received: bool = False
         self.sock.settimeout(10.0)
+        self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
+                data = self.sock.recv(Protocol.BUFFER_SIZE)
                 packet_recv_timestamp = time()
-                if success:
-                    self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
-                game_state = ClientTasks.get_global_game_state(self.sock)
+
+                game_state = ClientTasks.get_global_game_state(self.sock, data)
                 if game_state is not None:
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
                     players = game_state[1:game_state[0] + 1]
                     self.player_manager.set_players(players)
+                    _players_received = players is not None
                     map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
-                    if map_state:
-                        self.world_manager.update_broken_tiles(map_state)
-                    success = players is not None
-                if success:
-                    success = ClientTasks.send_local_player(self.sock, self.player_manager)
+                    if map_state: self.world_manager.update_broken_tiles(map_state)
 
-                ClientTasks.check_packet_queue(self.sock, self.packet_queue)
+                if _local_player_sent:
+                    ClientTasks.confirm_local_player(data)
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
+                    self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
-                '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
-                    print('Client: received hit response, sending hit player name============================')
-                    self.sock.send(fill(self.hit_player.encode(Protocol.ENCODING)))'''
-                self.ping = round((time() - packet_recv_timestamp) * 1000)
+                if _queued_packet_sent:
+                    ClientTasks.confirm_queued_packet(data)
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
+
+                _local_player_sent = ClientTasks.send_local_player(self.sock, data, self.player_manager)
+                _queued_packet_sent = ClientTasks.check_packet_queue(self.sock, self.packet_queue)
+
                 wait = time() - packet_recv_timestamp
                 if wait < 1 / ServerProperties.TICKS_PER_SECOND:
                     sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)

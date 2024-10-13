@@ -1,5 +1,6 @@
 
 from pygame.surface import Surface
+from time import time
 
 from game.data.properties.game_properties import GameProperties
 from game.gui.hotbar import Hotbar
@@ -33,6 +34,7 @@ class MainHud(Screen):
                            .set_state(True))
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.hotbar.init_slots()
+        self.timer = time()
 
     def draw(self) -> None:
         """
@@ -42,12 +44,16 @@ class MainHud(Screen):
         if not self._enabled:
             return
         if self.game.screens.options_screen.debug_info_box.is_checked():
+
+            if time() - self.timer > 1.0:
+                self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
+                self.timer = time()
+
             self.data_sent_label.set_text(f'Data sent: {c_handler.get_total_data_sent():.3f} MB')
             self.data_recv_label.set_text(f'Data received: {c_handler.get_total_data_received():.3f} MB')
             self.camera_label.set_text(f'Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
             self.position_label.set_text(
                 f'Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
-            self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
             self.ping_label.set_x(self.game.width - self.ping_label.get_total_width() - 2)
             self.ping_label.set_y(-8 + self.score_label.get_total_height() // 2 + 4)
             self.data_sent_label.set_x(self.game.width - self.data_sent_label.get_total_width() - 2)

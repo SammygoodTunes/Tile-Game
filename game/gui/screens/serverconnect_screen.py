@@ -17,8 +17,7 @@ class ServerConnectScreen(Screen):
         self.window = window
         self.faded_surface = self.initialise_surface()
         self.info_label = Label()
-        self.back_button = Button("Back")
-        self.default_screen = True
+        self.main_menu_button = Button("Main menu")
 
     def initialise_surface(self) -> Surface:
         """
@@ -37,7 +36,7 @@ class ServerConnectScreen(Screen):
             return
         self.window.screen.blit(self.faded_surface, (0, 0))
         self.info_label.draw(self.window.screen)
-        self.back_button.draw(self.window.screen)
+        self.main_menu_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
         """
@@ -49,15 +48,14 @@ class ServerConnectScreen(Screen):
         self.info_label.update(self.window)
         self.info_label.center_with_offset(0, 0, self.window.width, self.window.height, 0,
                                            -self.info_label.get_total_height() * 3)
-        self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                            self.back_button.get_height())
+        self.main_menu_button.update(self.window)
+        self.main_menu_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
+                                                 self.main_menu_button.get_height())
 
     def update_info_label(self, code: int) -> None:
         """
         Update info label's text and colour based on received connection code, then update the screen UI.
         """
-        self.default_screen = True
         if code == ConnectionStates.SUCCESS:
             self.info_label.set_text('Connection successful.').set_colour((0, 255, 0))
         elif code == ConnectionStates.INVALID:
@@ -78,12 +76,11 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
         elif code == ConnectionStates.SERVFAIL:
             self.info_label.set_text('A server is already running on this machine.').set_colour((255, 0, 0))
-            self.default_screen = False
         elif code == ConnectionStates.GETDATA:
             self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:
             self.info_label.set_text('Connecting to server...').set_colour((255, 255, 0))
-        self.back_button.set_state(code >= 0)
+        self.main_menu_button.set_state(code >= 0)
         self.update_ui()
 
     def reset_info_label(self) -> None:
@@ -99,5 +96,5 @@ class ServerConnectScreen(Screen):
         """
         super().set_state(state)
         self.info_label.set_state(state)
-        self.back_button.set_state(state)
+        self.main_menu_button.set_state(state)
         if state: self.update_ui()

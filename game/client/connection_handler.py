@@ -65,7 +65,10 @@ class ConnectionHandler:
 
         if connection_state > 0 and game.start_game:
             game.start_game = False
+            self.stop_connection = True
+            game.screens.server_connect_screen.update_info_label(self.connection.state)
             game.screens.pause_screen.set_state(False)
+            game.screens.options_screen.set_state(False)
             game.screens.server_connect_screen.set_state(True)
 
     def draw_other_players(self, game, delta) -> None:

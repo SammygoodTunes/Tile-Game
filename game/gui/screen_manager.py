@@ -86,7 +86,7 @@ class Screens:
                 self.options_screen.set_state(False)
                 self.credits_screen.set_state(False)
                 self.main_menu_screen.set_state(True)
-            if e.key == pygame.K_ESCAPE and self.server_connect_screen.get_state() and self.server_connect_screen.back_button.get_state():
+            if e.key == pygame.K_ESCAPE and self.server_connect_screen.get_state() and self.server_connect_screen.main_menu_button.get_state():
                 self.server_connect_screen.set_state(False)
                 self.main_menu_screen.set_state(True)
 
@@ -169,7 +169,6 @@ class Screens:
             self.server_join_screen.set_state(False)
             self.server_menu_screen.set_state(True)
             pygame.key.set_repeat()
-            self.game.client.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
 
         elif self.server_create_screen.create_button.is_hovering_over() and self.server_create_screen.get_state():
             self.task_create_server()
@@ -177,15 +176,11 @@ class Screens:
             self.server_create_screen.set_state(False)
             self.server_menu_screen.set_state(True)
             pygame.key.set_repeat()
-            self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
 
-        elif self.server_connect_screen.back_button.is_hovering_over() and self.server_connect_screen.back_button.get_state():
+        elif self.server_connect_screen.main_menu_button.is_hovering_over() and self.server_connect_screen.get_state():
             self.server_connect_screen.set_state(False)
             self.server_connect_screen.reset_info_label()
-            if self.server_connect_screen.default_screen:
-                self.server_join_screen.set_state(True)
-                return
-            self.server_menu_screen.set_state(True)
+            self.main_menu_screen.set_state(True)
 
         elif self.pause_screen.resume_button.is_hovering_over() and self.pause_screen.get_state():
             self.pause_screen.set_state(False)
@@ -278,7 +273,8 @@ class Screens:
         pygame.key.set_repeat()
         self.server_create_screen.set_state(False)
         self.server_connect_screen.set_state(True)
-        self.server_connect_screen.back_button.set_state(False)
+        self.server_connect_screen.main_menu_button.set_state(False)
+        self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
         self.game.server.start(self.server_create_screen.seed_input.get_text().strip())
         if self.game.server.state.value != ServerStates.FAIL:
             self.game.client.connection_handler.host = 'localhost'
@@ -287,7 +283,7 @@ class Screens:
             self.game.client.connection_handler.start_connection = True
         else:
             self.game.server.stop()
-            self.server_connect_screen.back_button.set_state(True)
+            self.server_connect_screen.main_menu_button.set_state(True)
             self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
 
     def task_join_server(self) -> None:
@@ -297,6 +293,7 @@ class Screens:
         pygame.key.set_repeat()
         self.server_join_screen.set_state(False)
         self.server_connect_screen.set_state(True)
-        self.server_connect_screen.back_button.set_state(False)
+        self.server_connect_screen.main_menu_button.set_state(False)
+        self.game.client.player.set_player_name(self.server_join_screen.ign_input.get_text().strip())
         self.game.client.connection_handler.player_name = self.server_join_screen.ign_input.get_text().strip()
         self.game.client.connection_handler.start_connection = True

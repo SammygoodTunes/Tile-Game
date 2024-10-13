@@ -35,8 +35,8 @@ def main() -> None:
 
     init()
 
-    width: int = display.Info().current_w
-    height: int = display.Info().current_h
+    width: int = 720
+    height: int = 480
     game: Game = Game(width, height)
 
     try:
