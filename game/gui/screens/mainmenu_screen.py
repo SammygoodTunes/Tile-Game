@@ -1,3 +1,5 @@
+from cProfile import label
+
 import pygame.time
 from numpy import exp, cos, pi, absolute
 
@@ -35,6 +37,8 @@ class MainMenuScreen(Screen):
         if not self._enabled:
             return
         label_time = pygame.time.get_ticks() / 1000.0 - self.title_label_time
+        if label_time > 2:
+            label_time = 2
         self.title_label.update(self.window)
         self.title_label.center_with_offset(
             0,
@@ -42,7 +46,10 @@ class MainMenuScreen(Screen):
             self.window.width,
             self.window.height,
             0,
-            -self.title_label.get_total_height() - (absolute(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250))
+            -self.title_label.get_total_height() - (
+                    absolute(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250
+            )
+        )
 
         self.title_label.draw(self.window.screen)
         self.version_label.draw(self.window.screen)
