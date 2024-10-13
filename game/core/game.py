@@ -21,6 +21,7 @@ class Game(Window):
         self.client = Client()
         self.server = Server()
         self.client.initialise(self)
+        self.update_all_uis()
 
     def update(self) -> None:
         """
@@ -60,7 +61,8 @@ class Game(Window):
                 pygame.WINDOWRESIZED,
                 pygame.WINDOWSIZECHANGED
             ]:
-                self.resize(e)
+                if hasattr(e, 'x') and hasattr(e, 'y'):
+                    self.resize(e)
                 self.update_all_uis()
                 self.focused = False
                 pygame.event.clear(pygame.KEYDOWN)
