@@ -56,12 +56,12 @@ class Window:
         Update window dimensions on resize.
         """
         self.halt_refresh = True
-        logger.debug(f'Resizing screen to (W={e.w}, H={e.h}) from (W={self.width}, H={self.height})')
+        logger.debug(f'Resizing screen to (W={e.x}, H={e.y}) from (W={self.width}, H={self.height})')
         if pygame.version.vernum >= (2, 0):
             self.screen = pygame.display.get_surface()
             self.width, self.height = self.screen.get_size()
         else:
-            self.width, self.height = e.w, e.h
+            self.width, self.height = e.x, e.y
             self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8)
 
     def draw_fps(self) -> None:

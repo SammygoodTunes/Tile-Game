@@ -1,8 +1,10 @@
 
 import pygame
+from pygame import MOUSEBUTTONDOWN, MOUSEBUTTONUP
 
 from game.client.client import Client
 from game.core.window import Window
+from game.data.states.mouse_states import MouseStates
 from game.server.server import Server
 
 
@@ -54,17 +56,18 @@ class Game(Window):
                     self.toggle_fullscreen()
                     self.update_all_uis()
                     continue
-            elif e.type == pygame.VIDEORESIZE:
+            elif e.type in [
+                pygame.WINDOWRESIZED,
+                pygame.WINDOWSIZECHANGED
+            ]:
                 self.resize(e)
                 self.update_all_uis()
                 self.focused = False
                 pygame.event.clear(pygame.KEYDOWN)
                 continue
-            elif e.type == pygame.VIDEOEXPOSE:
-                self.update_all_uis()
-                self.focused = False
-                pygame.event.clear(pygame.KEYDOWN)
-                continue
+            elif e.type == pygame.WINDOWFOCUSGAINED:
+                pygame.event.post(pygame.event.Event(MOUSEBUTTONDOWN, {'button': MouseStates.LMB}))
+                pygame.event.post(pygame.event.Event(MOUSEBUTTONUP, {'button': MouseStates.LMB}))
             self.client.events(self, e)
             self.screens.events(e)
 
