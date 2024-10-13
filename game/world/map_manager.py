@@ -174,6 +174,12 @@ class Map:
                     x * TileProperties.TILE_SIZE,
                     y * TileProperties.TILE_SIZE,
                     Tiles.PLAINS,
+                    self._surface
+                )
+                self.tile_manager.draw(
+                    x * TileProperties.TILE_SIZE,
+                    y * TileProperties.TILE_SIZE,
+                    Tiles.PLAINS,
                     self._dynatile_surface
                 )
         self._dynatile_data = new_dynatile_data
