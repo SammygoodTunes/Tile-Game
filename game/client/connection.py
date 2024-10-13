@@ -13,7 +13,7 @@ from game.data.states.connection_states import ConnectionStates
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
 from game.network.protocol import Protocol
-from game.network.packet import Hasher
+from game.network.packet import Hasher, Compressor
 
 
 class Tasks:
@@ -94,7 +94,10 @@ class Connection:
             if not ClientTasks.recognition(self.sock):
                 self.state = ConnectionStates.REFUSED
                 return
-            if not ClientTasks.map_data(self.sock):
+
+            ClientTasks.map_data(self.sock)
+            data = self.sock.recv(Protocol.BUFFER_SIZE)
+            if not ClientTasks.confirm_map_data(data):
                 self.state = ConnectionStates.REFUSED
                 return
             self.state = ConnectionStates.GETDATA
@@ -114,10 +117,9 @@ class Connection:
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             game_state = ClientTasks.get_global_game_state(self.sock, data)
             players = game_state[1:game_state[0] + 1]
-            map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
+            map_data = Compressor.decompress(game_state[game_state[0] + 1:])
             self.player_manager.set_players(players)
-            if map_state:
-                self.world_manager.update_broken_tiles(map_state)
+            self.world_manager.build_world_from_bytes(map_data)
 
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             if not ClientTasks.send_local_player(self.sock, data, self.player_manager):
@@ -183,6 +185,10 @@ class Connection:
         _local_player_sent: bool = False
         _queued_packet_sent: bool = False
         _players_received: bool = False
+        _map_data_sent: bool = False
+
+        _game_state: bytes = b''
+
         self.sock.settimeout(10.0)
         self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
@@ -191,30 +197,30 @@ class Connection:
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
                 packet_recv_timestamp = time()
 
-                game_state = ClientTasks.get_global_game_state(self.sock, data)
-                if game_state is not None:
-                    self.ping = round((time() - packet_recv_timestamp) * 1000)
-                    players = game_state[1:game_state[0] + 1]
-                    self.player_manager.set_players(players)
-                    _players_received = players is not None
-                    map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
-                    if map_state: self.world_manager.update_broken_tiles(map_state)
+                _game_state = ClientTasks.get_global_game_state(self.sock, data)
 
                 if _local_player_sent:
                     ClientTasks.confirm_local_player(data)
-                    self.ping = round((time() - packet_recv_timestamp) * 1000)
                     self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
                 if _queued_packet_sent:
                     ClientTasks.confirm_queued_packet(data)
-                    self.ping = round((time() - packet_recv_timestamp) * 1000)
 
                 _local_player_sent = ClientTasks.send_local_player(self.sock, data, self.player_manager)
                 _queued_packet_sent = ClientTasks.check_packet_queue(self.sock, self.packet_queue)
 
+                # Tick
+                self.ping = round((time() - packet_recv_timestamp) * 1000)
                 wait = time() - packet_recv_timestamp
                 if wait < 1 / ServerProperties.TICKS_PER_SECOND:
                     sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
+
+                if _game_state:
+                    players = _game_state[1:_game_state[0] + 1]
+                    map_data = Compressor.decompress(_game_state[_game_state[0] + 1:])
+                    self.player_manager.set_players(players)
+                    self.world_manager.build_world_from_bytes(map_data)
+
             except TimeoutError:
                 self.state = ConnectionStates.TIMEOUT
             except BrokenPipeError:

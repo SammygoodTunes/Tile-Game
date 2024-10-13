@@ -1,7 +1,6 @@
 from math import ceil
 
 from game.client.managers.player_manager import PlayerManager
-from game.client.managers.world_manager import WorldManager
 from game.network.builders.player_builder import PlayerBuilder
 from game.network.builders.base_builder import BaseBuilder
 from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
@@ -25,13 +24,19 @@ class ClientTasks:
         return data and data == Hasher.enhash(Protocol.RECOGNITION_RES)
 
     @staticmethod
-    def map_data(sock) -> bool:
+    def map_data(sock) -> None:
         """
         Task for requesting the map data.
         Return True if the map data response from the server was received successfully, otherwise False.
         """
         sock.send(Hasher.enhash(Protocol.MAPDATA_REQ))
-        data = sock.recv(Protocol.BUFFER_SIZE)
+
+    @staticmethod
+    def confirm_map_data(data: bytes) -> bool:
+        """
+        Task for confirming the reception of the map data request.
+        Returns True if the data is a valid server response, otherwise False.
+        """
         return data and data == Hasher.enhash(Protocol.MAPDATA_RES)
 
     @staticmethod
@@ -90,7 +95,7 @@ class ClientTasks:
     def confirm_local_player(data: bytes):
         """
         Task for confirming the reception of the local player sent to the server.
-        Return True if the server received the player packet, otherwise False.
+        Return True if the data is a valid packet reception response, otherwise False.
         """
         return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)
 
@@ -131,6 +136,6 @@ class ClientTasks:
     def confirm_queued_packet(data):
         """
         Task for confirming the reception of the queued packet that was sent to the server.
-        Return True if the server received the queued packet, otherwise False.
+        Return True if the data is a valid packet reception response, otherwise False.
         """
         return data and data == Hasher.enhash(Protocol.PACKETRECV_RES)

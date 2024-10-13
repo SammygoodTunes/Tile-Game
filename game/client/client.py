@@ -37,6 +37,7 @@ class Client:
         self.connection_handler.update(game)
         if game.start_game:
             game.clear(WorldProperties.SKY_COLOUR)
+            #self.world.get_map().load()
             self.world.draw(game)
             # self.world.draw_wireframe(self.screen)
             self.connection_handler.draw_other_players(game, game.clock.get_time() / 1000.0)

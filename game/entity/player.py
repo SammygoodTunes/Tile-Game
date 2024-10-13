@@ -193,7 +193,6 @@ class Player:
         else:
             speed = PlayerProperties.SPEED
 
-        mx, my = pygame.mouse.get_pos()
         tile_x, tile_y = map_obj.get_tile_pos(self._x, self._y)
         tile_wx, tile_wy = map_obj.tile_to_world_pos(tile_x, tile_y)
         walls = self.get_walls(map_obj)

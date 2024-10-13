@@ -4,7 +4,6 @@ from typing import Self
 
 from game.data.properties.tile_properties import TileProperties
 from game.world.map_manager import Map
-from game.world.tile_manager import TileManager
 
 
 class World:
@@ -29,10 +28,9 @@ class World:
 
     def update(self, window_obj, player_obj) -> None:
         """
-        Update the world.
+        Update the world (unused).
         """
-        if not window_obj.paused:
-            self._map.update(window_obj, player_obj)
+        pass
 
     def update_ui(self) -> None:
         """

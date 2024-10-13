@@ -95,9 +95,7 @@ class ServerTasks:
             return False
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
         compressed_players_obj = player_handler.get_players(compressed=True)
-        compressed_map_data_obj = b''
-        if not world_handler.is_queue_empty():
-            compressed_map_data_obj = world_handler.get_queue()
+        compressed_map_data_obj = Compressor.compress(world_handler.get_map_data())
         data = int.to_bytes(len(compressed_players_obj)) + compressed_players_obj + compressed_map_data_obj
         conn.send(fill(hex_len(data) + data))
         return True
@@ -127,21 +125,4 @@ class ServerTasks:
         elif type_id == BaseBuilder.PLAYER_TILE_BREAK_COMMAND:
             world_handler.update_broken_tile(decompressed_packet)
         return True
-
-    @staticmethod
-    def player_hit(conn, data: bytes, player_handler: PlayerHandler) -> None:
-        if not data or data != Hasher.enhash(Protocol.HIT_REQ):
-            return
-        print('Server: Received hit request, sending response')
-        conn.send(Hasher.enhash(Protocol.HIT_RES))
-        print('Server: Sent hit response')
-        data = conn.recv(Protocol.BUFFER_SIZE)
-        print(f'Server: got {data}')
-        player = player_handler.get_player(data.decode(Protocol.ENCODING).strip())
-        if player is None:
-            print(f"player {data.strip()} not known")
-            return
-        print('Server: doing damage')
-        player['health'] = player['health'] - 5
-        player_handler.update_player(player)
 

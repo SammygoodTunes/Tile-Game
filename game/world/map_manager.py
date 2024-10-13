@@ -160,11 +160,23 @@ class Map:
         # Call player and camera reset() here
         self.generate()
 
-    def update(self, window_obj, player_obj) -> None:
+    def update(self, new_dynatile_data: bytes) -> None:
         """
-        Update the map (unused).
+        Update the old dynatile data with new dynatile data.
+        Only update the differences between the two.
         """
-        pass
+        for i in range(self._width * self._height):
+            if not self._dynatile_data:
+                break
+            x, y = i % self._width, i // self._height
+            if self.get_dynatile(x, y) != self.get_dynatile(x, y, ext_bytes_obj=new_dynatile_data):
+                self.tile_manager.draw(
+                    x * TileProperties.TILE_SIZE,
+                    y * TileProperties.TILE_SIZE,
+                    Tiles.PLAINS,
+                    self._dynatile_surface
+                )
+        self._dynatile_data = new_dynatile_data
 
     def set_state(self, state: str = '', value: int = 0) -> Self:
         """
@@ -277,13 +289,16 @@ class Map:
         )
         return self
 
-    def get_dynatile(self, tile_x: int, tile_y: int) -> bool:
+    def get_dynatile(self, tile_x: int, tile_y: int, ext_bytes_obj: bytes = b'') -> bool:
         """
-        Return the dynamic tile at specified x and y tile positions.
+        Return the dynamic tile state at specified x and y tile positions.
+        Extract from an external compatible bytes object if one is given.
         """
         array_index = tile_x % self._width + tile_y * self._width
         byte_pos = array_index // 8
-        return bool(self._dynatile_data[byte_pos] >> (0x7 - array_index % 8) & 1)
+        if not ext_bytes_obj:
+            return bool(self._dynatile_data[byte_pos] >> (0x7 - array_index % 8) & 1)
+        return bool(ext_bytes_obj[byte_pos] >> (0x7 - array_index % 8) & 1)
 
     def randomise_seed(self) -> Self:
         """
