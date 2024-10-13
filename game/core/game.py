@@ -99,11 +99,11 @@ class Game(Window):
             for e in pygame.event.get():
                 if e.type == pygame.QUIT:
                     running = False
-                if e.type == pygame.VIDEORESIZE:
+                if e.type in [
+                    pygame.WINDOWRESIZED,
+                    pygame.WINDOWSIZECHANGED
+                ]:
                     self.resize(e)
-                    self.screens.crash_screen.update_ui()
-                    continue
-                if e.type == pygame.VIDEOEXPOSE:
                     self.screens.crash_screen.update_ui()
             self.screens.crash_screen.draw()
             self.tick()
