@@ -5,7 +5,7 @@ from typing import Self
 
 from game.entity.player import Player
 from game.gui.nametag import NameTag
-from game.network.builders import PlayerBuilder, BaseBuilder
+from game.network.builders.player_builder import PlayerBuilder
 
 
 class PlayerManager:
@@ -16,12 +16,6 @@ class PlayerManager:
     def __init__(self, player) -> None:
         self.local_player: Player = player
         self.players = list()
-
-    def build_local_player(self, player_dict: dict):
-        """
-        Build the local player from a player packet.
-        """
-        PlayerBuilder.build_player(self.local_player, player_dict)
 
     def set_players(self, players: list | bytes | None) -> Self:
         """

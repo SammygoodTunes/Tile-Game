@@ -12,9 +12,8 @@ class TileManager:
     """
 
     def __init__(self) -> None:
-        self.atlas: Surface | None = None
-        self.width: int = 0
-        self.height: int = 0
+        self.atlas = image.load(Tile.DEFAULT_ATLAS).convert_alpha()
+        self.width, self.height = self.atlas.get_rect().size
 
     def draw(self, x: int, y: int, tile: Tile | int, screen: Surface) -> None:
         """

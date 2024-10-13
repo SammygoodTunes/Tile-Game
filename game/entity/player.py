@@ -15,6 +15,8 @@ from game.data.tiles.tiles import Tiles
 from game.data.tiles.tile import Tile
 from game.data.tiles.tile_types import TileTypes
 from game.gui.screens.main_hud import MainHud
+from game.network.builders.base_builder import BaseBuilder
+from game.network.builders.player_builder import PlayerBuilder
 from game.utils.exceptions import ZeroOrLessSpawnPlayerAttempts
 from game.utils.logger import logger
 from game.world.camera import Camera
@@ -50,6 +52,7 @@ class Player:
         self.breaking: bool = False
         self.hurt: bool = False
         self.prev_selected_tile: tuple[int, int] = (0, 0)
+        self.prev_broken_tile: tuple[int, int] = (0, 0)
         self.score: int = 0
         self.health: int = 100
         self.edges = [False, False, False, False]
@@ -196,8 +199,6 @@ class Player:
         walls = self.get_walls(map_obj)
         keys = pygame.key.get_pressed()
 
-        # comp_move = self.move
-
         if not game.paused and game.focused:
             self.move = self.move | (1 << PlayerStates.MOVE_LEFT) if keys[Keys.MOVE_LEFT] else self.move & ~(1 << PlayerStates.MOVE_LEFT)
             self.move = self.move | (1 << PlayerStates.MOVE_UP) if keys[Keys.MOVE_UP] else self.move & ~(1 << PlayerStates.MOVE_UP)
@@ -205,12 +206,6 @@ class Player:
             self.move = self.move | (1 << PlayerStates.MOVE_DOWN) if keys[Keys.MOVE_DOWN] else self.move & ~(1 << PlayerStates.MOVE_DOWN)
         else:
             self.move = 0
-
-        '''if self.move != comp_move:
-            player_move_packet = PlayerBuilder.build_player_move()
-            player_move_packet[PlayerBuilder.NAME_KEY] = self.player_name
-            player_move_packet[PlayerBuilder.DIRECTION_KEY] = self.move
-            game.client.connection_handler.queue_packet(player_move_packet)'''
 
         if self.velocity_x != 0:
             self._x += round(speed * self.velocity_x * d, 2)
@@ -367,6 +362,11 @@ class Player:
         if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
             _map.set_dynatile(tile_x, tile_y, True)
             _map.set_tile(tile_x, tile_y, Tiles.PLAINS)
+            self.prev_broken_tile = (tile_x, tile_y)
+            game.client.connection_handler.queue_packet(PlayerBuilder.get_compressed_player_packet(
+                BaseBuilder.PLAYER_TILE_BREAK_COMMAND,
+                self
+            ))
             logger.debug(f'Destroyed tile ({tile_x}, {tile_y}) of type {tile}')
             return
 

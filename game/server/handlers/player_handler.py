@@ -1,4 +1,4 @@
-from game.network.builders import PlayerBuilder, BaseBuilder
+from game.network.builders.player_builder import PlayerBuilder
 from game.utils.logger import logger
 
 

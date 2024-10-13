@@ -1,18 +1,5 @@
-from time import time
-
-from game.data.structures.player_structure import (PlayerStructure)
-
-
-class BaseBuilder:
-    """
-    Base class for packet building
-    """
-    COMMAND_ID_KEY = 'id'
-    TIMESTAMP_KEY = 'timestamp'
-
-    (
-        PLAYER_POSITION_UPDATE_COMMAND
-    ) = 0
+from game.data.structures.player_structure import PlayerStructure
+from game.network.builders.base_builder import BaseBuilder
 
 
 class PlayerBuilder:
@@ -26,6 +13,8 @@ class PlayerBuilder:
     PREV_Y_POS_KEY = 'previous_y'
     LERP_KEY = 'lerp'
     HEALTH_KEY = 'health'
+    BROKEN_TILE_X = 'broken_tile_x'
+    BROKEN_TILE_Y = 'broken_tile_y'
 
     @staticmethod
     def create_player() -> dict:
@@ -43,41 +32,57 @@ class PlayerBuilder:
         }
 
     @staticmethod
-    def build_player(player, player_dict: dict) -> None:
-        """
-        Build the player object from a player packet.
-        """
-        player.set_player_name(player_dict[PlayerBuilder.NAME_KEY])
-        player.set_x(player_dict[PlayerBuilder.X_POS_KEY])
-        player.set_y(player_dict[PlayerBuilder.Y_POS_KEY])
-        player.set_health(player_dict[PlayerBuilder.HEALTH_KEY])
-
-    @staticmethod
     def get_compressed_player_packet(command_id: int, player) -> bytes:
         """
         Return a compressed update player packet from the attributes of the given player object.
         """
-        assert command_id == 0, f'Invalid command ID: {command_id}'
-        base = int.to_bytes(command_id) + b''.join(int.to_bytes(ord(c) - ord('-') + 2) for c in player.get_player_name())
+        assert 0 <= command_id <= BaseBuilder.COMMAND_ID_MAX, f'Invalid command ID: {command_id}'
+        base = (
+            int.to_bytes(command_id + BaseBuilder.COMMAND_ID_OFFSET)
+            + b''.join(int.to_bytes(ord(c) - ord('-') + 2) for c in player.get_player_name())
+        )
         if command_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
             x = int.to_bytes(round(player.get_x()), length=PlayerStructure.PLAYER_X_BYTE_SIZE, signed=True)
             y = int.to_bytes(round(player.get_y()), length=PlayerStructure.PLAYER_Y_BYTE_SIZE, signed=True)
             return base + b'\x01' + x + y
+        if command_id == BaseBuilder.PLAYER_TILE_BREAK_COMMAND:
+            broken_tile_x = int.to_bytes(
+                player.prev_broken_tile[0],
+                length=PlayerStructure.PLAYER_BROKEN_TILE_X_BYTE_SIZE
+            )
+            broken_tile_y = int.to_bytes(
+                player.prev_broken_tile[1],
+                length=PlayerStructure.PLAYER_BROKEN_TILE_Y_BYTE_SIZE
+            )
+            return base + b'\x01' + broken_tile_x + broken_tile_y
 
     @staticmethod
     def get_decompressed_player_packet(bytes_obj: bytes) -> dict:
         """
         Return a player dict from a player bytes object.
         """
-        assert bytes_obj[0] == 0, f'Invalid command ID: {bytes_obj[0]}'
+        type_id = bytes_obj[0] - BaseBuilder.COMMAND_ID_OFFSET
+        assert 0 <= type_id <= BaseBuilder.COMMAND_ID_MAX, f'Invalid command ID: {bytes_obj[0]}'
         name_pos = bytes_obj.index(b'\x01') + 1
-        if bytes_obj[0] == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
+        if type_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
             x_pos = name_pos
             y_pos = x_pos + PlayerStructure.PLAYER_X_BYTE_SIZE
             return {
                 PlayerBuilder.NAME_KEY: ''.join(chr(c + ord('-') - 2) for c in bytes_obj[1:bytes_obj.index(b'\x01')]),
                 PlayerBuilder.X_POS_KEY: int.from_bytes(bytes_obj[x_pos:x_pos + PlayerStructure.PLAYER_X_BYTE_SIZE], signed=True),
                 PlayerBuilder.Y_POS_KEY: int.from_bytes(bytes_obj[y_pos:y_pos + PlayerStructure.PLAYER_Y_BYTE_SIZE], signed=True),
+            }
+        if type_id == BaseBuilder.PLAYER_TILE_BREAK_COMMAND:
+            broken_tile_x_pos = name_pos
+            broken_tile_y_pos = broken_tile_x_pos + PlayerStructure.PLAYER_BROKEN_TILE_X_BYTE_SIZE
+            return {
+                PlayerBuilder.NAME_KEY: ''.join(chr(c + ord('-') - 2) for c in bytes_obj[1:bytes_obj.index(b'\x01')]),
+                PlayerBuilder.BROKEN_TILE_X: int.from_bytes(
+                    bytes_obj[broken_tile_x_pos:broken_tile_x_pos + PlayerStructure.PLAYER_BROKEN_TILE_X_BYTE_SIZE]
+                ),
+                PlayerBuilder.BROKEN_TILE_Y: int.from_bytes(
+                    bytes_obj[broken_tile_y_pos:]
+                ),
             }
 
     @staticmethod

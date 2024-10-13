@@ -14,3 +14,5 @@ class PlayerStructure:
     PLAYER_NAME_BYTE_SIZE = PlayerProperties.MAX_PLAYER_NAME_SIZE
     PLAYER_X_BYTE_SIZE = int(ceil(c_log2(WorldProperties.MAX_MAP_WIDTH * TileProperties.TILE_SIZE * 2) / 8)) # *2 here because signed
     PLAYER_Y_BYTE_SIZE = int(ceil(c_log2(WorldProperties.MAX_MAP_HEIGHT * TileProperties.TILE_SIZE * 2) / 8))
+    PLAYER_BROKEN_TILE_X_BYTE_SIZE = int(ceil(c_log2(WorldProperties.MAX_MAP_WIDTH) / 8))
+    PLAYER_BROKEN_TILE_Y_BYTE_SIZE = int(ceil(c_log2(WorldProperties.MAX_MAP_HEIGHT) / 8))

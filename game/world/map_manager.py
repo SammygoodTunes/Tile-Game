@@ -39,15 +39,14 @@ class Map:
         self._y = -height * TileProperties.TILE_SIZE // 2
         self._width = width
         self._height = height
-        self._surface: Surface | None = None
-        self._dynatile_surface: Surface | None = None
+        self._surface = Surface((0, 0))
+        self._dynatile_surface = Surface((0, 0))
         self.perlin_noise = noise.PerlinNoise()
 
     def initialise(self) -> None:
         """
         Initialise the map manager.
         """
-        self.tile_manager.set_atlas(Tile.DEFAULT_ATLAS)
         self._surface = Surface((self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE))
         self._dynatile_surface = Surface(
             (self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE), SRCALPHA, 32
@@ -208,6 +207,10 @@ class Map:
         """
         world_x, world_y = self.tile_to_world_pos(tile_x, tile_y)
         return int(game.width // 2 + world_x - int(game.client.camera.x)), int(game.height // 2 + world_y - int(game.client.camera.y))
+
+    def draw_tile(self, tile_x: int, tile_y: int, tile: Tile | int) -> Self:
+        self.tile_manager.draw(tile_x, tile_y, tile, self._surface)
+        return self
 
     def set_tile(self, tile_x: int, tile_y: int, tile: Tile | int) -> Self:
         """

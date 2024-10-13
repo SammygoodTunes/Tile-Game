@@ -6,7 +6,7 @@ from game.data.properties.screen_properties import ScreenProperties
 from game.data.states.map_states import MapStates
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
-from game.network.builders import PlayerBuilder
+from game.network.builders.player_builder import PlayerBuilder
 
 
 class MapScreen(Screen):

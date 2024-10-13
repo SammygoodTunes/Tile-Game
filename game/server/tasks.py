@@ -3,12 +3,12 @@ from math import ceil
 
 from game.data.properties.server_properties import ServerProperties
 from game.data.structures.map_structure import MapStructure
-from game.network.builders import PlayerBuilder, BaseBuilder
+from game.network.builders.player_builder import PlayerBuilder
+from game.network.builders.base_builder import BaseBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol
-from game.server.entity.player.player_handler import PlayerHandler
-from game.server.world_handler import WorldHandler
-from game.utils.logger import logger
+from game.server.handlers.player_handler import PlayerHandler
+from game.server.handlers.world_handler import WorldHandler
 
 
 class ServerTasks:
@@ -87,7 +87,7 @@ class ServerTasks:
         conn.send(Hasher.enhash(Protocol.LCGAME_REQ))
 
     @staticmethod
-    def game_state(conn, data: bytes, player_handler: PlayerHandler) -> None:
+    def game_state(conn, data: bytes, player_handler: PlayerHandler, world_handler: WorldHandler) -> None:
         """
         Task for sending the overall game state to a client.
         """
@@ -95,31 +95,36 @@ class ServerTasks:
             return
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
         compressed_players_obj = player_handler.get_players(compressed=True)
-        conn.send(fill(hex_len(compressed_players_obj) + compressed_players_obj))
+        compressed_map_data_obj = b''
+        if not world_handler.is_queue_empty():
+            compressed_map_data_obj = world_handler.get_queue()
+        data = int.to_bytes(len(compressed_players_obj)) + compressed_players_obj + compressed_map_data_obj
+        conn.send(fill(hex_len(data) + data))
 
     @staticmethod
-    def incoming_packets(conn, data: bytes, player_handler: PlayerHandler) -> bool:
+    def incoming_packets(conn, data: bytes, player_handler: PlayerHandler, world_handler: WorldHandler) -> bool:
         """
         Task for handling incoming packets.
         Return True if packet is received and is valid, otherwise False
         """
-        if not data or data[:len(Protocol.PACKET_MAGIC)] != to_bytes(Protocol.PACKET_MAGIC):
+        if not data or data[:len(Protocol.SPACKET_MAGIC)] != to_bytes(Protocol.SPACKET_MAGIC):
             return False
-        length = int(data[len(Protocol.PACKET_MAGIC):len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE], 16)
+        length = int(data[len(Protocol.SPACKET_MAGIC):len(Protocol.SPACKET_MAGIC) + Packet.DATA_SIZE], 16)
         if not length:
             return False
         packet = b''
-        data = data[len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE:]
-        length += len(Protocol.PACKET_MAGIC) + Packet.DATA_SIZE
+        data = data[len(Protocol.SPACKET_MAGIC) + Packet.DATA_SIZE:len(Protocol.SPACKET_MAGIC) + Packet.DATA_SIZE + length]
         for i in range(ceil(length / Protocol.BUFFER_SIZE)):
             if i != 0:
                 data = conn.recv(Protocol.BUFFER_SIZE)
             packet += data
         decompressed_packet = PlayerBuilder.get_decompressed_player_packet(packet)
-        type_id = packet[0]
+        type_id = packet[0] - BaseBuilder.COMMAND_ID_OFFSET
         conn.send(Hasher.enhash(Protocol.PACKETRECV_RES))
         if type_id == BaseBuilder.PLAYER_POSITION_UPDATE_COMMAND:
             player_handler.update_player_position(decompressed_packet)
+        elif type_id == BaseBuilder.PLAYER_TILE_BREAK_COMMAND:
+            world_handler.update_broken_tile(decompressed_packet)
         return True
 
     @staticmethod

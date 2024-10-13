@@ -36,7 +36,7 @@ class Protocol:
           the request and disconnect the client
         - The client will first request for the global game state, which the server will
           provide
-        - The server will then requests right after the client's local game state, which
+        - The server will then request right after the client's local game state, which
           the client will provide
 
         The client and server follow a strict delay in TPS (Ticks Per Second), allowing
@@ -77,7 +77,8 @@ class Protocol:
     NAMEALREXIST_ERR = 'USERNAMEALREADYEXISTS'
     MAXPLAYERS_ERR = 'REACHEDMAXPLAYERS'
 
-    PACKET_MAGIC = 'GPKT'
+    CPACKET_MAGIC = 'CGPKT'
+    SPACKET_MAGIC = 'SGPKT'
 
     HIT_REQ = 'HIT'
     HIT_RES = 'GOTHIT'

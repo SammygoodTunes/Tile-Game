@@ -7,9 +7,9 @@ from time import sleep, time
 from game.data.properties.server_properties import ServerProperties
 from game.data.states.server_states import ServerStates
 from game.network.protocol import Protocol
-from game.server.entity.player.player_handler import PlayerHandler
+from game.server.handlers.player_handler import PlayerHandler
 from game.server.tasks import ServerTasks
-from game.server.world_handler import WorldHandler
+from game.server.handlers.world_handler import WorldHandler
 from game.utils.logger import logger
 
 
@@ -37,10 +37,10 @@ class Server:
             ServerTasks.map_data(conn, addr, self.world_handler)
             player_name = ServerTasks.player_join(conn, self.player_handler)
             data = conn.recv(Protocol.BUFFER_SIZE)
-            ServerTasks.game_state(conn, data, self.player_handler)
+            ServerTasks.game_state(conn, data, self.player_handler, self.world_handler)
             ServerTasks.local_game_state(conn)
             data = conn.recv(Protocol.BUFFER_SIZE)
-            ServerTasks.incoming_packets(conn, data, self.player_handler)
+            ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)
         except OSError:
             running = False
         logger.info(f'Connection from: {addr}')
@@ -56,10 +56,10 @@ class Server:
                 #print(f'Message from {addr}: {data}')
                 running = not ServerTasks.disconnection(data)
                 # Tasks.player_hit(conn, self.player_handler, data)
-                ServerTasks.game_state(conn, data, self.player_handler)
+                ServerTasks.game_state(conn, data, self.player_handler, self.world_handler)
                 if success:
                     ServerTasks.local_game_state(conn)
-                success = ServerTasks.incoming_packets(conn, data, self.player_handler)
+                success = ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)
                 wait = time() - start_tile
                 if wait < 1 / ServerProperties.TICKS_PER_SECOND:
                     sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)
@@ -101,7 +101,7 @@ class Server:
 
         self.state.value = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         host = '0.0.0.0'
         port = 35000

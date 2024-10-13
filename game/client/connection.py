@@ -5,7 +5,8 @@ from threading import Thread
 from time import sleep, time
 import traceback
 
-from game.client.player_manager import PlayerManager
+from game.client.managers.player_manager import PlayerManager
+from game.client.managers.world_manager import WorldManager
 from game.client.tasks import ClientTasks
 from game.data.properties.server_properties import ServerProperties
 from game.data.states.connection_states import ConnectionStates
@@ -74,9 +75,9 @@ class Connection:
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE
-        self.packet_queue: list[dict] = list()  # FIFO
+        self.packet_queue: list[bytes] = list()  # FIFO
         self.player_manager = PlayerManager(client.player)
-        self.data: any = None
+        self.world_manager = WorldManager(client.world)
         self.ping: int = 0
         self.total_data_sent: int = 0 # in bytes
         self.hit_player = str()
@@ -97,7 +98,7 @@ class Connection:
                 self.state = ConnectionStates.REFUSED
                 return
             self.state = ConnectionStates.GETDATA
-            self.data = ClientTasks.get_map_data(self.sock)
+            self.world_manager.build_world_from_bytes(ClientTasks.get_map_data(self.sock))
 
             if not ClientTasks.player_join(self.sock):
                 self.state = ConnectionStates.REFUSED
@@ -110,7 +111,12 @@ class Connection:
             self.player_manager.local_player.set_player_name(player_name)
 
             self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
-            self.player_manager.set_players(ClientTasks.get_global_game_state(self.sock))
+            game_state = ClientTasks.get_global_game_state(self.sock)
+            players = game_state[1:game_state[0] + 1]
+            map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
+            self.player_manager.set_players(players)
+            if map_state:
+                self.world_manager.update_broken_tiles(map_state)
 
             if not ClientTasks.send_local_player(self.sock, self.player_manager):
                 self.state = ConnectionStates.REFUSED
@@ -171,11 +177,18 @@ class Connection:
                 packet_recv_timestamp = time()
                 if success:
                     self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
-                players = ClientTasks.get_global_game_state(self.sock)
-                self.player_manager.set_players(players)
-                success = players is not None
+                game_state = ClientTasks.get_global_game_state(self.sock)
+                if game_state is not None:
+                    players = game_state[1:game_state[0] + 1]
+                    self.player_manager.set_players(players)
+                    map_state = game_state[game_state[0] + 1:][self.world_manager.queue_offset:]
+                    if map_state:
+                        self.world_manager.update_broken_tiles(map_state)
+                    success = players is not None
                 if success:
-                    ClientTasks.send_local_player(self.sock, self.player_manager)
+                    success = ClientTasks.send_local_player(self.sock, self.player_manager)
+
+                ClientTasks.check_packet_queue(self.sock, self.packet_queue)
 
                 '''elif data and data == Hasher.enhash(Protocol.HIT_RES):
                     print('Client: received hit response, sending hit player name============================')

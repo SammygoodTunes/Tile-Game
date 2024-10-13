@@ -60,12 +60,12 @@ class Tile:
         """
         self._id = compressed_tile >> tS.TILE_ID_BYTE_POS
         self._xy = (
-            compressed_tile >> tS.TILE_X_BYTE_POS & 2 ** tS.TILE_X_BYTE_SIZE - 1,
-            compressed_tile >> tS.TILE_Y_BYTE_POS & 2 ** tS.TILE_Y_BYTE_SIZE - 1
+            compressed_tile >> tS.TILE_X_BYTE_POS & 2 ** tS.TILE_X_BIT_SIZE - 1,
+            compressed_tile >> tS.TILE_Y_BYTE_POS & 2 ** tS.TILE_Y_BIT_SIZE - 1
         )
-        self._resistance = compressed_tile >> tS.TILE_RESISTANCE_BYTE_POS & 2 ** tS.TILE_RESISTANCE_BYTE_SIZE - 1
-        self._damage = compressed_tile >> tS.TILE_DAMAGE_BYTE_POS & 2 ** tS.TILE_DAMAGE_BYTE_SIZE - 1
-        self._damage_delay = (compressed_tile >> tS.TILE_DAMAGE_DELAY_BYTE_POS & 2 ** tS.TILE_DAMAGE_DELAY_BYTE_SIZE - 1) / 10
+        self._resistance = compressed_tile >> tS.TILE_RESISTANCE_BYTE_POS & 2 ** tS.TILE_RESISTANCE_BIT_SIZE - 1
+        self._damage = compressed_tile >> tS.TILE_DAMAGE_BYTE_POS & 2 ** tS.TILE_DAMAGE_BIT_SIZE - 1
+        self._damage_delay = (compressed_tile >> tS.TILE_DAMAGE_DELAY_BYTE_POS & 2 ** tS.TILE_DAMAGE_DELAY_BIT_SIZE - 1) / 10
         return self
 
     def get_id(self):
