@@ -67,9 +67,16 @@ class Game(Window):
                 self.focused = False
                 pygame.event.clear(pygame.KEYDOWN)
                 continue
-            elif e.type == pygame.WINDOWFOCUSGAINED:
+            elif e.type == pygame.WINDOWFOCUSGAINED and not self.active:
+                self.active = True
                 pygame.event.post(pygame.event.Event(MOUSEBUTTONDOWN, {'button': MouseStates.LMB}))
                 pygame.event.post(pygame.event.Event(MOUSEBUTTONUP, {'button': MouseStates.LMB}))
+            elif e.type == pygame.WINDOWMOVED:
+                self.focused = False
+                pygame.event.clear(pygame.KEYDOWN)
+            elif e.type == pygame.WINDOWFOCUSLOST:
+                self.active = False
+
             self.client.events(self, e)
             self.screens.events(e)
 

@@ -1,5 +1,5 @@
 import pickle
-from hashlib import sha256
+from hashlib import shake_256
 import lzma
 
 from game.network.protocol import Protocol
@@ -22,16 +22,17 @@ class Hasher:
     @staticmethod
     def hash(packet: str) -> str:
         """
-        Hash a packet.
+        Hash a packet and return hash of size BUFFER_SIZE.
         """
-        return sha256(packet.encode(Protocol.ENCODING)).hexdigest()
+        return shake_256(packet.encode(Protocol.ENCODING)).hexdigest(Protocol.BUFFER_SIZE // 2)
 
     @staticmethod
     def enhash(packet: str) -> bytes:
         """
         Hash and encode (Protocol.ENCODING) a packet.
+        Return hash of size BUFFER_SIZE.
         """
-        return sha256(packet.encode(Protocol.ENCODING)).hexdigest().encode(Protocol.ENCODING)
+        return shake_256(packet.encode(Protocol.ENCODING)).hexdigest(Protocol.BUFFER_SIZE // 2).encode(Protocol.ENCODING)
 
 
 class Compressor:

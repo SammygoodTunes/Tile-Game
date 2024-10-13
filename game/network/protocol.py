@@ -53,7 +53,7 @@ class Protocol:
         no longer a priority.
     """
 
-    BUFFER_SIZE = 64
+    BUFFER_SIZE = 32
     ENCODING = 'utf-8'
 
     RECOGNITION_REQ = 'TILEGAME'
