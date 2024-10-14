@@ -79,8 +79,8 @@ class Connection:
         self.player_manager = PlayerManager(client.player)
         self.world_manager = WorldManager(client.world)
         self.ping: int = 0
-        self.total_data_sent: int = 0 # in bytes
         self.hit_player = str()
+        self.timer: float | None = None
 
 
     def connect(self, player_name: str) -> None:
@@ -89,6 +89,7 @@ class Connection:
         Any errors or failures will raise specific exceptions.
         """
         try:
+            self.timer = time()
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
             if not ClientTasks.recognition(self.sock):
@@ -162,6 +163,7 @@ class Connection:
             logger.info('Disconnecting from server.')
             self.sock.send(Hasher.enhash(Protocol.DISCONNECT_REQ))
             self.packet_queue.clear()
+            self.timer = None
         except (ConnectionResetError, BrokenPipeError):
             pass
         self.state = ConnectionStates.IDLE
@@ -194,6 +196,7 @@ class Connection:
 
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
+
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
                 packet_recv_timestamp = time()
 

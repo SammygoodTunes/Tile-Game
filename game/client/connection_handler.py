@@ -1,12 +1,9 @@
+from time import time
 
 from pygame.event import Event
 
 from game.client.connection import Connection, Tasks
-from game.data.properties.world_properties import WorldProperties
 from game.data.states.connection_states import ConnectionStates
-from game.data.structures.map_structure import MapStructure
-from game.data.structures.tile_structure import TileStructure
-from game.world.map_manager import Map
 
 
 class ConnectionHandler:
@@ -89,7 +86,7 @@ class ConnectionHandler:
 
     def get_ping(self) -> int:
         """
-        Get the connection ping, only if a connection has been established.
+        Return the connection ping, only if a connection has been established.
         """
         if not self.connection:
             return 0
@@ -97,7 +94,7 @@ class ConnectionHandler:
 
     def get_total_data_sent(self) -> float:
         """
-        Get the total data sent to the server, rounded to megabytes (not mebibytes).
+        Return the total data sent to the server, rounded to megabytes (not mebibytes).
         """
         if not self.connection:
             return 0.0
@@ -105,15 +102,35 @@ class ConnectionHandler:
 
     def get_total_data_received(self) -> float:
         """
-        Get the total data received from the server, rounded to megabytes (not mebibytes).
+        Return the total data received from the server, rounded to megabytes (not mebibytes).
         """
         if not self.connection:
             return 0.0
         return self.connection.sock.get_recv() / 1_000_000.0
 
+    def get_average_data_sent(self) -> float:
+        """
+        Return the average data sent per minute, rounded to kilobytes (not kibibytes).
+        """
+        if not self.connection:
+            return 0.0
+        if self.connection.timer is None:
+            return 0.0
+        return self.connection.sock.get_sent() / (time() - self.connection.timer) * 60 / 1000.0
+
+    def get_average_data_received(self) -> float:
+        """
+        Return the average data received per minute, rounded to kilobytes (not kibibytes).
+        """
+        if not self.connection:
+            return 0.0
+        if self.connection.timer is None:
+            return 0.0
+        return self.connection.sock.get_recv() / (time() - self.connection.timer) * 60 / 1000.0
+
     def get_players(self) -> list:
         """
-        Get the current players in the server, otherwise return an empty list if no connection has been established.
+        Return the current players in the server, otherwise return an empty list if no connection has been established.
         """
         if not self.connection:
             return list()
