@@ -1,5 +1,5 @@
 
-from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, Surface, BLEND_ALPHA_SDL2
+from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, Surface, KMOD_CTRL
 from pygame.math import clamp
 from string import printable, digits, ascii_letters
 from typing import Self
@@ -62,9 +62,16 @@ class InputBox(Widget):
                 self._selected = self.is_hovering_over()
         if e.type == KEYDOWN and self._selected:
             if key.get_pressed()[K_BACKSPACE]:
-                self._text_value = self._text_value[:-1]
+                if e.mod & KMOD_CTRL:
+                    new = self._text_value[:self._text_value.rfind(' ')]
+                    length = len(self._text_value) - len(new)
+                    self._text_value = new
+                else:
+                    self._text_value = self._text_value[:-1]
+                    length = 1
                 if self._text_offset > 0:
-                    self._text_offset -= 1
+                    self._text_offset -= length
+
             elif e.unicode in self._authorised_chars and e.unicode.isascii() and len(self._text_value) < self._max_text_length:
                 self._text_value += e.unicode
             self.scroll_text()
