@@ -213,9 +213,6 @@ class Connection:
 
                 # Tick
                 self.ping = round((time() - packet_recv_timestamp) * 1000)
-                '''wait = time() - packet_recv_timestamp
-                if wait < 1 / ServerProperties.TICKS_PER_SECOND:
-                    sleep(1 / ServerProperties.TICKS_PER_SECOND - wait)'''
 
                 if _game_state:
                     players = _game_state[1:_game_state[0] + 1]

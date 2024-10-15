@@ -1,7 +1,7 @@
 
 import pygame
 from pygame.math import clamp
-from typing import Self
+from typing import Self, overload
 
 from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
@@ -245,3 +245,10 @@ class HorizontalSlider(Widget):
         Return the number of pixels needed to move the horizontal slider's button from one value to the next.
         """
         return self._width / (self._max_value - self._min_value)
+
+    def set_state(self, state: bool):
+        """
+        Overridden method from Widget to reset the button_held state to False for every horizontal slider state update.
+        """
+        super().set_state(state)
+        self._button_held = False
