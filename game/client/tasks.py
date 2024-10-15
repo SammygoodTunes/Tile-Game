@@ -109,13 +109,14 @@ class ClientTasks:
             return None
         compressed_game_state = b''
         data = sock.recv(Protocol.BUFFER_SIZE)
-        length = int(data[:Packet.DATA_SIZE], 16)
+        length = int.from_bytes(data[:Packet.DATA_SIZE])
         n_packets = ceil(length / Protocol.BUFFER_SIZE)
         data = data[Packet.DATA_SIZE:Packet.DATA_SIZE + length]
+ # Take into account the packet size header
         if n_packets == 1:
             return data
         for i in range(n_packets):
-            if i != 0: data = sock.recv(Protocol.BUFFER_SIZE)[:length - i * Protocol.BUFFER_SIZE + 4]
+            if i != 0: data = sock.recv(Protocol.BUFFER_SIZE)[:length - i * Protocol.BUFFER_SIZE]
             compressed_game_state += data
         return compressed_game_state
 

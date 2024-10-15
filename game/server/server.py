@@ -4,6 +4,8 @@ from multiprocessing import Process, Value
 import socket
 from time import sleep, time
 
+import pygame.time
+
 from game.data.properties.server_properties import ServerProperties
 from game.data.states.server_states import ServerStates
 from game.network.protocol import Protocol
@@ -20,10 +22,10 @@ class Server:
 
     def __init__(self) -> None:
         self.state = Value('i', ServerStates.IDLE)
-        self.player_count = 0
+        self.player_count = Value('i', 0)
         self.sock: socket.socket | None = None
         self.server_thread: Process | None = None
-        self.timeout = 0
+        self.timer = Value('f', 0.0)
         self.world_handler: WorldHandler | None = None
         self.player_handler: PlayerHandler | None = None
 
@@ -45,7 +47,7 @@ class Server:
             running = False
 
         logger.info(f'Connection from: {addr}')
-        self.player_count = len(self.player_handler.get_players())
+        self.player_count.value = len(self.player_handler.get_players())
         while running:
             try:
                 start_tile = time()
@@ -70,8 +72,9 @@ class Server:
             except OSError:
                 running = False
         logger.info(f'Connection {addr} closing')
+        self.timer.value = pygame.time.get_ticks() / 1000.0
         self.player_handler.untrack_player(player_name)
-        self.player_count = len(self.player_handler.get_players())
+        self.player_count.value = len(self.player_handler.get_players())
         conn.close()
 
     def run(self, state, _seed: str) -> None:
@@ -98,7 +101,6 @@ class Server:
         """
         Prepare the server.
         """
-
         self.state.value = ServerStates.STARTING
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -120,11 +122,12 @@ class Server:
         """
         Stop the server if it's running, otherwise don't do anything.
         """
-        if self.state.value in (ServerStates.STARTING, ServerStates.RUNNING):
+        if self.state.value > 0:
             if self.server_thread is not None:
                 self.server_thread.kill()
             self.sock.close()
             self.state.value = ServerStates.IDLE
+            self.timer.value = 0.0
             logger.info('Server closed.')
             self.sock = None
             self.world_handler = None

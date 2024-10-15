@@ -97,7 +97,9 @@ class ServerTasks:
         compressed_players_obj = player_handler.get_players(compressed=True)
         compressed_map_data_obj = Compressor.compress(world_handler.get_map_data())
         data = int.to_bytes(len(compressed_players_obj)) + compressed_players_obj + compressed_map_data_obj
-        conn.send(fill(hex_len(data) + data))
+        packet = fill(hex_len(data) + data)
+        packet = hex_len(packet) + packet[Packet.DATA_SIZE:]
+        conn.send(packet)
         return True
 
     @staticmethod
@@ -108,7 +110,7 @@ class ServerTasks:
         """
         if not data or data[:len(Protocol.SPACKET_MAGIC)] != to_bytes(Protocol.SPACKET_MAGIC):
             return False
-        length = int(data[len(Protocol.SPACKET_MAGIC):len(Protocol.SPACKET_MAGIC) + Packet.DATA_SIZE], 16)
+        length = int.from_bytes(data[len(Protocol.SPACKET_MAGIC):len(Protocol.SPACKET_MAGIC) + Packet.DATA_SIZE])
         if not length:
             return False
         packet = b''

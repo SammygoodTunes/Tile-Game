@@ -192,7 +192,6 @@ class Screens:
             self.game.start_game = False
             self.game.paused = False
             self.game.client.connection_handler.stop_connection = True
-            self.game.server.stop()
             self.pause_screen.set_state(False)
             self.main_menu_screen.set_state(True)
             self.map_screen.reset_map()
@@ -205,7 +204,6 @@ class Screens:
             self.game.start_game = False
             self.game.paused = False
             self.game.client.connection_handler.stop_connection = True
-            self.game.server.stop()
             self.gameover_screen.set_state(False)
             self.main_menu_screen.set_state(True)
             self.map_screen.set_state(False)
@@ -282,7 +280,6 @@ class Screens:
             self.game.client.connection_handler.player_name = self.server_create_screen.ign_input.get_text().strip()
             self.game.client.connection_handler.start_connection = True
         else:
-            self.game.server.stop()
             self.server_connect_screen.main_menu_button.set_state(True)
             self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
 

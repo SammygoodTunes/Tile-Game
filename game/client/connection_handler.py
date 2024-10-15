@@ -28,6 +28,7 @@ class ConnectionHandler:
         """
         Keep track of the connection state.
         """
+
         if self.start_connection:
             self.start_connection = False
             self.connection = Connection(
@@ -46,6 +47,9 @@ class ConnectionHandler:
             return
 
         connection_state = self.connection.state
+
+        if self.connection.world_manager.temp_data:
+            game.client.world.get_map().update(self.connection.world_manager.temp_data)
 
         if not game.start_game:
             game.screens.server_connect_screen.update_info_label(connection_state)

@@ -10,7 +10,7 @@ class Packet:
     """
     Class for determining the properties of the packet header.
     """
-    DATA_SIZE = 4
+    DATA_SIZE = 2
 
 
 class Hasher:
@@ -58,14 +58,17 @@ class Compressor:
             return pickle.loads(lzma.decompress(data))
         except lzma.LZMAError as e:
             logger.error(f'Could not decompress: {e}')
-        return None
+            raise ConnectionRefusedError
 
 
 def fill(data: bytes) -> bytes:
     """
     Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
     """
-    return data + b' ' * (Protocol.BUFFER_SIZE - len(data) % Protocol.BUFFER_SIZE)
+    empty_data_size = Protocol.BUFFER_SIZE - len(data) % Protocol.BUFFER_SIZE
+    if empty_data_size == Protocol.BUFFER_SIZE:
+        return data
+    return data + b' ' * empty_data_size
 
 
 def to_bytes(data: str) -> bytes:
@@ -76,6 +79,6 @@ def to_bytes(data: str) -> bytes:
 
 def hex_len(data: bytes) -> bytes:
     """
-    Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+    Return length of data in hex. Used in packet header for determining data size.
     """
-    return to_bytes(f'{len(data):0{Packet.DATA_SIZE}x}')
+    return int.to_bytes(len(data), length=Packet.DATA_SIZE)

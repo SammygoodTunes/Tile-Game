@@ -9,7 +9,7 @@ class WorldManager:
 
     def __init__(self, world) -> None:
         self.local_world = world
-        self.queue_offset = 0
+        self.temp_data = b''
 
     def build_world_from_bytes(self, bytes_obj: bytes) -> None:
         """
@@ -24,4 +24,4 @@ class WorldManager:
         )
         tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE + 2
         self.local_world.get_map().set_tile_data(bytes_obj[height_pos:tile_data_pos])
-        self.local_world.get_map().update(bytes_obj[tile_data_pos:])
+        self.temp_data = bytes_obj[tile_data_pos:]

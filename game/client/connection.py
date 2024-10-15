@@ -93,24 +93,20 @@ class Connection:
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
             if not ClientTasks.recognition(self.sock):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to recognise client.')
 
             ClientTasks.map_data(self.sock)
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             if not ClientTasks.confirm_map_data(data):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to get map data.')
             self.state = ConnectionStates.GETDATA
             self.world_manager.build_world_from_bytes(ClientTasks.get_map_data(self.sock))
 
             if not ClientTasks.player_join(self.sock):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to join server.')
 
             if not ClientTasks.send_player_name(self.sock, player_name):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to get player name.')
 
             self.player_manager.local_player.set_player_name(player_name)
 
@@ -118,36 +114,47 @@ class Connection:
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             game_state = ClientTasks.get_global_game_state(self.sock, data)
             players = game_state[1:game_state[0] + 1]
-            #map_data = Compressor.decompress(game_state[game_state[0] + 1:])
+            map_data = Compressor.decompress(game_state[game_state[0] + 1:])
             self.player_manager.set_players(players)
-            #self.world_manager.build_world_from_bytes(map_data)
+            self.world_manager.build_world_from_bytes(map_data)
 
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             if not ClientTasks.send_local_player(self.sock, data, self.player_manager):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to send local player.')
 
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             if not ClientTasks.confirm_local_player(data):
-                self.state = ConnectionStates.REFUSED
-                return
+                raise ConnectionRefusedError('Failed to confirm local player.')
 
             self.state = ConnectionStates.SUCCESS
-        except PlayerNameAlreadyExists:
+        except PlayerNameAlreadyExists as e:
+            logger.error(f'Connection aborted: {e}')
             self.state = ConnectionStates.BADNAME
-        except MaxPlayersReached:
+            self.disconnect()
+        except MaxPlayersReached as e:
+            logger.error(f'Connection aborted: {e}')
             self.state = ConnectionStates.MAXIMUM
-        except ConnectionRefusedError:
+            self.disconnect()
+        except ConnectionRefusedError as e:
+            logger.error(f'Connection refused: {e}')
             self.state = ConnectionStates.REFUSED
+            self.disconnect()
         except TimeoutError:
+            logger.error(f'Connection timed out!')
             self.state = ConnectionStates.TIMEOUT
+            self.disconnect()
         except socket.gaierror:
+            logger.error(f'Unknown host')
             self.state = ConnectionStates.INVALID
-        except OSError:
+            self.disconnect()
+        except OSError as e:
+            logger.error(f'Internal error: {e}')
             self.state = ConnectionStates.NOROUTE
+            self.disconnect()
         except Exception:
             logger.error(f'{traceback.format_exc()}')
             self.state = ConnectionStates.ERROR
+            self.disconnect()
 
     def disconnect(self) -> None:
         """
@@ -216,9 +223,9 @@ class Connection:
 
                 if _game_state:
                     players = _game_state[1:_game_state[0] + 1]
-                    #map_data = Compressor.decompress(_game_state[_game_state[0] + 1:])
+                    map_data = Compressor.decompress(_game_state[_game_state[0] + 1:])
                     self.player_manager.set_players(players)
-                    #self.world_manager.build_world_from_bytes(map_data)
+                    self.world_manager.build_world_from_bytes(map_data)
 
             except TimeoutError:
                 self.state = ConnectionStates.TIMEOUT
