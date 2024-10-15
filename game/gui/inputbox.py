@@ -1,5 +1,5 @@
 
-from pygame import mouse, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, Surface, KMOD_CTRL
+from pygame import mouse, scrap, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_v, Surface, KMOD_CTRL
 from pygame.math import clamp
 from string import printable, digits, ascii_letters
 from typing import Self
@@ -63,17 +63,21 @@ class InputBox(Widget):
         if e.type == KEYDOWN and self._selected:
             if key.get_pressed()[K_BACKSPACE]:
                 if e.mod & KMOD_CTRL:
-                    new = self._text_value[:self._text_value.rfind(' ')]
+                    index = self._text_value.rfind(' ')
+                    new = self._text_value[:index]
                     length = len(self._text_value) - len(new)
-                    self._text_value = new
+                    self._text_value = new if index != -1 else ''
                 else:
                     self._text_value = self._text_value[:-1]
                     length = 1
                 if self._text_offset > 0:
                     self._text_offset -= length
-
-            elif e.unicode in self._authorised_chars and e.unicode.isascii() and len(self._text_value) < self._max_text_length:
-                self._text_value += e.unicode
+            elif key.get_pressed()[K_v] and e.mod & KMOD_CTRL:
+                self._text_value += self.clean_text(
+                    scrap.get("text/plain;charset=utf-8").decode()[:self._max_text_length - len(self._text_value)]
+                )
+            elif e.unicode in self._authorised_chars and e.unicode.isascii():
+                self._text_value += e.unicode if len(self._text_value) < self._max_text_length else ''
             self.scroll_text()
             self._text_label.set_text(self._text_value[self._text_offset:])
 
@@ -92,7 +96,7 @@ class InputBox(Widget):
         self._text_label.center_vertically(self._y, self._height)
         self._text_label.set_x(self._x + 5)
 
-    def scroll_text(self):
+    def scroll_text(self) -> None:
         """
         Internal method for calculating how and when to scroll text when going beyond the input box.
         I am aware of how awful it is. Why? because O(n).
@@ -109,28 +113,38 @@ class InputBox(Widget):
                     self._text_offset = i
                     break
 
-    def authorise_only_ascii(self):
+    def clean_text(self, text: str) -> str:
+        """
+        Clean the text of any unauthorised characters.
+        """
+        for char in text:
+            if char in self._authorised_chars:
+                continue
+            text = text.replace(char, '')
+        return text
+
+    def authorise_only_ascii(self) -> Self:
         """
         Authorise only ASCII characters in the input box, then return the input box itself.
         """
         self._authorised_chars = printable[:-5]
         return self
 
-    def authorise_only_numeric(self):
+    def authorise_only_numeric(self) -> Self:
         """
         Authorise only numerical values (0-9) in the input box, then return the input box itself.
         """
         self._authorised_chars = digits
         return self
 
-    def authorise_only_alnum(self):
+    def authorise_only_alnum(self) -> Self:
         """
         Authorise only alphanumerical values (a-zA-Z0-9), then return the input box itself.
         """
         self._authorised_chars = ascii_letters + digits
         return self
 
-    def authorise_only_alnumlines(self):
+    def authorise_only_alnumlines(self) -> Self:
         """
         Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
         This includes dashes (hyphens) and underscores.

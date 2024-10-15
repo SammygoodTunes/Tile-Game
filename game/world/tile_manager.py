@@ -12,7 +12,7 @@ class TileManager:
     """
 
     def __init__(self) -> None:
-        self.atlas = image.load(Tile.DEFAULT_ATLAS).convert_alpha()
+        self.atlas = image.load(Tile.DEFAULT_ATLAS)
         self.width, self.height = self.atlas.get_rect().size
 
     def draw(self, x: int, y: int, tile: Tile | int, screen: Surface) -> None:
@@ -33,5 +33,5 @@ class TileManager:
         """
         Set the texture atlas.
         """
-        self.atlas = image.load(atlas_file).convert_alpha()
+        self.atlas = image.load(atlas_file)
         self.width, self.height = self.atlas.get_rect().size

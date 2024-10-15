@@ -112,10 +112,11 @@ class Player:
             if self.is_in_lava(game.client.world.get_map()):
                 pygame.draw.rect(game.screen, (220, 200, 200), (self.screen_x, self.screen_y, self.width, self.height))
                 return
-            if not self.is_in_water(game.client.world.get_map()):
-                pygame.draw.rect(game.screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
+            if self.is_in_water(game.client.world.get_map()):
+                pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
                 return
-            pygame.draw.rect(game.screen, (200, 200, 220), (self.screen_x, self.screen_y, self.width, self.height))
+            pygame.draw.rect(game.screen, (255, 255, 255), (self.screen_x, self.screen_y, self.width, self.height))
+
         # screen.blit(self.asset, (self.screen_x, self.screen_y, self.width, self.height))
 
     def draw_selection_grid(self, game) -> None:
@@ -322,10 +323,10 @@ class Player:
 
         self.main_hud.health_bar.set_value(self.health)
 
-        self.edges[PlayerStates.MOVE_LEFT] = (self.screen_x <= game.width // 2 - self.width // 2)
-        self.edges[PlayerStates.MOVE_UP] = (self.screen_y <= game.height // 2 - self.height // 2)
-        self.edges[PlayerStates.MOVE_DOWN] = (self.screen_y >= game.height // 2 + self.height // 2)
-        self.edges[PlayerStates.MOVE_RIGHT] = (self.screen_x >= game.width // 2 + self.width // 2)
+        self.edges[PlayerStates.MOVE_LEFT] = (self.screen_x <= game.width // 2 - self.width)
+        self.edges[PlayerStates.MOVE_UP] = (self.screen_y <= game.height // 2 - self.height)
+        self.edges[PlayerStates.MOVE_DOWN] = (self.screen_y >= game.height // 2 + self.height)
+        self.edges[PlayerStates.MOVE_RIGHT] = (self.screen_x >= game.width // 2 + self.width)
 
     def update_ui(self) -> None:
         """
