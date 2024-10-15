@@ -35,8 +35,8 @@ def main() -> None:
 
     init()
 
-    width: int = 720
-    height: int = 480
+    width: int = display.get_desktop_sizes()[0][0] // 2
+    height: int = display.get_desktop_sizes()[0][1] // 2
     game: Game = Game(width, height)
 
     try:

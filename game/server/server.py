@@ -45,7 +45,7 @@ class Server:
             running = False
 
         logger.info(f'Connection from: {addr}')
-        self.player_count += 1
+        self.player_count = len(self.player_handler.get_players())
         while running:
             try:
                 start_tile = time()
@@ -71,7 +71,7 @@ class Server:
                 running = False
         logger.info(f'Connection {addr} closing')
         self.player_handler.untrack_player(player_name)
-        self.player_count -= 1
+        self.player_count = len(self.player_handler.get_players())
         conn.close()
 
     def run(self, state, _seed: str) -> None:

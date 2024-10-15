@@ -74,14 +74,16 @@ class Map:
                 tile = Tiles.SAND
             elif -1000 <= noise_value < -600:
                 tile = Tiles.DIRT
-            elif -600 <= noise_value < 0:
-                tile = Tiles.GRASS
-            elif 0 <= noise_value < 500:
+            elif -600 <= noise_value < -300:
                 tile = Tiles.PLAINS
-            elif 1280 <= noise_value < 1550:
-                tile = Tiles.LAVA
-            else:
+            elif -300 <= noise_value < 100:
+                tile = Tiles.GRASS
+            elif 100 <= noise_value < 500:
+                tile = Tiles.PLAINS
+            elif 500 <= noise_value < 2000:
                 tile = Tiles.COBBLESTONE
+            else:
+                tile = Tiles.LAVA
             self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
 
             '''if tile > 0:

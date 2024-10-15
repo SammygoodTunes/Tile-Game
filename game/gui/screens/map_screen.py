@@ -31,15 +31,15 @@ class MapScreen(Screen):
         surface.set_alpha(ScreenProperties.ALPHA)
         return surface
 
-    def initialise_map(self, map) -> None:
+    def initialise_map(self, _map) -> None:
         """
         Initialise the screen's map component.
         """
-        if self._got_map or map.get_state()[0] != MapStates.READY or not self.game.start_game:
+        if self._got_map or _map.get_state()[0] != MapStates.READY or not self.game.start_game:
             return
-        coefficient = min(self.game.width / map.get_width_in_pixels() * 0.5,
-                          self.game.height / map.get_height_in_pixels() * 0.5)
-        self.scaled_map = smoothscale_by(map.get_surface(), round(coefficient, 2))
+        coefficient = min(self.game.width / _map.get_width_in_pixels() * 0.5,
+                          self.game.height / _map.get_height_in_pixels() * 0.5)
+        self.scaled_map = smoothscale_by(_map.get_surface(), round(coefficient, 2))
         self._got_map = True
         self.update_ui()
 

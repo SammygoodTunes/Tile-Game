@@ -70,7 +70,7 @@ class Connection:
 
     def __init__(self, host: str, port: int, client) -> None:
         self.sock = XSocket()
-        self.sock.settimeout(30.0)
+        self.sock.settimeout(10.0)
         self.sock.setblocking(True)
         self.host = host
         self.port = port
@@ -191,7 +191,6 @@ class Connection:
 
         _game_state: bytes = b''
 
-        self.sock.settimeout(10.0)
         self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
         while self.state <= 0 and self.state != ConnectionStates.IDLE:

@@ -20,14 +20,15 @@ class OptionsScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.options_label = Label("Options")
-        self.fps_limit_slider = (HorizontalSlider("FPS Limit")
+        self.options_label = Label('Options')
+        self.fps_limit_slider = (HorizontalSlider('FPS Limit')
                                  .set_value(window.fps_cap)
                                  .set_value_text(f'{window.fps_cap} FPS')
                                  .set_value_bounds(10, 1000))
-        self.show_fps_box = Checkbox("Show FPS", checked=True)
-        self.debug_info_box = Checkbox("Show debug info", checked=False)
-        self.back_button = Button("Back")
+        self.show_fps_box = Checkbox('Show FPS', checked=True)
+        self.debug_info_box = Checkbox('Show debug info', checked=False)
+        self.vsync_box = Checkbox('Vsync', checked=True)
+        self.back_button = Button('Back')
 
     def initialise_surface(self) -> Surface:
         """
@@ -45,6 +46,7 @@ class OptionsScreen(Screen):
         self.fps_limit_slider.events(e)
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
+        self.vsync_box.events(e)
         if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 if self.back_button.is_hovering_over():
@@ -64,6 +66,7 @@ class OptionsScreen(Screen):
         self.fps_limit_slider.draw(self.window.screen)
         self.show_fps_box.draw(self.window.screen)
         self.debug_info_box.draw(self.window.screen)
+        self.vsync_box.draw(self.window.screen)
         self.back_button.draw(self.window.screen)
 
     def update_ui(self) -> None:
@@ -81,6 +84,8 @@ class OptionsScreen(Screen):
         self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, -25)
         self.debug_info_box.update(self.window)
         self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 0)
+        self.vsync_box.update(self.window)
+        self.vsync_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 25)
         self.back_button.update(self.window)
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() * 2 + 5)
 
@@ -93,5 +98,6 @@ class OptionsScreen(Screen):
         self.fps_limit_slider.set_state(state)
         self.show_fps_box.set_state(state)
         self.debug_info_box.set_state(state)
+        self.vsync_box.set_state(state)
         self.back_button.set_state(state)
         if state: self.update_ui()

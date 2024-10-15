@@ -22,15 +22,15 @@ class Window:
         self.old_height: int = height
         self.max_width: int = pygame.display.Info().current_w
         self.max_height: int = pygame.display.Info().current_h
-        self.screen: pygame.Surface | pygame.SurfaceType = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8)
+        self.screen: pygame.Surface | pygame.SurfaceType = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, depth=8, vsync=1)
         self.fps_cap: int = 200
         self.clock: pygame.time.Clock() = pygame.time.Clock()
         self.timer: int = 0
         self.font: pygame.font.Font = pygame.font.Font(Window.FONT_PATH, 11)
         self.screens: Screens = Screens(self)
         self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8))
+        self.vsync: bool = True
         self.focused: bool = True
-        self.active: bool = True
         self.paused: bool = False
         self.fullscreen: bool = False
         self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
@@ -63,7 +63,7 @@ class Window:
             self.width, self.height = self.screen.get_size()
         else:
             self.width, self.height = e.x, e.y
-            self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8)
+            self.screen = pygame.display.set_mode((self.width, self.height), pygame.RESIZABLE, 8, vsync=self.vsync)
 
     def draw_fps(self) -> None:
         """
@@ -76,6 +76,18 @@ class Window:
             self.fps_label.set_x(self.width - self.fps_label.get_total_width() - 4)
             self.fps_label.set_y(-8)
             self.fps_label.draw(self.screen)
+
+    def window_updates(self) -> None:
+        """
+        Update window based on options' menu.
+        """
+        if self.vsync != self.screens.options_screen.vsync_box.is_checked():
+            self.vsync = self.screens.options_screen.vsync_box.is_checked()
+            self.screen = pygame.display.set_mode(
+                (self.width, self.height),
+                (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE), depth=8,
+                vsync=self.vsync
+            )
 
     def update_ui(self) -> None:
         """
@@ -98,5 +110,7 @@ class Window:
             self.width = self.old_width
             self.height = self.old_height
         self.screen = pygame.display.set_mode(
-            (self.width, self.height), pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE, 8
+            (self.width, self.height),
+            (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE) | pygame.SCALED, depth=8,
+            vsync=self.vsync
         )
