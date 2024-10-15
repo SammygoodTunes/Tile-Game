@@ -71,6 +71,16 @@ class Player:
         """
         Track the player events.
         """
+        if e.type == pygame.MOUSEWHEEL:
+            self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())
+            self.main_hud.hotbar.select_slot((self.main_hud.hotbar.get_selected_slot() - e.y) % len(self.main_hud.hotbar.get_slots()))
+            self.main_hud.hotbar.init_slots()
+            self.main_hud.hotbar.update(game)
+        tile_x, tile_y = self.selected_tile_x, self.selected_tile_y
+        if not 0 <= tile_x < map_obj.get_width_in_tiles() or not 0 <= tile_y < map_obj.get_height_in_tiles():
+            return
+        if map_obj.get_dynatile(tile_x, tile_y) or not map_obj.get_tile(tile_x, tile_y) in TileTypes.BREAKABLE:
+            return
         if e.type == pygame.MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 self.breaking = True
@@ -91,13 +101,6 @@ class Player:
                     map_obj.get_tile(self.selected_tile_x, self.selected_tile_y),
                     map_obj.get_dynatile_surface()
                 )
-            if e.button == MouseStates.RMB:
-                pass
-        if e.type == pygame.MOUSEWHEEL:
-            self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())
-            self.main_hud.hotbar.select_slot((self.main_hud.hotbar.get_selected_slot() - e.y) % len(self.main_hud.hotbar.get_slots()))
-            self.main_hud.hotbar.init_slots()
-            self.main_hud.hotbar.update(game)
 
     def draw(self, game) -> None:
         """
