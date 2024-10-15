@@ -47,14 +47,14 @@ class Button(Widget):
         """
         button_width = clamp(window.width * 0.25, Button.MIN_WIDTH, Button.MAX_WIDTH)
         button_height = clamp(window.height * 0.1, Button.MIN_HEIGHT, Button.MAX_HEIGHT)
-        self.label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
+        self.label.update(window)
         self._width = button_width
         self._height = button_height
         self.refresh()
 
     def refresh(self) -> None:
         """
-        Refresh the button and its components.
+        Refresh the button's subcomponents.
         """
         self.label.refresh()
 

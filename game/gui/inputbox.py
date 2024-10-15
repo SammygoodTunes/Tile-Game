@@ -4,6 +4,7 @@ from pygame.math import clamp
 from string import printable, digits, ascii_letters
 from typing import Self
 
+from game.data.properties.screen_properties import ScreenProperties
 from game.gui.label import Widget, Label
 from game.data.states.mouse_states import MouseStates
 
@@ -39,9 +40,9 @@ class InputBox(Widget):
         Draw the input box and its components.
         """
         background_surface = Surface((self._width, self._height))
-        background_surface.set_alpha(128)
+        background_surface.set_alpha(ScreenProperties.ALPHA)
         draw.rect(background_surface, self._background_colour, (self._x, self._y, self._width, self._height))
-        screen.blit(background_surface, (self._x, self._y), special_flags=BLEND_ALPHA_SDL2)
+        screen.blit(background_surface, (self._x, self._y))
         draw.rect(screen, self._border_colour, (self._x, self._y, self._width, self._height), 2)
         if self._text_value.strip():
             self._text_label.draw(screen)
@@ -79,7 +80,6 @@ class InputBox(Widget):
         self._text_label.update(window)
         self._placeholder_label.update(window)
         self._text_label.set_text(self._text_value[self._text_offset:])
-        self._placeholder_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._placeholder_label.center_vertically(self._y, self._height)
         self._placeholder_label.set_x(self._x + 5)
         self._text_label.center_vertically(self._y, self._height)
