@@ -69,7 +69,7 @@ class Player:
 
     def events(self, game, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
         """
-        Track the player events.
+        Handle the player events.
         """
         if e.type == pygame.MOUSEWHEEL:
             self.main_hud.hotbar.unselect_slot(self.main_hud.hotbar.get_selected_slot())

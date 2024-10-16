@@ -38,7 +38,7 @@ class CreditsScreen(Screen):
 
     def events(self, e: Event) -> None:
         """
-        Track the screen events.
+        Handle the screen events.
         """
         if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:

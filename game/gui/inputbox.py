@@ -30,7 +30,6 @@ class InputBox(Widget):
         self._cursor_colour = (190, 255, 10)
         self._text_value = text
         self._text_offset = 0
-        self._order = 0
         self._max_text_length = 64
         self._authorised_chars = printable[:-5]
         self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
@@ -51,6 +50,7 @@ class InputBox(Widget):
         elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:
             self._placeholder_label.draw(screen)
         if not self._selected:
+            self._timer = pygame.time.get_ticks() / 1000.0
             return
         if pygame.time.get_ticks() / 1000.0 - self._timer > GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION:
             self._timer = pygame.time.get_ticks() / 1000.0
@@ -61,7 +61,7 @@ class InputBox(Widget):
 
     def events(self, e: event.Event) -> None:
         """
-        Track the input box events.
+        Handle the input box events.
         """
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
@@ -312,17 +312,3 @@ class InputBox(Widget):
         Return the input box's max text length.
         """
         return self._max_text_length
-
-    def set_order(self, order: int) -> Self:
-        """
-        Set the order of the input box, then return the input box itself.
-        Used for tabbing between them.
-        """
-        self._order = order
-        return self
-
-    def get_order(self) -> int:
-        """
-        Return the order of the input box.
-        """
-        return self._order

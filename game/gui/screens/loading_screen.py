@@ -27,7 +27,7 @@ class LoadingScreen(Screen):
 
     def events(self, e: Event) -> None:
         """
-        Track the screen events (unused).
+        Handle the screen events (unused).
         """
         pass
 

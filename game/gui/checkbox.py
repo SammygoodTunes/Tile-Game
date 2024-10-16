@@ -52,7 +52,7 @@ class Checkbox(Widget):
 
     def events(self, e: event.Event) -> None:
         """
-        Track the checkbox events.
+        Handle the checkbox events.
         """
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB and self.is_hovering_over():

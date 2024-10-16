@@ -2,7 +2,7 @@
 class GuiProperties:
     """
     Class for GUI properties.
-    Durations are in seconds.
+    Duration constants are in seconds.
     """
 
     TITLE_ANIM_DURATION = 2.0

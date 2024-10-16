@@ -63,7 +63,7 @@ class HorizontalSlider(Widget):
 
     def events(self, e: pygame.event.Event) -> None:
         """
-        Track the horizontal slider events.
+        Handle the horizontal slider events.
         """
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:

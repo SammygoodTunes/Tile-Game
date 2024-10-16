@@ -55,7 +55,7 @@ class Screens:
 
     def events(self, e: pygame.event.Event) -> None:
         """
-        Track the events of the different screens.
+        Handle the events of the different screens.
         """
         self.map_screen.initialise_map(self.game.client.world.get_map())
 

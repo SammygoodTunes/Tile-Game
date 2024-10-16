@@ -41,7 +41,7 @@ class OptionsScreen(Screen):
 
     def events(self, e: Event) -> None:
         """
-        Track the screen events.
+        Handle the screen events.
         """
         self.fps_limit_slider.events(e)
         self.show_fps_box.events(e)

@@ -4,6 +4,7 @@ from pygame.event import Event
 
 from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.screen_properties import ScreenProperties
+from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -23,6 +24,10 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
+        self.ordering_container = OrderingContainer().set_widgets([
+            self.ign_input,
+            self.seed_input
+        ])
         self.create_button = Button('Create')
         self.back_button = Button('Back')
 
@@ -37,10 +42,11 @@ class ServerCreateScreen(Screen):
 
     def events(self, e: Event) -> None:
         """
-        Track the screen events (unused).
+        Handle the screen events.
         """
         self.ign_input.events(e)
         self.seed_input.events(e)
+        self.ordering_container.events(e)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
 
     def draw(self) -> None:
@@ -51,8 +57,9 @@ class ServerCreateScreen(Screen):
             return
         self.window.screen.blit(self.faded_surface, (0, 0))
         self.create_label.draw(self.window.screen)
-        self.ign_input.draw(self.window.screen)
-        self.seed_input.draw(self.window.screen)
+        for widget in self.ordering_container.get_widgets():
+            if isinstance(widget, InputBox):
+                widget.draw(self.window.screen)
         self.create_button.draw(self.window.screen)
         self.back_button.draw(self.window.screen)
 
@@ -88,4 +95,5 @@ class ServerCreateScreen(Screen):
         self.seed_input.set_state(state)
         self.create_button.set_state(state)
         self.back_button.set_state(state)
+        self.ordering_container.set_state(state)
         if state: self.update_ui()
