@@ -27,19 +27,20 @@ class OrderingContainer(Widget):
             return
         if e.key != K_TAB:
             return
-        if isinstance(self._widgets[self._order], InputBox) and self._order >= 0:
-            for i, widget in enumerate(self._widgets):
-                if not widget.is_selected():
-                    continue
-                widget.set_selected(False)
+
+        # Input boxes
+        if not isinstance(self._widgets[self._order], InputBox) or not self._order >= -1:
+            return
+        for i, widget in enumerate(self._widgets):
+            if widget.is_selected():
                 self._order = i
-            [widget.set_selected(False) for widget in self._widgets]
+                break
+        [widget.set_selected(False) for widget in self._widgets]
         if e.mod & KMOD_SHIFT:
             self._order = self._order - 1 if self._order > 0 else len(self._widgets) - 1
         else:
             self._order = self._order + 1 if self._order < len(self._widgets) - 1 else 0
-        if isinstance(self._widgets[self._order], InputBox):
-            self._widgets[self._order].set_selected(True)
+        self._widgets[self._order].set_selected(True)
 
     def set_widgets(self, widgets: list[any]) -> Self:
         """
@@ -54,10 +55,11 @@ class OrderingContainer(Widget):
         """
         return self._widgets
 
-    def set_state(self, state: bool):
+    def set_state(self, state: bool) -> Self:
         """
-        Set the ordering container's state, and reset the order.
+        Set the ordering container's state and reset the order, then return the ordering container itself.
         """
         super().set_state(state)
         self._order = -1
+        return self
 

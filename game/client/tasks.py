@@ -92,7 +92,7 @@ class ClientTasks:
         return True
 
     @staticmethod
-    def confirm_local_player(data: bytes):
+    def confirm_local_player(data: bytes) -> bool:
         """
         Task for confirming the reception of the local player sent to the server.
         Return True if the data is a valid packet reception response, otherwise False.
@@ -112,7 +112,6 @@ class ClientTasks:
         length = int.from_bytes(data[:Packet.DATA_SIZE])
         n_packets = ceil(length / Protocol.BUFFER_SIZE)
         data = data[Packet.DATA_SIZE:Packet.DATA_SIZE + length]
- # Take into account the packet size header
         if n_packets == 1:
             return data
         for i in range(n_packets):
@@ -134,7 +133,7 @@ class ClientTasks:
         return True
 
     @staticmethod
-    def confirm_queued_packet(data):
+    def confirm_queued_packet(data) -> bool:
         """
         Task for confirming the reception of the queued packet that was sent to the server.
         Return True if the data is a valid packet reception response, otherwise False.
