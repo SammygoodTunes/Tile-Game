@@ -3,6 +3,7 @@ class BaseBuilder:
     """
     Base class for packet building
     """
+
     COMMAND_ID_KEY = 'id'
     TIMESTAMP_KEY = 'timestamp'
 

@@ -1,4 +1,4 @@
-from numpy.distutils.misc_util import colour_text
+
 from pygame import Surface
 
 from game.data.properties.screen_properties import ScreenProperties

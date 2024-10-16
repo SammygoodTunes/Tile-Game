@@ -76,18 +76,24 @@ class OptionsScreen(Screen):
         if not self._enabled:
             return
         self.faded_surface = self.initialise_surface()
+        y = - 75 - self.options_label.font.size(self.options_label.get_text())[1]
         self.options_label.update(self.window)
-        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, - 100 - self.options_label.font.size(self.options_label.get_text())[1])
+        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
+        y += 75
         self.fps_limit_slider.update(self.window)
-        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_label.font.size(self.options_label.get_text())[1] - 25)
+        self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
+        y += 30
         self.show_fps_box.update(self.window)
-        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, -25)
+        self.show_fps_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, y)
+        y += 25
         self.debug_info_box.update(self.window)
-        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 0)
+        self.debug_info_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, y)
+        y += 25
         self.vsync_box.update(self.window)
-        self.vsync_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, 25)
+        self.vsync_box.center_with_offset(0, 0, self.window.width, self.window.height, -self.fps_limit_slider.get_width() // 2, y)
+        y += 5 + self.back_button.get_height()
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.back_button.get_height() * 2 + 5)
+        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
 
     def set_state(self, state: bool) -> None:
         """

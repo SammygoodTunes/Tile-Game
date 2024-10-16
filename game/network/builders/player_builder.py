@@ -6,6 +6,7 @@ class PlayerBuilder:
     """
     Class for the player packet builder.
     """
+
     NAME_KEY = 'name'
     X_POS_KEY = 'x'
     Y_POS_KEY = 'y'

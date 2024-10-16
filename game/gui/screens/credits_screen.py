@@ -18,7 +18,7 @@ class CreditsScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.options_label = Label('Credits')
+        self.options_label = Label('CREDITS')
         self.prog_title_label = Label('Programming by:')
         self.art_title_label = Label('Art by:')
         self.font_title_label = Label('Font by:')
@@ -67,7 +67,7 @@ class CreditsScreen(Screen):
         """
         if not self._enabled:
             return
-        y = -50 - 40 - self.options_label.font.size(self.options_label.get_text())[1]
+        y = -50 - 20 - self.options_label.font.size(self.options_label.get_text())[1]
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
         self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, y)
