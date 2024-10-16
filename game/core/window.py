@@ -3,7 +3,7 @@ import pygame
 
 from game.data.properties.game_properties import GameProperties
 from game.gui.label import Label
-from game.gui.screen_manager import Screens
+from game.client.managers.screen_manager import Screens
 from game.utils.logger import logger
 from game.utils.tools import resource_dir
 
