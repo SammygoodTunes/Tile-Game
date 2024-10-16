@@ -4,6 +4,7 @@ import pygame.time
 from numpy import exp, cos, pi, absolute
 
 from game.data.properties.game_properties import GameProperties
+from game.data.properties.gui_properties import GuiProperties
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
@@ -37,8 +38,8 @@ class MainMenuScreen(Screen):
         if not self._enabled:
             return
         label_time = pygame.time.get_ticks() / 1000.0 - self.title_label_time
-        if label_time > 2:
-            label_time = 2
+        if label_time > GuiProperties.TITLE_ANIM_DURATION:
+            label_time = GuiProperties.TITLE_ANIM_DURATION
         self.title_label.update(self.window)
         self.title_label.center_with_offset(
             0,

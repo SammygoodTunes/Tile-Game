@@ -1,7 +1,7 @@
 
 import pygame
 from pygame.math import clamp
-from typing import Self, overload
+from typing import Self
 
 from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
@@ -26,18 +26,23 @@ class HorizontalSlider(Widget):
         self._bar_colour = (255, 255, 255)
         self._bar_width = 3
         self._button_colour = (255, 255, 255)
-        self._button_outline_colour = (240, 240, 240)
         self._button_radius = 10
         self._button_radius_hovered = 12
         self._button_held = False
         self.title_label = Label(title, 0, self._y - 40).set_font_sizes((7, 8, 10))
-        self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((6, 7, 8))
+        self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((7, 8, 8))
 
     def draw(self, screen) -> None:
         """
         Draw the horizontal slider and its components.
         """
-        radius: int = self._button_radius_hovered if self.is_hovering_over_button() else self._button_radius
+        radius: int = self._button_radius_hovered if self.is_hovering_over_button() or self._button_held else self._button_radius
+        button_colour = (
+            self._button_colour[0] // 2,
+            self._button_colour[1] // 2,
+            self._button_colour[2] // 2
+        ) if self._button_held else self._button_colour
+
         if self._button_held:
             mouse_x, mouse_y = pygame.mouse.get_pos()
             self._value = round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value
@@ -50,12 +55,9 @@ class HorizontalSlider(Widget):
         pygame.draw.line(screen, self._bar_colour,
                   (self._x + self.get_step_in_pixels() * (self._value - self._min_value) + radius, self._y),
                   (self._x + self._width + self._button_radius_hovered, self._y), self._bar_width)
-        pygame.draw.circle(screen, self._button_colour,
+        pygame.draw.circle(screen, button_colour,
                     (self._x + self.get_step_in_pixels() * (self._value - self._min_value), self._y),
-                    radius, 3)
-        pygame.draw.circle(screen, self._button_outline_colour,
-                    (self._x + self.get_step_in_pixels() * (self._value - self._min_value), self._y),
-                    radius, 1)
+                    radius, 4)
         self.title_label.draw(screen)
         self.value_label.draw(screen)
 

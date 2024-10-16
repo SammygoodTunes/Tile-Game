@@ -1,4 +1,4 @@
-
+from numpy.distutils.misc_util import colour_text
 from pygame import Surface
 
 from game.data.properties.screen_properties import ScreenProperties
@@ -16,7 +16,7 @@ class PauseScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.pause_label = Label(text="Paused").center_horizontally(0, window.width)
+        self.pause_label = Label(text="PAUSE MENU").set_colour((240, 240, 255)).center_horizontally(0, window.width).set_font_sizes((14, 15, 16))
         self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
         self.disconnect_button = Button(text="Disconnect").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)

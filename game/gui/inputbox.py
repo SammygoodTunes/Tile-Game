@@ -1,9 +1,10 @@
-
+import pygame.time
 from pygame import mouse, scrap, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_v, Surface, KMOD_CTRL
 from pygame.math import clamp
 from string import printable, digits, ascii_letters
 from typing import Self
 
+from game.data.properties.gui_properties import GuiProperties
 from game.data.properties.screen_properties import ScreenProperties
 from game.gui.label import Widget, Label
 from game.data.states.mouse_states import MouseStates
@@ -34,6 +35,7 @@ class InputBox(Widget):
         self._authorised_chars = printable[:-5]
         self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
         self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
+        self._timer = pygame.time.get_ticks() / 1000.0
 
     def draw(self, screen: Surface) -> None:
         """
@@ -48,7 +50,11 @@ class InputBox(Widget):
             self._text_label.draw(screen)
         elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:
             self._placeholder_label.draw(screen)
-        if self._selected:
+        if not self._selected:
+            return
+        if pygame.time.get_ticks() / 1000.0 - self._timer > GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION:
+            self._timer = pygame.time.get_ticks() / 1000.0
+        if pygame.time.get_ticks() / 1000.0 - self._timer <= GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION / 2:
             draw.rect(screen, self._cursor_colour, (
                 self._x + self._text_label.get_total_width() + 4, self._y + 8,
                 2, self._height - 16))
@@ -60,6 +66,7 @@ class InputBox(Widget):
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 self._selected = self.is_hovering_over()
+                self._timer = pygame.time.get_ticks() / 1000.0
         if e.type == KEYDOWN and self._selected:
             if key.get_pressed()[K_BACKSPACE]:
                 if e.mod & KMOD_CTRL:

@@ -20,7 +20,7 @@ class OptionsScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.options_label = Label('Options')
+        self.options_label = Label('OPTIONS')
         self.fps_limit_slider = (HorizontalSlider('FPS Limit')
                                  .set_value(window.fps_cap)
                                  .set_value_text(f'{window.fps_cap} FPS')
@@ -77,7 +77,7 @@ class OptionsScreen(Screen):
             return
         self.faded_surface = self.initialise_surface()
         self.options_label.update(self.window)
-        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -50 - 25 - self.options_label.font.size(self.options_label.get_text())[1])
+        self.options_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, - 100 - self.options_label.font.size(self.options_label.get_text())[1])
         self.fps_limit_slider.update(self.window)
         self.fps_limit_slider.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_label.font.size(self.options_label.get_text())[1] - 25)
         self.show_fps_box.update(self.window)

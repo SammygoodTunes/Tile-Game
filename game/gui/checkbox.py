@@ -1,8 +1,9 @@
-
+import pygame.time
 from pygame.draw import rect as draw_rect
 from pygame import event, mouse, MOUSEBUTTONDOWN
 from typing import Self
 
+from game.data.properties.gui_properties import GuiProperties
 from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
 from game.gui.widget import Widget
@@ -19,14 +20,33 @@ class Checkbox(Widget):
         self._colour = (255, 255, 255)
         self._size = 20
         self._spacing = 8
+        self._timer = pygame.time.get_ticks() / 1000.0
         self.title_label = Label(title, self._x + self._size + self._spacing, self._y).set_font_sizes((7, 8, 10))
 
     def draw(self, screen) -> None:
         """
         Draw the checkbox and its components.
         """
+
+        timer = pygame.time.get_ticks() / 1000.0 - self._timer
+        w, h = pygame.display.get_surface().get_width(), pygame.display.get_surface().get_height()
+        if timer > GuiProperties.CHECKBOX_CHECK_ANIM_DURATION:
+            timer = GuiProperties.CHECKBOX_CHECK_ANIM_DURATION
+
         if self._checked:
-            draw_rect(screen, self._colour, (self._x + 4, self._y + 4, self._size - 8, self._size - 8), border_radius=0)
+            draw_rect(screen, self._colour, (
+                timer * ((self._x + 4) / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                timer * ((self._y + 4) / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                timer * ((self._size - 8) / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                timer * ((self._size - 8) / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION)
+            ), border_radius=0)
+        else:
+            draw_rect(screen, self._colour, (
+                self._x - timer * (self._x / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                self._y + timer * ((h - self._y) / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                self._size - timer * (self._size / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION),
+                self._size - timer * (self._size / GuiProperties.CHECKBOX_CHECK_ANIM_DURATION)
+            ), border_radius=0)
         draw_rect(screen, self._colour, (self._x, self._y, self._size, self._size), width=2, border_radius=2)
         self.title_label.draw(screen)
 
@@ -37,6 +57,7 @@ class Checkbox(Widget):
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB and self.is_hovering_over():
                 self._checked = not self._checked
+                self._timer = pygame.time.get_ticks() / 1000.0
 
     def update(self, window) -> None:
         """

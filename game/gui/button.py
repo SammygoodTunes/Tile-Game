@@ -3,6 +3,7 @@ from pygame import mouse, draw
 from pygame.math import clamp
 from typing import Self
 
+from game.data.states.mouse_states import MouseStates
 from game.gui.label import Widget, Label
 
 
@@ -29,15 +30,27 @@ class Button(Widget):
         """
         if not self._enabled:
             return
-        background_colour = self._background_colour if not self.is_hovering_over() and self.get_state() else \
-            (self._background_colour[0] // 2,
-             self._background_colour[1] // 2,
-             self._background_colour[2] // 2)
+        y = 0
+        if not self.is_hovering_over() and self.get_state():
+            background_colour = self._background_colour
+        elif self.is_hovering_over() and mouse.get_pressed(num_buttons=5)[0]:
+            y = 3
+            background_colour = (
+                self._background_colour[0] // 3,
+                self._background_colour[1] // 3,
+                self._background_colour[2] // 3
+            )
+        else:
+            background_colour = (
+                self._background_colour[0] // 2,
+                self._background_colour[1] // 2,
+                self._background_colour[2] // 2
+            )
 
         self.label.center_horizontally(self._x, self._width)
-        self.label.center_vertically(self._y, self._height)
+        self.label.center_vertically(self._y + y, self._height)
 
-        draw.rect(screen, background_colour, (self._x, self._y, self._width, self._height), 2, 5)
+        draw.rect(screen, background_colour, (self._x, self._y + y, self._width, self._height), 2, 5)
         if self._width > self.label.get_total_width():
             self.label.draw(screen)
 
