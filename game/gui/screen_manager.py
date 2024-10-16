@@ -90,7 +90,7 @@ class Screens:
                 self.server_connect_screen.set_state(False)
                 self.main_menu_screen.set_state(True)
 
-            if e.key == pygame.K_RETURN:
+            if e.key in [pygame.K_RETURN, pygame.K_KP_ENTER]:
                 if self.server_create_screen.get_state() and self.server_create_screen.create_button.get_state():
                     self.task_create_server()
                 if self.server_join_screen.get_state() and self.server_join_screen.join_button.get_state():

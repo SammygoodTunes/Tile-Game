@@ -56,7 +56,7 @@ class Game(Window):
                 self.stop()
             elif e.type == pygame.KEYDOWN:
                 self.focused = True
-                if e.key == pygame.K_RETURN and pygame.key.get_mods() & pygame.KMOD_ALT:
+                if e.key in [pygame.K_RETURN, pygame.K_KP_ENTER] and pygame.key.get_mods() & pygame.KMOD_ALT:
                     self.toggle_fullscreen()
                     self.update_all_uis()
                     continue
