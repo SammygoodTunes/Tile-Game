@@ -7,7 +7,7 @@ It handles game refreshes, updates from screen events (like resizing or fullscre
 
 import pygame
 
-from game.client.managers.screen_manager import Screens
+from game.gui.screen_manager import Screens
 from game.data.properties.game_properties import GameProperties
 from game.gui.label import Label
 from game.utils.logger import logger

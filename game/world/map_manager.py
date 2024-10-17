@@ -123,9 +123,6 @@ class Map:
         if not self._tile_data:
             raise InvalidMapData
 
-        # Update all game UIs
-        # Set the ideal spawn-point of the player with params this map obj (self) and game camera
-        # Set the loading screen state to false
 
     def load(self) -> None:
         """
