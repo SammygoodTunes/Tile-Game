@@ -1,0 +1,40 @@
+\doxysection{game.\+network.\+packet.\+Hasher Class Reference}
+\hypertarget{classgame_1_1network_1_1packet_1_1Hasher}{}\label{classgame_1_1network_1_1packet_1_1Hasher}\index{game.network.packet.Hasher@{game.network.packet.Hasher}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Hasher_a00c904647ae4ef8293eddd07a7bc1a46}{hash}} (str packet)
+\item 
+bytes \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Hasher_a630a74ac350ad1c5b3cdcba3e5f3f45c}{enhash}} (str packet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for hashing packets.
+Used for sending and receiving protocol commands from the client/server.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1network_1_1packet_1_1Hasher_a630a74ac350ad1c5b3cdcba3e5f3f45c}\label{classgame_1_1network_1_1packet_1_1Hasher_a630a74ac350ad1c5b3cdcba3e5f3f45c} 
+\index{game.network.packet.Hasher@{game.network.packet.Hasher}!enhash@{enhash}}
+\index{enhash@{enhash}!game.network.packet.Hasher@{game.network.packet.Hasher}}
+\doxysubsubsection{\texorpdfstring{enhash()}{enhash()}}
+{\footnotesize\ttfamily  bytes game.\+network.\+packet.\+Hasher.\+enhash (\begin{DoxyParamCaption}\item[{str}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Hash and encode (Protocol.ENCODING) a packet.
+Return hash of size BUFFER_SIZE.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1network_1_1packet_1_1Hasher_a00c904647ae4ef8293eddd07a7bc1a46}\label{classgame_1_1network_1_1packet_1_1Hasher_a00c904647ae4ef8293eddd07a7bc1a46} 
+\index{game.network.packet.Hasher@{game.network.packet.Hasher}!hash@{hash}}
+\index{hash@{hash}!game.network.packet.Hasher@{game.network.packet.Hasher}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily  str game.\+network.\+packet.\+Hasher.\+hash (\begin{DoxyParamCaption}\item[{str}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Hash a packet and return hash of size BUFFER_SIZE.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{packet_8py}{packet.\+py}}\end{DoxyCompactItemize}

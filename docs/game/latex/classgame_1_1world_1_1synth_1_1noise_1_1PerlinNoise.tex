@@ -1,0 +1,207 @@
+\doxysection{game.\+world.\+synth.\+noise.\+Perlin\+Noise Class Reference}
+\hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise}{}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise}\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8883ce27329a1b49fe1756820779c169}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ad273d9211fb4a4777d2108536c0b9fd0}{generate}} (self, int x, int y)
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af24d5e0c7018fed21f6da5fb17568547}{noise}} (self, int x, int y)
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a26dab3b7ad94998b3a6d9603be07289c}{smooth\+\_\+noise}} (self, int x, int y)
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aab1c6e41897e26dcb5210820ba2e445d}{interpolate\+\_\+noise}} (self, float x, float y)
+\item 
+None \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a1b7d68791c323566f56c89e5e51ab6ed}{set\+\_\+permutations}} (self, list\texorpdfstring{$\vert$}{|}tuple permutations)
+\item 
+list\texorpdfstring{$\vert$}{|}tuple \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8390e01e21c903c94b680d390b98edbf}{get\+\_\+permutations}} (self)
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa0f2430fc99d2c46e28b311d64d2194f}{set\+\_\+noise\+\_\+intensity}} (self, int noise\+\_\+intensity)
+\item 
+int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_add0bfa7840d7f250215766d5ec3bd1ac}{get\+\_\+noise\+\_\+intensity}} (self)
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a59060da0991adfc05e6dd6a4b5909137}{set\+\_\+frequency}} (self, float frequency)
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a897f1ec1d78aca4f103ffedc2def39e6}{get\+\_\+frequency}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ab4f93a8deee339eebd4cd4c2d6fcf25a}{cosine\+\_\+interpolate}} (float a, float b, float x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202}{NOISE\+\_\+\+INTENSITY\+\_\+\+RANGE}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16
+\item 
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bbd121a8184d8415953c4175a4f6a6}{FREQ\+\_\+\+ALTER\+\_\+\+RANGE}} = 0.\+08
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a0b99abab4a93ca1a79548a2bc3caa855}{\+\_\+permutations}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_abfb0a4d57ec56395b622e434a686f648}{\+\_\+persistence}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a15136b3daa0b992e9e8838c9adc2a0f0}{\+\_\+octaves}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a70012a911d06b5548d4b9bf0159df182}{\+\_\+noise\+\_\+intensity}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af99c38c0a58b17eeeaf791ee4dd9c642}{\+\_\+frequency}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for creating an instance of the perlin noise algorithm.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8883ce27329a1b49fe1756820779c169}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8883ce27329a1b49fe1756820779c169} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ab4f93a8deee339eebd4cd4c2d6fcf25a}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ab4f93a8deee339eebd4cd4c2d6fcf25a} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!cosine\_interpolate@{cosine\_interpolate}}
+\index{cosine\_interpolate@{cosine\_interpolate}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{cosine\_interpolate()}{cosine\_interpolate()}}
+{\footnotesize\ttfamily  float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+cosine\+\_\+interpolate (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Cosine interpolation.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ad273d9211fb4a4777d2108536c0b9fd0}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ad273d9211fb4a4777d2108536c0b9fd0} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!generate@{generate}}
+\index{generate@{generate}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily  int game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+generate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate and return perlin noise data.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a897f1ec1d78aca4f103ffedc2def39e6}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a897f1ec1d78aca4f103ffedc2def39e6} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!get\_frequency@{get\_frequency}}
+\index{get\_frequency@{get\_frequency}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{get\_frequency()}{get\_frequency()}}
+{\footnotesize\ttfamily  float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+get\+\_\+frequency (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the frequency.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_add0bfa7840d7f250215766d5ec3bd1ac}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_add0bfa7840d7f250215766d5ec3bd1ac} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!get\_noise\_intensity@{get\_noise\_intensity}}
+\index{get\_noise\_intensity@{get\_noise\_intensity}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{get\_noise\_intensity()}{get\_noise\_intensity()}}
+{\footnotesize\ttfamily  int game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+get\+\_\+noise\+\_\+intensity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the noise intensity.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8390e01e21c903c94b680d390b98edbf}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a8390e01e21c903c94b680d390b98edbf} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!get\_permutations@{get\_permutations}}
+\index{get\_permutations@{get\_permutations}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{get\_permutations()}{get\_permutations()}}
+{\footnotesize\ttfamily  list \texorpdfstring{$\vert$}{|} tuple game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+get\+\_\+permutations (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the permutations.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aab1c6e41897e26dcb5210820ba2e445d}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aab1c6e41897e26dcb5210820ba2e445d} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!interpolate\_noise@{interpolate\_noise}}
+\index{interpolate\_noise@{interpolate\_noise}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{interpolate\_noise()}{interpolate\_noise()}}
+{\footnotesize\ttfamily  float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+interpolate\+\_\+noise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Interpolate noise.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af24d5e0c7018fed21f6da5fb17568547}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af24d5e0c7018fed21f6da5fb17568547} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!noise@{noise}}
+\index{noise@{noise}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{noise()}{noise()}}
+{\footnotesize\ttfamily  float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+noise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Noise function.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a59060da0991adfc05e6dd6a4b5909137}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a59060da0991adfc05e6dd6a4b5909137} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!set\_frequency@{set\_frequency}}
+\index{set\_frequency@{set\_frequency}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{set\_frequency()}{set\_frequency()}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+set\+\_\+frequency (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{frequency }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the frequency.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa0f2430fc99d2c46e28b311d64d2194f}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa0f2430fc99d2c46e28b311d64d2194f} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!set\_noise\_intensity@{set\_noise\_intensity}}
+\index{set\_noise\_intensity@{set\_noise\_intensity}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{set\_noise\_intensity()}{set\_noise\_intensity()}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+set\+\_\+noise\+\_\+intensity (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{noise\+\_\+intensity }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the noise intensity.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a1b7d68791c323566f56c89e5e51ab6ed}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a1b7d68791c323566f56c89e5e51ab6ed} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!set\_permutations@{set\_permutations}}
+\index{set\_permutations@{set\_permutations}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{set\_permutations()}{set\_permutations()}}
+{\footnotesize\ttfamily  None game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+set\+\_\+permutations (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list \texorpdfstring{$\vert$}{|} tuple}]{permutations }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the permutations.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a26dab3b7ad94998b3a6d9603be07289c}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a26dab3b7ad94998b3a6d9603be07289c} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!smooth\_noise@{smooth\_noise}}
+\index{smooth\_noise@{smooth\_noise}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{smooth\_noise()}{smooth\_noise()}}
+{\footnotesize\ttfamily  float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+smooth\+\_\+noise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Smooth noise function.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af99c38c0a58b17eeeaf791ee4dd9c642}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af99c38c0a58b17eeeaf791ee4dd9c642} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_frequency@{\_frequency}}
+\index{\_frequency@{\_frequency}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_frequency}{\_frequency}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a70012a911d06b5548d4b9bf0159df182}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a70012a911d06b5548d4b9bf0159df182} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_noise\_intensity@{\_noise\_intensity}}
+\index{\_noise\_intensity@{\_noise\_intensity}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_noise\_intensity}{\_noise\_intensity}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+noise\+\_\+intensity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a15136b3daa0b992e9e8838c9adc2a0f0}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a15136b3daa0b992e9e8838c9adc2a0f0} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_octaves@{\_octaves}}
+\index{\_octaves@{\_octaves}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_octaves}{\_octaves}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+octaves\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a0b99abab4a93ca1a79548a2bc3caa855}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a0b99abab4a93ca1a79548a2bc3caa855} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_permutations@{\_permutations}}
+\index{\_permutations@{\_permutations}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_permutations}{\_permutations}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+permutations\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_abfb0a4d57ec56395b622e434a686f648}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_abfb0a4d57ec56395b622e434a686f648} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_persistence@{\_persistence}}
+\index{\_persistence@{\_persistence}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_persistence}{\_persistence}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+persistence\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bbd121a8184d8415953c4175a4f6a6}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bbd121a8184d8415953c4175a4f6a6} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!FREQ\_ALTER\_RANGE@{FREQ\_ALTER\_RANGE}}
+\index{FREQ\_ALTER\_RANGE@{FREQ\_ALTER\_RANGE}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{FREQ\_ALTER\_RANGE}{FREQ\_ALTER\_RANGE}}
+{\footnotesize\ttfamily float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+FREQ\+\_\+\+ALTER\+\_\+\+RANGE = 0.\+08\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!NOISE\_INTENSITY\_RANGE@{NOISE\_INTENSITY\_RANGE}}
+\index{NOISE\_INTENSITY\_RANGE@{NOISE\_INTENSITY\_RANGE}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{NOISE\_INTENSITY\_RANGE}{NOISE\_INTENSITY\_RANGE}}
+{\footnotesize\ttfamily int game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+NOISE\+\_\+\+INTENSITY\+\_\+\+RANGE = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{noise_8py}{noise.\+py}}\end{DoxyCompactItemize}

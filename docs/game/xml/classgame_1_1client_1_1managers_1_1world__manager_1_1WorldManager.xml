@@ -16,6 +16,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" compoundref="world__manager_8py" startline="20" endline="34">game.client.managers.world_manager.WorldManager.build_world_from_bytes</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" prot="public" static="no" mutable="no">
         <type></type>
@@ -30,6 +31,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" compoundref="world__manager_8py" startline="20" endline="34">game.client.managers.world_manager.WorldManager.build_world_from_bytes</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -78,6 +80,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="20" bodyend="34"/>
+        <references refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" compoundref="world__manager_8py" startline="17">game.client.managers.world_manager.WorldManager.local_world</references>
+        <references refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" compoundref="world__manager_8py" startline="18">game.client.managers.world_manager.WorldManager.temp_data</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -1,0 +1,40 @@
+\doxysection{game.\+network.\+packet.\+Compressor Class Reference}
+\hypertarget{classgame_1_1network_1_1packet_1_1Compressor}{}\label{classgame_1_1network_1_1packet_1_1Compressor}\index{game.network.packet.Compressor@{game.network.packet.Compressor}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Compressor_a1ce84f1d9b2b3ebd8263d787d675fd92}{compress}} (any obj)
+\item 
+any \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Compressor_afaa9f1b70b9a4e813dc23d2ddca57723}{decompress}} (bytes data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for compressing objects.
+Used for sending and receiving game data from the client/server.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1network_1_1packet_1_1Compressor_a1ce84f1d9b2b3ebd8263d787d675fd92}\label{classgame_1_1network_1_1packet_1_1Compressor_a1ce84f1d9b2b3ebd8263d787d675fd92} 
+\index{game.network.packet.Compressor@{game.network.packet.Compressor}!compress@{compress}}
+\index{compress@{compress}!game.network.packet.Compressor@{game.network.packet.Compressor}}
+\doxysubsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily  bytes game.\+network.\+packet.\+Compressor.\+compress (\begin{DoxyParamCaption}\item[{any}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Compress an object to bytes.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1network_1_1packet_1_1Compressor_afaa9f1b70b9a4e813dc23d2ddca57723}\label{classgame_1_1network_1_1packet_1_1Compressor_afaa9f1b70b9a4e813dc23d2ddca57723} 
+\index{game.network.packet.Compressor@{game.network.packet.Compressor}!decompress@{decompress}}
+\index{decompress@{decompress}!game.network.packet.Compressor@{game.network.packet.Compressor}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily  any game.\+network.\+packet.\+Compressor.\+decompress (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Decompress byte data to an object, if valid.
+Otherwise, return None.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{packet_8py}{packet.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\doxysection{game.\+client.\+connection.\+Connection Class Reference}
+\hypertarget{classgame_1_1client_1_1connection_1_1Connection}{}\label{classgame_1_1client_1_1connection_1_1Connection}\index{game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a29c4cd88c4c57df0e169fa6a25e4e6dc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a9e46049b4b973dd2d81ed2586957cd9c}{host}}, int \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a8783c776a0ff2cd2f9e719f0f49bad83}{port}}, client)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a93611f10e5e0270288865d9f89907431}{connect}} (self, str player\+\_\+name)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_ab8cf9700616742fe3225d3fd62cd144a}{disconnect}} (self)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a6eefbe888d9353113b2a46a02c40fc1d}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a008f356261f7336532a742acb0a35e54}{update}} (self)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a895bd3122b3a99c86291efac73ad6ef0}{start}} (self, \mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Tasks}{Tasks}} task, str player\+\_\+name="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_ac3cf9b3987df0fa43db124648130b405}{sock}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a9e46049b4b973dd2d81ed2586957cd9c}{host}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a8783c776a0ff2cd2f9e719f0f49bad83}{port}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_ae1db249190e2397eb6b8fba08f930d98}{state}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a6d1e87c40d72bb27d61d06c07d23bfb5}{player\+\_\+manager}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a331149fc2e24cb2ca3af1353b14c84bf}{world\+\_\+manager}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a49dac67c689f30f0acc4adbd0f8e4dfc}{hit\+\_\+player}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_a4dff41773fa8d611bb3921a1bc00e94c}{timer}}
+\item 
+\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Connection_ac306257b5d2cac1fec79d974021a70d4}{ping}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for creating a server connection.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a29c4cd88c4c57df0e169fa6a25e4e6dc}\label{classgame_1_1client_1_1connection_1_1Connection_a29c4cd88c4c57df0e169fa6a25e4e6dc} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{host,  }\item[{int}]{port,  }\item[{}]{client }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a93611f10e5e0270288865d9f89907431}\label{classgame_1_1client_1_1connection_1_1Connection_a93611f10e5e0270288865d9f89907431} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!connect@{connect}}
+\index{connect@{connect}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+connect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{player\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to connect to a server with the provided host and port.
+Any errors or failures will raise specific exceptions.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1connection_1_1Connection_ab8cf9700616742fe3225d3fd62cd144a}\label{classgame_1_1client_1_1connection_1_1Connection_ab8cf9700616742fe3225d3fd62cd144a} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+disconnect (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to disconnect from the server.
+Any errors or failures will raise specific exceptions.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a6eefbe888d9353113b2a46a02c40fc1d}\label{classgame_1_1client_1_1connection_1_1Connection_a6eefbe888d9353113b2a46a02c40fc1d} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!events@{events}}
+\index{events@{events}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the connection events (unused).
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a895bd3122b3a99c86291efac73ad6ef0}\label{classgame_1_1client_1_1connection_1_1Connection_a895bd3122b3a99c86291efac73ad6ef0} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!start@{start}}
+\index{start@{start}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1client_1_1connection_1_1Tasks}{Tasks}}}]{task,  }\item[{str }]{player\+\_\+name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start a client connection task.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a008f356261f7336532a742acb0a35e54}\label{classgame_1_1client_1_1connection_1_1Connection_a008f356261f7336532a742acb0a35e54} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!update@{update}}
+\index{update@{update}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily  None game.\+client.\+connection.\+Connection.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update and verify the connection every so often.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a49dac67c689f30f0acc4adbd0f8e4dfc}\label{classgame_1_1client_1_1connection_1_1Connection_a49dac67c689f30f0acc4adbd0f8e4dfc} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!hit\_player@{hit\_player}}
+\index{hit\_player@{hit\_player}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{hit\_player}{hit\_player}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+hit\+\_\+player}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a9e46049b4b973dd2d81ed2586957cd9c}\label{classgame_1_1client_1_1connection_1_1Connection_a9e46049b4b973dd2d81ed2586957cd9c} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!host@{host}}
+\index{host@{host}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+host}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_ac306257b5d2cac1fec79d974021a70d4}\label{classgame_1_1client_1_1connection_1_1Connection_ac306257b5d2cac1fec79d974021a70d4} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!ping@{ping}}
+\index{ping@{ping}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{ping}{ping}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+ping}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a6d1e87c40d72bb27d61d06c07d23bfb5}\label{classgame_1_1client_1_1connection_1_1Connection_a6d1e87c40d72bb27d61d06c07d23bfb5} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!player\_manager@{player\_manager}}
+\index{player\_manager@{player\_manager}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{player\_manager}{player\_manager}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+player\+\_\+manager}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a8783c776a0ff2cd2f9e719f0f49bad83}\label{classgame_1_1client_1_1connection_1_1Connection_a8783c776a0ff2cd2f9e719f0f49bad83} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!port@{port}}
+\index{port@{port}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+port}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_ac3cf9b3987df0fa43db124648130b405}\label{classgame_1_1client_1_1connection_1_1Connection_ac3cf9b3987df0fa43db124648130b405} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!sock@{sock}}
+\index{sock@{sock}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{sock}{sock}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+sock}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_ae1db249190e2397eb6b8fba08f930d98}\label{classgame_1_1client_1_1connection_1_1Connection_ae1db249190e2397eb6b8fba08f930d98} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!state@{state}}
+\index{state@{state}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+state}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a4dff41773fa8d611bb3921a1bc00e94c}\label{classgame_1_1client_1_1connection_1_1Connection_a4dff41773fa8d611bb3921a1bc00e94c} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!timer@{timer}}
+\index{timer@{timer}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+timer}
+
+\Hypertarget{classgame_1_1client_1_1connection_1_1Connection_a331149fc2e24cb2ca3af1353b14c84bf}\label{classgame_1_1client_1_1connection_1_1Connection_a331149fc2e24cb2ca3af1353b14c84bf} 
+\index{game.client.connection.Connection@{game.client.connection.Connection}!world\_manager@{world\_manager}}
+\index{world\_manager@{world\_manager}!game.client.connection.Connection@{game.client.connection.Connection}}
+\doxysubsubsection{\texorpdfstring{world\_manager}{world\_manager}}
+{\footnotesize\ttfamily game.\+client.\+connection.\+Connection.\+world\+\_\+manager}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connection_8py}{connection.\+py}}\end{DoxyCompactItemize}

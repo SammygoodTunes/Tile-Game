@@ -1,0 +1,140 @@
+\doxysection{game.\+client.\+tasks.\+Client\+Tasks Class Reference}
+\hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks}{}\label{classgame_1_1client_1_1tasks_1_1ClientTasks}\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a687269af093982a745ab9e074bcb905d}{recognition}} (sock)
+\item 
+None \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_af27f2eab4cc394412b1ba424a7ecd72f}{map\+\_\+data}} (sock)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_afdd06e75515022315e02b560101f623d}{confirm\+\_\+map\+\_\+data}} (bytes data)
+\item 
+bytes \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a4f0f8bb6825971f3e6f2f655aab89638}{get\+\_\+map\+\_\+data}} (sock)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_afca576e562ad4e6cb4c168c193cff851}{player\+\_\+join}} (sock)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a0f262a813e52fa80e2fb0d9ad5792d4c}{send\+\_\+player\+\_\+name}} (sock, player\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a37ddbb2f8560b31c791b8f2081263c8f}{send\+\_\+local\+\_\+player}} (sock, bytes data, \mbox{\hyperlink{classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager}{Player\+Manager}} player\+\_\+manager)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a09a154893f11f83d18e6d01d7d7eb81d}{confirm\+\_\+local\+\_\+player}} (bytes data)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_acf5af473a7bfd76b7558be7d0c278fe2}{get\+\_\+global\+\_\+game\+\_\+state}} (sock, bytes data)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_aacc588f31abadc1e1506800875d3cebc}{check\+\_\+packet\+\_\+queue}} (sock, list\mbox{[}bytes\mbox{]} queue)
+\item 
+bool \mbox{\hyperlink{classgame_1_1client_1_1tasks_1_1ClientTasks_a057e2f650cbf0078bd7a083ec7d0a4ba}{confirm\+\_\+queued\+\_\+packet}} (data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for regrouping all client-side requests.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_aacc588f31abadc1e1506800875d3cebc}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_aacc588f31abadc1e1506800875d3cebc} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!check\_packet\_queue@{check\_packet\_queue}}
+\index{check\_packet\_queue@{check\_packet\_queue}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{check\_packet\_queue()}{check\_packet\_queue()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+check\+\_\+packet\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{list\mbox{[}bytes\mbox{]}}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for verifying the packet queue.
+If a packet is present, take the first one, send it to the server and remove it from the queue.
+[FIFO]
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a09a154893f11f83d18e6d01d7d7eb81d}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a09a154893f11f83d18e6d01d7d7eb81d} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!confirm\_local\_player@{confirm\_local\_player}}
+\index{confirm\_local\_player@{confirm\_local\_player}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{confirm\_local\_player()}{confirm\_local\_player()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+confirm\+\_\+local\+\_\+player (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for confirming the reception of the local player sent to the server.
+Return True if the data is a valid packet reception response, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_afdd06e75515022315e02b560101f623d}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_afdd06e75515022315e02b560101f623d} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!confirm\_map\_data@{confirm\_map\_data}}
+\index{confirm\_map\_data@{confirm\_map\_data}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{confirm\_map\_data()}{confirm\_map\_data()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+confirm\+\_\+map\+\_\+data (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for confirming the reception of the map data request.
+Returns True if the data is a valid server response, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a057e2f650cbf0078bd7a083ec7d0a4ba}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a057e2f650cbf0078bd7a083ec7d0a4ba} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!confirm\_queued\_packet@{confirm\_queued\_packet}}
+\index{confirm\_queued\_packet@{confirm\_queued\_packet}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{confirm\_queued\_packet()}{confirm\_queued\_packet()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+confirm\+\_\+queued\+\_\+packet (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for confirming the reception of the queued packet that was sent to the server.
+Return True if the data is a valid packet reception response, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_acf5af473a7bfd76b7558be7d0c278fe2}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_acf5af473a7bfd76b7558be7d0c278fe2} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!get\_global\_game\_state@{get\_global\_game\_state}}
+\index{get\_global\_game\_state@{get\_global\_game\_state}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{get\_global\_game\_state()}{get\_global\_game\_state()}}
+{\footnotesize\ttfamily  bytes \texorpdfstring{$\vert$}{|} None game.\+client.\+tasks.\+Client\+Tasks.\+get\+\_\+global\+\_\+game\+\_\+state (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{bytes}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for receiving the global server-side game state.
+Return the game state list object if received successfully, otherwise None.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a4f0f8bb6825971f3e6f2f655aab89638}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a4f0f8bb6825971f3e6f2f655aab89638} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!get\_map\_data@{get\_map\_data}}
+\index{get\_map\_data@{get\_map\_data}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{get\_map\_data()}{get\_map\_data()}}
+{\footnotesize\ttfamily  bytes game.\+client.\+tasks.\+Client\+Tasks.\+get\+\_\+map\+\_\+data (\begin{DoxyParamCaption}\item[{}]{sock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for receiving the map data object and decompressing it.
+Return the decompressed map data object once received.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_af27f2eab4cc394412b1ba424a7ecd72f}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_af27f2eab4cc394412b1ba424a7ecd72f} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!map\_data@{map\_data}}
+\index{map\_data@{map\_data}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{map\_data()}{map\_data()}}
+{\footnotesize\ttfamily  None game.\+client.\+tasks.\+Client\+Tasks.\+map\+\_\+data (\begin{DoxyParamCaption}\item[{}]{sock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for requesting the map data.
+Return True if the map data response from the server was received successfully, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_afca576e562ad4e6cb4c168c193cff851}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_afca576e562ad4e6cb4c168c193cff851} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!player\_join@{player\_join}}
+\index{player\_join@{player\_join}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{player\_join()}{player\_join()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+player\+\_\+join (\begin{DoxyParamCaption}\item[{}]{sock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for joining a player to the server.
+Return True if the response from the server is received, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a687269af093982a745ab9e074bcb905d}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a687269af093982a745ab9e074bcb905d} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!recognition@{recognition}}
+\index{recognition@{recognition}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{recognition()}{recognition()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+recognition (\begin{DoxyParamCaption}\item[{}]{sock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for client authenticity.
+Return True if the client's connection was successful, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a37ddbb2f8560b31c791b8f2081263c8f}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a37ddbb2f8560b31c791b8f2081263c8f} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!send\_local\_player@{send\_local\_player}}
+\index{send\_local\_player@{send\_local\_player}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{send\_local\_player()}{send\_local\_player()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+send\+\_\+local\+\_\+player (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{bytes}]{data,  }\item[{\mbox{\hyperlink{classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager}{Player\+Manager}}}]{player\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for sending the local player to the server.
+Return True if the local player packet was sent to and received by the server, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1client_1_1tasks_1_1ClientTasks_a0f262a813e52fa80e2fb0d9ad5792d4c}\label{classgame_1_1client_1_1tasks_1_1ClientTasks_a0f262a813e52fa80e2fb0d9ad5792d4c} 
+\index{game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}!send\_player\_name@{send\_player\_name}}
+\index{send\_player\_name@{send\_player\_name}!game.client.tasks.ClientTasks@{game.client.tasks.ClientTasks}}
+\doxysubsubsection{\texorpdfstring{send\_player\_name()}{send\_player\_name()}}
+{\footnotesize\ttfamily  bool game.\+client.\+tasks.\+Client\+Tasks.\+send\+\_\+player\+\_\+name (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{}]{player\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Task for sending the client's name to the server.
+Raise exception when player name is already taken.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{client_2tasks_8py}{client/tasks.\+py}}\end{DoxyCompactItemize}

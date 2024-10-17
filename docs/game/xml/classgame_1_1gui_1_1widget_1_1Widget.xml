@@ -24,6 +24,54 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a19abd21ccd35dde10f52d72db6a0d1c7" compoundref="button_8py" startline="84" endline="91">game.gui.button.Button.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aced045dab7ae0a13d18ffbe2ea8833e4" compoundref="checkbox_8py" startline="92" endline="99">game.gui.checkbox.Checkbox.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acdfa96e85b85a28d8131213b0809ea97" compoundref="horizontal__slider_8py" startline="126" endline="134">game.gui.horizontal_slider.HorizontalSlider.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1142265b8fc7b7c44858793b5a9331f1" compoundref="hotbar_8py" startline="66" endline="72">game.gui.hotbar.Hotbar.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1afeb96871a259083d74f93fb330641718" compoundref="inputbox_8py" startline="195" endline="201">game.gui.inputbox.InputBox.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1ae61ef3fa1853cb9cb377243af240d775" compoundref="label_8py" startline="63" endline="71">game.gui.label.Label.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98" compoundref="nametag_8py" startline="61" endline="67">game.gui.nametag.NameTag.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a25d5d1da3e7864c2d9500dfebe3662fb" compoundref="progress__bar_8py" startline="81" endline="88">game.gui.progress_bar.ProgressBar.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474" compoundref="slot_8py" startline="78" endline="84">game.gui.slot.Slot.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" compoundref="checkbox_8py" startline="30" endline="56">game.gui.checkbox.Checkbox.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3d23ebc12dcf90b3c32d35c3295ed1ee" compoundref="horizontal__slider_8py" startline="38" endline="66">game.gui.horizontal_slider.HorizontalSlider.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" compoundref="horizontal__slider_8py" startline="67" endline="85">game.gui.horizontal_slider.HorizontalSlider.events</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a6ed56d95d0d2ca9ad37133dc19f68948" compoundref="player_8py" startline="582" endline="588">game.entity.player.Player.get_absolute_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a1d702dcae07ef2a6050f43f9750f2342" compoundref="player_8py" startline="563" endline="568">game.entity.player.Player.get_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571" compoundref="widget_8py" startline="30" endline="35">game.gui.widget.Widget.get_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" compoundref="map__manager_8py" startline="348" endline="353">game.world.map_manager.Map.get_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" compoundref="horizontal__slider_8py" startline="106" endline="116">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" compoundref="player_8py" startline="454" endline="460">game.entity.player.Player.is_in_lava</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3e2f94bf3503cd8a1a6c49386df7845a" compoundref="player_8py" startline="461" endline="467">game.entity.player.Player.is_in_lethal_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a863a8c50dba2f36bc20ef50874c35ffa" compoundref="player_8py" startline="468" endline="474">game.entity.player.Player.is_in_wall</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" compoundref="player_8py" startline="447" endline="453">game.entity.player.Player.is_in_water</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" compoundref="widget_8py" startline="63" endline="70">game.gui.widget.Widget.offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c" compoundref="widget_8py" startline="49" endline="55">game.gui.widget.Widget.offset_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a063b12e5b550f738fad5285fdb21d206" compoundref="label_8py" startline="55" endline="62">game.gui.label.Label.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a40864dc289f7b7f8601ecb854376dd7d" compoundref="label_8py" startline="229" endline="235">game.gui.label.Label.set_shadow_x_offset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a28eee21c2960d4507cbc7ed780e841b4" compoundref="player_8py" startline="556" endline="562">game.entity.player.Player.set_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" compoundref="map__manager_8py" startline="341" endline="347">game.world.map_manager.Map.set_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" prot="protected" static="no" mutable="no">
         <type></type>
@@ -38,6 +86,50 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4af175514354965243cf3e59a30dfa7e" compoundref="checkbox_8py" startline="100" endline="107">game.gui.checkbox.Checkbox.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a702d9e1f3915c4dd1a7b4167c3be146c" compoundref="horizontal__slider_8py" startline="135" endline="143">game.gui.horizontal_slider.HorizontalSlider.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae488ec2de5de4553d42faae7eb17f715" compoundref="hotbar_8py" startline="73" endline="79">game.gui.hotbar.Hotbar.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a07b42a26abffdf97b61193759b857a44" compoundref="inputbox_8py" startline="202" endline="208">game.gui.inputbox.InputBox.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4" compoundref="nametag_8py" startline="68" endline="74">game.gui.nametag.NameTag.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a939391229d592589742d73d85c6b8dfa" compoundref="progress__bar_8py" startline="89" endline="96">game.gui.progress_bar.ProgressBar.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a131de6d18c585e85917a90834180cc0d" compoundref="slot_8py" startline="85" endline="91">game.gui.slot.Slot.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" compoundref="checkbox_8py" startline="30" endline="56">game.gui.checkbox.Checkbox.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab41bb73c1768538bd41a72014e0ed484" compoundref="player_8py" startline="589" endline="595">game.entity.player.Player.get_absolute_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab5eb4770f55c69e6a894ab9f6c3953c2" compoundref="player_8py" startline="576" endline="581">game.entity.player.Player.get_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117" compoundref="widget_8py" startline="43" endline="48">game.gui.widget.Widget.get_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372" compoundref="map__manager_8py" startline="361" endline="366">game.world.map_manager.Map.get_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" compoundref="horizontal__slider_8py" startline="106" endline="116">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" compoundref="player_8py" startline="454" endline="460">game.entity.player.Player.is_in_lava</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3e2f94bf3503cd8a1a6c49386df7845a" compoundref="player_8py" startline="461" endline="467">game.entity.player.Player.is_in_lethal_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a863a8c50dba2f36bc20ef50874c35ffa" compoundref="player_8py" startline="468" endline="474">game.entity.player.Player.is_in_wall</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" compoundref="player_8py" startline="447" endline="453">game.entity.player.Player.is_in_water</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" compoundref="widget_8py" startline="63" endline="70">game.gui.widget.Widget.offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef" compoundref="widget_8py" startline="56" endline="62">game.gui.widget.Widget.offset_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a23ce1497640ec49ad22ab508aa8329a6" compoundref="label_8py" startline="236" endline="242">game.gui.label.Label.set_shadow_y_offset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae64ca646603c8b9a03b716ce202a36fe" compoundref="player_8py" startline="569" endline="575">game.entity.player.Player.set_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" compoundref="map__manager_8py" startline="354" endline="360">game.world.map_manager.Map.set_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70" compoundref="hotbar_8py" startline="54" endline="65">game.gui.hotbar.Hotbar.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2" prot="protected" static="no" mutable="no">
         <type></type>
@@ -52,6 +144,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e" compoundref="widget_8py" startline="78" endline="83">game.gui.widget.Widget.get_transparency</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" prot="protected" static="no" mutable="no">
         <type></type>
@@ -66,6 +161,45 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="88" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1abf8f27665804d88705bd602d7b5fe2ae" compoundref="crash__screen_8py" startline="31" endline="40">game.gui.screens.crash_screen.CrashScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae85f12a09c7e938b20e23d1e23303794" compoundref="credits__screen_8py" startline="51" endline="66">game.gui.screens.credits_screen.CreditsScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb" compoundref="gameover__screen_8py" startline="35" endline="45">game.gui.screens.gameover_screen.GameoverScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a66cf74cdc7843141d25d00af6f8d687c" compoundref="loading__screen_8py" startline="37" endline="45">game.gui.screens.loading_screen.LoadingScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" compoundref="main__hud_8py" startline="44" endline="97">game.gui.screens.main_hud.MainHud.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a38ac9cdcfea7d834f7cddb7284a00194" compoundref="mainmenu__screen_8py" startline="36" endline="63">game.gui.screens.mainmenu_screen.MainMenuScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" compoundref="map__screen_8py" startline="56" endline="125">game.gui.screens.map_screen.MapScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1af257cbf7a8e2b1609b454674fd6f78bd" compoundref="options__screen_8py" startline="61" endline="74">game.gui.screens.options_screen.OptionsScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a5c9af759963c136595ce07dfda88fed2" compoundref="pause__screen_8py" startline="34" endline="44">game.gui.screens.pause_screen.PauseScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" compoundref="playerlist__screen_8py" startline="28" endline="43">game.gui.screens.playerlist_screen.PlayerListScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959" compoundref="serverconnect__screen_8py" startline="35" endline="44">game.gui.screens.serverconnect_screen.ServerConnectScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c" compoundref="servercreate__screen_8py" startline="55" endline="68">game.gui.screens.servercreate_screen.ServerCreateScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa2d30bf0c301d8b8717e2dcd69108a72" compoundref="serverjoin__screen_8py" startline="62" endline="75">game.gui.screens.serverjoin_screen.ServerJoinScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a82677e4efb130579a232b3de65f22e9f" compoundref="servermenu__screen_8py" startline="38" endline="49">game.gui.screens.servermenu_screen.ServerMenuScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ab1025133f738287954b0dc5514e3bd71" compoundref="button_8py" startline="29" endline="58">game.gui.button.Button.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b" compoundref="nametag_8py" startline="25" endline="34">game.gui.nametag.NameTag.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d" compoundref="screen_8py" startline="21" endline="26">game.gui.screens.screen.Screen.get_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad" compoundref="widget_8py" startline="92" endline="97">game.gui.widget.Widget.get_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc" compoundref="screen_8py" startline="15" endline="20">game.gui.screens.screen.Screen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" compoundref="crash__screen_8py" startline="41" endline="52">game.gui.screens.crash_screen.CrashScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="67" endline="95">game.gui.screens.credits_screen.CreditsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="46" endline="59">game.gui.screens.gameover_screen.GameoverScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" compoundref="loading__screen_8py" startline="46" endline="55">game.gui.screens.loading_screen.LoadingScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="98" endline="127">game.gui.screens.main_hud.MainHud.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a13839b14d671e7b7268830a09988c4be" compoundref="mainmenu__screen_8py" startline="64" endline="81">game.gui.screens.mainmenu_screen.MainMenuScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" compoundref="options__screen_8py" startline="75" endline="100">game.gui.screens.options_screen.OptionsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" compoundref="pause__screen_8py" startline="45" endline="59">game.gui.screens.pause_screen.PauseScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" compoundref="playerlist__screen_8py" startline="44" endline="81">game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" compoundref="serverconnect__screen_8py" startline="45" endline="58">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" compoundref="servercreate__screen_8py" startline="69" endline="90">game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" compoundref="serverjoin__screen_8py" startline="76" endline="107">game.gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" compoundref="servermenu__screen_8py" startline="50" endline="65">game.gui.screens.servermenu_screen.ServerMenuScreen.update_ui</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -102,6 +236,37 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="17" bodyend="22"/>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" compoundref="horizontal__slider_8py" startline="115">game.gui.horizontal_slider.HorizontalSlider._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab37d87d4b22e45a642cf39946a786f3f" compoundref="credits__screen_8py" startline="49">game.gui.screens.credits_screen.CreditsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a47b457e6684cd786de156f00103f9581" compoundref="options__screen_8py" startline="56">game.gui.screens.options_screen.OptionsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" compoundref="screen_8py" startline="13">game.gui.screens.screen.Screen._enabled</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" compoundref="widget_8py" startline="88">game.gui.widget.Widget._enabled</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a673c2a15a3d6ff158c296337e7f64666" compoundref="label_8py" startline="42">game.gui.label.Label._transparency</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2" compoundref="widget_8py" startline="75">game.gui.widget.Widget._transparency</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -127,6 +292,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="23" bodyend="29"/>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10" compoundref="checkbox_8py" startline="150" endline="158">game.gui.checkbox.Checkbox.offset_x</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -147,6 +313,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="30" bodyend="35"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10" compoundref="checkbox_8py" startline="150" endline="158">game.gui.checkbox.Checkbox.offset_x</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -172,6 +351,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="36" bodyend="42"/>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365" compoundref="checkbox_8py" startline="159" endline="167">game.gui.checkbox.Checkbox.offset_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70" compoundref="hotbar_8py" startline="54" endline="65">game.gui.hotbar.Hotbar.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -192,6 +373,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="43" bodyend="48"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365" compoundref="checkbox_8py" startline="159" endline="167">game.gui.checkbox.Checkbox.offset_y</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -217,6 +411,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="49" bodyend="55"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -242,6 +448,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="56" bodyend="62"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -270,6 +488,36 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="63" bodyend="70"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5e0b189acb3ab800dced15219d568bf5" compoundref="checkbox_8py" startline="115" endline="123">game.gui.checkbox.Checkbox.center_with_offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a25853dd6cc2aada74d438e3b65037261" compoundref="horizontal__slider_8py" startline="153" endline="161">game.gui.horizontal_slider.HorizontalSlider.center_with_offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1adcfd57ce413ec117b3b7ff6e0a2069d6" compoundref="hotbar_8py" startline="87" endline="94">game.gui.hotbar.Hotbar.center_with_offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a5da7a731431b90a044335e003f21ebdf" compoundref="label_8py" startline="88" endline="96">game.gui.label.Label.center_with_offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3" compoundref="nametag_8py" startline="82" endline="89">game.gui.nametag.NameTag.center_with_offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a312d3ba3a087d497c1eeeb2fd12d9a42" compoundref="progress__bar_8py" startline="104" endline="111">game.gui.progress_bar.ProgressBar.center_with_offset</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -314,6 +562,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="78" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="78" bodyend="83"/>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a673c2a15a3d6ff158c296337e7f64666" compoundref="label_8py" startline="42">game.gui.label.Label._transparency</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2" compoundref="widget_8py" startline="75">game.gui.widget.Widget._transparency</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -341,6 +591,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="84" bodyend="91"/>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -361,6 +612,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" line="92" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/widget.py" bodystart="92" bodyend="97"/>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" compoundref="horizontal__slider_8py" startline="115">game.gui.horizontal_slider.HorizontalSlider._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab37d87d4b22e45a642cf39946a786f3f" compoundref="credits__screen_8py" startline="49">game.gui.screens.credits_screen.CreditsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a47b457e6684cd786de156f00103f9581" compoundref="options__screen_8py" startline="56">game.gui.screens.options_screen.OptionsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" compoundref="screen_8py" startline="13">game.gui.screens.screen.Screen._enabled</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" compoundref="widget_8py" startline="88">game.gui.widget.Widget._enabled</references>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ab1025133f738287954b0dc5514e3bd71" compoundref="button_8py" startline="29" endline="58">game.gui.button.Button.draw</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -16,6 +16,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" compoundref="tile__manager_8py" startline="23" endline="36">game.world.tile_manager.TileManager.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" compoundref="tile__manager_8py" startline="37" endline="43">game.world.tile_manager.TileManager.set_atlas</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" prot="public" static="no" mutable="no">
         <type></type>
@@ -30,6 +32,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" compoundref="window_8py" startline="24" endline="48">game.core.window.Window.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" compoundref="window_8py" startline="49" endline="54">game.core.window.Window.clear</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" compoundref="tile__manager_8py" startline="23" endline="36">game.world.tile_manager.TileManager.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" compoundref="tile__manager_8py" startline="37" endline="43">game.world.tile_manager.TileManager.set_atlas</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" prot="public" static="no" mutable="no">
         <type></type>
@@ -44,6 +51,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" compoundref="window_8py" startline="24" endline="48">game.core.window.Window.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" compoundref="window_8py" startline="49" endline="54">game.core.window.Window.clear</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" compoundref="tile__manager_8py" startline="23" endline="36">game.world.tile_manager.TileManager.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" compoundref="tile__manager_8py" startline="37" endline="43">game.world.tile_manager.TileManager.set_atlas</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -100,6 +112,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="23" bodyend="36"/>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119" compoundref="tile__manager_8py" startline="20">game.world.tile_manager.TileManager.atlas</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54" compoundref="window_8py" startline="32">game.core.window.Window.height</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a2164a28b704f306525e2bd418ff9edcc" compoundref="player_8py" startline="118">game.entity.player.Player.height</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.height</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd" compoundref="window_8py" startline="32">game.core.window.Window.width</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a1ad79e0736a99f68c7148893a8807398" compoundref="player_8py" startline="118">game.entity.player.Player.width</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.width</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -124,6 +143,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/tile_manager.py" bodystart="37" bodyend="43"/>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1aba52db5ac333e821ec9a774b8afef119" compoundref="tile__manager_8py" startline="20">game.world.tile_manager.TileManager.atlas</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54" compoundref="window_8py" startline="32">game.core.window.Window.height</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a2164a28b704f306525e2bd418ff9edcc" compoundref="player_8py" startline="118">game.entity.player.Player.height</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.height</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd" compoundref="window_8py" startline="32">game.core.window.Window.width</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a1ad79e0736a99f68c7148893a8807398" compoundref="player_8py" startline="118">game.entity.player.Player.width</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.width</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

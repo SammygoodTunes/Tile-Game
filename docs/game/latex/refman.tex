@@ -1,0 +1,511 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  \pdfminorversion=7
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+  \usepackage{ifthen}
+  \ifx\requestedLaTeXdate\undefined
+    \usepackage{array}
+  \else
+    \usepackage{array}[=2016-10-06]
+  \fi
+  %%
+  % Packages required by doxygen
+  \makeatletter
+  \providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
+  % suppress package identification of infwarerr as it contains the word "warning"
+  \let\@@protected@wlog\protected@wlog
+  \def\protected@wlog#1{\wlog{package info suppressed}}
+  \RequirePackage{infwarerr}
+  \let\protected@wlog\@@protected@wlog
+  \makeatother
+  \IfFormatAtLeastTF{2016/01/01}{}{\usepackage{fixltx2e}} % for \textsubscript
+  \IfFormatAtLeastTF{2015/01/01}{\pdfsuppresswarningpagegroup=1}{}
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \usepackage[utf8]{inputenc}
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  % Define default fonts
+  % Font selection
+  \usepackage[T1]{fontenc}
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \doxyallsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  \usepackage{changepage}
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Thu Oct 17 2024 22\+:18\+:46 for Tile-\/\+Game by Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Thu Oct 17 2024 22\+:18\+:46 for Tile-\/\+Game by Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifpdf
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifxetex
+        \usepackage[pagebackref=true]{hyperref}
+      \else
+        \usepackage[ps2pdf,pagebackref=true]{hyperref}
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={Tile-\/\+Game},%
+      pdfsubject={A tile-\/based game with procedural terrain generation (using the Perlin Noise algorithm)}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \IfFormatAtLeastTF{2023/05/01}{\usepackage[deeplevels]{etoc}}{\usepackage[deeplevels]{etoc_doxygen}}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  \etocsetlevel{subsubsubsection}{4}
+  \etocsetlevel{subsubsubsubsection}{5}
+  \etocsetlevel{subsubsubsubsubsection}{6}
+  \etocsetlevel{subsubsubsubsubsubsection}{7}
+  \etocsetlevel{paragraph}{8}
+  \etocsetlevel{subparagraph}{9}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large Tile-\/\+Game}\\
+  [1ex]\large 0.\+0.\+2a \\
+  \vspace*{1cm}
+  {\large Generated on Thu Oct 17 2024 22\+:18\+:46 for Tile-\/\+Game by Doxygen 1.10.0}\\
+    \vspace*{0.5cm}
+    {\small Thu Oct 17 2024 22:18:46}
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{Namespace Index}
+\input{namespaces}
+\chapter{Hierarchical Index}
+\input{hierarchy}
+\chapter{Class Index}
+\input{annotated}
+\chapter{File Index}
+\input{files}
+\chapter{Namespace Documentation}
+\input{namespacegame}
+\input{namespacegame_1_1____main____}
+\input{namespacegame_1_1client}
+\input{namespacegame_1_1client_1_1client}
+\input{namespacegame_1_1client_1_1connection}
+\input{namespacegame_1_1client_1_1connection__handler}
+\input{namespacegame_1_1client_1_1managers}
+\input{namespacegame_1_1client_1_1managers_1_1player__manager}
+\input{namespacegame_1_1client_1_1managers_1_1screen__manager}
+\input{namespacegame_1_1client_1_1managers_1_1world__manager}
+\input{namespacegame_1_1client_1_1tasks}
+\input{namespacegame_1_1core}
+\input{namespacegame_1_1core_1_1game}
+\input{namespacegame_1_1core_1_1window}
+\input{namespacegame_1_1data}
+\input{namespacegame_1_1data_1_1items}
+\input{namespacegame_1_1data_1_1items_1_1item}
+\input{namespacegame_1_1data_1_1items_1_1item__types}
+\input{namespacegame_1_1data_1_1items_1_1items}
+\input{namespacegame_1_1data_1_1keys}
+\input{namespacegame_1_1data_1_1properties}
+\input{namespacegame_1_1data_1_1properties_1_1camera__properties}
+\input{namespacegame_1_1data_1_1properties_1_1game__properties}
+\input{namespacegame_1_1data_1_1properties_1_1gui__properties}
+\input{namespacegame_1_1data_1_1properties_1_1item__properties}
+\input{namespacegame_1_1data_1_1properties_1_1player__properties}
+\input{namespacegame_1_1data_1_1properties_1_1screen__properties}
+\input{namespacegame_1_1data_1_1properties_1_1server__properties}
+\input{namespacegame_1_1data_1_1properties_1_1tile__properties}
+\input{namespacegame_1_1data_1_1properties_1_1world__properties}
+\input{namespacegame_1_1data_1_1states}
+\input{namespacegame_1_1data_1_1states_1_1connection__states}
+\input{namespacegame_1_1data_1_1states_1_1map__states}
+\input{namespacegame_1_1data_1_1states_1_1mouse__states}
+\input{namespacegame_1_1data_1_1states_1_1player__states}
+\input{namespacegame_1_1data_1_1states_1_1server__states}
+\input{namespacegame_1_1data_1_1structures}
+\input{namespacegame_1_1data_1_1structures_1_1map__structure}
+\input{namespacegame_1_1data_1_1structures_1_1player__structure}
+\input{namespacegame_1_1data_1_1structures_1_1tile__structure}
+\input{namespacegame_1_1data_1_1tiles}
+\input{namespacegame_1_1data_1_1tiles_1_1tile}
+\input{namespacegame_1_1data_1_1tiles_1_1tile__types}
+\input{namespacegame_1_1data_1_1tiles_1_1tiles}
+\input{namespacegame_1_1entity}
+\input{namespacegame_1_1entity_1_1player}
+\input{namespacegame_1_1gui}
+\input{namespacegame_1_1gui_1_1button}
+\input{namespacegame_1_1gui_1_1checkbox}
+\input{namespacegame_1_1gui_1_1horizontal__slider}
+\input{namespacegame_1_1gui_1_1hotbar}
+\input{namespacegame_1_1gui_1_1inputbox}
+\input{namespacegame_1_1gui_1_1label}
+\input{namespacegame_1_1gui_1_1nametag}
+\input{namespacegame_1_1gui_1_1ordering__container}
+\input{namespacegame_1_1gui_1_1progress__bar}
+\input{namespacegame_1_1gui_1_1screens}
+\input{namespacegame_1_1gui_1_1screens_1_1crash__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1credits__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1gameover__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1loading__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1main__hud}
+\input{namespacegame_1_1gui_1_1screens_1_1mainmenu__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1map__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1options__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1pause__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1playerlist__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1screen}
+\input{namespacegame_1_1gui_1_1screens_1_1serverconnect__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1servercreate__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1serverjoin__screen}
+\input{namespacegame_1_1gui_1_1screens_1_1servermenu__screen}
+\input{namespacegame_1_1gui_1_1slot}
+\input{namespacegame_1_1gui_1_1widget}
+\input{namespacegame_1_1network}
+\input{namespacegame_1_1network_1_1builders}
+\input{namespacegame_1_1network_1_1builders_1_1base__builder}
+\input{namespacegame_1_1network_1_1builders_1_1player__builder}
+\input{namespacegame_1_1network_1_1packet}
+\input{namespacegame_1_1network_1_1protocol}
+\input{namespacegame_1_1server}
+\input{namespacegame_1_1server_1_1handlers}
+\input{namespacegame_1_1server_1_1handlers_1_1player__handler}
+\input{namespacegame_1_1server_1_1handlers_1_1world__handler}
+\input{namespacegame_1_1server_1_1server}
+\input{namespacegame_1_1server_1_1tasks}
+\input{namespacegame_1_1utils}
+\input{namespacegame_1_1utils_1_1exceptions}
+\input{namespacegame_1_1utils_1_1logger}
+\input{namespacegame_1_1utils_1_1tools}
+\input{namespacegame_1_1world}
+\input{namespacegame_1_1world_1_1camera}
+\input{namespacegame_1_1world_1_1map__manager}
+\input{namespacegame_1_1world_1_1synth}
+\input{namespacegame_1_1world_1_1synth_1_1noise}
+\input{namespacegame_1_1world_1_1tile__manager}
+\input{namespacegame_1_1world_1_1world}
+\chapter{Class Documentation}
+\input{classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder}
+\input{classgame_1_1gui_1_1button_1_1Button}
+\input{classgame_1_1world_1_1camera_1_1Camera}
+\input{classgame_1_1data_1_1properties_1_1camera__properties_1_1CameraProperties}
+\input{classgame_1_1gui_1_1checkbox_1_1Checkbox}
+\input{classgame_1_1client_1_1client_1_1Client}
+\input{classgame_1_1client_1_1tasks_1_1ClientTasks}
+\input{classgame_1_1network_1_1packet_1_1Compressor}
+\input{classgame_1_1client_1_1connection_1_1Connection}
+\input{classgame_1_1client_1_1connection__handler_1_1ConnectionHandler}
+\input{classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates}
+\input{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen}
+\input{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen}
+\input{classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure}
+\input{classgame_1_1core_1_1game_1_1Game}
+\input{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen}
+\input{classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties}
+\input{classgame_1_1data_1_1properties_1_1gui__properties_1_1GuiProperties}
+\input{classgame_1_1network_1_1packet_1_1Hasher}
+\input{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider}
+\input{classgame_1_1gui_1_1hotbar_1_1Hotbar}
+\input{classgame_1_1gui_1_1inputbox_1_1InputBox}
+\input{classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue}
+\input{classgame_1_1utils_1_1exceptions_1_1InvalidMapData}
+\input{classgame_1_1utils_1_1exceptions_1_1InvalidTextureAtlas}
+\input{classgame_1_1data_1_1items_1_1item_1_1Item}
+\input{classgame_1_1data_1_1properties_1_1item__properties_1_1ItemProperties}
+\input{classgame_1_1data_1_1items_1_1items_1_1Items}
+\input{classgame_1_1data_1_1items_1_1item__types_1_1ItemTypes}
+\input{classgame_1_1data_1_1keys_1_1Keys}
+\input{classgame_1_1gui_1_1label_1_1Label}
+\input{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen}
+\input{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud}
+\input{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen}
+\input{classgame_1_1world_1_1map__manager_1_1Map}
+\input{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen}
+\input{classgame_1_1data_1_1states_1_1map__states_1_1MapStates}
+\input{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure}
+\input{classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached}
+\input{classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates}
+\input{classgame_1_1gui_1_1nametag_1_1NameTag}
+\input{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen}
+\input{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer}
+\input{classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds}
+\input{classgame_1_1network_1_1packet_1_1Packet}
+\input{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen}
+\input{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise}
+\input{classgame_1_1entity_1_1player_1_1Player}
+\input{classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder}
+\input{classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler}
+\input{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen}
+\input{classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager}
+\input{classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists}
+\input{classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties}
+\input{classgame_1_1data_1_1states_1_1player__states_1_1PlayerStates}
+\input{classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure}
+\input{classgame_1_1gui_1_1progress__bar_1_1ProgressBar}
+\input{classgame_1_1network_1_1protocol_1_1Protocol}
+\input{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}
+\input{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties}
+\input{classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens}
+\input{classgame_1_1server_1_1server_1_1Server}
+\input{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen}
+\input{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen}
+\input{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen}
+\input{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen}
+\input{classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties}
+\input{classgame_1_1data_1_1states_1_1server__states_1_1ServerStates}
+\input{classgame_1_1server_1_1tasks_1_1ServerTasks}
+\input{classgame_1_1gui_1_1slot_1_1Slot}
+\input{classgame_1_1client_1_1connection_1_1Tasks}
+\input{classgame_1_1data_1_1tiles_1_1tile_1_1Tile}
+\input{classgame_1_1world_1_1tile__manager_1_1TileManager}
+\input{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties}
+\input{classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles}
+\input{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure}
+\input{classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes}
+\input{classgame_1_1gui_1_1widget_1_1Widget}
+\input{classgame_1_1core_1_1window_1_1Window}
+\input{classgame_1_1world_1_1world_1_1World}
+\input{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler}
+\input{classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager}
+\input{classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties}
+\input{classgame_1_1client_1_1connection_1_1XSocket}
+\input{classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts}
+\chapter{File Documentation}
+\input{____main_____8py}
+\input{client_8py}
+\input{connection_8py}
+\input{connection__handler_8py}
+\input{player__manager_8py}
+\input{screen__manager_8py}
+\input{world__manager_8py}
+\input{client_2tasks_8py}
+\input{server_2tasks_8py}
+\input{game_8py}
+\input{window_8py}
+\input{item_8py}
+\input{item__types_8py}
+\input{items_8py}
+\input{keys_8py}
+\input{camera__properties_8py}
+\input{game__properties_8py}
+\input{gui__properties_8py}
+\input{item__properties_8py}
+\input{player__properties_8py}
+\input{screen__properties_8py}
+\input{server__properties_8py}
+\input{tile__properties_8py}
+\input{world__properties_8py}
+\input{connection__states_8py}
+\input{map__states_8py}
+\input{mouse__states_8py}
+\input{player__states_8py}
+\input{server__states_8py}
+\input{map__structure_8py}
+\input{player__structure_8py}
+\input{tile__structure_8py}
+\input{tile_8py}
+\input{tile__types_8py}
+\input{tiles_8py}
+\input{player_8py}
+\input{____init_____8py}
+\input{client_2____init_____8py}
+\input{client_2managers_2____init_____8py}
+\input{core_2____init_____8py}
+\input{data_2____init_____8py}
+\input{data_2items_2____init_____8py}
+\input{data_2properties_2____init_____8py}
+\input{data_2states_2____init_____8py}
+\input{data_2structures_2____init_____8py}
+\input{data_2tiles_2____init_____8py}
+\input{entity_2____init_____8py}
+\input{gui_2____init_____8py}
+\input{gui_2screens_2____init_____8py}
+\input{network_2____init_____8py}
+\input{network_2builders_2____init_____8py}
+\input{server_2____init_____8py}
+\input{server_2handlers_2____init_____8py}
+\input{utils_2____init_____8py}
+\input{world_2____init_____8py}
+\input{world_2synth_2____init_____8py}
+\input{button_8py}
+\input{checkbox_8py}
+\input{horizontal__slider_8py}
+\input{hotbar_8py}
+\input{inputbox_8py}
+\input{label_8py}
+\input{nametag_8py}
+\input{ordering__container_8py}
+\input{progress__bar_8py}
+\input{crash__screen_8py}
+\input{credits__screen_8py}
+\input{gameover__screen_8py}
+\input{loading__screen_8py}
+\input{main__hud_8py}
+\input{mainmenu__screen_8py}
+\input{map__screen_8py}
+\input{options__screen_8py}
+\input{pause__screen_8py}
+\input{playerlist__screen_8py}
+\input{screen_8py}
+\input{serverconnect__screen_8py}
+\input{servercreate__screen_8py}
+\input{serverjoin__screen_8py}
+\input{servermenu__screen_8py}
+\input{slot_8py}
+\input{widget_8py}
+\input{base__builder_8py}
+\input{player__builder_8py}
+\input{packet_8py}
+\input{protocol_8py}
+\input{player__handler_8py}
+\input{world__handler_8py}
+\input{server_8py}
+\input{exceptions_8py}
+\input{logger_8py}
+\input{tools_8py}
+\input{camera_8py}
+\input{map__manager_8py}
+\input{noise_8py}
+\input{tile__manager_8py}
+\input{world_8py}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{document}

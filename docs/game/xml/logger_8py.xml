@@ -22,25 +22,25 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>argparse</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal">parser<sp/>=<sp/>argparse.ArgumentParser()</highlight></codeline>
-<codeline lineno="14"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-d&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--debug&apos;</highlight><highlight class="normal">,<sp/>action=argparse.BooleanOptionalAction,</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>type=bool,<sp/>help=</highlight><highlight class="stringliteral">&apos;enable<sp/>debug<sp/>info&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">args,<sp/>unknown_args<sp/>=<sp/>parser.parse_known_args()</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">log_dir<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;logs&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacegame_1_1utils_1_1logger_1a35faba1d427b555c3629253b9bfc667f" refkind="member"><highlight class="normal">parser<sp/>=<sp/>argparse.ArgumentParser()</highlight></codeline>
+<codeline lineno="14" refid="namespacegame_1_1utils_1_1logger_1add7c4472e569df4ff2365e25c6d16082" refkind="member"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-d&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--debug&apos;</highlight><highlight class="normal">,<sp/>action=argparse.BooleanOptionalAction,</highlight></codeline>
+<codeline lineno="15" refid="namespacegame_1_1utils_1_1logger_1af4be9408791cfa638b6958e8d1ead642" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>type=bool,<sp/>help=</highlight><highlight class="stringliteral">&apos;enable<sp/>debug<sp/>info&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16" refid="namespacegame_1_1utils_1_1logger_1aaab1ff8bb6a0cda4b32bd8e8530e1657" refkind="member"><highlight class="normal">args,<sp/>unknown_args<sp/>=<sp/>parser.parse_known_args()</highlight></codeline>
+<codeline lineno="17" refid="namespacegame_1_1utils_1_1logger_1aae9db829f03e92d02c0e3602abf824b0" refkind="member"><highlight class="normal">log_dir<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;logs&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>path.exists(log_dir):</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir(log_dir,<sp/>0o755)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal">logging.basicConfig(</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>level=logging.DEBUG<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.INFO,</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>handlers=[</highlight></codeline>
+<codeline lineno="23" refid="namespacegame_1_1utils_1_1logger_1aa63d38d66f3f7c2207d9dd7781df6f1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>level=logging.DEBUG<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.INFO,</highlight></codeline>
+<codeline lineno="24" refid="namespacegame_1_1utils_1_1logger_1ad70ca485578aeac4071a9e55b67e46fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25" refid="namespacegame_1_1utils_1_1logger_1ad20ddf069666f3d1233be3c362e6dafb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>handlers=[</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.FileHandler(path.join(log_dir,<sp/>strftime(</highlight><highlight class="stringliteral">&apos;%d-%m-%Y-%H-%M-%S.log&apos;</highlight><highlight class="normal">))),</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.StreamHandler(stdout)</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">)</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__file__)</highlight></codeline>
+<codeline lineno="31" refid="namespacegame_1_1utils_1_1logger_1aee1dd5f7a553b5ee79a331f39137883d" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__file__)</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/logger.py"/>
   </compounddef>

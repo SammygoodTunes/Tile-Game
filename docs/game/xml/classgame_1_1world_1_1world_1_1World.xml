@@ -16,6 +16,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1a0950236a2c7ca6faab58570a9b65f1cf" compoundref="world_8py" startline="28" endline="33">game.world.world.World.create</referencedby>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1a22099c420762a65193b774fa8890fd6b" compoundref="world_8py" startline="34" endline="53">game.world.world.World.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1a1de4f0ca427705c031e0713ce817eb4a" compoundref="world_8py" startline="54" endline="66">game.world.world.World.draw_wireframe</referencedby>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1acab48c8c323c9ab9efa6ede83f85b4e2" compoundref="world_8py" startline="74" endline="79">game.world.world.World.get_map</referencedby>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1a8ca860e5275616969f385eb0ab5a8a2b" compoundref="world_8py" startline="22" endline="27">game.world.world.World.initialise</referencedby>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1ad447eb8f35595b162dab7ebf065fabb9" compoundref="world_8py" startline="67" endline="73">game.world.world.World.set_map</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -56,6 +62,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="22" bodyend="27"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
+        <references refid="classgame_1_1world_1_1world_1_1World_1a8ca860e5275616969f385eb0ab5a8a2b" compoundref="world_8py" startline="22" endline="27">game.world.world.World.initialise</references>
+        <referencedby refid="classgame_1_1world_1_1world_1_1World_1a8ca860e5275616969f385eb0ab5a8a2b" compoundref="world_8py" startline="22" endline="27">game.world.world.World.initialise</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1world_1_1World_1a0950236a2c7ca6faab58570a9b65f1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -80,6 +89,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="28" bodyend="33"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1world_1_1World_1a22099c420762a65193b774fa8890fd6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -104,6 +114,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="34" bodyend="53"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1world_1_1World_1a1de4f0ca427705c031e0713ce817eb4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -128,6 +139,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="54" bodyend="66"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1world_1_1World_1ad447eb8f35595b162dab7ebf065fabb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -152,6 +164,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="67" bodyend="73"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1world_1_1World_1acab48c8c323c9ab9efa6ede83f85b4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgame_1_1world_1_1map__manager_1_1Map" kindref="compound">Map</ref></type>
@@ -172,6 +185,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/world.py" bodystart="74" bodyend="79"/>
+        <references refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" compoundref="world_8py" startline="20">game.world.world.World._map</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

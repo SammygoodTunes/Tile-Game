@@ -33,6 +33,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1adb4d0dfa8f1fe18b7e4246019c76f27f" compoundref="tile_8py" startline="23" endline="35">game.data.tiles.tile.Tile.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e" compoundref="item_8py" startline="18" endline="23">game.data.items.item.Item.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aa1ca365b8c8a76066a914921bcae5532" compoundref="tile_8py" startline="50" endline="62">game.data.tiles.tile.Tile.compress</referencedby>
+        <referencedby refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1afcc5219bf5abebc0a1552eecd336e258" compoundref="tile_8py" startline="63" endline="76">game.data.tiles.tile.Tile.decompress</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ac15db489621ee3ce73cbbc45879d0431" compoundref="item_8py" startline="41" endline="46">game.data.items.item.Item.get_xy</referencedby>
+        <referencedby refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a24ab49009c98bdadc1b6c439f357e71e" compoundref="tile_8py" startline="90" endline="95">game.data.tiles.tile.Tile.get_xy</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1afe3409288c96cf97b673ba253c9dffa3" compoundref="item_8py" startline="34" endline="40">game.data.items.item.Item.set_xy</referencedby>
+        <referencedby refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5bc50553c7afc4d48525208c32627462" compoundref="tile_8py" startline="83" endline="89">game.data.tiles.tile.Tile.set_xy</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028" prot="protected" static="no" mutable="no">
         <type></type>
@@ -47,6 +55,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e" compoundref="item_8py" startline="18" endline="23">game.data.items.item.Item.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a5fc891eccdbeba1dd2b87528503b2c85" compoundref="item_8py" startline="54" endline="59">game.data.items.item.Item.get_tooltip_name</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a4ca7b1407fdae5b205beb5ff0f8ed5d7" compoundref="item_8py" startline="47" endline="53">game.data.items.item.Item.set_tooltip_name</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835" prot="protected" static="no" mutable="no">
         <type></type>
@@ -61,6 +72,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e" compoundref="item_8py" startline="18" endline="23">game.data.items.item.Item.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1aa8c99b57755fac7b808bfc053df0761b" compoundref="item_8py" startline="67" endline="72">game.data.items.item.Item.get_strength</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a0e93970e69af3de3ef03682882c8406f" compoundref="item_8py" startline="60" endline="66">game.data.items.item.Item.set_strength</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113" prot="protected" static="no" mutable="no">
         <type></type>
@@ -75,6 +89,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ab3c649b93496242aa7c2a907cdc4bf9e" compoundref="item_8py" startline="18" endline="23">game.data.items.item.Item.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1aa6ced4cedf61b5e5016bb5cbc3f2804a" compoundref="item_8py" startline="80" endline="85">game.data.items.item.Item.get_durability</referencedby>
+        <referencedby refid="classgame_1_1data_1_1items_1_1item_1_1Item_1ad989a7dee2db34b51b03f080728742a7" compoundref="item_8py" startline="73" endline="79">game.data.items.item.Item.set_durability</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -110,6 +127,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="18" bodyend="23"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113" compoundref="item_8py" startline="31">game.data.items.item.Item._durability</references>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835" compoundref="item_8py" startline="30">game.data.items.item.Item._strength</references>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028" compoundref="item_8py" startline="29">game.data.items.item.Item._tooltip_name</references>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a67e843ccd65aa49d1469af96bee57182" compoundref="item_8py" startline="28">game.data.items.item.Item._xy</references>
+        <references refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5d4632d2f492b8d2b295013bef95e596" compoundref="tile_8py" startline="44">game.data.tiles.tile.Tile._xy</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a105eb54fb24cbacc253151a5bc98d71c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -159,6 +181,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="34" bodyend="40"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a67e843ccd65aa49d1469af96bee57182" compoundref="item_8py" startline="28">game.data.items.item.Item._xy</references>
+        <references refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5d4632d2f492b8d2b295013bef95e596" compoundref="tile_8py" startline="44">game.data.tiles.tile.Tile._xy</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1ac15db489621ee3ce73cbbc45879d0431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>tuple[int, int]</type>
@@ -178,6 +202,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="41" bodyend="46"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a67e843ccd65aa49d1469af96bee57182" compoundref="item_8py" startline="28">game.data.items.item.Item._xy</references>
+        <references refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5d4632d2f492b8d2b295013bef95e596" compoundref="tile_8py" startline="44">game.data.tiles.tile.Tile._xy</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a4ca7b1407fdae5b205beb5ff0f8ed5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -201,6 +227,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="47" bodyend="53"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028" compoundref="item_8py" startline="29">game.data.items.item.Item._tooltip_name</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a5fc891eccdbeba1dd2b87528503b2c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -220,6 +247,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="54" bodyend="59"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a189683b3f6493bc0e24ee1d4dbf56028" compoundref="item_8py" startline="29">game.data.items.item.Item._tooltip_name</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1a0e93970e69af3de3ef03682882c8406f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -243,6 +271,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="60" bodyend="66"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835" compoundref="item_8py" startline="30">game.data.items.item.Item._strength</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1aa8c99b57755fac7b808bfc053df0761b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -262,6 +291,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="67" bodyend="72"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a6a8cc60b81e019cf9134a88a4816b835" compoundref="item_8py" startline="30">game.data.items.item.Item._strength</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1ad989a7dee2db34b51b03f080728742a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -285,6 +315,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="73" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="73" bodyend="79"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113" compoundref="item_8py" startline="31">game.data.items.item.Item._durability</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1data_1_1items_1_1item_1_1Item_1aa6ced4cedf61b5e5016bb5cbc3f2804a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -304,6 +335,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" line="80" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/items/item.py" bodystart="80" bodyend="85"/>
+        <references refid="classgame_1_1data_1_1items_1_1item_1_1Item_1a1aadfc496d96538e5732198a7ec96113" compoundref="item_8py" startline="31">game.data.items.item.Item._durability</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

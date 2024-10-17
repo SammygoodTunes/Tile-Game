@@ -29,8 +29,8 @@
 <codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Byte<sp/>structure<sp/>for<sp/>the<sp/>map.</highlight></codeline>
 <codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_WIDTH_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_WIDTH)<sp/>/<sp/>8))</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_HEIGHT_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_HEIGHT)<sp/>/<sp/>8))</highlight></codeline>
+<codeline lineno="18" refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_1adae542acff0288d845d02d698360fb56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_WIDTH_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_WIDTH)<sp/>/<sp/>8))</highlight></codeline>
+<codeline lineno="19" refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_1a1431a910aeedd10128e0661a977a5745" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MAP_HEIGHT_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(WorldProperties.MAX_MAP_HEIGHT)<sp/>/<sp/>8))</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/map_structure.py"/>
   </compounddef>

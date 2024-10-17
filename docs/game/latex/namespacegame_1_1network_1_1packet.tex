@@ -1,0 +1,55 @@
+\doxysection{game.\+network.\+packet Namespace Reference}
+\hypertarget{namespacegame_1_1network_1_1packet}{}\label{namespacegame_1_1network_1_1packet}\index{game.network.packet@{game.network.packet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Compressor}{Compressor}}
+\item 
+class \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Hasher}{Hasher}}
+\item 
+class \mbox{\hyperlink{classgame_1_1network_1_1packet_1_1Packet}{Packet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_a8b7c3651a7c65a3755dec50668e259c6}{fill}} (bytes data)
+\item 
+bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_ac5c4f132554ab17c7f18ce9f435d06c9}{to\+\_\+bytes}} (str data)
+\item 
+bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19}{hex\+\_\+len}} (bytes data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module name: packet
+
+This module defines a set of methods for hashing, compressing and altering data packets.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegame_1_1network_1_1packet_a8b7c3651a7c65a3755dec50668e259c6}\label{namespacegame_1_1network_1_1packet_a8b7c3651a7c65a3755dec50668e259c6} 
+\index{game.network.packet@{game.network.packet}!fill@{fill}}
+\index{fill@{fill}!game.network.packet@{game.network.packet}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily  bytes game.\+network.\+packet.\+fill (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+\end{DoxyVerb}
+ \Hypertarget{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19}\label{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19} 
+\index{game.network.packet@{game.network.packet}!hex\_len@{hex\_len}}
+\index{hex\_len@{hex\_len}!game.network.packet@{game.network.packet}}
+\doxysubsubsection{\texorpdfstring{hex\_len()}{hex\_len()}}
+{\footnotesize\ttfamily  bytes game.\+network.\+packet.\+hex\+\_\+len (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return length of data in hex. Used in packet header for determining data size.
+\end{DoxyVerb}
+ \Hypertarget{namespacegame_1_1network_1_1packet_ac5c4f132554ab17c7f18ce9f435d06c9}\label{namespacegame_1_1network_1_1packet_ac5c4f132554ab17c7f18ce9f435d06c9} 
+\index{game.network.packet@{game.network.packet}!to\_bytes@{to\_bytes}}
+\index{to\_bytes@{to\_bytes}!game.network.packet@{game.network.packet}}
+\doxysubsubsection{\texorpdfstring{to\_bytes()}{to\_bytes()}}
+{\footnotesize\ttfamily  bytes game.\+network.\+packet.\+to\+\_\+bytes (\begin{DoxyParamCaption}\item[{str}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return string as bytes encoded with protocol's chosen encoding.
+\end{DoxyVerb}
+ 

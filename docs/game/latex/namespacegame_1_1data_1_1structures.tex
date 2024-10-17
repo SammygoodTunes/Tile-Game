@@ -1,0 +1,49 @@
+\doxysection{game.\+data.\+structures Namespace Reference}
+\hypertarget{namespacegame_1_1data_1_1structures}{}\label{namespacegame_1_1data_1_1structures}\index{game.data.structures@{game.data.structures}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacegame_1_1data_1_1structures_1_1map__structure}{map\+\_\+structure}}
+\item 
+namespace \mbox{\hyperlink{namespacegame_1_1data_1_1structures_1_1player__structure}{player\+\_\+structure}}
+\item 
+namespace \mbox{\hyperlink{namespacegame_1_1data_1_1structures_1_1tile__structure}{tile\+\_\+structure}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Structures package.
+
+Structures are classes containing constants of size, position and other properties of different attributes of an object.
+They are used to build compressed packets that aim to be sent to and from the server.
+
+TYPES OF SIZE CONSTANTS:
+
+    - BIT_SIZE
+        The bit size constant represents the size of a specific object attribute in bits.
+        This means dividing the value by 8 is necessary to obtain a size in bytes.
+    - BYTE_SIZE
+        The byte size constant represents, as its name suggests, the size of a specific attribute in bytes.
+
+    The reason to having different types of sizes is based on how the "compact packets" are created.
+    If they are created specifically utilising bit manipulation operators (<<, >>, &, |, ~, etc.), then bit size
+    constants are required, as they are very precise.
+    If they are created from direct int to byte conversion (using int.to_bytes() and int.from_bytes()), then the
+    precision of the sizes become less important. Direct int - byte conversions are usually done on attributes that
+    require more allocated memory and where precision becomes too tedious.
+
+POSITION CONSTANTS:
+
+    The position constants are used to determine where the attributes will be located at in the "compact packet".
+    This is only used for packets that require precise bit manipulation in order to build.
+
+STRUCTURES:
+
+    - PLAYER STRUCTURE
+        This contains all constants for player-related packets.
+    - MAP STRUCTURE
+        This contains all constants for map-related packets.
+    - TILE STRUCTURE
+        This contains all constants for tile-related packets.
+\end{DoxyVerb}
+ 

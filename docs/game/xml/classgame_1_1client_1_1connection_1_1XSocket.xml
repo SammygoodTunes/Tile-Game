@@ -41,6 +41,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="40" bodyend="44"/>
+        <references refid="classgame_1_1client_1_1connection_1_1XSocket_1a704194709e981247c1d6abf006897995" compoundref="connection_8py" startline="40" endline="44">game.client.connection.XSocket.__init__</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1XSocket_1a704194709e981247c1d6abf006897995" compoundref="connection_8py" startline="40" endline="44">game.client.connection.XSocket.__init__</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a0a54d87e8264abd2f07f86f95465ed33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -70,6 +72,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="45" bodyend="52"/>
+        <references refid="classgame_1_1client_1_1connection_1_1XSocket_1a0a54d87e8264abd2f07f86f95465ed33" compoundref="connection_8py" startline="45" endline="52">game.client.connection.XSocket.send</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1XSocket_1a0a54d87e8264abd2f07f86f95465ed33" compoundref="connection_8py" startline="45" endline="52">game.client.connection.XSocket.send</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1a4ed82c79b5050f2ff2b6db32d5d020b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -99,6 +103,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="53" bodyend="60"/>
+        <references refid="classgame_1_1client_1_1connection_1_1XSocket_1a4ed82c79b5050f2ff2b6db32d5d020b6" compoundref="connection_8py" startline="53" endline="60">game.client.connection.XSocket.recv</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1XSocket_1a4ed82c79b5050f2ff2b6db32d5d020b6" compoundref="connection_8py" startline="53" endline="60">game.client.connection.XSocket.recv</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1XSocket_1ac96855344e594b36d9218ba7505ca184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>

@@ -17,6 +17,17 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" compoundref="main__hud_8py" startline="44" endline="97">game.gui.screens.main_hud.MainHud.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" compoundref="map__screen_8py" startline="56" endline="125">game.gui.screens.map_screen.MapScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae" compoundref="screen__manager_8py" startline="62" endline="215">game.client.managers.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a62ba22806fe108c0a3a4ab8c686fb8af" compoundref="map__screen_8py" startline="38" endline="49">game.gui.screens.map_screen.MapScreen.initialise_map</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e" compoundref="map__screen_8py" startline="29" endline="37">game.gui.screens.map_screen.MapScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851" compoundref="screen__manager_8py" startline="52" endline="61">game.client.managers.screen_manager.Screens.link_game</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f" compoundref="screen__manager_8py" startline="252" endline="270">game.client.managers.screen_manager.Screens.task_create_server</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e" compoundref="screen__manager_8py" startline="271" endline="282">game.client.managers.screen_manager.Screens.task_join_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="98" endline="127">game.gui.screens.main_hud.MainHud.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" compoundref="playerlist__screen_8py" startline="44" endline="81">game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a008367ff0b46e930bb8bad463d37a0ab" prot="public" static="no" mutable="no">
         <type></type>
@@ -31,6 +42,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a38ac9cdcfea7d834f7cddb7284a00194" compoundref="mainmenu__screen_8py" startline="36" endline="63">game.gui.screens.mainmenu_screen.MainMenuScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" compoundref="map__screen_8py" startline="56" endline="125">game.gui.screens.map_screen.MapScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4b0c6393ad577663fbf1d8455c67d0ca" compoundref="horizontal__slider_8py" startline="187" endline="192">game.gui.horizontal_slider.HorizontalSlider.get_title</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10" compoundref="checkbox_8py" startline="150" endline="158">game.gui.checkbox.Checkbox.offset_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58eafa61c83afbdb36b98441a271365" compoundref="checkbox_8py" startline="159" endline="167">game.gui.checkbox.Checkbox.offset_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" compoundref="mainmenu__screen_8py" startline="82" endline="95">game.gui.screens.mainmenu_screen.MainMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" compoundref="map__screen_8py" startline="141" endline="148">game.gui.screens.map_screen.MapScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a79cb7f080c154d09dc1d2b04a8341bea" compoundref="horizontal__slider_8py" startline="180" endline="186">game.gui.horizontal_slider.HorizontalSlider.set_title</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1af7192c00b134098860b32d56e90d43ba" compoundref="checkbox_8py" startline="66" endline="72">game.gui.checkbox.Checkbox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5fca4d74ac207551515165e0aa520135" compoundref="horizontal__slider_8py" startline="86" endline="94">game.gui.horizontal_slider.HorizontalSlider.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1acc828d9391694ec117c5aac61d0b6a55" prot="public" static="no" mutable="no">
         <type></type>
@@ -45,6 +70,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae836f062990d9e5ec045ff8bcb6c68d4" prot="public" static="no" mutable="no">
         <type></type>
@@ -59,6 +85,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -75,6 +102,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad33b79a0cb1e7187da2d42dd8eaa3943" prot="protected" static="no" mutable="no">
         <type></type>
@@ -114,6 +142,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="19" bodyend="27"/>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" compoundref="playerlist__screen_8py" startline="19" endline="27">game.gui.screens.playerlist_screen.PlayerListScreen.__init__</references>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" compoundref="playerlist__screen_8py" startline="19" endline="27">game.gui.screens.playerlist_screen.PlayerListScreen.__init__</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -134,6 +164,28 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="28" bodyend="43"/>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" compoundref="horizontal__slider_8py" startline="115">game.gui.horizontal_slider.HorizontalSlider._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab37d87d4b22e45a642cf39946a786f3f" compoundref="credits__screen_8py" startline="49">game.gui.screens.credits_screen.CreditsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a47b457e6684cd786de156f00103f9581" compoundref="options__screen_8py" startline="56">game.gui.screens.options_screen.OptionsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" compoundref="screen_8py" startline="13">game.gui.screens.screen.Screen._enabled</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" compoundref="widget_8py" startline="88">game.gui.widget.Widget._enabled</references>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" compoundref="client_8py" startline="67" endline="72">game.client.client.Client.update_ui</references>
+        <references refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" compoundref="screen__manager_8py" startline="234" endline="251">game.client.managers.screen_manager.Screens.update_ui</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1ae4bae785468a31b4142dd168b702ec36" compoundref="window_8py" startline="108" endline="115">game.core.window.Window.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" compoundref="crash__screen_8py" startline="41" endline="52">game.gui.screens.crash_screen.CrashScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="67" endline="95">game.gui.screens.credits_screen.CreditsScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="46" endline="59">game.gui.screens.gameover_screen.GameoverScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" compoundref="loading__screen_8py" startline="46" endline="55">game.gui.screens.loading_screen.LoadingScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="98" endline="127">game.gui.screens.main_hud.MainHud.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a13839b14d671e7b7268830a09988c4be" compoundref="mainmenu__screen_8py" startline="64" endline="81">game.gui.screens.mainmenu_screen.MainMenuScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" compoundref="options__screen_8py" startline="75" endline="100">game.gui.screens.options_screen.OptionsScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" compoundref="pause__screen_8py" startline="45" endline="59">game.gui.screens.pause_screen.PauseScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" compoundref="playerlist__screen_8py" startline="44" endline="81">game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" compoundref="serverconnect__screen_8py" startline="45" endline="58">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" compoundref="servercreate__screen_8py" startline="69" endline="90">game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" compoundref="serverjoin__screen_8py" startline="76" endline="107">game.gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" compoundref="servermenu__screen_8py" startline="50" endline="65">game.gui.screens.servermenu_screen.ServerMenuScreen.update_ui</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -154,6 +206,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="44" bodyend="81"/>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" compoundref="horizontal__slider_8py" startline="115">game.gui.horizontal_slider.HorizontalSlider._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab37d87d4b22e45a642cf39946a786f3f" compoundref="credits__screen_8py" startline="49">game.gui.screens.credits_screen.CreditsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a47b457e6684cd786de156f00103f9581" compoundref="options__screen_8py" startline="56">game.gui.screens.options_screen.OptionsScreen._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" compoundref="screen_8py" startline="13">game.gui.screens.screen.Screen._enabled</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" compoundref="widget_8py" startline="88">game.gui.widget.Widget._enabled</references>
+        <references refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d" compoundref="screen__manager_8py" startline="36">game.client.managers.screen_manager.Screens.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" compoundref="main__hud_8py" startline="22">game.gui.screens.main_hud.MainHud.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" compoundref="map__screen_8py" startline="23">game.gui.screens.map_screen.MapScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" compoundref="playerlist__screen_8py" startline="21">game.gui.screens.playerlist_screen.PlayerListScreen.game</references>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" compoundref="playerlist__screen_8py" startline="28" endline="43">game.gui.screens.playerlist_screen.PlayerListScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" compoundref="serverconnect__screen_8py" startline="90" endline="96">game.gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41" compoundref="crash__screen_8py" startline="53" endline="61">game.gui.screens.crash_screen.CrashScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3" compoundref="credits__screen_8py" startline="96" endline="110">game.gui.screens.credits_screen.CreditsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" compoundref="gameover__screen_8py" startline="60" endline="69">game.gui.screens.gameover_screen.GameoverScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6" compoundref="loading__screen_8py" startline="56" endline="63">game.gui.screens.loading_screen.LoadingScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" compoundref="main__hud_8py" startline="128" endline="145">game.gui.screens.main_hud.MainHud.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" compoundref="mainmenu__screen_8py" startline="82" endline="95">game.gui.screens.mainmenu_screen.MainMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" compoundref="map__screen_8py" startline="141" endline="148">game.gui.screens.map_screen.MapScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23" compoundref="options__screen_8py" startline="101" endline="113">game.gui.screens.options_screen.OptionsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c" compoundref="pause__screen_8py" startline="60" endline="69">game.gui.screens.pause_screen.PauseScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" compoundref="serverconnect__screen_8py" startline="97" endline="105">game.gui.screens.serverconnect_screen.ServerConnectScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" compoundref="servercreate__screen_8py" startline="91" endline="103">game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" compoundref="serverjoin__screen_8py" startline="108" endline="121">game.gui.screens.serverjoin_screen.ServerJoinScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" compoundref="servermenu__screen_8py" startline="66" endline="76">game.gui.screens.servermenu_screen.ServerMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" compoundref="game_8py" startline="83" endline="89">game.core.game.Game.update_all_uis</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" compoundref="serverconnect__screen_8py" startline="59" endline="89">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -179,6 +258,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" line="82" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/playerlist_screen.py" bodystart="82" bodyend="92"/>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1acc828d9391694ec117c5aac61d0b6a55" compoundref="playerlist__screen_8py" startline="26">game.gui.screens.playerlist_screen.PlayerListScreen.count_label</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae836f062990d9e5ec045ff8bcb6c68d4" compoundref="playerlist__screen_8py" startline="52">game.gui.screens.playerlist_screen.PlayerListScreen.player_list</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a17e45c0472de1b42d71f1f56340689ee" compoundref="checkbox_8py" startline="28">game.gui.checkbox.Checkbox.title_label</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aacb094054e4841755fcaca62e2263a09" compoundref="horizontal__slider_8py" startline="35">game.gui.horizontal_slider.HorizontalSlider.title_label</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a472a609700f9a5abf30018f18288daf0" compoundref="mainmenu__screen_8py" startline="23">game.gui.screens.mainmenu_screen.MainMenuScreen.title_label</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1afe0705c8d97a997398c1146efcec24a3" compoundref="map__screen_8py" startline="26">game.gui.screens.map_screen.MapScreen.title_label</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a008367ff0b46e930bb8bad463d37a0ab" compoundref="playerlist__screen_8py" startline="22">game.gui.screens.playerlist_screen.PlayerListScreen.title_label</references>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" compoundref="client_8py" startline="67" endline="72">game.client.client.Client.update_ui</references>
+        <references refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" compoundref="screen__manager_8py" startline="234" endline="251">game.client.managers.screen_manager.Screens.update_ui</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1ae4bae785468a31b4142dd168b702ec36" compoundref="window_8py" startline="108" endline="115">game.core.window.Window.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" compoundref="crash__screen_8py" startline="41" endline="52">game.gui.screens.crash_screen.CrashScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="67" endline="95">game.gui.screens.credits_screen.CreditsScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="46" endline="59">game.gui.screens.gameover_screen.GameoverScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" compoundref="loading__screen_8py" startline="46" endline="55">game.gui.screens.loading_screen.LoadingScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="98" endline="127">game.gui.screens.main_hud.MainHud.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a13839b14d671e7b7268830a09988c4be" compoundref="mainmenu__screen_8py" startline="64" endline="81">game.gui.screens.mainmenu_screen.MainMenuScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" compoundref="options__screen_8py" startline="75" endline="100">game.gui.screens.options_screen.OptionsScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" compoundref="pause__screen_8py" startline="45" endline="59">game.gui.screens.pause_screen.PauseScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" compoundref="playerlist__screen_8py" startline="44" endline="81">game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" compoundref="serverconnect__screen_8py" startline="45" endline="58">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" compoundref="servercreate__screen_8py" startline="69" endline="90">game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" compoundref="serverjoin__screen_8py" startline="76" endline="107">game.gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" compoundref="servermenu__screen_8py" startline="50" endline="65">game.gui.screens.servermenu_screen.ServerMenuScreen.update_ui</references>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>

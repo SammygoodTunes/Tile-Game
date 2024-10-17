@@ -1,0 +1,658 @@
+\doxysection{game.\+entity.\+player.\+Player Class Reference}
+\hypertarget{classgame_1_1entity_1_1player_1_1Player}{}\label{classgame_1_1entity_1_1player_1_1Player}\index{game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ae8a394059a531cc7b6354aebcff99da4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int x=0, int y=0, int speed=50)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a85b9c464f574f467e4d471c83fcdd3c3}{init}} (self, game)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_adc58feb2b151511a2a328d67f9b7265d}{events}} (self, game, map\+\_\+obj, pygame.\+event.\+Event\texorpdfstring{$\vert$}{|}pygame.\+event.\+Event\+Type e)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a3b54df3988def46606805c89b2ee8d12}{draw}} (self, game)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a31151805ef60f39e81615532baf2068d}{draw\+\_\+selection\+\_\+grid}} (self, game)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a633f1adf6b5b511c6ba3c8e6aa5d08a4}{draw\+\_\+gun\+\_\+pointer}} (self, game)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aac446a4b6f9fdfec3dfe98da144db72c}{update}} (self, game, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab83fa784bc48f3d251d02fd96f004c59}{break\+\_\+tile}} (self, game)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262}{reset}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj, \mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}} camera\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a5ffdafd5b5b848e3c93c3c3a02fdd8b4}{is\+\_\+moving\+\_\+left}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aa09656c0ca67abf3f879dade669887af}{is\+\_\+moving\+\_\+up}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a3d2eba9e6dc9533f2cdba19d9955174b}{is\+\_\+moving\+\_\+right}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ae5bfa84ea0391e25be5f38e066e1b643}{is\+\_\+moving\+\_\+down}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_acb5069f24d6a8e7ea7b64757e81a8e7f}{is\+\_\+near\+\_\+left\+\_\+edge}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a7d9645a49400425f95273daec0a26245}{is\+\_\+near\+\_\+top\+\_\+edge}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a766dbc331ec2340ca5bfaa233039fd34}{is\+\_\+near\+\_\+right\+\_\+edge}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aa0fa150004d65def532b1b502190ffaf}{is\+\_\+near\+\_\+bottom\+\_\+edge}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a3023da655ca91d60b474a87383ee5df5}{is\+\_\+in\+\_\+water}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a192bbc5753b484a578ebbd8ef84d58cf}{is\+\_\+in\+\_\+lava}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a3e2f94bf3503cd8a1a6c49386df7845a}{is\+\_\+in\+\_\+lethal\+\_\+tile}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a863a8c50dba2f36bc20ef50874c35ffa}{is\+\_\+in\+\_\+wall}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a90dc366ca03d5503e1677cac71158ce7}{get\+\_\+held\+\_\+item}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a404be9fc768fd2da192f242336ee1191}{is\+\_\+dead}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a41404e36ad2f6feecb68c19c9b6f374c}{can\+\_\+break\+\_\+breakable}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a39979375a0ea01197113f5481413ddbe}{has\+\_\+selected\+\_\+breakable}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_afda0c94794ba73e26cc6a560ed4ba54a}{is\+\_\+selected\+\_\+breakable\+\_\+obstructed}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+Self \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a28eee21c2960d4507cbc7ed780e841b4}{set\+\_\+x}} (self, int x)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a1d702dcae07ef2a6050f43f9750f2342}{get\+\_\+x}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ae64ca646603c8b9a03b716ce202a36fe}{set\+\_\+y}} (self, int y)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab5eb4770f55c69e6a894ab9f6c3953c2}{get\+\_\+y}} (self)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a6ed56d95d0d2ca9ad37133dc19f68948}{get\+\_\+absolute\+\_\+x}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab41bb73c1768538bd41a72014e0ed484}{get\+\_\+absolute\+\_\+y}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+float \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a9ce825a37b7be7556a88d1f9405c4f60}{get\+\_\+coefficient\+\_\+from\+\_\+center\+\_\+x}} (self, int parent\+\_\+width)
+\item 
+float \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aa4067e093443bd5303a96e38da1fd0f3}{get\+\_\+coefficient\+\_\+from\+\_\+center\+\_\+y}} (self, int parent\+\_\+height)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a063430d89c29fe2dfb8011a575b8e817}{get\+\_\+selected\+\_\+tile\+\_\+x}} (self)
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ae097f71f869a6a0fa85067f64f4429cd}{get\+\_\+selected\+\_\+tile\+\_\+y}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab2affeeb76b2f4d913dc3c20eae05bcb}{set\+\_\+health}} (self, int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a39fe4311d0384b9e122c76149b3717e3}{health}})
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a40b7fccdbb1f85426d43d5227f81e5f0}{get\+\_\+health}} (self)
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a658c904f6950d8a6b4330a45420e5cd9}{set\+\_\+player\+\_\+name}} (self, str \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a1b83188f7f242c8efa9086af1d3fcb3b}{player\+\_\+name}})
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a04dcde82a590285957bdea1df802b9af}{get\+\_\+player\+\_\+name}} (self)
+\item 
+list\mbox{[}bool\mbox{]} \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ac33769502c033e6a429c414d2b85183b}{get\+\_\+walls}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
+\item 
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6}{set\+\_\+ideal\+\_\+spawn\+\_\+point}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj, \mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}} camera\+\_\+obj, int nb\+\_\+attempts=5)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a8a2dfc6aaf63c2989188a6c9e9946505}{edges}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab6123b25ff3483f2c9dcb91d5ead1213}{main\+\_\+hud}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a1b83188f7f242c8efa9086af1d3fcb3b}{player\+\_\+name}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aea547ac92a3f560eb6d124dca7242523}{breaking}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a8931e85d07403eb98c379b8adfd28056}{selected\+\_\+tile\+\_\+x}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a75793fc8cdf2ae220f847a630180e88d}{selected\+\_\+tile\+\_\+y}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aead38cf4564076e4aa8239f1cccb88eb}{screen\+\_\+x}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aec999989dda1cc94eeb569592dfb8f2a}{screen\+\_\+y}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a1ad79e0736a99f68c7148893a8807398}{width}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a2164a28b704f306525e2bd418ff9edcc}{height}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a2ea4452a85c32dbcacd64f8dc303445e}{selected\+\_\+tile\+\_\+sx}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ac0a712c853a6aafbe0bed8f3ac419d0e}{selected\+\_\+tile\+\_\+sy}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab7403c5b46cf5543a9ce9deeb32b20b4}{move}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a55d2fdcd55a9ca3a892fcaf492938d8f}{velocity\+\_\+x}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a60f15050023a3f3cb7890fb2459576ce}{velocity\+\_\+y}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ae837064c4eef53c9545b5a97f6b4c9a7}{hurt}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a39fe4311d0384b9e122c76149b3717e3}{health}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aaf14809a75dfd272eac4ddcf173423c0}{breaking\+\_\+tile}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a68d1e857e5771b3761bea1f59478a00d}{prev\+\_\+selected\+\_\+tile}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a04deaa657e48911162bbd714490fa2e3}{prev\+\_\+broken\+\_\+tile}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a113888f105f734787b1a9adc5edb1a90}{TIMERS\+\_\+\+COUNT}} = 2
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab4f693b2fdc75e7d3c288d4d697acaa6}{MINING\+\_\+\+TIMER}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_af2ef1db9b449cd7325c302b2fb3e67e6}{DAMAGE\+\_\+\+TIMER}} = 1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a7591fbc2a90b9e26570c97bac44d3ae3}{\+\_\+x}}
+\item 
+\mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ad5d5296c18a702d30a11035fcbb94ab7}{\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for creating a player.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ae8a394059a531cc7b6354aebcff99da4}\label{classgame_1_1entity_1_1player_1_1Player_ae8a394059a531cc7b6354aebcff99da4} 
+\index{game.entity.player.Player@{game.entity.player.Player}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{x = {\ttfamily 0},  }\item[{int }]{y = {\ttfamily 0},  }\item[{int }]{speed = {\ttfamily 50} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab83fa784bc48f3d251d02fd96f004c59}\label{classgame_1_1entity_1_1player_1_1Player_ab83fa784bc48f3d251d02fd96f004c59} 
+\index{game.entity.player.Player@{game.entity.player.Player}!break\_tile@{break\_tile}}
+\index{break\_tile@{break\_tile}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{break\_tile()}{break\_tile()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+break\+\_\+tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Break a map tile and update map surfaces.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a41404e36ad2f6feecb68c19c9b6f374c}\label{classgame_1_1entity_1_1player_1_1Player_a41404e36ad2f6feecb68c19c9b6f374c} 
+\index{game.entity.player.Player@{game.entity.player.Player}!can\_break\_breakable@{can\_break\_breakable}}
+\index{can\_break\_breakable@{can\_break\_breakable}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{can\_break\_breakable()}{can\_break\_breakable()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+can\+\_\+break\+\_\+breakable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is able to access and break a breakable tile.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a3b54df3988def46606805c89b2ee8d12}\label{classgame_1_1entity_1_1player_1_1Player_a3b54df3988def46606805c89b2ee8d12} 
+\index{game.entity.player.Player@{game.entity.player.Player}!draw@{draw}}
+\index{draw@{draw}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw the player to the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a633f1adf6b5b511c6ba3c8e6aa5d08a4}\label{classgame_1_1entity_1_1player_1_1Player_a633f1adf6b5b511c6ba3c8e6aa5d08a4} 
+\index{game.entity.player.Player@{game.entity.player.Player}!draw\_gun\_pointer@{draw\_gun\_pointer}}
+\index{draw\_gun\_pointer@{draw\_gun\_pointer}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{draw\_gun\_pointer()}{draw\_gun\_pointer()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+draw\+\_\+gun\+\_\+pointer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw the gun pointer to the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a31151805ef60f39e81615532baf2068d}\label{classgame_1_1entity_1_1player_1_1Player_a31151805ef60f39e81615532baf2068d} 
+\index{game.entity.player.Player@{game.entity.player.Player}!draw\_selection\_grid@{draw\_selection\_grid}}
+\index{draw\_selection\_grid@{draw\_selection\_grid}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{draw\_selection\_grid()}{draw\_selection\_grid()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+draw\+\_\+selection\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw the player tile selection grid to the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_adc58feb2b151511a2a328d67f9b7265d}\label{classgame_1_1entity_1_1player_1_1Player_adc58feb2b151511a2a328d67f9b7265d} 
+\index{game.entity.player.Player@{game.entity.player.Player}!events@{events}}
+\index{events@{events}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game,  }\item[{}]{map\+\_\+obj,  }\item[{pygame.\+event.\+Event \texorpdfstring{$\vert$}{|} pygame.\+event.\+Event\+Type}]{e }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the player events.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a6ed56d95d0d2ca9ad37133dc19f68948}\label{classgame_1_1entity_1_1player_1_1Player_a6ed56d95d0d2ca9ad37133dc19f68948} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_absolute\_x@{get\_absolute\_x}}
+\index{get\_absolute\_x@{get\_absolute\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_absolute\_x()}{get\_absolute\_x()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+absolute\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's x position as if the map's top-left corner were to be positioned at the origin (0, 0).
+This signifies that the returned value will always be positive.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab41bb73c1768538bd41a72014e0ed484}\label{classgame_1_1entity_1_1player_1_1Player_ab41bb73c1768538bd41a72014e0ed484} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_absolute\_y@{get\_absolute\_y}}
+\index{get\_absolute\_y@{get\_absolute\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_absolute\_y()}{get\_absolute\_y()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+absolute\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's y position as if the map's top-left corner were to be positioned at the origin (0, 0).
+This signifies that the returned value will always be positive.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a9ce825a37b7be7556a88d1f9405c4f60}\label{classgame_1_1entity_1_1player_1_1Player_a9ce825a37b7be7556a88d1f9405c4f60} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_coefficient\_from\_center\_x@{get\_coefficient\_from\_center\_x}}
+\index{get\_coefficient\_from\_center\_x@{get\_coefficient\_from\_center\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_coefficient\_from\_center\_x()}{get\_coefficient\_from\_center\_x()}}
+{\footnotesize\ttfamily  float game.\+entity.\+player.\+Player.\+get\+\_\+coefficient\+\_\+from\+\_\+center\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+width }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the coefficient indicating how far the player is away from the horizontal center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_aa4067e093443bd5303a96e38da1fd0f3}\label{classgame_1_1entity_1_1player_1_1Player_aa4067e093443bd5303a96e38da1fd0f3} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_coefficient\_from\_center\_y@{get\_coefficient\_from\_center\_y}}
+\index{get\_coefficient\_from\_center\_y@{get\_coefficient\_from\_center\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_coefficient\_from\_center\_y()}{get\_coefficient\_from\_center\_y()}}
+{\footnotesize\ttfamily  float game.\+entity.\+player.\+Player.\+get\+\_\+coefficient\+\_\+from\+\_\+center\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the coefficient indicating how far the player is away from the vertical center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a40b7fccdbb1f85426d43d5227f81e5f0}\label{classgame_1_1entity_1_1player_1_1Player_a40b7fccdbb1f85426d43d5227f81e5f0} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_health@{get\_health}}
+\index{get\_health@{get\_health}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_health()}{get\_health()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+health (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's health.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a90dc366ca03d5503e1677cac71158ce7}\label{classgame_1_1entity_1_1player_1_1Player_a90dc366ca03d5503e1677cac71158ce7} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_held\_item@{get\_held\_item}}
+\index{get\_held\_item@{get\_held\_item}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_held\_item()}{get\_held\_item()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+get\+\_\+held\+\_\+item (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns item held by player.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a04dcde82a590285957bdea1df802b9af}\label{classgame_1_1entity_1_1player_1_1Player_a04dcde82a590285957bdea1df802b9af} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_player\_name@{get\_player\_name}}
+\index{get\_player\_name@{get\_player\_name}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_player\_name()}{get\_player\_name()}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+get\+\_\+player\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's in-game name.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a063430d89c29fe2dfb8011a575b8e817}\label{classgame_1_1entity_1_1player_1_1Player_a063430d89c29fe2dfb8011a575b8e817} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_selected\_tile\_x@{get\_selected\_tile\_x}}
+\index{get\_selected\_tile\_x@{get\_selected\_tile\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_selected\_tile\_x()}{get\_selected\_tile\_x()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+selected\+\_\+tile\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the selected tile's x position.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ae097f71f869a6a0fa85067f64f4429cd}\label{classgame_1_1entity_1_1player_1_1Player_ae097f71f869a6a0fa85067f64f4429cd} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_selected\_tile\_y@{get\_selected\_tile\_y}}
+\index{get\_selected\_tile\_y@{get\_selected\_tile\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_selected\_tile\_y()}{get\_selected\_tile\_y()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+selected\+\_\+tile\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the selected tile's y position.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ac33769502c033e6a429c414d2b85183b}\label{classgame_1_1entity_1_1player_1_1Player_ac33769502c033e6a429c414d2b85183b} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_walls@{get\_walls}}
+\index{get\_walls@{get\_walls}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_walls()}{get\_walls()}}
+{\footnotesize\ttfamily  list\mbox{[}bool\mbox{]} game.\+entity.\+player.\+Player.\+get\+\_\+walls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the tiles of type BREAKABLE surrounding the player.
+This is used for determining what tiles the player could potentially collide with.
+The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE_LEFT, UPPER MOVE_RIGHT, LOWER MOVE_LEFT, LOWER MOVE_RIGHT.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a1d702dcae07ef2a6050f43f9750f2342}\label{classgame_1_1entity_1_1player_1_1Player_a1d702dcae07ef2a6050f43f9750f2342} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's x position.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab5eb4770f55c69e6a894ab9f6c3953c2}\label{classgame_1_1entity_1_1player_1_1Player_ab5eb4770f55c69e6a894ab9f6c3953c2} 
+\index{game.entity.player.Player@{game.entity.player.Player}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily  int game.\+entity.\+player.\+Player.\+get\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the player's y position.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a39979375a0ea01197113f5481413ddbe}\label{classgame_1_1entity_1_1player_1_1Player_a39979375a0ea01197113f5481413ddbe} 
+\index{game.entity.player.Player@{game.entity.player.Player}!has\_selected\_breakable@{has\_selected\_breakable}}
+\index{has\_selected\_breakable@{has\_selected\_breakable}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{has\_selected\_breakable()}{has\_selected\_breakable()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+has\+\_\+selected\+\_\+breakable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player has selected a breakable tile.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a85b9c464f574f467e4d471c83fcdd3c3}\label{classgame_1_1entity_1_1player_1_1Player_a85b9c464f574f467e4d471c83fcdd3c3} 
+\index{game.entity.player.Player@{game.entity.player.Player}!init@{init}}
+\index{init@{init}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+init (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define the player attributes that depend on the given game object.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a404be9fc768fd2da192f242336ee1191}\label{classgame_1_1entity_1_1player_1_1Player_a404be9fc768fd2da192f242336ee1191} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_dead()}{is\_dead()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+dead (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is dead.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a192bbc5753b484a578ebbd8ef84d58cf}\label{classgame_1_1entity_1_1player_1_1Player_a192bbc5753b484a578ebbd8ef84d58cf} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_in\_lava@{is\_in\_lava}}
+\index{is\_in\_lava@{is\_in\_lava}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_in\_lava()}{is\_in\_lava()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+in\+\_\+lava (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is in lava.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a3e2f94bf3503cd8a1a6c49386df7845a}\label{classgame_1_1entity_1_1player_1_1Player_a3e2f94bf3503cd8a1a6c49386df7845a} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_in\_lethal\_tile@{is\_in\_lethal\_tile}}
+\index{is\_in\_lethal\_tile@{is\_in\_lethal\_tile}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_in\_lethal\_tile()}{is\_in\_lethal\_tile()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+in\+\_\+lethal\+\_\+tile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is touching a lethal tile.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a863a8c50dba2f36bc20ef50874c35ffa}\label{classgame_1_1entity_1_1player_1_1Player_a863a8c50dba2f36bc20ef50874c35ffa} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_in\_wall@{is\_in\_wall}}
+\index{is\_in\_wall@{is\_in\_wall}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_in\_wall()}{is\_in\_wall()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+in\+\_\+wall (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is surrounded by tiles with collision.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a3023da655ca91d60b474a87383ee5df5}\label{classgame_1_1entity_1_1player_1_1Player_a3023da655ca91d60b474a87383ee5df5} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_in\_water@{is\_in\_water}}
+\index{is\_in\_water@{is\_in\_water}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_in\_water()}{is\_in\_water()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+in\+\_\+water (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the player is in water.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ae5bfa84ea0391e25be5f38e066e1b643}\label{classgame_1_1entity_1_1player_1_1Player_ae5bfa84ea0391e25be5f38e066e1b643} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_moving\_down@{is\_moving\_down}}
+\index{is\_moving\_down@{is\_moving\_down}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_moving\_down()}{is\_moving\_down()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+moving\+\_\+down (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is moving down.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a5ffdafd5b5b848e3c93c3c3a02fdd8b4}\label{classgame_1_1entity_1_1player_1_1Player_a5ffdafd5b5b848e3c93c3c3a02fdd8b4} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_moving\_left@{is\_moving\_left}}
+\index{is\_moving\_left@{is\_moving\_left}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_moving\_left()}{is\_moving\_left()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+moving\+\_\+left (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is moving left.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a3d2eba9e6dc9533f2cdba19d9955174b}\label{classgame_1_1entity_1_1player_1_1Player_a3d2eba9e6dc9533f2cdba19d9955174b} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_moving\_right@{is\_moving\_right}}
+\index{is\_moving\_right@{is\_moving\_right}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_moving\_right()}{is\_moving\_right()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+moving\+\_\+right (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is moving right.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_aa09656c0ca67abf3f879dade669887af}\label{classgame_1_1entity_1_1player_1_1Player_aa09656c0ca67abf3f879dade669887af} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_moving\_up@{is\_moving\_up}}
+\index{is\_moving\_up@{is\_moving\_up}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_moving\_up()}{is\_moving\_up()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+moving\+\_\+up (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is moving up.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_aa0fa150004d65def532b1b502190ffaf}\label{classgame_1_1entity_1_1player_1_1Player_aa0fa150004d65def532b1b502190ffaf} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_near\_bottom\_edge@{is\_near\_bottom\_edge}}
+\index{is\_near\_bottom\_edge@{is\_near\_bottom\_edge}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_near\_bottom\_edge()}{is\_near\_bottom\_edge()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+near\+\_\+bottom\+\_\+edge (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is to the bottom-center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_acb5069f24d6a8e7ea7b64757e81a8e7f}\label{classgame_1_1entity_1_1player_1_1Player_acb5069f24d6a8e7ea7b64757e81a8e7f} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_near\_left\_edge@{is\_near\_left\_edge}}
+\index{is\_near\_left\_edge@{is\_near\_left\_edge}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_near\_left\_edge()}{is\_near\_left\_edge()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+near\+\_\+left\+\_\+edge (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is at the left-center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a766dbc331ec2340ca5bfaa233039fd34}\label{classgame_1_1entity_1_1player_1_1Player_a766dbc331ec2340ca5bfaa233039fd34} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_near\_right\_edge@{is\_near\_right\_edge}}
+\index{is\_near\_right\_edge@{is\_near\_right\_edge}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_near\_right\_edge()}{is\_near\_right\_edge()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+near\+\_\+right\+\_\+edge (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is to the right-center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a7d9645a49400425f95273daec0a26245}\label{classgame_1_1entity_1_1player_1_1Player_a7d9645a49400425f95273daec0a26245} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_near\_top\_edge@{is\_near\_top\_edge}}
+\index{is\_near\_top\_edge@{is\_near\_top\_edge}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_near\_top\_edge()}{is\_near\_top\_edge()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+near\+\_\+top\+\_\+edge (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the player is at the top-center of the screen.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_afda0c94794ba73e26cc6a560ed4ba54a}\label{classgame_1_1entity_1_1player_1_1Player_afda0c94794ba73e26cc6a560ed4ba54a} 
+\index{game.entity.player.Player@{game.entity.player.Player}!is\_selected\_breakable\_obstructed@{is\_selected\_breakable\_obstructed}}
+\index{is\_selected\_breakable\_obstructed@{is\_selected\_breakable\_obstructed}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_selected\_breakable\_obstructed()}{is\_selected\_breakable\_obstructed()}}
+{\footnotesize\ttfamily  bool game.\+entity.\+player.\+Player.\+is\+\_\+selected\+\_\+breakable\+\_\+obstructed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the selected breakable tile is obstructed by other tiles with collision.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262}\label{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262} 
+\index{game.entity.player.Player@{game.entity.player.Player}!reset@{reset}}
+\index{reset@{reset}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}}}]{camera\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the player's general attributes.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab2affeeb76b2f4d913dc3c20eae05bcb}\label{classgame_1_1entity_1_1player_1_1Player_ab2affeeb76b2f4d913dc3c20eae05bcb} 
+\index{game.entity.player.Player@{game.entity.player.Player}!set\_health@{set\_health}}
+\index{set\_health@{set\_health}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{set\_health()}{set\_health()}}
+{\footnotesize\ttfamily  Self game.\+entity.\+player.\+Player.\+set\+\_\+health (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{health }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the player's health, then return the player itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6}\label{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6} 
+\index{game.entity.player.Player@{game.entity.player.Player}!set\_ideal\_spawn\_point@{set\_ideal\_spawn\_point}}
+\index{set\_ideal\_spawn\_point@{set\_ideal\_spawn\_point}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{set\_ideal\_spawn\_point()}{set\_ideal\_spawn\_point()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+set\+\_\+ideal\+\_\+spawn\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}}}]{camera\+\_\+obj,  }\item[{int }]{nb\+\_\+attempts = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find the ideal starting position for the player when creating a new map.
+By default, five consecutive failed attempts will replace the tile at the last randomised tile position
+to plains and place the player there.
+Setting the number of attempts to anything less than 1 will raise an exception.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a658c904f6950d8a6b4330a45420e5cd9}\label{classgame_1_1entity_1_1player_1_1Player_a658c904f6950d8a6b4330a45420e5cd9} 
+\index{game.entity.player.Player@{game.entity.player.Player}!set\_player\_name@{set\_player\_name}}
+\index{set\_player\_name@{set\_player\_name}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{set\_player\_name()}{set\_player\_name()}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+set\+\_\+player\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{player\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the player's in-game name, then return the player itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a28eee21c2960d4507cbc7ed780e841b4}\label{classgame_1_1entity_1_1player_1_1Player_a28eee21c2960d4507cbc7ed780e841b4} 
+\index{game.entity.player.Player@{game.entity.player.Player}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily  Self game.\+entity.\+player.\+Player.\+set\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the player's x position, then return the player itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ae64ca646603c8b9a03b716ce202a36fe}\label{classgame_1_1entity_1_1player_1_1Player_ae64ca646603c8b9a03b716ce202a36fe} 
+\index{game.entity.player.Player@{game.entity.player.Player}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily  Self game.\+entity.\+player.\+Player.\+set\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the player's y position, then return the player itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_aac446a4b6f9fdfec3dfe98da144db72c}\label{classgame_1_1entity_1_1player_1_1Player_aac446a4b6f9fdfec3dfe98da144db72c} 
+\index{game.entity.player.Player@{game.entity.player.Player}!update@{update}}
+\index{update@{update}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the player.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a7591fbc2a90b9e26570c97bac44d3ae3}\label{classgame_1_1entity_1_1player_1_1Player_a7591fbc2a90b9e26570c97bac44d3ae3} 
+\index{game.entity.player.Player@{game.entity.player.Player}!\_x@{\_x}}
+\index{\_x@{\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{\_x}{\_x}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+\_\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ad5d5296c18a702d30a11035fcbb94ab7}\label{classgame_1_1entity_1_1player_1_1Player_ad5d5296c18a702d30a11035fcbb94ab7} 
+\index{game.entity.player.Player@{game.entity.player.Player}!\_y@{\_y}}
+\index{\_y@{\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{\_y}{\_y}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_aea547ac92a3f560eb6d124dca7242523}\label{classgame_1_1entity_1_1player_1_1Player_aea547ac92a3f560eb6d124dca7242523} 
+\index{game.entity.player.Player@{game.entity.player.Player}!breaking@{breaking}}
+\index{breaking@{breaking}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{breaking}{breaking}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+breaking}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_aaf14809a75dfd272eac4ddcf173423c0}\label{classgame_1_1entity_1_1player_1_1Player_aaf14809a75dfd272eac4ddcf173423c0} 
+\index{game.entity.player.Player@{game.entity.player.Player}!breaking\_tile@{breaking\_tile}}
+\index{breaking\_tile@{breaking\_tile}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{breaking\_tile}{breaking\_tile}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+breaking\+\_\+tile}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_af2ef1db9b449cd7325c302b2fb3e67e6}\label{classgame_1_1entity_1_1player_1_1Player_af2ef1db9b449cd7325c302b2fb3e67e6} 
+\index{game.entity.player.Player@{game.entity.player.Player}!DAMAGE\_TIMER@{DAMAGE\_TIMER}}
+\index{DAMAGE\_TIMER@{DAMAGE\_TIMER}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{DAMAGE\_TIMER}{DAMAGE\_TIMER}}
+{\footnotesize\ttfamily int game.\+entity.\+player.\+Player.\+DAMAGE\+\_\+\+TIMER = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a8a2dfc6aaf63c2989188a6c9e9946505}\label{classgame_1_1entity_1_1player_1_1Player_a8a2dfc6aaf63c2989188a6c9e9946505} 
+\index{game.entity.player.Player@{game.entity.player.Player}!edges@{edges}}
+\index{edges@{edges}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+edges}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a39fe4311d0384b9e122c76149b3717e3}\label{classgame_1_1entity_1_1player_1_1Player_a39fe4311d0384b9e122c76149b3717e3} 
+\index{game.entity.player.Player@{game.entity.player.Player}!health@{health}}
+\index{health@{health}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+health}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a2164a28b704f306525e2bd418ff9edcc}\label{classgame_1_1entity_1_1player_1_1Player_a2164a28b704f306525e2bd418ff9edcc} 
+\index{game.entity.player.Player@{game.entity.player.Player}!height@{height}}
+\index{height@{height}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+height}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ae837064c4eef53c9545b5a97f6b4c9a7}\label{classgame_1_1entity_1_1player_1_1Player_ae837064c4eef53c9545b5a97f6b4c9a7} 
+\index{game.entity.player.Player@{game.entity.player.Player}!hurt@{hurt}}
+\index{hurt@{hurt}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{hurt}{hurt}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+hurt}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab6123b25ff3483f2c9dcb91d5ead1213}\label{classgame_1_1entity_1_1player_1_1Player_ab6123b25ff3483f2c9dcb91d5ead1213} 
+\index{game.entity.player.Player@{game.entity.player.Player}!main\_hud@{main\_hud}}
+\index{main\_hud@{main\_hud}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{main\_hud}{main\_hud}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+main\+\_\+hud}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab4f693b2fdc75e7d3c288d4d697acaa6}\label{classgame_1_1entity_1_1player_1_1Player_ab4f693b2fdc75e7d3c288d4d697acaa6} 
+\index{game.entity.player.Player@{game.entity.player.Player}!MINING\_TIMER@{MINING\_TIMER}}
+\index{MINING\_TIMER@{MINING\_TIMER}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{MINING\_TIMER}{MINING\_TIMER}}
+{\footnotesize\ttfamily int game.\+entity.\+player.\+Player.\+MINING\+\_\+\+TIMER = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab7403c5b46cf5543a9ce9deeb32b20b4}\label{classgame_1_1entity_1_1player_1_1Player_ab7403c5b46cf5543a9ce9deeb32b20b4} 
+\index{game.entity.player.Player@{game.entity.player.Player}!move@{move}}
+\index{move@{move}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{move}{move}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+move}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a1b83188f7f242c8efa9086af1d3fcb3b}\label{classgame_1_1entity_1_1player_1_1Player_a1b83188f7f242c8efa9086af1d3fcb3b} 
+\index{game.entity.player.Player@{game.entity.player.Player}!player\_name@{player\_name}}
+\index{player\_name@{player\_name}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{player\_name}{player\_name}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+player\+\_\+name}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a04deaa657e48911162bbd714490fa2e3}\label{classgame_1_1entity_1_1player_1_1Player_a04deaa657e48911162bbd714490fa2e3} 
+\index{game.entity.player.Player@{game.entity.player.Player}!prev\_broken\_tile@{prev\_broken\_tile}}
+\index{prev\_broken\_tile@{prev\_broken\_tile}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{prev\_broken\_tile}{prev\_broken\_tile}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+prev\+\_\+broken\+\_\+tile}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a68d1e857e5771b3761bea1f59478a00d}\label{classgame_1_1entity_1_1player_1_1Player_a68d1e857e5771b3761bea1f59478a00d} 
+\index{game.entity.player.Player@{game.entity.player.Player}!prev\_selected\_tile@{prev\_selected\_tile}}
+\index{prev\_selected\_tile@{prev\_selected\_tile}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{prev\_selected\_tile}{prev\_selected\_tile}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+prev\+\_\+selected\+\_\+tile}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_aead38cf4564076e4aa8239f1cccb88eb}\label{classgame_1_1entity_1_1player_1_1Player_aead38cf4564076e4aa8239f1cccb88eb} 
+\index{game.entity.player.Player@{game.entity.player.Player}!screen\_x@{screen\_x}}
+\index{screen\_x@{screen\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{screen\_x}{screen\_x}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+screen\+\_\+x}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_aec999989dda1cc94eeb569592dfb8f2a}\label{classgame_1_1entity_1_1player_1_1Player_aec999989dda1cc94eeb569592dfb8f2a} 
+\index{game.entity.player.Player@{game.entity.player.Player}!screen\_y@{screen\_y}}
+\index{screen\_y@{screen\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{screen\_y}{screen\_y}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+screen\+\_\+y}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a2ea4452a85c32dbcacd64f8dc303445e}\label{classgame_1_1entity_1_1player_1_1Player_a2ea4452a85c32dbcacd64f8dc303445e} 
+\index{game.entity.player.Player@{game.entity.player.Player}!selected\_tile\_sx@{selected\_tile\_sx}}
+\index{selected\_tile\_sx@{selected\_tile\_sx}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{selected\_tile\_sx}{selected\_tile\_sx}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+selected\+\_\+tile\+\_\+sx}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_ac0a712c853a6aafbe0bed8f3ac419d0e}\label{classgame_1_1entity_1_1player_1_1Player_ac0a712c853a6aafbe0bed8f3ac419d0e} 
+\index{game.entity.player.Player@{game.entity.player.Player}!selected\_tile\_sy@{selected\_tile\_sy}}
+\index{selected\_tile\_sy@{selected\_tile\_sy}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{selected\_tile\_sy}{selected\_tile\_sy}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+selected\+\_\+tile\+\_\+sy}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a8931e85d07403eb98c379b8adfd28056}\label{classgame_1_1entity_1_1player_1_1Player_a8931e85d07403eb98c379b8adfd28056} 
+\index{game.entity.player.Player@{game.entity.player.Player}!selected\_tile\_x@{selected\_tile\_x}}
+\index{selected\_tile\_x@{selected\_tile\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{selected\_tile\_x}{selected\_tile\_x}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+selected\+\_\+tile\+\_\+x}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a75793fc8cdf2ae220f847a630180e88d}\label{classgame_1_1entity_1_1player_1_1Player_a75793fc8cdf2ae220f847a630180e88d} 
+\index{game.entity.player.Player@{game.entity.player.Player}!selected\_tile\_y@{selected\_tile\_y}}
+\index{selected\_tile\_y@{selected\_tile\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{selected\_tile\_y}{selected\_tile\_y}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+selected\+\_\+tile\+\_\+y}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a113888f105f734787b1a9adc5edb1a90}\label{classgame_1_1entity_1_1player_1_1Player_a113888f105f734787b1a9adc5edb1a90} 
+\index{game.entity.player.Player@{game.entity.player.Player}!TIMERS\_COUNT@{TIMERS\_COUNT}}
+\index{TIMERS\_COUNT@{TIMERS\_COUNT}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{TIMERS\_COUNT}{TIMERS\_COUNT}}
+{\footnotesize\ttfamily int game.\+entity.\+player.\+Player.\+TIMERS\+\_\+\+COUNT = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a55d2fdcd55a9ca3a892fcaf492938d8f}\label{classgame_1_1entity_1_1player_1_1Player_a55d2fdcd55a9ca3a892fcaf492938d8f} 
+\index{game.entity.player.Player@{game.entity.player.Player}!velocity\_x@{velocity\_x}}
+\index{velocity\_x@{velocity\_x}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{velocity\_x}{velocity\_x}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+velocity\+\_\+x}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a60f15050023a3f3cb7890fb2459576ce}\label{classgame_1_1entity_1_1player_1_1Player_a60f15050023a3f3cb7890fb2459576ce} 
+\index{game.entity.player.Player@{game.entity.player.Player}!velocity\_y@{velocity\_y}}
+\index{velocity\_y@{velocity\_y}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{velocity\_y}{velocity\_y}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+velocity\+\_\+y}
+
+\Hypertarget{classgame_1_1entity_1_1player_1_1Player_a1ad79e0736a99f68c7148893a8807398}\label{classgame_1_1entity_1_1player_1_1Player_a1ad79e0736a99f68c7148893a8807398} 
+\index{game.entity.player.Player@{game.entity.player.Player}!width@{width}}
+\index{width@{width}!game.entity.player.Player@{game.entity.player.Player}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily game.\+entity.\+player.\+Player.\+width}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{player_8py}{player.\+py}}\end{DoxyCompactItemize}

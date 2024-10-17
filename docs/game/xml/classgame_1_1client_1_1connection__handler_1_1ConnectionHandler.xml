@@ -16,6 +16,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="25" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e" compoundref="connection__handler_8py" startline="40" endline="87">game.client.connection_handler.ConnectionHandler.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ae8010e5bc8a9e9de70bc6250ad6e413c" prot="public" static="no" mutable="no">
         <type></type>
@@ -72,6 +73,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a04dcde82a590285957bdea1df802b9af" compoundref="player_8py" startline="640" endline="645">game.entity.player.Player.get_player_name</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a658c904f6950d8a6b4330a45420e5cd9" compoundref="player_8py" startline="633" endline="639">game.entity.player.Player.set_player_name</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" prot="public" static="no" mutable="no">
         <type></type>
@@ -86,6 +89,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c" compoundref="connection__handler_8py" startline="88" endline="94">game.client.connection_handler.ConnectionHandler.draw_other_players</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a10c46c16c5221010466e283e6a27db51" compoundref="connection__handler_8py" startline="32" endline="39">game.client.connection_handler.ConnectionHandler.events</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1acf6cc95be7e1e35e2e02dd03b6eec578" compoundref="connection__handler_8py" startline="138" endline="147">game.client.connection_handler.ConnectionHandler.get_average_data_received</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9f8892e92ff580ffd2af52a61eca3d8f" compoundref="connection__handler_8py" startline="128" endline="137">game.client.connection_handler.ConnectionHandler.get_average_data_sent</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff" compoundref="connection__handler_8py" startline="104" endline="111">game.client.connection_handler.ConnectionHandler.get_ping</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0" compoundref="connection__handler_8py" startline="148" endline="155">game.client.connection_handler.ConnectionHandler.get_players</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c" compoundref="connection__handler_8py" startline="120" endline="127">game.client.connection_handler.ConnectionHandler.get_total_data_received</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396" compoundref="connection__handler_8py" startline="112" endline="119">game.client.connection_handler.ConnectionHandler.get_total_data_sent</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e" compoundref="connection__handler_8py" startline="95" endline="103">game.client.connection_handler.ConnectionHandler.queue_packet</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -130,6 +142,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="32" bodyend="39"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a10c46c16c5221010466e283e6a27db51" compoundref="connection__handler_8py" startline="32" endline="39">game.client.connection_handler.ConnectionHandler.events</references>
+        <referencedby refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a10c46c16c5221010466e283e6a27db51" compoundref="connection__handler_8py" startline="32" endline="39">game.client.connection_handler.ConnectionHandler.events</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -154,6 +169,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="40" bodyend="87"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa24d118a28181bd05ddf05b6aa87cf1a" compoundref="connection__handler_8py" startline="25">game.client.connection_handler.ConnectionHandler.start_connection</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aa9a1afa223e94f7f57cd55479bd80c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -183,6 +200,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="88" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="88" bodyend="94"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -207,6 +225,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="95" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="95" bodyend="103"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -227,6 +246,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="104" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="104" bodyend="111"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -247,6 +267,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="112" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="112" bodyend="119"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -267,6 +288,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="120" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="120" bodyend="127"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9f8892e92ff580ffd2af52a61eca3d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -287,6 +309,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="128" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="128" bodyend="137"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1acf6cc95be7e1e35e2e02dd03b6eec578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -307,6 +330,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="138" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="138" bodyend="147"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list</type>
@@ -327,6 +351,7 @@ We don&apos;t draw the main player as it is redundant.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" line="148" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection_handler.py" bodystart="148" bodyend="155"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a106769da52e14cd02cb39c9ea68f78e1" compoundref="connection__handler_8py" startline="47">game.client.connection_handler.ConnectionHandler.connection</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

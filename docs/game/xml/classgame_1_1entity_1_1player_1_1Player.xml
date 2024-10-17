@@ -63,6 +63,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aa0fa150004d65def532b1b502190ffaf" compoundref="player_8py" startline="441" endline="446">game.entity.player.Player.is_near_bottom_edge</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1acb5069f24d6a8e7ea7b64757e81a8e7f" compoundref="player_8py" startline="423" endline="428">game.entity.player.Player.is_near_left_edge</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a766dbc331ec2340ca5bfaa233039fd34" compoundref="player_8py" startline="435" endline="440">game.entity.player.Player.is_near_right_edge</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a7d9645a49400425f95273daec0a26245" compoundref="player_8py" startline="429" endline="434">game.entity.player.Player.is_near_top_edge</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" prot="public" static="no" mutable="no">
         <type></type>
@@ -77,6 +81,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="65" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" compoundref="player_8py" startline="339" endline="388">game.entity.player.Player.break_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a41404e36ad2f6feecb68c19c9b6f374c" compoundref="player_8py" startline="487" endline="495">game.entity.player.Player.can_break_breakable</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" compoundref="player_8py" startline="163" endline="188">game.entity.player.Player.draw_gun_pointer</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a31151805ef60f39e81615532baf2068d" compoundref="player_8py" startline="127" endline="162">game.entity.player.Player.draw_selection_grid</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1adc58feb2b151511a2a328d67f9b7265d" compoundref="player_8py" startline="75" endline="109">game.entity.player.Player.events</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a90dc366ca03d5503e1677cac71158ce7" compoundref="player_8py" startline="475" endline="480">game.entity.player.Player.get_held_item</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a85b9c464f574f467e4d471c83fcdd3c3" compoundref="player_8py" startline="68" endline="74">game.entity.player.Player.init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a1b83188f7f242c8efa9086af1d3fcb3b" prot="public" static="no" mutable="no">
         <type></type>
@@ -91,6 +102,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a04dcde82a590285957bdea1df802b9af" compoundref="player_8py" startline="640" endline="645">game.entity.player.Player.get_player_name</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a658c904f6950d8a6b4330a45420e5cd9" compoundref="player_8py" startline="633" endline="639">game.entity.player.Player.set_player_name</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1aea547ac92a3f560eb6d124dca7242523" prot="public" static="no" mutable="no">
         <type></type>
@@ -105,6 +118,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="91" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" prot="public" static="no" mutable="no">
         <type></type>
@@ -119,6 +133,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" compoundref="player_8py" startline="339" endline="388">game.entity.player.Player.break_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1adc58feb2b151511a2a328d67f9b7265d" compoundref="player_8py" startline="75" endline="109">game.entity.player.Player.events</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a063430d89c29fe2dfb8011a575b8e817" compoundref="player_8py" startline="608" endline="613">game.entity.player.Player.get_selected_tile_x</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a39979375a0ea01197113f5481413ddbe" compoundref="player_8py" startline="496" endline="501">game.entity.player.Player.has_selected_breakable</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" prot="public" static="no" mutable="no">
         <type></type>
@@ -133,6 +153,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" compoundref="player_8py" startline="339" endline="388">game.entity.player.Player.break_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1adc58feb2b151511a2a328d67f9b7265d" compoundref="player_8py" startline="75" endline="109">game.entity.player.Player.events</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae097f71f869a6a0fa85067f64f4429cd" compoundref="player_8py" startline="614" endline="619">game.entity.player.Player.get_selected_tile_y</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a39979375a0ea01197113f5481413ddbe" compoundref="player_8py" startline="496" endline="501">game.entity.player.Player.has_selected_breakable</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1aead38cf4564076e4aa8239f1cccb88eb" prot="public" static="no" mutable="no">
         <type></type>
@@ -147,6 +173,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="115" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" compoundref="player_8py" startline="163" endline="188">game.entity.player.Player.draw_gun_pointer</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a9ce825a37b7be7556a88d1f9405c4f60" compoundref="player_8py" startline="596" endline="601">game.entity.player.Player.get_coefficient_from_center_x</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1aec999989dda1cc94eeb569592dfb8f2a" prot="public" static="no" mutable="no">
         <type></type>
@@ -161,6 +190,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="116" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" compoundref="player_8py" startline="163" endline="188">game.entity.player.Player.draw_gun_pointer</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aa4067e093443bd5303a96e38da1fd0f3" compoundref="player_8py" startline="602" endline="607">game.entity.player.Player.get_coefficient_from_center_y</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a1ad79e0736a99f68c7148893a8807398" prot="public" static="no" mutable="no">
         <type></type>
@@ -175,6 +207,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="118" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" compoundref="window_8py" startline="24" endline="48">game.core.window.Window.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" compoundref="window_8py" startline="49" endline="54">game.core.window.Window.clear</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" compoundref="tile__manager_8py" startline="23" endline="36">game.world.tile_manager.TileManager.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" compoundref="tile__manager_8py" startline="37" endline="43">game.world.tile_manager.TileManager.set_atlas</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a2164a28b704f306525e2bd418ff9edcc" prot="public" static="no" mutable="no">
         <type></type>
@@ -189,6 +226,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="118" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" compoundref="window_8py" startline="24" endline="48">game.core.window.Window.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" compoundref="window_8py" startline="49" endline="54">game.core.window.Window.clear</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ab1cd8c7d9f21f4d008f32ab4ad11d293" compoundref="tile__manager_8py" startline="23" endline="36">game.world.tile_manager.TileManager.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a36d357fe59f04d2cc5124b45c1b23e4d" compoundref="tile__manager_8py" startline="37" endline="43">game.world.tile_manager.TileManager.set_atlas</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a2ea4452a85c32dbcacd64f8dc303445e" prot="public" static="no" mutable="no">
         <type></type>
@@ -203,6 +245,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="143" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1ac0a712c853a6aafbe0bed8f3ac419d0e" prot="public" static="no" mutable="no">
         <type></type>
@@ -217,6 +260,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="143" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" prot="public" static="no" mutable="no">
         <type></type>
@@ -231,6 +275,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="214" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="214" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae5bfa84ea0391e25be5f38e066e1b643" compoundref="player_8py" startline="417" endline="422">game.entity.player.Player.is_moving_down</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a5ffdafd5b5b848e3c93c3c3a02fdd8b4" compoundref="player_8py" startline="399" endline="404">game.entity.player.Player.is_moving_left</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3d2eba9e6dc9533f2cdba19d9955174b" compoundref="player_8py" startline="411" endline="416">game.entity.player.Player.is_moving_right</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aa09656c0ca67abf3f879dade669887af" compoundref="player_8py" startline="405" endline="410">game.entity.player.Player.is_moving_up</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a55d2fdcd55a9ca3a892fcaf492938d8f" prot="public" static="no" mutable="no">
         <type></type>
@@ -245,6 +295,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="227" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="227" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1world_1_1camera_1_1Camera_1af09f22c8feb452112dd8821cf1db73e8" compoundref="camera_8py" startline="56" endline="61">game.world.camera.Camera.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1world_1_1camera_1_1Camera_1adfaa3eb83b0760458eccc4806acfdb2b" compoundref="camera_8py" startline="23" endline="55">game.world.camera.Camera.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a60f15050023a3f3cb7890fb2459576ce" prot="public" static="no" mutable="no">
         <type></type>
@@ -259,6 +313,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="231" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="231" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1world_1_1camera_1_1Camera_1af09f22c8feb452112dd8821cf1db73e8" compoundref="camera_8py" startline="56" endline="61">game.world.camera.Camera.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1world_1_1camera_1_1Camera_1adfaa3eb83b0760458eccc4806acfdb2b" compoundref="camera_8py" startline="23" endline="55">game.world.camera.Camera.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1ae837064c4eef53c9545b5a97f6b4c9a7" prot="public" static="no" mutable="no">
         <type></type>
@@ -273,6 +331,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="323" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="323" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" prot="public" static="no" mutable="no">
         <type></type>
@@ -287,6 +347,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="329" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="329" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a40b7fccdbb1f85426d43d5227f81e5f0" compoundref="player_8py" startline="627" endline="632">game.entity.player.Player.get_health</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" compoundref="player_8py" startline="481" endline="486">game.entity.player.Player.is_dead</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab2affeeb76b2f4d913dc3c20eae05bcb" compoundref="player_8py" startline="620" endline="626">game.entity.player.Player.set_health</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1aaf14809a75dfd272eac4ddcf173423c0" prot="public" static="no" mutable="no">
         <type></type>
@@ -301,6 +366,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="355" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="355" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" compoundref="player_8py" startline="339" endline="388">game.entity.player.Player.break_tile</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a68d1e857e5771b3761bea1f59478a00d" prot="public" static="no" mutable="no">
         <type></type>
@@ -315,6 +382,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="365" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="365" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1a04deaa657e48911162bbd714490fa2e3" prot="public" static="no" mutable="no">
         <type></type>
@@ -329,6 +397,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="370" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="370" bodyend="-1"/>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -345,6 +414,54 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="253" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="253" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a19abd21ccd35dde10f52d72db6a0d1c7" compoundref="button_8py" startline="84" endline="91">game.gui.button.Button.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aced045dab7ae0a13d18ffbe2ea8833e4" compoundref="checkbox_8py" startline="92" endline="99">game.gui.checkbox.Checkbox.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acdfa96e85b85a28d8131213b0809ea97" compoundref="horizontal__slider_8py" startline="126" endline="134">game.gui.horizontal_slider.HorizontalSlider.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1142265b8fc7b7c44858793b5a9331f1" compoundref="hotbar_8py" startline="66" endline="72">game.gui.hotbar.Hotbar.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1afeb96871a259083d74f93fb330641718" compoundref="inputbox_8py" startline="195" endline="201">game.gui.inputbox.InputBox.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1ae61ef3fa1853cb9cb377243af240d775" compoundref="label_8py" startline="63" endline="71">game.gui.label.Label.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98" compoundref="nametag_8py" startline="61" endline="67">game.gui.nametag.NameTag.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a25d5d1da3e7864c2d9500dfebe3662fb" compoundref="progress__bar_8py" startline="81" endline="88">game.gui.progress_bar.ProgressBar.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474" compoundref="slot_8py" startline="78" endline="84">game.gui.slot.Slot.center_horizontally</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" compoundref="checkbox_8py" startline="30" endline="56">game.gui.checkbox.Checkbox.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3d23ebc12dcf90b3c32d35c3295ed1ee" compoundref="horizontal__slider_8py" startline="38" endline="66">game.gui.horizontal_slider.HorizontalSlider.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" compoundref="horizontal__slider_8py" startline="67" endline="85">game.gui.horizontal_slider.HorizontalSlider.events</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a6ed56d95d0d2ca9ad37133dc19f68948" compoundref="player_8py" startline="582" endline="588">game.entity.player.Player.get_absolute_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a1d702dcae07ef2a6050f43f9750f2342" compoundref="player_8py" startline="563" endline="568">game.entity.player.Player.get_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571" compoundref="widget_8py" startline="30" endline="35">game.gui.widget.Widget.get_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" compoundref="map__manager_8py" startline="348" endline="353">game.world.map_manager.Map.get_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" compoundref="horizontal__slider_8py" startline="106" endline="116">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" compoundref="player_8py" startline="454" endline="460">game.entity.player.Player.is_in_lava</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3e2f94bf3503cd8a1a6c49386df7845a" compoundref="player_8py" startline="461" endline="467">game.entity.player.Player.is_in_lethal_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a863a8c50dba2f36bc20ef50874c35ffa" compoundref="player_8py" startline="468" endline="474">game.entity.player.Player.is_in_wall</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" compoundref="player_8py" startline="447" endline="453">game.entity.player.Player.is_in_water</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" compoundref="widget_8py" startline="63" endline="70">game.gui.widget.Widget.offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c" compoundref="widget_8py" startline="49" endline="55">game.gui.widget.Widget.offset_x</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a063b12e5b550f738fad5285fdb21d206" compoundref="label_8py" startline="55" endline="62">game.gui.label.Label.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a40864dc289f7b7f8601ecb854376dd7d" compoundref="label_8py" startline="229" endline="235">game.gui.label.Label.set_shadow_x_offset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a28eee21c2960d4507cbc7ed780e841b4" compoundref="player_8py" startline="556" endline="562">game.entity.player.Player.set_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" compoundref="map__manager_8py" startline="341" endline="347">game.world.map_manager.Map.set_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" prot="protected" static="no" mutable="no">
         <type></type>
@@ -359,6 +476,50 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="256" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="256" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" compoundref="widget_8py" startline="17" endline="22">game.gui.widget.Widget.__init__</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae8a394059a531cc7b6354aebcff99da4" compoundref="player_8py" startline="40" endline="67">game.entity.player.Player.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4af175514354965243cf3e59a30dfa7e" compoundref="checkbox_8py" startline="100" endline="107">game.gui.checkbox.Checkbox.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a702d9e1f3915c4dd1a7b4167c3be146c" compoundref="horizontal__slider_8py" startline="135" endline="143">game.gui.horizontal_slider.HorizontalSlider.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae488ec2de5de4553d42faae7eb17f715" compoundref="hotbar_8py" startline="73" endline="79">game.gui.hotbar.Hotbar.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a07b42a26abffdf97b61193759b857a44" compoundref="inputbox_8py" startline="202" endline="208">game.gui.inputbox.InputBox.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4" compoundref="nametag_8py" startline="68" endline="74">game.gui.nametag.NameTag.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a939391229d592589742d73d85c6b8dfa" compoundref="progress__bar_8py" startline="89" endline="96">game.gui.progress_bar.ProgressBar.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a131de6d18c585e85917a90834180cc0d" compoundref="slot_8py" startline="85" endline="91">game.gui.slot.Slot.center_vertically</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" compoundref="checkbox_8py" startline="30" endline="56">game.gui.checkbox.Checkbox.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab41bb73c1768538bd41a72014e0ed484" compoundref="player_8py" startline="589" endline="595">game.entity.player.Player.get_absolute_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab5eb4770f55c69e6a894ab9f6c3953c2" compoundref="player_8py" startline="576" endline="581">game.entity.player.Player.get_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117" compoundref="widget_8py" startline="43" endline="48">game.gui.widget.Widget.get_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372" compoundref="map__manager_8py" startline="361" endline="366">game.world.map_manager.Map.get_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" compoundref="horizontal__slider_8py" startline="106" endline="116">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over_button</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" compoundref="player_8py" startline="454" endline="460">game.entity.player.Player.is_in_lava</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3e2f94bf3503cd8a1a6c49386df7845a" compoundref="player_8py" startline="461" endline="467">game.entity.player.Player.is_in_lethal_tile</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a863a8c50dba2f36bc20ef50874c35ffa" compoundref="player_8py" startline="468" endline="474">game.entity.player.Player.is_in_wall</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" compoundref="player_8py" startline="447" endline="453">game.entity.player.Player.is_in_water</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" compoundref="widget_8py" startline="63" endline="70">game.gui.widget.Widget.offset</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef" compoundref="widget_8py" startline="56" endline="62">game.gui.widget.Widget.offset_y</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a23ce1497640ec49ad22ab508aa8329a6" compoundref="label_8py" startline="236" endline="242">game.gui.label.Label.set_shadow_y_offset</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae64ca646603c8b9a03b716ce202a36fe" compoundref="player_8py" startline="569" endline="575">game.entity.player.Player.set_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" compoundref="map__manager_8py" startline="354" endline="360">game.world.map_manager.Map.set_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70" compoundref="hotbar_8py" startline="54" endline="65">game.gui.hotbar.Hotbar.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -394,6 +555,54 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="40" bodyend="67"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aea547ac92a3f560eb6d124dca7242523" compoundref="player_8py" startline="91">game.entity.player.Player.breaking</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aaf14809a75dfd272eac4ddcf173423c0" compoundref="player_8py" startline="355">game.entity.player.Player.breaking_tile</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" compoundref="player_8py" startline="329">game.entity.player.Player.health</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a55507931f2179fb75459586c09388f54" compoundref="window_8py" startline="32">game.core.window.Window.height</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a2164a28b704f306525e2bd418ff9edcc" compoundref="player_8py" startline="118">game.entity.player.Player.height</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1ad439034754b971cacb0772dda97346fc" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.height</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ae837064c4eef53c9545b5a97f6b4c9a7" compoundref="player_8py" startline="323">game.entity.player.Player.hurt</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a04deaa657e48911162bbd714490fa2e3" compoundref="player_8py" startline="370">game.entity.player.Player.prev_broken_tile</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a68d1e857e5771b3761bea1f59478a00d" compoundref="player_8py" startline="365">game.entity.player.Player.prev_selected_tile</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aead38cf4564076e4aa8239f1cccb88eb" compoundref="player_8py" startline="115">game.entity.player.Player.screen_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aec999989dda1cc94eeb569592dfb8f2a" compoundref="player_8py" startline="116">game.entity.player.Player.screen_y</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a2ea4452a85c32dbcacd64f8dc303445e" compoundref="player_8py" startline="143">game.entity.player.Player.selected_tile_sx</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ac0a712c853a6aafbe0bed8f3ac419d0e" compoundref="player_8py" startline="143">game.entity.player.Player.selected_tile_sy</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
+        <references refid="classgame_1_1world_1_1camera_1_1Camera_1a8f094c9d91047281cf03d34d97b6fe73" compoundref="camera_8py" startline="19">game.world.camera.Camera.speed</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a55d2fdcd55a9ca3a892fcaf492938d8f" compoundref="player_8py" startline="227">game.entity.player.Player.velocity_x</references>
+        <references refid="classgame_1_1world_1_1camera_1_1Camera_1a90533b6ffebb40ef781bd1858893ec16" compoundref="camera_8py" startline="20">game.world.camera.Camera.velocity_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a60f15050023a3f3cb7890fb2459576ce" compoundref="player_8py" startline="231">game.entity.player.Player.velocity_y</references>
+        <references refid="classgame_1_1world_1_1camera_1_1Camera_1ae31d2e23d424dd423fc877ee02be36c5" compoundref="camera_8py" startline="21">game.world.camera.Camera.velocity_y</references>
+        <references refid="classgame_1_1core_1_1window_1_1Window_1a17e8bda4323a1cf02db736841b8920dd" compoundref="window_8py" startline="32">game.core.window.Window.width</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a1ad79e0736a99f68c7148893a8807398" compoundref="player_8py" startline="118">game.entity.player.Player.width</references>
+        <references refid="classgame_1_1world_1_1tile__manager_1_1TileManager_1a1bc4aabb8b5960493bbb26fe697fa4dd" compoundref="tile__manager_8py" startline="21">game.world.tile_manager.TileManager.width</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a85b9c464f574f467e4d471c83fcdd3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -418,6 +627,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="68" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="68" bodyend="74"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1adc58feb2b151511a2a328d67f9b7265d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -450,6 +660,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="75" bodyend="109"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a3b54df3988def46606805c89b2ee8d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -474,6 +687,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="110" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="110" bodyend="126"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" compoundref="player_8py" startline="481" endline="486">game.entity.player.Player.is_dead</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a31151805ef60f39e81615532baf2068d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -498,6 +712,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="127" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="127" bodyend="162"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" compoundref="player_8py" startline="481" endline="486">game.entity.player.Player.is_dead</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -522,6 +738,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="163" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="163" bodyend="188"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" compoundref="player_8py" startline="481" endline="486">game.entity.player.Player.is_dead</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aead38cf4564076e4aa8239f1cccb88eb" compoundref="player_8py" startline="115">game.entity.player.Player.screen_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aec999989dda1cc94eeb569592dfb8f2a" compoundref="player_8py" startline="116">game.entity.player.Player.screen_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -550,6 +770,35 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="189" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="189" bodyend="338"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" compoundref="player_8py" startline="481" endline="486">game.entity.player.Player.is_dead</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" compoundref="player_8py" startline="454" endline="460">game.entity.player.Player.is_in_lava</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" compoundref="player_8py" startline="447" endline="453">game.entity.player.Player.is_in_water</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -574,6 +823,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="339" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="339" bodyend="388"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aaf14809a75dfd272eac4ddcf173423c0" compoundref="player_8py" startline="355">game.entity.player.Player.breaking_tile</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -602,6 +855,38 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="389" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="389" bodyend="398"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" compoundref="player_8py" startline="329">game.entity.player.Player.health</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ae837064c4eef53c9545b5a97f6b4c9a7" compoundref="player_8py" startline="323">game.entity.player.Player.hurt</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a55d2fdcd55a9ca3a892fcaf492938d8f" compoundref="player_8py" startline="227">game.entity.player.Player.velocity_x</references>
+        <references refid="classgame_1_1world_1_1camera_1_1Camera_1a90533b6ffebb40ef781bd1858893ec16" compoundref="camera_8py" startline="20">game.world.camera.Camera.velocity_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a60f15050023a3f3cb7890fb2459576ce" compoundref="player_8py" startline="231">game.entity.player.Player.velocity_y</references>
+        <references refid="classgame_1_1world_1_1camera_1_1Camera_1ae31d2e23d424dd423fc877ee02be36c5" compoundref="camera_8py" startline="21">game.world.camera.Camera.velocity_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a5ffdafd5b5b848e3c93c3c3a02fdd8b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -622,6 +907,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="399" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="399" bodyend="404"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1aa09656c0ca67abf3f879dade669887af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -642,6 +928,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="405" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="405" bodyend="410"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a3d2eba9e6dc9533f2cdba19d9955174b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -662,6 +949,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="411" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="411" bodyend="416"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ae5bfa84ea0391e25be5f38e066e1b643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -682,6 +970,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="417" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="417" bodyend="422"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab7403c5b46cf5543a9ce9deeb32b20b4" compoundref="player_8py" startline="214">game.entity.player.Player.move</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1acb5069f24d6a8e7ea7b64757e81a8e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -702,6 +991,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="423" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="423" bodyend="428"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8a2dfc6aaf63c2989188a6c9e9946505" compoundref="player_8py" startline="63">game.entity.player.Player.edges</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a7d9645a49400425f95273daec0a26245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -722,6 +1012,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="429" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="429" bodyend="434"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8a2dfc6aaf63c2989188a6c9e9946505" compoundref="player_8py" startline="63">game.entity.player.Player.edges</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a766dbc331ec2340ca5bfaa233039fd34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -742,6 +1033,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="435" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="435" bodyend="440"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8a2dfc6aaf63c2989188a6c9e9946505" compoundref="player_8py" startline="63">game.entity.player.Player.edges</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1aa0fa150004d65def532b1b502190ffaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -762,6 +1054,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="441" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="441" bodyend="446"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8a2dfc6aaf63c2989188a6c9e9946505" compoundref="player_8py" startline="63">game.entity.player.Player.edges</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a3023da655ca91d60b474a87383ee5df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -786,6 +1079,31 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="447" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="447" bodyend="453"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a192bbc5753b484a578ebbd8ef84d58cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -810,6 +1128,31 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="454" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="454" bodyend="460"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a3e2f94bf3503cd8a1a6c49386df7845a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -834,6 +1177,30 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="461" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="461" bodyend="467"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a863a8c50dba2f36bc20ef50874c35ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -858,6 +1225,30 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="468" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="468" bodyend="474"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a90dc366ca03d5503e1677cac71158ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -878,6 +1269,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="475" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="475" bodyend="480"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a404be9fc768fd2da192f242336ee1191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -898,6 +1290,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="481" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="481" bodyend="486"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" compoundref="player_8py" startline="329">game.entity.player.Player.health</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a3b54df3988def46606805c89b2ee8d12" compoundref="player_8py" startline="110" endline="126">game.entity.player.Player.draw</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" compoundref="player_8py" startline="163" endline="188">game.entity.player.Player.draw_gun_pointer</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a31151805ef60f39e81615532baf2068d" compoundref="player_8py" startline="127" endline="162">game.entity.player.Player.draw_selection_grid</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a41404e36ad2f6feecb68c19c9b6f374c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -922,6 +1319,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="487" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="487" bodyend="495"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39979375a0ea01197113f5481413ddbe" compoundref="player_8py" startline="496" endline="501">game.entity.player.Player.has_selected_breakable</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" compoundref="player_8py" startline="502" endline="555">game.entity.player.Player.is_selected_breakable_obstructed</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ab6123b25ff3483f2c9dcb91d5ead1213" compoundref="player_8py" startline="65">game.entity.player.Player.main_hud</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a39979375a0ea01197113f5481413ddbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -946,6 +1346,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="496" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="496" bodyend="501"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a41404e36ad2f6feecb68c19c9b6f374c" compoundref="player_8py" startline="487" endline="495">game.entity.player.Player.can_break_breakable</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1afda0c94794ba73e26cc6a560ed4ba54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -970,6 +1373,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="502" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="502" bodyend="555"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a41404e36ad2f6feecb68c19c9b6f374c" compoundref="player_8py" startline="487" endline="495">game.entity.player.Player.can_break_breakable</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a28eee21c2960d4507cbc7ed780e841b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -994,6 +1424,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="556" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="556" bodyend="562"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a1d702dcae07ef2a6050f43f9750f2342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1014,6 +1456,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="563" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="563" bodyend="568"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ae64ca646603c8b9a03b716ce202a36fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1038,6 +1492,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="569" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="569" bodyend="575"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ab5eb4770f55c69e6a894ab9f6c3953c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1058,6 +1524,18 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="576" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="576" bodyend="581"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a6ed56d95d0d2ca9ad37133dc19f68948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1083,6 +1561,18 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="582" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="582" bodyend="588"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ab41bb73c1768538bd41a72014e0ed484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1108,6 +1598,18 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="589" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="589" bodyend="595"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a9ce825a37b7be7556a88d1f9405c4f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1132,6 +1634,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="596" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="596" bodyend="601"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aead38cf4564076e4aa8239f1cccb88eb" compoundref="player_8py" startline="115">game.entity.player.Player.screen_x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1aa4067e093443bd5303a96e38da1fd0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1156,6 +1659,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="602" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="602" bodyend="607"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1aec999989dda1cc94eeb569592dfb8f2a" compoundref="player_8py" startline="116">game.entity.player.Player.screen_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a063430d89c29fe2dfb8011a575b8e817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1176,6 +1680,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="608" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="608" bodyend="613"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a8931e85d07403eb98c379b8adfd28056" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_x</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ae097f71f869a6a0fa85067f64f4429cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1196,6 +1701,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="614" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="614" bodyend="619"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a75793fc8cdf2ae220f847a630180e88d" compoundref="player_8py" startline="96">game.entity.player.Player.selected_tile_y</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ab2affeeb76b2f4d913dc3c20eae05bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1220,6 +1726,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="620" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="620" bodyend="626"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" compoundref="player_8py" startline="329">game.entity.player.Player.health</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a40b7fccdbb1f85426d43d5227f81e5f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1240,6 +1747,7 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="627" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="627" bodyend="632"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a39fe4311d0384b9e122c76149b3717e3" compoundref="player_8py" startline="329">game.entity.player.Player.health</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a658c904f6950d8a6b4330a45420e5cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1264,6 +1772,8 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="633" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="633" bodyend="639"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9418be6421d13539a51b6ae73220aca7" compoundref="connection__handler_8py" startline="29">game.client.connection_handler.ConnectionHandler.player_name</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a1b83188f7f242c8efa9086af1d3fcb3b" compoundref="player_8py" startline="66">game.entity.player.Player.player_name</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1a04dcde82a590285957bdea1df802b9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1284,6 +1794,8 @@ This signifies that the returned value will always be positive.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="640" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="640" bodyend="645"/>
+        <references refid="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9418be6421d13539a51b6ae73220aca7" compoundref="connection__handler_8py" startline="29">game.client.connection_handler.ConnectionHandler.player_name</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a1b83188f7f242c8efa9086af1d3fcb3b" compoundref="player_8py" startline="66">game.entity.player.Player.player_name</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list[bool]</type>
@@ -1310,6 +1822,31 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="646" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="646" bodyend="671"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -1346,6 +1883,31 @@ Setting the number of attempts to anything less than 1 will raise an exception.
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" line="672" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/entity/player.py" bodystart="672" bodyend="703"/>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" compoundref="horizontal__slider_8py" startline="99">game.gui.horizontal_slider.HorizontalSlider._x</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._x</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._x</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" compoundref="label_8py" startline="46">game.gui.label.Label._x</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._x</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._x</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" compoundref="slot_8py" startline="56">game.gui.slot.Slot._x</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" compoundref="widget_8py" startline="27">game.gui.widget.Widget._x</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ade81f9707737bdd28960abf3709c059f" compoundref="map__manager_8py" startline="43">game.world.map_manager.Map._x</references>
+        <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
+        <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
+        <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" compoundref="horizontal__slider_8py" startline="55">game.gui.horizontal_slider.HorizontalSlider._y</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" compoundref="hotbar_8py" startline="51">game.gui.hotbar.Hotbar._y</references>
+        <references refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" compoundref="inputbox_8py" startline="49">game.gui.inputbox.InputBox._y</references>
+        <references refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" compoundref="label_8py" startline="77">game.gui.label.Label._y</references>
+        <references refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" compoundref="nametag_8py" startline="32">game.gui.nametag.NameTag._y</references>
+        <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" compoundref="progress__bar_8py" startline="46">game.gui.progress_bar.ProgressBar._y</references>
+        <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
