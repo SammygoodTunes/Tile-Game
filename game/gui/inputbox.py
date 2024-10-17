@@ -159,6 +159,14 @@ class InputBox(Widget):
         self._authorised_chars = ascii_letters + digits + '-_'
         return self
 
+    def authorise_only_alnumdot(self) -> Self:
+        """
+        Authorise only alphanumerical values (a-zA-Z0-9.), then return the input box itself.
+        This includes the dot (period/full stop) character.
+        """
+        self._authorised_chars = ascii_letters + digits + '.'
+        return self
+
     def is_hovering_over(self) -> bool:
         """
         Return whether the user's mouse cursor is hovering over the input box or not.
