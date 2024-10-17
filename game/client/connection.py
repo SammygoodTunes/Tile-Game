@@ -2,13 +2,12 @@
 from pygame.event import Event
 import socket
 from threading import Thread
-from time import sleep, time
+from time import time
 import traceback
 
 from game.client.managers.player_manager import PlayerManager
 from game.client.managers.world_manager import WorldManager
 from game.client.tasks import ClientTasks
-from game.data.properties.server_properties import ServerProperties
 from game.data.states.connection_states import ConnectionStates
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
@@ -198,34 +197,37 @@ class Connection:
 
         _game_state: bytes = b''
 
+        packet_recv_timestamp = time()
         self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
 
         while self.state <= 0 and self.state != ConnectionStates.IDLE:
             try:
 
                 data = self.sock.recv(Protocol.BUFFER_SIZE)
-                packet_recv_timestamp = time()
 
                 _game_state = ClientTasks.get_global_game_state(self.sock, data)
 
                 if _local_player_sent:
                     ClientTasks.confirm_local_player(data)
                     self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
+                    packet_recv_timestamp = time()
 
                 if _queued_packet_sent:
                     ClientTasks.confirm_queued_packet(data)
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
+                    packet_recv_timestamp = time()
 
                 _local_player_sent = ClientTasks.send_local_player(self.sock, data, self.player_manager)
                 _queued_packet_sent = ClientTasks.check_packet_queue(self.sock, self.packet_queue)
-
-                # Tick
-                self.ping = round((time() - packet_recv_timestamp) * 1000)
 
                 if _game_state:
                     players = _game_state[1:_game_state[0] + 1]
                     map_data = Compressor.decompress(_game_state[_game_state[0] + 1:])
                     self.player_manager.set_players(players)
                     self.world_manager.build_world_from_bytes(map_data)
+                    self.ping = round((time() - packet_recv_timestamp) * 1000)
+                    packet_recv_timestamp = time()
 
             except TimeoutError:
                 self.state = ConnectionStates.TIMEOUT
