@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18ee5bdbf5a23f82401e040602241c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c08f636ef0a732f91ba3b2be5b39cba" id="r_a7c08f636ef0a732f91ba3b2be5b39cba"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c08f636ef0a732f91ba3b2be5b39cba">stop</a> (self)</td></tr>
 <tr class="separator:a7c08f636ef0a732f91ba3b2be5b39cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243bfaedd798b87757cf9e47c20ea3c1" id="r_a243bfaedd798b87757cf9e47c20ea3c1"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a243bfaedd798b87757cf9e47c20ea3c1">safe_closure</a> (self)</td></tr>
+<tr class="separator:a243bfaedd798b87757cf9e47c20ea3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -119,8 +121,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afc8679ff26e5d73202e7e0d74dac8894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115f47f2b8f5bf4e0f16ce0cdc5f7fcd" id="r_a115f47f2b8f5bf4e0f16ce0cdc5f7fcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a115f47f2b8f5bf4e0f16ce0cdc5f7fcd">player_count</a></td></tr>
 <tr class="separator:a115f47f2b8f5bf4e0f16ce0cdc5f7fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3542a5b340fb56366bcf2fead8fb1c0d" id="r_a3542a5b340fb56366bcf2fead8fb1c0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3542a5b340fb56366bcf2fead8fb1c0d">timeout</a></td></tr>
-<tr class="separator:a3542a5b340fb56366bcf2fead8fb1c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ce6fe3bd156c166995a6b9905b2380" id="r_a45ce6fe3bd156c166995a6b9905b2380"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45ce6fe3bd156c166995a6b9905b2380">timer</a></td></tr>
+<tr class="separator:a45ce6fe3bd156c166995a6b9905b2380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad92b403abc4a240ad0757acf0771ec4a" id="r_ad92b403abc4a240ad0757acf0771ec4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92b403abc4a240ad0757acf0771ec4a">world_handler</a></td></tr>
 <tr class="separator:ad92b403abc4a240ad0757acf0771ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7a7396794698015a0907efd5dfb892" id="r_adf7a7396794698015a0907efd5dfb892"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7a7396794698015a0907efd5dfb892">player_handler</a></td></tr>
@@ -202,6 +204,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Run the server and listen for connections.
+</pre> 
+</div>
+</div>
+<a id="a243bfaedd798b87757cf9e47c20ea3c1" name="a243bfaedd798b87757cf9e47c20ea3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243bfaedd798b87757cf9e47c20ea3c1">&#9670;&#160;</a></span>safe_closure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None game.server.server.Server.safe_closure </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Safely close the server when no players are online after a certain amount of time.
 </pre> 
 </div>
 </div>
@@ -316,14 +336,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3542a5b340fb56366bcf2fead8fb1c0d" name="a3542a5b340fb56366bcf2fead8fb1c0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3542a5b340fb56366bcf2fead8fb1c0d">&#9670;&#160;</a></span>timeout</h2>
+<a id="a45ce6fe3bd156c166995a6b9905b2380" name="a45ce6fe3bd156c166995a6b9905b2380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ce6fe3bd156c166995a6b9905b2380">&#9670;&#160;</a></span>timer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">game.server.server.Server.timeout</td>
+          <td class="memname">game.server.server.Server.timer</td>
         </tr>
       </table>
 </div><div class="memdoc">

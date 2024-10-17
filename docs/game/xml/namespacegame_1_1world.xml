@@ -3,7 +3,6 @@
   <compounddef id="namespacegame_1_1world" kind="namespace" language="Python">
     <compoundname>game::world</compoundname>
     <innernamespace refid="namespacegame_1_1world_1_1camera">game::world::camera</innernamespace>
-    <innernamespace refid="namespacegame_1_1world_1_1item__manager">game::world::item_manager</innernamespace>
     <innernamespace refid="namespacegame_1_1world_1_1map__manager">game::world::map_manager</innernamespace>
     <innernamespace refid="namespacegame_1_1world_1_1synth">game::world::synth</innernamespace>
     <innernamespace refid="namespacegame_1_1world_1_1tile__manager">game::world::tile_manager</innernamespace>
@@ -11,7 +10,9 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>World package.
+</verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/camera.py" line="1" column="1"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/__init__.py" line="1" column="1"/>
   </compounddef>
 </doxygen>

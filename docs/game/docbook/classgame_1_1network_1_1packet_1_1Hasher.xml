@@ -26,6 +26,7 @@ Used for sending and receiving protocol commands from the client/server.
 <indexterm><primary>game.network.packet.Hasher</primary><secondary>enhash</secondary></indexterm>
 <para><computeroutput> bytes game.network.packet.Hasher.enhash (str packet)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Hash and encode (Protocol.ENCODING) a packet.
+Return hash of size BUFFER_SIZE.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46"/><section>
@@ -33,7 +34,7 @@ Used for sending and receiving protocol commands from the client/server.
 <indexterm><primary>hash</primary><secondary>game.network.packet.Hasher</secondary></indexterm>
 <indexterm><primary>game.network.packet.Hasher</primary><secondary>hash</secondary></indexterm>
 <para><computeroutput> str game.network.packet.Hasher.hash (str packet)<computeroutput>[static]</computeroutput></computeroutput></para>
-<para><literallayout><computeroutput>Hash a packet.
+<para><literallayout><computeroutput>Hash a packet and return hash of size BUFFER_SIZE.
 </computeroutput></literallayout> </para>
 </section>
 <para>

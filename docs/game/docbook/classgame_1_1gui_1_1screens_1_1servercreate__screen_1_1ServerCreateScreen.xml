@@ -44,6 +44,8 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1scree
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40">seed_input</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6b97b71f0d4b1e4dd2d27d82156bdbb6">ordering_container</link></para>
+</listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea">create_button</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39">back_button</link></para>
@@ -88,7 +90,7 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>events</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.screens.servercreate_screen.ServerCreateScreen.events ( self, Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the screen events (unused).
+<para><literallayout><computeroutput>Handle the screen events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e"/><section>
@@ -145,6 +147,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>ign_input</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>ign_input</secondary></indexterm>
 <para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.ign_input</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6b97b71f0d4b1e4dd2d27d82156bdbb6"/><section>
+    <title>ordering_container</title>
+<indexterm><primary>ordering_container</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.servercreate_screen.ServerCreateScreen</primary><secondary>ordering_container</secondary></indexterm>
+<para><computeroutput>game.gui.screens.servercreate_screen.ServerCreateScreen.ordering_container</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40"/><section>
     <title>seed_input</title>
 <indexterm><primary>seed_input</primary><secondary>game.gui.screens.servercreate_screen.ServerCreateScreen</secondary></indexterm>

@@ -17,7 +17,7 @@
 </listitem>
             <listitem><para>Surface <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e">initialise_surface</link> (self)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa7aae311467c4b796b2b3b41e6706aea">initialise_map</link> (self, map)</para>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a62ba22806fe108c0a3a4ab8c686fb8af">initialise_map</link> (self, _map)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa634dc82e657c3c85dedbe61b218c226">reset_map</link> (self)</para>
 </listitem>
@@ -83,11 +83,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <para><literallayout><computeroutput>Draw the screen and its components.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa7aae311467c4b796b2b3b41e6706aea"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a62ba22806fe108c0a3a4ab8c686fb8af"/><section>
     <title>initialise_map()</title>
 <indexterm><primary>initialise_map</primary><secondary>game.gui.screens.map_screen.MapScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.map_screen.MapScreen</primary><secondary>initialise_map</secondary></indexterm>
-<para><computeroutput> None game.gui.screens.map_screen.MapScreen.initialise_map ( self,  map)</computeroutput></para>
+<para><computeroutput> None game.gui.screens.map_screen.MapScreen.initialise_map ( self,  _map)</computeroutput></para>
 <para><literallayout><computeroutput>Initialise the screen&apos;s map component.
 </computeroutput></literallayout> </para>
 </section>

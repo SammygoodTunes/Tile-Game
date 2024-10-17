@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="7" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="12" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1a57278dc2f151f965a4a70a4602f98bac" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -31,7 +31,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="8" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="8" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="13" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1aa7c6ef05fff185b3d4b710c16c2ed18f" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float game.data.properties.server_properties.ServerProperties::DELAY_BEFORE_CLOSURE</definition>
+        <argsstring></argsstring>
+        <name>DELAY_BEFORE_CLOSURE</name>
+        <qualifiedname>game.data.properties.server_properties.ServerProperties.DELAY_BEFORE_CLOSURE</qualifiedname>
+        <initializer>=  5.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -40,8 +55,9 @@
 <para><verbatim>Class for server properties.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="2" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="2" bodyend="9"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" line="7" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py" bodystart="7" bodyend="15"/>
     <listofallmembers>
+      <member refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1aa7c6ef05fff185b3d4b710c16c2ed18f" prot="public" virt="non-virtual"><scope>game::data::properties::server_properties::ServerProperties</scope><name>DELAY_BEFORE_CLOSURE</name></member>
       <member refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1a57278dc2f151f965a4a70a4602f98bac" prot="public" virt="non-virtual"><scope>game::data::properties::server_properties::ServerProperties</scope><name>MAX_PLAYERS</name></member>
       <member refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1ad77f8621f99092581294b948ff5cee71" prot="public" virt="non-virtual"><scope>game::data::properties::server_properties::ServerProperties</scope><name>TICKS_PER_SECOND</name></member>
     </listofallmembers>

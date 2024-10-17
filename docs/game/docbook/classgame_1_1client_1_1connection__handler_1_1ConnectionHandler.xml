@@ -7,7 +7,7 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1ad5b0e835ddac9c7158ab05d6308a97ae">__init__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a61897249eb0ba4d05b5005f80b16bdb8">events</link> (self, Event e)</para>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a10c46c16c5221010466e283e6a27db51">events</link> (self, Event e)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a12957bd10af4618be226f16c39680f8e">update</link> (self, game)</para>
 </listitem>
@@ -20,6 +20,10 @@
             <listitem><para>float <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396">get_total_data_sent</link> (self)</para>
 </listitem>
             <listitem><para>float <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c">get_total_data_received</link> (self)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9f8892e92ff580ffd2af52a61eca3d8f">get_average_data_sent</link> (self)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1acf6cc95be7e1e35e2e02dd03b6eec578">get_average_data_received</link> (self)</para>
 </listitem>
             <listitem><para>list <link linkend="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0">get_players</link> (self)</para>
 </listitem>
@@ -67,17 +71,36 @@
 We don&apos;t draw the main player as it is redundant.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a61897249eb0ba4d05b5005f80b16bdb8"/><section>
+<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a10c46c16c5221010466e283e6a27db51"/><section>
     <title>events()</title>
 <indexterm><primary>events</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>events</secondary></indexterm>
-<para><computeroutput>game.client.connection_handler.ConnectionHandler.events ( self, Event e)</computeroutput></para></section>
+<para><computeroutput> None game.client.connection_handler.ConnectionHandler.events ( self, Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Handle the connection handler events.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1acf6cc95be7e1e35e2e02dd03b6eec578"/><section>
+    <title>get_average_data_received()</title>
+<indexterm><primary>get_average_data_received</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_average_data_received</secondary></indexterm>
+<para><computeroutput> float game.client.connection_handler.ConnectionHandler.get_average_data_received ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the average data received per minute, rounded to kilobytes (not kibibytes).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a9f8892e92ff580ffd2af52a61eca3d8f"/><section>
+    <title>get_average_data_sent()</title>
+<indexterm><primary>get_average_data_sent</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
+<indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_average_data_sent</secondary></indexterm>
+<para><computeroutput> float game.client.connection_handler.ConnectionHandler.get_average_data_sent ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the average data sent per minute, rounded to kilobytes (not kibibytes).
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a6cea33ecf9f6e00e56d05ab98f384dff"/><section>
     <title>get_ping()</title>
 <indexterm><primary>get_ping</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_ping</secondary></indexterm>
 <para><computeroutput> int game.client.connection_handler.ConnectionHandler.get_ping ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Get the connection ping, only if a connection has been established.
+<para><literallayout><computeroutput>Return the connection ping, only if a connection has been established.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a05a17a8bf51c681e48e1f725128e2ef0"/><section>
@@ -85,7 +108,7 @@ We don&apos;t draw the main player as it is redundant.
 <indexterm><primary>get_players</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_players</secondary></indexterm>
 <para><computeroutput> list game.client.connection_handler.ConnectionHandler.get_players ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Get the current players in the server, otherwise return an empty list if no connection has been established.
+<para><literallayout><computeroutput>Return the current players in the server, otherwise return an empty list if no connection has been established.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a2b5c66e058e64f32fd52053e6037343c"/><section>
@@ -93,7 +116,7 @@ We don&apos;t draw the main player as it is redundant.
 <indexterm><primary>get_total_data_received</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_total_data_received</secondary></indexterm>
 <para><computeroutput> float game.client.connection_handler.ConnectionHandler.get_total_data_received ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Get the total data received from the server, rounded to megabytes (not mebibytes).
+<para><literallayout><computeroutput>Return the total data received from the server, rounded to megabytes (not mebibytes).
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1a1b46f9d68b5269a93de18daa6abbb396"/><section>
@@ -101,7 +124,7 @@ We don&apos;t draw the main player as it is redundant.
 <indexterm><primary>get_total_data_sent</primary><secondary>game.client.connection_handler.ConnectionHandler</secondary></indexterm>
 <indexterm><primary>game.client.connection_handler.ConnectionHandler</primary><secondary>get_total_data_sent</secondary></indexterm>
 <para><computeroutput> float game.client.connection_handler.ConnectionHandler.get_total_data_sent ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Get the total data sent to the server, rounded to megabytes (not mebibytes).
+<para><literallayout><computeroutput>Return the total data sent to the server, rounded to megabytes (not mebibytes).
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1client_1_1connection__handler_1_1ConnectionHandler_1aff1b218da48985b0832833a62e80fd5e"/><section>

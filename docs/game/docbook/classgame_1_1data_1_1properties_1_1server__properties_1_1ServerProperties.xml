@@ -9,6 +9,8 @@
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1a57278dc2f151f965a4a70a4602f98bac">MAX_PLAYERS</link> = 10</para>
 </listitem>
+            <listitem><para>float <link linkend="_classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1aa7c6ef05fff185b3d4b710c16c2ed18f">DELAY_BEFORE_CLOSURE</link> = 5.0</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -19,6 +21,11 @@
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1aa7c6ef05fff185b3d4b710c16c2ed18f"/><section>
+    <title>DELAY_BEFORE_CLOSURE</title>
+<indexterm><primary>DELAY_BEFORE_CLOSURE</primary><secondary>game.data.properties.server_properties.ServerProperties</secondary></indexterm>
+<indexterm><primary>game.data.properties.server_properties.ServerProperties</primary><secondary>DELAY_BEFORE_CLOSURE</secondary></indexterm>
+<para><computeroutput>float game.data.properties.server_properties.ServerProperties.DELAY_BEFORE_CLOSURE = 5.0<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties_1a57278dc2f151f965a4a70a4602f98bac"/><section>
     <title>MAX_PLAYERS</title>
 <indexterm><primary>MAX_PLAYERS</primary><secondary>game.data.properties.server_properties.ServerProperties</secondary></indexterm>

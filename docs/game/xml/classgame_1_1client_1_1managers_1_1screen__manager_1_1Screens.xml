@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens" kind="class" language="Python" prot="public">
+    <compoundname>game::client::managers::screen_manager::Screens</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::screen</definition>
+        <argsstring></argsstring>
+        <name>screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3df4df5f147bed66864a032ea3dc1ae1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::crash_screen</definition>
+        <argsstring></argsstring>
+        <name>crash_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.crash_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a46bd56f2ed26c8a3896941d27a1d1ff0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::credits_screen</definition>
+        <argsstring></argsstring>
+        <name>credits_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.credits_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a837d83d0d6d7008758eb9e5fb4e43191" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::gameover_screen</definition>
+        <argsstring></argsstring>
+        <name>gameover_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.gameover_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a99f473e2084e997e5d935bb8badfb37d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::loading_screen</definition>
+        <argsstring></argsstring>
+        <name>loading_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.loading_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a97e24d79d7ef00ccf25a59f959f4d49b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::main_menu_screen</definition>
+        <argsstring></argsstring>
+        <name>main_menu_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.main_menu_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa0769c76ea8129fc50c382a3e2e7716a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::map_screen</definition>
+        <argsstring></argsstring>
+        <name>map_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.map_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1ab38754931596612a72dc3d3b1974f884" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::options_screen</definition>
+        <argsstring></argsstring>
+        <name>options_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.options_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a163721adb83cb73c0a51d70477052633" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::pause_screen</definition>
+        <argsstring></argsstring>
+        <name>pause_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.pause_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a74289f45dc2a87ba5d103580dcfbc80d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::player_list_screen</definition>
+        <argsstring></argsstring>
+        <name>player_list_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.player_list_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a682a8fcd51d9368adf5bbae3af05ac1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::server_connect_screen</definition>
+        <argsstring></argsstring>
+        <name>server_connect_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.server_connect_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7303469928f455cba6895034ed1bd7ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::server_create_screen</definition>
+        <argsstring></argsstring>
+        <name>server_create_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.server_create_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a5d7b39009cf1a4b21aeaab931088a042" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::server_join_screen</definition>
+        <argsstring></argsstring>
+        <name>server_join_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.server_join_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7386b4999e9ca737f75d112ff571dad0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.client.managers.screen_manager.Screens::server_menu_screen</definition>
+        <argsstring></argsstring>
+        <name>server_menu_screen</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.server_menu_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a9b7d5941251246d5eba8a717596c4b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.__init__</definition>
+        <argsstring>(self, window)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00" kindref="member">window</ref></type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="34" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.link_game</definition>
+        <argsstring>(self, game_obj)</argsstring>
+        <name>link_game</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.link_game</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game_obj</type>
+          <defname>game_obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Link the global game instance.
+TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.events</definition>
+        <argsstring>(self, pygame.event.Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pygame.event.Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle the events of the different screens.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="62" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="62" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a76165c4f8ac2404d6fb5a04c2d2cc592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.update</definition>
+        <argsstring>(self)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screens.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="216" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="216" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.update_ui</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_ui</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.update_ui</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the screen UIs.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="234" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="234" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.task_create_server</definition>
+        <argsstring>(self)</argsstring>
+        <name>task_create_server</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.task_create_server</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Screen task for creating a server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="252" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="252" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.client.managers.screen_manager.Screens.task_join_server</definition>
+        <argsstring>(self)</argsstring>
+        <name>task_join_server</name>
+        <qualifiedname>game.client.managers.screen_manager.Screens.task_join_server</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Screen task for joining a server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="271" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="271" bodyend="282"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a collection of screens.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/screen_manager.py" bodystart="29" bodyend="282"/>
+    <listofallmembers>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a9b7d5941251246d5eba8a717596c4b0b" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>__init__</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3df4df5f147bed66864a032ea3dc1ae1" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>crash_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a46bd56f2ed26c8a3896941d27a1d1ff0" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>credits_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>events</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>game</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a837d83d0d6d7008758eb9e5fb4e43191" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>gameover_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>link_game</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a99f473e2084e997e5d935bb8badfb37d" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>loading_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a97e24d79d7ef00ccf25a59f959f4d49b" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>main_menu_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa0769c76ea8129fc50c382a3e2e7716a" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>map_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1ab38754931596612a72dc3d3b1974f884" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>options_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a163721adb83cb73c0a51d70477052633" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>pause_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a74289f45dc2a87ba5d103580dcfbc80d" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>player_list_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a682a8fcd51d9368adf5bbae3af05ac1c" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>server_connect_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7303469928f455cba6895034ed1bd7ba" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>server_create_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a5d7b39009cf1a4b21aeaab931088a042" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>server_join_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7386b4999e9ca737f75d112ff571dad0" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>server_menu_screen</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>task_create_server</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>task_join_server</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a76165c4f8ac2404d6fb5a04c2d2cc592" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>update</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>update_ui</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00" prot="public" virt="non-virtual"><scope>game::client::managers::screen_manager::Screens</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

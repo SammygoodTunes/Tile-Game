@@ -12,25 +12,31 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacegame_1_1data_1_1tiles_1_1tiles" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1tiles_1_1tile" kindref="compound">game.data.tiles.tile</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tile</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles" kindref="compound">Tiles</ref>:</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>collection<sp/>of<sp/>tiles.</highlight></codeline>
-<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1tiles_1_1tiles" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Module<sp/>name:<sp/>tiles</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">This<sp/>module<sp/>defines<sp/>the<sp/>different<sp/>map<sp/>tiles.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1tiles_1_1tile" kindref="compound">game.data.tiles.tile</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Tile</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>VOID:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>0)</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>GRASS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>0)</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAINS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(2,<sp/>0)</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>DIRT:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(3,<sp/>0)</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(4,<sp/>0).set_resistance(10)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>SAND:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(5,<sp/>0)</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE_STAIRS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(6,<sp/>0)</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>FIRESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(7,<sp/>0)</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>WATER:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>1)</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>LAVA:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>1).set_damage(3).set_damage_delay(0.5)</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>BREAK_TILES_ANIM:<sp/>tuple[Tile]<sp/>=<sp/>tuple(<ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(x,<sp/>7)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(8))</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles" kindref="compound">Tiles</ref>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>creating<sp/>a<sp/>collection<sp/>of<sp/>tiles.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>VOID:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>0)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>GRASS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>0)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAINS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(2,<sp/>0)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>DIRT:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(3,<sp/>0)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(4,<sp/>0).set_resistance(10)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>SAND:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(5,<sp/>0)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>COBBLESTONE_STAIRS:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(6,<sp/>0)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>FIRESTONE:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(7,<sp/>0)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>WATER:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(0,<sp/>1)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>LAVA:<sp/>Tile<sp/>=<sp/><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(1,<sp/>1).set_damage(3).set_damage_delay(0.5)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>BREAK_TILES_ANIM:<sp/>tuple[Tile]<sp/>=<sp/>tuple(<ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref>(x,<sp/>7)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(8))</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tiles.py"/>
   </compounddef>

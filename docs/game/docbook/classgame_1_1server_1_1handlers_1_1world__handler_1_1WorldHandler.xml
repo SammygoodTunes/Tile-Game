@@ -11,20 +11,9 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8">update_broken_tile</link> (self, dict player_dict)</para>
 </listitem>
-            <listitem><para>bool <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1adf31f015349d05fa2648309431beb404">is_queue_empty</link> (self)</para>
-</listitem>
-            <listitem><para>Self <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a3e2163b125def907287628fd74ae4f78">clean_queue</link> (self)</para>
-</listitem>
-            <listitem><para>bytes <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aec4f0f8f564934d0dab80a7d227b9fc2">get_queue</link> (self)</para>
+            <listitem><para>bytes <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd">get_map_data</link> (self)</para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1world_1_1world_1_1World">World</link> <link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8">get_world</link> (self)</para>
-</listitem>
-        </itemizedlist>
-</simplesect>
-<simplesect>
-    <title>Protected Attributes    </title>
-        <itemizedlist>
-            <listitem><para><link linkend="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a4fe6e3d90fd3f095278c71b0ff14ba96">_queue</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -44,14 +33,6 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a3e2163b125def907287628fd74ae4f78"/><section>
-    <title>clean_queue()</title>
-<indexterm><primary>clean_queue</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
-<indexterm><primary>game.server.handlers.world_handler.WorldHandler</primary><secondary>clean_queue</secondary></indexterm>
-<para><computeroutput> Self game.server.handlers.world_handler.WorldHandler.clean_queue ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Clears the queue.
-</computeroutput></literallayout> </para>
-</section>
 <anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a2b82f5c8199fb6cea131c6e26c1ab4f3"/><section>
     <title>create_world()</title>
 <indexterm><primary>create_world</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
@@ -60,12 +41,12 @@
 <para><literallayout><computeroutput>Create a new server world.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aec4f0f8f564934d0dab80a7d227b9fc2"/><section>
-    <title>get_queue()</title>
-<indexterm><primary>get_queue</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
-<indexterm><primary>game.server.handlers.world_handler.WorldHandler</primary><secondary>get_queue</secondary></indexterm>
-<para><computeroutput> bytes game.server.handlers.world_handler.WorldHandler.get_queue ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the full queue in bytes.
+<anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd"/><section>
+    <title>get_map_data()</title>
+<indexterm><primary>get_map_data</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
+<indexterm><primary>game.server.handlers.world_handler.WorldHandler</primary><secondary>get_map_data</secondary></indexterm>
+<para><computeroutput> bytes game.server.handlers.world_handler.WorldHandler.get_map_data ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return the map data in bytes.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8"/><section>
@@ -76,14 +57,6 @@
 <para><literallayout><computeroutput>Return the world object.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1adf31f015349d05fa2648309431beb404"/><section>
-    <title>is_queue_empty()</title>
-<indexterm><primary>is_queue_empty</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
-<indexterm><primary>game.server.handlers.world_handler.WorldHandler</primary><secondary>is_queue_empty</secondary></indexterm>
-<para><computeroutput> bool game.server.handlers.world_handler.WorldHandler.is_queue_empty ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return True if queue is empty, otherwise False.
-</computeroutput></literallayout> </para>
-</section>
 <anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8"/><section>
     <title>update_broken_tile()</title>
 <indexterm><primary>update_broken_tile</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
@@ -92,14 +65,6 @@
 <para><literallayout><computeroutput>Update the map&apos;s tile data with the received player dict to take into account a broken tile.
 </computeroutput></literallayout> </para>
 </section>
-</section>
-<section>
-<title>Member Data Documentation</title>
-<anchor xml:id="_classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a4fe6e3d90fd3f095278c71b0ff14ba96"/><section>
-    <title>_queue</title>
-<indexterm><primary>_queue</primary><secondary>game.server.handlers.world_handler.WorldHandler</secondary></indexterm>
-<indexterm><primary>game.server.handlers.world_handler.WorldHandler</primary><secondary>_queue</secondary></indexterm>
-<para><computeroutput>game.server.handlers.world_handler.WorldHandler._queue<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_world__handler_8py">world_handler.py</link></section>

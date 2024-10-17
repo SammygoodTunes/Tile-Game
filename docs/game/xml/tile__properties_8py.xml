@@ -12,19 +12,24 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1tile__properties" refkind="compound"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2" refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" kindref="compound">TileProperties</ref>:</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>tile<sp/>properties.</highlight></codeline>
-<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1tile__properties" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Module<sp/>name:<sp/>tile_properties</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">This<sp/>module<sp/>defines<sp/>the<sp/>tile<sp/>properties.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_SIZE<sp/>=<sp/>32</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_MAX<sp/>=<sp/>63</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_MAX<sp/>=<sp/>7</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_MAX<sp/>=<sp/>7</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_MAX<sp/>=<sp/>63</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_MAX<sp/>=<sp/>127</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_MAX<sp/>=<sp/>0.8<sp/>*<sp/>10</highlight></codeline>
+<codeline lineno="7" refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" kindref="compound">TileProperties</ref>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>tile<sp/>properties.</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_SIZE<sp/>=<sp/>32</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_ID_MAX<sp/>=<sp/>63</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_X_MAX<sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_Y_MAX<sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_RESISTANCE_MAX<sp/>=<sp/>63</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_MAX<sp/>=<sp/>127</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>TILE_DAMAGE_DELAY_MAX<sp/>=<sp/>0.8<sp/>*<sp/>10</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/tile_properties.py"/>
   </compounddef>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="17" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd" prot="public" static="no" mutable="no">
         <type></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="18" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74" prot="public" static="no" mutable="no">
         <type></type>
@@ -44,35 +44,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="19" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="23" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad1607207ccf443e5383e6821b1b3d523" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>game.gui.screens.serverconnect_screen.ServerConnectScreen::back_button</definition>
+        <definition>game.gui.screens.serverconnect_screen.ServerConnectScreen::main_menu_button</definition>
         <argsstring></argsstring>
-        <name>back_button</name>
-        <qualifiedname>game.gui.screens.serverconnect_screen.ServerConnectScreen.back_button</qualifiedname>
+        <name>main_menu_button</name>
+        <qualifiedname>game.gui.screens.serverconnect_screen.ServerConnectScreen.main_menu_button</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="20" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screens.serverconnect_screen.ServerConnectScreen::default_screen</definition>
-        <argsstring></argsstring>
-        <name>default_screen</name>
-        <qualifiedname>game.gui.screens.serverconnect_screen.ServerConnectScreen.default_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="21" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="24" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -97,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="15" bodyend="22"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="19" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Surface</type>
@@ -117,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="23" bodyend="31"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="26" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -137,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="32" bodyend="41"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="35" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -157,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="42" bodyend="55"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="45" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -181,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="56" bodyend="88"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="59" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -201,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="89" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="89" bodyend="95"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="90" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="90" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -226,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="96" bodyend="104"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="97" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="97" bodyend="105"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -259,15 +245,14 @@
         <link refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen"/>
       </node>
     </collaborationgraph>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="10" bodyend="104"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screens/serverconnect_screen.py" bodystart="14" bodyend="105"/>
     <listofallmembers>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>__init__</name></member>
-      <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>back_button</name></member>
-      <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>default_screen</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>draw</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>faded_surface</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>info_label</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>initialise_surface</name></member>
+      <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad1607207ccf443e5383e6821b1b3d523" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>main_menu_button</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>reset_info_label</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>set_state</name></member>
       <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" prot="public" virt="non-virtual"><scope>game::gui::screens::serverconnect_screen::ServerConnectScreen</scope><name>update_info_label</name></member>

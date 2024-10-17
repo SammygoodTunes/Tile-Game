@@ -11,6 +11,7 @@ var classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen =
     [ "create_label", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#af136da39e7862cc8d50bb6e1dccdb64b", null ],
     [ "faded_surface", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a095ce4ff134515029940365865adaa02", null ],
     [ "ign_input", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#afc280a7c3eb56f0a12e4f3f5e3bfe533", null ],
+    [ "ordering_container", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a6b97b71f0d4b1e4dd2d27d82156bdbb6", null ],
     [ "seed_input", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#a6ed257a4bb91061d7b56fac0f8b3fb40", null ],
     [ "window", "classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html#aa200ed98a223a78bbd26325d969d4e26", null ]
 ];

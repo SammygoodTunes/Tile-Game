@@ -5,7 +5,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>int <link linkend="_classgame_1_1network_1_1protocol_1_1Protocol_1ab3853c9099a03b882400c46099a32116">BUFFER_SIZE</link> = 64</para>
+            <listitem><para>int <link linkend="_classgame_1_1network_1_1protocol_1_1Protocol_1ab3853c9099a03b882400c46099a32116">BUFFER_SIZE</link> = 32</para>
 </listitem>
             <listitem><para>str <link linkend="_classgame_1_1network_1_1protocol_1_1Protocol_1af717c43e26aa883f0c38d405da001337">ENCODING</link> = &apos;utf-8&apos;</para>
 </listitem>
@@ -118,7 +118,7 @@ Client-server update process:
     <title>BUFFER_SIZE</title>
 <indexterm><primary>BUFFER_SIZE</primary><secondary>game.network.protocol.Protocol</secondary></indexterm>
 <indexterm><primary>game.network.protocol.Protocol</primary><secondary>BUFFER_SIZE</secondary></indexterm>
-<para><computeroutput>int game.network.protocol.Protocol.BUFFER_SIZE = 64<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>int game.network.protocol.Protocol.BUFFER_SIZE = 32<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1network_1_1protocol_1_1Protocol_1a5438cdf2a21d48a205566424142a15ff"/><section>
     <title>CPACKET_MAGIC</title>
 <indexterm><primary>CPACKET_MAGIC</primary><secondary>game.network.protocol.Protocol</secondary></indexterm>

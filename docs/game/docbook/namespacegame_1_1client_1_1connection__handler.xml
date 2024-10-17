@@ -9,4 +9,17 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Module name: connection_handler
+
+This module acts as a pathway between the client and connection modules.
+This means that whatever the connection module doesn&apos;t have access to, the connection handler will provide it with
+what it needs. This is because most of the connection handling done by the connection module is run on a different
+thread. And the way the modules are structure disallow for any direct communication between the client and connection
+modules.
+Shared attributes probably will (eventually) be implemented to make it thread-safe(r).
+</computeroutput></literallayout> </para>
+</section>
 </section>

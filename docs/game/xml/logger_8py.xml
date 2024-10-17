@@ -10,36 +10,37 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacegame_1_1utils_1_1logger" refkind="compound"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="3"><highlight class="stringliteral">Logger<sp/>for<sp/>logging<sp/>debug<sp/>info,<sp/>warnings<sp/>and<sp/>errors.</highlight></codeline>
-<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>argparse</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>os<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>path,<sp/>mkdir</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sys<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>stdout</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>time<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>strftime</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal">parser<sp/>=<sp/>argparse.ArgumentParser()</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-d&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--debug&apos;</highlight><highlight class="normal">,<sp/>action=argparse.BooleanOptionalAction,</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>type=bool,<sp/>help=</highlight><highlight class="stringliteral">&apos;enable<sp/>debug<sp/>info&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="15"><highlight class="normal">args,<sp/>unknown_args<sp/>=<sp/>parser.parse_known_args()</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">log_dir<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;logs&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>path.exists(log_dir):</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir(log_dir,<sp/>0o755)</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal">logging.basicConfig(</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>level=logging.DEBUG<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.INFO,</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>handlers=[</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.FileHandler(path.join(log_dir,<sp/>strftime(</highlight><highlight class="stringliteral">&apos;%d-%m-%Y-%H-%M-%S.log&apos;</highlight><highlight class="normal">))),</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.StreamHandler(stdout)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
-<codeline lineno="28"><highlight class="normal">)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__file__)</highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1utils_1_1logger" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Module<sp/>name:<sp/>logger</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">This<sp/>module<sp/>defines<sp/>the<sp/>logger.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>os<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>path,<sp/>mkdir</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sys<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>stdout</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>time<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>strftime</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>argparse</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">parser<sp/>=<sp/>argparse.ArgumentParser()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">parser.add_argument(</highlight><highlight class="stringliteral">&apos;-d&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;--debug&apos;</highlight><highlight class="normal">,<sp/>action=argparse.BooleanOptionalAction,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>type=bool,<sp/>help=</highlight><highlight class="stringliteral">&apos;enable<sp/>debug<sp/>info&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">args,<sp/>unknown_args<sp/>=<sp/>parser.parse_known_args()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">log_dir<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;logs&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>path.exists(log_dir):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir(log_dir,<sp/>0o755)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">logging.basicConfig(</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>level=logging.DEBUG<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>args.debug<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.INFO,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>format=</highlight><highlight class="stringliteral">&apos;\t%(levelname)s<sp/>-<sp/>%(asctime)s\t%(message)s&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>handlers=[</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.FileHandler(path.join(log_dir,<sp/>strftime(</highlight><highlight class="stringliteral">&apos;%d-%m-%Y-%H-%M-%S.log&apos;</highlight><highlight class="normal">))),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logging.StreamHandler(stdout)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__file__)</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/logger.py"/>
   </compounddef>

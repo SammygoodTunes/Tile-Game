@@ -12,22 +12,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1player__properties" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1tools" kindref="compound">game.utils.tools</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>resource_dir</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties" kindref="compound">PlayerProperties</ref>:</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>player<sp/>properties.</highlight></codeline>
-<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1player__properties" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Module<sp/>name:<sp/>player_properties</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">This<sp/>module<sp/>defines<sp/>the<sp/>player<sp/>entity<sp/>properties.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1utils_1_1tools" kindref="compound">game.utils.tools</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>resource_dir</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_PLAYER_NAME_SIZE<sp/>=<sp/>16</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED<sp/>=<sp/>350</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED_IN_WATER<sp/>=<sp/>SPEED<sp/>//<sp/>2</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED_IN_LAVA<sp/>=<sp/>SPEED<sp/>//<sp/>3</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>TEXTURE:<sp/>str<sp/>=<sp/>resource_dir(</highlight><highlight class="stringliteral">&apos;game/assets/player.png&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_START_DURATION:<sp/>float<sp/>=<sp/>0.25</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STOP_DURATION:<sp/>float<sp/>=<sp/>0.25</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_THRESHOLD:<sp/>float<sp/>=<sp/>0.0001</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties" kindref="compound">PlayerProperties</ref>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>player<sp/>properties.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_PLAYER_NAME_SIZE<sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED<sp/>=<sp/>350</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED_IN_WATER<sp/>=<sp/>SPEED<sp/>//<sp/>2</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>SPEED_IN_LAVA<sp/>=<sp/>SPEED<sp/>//<sp/>3</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>TEXTURE:<sp/>str<sp/>=<sp/>resource_dir(</highlight><highlight class="stringliteral">&apos;game/assets/player.png&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_START_DURATION:<sp/>float<sp/>=<sp/>0.25</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_STOP_DURATION:<sp/>float<sp/>=<sp/>0.25</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>VELOCITY_THRESHOLD:<sp/>float<sp/>=<sp/>0.0001</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/player_properties.py"/>
   </compounddef>

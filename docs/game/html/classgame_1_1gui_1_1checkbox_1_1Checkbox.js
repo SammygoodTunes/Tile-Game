@@ -20,6 +20,7 @@ var classgame_1_1gui_1_1checkbox_1_1Checkbox =
     [ "_colour", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a5ddc88a9c78934c7ac370d5f8677e07e", null ],
     [ "_size", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#aa2ee9702ca589b64a319e2217ca6f0d3", null ],
     [ "_spacing", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#aba500c541f1143d723410e9b4d254900", null ],
+    [ "_timer", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a99aa8e47eb1256f850fae7f011e4443a", null ],
     [ "_x", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a39972f9a2932590942ca028eda448ba4", null ],
     [ "_y", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a46e700b9982051e2a82af108c4cfe090", null ],
     [ "title_label", "classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a17e45c0472de1b42d71f1f56340689ee", null ]

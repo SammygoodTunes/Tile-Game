@@ -7,15 +7,15 @@
         <itemizedlist>
             <listitem><para>None <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1adb4d0dfa8f1fe18b7e4246019c76f27f">__init__</link> (self, int x=0, int y=0)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a938a8befec700f839355698d6b3d89ad">__repr__</link> (self)</para>
+            <listitem><para>str <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aed2bb8ddd741bf0a83c843dbe194b8f6">__repr__</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a43531f676934eb0beee18129f582507b">__eq__</link> (self, Self obj)</para>
+            <listitem><para>bool <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a3c4d6a3b53e00ebe3d6c359f303069c3">__eq__</link> (self, Self obj)</para>
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aa1ca365b8c8a76066a914921bcae5532">compress</link> (self)</para>
 </listitem>
             <listitem><para>Self <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1afcc5219bf5abebc0a1552eecd336e258">decompress</link> (self, int compressed_tile)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1af91dd5cd4a18b84d1b2f54ec8e66db30">get_id</link> (self)</para>
+            <listitem><para>int <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a4092cf2a3bb184e8834c43d654461953">get_id</link> (self)</para>
 </listitem>
             <listitem><para>Self <link linkend="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5bc50553c7afc4d48525208c32627462">set_xy</link> (self, int x, int y)</para>
 </listitem>
@@ -77,16 +77,16 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a43531f676934eb0beee18129f582507b"/><section>
+<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a3c4d6a3b53e00ebe3d6c359f303069c3"/><section>
     <title>__eq__()</title>
 <indexterm><primary>__eq__</primary><secondary>game.data.tiles.tile.Tile</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile.Tile</primary><secondary>__eq__</secondary></indexterm>
-<para><computeroutput>game.data.tiles.tile.Tile.__eq__ ( self, Self obj)</computeroutput></para></section>
-<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a938a8befec700f839355698d6b3d89ad"/><section>
+<para><computeroutput> bool game.data.tiles.tile.Tile.__eq__ ( self, Self obj)</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aed2bb8ddd741bf0a83c843dbe194b8f6"/><section>
     <title>__repr__()</title>
 <indexterm><primary>__repr__</primary><secondary>game.data.tiles.tile.Tile</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile.Tile</primary><secondary>__repr__</secondary></indexterm>
-<para><computeroutput>game.data.tiles.tile.Tile.__repr__ ( self)</computeroutput></para></section>
+<para><computeroutput> str game.data.tiles.tile.Tile.__repr__ ( self)</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aa1ca365b8c8a76066a914921bcae5532"/><section>
     <title>compress()</title>
 <indexterm><primary>compress</primary><secondary>game.data.tiles.tile.Tile</secondary></indexterm>
@@ -119,11 +119,11 @@
 <para><literallayout><computeroutput>Return the damage delay of the tile.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1af91dd5cd4a18b84d1b2f54ec8e66db30"/><section>
+<anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a4092cf2a3bb184e8834c43d654461953"/><section>
     <title>get_id()</title>
 <indexterm><primary>get_id</primary><secondary>game.data.tiles.tile.Tile</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile.Tile</primary><secondary>get_id</secondary></indexterm>
-<para><computeroutput>game.data.tiles.tile.Tile.get_id ( self)</computeroutput></para>
+<para><computeroutput> int game.data.tiles.tile.Tile.get_id ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Return the id of the tile.
 </computeroutput></literallayout> </para>
 </section>

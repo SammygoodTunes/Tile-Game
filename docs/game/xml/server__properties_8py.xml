@@ -12,14 +12,20 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1server__properties" refkind="compound"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2" refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties" kindref="compound">ServerProperties</ref>:</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>server<sp/>properties.</highlight></codeline>
-<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1properties_1_1server__properties" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Module<sp/>name:<sp/>server_properties</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">This<sp/>module<sp/>defines<sp/>the<sp/>server<sp/>properties.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>TICKS_PER_SECOND<sp/>=<sp/>20</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_PLAYERS<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="7" refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties" kindref="compound">ServerProperties</ref>:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>server<sp/>properties.</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>TICKS_PER_SECOND<sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_PLAYERS<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>DELAY_BEFORE_CLOSURE<sp/>=<sp/>5.0</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/properties/server_properties.py"/>
   </compounddef>

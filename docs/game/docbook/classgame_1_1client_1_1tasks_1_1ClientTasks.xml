@@ -7,7 +7,9 @@
         <itemizedlist>
             <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a687269af093982a745ab9e074bcb905d">recognition</link> (sock)</para>
 </listitem>
-            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962">map_data</link> (sock)</para>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1af27f2eab4cc394412b1ba424a7ecd72f">map_data</link> (sock)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1afdd06e75515022315e02b560101f623d">confirm_map_data</link> (bytes data)</para>
 </listitem>
             <listitem><para>bytes <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a4f0f8bb6825971f3e6f2f655aab89638">get_map_data</link> (sock)</para>
 </listitem>
@@ -15,11 +17,15 @@
 </listitem>
             <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a0f262a813e52fa80e2fb0d9ad5792d4c">send_player_name</link> (sock, player_name)</para>
 </listitem>
-            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891">send_local_player</link> (sock, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)</para>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a37ddbb2f8560b31c791b8f2081263c8f">send_local_player</link> (sock, bytes data, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)</para>
 </listitem>
-            <listitem><para>bytes|None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df">get_global_game_state</link> (sock)</para>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a09a154893f11f83d18e6d01d7d7eb81d">confirm_local_player</link> (bytes data)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f">check_packet_queue</link> (sock, list[bytes] queue)</para>
+            <listitem><para>bytes|None <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1acf5af473a7bfd76b7558be7d0c278fe2">get_global_game_state</link> (sock, bytes data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1aacc588f31abadc1e1506800875d3cebc">check_packet_queue</link> (sock, list[bytes] queue)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a057e2f650cbf0078bd7a083ec7d0a4ba">confirm_queued_packet</link> (data)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -31,21 +37,48 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a225e51e9f541f78aa77f26a69d8a871f"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1aacc588f31abadc1e1506800875d3cebc"/><section>
     <title>check_packet_queue()</title>
 <indexterm><primary>check_packet_queue</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>check_packet_queue</secondary></indexterm>
-<para><computeroutput> None game.client.tasks.ClientTasks.check_packet_queue ( sock, list[bytes] queue)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> bool game.client.tasks.ClientTasks.check_packet_queue ( sock, list[bytes] queue)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for verifying the packet queue.
 If a packet is present, take the first one, send it to the server and remove it from the queue.
 [FIFO]
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a44b6aff7a1891fbc51a3556744b5e5df"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a09a154893f11f83d18e6d01d7d7eb81d"/><section>
+    <title>confirm_local_player()</title>
+<indexterm><primary>confirm_local_player</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>confirm_local_player</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.confirm_local_player (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for confirming the reception of the local player sent to the server.
+Return True if the data is a valid packet reception response, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1afdd06e75515022315e02b560101f623d"/><section>
+    <title>confirm_map_data()</title>
+<indexterm><primary>confirm_map_data</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>confirm_map_data</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.confirm_map_data (bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for confirming the reception of the map data request.
+Returns True if the data is a valid server response, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a057e2f650cbf0078bd7a083ec7d0a4ba"/><section>
+    <title>confirm_queued_packet()</title>
+<indexterm><primary>confirm_queued_packet</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
+<indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>confirm_queued_packet</secondary></indexterm>
+<para><computeroutput> bool game.client.tasks.ClientTasks.confirm_queued_packet ( data)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Task for confirming the reception of the queued packet that was sent to the server.
+Return True if the data is a valid packet reception response, otherwise False.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1acf5af473a7bfd76b7558be7d0c278fe2"/><section>
     <title>get_global_game_state()</title>
 <indexterm><primary>get_global_game_state</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>get_global_game_state</secondary></indexterm>
-<para><computeroutput> bytes | None game.client.tasks.ClientTasks.get_global_game_state ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> bytes | None game.client.tasks.ClientTasks.get_global_game_state ( sock, bytes data)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for receiving the global server-side game state.
 Return the game state list object if received successfully, otherwise None.
 </computeroutput></literallayout> </para>
@@ -59,11 +92,11 @@ Return the game state list object if received successfully, otherwise None.
 Return the decompressed map data object once received.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a41869239eab9d07c27e1c7d24db54962"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1af27f2eab4cc394412b1ba424a7ecd72f"/><section>
     <title>map_data()</title>
 <indexterm><primary>map_data</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>map_data</secondary></indexterm>
-<para><computeroutput> bool game.client.tasks.ClientTasks.map_data ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> None game.client.tasks.ClientTasks.map_data ( sock)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for requesting the map data.
 Return True if the map data response from the server was received successfully, otherwise False.
 </computeroutput></literallayout> </para>
@@ -86,11 +119,11 @@ Return True if the response from the server is received, otherwise False.
 Return True if the client&apos;s connection was successful, otherwise False.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a66bf9c24cf39aeec541979d2a2f86891"/><section>
+<anchor xml:id="_classgame_1_1client_1_1tasks_1_1ClientTasks_1a37ddbb2f8560b31c791b8f2081263c8f"/><section>
     <title>send_local_player()</title>
 <indexterm><primary>send_local_player</primary><secondary>game.client.tasks.ClientTasks</secondary></indexterm>
 <indexterm><primary>game.client.tasks.ClientTasks</primary><secondary>send_local_player</secondary></indexterm>
-<para><computeroutput> bool game.client.tasks.ClientTasks.send_local_player ( sock, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><computeroutput> bool game.client.tasks.ClientTasks.send_local_player ( sock, bytes data, <link linkend="_classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager">PlayerManager</link> player_manager)<computeroutput>[static]</computeroutput></computeroutput></para>
 <para><literallayout><computeroutput>Task for sending the local player to the server.
 Return True if the local player packet was sent to and received by the server, otherwise False.
 </computeroutput></literallayout> </para>

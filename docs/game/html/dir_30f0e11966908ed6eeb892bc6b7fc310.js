@@ -9,8 +9,8 @@ var dir_30f0e11966908ed6eeb892bc6b7fc310 =
     [ "inputbox.py", "inputbox_8py.html", "inputbox_8py" ],
     [ "label.py", "label_8py.html", "label_8py" ],
     [ "nametag.py", "nametag_8py.html", "nametag_8py" ],
+    [ "ordering_container.py", "ordering__container_8py.html", "ordering__container_8py" ],
     [ "progress_bar.py", "progress__bar_8py.html", "progress__bar_8py" ],
-    [ "screen_manager.py", "screen__manager_8py.html", "screen__manager_8py" ],
     [ "slot.py", "slot_8py.html", "slot_8py" ],
     [ "widget.py", "widget_8py.html", "widget_8py" ]
 ];

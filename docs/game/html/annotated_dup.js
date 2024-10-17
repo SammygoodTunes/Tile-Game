@@ -17,6 +17,9 @@ var annotated_dup =
           [ "player_manager", "namespacegame_1_1client_1_1managers_1_1player__manager.html", [
             [ "PlayerManager", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager" ]
           ] ],
+          [ "screen_manager", "namespacegame_1_1client_1_1managers_1_1screen__manager.html", [
+            [ "Screens", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens" ]
+          ] ],
           [ "world_manager", "namespacegame_1_1client_1_1managers_1_1world__manager.html", [
             [ "WorldManager", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" ]
           ] ]
@@ -54,6 +57,12 @@ var annotated_dup =
           ] ],
           [ "game_properties", "namespacegame_1_1data_1_1properties_1_1game__properties.html", [
             [ "GameProperties", "classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html", null ]
+          ] ],
+          [ "gui_properties", "namespacegame_1_1data_1_1properties_1_1gui__properties.html", [
+            [ "GuiProperties", "classgame_1_1data_1_1properties_1_1gui__properties_1_1GuiProperties.html", null ]
+          ] ],
+          [ "item_properties", "namespacegame_1_1data_1_1properties_1_1item__properties.html", [
+            [ "ItemProperties", "classgame_1_1data_1_1properties_1_1item__properties_1_1ItemProperties.html", null ]
           ] ],
           [ "player_properties", "namespacegame_1_1data_1_1properties_1_1player__properties.html", [
             [ "PlayerProperties", "classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties.html", null ]
@@ -139,11 +148,11 @@ var annotated_dup =
         [ "nametag", "namespacegame_1_1gui_1_1nametag.html", [
           [ "NameTag", "classgame_1_1gui_1_1nametag_1_1NameTag.html", "classgame_1_1gui_1_1nametag_1_1NameTag" ]
         ] ],
+        [ "ordering_container", "namespacegame_1_1gui_1_1ordering__container.html", [
+          [ "OrderingContainer", "classgame_1_1gui_1_1ordering__container_1_1OrderingContainer.html", "classgame_1_1gui_1_1ordering__container_1_1OrderingContainer" ]
+        ] ],
         [ "progress_bar", "namespacegame_1_1gui_1_1progress__bar.html", [
           [ "ProgressBar", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar" ]
-        ] ],
-        [ "screen_manager", "namespacegame_1_1gui_1_1screen__manager.html", [
-          [ "Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", "classgame_1_1gui_1_1screen__manager_1_1Screens" ]
         ] ],
         [ "screens", "namespacegame_1_1gui_1_1screens.html", [
           [ "crash_screen", "namespacegame_1_1gui_1_1screens_1_1crash__screen.html", [
@@ -247,9 +256,6 @@ var annotated_dup =
       [ "world", "namespacegame_1_1world.html", [
         [ "camera", "namespacegame_1_1world_1_1camera.html", [
           [ "Camera", "classgame_1_1world_1_1camera_1_1Camera.html", "classgame_1_1world_1_1camera_1_1Camera" ]
-        ] ],
-        [ "item_manager", "namespacegame_1_1world_1_1item__manager.html", [
-          [ "ItemManager", "classgame_1_1world_1_1item__manager_1_1ItemManager.html", null ]
         ] ],
         [ "map_manager", "namespacegame_1_1world_1_1map__manager.html", [
           [ "Map", "classgame_1_1world_1_1map__manager_1_1Map.html", "classgame_1_1world_1_1map__manager_1_1Map" ]

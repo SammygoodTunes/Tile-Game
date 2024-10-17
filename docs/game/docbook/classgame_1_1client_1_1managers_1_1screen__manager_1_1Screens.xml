@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens" xml:lang="en-US">
+<title>game.client.managers.screen_manager.Screens Class Reference</title>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a9b7d5941251246d5eba8a717596c4b0b">__init__</link> (self, <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00">window</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851">link_game</link> (self, game_obj)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae">events</link> (self, pygame.event.Event e)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a76165c4f8ac2404d6fb5a04c2d2cc592">update</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae">update_ui</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f">task_create_server</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e">task_join_server</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00">window</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0">screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3df4df5f147bed66864a032ea3dc1ae1">crash_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a46bd56f2ed26c8a3896941d27a1d1ff0">credits_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a837d83d0d6d7008758eb9e5fb4e43191">gameover_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a99f473e2084e997e5d935bb8badfb37d">loading_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a97e24d79d7ef00ccf25a59f959f4d49b">main_menu_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa0769c76ea8129fc50c382a3e2e7716a">map_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1ab38754931596612a72dc3d3b1974f884">options_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a163721adb83cb73c0a51d70477052633">pause_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a74289f45dc2a87ba5d103580dcfbc80d">player_list_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a682a8fcd51d9368adf5bbae3af05ac1c">server_connect_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7303469928f455cba6895034ed1bd7ba">server_create_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a5d7b39009cf1a4b21aeaab931088a042">server_join_screen</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7386b4999e9ca737f75d112ff571dad0">server_menu_screen</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Class for creating a collection of screens.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a9b7d5941251246d5eba8a717596c4b0b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.__init__ ( self,  window)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae"/><section>
+    <title>events()</title>
+<indexterm><primary>events</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>events</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.events ( self, pygame.event.Event e)</computeroutput></para>
+<para><literallayout><computeroutput>Handle the events of the different screens.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851"/><section>
+    <title>link_game()</title>
+<indexterm><primary>link_game</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>link_game</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.link_game ( self,  game_obj)</computeroutput></para>
+<para><literallayout><computeroutput>Link the global game instance.
+TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f"/><section>
+    <title>task_create_server()</title>
+<indexterm><primary>task_create_server</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>task_create_server</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.task_create_server ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Screen task for creating a server.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e"/><section>
+    <title>task_join_server()</title>
+<indexterm><primary>task_join_server</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>task_join_server</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.task_join_server ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Screen task for joining a server.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a76165c4f8ac2404d6fb5a04c2d2cc592"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>update</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.update ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screens.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae"/><section>
+    <title>update_ui()</title>
+<indexterm><primary>update_ui</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>update_ui</secondary></indexterm>
+<para><computeroutput> None game.client.managers.screen_manager.Screens.update_ui ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Update the screen UIs.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3df4df5f147bed66864a032ea3dc1ae1"/><section>
+    <title>crash_screen</title>
+<indexterm><primary>crash_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>crash_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.crash_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a46bd56f2ed26c8a3896941d27a1d1ff0"/><section>
+    <title>credits_screen</title>
+<indexterm><primary>credits_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>credits_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.credits_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>game</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.game</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a837d83d0d6d7008758eb9e5fb4e43191"/><section>
+    <title>gameover_screen</title>
+<indexterm><primary>gameover_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>gameover_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.gameover_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a99f473e2084e997e5d935bb8badfb37d"/><section>
+    <title>loading_screen</title>
+<indexterm><primary>loading_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>loading_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.loading_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a97e24d79d7ef00ccf25a59f959f4d49b"/><section>
+    <title>main_menu_screen</title>
+<indexterm><primary>main_menu_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>main_menu_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.main_menu_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa0769c76ea8129fc50c382a3e2e7716a"/><section>
+    <title>map_screen</title>
+<indexterm><primary>map_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>map_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.map_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1ab38754931596612a72dc3d3b1974f884"/><section>
+    <title>options_screen</title>
+<indexterm><primary>options_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>options_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.options_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a163721adb83cb73c0a51d70477052633"/><section>
+    <title>pause_screen</title>
+<indexterm><primary>pause_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>pause_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.pause_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a74289f45dc2a87ba5d103580dcfbc80d"/><section>
+    <title>player_list_screen</title>
+<indexterm><primary>player_list_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>player_list_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.player_list_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0"/><section>
+    <title>screen</title>
+<indexterm><primary>screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a682a8fcd51d9368adf5bbae3af05ac1c"/><section>
+    <title>server_connect_screen</title>
+<indexterm><primary>server_connect_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>server_connect_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.server_connect_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7303469928f455cba6895034ed1bd7ba"/><section>
+    <title>server_create_screen</title>
+<indexterm><primary>server_create_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>server_create_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.server_create_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a5d7b39009cf1a4b21aeaab931088a042"/><section>
+    <title>server_join_screen</title>
+<indexterm><primary>server_join_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>server_join_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.server_join_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7386b4999e9ca737f75d112ff571dad0"/><section>
+    <title>server_menu_screen</title>
+<indexterm><primary>server_menu_screen</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>server_menu_screen</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.server_menu_screen</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00"/><section>
+    <title>window</title>
+<indexterm><primary>window</primary><secondary>game.client.managers.screen_manager.Screens</secondary></indexterm>
+<indexterm><primary>game.client.managers.screen_manager.Screens</primary><secondary>window</secondary></indexterm>
+<para><computeroutput>game.client.managers.screen_manager.Screens.window</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_screen__manager_8py">screen_manager.py</link></section>
+</section>

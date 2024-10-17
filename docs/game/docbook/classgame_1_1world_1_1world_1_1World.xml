@@ -11,10 +11,6 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1world_1_1world_1_1World_1a0950236a2c7ca6faab58570a9b65f1cf">create</link> (self, seed)</para>
 </listitem>
-            <listitem><para>None <link linkend="_classgame_1_1world_1_1world_1_1World_1a45cebed9127218e44f0140f407e51b52">update</link> (self, window_obj, player_obj)</para>
-</listitem>
-            <listitem><para>None <link linkend="_classgame_1_1world_1_1world_1_1World_1a4d03fed5005902b386d52bf1070bd91c">update_ui</link> (self)</para>
-</listitem>
             <listitem><para>None <link linkend="_classgame_1_1world_1_1world_1_1World_1a22099c420762a65193b774fa8890fd6b">draw</link> (self, game)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1world_1_1world_1_1World_1a1de4f0ca427705c031e0713ce817eb4a">draw_wireframe</link> (self, screen)</para>
@@ -94,22 +90,6 @@
 <indexterm><primary>game.world.world.World</primary><secondary>set_map</secondary></indexterm>
 <para><computeroutput> Self game.world.world.World.set_map ( self, <link linkend="_classgame_1_1world_1_1map__manager_1_1Map">Map</link> _map)</computeroutput></para>
 <para><literallayout><computeroutput>Set the map, and return the world object itself.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgame_1_1world_1_1world_1_1World_1a45cebed9127218e44f0140f407e51b52"/><section>
-    <title>update()</title>
-<indexterm><primary>update</primary><secondary>game.world.world.World</secondary></indexterm>
-<indexterm><primary>game.world.world.World</primary><secondary>update</secondary></indexterm>
-<para><computeroutput> None game.world.world.World.update ( self,  window_obj,  player_obj)</computeroutput></para>
-<para><literallayout><computeroutput>Update the world.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgame_1_1world_1_1world_1_1World_1a4d03fed5005902b386d52bf1070bd91c"/><section>
-    <title>update_ui()</title>
-<indexterm><primary>update_ui</primary><secondary>game.world.world.World</secondary></indexterm>
-<indexterm><primary>game.world.world.World</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput> None game.world.world.World.update_ui ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Update the world&apos;s UI (unused).
 </computeroutput></literallayout> </para>
 </section>
 </section>

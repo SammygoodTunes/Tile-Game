@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verify_5fgame_5fproperty_5fvalues_0',['verify_game_property_values',['../namespacegame_1_1data_1_1data__manager.html#af39030728b711ba8672e24245b4fdd2b',1,'game::data::data_manager']]]
+  ['window_5fupdates_0',['window_updates',['../classgame_1_1core_1_1window_1_1Window.html#a818ff8458b756cf3a99b8a406dc8d88e',1,'game::core::window::Window']]]
 ];

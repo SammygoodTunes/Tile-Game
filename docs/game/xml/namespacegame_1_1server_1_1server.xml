@@ -6,6 +6,14 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>Module name: server
+
+This module handles the server and updates its state.
+It also calls the server tasks that send data packets to the client.
+
+(See data/states/server_states for the different server states.)
+(See server/tasks for the different server tasks.)
+</verbatim> </para>
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="1" column="1"/>
   </compounddef>

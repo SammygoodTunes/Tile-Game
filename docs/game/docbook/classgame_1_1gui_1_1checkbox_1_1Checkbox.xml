@@ -85,9 +85,11 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widge
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aba500c541f1143d723410e9b4d254900">_spacing</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4">_x</link></para>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a99aa8e47eb1256f850fae7f011e4443a">_timer</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090">_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4">_x</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -168,7 +170,7 @@ checkbox itself.
 <indexterm><primary>events</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.checkbox.Checkbox.events ( self, event.Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the checkbox events.
+<para><literallayout><computeroutput>Handle the checkbox events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1afe84fa368285768043d7556aade4a311"/><section>
@@ -271,6 +273,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a0320d2
 <indexterm><primary>_spacing</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
 <indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_spacing</secondary></indexterm>
 <para><computeroutput>game.gui.checkbox.Checkbox._spacing<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a99aa8e47eb1256f850fae7f011e4443a"/><section>
+    <title>_timer</title>
+<indexterm><primary>_timer</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>
+<indexterm><primary>game.gui.checkbox.Checkbox</primary><secondary>_timer</secondary></indexterm>
+<para><computeroutput>game.gui.checkbox.Checkbox._timer<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4"/><section>
     <title>_x</title>
 <indexterm><primary>_x</primary><secondary>game.gui.checkbox.Checkbox</secondary></indexterm>

@@ -46,6 +46,8 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1scree
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1aaccf0955f621c932e9f8088b73e8e7a9">debug_info_box</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1aed706339fe0f129a67196df05dffa1bc">vsync_box</link></para>
+</listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad20723bd00244e71172e741cdf1fcce3">back_button</link></para>
 </listitem>
         </itemizedlist>
@@ -92,7 +94,7 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>events</primary><secondary>game.gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.options_screen.OptionsScreen</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.screens.options_screen.OptionsScreen.events ( self, Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the screen events.
+<para><literallayout><computeroutput>Handle the screen events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2a7be194fe2f986af6d7a6d3d7f42a22"/><section>
@@ -159,6 +161,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>show_fps_box</primary><secondary>game.gui.screens.options_screen.OptionsScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.options_screen.OptionsScreen</primary><secondary>show_fps_box</secondary></indexterm>
 <para><computeroutput>game.gui.screens.options_screen.OptionsScreen.show_fps_box</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1aed706339fe0f129a67196df05dffa1bc"/><section>
+    <title>vsync_box</title>
+<indexterm><primary>vsync_box</primary><secondary>game.gui.screens.options_screen.OptionsScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.options_screen.OptionsScreen</primary><secondary>vsync_box</secondary></indexterm>
+<para><computeroutput>game.gui.screens.options_screen.OptionsScreen.vsync_box</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a841af6b54440ec0d6eb0c2e94680ea7e"/><section>
     <title>window</title>
 <indexterm><primary>window</primary><secondary>game.gui.screens.options_screen.OptionsScreen</secondary></indexterm>

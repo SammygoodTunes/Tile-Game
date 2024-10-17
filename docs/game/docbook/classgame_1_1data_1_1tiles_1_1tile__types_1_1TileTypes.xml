@@ -7,9 +7,9 @@
         <itemizedlist>
             <listitem><para>tuple <link linkend="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a81104731b627eae3c281d9135c842421">PLACEABLE</link></para>
 </listitem>
-            <listitem><para>tuple <link linkend="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac">BREAKABLE</link> = (<link linkend="_classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6">Tiles.COBBLESTONE</link>,)</para>
+            <listitem><para>tuple <link linkend="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac">BREAKABLE</link></para>
 </listitem>
-            <listitem><para>tuple <link linkend="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4">LETHAL</link> = (<link linkend="_classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa">Tiles.LAVA</link>,)</para>
+            <listitem><para>tuple <link linkend="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4">LETHAL</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -25,18 +25,32 @@
     <title>BREAKABLE</title>
 <indexterm><primary>BREAKABLE</primary><secondary>game.data.tiles.tile_types.TileTypes</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile_types.TileTypes</primary><secondary>BREAKABLE</secondary></indexterm>
-<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.BREAKABLE = (<link linkend="_classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6">Tiles.COBBLESTONE</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.BREAKABLE<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.COBBLESTONE,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
 <anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4"/><section>
     <title>LETHAL</title>
 <indexterm><primary>LETHAL</primary><secondary>game.data.tiles.tile_types.TileTypes</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile_types.TileTypes</primary><secondary>LETHAL</secondary></indexterm>
-<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.LETHAL = (<link linkend="_classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa">Tiles.LAVA</link>,)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.LETHAL<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.LAVA,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
 <anchor xml:id="_classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a81104731b627eae3c281d9135c842421"/><section>
     <title>PLACEABLE</title>
 <indexterm><primary>PLACEABLE</primary><secondary>game.data.tiles.tile_types.TileTypes</secondary></indexterm>
 <indexterm><primary>game.data.tiles.tile_types.TileTypes</primary><secondary>PLACEABLE</secondary></indexterm>
-<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.PLACEABLE<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;(Tiles.GRASS,&#32;Tiles.PLAINS,&#32;Tiles.DIRT,&#32;Tiles.COBBLESTONE,&#32;Tiles.SAND,
-&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.COBBLESTONE_STAIRS,&#32;Tiles.FIRESTONE,&#32;Tiles.WATER,&#32;Tiles.LAVA)
+<para><computeroutput>tuple game.data.tiles.tile_types.TileTypes.PLACEABLE<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.VOID,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.GRASS,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.PLAINS,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.DIRT,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.COBBLESTONE,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.SAND,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.WATER,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Tiles.LAVA,
+&#32;&#32;&#32;&#32;)
 </programlisting></section>
 <para>
 The documentation for this class was generated from the following file:</para>

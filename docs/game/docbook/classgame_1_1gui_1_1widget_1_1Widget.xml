@@ -65,7 +65,7 @@
 <indexterm><primary>__init__</primary><secondary>game.gui.widget.Widget</secondary></indexterm>
 <indexterm><primary>game.gui.widget.Widget</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput> None game.gui.widget.Widget.__init__ ( self, int x, int y)</computeroutput></para><para>
-Reimplemented in <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a">game.gui.slot.Slot</link>, <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d">game.gui.hotbar.Hotbar</link>, <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a59df44863e58294eaced06a343104318">game.gui.label.Label</link>, <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523">game.gui.nametag.NameTag</link>, <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca">game.gui.checkbox.Checkbox</link>, <link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a">game.gui.horizontal_slider.HorizontalSlider</link>, and <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90">game.gui.progress_bar.ProgressBar</link>.</para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a4633f7cba0be687119fecfb9fd1a2eac">game.gui.ordering_container.OrderingContainer</link>, <link linkend="_classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a">game.gui.slot.Slot</link>, <link linkend="_classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d">game.gui.hotbar.Hotbar</link>, <link linkend="_classgame_1_1gui_1_1label_1_1Label_1a59df44863e58294eaced06a343104318">game.gui.label.Label</link>, <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523">game.gui.nametag.NameTag</link>, <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca">game.gui.checkbox.Checkbox</link>, <link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a">game.gui.horizontal_slider.HorizontalSlider</link>, and <link linkend="_classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90">game.gui.progress_bar.ProgressBar</link>.</para>
 </section>
 </section>
 <section>
@@ -138,7 +138,7 @@ Reimplemented in <link linkend="_classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa58e
 <para><literallayout><computeroutput>Set the widget&apos;s visibility/interactivity, then return the widget itself.
 </computeroutput></literallayout> </para>
 <para>
-Reimplemented in <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37">game.gui.nametag.NameTag</link>.</para>
+Reimplemented in <link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a402a5904824198f84bcd9d4f2741b52e">game.gui.horizontal_slider.HorizontalSlider</link>, <link linkend="_classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37">game.gui.nametag.NameTag</link>, and <link linkend="_classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a6a5df88d6c0d88eeff33fac5c86efb16">game.gui.ordering_container.OrderingContainer</link>.</para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc"/><section>
     <title>set_transparency()</title>

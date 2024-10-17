@@ -2,11 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="data_2states_2____init_____8py" kind="file" language="Python">
     <compoundname>data/states/__init__.py</compoundname>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1data">game::data</innernamespace>
+    <innernamespace refid="namespacegame_1_1data_1_1states">game::data::states</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1data_1_1states" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">States<sp/>package.</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">States<sp/>are<sp/>values<sp/>that<sp/>describe<sp/>the<sp/>condition<sp/>that<sp/>something<sp/>is<sp/>in.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">A<sp/>server<sp/>can<sp/>be<sp/>starting,<sp/>a<sp/>player<sp/>can<sp/>be<sp/>moving<sp/>left,<sp/>a<sp/>connection<sp/>can<sp/>time<sp/>out.<sp/>Those<sp/>are<sp/>all<sp/>states.</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral">They<sp/>don&apos;t<sp/>define<sp/>behaviour<sp/>but<sp/>report<sp/>behaviour.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/__init__.py"/>
   </compounddef>

@@ -20,9 +20,10 @@ var hierarchy =
       [ "game.utils.exceptions.ZeroOrLessSpawnPlayerAttempts", "classgame_1_1utils_1_1exceptions_1_1ZeroOrLessSpawnPlayerAttempts.html", null ]
     ] ],
     [ "game.data.properties.game_properties.GameProperties", "classgame_1_1data_1_1properties_1_1game__properties_1_1GameProperties.html", null ],
+    [ "game.data.properties.gui_properties.GuiProperties", "classgame_1_1data_1_1properties_1_1gui__properties_1_1GuiProperties.html", null ],
     [ "game.network.packet.Hasher", "classgame_1_1network_1_1packet_1_1Hasher.html", null ],
     [ "game.data.items.item.Item", "classgame_1_1data_1_1items_1_1item_1_1Item.html", null ],
-    [ "game.world.item_manager.ItemManager", "classgame_1_1world_1_1item__manager_1_1ItemManager.html", null ],
+    [ "game.data.properties.item_properties.ItemProperties", "classgame_1_1data_1_1properties_1_1item__properties_1_1ItemProperties.html", null ],
     [ "game.data.items.items.Items", "classgame_1_1data_1_1items_1_1items_1_1Items.html", null ],
     [ "game.data.items.item_types.ItemTypes", "classgame_1_1data_1_1items_1_1item__types_1_1ItemTypes.html", null ],
     [ "game.data.keys.Keys", "classgame_1_1data_1_1keys_1_1Keys.html", null ],
@@ -57,7 +58,7 @@ var hierarchy =
       [ "game.gui.screens.servermenu_screen.ServerMenuScreen", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", null ]
     ] ],
     [ "game.data.properties.screen_properties.ScreenProperties", "classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties.html", null ],
-    [ "game.gui.screen_manager.Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", null ],
+    [ "game.client.managers.screen_manager.Screens", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html", null ],
     [ "game.server.server.Server", "classgame_1_1server_1_1server_1_1Server.html", null ],
     [ "game.data.properties.server_properties.ServerProperties", "classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties.html", null ],
     [ "game.data.states.server_states.ServerStates", "classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html", null ],
@@ -78,6 +79,7 @@ var hierarchy =
       [ "game.gui.hotbar.Hotbar", "classgame_1_1gui_1_1hotbar_1_1Hotbar.html", null ],
       [ "game.gui.label.Label", "classgame_1_1gui_1_1label_1_1Label.html", null ],
       [ "game.gui.nametag.NameTag", "classgame_1_1gui_1_1nametag_1_1NameTag.html", null ],
+      [ "game.gui.ordering_container.OrderingContainer", "classgame_1_1gui_1_1ordering__container_1_1OrderingContainer.html", null ],
       [ "game.gui.progress_bar.ProgressBar", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html", null ],
       [ "game.gui.slot.Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", null ]
     ] ],

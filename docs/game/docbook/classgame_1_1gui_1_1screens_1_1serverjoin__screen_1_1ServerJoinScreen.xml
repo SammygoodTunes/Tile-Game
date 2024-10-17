@@ -50,6 +50,8 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1scree
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ad1b4730a9e14f38921a4f43eb8492ef4">back_button</link></para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af75e7ac6ccc157c2d9e929c3c18717b4">ordering_container</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -90,7 +92,7 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>events</primary><secondary>game.gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.screens.serverjoin_screen.ServerJoinScreen.events ( self, Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the screen events (unused).
+<para><literallayout><computeroutput>Handle the screen events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a70278293a5f4884a24e25872aff299ee"/><section>
@@ -152,6 +154,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>join_label</primary><secondary>game.gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>join_label</secondary></indexterm>
 <para><computeroutput>game.gui.screens.serverjoin_screen.ServerJoinScreen.join_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af75e7ac6ccc157c2d9e929c3c18717b4"/><section>
+    <title>ordering_container</title>
+<indexterm><primary>ordering_container</primary><secondary>game.gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverjoin_screen.ServerJoinScreen</primary><secondary>ordering_container</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverjoin_screen.ServerJoinScreen.ordering_container</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ae23079b56b0403a028fa18680ea35829"/><section>
     <title>port_input</title>
 <indexterm><primary>port_input</primary><secondary>game.gui.screens.serverjoin_screen.ServerJoinScreen</secondary></indexterm>

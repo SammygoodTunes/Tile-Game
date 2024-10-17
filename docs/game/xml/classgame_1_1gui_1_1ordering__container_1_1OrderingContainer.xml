@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::ordering_container::OrderingContainer</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1widget_1_1Widget" prot="public" virt="non-virtual">game.gui.widget.Widget</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1aa77f08c0f6d47f6e225091e9f61bfa27" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.ordering_container.OrderingContainer::_widgets</definition>
+        <argsstring></argsstring>
+        <name>_widgets</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer._widgets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1aaafa662cbf21dc356a7c0de7f45ce9c3" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.ordering_container.OrderingContainer::_order</definition>
+        <argsstring></argsstring>
+        <name>_order</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer._order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a4633f7cba0be687119fecfb9fd1a2eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.ordering_container.OrderingContainer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a18c96423289f07fda1829a9a45c00066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.ordering_container.OrderingContainer.events</definition>
+        <argsstring>(self, Event e)</argsstring>
+        <name>events</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer.events</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle the ordering container events.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="26" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a512d7f8e9a8e8701065687874982bdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.ordering_container.OrderingContainer.set_widgets</definition>
+        <argsstring>(self, list[any] widgets)</argsstring>
+        <name>set_widgets</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer.set_widgets</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>widgets</declname>
+          <array>[any]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the ordering container&apos;s widgets array, then return the ordering container itself
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1acbe0c5e6a88833e746b9a0d822eae51d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list[any]</type>
+        <definition> list[any] game.gui.ordering_container.OrderingContainer.get_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_widgets</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer.get_widgets</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the ordering container&apos;s widgets array.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a6a5df88d6c0d88eeff33fac5c86efb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.ordering_container.OrderingContainer.set_state</definition>
+        <argsstring>(self, bool state)</argsstring>
+        <name>set_state</name>
+        <qualifiedname>game.gui.ordering_container.OrderingContainer.set_state</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the ordering container&apos;s state and reset the order, then return the ordering container itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="62" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="62" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating an ordering container.
+This is used for containing widgets that require ordering, like for tabbing between widgets.
+This isn&apos;t a visible GUI component.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.ordering_container.OrderingContainer</label>
+        <link refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.ordering_container.OrderingContainer</label>
+        <link refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" line="14" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/ordering_container.py" bodystart="14" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a4633f7cba0be687119fecfb9fd1a2eac" prot="public" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1aaafa662cbf21dc356a7c0de7f45ce9c3" prot="protected" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>_order</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1aa77f08c0f6d47f6e225091e9f61bfa27" prot="protected" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>_widgets</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a18c96423289f07fda1829a9a45c00066" prot="public" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>events</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1acbe0c5e6a88833e746b9a0d822eae51d" prot="public" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>get_widgets</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a6a5df88d6c0d88eeff33fac5c86efb16" prot="public" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>set_state</name></member>
+      <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a512d7f8e9a8e8701065687874982bdf6" prot="public" virt="non-virtual"><scope>game::gui::ordering_container::OrderingContainer</scope><name>set_widgets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

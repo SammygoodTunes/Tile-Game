@@ -2,7 +2,7 @@ var searchData=
 [
   ['screen_0',['Screen',['../classgame_1_1gui_1_1screens_1_1screen_1_1Screen.html',1,'game::gui::screens::screen']]],
   ['screenproperties_1',['ScreenProperties',['../classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties.html',1,'game::data::properties::screen_properties']]],
-  ['screens_2',['Screens',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html',1,'game::gui::screen_manager']]],
+  ['screens_2',['Screens',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html',1,'game::client::managers::screen_manager']]],
   ['server_3',['Server',['../classgame_1_1server_1_1server_1_1Server.html',1,'game::server::server']]],
   ['serverconnectscreen_4',['ServerConnectScreen',['../classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html',1,'game::gui::screens::serverconnect_screen']]],
   ['servercreatescreen_5',['ServerCreateScreen',['../classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen.html',1,'game::gui::screens::servercreate_screen']]],

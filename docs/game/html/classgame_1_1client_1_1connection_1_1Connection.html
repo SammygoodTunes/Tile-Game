@@ -131,8 +131,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a331149fc2e24cb2ca3af1353b14c84bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dac67c689f30f0acc4adbd0f8e4dfc" id="r_a49dac67c689f30f0acc4adbd0f8e4dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49dac67c689f30f0acc4adbd0f8e4dfc">hit_player</a></td></tr>
 <tr class="separator:a49dac67c689f30f0acc4adbd0f8e4dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4738cec77594c26a3aa2c85de1d16dc5" id="r_a4738cec77594c26a3aa2c85de1d16dc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4738cec77594c26a3aa2c85de1d16dc5">packet_queue</a></td></tr>
-<tr class="separator:a4738cec77594c26a3aa2c85de1d16dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dff41773fa8d611bb3921a1bc00e94c" id="r_a4dff41773fa8d611bb3921a1bc00e94c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dff41773fa8d611bb3921a1bc00e94c">timer</a></td></tr>
+<tr class="separator:a4dff41773fa8d611bb3921a1bc00e94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac306257b5d2cac1fec79d974021a70d4" id="r_ac306257b5d2cac1fec79d974021a70d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac306257b5d2cac1fec79d974021a70d4">ping</a></td></tr>
 <tr class="separator:ac306257b5d2cac1fec79d974021a70d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -231,13 +231,7 @@ Any errors or failures will raise specific exceptions.
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">if e.type == pygame.MOUSEBUTTONDOWN:
-    if e.button == MouseStates.LMB:
-        hit_player = self.player_manager.hit_player(self.player.get_player_name())
-        if not hit_player:
-            return
-        print(f"Hit player {hit_player}, sending packets to server")
-        self.hit_player = hit_player
+<pre class="fragment">Handle the connection events (unused).
 </pre> 
 </div>
 </div>
@@ -264,7 +258,8 @@ Any errors or failures will raise specific exceptions.
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">Start a client connection task.
+</pre> 
 </div>
 </div>
 <a id="a008f356261f7336532a742acb0a35e54" name="a008f356261f7336532a742acb0a35e54"></a>
@@ -308,20 +303,6 @@ Any errors or failures will raise specific exceptions.
       <table class="memname">
         <tr>
           <td class="memname">game.client.connection.Connection.host</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4738cec77594c26a3aa2c85de1d16dc5" name="a4738cec77594c26a3aa2c85de1d16dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4738cec77594c26a3aa2c85de1d16dc5">&#9670;&#160;</a></span>packet_queue</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">game.client.connection.Connection.packet_queue</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -392,6 +373,20 @@ Any errors or failures will raise specific exceptions.
       <table class="memname">
         <tr>
           <td class="memname">game.client.connection.Connection.state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dff41773fa8d611bb3921a1bc00e94c" name="a4dff41773fa8d611bb3921a1bc00e94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dff41773fa8d611bb3921a1bc00e94c">&#9670;&#160;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">game.client.connection.Connection.timer</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -42,9 +42,7 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1scree
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74">info_label</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854">back_button</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf">default_screen</link></para>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad1607207ccf443e5383e6821b1b3d523">main_menu_button</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -126,16 +124,6 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a35dcc80906eefed9f6fd685de39dc854"/><section>
-    <title>back_button</title>
-<indexterm><primary>back_button</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
-<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>back_button</secondary></indexterm>
-<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.back_button</computeroutput></para></section>
-<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1aa26565c21a0383f020006abb04a91adf"/><section>
-    <title>default_screen</title>
-<indexterm><primary>default_screen</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
-<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>default_screen</secondary></indexterm>
-<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.default_screen</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd"/><section>
     <title>faded_surface</title>
 <indexterm><primary>faded_surface</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
@@ -146,6 +134,11 @@ Reimplemented from <link linkend="_classgame_1_1gui_1_1screens_1_1screen_1_1Scre
 <indexterm><primary>info_label</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
 <indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>info_label</secondary></indexterm>
 <para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.info_label</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad1607207ccf443e5383e6821b1b3d523"/><section>
+    <title>main_menu_button</title>
+<indexterm><primary>main_menu_button</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>
+<indexterm><primary>game.gui.screens.serverconnect_screen.ServerConnectScreen</primary><secondary>main_menu_button</secondary></indexterm>
+<para><computeroutput>game.gui.screens.serverconnect_screen.ServerConnectScreen.main_menu_button</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8"/><section>
     <title>window</title>
 <indexterm><primary>window</primary><secondary>game.gui.screens.serverconnect_screen.ServerConnectScreen</secondary></indexterm>

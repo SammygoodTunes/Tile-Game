@@ -15,6 +15,8 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba">stop</link> (self)</para>
 </listitem>
+            <listitem><para>None <link linkend="_classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1">safe_closure</link> (self)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -24,7 +26,7 @@
 </listitem>
             <listitem><para><link linkend="_classgame_1_1server_1_1server_1_1Server_1a115f47f2b8f5bf4e0f16ce0cdc5f7fcd">player_count</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1server_1_1server_1_1Server_1a3542a5b340fb56366bcf2fead8fb1c0d">timeout</link></para>
+            <listitem><para><link linkend="_classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380">timer</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a">world_handler</link></para>
 </listitem>
@@ -66,6 +68,14 @@
 <indexterm><primary>game.server.server.Server</primary><secondary>run</secondary></indexterm>
 <para><computeroutput> None game.server.server.Server.run ( self,  state, str _seed)</computeroutput></para>
 <para><literallayout><computeroutput>Run the server and listen for connections.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1"/><section>
+    <title>safe_closure()</title>
+<indexterm><primary>safe_closure</primary><secondary>game.server.server.Server</secondary></indexterm>
+<indexterm><primary>game.server.server.Server</primary><secondary>safe_closure</secondary></indexterm>
+<para><computeroutput> None game.server.server.Server.safe_closure ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Safely close the server when no players are online after a certain amount of time.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a"/><section>
@@ -112,11 +122,11 @@
 <indexterm><primary>state</primary><secondary>game.server.server.Server</secondary></indexterm>
 <indexterm><primary>game.server.server.Server</primary><secondary>state</secondary></indexterm>
 <para><computeroutput>game.server.server.Server.state</computeroutput></para></section>
-<anchor xml:id="_classgame_1_1server_1_1server_1_1Server_1a3542a5b340fb56366bcf2fead8fb1c0d"/><section>
-    <title>timeout</title>
-<indexterm><primary>timeout</primary><secondary>game.server.server.Server</secondary></indexterm>
-<indexterm><primary>game.server.server.Server</primary><secondary>timeout</secondary></indexterm>
-<para><computeroutput>game.server.server.Server.timeout</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380"/><section>
+    <title>timer</title>
+<indexterm><primary>timer</primary><secondary>game.server.server.Server</secondary></indexterm>
+<indexterm><primary>game.server.server.Server</primary><secondary>timer</secondary></indexterm>
+<para><computeroutput>game.server.server.Server.timer</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a"/><section>
     <title>world_handler</title>
 <indexterm><primary>world_handler</primary><secondary>game.server.server.Server</secondary></indexterm>

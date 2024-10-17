@@ -15,11 +15,9 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1entity_1_1player_1_1Player_1a31151805ef60f39e81615532baf2068d">draw_selection_grid</link> (self, game)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1entity_1_1player_1_1Player_1afee98ea2f2be08a7866d605cfdf20cd3">draw_gun_pointer</link> (self, game)</para>
+            <listitem><para>None <link linkend="_classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4">draw_gun_pointer</link> (self, game)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c">update</link> (self, game, <link linkend="_classgame_1_1world_1_1map__manager_1_1Map">Map</link> map_obj)</para>
-</listitem>
-            <listitem><para>None <link linkend="_classgame_1_1entity_1_1player_1_1Player_1ac92ce3044ae4a2348c4f897e8379ff54">update_ui</link> (self)</para>
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59">break_tile</link> (self, game)</para>
 </listitem>
@@ -201,11 +199,14 @@
 <para><literallayout><computeroutput>Draw the player to the screen.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1afee98ea2f2be08a7866d605cfdf20cd3"/><section>
+<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4"/><section>
     <title>draw_gun_pointer()</title>
 <indexterm><primary>draw_gun_pointer</primary><secondary>game.entity.player.Player</secondary></indexterm>
 <indexterm><primary>game.entity.player.Player</primary><secondary>draw_gun_pointer</secondary></indexterm>
-<para><computeroutput>game.entity.player.Player.draw_gun_pointer ( self,  game)</computeroutput></para></section>
+<para><computeroutput> None game.entity.player.Player.draw_gun_pointer ( self,  game)</computeroutput></para>
+<para><literallayout><computeroutput>Draw the gun pointer to the screen.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a31151805ef60f39e81615532baf2068d"/><section>
     <title>draw_selection_grid()</title>
 <indexterm><primary>draw_selection_grid</primary><secondary>game.entity.player.Player</secondary></indexterm>
@@ -219,7 +220,7 @@
 <indexterm><primary>events</primary><secondary>game.entity.player.Player</secondary></indexterm>
 <indexterm><primary>game.entity.player.Player</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.entity.player.Player.events ( self,  game,  map_obj, pygame.event.Event | pygame.event.EventType e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the player events.
+<para><literallayout><computeroutput>Handle the player events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1a6ed56d95d0d2ca9ad37133dc19f68948"/><section>
@@ -508,14 +509,6 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <indexterm><primary>game.entity.player.Player</primary><secondary>update</secondary></indexterm>
 <para><computeroutput> None game.entity.player.Player.update ( self,  game, <link linkend="_classgame_1_1world_1_1map__manager_1_1Map">Map</link> map_obj)</computeroutput></para>
 <para><literallayout><computeroutput>Update the player.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgame_1_1entity_1_1player_1_1Player_1ac92ce3044ae4a2348c4f897e8379ff54"/><section>
-    <title>update_ui()</title>
-<indexterm><primary>update_ui</primary><secondary>game.entity.player.Player</secondary></indexterm>
-<indexterm><primary>game.entity.player.Player</primary><secondary>update_ui</secondary></indexterm>
-<para><computeroutput> None game.entity.player.Player.update_ui ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Update the player GUI.
 </computeroutput></literallayout> </para>
 </section>
 </section>

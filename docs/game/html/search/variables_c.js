@@ -9,7 +9,7 @@ var searchData=
   ['lethal_6',['LETHAL',['../classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes.html#a127968cdf33a8647a9a39a18cbe797f4',1,'game::data::tiles::tile_types::TileTypes']]],
   ['level_7',['level',['../namespacegame_1_1utils_1_1logger.html#aa63d38d66f3f7c2207d9dd7781df6f1d',1,'game::utils::logger']]],
   ['lmb_8',['LMB',['../classgame_1_1data_1_1states_1_1mouse__states_1_1MouseStates.html#afa7f18bc4538cbe3bb1aa32356161936',1,'game::data::states::mouse_states::MouseStates']]],
-  ['loading_5fscreen_9',['loading_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a4cf731e07f3d05d83103c89f6e78a578',1,'game::gui::screen_manager::Screens']]],
+  ['loading_5fscreen_9',['loading_screen',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#a99f473e2084e997e5d935bb8badfb37d',1,'game::client::managers::screen_manager::Screens']]],
   ['local_5fworld_10',['local_world',['../classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html#ab33122caa942952eedf5819876a45c0c',1,'game::client::managers::world_manager::WorldManager']]],
   ['log_5fdir_11',['log_dir',['../namespacegame_1_1utils_1_1logger.html#aae9db829f03e92d02c0e3602abf824b0',1,'game::utils::logger']]],
   ['logger_12',['logger',['../namespacegame_1_1utils_1_1logger.html#aee1dd5f7a553b5ee79a331f39137883d',1,'game::utils::logger']]],

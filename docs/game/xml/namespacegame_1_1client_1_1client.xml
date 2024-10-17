@@ -6,6 +6,20 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>Module name: client
+
+This module handles all client-related things such as the camera, the player and the world.
+It also initialises the connection handler to permit connections to servers.
+
+Some of the attributes are linked with those in the managers, for instance
+the player attribute is linked with the local player attribute of the player manager, in order for the
+connection to have access to its properties.
+This is because the communication between connection and connection handler modules is not bidirectional, so the
+connection cannot directly recuperate the player attribute of the client module.
+This could be implemented in a different way but for now this is how it works.
+
+(See client/managers/ for the different client managers.)
+</verbatim> </para>
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="1" column="1"/>
   </compounddef>

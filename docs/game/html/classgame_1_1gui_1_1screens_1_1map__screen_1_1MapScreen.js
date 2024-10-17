@@ -2,7 +2,7 @@ var classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen =
 [
     [ "__init__", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#a46279bdc6356142989203c173850afee", null ],
     [ "draw", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#ad3c97215190791c66fe964592ee9cdee", null ],
-    [ "initialise_map", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#aa7aae311467c4b796b2b3b41e6706aea", null ],
+    [ "initialise_map", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#a62ba22806fe108c0a3a4ab8c686fb8af", null ],
     [ "initialise_surface", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#ab7c8a1cba92c43a9a65b25558f12a80e", null ],
     [ "reset_map", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#aa634dc82e657c3c85dedbe61b218c226", null ],
     [ "set_state", "classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen.html#a6373f9281fdf6f2af15e13a14654ac83", null ],

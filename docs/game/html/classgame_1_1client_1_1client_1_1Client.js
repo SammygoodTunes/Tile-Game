@@ -6,6 +6,5 @@ var classgame_1_1client_1_1client_1_1Client =
     [ "stop", "classgame_1_1client_1_1client_1_1Client.html#aeba4f31315d488c27e9990d45f0273c3", null ],
     [ "update", "classgame_1_1client_1_1client_1_1Client.html#a4cda6e1e5a62d8c3a0ac567d5ae8b298", null ],
     [ "update_ui", "classgame_1_1client_1_1client_1_1Client.html#ab5e9c02ccb7bc945719f06cdfd8bb730", null ],
-    [ "connection_handler", "classgame_1_1client_1_1client_1_1Client.html#a0210e752bd89af085143ec3315a1ff2d", null ],
-    [ "player", "classgame_1_1client_1_1client_1_1Client.html#aed9270fce6526346a1441a81a97cae22", null ]
+    [ "connection_handler", "classgame_1_1client_1_1client_1_1Client.html#a0210e752bd89af085143ec3315a1ff2d", null ]
 ];

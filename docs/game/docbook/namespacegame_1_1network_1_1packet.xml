@@ -25,6 +25,14 @@
         </itemizedlist>
 </simplesect>
 <section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Module name: packet
+
+This module defines a set of methods for hashing, compressing and altering data packets.
+</computeroutput></literallayout> </para>
+</section>
+<section>
 <title>Function Documentation</title>
 <anchor xml:id="_namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6"/><section>
     <title>fill()</title>
@@ -39,7 +47,7 @@
 <indexterm><primary>hex_len</primary><secondary>game.network.packet</secondary></indexterm>
 <indexterm><primary>game.network.packet</primary><secondary>hex_len</secondary></indexterm>
 <para><computeroutput> bytes game.network.packet.hex_len (bytes data)</computeroutput></para>
-<para><literallayout><computeroutput>Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+<para><literallayout><computeroutput>Return length of data in hex. Used in packet header for determining data size.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9"/><section>

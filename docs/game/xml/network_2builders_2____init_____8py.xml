@@ -2,11 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="network_2builders_2____init_____8py" kind="file" language="Python">
     <compoundname>network/builders/__init__.py</compoundname>
+    <innernamespace refid="namespacegame">game</innernamespace>
+    <innernamespace refid="namespacegame_1_1network">game::network</innernamespace>
+    <innernamespace refid="namespacegame_1_1network_1_1builders">game::network::builders</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1network_1_1builders" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Builders<sp/>package.</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">These<sp/>builders<sp/>are<sp/>used<sp/>to<sp/>build<sp/>packets<sp/>based<sp/>on<sp/>their<sp/>nature.</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">For<sp/>instance,<sp/>the<sp/>player<sp/>builder<sp/>will<sp/>only<sp/>build<sp/>player-related<sp/>packets.</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral">The<sp/>base<sp/>builder<sp/>is<sp/>the<sp/>base<sp/>of<sp/>all<sp/>builders.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/network/builders/__init__.py"/>
   </compounddef>

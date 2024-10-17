@@ -21,15 +21,19 @@
 </listitem>
             <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af">update</link> (self, window)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a73afa55e833db7a64798dc2ee6efc00d">scroll_text</link> (self)</para>
+            <listitem><para>None <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1e7bc09d1e8970210009a6c3afecc172">scroll_text</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1614d1cde516217425c78d7c7d0782b5">authorise_only_ascii</link> (self)</para>
+            <listitem><para>str <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a7b0055610a614eef15a8a69e92f5a07f">clean_text</link> (self, str text)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac293574688113dc4aac32d02b45480e6">authorise_only_numeric</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a22ec41ec434791f811addd2fe89cea04">authorise_only_ascii</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4f694fa75694304ffb3f649584df8352">authorise_only_alnum</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1acbc663ca22c49f6a36395dff2f4c06af">authorise_only_numeric</link> (self)</para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a843adad0762a296df5ae71dd091a694f">authorise_only_alnumlines</link> (self)</para>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1a8ae3c4c61569187dfc03e691053fe0">authorise_only_alnum</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a783902d6ca2ca31bd93d6c253771bd77">authorise_only_alnumlines</link> (self)</para>
+</listitem>
+            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afefbe14a1cd7eda0104e35a0e7690377">authorise_only_alnumdot</link> (self)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908">is_hovering_over</link> (self)</para>
 </listitem>
@@ -77,10 +81,6 @@
 </listitem>
             <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a8ea9e658d677b9c24c27310b27c8302b">get_max_text_length</link> (self)</para>
 </listitem>
-            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a56539eddb2835035dd16a9758dc9dfb6">set_order</link> (self, int order)</para>
-</listitem>
-            <listitem><para>int <link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afc4d7567ca599322eae916034eb38f6a">get_order</link> (self)</para>
-</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -115,8 +115,6 @@
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afa322ad401b822a95ff49f0dc074e4ca">_text_offset</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaf642443641ac6cc0307fb24107e313b">_order</link></para>
-</listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ade7956ce8695803263b51f56b640b2">_max_text_length</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a38b5b2278e1d9dcaee70d7abb131d050">_authorised_chars</link></para>
@@ -124,6 +122,8 @@
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1adbca92c8cb84bf617ce88b424c639b9a">_placeholder_label</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a108e74023581dd95be86348603165c78">_text_label</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a2184eb4f6fc634928c253afd7276f5c2">_timer</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0">_x</link></para>
 </listitem>
@@ -153,36 +153,45 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a4f694fa75694304ffb3f649584df8352"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1a8ae3c4c61569187dfc03e691053fe0"/><section>
     <title>authorise_only_alnum()</title>
 <indexterm><primary>authorise_only_alnum</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_alnum</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_alnum ( self)</computeroutput></para>
+<para><computeroutput> Self game.gui.inputbox.InputBox.authorise_only_alnum ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9), then return the input box itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a843adad0762a296df5ae71dd091a694f"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afefbe14a1cd7eda0104e35a0e7690377"/><section>
+    <title>authorise_only_alnumdot()</title>
+<indexterm><primary>authorise_only_alnumdot</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_alnumdot</secondary></indexterm>
+<para><computeroutput> Self game.gui.inputbox.InputBox.authorise_only_alnumdot ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9.), then return the input box itself.
+This includes the dot (period/full stop) character.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a783902d6ca2ca31bd93d6c253771bd77"/><section>
     <title>authorise_only_alnumlines()</title>
 <indexterm><primary>authorise_only_alnumlines</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_alnumlines</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_alnumlines ( self)</computeroutput></para>
+<para><computeroutput> Self game.gui.inputbox.InputBox.authorise_only_alnumlines ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Authorise only alphanumerical values (a-zA-Z0-9-_), then return the input box itself.
 This includes dashes (hyphens) and underscores.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1614d1cde516217425c78d7c7d0782b5"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a22ec41ec434791f811addd2fe89cea04"/><section>
     <title>authorise_only_ascii()</title>
 <indexterm><primary>authorise_only_ascii</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_ascii</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_ascii ( self)</computeroutput></para>
+<para><computeroutput> Self game.gui.inputbox.InputBox.authorise_only_ascii ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Authorise only ASCII characters in the input box, then return the input box itself.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac293574688113dc4aac32d02b45480e6"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1acbc663ca22c49f6a36395dff2f4c06af"/><section>
     <title>authorise_only_numeric()</title>
 <indexterm><primary>authorise_only_numeric</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>authorise_only_numeric</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox.authorise_only_numeric ( self)</computeroutput></para>
+<para><computeroutput> Self game.gui.inputbox.InputBox.authorise_only_numeric ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Authorise only numerical values (0-9) in the input box, then return the input box itself.
 </computeroutput></literallayout> </para>
 </section>
@@ -219,6 +228,14 @@ This includes dashes (hyphens) and underscores.
 input box itself.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a7b0055610a614eef15a8a69e92f5a07f"/><section>
+    <title>clean_text()</title>
+<indexterm><primary>clean_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>clean_text</secondary></indexterm>
+<para><computeroutput> str game.gui.inputbox.InputBox.clean_text ( self, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Clean the text of any unauthorised characters.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a69d1435c73da5cadaf115bad31facc47"/><section>
     <title>draw()</title>
 <indexterm><primary>draw</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
@@ -232,7 +249,7 @@ input box itself.
 <indexterm><primary>events</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.inputbox.InputBox.events ( self, event.Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the input box events.
+<para><literallayout><computeroutput>Handle the input box events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1ac12e9f827b5b6c4cc6c58295f6ce02f5"/><section>
@@ -275,14 +292,6 @@ input box itself.
 <para><literallayout><computeroutput>Return the input box&apos;s max text length.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1afc4d7567ca599322eae916034eb38f6a"/><section>
-    <title>get_order()</title>
-<indexterm><primary>get_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
-<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>get_order</secondary></indexterm>
-<para><computeroutput> int game.gui.inputbox.InputBox.get_order ( self)</computeroutput></para>
-<para><literallayout><computeroutput>Return the order of the input box.
-</computeroutput></literallayout> </para>
-</section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a5b6ce862e16452c48bb003b875b1903b"/><section>
     <title>get_placeholder_text()</title>
 <indexterm><primary>get_placeholder_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
@@ -323,11 +332,11 @@ input box itself.
 <para><literallayout><computeroutput>Return whether the input box is selected or not.
 </computeroutput></literallayout> </para>
 </section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a73afa55e833db7a64798dc2ee6efc00d"/><section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a1e7bc09d1e8970210009a6c3afecc172"/><section>
     <title>scroll_text()</title>
 <indexterm><primary>scroll_text</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>scroll_text</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox.scroll_text ( self)</computeroutput></para>
+<para><computeroutput> None game.gui.inputbox.InputBox.scroll_text ( self)</computeroutput></para>
 <para><literallayout><computeroutput>Internal method for calculating how and when to scroll text when going beyond the input box.
 I am aware of how awful it is. Why? because O(n).
 What does that mean? the larger the text, the slower it gets! Very bad!
@@ -373,15 +382,6 @@ TODO: Make it better, fool.
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_max_text_length</secondary></indexterm>
 <para><computeroutput> Self game.gui.inputbox.InputBox.set_max_text_length ( self, int max_text_length)</computeroutput></para>
 <para><literallayout><computeroutput>Set the input box&apos;s max text length, then return the input box itself.
-</computeroutput></literallayout> </para>
-</section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a56539eddb2835035dd16a9758dc9dfb6"/><section>
-    <title>set_order()</title>
-<indexterm><primary>set_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
-<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>set_order</secondary></indexterm>
-<para><computeroutput> Self game.gui.inputbox.InputBox.set_order ( self, int order)</computeroutput></para>
-<para><literallayout><computeroutput>Set the order of the input box, then return the input box itself.
-Used for tabbing between them.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1abe10aa1865cf9aa10215697ce7376580"/><section>
@@ -457,11 +457,6 @@ Used for tabbing between them.
 <indexterm><primary>_max_text_length</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_max_text_length</secondary></indexterm>
 <para><computeroutput>game.gui.inputbox.InputBox._max_text_length<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1aaf642443641ac6cc0307fb24107e313b"/><section>
-    <title>_order</title>
-<indexterm><primary>_order</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
-<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_order</secondary></indexterm>
-<para><computeroutput>game.gui.inputbox.InputBox._order<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1adbca92c8cb84bf617ce88b424c639b9a"/><section>
     <title>_placeholder_label</title>
 <indexterm><primary>_placeholder_label</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
@@ -487,6 +482,11 @@ Used for tabbing between them.
 <indexterm><primary>_text_value</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
 <indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_text_value</secondary></indexterm>
 <para><computeroutput>game.gui.inputbox.InputBox._text_value<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a2184eb4f6fc634928c253afd7276f5c2"/><section>
+    <title>_timer</title>
+<indexterm><primary>_timer</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>
+<indexterm><primary>game.gui.inputbox.InputBox</primary><secondary>_timer</secondary></indexterm>
+<para><computeroutput>game.gui.inputbox.InputBox._timer<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1inputbox_1_1InputBox_1a862bef629b0acdab4c1a2c0ce1848cd7"/><section>
     <title>_width</title>
 <indexterm><primary>_width</primary><secondary>game.gui.inputbox.InputBox</secondary></indexterm>

@@ -2,7 +2,9 @@ var classgame_1_1client_1_1connection__handler_1_1ConnectionHandler =
 [
     [ "__init__", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#ad5b0e835ddac9c7158ab05d6308a97ae", null ],
     [ "draw_other_players", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#aa9a1afa223e94f7f57cd55479bd80c0c", null ],
-    [ "events", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a61897249eb0ba4d05b5005f80b16bdb8", null ],
+    [ "events", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a10c46c16c5221010466e283e6a27db51", null ],
+    [ "get_average_data_received", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#acf6cc95be7e1e35e2e02dd03b6eec578", null ],
+    [ "get_average_data_sent", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a9f8892e92ff580ffd2af52a61eca3d8f", null ],
     [ "get_ping", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a6cea33ecf9f6e00e56d05ab98f384dff", null ],
     [ "get_players", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a05a17a8bf51c681e48e1f725128e2ef0", null ],
     [ "get_total_data_received", "classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html#a2b5c66e058e64f32fd52053e6037343c", null ],

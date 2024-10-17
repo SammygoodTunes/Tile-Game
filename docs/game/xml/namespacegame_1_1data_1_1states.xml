@@ -10,7 +10,13 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>States package.
+
+States are values that describe the condition that something is in.
+A server can be starting, a player can be moving left, a connection can time out. Those are all states.
+They don&apos;t define behaviour but report behaviour.
+</verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/connection_states.py" line="1" column="1"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/states/__init__.py" line="1" column="1"/>
   </compounddef>
 </doxygen>

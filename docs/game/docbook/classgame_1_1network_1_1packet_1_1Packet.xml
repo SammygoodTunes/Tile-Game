@@ -5,7 +5,7 @@
 <simplesect>
     <title>Static Public Attributes    </title>
         <itemizedlist>
-            <listitem><para>int <link linkend="_classgame_1_1network_1_1packet_1_1Packet_1a80136bc38bf90af14697e265c9e37853">DATA_SIZE</link> = 4</para>
+            <listitem><para>int <link linkend="_classgame_1_1network_1_1packet_1_1Packet_1a80136bc38bf90af14697e265c9e37853">DATA_SIZE</link> = 2</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -21,7 +21,7 @@
     <title>DATA_SIZE</title>
 <indexterm><primary>DATA_SIZE</primary><secondary>game.network.packet.Packet</secondary></indexterm>
 <indexterm><primary>game.network.packet.Packet</primary><secondary>DATA_SIZE</secondary></indexterm>
-<para><computeroutput>int game.network.packet.Packet.DATA_SIZE = 4<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>int game.network.packet.Packet.DATA_SIZE = 2<computeroutput>[static]</computeroutput></computeroutput></para></section>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="_packet_8py">packet.py</link></section>

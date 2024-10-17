@@ -7,7 +7,5 @@ var classgame_1_1world_1_1world_1_1World =
     [ "get_map", "classgame_1_1world_1_1world_1_1World.html#acab48c8c323c9ab9efa6ede83f85b4e2", null ],
     [ "initialise", "classgame_1_1world_1_1world_1_1World.html#a8ca860e5275616969f385eb0ab5a8a2b", null ],
     [ "set_map", "classgame_1_1world_1_1world_1_1World.html#ad447eb8f35595b162dab7ebf065fabb9", null ],
-    [ "update", "classgame_1_1world_1_1world_1_1World.html#a45cebed9127218e44f0140f407e51b52", null ],
-    [ "update_ui", "classgame_1_1world_1_1world_1_1World.html#a4d03fed5005902b386d52bf1070bd91c", null ],
     [ "_map", "classgame_1_1world_1_1world_1_1World.html#ad019d6ba5aab6dc776e5a393598635a8", null ]
 ];

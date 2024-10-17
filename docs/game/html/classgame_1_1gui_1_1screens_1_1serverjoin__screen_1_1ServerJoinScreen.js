@@ -12,6 +12,7 @@ var classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen =
     [ "ip_input", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#a438fbd8900aae2d53032f07e31425764", null ],
     [ "join_button", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#a79f95a144be232e84b639a332eb9635f", null ],
     [ "join_label", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#a80aca0fcd1c0dff64d5d343d6aeed30b", null ],
+    [ "ordering_container", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#af75e7ac6ccc157c2d9e929c3c18717b4", null ],
     [ "port_input", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#ae23079b56b0403a028fa18680ea35829", null ],
     [ "window", "classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen.html#a23a60d8ab9a68b792de65676f7680208", null ]
 ];

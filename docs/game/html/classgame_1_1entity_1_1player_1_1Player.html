@@ -114,12 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b54df3988def46606805c89b2ee8d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31151805ef60f39e81615532baf2068d" id="r_a31151805ef60f39e81615532baf2068d"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31151805ef60f39e81615532baf2068d">draw_selection_grid</a> (self, game)</td></tr>
 <tr class="separator:a31151805ef60f39e81615532baf2068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee98ea2f2be08a7866d605cfdf20cd3" id="r_afee98ea2f2be08a7866d605cfdf20cd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afee98ea2f2be08a7866d605cfdf20cd3">draw_gun_pointer</a> (self, game)</td></tr>
-<tr class="separator:afee98ea2f2be08a7866d605cfdf20cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633f1adf6b5b511c6ba3c8e6aa5d08a4" id="r_a633f1adf6b5b511c6ba3c8e6aa5d08a4"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a633f1adf6b5b511c6ba3c8e6aa5d08a4">draw_gun_pointer</a> (self, game)</td></tr>
+<tr class="separator:a633f1adf6b5b511c6ba3c8e6aa5d08a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac446a4b6f9fdfec3dfe98da144db72c" id="r_aac446a4b6f9fdfec3dfe98da144db72c"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac446a4b6f9fdfec3dfe98da144db72c">update</a> (self, game, <a class="el" href="classgame_1_1world_1_1map__manager_1_1Map.html">Map</a> map_obj)</td></tr>
 <tr class="separator:aac446a4b6f9fdfec3dfe98da144db72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92ce3044ae4a2348c4f897e8379ff54" id="r_ac92ce3044ae4a2348c4f897e8379ff54"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac92ce3044ae4a2348c4f897e8379ff54">update_ui</a> (self)</td></tr>
-<tr class="separator:ac92ce3044ae4a2348c4f897e8379ff54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab83fa784bc48f3d251d02fd96f004c59" id="r_ab83fa784bc48f3d251d02fd96f004c59"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab83fa784bc48f3d251d02fd96f004c59">break_tile</a> (self, game)</td></tr>
 <tr class="separator:ab83fa784bc48f3d251d02fd96f004c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75efbe024da9d00008138a498cfb6262" id="r_a75efbe024da9d00008138a498cfb6262"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75efbe024da9d00008138a498cfb6262">reset</a> (self, <a class="el" href="classgame_1_1world_1_1map__manager_1_1Map.html">Map</a> map_obj, <a class="el" href="classgame_1_1world_1_1camera_1_1Camera.html">Camera</a> camera_obj)</td></tr>
@@ -351,14 +349,14 @@ Protected Attributes</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="afee98ea2f2be08a7866d605cfdf20cd3" name="afee98ea2f2be08a7866d605cfdf20cd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee98ea2f2be08a7866d605cfdf20cd3">&#9670;&#160;</a></span>draw_gun_pointer()</h2>
+<a id="a633f1adf6b5b511c6ba3c8e6aa5d08a4" name="a633f1adf6b5b511c6ba3c8e6aa5d08a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633f1adf6b5b511c6ba3c8e6aa5d08a4">&#9670;&#160;</a></span>draw_gun_pointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">game.entity.player.Player.draw_gun_pointer </td>
+          <td class="memname"> None game.entity.player.Player.draw_gun_pointer </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
         </tr>
@@ -369,7 +367,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">Draw the gun pointer to the screen.
+</pre> 
 </div>
 </div>
 <a id="a31151805ef60f39e81615532baf2068d" name="a31151805ef60f39e81615532baf2068d"></a>
@@ -422,7 +421,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Track the player events.
+<pre class="fragment">Handle the player events.
 </pre> 
 </div>
 </div>
@@ -1156,24 +1155,6 @@ Setting the number of attempts to anything less than 1 will raise an exception.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Update the player.
-</pre> 
-</div>
-</div>
-<a id="ac92ce3044ae4a2348c4f897e8379ff54" name="ac92ce3044ae4a2348c4f897e8379ff54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac92ce3044ae4a2348c4f897e8379ff54">&#9670;&#160;</a></span>update_ui()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> None game.entity.player.Player.update_ui </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Update the player GUI.
 </pre> 
 </div>
 </div>

@@ -36,7 +36,7 @@
 </listitem>
             <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc">hit_player</link></para>
 </listitem>
-            <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5">packet_queue</link></para>
+            <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c">timer</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4">ping</link></para>
 </listitem>
@@ -81,13 +81,7 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>events</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.client.connection.Connection.events ( self, Event e)</computeroutput></para>
-<para><literallayout><computeroutput>if e.type == pygame.MOUSEBUTTONDOWN:
-    if e.button == MouseStates.LMB:
-        hit_player = self.player_manager.hit_player(self.player.get_player_name())
-        if not hit_player:
-            return
-        print(f&quot;Hit player {hit_player}, sending packets to server&quot;)
-        self.hit_player = hit_player
+<para><literallayout><computeroutput>Handle the connection events (unused).
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0"/><section>
@@ -95,7 +89,10 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>start</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>start</secondary></indexterm>
 <para><computeroutput> None game.client.connection.Connection.start ( self, <link linkend="_classgame_1_1client_1_1connection_1_1Tasks">Tasks</link> task, str  player_name = <computeroutput>&quot;&quot;</computeroutput>
-)</computeroutput></para></section>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Start a client connection task.
+</computeroutput></literallayout> </para>
+</section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a008f356261f7336532a742acb0a35e54"/><section>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>game.client.connection.Connection</secondary></indexterm>
@@ -117,11 +114,6 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>host</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>host</secondary></indexterm>
 <para><computeroutput>game.client.connection.Connection.host</computeroutput></para></section>
-<anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5"/><section>
-    <title>packet_queue</title>
-<indexterm><primary>packet_queue</primary><secondary>game.client.connection.Connection</secondary></indexterm>
-<indexterm><primary>game.client.connection.Connection</primary><secondary>packet_queue</secondary></indexterm>
-<para><computeroutput>game.client.connection.Connection.packet_queue</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4"/><section>
     <title>ping</title>
 <indexterm><primary>ping</primary><secondary>game.client.connection.Connection</secondary></indexterm>
@@ -147,6 +139,11 @@ Any errors or failures will raise specific exceptions.
 <indexterm><primary>state</primary><secondary>game.client.connection.Connection</secondary></indexterm>
 <indexterm><primary>game.client.connection.Connection</primary><secondary>state</secondary></indexterm>
 <para><computeroutput>game.client.connection.Connection.state</computeroutput></para></section>
+<anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c"/><section>
+    <title>timer</title>
+<indexterm><primary>timer</primary><secondary>game.client.connection.Connection</secondary></indexterm>
+<indexterm><primary>game.client.connection.Connection</primary><secondary>timer</secondary></indexterm>
+<para><computeroutput>game.client.connection.Connection.timer</computeroutput></para></section>
 <anchor xml:id="_classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf"/><section>
     <title>world_manager</title>
 <indexterm><primary>world_manager</primary><secondary>game.client.connection.Connection</secondary></indexterm>

@@ -103,9 +103,9 @@ $(function(){initNavTree('classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a81104731b627eae3c281d9135c842421" id="r_a81104731b627eae3c281d9135c842421"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81104731b627eae3c281d9135c842421">PLACEABLE</a></td></tr>
 <tr class="separator:a81104731b627eae3c281d9135c842421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad56755365f6c5d81914ea549333d7cac" id="r_ad56755365f6c5d81914ea549333d7cac"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad56755365f6c5d81914ea549333d7cac">BREAKABLE</a> = (<a class="el" href="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a59296220c0314f5808874fd903f554e6">Tiles.COBBLESTONE</a>,)</td></tr>
+<tr class="memitem:ad56755365f6c5d81914ea549333d7cac" id="r_ad56755365f6c5d81914ea549333d7cac"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad56755365f6c5d81914ea549333d7cac">BREAKABLE</a></td></tr>
 <tr class="separator:ad56755365f6c5d81914ea549333d7cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127968cdf33a8647a9a39a18cbe797f4" id="r_a127968cdf33a8647a9a39a18cbe797f4"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a127968cdf33a8647a9a39a18cbe797f4">LETHAL</a> = (<a class="el" href="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a57f2c637faaff64733583c0a147e54fa">Tiles.LAVA</a>,)</td></tr>
+<tr class="memitem:a127968cdf33a8647a9a39a18cbe797f4" id="r_a127968cdf33a8647a9a39a18cbe797f4"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a127968cdf33a8647a9a39a18cbe797f4">LETHAL</a></td></tr>
 <tr class="separator:a127968cdf33a8647a9a39a18cbe797f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -121,7 +121,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tuple game.data.tiles.tile_types.TileTypes.BREAKABLE = (<a class="el" href="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a59296220c0314f5808874fd903f554e6">Tiles.COBBLESTONE</a>,)</td>
+          <td class="memname">tuple game.data.tiles.tile_types.TileTypes.BREAKABLE</td>
         </tr>
       </table>
   </td>
@@ -130,7 +130,10 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  (</div>
+<div class="line">        Tiles.COBBLESTONE,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a127968cdf33a8647a9a39a18cbe797f4" name="a127968cdf33a8647a9a39a18cbe797f4"></a>
@@ -143,7 +146,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tuple game.data.tiles.tile_types.TileTypes.LETHAL = (<a class="el" href="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a57f2c637faaff64733583c0a147e54fa">Tiles.LAVA</a>,)</td>
+          <td class="memname">tuple game.data.tiles.tile_types.TileTypes.LETHAL</td>
         </tr>
       </table>
   </td>
@@ -152,7 +155,10 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  (</div>
+<div class="line">        Tiles.LAVA,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a81104731b627eae3c281d9135c842421" name="a81104731b627eae3c281d9135c842421"></a>
@@ -174,8 +180,16 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=  (Tiles.GRASS, Tiles.PLAINS, Tiles.DIRT, Tiles.COBBLESTONE, Tiles.SAND,</div>
-<div class="line">                               Tiles.COBBLESTONE_STAIRS, Tiles.FIRESTONE, Tiles.WATER, Tiles.LAVA)</div>
+<b>Initial value:</b><div class="fragment"><div class="line">=  (</div>
+<div class="line">        Tiles.VOID,</div>
+<div class="line">        Tiles.GRASS,</div>
+<div class="line">        Tiles.PLAINS,</div>
+<div class="line">        Tiles.DIRT,</div>
+<div class="line">        Tiles.COBBLESTONE,</div>
+<div class="line">        Tiles.SAND,</div>
+<div class="line">        Tiles.WATER,</div>
+<div class="line">        Tiles.LAVA,</div>
+<div class="line">    )</div>
 </div><!-- fragment -->
 </div>
 </div>

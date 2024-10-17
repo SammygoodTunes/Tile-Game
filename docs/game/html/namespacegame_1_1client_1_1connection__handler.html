@@ -103,7 +103,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1client_1_1connection__handler_1_1ConnectionHandler.html">ConnectionHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Module name: connection_handler
+
+This module acts as a pathway between the client and connection modules.
+This means that whatever the connection module doesn't have access to, the connection handler will provide it with
+what it needs. This is because most of the connection handling done by the connection module is run on a different
+thread. And the way the modules are structure disallow for any direct communication between the client and connection
+modules.
+Shared attributes probably will (eventually) be implemented to make it thread-safe(r).
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

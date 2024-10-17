@@ -103,7 +103,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_1_1client_1_1client_1_1Client.html">Client</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Module name: client
+
+This module handles all client-related things such as the camera, the player and the world.
+It also initialises the connection handler to permit connections to servers.
+
+Some of the attributes are linked with those in the managers, for instance
+the player attribute is linked with the local player attribute of the player manager, in order for the
+connection to have access to its properties.
+This is because the communication between connection and connection handler modules is not bidirectional, so the
+connection cannot directly recuperate the player attribute of the client module.
+This could be implemented in a different way but for now this is how it works.
+
+(See client/managers/ for the different client managers.)
+</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

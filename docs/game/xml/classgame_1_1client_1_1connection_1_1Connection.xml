@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="72" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="72" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="80" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a9e46049b4b973dd2d81ed2586957cd9c" prot="public" static="no" mutable="no">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="75" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="75" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="83" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a8783c776a0ff2cd2f9e719f0f49bad83" prot="public" static="no" mutable="no">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="76" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" prot="public" static="no" mutable="no">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="77" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="77" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="85" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a6d1e87c40d72bb27d61d06c07d23bfb5" prot="public" static="no" mutable="no">
         <type></type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="79" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="87" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf" prot="public" static="no" mutable="no">
         <type></type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="80" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="80" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="88" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc" prot="public" static="no" mutable="no">
         <type></type>
@@ -99,21 +99,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="83" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="83" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="90" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="90" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" prot="public" static="no" mutable="no">
         <type></type>
-        <definition>game.client.connection.Connection::packet_queue</definition>
+        <definition>game.client.connection.Connection::timer</definition>
         <argsstring></argsstring>
-        <name>packet_queue</name>
-        <qualifiedname>game.client.connection.Connection.packet_queue</qualifiedname>
+        <name>timer</name>
+        <qualifiedname>game.client.connection.Connection.timer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="191" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="191" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="100" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4" prot="public" static="no" mutable="no">
         <type></type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="196" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="196" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="217" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="217" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="71" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="71" bodyend="85"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="79" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="79" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1Connection_1a93611f10e5e0270288865d9f89907431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -184,7 +184,7 @@ Any errors or failures will raise specific exceptions.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="86" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="86" bodyend="141"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="94" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="94" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1Connection_1ab8cf9700616742fe3225d3fd62cd144a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -205,7 +205,7 @@ Any errors or failures will raise specific exceptions.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="142" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="142" bodyend="155"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="168" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="168" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1Connection_1a6eefbe888d9353113b2a46a02c40fc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -224,18 +224,12 @@ Any errors or failures will raise specific exceptions.
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>if e.type == pygame.MOUSEBUTTONDOWN:
-    if e.button == MouseStates.LMB:
-        hit_player = self.player_manager.hit_player(self.player.get_player_name())
-        if not hit_player:
-            return
-        print(f&quot;Hit player {hit_player}, sending packets to server&quot;)
-        self.hit_player = hit_player
+<para><verbatim>Handle the connection events (unused).
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="156" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="156" bodyend="167"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="187" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="187" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1Connection_1a008f356261f7336532a742acb0a35e54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -255,7 +249,7 @@ Any errors or failures will raise specific exceptions.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="168" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="168" bodyend="206"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="193" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="193" bodyend="242"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -279,10 +273,12 @@ Any errors or failures will raise specific exceptions.
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><verbatim>Start a client connection task.
+</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="207" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="207" bodyend="214"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="243" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="243" bodyend="253"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -291,7 +287,7 @@ Any errors or failures will raise specific exceptions.
 <para><verbatim>Class for creating a server connection.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="66" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="66" bodyend="214"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" line="74" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/connection.py" bodystart="74" bodyend="253"/>
     <listofallmembers>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a29c4cd88c4c57df0e169fa6a25e4e6dc" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>__init__</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a93611f10e5e0270288865d9f89907431" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>connect</name></member>
@@ -299,13 +295,13 @@ Any errors or failures will raise specific exceptions.
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a6eefbe888d9353113b2a46a02c40fc1d" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>events</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a49dac67c689f30f0acc4adbd0f8e4dfc" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>hit_player</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a9e46049b4b973dd2d81ed2586957cd9c" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>host</name></member>
-      <member refid="classgame_1_1client_1_1connection_1_1Connection_1a4738cec77594c26a3aa2c85de1d16dc5" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>packet_queue</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1ac306257b5d2cac1fec79d974021a70d4" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>ping</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a6d1e87c40d72bb27d61d06c07d23bfb5" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>player_manager</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a8783c776a0ff2cd2f9e719f0f49bad83" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>port</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1ac3cf9b3987df0fa43db124648130b405" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>sock</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>start</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>state</name></member>
+      <member refid="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>timer</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a008f356261f7336532a742acb0a35e54" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>update</name></member>
       <member refid="classgame_1_1client_1_1connection_1_1Connection_1a331149fc2e24cb2ca3af1353b14c84bf" prot="public" virt="non-virtual"><scope>game::client::connection::Connection</scope><name>world_manager</name></member>
     </listofallmembers>

@@ -7,5 +7,7 @@ var searchData=
   ['velocity_5fx_4',['velocity_x',['../classgame_1_1entity_1_1player_1_1Player.html#a55d2fdcd55a9ca3a892fcaf492938d8f',1,'game.entity.player.Player.velocity_x'],['../classgame_1_1world_1_1camera_1_1Camera.html#a90533b6ffebb40ef781bd1858893ec16',1,'game.world.camera.Camera.velocity_x']]],
   ['velocity_5fy_5',['velocity_y',['../classgame_1_1entity_1_1player_1_1Player.html#a60f15050023a3f3cb7890fb2459576ce',1,'game.entity.player.Player.velocity_y'],['../classgame_1_1world_1_1camera_1_1Camera.html#ae31d2e23d424dd423fc877ee02be36c5',1,'game.world.camera.Camera.velocity_y']]],
   ['version_5flabel_6',['version_label',['../classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#a502763bd9fa43829f6f4d2efd598b5f0',1,'game.gui.screens.main_hud.MainHud.version_label'],['../classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a27d1ad3603bb2d1035448f04517e4934',1,'game.gui.screens.mainmenu_screen.MainMenuScreen.version_label']]],
-  ['void_7',['VOID',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a1e4eafeaaccef5a553731814eefac554',1,'game::data::tiles::tiles::Tiles']]]
+  ['void_7',['VOID',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#a1e4eafeaaccef5a553731814eefac554',1,'game::data::tiles::tiles::Tiles']]],
+  ['vsync_8',['vsync',['../classgame_1_1core_1_1window_1_1Window.html#ab3931fc89284c65a7a3baab137fb5e40',1,'game::core::window::Window']]],
+  ['vsync_5fbox_9',['vsync_box',['../classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#aed706339fe0f129a67196df05dffa1bc',1,'game::gui::screens::options_screen::OptionsScreen']]]
 ];

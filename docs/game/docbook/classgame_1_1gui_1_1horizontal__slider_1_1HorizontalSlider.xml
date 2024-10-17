@@ -63,6 +63,8 @@
 </listitem>
             <listitem><para>float <link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8e43a3ae1a3b86ac5b09c29aa0beb8fe">get_step_in_pixels</link> (self)</para>
 </listitem>
+            <listitem><para><link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a402a5904824198f84bcd9d4f2741b52e">set_state</link> (self, bool state)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget">game.gui.widget.Widget</link>        <itemizedlist>
@@ -83,8 +85,6 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widge
             <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc">set_transparency</link> (self, float transparency)</para>
 </listitem>
             <listitem><para>float <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e">get_transparency</link> (self)</para>
-</listitem>
-            <listitem><para>Self <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">set_state</link> (self, bool state)</para>
 </listitem>
             <listitem><para>bool <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad">get_state</link> (self)</para>
 </listitem>
@@ -125,8 +125,6 @@ Public Member Functions inherited from <link linkend="_classgame_1_1gui_1_1widge
             <listitem><para><link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8b6c6dad5407729d27ee454affcafd21">_bar_width</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1af4b9c0c995ad6e3ddabeb63d68e855e6">_button_colour</link></para>
-</listitem>
-            <listitem><para><link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8619d8bfbd46d458f639b3504b1dbe01">_button_outline_colour</link></para>
 </listitem>
             <listitem><para><link linkend="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa6b3283bb63bae6d446a2e73b60ceb1f">_button_radius</link></para>
 </listitem>
@@ -230,7 +228,7 @@ return the horizontal slider itself.
 <indexterm><primary>events</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>game.gui.horizontal_slider.HorizontalSlider</primary><secondary>events</secondary></indexterm>
 <para><computeroutput> None game.gui.horizontal_slider.HorizontalSlider.events ( self, pygame.event.Event e)</computeroutput></para>
-<para><literallayout><computeroutput>Track the horizontal slider events.
+<para><literallayout><computeroutput>Handle the horizontal slider events.
 </computeroutput></literallayout> </para>
 </section>
 <anchor xml:id="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb2678ae542d14b9ac6c352b19999eb"/><section>
@@ -329,6 +327,16 @@ return the horizontal slider itself.
 <para><literallayout><computeroutput>Refresh the horizontal slider and its components.
 </computeroutput></literallayout> </para>
 </section>
+<anchor xml:id="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a402a5904824198f84bcd9d4f2741b52e"/><section>
+    <title>set_state()</title>
+<indexterm><primary>set_state</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
+<indexterm><primary>game.gui.horizontal_slider.HorizontalSlider</primary><secondary>set_state</secondary></indexterm>
+<para><computeroutput>game.gui.horizontal_slider.HorizontalSlider.set_state ( self, bool state)</computeroutput></para>
+<para><literallayout><computeroutput>Overridden method from Widget to reset the button_held state to False for every horizontal slider state update.
+</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8">game.gui.widget.Widget</link>.</para>
+</section>
 <anchor xml:id="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a79cb7f080c154d09dc1d2b04a8341bea"/><section>
     <title>set_title()</title>
 <indexterm><primary>set_title</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
@@ -394,11 +402,6 @@ return the horizontal slider itself.
 <indexterm><primary>_button_held</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
 <indexterm><primary>game.gui.horizontal_slider.HorizontalSlider</primary><secondary>_button_held</secondary></indexterm>
 <para><computeroutput>game.gui.horizontal_slider.HorizontalSlider._button_held<computeroutput>[protected]</computeroutput></computeroutput></para></section>
-<anchor xml:id="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8619d8bfbd46d458f639b3504b1dbe01"/><section>
-    <title>_button_outline_colour</title>
-<indexterm><primary>_button_outline_colour</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>
-<indexterm><primary>game.gui.horizontal_slider.HorizontalSlider</primary><secondary>_button_outline_colour</secondary></indexterm>
-<para><computeroutput>game.gui.horizontal_slider.HorizontalSlider._button_outline_colour<computeroutput>[protected]</computeroutput></computeroutput></para></section>
 <anchor xml:id="_classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa6b3283bb63bae6d446a2e73b60ceb1f"/><section>
     <title>_button_radius</title>
 <indexterm><primary>_button_radius</primary><secondary>game.gui.horizontal_slider.HorizontalSlider</secondary></indexterm>

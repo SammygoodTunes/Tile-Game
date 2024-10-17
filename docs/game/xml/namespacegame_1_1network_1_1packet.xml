@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="63" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="63" bodyend="69"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="71" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="71" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="70" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="70" bodyend="75"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="81" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="81" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -59,17 +59,21 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Return length of data in hex. Used in packet header for determining data size. Max length is of SIZE / 2 bytes.
+<para><verbatim>Return length of data in hex. Used in packet header for determining data size.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="76" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="76" bodyend="81"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="87" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="87" bodyend="92"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><verbatim>Module name: packet
+
+This module defines a set of methods for hashing, compressing and altering data packets.
+</verbatim> </para>
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="1" column="1"/>
   </compounddef>

@@ -13,5 +13,6 @@ var classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen =
     [ "fps_limit_slider", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#ad75b98028886b9b37357df42cc435720", null ],
     [ "options_label", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a26b6fcdf7e62ea6efd434b93e3afa11a", null ],
     [ "show_fps_box", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#ab6da27d9bb9b7aa95038fb8364fa99a9", null ],
+    [ "vsync_box", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#aed706339fe0f129a67196df05dffa1bc", null ],
     [ "window", "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a841af6b54440ec0d6eb0c2e94680ea7e", null ]
 ];
