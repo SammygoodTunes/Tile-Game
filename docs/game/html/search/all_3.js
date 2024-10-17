@@ -55,7 +55,7 @@ var searchData=
   ['cpacket_5fmagic_52',['CPACKET_MAGIC',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a5438cdf2a21d48a205566424142a15ff',1,'game::network::protocol::Protocol']]],
   ['crash_53',['crash',['../classgame_1_1core_1_1game_1_1Game.html#afc1ed1e63c3a6afb2d5208c9c10b7ce7',1,'game::core::game::Game']]],
   ['crash_5flabel_54',['crash_label',['../classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen.html#a512145d7f5b2a9e380a808889229878d',1,'game::gui::screens::crash_screen::CrashScreen']]],
-  ['crash_5fscreen_55',['crash_screen',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#a3df4df5f147bed66864a032ea3dc1ae1',1,'game::client::managers::screen_manager::Screens']]],
+  ['crash_5fscreen_55',['crash_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#ab1ebe1e20261ba3ed56d4ca4fdfe01c1',1,'game::gui::screen_manager::Screens']]],
   ['crash_5fscreen_2epy_56',['crash_screen.py',['../crash__screen_8py.html',1,'']]],
   ['crashscreen_57',['CrashScreen',['../classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen.html',1,'game::gui::screens::crash_screen']]],
   ['create_58',['create',['../classgame_1_1world_1_1world_1_1World.html#a0950236a2c7ca6faab58570a9b65f1cf',1,'game::world::world::World']]],
@@ -64,7 +64,7 @@ var searchData=
   ['create_5fplayer_61',['create_player',['../classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder.html#a9d904e3c2451a0f0d8db97483872637b',1,'game::network::builders::player_builder::PlayerBuilder']]],
   ['create_5fworld_62',['create_world',['../classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html#a2b82f5c8199fb6cea131c6e26c1ab4f3',1,'game::server::handlers::world_handler::WorldHandler']]],
   ['credits_5fbutton_63',['credits_button',['../classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen.html#a9575e735e27c3a7f53c7c315a5fa7cf0',1,'game::gui::screens::mainmenu_screen::MainMenuScreen']]],
-  ['credits_5fscreen_64',['credits_screen',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#a46bd56f2ed26c8a3896941d27a1d1ff0',1,'game::client::managers::screen_manager::Screens']]],
+  ['credits_5fscreen_64',['credits_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a06c35e16eadd32e1b6174809e0ed49d6',1,'game::gui::screen_manager::Screens']]],
   ['credits_5fscreen_2epy_65',['credits_screen.py',['../credits__screen_8py.html',1,'']]],
   ['creditsscreen_66',['CreditsScreen',['../classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen.html',1,'game::gui::screens::credits_screen']]]
 ];

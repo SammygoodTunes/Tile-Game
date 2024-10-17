@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['task_5fcreate_5fserver_0',['task_create_server',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#a8cd8bb840b3236c8594eb669cb9d2f0f',1,'game::client::managers::screen_manager::Screens']]],
-  ['task_5fjoin_5fserver_1',['task_join_server',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#aeb1e0eeebe8028c77d10ac56cbbef78e',1,'game::client::managers::screen_manager::Screens']]],
+  ['task_5fcreate_5fserver_0',['task_create_server',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#af57d5f202dbe077639d562e5f0732908',1,'game::gui::screen_manager::Screens']]],
+  ['task_5fjoin_5fserver_1',['task_join_server',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a6dbb011ad17503515d1da0c1dc1a33d9',1,'game::gui::screen_manager::Screens']]],
   ['tasks_2',['Tasks',['../classgame_1_1client_1_1connection_1_1Tasks.html',1,'game::client::connection']]],
   ['temp_5fdata_3',['temp_data',['../classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html#a2f71f56834e5fd652ec3cc79be975412',1,'game::client::managers::world_manager::WorldManager']]],
   ['texture_4',['TEXTURE',['../classgame_1_1data_1_1properties_1_1player__properties_1_1PlayerProperties.html#a16b6717e80f52582619155ee9809fc06',1,'game::data::properties::player_properties::PlayerProperties']]],

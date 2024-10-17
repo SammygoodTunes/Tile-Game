@@ -2,9 +2,9 @@ var searchData=
 [
   ['main_5fhud_0',['main_hud',['../classgame_1_1entity_1_1player_1_1Player.html#ab6123b25ff3483f2c9dcb91d5ead1213',1,'game::entity::player::Player']]],
   ['main_5fmenu_5fbutton_1',['main_menu_button',['../classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen.html#ad1607207ccf443e5383e6821b1b3d523',1,'game::gui::screens::serverconnect_screen::ServerConnectScreen']]],
-  ['main_5fmenu_5fscreen_2',['main_menu_screen',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#a97e24d79d7ef00ccf25a59f959f4d49b',1,'game::client::managers::screen_manager::Screens']]],
+  ['main_5fmenu_5fscreen_2',['main_menu_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a18da99891495d2c3078925cc1992251a',1,'game::gui::screen_manager::Screens']]],
   ['map_5fheight_5fbyte_5fsize_3',['MAP_HEIGHT_BYTE_SIZE',['../classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html#a1431a910aeedd10128e0661a977a5745',1,'game::data::structures::map_structure::MapStructure']]],
-  ['map_5fscreen_4',['map_screen',['../classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html#aa0769c76ea8129fc50c382a3e2e7716a',1,'game::client::managers::screen_manager::Screens']]],
+  ['map_5fscreen_4',['map_screen',['../classgame_1_1gui_1_1screen__manager_1_1Screens.html#a47b827297074b366864ae0b4edfe5418',1,'game::gui::screen_manager::Screens']]],
   ['map_5fwidth_5fbyte_5fsize_5',['MAP_WIDTH_BYTE_SIZE',['../classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html#adae542acff0288d845d02d698360fb56',1,'game::data::structures::map_structure::MapStructure']]],
   ['mapdata_5feos_6',['MAPDATA_EOS',['../classgame_1_1network_1_1protocol_1_1Protocol.html#ae0bc6985ecd60ee79a2bafe8b1d8a845',1,'game::network::protocol::Protocol']]],
   ['mapdata_5freq_7',['MAPDATA_REQ',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a3e9b538f6291418638a9ee37fe39cd77',1,'game::network::protocol::Protocol']]],

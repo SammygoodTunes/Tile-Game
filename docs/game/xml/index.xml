@@ -740,7 +740,7 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a658c904f6950d8a6b4330a45420e5cd9" kind="function"><name>set_player_name</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a04dcde82a590285957bdea1df802b9af" kind="function"><name>get_player_name</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" kind="function"><name>get_walls</name></member>
-    <member refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" kind="function"><name>set_ideal_spawn_point</name></member>
+    <member refid="classgame_1_1entity_1_1player_1_1Player_1a54e8fa3820f5304d3dc4c0f353d43cea" kind="function"><name>set_ideal_spawn_point</name></member>
   </compound>
   <compound refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder" kind="class"><name>game::network::builders::player_builder::PlayerBuilder</name>
     <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af585f79b36a4b1b92d9714016f94c904" kind="variable"><name>NAME_KEY</name></member>
@@ -890,30 +890,30 @@
     <member refid="classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_1a74d01f53e02bbbdd234d94633b102aa6" kind="variable"><name>ALPHA</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_1af17513d9b6a1fdca71ed2e3efeec3868" kind="variable"><name>PRONOUNCED_ALPHA</name></member>
   </compound>
-  <compound refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens" kind="class"><name>game::client::managers::screen_manager::Screens</name>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3bc4e96da00aa7c9db5e0b4912f8cf00" kind="variable"><name>window</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af14054017b103820ffd9c1d7bf40718d" kind="variable"><name>game</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0" kind="variable"><name>screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a3df4df5f147bed66864a032ea3dc1ae1" kind="variable"><name>crash_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a46bd56f2ed26c8a3896941d27a1d1ff0" kind="variable"><name>credits_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a837d83d0d6d7008758eb9e5fb4e43191" kind="variable"><name>gameover_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a99f473e2084e997e5d935bb8badfb37d" kind="variable"><name>loading_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a97e24d79d7ef00ccf25a59f959f4d49b" kind="variable"><name>main_menu_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa0769c76ea8129fc50c382a3e2e7716a" kind="variable"><name>map_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1ab38754931596612a72dc3d3b1974f884" kind="variable"><name>options_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a163721adb83cb73c0a51d70477052633" kind="variable"><name>pause_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a74289f45dc2a87ba5d103580dcfbc80d" kind="variable"><name>player_list_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a682a8fcd51d9368adf5bbae3af05ac1c" kind="variable"><name>server_connect_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7303469928f455cba6895034ed1bd7ba" kind="variable"><name>server_create_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a5d7b39009cf1a4b21aeaab931088a042" kind="variable"><name>server_join_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a7386b4999e9ca737f75d112ff571dad0" kind="variable"><name>server_menu_screen</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a9b7d5941251246d5eba8a717596c4b0b" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aa09e82656a33198b62bb7d2d10710851" kind="function"><name>link_game</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1af0558997d09a38534fd7557752f101ae" kind="function"><name>events</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a76165c4f8ac2404d6fb5a04c2d2cc592" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" kind="function"><name>update_ui</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8cd8bb840b3236c8594eb669cb9d2f0f" kind="function"><name>task_create_server</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1aeb1e0eeebe8028c77d10ac56cbbef78e" kind="function"><name>task_join_server</name></member>
+  <compound refid="classgame_1_1gui_1_1screen__manager_1_1Screens" kind="class"><name>game::gui::screen_manager::Screens</name>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1affa6506b2c5ff28728d094ea9c5faf80" kind="variable"><name>window</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3e27697b40f7c8a39d431793f72ede31" kind="variable"><name>screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" kind="variable"><name>crash_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" kind="variable"><name>credits_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" kind="variable"><name>gameover_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" kind="variable"><name>loading_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" kind="variable"><name>main_menu_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" kind="variable"><name>map_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" kind="variable"><name>options_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" kind="variable"><name>pause_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" kind="variable"><name>player_list_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" kind="variable"><name>server_connect_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" kind="variable"><name>server_create_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" kind="variable"><name>server_join_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" kind="variable"><name>server_menu_screen</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6d255708cc661aa579b3de8c97c88e07" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" kind="function"><name>link_game</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" kind="function"><name>update_ui</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" kind="function"><name>task_create_server</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" kind="function"><name>task_join_server</name></member>
   </compound>
   <compound refid="classgame_1_1server_1_1server_1_1Server" kind="class"><name>game::server::server::Server</name>
     <member refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" kind="variable"><name>state</name></member>
@@ -1225,8 +1225,6 @@
   </compound>
   <compound refid="namespacegame_1_1client_1_1managers_1_1player__manager" kind="namespace"><name>game::client::managers::player_manager</name>
   </compound>
-  <compound refid="namespacegame_1_1client_1_1managers_1_1screen__manager" kind="namespace"><name>game::client::managers::screen_manager</name>
-  </compound>
   <compound refid="namespacegame_1_1client_1_1managers_1_1world__manager" kind="namespace"><name>game::client::managers::world_manager</name>
   </compound>
   <compound refid="namespacegame_1_1client_1_1tasks" kind="namespace"><name>game::client::tasks</name>
@@ -1320,6 +1318,8 @@
   <compound refid="namespacegame_1_1gui_1_1ordering__container" kind="namespace"><name>game::gui::ordering_container</name>
   </compound>
   <compound refid="namespacegame_1_1gui_1_1progress__bar" kind="namespace"><name>game::gui::progress_bar</name>
+  </compound>
+  <compound refid="namespacegame_1_1gui_1_1screen__manager" kind="namespace"><name>game::gui::screen_manager</name>
   </compound>
   <compound refid="namespacegame_1_1gui_1_1screens" kind="namespace"><name>game::gui::screens</name>
   </compound>
@@ -1433,8 +1433,6 @@
   <compound refid="connection__handler_8py" kind="file"><name>connection_handler.py</name>
   </compound>
   <compound refid="player__manager_8py" kind="file"><name>player_manager.py</name>
-  </compound>
-  <compound refid="screen__manager_8py" kind="file"><name>screen_manager.py</name>
   </compound>
   <compound refid="world__manager_8py" kind="file"><name>world_manager.py</name>
   </compound>
@@ -1553,6 +1551,8 @@
   <compound refid="ordering__container_8py" kind="file"><name>ordering_container.py</name>
   </compound>
   <compound refid="progress__bar_8py" kind="file"><name>progress_bar.py</name>
+  </compound>
+  <compound refid="screen__manager_8py" kind="file"><name>screen_manager.py</name>
   </compound>
   <compound refid="crash__screen_8py" kind="file"><name>crash_screen.py</name>
   </compound>

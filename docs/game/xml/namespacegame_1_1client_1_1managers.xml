@@ -3,15 +3,14 @@
   <compounddef id="namespacegame_1_1client_1_1managers" kind="namespace" language="Python">
     <compoundname>game::client::managers</compoundname>
     <innernamespace refid="namespacegame_1_1client_1_1managers_1_1player__manager">game::client::managers::player_manager</innernamespace>
-    <innernamespace refid="namespacegame_1_1client_1_1managers_1_1screen__manager">game::client::managers::screen_manager</innernamespace>
     <innernamespace refid="namespacegame_1_1client_1_1managers_1_1world__manager">game::client::managers::world_manager</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para><verbatim>Client manager package.
 
-Managers are classes that manage different parts of the client, and are mostly used during a live connection to a
-server. The only exception to this is the screen manager, which handles the GUI.
+Managers in this package are classes that manage different parts of the client, and are mostly used during a live
+connection to a server.
 </verbatim> </para>
     </detaileddescription>
     <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/__init__.py" line="1" column="1"/>

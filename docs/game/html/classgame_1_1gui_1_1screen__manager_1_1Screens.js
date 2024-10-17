@@ -5,7 +5,6 @@ var classgame_1_1gui_1_1screen__manager_1_1Screens =
     [ "link_game", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#a5c7d48365fbfd99627990d0c5ac6a9cd", null ],
     [ "task_create_server", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#af57d5f202dbe077639d562e5f0732908", null ],
     [ "task_join_server", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#a6dbb011ad17503515d1da0c1dc1a33d9", null ],
-    [ "task_tab", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#ad7cd1ee893b9e1fc9a05d66f6a23449e", null ],
     [ "update", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#ae32e46fc09df416edad23b25e42a2aeb", null ],
     [ "update_ui", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#ac01917bd3333b74d635f6e36ae5eb964", null ],
     [ "crash_screen", "classgame_1_1gui_1_1screen__manager_1_1Screens.html#ab1ebe1e20261ba3ed56d4ca4fdfe01c1", null ],

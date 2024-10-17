@@ -199,8 +199,8 @@
         <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="83" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="83" bodyend="89"/>
         <references refid="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" compoundref="game_8py" startline="24">game.core.game.Game.client</references>
         <references refid="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" compoundref="client_8py" startline="67" endline="72">game.client.client.Client.update_ui</references>
-        <references refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1abf37671f01a7e89b5315aa3ecd9d84ae" compoundref="screen__manager_8py" startline="234" endline="251">game.client.managers.screen_manager.Screens.update_ui</references>
         <references refid="classgame_1_1core_1_1window_1_1Window_1ae4bae785468a31b4142dd168b702ec36" compoundref="window_8py" startline="108" endline="115">game.core.window.Window.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</references>
         <references refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" compoundref="crash__screen_8py" startline="41" endline="52">game.gui.screens.crash_screen.CrashScreen.update_ui</references>
         <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="67" endline="95">game.gui.screens.credits_screen.CreditsScreen.update_ui</references>
         <references refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="46" endline="59">game.gui.screens.gameover_screen.GameoverScreen.update_ui</references>
@@ -262,8 +262,8 @@ Loop until user decides to quit the application.
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/core/game.py" bodystart="96" bodyend="119"/>
         <references refid="classgame_1_1core_1_1window_1_1Window_1a0e438a403216d30673771bf0b1bb810a" compoundref="window_8py" startline="65" endline="82">game.core.window.Window.resize</references>
-        <references refid="classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens_1a8366f1289876213bd5c39799960cf9b0" compoundref="screen__manager_8py" startline="37">game.client.managers.screen_manager.Screens.screen</references>
         <references refid="classgame_1_1core_1_1window_1_1Window_1ab92583298f34b8b8b9235d0ca764dd4b" compoundref="window_8py" startline="72">game.core.window.Window.screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3e27697b40f7c8a39d431793f72ede31" compoundref="screen__manager_8py" startline="37">game.gui.screen_manager.Screens.screen</references>
         <references refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" compoundref="client_8py" startline="80" endline="86">game.client.client.Client.stop</references>
         <references refid="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" compoundref="game_8py" startline="120" endline="129">game.core.game.Game.stop</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</references>

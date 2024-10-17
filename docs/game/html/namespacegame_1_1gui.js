@@ -9,6 +9,7 @@ var namespacegame_1_1gui =
     [ "nametag", "namespacegame_1_1gui_1_1nametag.html", "namespacegame_1_1gui_1_1nametag" ],
     [ "ordering_container", "namespacegame_1_1gui_1_1ordering__container.html", "namespacegame_1_1gui_1_1ordering__container" ],
     [ "progress_bar", "namespacegame_1_1gui_1_1progress__bar.html", "namespacegame_1_1gui_1_1progress__bar" ],
+    [ "screen_manager", "namespacegame_1_1gui_1_1screen__manager.html", "namespacegame_1_1gui_1_1screen__manager" ],
     [ "screens", "namespacegame_1_1gui_1_1screens.html", "namespacegame_1_1gui_1_1screens" ],
     [ "slot", "namespacegame_1_1gui_1_1slot.html", "namespacegame_1_1gui_1_1slot" ],
     [ "widget", "namespacegame_1_1gui_1_1widget.html", "namespacegame_1_1gui_1_1widget" ]

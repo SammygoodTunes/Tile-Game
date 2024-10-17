@@ -15,7 +15,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="29" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1abf8f27665804d88705bd602d7b5fe2ae" compoundref="crash__screen_8py" startline="31" endline="40">game.gui.screens.crash_screen.CrashScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae85f12a09c7e938b20e23d1e23303794" compoundref="credits__screen_8py" startline="51" endline="66">game.gui.screens.credits_screen.CreditsScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb" compoundref="gameover__screen_8py" startline="35" endline="45">game.gui.screens.gameover_screen.GameoverScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a66cf74cdc7843141d25d00af6f8d687c" compoundref="loading__screen_8py" startline="37" endline="45">game.gui.screens.loading_screen.LoadingScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a38ac9cdcfea7d834f7cddb7284a00194" compoundref="mainmenu__screen_8py" startline="36" endline="63">game.gui.screens.mainmenu_screen.MainMenuScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1af257cbf7a8e2b1609b454674fd6f78bd" compoundref="options__screen_8py" startline="61" endline="74">game.gui.screens.options_screen.OptionsScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a5c9af759963c136595ce07dfda88fed2" compoundref="pause__screen_8py" startline="34" endline="44">game.gui.screens.pause_screen.PauseScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959" compoundref="serverconnect__screen_8py" startline="35" endline="44">game.gui.screens.serverconnect_screen.ServerConnectScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c" compoundref="servercreate__screen_8py" startline="55" endline="68">game.gui.screens.servercreate_screen.ServerCreateScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa2d30bf0c301d8b8717e2dcd69108a72" compoundref="serverjoin__screen_8py" startline="62" endline="75">game.gui.screens.serverjoin_screen.ServerJoinScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a82677e4efb130579a232b3de65f22e9f" compoundref="servermenu__screen_8py" startline="38" endline="49">game.gui.screens.servermenu_screen.ServerMenuScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1ac1959d6471759a3839d7d3da0cd8d63a" compoundref="crash__screen_8py" startline="23" endline="30">game.gui.screens.crash_screen.CrashScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a6251e681774f4a709b71f107f820505a" compoundref="credits__screen_8py" startline="33" endline="41">game.gui.screens.credits_screen.CreditsScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab406c39cd1c9737837bc8c1e64abfc9e" compoundref="gameover__screen_8py" startline="26" endline="34">game.gui.screens.gameover_screen.GameoverScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a05a246452c77351c0c2b96d499de2a5e" compoundref="loading__screen_8py" startline="23" endline="30">game.gui.screens.loading_screen.LoadingScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2a7be194fe2f986af6d7a6d3d7f42a22" compoundref="options__screen_8py" startline="36" endline="44">game.gui.screens.options_screen.OptionsScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a181d3c8a5e8aa043ce0cd096108de014" compoundref="pause__screen_8py" startline="25" endline="33">game.gui.screens.pause_screen.PauseScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf" compoundref="serverconnect__screen_8py" startline="26" endline="34">game.gui.screens.serverconnect_screen.ServerConnectScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e" compoundref="servercreate__screen_8py" startline="37" endline="45">game.gui.screens.servercreate_screen.ServerCreateScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a70278293a5f4884a24e25872aff299ee" compoundref="serverjoin__screen_8py" startline="39" endline="47">game.gui.screens.serverjoin_screen.ServerJoinScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aeacc1d6efb9972fa18b02e39e0d3acad" compoundref="servermenu__screen_8py" startline="29" endline="37">game.gui.screens.servermenu_screen.ServerMenuScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" compoundref="crash__screen_8py" startline="41" endline="52">game.gui.screens.crash_screen.CrashScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="67" endline="95">game.gui.screens.credits_screen.CreditsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="46" endline="59">game.gui.screens.gameover_screen.GameoverScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" compoundref="loading__screen_8py" startline="46" endline="55">game.gui.screens.loading_screen.LoadingScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a13839b14d671e7b7268830a09988c4be" compoundref="mainmenu__screen_8py" startline="64" endline="81">game.gui.screens.mainmenu_screen.MainMenuScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" compoundref="options__screen_8py" startline="75" endline="100">game.gui.screens.options_screen.OptionsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" compoundref="pause__screen_8py" startline="45" endline="59">game.gui.screens.pause_screen.PauseScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" compoundref="serverconnect__screen_8py" startline="45" endline="58">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" compoundref="servercreate__screen_8py" startline="69" endline="90">game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" compoundref="serverjoin__screen_8py" startline="76" endline="107">game.gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" compoundref="servermenu__screen_8py" startline="50" endline="65">game.gui.screens.servermenu_screen.ServerMenuScreen.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" prot="public" static="no" mutable="no">
         <type></type>
@@ -29,7 +62,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="30" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" compoundref="main__hud_8py" startline="44" endline="97">game.gui.screens.main_hud.MainHud.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" compoundref="map__screen_8py" startline="56" endline="125">game.gui.screens.map_screen.MapScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a62ba22806fe108c0a3a4ab8c686fb8af" compoundref="map__screen_8py" startline="38" endline="49">game.gui.screens.map_screen.MapScreen.initialise_map</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e" compoundref="map__screen_8py" startline="29" endline="37">game.gui.screens.map_screen.MapScreen.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" compoundref="screen__manager_8py" startline="52" endline="61">game.gui.screen_manager.Screens.link_game</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" compoundref="screen__manager_8py" startline="252" endline="270">game.gui.screen_manager.Screens.task_create_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" compoundref="screen__manager_8py" startline="271" endline="282">game.gui.screen_manager.Screens.task_join_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="98" endline="127">game.gui.screens.main_hud.MainHud.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="126" endline="140">game.gui.screens.map_screen.MapScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" compoundref="playerlist__screen_8py" startline="44" endline="81">game.gui.screens.playerlist_screen.PlayerListScreen.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3e27697b40f7c8a39d431793f72ede31" prot="public" static="no" mutable="no">
         <type></type>
@@ -43,7 +87,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="31" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a251ea5f2cc30696ed8600054f62619e2" compoundref="window_8py" startline="24" endline="48">game.core.window.Window.__init__</referencedby>
+        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" compoundref="window_8py" startline="49" endline="54">game.core.window.Window.clear</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" compoundref="game_8py" startline="96" endline="119">game.core.game.Game.crash</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" prot="public" static="no" mutable="no">
         <type></type>
@@ -57,119 +104,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::main_menu_screen</definition>
-        <argsstring></argsstring>
-        <name>main_menu_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.main_menu_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="33" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::server_menu_screen</definition>
-        <argsstring></argsstring>
-        <name>server_menu_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.server_menu_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::server_join_screen</definition>
-        <argsstring></argsstring>
-        <name>server_join_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.server_join_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::server_create_screen</definition>
-        <argsstring></argsstring>
-        <name>server_create_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.server_create_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="36" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::server_connect_screen</definition>
-        <argsstring></argsstring>
-        <name>server_connect_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.server_connect_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::loading_screen</definition>
-        <argsstring></argsstring>
-        <name>loading_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.loading_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="38" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::pause_screen</definition>
-        <argsstring></argsstring>
-        <name>pause_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.pause_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="39" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.gui.screen_manager.Screens::options_screen</definition>
-        <argsstring></argsstring>
-        <name>options_screen</name>
-        <qualifiedname>game.gui.screen_manager.Screens.options_screen</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" prot="public" static="no" mutable="no">
         <type></type>
@@ -183,7 +120,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="41" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" prot="public" static="no" mutable="no">
         <type></type>
@@ -197,7 +137,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::loading_screen</definition>
+        <argsstring></argsstring>
+        <name>loading_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.loading_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::main_menu_screen</definition>
+        <argsstring></argsstring>
+        <name>main_menu_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.main_menu_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="42" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" prot="public" static="no" mutable="no">
         <type></type>
@@ -212,6 +189,45 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="43" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" compoundref="screen__manager_8py" startline="52" endline="61">game.gui.screen_manager.Screens.link_game</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::options_screen</definition>
+        <argsstring></argsstring>
+        <name>options_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.options_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" compoundref="screen__manager_8py" startline="52" endline="61">game.gui.screen_manager.Screens.link_game</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::pause_screen</definition>
+        <argsstring></argsstring>
+        <name>pause_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.pause_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" prot="public" static="no" mutable="no">
         <type></type>
@@ -225,7 +241,83 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="44" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" compoundref="screen__manager_8py" startline="52" endline="61">game.gui.screen_manager.Screens.link_game</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::server_connect_screen</definition>
+        <argsstring></argsstring>
+        <name>server_connect_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.server_connect_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" compoundref="screen__manager_8py" startline="252" endline="270">game.gui.screen_manager.Screens.task_create_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" compoundref="screen__manager_8py" startline="271" endline="282">game.gui.screen_manager.Screens.task_join_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::server_create_screen</definition>
+        <argsstring></argsstring>
+        <name>server_create_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.server_create_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" compoundref="screen__manager_8py" startline="252" endline="270">game.gui.screen_manager.Screens.task_create_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::server_join_screen</definition>
+        <argsstring></argsstring>
+        <name>server_join_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.server_join_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" compoundref="screen__manager_8py" startline="271" endline="282">game.gui.screen_manager.Screens.task_join_server</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.screen_manager.Screens::server_menu_screen</definition>
+        <argsstring></argsstring>
+        <name>server_menu_screen</name>
+        <qualifiedname>game.gui.screen_manager.Screens.server_menu_screen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" compoundref="screen__manager_8py" startline="216" endline="233">game.gui.screen_manager.Screens.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -249,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="28" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="28" bodyend="45"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="34" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="34" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -274,7 +366,14 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="46" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="46" bodyend="55"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="52" bodyend="61"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" compoundref="screen__manager_8py" startline="36">game.gui.screen_manager.Screens.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" compoundref="main__hud_8py" startline="22">game.gui.screens.main_hud.MainHud.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" compoundref="map__screen_8py" startline="23">game.gui.screens.map_screen.MapScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" compoundref="playerlist__screen_8py" startline="21">game.gui.screens.playerlist_screen.PlayerListScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" compoundref="screen__manager_8py" startline="43">game.gui.screen_manager.Screens.map_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" compoundref="screen__manager_8py" startline="44">game.gui.screen_manager.Screens.options_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" compoundref="screen__manager_8py" startline="46">game.gui.screen_manager.Screens.player_list_screen</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -293,12 +392,45 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Track the events of the different screens.
+<para><verbatim>Handle the events of the different screens.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="56" bodyend="219"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="62" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="62" bodyend="215"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" compoundref="screen__manager_8py" startline="39">game.gui.screen_manager.Screens.credits_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" compoundref="screen__manager_8py" startline="36">game.gui.screen_manager.Screens.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" compoundref="main__hud_8py" startline="22">game.gui.screens.main_hud.MainHud.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" compoundref="map__screen_8py" startline="23">game.gui.screens.map_screen.MapScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" compoundref="playerlist__screen_8py" startline="21">game.gui.screens.playerlist_screen.PlayerListScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" compoundref="screen__manager_8py" startline="40">game.gui.screen_manager.Screens.gameover_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" compoundref="screen__manager_8py" startline="41">game.gui.screen_manager.Screens.loading_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" compoundref="screen__manager_8py" startline="42">game.gui.screen_manager.Screens.main_menu_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" compoundref="screen__manager_8py" startline="43">game.gui.screen_manager.Screens.map_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" compoundref="screen__manager_8py" startline="44">game.gui.screen_manager.Screens.options_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" compoundref="screen__manager_8py" startline="45">game.gui.screen_manager.Screens.pause_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" compoundref="screen__manager_8py" startline="46">game.gui.screen_manager.Screens.player_list_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" compoundref="screen__manager_8py" startline="47">game.gui.screen_manager.Screens.server_connect_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" compoundref="screen__manager_8py" startline="48">game.gui.screen_manager.Screens.server_create_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" compoundref="screen__manager_8py" startline="49">game.gui.screen_manager.Screens.server_join_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" compoundref="screen__manager_8py" startline="50">game.gui.screen_manager.Screens.server_menu_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" compoundref="screen__manager_8py" startline="252" endline="270">game.gui.screen_manager.Screens.task_create_server</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" compoundref="screen__manager_8py" startline="271" endline="282">game.gui.screen_manager.Screens.task_join_server</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1affa6506b2c5ff28728d094ea9c5faf80" compoundref="screen__manager_8py" startline="35">game.gui.screen_manager.Screens.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a50377bd6cac88ac10d86bbabbbad5d43" compoundref="crash__screen_8py" startline="18">game.gui.screens.crash_screen.CrashScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aba3191d0f15a42b0e976e5b3c90c1411" compoundref="credits__screen_8py" startline="22">game.gui.screens.credits_screen.CreditsScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af5dc4a30765cb1ca31ba70664ccde8d7" compoundref="gameover__screen_8py" startline="20">game.gui.screens.gameover_screen.GameoverScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a81d9adfeaf3f4a4a818d7169310a139b" compoundref="loading__screen_8py" startline="19">game.gui.screens.loading_screen.LoadingScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1adaf277716da615fa1dc7f53c2d778e8e" compoundref="mainmenu__screen_8py" startline="22">game.gui.screens.mainmenu_screen.MainMenuScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a841af6b54440ec0d6eb0c2e94680ea7e" compoundref="options__screen_8py" startline="24">game.gui.screens.options_screen.OptionsScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae5a116be437ff2207f7500c58f56aafc" compoundref="pause__screen_8py" startline="19">game.gui.screens.pause_screen.PauseScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8" compoundref="serverconnect__screen_8py" startline="21">game.gui.screens.serverconnect_screen.ServerConnectScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26" compoundref="servercreate__screen_8py" startline="24">game.gui.screens.servercreate_screen.ServerCreateScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a23a60d8ab9a68b792de65676f7680208" compoundref="serverjoin__screen_8py" startline="24">game.gui.screens.serverjoin_screen.ServerJoinScreen.window</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a66f795d9cb2283c395c208dee59c1f19" compoundref="servermenu__screen_8py" startline="20">game.gui.screens.servermenu_screen.ServerMenuScreen.window</references>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -318,7 +450,21 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="220" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="220" bodyend="237"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="216" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="216" bodyend="233"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" compoundref="screen__manager_8py" startline="38">game.gui.screen_manager.Screens.crash_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" compoundref="screen__manager_8py" startline="39">game.gui.screen_manager.Screens.credits_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" compoundref="screen__manager_8py" startline="40">game.gui.screen_manager.Screens.gameover_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" compoundref="screen__manager_8py" startline="41">game.gui.screen_manager.Screens.loading_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" compoundref="screen__manager_8py" startline="42">game.gui.screen_manager.Screens.main_menu_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" compoundref="screen__manager_8py" startline="43">game.gui.screen_manager.Screens.map_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" compoundref="screen__manager_8py" startline="44">game.gui.screen_manager.Screens.options_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" compoundref="screen__manager_8py" startline="45">game.gui.screen_manager.Screens.pause_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" compoundref="screen__manager_8py" startline="46">game.gui.screen_manager.Screens.player_list_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" compoundref="screen__manager_8py" startline="47">game.gui.screen_manager.Screens.server_connect_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" compoundref="screen__manager_8py" startline="48">game.gui.screen_manager.Screens.server_create_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" compoundref="screen__manager_8py" startline="49">game.gui.screen_manager.Screens.server_join_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" compoundref="screen__manager_8py" startline="50">game.gui.screen_manager.Screens.server_menu_screen</references>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -338,25 +484,41 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="238" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="238" bodyend="255"/>
-      </memberdef>
-      <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad7cd1ee893b9e1fc9a05d66f6a23449e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>None</type>
-        <definition> None game.gui.screen_manager.Screens.task_tab</definition>
-        <argsstring>(self)</argsstring>
-        <name>task_tab</name>
-        <qualifiedname>game.gui.screen_manager.Screens.task_tab</qualifiedname>
-        <param>
-          <type>self</type>
-          <defname>self</defname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="256" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="256" bodyend="273"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="234" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="234" bodyend="251"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" compoundref="screen__manager_8py" startline="38">game.gui.screen_manager.Screens.crash_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" compoundref="screen__manager_8py" startline="39">game.gui.screen_manager.Screens.credits_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" compoundref="screen__manager_8py" startline="40">game.gui.screen_manager.Screens.gameover_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4cf731e07f3d05d83103c89f6e78a578" compoundref="screen__manager_8py" startline="41">game.gui.screen_manager.Screens.loading_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a18da99891495d2c3078925cc1992251a" compoundref="screen__manager_8py" startline="42">game.gui.screen_manager.Screens.main_menu_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47b827297074b366864ae0b4edfe5418" compoundref="screen__manager_8py" startline="43">game.gui.screen_manager.Screens.map_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a47a805a316d92b739b860f2dd105b9f3" compoundref="screen__manager_8py" startline="44">game.gui.screen_manager.Screens.options_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3de9bfb00da046f70e7abdc80c729c72" compoundref="screen__manager_8py" startline="45">game.gui.screen_manager.Screens.pause_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a2a19d4006a3ef527d5a0ace70ae9d47f" compoundref="screen__manager_8py" startline="46">game.gui.screen_manager.Screens.player_list_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" compoundref="screen__manager_8py" startline="47">game.gui.screen_manager.Screens.server_connect_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" compoundref="screen__manager_8py" startline="48">game.gui.screen_manager.Screens.server_create_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" compoundref="screen__manager_8py" startline="49">game.gui.screen_manager.Screens.server_join_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" compoundref="screen__manager_8py" startline="50">game.gui.screen_manager.Screens.server_menu_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</references>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" compoundref="playerlist__screen_8py" startline="28" endline="43">game.gui.screens.playerlist_screen.PlayerListScreen.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" compoundref="serverconnect__screen_8py" startline="90" endline="96">game.gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41" compoundref="crash__screen_8py" startline="53" endline="61">game.gui.screens.crash_screen.CrashScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3" compoundref="credits__screen_8py" startline="96" endline="110">game.gui.screens.credits_screen.CreditsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" compoundref="gameover__screen_8py" startline="60" endline="69">game.gui.screens.gameover_screen.GameoverScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6" compoundref="loading__screen_8py" startline="56" endline="63">game.gui.screens.loading_screen.LoadingScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" compoundref="main__hud_8py" startline="128" endline="145">game.gui.screens.main_hud.MainHud.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" compoundref="mainmenu__screen_8py" startline="82" endline="95">game.gui.screens.mainmenu_screen.MainMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" compoundref="map__screen_8py" startline="141" endline="148">game.gui.screens.map_screen.MapScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23" compoundref="options__screen_8py" startline="101" endline="113">game.gui.screens.options_screen.OptionsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c" compoundref="pause__screen_8py" startline="60" endline="69">game.gui.screens.pause_screen.PauseScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" compoundref="serverconnect__screen_8py" startline="97" endline="105">game.gui.screens.serverconnect_screen.ServerConnectScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" compoundref="servercreate__screen_8py" startline="91" endline="103">game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" compoundref="serverjoin__screen_8py" startline="108" endline="121">game.gui.screens.serverjoin_screen.ServerJoinScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" compoundref="servermenu__screen_8py" startline="66" endline="76">game.gui.screens.servermenu_screen.ServerMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" compoundref="game_8py" startline="83" endline="89">game.core.game.Game.update_all_uis</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" compoundref="serverconnect__screen_8py" startline="59" endline="89">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" compoundref="screen__manager_8py" startline="234" endline="251">game.gui.screen_manager.Screens.update_ui</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -376,7 +538,14 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="274" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="274" bodyend="292"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="252" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="252" bodyend="270"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" compoundref="screen__manager_8py" startline="36">game.gui.screen_manager.Screens.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" compoundref="main__hud_8py" startline="22">game.gui.screens.main_hud.MainHud.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" compoundref="map__screen_8py" startline="23">game.gui.screens.map_screen.MapScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" compoundref="playerlist__screen_8py" startline="21">game.gui.screens.playerlist_screen.PlayerListScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" compoundref="screen__manager_8py" startline="47">game.gui.screen_manager.Screens.server_connect_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" compoundref="screen__manager_8py" startline="48">game.gui.screen_manager.Screens.server_create_screen</references>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -396,7 +565,14 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="293" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="293" bodyend="303"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="271" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="271" bodyend="282"/>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" compoundref="screen__manager_8py" startline="36">game.gui.screen_manager.Screens.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" compoundref="main__hud_8py" startline="22">game.gui.screens.main_hud.MainHud.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" compoundref="map__screen_8py" startline="23">game.gui.screens.map_screen.MapScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" compoundref="playerlist__screen_8py" startline="21">game.gui.screens.playerlist_screen.PlayerListScreen.game</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1afae2c956fa7dfe88756bd1db84b017ea" compoundref="screen__manager_8py" startline="47">game.gui.screen_manager.Screens.server_connect_screen</references>
+        <references refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" compoundref="screen__manager_8py" startline="49">game.gui.screen_manager.Screens.server_join_screen</references>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" compoundref="screen__manager_8py" startline="62" endline="215">game.gui.screen_manager.Screens.events</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -405,7 +581,7 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
 <para><verbatim>Class for creating a collection of screens.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="23" bodyend="303"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/gui/screen_manager.py" bodystart="29" bodyend="282"/>
     <listofallmembers>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6d255708cc661aa579b3de8c97c88e07" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>__init__</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>crash_screen</name></member>
@@ -427,7 +603,6 @@ TODO: Remove this, it isn&apos;t good practice. And it&apos;s dirty.
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>server_menu_screen</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>task_create_server</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>task_join_server</name></member>
-      <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad7cd1ee893b9e1fc9a05d66f6a23449e" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>task_tab</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>update</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>update_ui</name></member>
       <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1affa6506b2c5ff28728d094ea9c5faf80" prot="public" virt="non-virtual"><scope>game::gui::screen_manager::Screens</scope><name>window</name></member>

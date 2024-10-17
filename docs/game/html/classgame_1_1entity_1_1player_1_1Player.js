@@ -37,7 +37,7 @@ var classgame_1_1entity_1_1player_1_1Player =
     [ "is_selected_breakable_obstructed", "classgame_1_1entity_1_1player_1_1Player.html#afda0c94794ba73e26cc6a560ed4ba54a", null ],
     [ "reset", "classgame_1_1entity_1_1player_1_1Player.html#a75efbe024da9d00008138a498cfb6262", null ],
     [ "set_health", "classgame_1_1entity_1_1player_1_1Player.html#ab2affeeb76b2f4d913dc3c20eae05bcb", null ],
-    [ "set_ideal_spawn_point", "classgame_1_1entity_1_1player_1_1Player.html#ac73ac652b8ea5acca65eca2dedcf53a6", null ],
+    [ "set_ideal_spawn_point", "classgame_1_1entity_1_1player_1_1Player.html#a54e8fa3820f5304d3dc4c0f353d43cea", null ],
     [ "set_player_name", "classgame_1_1entity_1_1player_1_1Player.html#a658c904f6950d8a6b4330a45420e5cd9", null ],
     [ "set_x", "classgame_1_1entity_1_1player_1_1Player.html#a28eee21c2960d4507cbc7ed780e841b4", null ],
     [ "set_y", "classgame_1_1entity_1_1player_1_1Player.html#ae64ca646603c8b9a03b716ce202a36fe", null ],

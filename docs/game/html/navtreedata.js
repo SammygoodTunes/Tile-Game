@@ -52,14 +52,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"classgame_1_1data_1_1items_1_1item_1_1Item.html#a189683b3f6493bc0e24ee1d4dbf56028",
-"classgame_1_1gui_1_1button_1_1Button.html#a41c5a8e7f47b665cd34db7ece89724c3",
-"classgame_1_1gui_1_1inputbox_1_1InputBox.html#a22ec41ec434791f811addd2fe89cea04",
-"classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html#a25d5d1da3e7864c2d9500dfebe3662fb",
+"classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html",
+"classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a4e9941a71af74c2b017a4020da98b242",
+"classgame_1_1gui_1_1inputbox_1_1InputBox.html#a862bef629b0acdab4c1a2c0ce1848cd7",
+"classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html#acfd1cd8b4d1fbc87f0c258cb25aef717",
 "classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a104e73a51ff7598cfe05346340438e23",
 "classgame_1_1gui_1_1slot_1_1Slot.html#ab22a2141e80040e37aa7e5594e51da35",
 "classgame_1_1world_1_1map__manager_1_1Map.html#ae05bee64f7588d9209ffda50a90b0177",
-"namespacegame_1_1core.html"
+"namespacegame_1_1core_1_1game.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

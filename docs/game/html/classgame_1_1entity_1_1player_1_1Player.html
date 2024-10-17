@@ -186,8 +186,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a04dcde82a590285957bdea1df802b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac33769502c033e6a429c414d2b85183b" id="r_ac33769502c033e6a429c414d2b85183b"><td class="memItemLeft" align="right" valign="top">list[bool]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac33769502c033e6a429c414d2b85183b">get_walls</a> (self, <a class="el" href="classgame_1_1world_1_1map__manager_1_1Map.html">Map</a> map_obj)</td></tr>
 <tr class="separator:ac33769502c033e6a429c414d2b85183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac73ac652b8ea5acca65eca2dedcf53a6" id="r_ac73ac652b8ea5acca65eca2dedcf53a6"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac73ac652b8ea5acca65eca2dedcf53a6">set_ideal_spawn_point</a> (self, <a class="el" href="classgame_1_1world_1_1map__manager_1_1Map.html">Map</a> map_obj, <a class="el" href="classgame_1_1world_1_1camera_1_1Camera.html">Camera</a> camera_obj, int nb_attempts=5)</td></tr>
-<tr class="separator:ac73ac652b8ea5acca65eca2dedcf53a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e8fa3820f5304d3dc4c0f353d43cea" id="r_a54e8fa3820f5304d3dc4c0f353d43cea"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54e8fa3820f5304d3dc4c0f353d43cea">set_ideal_spawn_point</a> (self, <a class="el" href="classgame_1_1world_1_1map__manager_1_1Map.html">Map</a> map_obj, <a class="el" href="classgame_1_1world_1_1camera_1_1Camera.html">Camera</a> camera_obj, int nb_attempts=10)</td></tr>
+<tr class="separator:a54e8fa3820f5304d3dc4c0f353d43cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1030,8 +1030,8 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
 </pre> 
 </div>
 </div>
-<a id="ac73ac652b8ea5acca65eca2dedcf53a6" name="ac73ac652b8ea5acca65eca2dedcf53a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac73ac652b8ea5acca65eca2dedcf53a6">&#9670;&#160;</a></span>set_ideal_spawn_point()</h2>
+<a id="a54e8fa3820f5304d3dc4c0f353d43cea" name="a54e8fa3820f5304d3dc4c0f353d43cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e8fa3820f5304d3dc4c0f353d43cea">&#9670;&#160;</a></span>set_ideal_spawn_point()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1054,13 +1054,12 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int </td>          <td class="paramname"><span class="paramname"><em>nb_attempts</em><span class="paramdefsep"> = </span><span class="paramdefval">5</span></span>&#160;)</td>
+          <td class="paramtype">int </td>          <td class="paramname"><span class="paramname"><em>nb_attempts</em><span class="paramdefsep"> = </span><span class="paramdefval">10</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Find the ideal starting position for the player when creating a new map.
-By default, five consecutive failed attempts will replace the tile at the last randomised tile position
-to plains and place the player there.
+By default, ten consecutive failed attempts will place the player at the last randomised tile position.
 Setting the number of attempts to anything less than 1 will raise an exception.
 </pre> 
 </div>
@@ -1558,7 +1557,7 @@ Setting the number of attempts to anything less than 1 will raise an exception.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegame.html">game</a></li><li class="navelem"><a class="el" href="namespacegame_1_1entity.html">entity</a></li><li class="navelem"><a class="el" href="namespacegame_1_1entity_1_1player.html">player</a></li><li class="navelem"><a class="el" href="classgame_1_1entity_1_1player_1_1Player.html">Player</a></li>
-    <li class="footer">Generated on Thu Oct 17 2024 22:18:46 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Fri Oct 18 2024 00:04:14 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

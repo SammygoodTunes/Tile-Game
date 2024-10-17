@@ -58,7 +58,7 @@ var hierarchy =
       [ "game.gui.screens.servermenu_screen.ServerMenuScreen", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", null ]
     ] ],
     [ "game.data.properties.screen_properties.ScreenProperties", "classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties.html", null ],
-    [ "game.client.managers.screen_manager.Screens", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html", null ],
+    [ "game.gui.screen_manager.Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", null ],
     [ "game.server.server.Server", "classgame_1_1server_1_1server_1_1Server.html", null ],
     [ "game.data.properties.server_properties.ServerProperties", "classgame_1_1data_1_1properties_1_1server__properties_1_1ServerProperties.html", null ],
     [ "game.data.states.server_states.ServerStates", "classgame_1_1data_1_1states_1_1server__states_1_1ServerStates.html", null ],

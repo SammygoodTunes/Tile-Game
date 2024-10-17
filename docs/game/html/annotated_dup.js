@@ -17,9 +17,6 @@ var annotated_dup =
           [ "player_manager", "namespacegame_1_1client_1_1managers_1_1player__manager.html", [
             [ "PlayerManager", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager.html", "classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager" ]
           ] ],
-          [ "screen_manager", "namespacegame_1_1client_1_1managers_1_1screen__manager.html", [
-            [ "Screens", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens.html", "classgame_1_1client_1_1managers_1_1screen__manager_1_1Screens" ]
-          ] ],
           [ "world_manager", "namespacegame_1_1client_1_1managers_1_1world__manager.html", [
             [ "WorldManager", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html", "classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" ]
           ] ]
@@ -153,6 +150,9 @@ var annotated_dup =
         ] ],
         [ "progress_bar", "namespacegame_1_1gui_1_1progress__bar.html", [
           [ "ProgressBar", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar" ]
+        ] ],
+        [ "screen_manager", "namespacegame_1_1gui_1_1screen__manager.html", [
+          [ "Screens", "classgame_1_1gui_1_1screen__manager_1_1Screens.html", "classgame_1_1gui_1_1screen__manager_1_1Screens" ]
         ] ],
         [ "screens", "namespacegame_1_1gui_1_1screens.html", [
           [ "crash_screen", "namespacegame_1_1gui_1_1screens_1_1crash__screen.html", [

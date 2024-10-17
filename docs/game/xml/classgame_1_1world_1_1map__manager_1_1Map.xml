@@ -48,9 +48,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="39" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="39" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" compoundref="map__manager_8py" startline="236" endline="242">game.world.map_manager.Map.draw_tile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" compoundref="map__manager_8py" startline="233" endline="239">game.world.map_manager.Map.draw_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="127" endline="151">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1a036869a3bbb94d647da0f77f54d06b3e" prot="public" static="no" mutable="no">
         <type></type>
@@ -65,7 +65,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="49" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="49" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -98,12 +98,12 @@
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" compoundref="horizontal__slider_8py" startline="67" endline="85">game.gui.horizontal_slider.HorizontalSlider.events</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a6ed56d95d0d2ca9ad37133dc19f68948" compoundref="player_8py" startline="582" endline="588">game.entity.player.Player.get_absolute_x</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="212" endline="219">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="204" endline="211">game.world.map_manager.Map.get_tile_pos</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a1d702dcae07ef2a6050f43f9750f2342" compoundref="player_8py" startline="563" endline="568">game.entity.player.Player.get_x</referencedby>
         <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571" compoundref="widget_8py" startline="30" endline="35">game.gui.widget.Widget.get_x</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" compoundref="map__manager_8py" startline="348" endline="353">game.world.map_manager.Map.get_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" compoundref="map__manager_8py" startline="345" endline="350">game.world.map_manager.Map.get_x</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
@@ -120,13 +120,13 @@
         <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
         <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a063b12e5b550f738fad5285fdb21d206" compoundref="label_8py" startline="55" endline="62">game.gui.label.Label.refresh</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
-        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a54e8fa3820f5304d3dc4c0f353d43cea" compoundref="player_8py" startline="672" endline="702">game.entity.player.Player.set_ideal_spawn_point</referencedby>
         <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a40864dc289f7b7f8601ecb854376dd7d" compoundref="label_8py" startline="229" endline="235">game.gui.label.Label.set_shadow_x_offset</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a28eee21c2960d4507cbc7ed780e841b4" compoundref="player_8py" startline="556" endline="562">game.entity.player.Player.set_x</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" compoundref="map__manager_8py" startline="341" endline="347">game.world.map_manager.Map.set_x</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" compoundref="map__manager_8py" startline="338" endline="344">game.world.map_manager.Map.set_x</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="220" endline="225">game.world.map_manager.Map.tile_to_world_pos</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
@@ -156,12 +156,12 @@
         <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" compoundref="checkbox_8py" startline="30" endline="56">game.gui.checkbox.Checkbox.draw</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab41bb73c1768538bd41a72014e0ed484" compoundref="player_8py" startline="589" endline="595">game.entity.player.Player.get_absolute_y</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="215" endline="222">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="207" endline="214">game.world.map_manager.Map.get_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa16fcc3055b0619bf13fa4a72198e749" compoundref="map__manager_8py" startline="212" endline="219">game.world.map_manager.Map.get_strict_tile_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" compoundref="map__manager_8py" startline="204" endline="211">game.world.map_manager.Map.get_tile_pos</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" compoundref="player_8py" startline="646" endline="671">game.entity.player.Player.get_walls</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ab5eb4770f55c69e6a894ab9f6c3953c2" compoundref="player_8py" startline="576" endline="581">game.entity.player.Player.get_y</referencedby>
         <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a3d4a5c894f266f704561834428858117" compoundref="widget_8py" startline="43" endline="48">game.gui.widget.Widget.get_y</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372" compoundref="map__manager_8py" startline="361" endline="366">game.world.map_manager.Map.get_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372" compoundref="map__manager_8py" startline="358" endline="363">game.world.map_manager.Map.get_y</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" compoundref="checkbox_8py" startline="82" endline="91">game.gui.checkbox.Checkbox.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
@@ -177,13 +177,13 @@
         <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef" compoundref="widget_8py" startline="56" endline="62">game.gui.widget.Widget.offset_y</referencedby>
         <referencedby refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" compoundref="checkbox_8py" startline="73" endline="81">game.gui.checkbox.Checkbox.refresh</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" compoundref="player_8py" startline="389" endline="398">game.entity.player.Player.reset</referencedby>
-        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" compoundref="player_8py" startline="672" endline="703">game.entity.player.Player.set_ideal_spawn_point</referencedby>
+        <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1a54e8fa3820f5304d3dc4c0f353d43cea" compoundref="player_8py" startline="672" endline="702">game.entity.player.Player.set_ideal_spawn_point</referencedby>
         <referencedby refid="classgame_1_1gui_1_1label_1_1Label_1a23ce1497640ec49ad22ab508aa8329a6" compoundref="label_8py" startline="236" endline="242">game.gui.label.Label.set_shadow_y_offset</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1ae64ca646603c8b9a03b716ce202a36fe" compoundref="player_8py" startline="569" endline="575">game.entity.player.Player.set_y</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" compoundref="map__manager_8py" startline="354" endline="360">game.world.map_manager.Map.set_y</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" compoundref="map__manager_8py" startline="351" endline="357">game.world.map_manager.Map.set_y</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="220" endline="225">game.world.map_manager.Map.tile_to_world_pos</referencedby>
         <referencedby refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" compoundref="player_8py" startline="189" endline="338">game.entity.player.Player.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70" compoundref="hotbar_8py" startline="54" endline="65">game.gui.hotbar.Hotbar.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
@@ -211,9 +211,9 @@
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474" compoundref="slot_8py" startline="78" endline="84">game.gui.slot.Slot.center_horizontally</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" compoundref="slot_8py" startline="42" endline="69">game.gui.slot.Slot.draw</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a69d1435c73da5cadaf115bad31facc47" compoundref="inputbox_8py" startline="43" endline="65">game.gui.inputbox.InputBox.draw</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="308" endline="318">game.world.map_manager.Map.get_dynatile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="305" endline="315">game.world.map_manager.Map.get_dynatile</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8e43a3ae1a3b86ac5b09c29aa0beb8fe" compoundref="horizontal__slider_8py" startline="248" endline="253">game.gui.horizontal_slider.HorizontalSlider.get_step_in_pixels</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" compoundref="map__manager_8py" startline="257" endline="263">game.world.map_manager.Map.get_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" compoundref="map__manager_8py" startline="254" endline="260">game.world.map_manager.Map.get_tile</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ac9b4bb657e742bb161d78e1ea74b24b0" compoundref="button_8py" startline="122" endline="127">game.gui.button.Button.get_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8318735add313690e5ee82448493b537" compoundref="horizontal__slider_8py" startline="162" endline="167">game.gui.horizontal_slider.HorizontalSlider.get_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a79f9c7b1abe5cb25bcb03625e79a3e32" compoundref="hotbar_8py" startline="115" endline="120">game.gui.hotbar.Hotbar.get_width</referencedby>
@@ -221,25 +221,25 @@
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a" compoundref="nametag_8py" startline="97" endline="102">game.gui.nametag.NameTag.get_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8cab9f55f22fd81647e47f089531dec6" compoundref="progress__bar_8py" startline="119" endline="124">game.gui.progress_bar.ProgressBar.get_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1af097740a99121252078c4ec462abfb3d" compoundref="slot_8py" startline="119" endline="124">game.gui.slot.Slot.get_width</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab" compoundref="map__manager_8py" startline="373" endline="378">game.world.map_manager.Map.get_width_in_pixels</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae5b7f0ee6b21722807ce056bcf16e910" compoundref="map__manager_8py" startline="367" endline="372">game.world.map_manager.Map.get_width_in_tiles</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab" compoundref="map__manager_8py" startline="370" endline="375">game.world.map_manager.Map.get_width_in_pixels</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ae5b7f0ee6b21722807ce056bcf16e910" compoundref="map__manager_8py" startline="364" endline="369">game.world.map_manager.Map.get_width_in_tiles</referencedby>
         <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" compoundref="map__manager_8py" startline="51" endline="59">game.world.map_manager.Map.initialise</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" compoundref="horizontal__slider_8py" startline="117" endline="125">game.gui.horizontal_slider.HorizontalSlider.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" compoundref="nametag_8py" startline="53" endline="60">game.gui.nametag.NameTag.is_hovering_over</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="127" endline="151">game.world.map_manager.Map.load</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" compoundref="progress__bar_8py" startline="71" endline="80">game.gui.progress_bar.ProgressBar.refresh</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a1e7bc09d1e8970210009a6c3afecc172" compoundref="inputbox_8py" startline="110" endline="126">game.gui.inputbox.InputBox.scroll_text</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" compoundref="map__manager_8py" startline="290" endline="307">game.world.map_manager.Map.set_dynatile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f" compoundref="map__manager_8py" startline="243" endline="256">game.world.map_manager.Map.set_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" compoundref="map__manager_8py" startline="287" endline="304">game.world.map_manager.Map.set_dynatile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f" compoundref="map__manager_8py" startline="240" endline="253">game.world.map_manager.Map.set_tile</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a4bb688438517ccaa53afcdb4fa7b1dbf" compoundref="button_8py" startline="115" endline="121">game.gui.button.Button.set_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af5776e3620adff40802cefb00f46e39d" compoundref="hotbar_8py" startline="108" endline="114">game.gui.hotbar.Hotbar.set_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aafb42694feb1ca6402cf9307b9d691a4" compoundref="inputbox_8py" startline="224" endline="230">game.gui.inputbox.InputBox.set_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64" compoundref="nametag_8py" startline="90" endline="96">game.gui.nametag.NameTag.set_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a12126b702a67b92a851feea6dc355ff4" compoundref="progress__bar_8py" startline="112" endline="118">game.gui.progress_bar.ProgressBar.set_width</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a442c39586b03ea2d157aae4c1c98f383" compoundref="slot_8py" startline="112" endline="118">game.gui.slot.Slot.set_width</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1af00a9031ddd12b6485ee2b22ab18f6ef" compoundref="button_8py" startline="59" endline="69">game.gui.button.Button.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5fca4d74ac207551515165e0aa520135" compoundref="horizontal__slider_8py" startline="86" endline="94">game.gui.horizontal_slider.HorizontalSlider.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
@@ -274,8 +274,8 @@
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88" compoundref="nametag_8py" startline="110" endline="115">game.gui.nametag.NameTag.get_height</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a9729d52fbe892237fea4ff6c37ca61fb" compoundref="progress__bar_8py" startline="132" endline="137">game.gui.progress_bar.ProgressBar.get_height</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1aeb415ac5365d2007815c634194b53739" compoundref="slot_8py" startline="132" endline="137">game.gui.slot.Slot.get_height</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4" compoundref="map__manager_8py" startline="385" endline="390">game.world.map_manager.Map.get_height_in_pixels</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394" compoundref="map__manager_8py" startline="379" endline="384">game.world.map_manager.Map.get_height_in_tiles</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4" compoundref="map__manager_8py" startline="382" endline="387">game.world.map_manager.Map.get_height_in_pixels</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394" compoundref="map__manager_8py" startline="376" endline="381">game.world.map_manager.Map.get_height_in_tiles</referencedby>
         <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" compoundref="map__manager_8py" startline="51" endline="59">game.world.map_manager.Map.initialise</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" compoundref="button_8py" startline="76" endline="83">game.gui.button.Button.is_hovering_over</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" compoundref="inputbox_8py" startline="174" endline="181">game.gui.inputbox.InputBox.is_hovering_over</referencedby>
@@ -287,7 +287,7 @@
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c" compoundref="nametag_8py" startline="103" endline="109">game.gui.nametag.NameTag.set_height</referencedby>
         <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ac24123cdded2751e9ddba4a1e19c2362" compoundref="progress__bar_8py" startline="125" endline="131">game.gui.progress_bar.ProgressBar.set_height</referencedby>
         <referencedby refid="classgame_1_1gui_1_1slot_1_1Slot_1a15a3e38eea2151165a9fe58fc47a2607" compoundref="slot_8py" startline="125" endline="131">game.gui.slot.Slot.set_height</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1af00a9031ddd12b6485ee2b22ab18f6ef" compoundref="button_8py" startline="59" endline="69">game.gui.button.Button.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" compoundref="inputbox_8py" startline="95" endline="109">game.gui.inputbox.InputBox.update</referencedby>
         <referencedby refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" compoundref="nametag_8py" startline="35" endline="46">game.gui.nametag.NameTag.update</referencedby>
@@ -308,11 +308,11 @@
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="47" bodyend="-1"/>
         <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d" compoundref="hotbar_8py" startline="20" endline="30">game.gui.hotbar.Hotbar.__init__</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" compoundref="map__manager_8py" startline="236" endline="242">game.world.map_manager.Map.draw_tile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e" compoundref="map__manager_8py" startline="391" endline="396">game.world.map_manager.Map.get_surface</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" compoundref="map__manager_8py" startline="233" endline="239">game.world.map_manager.Map.draw_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e" compoundref="map__manager_8py" startline="388" endline="393">game.world.map_manager.Map.get_surface</referencedby>
         <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" compoundref="map__manager_8py" startline="51" endline="59">game.world.map_manager.Map.initialise</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="127" endline="151">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7" prot="protected" static="no" mutable="no">
         <type></type>
@@ -327,9 +327,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="48" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a3e996531503c10a2d9a19090892697b6" compoundref="map__manager_8py" startline="397" endline="402">game.world.map_manager.Map.get_dynatile_surface</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a3e996531503c10a2d9a19090892697b6" compoundref="map__manager_8py" startline="394" endline="399">game.world.map_manager.Map.get_dynatile_surface</referencedby>
         <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" compoundref="map__manager_8py" startline="51" endline="59">game.world.map_manager.Map.initialise</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" prot="protected" static="no" mutable="no">
         <type></type>
@@ -344,11 +344,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="64" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="64" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" compoundref="map__manager_8py" startline="257" endline="263">game.world.map_manager.Map.get_tile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e" compoundref="map__manager_8py" startline="271" endline="276">game.world.map_manager.Map.get_tile_data</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f" compoundref="map__manager_8py" startline="243" endline="256">game.world.map_manager.Map.set_tile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48" compoundref="map__manager_8py" startline="264" endline="270">game.world.map_manager.Map.set_tile_data</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" compoundref="map__manager_8py" startline="254" endline="260">game.world.map_manager.Map.get_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e" compoundref="map__manager_8py" startline="268" endline="273">game.world.map_manager.Map.get_tile_data</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="127" endline="151">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ac069dad41fb76c4d26891bce73e9582f" compoundref="map__manager_8py" startline="240" endline="253">game.world.map_manager.Map.set_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48" compoundref="map__manager_8py" startline="261" endline="267">game.world.map_manager.Map.set_tile_data</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" prot="protected" static="no" mutable="no">
         <type></type>
@@ -363,11 +363,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="65" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="65" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="308" endline="318">game.world.map_manager.Map.get_dynatile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c" compoundref="map__manager_8py" startline="284" endline="289">game.world.map_manager.Map.get_dynatile_data</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" compoundref="map__manager_8py" startline="290" endline="307">game.world.map_manager.Map.set_dynatile</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915" compoundref="map__manager_8py" startline="277" endline="283">game.world.map_manager.Map.set_dynatile_data</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="305" endline="315">game.world.map_manager.Map.get_dynatile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c" compoundref="map__manager_8py" startline="281" endline="286">game.world.map_manager.Map.get_dynatile_data</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" compoundref="map__manager_8py" startline="287" endline="304">game.world.map_manager.Map.set_dynatile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915" compoundref="map__manager_8py" startline="274" endline="280">game.world.map_manager.Map.set_dynatile_data</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" prot="protected" static="no" mutable="no">
         <type></type>
@@ -381,9 +381,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="198" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="198" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="195" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="195" bodyend="-1"/>
         <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ad60668d43d3559eaa25fb68456ee78ae" compoundref="map__manager_8py" startline="35" endline="50">game.world.map_manager.Map.__init__</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4" compoundref="map__manager_8py" startline="201" endline="206">game.world.map_manager.Map.get_state</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4" compoundref="map__manager_8py" startline="198" endline="203">game.world.map_manager.Map.get_state</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" prot="protected" static="no" mutable="no">
         <type></type>
@@ -397,9 +397,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="323" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="323" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc" compoundref="map__manager_8py" startline="335" endline="340">game.world.map_manager.Map.get_seed</referencedby>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" compoundref="map__manager_8py" startline="327" endline="334">game.world.map_manager.Map.set_seed</referencedby>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="320" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="320" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc" compoundref="map__manager_8py" startline="332" endline="337">game.world.map_manager.Map.get_seed</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" compoundref="map__manager_8py" startline="324" endline="331">game.world.map_manager.Map.set_seed</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -428,7 +428,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="35" bodyend="50"/>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" compoundref="map__manager_8py" startline="198">game.world.map_manager.Map._state</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" compoundref="map__manager_8py" startline="195">game.world.map_manager.Map._state</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -487,8 +487,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="60" bodyend="129"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="60" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="60" bodyend="126"/>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="130" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="130" bodyend="154"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="127" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="127" bodyend="151"/>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" compoundref="hotbar_8py" startline="35">game.gui.hotbar.Hotbar._surface</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427" compoundref="map__manager_8py" startline="47">game.world.map_manager.Map._surface</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" compoundref="map__manager_8py" startline="64">game.world.map_manager.Map._tile_data</references>
@@ -539,7 +539,7 @@
         <references refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" compoundref="serverjoin__screen_8py" startline="108" endline="121">game.gui.screens.serverjoin_screen.ServerJoinScreen.set_state</references>
         <references refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" compoundref="servermenu__screen_8py" startline="66" endline="76">game.gui.screens.servermenu_screen.ServerMenuScreen.set_state</references>
         <references refid="classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8" compoundref="widget_8py" startline="84" endline="91">game.gui.widget.Widget.set_state</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e" compoundref="map__manager_8py" startline="194" endline="200">game.world.map_manager.Map.set_state</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e" compoundref="map__manager_8py" startline="191" endline="197">game.world.map_manager.Map.set_state</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae05bee64f7588d9209ffda50a90b0177" compoundref="map__manager_8py" startline="39">game.world.map_manager.Map.tile_manager</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -564,7 +564,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="155" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="155" bodyend="169"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="152" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="152" bodyend="166"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -589,13 +589,13 @@
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
         <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54" compoundref="map__manager_8py" startline="60" endline="129">game.world.map_manager.Map.generate</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54" compoundref="map__manager_8py" startline="60" endline="126">game.world.map_manager.Map.generate</references>
         <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="26" endline="36">game.world.synth.noise.PerlinNoise.generate</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4" compoundref="map__manager_8py" startline="385" endline="390">game.world.map_manager.Map.get_height_in_pixels</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab" compoundref="map__manager_8py" startline="373" endline="378">game.world.map_manager.Map.get_width_in_pixels</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4" compoundref="map__manager_8py" startline="382" endline="387">game.world.map_manager.Map.get_height_in_pixels</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab" compoundref="map__manager_8py" startline="370" endline="375">game.world.map_manager.Map.get_width_in_pixels</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a036869a3bbb94d647da0f77f54d06b3e" compoundref="map__manager_8py" startline="49">game.world.map_manager.Map.perlin_noise</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a" compoundref="map__manager_8py" startline="319" endline="326">game.world.map_manager.Map.randomise_seed</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" compoundref="map__manager_8py" startline="327" endline="334">game.world.map_manager.Map.set_seed</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a" compoundref="map__manager_8py" startline="316" endline="323">game.world.map_manager.Map.randomise_seed</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" compoundref="map__manager_8py" startline="324" endline="331">game.world.map_manager.Map.set_seed</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -620,7 +620,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="170" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="170" bodyend="193"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="167" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="167" bodyend="190"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" compoundref="map__manager_8py" startline="65">game.world.map_manager.Map._dynatile_data</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7" compoundref="map__manager_8py" startline="48">game.world.map_manager.Map._dynatile_surface</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a9b7c567489a98c2872617e3331514012" compoundref="button_8py" startline="25">game.gui.button.Button._height</references>
@@ -641,7 +641,7 @@ Only update the differences between the two.
         <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca" compoundref="progress__bar_8py" startline="28">game.gui.progress_bar.ProgressBar._width</references>
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3" compoundref="slot_8py" startline="27">game.gui.slot.Slot._width</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a3d1eacf7249d4f4c1d25be82c751f5a4" compoundref="map__manager_8py" startline="45">game.world.map_manager.Map._width</references>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="308" endline="318">game.world.map_manager.Map.get_dynatile</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" compoundref="map__manager_8py" startline="305" endline="315">game.world.map_manager.Map.get_dynatile</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae05bee64f7588d9209ffda50a90b0177" compoundref="map__manager_8py" startline="39">game.world.map_manager.Map.tile_manager</references>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
       </memberdef>
@@ -673,8 +673,8 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="194" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="194" bodyend="200"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="130" endline="154">game.world.map_manager.Map.load</referencedby>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="191" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="191" bodyend="197"/>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="127" endline="151">game.world.map_manager.Map.load</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>tuple[str, int]</type>
@@ -694,8 +694,8 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="201" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="201" bodyend="206"/>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" compoundref="map__manager_8py" startline="198">game.world.map_manager.Map._state</references>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="198" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="198" bodyend="203"/>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" compoundref="map__manager_8py" startline="195">game.world.map_manager.Map._state</references>
         <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1ab1025133f738287954b0dc5514e3bd71" compoundref="button_8py" startline="29" endline="58">game.gui.button.Button.draw</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -724,7 +724,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="207" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="207" bodyend="214"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="204" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="204" bodyend="211"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -776,7 +776,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="215" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="215" bodyend="222"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="212" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="212" bodyend="219"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -828,7 +828,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="223" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="223" bodyend="228"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="220" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="220" bodyend="225"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -853,7 +853,7 @@ Only update the differences between the two.
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" compoundref="slot_8py" startline="56">game.gui.slot.Slot._y</references>
         <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" compoundref="widget_8py" startline="40">game.gui.widget.Widget._y</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae306286a29aeadd1b6becd660e1ed2fb" compoundref="map__manager_8py" startline="44">game.world.map_manager.Map._y</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c" compoundref="map__manager_8py" startline="229" endline="235">game.world.map_manager.Map.tile_to_screen_pos</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c" compoundref="map__manager_8py" startline="226" endline="232">game.world.map_manager.Map.tile_to_screen_pos</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a004168af2d7f74856b5c74a317e8af2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>tuple[int, int]</type>
@@ -885,8 +885,8 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="229" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="229" bodyend="235"/>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="223" endline="228">game.world.map_manager.Map.tile_to_world_pos</references>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="226" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="226" bodyend="232"/>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51065dd3b757d500fb6e92e31ae2384" compoundref="map__manager_8py" startline="220" endline="225">game.world.map_manager.Map.tile_to_world_pos</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -918,7 +918,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="236" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="236" bodyend="242"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="233" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="233" bodyend="239"/>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" compoundref="hotbar_8py" startline="35">game.gui.hotbar.Hotbar._surface</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427" compoundref="map__manager_8py" startline="47">game.world.map_manager.Map._surface</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1ae05bee64f7588d9209ffda50a90b0177" compoundref="map__manager_8py" startline="39">game.world.map_manager.Map.tile_manager</references>
@@ -953,7 +953,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="243" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="243" bodyend="256"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="240" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="240" bodyend="253"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" compoundref="map__manager_8py" startline="64">game.world.map_manager.Map._tile_data</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
@@ -990,7 +990,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="257" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="257" bodyend="263"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="254" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="254" bodyend="260"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" compoundref="map__manager_8py" startline="64">game.world.map_manager.Map._tile_data</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
@@ -1023,7 +1023,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="264" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="264" bodyend="270"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="261" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="261" bodyend="267"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" compoundref="map__manager_8py" startline="64">game.world.map_manager.Map._tile_data</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1044,7 +1044,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="271" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="271" bodyend="276"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="268" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="268" bodyend="273"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" compoundref="map__manager_8py" startline="64">game.world.map_manager.Map._tile_data</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1069,7 +1069,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="277" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="277" bodyend="283"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="274" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="274" bodyend="280"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" compoundref="map__manager_8py" startline="65">game.world.map_manager.Map._dynatile_data</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1090,7 +1090,7 @@ Only update the differences between the two.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="284" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="284" bodyend="289"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="281" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="281" bodyend="286"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" compoundref="map__manager_8py" startline="65">game.world.map_manager.Map._dynatile_data</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1124,7 +1124,7 @@ the map manager itself.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="290" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="290" bodyend="307"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="287" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="287" bodyend="304"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" compoundref="map__manager_8py" startline="65">game.world.map_manager.Map._dynatile_data</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
@@ -1167,7 +1167,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="308" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="308" bodyend="318"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="305" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="305" bodyend="315"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" compoundref="map__manager_8py" startline="65">game.world.map_manager.Map._dynatile_data</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
@@ -1177,7 +1177,7 @@ Extract from an external compatible bytes object if one is given.
         <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca" compoundref="progress__bar_8py" startline="28">game.gui.progress_bar.ProgressBar._width</references>
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3" compoundref="slot_8py" startline="27">game.gui.slot.Slot._width</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a3d1eacf7249d4f4c1d25be82c751f5a4" compoundref="map__manager_8py" startline="45">game.world.map_manager.Map._width</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="170" endline="193">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="190">game.world.map_manager.Map.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1197,8 +1197,8 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="319" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="319" bodyend="326"/>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="316" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="316" bodyend="323"/>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1222,9 +1222,9 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="327" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="327" bodyend="334"/>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" compoundref="map__manager_8py" startline="323">game.world.map_manager.Map._seed</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="324" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="324" bodyend="331"/>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" compoundref="map__manager_8py" startline="320">game.world.map_manager.Map._seed</references>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -1244,8 +1244,8 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="335" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="335" bodyend="340"/>
-        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" compoundref="map__manager_8py" startline="323">game.world.map_manager.Map._seed</references>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="332" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="332" bodyend="337"/>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" compoundref="map__manager_8py" startline="320">game.world.map_manager.Map._seed</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1af247c231fe60acfd1a0817d06a9ee4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -1269,7 +1269,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="341" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="341" bodyend="347"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="338" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="338" bodyend="344"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -1301,7 +1301,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="348" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="348" bodyend="353"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="345" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="345" bodyend="350"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1a7591fbc2a90b9e26570c97bac44d3ae3" compoundref="player_8py" startline="253">game.entity.player.Player._x</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" compoundref="button_8py" startline="52">game.gui.button.Button._x</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" compoundref="checkbox_8py" startline="54">game.gui.checkbox.Checkbox._x</references>
@@ -1337,7 +1337,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="354" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="354" bodyend="360"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="351" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="351" bodyend="357"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
@@ -1369,7 +1369,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="361" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="361" bodyend="366"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="358" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="358" bodyend="363"/>
         <references refid="classgame_1_1entity_1_1player_1_1Player_1ad5d5296c18a702d30a11035fcbb94ab7" compoundref="player_8py" startline="256">game.entity.player.Player._y</references>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" compoundref="button_8py" startline="96">game.gui.button.Button._y</references>
         <references refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" compoundref="checkbox_8py" startline="50">game.gui.checkbox.Checkbox._y</references>
@@ -1401,7 +1401,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="367" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="367" bodyend="372"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="364" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="364" bodyend="369"/>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d" compoundref="hotbar_8py" startline="24">game.gui.hotbar.Hotbar._width</references>
@@ -1429,7 +1429,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="373" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="373" bodyend="378"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="370" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="370" bodyend="375"/>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" compoundref="button_8py" startline="24">game.gui.button.Button._width</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" compoundref="horizontal__slider_8py" startline="24">game.gui.horizontal_slider.HorizontalSlider._width</references>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d" compoundref="hotbar_8py" startline="24">game.gui.hotbar.Hotbar._width</references>
@@ -1438,7 +1438,7 @@ Extract from an external compatible bytes object if one is given.
         <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca" compoundref="progress__bar_8py" startline="28">game.gui.progress_bar.ProgressBar._width</references>
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3" compoundref="slot_8py" startline="27">game.gui.slot.Slot._width</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a3d1eacf7249d4f4c1d25be82c751f5a4" compoundref="map__manager_8py" startline="45">game.world.map_manager.Map._width</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1458,7 +1458,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="379" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="379" bodyend="384"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="376" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="376" bodyend="381"/>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a9b7c567489a98c2872617e3331514012" compoundref="button_8py" startline="25">game.gui.button.Button._height</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" compoundref="horizontal__slider_8py" startline="25">game.gui.horizontal_slider.HorizontalSlider._height</references>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656" compoundref="hotbar_8py" startline="25">game.gui.hotbar.Hotbar._height</references>
@@ -1486,7 +1486,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="385" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="385" bodyend="390"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="382" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="382" bodyend="387"/>
         <references refid="classgame_1_1gui_1_1button_1_1Button_1a9b7c567489a98c2872617e3331514012" compoundref="button_8py" startline="25">game.gui.button.Button._height</references>
         <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" compoundref="horizontal__slider_8py" startline="25">game.gui.horizontal_slider.HorizontalSlider._height</references>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656" compoundref="hotbar_8py" startline="25">game.gui.hotbar.Hotbar._height</references>
@@ -1495,7 +1495,7 @@ Extract from an external compatible bytes object if one is given.
         <references refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a3b8c67354d096ac536d1927b97da4184" compoundref="progress__bar_8py" startline="29">game.gui.progress_bar.ProgressBar._height</references>
         <references refid="classgame_1_1gui_1_1slot_1_1Slot_1a23282e62499327a7f6385871fb8144e2" compoundref="slot_8py" startline="28">game.gui.slot.Slot._height</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a353323335bca6e621dfd591c07c0a7d9" compoundref="map__manager_8py" startline="46">game.world.map_manager.Map._height</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="155" endline="169">game.world.map_manager.Map.regenerate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Surface</type>
@@ -1515,7 +1515,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="391" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="391" bodyend="396"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="388" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="388" bodyend="393"/>
         <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" compoundref="hotbar_8py" startline="35">game.gui.hotbar.Hotbar._surface</references>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427" compoundref="map__manager_8py" startline="47">game.world.map_manager.Map._surface</references>
       </memberdef>
@@ -1537,7 +1537,7 @@ Extract from an external compatible bytes object if one is given.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="397" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="397" bodyend="402"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="394" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="394" bodyend="399"/>
         <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7" compoundref="map__manager_8py" startline="48">game.world.map_manager.Map._dynatile_surface</references>
       </memberdef>
     </sectiondef>
@@ -1547,7 +1547,7 @@ Extract from an external compatible bytes object if one is given.
 <para><verbatim>Class for creating a Map.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="27" bodyend="402"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" line="27" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/map_manager.py" bodystart="27" bodyend="399"/>
     <listofallmembers>
       <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ad60668d43d3559eaa25fb68456ee78ae" prot="public" virt="non-virtual"><scope>game::world::map_manager::Map</scope><name>__init__</name></member>
       <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" prot="protected" virt="non-virtual"><scope>game::world::map_manager::Map</scope><name>_dynatile_data</name></member>
