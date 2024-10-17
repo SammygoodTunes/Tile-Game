@@ -1,3 +1,6 @@
+"""
+Module name: progress_bar
+"""
 
 from pygame import draw
 from pygame.math import clamp

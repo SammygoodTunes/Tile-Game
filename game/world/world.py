@@ -1,3 +1,8 @@
+"""
+Module name: world
+
+This module manages all world-related logic and functionalities.
+"""
 
 from pygame import draw
 from typing import Self
@@ -25,18 +30,6 @@ class World:
         Create the world.
         """
         self._map.regenerate(seed)
-
-    def update(self, window_obj, player_obj) -> None:
-        """
-        Update the world (unused).
-        """
-        pass
-
-    def update_ui(self) -> None:
-        """
-        Update the world's UI (unused).
-        """
-        pass
 
     def draw(self, game) -> None:
         """

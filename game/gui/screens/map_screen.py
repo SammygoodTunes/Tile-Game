@@ -1,3 +1,7 @@
+"""
+Module name: map_screen
+"""
+
 from pygame.draw import rect, line, circle
 from pygame.surface import Surface
 from pygame.transform import smoothscale_by

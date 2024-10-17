@@ -1,6 +1,16 @@
-from time import time
+"""
+Module name: connection_handler
+
+This module acts as a pathway between the client and connection modules.
+This means that whatever the connection module doesn't have access to, the connection handler will provide it with
+what it needs. This is because most of the connection handling done by the connection module is run on a different
+thread. And the way the modules are structure disallow for any direct communication between the client and connection
+modules.
+Shared attributes probably will (eventually) be implemented to make it thread-safe(r).
+"""
 
 from pygame.event import Event
+from time import time
 
 from game.client.connection import Connection, Tasks
 from game.data.states.connection_states import ConnectionStates
@@ -19,7 +29,10 @@ class ConnectionHandler:
         self.player_name = None
         self.connection: Connection | None = None
 
-    def events(self, e: Event):
+    def events(self, e: Event) -> None:
+        """
+        Handle the connection handler events.
+        """
         if not self.connection:
             return
         self.connection.events(e)

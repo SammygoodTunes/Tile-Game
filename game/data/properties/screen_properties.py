@@ -1,3 +1,8 @@
+"""
+Module name: screen_properties
+
+This module defines the screen properties.
+"""
 
 class ScreenProperties:
     """

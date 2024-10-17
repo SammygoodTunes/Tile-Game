@@ -1,3 +1,7 @@
+"""
+Module name: inputbox
+"""
+
 import pygame.time
 from pygame import mouse, scrap, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_v, Surface, KMOD_CTRL
 from pygame.math import clamp
@@ -32,8 +36,8 @@ class InputBox(Widget):
         self._text_offset = 0
         self._max_text_length = 64
         self._authorised_chars = printable[:-5]
-        self._placeholder_label = Label(placeholder, 5, 0).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
-        self._text_label = Label(self._text_value, 5, 0).set_font_sizes((8, 10, 12))
+        self._placeholder_label = Label(placeholder, x=5).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
+        self._text_label = Label(self._text_value, x=5).set_font_sizes((8, 10, 12))
         self._timer = pygame.time.get_ticks() / 1000.0
 
     def draw(self, screen: Surface) -> None:

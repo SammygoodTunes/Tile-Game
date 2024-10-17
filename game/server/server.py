@@ -1,17 +1,25 @@
+"""
+Module name: server
 
-from threading import Thread
+This module handles the server and updates its state.
+It also calls the server tasks that send data packets to the client.
+
+(See data/states/server_states for the different server states.)
+(See server/tasks for the different server tasks.)
+"""
+
 from multiprocessing import Process, Value
-import socket
+from threading import Thread
 from time import sleep, time
-
 import pygame.time
+import socket
 
 from game.data.properties.server_properties import ServerProperties
 from game.data.states.server_states import ServerStates
 from game.network.protocol import Protocol
 from game.server.handlers.player_handler import PlayerHandler
-from game.server.tasks import ServerTasks
 from game.server.handlers.world_handler import WorldHandler
+from game.server.tasks import ServerTasks
 from game.utils.logger import logger
 
 
@@ -132,3 +140,16 @@ class Server:
             self.sock = None
             self.world_handler = None
             self.player_handler = None
+
+    def safe_closure(self) -> None:
+        """
+        Safely close the server when no players are online after a certain amount of time.
+        """
+        if not self.state.value > 1 or not self.timer.value:
+            return
+        if (
+                self.player_count.value <= 0
+                and pygame.time.get_ticks() / 1000.0 - self.timer.value > ServerProperties.DELAY_BEFORE_CLOSURE
+        ):
+            logger.info(f'Closing server due to inactivity ({round(ServerProperties.DELAY_BEFORE_CLOSURE)}s delay)')
+            self.stop()

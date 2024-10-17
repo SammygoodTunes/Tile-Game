@@ -1,3 +1,8 @@
+"""
+Module name: game_properties
+
+This module defines the main game properties.
+"""
 
 class GameProperties:
     """

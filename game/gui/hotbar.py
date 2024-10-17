@@ -1,3 +1,6 @@
+"""
+Module name: hotbar
+"""
 
 from pygame import Surface, SRCALPHA
 from typing import Self
@@ -21,7 +24,7 @@ class Hotbar(Widget):
         self._width = 0
         self._height = 0
         self._slots = [Slot() for _ in range(slot_count)]
-        self._tooltip = Label("")
+        self._tooltip = Label()
         self._selected_slot = 0
         self._atlas: Surface | None = None
 

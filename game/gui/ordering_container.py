@@ -1,3 +1,7 @@
+"""
+Module name: ordering_container
+"""
+
 from typing import Self
 
 from pygame import KEYDOWN, K_TAB, KMOD_SHIFT

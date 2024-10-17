@@ -1,3 +1,8 @@
+"""
+Module name: screen
+
+This module defines the base class for all graphical user interfaces.
+"""
 
 class Screen:
     """

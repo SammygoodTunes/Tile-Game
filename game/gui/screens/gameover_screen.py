@@ -1,10 +1,13 @@
+"""
+Module name: gameover_screen
+"""
 
 from pygame import Surface
 
 from game.data.properties.screen_properties import ScreenProperties
-from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
+from game.gui.label import Label
+from game.gui.screens.screen import Screen
 
 
 class GameoverScreen(Screen):

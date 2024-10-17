@@ -1,5 +1,9 @@
+"""
+Module name: widget
 
-import inspect
+This module defines the bass class for all GUI widgets.
+"""
+
 from typing import Self
 
 from game.utils.logger import logger

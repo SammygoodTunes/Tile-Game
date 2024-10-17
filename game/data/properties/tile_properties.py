@@ -1,3 +1,8 @@
+"""
+Module name: tile_properties
+
+This module defines the tile properties.
+"""
 
 class TileProperties:
     """

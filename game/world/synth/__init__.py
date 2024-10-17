@@ -1,0 +1,3 @@
+"""
+Synth package.
+"""

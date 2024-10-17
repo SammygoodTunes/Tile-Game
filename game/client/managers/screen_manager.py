@@ -1,10 +1,16 @@
+"""
+Module name: screen_manager
+
+This module manages all the GUIs, their visibility and their behaviour.
+"""
+
 import pygame
 
 from game.data.keys import Keys
 from game.data.properties.game_properties import GameProperties
 from game.data.states.connection_states import ConnectionStates
-from game.data.states.server_states import ServerStates
 from game.data.states.mouse_states import MouseStates
+from game.data.states.server_states import ServerStates
 from game.gui.screens.crash_screen import CrashScreen
 from game.gui.screens.credits_screen import CreditsScreen
 from game.gui.screens.gameover_screen import GameoverScreen
@@ -14,9 +20,9 @@ from game.gui.screens.map_screen import MapScreen
 from game.gui.screens.options_screen import OptionsScreen
 from game.gui.screens.pause_screen import PauseScreen
 from game.gui.screens.playerlist_screen import PlayerListScreen
+from game.gui.screens.serverconnect_screen import ServerConnectScreen
 from game.gui.screens.servercreate_screen import ServerCreateScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
-from game.gui.screens.serverconnect_screen import ServerConnectScreen
 from game.gui.screens.servermenu_screen import ServerMenuScreen
 
 
@@ -30,18 +36,18 @@ class Screens:
         self.game = None
         self.screen = self.window.screen
         self.crash_screen = CrashScreen(window)
-        self.main_menu_screen = MainMenuScreen(window)
-        self.server_menu_screen = ServerMenuScreen(window)
-        self.server_join_screen = ServerJoinScreen(window)
-        self.server_create_screen = ServerCreateScreen(window)
-        self.server_connect_screen = ServerConnectScreen(window)
-        self.loading_screen = LoadingScreen(window)
-        self.pause_screen = PauseScreen(window)
-        self.options_screen = OptionsScreen(window)
         self.credits_screen = CreditsScreen(window)
         self.gameover_screen = GameoverScreen(window)
+        self.loading_screen = LoadingScreen(window)
+        self.main_menu_screen = MainMenuScreen(window)
         self.map_screen = MapScreen(window)
+        self.options_screen = OptionsScreen(window)
+        self.pause_screen = PauseScreen(window)
         self.player_list_screen = PlayerListScreen(window)
+        self.server_connect_screen = ServerConnectScreen(window)
+        self.server_create_screen = ServerCreateScreen(window)
+        self.server_join_screen = ServerJoinScreen(window)
+        self.server_menu_screen = ServerMenuScreen(window)
 
     def link_game(self, game_obj) -> None:
         """
@@ -96,9 +102,6 @@ class Screens:
                 if self.server_join_screen.get_state() and self.server_join_screen.join_button.get_state():
                     self.task_join_server()
 
-            if e.key == pygame.K_TAB:
-                self.task_tab()
-
             if e.key == Keys.SHOW_MAP and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
                 self.map_screen.set_state(True)
             if e.key == Keys.SHOW_PLAYERLIST and self.game.start_game and not self.game.client.player.is_dead() and not self.game.paused:
@@ -112,9 +115,9 @@ class Screens:
 
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button != MouseStates.LMB:
-                return
+                return None
         else:
-            return
+            return None
 
         if self.main_menu_screen.play_button.is_hovering_over() and self.main_menu_screen.get_state():
             self.main_menu_screen.set_state(False)
@@ -132,7 +135,7 @@ class Screens:
             self.options_screen.set_state(False)
             if self.game.start_game:
                 self.pause_screen.set_state(True)
-                return
+                return None
             self.main_menu_screen.set_state(True)
         elif self.credits_screen.back_button.is_hovering_over():
             self.credits_screen.set_state(False)
@@ -245,24 +248,6 @@ class Screens:
         self.gameover_screen.update_ui()
         self.map_screen.update_ui()
         self.player_list_screen.update_ui()
-
-    def task_tab(self) -> None:
-        pass
-        # FIXME: Allow tabbing for server join.
-        # TODO: Make this better by creating a container component and using input box ordering.
-        '''
-        if self.server_create_screen.get_state():
-            self.server_create_screen.ign_input.set_selected(not self.server_create_screen.ign_input.is_selected())
-        if self.server_join_screen.get_state():
-            self.server_join_screen.ign_input.set_selected(
-                (not self.server_join_screen.ign_input.is_selected()
-                 and not self.server_join_screen.ip_input.is_selected()
-                 and not self.server_join_screen.port_input.is_selected())
-                or self.server_join_screen.ip_input.is_selected()
-            )
-            self.server_join_screen.ip_input.set_selected(self.server_join_screen.ign_input.is_selected())
-            self.server_join_screen.port_input.set_selected(self.server_join_screen.ip_input.is_selected())
-        '''
 
     def task_create_server(self) -> None:
         """

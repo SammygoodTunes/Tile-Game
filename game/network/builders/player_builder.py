@@ -1,3 +1,7 @@
+"""
+Module name: player_builder
+"""
+
 from game.data.structures.player_structure import PlayerStructure
 from game.network.builders.base_builder import BaseBuilder
 

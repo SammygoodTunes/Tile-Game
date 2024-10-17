@@ -1,3 +1,9 @@
+"""
+Module name: world_manager
+
+This module manages the local world received from the server's global game state.
+"""
+
 from game.data.structures.map_structure import MapStructure
 from game.data.structures.tile_structure import TileStructure
 

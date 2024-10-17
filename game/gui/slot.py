@@ -1,3 +1,6 @@
+"""
+Module name: slot
+"""
 
 from pygame import Surface, SRCALPHA, image
 from pygame.draw import rect
@@ -7,8 +10,8 @@ from typing import Self
 
 from game.data.items.items import Items
 from game.data.items.item import Item
+from game.data.properties.item_properties import ItemProperties
 from game.gui.widget import Widget
-from game.world.item_manager import ItemManager
 
 
 class Slot(Widget):
@@ -189,9 +192,17 @@ class Slot(Widget):
         Set the item of the slot, then return the slot itself.
         """
         self._item = item
-        self._item_asset = Surface((ItemManager.SIZE, ItemManager.SIZE), SRCALPHA, 32).convert_alpha()
-        self._item_asset.blit(image.load(Item.DEFAULT_ATLAS).convert_alpha(), (0, 0, ItemManager.SIZE, ItemManager.SIZE),
-                    (ItemManager.SIZE * item.get_xy()[0], ItemManager.SIZE * item.get_xy()[1], ItemManager.SIZE, ItemManager.SIZE))
+        self._item_asset = Surface((ItemProperties.ITEM_SIZE, ItemProperties.ITEM_SIZE), SRCALPHA, 32).convert_alpha()
+        self._item_asset.blit(
+            image.load(Item.DEFAULT_ATLAS).convert_alpha(),
+            (0, 0, ItemProperties.ITEM_SIZE, ItemProperties.ITEM_SIZE),
+            (
+                ItemProperties.ITEM_SIZE * item.get_xy()[0],
+                ItemProperties.ITEM_SIZE * item.get_xy()[1],
+                ItemProperties.ITEM_SIZE,
+                ItemProperties.ITEM_SIZE
+            )
+        )
         return self
 
     def get_item(self) -> Item:

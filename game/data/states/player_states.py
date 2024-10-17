@@ -1,3 +1,8 @@
+"""
+Module name: player_states
+
+This module defines the different states of the player.
+"""
 
 class PlayerStates:
     """

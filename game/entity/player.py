@@ -1,9 +1,14 @@
+"""
+Module name: player
 
-import math
-import pygame
+This module defines the player entity and its behaviour and interactions with other game objects.
+"""
+
 from pygame.math import clamp
 from random import randint
 from typing import Self
+import math
+import pygame
 
 from game.data.items.items import Items
 from game.data.keys import Keys
@@ -11,9 +16,9 @@ from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.tile_properties import TileProperties
 from game.data.states.mouse_states import MouseStates
 from game.data.states.player_states import PlayerStates
-from game.data.tiles.tiles import Tiles
 from game.data.tiles.tile import Tile
 from game.data.tiles.tile_types import TileTypes
+from game.data.tiles.tiles import Tiles
 from game.gui.screens.main_hud import MainHud
 from game.network.builders.base_builder import BaseBuilder
 from game.network.builders.player_builder import PlayerBuilder
@@ -155,7 +160,10 @@ class Player:
             TileProperties.TILE_SIZE
         ), 2, 4)
 
-    def draw_gun_pointer(self, game):
+    def draw_gun_pointer(self, game) -> None:
+        """
+        Draw the gun pointer to the screen.
+        """
         if game.paused or self.is_dead() or self.main_hud.hotbar.get_selected_slot_item() != Items.GUN:
             return
         mx, my = pygame.mouse.get_pos()
@@ -327,12 +335,6 @@ class Player:
         self.edges[PlayerStates.MOVE_UP] = (self.screen_y <= game.height // 2 - self.height)
         self.edges[PlayerStates.MOVE_DOWN] = (self.screen_y >= game.height // 2 + self.height)
         self.edges[PlayerStates.MOVE_RIGHT] = (self.screen_x >= game.width // 2 + self.width)
-
-    def update_ui(self) -> None:
-        """
-        Update the player GUI.
-        """
-        self.main_hud.update_ui()
 
     def break_tile(self, game) -> None:
         """

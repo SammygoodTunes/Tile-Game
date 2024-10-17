@@ -1,3 +1,8 @@
+"""
+Module name: server_properties
+
+This module defines the server properties.
+"""
 
 class ServerProperties:
     """

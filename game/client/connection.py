@@ -1,18 +1,27 @@
+"""
+Module name: connection
+
+This particular module handles the connection to a server, its state and all of its tasks.
+It also calls the client tasks that send data packets to the server.
+
+(See data/states/connection_states for the different connection states.)
+(See client/tasks for the different client tasks.)
+"""
 
 from pygame.event import Event
-import socket
 from threading import Thread
 from time import time
+import socket
 import traceback
 
 from game.client.managers.player_manager import PlayerManager
 from game.client.managers.world_manager import WorldManager
 from game.client.tasks import ClientTasks
 from game.data.states.connection_states import ConnectionStates
+from game.network.packet import Hasher, Compressor
+from game.network.protocol import Protocol
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
-from game.network.protocol import Protocol
-from game.network.packet import Hasher, Compressor
 
 
 class Tasks:
@@ -150,7 +159,8 @@ class Connection:
             logger.error(f'Internal error: {e}')
             self.state = ConnectionStates.NOROUTE
             self.disconnect()
-        except Exception:
+        except Exception as e:
+            logger.debug(f'Exception: {e}')
             logger.error(f'{traceback.format_exc()}')
             self.state = ConnectionStates.ERROR
             self.disconnect()
@@ -176,13 +186,7 @@ class Connection:
 
     def events(self, e: Event) -> None:
         """
-        if e.type == pygame.MOUSEBUTTONDOWN:
-            if e.button == MouseStates.LMB:
-                hit_player = self.player_manager.hit_player(self.player.get_player_name())
-                if not hit_player:
-                    return
-                print(f"Hit player {hit_player}, sending packets to server")
-                self.hit_player = hit_player
+        Handle the connection events (unused).
         """
         pass
 
@@ -237,6 +241,9 @@ class Connection:
                 self.state = ConnectionStates.DISCONNECTED
 
     def start(self, task: Tasks, player_name: str = "") -> None:
+        """
+        Start a client connection task.
+        """
         connection_thread: Thread = Thread()
         if task == Tasks.CONNECT:
             connection_thread = Thread(target=self.connect, args=(player_name,))

@@ -1,3 +1,9 @@
+"""
+Module name: item_types
+
+This module defines the item types. Need I say more?
+"""
+
 from game.data.items.items import Items
 
 

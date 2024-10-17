@@ -1,3 +1,9 @@
+"""
+Module name: items
+
+This module defines the different game items.
+"""
+
 from game.data.items.item import Item
 
 

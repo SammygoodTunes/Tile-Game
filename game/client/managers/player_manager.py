@@ -1,6 +1,12 @@
+"""
+Module name: player_manager
 
-from pygame.math import lerp
+This module manages the local player and the local player list received from the server's global game state,
+as well as rendering the other players to the screen.
+"""
+
 from pygame.draw import rect
+from pygame.math import lerp
 from typing import Self
 
 from game.entity.player import Player

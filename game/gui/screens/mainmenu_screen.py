@@ -1,13 +1,15 @@
-from cProfile import label
+"""
+Module name: mainmenu_screen
+"""
 
-import pygame.time
 from numpy import exp, cos, pi, absolute
+import pygame.time
 
 from game.data.properties.game_properties import GameProperties
 from game.data.properties.gui_properties import GuiProperties
-from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
+from game.gui.label import Label
+from game.gui.screens.screen import Screen
 
 
 class MainMenuScreen(Screen):

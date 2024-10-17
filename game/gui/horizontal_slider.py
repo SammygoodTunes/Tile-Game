@@ -1,3 +1,6 @@
+"""
+Module name: horizontal_slider
+"""
 
 import pygame
 from pygame.math import clamp
@@ -29,7 +32,7 @@ class HorizontalSlider(Widget):
         self._button_radius = 10
         self._button_radius_hovered = 12
         self._button_held = False
-        self.title_label = Label(title, 0, self._y - 40).set_font_sizes((7, 8, 10))
+        self.title_label = Label(title, y=self._y - 40).set_font_sizes((7, 8, 10))
         self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((7, 8, 8))
 
     def draw(self, screen) -> None:

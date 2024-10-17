@@ -1,4 +1,6 @@
 """
+Structures package.
+
 Structures are classes containing constants of size, position and other properties of different attributes of an object.
 They are used to build compressed packets that aim to be sent to and from the server.
 

@@ -1,3 +1,7 @@
+"""
+Module name: checkbox
+"""
+
 import pygame.time
 from pygame.draw import rect as draw_rect
 from pygame import event, mouse, MOUSEBUTTONDOWN

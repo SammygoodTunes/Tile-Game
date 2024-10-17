@@ -1,3 +1,8 @@
+"""
+Module name: camera_properties
+
+This module defines the camera properties.
+"""
 
 class CameraProperties:
     """

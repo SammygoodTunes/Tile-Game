@@ -1,11 +1,14 @@
+"""
+Module name: game
+
+The game module is where all game-related tasks are run.
+"""
 
 import pygame
 
 from game.client.client import Client
 from game.core.window import Window
-from game.data.properties.server_properties import ServerProperties
 from game.server.server import Server
-from game.utils.logger import logger
 
 
 class Game(Window):
@@ -31,7 +34,7 @@ class Game(Window):
         """
         self.window_updates()
         self.client.update(self)
-        self.safe_server_closure()
+        self.server.safe_closure()
         self.all_events()
         self.screens.update()
         self.draw_fps() 
@@ -89,19 +92,6 @@ class Game(Window):
         Return the running state of the game.
         """
         return self._running
-
-    def safe_server_closure(self) -> None:
-        """
-        Safely close the server when no players are online after a certain amount of time.
-        """
-        if not self.server.state.value > 1 or not self.server.timer.value:
-            return
-        if (
-                self.server.player_count.value <= 0
-                and pygame.time.get_ticks() / 1000.0 - self.server.timer.value > ServerProperties.DELAY_BEFORE_CLOSURE
-        ):
-            logger.info(f'Closing server due to inactivity ({round(ServerProperties.DELAY_BEFORE_CLOSURE)}s delay)')
-            self.server.stop()
 
     def crash(self, traceback: str) -> None:
         """

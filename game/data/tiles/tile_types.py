@@ -1,3 +1,9 @@
+"""
+Module name: tile_types
+
+This module defines the different types of map tiles.
+"""
+
 from game.data.tiles.tiles import Tiles
 
 

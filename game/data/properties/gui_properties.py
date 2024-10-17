@@ -1,3 +1,8 @@
+"""
+Module name: gui_properties
+
+This module defines the GUI properties.
+"""
 
 class GuiProperties:
     """

@@ -1,3 +1,6 @@
+"""
+Module name: label
+"""
 
 from pygame import BLEND_ALPHA_SDL2, math
 from pygame.font import Font

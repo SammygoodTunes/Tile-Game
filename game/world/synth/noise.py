@@ -1,3 +1,8 @@
+"""
+Module name: noise
+
+This module defines the noise algorithm for the map generation.
+"""
 
 from math import cos, pi
 from random import randint, uniform

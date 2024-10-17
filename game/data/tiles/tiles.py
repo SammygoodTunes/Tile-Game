@@ -1,3 +1,9 @@
+"""
+Module name: tiles
+
+This module defines the different map tiles.
+"""
+
 from game.data.tiles.tile import Tile
 
 

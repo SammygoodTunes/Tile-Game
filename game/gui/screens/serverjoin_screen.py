@@ -1,3 +1,7 @@
+"""
+Module name: serverjoin_screen
+"""
+
 from pygame import Surface
 from pygame.event import Event
 

@@ -1,9 +1,11 @@
+"""
+Module name: pause_screen
+"""
 
 from pygame import Surface
 
 from game.data.properties.screen_properties import ScreenProperties
 from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
 
 
@@ -16,7 +18,6 @@ class PauseScreen(Screen):
         super().__init__()
         self.window = window
         self.faded_surface = self.initialise_surface()
-        self.pause_label = Label(text="PAUSE MENU").set_colour((240, 240, 255)).center_horizontally(0, window.width).set_font_sizes((14, 15, 16))
         self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
         self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
         self.disconnect_button = Button(text="Disconnect").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
@@ -37,7 +38,6 @@ class PauseScreen(Screen):
         if not self._enabled:
             return
         self.window.screen.blit(self.faded_surface, (0, 0))
-        self.pause_label.draw(self.window.screen)
         self.resume_button.draw(self.window.screen)
         self.options_button.draw(self.window.screen)
         self.disconnect_button.draw(self.window.screen)
@@ -48,8 +48,6 @@ class PauseScreen(Screen):
         """
         if not self._enabled:
             return
-        self.pause_label.update(self.window)
-        self.pause_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.options_button.get_height() - 25 - self.pause_label.font.size(self.pause_label.get_text())[1])
         self.faded_surface = self.initialise_surface()
         self.options_button.update(self.window)
         self.options_button.center(0, 0, self.window.width, self.window.height)
@@ -64,7 +62,6 @@ class PauseScreen(Screen):
         Set the screen's visibility/interactivity.
         """
         super().set_state(state)
-        self.pause_label.set_state(state)
         self.resume_button.set_state(state)
         self.options_button.set_state(state)
         self.disconnect_button.set_state(state)

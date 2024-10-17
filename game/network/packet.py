@@ -1,3 +1,10 @@
+"""
+Module name: packet
+
+This module defines a set of methods for hashing, compressing and altering data packets.
+"""
+
+
 import pickle
 from hashlib import shake_256
 import lzma

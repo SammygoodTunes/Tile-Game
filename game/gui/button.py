@@ -1,9 +1,11 @@
+"""
+Module name: button
+"""
 
 from pygame import mouse, draw
 from pygame.math import clamp
 from typing import Self
 
-from game.data.states.mouse_states import MouseStates
 from game.gui.label import Widget, Label
 
 
@@ -22,7 +24,7 @@ class Button(Widget):
         self._width = width
         self._height = height
         self._background_colour = (255, 255, 255)
-        self.label = Label(text, 0, 0).set_font_sizes((8, 10, 12))
+        self.label = Label(text).set_font_sizes((8, 10, 12))
 
     def draw(self, screen) -> None:
         """

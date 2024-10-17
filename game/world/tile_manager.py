@@ -1,3 +1,8 @@
+"""
+Module name: tile_manager
+
+This module is responsible for rendering the tiles to the map surface.
+"""
 
 from pygame import image, Surface
 

@@ -1,13 +1,14 @@
-
 """
-Logger for logging debug info, warnings and errors.
+Module name: logger
+
+This module defines the logger.
 """
 
-import argparse
-import logging
 from os import path, mkdir
 from sys import stdout
 from time import strftime
+import argparse
+import logging
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--debug', action=argparse.BooleanOptionalAction,

@@ -1,3 +1,6 @@
+"""
+Module name: options_screen
+"""
 
 from pygame import MOUSEBUTTONUP, Surface
 from pygame.event import Event
@@ -26,7 +29,7 @@ class OptionsScreen(Screen):
                                  .set_value_text(f'{window.fps_cap} FPS')
                                  .set_value_bounds(10, 1000))
         self.show_fps_box = Checkbox('Show FPS', checked=True)
-        self.debug_info_box = Checkbox('Show debug info', checked=False)
+        self.debug_info_box = Checkbox('Show debug info')
         self.vsync_box = Checkbox('Vsync', checked=True)
         self.back_button = Button('Back')
 

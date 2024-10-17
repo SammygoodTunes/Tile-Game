@@ -1,3 +1,6 @@
+"""
+Module name: servermenu_screen
+"""
 
 from pygame import Surface
 

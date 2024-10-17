@@ -1,5 +1,17 @@
+"""
+Module name: keys
 
-import pygame
+This module defines all the hotkeys, linked to specific in-game actions.
+"""
+
+from pygame import (
+    K_SPACE,
+    K_TAB,
+    K_d,
+    K_q,
+    K_s,
+    K_z,
+)
 
 
 class Keys:
@@ -7,9 +19,9 @@ class Keys:
     Class for regrouping all the keys associated to different game actions.
     """
 
-    MOVE_LEFT = pygame.K_q
-    MOVE_RIGHT = pygame.K_d
-    MOVE_UP = pygame.K_z
-    MOVE_DOWN = pygame.K_s
-    SHOW_MAP = pygame.K_SPACE
-    SHOW_PLAYERLIST = pygame.K_TAB
+    MOVE_DOWN = K_s
+    MOVE_LEFT = K_q
+    MOVE_RIGHT = K_d
+    MOVE_UP = K_z
+    SHOW_MAP = K_SPACE
+    SHOW_PLAYERLIST = K_TAB

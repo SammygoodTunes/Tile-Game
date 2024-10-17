@@ -1,3 +1,9 @@
+"""
+Module name: tile
+
+This module defines the map tile object and its properties.
+"""
+
 from itertools import count
 from typing import Self
 
@@ -27,10 +33,10 @@ class Tile:
         assert 0 <= self._damage_delay <= TileProperties.TILE_DAMAGE_DELAY_MAX, f'Invalid tile damage delay: {self._damage_delay}'
 
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'
 
-    def __eq__(self, obj: Self):
+    def __eq__(self, obj: Self) -> bool:
         if not isinstance(obj, Tile):
             return False
         return (
@@ -68,7 +74,7 @@ class Tile:
         self._damage_delay = (compressed_tile >> tS.TILE_DAMAGE_DELAY_BYTE_POS & 2 ** tS.TILE_DAMAGE_DELAY_BIT_SIZE - 1) / 10
         return self
 
-    def get_id(self):
+    def get_id(self) -> int:
         """
         Return the id of the tile.
         """

@@ -1,3 +1,7 @@
+"""
+Module name: serverconnect_screen
+"""
+
 from pygame import Surface
 
 from game.data.properties.screen_properties import ScreenProperties

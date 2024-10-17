@@ -1,3 +1,6 @@
+"""
+Module name: servercreate_screen
+"""
 
 from pygame import Surface
 from pygame.event import Event

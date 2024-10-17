@@ -1,9 +1,12 @@
+"""
+Module name: loading_screen
+"""
 
 from pygame import Surface
 from pygame.event import Event
 
-from game.gui.screens.screen import Screen
 from game.gui.progress_bar import ProgressBar
+from game.gui.screens.screen import Screen
 
 
 class LoadingScreen(Screen):

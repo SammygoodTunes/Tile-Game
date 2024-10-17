@@ -1,3 +1,6 @@
+"""
+Module name: camera
+"""
 
 from pygame.math import clamp
 

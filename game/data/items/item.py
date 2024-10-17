@@ -1,3 +1,9 @@
+"""
+Module name: item
+
+This module defines the item object and its properties.
+"""
+
 from typing import Self
 from game.utils.tools import resource_dir
 

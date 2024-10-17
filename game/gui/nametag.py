@@ -1,3 +1,6 @@
+"""
+Module name: nametag
+"""
 
 from pygame import mouse, Surface
 from typing import Self

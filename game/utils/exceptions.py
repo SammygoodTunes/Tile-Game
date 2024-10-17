@@ -1,3 +1,9 @@
+"""
+Module name: exceptions
+
+Defines certain specific exceptions that may be raised during or before the game.
+This module may disappear in the future.
+"""
 
 class InvalidTextureAtlas(Exception):
     """

@@ -1,3 +1,6 @@
+"""
+Module name: playerlist_screen
+"""
 
 from pygame import Surface
 

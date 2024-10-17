@@ -1,3 +1,8 @@
+"""
+Module name: map_manager
+
+This module manages the generation, data and updates of the world map.
+"""
 
 from math import ceil
 from pygame import SRCALPHA, Surface
@@ -11,8 +16,8 @@ from game.data.properties.tile_properties import TileProperties
 from game.data.properties.world_properties import WorldProperties
 from game.data.states.map_states import MapStates
 from game.data.structures.tile_structure import TileStructure
-from game.data.tiles.tiles import Tiles
 from game.data.tiles.tile import Tile
+from game.data.tiles.tiles import Tiles
 from game.utils.exceptions import InvalidMapData
 from game.utils.logger import logger
 from game.world.synth import noise
@@ -119,7 +124,7 @@ class Map:
             raise InvalidMapData
 
         # Update all game UIs
-        # Set the ideal spawnpoint of the player with params this map obj (self) and game camera
+        # Set the ideal spawn-point of the player with params this map obj (self) and game camera
         # Set the loading screen state to false
 
     def load(self) -> None:
@@ -145,7 +150,7 @@ class Map:
                 logger.info(f'Loading map data... {progress}%')
                 timer = time()
         logger.info('Done!')
-        self.set_state(MapStates.READY, 0)
+        self.set_state(MapStates.READY)
 
     def regenerate(self, _seed: str) -> None:
         """
@@ -229,6 +234,9 @@ class Map:
         return int(game.width // 2 + world_x - int(game.client.camera.x)), int(game.height // 2 + world_y - int(game.client.camera.y))
 
     def draw_tile(self, tile_x: int, tile_y: int, tile: Tile | int) -> Self:
+        """
+        Draw a specific tile to the screen at specified x and y tile positions, then return the map manager itself.
+        """
         self.tile_manager.draw(tile_x, tile_y, tile, self._surface)
         return self
 

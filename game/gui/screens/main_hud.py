@@ -1,3 +1,6 @@
+"""
+Module name: main_hud
+"""
 
 from pygame.surface import Surface
 from time import time

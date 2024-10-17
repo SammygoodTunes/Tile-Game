@@ -1,3 +1,9 @@
+"""
+Module name: player_handler
+
+This module handles the server-side player object.
+"""
+
 from game.network.builders.player_builder import PlayerBuilder
 from game.utils.logger import logger
 

@@ -1,3 +1,8 @@
+"""
+Module name: world_properties
+
+This module defines the world properties.
+"""
 
 class WorldProperties:
     """

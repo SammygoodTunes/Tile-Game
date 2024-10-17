@@ -1,3 +1,9 @@
+"""
+Module name: player_properties
+
+This module defines the player entity properties.
+"""
+
 from game.utils.tools import resource_dir
 
 

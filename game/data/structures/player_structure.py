@@ -1,3 +1,9 @@
+"""
+Module name: player_structure
+
+This module defines the byte (or data packet) structure for the player entity.
+"""
+
 from numpy import ceil
 
 from game.data.properties.player_properties import PlayerProperties

@@ -1,10 +1,21 @@
+"""
+Module name: tasks
+
+This module defines all the server-side tasks when a connection is being established with a client, or whilst a
+client is connected.
+These tasks check the authenticity of the client and any potential errors, as well as send various required packets
+of game data, requests and responses. These packets are built using the different packet builders.
+
+(See network/builders for the different packet builders.)
+(See network/protocol for the different requests and responses.)
+"""
 
 from math import ceil
 
 from game.data.properties.server_properties import ServerProperties
 from game.data.structures.map_structure import MapStructure
-from game.network.builders.player_builder import PlayerBuilder
 from game.network.builders.base_builder import BaseBuilder
+from game.network.builders.player_builder import PlayerBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len
 from game.network.protocol import Protocol
 from game.server.handlers.player_handler import PlayerHandler

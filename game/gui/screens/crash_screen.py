@@ -1,8 +1,11 @@
+"""
+Module name: crash_screen
+"""
 
 from pygame import Surface
 
-from game.gui.screens.screen import Screen
 from game.gui.label import Label
+from game.gui.screens.screen import Screen
 
 
 class CrashScreen(Screen):
