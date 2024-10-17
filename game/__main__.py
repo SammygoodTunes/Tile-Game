@@ -16,7 +16,7 @@ import pstats
 import sys
 from pstats import SortKey
 
-from pygame import init, quit, display, scrap, SCRAP_CLIPBOARD
+from pygame import init, quit, display
 from traceback import format_exc
 
 from game.core.game import Game
@@ -34,8 +34,6 @@ def main() -> None:
     multiprocessing.freeze_support()
 
     init()
-    scrap.init()
-    scrap.set_mode(SCRAP_CLIPBOARD)
 
     width: int = display.Info().current_w // 2
     height: int = display.Info().current_h // 2

@@ -1,4 +1,3 @@
-from time import time
 
 import pygame
 
@@ -23,6 +22,8 @@ class Game(Window):
         self.server = Server()
         self.client.initialise(self)
         self.update_all_uis()
+        pygame.scrap.init()
+        pygame.scrap.set_mode(pygame.SCRAP_CLIPBOARD)
 
     def update(self) -> None:
         """
