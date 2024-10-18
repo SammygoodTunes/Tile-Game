@@ -11,6 +11,7 @@ def test_item_creation():
     """
     Test: item_creation
     Desc: Tests if items are created correctly.
+    Rqmt: All attributes must be equaled to the values they were given.
     """
     dummy_item = (Item(x=2 ** 5, y=2 ** 7, tooltip_name='Dummy Item')
                   .set_strength(100).set_durability(50))
@@ -24,7 +25,8 @@ def test_item_creation():
 def test_mouse_properties():
     """
     Test: mouse_properties
-    Desc: Tests if the mouse properties possess the same values defined in Mouse.
+    Desc: Tests if the mouse properties possess the correct values.
+    Rqmt: The mouse states must be equaled to their defined values.
     """
     assert (MouseStates.LMB, MouseStates.MMB, MouseStates.RMB, MouseStates.SCROLL_UP, MouseStates.SCROLL_DOWN) == tuple(range(1, 6))
 
@@ -33,13 +35,19 @@ def test_tile_creation():
     """
     Test: tile_creation
     Desc: Tests if tiles are created correctly.
+    Rqmt: All attributes must be
     """
-    dummy_tile = Tile(x=2 ** 4, y=3 ** 5).set_resistance(150).set_damage(25).set_damage_delay(0.005)
+    dummy_tile = Tile(x=5, y=4).set_resistance(150).set_damage(25).set_damage_delay(0.5)
     assert isinstance(dummy_tile, Tile)
-    assert dummy_tile.get_xy() == (2 ** 4, 3 ** 5)
+    assert dummy_tile.get_xy() == (5, 4)
     assert dummy_tile.get_resistance() == 150
     assert dummy_tile.get_damage() == 25
-    assert dummy_tile.get_damage_delay() == 0.005
+    assert dummy_tile.get_damage_delay() == 0.5
+
+def test_tile_creation_failure():
+    """
+
+    """
 
 
 def test_tile_compression():

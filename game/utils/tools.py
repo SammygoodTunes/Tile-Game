@@ -6,8 +6,11 @@ This module defines the logger.
 
 from numpy import ceil, log2
 from os import path
+from pathlib import Path
 import sys
 from typing import SupportsFloat, SupportsIndex
+
+from game.data.properties.game_properties import GameProperties
 
 
 def c_log2(x: SupportsFloat | SupportsIndex, /) -> int:
@@ -23,4 +26,4 @@ def resource_dir(directory: str):
     """
     if getattr(sys, 'frozen', False):
         return path.join(sys._MEIPASS, directory)
-    return path.join(path.abspath("."), directory)
+    return path.join(Path(__file__).parent.parent.parent, directory)
