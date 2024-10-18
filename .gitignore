@@ -14,8 +14,8 @@ __pycache__/
 # Pytest cache
 .pytest_cache/
 
-# Packaging dirs
-*.egg-info/
+# Poetry
+poetry.lock
 
 # Virtual environment
 venv/

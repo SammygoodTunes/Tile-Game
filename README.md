@@ -37,11 +37,19 @@ venv\Scripts\activate     # Windows
 source venv/bin/activate  # MacOS / Unix
 ```
 
+In order to install the necessary module, Poetry is required. You can install it using the following:
+
+```bash
+pip install poetry
+```
+
 Install the pre-requisites:
 
 ```bash
-pip install -e .
+poetry install
 ```
+
+> If you prefer not to install the development dependencies, then feel free to use the ```--only main``` flag.
 
 Run the game using:
 
