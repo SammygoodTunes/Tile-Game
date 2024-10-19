@@ -8,17 +8,17 @@ Unit tests are found under the `unit/` directory, integrated tests are found und
 
 In order to run the test, the development dependencies are required.
 
-If you installed the modules with the ```--only main``` flag, then you can install the missing ones without it:
+If you installed the modules with the ```--only main``` flag, then you can install the missing ones without it like so:
 
 ```bash
 poetry install
 ```
 
-> This part requires Poetry to be installed, please refer to [this page](https://github.com/SammygoodTunes/Tile-Game/blob/main/README.md)
+> This part requires Poetry to be installed. Please refer to [this page](https://github.com/SammygoodTunes/Tile-Game/blob/main/README.md)
 > to know how to install it. If you wish to know more about this module, see [here](https://python-poetry.org/docs/) 
 > for its official documentation and [here](https://python-poetry.org/docs/cli) for its official CLI documentation. 
 
-If you want, position yourself in the `tests` directory using:
+You may position yourself in the `tests` directory using:
 
 ```bash
 cd tests
@@ -36,7 +36,7 @@ pytest .
 pytest [unit|integrated] # Either unit or integrated
 ```
 
-- To run tests in a specific module:
+- To run all tests of a specific module:
 
 ```bash
 pytest unit/core/test_window.py  # Example
@@ -48,7 +48,7 @@ pytest unit/core/test_window.py  # Example
 pytest unit/core/test_window.py::test_window_fullscreen  # Example
 ```
 
-> If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest tests/core/test_window.py`).
+> If you're in the root directory, make sure to add `tests/` to the path argument (e.g. `pytest tests/unit/core/test_window.py`).
 
 ## Information
 

@@ -37,7 +37,7 @@ venv\Scripts\activate     # Windows
 source venv/bin/activate  # MacOS / Unix
 ```
 
-In order to install the necessary module, Poetry is required. You can install it using the following:
+In order to install the necessary modules, Poetry is required. You can install it using the following:
 
 ```bash
 pip install poetry
@@ -80,7 +80,6 @@ To view the HTML version, you must run the following URL address in the browser 
 ## Information
 
 Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
-
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
