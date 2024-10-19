@@ -198,11 +198,13 @@ class Screens:
             self.pause_screen.set_state(False)
             self.main_menu_screen.set_state(True)
             self.map_screen.reset_map()
-            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+            self.game.client.player.reset()
+            self.game.client.player.set_ideal_spawn_point(self.game.client.world.get_map(), self.game.client.camera)
 
         elif self.gameover_screen.respawn_button.is_hovering_over() and self.gameover_screen.get_state():
             self.gameover_screen.set_state(False)
-            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+            self.game.client.player.reset()
+            self.game.client.player.set_ideal_spawn_point(self.game.client.world.get_map(), self.game.client.camera)
         elif self.gameover_screen.disconnect_button.is_hovering_over() and self.gameover_screen.get_state():
             self.game.start_game = False
             self.game.paused = False
@@ -211,7 +213,8 @@ class Screens:
             self.main_menu_screen.set_state(True)
             self.map_screen.set_state(False)
             self.player_list_screen.set_state(False)
-            self.game.client.player.reset(self.game.client.world.get_map(), self.game.client.camera)
+            self.game.client.player.reset()
+            self.game.client.player.set_ideal_spawn_point(self.game.client.world.get_map(), self.game.client.camera)
 
     def update(self) -> None:
         """

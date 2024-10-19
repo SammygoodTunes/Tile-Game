@@ -2,6 +2,7 @@
 Tests dedicated to the window module.
 """
 
+from pygame import Rect
 from pygame.display import init as init_display, quit
 from pygame.font import init as init_font
 

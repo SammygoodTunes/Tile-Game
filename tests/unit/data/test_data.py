@@ -44,11 +44,6 @@ def test_tile_creation():
     assert dummy_tile.get_damage() == 25
     assert dummy_tile.get_damage_delay() == 0.5
 
-def test_tile_creation_failure():
-    """
-
-    """
-
 
 def test_tile_compression():
     """

@@ -33,7 +33,7 @@ pytest .
 - To run all tests of a certain type:
 
 ```bash
-pytest [unit|integrated] # Either unit or integrated
+pytest [unit|integrated]  # Either unit or integrated
 ```
 
 - To run all tests of a specific module:

@@ -16,6 +16,7 @@ def test_game_creation():
     """
     Test: game_creation
     Desc: Tests if the game object is instantiated correctly.
+    Rqmt: The attributes must not be None and the running attribute must be False on game termination.
     """
     init_display()
     init_font()
