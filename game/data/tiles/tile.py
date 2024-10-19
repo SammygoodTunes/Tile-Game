@@ -4,7 +4,6 @@ Module name: tile
 This module defines the map tile object and its properties.
 """
 
-from itertools import count
 from typing import Self
 
 from game.data.properties.tile_properties import TileProperties
@@ -18,10 +17,8 @@ class Tile:
     """
 
     DEFAULT_ATLAS: str = resource_dir('game/assets/atlas.png')
-    count_id = count()
 
     def __init__(self, x: int = 0, y: int = 0) -> None:
-        self._id: int = next(Tile.count_id)
         self._xy: tuple[int, int] = (x, y)
         self._resistance: int = 0
         self._damage: int = 0
@@ -32,19 +29,17 @@ class Tile:
         assert 0 <= self._damage <= TileProperties.TILE_DAMAGE_MAX, f'Invalid tile damage: {self._damage}'
         assert 0 <= self._damage_delay <= TileProperties.TILE_DAMAGE_DELAY_MAX, f'Invalid tile damage delay: {self._damage_delay}'
 
-
     def __repr__(self) -> str:
-        return f'Tile({self._id}, {self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'
+        return f'Tile({self._xy}, {self._resistance}, {self._damage}, {self._damage_delay})'
 
     def __eq__(self, obj: Self) -> bool:
         if not isinstance(obj, Tile):
             return False
         return (
-            self._id == obj.get_id()
-            and self._xy == self.get_xy()
-            and self._resistance == self.get_resistance()
-            and self._damage == self.get_damage()
-            and self._damage_delay == self.get_damage_delay()
+            self._xy == obj.get_xy()
+            and self._resistance == obj.get_resistance()
+            and self._damage == obj.get_damage()
+            and self._damage_delay == obj.get_damage_delay()
         )
 
     def compress(self) -> int:
@@ -52,8 +47,7 @@ class Tile:
         Return the compressed format of the tile's attributes.
         """
         return (
-                self._id << tS.TILE_ID_BYTE_POS
-                | self._xy[0] << tS.TILE_X_BYTE_POS
+                self._xy[0] << tS.TILE_X_BYTE_POS
                 | self._xy[1] << tS.TILE_Y_BYTE_POS
                 | self._resistance << tS.TILE_RESISTANCE_BYTE_POS
                 | self._damage << tS.TILE_DAMAGE_BYTE_POS
@@ -64,7 +58,6 @@ class Tile:
         """
         Extract the tile attributes from the compressed tile and set them accordingly.
         """
-        self._id = compressed_tile >> tS.TILE_ID_BYTE_POS
         self._xy = (
             compressed_tile >> tS.TILE_X_BYTE_POS & 2 ** tS.TILE_X_BIT_SIZE - 1,
             compressed_tile >> tS.TILE_Y_BYTE_POS & 2 ** tS.TILE_Y_BIT_SIZE - 1

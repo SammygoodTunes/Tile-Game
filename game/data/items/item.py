@@ -26,9 +26,9 @@ class Item:
 			return False
 		return (
 				self._xy == obj.get_xy()
-				and self._tooltip_name == self.get_tooltip_name()
-				and self._strength == self.get_strength()
-				and self._durability == self.get_durability()
+				and self._tooltip_name == obj.get_tooltip_name()
+				and self._strength == obj.get_strength()
+				and self._durability == obj.get_durability()
 		)
 
 	def set_xy(self, x: int, y: int) -> Self:

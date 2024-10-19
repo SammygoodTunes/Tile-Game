@@ -375,7 +375,6 @@ class Player:
             logger.debug(f'Destroyed tile ({tile_x}, {tile_y}) of type {tile}')
             return
 
-
         _map.tile_manager.draw(
             tile_x * TileProperties.TILE_SIZE,
             tile_y * TileProperties.TILE_SIZE,
