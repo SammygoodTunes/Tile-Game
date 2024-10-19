@@ -6,7 +6,7 @@ Unit tests are found under the `unit/` directory, integrated tests are found und
 
 ## Running a test
 
-In order to run the test, the development dependencies are required.
+In order to run any of the tests, the development dependencies are required.
 
 If you installed the modules with the ```--only main``` flag, then you can install the missing ones without it like so:
 
@@ -14,7 +14,7 @@ If you installed the modules with the ```--only main``` flag, then you can insta
 poetry install
 ```
 
-> This part requires Poetry to be installed. Please refer to [this page](https://github.com/SammygoodTunes/Tile-Game/blob/main/README.md)
+> The above part requires Poetry to be installed. Please refer to [this page](https://github.com/SammygoodTunes/Tile-Game?tab=readme-ov-file#setup)
 > to know how to install it. If you wish to know more about this module, see [here](https://python-poetry.org/docs/) 
 > for its official documentation and [here](https://python-poetry.org/docs/cli) for its official CLI documentation. 
 
