@@ -21,6 +21,8 @@ Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/T
 
 ## Setup
 
+> **<ins>Requires:</ins>** Python 3.11 or later
+> 
 > Before installing the necessary modules, it is recommended to set up a virtual environment. This allows for a clean workspace and avoids installing packages to your global environment.
 
 Set up a new virtual environment. For the sake of conventions, we'll call ours `venv`:
@@ -85,4 +87,4 @@ Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
 Tested on Debian 12 and Windows 10
 
-Libraries used: Pygame 2.5.2, Crayons 0.4.0
+Libraries used: Pygame 2.6.1, Numpy 1.26.4
