@@ -67,12 +67,6 @@ class Tile:
         self._damage_delay = (compressed_tile >> tS.TILE_DAMAGE_DELAY_BYTE_POS & 2 ** tS.TILE_DAMAGE_DELAY_BIT_SIZE - 1) / 10
         return self
 
-    def get_id(self) -> int:
-        """
-        Return the id of the tile.
-        """
-        return self._id
-
     def set_xy(self, x: int, y: int) -> Self:
         """
         Set the texture coordinates of the tile, then return the tile itself.

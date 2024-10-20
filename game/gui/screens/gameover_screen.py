@@ -51,11 +51,11 @@ class GameoverScreen(Screen):
             return
         self.faded_surface = self.initialise_surface()
         self.gameover_label.update(self.window)
-        self.gameover_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.respawn_button.get_height() - 25 - self.gameover_label.get_total_height())
+        self.gameover_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.respawn_button.get_height() - 25)
         self.respawn_button.update(self.window)
-        self.respawn_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.disconnect_button.get_height() - 5)
+        self.respawn_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -20)
         self.disconnect_button.update(self.window)
-        self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, 5)
+        self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.respawn_button.get_height() - 15)
 
     def set_state(self, state: bool) -> None:
         """
