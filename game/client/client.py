@@ -24,6 +24,7 @@ from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.world_properties import WorldProperties
 from game.entity.player import Player
 from game.world.camera import Camera
+from game.world.theme_manager import ThemeManager
 from game.world.world import World
 
 
@@ -42,6 +43,7 @@ class Client:
         """
         Initialise the client.
         """
+        ThemeManager.check_themes()
         self.player.init(game)
 
     def update(self, game) -> None:

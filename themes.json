@@ -1,0 +1,57 @@
+{
+    "themes": [
+        {
+            "name": "Default Theme",
+            "layers": [
+                {
+                    "type": "bottom",
+                    "tile": "WATER",
+                    "min_height": 0,
+                    "max_height": -1500
+                },
+                {
+                    "type": "center",
+                    "tile": "SAND",
+                    "min_height": -1500,
+                    "max_height": -1000
+                },
+                {
+                    "type": "center",
+                    "tile": "DIRT",
+                    "min_height": -1000,
+                    "max_height": -600
+                },
+                {
+                    "type": "center",
+                    "tile": "PLAINS",
+                    "min_height": -600,
+                    "max_height": -300
+                },
+                {
+                    "type": "center",
+                    "tile": "GRASS",
+                    "min_height": -300,
+                    "max_height": 100
+                },
+                {
+                    "type": "center",
+                    "tile": "PLAINS",
+                    "min_height": 100,
+                    "max_height": 500
+                },
+                {
+                    "type": "center",
+                    "tile": "COBBLESTONE",
+                    "min_height": 500,
+                    "max_height": 2000
+                },
+                {
+                    "type": "top",
+                    "tile": "LAVA",
+                    "min_height": 2000,
+                    "max_height": 0
+                }
+            ]
+        }
+    ]
+}
