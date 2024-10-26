@@ -12,6 +12,7 @@ from game.gui.screens.screen import Screen
 from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.inputbox import InputBox
+from game.gui.select_list import SelectList
 
 
 class ServerCreateScreen(Screen):
@@ -27,6 +28,7 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
+        self.world_type_select = SelectList().set_values(['Default Theme'])
         self.ordering_container = OrderingContainer().set_widgets([
             self.ign_input,
             self.seed_input
@@ -50,6 +52,7 @@ class ServerCreateScreen(Screen):
         self.ign_input.events(e)
         self.seed_input.events(e)
         self.ordering_container.events(e)
+        self.world_type_select.events(e)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
 
     def draw(self) -> None:
@@ -65,6 +68,7 @@ class ServerCreateScreen(Screen):
                 widget.draw(self.window.screen)
         self.create_button.draw(self.window.screen)
         self.back_button.draw(self.window.screen)
+        self.world_type_select.draw(self.window)
 
     def update_ui(self) -> None:
         """
@@ -74,18 +78,20 @@ class ServerCreateScreen(Screen):
             return
         self.faded_surface = self.initialise_surface()
         self.create_label.update(self.window)
-        self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.create_label.get_total_height() * 3)
+        self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.create_label.get_total_height() * 4)
         self.ign_input.update(self.window)
-        self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.ign_input.get_height() // 2 - 4)
+        self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.seed_input.get_height() - 5)
         self.ign_input.update(self.window)
         self.seed_input.update(self.window)
-        self.seed_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.seed_input.get_height() // 2 + 4)
+        self.seed_input.center(0, 0, self.window.width, self.window.height)
         self.seed_input.update(self.window)
+        self.world_type_select.update(self.window)
+        self.world_type_select.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.seed_input.get_height() + 5)
         self.create_button.update(self.window)
-        self.create_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.ign_input.get_height() * 2 + 5)
+        self.create_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.seed_input.get_height() + self.world_type_select.get_height() + 15)
         self.back_button.update(self.window)
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                            self.ign_input.get_height() + self.seed_input.get_height() + self.create_button.get_height() + 10)
+                                            self.seed_input.get_height() + self.world_type_select.get_height() + self.create_button.get_height() + 20)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
 
     def set_state(self, state: bool) -> None:
@@ -96,6 +102,7 @@ class ServerCreateScreen(Screen):
         self.create_label.set_state(state)
         self.ign_input.set_state(state)
         self.seed_input.set_state(state)
+        self.world_type_select.set_state(state)
         self.create_button.set_state(state)
         self.back_button.set_state(state)
         self.ordering_container.set_state(state)

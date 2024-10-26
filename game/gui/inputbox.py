@@ -39,6 +39,7 @@ class InputBox(Widget):
         self._placeholder_label = Label(placeholder, x=5).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
         self._text_label = Label(self._text_value, x=5).set_font_sizes((8, 10, 12))
         self._timer = pygame.time.get_ticks() / 1000.0
+        self._read_only = False
 
     def draw(self, screen: Surface) -> None:
         """
@@ -67,6 +68,8 @@ class InputBox(Widget):
         """
         Handle the input box events.
         """
+        if self._read_only:
+            return
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 self._selected = self.is_hovering_over()
@@ -324,3 +327,30 @@ class InputBox(Widget):
         Return the input box's max text length.
         """
         return self._max_text_length
+
+    def set_text_colour(self, text_colour: tuple[int, int, int]) -> Self:
+        """
+        Set the text colour, then return the input box itself.
+        """
+        self._text_label.set_colour(text_colour)
+        return self
+
+    def set_placeholder_text_colour(self, placeholder_text_colour: tuple[int, int, int]) -> Self:
+        """
+        Set the placeholder text colour, then return the input box itself.
+        """
+        self._placeholder_label.set_colour(placeholder_text_colour)
+        return self
+
+    def set_read_only(self, state: bool) -> Self:
+        """
+        Set the input box's read-only state, then return the input box itself.
+        """
+        self._read_only = state
+        return self
+
+    def get_read_only(self) -> bool:
+        """
+        Return the input box's read-only state.
+        """
+        return self._read_only
