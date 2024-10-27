@@ -95,10 +95,10 @@ class ServerJoinScreen(Screen):
         self.port_input.update(self.window)
         self.join_button.update(self.window)
         self.join_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                            self.ip_input.get_height() + self.port_input.get_height() + 15)
+                                            self.ip_input.get_height() + self.port_input.get_height() + 10)
         self.back_button.update(self.window)
         self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                            self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 20)
+                                            self.ip_input.get_height() + self.port_input.get_height() + self.join_button.get_height() + 15)
         self.join_button.set_state(bool(
             self.ign_input.get_text().strip()
             and self.ip_input.get_text().strip()
