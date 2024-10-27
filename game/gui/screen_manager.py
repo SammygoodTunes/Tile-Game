@@ -115,9 +115,9 @@ class Screens:
 
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button != MouseStates.LMB:
-                return None
+                return
         else:
-            return None
+            return
 
         if self.main_menu_screen.play_button.is_hovering_over() and self.main_menu_screen.get_state():
             self.main_menu_screen.set_state(False)

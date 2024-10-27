@@ -2,11 +2,12 @@
 Module name: servercreate_screen
 """
 
-from pygame import Surface
+from pygame import Surface, MOUSEBUTTONDOWN, MOUSEBUTTONUP
 from pygame.event import Event
 
 from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.screen_properties import ScreenProperties
+from game.data.states.mouse_states import MouseStates
 from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -28,7 +29,7 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
-        self.world_type_select = SelectList().set_values(['Default Theme'])
+        self.world_type_select = SelectList().set_values(['Default Theme', 'Test Theme'])
         self.ordering_container = OrderingContainer().set_widgets([
             self.ign_input,
             self.seed_input
@@ -54,6 +55,14 @@ class ServerCreateScreen(Screen):
         self.ordering_container.events(e)
         self.world_type_select.events(e)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
+        if e.type == MOUSEBUTTONDOWN:
+            if e.button == MouseStates.LMB:
+                self.create_button.set_interact(not self.world_type_select.is_open())
+                self.back_button.set_interact(not self.world_type_select.is_open())
+        elif not e.type == MOUSEBUTTONUP:
+            self.create_button.set_interact(not self.world_type_select.is_open())
+            self.back_button.set_interact(not self.world_type_select.is_open())
+
 
     def draw(self) -> None:
         """

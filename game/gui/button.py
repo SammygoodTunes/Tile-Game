@@ -2,7 +2,8 @@
 Module name: button
 """
 
-from pygame import mouse, draw
+from pygame import mouse, draw, MOUSEBUTTONDOWN
+from pygame.event import Event
 from pygame.math import clamp
 from typing import Self
 
@@ -24,6 +25,7 @@ class Button(Widget):
         self._width = width
         self._height = height
         self._background_colour = (255, 255, 255)
+        self._can_interact = True
         self.label = Label(text).set_font_sizes((8, 10, 12))
 
     def draw(self, screen) -> None:
@@ -79,7 +81,20 @@ class Button(Widget):
         """
         mouse_x, mouse_y = mouse.get_pos()
         return (self._x <= mouse_x <= self._x + self._width and
-                self._y <= mouse_y <= self._y + self._height and self._enabled)
+                self._y <= mouse_y <= self._y + self._height and self._enabled and self._can_interact)
+
+    def set_interact(self, state: bool) -> Self:
+        """
+        Set whether the user can interact with the button or not, then return the button itself.
+        """
+        self._can_interact = state
+        return self
+
+    def can_interact(self) -> bool:
+        """
+        Return whether the user can interact with the button or not.
+        """
+        return self._can_interact
 
     def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
         """

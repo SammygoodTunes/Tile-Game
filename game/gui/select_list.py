@@ -7,7 +7,7 @@ from pygame import Surface
 from pygame.draw import polygon
 from pygame.event import Event
 from pygame.math import clamp
-from pygame import mouse, MOUSEBUTTONDOWN
+from pygame import mouse, MOUSEBUTTONUP
 from typing import Self
 
 from game.data.properties.screen_properties import ScreenProperties
@@ -40,6 +40,7 @@ class SelectList(Widget):
         self._arrow_colour = (255, 255, 255)
         self._value_surface = Surface((0, 0))
         self._value_slot_height = self._height
+        self._has_selected = False
 
     def draw(self, window) -> None:
         """
@@ -88,7 +89,7 @@ class SelectList(Widget):
             if self.is_hovering_over_value(i):
                 label.set_colour((255, 255, 255))
             if self.is_selected_value(i):
-                self._open = False
+                self._has_selected = True
                 self._current_index = i
             label.draw(window.screen)
 
@@ -96,11 +97,14 @@ class SelectList(Widget):
         """
         Handle the select list events.
         """
-        if e.type == MOUSEBUTTONDOWN:
+        if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
+                if self._has_selected:
+                    self._has_selected = False
+                    self._open = False
                 self._open = self.is_hovering_over() if not self._open else self.is_hovering_over_value_list()
 
-        if not len(self._values):
+        if not len(self._values) or self._has_selected:
             return
         self._display_box.set_text(self._values[self._current_index])
 
