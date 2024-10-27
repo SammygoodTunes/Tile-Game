@@ -30,7 +30,7 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
-        self.world_type_select = SelectList()
+        self.world_type_select = SelectList(tooltip_text='World Theme')
         self.ordering_container = OrderingContainer().set_widgets([
             self.ign_input,
             self.seed_input

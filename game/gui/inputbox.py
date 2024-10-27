@@ -49,7 +49,7 @@ class InputBox(Widget):
         background_surface.set_alpha(ScreenProperties.ALPHA)
         draw.rect(background_surface, self._background_colour, (self._x, self._y, self._width, self._height))
         screen.blit(background_surface, (self._x, self._y))
-        draw.rect(screen, self._border_colour, (self._x, self._y, self._width, self._height), 2)
+        draw.rect(screen, self._border_colour, (self._x - 2, self._y - 2, self._width + 2, self._height + 2), 2)
         if self._text_value.strip():
             self._text_label.draw(screen)
         elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:

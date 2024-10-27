@@ -14,6 +14,7 @@ from game.data.properties.screen_properties import ScreenProperties
 from game.data.states.mouse_states import MouseStates
 from game.gui.inputbox import InputBox
 from game.gui.label import Label
+from game.gui.tooltip import Tooltip
 from game.gui.widget import Widget
 
 
@@ -27,7 +28,7 @@ class SelectList(Widget):
     MAX_ARROW_WIDTH = 15
     ARROW_X_OFFSET = 10
 
-    def __init__(self, x: int = 0, y: int = 0) -> None:
+    def __init__(self, x: int = 0, y: int = 0, tooltip_text: str = '') -> None:
         super().__init__(x, y)
         self._width = 0
         self._height = 0
@@ -35,6 +36,7 @@ class SelectList(Widget):
         self._current_index = 0
         self._open = False
         self._display_box = InputBox().set_read_only(True).set_text_colour((255, 255, 0)).set_border_colour((255, 255, 255))
+        self._tooltip = Tooltip(text=tooltip_text)
         self._arrow_width = SelectList.MAX_ARROW_WIDTH
         self._arrow_height = self._arrow_width / 2
         self._arrow_colour = (255, 255, 255)
@@ -47,6 +49,8 @@ class SelectList(Widget):
         """
         Draw the select list and its components.
         """
+        if not self._enabled:
+            return
         if self._open:
             self._arrow_colour = (120, 120, 120)
             self._display_box.set_border_colour(self._arrow_colour)
@@ -77,12 +81,14 @@ class SelectList(Widget):
                 self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
         ))
+        if self.is_hovering_over_display_box():
+            self._tooltip.draw(window.screen)
         if not self._open:
             return
-        self._value_surface = Surface((self._width, self._value_slot_height * len(self._values)))
+        self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._values) + 2))
         self._value_surface.fill((0, 0, 0))
         self._value_surface.set_alpha(ScreenProperties.ALPHA)
-        window.screen.blit(self._value_surface, (self._x, self._y + self._height))
+        window.screen.blit(self._value_surface, (self._x - 2, self._y + self._height))
         for i, value in enumerate(self._values):
             label = Label(x=self._x + 5, text=value).set_colour((150, 150, 150)).set_font_sizes((8, 10, 12))
             label.update(window)
@@ -114,6 +120,9 @@ class SelectList(Widget):
         """
         Update the select list and its components.
         """
+        if not self._enabled:
+            return
+        self._tooltip.update(window)
         self._display_box.update(window)
         self._display_box.center(self._x, self._y, self._width, self._height)
         self._width, self._height = self._display_box.get_width(), self._display_box.get_height()
@@ -163,10 +172,10 @@ class SelectList(Widget):
         Return whether the user's mouse cursor is hovering over the provided select list value by index.
         """
         mouse_x, mouse_y = mouse.get_pos()
-        return (self._x <= mouse_x <= self._x + self._width and
-                self._y + self._height + self._value_slot_height * index
+        return (self._x - 2 <= mouse_x <= self._x + self._width and
+                self._y + self._height + self._value_slot_height * index + 2
                 <= mouse_y <
-                self._y + self._height + self._value_slot_height * (index + 1) and
+                self._y + self._height + self._value_slot_height * (index + 1) + 2 and
                 self._open and self._enabled)
 
     def is_selected_value(self, index: int):
@@ -261,3 +270,10 @@ class SelectList(Widget):
         Return the select list's current value by its current index.
         """
         return self._values[self._current_index]
+
+    def set_state(self, state: bool):
+        """
+        Override parent method for setting tooltip state.
+        """
+        super().set_state(state)
+        self._tooltip.set_state(state)
