@@ -95,7 +95,7 @@ class ServerCreateScreen(Screen):
             return
         self.faded_surface = self.initialise_surface()
         self.create_label.update(self.window)
-        self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.create_label.get_total_height() * 4)
+        self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.seed_input.get_height() - self.create_label.get_total_height() - 25)
         self.ign_input.update(self.window)
         self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.seed_input.get_height() - 5)
         self.ign_input.update(self.window)

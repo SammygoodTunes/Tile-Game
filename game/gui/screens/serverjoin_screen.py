@@ -82,7 +82,7 @@ class ServerJoinScreen(Screen):
         self.faded_surface = self.initialise_surface()
         self.join_label.update(self.window)
         self.join_label.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                           -self.ip_input.get_height() - self.join_label.get_total_height() * 3)
+                                           -self.ip_input.get_height() - self.join_label.get_total_height() - 30)
         self.ign_input.update(self.window)
         self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0,
                                           -self.ign_input.get_height() - 10)
