@@ -16,6 +16,7 @@ from game.data.properties.tile_properties import TileProperties
 from game.data.properties.world_properties import WorldProperties
 from game.data.states.map_states import MapStates
 from game.data.structures.tile_structure import TileStructure
+from game.data.themes.theme_layers import ThemeLayers
 from game.data.tiles.tile import Tile
 from game.data.tiles.tiles import Tiles
 from game.utils.exceptions import InvalidMapData
@@ -40,6 +41,7 @@ class Map:
         self._dynatile_data: bytes = b''
         self._tile_data: bytes = b''
         self._seed: str = ''
+        self._theme: dict = {}
         self._x = -width * TileProperties.TILE_SIZE // 2
         self._y = -height * TileProperties.TILE_SIZE // 2
         self._width = width
@@ -73,23 +75,20 @@ class Map:
         for tile_index in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile_index % self._width, tile_index // self._height)
             tile: Tile
-            if noise_value < -1500:
-                tile = Tiles.WATER
-            elif -1500 <= noise_value < -1000:
-                tile = Tiles.SAND
-            elif -1000 <= noise_value < -600:
-                tile = Tiles.DIRT
-            elif -600 <= noise_value < -300:
-                tile = Tiles.PLAINS
-            elif -300 <= noise_value < 100:
-                tile = Tiles.GRASS
-            elif 100 <= noise_value < 500:
-                tile = Tiles.PLAINS
-            elif 500 <= noise_value < 2000:
-                tile = Tiles.COBBLESTONE
-            else:
-                tile = Tiles.LAVA
-            self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
+
+            for layer in self._theme['layers']:
+                if layer['type'] == ThemeLayers.LAYER_B:
+                    if not noise_value < layer['max_height']:
+                        continue
+                elif layer['type'] == ThemeLayers.LAYER_T:
+                    if not noise_value >= layer['min_height']:
+                        continue
+                elif layer['type'] == ThemeLayers.LAYER_C:
+                    if not layer['min_height'] <= noise_value < layer['max_height']:
+                        continue
+                tile = vars(Tiles)[layer['tile']]
+                self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
+                break
 
             '''if tile > 0:
                 if self._data[tile - offset - 1][0] == self._data[tile - offset][0]:
@@ -149,7 +148,7 @@ class Map:
         logger.info('Done!')
         self.set_state(MapStates.READY)
 
-    def regenerate(self, _seed: str) -> None:
+    def regenerate(self, _seed: str, theme: dict) -> None:
         """
         Regenerate the map data.
         """
@@ -158,6 +157,7 @@ class Map:
             self.randomise_seed()
         else:
             self.set_seed(_seed)
+        self._theme = theme
         self.perlin_noise = noise.PerlinNoise()
         self._x = -self.get_width_in_pixels() // 2
         self._y = -self.get_height_in_pixels() // 2
@@ -177,13 +177,13 @@ class Map:
                 self.tile_manager.draw(
                     x * TileProperties.TILE_SIZE,
                     y * TileProperties.TILE_SIZE,
-                    Tiles.PLAINS,
+                    Tiles.DIRT,
                     self._surface
                 )
                 self.tile_manager.draw(
                     x * TileProperties.TILE_SIZE,
                     y * TileProperties.TILE_SIZE,
-                    Tiles.PLAINS,
+                    Tiles.DIRT,
                     self._dynatile_surface
                 )
         self._dynatile_data = new_dynatile_data

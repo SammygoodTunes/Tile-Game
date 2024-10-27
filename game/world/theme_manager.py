@@ -53,6 +53,18 @@ class ThemeManager:
             ThemeManager.create_default_themes()
 
     @staticmethod
+    def get_theme_by_name(theme_name: str) -> dict:
+        """
+        Return the theme dict from the themes file by theme name.
+        """
+        themes = ThemeManager.get_themes()['themes']
+        for i, theme in enumerate(themes):
+            if theme['name'] == theme_name:
+                return theme
+        return {}
+
+
+    @staticmethod
     def get_themes() -> dict:
         """
         Retrieve and return the themes JSON data from the themes file as a dict object.
@@ -60,7 +72,7 @@ class ThemeManager:
         ThemeManager.check_themes()
         with open(ThemeManager.THEMES_FILE) as theme_file:
             json_data = theme_file.read()
-        return json.loads(json_data, indent=4)
+        return json.loads(json_data)
 
     @staticmethod
     def get_theme_names() -> list:

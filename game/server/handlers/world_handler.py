@@ -20,11 +20,11 @@ class WorldHandler:
     def __init__(self) -> None:
         self._world: World = World()
 
-    def create_world(self, seed: str) -> None:
+    def create_world(self, seed: str, theme: dict) -> None:
         """
         Create a new server world.
         """
-        self._world.create(seed)
+        self._world.create(seed, theme)
 
     def update_broken_tile(self, player_dict: dict) -> None:
         """
@@ -39,7 +39,7 @@ class WorldHandler:
             + f'{_map.get_tile(x, y)} '
             + f'at {x=} {y=}'
         )
-        _map.set_tile(player_dict[PlayerBuilder.BROKEN_TILE_X], player_dict[PlayerBuilder.BROKEN_TILE_Y], Tiles.PLAINS)
+        _map.set_tile(player_dict[PlayerBuilder.BROKEN_TILE_X], player_dict[PlayerBuilder.BROKEN_TILE_Y], Tiles.DIRT)
         _map.set_dynatile(player_dict[PlayerBuilder.BROKEN_TILE_X], player_dict[PlayerBuilder.BROKEN_TILE_Y], True)
 
     def get_map_data(self) -> bytes:

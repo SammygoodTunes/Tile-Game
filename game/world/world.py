@@ -25,11 +25,11 @@ class World:
         """
         self._map.initialise()
 
-    def create(self, seed) -> None:
+    def create(self, seed: str, theme: dict) -> None:
         """
         Create the world.
         """
-        self._map.regenerate(seed)
+        self._map.regenerate(seed, theme)
 
     def draw(self, game) -> None:
         """

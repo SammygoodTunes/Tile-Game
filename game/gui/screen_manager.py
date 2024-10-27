@@ -24,6 +24,7 @@ from game.gui.screens.serverconnect_screen import ServerConnectScreen
 from game.gui.screens.servercreate_screen import ServerCreateScreen
 from game.gui.screens.serverjoin_screen import ServerJoinScreen
 from game.gui.screens.servermenu_screen import ServerMenuScreen
+from game.world.theme_manager import ThemeManager
 
 
 class Screens:
@@ -261,7 +262,10 @@ class Screens:
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.main_menu_button.set_state(False)
         self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
-        self.game.server.start(self.server_create_screen.seed_input.get_text().strip())
+        self.game.server.start(
+            self.server_create_screen.seed_input.get_text().strip(),
+            ThemeManager.get_theme_by_name(self.server_create_screen.world_type_select.get_selected())
+        )
         if self.game.server.state.value != ServerStates.FAIL:
             self.game.client.connection_handler.host = 'localhost'
             self.game.client.connection_handler.port = 35000

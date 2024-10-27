@@ -366,7 +366,7 @@ class Player:
 
         if pygame.time.get_ticks() / 1000.0 - self.timers[Player.MINING_TIMER] >= delay:
             _map.set_dynatile(tile_x, tile_y, True)
-            _map.set_tile(tile_x, tile_y, Tiles.PLAINS)
+            _map.set_tile(tile_x, tile_y, Tiles.DIRT)
             self.prev_broken_tile = (tile_x, tile_y)
             game.client.connection_handler.queue_packet(PlayerBuilder.get_compressed_player_packet(
                 BaseBuilder.PLAYER_TILE_BREAK_COMMAND,
@@ -687,11 +687,11 @@ class Player:
                 camera_obj.x, camera_obj.y = self._x, self._y
                 return
         map_obj.set_dynatile(tile_x, tile_y, True)
-        map_obj.set_tile(tile_x, tile_y, Tiles.PLAINS)
+        map_obj.set_tile(tile_x, tile_y, Tiles.DIRT)
         map_obj.tile_manager.draw(
             tile_x * TileProperties.TILE_SIZE,
             tile_y * TileProperties.TILE_SIZE,
-            Tiles.PLAINS,
+            Tiles.DIRT,
             map_obj.get_dynatile_surface()
         )
         self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)

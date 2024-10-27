@@ -3,7 +3,7 @@ Module name: select_list
 """
 
 from numpy import ceil
-from pygame import Surface
+from pygame import Surface, MOUSEBUTTONDOWN
 from pygame.draw import polygon
 from pygame.event import Event
 from pygame.math import clamp
@@ -38,6 +38,7 @@ class SelectList(Widget):
         self._arrow_width = SelectList.MAX_ARROW_WIDTH
         self._arrow_height = self._arrow_width / 2
         self._arrow_colour = (255, 255, 255)
+        self._arrow_y_offset = 0
         self._value_surface = Surface((0, 0))
         self._value_slot_height = self._height
         self._has_selected = False
@@ -61,19 +62,19 @@ class SelectList(Widget):
         polygon(window.screen, self._arrow_colour, (
             (
                 self._x + self._width - (SelectList.ARROW_X_OFFSET + self._arrow_width),
-                self._y + self._height // 2 - self._arrow_height // 2
+                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_y_offset
             ),
             (
                 self._x + self._width - SelectList.ARROW_X_OFFSET,
-                self._y + self._height // 2 - self._arrow_height // 2
+                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_y_offset
             ),
             (
                 self._x + self._width - SelectList.ARROW_X_OFFSET - self._arrow_width // 2,
-                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height
+                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
             (
                 self._x + self._width - SelectList.ARROW_X_OFFSET - ceil(self._arrow_width / 2),
-                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height
+                self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
         ))
         if not self._open:
@@ -103,6 +104,7 @@ class SelectList(Widget):
                     self._has_selected = False
                     self._open = False
                 self._open = self.is_hovering_over() if not self._open else self.is_hovering_over_value_list()
+        self._arrow_y_offset = self._open * 3
 
         if not len(self._values) or self._has_selected:
             return
@@ -253,3 +255,9 @@ class SelectList(Widget):
         Return the select list's current index.
         """
         return self._current_index
+
+    def get_selected(self) -> str:
+        """
+        Return the select list's current value by its current index.
+        """
+        return self._values[self._current_index]
