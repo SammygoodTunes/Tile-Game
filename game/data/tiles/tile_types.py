@@ -25,6 +25,7 @@ class TileTypes:
 
     BREAKABLE: tuple[Tiles] = (
         Tiles.COBBLESTONE,
+        Tiles.FIRESTONE,
     )
 
     LETHAL: tuple[Tiles] = (
