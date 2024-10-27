@@ -18,7 +18,7 @@ class Tile:
 
     DEFAULT_ATLAS: str = resource_dir('game/assets/atlas.png')
 
-    def __init__(self, _id: str, x: int = 0, y: int = 0) -> None:
+    def __init__(self, _id: str = '', x: int = 0, y: int = 0) -> None:
         self.id: str = _id
         self._xy: tuple[int, int] = (x, y)
         self._resistance: int = 0
