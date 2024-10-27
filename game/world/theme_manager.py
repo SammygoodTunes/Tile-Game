@@ -35,13 +35,13 @@ class ThemeManager:
          .add_layer(ThemeLayers.LAYER_C, 100, 500, Tiles.PLAINS)
          .add_layer(ThemeLayers.LAYER_C, 500, 2000, Tiles.COBBLESTONE)
          .add_layer(ThemeLayers.LAYER_T, 2000, 0, Tiles.LAVA))
-        json_obj = json.dumps({
+        json_data = json.dumps({
             'themes': [
                 default_theme.get_dict()
             ]
         }, indent=4)
         with open(ThemeManager.THEMES_FILE, 'w') as theme_file:
-            theme_file.write(json_obj)
+            theme_file.write(json_data)
 
     @staticmethod
     def check_themes() -> None:
@@ -52,4 +52,23 @@ class ThemeManager:
             logger.info('Creating themes file as none were found.')
             ThemeManager.create_default_themes()
 
+    @staticmethod
+    def get_themes() -> dict:
+        """
+        Retrieve and return the themes JSON data from the themes file as a dict object.
+        """
+        ThemeManager.check_themes()
+        with open(ThemeManager.THEMES_FILE) as theme_file:
+            json_data = theme_file.read()
+        return json.loads(json_data, indent=4)
+
+    @staticmethod
+    def get_theme_names() -> list:
+        """
+        Retrieve and return the different theme names that exist as a list.
+        """
+        ThemeManager.check_themes()
+        with open(ThemeManager.THEMES_FILE) as theme_file:
+            themes_dict = json.loads(theme_file.read())
+        return [themes_dict['themes'][i]['name'] for i, _ in enumerate(themes_dict['themes'])]
 

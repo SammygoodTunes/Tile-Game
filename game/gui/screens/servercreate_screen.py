@@ -14,6 +14,7 @@ from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.inputbox import InputBox
 from game.gui.select_list import SelectList
+from game.world.theme_manager import ThemeManager
 
 
 class ServerCreateScreen(Screen):
@@ -29,13 +30,14 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder='Seed').authorise_only_alnum()
-        self.world_type_select = SelectList().set_values(['Default Theme', 'Test Theme'])
+        self.world_type_select = SelectList()
         self.ordering_container = OrderingContainer().set_widgets([
             self.ign_input,
             self.seed_input
         ])
         self.create_button = Button('Create')
         self.back_button = Button('Back')
+        self.initialise_themes()
 
     def initialise_surface(self) -> Surface:
         """
@@ -45,6 +47,12 @@ class ServerCreateScreen(Screen):
         surface.fill((0, 0, 0))
         surface.set_alpha(ScreenProperties.ALPHA)
         return surface
+
+    def initialise_themes(self) -> None:
+        """
+        Initialise the world theme select list.
+        """
+        self.world_type_select.set_values(ThemeManager.get_theme_names())
 
     def events(self, e: Event) -> None:
         """
