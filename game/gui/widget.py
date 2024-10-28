@@ -18,7 +18,7 @@ class Widget:
         self._x: int = x
         self._y: int = y
         self._transparency: float = 1.0
-        self._enabled: bool = False
+        self._enabled: bool = True
 
     def set_x(self, x: int) -> Self:
         """

@@ -24,10 +24,10 @@ class ServerJoinScreen(Screen):
         self.window = window
         self.faded_surface = self.initialise_surface()
         self.join_label = Label("Join server")
-        self.ign_input = (InputBox(placeholder='Player name')
+        self.ign_input = (InputBox(placeholder_text='Player name', tooltip_text='Player name')
                           .set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
-        self.ip_input = InputBox(placeholder='IP address').set_max_text_length(32).authorise_only_alnumdot()
-        self.port_input = InputBox(placeholder='Port').set_max_text_length(5).authorise_only_numeric()
+        self.ip_input = InputBox(placeholder_text='IP address', tooltip_text='IP address').set_max_text_length(32).authorise_only_alnumdot()
+        self.port_input = InputBox(placeholder_text='Port', tooltip_text='Port').set_max_text_length(5).authorise_only_numeric()
         self.join_button = Button('Join')
         self.back_button = Button('Back')
         self.ordering_container = OrderingContainer().set_widgets([

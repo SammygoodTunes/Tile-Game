@@ -3,7 +3,7 @@ Module name: select_list
 """
 
 from numpy import ceil
-from pygame import Surface, MOUSEBUTTONDOWN
+from pygame import Surface
 from pygame.draw import polygon
 from pygame.event import Event
 from pygame.math import clamp
@@ -14,7 +14,6 @@ from game.data.properties.screen_properties import ScreenProperties
 from game.data.states.mouse_states import MouseStates
 from game.gui.inputbox import InputBox
 from game.gui.label import Label
-from game.gui.tooltip import Tooltip
 from game.gui.widget import Widget
 
 
@@ -35,8 +34,10 @@ class SelectList(Widget):
         self._values = []
         self._current_index = 0
         self._open = False
-        self._display_box = InputBox().set_read_only(True).set_text_colour((255, 255, 0)).set_border_colour((255, 255, 255))
-        self._tooltip = Tooltip(text=tooltip_text)
+        self._display_box = (InputBox(tooltip_text=tooltip_text)
+                             .set_read_only(True)
+                             .set_text_colour((255, 255, 0))
+                             .set_border_colour((255, 255, 255)))
         self._arrow_width = SelectList.MAX_ARROW_WIDTH
         self._arrow_height = self._arrow_width / 2
         self._arrow_colour = (255, 255, 255)
@@ -81,8 +82,6 @@ class SelectList(Widget):
                 self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
         ))
-        if self.is_hovering_over_display_box():
-            self._tooltip.draw(window.screen)
         if not self._open:
             return
         self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._values) + 2))
@@ -122,7 +121,6 @@ class SelectList(Widget):
         """
         if not self._enabled:
             return
-        self._tooltip.update(window)
         self._display_box.update(window)
         self._display_box.center(self._x, self._y, self._width, self._height)
         self._width, self._height = self._display_box.get_width(), self._display_box.get_height()
@@ -270,10 +268,3 @@ class SelectList(Widget):
         Return the select list's current value by its current index.
         """
         return self._values[self._current_index]
-
-    def set_state(self, state: bool):
-        """
-        Override parent method for setting tooltip state.
-        """
-        super().set_state(state)
-        self._tooltip.set_state(state)

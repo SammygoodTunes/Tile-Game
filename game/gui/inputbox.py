@@ -12,6 +12,7 @@ from game.data.properties.gui_properties import GuiProperties
 from game.data.properties.screen_properties import ScreenProperties
 from game.gui.label import Widget, Label
 from game.data.states.mouse_states import MouseStates
+from game.gui.tooltip import Tooltip
 
 
 class InputBox(Widget):
@@ -24,7 +25,14 @@ class InputBox(Widget):
     MIN_HEIGHT = 25
     MAX_HEIGHT = 50
 
-    def __init__(self, text: str = "", placeholder: str = "", x: int = 0, y: int = 0, width: int = 200, height: int = 50) -> None:
+    def __init__(self,
+                 text: str = '',
+                 placeholder_text: str = '',
+                 tooltip_text: str = '',
+                 x: int = 0,
+                 y: int = 0,
+                 width: int = 200,
+                 height: int = 50) -> None:
         super().__init__(x, y)
         self._width = width
         self._height = height
@@ -36,7 +44,8 @@ class InputBox(Widget):
         self._text_offset = 0
         self._max_text_length = 64
         self._authorised_chars = printable[:-5]
-        self._placeholder_label = Label(placeholder, x=5).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
+        self._tooltip = Tooltip(text=tooltip_text)
+        self._placeholder_label = Label(placeholder_text, x=5).set_font_sizes((8, 10, 12)).set_colour((225, 225, 225)).set_transparency(0.5)
         self._text_label = Label(self._text_value, x=5).set_font_sizes((8, 10, 12))
         self._timer = pygame.time.get_ticks() / 1000.0
         self._read_only = False
@@ -56,6 +65,8 @@ class InputBox(Widget):
             self._placeholder_label.draw(screen)
         if not self._selected:
             self._timer = pygame.time.get_ticks() / 1000.0
+            if self.is_hovering_over():
+                self._tooltip.draw(screen)
             return
         if pygame.time.get_ticks() / 1000.0 - self._timer > GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION:
             self._timer = pygame.time.get_ticks() / 1000.0
@@ -63,6 +74,8 @@ class InputBox(Widget):
             draw.rect(screen, self._cursor_colour, (
                 self._x + self._text_label.get_total_width() + 4, self._y + 8,
                 2, self._height - 16))
+        if self.is_hovering_over():
+            self._tooltip.draw(screen)
 
     def events(self, e: event.Event) -> None:
         """
@@ -102,6 +115,7 @@ class InputBox(Widget):
         self._width = int(clamp(window.width * 0.4, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
         self._height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
         self.scroll_text()
+        self._tooltip.update(window)
         self._text_label.update(window)
         self._placeholder_label.update(window)
         self._text_label.set_text(self._text_value[self._text_offset:])
