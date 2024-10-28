@@ -7,9 +7,7 @@ This module manages the world generation theme, as well as generating the defaul
 from os import path
 import json
 
-from game.data.themes.theme import Theme
-from game.data.themes.theme_layers import ThemeLayers
-from game.data.tiles.tiles import Tiles
+from game.data.themes.themes import Themes
 from game.utils.logger import logger
 
 
@@ -25,31 +23,12 @@ class ThemeManager:
         """
         Create the default world themes files.
         """
-        default_theme = Theme('Default')
-        (default_theme
-         .add_layer(ThemeLayers.LAYER_B, 0, -1500, Tiles.WATER)
-         .add_layer(ThemeLayers.LAYER_C, -1500, -1000, Tiles.SAND)
-         .add_layer(ThemeLayers.LAYER_C, -1000, -600, Tiles.DIRT)
-         .add_layer(ThemeLayers.LAYER_C, -600, -300, Tiles.PLAINS)
-         .add_layer(ThemeLayers.LAYER_C, -300, 100, Tiles.GRASS)
-         .add_layer(ThemeLayers.LAYER_C, 100, 500, Tiles.PLAINS)
-         .add_layer(ThemeLayers.LAYER_C, 500, 2000, Tiles.COBBLESTONE)
-         .add_layer(ThemeLayers.LAYER_T, 2000, 0, Tiles.LAVA))
-
-        hell_theme = Theme('Hell')
-        (hell_theme
-         .add_layer(ThemeLayers.LAYER_B, 0, -1500, Tiles.LAVA)
-         .add_layer(ThemeLayers.LAYER_C, -1500, -1000, Tiles.SAND)
-         .add_layer(ThemeLayers.LAYER_C, -1000, -300, Tiles.DIRT)
-         .add_layer(ThemeLayers.LAYER_C, -300, 100, Tiles.COBBLESTONE)
-         .add_layer(ThemeLayers.LAYER_C, 100, 500, Tiles.DIRT)
-         .add_layer(ThemeLayers.LAYER_C, 500, 2000, Tiles.FIRESTONE)
-         .add_layer(ThemeLayers.LAYER_T, 2000, 0, Tiles.LAVA))
 
         json_data = json.dumps({
             'themes': [
-                default_theme.get_dict(),
-                hell_theme.get_dict(),
+                Themes.DEFAULT.get_dict(),
+                Themes.HELL.get_dict(),
+                Themes.ISLANDS.get_dict(),
             ]
         }, indent=4)
         with open(ThemeManager.THEMES_FILE, 'w') as theme_file:
