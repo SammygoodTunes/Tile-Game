@@ -14,7 +14,7 @@ class PerlinNoise:
     """
 
     NOISE_INTENSITY_RANGE = 2**16
-    FREQ_ALTER_RANGE = 0.08
+    FREQ_ALTER_RANGE = 0.04
 
     def __init__(self) -> None:
         self._permutations = list()
