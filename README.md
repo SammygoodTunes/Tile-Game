@@ -12,12 +12,14 @@ Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/T
 
 ## Controls
 
-- [**ZQSD**] -> Move player (temporary)
-- [**LMB**] -> Break cobblestone tiles
-- [**Mouse Wheel**] -> Switch item in hotbar
-- [**Space Bar**] -> Show map
-- [**Escape**] -> Pause menu
-- [**Alt+Enter**] -> Fullscreen mode
+| Key(s)                            | Action                  |
+|-----------------------------------|-------------------------|
+| <kbd>Z/Q/S/D</kbd>                | Move player (temporary) |
+| LMB                               | Break breakable tiles   |
+| Mouse Wheel                       | Switch item in hotbar   |
+| <kbd>Space</kbd>                  | Show map                |
+| <kbd>Esc</kbd>                    | Pause menu/Main menu    |
+| <kbd>Alt</kbd> + <kbd>Enter</kbd> | Fullscreen mode         |
 
 ## Setup
 
