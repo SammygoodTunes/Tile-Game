@@ -146,6 +146,14 @@ class SelectList(Widget):
             return
         self._display_box.set_text(self._values[self._current_index])
 
+    def set_open(self, state: bool) -> Self:
+        """
+        Set the open state of the select list (visibility of the select list's value list), then return the select list
+        itself.
+        """
+        self._open = state
+        return self
+
     def is_open(self) -> bool:
         """
         Return True if the select list is open (and values are visible).

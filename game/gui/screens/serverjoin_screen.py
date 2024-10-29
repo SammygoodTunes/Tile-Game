@@ -118,3 +118,7 @@ class ServerJoinScreen(Screen):
         self.back_button.set_state(state)
         self.ordering_container.set_state(state)
         if state: self.update_ui()
+        else:
+            self.ign_input.set_selected(state)
+            self.ip_input.set_selected(state)
+            self.port_input.set_selected(state)

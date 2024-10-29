@@ -194,3 +194,8 @@ class ServerCreateScreen(Screen):
         self.back_button.set_state(state)
         self.ordering_container.set_state(state)
         if state: self.update_ui()
+        else:
+            self.ign_input.set_selected(state)
+            self.seed_input.set_selected(state)
+            self.world_theme_select.set_open(state)
+            self.world_size_select.set_open(state)
