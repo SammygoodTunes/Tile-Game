@@ -108,7 +108,7 @@ class Connection:
             if not ClientTasks.confirm_map_data(data):
                 raise ConnectionRefusedError('Failed to get map data.')
             self.state = ConnectionStates.GETDATA
-            self.world_manager.build_world_from_bytes(ClientTasks.get_map_data(self.sock))
+            self.world_manager.build_world_from_bytes(ClientTasks.get_map_data(self.sock), update_map_size=True)
 
             if not ClientTasks.player_join(self.sock):
                 raise ConnectionRefusedError('Failed to join server.')
@@ -121,6 +121,8 @@ class Connection:
             self.sock.send(Hasher.enhash(Protocol.GLGAME_REQ))
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             game_state = ClientTasks.get_global_game_state(self.sock, data)
+            if game_state is None or not game_state:
+                raise ConnectionRefusedError('Failed to get global game state.')
             players = game_state[1:game_state[0] + 1]
             map_data = Compressor.decompress(game_state[game_state[0] + 1:])
             self.player_manager.set_players(players)

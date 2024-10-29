@@ -74,14 +74,14 @@ class InputBox(Widget):
             draw.rect(screen, self._cursor_colour, (
                 self._x + self._text_label.get_total_width() + 4, self._y + 8,
                 2, self._height - 16))
-        if self.is_hovering_over():
+        if self.is_hovering_over() and self._can_interact:
             self._tooltip.draw(screen)
 
     def events(self, e: event.Event) -> None:
         """
         Handle the input box events.
         """
-        if self._read_only:
+        if self._read_only or not self._can_interact:
             return
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:

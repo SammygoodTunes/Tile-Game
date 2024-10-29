@@ -14,6 +14,7 @@ from time import time
 
 from game.client.connection import Connection, Tasks
 from game.data.states.connection_states import ConnectionStates
+from game.world.world import World
 
 
 class ConnectionHandler:
@@ -44,6 +45,8 @@ class ConnectionHandler:
 
         if self.start_connection:
             self.start_connection = False
+            game.client.world = World(64, 64)
+            game.client.world.initialise()
             self.connection = Connection(
                 game.screens.server_join_screen.ip_input.get_text() if self.host is None else self.host,
                 int(game.screens.server_join_screen.port_input.get_text()) if self.port is None else self.port,

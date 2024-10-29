@@ -9,6 +9,7 @@ from game.data.tiles.tile_types import TileTypes
 from game.data.tiles.tiles import Tiles
 from game.network.builders.player_builder import PlayerBuilder
 from game.utils.logger import logger
+from game.world.map_manager import Map
 from game.world.world import World
 
 
@@ -18,12 +19,14 @@ class WorldHandler:
     """
 
     def __init__(self) -> None:
-        self._world: World = World()
+        self._world: World | None = None
 
-    def create_world(self, seed: str, theme: dict) -> None:
+    def create_world(self, seed: str, theme: dict, size: str) -> None:
         """
         Create a new server world.
         """
+        width, height = Map.get_size_from_property(size)
+        self._world = World(width, height)
         self._world.create(seed, theme)
 
     def update_broken_tile(self, player_dict: dict) -> None:

@@ -19,6 +19,7 @@ class Widget:
         self._y: int = y
         self._transparency: float = 1.0
         self._enabled: bool = True
+        self._can_interact: bool = True
 
     def set_x(self, x: int) -> Self:
         """
@@ -83,7 +84,7 @@ class Widget:
 
     def set_state(self, state: bool) -> Self:
         """
-        Set the widget's visibility/interactivity, then return the widget itself.
+        Set the widget's visibility, then return the widget itself.
         """
         self._enabled = state
         logger.debug(f'Setting {__class__.__name__} to {state}')
@@ -91,6 +92,20 @@ class Widget:
 
     def get_state(self) -> bool:
         """
-        Return the state of the widget's visibility/interactivity.
+        Return the state of the widget's visibility.
         """
         return self._enabled
+
+    def set_interact(self, state: bool) -> Self:
+        """
+        Set whether the widget is interactable or not, independent to its visibility, then return the widget itself.
+        """
+        self._can_interact = state
+        return self
+
+    def can_interact(self) -> bool:
+        """
+        Return whether the widget can be interacted with or not, independent to its visibility.
+        """
+        return self._can_interact
+

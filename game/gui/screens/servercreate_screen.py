@@ -7,6 +7,7 @@ from pygame.event import Event
 
 from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.screen_properties import ScreenProperties
+from game.data.properties.world_properties import WorldProperties
 from game.data.states.mouse_states import MouseStates
 from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
@@ -30,7 +31,12 @@ class ServerCreateScreen(Screen):
         self.ign_input = (InputBox(placeholder_text='Player name', tooltip_text='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder_text='Seed', tooltip_text='Seed').authorise_only_alnum()
-        self.world_type_select = SelectList(tooltip_text='World Theme')
+        self.world_theme_select = SelectList(tooltip_text='World Theme')
+        self.world_size_select = SelectList(tooltip_text='World Size').set_values([
+            WorldProperties.MAP_SMALL,
+            WorldProperties.MAP_MEDIUM,
+            WorldProperties.MAP_LARGE,
+        ])
         self.ordering_container = OrderingContainer().set_widgets([
             self.ign_input,
             self.seed_input
@@ -52,7 +58,7 @@ class ServerCreateScreen(Screen):
         """
         Initialise the world theme select list.
         """
-        self.world_type_select.set_values(ThemeManager.get_theme_names())
+        self.world_theme_select.set_values(ThemeManager.get_theme_names())
 
     def events(self, e: Event) -> None:
         """
@@ -61,15 +67,22 @@ class ServerCreateScreen(Screen):
         self.ign_input.events(e)
         self.seed_input.events(e)
         self.ordering_container.events(e)
-        self.world_type_select.events(e)
+        self.world_theme_select.events(e)
+        self.world_size_select.events(e)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
+        state = (not self.world_theme_select.is_open() and
+                 not self.world_size_select.is_open())
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
-                self.create_button.set_interact(not self.world_type_select.is_open())
-                self.back_button.set_interact(not self.world_type_select.is_open())
+                self.create_button.set_interact(state)
+                self.back_button.set_interact(state)
+                self.world_theme_select.set_interact(not self.world_size_select.is_open())
+                self.world_size_select.set_interact(not self.world_theme_select.is_open())
         elif not e.type == MOUSEBUTTONUP:
-            self.create_button.set_interact(not self.world_type_select.is_open())
-            self.back_button.set_interact(not self.world_type_select.is_open())
+            self.create_button.set_interact(state)
+            self.back_button.set_interact(state)
+            self.world_theme_select.set_interact(not self.world_size_select.is_open())
+            self.world_size_select.set_interact(not self.world_theme_select.is_open())
 
 
     def draw(self) -> None:
@@ -85,7 +98,10 @@ class ServerCreateScreen(Screen):
                 widget.draw(self.window.screen)
         self.create_button.draw(self.window.screen)
         self.back_button.draw(self.window.screen)
-        self.world_type_select.draw(self.window)
+        self.world_theme_select.draw(self.window)
+        self.world_size_select.draw(self.window)
+        self.world_size_select.draw_value_list(self.window)
+        self.world_theme_select.draw_value_list(self.window)
 
     def update_ui(self) -> None:
         """
@@ -95,21 +111,73 @@ class ServerCreateScreen(Screen):
             return
         self.faded_surface = self.initialise_surface()
         self.create_label.update(self.window)
-        self.create_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.seed_input.get_height() - self.create_label.get_total_height() - 25)
+        self.create_label.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            -self.seed_input.get_height()
+            - self.create_label.get_total_height()
+            - self.world_theme_select.get_height()
+            - 25
+        )
         self.ign_input.update(self.window)
-        self.ign_input.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.seed_input.get_height() - 5)
+        self.ign_input.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            -self.seed_input.get_height() - self.world_theme_select.get_height() - 10
+        )
         self.ign_input.update(self.window)
         self.seed_input.update(self.window)
-        self.seed_input.center(0, 0, self.window.width, self.window.height)
+        self.seed_input.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            -self.world_theme_select.get_height() - 5
+        )
         self.seed_input.update(self.window)
-        self.world_type_select.update(self.window)
-        self.world_type_select.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.seed_input.get_height() + 5)
-        self.world_type_select.update(self.window)
+        self.world_theme_select.update(self.window)
+        self.world_theme_select.center(0, 0, self.window.width, self.window.height)
+        self.world_theme_select.update(self.window)
+        self.world_size_select.update(self.window)
+        self.world_size_select.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            self.world_theme_select.get_height() + 5
+        )
+        self.world_size_select.update(self.window)
         self.create_button.update(self.window)
-        self.create_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.seed_input.get_height() + self.world_type_select.get_height() + 15)
+        self.create_button.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            self.world_theme_select.get_height()
+            + self.world_size_select.get_height()
+            + 15
+        )
         self.back_button.update(self.window)
-        self.back_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                            self.seed_input.get_height() + self.world_type_select.get_height() + self.create_button.get_height() + 20)
+        self.back_button.center_with_offset(
+            0,
+            0,
+            self.window.width,
+            self.window.height,
+            0,
+            self.world_theme_select.get_height()
+            + self.world_size_select.get_height()
+            + self.create_button.get_height()
+            + 20
+        )
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
 
     def set_state(self, state: bool) -> None:
@@ -120,7 +188,8 @@ class ServerCreateScreen(Screen):
         self.create_label.set_state(state)
         self.ign_input.set_state(state)
         self.seed_input.set_state(state)
-        self.world_type_select.set_state(state)
+        self.world_theme_select.set_state(state)
+        self.world_size_select.set_state(state)
         self.create_button.set_state(state)
         self.back_button.set_state(state)
         self.ordering_container.set_state(state)

@@ -16,8 +16,8 @@ class World:
     Class for creating a world.
     """
 
-    def __init__(self) -> None:
-        self._map = Map(64, 64)
+    def __init__(self, map_width: int, map_height: int) -> None:
+        self._map = Map(map_width, map_height)
 
     def initialise(self) -> None:
         """

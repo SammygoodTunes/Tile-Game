@@ -54,6 +54,8 @@ class Map:
         """
         Initialise the map manager.
         """
+        self._x = -self._width * TileProperties.TILE_SIZE // 2
+        self._y = -self._height * TileProperties.TILE_SIZE // 2
         self._surface = Surface((self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE))
         self._dynatile_surface = Surface(
             (self._width * TileProperties.TILE_SIZE, self._height * TileProperties.TILE_SIZE), SRCALPHA, 32
@@ -321,6 +323,20 @@ class Map:
         seed(self._seed)
         return self
 
+    @staticmethod
+    def get_size_from_property(_property: str) -> tuple[int, int]:
+        """
+        Return the appropriate map size (width, height) from the provided map property string value.
+        """
+        if _property == WorldProperties.MAP_SMALL:
+            return 64, 64
+        if _property == WorldProperties.MAP_MEDIUM:
+            return 128, 128
+        if _property == WorldProperties.MAP_LARGE:
+            return 192, 192
+        logger.warn(f'Unknown map size {_property}, defaulting to {WorldProperties.MAP_SMALL})')
+        return 64, 64
+
     def set_seed(self, _seed: str) -> Self:
         """
         Set the map seed, then return the map manager itself.
@@ -360,6 +376,13 @@ class Map:
         Return the y position of the map.
         """
         return self._y
+
+    def set_size_in_tiles(self, width: int, height: int) -> Self:
+        """
+        Set the width and height of the map in tiles, then return the map manager itself.
+        """
+        self._width, self._height = width, height
+        return self
 
     def get_width_in_tiles(self) -> int:
         """

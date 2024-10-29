@@ -10,7 +10,6 @@ from pygame.math import clamp
 from pygame import mouse, MOUSEBUTTONUP
 from typing import Self
 
-from game.data.properties.screen_properties import ScreenProperties
 from game.data.states.mouse_states import MouseStates
 from game.gui.inputbox import InputBox
 from game.gui.label import Label
@@ -63,7 +62,6 @@ class SelectList(Widget):
             self._display_box.set_border_colour(self._arrow_colour)
 
         self._display_box.update(window)
-        self._display_box.draw(window.screen)
         polygon(window.screen, self._arrow_colour, (
             (
                 self._x + self._width - (SelectList.ARROW_X_OFFSET + self._arrow_width),
@@ -82,11 +80,18 @@ class SelectList(Widget):
                 self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
         ))
+        self._display_box.draw(window.screen)
+
+    def draw_value_list(self, window) -> None:
+        """
+        Draw the select list's value list and its components.
+        This is used independently to the draw method, to handle the rendering priority independent to the actual
+        select list rendering priority.
+        """
         if not self._open:
             return
         self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._values) + 2))
         self._value_surface.fill((0, 0, 0))
-        self._value_surface.set_alpha(ScreenProperties.ALPHA)
         window.screen.blit(self._value_surface, (self._x - 2, self._y + self._height))
         for i, value in enumerate(self._values):
             label = Label(x=self._x + 5, text=value).set_colour((150, 150, 150)).set_font_sizes((8, 10, 12))
@@ -111,6 +116,8 @@ class SelectList(Widget):
         """
         Handle the select list events.
         """
+        if not self._can_interact:
+            return
         if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 if self._has_selected:

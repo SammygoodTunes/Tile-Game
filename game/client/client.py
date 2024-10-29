@@ -37,7 +37,7 @@ class Client:
         self.connection_handler = ConnectionHandler()
         self.camera: Camera = Camera(speed=CameraProperties.SPEED)
         self.player: Player = Player(speed=PlayerProperties.SPEED)
-        self.world: World = World()
+        self.world: World | None = None
 
     def initialise(self, game) -> None:
         """

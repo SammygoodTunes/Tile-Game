@@ -14,3 +14,7 @@ class WorldProperties:
     MIN_MAP_HEIGHT = 64
     MAX_MAP_WIDTH = 256
     MAX_MAP_HEIGHT = 256
+
+    MAP_SMALL = 'Small'
+    MAP_MEDIUM = 'Medium'
+    MAP_LARGE = 'Large'

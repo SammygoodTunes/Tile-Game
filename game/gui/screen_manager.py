@@ -64,7 +64,8 @@ class Screens:
         """
         Handle the events of the different screens.
         """
-        self.map_screen.initialise_map(self.game.client.world.get_map())
+        if self.game.start_game:
+            self.map_screen.initialise_map(self.game.client.world.get_map())
 
         if self.server_join_screen.get_state():
             self.server_join_screen.events(e)
@@ -264,7 +265,8 @@ class Screens:
         self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
         self.game.server.start(
             self.server_create_screen.seed_input.get_text().strip(),
-            ThemeManager.get_theme_by_name(self.server_create_screen.world_type_select.get_selected())
+            ThemeManager.get_theme_by_name(self.server_create_screen.world_theme_select.get_selected()),
+            self.server_create_screen.world_size_select.get_selected()
         )
         if self.game.server.state.value != ServerStates.FAIL:
             self.game.client.connection_handler.host = 'localhost'
