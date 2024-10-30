@@ -101,8 +101,8 @@ class InputBox(Widget):
                     self._text_offset -= length
             elif e.key == K_v and e.mod & KMOD_CTRL:
                 self._text_value += self.clean_text(
-                    scrap.get("text/plain;charset=utf-8").decode()[:self._max_text_length - len(self._text_value)]
-                )
+                    scrap.get("text/plain;charset=utf-8").decode()
+                )[:self._max_text_length - len(self._text_value)]
             elif e.unicode in self._authorised_chars and e.unicode.isascii():
                 self._text_value += e.unicode if len(self._text_value) < self._max_text_length else ''
             self.scroll_text()
