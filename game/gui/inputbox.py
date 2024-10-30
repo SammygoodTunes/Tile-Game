@@ -88,7 +88,7 @@ class InputBox(Widget):
                 self._selected = self.is_hovering_over()
                 self._timer = pygame.time.get_ticks() / 1000.0
         if e.type == KEYDOWN and self._selected:
-            if key.get_pressed()[K_BACKSPACE]:
+            if e.key == K_BACKSPACE:
                 if e.mod & KMOD_CTRL:
                     index = self._text_value.rfind(' ')
                     new = self._text_value[:index]
@@ -99,7 +99,7 @@ class InputBox(Widget):
                     length = 1
                 if self._text_offset > 0:
                     self._text_offset -= length
-            elif key.get_pressed()[K_v] and e.mod & KMOD_CTRL:
+            elif e.key == K_v and e.mod & KMOD_CTRL:
                 self._text_value += self.clean_text(
                     scrap.get("text/plain;charset=utf-8").decode()[:self._max_text_length - len(self._text_value)]
                 )
