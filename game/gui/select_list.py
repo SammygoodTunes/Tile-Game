@@ -103,14 +103,6 @@ class SelectList(Widget):
                 self._has_selected = True
                 self._current_index = i
             label.draw(window.screen)
-            if self._current_index == i:
-                colour = round(10 * sin(time.get_ticks() / 64) + 32.5)
-                rect(window.screen, (colour, colour, colour), (
-                    self._x - 2,
-                    self._y + self._height + self._value_slot_height * i,
-                    self._width + 2,
-                    self._value_slot_height + 2
-                ), width=2)
 
     def events(self, e: Event) -> None:
         """
