@@ -43,6 +43,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.title_label.set_text(t.t('screens.options.show_fps_box'))
         self.debug_info_box.title_label.set_text(t.t('screens.options.debug_info_box'))
         self.language_list.set_tooltip_text(t.t('screens.options.language_list_tooltip'))
+        self.back_button.label.set_text(t.t('screens.general.back_button'))
 
     def events(self, e: Event) -> None:
         if not self._enabled: return
