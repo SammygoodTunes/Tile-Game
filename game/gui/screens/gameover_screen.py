@@ -2,9 +2,10 @@
 Module name: gameover_screen
 """
 
-from pygame import Surface
+from __future__ import annotations
+from typing import TYPE_CHECKING
 
-from game.data.properties.screen_properties import ScreenProperties
+if TYPE_CHECKING: from game.core.game import Game
 from game.gui.button import Button
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
@@ -15,52 +16,47 @@ class GameoverScreen(Screen):
     Class for creating the game-over screen.
     """
 
-    def __init__(self, window) -> None:
-        super().__init__()
-        self.window = window
-        self.faded_surface = self.initialise_surface()
+    def __init__(self, game: Game) -> None:
+        super().__init__(game)
+        self.faded_surface = None
         self.gameover_label = Label(text="You died.")
         self.respawn_button = Button(text="Respawn")
         self.disconnect_button = Button(text="Disconnect")
 
-    def initialise_surface(self) -> Surface:
-        """
-        Initialise the screen's surface.
-        """
-        surface = Surface((self.window.width, self.window.height))
-        surface.fill((0, 0, 0))
-        surface.set_alpha(ScreenProperties.ALPHA)
-        return surface
-
     def draw(self) -> None:
-        """
-        Draw the screen and its components.
-        """
-        if not self._enabled:
-            return
-        self.window.screen.blit(self.faded_surface, (0, 0))
-        self.gameover_label.draw(self.window.screen)
-        self.respawn_button.draw(self.window.screen)
-        self.disconnect_button.draw(self.window.screen)
+        if not self._enabled: return
+        self.game.screen.blit(self.faded_surface, (0, 0))
+        self.gameover_label.draw(self.game.screen)
+        self.respawn_button.draw(self.game.screen)
+        self.disconnect_button.draw(self.game.screen)
 
     def update_ui(self) -> None:
-        """
-        Update the screen.
-        """
-        if not self._enabled:
-            return
+        if not self._enabled: return
         self.faded_surface = self.initialise_surface()
-        self.gameover_label.update(self.window)
-        self.gameover_label.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.respawn_button.get_height() - 25)
-        self.respawn_button.update(self.window)
-        self.respawn_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -20)
-        self.disconnect_button.update(self.window)
-        self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.respawn_button.get_height() - 15)
+        self.respawn_button.resize(self.game)
+        self.disconnect_button.resize(self.game)
+        self.gameover_label.update(self.game)
+        self.gameover_label.center_with_offset(
+            0,
+            0,
+            self.game.width,
+            self.game.height,
+            0,
+            -self.respawn_button.get_height() - 25
+        )
+        self.respawn_button.center_with_offset(0, 0, self.game.width, self.game.height, 0, -20)
+        self.disconnect_button.center_with_offset(
+            0,
+            0,
+            self.game.width,
+            self.game.height,
+            0,
+            self.respawn_button.get_height() - 15
+        )
+        self.respawn_button.update(self.game)
+        self.disconnect_button.update(self.game)
 
     def set_state(self, state: bool) -> None:
-        """
-        Set the screen's visibility/interactivity.
-        """
         super().set_state(state)
         self.gameover_label.set_state(state)
         self.respawn_button.set_state(state)

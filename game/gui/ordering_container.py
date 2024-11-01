@@ -24,9 +24,6 @@ class OrderingContainer(Widget):
         self._widgets: list[any] = []
 
     def events(self, e: Event) -> None:
-        """
-        Handle the ordering container events.
-        """
         if e.type != KEYDOWN:
             return
         if e.key != K_TAB:
@@ -60,9 +57,6 @@ class OrderingContainer(Widget):
         return self._widgets
 
     def set_state(self, state: bool) -> Self:
-        """
-        Set the ordering container's state and reset the order, then return the ordering container itself.
-        """
         super().set_state(state)
         self._order = -1
         return self

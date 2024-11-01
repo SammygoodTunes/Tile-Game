@@ -32,51 +32,32 @@ class Screens:
     Class for creating a collection of screens.
     """
 
-    def __init__(self, window) -> None:
-        self.window = window
-        self.game = None
-        self.screen = self.window.screen
-        self.crash_screen = CrashScreen(window)
-        self.credits_screen = CreditsScreen(window)
-        self.gameover_screen = GameoverScreen(window)
-        self.loading_screen = LoadingScreen(window)
-        self.main_menu_screen = MainMenuScreen(window)
-        self.map_screen = MapScreen(window)
-        self.options_screen = OptionsScreen(window)
-        self.pause_screen = PauseScreen(window)
-        self.player_list_screen = PlayerListScreen(window)
-        self.server_connect_screen = ServerConnectScreen(window)
-        self.server_create_screen = ServerCreateScreen(window)
-        self.server_join_screen = ServerJoinScreen(window)
-        self.server_menu_screen = ServerMenuScreen(window)
-
-    def link_game(self, game_obj) -> None:
-        """
-        Link the global game instance.
-        TODO: Remove this, it isn't good practice. And it's dirty.
-        """
-        self.game = game_obj
-        self.options_screen.game = self.game
-        self.map_screen.game = self.game
-        self.player_list_screen.game = self.game
+    def __init__(self, game) -> None:
+        self.game = game
+        self.crash_screen = CrashScreen(game)
+        self.credits_screen = CreditsScreen(game)
+        self.gameover_screen = GameoverScreen(game)
+        self.loading_screen = LoadingScreen(game)
+        self.main_menu_screen = MainMenuScreen(game)
+        self.map_screen = MapScreen(game)
+        self.options_screen = OptionsScreen(game)
+        self.pause_screen = PauseScreen(game)
+        self.player_list_screen = PlayerListScreen(game)
+        self.server_connect_screen = ServerConnectScreen(game)
+        self.server_create_screen = ServerCreateScreen(game)
+        self.server_join_screen = ServerJoinScreen(game)
+        self.server_menu_screen = ServerMenuScreen(game)
 
     def events(self, e: pygame.event.Event) -> None:
         """
         Handle the events of the different screens.
         """
         if self.game.start_game:
-            self.map_screen.initialise_map(self.game.client.world.get_map())
+            self.map_screen.initialise_map()
 
-        if self.server_join_screen.get_state():
-            self.server_join_screen.events(e)
-        if self.server_create_screen.get_state():
-            self.server_create_screen.events(e)
-        if self.loading_screen.get_state():
-            self.loading_screen.events(e)
-        if self.options_screen.get_state():
-            self.options_screen.events(e)
-        if self.credits_screen.get_state():
-            self.credits_screen.events(e)
+        self.server_join_screen.events(e)
+        self.server_create_screen.events(e)
+        self.options_screen.events(e)
 
         if e.type == pygame.KEYDOWN:
             if e.key == pygame.K_ESCAPE and self.game.start_game and not self.server_connect_screen.get_state() and not self.gameover_screen.get_state():
@@ -86,7 +67,7 @@ class Screens:
                     self.pause_screen.set_state(not self.pause_screen.get_state())
                     self.map_screen.set_state(False)
                     self.player_list_screen.set_state(False)
-                self.window.paused = self.pause_screen.get_state()
+                self.game.paused = self.pause_screen.get_state()
             if e.key == pygame.K_ESCAPE and not self.server_connect_screen.get_state() and not self.main_menu_screen.get_state() and not self.game.start_game:
                 self.server_menu_screen.set_state(False)
                 self.server_create_screen.set_state(False)
@@ -131,15 +112,15 @@ class Screens:
             self.credits_screen.set_state(True)
             self.main_menu_screen.set_state(False)
         elif self.main_menu_screen.quit_button.is_hovering_over() and self.main_menu_screen.get_state():
-            self.window.stop()
+            self.game.stop()
 
-        elif self.options_screen.back_button.is_hovering_over():
+        elif self.options_screen.back_button.is_hovering_over() and self.options_screen.get_state():
             self.options_screen.set_state(False)
             if self.game.start_game:
                 self.pause_screen.set_state(True)
                 return None
             self.main_menu_screen.set_state(True)
-        elif self.credits_screen.back_button.is_hovering_over():
+        elif self.credits_screen.back_button.is_hovering_over() and self.credits_screen.get_state():
             self.credits_screen.set_state(False)
             self.main_menu_screen.set_state(True)
 
@@ -189,7 +170,7 @@ class Screens:
 
         elif self.pause_screen.resume_button.is_hovering_over() and self.pause_screen.get_state():
             self.pause_screen.set_state(False)
-            self.window.paused = False
+            self.game.paused = False
         elif self.pause_screen.options_button.is_hovering_over() and self.pause_screen.get_state():
             self.pause_screen.set_state(False)
             self.options_screen.set_state(True)
@@ -265,7 +246,7 @@ class Screens:
         self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
         self.game.server.start(
             self.server_create_screen.seed_input.get_text().strip(),
-            ThemeManager.get_theme_by_name(self.server_create_screen.world_theme_select.get_selected()),
+            ThemeManager.get_theme_by_id(self.server_create_screen.world_theme_select.get_current_index()),
             self.server_create_screen.world_size_select.get_selected()
         )
         if self.game.server.state.value != ServerStates.FAIL:

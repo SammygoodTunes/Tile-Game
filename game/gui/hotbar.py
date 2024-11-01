@@ -2,9 +2,11 @@
 Module name: hotbar
 """
 
+from __future__ import annotations
 from pygame import Surface, SRCALPHA
-from typing import Self
+from typing import Self, TYPE_CHECKING
 
+from game.core.window import Window
 from game.data.items.items import Items
 from game.data.items.item import Item
 from game.gui.label import Label
@@ -21,8 +23,6 @@ class Hotbar(Widget):
         super().__init__(x, y)
         self._surface: Surface | None = None
         self._spacing = 4
-        self._width = 0
-        self._height = 0
         self._slots = [Slot() for _ in range(slot_count)]
         self._tooltip = Label()
         self._selected_slot = 0
@@ -45,52 +45,16 @@ class Hotbar(Widget):
         self._tooltip.set_text(self.get_selected_slot_item().get_tooltip_name())
 
     def draw(self, screen) -> None:
-        """
-        Draw the hotbar and its components.
-        """
         screen.blit(self._surface, (self._x, self._y, self._width, self._height))
         self._tooltip.draw(screen)
 
-    def update(self, window) -> Self:
-        """
-        Update the hotbar and its components.
-        """
-        self._tooltip.update(window)
+    def update(self, window: Window) -> None:
         self._tooltip.center_horizontally(0, window.width)
-        self._tooltip.set_y(self._y - self._tooltip.get_total_height() - 5)
+        self._tooltip.set_y(self._y - self._tooltip.get_height() - 5)
+        self._tooltip.update(window)
         for slot in self._slots:
             slot.update(window)
         self.init_slots()
-        return self
-
-    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
-        """
-        Center the hotbar horizontally relative to the specified parent, then return the hotbar itself.
-        """
-        self._x = round(parent_x + parent_width / 2 - self._width / 2)
-        return self
-
-    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
-        """
-        Center the hotbar vertically relative to the specified parent, then return the hotbar itself.
-        """
-        self._y = round(parent_y + parent_height / 2 - self._height / 2)
-        return self
-
-    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
-        """
-        Center the hotbar on both axes relative to the specified parent, then return the hotbar itself.
-        """
-        self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
-        return self
-
-    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
-        """
-        Center the hotbar with center() and offset it by x and y relative to the specified parent, then return
-        the hotbar itself.
-        """
-        self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
-        return self
 
     def set_spacing(self, spacing: int) -> Self:
         """
@@ -104,32 +68,6 @@ class Hotbar(Widget):
         Return the spacing between the hotbar's slots.
         """
         return self._spacing
-
-    def set_width(self, width: int) -> Self:
-        """
-        Set the width of the hotbar, then return the hotbar itself.
-        """
-        self._width = width
-        return self
-
-    def get_width(self) -> int:
-        """
-        Return the width of the hotbar.
-        """
-        return self._width
-
-    def set_height(self, height: int) -> Self:
-        """
-        Set the height of the hotbar, then return the hotbar itself.
-        """
-        self._height = height
-        return self
-
-    def get_height(self) -> int:
-        """
-        Return the height of the hotbar.
-        """
-        return self._height
 
     def select_slot(self, slot_index: int) -> Self:
         """

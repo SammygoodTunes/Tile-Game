@@ -8,6 +8,7 @@ from pygame.math import clamp
 from pygame.transform import scale
 from typing import Self
 
+from game.core.window import Window
 from game.data.items.items import Items
 from game.data.items.item import Item
 from game.data.properties.item_properties import ItemProperties
@@ -19,75 +20,54 @@ class Slot(Widget):
     Class for creating a slot.
     """
 
-    MIN_SIZE = 25
-    MAX_SIZE = 75
-
-    def __init__(self, x: int = 0, y: int = 0) -> None:
+    def __init__(self, x: int = 0, y: int = 0, size: int = 64) -> None:
         super().__init__(x, y)
-        self._width = 64
-        self._height = 64
+        self.MIN_WIDTH = 25
+        self.MIN_HEIGHT = self.MIN_WIDTH
+        self.validate_dimensions(self.MIN_WIDTH, self.MIN_HEIGHT)
+        self.MAX_WIDTH = size
+        self.MAX_HEIGHT = self.MAX_WIDTH
         self._outline_colour = (25, 25, 25)
         self._inner_colour = (255, 255, 255)
         self._fill_colour = (124, 102, 210)
         self._outline_width = 3
         self._inner_width = 3
         self._fill_alpha = 100
-        self._fill_surface = Surface((self._width - 4, self._height - 4), SRCALPHA, 32).convert_alpha()
+        self._fill_surface = Surface((self.MAX_WIDTH, self.MAX_HEIGHT), SRCALPHA, 32)
         self._item: Item | None = None
         self._item_asset: Surface | None = None
         self._item_count = 0
         self._selected = False
         self.set_item(Items.AIR)
 
-    def draw(self, screen) -> None:
-        """
-        Draw the slot and its components.
-        """
+    def draw(self, window: Window | Surface) -> None:
         fill_colour = (60, 40, 210) if self._selected else self._fill_colour
         inner_colour = self._inner_colour if self._selected else (128, 128, 128)
         self._fill_surface.fill(fill_colour, (0, 0, self._width - 4, self._height - 4))
         self._fill_surface.set_alpha(self._fill_alpha)
-        screen.blit(self._fill_surface, (self._x + 2, self._y + 2, self._width - 4, self._height - 4))
+        window.blit(self._fill_surface, (self._x + 2, self._y + 2, self._width - 4, self._height - 4))
 
         if self._item_asset is not None:
             item_asset = scale(self._item_asset, (self._width - 12, self._height - 12))
-            screen.blit(item_asset, (self._x + 4, self._y + 4, self._width, self._height))
+            window.blit(item_asset, (self._x + 4, self._y + 4, self._width, self._height))
 
-        rect(screen, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
-        rect(screen, inner_colour, (
+        rect(window, self._outline_colour, (self._x, self._y, self._width, self._height), self._outline_width, 4)
+        rect(window, inner_colour, (
                                         self._x + self._outline_width - 1,
                                         self._y + self._outline_width - 1,
                                         self._width - self._outline_width - 1,
                                         self._height - self._outline_width - 1
                                     ), self._inner_width, 4)
-        rect(screen, self._outline_colour, (
+        rect(window, self._outline_colour, (
                                                 self._x + self._outline_width - 1 + self._inner_width - 1,
                                                 self._y + self._outline_width - 1 + self._inner_width - 1,
                                                 self._width - self._outline_width - 1 - self._inner_width - 1,
                                                 self._height - self._outline_width - 1 - self._inner_width - 1
                                             ), self._outline_width, 4)
 
-    def update(self, window) -> Self:
-        """
-        Update the slot and its components.
-        """
-        self._width = self._height = clamp(window.width * 0.12, Slot.MIN_SIZE, Slot.MAX_SIZE)
-        self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32).convert_alpha()
-        return self
-
-    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
-        """
-        Center the slot horizontally relative to the specified parent, then return the slot itself.
-        """
-        self._x = round(parent_x + parent_width / 2 - self._width / 2)
-        return self
-
-    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
-        """
-        Center the slot vertically relative to the specified parent, then return the slot itself.
-        """
-        self._y = round(parent_y + parent_height / 2 - self._height / 2)
-        return self
+    def update(self, window: Window) -> None:
+        self._width = self._height = int(clamp(window.width * 0.12, self.MIN_WIDTH, self.MAX_WIDTH))
+        self._fill_surface = Surface((self._width, self._height), SRCALPHA, 32)
 
     def select(self) -> Self:
         """
@@ -108,32 +88,6 @@ class Slot(Widget):
         Return whether the slot is selected or not.
         """
         return self._selected
-
-    def set_width(self, width: int) -> Self:
-        """
-        Set the width of the slot, then return the slot itself.
-        """
-        self._width = width
-        return self
-
-    def get_width(self) -> int:
-        """
-        Return the width of the slot.
-        """
-        return self._width
-
-    def set_height(self, height: int) -> Self:
-        """
-        Set the height of the slot, then return the slot itself.
-        """
-        self._height = height
-        return self
-
-    def get_height(self) -> int:
-        """
-        Return the height of the slot.
-        """
-        return self._height
 
     def set_inner_colour(self, inner_colour: tuple[int, int, int]) -> Self:
         """

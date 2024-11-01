@@ -2,13 +2,14 @@
 Module name: serverconnect_screen
 """
 
-from pygame import Surface
+from __future__ import annotations
+from typing import TYPE_CHECKING
 
-from game.data.properties.screen_properties import ScreenProperties
+if TYPE_CHECKING: from game.core.game import Game
 from game.data.states.connection_states import ConnectionStates
-from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
+from game.gui.label import Label
+from game.gui.screens.screen import Screen
 
 
 class ServerConnectScreen(Screen):
@@ -16,45 +17,30 @@ class ServerConnectScreen(Screen):
     Class for creating the server connection screen.
     """
 
-    def __init__(self, window) -> None:
-        super().__init__()
-        self.window = window
-        self.faded_surface = self.initialise_surface()
+    def __init__(self, game: Game) -> None:
+        super().__init__(game)
+        self.faded_surface = None
         self.info_label = Label()
         self.main_menu_button = Button("Main menu")
 
-    def initialise_surface(self) -> Surface:
-        """
-        Initialise the screen's surface.
-        """
-        surface = Surface((self.window.width, self.window.height))
-        surface.fill((0, 0, 0))
-        surface.set_alpha(ScreenProperties.ALPHA)
-        return surface
-
     def draw(self) -> None:
-        """
-        Draw the screen and its components.
-        """
         if not self._enabled:
             return
-        self.window.screen.blit(self.faded_surface, (0, 0))
-        self.info_label.draw(self.window.screen)
-        self.main_menu_button.draw(self.window.screen)
+        self.game.screen.blit(self.faded_surface, (0, 0))
+        self.info_label.draw(self.game.screen)
+        self.main_menu_button.draw(self.game.screen)
 
     def update_ui(self) -> None:
-        """
-        Update the screen UI.
-        """
         if not self._enabled:
             return
         self.faded_surface = self.initialise_surface()
-        self.info_label.update(self.window)
-        self.info_label.center_with_offset(0, 0, self.window.width, self.window.height, 0,
-                                           -self.info_label.get_total_height() * 3)
-        self.main_menu_button.update(self.window)
-        self.main_menu_button.center_with_offset(0, 0, self.window.width, self.window.height, 0,
+        self.main_menu_button.resize(self.game)
+        self.info_label.update(self.game)
+        self.info_label.center_with_offset(0, 0, self.game.width, self.game.height, 0,
+                                           -self.info_label.get_height() * 3)
+        self.main_menu_button.center_with_offset(0, 0, self.game.width, self.game.height, 0,
                                                  self.main_menu_button.get_height())
+        self.main_menu_button.update(self.game)
 
     def update_info_label(self, code: int) -> None:
         """
@@ -95,9 +81,6 @@ class ServerConnectScreen(Screen):
         self.update_ui()
 
     def set_state(self, state: bool) -> None:
-        """
-        Set the screen's visibility/interactivity.
-        """
         super().set_state(state)
         self.info_label.set_state(state)
         self.main_menu_button.set_state(state)

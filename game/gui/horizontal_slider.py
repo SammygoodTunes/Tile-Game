@@ -2,10 +2,14 @@
 Module name: horizontal_slider
 """
 
+from __future__ import annotations
 import pygame
+from pygame import Surface
+from pygame.event import Event
 from pygame.math import clamp
-from typing import Self
+from typing import Self, TYPE_CHECKING
 
+if TYPE_CHECKING: from game.core.window import Window
 from game.data.states.mouse_states import MouseStates
 from game.gui.label import Label
 from game.gui.widget import Widget
@@ -16,13 +20,15 @@ class HorizontalSlider(Widget):
     Class for creating a horizontal slider.
     """
 
-    MIN_WIDTH = 50
-    MAX_WIDTH = 350
-
-    def __init__(self, title: str = "", x: int = 0, y: int = 0) -> None:
+    def __init__(self,
+                 title: str = "",
+                 x: int = 0,
+                 y: int = 0,
+                 width: int = 350) -> None:
         super().__init__(x, y)
-        self._width = 0
-        self._height = 40 - 13
+        self.MIN_WIDTH = 25
+        self.validate_dimensions(width, 0)
+        self.MAX_WIDTH = width
         self._value = 50
         self._min_value = 0
         self._max_value = 100
@@ -32,13 +38,10 @@ class HorizontalSlider(Widget):
         self._button_radius = 10
         self._button_radius_hovered = 12
         self._button_held = False
-        self.title_label = Label(title, y=self._y - 40).set_font_sizes((7, 8, 10))
+        self.title_label = Label(title, y=self._y - 40).set_font_sizes((8, 8, 10))
         self.value_label = Label(f"{self._value}", self._x + self._width + 35, self._y - 13).set_font_sizes((7, 8, 8))
 
-    def draw(self, screen) -> None:
-        """
-        Draw the horizontal slider and its components.
-        """
+    def draw(self, window: Window | Surface) -> None:
         radius: int = self._button_radius_hovered if self.is_hovering_over_button() or self._button_held else self._button_radius
         button_colour = (
             self._button_colour[0] // 2,
@@ -46,62 +49,70 @@ class HorizontalSlider(Widget):
             self._button_colour[2] // 2
         ) if self._button_held else self._button_colour
 
-        if self._button_held:
-            mouse_x, mouse_y = pygame.mouse.get_pos()
-            self._value = round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value
-            self._value = clamp(self._value, self._min_value, self._max_value)
+        pygame.draw.line(
+            window,
+            self._bar_colour,
+            (self._x - self._button_radius_hovered, self._y),
+            (self._x + self.get_step_in_pixels() * (self._value - self._min_value) - radius, self._y),
+            width=self._bar_width
+        )
+        pygame.draw.line(
+            window,
+            self._bar_colour,
+            (self._x + self.get_step_in_pixels() * (self._value - self._min_value) + radius, self._y),
+            (self._x + self._width + self._button_radius_hovered, self._y),
+            width=self._bar_width
+        )
+        pygame.draw.circle(
+            window,
+            button_colour,
+            (self._x + self.get_step_in_pixels() * (self._value - self._min_value), self._y),
+            radius=radius,
+            width=4)
+        self.title_label.draw(window)
+        self.value_label.draw(window)
 
-        pygame.draw.line(screen, self._bar_colour,
-                  (self._x - self._button_radius_hovered, self._y),
-                  (self._x + self.get_step_in_pixels() * (self._value - self._min_value) - radius, self._y),
-                  self._bar_width)
-        pygame.draw.line(screen, self._bar_colour,
-                  (self._x + self.get_step_in_pixels() * (self._value - self._min_value) + radius, self._y),
-                  (self._x + self._width + self._button_radius_hovered, self._y), self._bar_width)
-        pygame.draw.circle(screen, button_colour,
-                    (self._x + self.get_step_in_pixels() * (self._value - self._min_value), self._y),
-                    radius, 4)
-        self.title_label.draw(screen)
-        self.value_label.draw(screen)
+        if not self._button_held:
+            return
+        mouse_x, mouse_y = pygame.mouse.get_pos()
+        self._value = clamp(
+            round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value,
+            self._min_value,
+            self._max_value
+        )
 
-    def events(self, e: pygame.event.Event) -> None:
-        """
-        Handle the horizontal slider events.
-        """
+    def events(self, e: Event) -> None:
         if e.type == pygame.MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 self._button_held = False
-        if e.type == pygame.MOUSEBUTTONDOWN:
+        elif e.type == pygame.MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 if self.is_hovering_over_button():
                     self._button_held = True
                 if self.is_hovering_over() and not self._button_held:
                     mouse_x, mouse_y = pygame.mouse.get_pos()
-                    self._value = round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value
-                    self._value = clamp(self._value, self._min_value, self._max_value)
-        if e.type == pygame.MOUSEWHEEL and self.is_hovering_over():
-            self._value = clamp(self._value + e.y, self._min_value, self._max_value)
+                    self._value = int(clamp(
+                        round((mouse_x - self._x) // self.get_step_in_pixels()) + self._min_value,
+                        self._min_value,
+                        self._max_value
+                    ))
+        elif e.type == pygame.MOUSEWHEEL and self.is_hovering_over():
+            self._value = int(clamp(self._value + e.y, self._min_value, self._max_value))
         self.value_label.set_text(f'{self._value}')
 
-    def update(self, window) -> None:
-        """
-        Update the horizontal slider and its components.
-        """
-        self._width = clamp(window.width * 0.2, HorizontalSlider.MIN_WIDTH, HorizontalSlider.MAX_WIDTH)
-        self.title_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
-        self.value_label.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
-        self.refresh()
+    def resize(self, window: Window) -> None:
+        self._button_radius = int(clamp(window.width * 0.04, 2, 10))
+        self._button_radius_hovered = self._button_radius + 2
+        self._width = int(clamp(window.width * 0.2, self.MIN_WIDTH, self.MAX_WIDTH))
+        self._height = self._bar_width + self._button_radius_hovered
 
-    def refresh(self) -> None:
-        """
-        Refresh the horizontal slider and its components.
-        """
+    def update(self, window: Window) -> None:
+        self.title_label.update(window)
+        self.value_label.update(window)
         self.title_label.center_horizontally(self._x, self._width)
         self.value_label.set_x(self._x + self._width + 35)
         self.title_label.set_y(self._y - 40)
         self.value_label.set_y(self._y - 13)
-        self.title_label.refresh()
-        self.value_label.refresh()
 
     def is_hovering_over_button(self) -> bool:
         """
@@ -115,61 +126,10 @@ class HorizontalSlider(Widget):
                 and self._enabled)
 
     def is_hovering_over(self) -> bool:
-        """
-        Return whether the user's mouse cursor is hovering over the horizontal slider or not.
-        """
         mouse_x, mouse_y = pygame.mouse.get_pos()
         return (self._x <= mouse_x <= self._x + self._width
                 and self._y - self._button_radius <= mouse_y <= self._y + self._bar_width + self._button_radius
                 and self._enabled)
-
-    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
-        """
-        Center the horizontal slider horizontally relative to the specified parent, then return the horizontal slider
-        itself.
-        """
-        self._x = round(parent_x + parent_width / 2 - self._width / 2)
-        self.refresh()
-        return self
-
-    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
-        """
-        Center the horizontal slider vertically relative to the specified parent, then return the horizontal slider
-        itself.
-        """
-        self._y = round(parent_y + parent_height / 2 - 2)
-        self.refresh()
-        return self
-
-    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
-        """
-        Center the horizontal slider on both axes relative to the specified parent, then return the horizontal slider
-        itself.
-        """
-        self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
-        self.refresh()
-        return self
-
-    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
-        """
-        Center the horizontal slider with center() and offset it by x and y relative to the specified parent, then
-        return the horizontal slider itself.
-        """
-        self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
-        self.refresh()
-        return self
-
-    def get_width(self) -> int:
-        """
-        Return the width of the horizontal slider.
-        """
-        return self._width
-
-    def get_height(self) -> int:
-        """
-        Return the height of the horizontal slider.
-        """
-        return self._height
 
     def get_bar_width(self) -> int:
         """
@@ -251,9 +211,7 @@ class HorizontalSlider(Widget):
         """
         return self._width / (self._max_value - self._min_value)
 
-    def set_state(self, state: bool):
-        """
-        Overridden method from Widget to reset the button_held state to False for every horizontal slider state update.
-        """
+    def set_state(self, state: bool) -> Self:
         super().set_state(state)
         self._button_held = False
+        return self

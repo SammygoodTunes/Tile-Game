@@ -2,16 +2,28 @@
 Module name: inputbox
 """
 
+from __future__ import annotations
 import pygame.time
-from pygame import mouse, scrap, draw, event, key, MOUSEBUTTONDOWN, KEYDOWN, K_BACKSPACE, K_v, Surface, KMOD_CTRL
+from pygame import (
+    mouse,
+    scrap,
+    draw,
+    MOUSEBUTTONDOWN,
+    KEYDOWN,
+    K_BACKSPACE,
+    K_v, Surface,
+    KMOD_CTRL
+)
+from pygame.event import Event
 from pygame.math import clamp
 from string import printable, digits, ascii_letters
-from typing import Self
+from typing import Self, TYPE_CHECKING
 
+if TYPE_CHECKING: from game.core.window import Window
 from game.data.properties.gui_properties import GuiProperties
 from game.data.properties.screen_properties import ScreenProperties
-from game.gui.label import Widget, Label
 from game.data.states.mouse_states import MouseStates
+from game.gui.label import Widget, Label
 from game.gui.tooltip import Tooltip
 
 
@@ -20,22 +32,20 @@ class InputBox(Widget):
     Class for creating an input box.
     """
 
-    MIN_WIDTH = 25
-    MAX_WIDTH = 800
-    MIN_HEIGHT = 25
-    MAX_HEIGHT = 50
-
     def __init__(self,
                  text: str = '',
                  placeholder_text: str = '',
                  tooltip_text: str = '',
                  x: int = 0,
                  y: int = 0,
-                 width: int = 200,
+                 width: int = 800,
                  height: int = 50) -> None:
-        super().__init__(x, y)
-        self._width = width
-        self._height = height
+        super().__init__(x, y, width, height)
+        self.MIN_WIDTH = 25
+        self.MIN_HEIGHT = 10
+        self.validate_dimensions(width, height)
+        self.MAX_WIDTH = width
+        self.MAX_HEIGHT = height
         self._selected = False
         self._border_colour = (255, 255, 255)
         self._background_colour = (0, 0, 0)
@@ -50,37 +60,33 @@ class InputBox(Widget):
         self._timer = pygame.time.get_ticks() / 1000.0
         self._read_only = False
 
-    def draw(self, screen: Surface) -> None:
-        """
-        Draw the input box and its components.
-        """
+    def draw(self, window: Window | Surface) -> None:
         background_surface = Surface((self._width, self._height))
         background_surface.set_alpha(ScreenProperties.ALPHA)
         draw.rect(background_surface, self._background_colour, (self._x, self._y, self._width, self._height))
-        screen.blit(background_surface, (self._x, self._y))
-        draw.rect(screen, self._border_colour, (self._x - 2, self._y - 2, self._width + 2, self._height + 2), 2)
+        window.blit(background_surface, (self._x, self._y))
+        draw.rect(window, self._border_colour, (self._x - 2, self._y - 2, self._width + 2, self._height + 2), 2)
         if self._text_value.strip():
-            self._text_label.draw(screen)
-        elif not self._text_value.strip() and self._placeholder_label.get_total_width() < self._width - 10:
-            self._placeholder_label.draw(screen)
+            self._text_label.draw(window)
+        elif not self._text_value.strip() and self._placeholder_label.get_width() < self._width - 10:
+            self._placeholder_label.draw(window)
         if not self._selected:
             self._timer = pygame.time.get_ticks() / 1000.0
             if self.is_hovering_over():
-                self._tooltip.draw(screen)
+                self._tooltip.draw(window)
             return
         if pygame.time.get_ticks() / 1000.0 - self._timer > GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION:
             self._timer = pygame.time.get_ticks() / 1000.0
         if pygame.time.get_ticks() / 1000.0 - self._timer <= GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION / 2:
-            draw.rect(screen, self._cursor_colour, (
-                self._x + self._text_label.get_total_width() + 4, self._y + 8,
-                2, self._height - 16))
+            draw.rect(
+                window,
+                self._cursor_colour,
+                (self._x + self._text_label.get_width() + 4, self._y + 8, 2, self._height - 16)
+            )
         if self.is_hovering_over() and self._can_interact:
-            self._tooltip.draw(screen)
+            self._tooltip.draw(window)
 
-    def events(self, e: event.Event) -> None:
-        """
-        Handle the input box events.
-        """
+    def events(self, e: Event) -> None:
         if self._read_only or not self._can_interact:
             return
         if e.type == MOUSEBUTTONDOWN:
@@ -108,17 +114,16 @@ class InputBox(Widget):
             self.scroll_text()
             self._text_label.set_text(self._text_value[self._text_offset:])
 
-    def update(self, window) -> None:
-        """
-        Update the input box and its components.
-        """
-        self._width = int(clamp(window.width * 0.4, InputBox.MIN_WIDTH, InputBox.MAX_WIDTH))
-        self._height = int(clamp(window.height * 0.1, InputBox.MIN_HEIGHT, InputBox.MAX_HEIGHT))
+    def update(self, window: Window) -> None:
+        if not self._enabled:
+            return
+        self._width = int(clamp(window.width * 0.4, self.MIN_WIDTH, self.MAX_WIDTH))
+        self._height = int(clamp(window.height * 0.1, self.MIN_HEIGHT, self.MAX_HEIGHT))
         self.scroll_text()
-        self._tooltip.update(window)
         self._text_label.update(window)
-        self._placeholder_label.update(window)
         self._text_label.set_text(self._text_value[self._text_offset:])
+        self._tooltip.update(window)
+        self._placeholder_label.update(window)
         self._placeholder_label.center_vertically(self._y, self._height)
         self._placeholder_label.set_x(self._x + 5)
         self._text_label.center_vertically(self._y, self._height)
@@ -189,9 +194,6 @@ class InputBox(Widget):
         return self
 
     def is_hovering_over(self) -> bool:
-        """
-        Return whether the user's mouse cursor is hovering over the input box or not.
-        """
         mouse_x, mouse_y = mouse.get_pos()
         return (self._x <= mouse_x <= self._x + self._width and
                 self._y <= mouse_y <= self._y + self._height and self._enabled)
@@ -208,61 +210,6 @@ class InputBox(Widget):
         Return whether the input box is selected or not.
         """
         return self._selected
-
-    def center_horizontally(self, parent_x: int, parent_width: int) -> Self:
-        """
-        Center the input box horizontally relative to the specified parent, then return the input box itself.
-        """
-        self._x = round(parent_x + parent_width / 2 - self._width / 2)
-        return self
-
-    def center_vertically(self, parent_y: int, parent_height: int) -> Self:
-        """
-        Center the input box vertically relative to the specified parent, then return the input box itself.
-        """
-        self._y = round(parent_y + parent_height / 2 - self._height / 2)
-        return self
-
-    def center(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int) -> Self:
-        """
-        Center the input box on both axes relative to the specified parent, then return the input box itself.
-        """
-        self.center_horizontally(parent_x, parent_width).center_vertically(parent_y, parent_height)
-        return self
-
-    def center_with_offset(self, parent_x: int, parent_y: int, parent_width: int, parent_height: int, x: int, y: int) -> Self:
-        """
-        Center the input box with center() and offset it by x and y relative to the specified parent, then return the
-        input box itself.
-        """
-        self.center(parent_x, parent_y, parent_width, parent_height).offset(x, y)
-        return self
-
-    def set_width(self, width: int) -> Self:
-        """
-        Set the width of the input box, then return the input box itself.
-        """
-        self._width = width
-        return self
-
-    def get_width(self) -> int:
-        """
-        Return the width of the input box.
-        """
-        return self._width
-
-    def set_height(self, height: int) -> Self:
-        """
-        Set the height of the input box, then return the input box itself.
-        """
-        self._height = height
-        return self
-
-    def get_height(self) -> int:
-        """
-        Return the height of the input box.
-        """
-        return self._height
 
     def set_border_colour(self, border_colour: tuple[int, int, int]) -> Self:
         """

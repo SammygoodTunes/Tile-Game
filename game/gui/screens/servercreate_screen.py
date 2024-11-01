@@ -2,19 +2,25 @@
 Module name: servercreate_screen
 """
 
-from pygame import Surface, MOUSEBUTTONDOWN, MOUSEBUTTONUP
-from pygame.event import Event
 
+from __future__ import annotations
+
+from socket import create_server
+
+from pygame import MOUSEBUTTONDOWN, MOUSEBUTTONUP
+from pygame.event import Event
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.player_properties import PlayerProperties
-from game.data.properties.screen_properties import ScreenProperties
 from game.data.properties.world_properties import WorldProperties
 from game.data.states.mouse_states import MouseStates
-from game.gui.ordering_container import OrderingContainer
-from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
 from game.gui.inputbox import InputBox
-from game.gui.select_list import SelectList
+from game.gui.label import Label
+from game.gui.ordering_container import OrderingContainer
+from game.gui.screens.screen import Screen
+from game.gui.selectbox import SelectBox
 from game.world.theme_manager import ThemeManager
 
 
@@ -23,16 +29,15 @@ class ServerCreateScreen(Screen):
     Class for creating the server create screen.
     """
 
-    def __init__(self, window) -> None:
-        super().__init__()
-        self.window = window
-        self.faded_surface = self.initialise_surface()
+    def __init__(self, game: Game) -> None:
+        super().__init__(game)
+        self.faded_surface = None
         self.create_label = Label("Create server")
         self.ign_input = (InputBox(placeholder_text='Player name', tooltip_text='Player name').
                           set_max_text_length(PlayerProperties.MAX_PLAYER_NAME_SIZE).authorise_only_alnumlines())
         self.seed_input = InputBox(placeholder_text='Seed', tooltip_text='Seed').authorise_only_alnum()
-        self.world_theme_select = SelectList(tooltip_text='World Theme')
-        self.world_size_select = SelectList(tooltip_text='World Size').set_values([
+        self.world_theme_select = SelectBox(tooltip_text='World Theme')
+        self.world_size_select = SelectBox(tooltip_text='World Size').set_values([
             WorldProperties.MAP_SMALL,
             WorldProperties.MAP_MEDIUM,
             WorldProperties.MAP_LARGE,
@@ -45,25 +50,14 @@ class ServerCreateScreen(Screen):
         self.back_button = Button('Back')
         self.initialise_themes()
 
-    def initialise_surface(self) -> Surface:
-        """
-        Initialise the screen's surface.
-        """
-        surface = Surface((self.window.width, self.window.height))
-        surface.fill((0, 0, 0))
-        surface.set_alpha(ScreenProperties.ALPHA)
-        return surface
-
     def initialise_themes(self) -> None:
         """
-        Initialise the world theme select list.
+        Initialise the world theme select box.
         """
         self.world_theme_select.set_values(ThemeManager.get_theme_names())
 
     def events(self, e: Event) -> None:
-        """
-        Handle the screen events.
-        """
+        if not self._enabled: return
         self.ign_input.events(e)
         self.seed_input.events(e)
         self.ordering_container.events(e)
@@ -86,104 +80,93 @@ class ServerCreateScreen(Screen):
 
 
     def draw(self) -> None:
-        """
-        Draw the screen and its components.
-        """
-        if not self._enabled:
-            return
-        self.window.screen.blit(self.faded_surface, (0, 0))
-        self.create_label.draw(self.window.screen)
+        if not self._enabled: return
+        self.game.screen.blit(self.faded_surface, (0, 0))
+        self.create_label.draw(self.game.screen)
         for widget in self.ordering_container.get_widgets():
             if isinstance(widget, InputBox):
-                widget.draw(self.window.screen)
-        self.create_button.draw(self.window.screen)
-        self.back_button.draw(self.window.screen)
-        self.world_theme_select.draw(self.window)
-        self.world_size_select.draw(self.window)
-        self.world_size_select.draw_value_list(self.window)
-        self.world_theme_select.draw_value_list(self.window)
+                widget.draw(self.game.screen)
+        self.create_button.draw(self.game.screen)
+        self.back_button.draw(self.game.screen)
+        self.world_theme_select.draw(self.game)
+        self.world_size_select.draw(self.game)
+        self.world_size_select.draw_value_list(self.game)
+        self.world_theme_select.draw_value_list(self.game)
 
     def update_ui(self) -> None:
-        """
-        Update the screen UI.
-        """
-        if not self._enabled:
-            return
+        if not self._enabled: return
         self.faded_surface = self.initialise_surface()
-        self.create_label.update(self.window)
+        self.create_button.resize(self.game)
+        self.world_theme_select.resize(self.game)
+        self.world_size_select.resize(self.game)
+        self.back_button.resize(self.game)
+        self.create_label.update(self.game)
         self.create_label.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             -self.seed_input.get_height()
-            - self.create_label.get_total_height()
+            - self.create_label.get_height()
             - self.world_theme_select.get_height()
             - 25
         )
-        self.ign_input.update(self.window)
         self.ign_input.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             -self.seed_input.get_height() - self.world_theme_select.get_height() - 10
         )
-        self.ign_input.update(self.window)
-        self.seed_input.update(self.window)
         self.seed_input.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             -self.world_theme_select.get_height() - 5
         )
-        self.seed_input.update(self.window)
-        self.world_theme_select.update(self.window)
-        self.world_theme_select.center(0, 0, self.window.width, self.window.height)
-        self.world_theme_select.update(self.window)
-        self.world_size_select.update(self.window)
+        self.world_theme_select.center(0, 0, self.game.width, self.game.height)
         self.world_size_select.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             self.world_theme_select.get_height() + 5
         )
-        self.world_size_select.update(self.window)
-        self.create_button.update(self.window)
         self.create_button.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             self.world_theme_select.get_height()
             + self.world_size_select.get_height()
             + 15
         )
-        self.back_button.update(self.window)
         self.back_button.center_with_offset(
             0,
             0,
-            self.window.width,
-            self.window.height,
+            self.game.width,
+            self.game.height,
             0,
             self.world_theme_select.get_height()
             + self.world_size_select.get_height()
             + self.create_button.get_height()
             + 20
         )
+        self.ign_input.update(self.game)
+        self.seed_input.update(self.game)
+        self.world_theme_select.update(self.game)
+        self.world_size_select.update(self.game)
+        self.create_button.update(self.game)
+        self.back_button.update(self.game)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
 
     def set_state(self, state: bool) -> None:
-        """
-        Set the screen's visibility/interactivity.
-        """
         super().set_state(state)
         self.create_label.set_state(state)
         self.ign_input.set_state(state)

@@ -2,11 +2,12 @@
 Module name: pause_screen
 """
 
-from pygame import Surface
+from __future__ import annotations
+from typing import TYPE_CHECKING
 
-from game.data.properties.screen_properties import ScreenProperties
-from game.gui.screens.screen import Screen
+if TYPE_CHECKING: from game.core.game import Game
 from game.gui.button import Button
+from game.gui.screens.screen import Screen
 
 
 class PauseScreen(Screen):
@@ -14,53 +15,48 @@ class PauseScreen(Screen):
     Class for creating the pause screen.
     """
 
-    def __init__(self, window) -> None:
-        super().__init__()
-        self.window = window
-        self.faded_surface = self.initialise_surface()
-        self.resume_button = Button(text="Resume").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(-75)
-        self.options_button = Button(text="Options").center_horizontally(0, window.width).center_vertically(0, window.height)
-        self.disconnect_button = Button(text="Disconnect").center_horizontally(0, window.width).center_vertically(0, window.height).offset_y(75)
-
-    def initialise_surface(self) -> Surface:
-        """
-        Initialise the screen's surface.
-        """
-        surface = Surface((self.window.width, self.window.height))
-        surface.fill((0, 0, 0))
-        surface.set_alpha(ScreenProperties.ALPHA)
-        return surface
+    def __init__(self, game: Game) -> None:
+        super().__init__(game)
+        self.faded_surface = None
+        self.resume_button = Button(text="Resume")
+        self.options_button = Button(text="Options")
+        self.disconnect_button = Button(text="Disconnect")
 
     def draw(self) -> None:
-        """
-        Draw the screen and its components.
-        """
-        if not self._enabled:
-            return
-        self.window.screen.blit(self.faded_surface, (0, 0))
-        self.resume_button.draw(self.window.screen)
-        self.options_button.draw(self.window.screen)
-        self.disconnect_button.draw(self.window.screen)
+        if not self._enabled: return
+        self.game.screen.blit(self.faded_surface, (0, 0))
+        self.resume_button.draw(self.game.screen)
+        self.options_button.draw(self.game.screen)
+        self.disconnect_button.draw(self.game.screen)
 
     def update_ui(self) -> None:
-        """
-        Update the screen UI.
-        """
-        if not self._enabled:
-            return
+        if not self._enabled: return
         self.faded_surface = self.initialise_surface()
-        self.options_button.update(self.window)
-        self.options_button.center(0, 0, self.window.width, self.window.height)
-        self.disconnect_button.update(self.window)
-        self.disconnect_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, self.options_button.get_height() + 5)
-        self.resume_button.update(self.window)
-        self.resume_button.center_with_offset(0, 0, self.window.width, self.window.height, 0, -self.disconnect_button.get_height() - 5)
-
+        self.resume_button.resize(self.game)
+        self.options_button.resize(self.game)
+        self.disconnect_button.resize(self.game)
+        self.options_button.center(0, 0, self.game.width, self.game.height)
+        self.disconnect_button.center_with_offset(
+            0,
+            0,
+            self.game.width,
+            self.game.height,
+            0,
+            self.options_button.get_height() + 5
+        )
+        self.resume_button.center_with_offset(
+            0,
+            0,
+            self.game.width,
+            self.game.height,
+            0,
+            -self.disconnect_button.get_height() - 5
+        )
+        self.resume_button.update(self.game)
+        self.options_button.update(self.game)
+        self.disconnect_button.update(self.game)
 
     def set_state(self, state: bool) -> None:
-        """
-        Set the screen's visibility/interactivity.
-        """
         super().set_state(state)
         self.resume_button.set_state(state)
         self.options_button.set_state(state)

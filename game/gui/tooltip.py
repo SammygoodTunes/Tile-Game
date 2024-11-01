@@ -2,9 +2,12 @@
 Module name: tooltip
 """
 
+from __future__ import annotations
 from pygame import mouse, Surface
 from pygame.draw import rect
+from typing import TYPE_CHECKING
 
+if TYPE_CHECKING: from game.core.window import Window
 from game.data.properties.screen_properties import ScreenProperties
 from game.gui.label import Label
 from game.gui.widget import Widget
@@ -24,25 +27,19 @@ class Tooltip(Widget):
         """
         Initialise the tooltip's surface.
         """
-        surface = Surface((self._label.get_total_width() + 10, self._label.get_total_height() + 5))
+        surface = Surface((self._label.get_width() + 10, self._label.get_height() + 5))
         surface.fill((0, 0, 0))
         surface.set_alpha(ScreenProperties.PRONOUNCED_ALPHA)
         return surface
 
-    def draw(self, screen) -> None:
-        """
-        Draw the tooltip and its components.
-        """
+    def draw(self, window: Window | Surface) -> None:
         if not self._enabled or not self._label.get_text():
             return
         x, y = mouse.get_pos()[0] - self._surface.get_width(), mouse.get_pos()[1] - self._surface.get_height()
-        screen.blit(self._surface, (x, y))
-        rect(screen, (255, 255, 255), (x, y, self._surface.get_width(), self._surface.get_height()), width=2)
-        self._label.center(x, y, self._surface.get_width(), self._surface.get_height()).draw(screen)
+        window.blit(self._surface, (x, y))
+        rect(window, (255, 255, 255), (x, y, self._surface.get_width(), self._surface.get_height()), width=2)
+        self._label.center(x, y, self._surface.get_width(), self._surface.get_height()).draw(window)
 
-    def update(self, window) -> None:
-        """
-        Update the tooltip and its components.
-        """
+    def update(self, window: Window) -> None:
         self._label.update(window)
         self._surface = self.initialise_surface()
