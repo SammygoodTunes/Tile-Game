@@ -15,7 +15,7 @@ from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
 from game.gui.selectbox import SelectBox
-from game.utils.translator import locales, translator as t, translator, get_locale_from_language
+from game.utils.translator import locales, translator as t, get_locale_from_language
 
 
 class OptionsScreen(Screen):
@@ -52,7 +52,7 @@ class OptionsScreen(Screen):
         self.vsync_box.events(e)
 
         if self.language_list.has_selected_a_value():
-            translator.set('locale', get_locale_from_language(self.language_list.get_selected()))
+            t.set('locale', get_locale_from_language(self.language_list.get_selected()))
             self.game.screens.perform_translation()
 
         self.language_list.events(e)
