@@ -15,6 +15,8 @@ class PerlinNoise:
 
     NOISE_INTENSITY_RANGE = 2**16
     FREQ_ALTER_RANGE = 0.04
+    MIN_HEIGHT = 0
+    MAX_HEIGHT = 0
 
     def __init__(self) -> None:
         self._permutations = list()
@@ -22,6 +24,7 @@ class PerlinNoise:
         self._octaves = 5
         self._noise_intensity = randint(-PerlinNoise.NOISE_INTENSITY_RANGE, PerlinNoise.NOISE_INTENSITY_RANGE)
         self._frequency = 0.40 + uniform(-PerlinNoise.FREQ_ALTER_RANGE, PerlinNoise.FREQ_ALTER_RANGE)
+        self._noise_params = (randint(2**10, 2**15), randint(2**16, 2**24))
 
     def generate(self, x: int, y: int) -> int:
         """
@@ -32,6 +35,8 @@ class PerlinNoise:
             freq = self._frequency ** i
             amplitude = self._persistence ** i
             result += self.interpolate_noise(x * freq, y * freq) * amplitude
+        self.MIN_HEIGHT = result if self.MIN_HEIGHT > result else self.MIN_HEIGHT
+        self.MAX_HEIGHT = result if self.MAX_HEIGHT < result else self.MAX_HEIGHT
         return result
 
     def noise(self, x: int, y: int) -> float:
@@ -40,7 +45,7 @@ class PerlinNoise:
         """
         n: int = x + y * self._noise_intensity
         n = (n << 13) ^ n
-        return 1.0 - ((n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0
+        return 1.0 - ((n * (n * n * self._noise_params[0] + self._noise_params[1]) + 1376312589) & 0x7fffffff) / 1073741824.0
 
     def smooth_noise(self, x: int, y: int) -> float:
         """

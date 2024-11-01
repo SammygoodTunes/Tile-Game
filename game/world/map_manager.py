@@ -3,7 +3,7 @@ Module name: map_manager
 
 This module manages the generation, data and updates of the world map.
 """
-
+import logging
 from math import ceil
 from pygame import SRCALPHA, Surface
 from random import choice, seed
@@ -74,6 +74,8 @@ class Map:
         # Handle info label on loading screen and set it to 'Generating map...'
         progress: int = -1
         timer = time() - GameProperties.LOGGER_DELAY
+        self.perlin_noise.MIN_HEIGHT = 0
+        self.perlin_noise.MAX_HEIGHT = 0
         for tile_index in range(self._width * self._height):
             noise_value = self.perlin_noise.generate(tile_index % self._width, tile_index // self._height)
             tile: Tile
@@ -107,6 +109,8 @@ class Map:
             if time() - timer > GameProperties.LOGGER_DELAY:
                 logger.info(f'Generating map data... {progress}%')
                 timer = time()
+
+        logger.debug(f'Generated map with {self.perlin_noise.MIN_HEIGHT=} {self.perlin_noise.MAX_HEIGHT=}')
         # Update the loading screen UI to update its info label text
 
         # Handler info label on loading screen and set it to 'Loading map...'
@@ -120,7 +124,6 @@ class Map:
             self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''
 
         # Update the loading screen UI to update its info label text
-
         if not self._tile_data:
             raise InvalidMapData
 
