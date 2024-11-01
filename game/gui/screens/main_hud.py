@@ -40,6 +40,9 @@ class MainHud(Screen):
         self.hotbar = Hotbar(slot_count=6).select_slot(0)
         self.timer = time()
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         c_handler = self.game.client.connection_handler

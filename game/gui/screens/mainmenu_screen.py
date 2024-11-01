@@ -35,6 +35,9 @@ class MainMenuScreen(Screen):
         self.title_label_time: float = pygame.time.get_ticks() / 1000.0
         self.set_state(True)
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         label_time = pygame.time.get_ticks() / 1000.0 - self.title_label_time

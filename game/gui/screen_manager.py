@@ -199,6 +199,13 @@ class Screens:
             self.game.client.player.reset()
             self.game.client.player.set_ideal_spawn_point(self.game.client.world.get_map(), self.game.client.camera)
 
+    def perform_translation(self) -> None:
+        """
+        Translate all UIs to selected locale.
+        """
+        self.options_screen.translate()
+        self.update_ui()
+
     def update(self) -> None:
         """
         Update the screens.

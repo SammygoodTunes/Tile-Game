@@ -21,6 +21,9 @@ class CrashScreen(Screen):
         self.crash_label = Label(text="The game crashed")
         self.traceback_label = Label().set_colour((255, 50, 50)).set_shadow_colour((50, 0, 00))
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.surface, (0, 0))

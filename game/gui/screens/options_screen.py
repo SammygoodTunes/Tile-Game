@@ -15,7 +15,7 @@ from game.gui.horizontal_slider import HorizontalSlider
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
 from game.gui.selectbox import SelectBox
-from game.utils.translator import locales
+from game.utils.translator import locales, translator as t, translator, get_locale_from_language
 
 
 class OptionsScreen(Screen):
@@ -37,18 +37,32 @@ class OptionsScreen(Screen):
         self.language_list = SelectBox(tooltip_text='Language', width=200).set_values([value for value in locales.values()])
         self.back_button = Button('Back')
 
+    def translate(self) -> None:
+        self.options_label.set_text(t.t('screens.options.title'))
+        self.fps_limit_slider.set_title(t.t('screens.options.fps_limit_slider'))
+        self.show_fps_box.title_label.set_text(t.t('screens.options.show_fps_box'))
+        self.debug_info_box.title_label.set_text(t.t('screens.options.debug_info_box'))
+        self.language_list.set_tooltip_text(t.t('screens.options.language_list_tooltip'))
+
     def events(self, e: Event) -> None:
         if not self._enabled: return
         self.fps_limit_slider.events(e)
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
         self.vsync_box.events(e)
+
+        if self.language_list.has_selected_a_value():
+            translator.set('locale', get_locale_from_language(self.language_list.get_selected()))
+            self.game.screens.perform_translation()
+
         self.language_list.events(e)
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 self.back_button.set_interact(not self.language_list.is_open())
         elif not e.type == MOUSEBUTTONUP:
             self.back_button.set_interact(not self.language_list.is_open())
+
+
 
         if self.game.fps_cap != self.fps_limit_slider.get_value():
             self.game.fps_cap = self.fps_limit_slider.get_value()

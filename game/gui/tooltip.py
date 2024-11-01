@@ -5,7 +5,7 @@ Module name: tooltip
 from __future__ import annotations
 from pygame import mouse, Surface
 from pygame.draw import rect
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Self
 
 if TYPE_CHECKING: from game.core.window import Window
 from game.data.properties.screen_properties import ScreenProperties
@@ -43,3 +43,16 @@ class Tooltip(Widget):
     def update(self, window: Window) -> None:
         self._label.update(window)
         self._surface = self.initialise_surface()
+
+    def set_text(self, text: str) -> Self:
+        """
+        Set the tooltip text, then return the tooltip itself.
+        """
+        self._label.set_text(text)
+        return self
+
+    def get_text(self) -> str:
+        """
+        Return the tooltip text.
+        """
+        return self._label.get_text()

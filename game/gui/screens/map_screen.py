@@ -27,6 +27,9 @@ class MapScreen(Screen):
         self.title_label = Label('Map')
         self.scaled_map: Surface = Surface((0, 0))
 
+    def translate(self) -> None:
+        pass
+
     def initialise_map(self) -> None:
         """
         Initialise the screen's map component.

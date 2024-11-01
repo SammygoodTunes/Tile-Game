@@ -49,6 +49,12 @@ class Screen:
         """
         ...
 
+    def translate(self) -> None:
+        """
+        Update the text of all text-related components to their translated equivalents.
+        """
+        ...
+
     def set_state(self, state: bool) -> Self:
         """
         Set the screen's visibility and interactivity state, then return the screen itself

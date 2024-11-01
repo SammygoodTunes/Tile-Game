@@ -23,6 +23,9 @@ class ServerConnectScreen(Screen):
         self.info_label = Label()
         self.main_menu_button = Button("Main menu")
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled:
             return

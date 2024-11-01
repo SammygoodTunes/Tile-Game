@@ -31,6 +31,9 @@ class CreditsScreen(Screen):
         self.font_value_label = Label('OmegaPC777').set_colour((255, 255, 0))
         self.back_button = Button("Back")
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))

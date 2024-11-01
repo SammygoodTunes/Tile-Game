@@ -53,6 +53,9 @@ class ServerJoinScreen(Screen):
         ))
         self.ordering_container.events(e)
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))

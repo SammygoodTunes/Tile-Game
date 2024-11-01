@@ -26,6 +26,9 @@ class ServerMenuScreen(Screen):
 		self.create_button.label.set_colour((190, 255, 200))
 		self.back_button = Button("Back")
 
+	def translate(self) -> None:
+		pass
+
 	def draw(self) -> None:
 		if not self._enabled: return
 		self.game.screen.blit(self.faded_surface, (0, 0))

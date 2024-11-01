@@ -22,6 +22,9 @@ class PauseScreen(Screen):
         self.options_button = Button(text="Options")
         self.disconnect_button = Button(text="Disconnect")
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))

@@ -23,6 +23,9 @@ class GameoverScreen(Screen):
         self.respawn_button = Button(text="Respawn")
         self.disconnect_button = Button(text="Disconnect")
 
+    def translate(self) -> None:
+        pass
+
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))

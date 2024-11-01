@@ -238,6 +238,19 @@ class SelectBox(Widget):
         """
         return self._values[self._current_index]
 
+    def has_selected_a_value(self) -> bool:
+        """
+        Return whether the user has selected a value in the value list or not.
+        """
+        return self._has_selected
+
+    def set_tooltip_text(self, tooltip_text: str) -> Self:
+        """
+        Set the display box's tooltip text, then return the select box itself.
+        """
+        self._display_box.set_tooltip_text(tooltip_text)
+        return self
+
     def set_width(self, width: int) -> Self:
         super().set_width(width)
         self._display_box.set_width(width)

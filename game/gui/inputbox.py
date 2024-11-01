@@ -303,6 +303,13 @@ class InputBox(Widget):
         self._placeholder_label.set_colour(placeholder_text_colour)
         return self
 
+    def set_tooltip_text(self, tooltip_text: str) -> Self:
+        """
+        Set the input box's tooltip text, then return the input box itself.
+        """
+        self._tooltip.set_text(tooltip_text)
+        return self
+
     def set_read_only(self, state: bool) -> Self:
         """
         Set the input box's read-only state, then return the input box itself.
