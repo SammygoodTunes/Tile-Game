@@ -25,7 +25,6 @@ class NameTag(Widget):
     def draw(self, window: Window | Surface) -> None:
         if not self._enabled:
             return
-        print(self._x, self._y)
         window.blit(self._faded_surface, (self._x, self._y))
         self.label.draw(window)
 

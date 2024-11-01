@@ -27,6 +27,7 @@ class ThemeManager:
         Themes.DEFAULT.set_name('world.themes.default')
         Themes.HELL.set_name('world.themes.hell')
         Themes.ISLANDS.set_name('world.themes.islands')
+        Themes.HELL_ISLANDS.set_name('world.themes.hell_islands')
 
     @staticmethod
     def create_default_themes() -> None:
@@ -39,6 +40,7 @@ class ThemeManager:
                 Themes.DEFAULT.get_dict(),
                 Themes.HELL.get_dict(),
                 Themes.ISLANDS.get_dict(),
+                Themes.HELL_ISLANDS.get_dict()
             ]
         }, indent=4)
         with open(ThemeManager.THEMES_FILE, 'w') as theme_file:

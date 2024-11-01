@@ -3,6 +3,7 @@ Module name: screen_manager
 
 This module manages all the GUIs, their visibility and their behaviour.
 """
+import logging
 
 import pygame
 
@@ -250,10 +251,19 @@ class Screens:
         self.server_create_screen.set_state(False)
         self.server_connect_screen.set_state(True)
         self.server_connect_screen.main_menu_button.set_state(False)
+
+        index = self.server_create_screen.world_theme_select.get_current_index()
+        theme = ThemeManager.get_theme_by_id(index)
+        if not theme:
+            logging.error(f'Bad world theme! Could not find theme of id {index}')
+            self.server_connect_screen.main_menu_button.set_state(True)
+            self.server_connect_screen.update_info_label(ConnectionStates.BADTHEME)
+            return
+
         self.game.client.player.set_player_name(self.server_create_screen.ign_input.get_text().strip())
         self.game.server.start(
             self.server_create_screen.seed_input.get_text().strip(),
-            ThemeManager.get_theme_by_id(self.server_create_screen.world_theme_select.get_current_index()),
+            theme,
             self.server_create_screen.world_size_select.get_selected()
         )
         if self.game.server.state.value != ServerStates.FAIL:
@@ -261,9 +271,9 @@ class Screens:
             self.game.client.connection_handler.port = 35000
             self.game.client.connection_handler.player_name = self.server_create_screen.ign_input.get_text().strip()
             self.game.client.connection_handler.start_connection = True
-        else:
-            self.server_connect_screen.main_menu_button.set_state(True)
-            self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
+            return
+        self.server_connect_screen.main_menu_button.set_state(True)
+        self.server_connect_screen.update_info_label(ConnectionStates.SERVFAIL)
 
     def task_join_server(self) -> None:
         """

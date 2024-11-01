@@ -69,6 +69,8 @@ class ServerConnectScreen(Screen):
             self.info_label.set_text('An internal error has occurred.').set_colour((255, 0, 0))
         elif code == ConnectionStates.SERVFAIL:
             self.info_label.set_text('A server is already running on this machine.').set_colour((255, 0, 0))
+        elif code == ConnectionStates.BADTHEME:
+            self.info_label.set_text(f'Bad world theme.').set_colour((255, 0, 0))
         elif code == ConnectionStates.GETDATA:
             self.info_label.set_text('Loading world...').set_colour((255, 255, 0))
         else:
