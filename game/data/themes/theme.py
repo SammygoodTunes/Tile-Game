@@ -14,15 +14,17 @@ class Theme:
     Class for creating a world theme object.
     """
 
-    def __init__(self, name: str = 'Untitled Theme'):
-        self._name: str = name
-        self._layers: list[dict[str, str | int]] | list = []
+    def __init__(self, _id: int):
+        self._id: int = _id
+        self._name: str = ''
+        self._layers: list[dict[str, int | int]] | list = []
 
-    def get_dict(self) -> dict[str, str | dict[str, str | int]]:
+    def get_dict(self) -> dict[str, int | dict[str, str | int]]:
         """
         Return the theme as a dictionary.
         """
         return {
+            'id': self._id,
             'name': self._name,
             'layers': self._layers
         }

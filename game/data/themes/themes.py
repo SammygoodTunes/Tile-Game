@@ -14,7 +14,7 @@ class Themes:
     """
 
     DEFAULT: Theme = (
-        Theme('Default')
+        Theme(0)
         .add_layer(ThemeLayers.LAYER_B, 0, -1500, Tiles.WATER)
         .add_layer(ThemeLayers.LAYER_C, -1500, -1000, Tiles.SAND)
         .add_layer(ThemeLayers.LAYER_C, -1000, -600, Tiles.DIRT)
@@ -26,7 +26,7 @@ class Themes:
     )
 
     HELL: Theme = (
-        Theme('Hell')
+        Theme(1)
         .add_layer(ThemeLayers.LAYER_B, 0, -1500, Tiles.LAVA)
         .add_layer(ThemeLayers.LAYER_C, -1500, -1000, Tiles.SAND)
         .add_layer(ThemeLayers.LAYER_C, -1000, -300, Tiles.DIRT)
@@ -37,7 +37,7 @@ class Themes:
     )
 
     ISLANDS: Theme = (
-        Theme('Islands')
+        Theme(2)
         .add_layer(ThemeLayers.LAYER_B, 0, -1500, Tiles.WATER)
         .add_layer(ThemeLayers.LAYER_C, -1500, -1150, Tiles.SAND)
         .add_layer(ThemeLayers.LAYER_C, -1150, -1000, Tiles.DIRT)

@@ -8,6 +8,7 @@ import pygame
 
 from game.client.client import Client
 from game.core.window import Window
+from game.gui.screen_manager import Screens
 from game.server.server import Server
 
 
@@ -20,7 +21,7 @@ class Game(Window):
         super().__init__(window_width, window_height)
         self._running: bool = True
         self.start_game: bool = False
-        self.screens.link_game(self)
+        self.screens: Screens = Screens(self)
         self.client = Client()
         self.server = Server()
         self.client.initialise(self)
@@ -37,8 +38,21 @@ class Game(Window):
         self.server.safe_closure()
         self.all_events()
         self.screens.update()
-        self.draw_fps() 
+        self.draw_fps()
         self.tick()
+
+    def window_updates(self) -> None:
+        """
+        Update window based on options' menu.
+        """
+        if self.vsync != self.screens.options_screen.vsync_box.is_checked():
+            self.vsync = self.screens.options_screen.vsync_box.is_checked()
+            self.screen = pygame.display.set_mode(
+                (self.width, self.height),
+                (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE),
+                depth=8,
+                vsync=self.vsync
+            )
 
     # Used for when game needs to be updated during threaded process
     # This should be used in a while loop controlled by an Event()
@@ -84,8 +98,21 @@ class Game(Window):
         """
         Update all the GUI-related elements.
         """
-        self.update_ui()
+        self.fps_label.update(self)
+        self.screens.update_ui()
         self.client.update_ui()
+
+    def draw_fps(self) -> None:
+        """
+        Update and draw the FPS on-screen.
+        """
+        if self.screens.options_screen.show_fps_box.is_checked():
+            if self.timer != pygame.time.get_ticks() // 1000:
+                self.fps_label.set_text(f"FPS: {self.clock.get_fps(): .0f}")
+                self.timer = pygame.time.get_ticks() // 1000
+            self.fps_label.set_x(self.width - self.fps_label.get_width() - 4)
+            self.fps_label.set_y(-8)
+            self.fps_label.draw(self.screen)
 
     def is_running(self) -> bool:
         """

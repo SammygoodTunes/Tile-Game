@@ -7,7 +7,6 @@ It handles game refreshes, updates from screen events (like resizing or fullscre
 
 import pygame
 
-from game.gui.screen_manager import Screens
 from game.data.properties.game_properties import GameProperties
 from game.gui.label import Label
 from game.utils.logger import logger
@@ -37,7 +36,6 @@ class Window:
         self.clock: pygame.time.Clock() = pygame.time.Clock()
         self.timer: int = 0
         self.font: pygame.font.Font = pygame.font.Font(Window.FONT_PATH, 11)
-        self.screens: Screens = Screens(self)
         self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8))
         self.vsync: bool = True
         self.focused: bool = True
@@ -79,39 +77,6 @@ class Window:
                 depth=8,
                 vsync=self.vsync
             )
-
-    def draw_fps(self) -> None:
-        """
-        Update and draw the FPS on-screen.
-        """
-        if self.screens.options_screen.show_fps_box.is_checked():
-            if self.timer != pygame.time.get_ticks() // 1000:
-                self.fps_label.set_text(f"FPS: {self.clock.get_fps(): .0f}")
-                self.timer = pygame.time.get_ticks() // 1000
-            self.fps_label.set_x(self.width - self.fps_label.get_total_width() - 4)
-            self.fps_label.set_y(-8)
-            self.fps_label.draw(self.screen)
-
-    def window_updates(self) -> None:
-        """
-        Update window based on options' menu.
-        """
-        if self.vsync != self.screens.options_screen.vsync_box.is_checked():
-            self.vsync = self.screens.options_screen.vsync_box.is_checked()
-            self.screen = pygame.display.set_mode(
-                (self.width, self.height),
-                (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE),
-                depth=8,
-                vsync=self.vsync
-            )
-
-    def update_ui(self) -> None:
-        """
-        Update all window GUI widgets.
-        """
-        self.fps_label.update(self)
-        self.fps_label.refresh()
-        self.screens.update_ui()
 
     def toggle_fullscreen(self) -> None:
         """

@@ -72,6 +72,7 @@ class Client:
         """
         self.player.main_hud.update_ui()
 
+
     def events(self, game, e: Event):
         """
         Handle the client events.

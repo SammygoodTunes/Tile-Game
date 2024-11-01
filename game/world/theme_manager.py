@@ -5,6 +5,7 @@ This module manages the world generation theme, as well as generating the defaul
 """
 
 from os import path
+from game.utils.translator import translator as tr
 import json
 
 from game.data.themes.themes import Themes
@@ -19,11 +20,20 @@ class ThemeManager:
     THEMES_FILE = 'themes.json'
 
     @staticmethod
+    def init_themes() -> None:
+        """
+        Initialise the world themes.
+        """
+        Themes.DEFAULT.set_name('world.themes.default')
+        Themes.HELL.set_name('world.themes.hell')
+        Themes.ISLANDS.set_name('world.themes.islands')
+
+    @staticmethod
     def create_default_themes() -> None:
         """
         Create the default world themes files.
         """
-
+        ThemeManager.init_themes()
         json_data = json.dumps({
             'themes': [
                 Themes.DEFAULT.get_dict(),
@@ -44,16 +54,15 @@ class ThemeManager:
             ThemeManager.create_default_themes()
 
     @staticmethod
-    def get_theme_by_name(theme_name: str) -> dict:
+    def get_theme_by_id(theme_id: int) -> dict:
         """
         Return the theme dict from the themes file by theme name.
         """
         themes = ThemeManager.get_themes()['themes']
         for i, theme in enumerate(themes):
-            if theme['name'] == theme_name:
+            if theme['id'] == theme_id:
                 return theme
         return {}
-
 
     @staticmethod
     def get_themes() -> dict:
@@ -73,5 +82,4 @@ class ThemeManager:
         ThemeManager.check_themes()
         with open(ThemeManager.THEMES_FILE) as theme_file:
             themes_dict = json.loads(theme_file.read())
-        return [themes_dict['themes'][i]['name'] for i, _ in enumerate(themes_dict['themes'])]
-
+        return [tr.t(themes_dict['themes'][i]['name']) for i, _ in enumerate(themes_dict['themes'])]
