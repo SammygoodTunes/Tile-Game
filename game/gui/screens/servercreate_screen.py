@@ -79,7 +79,7 @@ class ServerCreateScreen(Screen):
             self.world_size_select.set_interact(not self.world_theme_select.is_open())
 
     def translate(self) -> None:
-        pass
+        self.initialise_themes()
 
     def draw(self) -> None:
         if not self._enabled: return

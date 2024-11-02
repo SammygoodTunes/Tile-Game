@@ -205,6 +205,7 @@ class Screens:
         Translate all UIs to selected locale.
         """
         self.options_screen.translate()
+        self.server_create_screen.translate()
         self.update_ui()
 
     def update(self) -> None:
