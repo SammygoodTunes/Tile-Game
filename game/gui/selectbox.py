@@ -257,3 +257,8 @@ class SelectBox(Widget):
         super().set_height(height)
         self._display_box.set_height(height)
         return self
+
+    def set_interact(self, state: bool) -> Self:
+        super().set_interact(state)
+        self._display_box.set_interact(state)
+        return self

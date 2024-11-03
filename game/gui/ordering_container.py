@@ -24,6 +24,8 @@ class OrderingContainer(Widget):
         self._widgets: list[any] = []
 
     def events(self, e: Event) -> None:
+        if not self._enabled or not self._can_interact:
+            return
         if e.type != KEYDOWN:
             return
         if e.key != K_TAB:
@@ -59,5 +61,11 @@ class OrderingContainer(Widget):
     def set_state(self, state: bool) -> Self:
         super().set_state(state)
         self._order = -1
+        return self
+
+    def set_interact(self, state: bool) -> Self:
+        super().set_interact(state)
+        for widget in self._widgets:
+            widget.set_interact(state)
         return self
 

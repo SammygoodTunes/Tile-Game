@@ -61,6 +61,8 @@ class InputBox(Widget):
         self._read_only = False
 
     def draw(self, window: Window | Surface) -> None:
+        if not self._enabled:
+            return
         background_surface = Surface((self._width, self._height))
         background_surface.set_alpha(ScreenProperties.ALPHA)
         draw.rect(background_surface, self._background_colour, (self._x, self._y, self._width, self._height))
@@ -72,7 +74,7 @@ class InputBox(Widget):
             self._placeholder_label.draw(window)
         if not self._selected:
             self._timer = pygame.time.get_ticks() / 1000.0
-            if self.is_hovering_over():
+            if self.is_hovering_over() and self._can_interact:
                 self._tooltip.draw(window)
             return
         if pygame.time.get_ticks() / 1000.0 - self._timer > GuiProperties.INPUTBOX_CURSORBLINK_ANIM_DURATION:
@@ -83,8 +85,6 @@ class InputBox(Widget):
                 self._cursor_colour,
                 (self._x + self._text_label.get_width() + 4, self._y + 8, 2, self._height - 16)
             )
-        if self.is_hovering_over() and self._can_interact:
-            self._tooltip.draw(window)
 
     def events(self, e: Event) -> None:
         if self._read_only or not self._can_interact:
@@ -322,3 +322,8 @@ class InputBox(Widget):
         Return the input box's read-only state.
         """
         return self._read_only
+
+    def set_interact(self, state: bool) -> Self:
+        super().set_interact(state)
+        if not state: self._selected = state
+        return self

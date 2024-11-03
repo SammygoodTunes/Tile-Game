@@ -58,9 +58,8 @@ class ServerCreateScreen(Screen):
 
     def events(self, e: Event) -> None:
         if not self._enabled: return
-        self.ign_input.events(e)
-        self.seed_input.events(e)
-        self.ordering_container.events(e)
+        for widget in self.ordering_container.get_widgets():
+            widget.events(e)
         self.world_theme_select.events(e)
         self.world_size_select.events(e)
         self.create_button.set_state(bool(self.ign_input.get_text().strip()))
@@ -70,13 +69,16 @@ class ServerCreateScreen(Screen):
             if e.button == MouseStates.LMB:
                 self.create_button.set_interact(state)
                 self.back_button.set_interact(state)
+                self.ordering_container.set_interact(state)
                 self.world_theme_select.set_interact(not self.world_size_select.is_open())
                 self.world_size_select.set_interact(not self.world_theme_select.is_open())
         elif not e.type == MOUSEBUTTONUP:
             self.create_button.set_interact(state)
             self.back_button.set_interact(state)
+            self.ordering_container.set_interact(state)
             self.world_theme_select.set_interact(not self.world_size_select.is_open())
             self.world_size_select.set_interact(not self.world_theme_select.is_open())
+        self.ordering_container.events(e)
 
     def translate(self) -> None:
         self.initialise_themes()
