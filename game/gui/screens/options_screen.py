@@ -51,19 +51,17 @@ class OptionsScreen(Screen):
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
         self.vsync_box.events(e)
+        self.language_list.events(e)
 
         if self.language_list.has_selected_a_value():
             t.set('locale', get_locale_from_language(self.language_list.get_selected()))
             self.game.screens.perform_translation()
 
-        self.language_list.events(e)
         if e.type == MOUSEBUTTONDOWN:
             if e.button == MouseStates.LMB:
                 self.back_button.set_interact(not self.language_list.is_open())
         elif not e.type == MOUSEBUTTONUP:
             self.back_button.set_interact(not self.language_list.is_open())
-
-
 
         if self.game.fps_cap != self.fps_limit_slider.get_value():
             self.game.fps_cap = self.fps_limit_slider.get_value()

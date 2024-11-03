@@ -45,6 +45,7 @@ class SelectBox(Widget):
                              .set_border_colour((255, 255, 255)))
         self.set_width(width).set_height(height)
         self._values = []
+        self._previous_index = 0
         self._current_index = 0
         self._open = False
         self._arrow_width = SelectBox.MAX_ARROW_WIDTH
@@ -116,17 +117,15 @@ class SelectBox(Widget):
         """
         if not self._can_interact or not self._enabled:
             return
-        if e.type == MOUSEBUTTONDOWN:
+        self._has_selected = False
+        if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 for i, _ in enumerate(self._values):
-                    if not self.is_hovering_over_value(i):
+                    if not self.is_hovering_over_value(i) or self._current_index == i:
                         continue
                     self._has_selected = True
                     self._current_index = i
-        elif e.type == MOUSEBUTTONUP:
-            if e.button == MouseStates.LMB:
-                if self._has_selected:
-                    self._has_selected = False
+                if self._open and self._has_selected:
                     self._open = False
                 self._open = self.is_hovering_over() if not self._open else self.is_hovering_over_value_list()
         self._arrow_y_offset = self._open * 3
@@ -203,12 +202,6 @@ class SelectBox(Widget):
                 <= mouse_y <
                 self._y + self._height + self._value_slot_height * (index + 1) + 2 and
                 self._open and self._enabled)
-
-    def is_selected_value(self, index: int):
-        """
-        Return whether the provided select box value by index has been selected.
-        """
-        return self.is_hovering_over_value(index) and mouse.get_pressed(num_buttons=5)[0]
 
     def set_values(self, values: list[str]) -> Self:
         """
