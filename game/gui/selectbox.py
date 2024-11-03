@@ -4,7 +4,7 @@ Module name: select_list
 
 from __future__ import annotations
 from numpy import ceil
-from pygame import Surface
+from pygame import Surface, MOUSEBUTTONDOWN
 from pygame import mouse, MOUSEBUTTONUP
 from pygame.draw import polygon
 from pygame.event import Event
@@ -108,9 +108,6 @@ class SelectBox(Widget):
             label.center_vertically(self._y + self._height + self._value_slot_height * i, self._value_slot_height)
             if self.is_hovering_over_value(i):
                 label.set_colour((255, 255, 255))
-            if self.is_selected_value(i):
-                self._has_selected = True
-                self._current_index = i
             label.draw(window.screen)
 
     def events(self, e: Event) -> None:
@@ -119,7 +116,14 @@ class SelectBox(Widget):
         """
         if not self._can_interact or not self._enabled:
             return
-        if e.type == MOUSEBUTTONUP:
+        if e.type == MOUSEBUTTONDOWN:
+            if e.button == MouseStates.LMB:
+                for i, _ in enumerate(self._values):
+                    if not self.is_hovering_over_value(i):
+                        continue
+                    self._has_selected = True
+                    self._current_index = i
+        elif e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 if self._has_selected:
                     self._has_selected = False

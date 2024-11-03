@@ -34,8 +34,7 @@ class ServerConnectScreen(Screen):
         self.main_menu_button.draw(self.game.screen)
 
     def update_ui(self) -> None:
-        if not self._enabled:
-            return
+        if not self._enabled: return
         self.faded_surface = self.initialise_surface()
         self.main_menu_button.resize(self.game)
         self.info_label.update(self.game)
