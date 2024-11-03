@@ -83,13 +83,12 @@ class Connection:
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE
-        self.packet_queue: list[bytes] = list()  # FIFO
+        self.packet_queue: list[bytes] = []  # FIFO
         self.player_manager = PlayerManager(client.player)
         self.world_manager = WorldManager(client.world)
         self.ping: int = 0
         self.hit_player = str()
         self.timer: float | None = None
-
 
     def connect(self, player_name: str) -> None:
         """

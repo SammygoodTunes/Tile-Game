@@ -19,7 +19,7 @@ class PerlinNoise:
     MAX_HEIGHT = 0
 
     def __init__(self) -> None:
-        self._permutations = list()
+        self._permutations = []
         self._persistence = randint(15, 20)
         self._octaves = 5
         self._noise_intensity = randint(-PerlinNoise.NOISE_INTENSITY_RANGE, PerlinNoise.NOISE_INTENSITY_RANGE)

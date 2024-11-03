@@ -28,15 +28,17 @@ class NameTag(Widget):
         window.blit(self._faded_surface, (self._x, self._y))
         self.label.draw(window)
 
-    def update(self, window: Window) -> None:
+    def resize(self, window: Window) -> None:
         self.label.update(window)
         self._width = self.label.get_width() + 5
         self._height = self.label.get_height()
-        self.label.center_horizontally(self._x, self._width)
-        self.label.center_vertically(self._y, self._height)
+
+    def update(self, window: Window) -> None:
         self._faded_surface = Surface((self._width, self._height))
         self._faded_surface.fill(self._background_colour)
         self._faded_surface.set_alpha(round(self._transparency * 255))
+        self.label.center_horizontally(self._x, self._width)
+        self.label.center_vertically(self._y, self._height)
 
     def is_hovering_over(self) -> bool:
         mouse_x, mouse_y = mouse.get_pos()

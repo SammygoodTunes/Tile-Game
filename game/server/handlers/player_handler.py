@@ -14,7 +14,7 @@ class PlayerHandler:
     """
 
     def __init__(self) -> None:
-        self._players: list[dict] = list()
+        self._players: list[dict] = []
 
     def track_player(self, player: dict) -> str:
         """

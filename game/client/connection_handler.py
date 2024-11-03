@@ -153,5 +153,5 @@ class ConnectionHandler:
         Return the current players in the server, otherwise return an empty list if no connection has been established.
         """
         if not self.connection:
-            return list()
+            return []
         return self.connection.player_manager.players

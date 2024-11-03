@@ -5,10 +5,12 @@ This module manages the local player and the local player list received from the
 as well as rendering the other players to the screen.
 """
 
+from __future__ import annotations
 from pygame.draw import rect
 from pygame.math import lerp
-from typing import Self
+from typing import Self, TYPE_CHECKING
 
+if TYPE_CHECKING: from game.core.game import Game
 from game.entity.player import Player
 from game.gui.nametag import NameTag
 from game.network.builders.player_builder import PlayerBuilder
@@ -21,7 +23,7 @@ class PlayerManager:
 
     def __init__(self, player) -> None:
         self.local_player: Player = player
-        self.players = list()
+        self.players: list = []
 
     def set_players(self, players: list | bytes | None) -> Self:
         """
@@ -50,7 +52,7 @@ class PlayerManager:
             return self.players[index]
         return None
 
-    def draw_players(self, player_name: str, delta: float, game) -> None:
+    def draw_players(self, player_name: str, delta: float, game: Game) -> None:
         """
         Draw to the screen each player present in the players list.
         """
@@ -62,7 +64,8 @@ class PlayerManager:
             screen_y = round(game.height // 2 - int(game.client.camera.y) + round(lerp(player['previous_y'], player['y'], player['lerp']), 2))
             rect(game.screen, (200, 200, 220), (screen_x, screen_y, 32, 32))
             nametag = NameTag(text=player['name'], x=screen_x, y=screen_y - 20)
+            nametag.resize(game)
             nametag.set_x(screen_x + 16 - nametag.get_width() // 2)
-            nametag.set_state(True)
             nametag.update(game)
+            nametag.set_state(True)
             nametag.draw(game.screen)
