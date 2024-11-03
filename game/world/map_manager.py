@@ -174,6 +174,8 @@ class Map:
         Update the old dynatile data with new dynatile data.
         Only update the differences between the two.
         """
+        if self._dynatile_data == new_dynatile_data:
+            return
         for i in range(self._width * self._height):
             if not self._dynatile_data:
                 break
