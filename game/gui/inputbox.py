@@ -124,9 +124,9 @@ class InputBox(Widget):
         self._text_label.set_text(self._text_value[self._text_offset:])
         self._tooltip.update(window)
         self._placeholder_label.update(window)
-        self._placeholder_label.center_vertically(self._y, self._height)
+        self._placeholder_label.center_vertically(self._y - 2, self._height)
         self._placeholder_label.set_x(self._x + 5)
-        self._text_label.center_vertically(self._y, self._height)
+        self._text_label.center_vertically(self._y - 2, self._height)
         self._text_label.set_x(self._x + 5)
 
     def scroll_text(self) -> None:
