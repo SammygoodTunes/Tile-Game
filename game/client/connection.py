@@ -18,7 +18,7 @@ from game.client.managers.player_manager import PlayerManager
 from game.client.managers.world_manager import WorldManager
 from game.client.tasks import ClientTasks
 from game.data.states.connection_states import ConnectionStates
-from game.network.packet import Hasher, Compressor
+from game.network.packet import Hasher
 from game.network.protocol import Protocol
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 from game.utils.logger import logger
@@ -123,7 +123,7 @@ class Connection:
             if game_state is None or not game_state:
                 raise ConnectionRefusedError('Failed to get global game state.')
             players = game_state[1:game_state[0] + 1]
-            map_data = Compressor.decompress(game_state[game_state[0] + 1:])
+            map_data = game_state[game_state[0] + 1:]
             self.player_manager.set_players(players)
             self.world_manager.build_world_from_bytes(map_data)
 
@@ -228,7 +228,7 @@ class Connection:
 
                 if _game_state:
                     players = _game_state[1:_game_state[0] + 1]
-                    map_data = Compressor.decompress(_game_state[_game_state[0] + 1:])
+                    map_data = _game_state[_game_state[0] + 1:]
                     self.player_manager.set_players(players)
                     self.world_manager.build_world_from_bytes(map_data)
                     self.ping = round((time() - packet_recv_timestamp) * 1000)

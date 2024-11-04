@@ -56,6 +56,7 @@ class PlayerListScreen(Screen):
         self.count_label.update(self.game)
         for player in players:
             nametag = (NameTag(player['name']).set_state(True))
+            nametag.resize(self.game)
             nametag.set_y(height)
             nametag.update(self.game)
             nametag.center_horizontally(0, self.game.width)
@@ -78,6 +79,7 @@ class PlayerListScreen(Screen):
         self._playercount_surface.set_alpha(ScreenProperties.PRONOUNCED_ALPHA)
         self.title_label.set_y(self.game.height // 2 - self._faded_surface.get_height() // 2)
         for i, nametag in enumerate(self.player_list):
+            nametag.resize(self.game)
             nametag.set_y(self.title_label.get_y() + self.title_label.get_height() + i * nametag.get_height())
             nametag.update(self.game)
 

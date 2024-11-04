@@ -3,7 +3,7 @@ Module name: map_manager
 
 This module manages the generation, data and updates of the world map.
 """
-import logging
+
 from math import ceil
 from pygame import SRCALPHA, Surface
 from random import choice, seed

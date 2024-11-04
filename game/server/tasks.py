@@ -13,7 +13,6 @@ of game data, requests and responses. These packets are built using the differen
 from math import ceil
 
 from game.data.properties.server_properties import ServerProperties
-from game.data.structures.map_structure import MapStructure
 from game.network.builders.base_builder import BaseBuilder
 from game.network.builders.player_builder import PlayerBuilder
 from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_len

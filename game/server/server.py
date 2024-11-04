@@ -56,6 +56,7 @@ class Server:
 
         logger.info(f'Connection from: {addr}')
         self.player_count.value = len(self.player_handler.get_players())
+
         while running:
             try:
                 start_tile = time()
@@ -65,6 +66,7 @@ class Server:
                 data = conn.recv(Protocol.BUFFER_SIZE)
 
                 running = not ServerTasks.disconnection(data)
+
                 if ServerTasks.game_state(conn, data, self.player_handler, self.world_handler):
                     ServerTasks.local_game_state(conn)
                 ServerTasks.incoming_packets(conn, data, self.player_handler, self.world_handler)

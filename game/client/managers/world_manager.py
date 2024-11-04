@@ -5,7 +5,7 @@ This module manages the local world received from the server's global game state
 """
 
 from game.data.structures.map_structure import MapStructure
-from game.data.structures.tile_structure import TileStructure
+from game.network.packet import Compressor
 from game.world.world import World
 
 
@@ -22,8 +22,9 @@ class WorldManager:
         """
         Build the local world from a world bytes object.
         """
-        if not bytes_obj:
+        if not bytes_obj.strip():
             return
+        bytes_obj = Compressor.decompress(bytes_obj)
         height_pos = MapStructure.MAP_WIDTH_BYTE_SIZE + MapStructure.MAP_HEIGHT_BYTE_SIZE
         width, height = (
             int.from_bytes(bytes_obj[:MapStructure.MAP_WIDTH_BYTE_SIZE]) + 1,

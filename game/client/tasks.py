@@ -15,7 +15,7 @@ from math import ceil
 from game.client.managers.player_manager import PlayerManager
 from game.network.builders.base_builder import BaseBuilder
 from game.network.builders.player_builder import PlayerBuilder
-from game.network.packet import Hasher, Compressor, fill, to_bytes, hex_len, Packet
+from game.network.packet import Hasher, fill, to_bytes, hex_len, Packet
 from game.network.protocol import Protocol
 from game.utils.exceptions import PlayerNameAlreadyExists, MaxPlayersReached
 
@@ -62,7 +62,7 @@ class ClientTasks:
         while data != Hasher.enhash(Protocol.MAPDATA_EOS):
             compressed_map_obj += data
             data = sock.recv(Protocol.BUFFER_SIZE)
-        return Compressor.decompress(compressed_map_obj.strip())
+        return compressed_map_obj.strip()
 
     @staticmethod
     def player_join(sock) -> bool:
