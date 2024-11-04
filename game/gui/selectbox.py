@@ -50,7 +50,7 @@ class SelectBox(Widget):
         self._open = False
         self._arrow_width = SelectBox.MAX_ARROW_WIDTH
         self._arrow_height = self._arrow_width / 2
-        self._arrow_colour = (255, 255, 255)
+        self._arrow_colour = (220, 220, 220)
         self._arrow_y_offset = 0
         self._value_surface = Surface((0, 0))
         self._value_slot_height = 0
@@ -62,7 +62,7 @@ class SelectBox(Widget):
         """
         if not self._enabled:
             return
-        self._arrow_colour = (255, 255, 255)
+        self._arrow_colour = (220, 220, 220)
         self._display_box.set_border_colour(self._arrow_colour)
         if self._open:
             self._arrow_colour = (120, 120, 120)
@@ -70,6 +70,9 @@ class SelectBox(Widget):
         elif self.is_hovering_over():
             self._arrow_colour = (180, 180, 180)
             self._display_box.set_border_colour((255, 255, 255))
+
+        self.update(window)
+        self._display_box.draw(window.screen)
 
         polygon(window.screen, self._arrow_colour, (
             (
@@ -89,8 +92,6 @@ class SelectBox(Widget):
                 self._y + self._height // 2 - self._arrow_height // 2 + self._arrow_height + self._arrow_y_offset
             ),
         ))
-        self.update(window)
-        self._display_box.draw(window.screen)
 
     def draw_value_list(self, window: Window) -> None:
         """
