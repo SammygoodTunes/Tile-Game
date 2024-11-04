@@ -82,6 +82,8 @@ class Game(Window):
                 pygame.WINDOWRESIZED,
                 pygame.WINDOWSIZECHANGED
             ]:
+                pygame.event.clear(pygame.WINDOWRESIZED)
+                pygame.event.clear(pygame.WINDOWSIZECHANGED)
                 if hasattr(e, 'x') and hasattr(e, 'y'):
                     self.resize(e)
                 self.update_all_uis()
