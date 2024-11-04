@@ -37,6 +37,8 @@ class WorldManager:
             self.local_world.initialise()
 
         tile_data_pos_end = tile_data_pos_start + length
-        self.local_world.get_map().set_compressed_tile_data(bytes_obj[tile_data_pos_start:tile_data_pos_end])
-        self.local_world.get_map().decompress_tile_data()
+        compressed_tile_data = bytes_obj[tile_data_pos_start:tile_data_pos_end]
+        if self.local_world.get_map().get_compressed_tile_data() != compressed_tile_data:
+            self.local_world.get_map().set_compressed_tile_data(compressed_tile_data)
+            self.local_world.get_map().decompress_tile_data()
         self.temp_data = bytes_obj[tile_data_pos_end:]
