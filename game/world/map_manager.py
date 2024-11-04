@@ -40,6 +40,7 @@ class Map:
         self.tile_manager = TileManager()
         self._dynatile_data: bytes = b''
         self._tile_data: bytes = b''
+        self._compressed_tile_data: bytes = b''
         self._seed: str = ''
         self._theme: dict = {}
         self._x = -width * TileProperties.TILE_SIZE // 2
@@ -67,12 +68,13 @@ class Map:
         """
         self._tile_data = b''
         self._dynatile_data = b'\x00' * ceil(self._width * self._height / 8)
+        progress: int = -1
         # Somehow make a call to set loading screen state to True
 
         self.set_state(MapStates.GENMAP)
         logger.info(f"Generating {self._width * self._height} tiles with seed {self._seed}...")
         # Handle info label on loading screen and set it to 'Generating map...'
-        progress: int = -1
+
         timer = time() - GameProperties.LOGGER_DELAY
         self.perlin_noise.MIN_HEIGHT = 0
         self.perlin_noise.MAX_HEIGHT = 0
@@ -94,36 +96,21 @@ class Map:
                 self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
                 break
 
-            '''if tile > 0:
-                if self._data[tile - offset - 1][0] == self._data[tile - offset][0]:
-                    self._data.pop()
-                    self._data[tile - offset - 1] = (self._data[tile - offset - 1][0], self._data[tile - offset - 1][1] + 1)
-                    offset += 1'''
-
             current_progress = round((tile_index + 1) / (self._width * self._height) * 100)
             if progress == current_progress:
                 continue
             progress = current_progress
-            # Set the loading screen progress bar value to 'progress'
+
             self.set_state(MapStates.GENMAP, progress)
             if time() - timer > GameProperties.LOGGER_DELAY:
                 logger.info(f'Generating map data... {progress}%')
                 timer = time()
 
+        logger.info('Compressing map...')
+        self.compress_tile_data()
+
         logger.debug(f'Generated map with {self.perlin_noise.MIN_HEIGHT=} {self.perlin_noise.MAX_HEIGHT=}')
-        # Update the loading screen UI to update its info label text
 
-        # Handler info label on loading screen and set it to 'Loading map...'
-        '''index = 0
-        for i, tile in enumerate(self._data):
-            for _ in range(tile[1]):
-                x: int = (index % self._width) * TileManager.TILE_SIZE
-                y: int = TileManager.TILE_SIZE * (index // self._width)
-                self.game.client.world.tile_manager.draw(x, y, tile[0], self._surface)
-                index += 1
-            self.game.screens.loading_screen.progress_bar.set_value(round((i + 1) / len(self._data) * 100))'''
-
-        # Update the loading screen UI to update its info label text
         if not self._tile_data:
             raise InvalidMapData
 
@@ -194,6 +181,63 @@ class Map:
                     self._dynatile_surface
                 )
         self._dynatile_data = new_dynatile_data
+
+    def compress_tile_data(self):
+        """
+        Compress the map's tile data, then return the map manager itself.
+        """
+        previous_tile: int = -1
+        amount: int = 1
+        self._compressed_tile_data: bytes = b''
+        length: int = len(self._tile_data) // TileStructure.TILE_BYTE_SIZE
+        for i in range(length):
+            tile = int.from_bytes(
+                    self._tile_data[
+                        i * TileStructure.TILE_BYTE_SIZE
+                        :i * TileStructure.TILE_BYTE_SIZE + TileStructure.TILE_BYTE_SIZE
+                    ]
+            )
+
+            if previous_tile < 0:
+                previous_tile = tile
+                continue
+
+            if previous_tile == tile:
+                amount += 1
+            else:
+                self._compressed_tile_data += (
+                        int.to_bytes(previous_tile, length=TileStructure.TILE_BYTE_SIZE)
+                        + int.to_bytes(amount, length=TileStructure.TILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+                )
+                amount = 1
+                previous_tile = tile
+
+            if i == length - 1:
+                self._compressed_tile_data += (
+                        int.to_bytes(tile, length=TileStructure.TILE_BYTE_SIZE)
+                        + int.to_bytes(amount, length=TileStructure.TILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+                )
+
+    def decompress_tile_data(self):
+        """
+        Decompress the map's tile data, then return the map manager itself.
+        """
+        self._tile_data = b''
+        sector_size = (TileStructure.TILE_BYTE_SIZE + TileStructure.TILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+        for i in range(len(self._compressed_tile_data) // sector_size):
+            tile = int.from_bytes(
+                self._compressed_tile_data[
+                    i * sector_size
+                    :i * sector_size + TileStructure.TILE_BYTE_SIZE
+                ]
+            )
+            amount = int.from_bytes(
+                self._compressed_tile_data[
+                    i * sector_size + TileStructure.TILE_BYTE_SIZE
+                    :i * sector_size + sector_size
+                ]
+            )
+            self._tile_data += int.to_bytes(tile, length=TileStructure.TILE_BYTE_SIZE) * amount
 
     def set_state(self, state: str = '', value: int = 0) -> Self:
         """
@@ -277,6 +321,21 @@ class Map:
         Return the map's tile data.
         """
         return self._tile_data
+
+    def set_compressed_tile_data(self, compressed_tile_data: bytes) -> Self:
+        """
+        Set the map's compressed tile data, then return the map manager itself.
+        The provided compressed tile data must be of same origin as that generated from the map manager's
+        tile data compression method.
+        """
+        self._compressed_tile_data = compressed_tile_data
+        return self
+
+    def get_compressed_tile_data(self) -> bytes:
+        """
+        Return the map's compressed tile data.
+        """
+        return self._compressed_tile_data
 
     def set_dynatile_data(self, dynatile_data: bytes):
         """

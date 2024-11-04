@@ -29,9 +29,14 @@ class WorldManager:
             int.from_bytes(bytes_obj[:MapStructure.MAP_WIDTH_BYTE_SIZE]) + 1,
             int.from_bytes(bytes_obj[MapStructure.MAP_WIDTH_BYTE_SIZE:height_pos]) + 1
         )
+        tile_data_pos_start = height_pos + MapStructure.MAP_TD_LEN_BYTE_SIZE
+        length = int.from_bytes(bytes_obj[height_pos:tile_data_pos_start])
+
         if update_map_size:
             self.local_world.get_map().set_size_in_tiles(width, height)
             self.local_world.initialise()
-        tile_data_pos = width * height * TileStructure.TILE_BYTE_SIZE + 2
-        self.local_world.get_map().set_tile_data(bytes_obj[height_pos:tile_data_pos])
-        self.temp_data = bytes_obj[tile_data_pos:]
+
+        tile_data_pos_end = tile_data_pos_start + length
+        self.local_world.get_map().set_compressed_tile_data(bytes_obj[tile_data_pos_start:tile_data_pos_end])
+        self.local_world.get_map().decompress_tile_data()
+        self.temp_data = bytes_obj[tile_data_pos_end:]

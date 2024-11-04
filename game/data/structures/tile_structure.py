@@ -21,6 +21,8 @@ class TileStructure:
     TILE_DAMAGE_BIT_SIZE = c_log2(TileProperties.TILE_DAMAGE_MAX)
     TILE_DAMAGE_DELAY_BIT_SIZE = c_log2(TileProperties.TILE_DAMAGE_DELAY_MAX)
 
+    TILE_ADJACENT_DUPLICATES_BYTE_SIZE = int(ceil(c_log2(TileProperties.TILE_ADJACENT_DUPLICATES_MAX) / 8))
+
     TILE_BYTE_SIZE = int(ceil((
         + TILE_X_BIT_SIZE
         + TILE_Y_BIT_SIZE

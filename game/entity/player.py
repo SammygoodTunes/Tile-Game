@@ -686,14 +686,6 @@ class Player:
                 self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
                 camera_obj.x, camera_obj.y = self._x, self._y
                 return
-        map_obj.set_dynatile(tile_x, tile_y, True)
-        map_obj.set_tile(tile_x, tile_y, Tiles.DIRT)
-        map_obj.tile_manager.draw(
-            tile_x * TileProperties.TILE_SIZE,
-            tile_y * TileProperties.TILE_SIZE,
-            Tiles.DIRT,
-            map_obj.get_dynatile_surface()
-        )
         self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
         camera_obj.x, camera_obj.y = self._x, self._y
 

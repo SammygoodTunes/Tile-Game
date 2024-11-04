@@ -44,6 +44,7 @@ class WorldHandler:
         )
         _map.set_tile(player_dict[PlayerBuilder.BROKEN_TILE_X], player_dict[PlayerBuilder.BROKEN_TILE_Y], Tiles.DIRT)
         _map.set_dynatile(player_dict[PlayerBuilder.BROKEN_TILE_X], player_dict[PlayerBuilder.BROKEN_TILE_Y], True)
+        _map.compress_tile_data()
 
     def get_map_data(self) -> bytes:
         """
@@ -52,9 +53,16 @@ class WorldHandler:
         return (
             int.to_bytes(self._world.get_map().get_width_in_tiles() - 1, length=MapStructure.MAP_WIDTH_BYTE_SIZE)
             + int.to_bytes(self._world.get_map().get_height_in_tiles() - 1, length=MapStructure.MAP_HEIGHT_BYTE_SIZE)
-            + self._world.get_map().get_tile_data()
+            + int.to_bytes(len(self._world.get_map().get_compressed_tile_data()), length=MapStructure.MAP_TD_LEN_BYTE_SIZE)
+            + self._world.get_map().get_compressed_tile_data()
             + self._world.get_map().get_dynatile_data()
         )
+
+    def set_world(self, world: World) -> None:
+        """
+        Set the server world.
+        """
+        self._world = world
 
     def get_world(self) -> World:
         """

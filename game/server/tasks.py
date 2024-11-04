@@ -54,12 +54,7 @@ class ServerTasks:
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.MAPDATA_REQ):
             print(f'Sending map to {addr}')
-            compressed_data_obj = Compressor.compress(
-                int.to_bytes(world_handler.get_world().get_map().get_width_in_tiles() - 1, length=MapStructure.MAP_WIDTH_BYTE_SIZE)
-                + int.to_bytes(world_handler.get_world().get_map().get_height_in_tiles() - 1, length=MapStructure.MAP_HEIGHT_BYTE_SIZE)
-                + world_handler.get_world().get_map().get_tile_data()
-                + world_handler.get_world().get_map().get_dynatile_data()
-            )
+            compressed_data_obj = Compressor.compress(world_handler.get_map_data())
             conn.send(Hasher.enhash(Protocol.MAPDATA_RES))
             conn.send(fill(compressed_data_obj))
             conn.send(Hasher.enhash(Protocol.MAPDATA_EOS))

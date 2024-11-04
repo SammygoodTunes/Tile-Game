@@ -89,3 +89,9 @@ def hex_len(data: bytes) -> bytes:
     Return length of data in hex. Used in packet header for determining data size.
     """
     return int.to_bytes(len(data), length=Packet.DATA_SIZE)
+
+def from_hex_len(length: bytes) -> int:
+    """
+    Return the length as an integer from a byte.
+    """
+    return int.from_bytes(length)
