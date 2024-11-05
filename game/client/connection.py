@@ -79,7 +79,6 @@ class Connection:
     def __init__(self, host: str, port: int, client) -> None:
         self.sock = XSocket()
         self.sock.settimeout(10.0)
-        self.sock.setblocking(True)
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE

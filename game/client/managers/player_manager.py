@@ -62,6 +62,8 @@ class PlayerManager:
             #player['lerp'] = round(clamp(player['lerp'] + 0.1, 0.0, 1.0), 3)
             screen_x = round(game.width // 2 - int(game.client.camera.x) + round(lerp(player['previous_x'], player['x'], player['lerp']), 2))
             screen_y = round(game.height // 2 - int(game.client.camera.y) + round(lerp(player['previous_y'], player['y'], player['lerp']), 2))
+            if screen_x < -32 or screen_x > game.width or screen_y < -32 or screen_y > game.height:
+                continue
             rect(game.screen, (200, 200, 220), (screen_x, screen_y, 32, 32))
             nametag = NameTag(text=player['name'], x=screen_x, y=screen_y - 20)
             nametag.resize(game)
