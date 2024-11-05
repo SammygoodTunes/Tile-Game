@@ -27,7 +27,7 @@ class PlayerManager:
 
     def set_players(self, players: list | bytes | None) -> Self:
         """
-        Set the players list and return the player manager itself.
+        Set the players list, then return the player manager itself.
         """
         if players is None:
             return self

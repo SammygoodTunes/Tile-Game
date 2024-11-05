@@ -56,9 +56,9 @@ class Client:
             game.clear(WorldProperties.SKY_COLOUR)
             self.world.draw(game)
             self.connection_handler.draw_other_players(game, game.clock.get_time() / 1000.0)
+            self.player.draw_gun_pointer(game)
             self.player.draw(game)
             self.player.draw_selection_grid(game)
-            self.player.draw_gun_pointer(game)
             self.player.main_hud.draw()
             self.player.update(game, self.world.get_map())
             if not self.player.is_dead():

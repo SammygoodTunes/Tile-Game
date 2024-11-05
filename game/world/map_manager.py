@@ -18,6 +18,7 @@ from game.data.states.map_states import MapStates
 from game.data.structures.tile_structure import TileStructure
 from game.data.themes.theme_layers import ThemeLayers
 from game.data.tiles.tile import Tile
+from game.data.tiles.tile_types import TileTypes
 from game.data.tiles.tiles import Tiles
 from game.utils.exceptions import InvalidMapData
 from game.utils.logger import logger
@@ -93,6 +94,13 @@ class Map:
                     if not layer['min_height'] <= noise_value < layer['max_height']:
                         continue
                 tile = vars(Tiles)[layer['tile']]
+                if (
+                        tile_index == self._width // 2 + self._height * (self._height // 2 - 1) or
+                        tile_index == self._width // 2 + self._height * self._height // 2 or
+                        tile_index == self._width // 2 - 1 + self._height * (self._height // 2 - 1) or
+                        tile_index == self._width // 2 - 1 + self._height * self._height // 2
+                ) and (tile in TileTypes.BREAKABLE or tile in TileTypes.LETHAL):
+                    tile = Tiles.DIRT
                 self._tile_data += int.to_bytes(tile.compress(), length=TileStructure.TILE_BYTE_SIZE)
                 break
 

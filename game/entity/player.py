@@ -172,11 +172,11 @@ class Player:
         if length == 0:
             return
         slope_x, slope_y = offset_x / length, offset_y / length
-        line_length = 16
+        line_length = 8
         for i in range(0, length // line_length, 2):
-            if i > 7:
+            if i > 15:
                 break
-            colour_anim: int = round(127.5 * math.sin((pygame.time.get_ticks() - i * 10) / 64) + 127.5)
+            colour_anim: int = round(127.5 * math.sin((pygame.time.get_ticks() - i * 50) / 64) + 127.5)
             pygame.draw.line(game.screen,(255, colour_anim // 2, colour_anim // 2),(
                     self.screen_x + 16 + (slope_x * i * line_length),
                     self.screen_y + 16 + (slope_y * i * line_length)
@@ -667,17 +667,16 @@ class Player:
             walls[7] = map_obj.get_tile(tile_x + 1, tile_y + 1) in TileTypes.BREAKABLE  # Lower right
         return walls
 
-    def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 10) -> None:
+    def set_ideal_spawn_point(self, map_obj: Map, camera_obj: Camera, nb_attempts: int = 5) -> None:
         """
         Find the ideal starting position for the player when creating a new map.
-        By default, ten consecutive failed attempts will place the player at the last randomised tile position.
+        By default, five consecutive attempts will be made to place the player in a safe randomised location.
+        If this fails, the player will be placed at the center of the map where safety is guaranteed.
         Setting the number of attempts to anything less than 1 will raise an exception.
         """
         if nb_attempts < 1:
             raise ZeroOrLessSpawnPlayerAttempts
 
-        tile_x: int = 0
-        tile_y: int = 0
         bad_tiles = TileTypes.BREAKABLE + (Tiles.LAVA,)
         for i in range(nb_attempts):
             tile_x = randint(0, map_obj.get_width_in_tiles() - 1)
@@ -686,6 +685,8 @@ class Player:
                 self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
                 camera_obj.x, camera_obj.y = self._x, self._y
                 return
+        tile_x = randint(map_obj.get_width_in_tiles() // 2 - 1, map_obj.get_width_in_tiles() // 2)
+        tile_y = randint(map_obj.get_height_in_tiles() // 2 - 1, map_obj.get_height_in_tiles() // 2)
         self._x, self._y = map_obj.tile_to_world_pos(tile_x, tile_y)
         camera_obj.x, camera_obj.y = self._x, self._y
 
