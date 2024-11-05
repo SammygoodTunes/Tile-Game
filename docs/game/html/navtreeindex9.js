@@ -1,5 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"namespacegame_1_1utils_1_1translator.html#a4a050cc0a96a71ff7eda9e0c55eb08ae":[0,0,0,8,3,2],
+"namespacegame_1_1utils_1_1translator.html#ad15273b74928ac5a20c40d6d0e17d90d":[0,0,0,8,3,0],
+"namespacegame_1_1world.html":[0,0,0,9],
+"namespacegame_1_1world_1_1camera.html":[0,0,0,9,0],
+"namespacegame_1_1world_1_1map__manager.html":[0,0,0,9,1],
+"namespacegame_1_1world_1_1synth.html":[0,0,0,9,2],
+"namespacegame_1_1world_1_1synth_1_1noise.html":[0,0,0,9,2,0],
+"namespacegame_1_1world_1_1theme__manager.html":[0,0,0,9,3],
+"namespacegame_1_1world_1_1tile__manager.html":[0,0,0,9,4],
+"namespacegame_1_1world_1_1world.html":[0,0,0,9,5],
 "namespacemembers.html":[0,1,0],
 "namespacemembers_func.html":[0,1,1],
 "namespacemembers_vars.html":[0,1,2],

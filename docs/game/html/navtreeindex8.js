@@ -1,5 +1,15 @@
 var NAVTREEINDEX8 =
 {
+"dir_6e4de05662227adfb71964c9b362ed35.html":[2,0,0,0],
+"dir_70b22e7852cf745b7dc1e62814304e85.html":[2,0,0,5],
+"dir_9d9456993d9b14e013bf56514181eb4d.html":[2,0,0,6,0],
+"dir_a7859cf717fdd6ac999eed8c591fb467.html":[2,0,0,4,0],
+"dir_b8076a4cb681e2f7837b41b28b4c92e4.html":[2,0,0,6],
+"dir_bc0b6c19bcf95f9c3d8e8793eb64ecfb.html":[2,0,0,7],
+"dir_d45d08d522185a52b605d7b2f808a55b.html":[2,0,0,8,0],
+"dir_d53bc4a4c4bcf5be03d8cf965b5cfc3d.html":[2,0,0,2,4],
+"dir_dfcd93edd39b176b9fdf3ce508a24a90.html":[2,0,0,2,0],
+"dir_e575f558ae6a5702fc3599c0f77a88a6.html":[2,0,0,2,2],
 "dir_eccfc24682ef79e86296997e6081dd9b.html":[2,0,0,2,3],
 "dir_fbfca0b62adf0c3e88b5ee06948e73e0.html":[2,0,0,1],
 "entity_2____init_____8py.html":[2,0,0,3,0],
@@ -13,8 +23,8 @@ var NAVTREEINDEX8 =
 "functions_d.html":[1,3,0,4],
 "functions_e.html":[1,3,0,5],
 "functions_f.html":[1,3,0,6],
-"functions_func.html":[1,3,1,0],
 "functions_func.html":[1,3,1],
+"functions_func.html":[1,3,1,0],
 "functions_func_a.html":[1,3,1,1],
 "functions_func_b.html":[1,3,1,2],
 "functions_func_c.html":[1,3,1,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX8 =
 "namespacegame_1_1utils_1_1tools.html#a3ed44a775ed03df2f15a1e2a26fe2655":[0,0,0,8,2,0],
 "namespacegame_1_1utils_1_1tools.html#a89cc06dcdc3a15b60cbb72bb0d3005ef":[0,0,0,8,2,1],
 "namespacegame_1_1utils_1_1translator.html":[0,0,0,8,3],
-"namespacegame_1_1utils_1_1translator.html#a25617c54a8dea8d4021ad62337eb43ef":[0,0,0,8,3,1],
-"namespacegame_1_1utils_1_1translator.html#a4a050cc0a96a71ff7eda9e0c55eb08ae":[0,0,0,8,3,2],
-"namespacegame_1_1utils_1_1translator.html#ad15273b74928ac5a20c40d6d0e17d90d":[0,0,0,8,3,0],
-"namespacegame_1_1world.html":[0,0,0,9],
-"namespacegame_1_1world_1_1camera.html":[0,0,0,9,0],
-"namespacegame_1_1world_1_1map__manager.html":[0,0,0,9,1],
-"namespacegame_1_1world_1_1synth.html":[0,0,0,9,2],
-"namespacegame_1_1world_1_1synth_1_1noise.html":[0,0,0,9,2,0],
-"namespacegame_1_1world_1_1theme__manager.html":[0,0,0,9,3],
-"namespacegame_1_1world_1_1tile__manager.html":[0,0,0,9,4],
-"namespacegame_1_1world_1_1world.html":[0,0,0,9,5]
+"namespacegame_1_1utils_1_1translator.html#a25617c54a8dea8d4021ad62337eb43ef":[0,0,0,8,3,1]
 };

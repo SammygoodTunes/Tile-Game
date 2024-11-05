@@ -163,6 +163,7 @@
   </compound>
   <compound refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure" kind="class"><name>game::data::structures::tile_structure::DynatileStructure</name>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a793e9944bef55bdb0b56023aaf082f4e" kind="variable"><name>DYNATILE_STATE_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a0f8528dfa61d5666ecb5c56c54c4c7fa" kind="variable"><name>DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1core_1_1game_1_1Game" kind="class"><name>game::core::game::Game</name>
     <member refid="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" kind="variable"><name>client</name></member>
@@ -477,6 +478,7 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" kind="variable"><name>_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" kind="variable"><name>_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ae51c7b8e586ec5bfe7e0109eb21773da" kind="variable"><name>_theme</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aab8aff2f6a879a27f0be8ebc9e3e81b1" kind="variable"><name>_compressed_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a0f9dc9c64bfa30627916274db68c8031" kind="variable"><name>_compressed_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" kind="variable"><name>_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" kind="variable"><name>_seed</name></member>
@@ -486,8 +488,10 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" kind="function"><name>load</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a9e02ed127e75f7f0117a082784e9dbe0" kind="function"><name>regenerate</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a5aa591762cc9ae0f6f43a70bf630b621" kind="function"><name>compress_tile_data</name></member>
-    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa485ad1c89a640a0b6eeeecf34a184f1" kind="function"><name>decompress_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a8c42c90eae4917b38213010ea1fe59cf" kind="function"><name>compress_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a4aa46af0af04d3c4d2aeba05fc780739" kind="function"><name>decompress_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a20dfd7032132f269b6f17087cce152cc" kind="function"><name>compress_dynatile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a6b4cd6220dad4b84b6e64782a951b229" kind="function"><name>decompress_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e" kind="function"><name>set_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4" kind="function"><name>get_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" kind="function"><name>get_tile_pos</name></member>
@@ -505,6 +509,8 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c" kind="function"><name>get_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" kind="function"><name>set_dynatile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a80e4edb6432df7d72e8b62d40f2f59ec" kind="function"><name>get_dynatile</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a63248992bc8868c0265ea287749b1759" kind="function"><name>set_compressed_dynatile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a5130289923fb8836dcd935558838ef0b" kind="function"><name>get_compressed_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a8df8c4c0fff8f94ca48bd04a3ef4b09a" kind="function"><name>randomise_seed</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1adc86ef6fd43e59817c4868fd50349dc0" kind="function"><name>set_seed</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a33d6fc1feb01e1dcb83a470b5a1f6bcc" kind="function"><name>get_seed</name></member>

@@ -18,5 +18,6 @@ var searchData=
   ['dirt_15',['DIRT',['../classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles.html#ad0d9e5fe31b1948a67c0ebdb74f33180',1,'game::data::tiles::tiles::Tiles']]],
   ['disconnect_5fbutton_16',['disconnect_button',['../classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen.html#a110b5a4bcf4fe83c5c8ee53755673cf8',1,'game.gui.screens.gameover_screen.GameoverScreen.disconnect_button'],['../classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen.html#a8c31c73bbe626e4850fb596cf9f1fee5',1,'game.gui.screens.pause_screen.PauseScreen.disconnect_button']]],
   ['disconnect_5freq_17',['DISCONNECT_REQ',['../classgame_1_1network_1_1protocol_1_1Protocol.html#a51374d6f41d403c8049c372af0a28614',1,'game::network::protocol::Protocol']]],
-  ['dynatile_5fstate_5fbyte_5fsize_18',['DYNATILE_STATE_BYTE_SIZE',['../classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html#a793e9944bef55bdb0b56023aaf082f4e',1,'game::data::structures::tile_structure::DynatileStructure']]]
+  ['dynatile_5fadjacent_5fduplicates_5fbyte_5fsize_18',['DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE',['../classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html#a0f8528dfa61d5666ecb5c56c54c4c7fa',1,'game::data::structures::tile_structure::DynatileStructure']]],
+  ['dynatile_5fstate_5fbyte_5fsize_19',['DYNATILE_STATE_BYTE_SIZE',['../classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure.html#a793e9944bef55bdb0b56023aaf082f4e',1,'game::data::structures::tile_structure::DynatileStructure']]]
 ];

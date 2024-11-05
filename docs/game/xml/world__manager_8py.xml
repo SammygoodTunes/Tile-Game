@@ -56,8 +56,9 @@
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.local_world.get_map().get_compressed_tile_data()<sp/>!=<sp/>compressed_tile_data:</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.local_world.get_map().set_compressed_tile_data(compressed_tile_data)</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.local_world.get_map().decompress_tile_data()</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" kindref="member">temp_data</ref><sp/>=<sp/>bytes_obj[tile_data_pos_end:]</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compressed_dynatile_data<sp/>=<sp/>bytes_obj[tile_data_pos_end:]</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" kindref="member">temp_data</ref><sp/>=<sp/>compressed_dynatile_data</highlight></codeline>
     </programlisting>
-    <location file="game/client/managers/world_manager.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py"/>
   </compounddef>
 </doxygen>

@@ -60,7 +60,8 @@
 <codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47" refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a793e9944bef55bdb0b56023aaf082f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DYNATILE_STATE_BYTE_SIZE<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="48" refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a0f8528dfa61d5666ecb5c56c54c4c7fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE<sp/>=<sp/>int(ceil(c_log2(TileProperties.TILE_ADJACENT_DUPLICATES_MAX<sp/>//<sp/>8)<sp/>/<sp/>8))</highlight></codeline>
     </programlisting>
-    <location file="game/data/structures/tile_structure.py"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py"/>
   </compounddef>
 </doxygen>

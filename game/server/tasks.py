@@ -19,6 +19,7 @@ from game.network.packet import Hasher, Compressor, Packet, fill, to_bytes, hex_
 from game.network.protocol import Protocol
 from game.server.handlers.player_handler import PlayerHandler
 from game.server.handlers.world_handler import WorldHandler
+from game.utils.logger import logger
 
 
 class ServerTasks:
@@ -40,7 +41,7 @@ class ServerTasks:
         """
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.RECOGNITION_REQ):
-            print(f'Sending recognition message to {addr}')
+            logger.info(f'Sending recognition message to {addr}')
             conn.send(Hasher.enhash(Protocol.RECOGNITION_RES))
             return True
         return False
@@ -52,12 +53,12 @@ class ServerTasks:
         """
         data = conn.recv(Protocol.BUFFER_SIZE)
         if data and data == Hasher.enhash(Protocol.MAPDATA_REQ):
-            print(f'Sending map to {addr}')
+            logger.info(f'Sending map to {addr}')
             compressed_data_obj = Compressor.compress(world_handler.get_map_data())
             conn.send(Hasher.enhash(Protocol.MAPDATA_RES))
             conn.send(fill(compressed_data_obj))
             conn.send(Hasher.enhash(Protocol.MAPDATA_EOS))
-            print(f'Sent!')
+            logger.info(f'Sent!')
 
     @staticmethod
     def player_join(conn, player_handler: PlayerHandler) -> str:

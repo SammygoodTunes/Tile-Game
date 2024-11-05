@@ -16,7 +16,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/data/structures/tile_structure.py" line="47" column="1" bodyfile="game/data/structures/tile_structure.py" bodystart="47" bodyend="-1"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a0f8528dfa61d5666ecb5c56c54c4c7fa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>game.data.structures.tile_structure.DynatileStructure::DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE</name>
+        <qualifiedname>game.data.structures.tile_structure.DynatileStructure.DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE</qualifiedname>
+        <initializer>=  int(ceil(c_log2(<ref refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ab7e0787b5ae80aeabc7bf97c51157654" kindref="member">TileProperties.TILE_ADJACENT_DUPLICATES_MAX</ref> // 8) / 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="48" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="48" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -26,8 +41,9 @@
 No pre-defined dynatile bit size as it can vary.
 </verbatim> </para>
     </detaileddescription>
-    <location file="game/data/structures/tile_structure.py" line="41" column="1" bodyfile="game/data/structures/tile_structure.py" bodystart="41" bodyend="48"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/structures/tile_structure.py" bodystart="41" bodyend="49"/>
     <listofallmembers>
+      <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a0f8528dfa61d5666ecb5c56c54c4c7fa" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::DynatileStructure</scope><name>DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE</name></member>
       <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1DynatileStructure_1a793e9944bef55bdb0b56023aaf082f4e" prot="public" virt="non-virtual"><scope>game::data::structures::tile_structure::DynatileStructure</scope><name>DYNATILE_STATE_BYTE_SIZE</name></member>
     </listofallmembers>
   </compounddef>

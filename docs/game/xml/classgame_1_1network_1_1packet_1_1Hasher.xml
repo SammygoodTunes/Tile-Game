@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/packet.py" line="30" column="1" bodyfile="game/network/packet.py" bodystart="30" bodyend="35"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="30" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -42,7 +42,7 @@ Return hash of size BUFFER_SIZE.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="game/network/packet.py" line="37" column="1" bodyfile="game/network/packet.py" bodystart="37" bodyend="44"/>
+        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="37" bodyend="44"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@ Return hash of size BUFFER_SIZE.
 Used for sending and receiving protocol commands from the client/server.
 </verbatim> </para>
     </detaileddescription>
-    <location file="game/network/packet.py" line="23" column="1" bodyfile="game/network/packet.py" bodystart="23" bodyend="44"/>
+    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="23" bodyend="44"/>
     <listofallmembers>
       <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" prot="public" virt="non-virtual"><scope>game::network::packet::Hasher</scope><name>enhash</name></member>
       <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a00c904647ae4ef8293eddd07a7bc1a46" prot="public" virt="non-virtual"><scope>game::network::packet::Hasher</scope><name>hash</name></member>

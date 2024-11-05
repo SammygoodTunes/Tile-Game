@@ -21,8 +21,7 @@ class PlayerHandler:
         Track the specified player by adding them to the players list.
         """
         self._players.append(player)
-        logger.info(f'{player["name"]} joined the server.')
-        print(f'Welcome, {player["name"]}!')
+        logger.info(f'{player["name"]} joined the server. Welcome!')
         return player['name']
 
     def update_player(self, player: dict) -> None:

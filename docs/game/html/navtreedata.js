@@ -59,8 +59,8 @@ var NAVTREEINDEX =
 "classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html",
 "classgame_1_1gui_1_1slot_1_1Slot.html#a0b20dcd9a0005acd652eefcb90a4eefa",
 "classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached.html#af2189f07dc3d02224744605f71b0f7a4",
-"dir_eccfc24682ef79e86296997e6081dd9b.html",
-"namespacemembers.html"
+"dir_6e4de05662227adfb71964c9b362ed35.html",
+"namespacegame_1_1utils_1_1translator.html#a4a050cc0a96a71ff7eda9e0c55eb08ae"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

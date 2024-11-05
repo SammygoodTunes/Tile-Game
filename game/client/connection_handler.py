@@ -14,6 +14,7 @@ from time import time
 
 from game.client.connection import Connection, Tasks
 from game.data.states.connection_states import ConnectionStates
+from game.utils.logger import logger
 from game.world.world import World
 
 
@@ -100,7 +101,7 @@ class ConnectionHandler:
         Queue a packet in the packet queue.
         """
         if not self.connection:
-            print('Cannot queue packet as connection has not been started.')
+            logger.error('Cannot queue packet as connection has not been started.')
             return
         self.connection.packet_queue.append(packet)
 
