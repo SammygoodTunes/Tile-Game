@@ -106,6 +106,17 @@ var annotated_dup =
             [ "TileStructure", "classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure.html", null ]
           ] ]
         ] ],
+        [ "themes", "namespacegame_1_1data_1_1themes.html", [
+          [ "theme", "namespacegame_1_1data_1_1themes_1_1theme.html", [
+            [ "Theme", "classgame_1_1data_1_1themes_1_1theme_1_1Theme.html", "classgame_1_1data_1_1themes_1_1theme_1_1Theme" ]
+          ] ],
+          [ "theme_layers", "namespacegame_1_1data_1_1themes_1_1theme__layers.html", [
+            [ "ThemeLayers", "classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers.html", null ]
+          ] ],
+          [ "themes", "namespacegame_1_1data_1_1themes_1_1themes.html", [
+            [ "Themes", "classgame_1_1data_1_1themes_1_1themes_1_1Themes.html", null ]
+          ] ]
+        ] ],
         [ "tiles", "namespacegame_1_1data_1_1tiles.html", [
           [ "tile", "namespacegame_1_1data_1_1tiles_1_1tile.html", [
             [ "Tile", "classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html", "classgame_1_1data_1_1tiles_1_1tile_1_1Tile" ]
@@ -201,8 +212,14 @@ var annotated_dup =
             [ "ServerMenuScreen", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen.html", "classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" ]
           ] ]
         ] ],
+        [ "selectbox", "namespacegame_1_1gui_1_1selectbox.html", [
+          [ "SelectBox", "classgame_1_1gui_1_1selectbox_1_1SelectBox.html", "classgame_1_1gui_1_1selectbox_1_1SelectBox" ]
+        ] ],
         [ "slot", "namespacegame_1_1gui_1_1slot.html", [
           [ "Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", "classgame_1_1gui_1_1slot_1_1Slot" ]
+        ] ],
+        [ "tooltip", "namespacegame_1_1gui_1_1tooltip.html", [
+          [ "Tooltip", "classgame_1_1gui_1_1tooltip_1_1Tooltip.html", "classgame_1_1gui_1_1tooltip_1_1Tooltip" ]
         ] ],
         [ "widget", "namespacegame_1_1gui_1_1widget.html", [
           [ "Widget", "classgame_1_1gui_1_1widget_1_1Widget.html", "classgame_1_1gui_1_1widget_1_1Widget" ]
@@ -264,6 +281,9 @@ var annotated_dup =
           [ "noise", "namespacegame_1_1world_1_1synth_1_1noise.html", [
             [ "PerlinNoise", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise" ]
           ] ]
+        ] ],
+        [ "theme_manager", "namespacegame_1_1world_1_1theme__manager.html", [
+          [ "ThemeManager", "classgame_1_1world_1_1theme__manager_1_1ThemeManager.html", null ]
         ] ],
         [ "tile_manager", "namespacegame_1_1world_1_1tile__manager.html", [
           [ "TileManager", "classgame_1_1world_1_1tile__manager_1_1TileManager.html", "classgame_1_1world_1_1tile__manager_1_1TileManager" ]

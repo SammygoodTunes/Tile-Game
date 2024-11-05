@@ -15,9 +15,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="36" bodyend="-1"/>
-        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" compoundref="client_8py" startline="80" endline="86">game.client.client.Client.stop</referencedby>
-        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="47" endline="66">game.client.client.Client.update</referencedby>
+        <location file="game/client/client.py" line="37" column="1" bodyfile="game/client/client.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" compoundref="client_8py" startline="83" endline="89">game.client.client.Client.stop</referencedby>
+        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="49" endline="68">game.client.client.Client.update</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="35" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="35" bodyend="40"/>
+        <location file="game/client/client.py" line="36" column="1" bodyfile="game/client/client.py" bodystart="36" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a45113087d5a92fa359a00b1a9357ea3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="41" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="41" bodyend="46"/>
+        <location file="game/client/client.py" line="42" column="1" bodyfile="game/client/client.py" bodystart="42" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -85,11 +85,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="47" bodyend="66"/>
-        <references refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" compoundref="client_8py" startline="36">game.client.client.Client.connection_handler</references>
-        <references refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="47" endline="66">game.client.client.Client.update</references>
+        <location file="game/client/client.py" line="49" column="1" bodyfile="game/client/client.py" bodystart="49" bodyend="68"/>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" compoundref="client_8py" startline="37">game.client.client.Client.connection_handler</references>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="49" endline="68">game.client.client.Client.update</references>
+        <referencedby refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a752f1839a8dad733f04d18a3d255a42b" compoundref="selectbox_8py" startline="59" endline="95">game.gui.selectbox.SelectBox.draw</referencedby>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
-        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="47" endline="66">game.client.client.Client.update</referencedby>
+        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a4cda6e1e5a62d8c3a0ac567d5ae8b298" compoundref="client_8py" startline="49" endline="68">game.client.client.Client.update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1ab5e9c02ccb7bc945719f06cdfd8bb730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -109,25 +110,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="67" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="67" bodyend="72"/>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" compoundref="playerlist__screen_8py" startline="28" endline="43">game.gui.screens.playerlist_screen.PlayerListScreen.draw</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" compoundref="serverconnect__screen_8py" startline="90" endline="96">game.gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41" compoundref="crash__screen_8py" startline="53" endline="61">game.gui.screens.crash_screen.CrashScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3" compoundref="credits__screen_8py" startline="96" endline="110">game.gui.screens.credits_screen.CreditsScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" compoundref="gameover__screen_8py" startline="60" endline="69">game.gui.screens.gameover_screen.GameoverScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6" compoundref="loading__screen_8py" startline="56" endline="63">game.gui.screens.loading_screen.LoadingScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" compoundref="main__hud_8py" startline="128" endline="145">game.gui.screens.main_hud.MainHud.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" compoundref="mainmenu__screen_8py" startline="82" endline="95">game.gui.screens.mainmenu_screen.MainMenuScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" compoundref="map__screen_8py" startline="141" endline="148">game.gui.screens.map_screen.MapScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23" compoundref="options__screen_8py" startline="101" endline="113">game.gui.screens.options_screen.OptionsScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c" compoundref="pause__screen_8py" startline="60" endline="69">game.gui.screens.pause_screen.PauseScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="82" endline="92">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" compoundref="serverconnect__screen_8py" startline="97" endline="105">game.gui.screens.serverconnect_screen.ServerConnectScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" compoundref="servercreate__screen_8py" startline="91" endline="103">game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" compoundref="serverjoin__screen_8py" startline="108" endline="121">game.gui.screens.serverjoin_screen.ServerJoinScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" compoundref="servermenu__screen_8py" startline="66" endline="76">game.gui.screens.servermenu_screen.ServerMenuScreen.set_state</referencedby>
-        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" compoundref="game_8py" startline="83" endline="89">game.core.game.Game.update_all_uis</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" compoundref="serverconnect__screen_8py" startline="59" endline="89">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label</referencedby>
+        <location file="game/client/client.py" line="69" column="1" bodyfile="game/client/client.py" bodystart="69" bodyend="75"/>
+        <referencedby refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1acc1abe9922dd0de00eb9cca3663d4f32" compoundref="screen__manager_8py" startline="203" endline="210">game.gui.screen_manager.Screens.perform_translation</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad8331e211329d45a117b496acc69f15b" compoundref="serverconnect__screen_8py" startline="80" endline="86">game.gui.screens.serverconnect_screen.ServerConnectScreen.reset_info_label</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41" compoundref="crash__screen_8py" startline="41" endline="46">game.gui.screens.crash_screen.CrashScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3" compoundref="credits__screen_8py" startline="75" endline="86">game.gui.screens.credits_screen.CreditsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" compoundref="gameover__screen_8py" startline="62" endline="68">game.gui.screens.gameover_screen.GameoverScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6" compoundref="loading__screen_8py" startline="34" endline="38">game.gui.screens.loading_screen.LoadingScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" compoundref="main__hud_8py" startline="123" endline="137">game.gui.screens.main_hud.MainHud.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" compoundref="mainmenu__screen_8py" startline="106" endline="116">game.gui.screens.mainmenu_screen.MainMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a6373f9281fdf6f2af15e13a14654ac83" compoundref="map__screen_8py" startline="129" endline="133">game.gui.screens.map_screen.MapScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a104e73a51ff7598cfe05346340438e23" compoundref="options__screen_8py" startline="116" endline="127">game.gui.screens.options_screen.OptionsScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c" compoundref="pause__screen_8py" startline="62" endline="68">game.gui.screens.pause_screen.PauseScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" compoundref="playerlist__screen_8py" startline="86" endline="93">game.gui.screens.playerlist_screen.PlayerListScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" compoundref="serverconnect__screen_8py" startline="87" endline="92">game.gui.screens.serverconnect_screen.ServerConnectScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" compoundref="servercreate__screen_8py" startline="173" endline="189">game.gui.screens.servercreate_screen.ServerCreateScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" compoundref="serverjoin__screen_8py" startline="120" endline="134">game.gui.screens.serverjoin_screen.ServerJoinScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" compoundref="servermenu__screen_8py" startline="83" endline="90">game.gui.screens.servermenu_screen.ServerMenuScreen.set_state</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" compoundref="serverconnect__screen_8py" startline="47" endline="79">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_info_label</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -155,9 +155,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="73" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="73" bodyend="79"/>
-        <references refid="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" compoundref="client_8py" startline="73" endline="79">game.client.client.Client.events</references>
-        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" compoundref="client_8py" startline="73" endline="79">game.client.client.Client.events</referencedby>
+        <location file="game/client/client.py" line="76" column="1" bodyfile="game/client/client.py" bodystart="76" bodyend="82"/>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" compoundref="client_8py" startline="76" endline="82">game.client.client.Client.events</references>
+        <referencedby refid="classgame_1_1client_1_1client_1_1Client_1a2e294f1b664b6e855cf7ce2cdaf735ab" compoundref="client_8py" startline="76" endline="82">game.client.client.Client.events</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -177,11 +177,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="80" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="80" bodyend="86"/>
-        <references refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" compoundref="client_8py" startline="36">game.client.client.Client.connection_handler</references>
-        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" compoundref="game_8py" startline="54" endline="82">game.core.game.Game.all_events</referencedby>
-        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" compoundref="game_8py" startline="96" endline="119">game.core.game.Game.crash</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="144" endline="156">game.server.server.Server.safe_closure</referencedby>
+        <location file="game/client/client.py" line="83" column="1" bodyfile="game/client/client.py" bodystart="83" bodyend="89"/>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" compoundref="client_8py" startline="37">game.client.client.Client.connection_handler</references>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" compoundref="game_8py" startline="68" endline="98">game.core.game.Game.all_events</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" compoundref="game_8py" startline="125" endline="148">game.core.game.Game.crash</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="146" endline="158">game.server.server.Server.safe_closure</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -190,7 +190,7 @@
 <para><verbatim>Class for all client-related tasks like client-side rendering and handling the connection.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/client.py" bodystart="30" bodyend="86"/>
+    <location file="game/client/client.py" line="31" column="1" bodyfile="game/client/client.py" bodystart="31" bodyend="89"/>
     <listofallmembers>
       <member refid="classgame_1_1client_1_1client_1_1Client_1a98e94d95bb79b4c509d59a5320ac2a6e" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>__init__</name></member>
       <member refid="classgame_1_1client_1_1client_1_1Client_1a0210e752bd89af085143ec3315a1ff2d" prot="public" virt="non-virtual"><scope>game::client::client::Client</scope><name>connection_handler</name></member>

@@ -104,13 +104,11 @@ $(function(){initNavTree('classgame_1_1client_1_1managers_1_1world__manager_1_1W
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a648286e0e40df5ae203b247835c13ab7" id="r_a648286e0e40df5ae203b247835c13ab7"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a648286e0e40df5ae203b247835c13ab7">__init__</a> (self, world)</td></tr>
 <tr class="separator:a648286e0e40df5ae203b247835c13ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa93ddfd2e75a6df386e4a798e58bca" id="r_adfa93ddfd2e75a6df386e4a798e58bca"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfa93ddfd2e75a6df386e4a798e58bca">build_world_from_bytes</a> (self, bytes bytes_obj)</td></tr>
-<tr class="separator:adfa93ddfd2e75a6df386e4a798e58bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e820c1d0946cf7d65aa89dab6fd686" id="r_a33e820c1d0946cf7d65aa89dab6fd686"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e820c1d0946cf7d65aa89dab6fd686">build_world_from_bytes</a> (self, bytes bytes_obj, update_map_size=False)</td></tr>
+<tr class="separator:a33e820c1d0946cf7d65aa89dab6fd686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab33122caa942952eedf5819876a45c0c" id="r_ab33122caa942952eedf5819876a45c0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33122caa942952eedf5819876a45c0c">local_world</a></td></tr>
-<tr class="separator:ab33122caa942952eedf5819876a45c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f71f56834e5fd652ec3cc79be975412" id="r_a2f71f56834e5fd652ec3cc79be975412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f71f56834e5fd652ec3cc79be975412">temp_data</a></td></tr>
 <tr class="separator:a2f71f56834e5fd652ec3cc79be975412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -139,8 +137,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adfa93ddfd2e75a6df386e4a798e58bca" name="adfa93ddfd2e75a6df386e4a798e58bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfa93ddfd2e75a6df386e4a798e58bca">&#9670;&#160;</a></span>build_world_from_bytes()</h2>
+<a id="a33e820c1d0946cf7d65aa89dab6fd686" name="a33e820c1d0946cf7d65aa89dab6fd686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e820c1d0946cf7d65aa89dab6fd686">&#9670;&#160;</a></span>build_world_from_bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +151,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bytes</td>          <td class="paramname"><span class="paramname"><em>bytes_obj</em></span>&#160;)</td>
+          <td class="paramtype">bytes</td>          <td class="paramname"><span class="paramname"><em>bytes_obj</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>update_map_size</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -162,20 +165,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab33122caa942952eedf5819876a45c0c" name="ab33122caa942952eedf5819876a45c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab33122caa942952eedf5819876a45c0c">&#9670;&#160;</a></span>local_world</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">game.client.managers.world_manager.WorldManager.local_world</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2f71f56834e5fd652ec3cc79be975412" name="a2f71f56834e5fd652ec3cc79be975412"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f71f56834e5fd652ec3cc79be975412">&#9670;&#160;</a></span>temp_data</h2>
 
@@ -199,7 +188,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegame.html">game</a></li><li class="navelem"><a class="el" href="namespacegame_1_1client.html">client</a></li><li class="navelem"><a class="el" href="namespacegame_1_1client_1_1managers.html">managers</a></li><li class="navelem"><a class="el" href="namespacegame_1_1client_1_1managers_1_1world__manager.html">world_manager</a></li><li class="navelem"><a class="el" href="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager.html">WorldManager</a></li>
-    <li class="footer">Generated on Fri Oct 18 2024 00:04:14 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Tue Nov 5 2024 15:51:42 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

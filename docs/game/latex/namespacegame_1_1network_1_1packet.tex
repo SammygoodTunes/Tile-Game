@@ -17,6 +17,8 @@ bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_a8b7c3651a7c65a3755dec
 bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_ac5c4f132554ab17c7f18ce9f435d06c9}{to\+\_\+bytes}} (str data)
 \item 
 bytes \mbox{\hyperlink{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19}{hex\+\_\+len}} (bytes data)
+\item 
+int \mbox{\hyperlink{namespacegame_1_1network_1_1packet_a79d9e6c1d9bd9fd24b575439bdeb2238}{from\+\_\+hex\+\_\+len}} (bytes length)
 \end{DoxyCompactItemize}
 
 
@@ -35,6 +37,14 @@ This module defines a set of methods for hashing, compressing and altering data 
 {\footnotesize\ttfamily  bytes game.\+network.\+packet.\+fill (\begin{DoxyParamCaption}\item[{bytes}]{data }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Fill the packet with empty data if its size is not a multiple of BUFFER_SIZE.
+\end{DoxyVerb}
+ \Hypertarget{namespacegame_1_1network_1_1packet_a79d9e6c1d9bd9fd24b575439bdeb2238}\label{namespacegame_1_1network_1_1packet_a79d9e6c1d9bd9fd24b575439bdeb2238} 
+\index{game.network.packet@{game.network.packet}!from\_hex\_len@{from\_hex\_len}}
+\index{from\_hex\_len@{from\_hex\_len}!game.network.packet@{game.network.packet}}
+\doxysubsubsection{\texorpdfstring{from\_hex\_len()}{from\_hex\_len()}}
+{\footnotesize\ttfamily  int game.\+network.\+packet.\+from\+\_\+hex\+\_\+len (\begin{DoxyParamCaption}\item[{bytes}]{length }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the length as an integer from a byte.
 \end{DoxyVerb}
  \Hypertarget{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19}\label{namespacegame_1_1network_1_1packet_a0a51168c9386fe194dc8297432d28d19} 
 \index{game.network.packet@{game.network.packet}!hex\_len@{hex\_len}}

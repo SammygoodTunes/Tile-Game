@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1gui_1_1tooltip_1_1Tooltip" kind="class" language="Python" prot="public">
+    <compoundname>game::gui::tooltip::Tooltip</compoundname>
+    <basecompoundref refid="classgame_1_1gui_1_1widget_1_1Widget" prot="public" virt="non-virtual">game.gui.widget.Widget</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.tooltip.Tooltip::_label</definition>
+        <argsstring></argsstring>
+        <name>_label</name>
+        <qualifiedname>game.gui.tooltip.Tooltip._label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="23" column="1" bodyfile="game/gui/tooltip.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" compoundref="tooltip_8py" startline="35" endline="42">game.gui.tooltip.Tooltip.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" compoundref="tooltip_8py" startline="54" endline="59">game.gui.tooltip.Tooltip.get_text</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a63b9dcf2c798126a21ac9d2074dd4206" compoundref="tooltip_8py" startline="26" endline="34">game.gui.tooltip.Tooltip.initialise_surface</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" compoundref="tooltip_8py" startline="47" endline="53">game.gui.tooltip.Tooltip.set_text</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" compoundref="tooltip_8py" startline="43" endline="46">game.gui.tooltip.Tooltip.update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1affd99fbcf9f58e728062c4bd37af525a" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.gui.tooltip.Tooltip::_surface</definition>
+        <argsstring></argsstring>
+        <name>_surface</name>
+        <qualifiedname>game.gui.tooltip.Tooltip._surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="24" column="1" bodyfile="game/gui/tooltip.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d" compoundref="hotbar_8py" startline="22" endline="30">game.gui.hotbar.Hotbar.__init__</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" compoundref="tooltip_8py" startline="35" endline="42">game.gui.tooltip.Tooltip.draw</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af598c523baecdb8813abcad8c13f2588" compoundref="map__manager_8py" startline="292" endline="298">game.world.map_manager.Map.draw_tile</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e" compoundref="map__manager_8py" startline="483" endline="488">game.world.map_manager.Map.get_surface</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" compoundref="map__manager_8py" startline="55" endline="65">game.world.map_manager.Map.initialise</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" compoundref="map__manager_8py" startline="126" endline="150">game.world.map_manager.Map.load</referencedby>
+        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" compoundref="map__manager_8py" startline="167" endline="192">game.world.map_manager.Map.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" compoundref="tooltip_8py" startline="43" endline="46">game.gui.tooltip.Tooltip.update</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1af12ee9fb5d22fb957478f8ed74f7de48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.tooltip.Tooltip.__init__</definition>
+        <argsstring>(self, int x=0, int y=0, str text=&apos;&apos;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.__init__</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1abe90fe2a9c084ad71c7f78504612f6b0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="21" column="1" bodyfile="game/gui/tooltip.py" bodystart="21" bodyend="25"/>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1af12ee9fb5d22fb957478f8ed74f7de48" compoundref="tooltip_8py" startline="21" endline="25">game.gui.tooltip.Tooltip.__init__</references>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1af12ee9fb5d22fb957478f8ed74f7de48" compoundref="tooltip_8py" startline="21" endline="25">game.gui.tooltip.Tooltip.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a63b9dcf2c798126a21ac9d2074dd4206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Surface</type>
+        <definition> Surface game.gui.tooltip.Tooltip.initialise_surface</definition>
+        <argsstring>(self)</argsstring>
+        <name>initialise_surface</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.initialise_surface</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialise the tooltip&apos;s surface.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="26" column="1" bodyfile="game/gui/tooltip.py" bodystart="26" bodyend="34"/>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" compoundref="tooltip_8py" startline="23">game.gui.tooltip.Tooltip._label</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1aa0ddf899cddd9df9f5764ce3bc8fe133" compoundref="widget_8py" startline="168" endline="173">game.gui.widget.Widget.get_height</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1aac96128e55909ef9e9bbbeb7d8052c29" compoundref="widget_8py" startline="155" endline="160">game.gui.widget.Widget.get_width</references>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" compoundref="tooltip_8py" startline="43" endline="46">game.gui.tooltip.Tooltip.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" compoundref="credits__screen_8py" startline="49" endline="74">game.gui.screens.credits_screen.CreditsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" compoundref="gameover__screen_8py" startline="36" endline="61">game.gui.screens.gameover_screen.GameoverScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" compoundref="loading__screen_8py" startline="28" endline="33">game.gui.screens.loading_screen.LoadingScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" compoundref="main__hud_8py" startline="95" endline="122">game.gui.screens.main_hud.MainHud.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" compoundref="map__screen_8py" startline="118" endline="128">game.gui.screens.map_screen.MapScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" compoundref="options__screen_8py" startline="83" endline="115">game.gui.screens.options_screen.OptionsScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" compoundref="pause__screen_8py" startline="35" endline="61">game.gui.screens.pause_screen.PauseScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" compoundref="serverconnect__screen_8py" startline="36" endline="46">game.gui.screens.serverconnect_screen.ServerConnectScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" compoundref="servercreate__screen_8py" startline="100" endline="172">game.gui.screens.servercreate_screen.ServerCreateScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" compoundref="serverjoin__screen_8py" startline="69" endline="119">game.gui.screens.serverjoin_screen.ServerJoinScreen.update_ui</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" compoundref="servermenu__screen_8py" startline="40" endline="82">game.gui.screens.servermenu_screen.ServerMenuScreen.update_ui</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.tooltip.Tooltip.draw</definition>
+        <argsstring>(self, Window|Surface window)</argsstring>
+        <name>draw</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.draw</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1a117beb910dc2c07b626a75e1cb3b0611">draw</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1core_1_1window_1_1Window" kindref="compound">Window</ref>|Surface</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the widget and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="35" column="1" bodyfile="game/gui/tooltip.py" bodystart="35" bodyend="42"/>
+        <references refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" compoundref="horizontal__slider_8py" startline="126">game.gui.horizontal_slider.HorizontalSlider._enabled</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" compoundref="screen_8py" startline="23">game.gui.screens.screen.Screen._enabled</references>
+        <references refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a45174350b8605eb6f9a31508c37d33ed" compoundref="selectbox_8py" startline="175">game.gui.selectbox.SelectBox._enabled</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" compoundref="widget_8py" startline="191">game.gui.widget.Widget._enabled</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" compoundref="tooltip_8py" startline="23">game.gui.tooltip.Tooltip._label</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" compoundref="hotbar_8py" startline="35">game.gui.hotbar.Hotbar._surface</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1affd99fbcf9f58e728062c4bd37af525a" compoundref="tooltip_8py" startline="24">game.gui.tooltip.Tooltip._surface</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427" compoundref="map__manager_8py" startline="51">game.world.map_manager.Map._surface</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1ad3471d2107b642abc44f71ac7d5e3eda" compoundref="widget_8py" startline="134" endline="140">game.gui.widget.Widget.center</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1aa0ddf899cddd9df9f5764ce3bc8fe133" compoundref="widget_8py" startline="168" endline="173">game.gui.widget.Widget.get_height</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" compoundref="tooltip_8py" startline="54" endline="59">game.gui.tooltip.Tooltip.get_text</references>
+        <references refid="classgame_1_1gui_1_1widget_1_1Widget_1aac96128e55909ef9e9bbbeb7d8052c29" compoundref="widget_8py" startline="155" endline="160">game.gui.widget.Widget.get_width</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.gui.tooltip.Tooltip.update</definition>
+        <argsstring>(self, Window window)</argsstring>
+        <name>update</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.update</qualifiedname>
+        <reimplements refid="classgame_1_1gui_1_1widget_1_1Widget_1a8afa798825e40a935e8174dd85a52966">update</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1core_1_1window_1_1Window" kindref="compound">Window</ref></type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the widget and its components.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="43" column="1" bodyfile="game/gui/tooltip.py" bodystart="43" bodyend="46"/>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" compoundref="tooltip_8py" startline="23">game.gui.tooltip.Tooltip._label</references>
+        <references refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" compoundref="hotbar_8py" startline="35">game.gui.hotbar.Hotbar._surface</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1affd99fbcf9f58e728062c4bd37af525a" compoundref="tooltip_8py" startline="24">game.gui.tooltip.Tooltip._surface</references>
+        <references refid="classgame_1_1world_1_1map__manager_1_1Map_1a4f05d4121f8215e492276482b9a94427" compoundref="map__manager_8py" startline="51">game.world.map_manager.Map._surface</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a63b9dcf2c798126a21ac9d2074dd4206" compoundref="tooltip_8py" startline="26" endline="34">game.gui.tooltip.Tooltip.initialise_surface</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae875caf75e4e6bd1fafa43e803c86305" compoundref="screen_8py" startline="25" endline="33">game.gui.screens.screen.Screen.initialise_surface</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" compoundref="tooltip_8py" startline="43" endline="46">game.gui.tooltip.Tooltip.update</references>
+        <referencedby refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a752f1839a8dad733f04d18a3d255a42b" compoundref="selectbox_8py" startline="59" endline="95">game.gui.selectbox.SelectBox.draw</referencedby>
+        <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a895bd3122b3a99c86291efac73ad6ef0" compoundref="connection_8py" startline="243" endline="253">game.client.connection.Connection.start</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" compoundref="tooltip_8py" startline="43" endline="46">game.gui.tooltip.Tooltip.update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.gui.tooltip.Tooltip.set_text</definition>
+        <argsstring>(self, str text)</argsstring>
+        <name>set_text</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.set_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the tooltip text, then return the tooltip itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="47" column="1" bodyfile="game/gui/tooltip.py" bodystart="47" bodyend="53"/>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" compoundref="tooltip_8py" startline="23">game.gui.tooltip.Tooltip._label</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" compoundref="tooltip_8py" startline="47" endline="53">game.gui.tooltip.Tooltip.set_text</references>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" compoundref="tooltip_8py" startline="47" endline="53">game.gui.tooltip.Tooltip.set_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str game.gui.tooltip.Tooltip.get_text</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>game.gui.tooltip.Tooltip.get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the tooltip text.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/gui/tooltip.py" line="54" column="1" bodyfile="game/gui/tooltip.py" bodystart="54" bodyend="59"/>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" compoundref="tooltip_8py" startline="23">game.gui.tooltip.Tooltip._label</references>
+        <references refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" compoundref="tooltip_8py" startline="54" endline="59">game.gui.tooltip.Tooltip.get_text</references>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" compoundref="tooltip_8py" startline="35" endline="42">game.gui.tooltip.Tooltip.draw</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" compoundref="tooltip_8py" startline="54" endline="59">game.gui.tooltip.Tooltip.get_text</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a tooltip.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>game.gui.tooltip.Tooltip</label>
+        <link refid="classgame_1_1gui_1_1tooltip_1_1Tooltip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>game.gui.tooltip.Tooltip</label>
+        <link refid="classgame_1_1gui_1_1tooltip_1_1Tooltip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>game.gui.widget.Widget</label>
+        <link refid="classgame_1_1gui_1_1widget_1_1Widget"/>
+      </node>
+    </collaborationgraph>
+    <location file="game/gui/tooltip.py" line="16" column="1" bodyfile="game/gui/tooltip.py" bodystart="16" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1af12ee9fb5d22fb957478f8ed74f7de48" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>__init__</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" prot="protected" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>_label</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1affd99fbcf9f58e728062c4bd37af525a" prot="protected" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>_surface</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>draw</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>get_text</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a63b9dcf2c798126a21ac9d2074dd4206" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>initialise_surface</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>set_text</name></member>
+      <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" prot="public" virt="non-virtual"><scope>game::gui::tooltip::Tooltip</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="15" bodyend="-1"/>
+        <location file="game/data/tiles/tile_types.py" line="15" column="1" bodyfile="game/data/tiles/tile_types.py" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -35,6 +35,7 @@
         <qualifiedname>game.data.tiles.tile_types.TileTypes.BREAKABLE</qualifiedname>
         <initializer>=  (
         <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>,
+        <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a41d80124f783e89ddeb26094db8234f1" kindref="member">Tiles.FIRESTONE</ref>,
     )</initializer>
         <briefdescription>
         </briefdescription>
@@ -42,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="26" bodyend="-1"/>
+        <location file="game/data/tiles/tile_types.py" line="26" column="1" bodyfile="game/data/tiles/tile_types.py" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4" prot="public" static="yes" mutable="no">
         <type>tuple</type>
@@ -59,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="30" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="30" bodyend="-1"/>
+        <location file="game/data/tiles/tile_types.py" line="31" column="1" bodyfile="game/data/tiles/tile_types.py" bodystart="31" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -68,7 +69,7 @@
 <para><verbatim>Class for regrouping tiles into different categories.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" line="10" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/data/tiles/tile_types.py" bodystart="10" bodyend="33"/>
+    <location file="game/data/tiles/tile_types.py" line="10" column="1" bodyfile="game/data/tiles/tile_types.py" bodystart="10" bodyend="34"/>
     <listofallmembers>
       <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac" prot="public" virt="non-virtual"><scope>game::data::tiles::tile_types::TileTypes</scope><name>BREAKABLE</name></member>
       <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4" prot="public" virt="non-virtual"><scope>game::data::tiles::tile_types::TileTypes</scope><name>LETHAL</name></member>

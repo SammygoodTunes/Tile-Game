@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="16" bodyend="-1"/>
+        <location file="game/world/synth/noise.py" line="16" column="1" bodyfile="game/world/synth/noise.py" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a22bbd121a8184d8415953c4175a4f6a6" prot="public" static="yes" mutable="no">
         <type>float</type>
@@ -24,14 +24,51 @@
         <argsstring></argsstring>
         <name>FREQ_ALTER_RANGE</name>
         <qualifiedname>game.world.synth.noise.PerlinNoise.FREQ_ALTER_RANGE</qualifiedname>
-        <initializer>=  0.08</initializer>
+        <initializer>=  0.04</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="17" bodyend="-1"/>
+        <location file="game/world/synth/noise.py" line="17" column="1" bodyfile="game/world/synth/noise.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a097ae16fa865cf3493d0ace32c62c9da" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.world.synth.noise.PerlinNoise::MIN_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MIN_HEIGHT</name>
+        <qualifiedname>game.world.synth.noise.PerlinNoise.MIN_HEIGHT</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/world/synth/noise.py" line="18" column="1" bodyfile="game/world/synth/noise.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a884e2b8ee5e66f35ce38726353fdabf5" compoundref="button_8py" startline="57" endline="60">game.gui.button.Button.resize</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a831e4878b9d485f715665e06e803e489" compoundref="inputbox_8py" startline="117" endline="131">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad9f8b864c57302b70d52780f84c19001" compoundref="progress__bar_8py" startline="77" endline="86">game.gui.progress_bar.ProgressBar.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1abd52b5239125ab9fab7bbf64d3ef8ea4" compoundref="widget_8py" startline="36" endline="42">game.gui.widget.Widget.validate_dimensions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa56222e5901d4615f5486c293c92704a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int game.world.synth.noise.PerlinNoise::MAX_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MAX_HEIGHT</name>
+        <qualifiedname>game.world.synth.noise.PerlinNoise.MAX_HEIGHT</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/world/synth/noise.py" line="19" column="1" bodyfile="game/world/synth/noise.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a884e2b8ee5e66f35ce38726353fdabf5" compoundref="button_8py" startline="57" endline="60">game.gui.button.Button.resize</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a831e4878b9d485f715665e06e803e489" compoundref="inputbox_8py" startline="117" endline="131">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad9f8b864c57302b70d52780f84c19001" compoundref="progress__bar_8py" startline="77" endline="86">game.gui.progress_bar.ProgressBar.update</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-attrib">
@@ -47,9 +84,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="20" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf" compoundref="noise_8py" startline="84" endline="89">game.world.synth.noise.PerlinNoise.get_permutations</referencedby>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a1b7d68791c323566f56c89e5e51ab6ed" compoundref="noise_8py" startline="78" endline="83">game.world.synth.noise.PerlinNoise.set_permutations</referencedby>
+        <location file="game/world/synth/noise.py" line="22" column="1" bodyfile="game/world/synth/noise.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf" compoundref="noise_8py" startline="89" endline="94">game.world.synth.noise.PerlinNoise.get_permutations</referencedby>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a1b7d68791c323566f56c89e5e51ab6ed" compoundref="noise_8py" startline="83" endline="88">game.world.synth.noise.PerlinNoise.set_permutations</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648" prot="protected" static="no" mutable="no">
         <type></type>
@@ -63,8 +100,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="21" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="21" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="26" endline="36">game.world.synth.noise.PerlinNoise.generate</referencedby>
+        <location file="game/world/synth/noise.py" line="23" column="1" bodyfile="game/world/synth/noise.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="29" endline="41">game.world.synth.noise.PerlinNoise.generate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0" prot="protected" static="no" mutable="no">
         <type></type>
@@ -78,8 +115,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="22" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="26" endline="36">game.world.synth.noise.PerlinNoise.generate</referencedby>
+        <location file="game/world/synth/noise.py" line="24" column="1" bodyfile="game/world/synth/noise.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="29" endline="41">game.world.synth.noise.PerlinNoise.generate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" prot="protected" static="no" mutable="no">
         <type></type>
@@ -93,10 +130,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="23" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac" compoundref="noise_8py" startline="96" endline="101">game.world.synth.noise.PerlinNoise.get_noise_intensity</referencedby>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" compoundref="noise_8py" startline="37" endline="44">game.world.synth.noise.PerlinNoise.noise</referencedby>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa0f2430fc99d2c46e28b311d64d2194f" compoundref="noise_8py" startline="90" endline="95">game.world.synth.noise.PerlinNoise.set_noise_intensity</referencedby>
+        <location file="game/world/synth/noise.py" line="25" column="1" bodyfile="game/world/synth/noise.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac" compoundref="noise_8py" startline="101" endline="106">game.world.synth.noise.PerlinNoise.get_noise_intensity</referencedby>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" compoundref="noise_8py" startline="42" endline="49">game.world.synth.noise.PerlinNoise.noise</referencedby>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa0f2430fc99d2c46e28b311d64d2194f" compoundref="noise_8py" startline="95" endline="100">game.world.synth.noise.PerlinNoise.set_noise_intensity</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" prot="protected" static="no" mutable="no">
         <type></type>
@@ -110,10 +147,62 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="24" bodyend="-1"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="26" endline="36">game.world.synth.noise.PerlinNoise.generate</referencedby>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a897f1ec1d78aca4f103ffedc2def39e6" compoundref="noise_8py" startline="108" endline="113">game.world.synth.noise.PerlinNoise.get_frequency</referencedby>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137" compoundref="noise_8py" startline="102" endline="107">game.world.synth.noise.PerlinNoise.set_frequency</referencedby>
+        <location file="game/world/synth/noise.py" line="26" column="1" bodyfile="game/world/synth/noise.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="29" endline="41">game.world.synth.noise.PerlinNoise.generate</referencedby>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a897f1ec1d78aca4f103ffedc2def39e6" compoundref="noise_8py" startline="113" endline="118">game.world.synth.noise.PerlinNoise.get_frequency</referencedby>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137" compoundref="noise_8py" startline="107" endline="112">game.world.synth.noise.PerlinNoise.set_frequency</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a9defeaab8af4037134450d6d4f7244bc" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.synth.noise.PerlinNoise::_noise_params</definition>
+        <argsstring></argsstring>
+        <name>_noise_params</name>
+        <qualifiedname>game.world.synth.noise.PerlinNoise._noise_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/world/synth/noise.py" line="27" column="1" bodyfile="game/world/synth/noise.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" compoundref="noise_8py" startline="42" endline="49">game.world.synth.noise.PerlinNoise.noise</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a747c6e7bb38bb771cbce79a60dd089ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.synth.noise.PerlinNoise::MIN_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MIN_HEIGHT</name>
+        <qualifiedname>game.world.synth.noise.PerlinNoise.MIN_HEIGHT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/world/synth/noise.py" line="38" column="1" bodyfile="game/world/synth/noise.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a884e2b8ee5e66f35ce38726353fdabf5" compoundref="button_8py" startline="57" endline="60">game.gui.button.Button.resize</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a831e4878b9d485f715665e06e803e489" compoundref="inputbox_8py" startline="117" endline="131">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad9f8b864c57302b70d52780f84c19001" compoundref="progress__bar_8py" startline="77" endline="86">game.gui.progress_bar.ProgressBar.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1widget_1_1Widget_1abd52b5239125ab9fab7bbf64d3ef8ea4" compoundref="widget_8py" startline="36" endline="42">game.gui.widget.Widget.validate_dimensions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a05811008a0cdad5e4f969ea31d0666a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game.world.synth.noise.PerlinNoise::MAX_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>MAX_HEIGHT</name>
+        <qualifiedname>game.world.synth.noise.PerlinNoise.MAX_HEIGHT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/world/synth/noise.py" line="39" column="1" bodyfile="game/world/synth/noise.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classgame_1_1gui_1_1button_1_1Button_1a884e2b8ee5e66f35ce38726353fdabf5" compoundref="button_8py" startline="57" endline="60">game.gui.button.Button.resize</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a831e4878b9d485f715665e06e803e489" compoundref="inputbox_8py" startline="117" endline="131">game.gui.inputbox.InputBox.update</referencedby>
+        <referencedby refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad9f8b864c57302b70d52780f84c19001" compoundref="progress__bar_8py" startline="77" endline="86">game.gui.progress_bar.ProgressBar.update</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -133,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="19" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="19" bodyend="25"/>
+        <location file="game/world/synth/noise.py" line="21" column="1" bodyfile="game/world/synth/noise.py" bodystart="21" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -161,12 +250,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="26" bodyend="36"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="24">game.world.synth.noise.PerlinNoise._frequency</references>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0" compoundref="noise_8py" startline="22">game.world.synth.noise.PerlinNoise._octaves</references>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648" compoundref="noise_8py" startline="21">game.world.synth.noise.PerlinNoise._persistence</references>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="62" endline="77">game.world.synth.noise.PerlinNoise.interpolate_noise</references>
-        <referencedby refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" compoundref="map__manager_8py" startline="152" endline="166">game.world.map_manager.Map.regenerate</referencedby>
+        <location file="game/world/synth/noise.py" line="29" column="1" bodyfile="game/world/synth/noise.py" bodystart="29" bodyend="41"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="26">game.world.synth.noise.PerlinNoise._frequency</references>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0" compoundref="noise_8py" startline="24">game.world.synth.noise.PerlinNoise._octaves</references>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648" compoundref="noise_8py" startline="23">game.world.synth.noise.PerlinNoise._persistence</references>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="67" endline="82">game.world.synth.noise.PerlinNoise.interpolate_noise</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -194,9 +282,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="37" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="37" bodyend="44"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="23">game.world.synth.noise.PerlinNoise._noise_intensity</references>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c" compoundref="noise_8py" startline="45" endline="52">game.world.synth.noise.PerlinNoise.smooth_noise</referencedby>
+        <location file="game/world/synth/noise.py" line="42" column="1" bodyfile="game/world/synth/noise.py" bodystart="42" bodyend="49"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="25">game.world.synth.noise.PerlinNoise._noise_intensity</references>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a9defeaab8af4037134450d6d4f7244bc" compoundref="noise_8py" startline="27">game.world.synth.noise.PerlinNoise._noise_params</references>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c" compoundref="noise_8py" startline="50" endline="57">game.world.synth.noise.PerlinNoise.smooth_noise</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -224,9 +313,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="45" bodyend="52"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" compoundref="noise_8py" startline="37" endline="44">game.world.synth.noise.PerlinNoise.noise</references>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="62" endline="77">game.world.synth.noise.PerlinNoise.interpolate_noise</referencedby>
+        <location file="game/world/synth/noise.py" line="50" column="1" bodyfile="game/world/synth/noise.py" bodystart="50" bodyend="57"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" compoundref="noise_8py" startline="42" endline="49">game.world.synth.noise.PerlinNoise.noise</references>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="67" endline="82">game.world.synth.noise.PerlinNoise.interpolate_noise</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -254,10 +343,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="62" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="62" bodyend="77"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ab4f93a8deee339eebd4cd4c2d6fcf25a" compoundref="noise_8py" startline="54" endline="61">game.world.synth.noise.PerlinNoise.cosine_interpolate</references>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c" compoundref="noise_8py" startline="45" endline="52">game.world.synth.noise.PerlinNoise.smooth_noise</references>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="26" endline="36">game.world.synth.noise.PerlinNoise.generate</referencedby>
+        <location file="game/world/synth/noise.py" line="67" column="1" bodyfile="game/world/synth/noise.py" bodystart="67" bodyend="82"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ab4f93a8deee339eebd4cd4c2d6fcf25a" compoundref="noise_8py" startline="59" endline="66">game.world.synth.noise.PerlinNoise.cosine_interpolate</references>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a26dab3b7ad94998b3a6d9603be07289c" compoundref="noise_8py" startline="50" endline="57">game.world.synth.noise.PerlinNoise.smooth_noise</references>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" compoundref="noise_8py" startline="29" endline="41">game.world.synth.noise.PerlinNoise.generate</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a1b7d68791c323566f56c89e5e51ab6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -281,8 +370,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="78" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="78" bodyend="83"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" compoundref="noise_8py" startline="20">game.world.synth.noise.PerlinNoise._permutations</references>
+        <location file="game/world/synth/noise.py" line="83" column="1" bodyfile="game/world/synth/noise.py" bodystart="83" bodyend="88"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" compoundref="noise_8py" startline="22">game.world.synth.noise.PerlinNoise._permutations</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list|tuple</type>
@@ -302,8 +391,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="84" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="84" bodyend="89"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" compoundref="noise_8py" startline="20">game.world.synth.noise.PerlinNoise._permutations</references>
+        <location file="game/world/synth/noise.py" line="89" column="1" bodyfile="game/world/synth/noise.py" bodystart="89" bodyend="94"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" compoundref="noise_8py" startline="22">game.world.synth.noise.PerlinNoise._permutations</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa0f2430fc99d2c46e28b311d64d2194f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -327,8 +416,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="90" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="90" bodyend="95"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="23">game.world.synth.noise.PerlinNoise._noise_intensity</references>
+        <location file="game/world/synth/noise.py" line="95" column="1" bodyfile="game/world/synth/noise.py" bodystart="95" bodyend="100"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="25">game.world.synth.noise.PerlinNoise._noise_intensity</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -348,8 +437,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="96" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="96" bodyend="101"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="23">game.world.synth.noise.PerlinNoise._noise_intensity</references>
+        <location file="game/world/synth/noise.py" line="101" column="1" bodyfile="game/world/synth/noise.py" bodystart="101" bodyend="106"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" compoundref="noise_8py" startline="25">game.world.synth.noise.PerlinNoise._noise_intensity</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -373,8 +462,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="102" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="102" bodyend="107"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="24">game.world.synth.noise.PerlinNoise._frequency</references>
+        <location file="game/world/synth/noise.py" line="107" column="1" bodyfile="game/world/synth/noise.py" bodystart="107" bodyend="112"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="26">game.world.synth.noise.PerlinNoise._frequency</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a897f1ec1d78aca4f103ffedc2def39e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -394,8 +483,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="108" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="108" bodyend="113"/>
-        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="24">game.world.synth.noise.PerlinNoise._frequency</references>
+        <location file="game/world/synth/noise.py" line="113" column="1" bodyfile="game/world/synth/noise.py" bodystart="113" bodyend="118"/>
+        <references refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" compoundref="noise_8py" startline="26">game.world.synth.noise.PerlinNoise._frequency</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -425,8 +514,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="54" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="54" bodyend="61"/>
-        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="62" endline="77">game.world.synth.noise.PerlinNoise.interpolate_noise</referencedby>
+        <location file="game/world/synth/noise.py" line="59" column="1" bodyfile="game/world/synth/noise.py" bodystart="59" bodyend="66"/>
+        <referencedby refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" compoundref="noise_8py" startline="67" endline="82">game.world.synth.noise.PerlinNoise.interpolate_noise</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -435,11 +524,12 @@
 <para><verbatim>Class for creating an instance of the perlin noise algorithm.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/world/synth/noise.py" bodystart="11" bodyend="113"/>
+    <location file="game/world/synth/noise.py" line="11" column="1" bodyfile="game/world/synth/noise.py" bodystart="11" bodyend="118"/>
     <listofallmembers>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8883ce27329a1b49fe1756820779c169" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>__init__</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_frequency</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_noise_intensity</name></member>
+      <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a9defeaab8af4037134450d6d4f7244bc" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_noise_params</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_octaves</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_permutations</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648" prot="protected" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>_persistence</name></member>
@@ -450,6 +540,10 @@
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1add0bfa7840d7f250215766d5ec3bd1ac" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>get_noise_intensity</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8390e01e21c903c94b680d390b98edbf" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>get_permutations</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aab1c6e41897e26dcb5210820ba2e445d" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>interpolate_noise</name></member>
+      <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa56222e5901d4615f5486c293c92704a" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>MAX_HEIGHT</name></member>
+      <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a05811008a0cdad5e4f969ea31d0666a4" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>MAX_HEIGHT</name></member>
+      <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a097ae16fa865cf3493d0ace32c62c9da" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>MIN_HEIGHT</name></member>
+      <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a747c6e7bb38bb771cbce79a60dd089ec" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>MIN_HEIGHT</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>noise</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a4643d1067f84ca8b16e8e771d66d0202" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>NOISE_INTENSITY_RANGE</name></member>
       <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a59060da0991adfc05e6dd6a4b5909137" prot="public" virt="non-virtual"><scope>game::world::synth::noise::PerlinNoise</scope><name>set_frequency</name></member>

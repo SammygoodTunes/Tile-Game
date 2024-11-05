@@ -9,9 +9,9 @@ Inheritance diagram for game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_adb353c26ec380c794b577f4505287938}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a50377bd6cac88ac10d86bbabbbad5d43}{window}})
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_aaac3ef5b87c0ea178f699d830af3a589}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a18c3755699f716542dddd1c7dcf8a80e}{game}})
 \item 
-Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ac1959d6471759a3839d7d3da0cd8d63a}{initialise\+\_\+surface}} (self)
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a114dbdc36943adbbdad1dc52f1796803}{translate}} (self)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_abf8f27665804d88705bd602d7b5fe2ae}{draw}} (self)
 \item 
@@ -22,18 +22,27 @@ None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScree
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
 \begin{DoxyCompactItemize}
 \item 
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{events}} (self, Event e)
+\item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a50377bd6cac88ac10d86bbabbbad5d43}{window}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ad72a5a57539cac8f2ab6dc56cae38b5d}{surface}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a512145d7f5b2a9e380a808889229878d}{crash\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a273c01ac0bef48ca1b68fcf1518ce61d}{traceback\+\_\+label}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a18c3755699f716542dddd1c7dcf8a80e}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
@@ -49,15 +58,15 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_adb353c26ec380c794b577f4505287938}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_adb353c26ec380c794b577f4505287938} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_aaac3ef5b87c0ea178f699d830af3a589}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_aaac3ef5b87c0ea178f699d830af3a589} 
 \index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 
 
@@ -70,25 +79,33 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 
 \begin{DoxyVerb}Draw the screen and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ac1959d6471759a3839d7d3da0cd8d63a}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ac1959d6471759a3839d7d3da0cd8d63a} 
-\index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!initialise\_surface@{initialise\_surface}}
-\index{initialise\_surface@{initialise\_surface}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
-\doxysubsubsection{\texorpdfstring{initialise\_surface()}{initialise\_surface()}}
-{\footnotesize\ttfamily  Surface game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+initialise\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+ 
 
-\begin{DoxyVerb}Initialise the screen's surface.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a60a7e5707153b49841f604ed488e1d41}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a60a7e5707153b49841f604ed488e1d41} 
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a60a7e5707153b49841f604ed488e1d41}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a60a7e5707153b49841f604ed488e1d41} 
 \index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a114dbdc36943adbbdad1dc52f1796803}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a114dbdc36943adbbdad1dc52f1796803} 
+\index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!translate@{translate}}
+\index{translate@{translate}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+translate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the text of all text-related components to their translated equivalents.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a547e1137cd74b6f444aa1e71c7646275}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a547e1137cd74b6f444aa1e71c7646275} 
 \index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!update\_ui@{update\_ui}}
@@ -96,9 +113,13 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the screen UI.
+\begin{DoxyVerb}Update the screen and its components.
 \end{DoxyVerb}
  
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a512145d7f5b2a9e380a808889229878d}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a512145d7f5b2a9e380a808889229878d} 
@@ -106,6 +127,12 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \index{crash\_label@{crash\_label}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
 \doxysubsubsection{\texorpdfstring{crash\_label}{crash\_label}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+crash\+\_\+label}
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a18c3755699f716542dddd1c7dcf8a80e}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a18c3755699f716542dddd1c7dcf8a80e} 
+\index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!game@{game}}
+\index{game@{game}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+game}
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ad72a5a57539cac8f2ab6dc56cae38b5d}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_ad72a5a57539cac8f2ab6dc56cae38b5d} 
 \index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!surface@{surface}}
@@ -118,12 +145,6 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \index{traceback\_label@{traceback\_label}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
 \doxysubsubsection{\texorpdfstring{traceback\_label}{traceback\_label}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+traceback\+\_\+label}
-
-\Hypertarget{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a50377bd6cac88ac10d86bbabbbad5d43}\label{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a50377bd6cac88ac10d86bbabbbad5d43} 
-\index{game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}!window@{window}}
-\index{window@{window}!game.gui.screens.crash\_screen.CrashScreen@{game.gui.screens.crash\_screen.CrashScreen}}
-\doxysubsubsection{\texorpdfstring{window}{window}}
-{\footnotesize\ttfamily game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen.\+window}
 
 
 

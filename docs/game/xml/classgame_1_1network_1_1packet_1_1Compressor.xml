@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="52" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="52" bodyend="57"/>
+        <location file="game/network/packet.py" line="52" column="1" bodyfile="game/network/packet.py" bodystart="52" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>any</type>
@@ -42,7 +42,7 @@ Otherwise, return None.
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="59" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="59" bodyend="70"/>
+        <location file="game/network/packet.py" line="59" column="1" bodyfile="game/network/packet.py" bodystart="59" bodyend="70"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@ Otherwise, return None.
 Used for sending and receiving game data from the client/server.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py" bodystart="45" bodyend="70"/>
+    <location file="game/network/packet.py" line="45" column="1" bodyfile="game/network/packet.py" bodystart="45" bodyend="70"/>
     <listofallmembers>
       <member refid="classgame_1_1network_1_1packet_1_1Compressor_1a1ce84f1d9b2b3ebd8263d787d675fd92" prot="public" virt="non-virtual"><scope>game::network::packet::Compressor</scope><name>compress</name></member>
       <member refid="classgame_1_1network_1_1packet_1_1Compressor_1afaa9f1b70b9a4e813dc23d2ddca57723" prot="public" virt="non-virtual"><scope>game::network::packet::Compressor</scope><name>decompress</name></member>

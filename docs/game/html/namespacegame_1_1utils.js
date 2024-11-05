@@ -20,5 +20,10 @@ var namespacegame_1_1utils =
     [ "tools", "namespacegame_1_1utils_1_1tools.html", [
       [ "c_log2", "namespacegame_1_1utils_1_1tools.html#a3ed44a775ed03df2f15a1e2a26fe2655", null ],
       [ "resource_dir", "namespacegame_1_1utils_1_1tools.html#a89cc06dcdc3a15b60cbb72bb0d3005ef", null ]
+    ] ],
+    [ "translator", "namespacegame_1_1utils_1_1translator.html", [
+      [ "get_locale_from_language", "namespacegame_1_1utils_1_1translator.html#ad15273b74928ac5a20c40d6d0e17d90d", null ],
+      [ "locales", "namespacegame_1_1utils_1_1translator.html#a25617c54a8dea8d4021ad62337eb43ef", null ],
+      [ "translator", "namespacegame_1_1utils_1_1translator.html#a4a050cc0a96a71ff7eda9e0c55eb08ae", null ]
     ] ]
 ];

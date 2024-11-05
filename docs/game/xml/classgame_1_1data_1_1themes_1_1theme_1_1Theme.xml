@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kind="class" language="Python" prot="public">
+    <compoundname>game::data::themes::theme::Theme</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ae826d1dd4ea713ef0ae5337fd3d4e30d" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.data.themes.theme.Theme::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <qualifiedname>game.data.themes.theme.Theme._id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="27" column="1" bodyfile="game/data/themes/theme.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" compoundref="theme_8py" startline="17" endline="21">game.data.themes.theme.Theme.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.data.themes.theme.Theme::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>game.data.themes.theme.Theme._name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="28" column="1" bodyfile="game/data/themes/theme.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" compoundref="theme_8py" startline="17" endline="21">game.data.themes.theme.Theme.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a5945e962fa1f35d7650f182b6731670b" compoundref="theme_8py" startline="58" endline="63">game.data.themes.theme.Theme.get_name</referencedby>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a1d56eff774cdc7b37a39b4be4716af02" compoundref="theme_8py" startline="51" endline="57">game.data.themes.theme.Theme.set_name</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.data.themes.theme.Theme::_layers</definition>
+        <argsstring></argsstring>
+        <name>_layers</name>
+        <qualifiedname>game.data.themes.theme.Theme._layers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="48" column="1" bodyfile="game/data/themes/theme.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" compoundref="theme_8py" startline="17" endline="21">game.data.themes.theme.Theme.__init__</referencedby>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ab9ee240c834121474871a99843deb270" compoundref="theme_8py" startline="32" endline="43">game.data.themes.theme.Theme.add_layer</referencedby>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a23e783114252db65f1b4465696245c5e" compoundref="theme_8py" startline="71" endline="76">game.data.themes.theme.Theme.get_layers</referencedby>
+        <referencedby refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a60ab092f5073086db2e86ae6bf3389a6" compoundref="theme_8py" startline="64" endline="70">game.data.themes.theme.Theme.set_layers</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.data.themes.theme.Theme.__init__</definition>
+        <argsstring>(self, int _id)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>game.data.themes.theme.Theme.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="17" column="1" bodyfile="game/data/themes/theme.py" bodystart="17" bodyend="21"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ae826d1dd4ea713ef0ae5337fd3d4e30d" compoundref="theme_8py" startline="27">game.data.themes.theme.Theme._id</references>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" compoundref="theme_8py" startline="48">game.data.themes.theme.Theme._layers</references>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" compoundref="theme_8py" startline="28">game.data.themes.theme.Theme._name</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a30db506685da7fcc59f85acf60dbc933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict[str, int|dict[str, str|int]]</type>
+        <definition> dict[str, int | dict[str, str | int]] game.data.themes.theme.Theme.get_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_dict</name>
+        <qualifiedname>game.data.themes.theme.Theme.get_dict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the theme as a dictionary.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="22" column="1" bodyfile="game/data/themes/theme.py" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ab9ee240c834121474871a99843deb270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.data.themes.theme.Theme.add_layer</definition>
+        <argsstring>(self, str layer_type, int min_height, int max_height, Tile tile)</argsstring>
+        <name>add_layer</name>
+        <qualifiedname>game.data.themes.theme.Theme.add_layer</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>layer_type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_height</declname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kindref="compound">Tile</ref></type>
+          <declname>tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a theme layer, then return the theme itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="32" column="1" bodyfile="game/data/themes/theme.py" bodystart="32" bodyend="43"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" compoundref="theme_8py" startline="48">game.data.themes.theme.Theme._layers</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a02475eb6c8e89aa7d979fae966ea3800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.data.themes.theme.Theme.clear_layers</definition>
+        <argsstring>(self)</argsstring>
+        <name>clear_layers</name>
+        <qualifiedname>game.data.themes.theme.Theme.clear_layers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Clear all theme layers, then return the theme itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="44" column="1" bodyfile="game/data/themes/theme.py" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a1d56eff774cdc7b37a39b4be4716af02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.data.themes.theme.Theme.set_name</definition>
+        <argsstring>(self, str name)</argsstring>
+        <name>set_name</name>
+        <qualifiedname>game.data.themes.theme.Theme.set_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the theme name, then return the theme itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="51" column="1" bodyfile="game/data/themes/theme.py" bodystart="51" bodyend="57"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" compoundref="theme_8py" startline="28">game.data.themes.theme.Theme._name</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a5945e962fa1f35d7650f182b6731670b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str game.data.themes.theme.Theme.get_name</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_name</name>
+        <qualifiedname>game.data.themes.theme.Theme.get_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the theme name.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="58" column="1" bodyfile="game/data/themes/theme.py" bodystart="58" bodyend="63"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" compoundref="theme_8py" startline="28">game.data.themes.theme.Theme._name</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a60ab092f5073086db2e86ae6bf3389a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Self</type>
+        <definition> Self game.data.themes.theme.Theme.set_layers</definition>
+        <argsstring>(self, list[list[dict[str, str|int]]] layers)</argsstring>
+        <name>set_layers</name>
+        <qualifiedname>game.data.themes.theme.Theme.set_layers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list]]</type>
+          <declname>layers</declname>
+          <array>[list[dict[str, str|int]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the theme layers, then return the theme itself.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="64" column="1" bodyfile="game/data/themes/theme.py" bodystart="64" bodyend="70"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" compoundref="theme_8py" startline="48">game.data.themes.theme.Theme._layers</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a23e783114252db65f1b4465696245c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list[list[dict[str, str|int]]]|list</type>
+        <definition> list[list[dict[str, str | int]]] | list game.data.themes.theme.Theme.get_layers</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_layers</name>
+        <qualifiedname>game.data.themes.theme.Theme.get_layers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the theme layers.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/theme.py" line="71" column="1" bodyfile="game/data/themes/theme.py" bodystart="71" bodyend="76"/>
+        <references refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" compoundref="theme_8py" startline="48">game.data.themes.theme.Theme._layers</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a world theme object.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/data/themes/theme.py" line="12" column="1" bodyfile="game/data/themes/theme.py" bodystart="12" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>__init__</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ae826d1dd4ea713ef0ae5337fd3d4e30d" prot="protected" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>_id</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" prot="protected" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>_layers</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" prot="protected" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>_name</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ab9ee240c834121474871a99843deb270" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>add_layer</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a02475eb6c8e89aa7d979fae966ea3800" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>clear_layers</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a30db506685da7fcc59f85acf60dbc933" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>get_dict</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a23e783114252db65f1b4465696245c5e" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>get_layers</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a5945e962fa1f35d7650f182b6731670b" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>get_name</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a60ab092f5073086db2e86ae6bf3389a6" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>set_layers</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a1d56eff774cdc7b37a39b4be4716af02" prot="public" virt="non-virtual"><scope>game::data::themes::theme::Theme</scope><name>set_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -12,6 +12,8 @@ var dir_30f0e11966908ed6eeb892bc6b7fc310 =
     [ "ordering_container.py", "ordering__container_8py.html", "ordering__container_8py" ],
     [ "progress_bar.py", "progress__bar_8py.html", "progress__bar_8py" ],
     [ "screen_manager.py", "screen__manager_8py.html", "screen__manager_8py" ],
+    [ "selectbox.py", "selectbox_8py.html", "selectbox_8py" ],
     [ "slot.py", "slot_8py.html", "slot_8py" ],
+    [ "tooltip.py", "tooltip_8py.html", "tooltip_8py" ],
     [ "widget.py", "widget_8py.html", "widget_8py" ]
 ];

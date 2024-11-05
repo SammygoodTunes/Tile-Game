@@ -9,11 +9,13 @@ Inheritance diagram for game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a88277b7ece6f0ed7b550f23eec4c5749}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_aa200ed98a223a78bbd26325d969d4e26}{window}})
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a81da7acf9970b286ace2cbfcb863ce83}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2cb8b3df63477fd9b78c9c94143a216e}{game}})
 \item 
-Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a8dd8bc0f0c4ac0b0161f4333d172a74e}{initialise\+\_\+surface}} (self)
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a4491c8a0455753f57a6bf214088b6dc0}{initialise\+\_\+themes}} (self)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a10033fc91ef516e43ded79677eb2dcf2}{translate}} (self)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a62d536b859343141d982d482f54e113c}{draw}} (self)
 \item 
@@ -24,12 +26,12 @@ None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1Ser
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
 \begin{DoxyCompactItemize}
 \item 
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_aa200ed98a223a78bbd26325d969d4e26}{window}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a095ce4ff134515029940365865adaa02}{faded\+\_\+surface}}
 \item 
@@ -39,11 +41,22 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a6ed257a4bb91061d7b56fac0f8b3fb40}{seed\+\_\+input}}
 \item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a3e68fcba51db059fdf78801b50132d9b}{world\+\_\+theme\+\_\+select}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a9bdb844a7a91f94c25620ae1a337b4}{world\+\_\+size\+\_\+select}}
+\item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a6b97b71f0d4b1e4dd2d27d82156bdbb6}{ordering\+\_\+container}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a6deee6fc7281c400552c5ae0b706cdea}{create\+\_\+button}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a880595d41c80cb67d2185fa1913b39}{back\+\_\+button}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2cb8b3df63477fd9b78c9c94143a216e}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
@@ -59,15 +72,15 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a88277b7ece6f0ed7b550f23eec4c5749}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a88277b7ece6f0ed7b550f23eec4c5749} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a81da7acf9970b286ace2cbfcb863ce83}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a81da7acf9970b286ace2cbfcb863ce83} 
 \index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 
 
@@ -80,7 +93,11 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 
 \begin{DoxyVerb}Draw the screen and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83} 
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83} 
 \index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!events@{events}}
 \index{events@{events}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
 \doxysubsubsection{\texorpdfstring{events()}{events()}}
@@ -88,13 +105,17 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 
 \begin{DoxyVerb}Handle the screen events.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a8dd8bc0f0c4ac0b0161f4333d172a74e}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a8dd8bc0f0c4ac0b0161f4333d172a74e} 
-\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!initialise\_surface@{initialise\_surface}}
-\index{initialise\_surface@{initialise\_surface}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
-\doxysubsubsection{\texorpdfstring{initialise\_surface()}{initialise\_surface()}}
-{\footnotesize\ttfamily  Surface game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+initialise\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+ 
 
-\begin{DoxyVerb}Initialise the screen's surface.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a4491c8a0455753f57a6bf214088b6dc0}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a4491c8a0455753f57a6bf214088b6dc0} 
+\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!initialise\_themes@{initialise\_themes}}
+\index{initialise\_themes@{initialise\_themes}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
+\doxysubsubsection{\texorpdfstring{initialise\_themes()}{initialise\_themes()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+initialise\+\_\+themes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise the world theme select box.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a160fe5054680645061cbd03ad774cd97}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a160fe5054680645061cbd03ad774cd97} 
 \index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!set\_state@{set\_state}}
@@ -102,11 +123,23 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a10033fc91ef516e43ded79677eb2dcf2}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a10033fc91ef516e43ded79677eb2dcf2} 
+\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!translate@{translate}}
+\index{translate@{translate}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+translate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the text of all text-related components to their translated equivalents.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a712f2bcf13c9a96a251c65f446618e6d}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a712f2bcf13c9a96a251c65f446618e6d} 
 \index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!update\_ui@{update\_ui}}
@@ -114,9 +147,13 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the screen UI.
+\begin{DoxyVerb}Update the screen and its components.
 \end{DoxyVerb}
  
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a880595d41c80cb67d2185fa1913b39}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a880595d41c80cb67d2185fa1913b39} 
@@ -143,6 +180,12 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{faded\_surface}{faded\_surface}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+faded\+\_\+surface}
 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2cb8b3df63477fd9b78c9c94143a216e}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2cb8b3df63477fd9b78c9c94143a216e} 
+\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!game@{game}}
+\index{game@{game}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+game}
+
 \Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_afc280a7c3eb56f0a12e4f3f5e3bfe533}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_afc280a7c3eb56f0a12e4f3f5e3bfe533} 
 \index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!ign\_input@{ign\_input}}
 \index{ign\_input@{ign\_input}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
@@ -161,11 +204,17 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{seed\_input}{seed\_input}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+seed\+\_\+input}
 
-\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_aa200ed98a223a78bbd26325d969d4e26}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_aa200ed98a223a78bbd26325d969d4e26} 
-\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!window@{window}}
-\index{window@{window}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
-\doxysubsubsection{\texorpdfstring{window}{window}}
-{\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+window}
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a9bdb844a7a91f94c25620ae1a337b4}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a2a9bdb844a7a91f94c25620ae1a337b4} 
+\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!world\_size\_select@{world\_size\_select}}
+\index{world\_size\_select@{world\_size\_select}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
+\doxysubsubsection{\texorpdfstring{world\_size\_select}{world\_size\_select}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+world\+\_\+size\+\_\+select}
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a3e68fcba51db059fdf78801b50132d9b}\label{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a3e68fcba51db059fdf78801b50132d9b} 
+\index{game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}!world\_theme\_select@{world\_theme\_select}}
+\index{world\_theme\_select@{world\_theme\_select}!game.gui.screens.servercreate\_screen.ServerCreateScreen@{game.gui.screens.servercreate\_screen.ServerCreateScreen}}
+\doxysubsubsection{\texorpdfstring{world\_theme\_select}{world\_theme\_select}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen.\+world\+\_\+theme\+\_\+select}
 
 
 

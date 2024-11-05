@@ -9,11 +9,7 @@ Inheritance diagram for game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Sc
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a978955f0494dc09d359930043a5de26c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a81d9adfeaf3f4a4a818d7169310a139b}{window}})
-\item 
-Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a05a246452c77351c0c2b96d499de2a5e}{initialise\+\_\+surface}} (self)
-\item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_aba76c7a6923a57a5710b5a8c89c38d8a}{events}} (self, Event e)
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a769c2e8d7ab7c4e2fa288686ba9ffb64}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a80f3c628fe462c0397f55ef1a3a3a3ca}{game}})
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a66cf74cdc7843141d25d00af6f8d687c}{draw}} (self)
 \item 
@@ -24,16 +20,27 @@ None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingS
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
 \begin{DoxyCompactItemize}
 \item 
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{translate}} (self)
+\item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a81d9adfeaf3f4a4a818d7169310a139b}{window}}
-\item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_af288482c074f8aafb2a11d176e8d70ad}{surface}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a5d0fc25bc4844b2a150d318b6b436e24}{progress\+\_\+bar}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a80f3c628fe462c0397f55ef1a3a3a3ca}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
@@ -49,15 +56,15 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a978955f0494dc09d359930043a5de26c}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a978955f0494dc09d359930043a5de26c} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a769c2e8d7ab7c4e2fa288686ba9ffb64}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a769c2e8d7ab7c4e2fa288686ba9ffb64} 
 \index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 
 
@@ -68,35 +75,23 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+draw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Draw the screen and its components
+\begin{DoxyVerb}Draw the screen and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_aba76c7a6923a57a5710b5a8c89c38d8a}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_aba76c7a6923a57a5710b5a8c89c38d8a} 
-\index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!events@{events}}
-\index{events@{events}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
-\doxysubsubsection{\texorpdfstring{events()}{events()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
+ 
 
-\begin{DoxyVerb}Handle the screen events (unused).
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a05a246452c77351c0c2b96d499de2a5e}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a05a246452c77351c0c2b96d499de2a5e} 
-\index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!initialise\_surface@{initialise\_surface}}
-\index{initialise\_surface@{initialise\_surface}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
-\doxysubsubsection{\texorpdfstring{initialise\_surface()}{initialise\_surface()}}
-{\footnotesize\ttfamily  Surface game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+initialise\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
-\begin{DoxyVerb}Initialise the screen's surface.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a895faca6b836e598241220840b2ac1e6}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a895faca6b836e598241220840b2ac1e6} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a895faca6b836e598241220840b2ac1e6}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a895faca6b836e598241220840b2ac1e6} 
 \index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_afb8496e239ee7ff4967b6c288e80b068}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_afb8496e239ee7ff4967b6c288e80b068} 
 \index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!update\_ui@{update\_ui}}
@@ -104,11 +99,21 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the screen UI.
+\begin{DoxyVerb}Update the screen and its components.
 \end{DoxyVerb}
  
 
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+
+
 \doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a80f3c628fe462c0397f55ef1a3a3a3ca}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a80f3c628fe462c0397f55ef1a3a3a3ca} 
+\index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!game@{game}}
+\index{game@{game}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+game}
+
 \Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a5d0fc25bc4844b2a150d318b6b436e24}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a5d0fc25bc4844b2a150d318b6b436e24} 
 \index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!progress\_bar@{progress\_bar}}
 \index{progress\_bar@{progress\_bar}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
@@ -120,12 +125,6 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \index{surface@{surface}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
 \doxysubsubsection{\texorpdfstring{surface}{surface}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+surface}
-
-\Hypertarget{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a81d9adfeaf3f4a4a818d7169310a139b}\label{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a81d9adfeaf3f4a4a818d7169310a139b} 
-\index{game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}!window@{window}}
-\index{window@{window}!game.gui.screens.loading\_screen.LoadingScreen@{game.gui.screens.loading\_screen.LoadingScreen}}
-\doxysubsubsection{\texorpdfstring{window}{window}}
-{\footnotesize\ttfamily game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen.\+window}
 
 
 

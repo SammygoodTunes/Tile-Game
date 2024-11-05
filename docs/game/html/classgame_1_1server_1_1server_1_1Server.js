@@ -2,9 +2,9 @@ var classgame_1_1server_1_1server_1_1Server =
 [
     [ "__init__", "classgame_1_1server_1_1server_1_1Server.html#a26a3c9e7f7150b919b98721fb469a9fb", null ],
     [ "client_handler", "classgame_1_1server_1_1server_1_1Server.html#abdd9ab4ac802fe326e2a503df63a8fb3", null ],
-    [ "run", "classgame_1_1server_1_1server_1_1Server.html#a0e167e4693f3e9bd2864239a3b1633da", null ],
+    [ "run", "classgame_1_1server_1_1server_1_1Server.html#aaf24ee2cb651af9b75f248a0d9f1bdea", null ],
     [ "safe_closure", "classgame_1_1server_1_1server_1_1Server.html#a243bfaedd798b87757cf9e47c20ea3c1", null ],
-    [ "start", "classgame_1_1server_1_1server_1_1Server.html#a18ee5bdbf5a23f82401e040602241c5a", null ],
+    [ "start", "classgame_1_1server_1_1server_1_1Server.html#a62532fb5d1e59f13a64f91987f46eb12", null ],
     [ "stop", "classgame_1_1server_1_1server_1_1Server.html#a7c08f636ef0a732f91ba3b2be5b39cba", null ],
     [ "player_count", "classgame_1_1server_1_1server_1_1Server.html#a115f47f2b8f5bf4e0f16ce0cdc5f7fcd", null ],
     [ "player_handler", "classgame_1_1server_1_1server_1_1Server.html#adf7a7396794698015a0907efd5dfb892", null ],

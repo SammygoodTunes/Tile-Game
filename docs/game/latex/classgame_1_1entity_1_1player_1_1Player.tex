@@ -19,7 +19,7 @@ None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_aac446a4b6f9fdfec3
 \item 
 None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab83fa784bc48f3d251d02fd96f004c59}{break\+\_\+tile}} (self, game)
 \item 
-None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262}{reset}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj, \mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}} camera\+\_\+obj)
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ab6de69f5cf17046f13435a6bc831302d}{reset}} (self)
 \item 
 bool \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a5ffdafd5b5b848e3c93c3c3a02fdd8b4}{is\+\_\+moving\+\_\+left}} (self)
 \item 
@@ -85,7 +85,7 @@ int \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a40b7fccdbb1f85426d
 \item 
 list\mbox{[}bool\mbox{]} \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ac33769502c033e6a429c414d2b85183b}{get\+\_\+walls}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj)
 \item 
-None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_a54e8fa3820f5304d3dc4c0f353d43cea}{set\+\_\+ideal\+\_\+spawn\+\_\+point}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj, \mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}} camera\+\_\+obj, int nb\+\_\+attempts=10)
+None \mbox{\hyperlink{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6}{set\+\_\+ideal\+\_\+spawn\+\_\+point}} (self, \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}} map\+\_\+obj, \mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}} camera\+\_\+obj, int nb\+\_\+attempts=5)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -439,11 +439,11 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
 
 \begin{DoxyVerb}Returns True if the selected breakable tile is obstructed by other tiles with collision.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262}\label{classgame_1_1entity_1_1player_1_1Player_a75efbe024da9d00008138a498cfb6262} 
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ab6de69f5cf17046f13435a6bc831302d}\label{classgame_1_1entity_1_1player_1_1Player_ab6de69f5cf17046f13435a6bc831302d} 
 \index{game.entity.player.Player@{game.entity.player.Player}!reset@{reset}}
 \index{reset@{reset}!game.entity.player.Player@{game.entity.player.Player}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}}
-{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}}}]{camera\+\_\+obj }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Reset the player's general attributes.
 \end{DoxyVerb}
@@ -455,14 +455,15 @@ The order of the tiles are MOVE_LEFT, MOVE_RIGHT, MOVE_UP, MOVE_DOWN, UPPER MOVE
 
 \begin{DoxyVerb}Set the player's health, then return the player itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a54e8fa3820f5304d3dc4c0f353d43cea}\label{classgame_1_1entity_1_1player_1_1Player_a54e8fa3820f5304d3dc4c0f353d43cea} 
+ \Hypertarget{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6}\label{classgame_1_1entity_1_1player_1_1Player_ac73ac652b8ea5acca65eca2dedcf53a6} 
 \index{game.entity.player.Player@{game.entity.player.Player}!set\_ideal\_spawn\_point@{set\_ideal\_spawn\_point}}
 \index{set\_ideal\_spawn\_point@{set\_ideal\_spawn\_point}!game.entity.player.Player@{game.entity.player.Player}}
 \doxysubsubsection{\texorpdfstring{set\_ideal\_spawn\_point()}{set\_ideal\_spawn\_point()}}
-{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+set\+\_\+ideal\+\_\+spawn\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}}}]{camera\+\_\+obj,  }\item[{int }]{nb\+\_\+attempts = {\ttfamily 10} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+entity.\+player.\+Player.\+set\+\_\+ideal\+\_\+spawn\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map}{Map}}}]{map\+\_\+obj,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1camera_1_1Camera}{Camera}}}]{camera\+\_\+obj,  }\item[{int }]{nb\+\_\+attempts = {\ttfamily 5} }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Find the ideal starting position for the player when creating a new map.
-By default, ten consecutive failed attempts will place the player at the last randomised tile position.
+By default, five consecutive attempts will be made to place the player in a safe randomised location.
+If this fails, the player will be placed at the center of the map where safety is guaranteed.
 Setting the number of attempts to anything less than 1 will raise an exception.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1entity_1_1player_1_1Player_a658c904f6950d8a6b4330a45420e5cd9}\label{classgame_1_1entity_1_1player_1_1Player_a658c904f6950d8a6b4330a45420e5cd9} 

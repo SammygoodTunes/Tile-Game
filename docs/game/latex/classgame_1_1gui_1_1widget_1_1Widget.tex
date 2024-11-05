@@ -3,13 +3,25 @@
 Inheritance diagram for game.\+gui.\+widget.\+Widget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=8.600683cm]{classgame_1_1gui_1_1widget_1_1Widget}
+\includegraphics[height=10.511946cm]{classgame_1_1gui_1_1widget_1_1Widget}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9b70692c8f6448b63d276e9b7092155f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int x, int y)
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abe90fe2a9c084ad71c7f78504612f6b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int x, int y, int width=0, int height=0)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abd52b5239125ab9fab7bbf64d3ef8ea4}{validate\+\_\+dimensions}} (cls, int width, int height)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a68c41eeca5b7700c7fde8a450609a1bd}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a53c9de31d2b5fa7d8dbabc2496ba5d9f}{resize}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8afa798825e40a935e8174dd85a52966}{update}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a117beb910dc2c07b626a75e1cb3b0611}{draw}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}\texorpdfstring{$\vert$}{|}Surface window)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afc1e795f8bf3ab6ca80d6f6124633d4a}{is\+\_\+hovering\+\_\+over}} (self)
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf}{set\+\_\+x}} (self, int x)
 \item 
@@ -25,6 +37,22 @@ Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba}{offset}} (self, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9365c0e2fd541f6ecf2667a6b07f696c}{offset\+\_\+x}}, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef64b7a65cf3ef}{offset\+\_\+y}})
 \item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a71285aebab1c65957305ad0941a4f9c7}{center\+\_\+horizontally}} (self, int parent\+\_\+x, int parent\+\_\+width)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a7546a211dd1fda95adf1e3b822bb02f1}{center\+\_\+vertically}} (self, int parent\+\_\+y, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad3471d2107b642abc44f71ac7d5e3eda}{center}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a09014b7184b6757ff626a1ab0d4ad6e4}{center\+\_\+with\+\_\+offset}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height, int x, int y)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a750bce6c242f4e6b963718fcbe62574f}{set\+\_\+width}} (self, int width)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aac96128e55909ef9e9bbbeb7d8052c29}{get\+\_\+width}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_adf809786300c86b89c475f54460cda3f}{set\+\_\+height}} (self, int height)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aa0ddf899cddd9df9f5764ce3bc8fe133}{get\+\_\+height}} (self)
+\item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a1fbce299d94fa570b9fdf342de8d14bc}{set\+\_\+transparency}} (self, float transparency)
 \item 
 float \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f8c50646c43d1e}{get\+\_\+transparency}} (self)
@@ -32,6 +60,28 @@ float \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aefae226fd7be0a03f4a9f8041e7f50b8}{set\+\_\+state}} (self, bool state)
 \item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad}{get\+\_\+state}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afb11083086b79c6809248a4fa7d130da}{set\+\_\+interact}} (self, bool state)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab1f4301a1d14137e7100b222a5637c35}{can\+\_\+interact}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4bf5e26fd6f22f2e205d2715ed1b43e2}{MAX\+\_\+\+WIDTH}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a46eff264f23c643238fcd74b84f90761}{MAX\+\_\+\+HEIGHT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad1165332a20855f597baeb50abba0e05}{MIN\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a2c92d44e7db512f419a175df840a8666}{MAX\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4e9efdae5c05c4aa9022295d0447a213}{MIN\+\_\+\+HEIGHT}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a86fba14a9f91c050d8adafaed3adf0a6}{MAX\+\_\+\+HEIGHT}} = 0
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -43,6 +93,8 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8c72ba1a2de7b29c5bebfa891fc06ac2}{\+\_\+transparency}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4f84985e9d82c4547a7183b380283ccd}{\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a43df70dbcc9756259d376dcd95c9cc88}{\+\_\+can\+\_\+interact}}
 \end{DoxyCompactItemize}
 
 
@@ -52,26 +104,98 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a9b70692c8f6448b63d276e9b7092155f}\label{classgame_1_1gui_1_1widget_1_1Widget_a9b70692c8f6448b63d276e9b7092155f} 
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_abe90fe2a9c084ad71c7f78504612f6b0}\label{classgame_1_1gui_1_1widget_1_1Widget_abe90fe2a9c084ad71c7f78504612f6b0} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int }]{width = {\ttfamily 0},  }\item[{int }]{height = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 
-Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a4633f7cba0be687119fecfb9fd1a2eac}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}, \mbox{\hyperlink{classgame_1_1gui_1_1slot_1_1Slot_a8dc90a543a846fad3d1eb0deea82c96a}{game.\+gui.\+slot.\+Slot}}, \mbox{\hyperlink{classgame_1_1gui_1_1hotbar_1_1Hotbar_af6bd89767af29f2eb222ff60c9c5484d}{game.\+gui.\+hotbar.\+Hotbar}}, \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a59df44863e58294eaced06a343104318}{game.\+gui.\+label.\+Label}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a1c618e1d8d2f26233968603b62b40523}{game.\+gui.\+nametag.\+Name\+Tag}}, \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_af4d002b2cbaa683cd2a61c1bcc2243ca}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a5490b557e73cad71bddb7990fd60428a}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, and \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8e634fb5b36a3320ecc03cd881317f90}{game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar}}.
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a4633f7cba0be687119fecfb9fd1a2eac}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}, \mbox{\hyperlink{classgame_1_1gui_1_1slot_1_1Slot_ab223ac656547e0779ce1e5343de11c59}{game.\+gui.\+slot.\+Slot}}, \mbox{\hyperlink{classgame_1_1gui_1_1hotbar_1_1Hotbar_af6bd89767af29f2eb222ff60c9c5484d}{game.\+gui.\+hotbar.\+Hotbar}}, \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a07e6093c3e84f615f9d7e93c7104035c}{game.\+gui.\+selectbox.\+Select\+Box}}, \mbox{\hyperlink{classgame_1_1gui_1_1tooltip_1_1Tooltip_af12ee9fb5d22fb957478f8ed74f7de48}{game.\+gui.\+tooltip.\+Tooltip}}, \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a59df44863e58294eaced06a343104318}{game.\+gui.\+label.\+Label}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a1c618e1d8d2f26233968603b62b40523}{game.\+gui.\+nametag.\+Name\+Tag}}, \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_ad6bad19a572fc232b4678cf91466616d}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a419a983489a9ba7319d25ce31b8dc2fc}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, and \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4b1bf32f59269d26857f1a1cf8a384dc}{game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad}\label{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad} 
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ab1f4301a1d14137e7100b222a5637c35}\label{classgame_1_1gui_1_1widget_1_1Widget_ab1f4301a1d14137e7100b222a5637c35} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!can\_interact@{can\_interact}}
+\index{can\_interact@{can\_interact}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{can\_interact()}{can\_interact()}}
+{\footnotesize\ttfamily  bool game.\+gui.\+widget.\+Widget.\+can\+\_\+interact (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the widget can be interacted with or not, independent to its visibility.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ad3471d2107b642abc44f71ac7d5e3eda}\label{classgame_1_1gui_1_1widget_1_1Widget_ad3471d2107b642abc44f71ac7d5e3eda} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!center@{center}}
+\index{center@{center}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+center (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Center the widget on both axes relative to the specified parent, then return the widget itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a71285aebab1c65957305ad0941a4f9c7}\label{classgame_1_1gui_1_1widget_1_1Widget_a71285aebab1c65957305ad0941a4f9c7} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!center\_horizontally@{center\_horizontally}}
+\index{center\_horizontally@{center\_horizontally}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{center\_horizontally()}{center\_horizontally()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+center\+\_\+horizontally (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+width }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Center the widget horizontally relative to the specified parent, then return the widget itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a7546a211dd1fda95adf1e3b822bb02f1}\label{classgame_1_1gui_1_1widget_1_1Widget_a7546a211dd1fda95adf1e3b822bb02f1} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!center\_vertically@{center\_vertically}}
+\index{center\_vertically@{center\_vertically}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{center\_vertically()}{center\_vertically()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+center\+\_\+vertically (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Center the widget vertically relative to the specified parent, then return the widget itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a09014b7184b6757ff626a1ab0d4ad6e4}\label{classgame_1_1gui_1_1widget_1_1Widget_a09014b7184b6757ff626a1ab0d4ad6e4} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!center\_with\_offset@{center\_with\_offset}}
+\index{center\_with\_offset@{center\_with\_offset}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{center\_with\_offset()}{center\_with\_offset()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+center\+\_\+with\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Center the widget with and offset it by x and y relative to the specified parent, then return the widget itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a117beb910dc2c07b626a75e1cb3b0611}\label{classgame_1_1gui_1_1widget_1_1Widget_a117beb910dc2c07b626a75e1cb3b0611} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!draw@{draw}}
+\index{draw@{draw}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} \texorpdfstring{$\vert$}{|} Surface}]{window }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw the widget and its components.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1hotbar_1_1Hotbar_abe34cc11ee2dfa051dec6f297cfeea60}{game.\+gui.\+hotbar.\+Hotbar}}, \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_a9fccb3e0fff1ae8209d5b6a3aef669eb}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a8838d1234ca62c0227742a7777befacd}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a687fc686fbd4b43b59a7e867de9a85c8}{game.\+gui.\+label.\+Label}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a4bdb1905abb4db487a5d6429d4c526e1}{game.\+gui.\+nametag.\+Name\+Tag}}, \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1538a8b6653453fcab2eac3c52973798}{game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar}}, \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a752f1839a8dad733f04d18a3d255a42b}{game.\+gui.\+selectbox.\+Select\+Box}}, \mbox{\hyperlink{classgame_1_1gui_1_1slot_1_1Slot_a2c577903a27e2120266db95ef7c6ebf2}{game.\+gui.\+slot.\+Slot}}, and \mbox{\hyperlink{classgame_1_1gui_1_1tooltip_1_1Tooltip_a13608c37ad3e3837d7811ef9c0c71e63}{game.\+gui.\+tooltip.\+Tooltip}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a68c41eeca5b7700c7fde8a450609a1bd}\label{classgame_1_1gui_1_1widget_1_1Widget_a68c41eeca5b7700c7fde8a450609a1bd} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!events@{events}}
+\index{events@{events}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the widget events.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_a69709317efe8606c9fb70c1eae70cd69}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a83c5a8b4e26861e89745ff7eb8485964}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a18c96423289f07fda1829a9a45c00066}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}, and \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a9aa0916bc605fd2aba5c37107e622bbd}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_aa0ddf899cddd9df9f5764ce3bc8fe133}\label{classgame_1_1gui_1_1widget_1_1Widget_aa0ddf899cddd9df9f5764ce3bc8fe133} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily  int game.\+gui.\+widget.\+Widget.\+get\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the height of the widget.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad}\label{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!get\_state@{get\_state}}
 \index{get\_state@{get\_state}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{get\_state()}{get\_state()}}
 {\footnotesize\ttfamily  bool game.\+gui.\+widget.\+Widget.\+get\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Return the state of the widget's visibility/interactivity.
+\begin{DoxyVerb}Return the widget's visibility and interactivity state.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f8c50646c43d1e}\label{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f8c50646c43d1e} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!get\_transparency@{get\_transparency}}
@@ -80,6 +204,14 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1Ord
 {\footnotesize\ttfamily  float game.\+gui.\+widget.\+Widget.\+get\+\_\+transparency (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Return the widget's transparency.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_aac96128e55909ef9e9bbbeb7d8052c29}\label{classgame_1_1gui_1_1widget_1_1Widget_aac96128e55909ef9e9bbbeb7d8052c29} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily  int game.\+gui.\+widget.\+Widget.\+get\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the width of the widget.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a94a6ce6ced2d9752ebf915e11f55f571}\label{classgame_1_1gui_1_1widget_1_1Widget_a94a6ce6ced2d9752ebf915e11f55f571} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!get\_x@{get\_x}}
@@ -97,7 +229,19 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1Ord
 
 \begin{DoxyVerb}Return the y position of the widget.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba}\label{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba} 
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_afc1e795f8bf3ab6ca80d6f6124633d4a}\label{classgame_1_1gui_1_1widget_1_1Widget_afc1e795f8bf3ab6ca80d6f6124633d4a} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!is\_hovering\_over@{is\_hovering\_over}}
+\index{is\_hovering\_over@{is\_hovering\_over}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{is\_hovering\_over()}{is\_hovering\_over()}}
+{\footnotesize\ttfamily  bool game.\+gui.\+widget.\+Widget.\+is\+\_\+hovering\+\_\+over (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the user's mouse cursor is hovering over the widget or not.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_a72c3ca9733f5ed403a6a6ad6ebe527e7}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a3ff1af25e2888fb8fb785d55ff0fb3b7}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a95ce7e80606428893c30d0c99a8ae275}{game.\+gui.\+nametag.\+Name\+Tag}}, and \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a701fb2685179008a09b654904d58780e}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba}\label{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!offset@{offset}}
 \index{offset@{offset}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{offset()}{offset()}}
@@ -129,17 +273,53 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_a8ae9
 
 Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_aa58eafa61c83afbdb36b98441a271365}{game.\+gui.\+checkbox.\+Checkbox}}.
 
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a53c9de31d2b5fa7d8dbabc2496ba5d9f}\label{classgame_1_1gui_1_1widget_1_1Widget_a53c9de31d2b5fa7d8dbabc2496ba5d9f} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!resize@{resize}}
+\index{resize@{resize}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+resize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}}]{window }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resize the widget based on the screen dimensions.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_aad5ec02c8fa29eda560e156d501daad6}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_ab17b4c8426d8c05f7127e08a1d8106f8}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a8105a977d0d23d2bc62c396d5311f308}{game.\+gui.\+nametag.\+Name\+Tag}}, and \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a3d7d0f2ab06a91022cc5fafc206b9994}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_adf809786300c86b89c475f54460cda3f}\label{classgame_1_1gui_1_1widget_1_1Widget_adf809786300c86b89c475f54460cda3f} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_height@{set\_height}}
+\index{set\_height@{set\_height}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{set\_height()}{set\_height()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+set\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the height of the widget, then return the widget itself.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_afd8a45d448a56a77b435d5bfd5dccb00}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_afb11083086b79c6809248a4fa7d130da}\label{classgame_1_1gui_1_1widget_1_1Widget_afb11083086b79c6809248a4fa7d130da} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_interact@{set\_interact}}
+\index{set\_interact@{set\_interact}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{set\_interact()}{set\_interact()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+set\+\_\+interact (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set whether the widget is interactable or not, independent to its visibility, then return the widget itself.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_ab643ba5bfa47f927bb1f259fd3f9fb4e}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}, and \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a903c08e1b1dbe47b9927d2f280db77a7}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
 \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_aefae226fd7be0a03f4a9f8041e7f50b8}\label{classgame_1_1gui_1_1widget_1_1Widget_aefae226fd7be0a03f4a9f8041e7f50b8} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the widget's visibility/interactivity, then return the widget itself.
+\begin{DoxyVerb}Set the widget's visibility and interactivity state, then return the widget itself.
 \end{DoxyVerb}
  
 
-Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a402a5904824198f84bcd9d4f2741b52e}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a89a5941e6d424349fd17a553f4dbea37}{game.\+gui.\+nametag.\+Name\+Tag}}, and \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}.
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a94982fb7c37c647a3a09ed5b64ea85d7}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_a89a5941e6d424349fd17a553f4dbea37}{game.\+gui.\+nametag.\+Name\+Tag}}, and \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16}{game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container}}.
 
 \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a1fbce299d94fa570b9fdf342de8d14bc}\label{classgame_1_1gui_1_1widget_1_1Widget_a1fbce299d94fa570b9fdf342de8d14bc} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_transparency@{set\_transparency}}
@@ -149,7 +329,19 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1Hori
 
 \begin{DoxyVerb}Set the widget's transparency, then return the widget itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf}\label{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf} 
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a750bce6c242f4e6b963718fcbe62574f}\label{classgame_1_1gui_1_1widget_1_1Widget_a750bce6c242f4e6b963718fcbe62574f} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_width@{set\_width}}
+\index{set\_width@{set\_width}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{set\_width()}{set\_width()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+widget.\+Widget.\+set\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the width of the widget, then return the widget itself.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_ab96505dd59977e0f0be7473d88f883c0}{game.\+gui.\+selectbox.\+Select\+Box}}.
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf}\label{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_x@{set\_x}}
 \index{set\_x@{set\_x}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
@@ -157,11 +349,7 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1Hori
 
 \begin{DoxyVerb}Set the x position of the widget, then return the widget itself.
 \end{DoxyVerb}
- 
-
-Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a45549935ada48813236dfac7503a5616}{game.\+gui.\+label.\+Label}}.
-
-\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a15c930c777ed581488c9cc8666b9734a}\label{classgame_1_1gui_1_1widget_1_1Widget_a15c930c777ed581488c9cc8666b9734a} 
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a15c930c777ed581488c9cc8666b9734a}\label{classgame_1_1gui_1_1widget_1_1Widget_a15c930c777ed581488c9cc8666b9734a} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!set\_y@{set\_y}}
 \index{set\_y@{set\_y}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
@@ -169,13 +357,35 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a45549935ad
 
 \begin{DoxyVerb}Set the y position of the widget, then return the widget itself.
 \end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a8afa798825e40a935e8174dd85a52966}\label{classgame_1_1gui_1_1widget_1_1Widget_a8afa798825e40a935e8174dd85a52966} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!update@{update}}
+\index{update@{update}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}}]{window }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the widget and its components.
+\end{DoxyVerb}
  
 
-Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_ab8a8311cc9c68eabd1cf7c983bcd8f19}{game.\+gui.\+label.\+Label}}.
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1checkbox_1_1Checkbox_a1a7c64a67333b203792d3ac085917046}{game.\+gui.\+checkbox.\+Checkbox}}, \mbox{\hyperlink{classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_a622d96af524eb8caeb0ed7727e31dfd4}{game.\+gui.\+horizontal\+\_\+slider.\+Horizontal\+Slider}}, \mbox{\hyperlink{classgame_1_1gui_1_1hotbar_1_1Hotbar_ae8ae54b1bd11c36ea721c666b3631ffe}{game.\+gui.\+hotbar.\+Hotbar}}, \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_a688a8fc1034057352d9239b5afda18e1}{game.\+gui.\+label.\+Label}}, \mbox{\hyperlink{classgame_1_1gui_1_1nametag_1_1NameTag_aa14a181dbb625ebe087d2081c51c8b9e}{game.\+gui.\+nametag.\+Name\+Tag}}, \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad9f8b864c57302b70d52780f84c19001}{game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar}}, \mbox{\hyperlink{classgame_1_1gui_1_1selectbox_1_1SelectBox_a79e4aa6ff1dab591a2e9892577c57ca7}{game.\+gui.\+selectbox.\+Select\+Box}}, \mbox{\hyperlink{classgame_1_1gui_1_1slot_1_1Slot_ab55d0228cfc80d2dd059c2cc388cf366}{game.\+gui.\+slot.\+Slot}}, and \mbox{\hyperlink{classgame_1_1gui_1_1tooltip_1_1Tooltip_ae89964a1ffa6bea625140210c9a241c1}{game.\+gui.\+tooltip.\+Tooltip}}.
 
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_abd52b5239125ab9fab7bbf64d3ef8ea4}\label{classgame_1_1gui_1_1widget_1_1Widget_abd52b5239125ab9fab7bbf64d3ef8ea4} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!validate\_dimensions@{validate\_dimensions}}
+\index{validate\_dimensions@{validate\_dimensions}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{validate\_dimensions()}{validate\_dimensions()}}
+{\footnotesize\ttfamily  None game.\+gui.\+widget.\+Widget.\+validate\+\_\+dimensions (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Test a widget's dimensions.
+\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a43df70dbcc9756259d376dcd95c9cc88}\label{classgame_1_1gui_1_1widget_1_1Widget_a43df70dbcc9756259d376dcd95c9cc88} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!\_can\_interact@{\_can\_interact}}
+\index{\_can\_interact@{\_can\_interact}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{\_can\_interact}{\_can\_interact}}
+{\footnotesize\ttfamily game.\+gui.\+widget.\+Widget.\+\_\+can\+\_\+interact\hspace{0.3cm}{\ttfamily [protected]}}
+
 \Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a4f84985e9d82c4547a7183b380283ccd}\label{classgame_1_1gui_1_1widget_1_1Widget_a4f84985e9d82c4547a7183b380283ccd} 
 \index{game.gui.widget.Widget@{game.gui.widget.Widget}!\_enabled@{\_enabled}}
 \index{\_enabled@{\_enabled}!game.gui.widget.Widget@{game.gui.widget.Widget}}
@@ -199,6 +409,42 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1label_1_1Label_ab8a8311cc9
 \index{\_y@{\_y}!game.gui.widget.Widget@{game.gui.widget.Widget}}
 \doxysubsubsection{\texorpdfstring{\_y}{\_y}}
 {\footnotesize\ttfamily game.\+gui.\+widget.\+Widget.\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a86fba14a9f91c050d8adafaed3adf0a6}\label{classgame_1_1gui_1_1widget_1_1Widget_a86fba14a9f91c050d8adafaed3adf0a6} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MAX\_HEIGHT@{MAX\_HEIGHT}}
+\index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int game.\+gui.\+widget.\+Widget.\+MAX\+\_\+\+HEIGHT = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a46eff264f23c643238fcd74b84f90761}\label{classgame_1_1gui_1_1widget_1_1Widget_a46eff264f23c643238fcd74b84f90761} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MAX\_HEIGHT@{MAX\_HEIGHT}}
+\index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game.\+gui.\+widget.\+Widget.\+MAX\+\_\+\+HEIGHT}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a2c92d44e7db512f419a175df840a8666}\label{classgame_1_1gui_1_1widget_1_1Widget_a2c92d44e7db512f419a175df840a8666} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MAX\_WIDTH@{MAX\_WIDTH}}
+\index{MAX\_WIDTH@{MAX\_WIDTH}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MAX\_WIDTH}{MAX\_WIDTH}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int game.\+gui.\+widget.\+Widget.\+MAX\+\_\+\+WIDTH = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a4bf5e26fd6f22f2e205d2715ed1b43e2}\label{classgame_1_1gui_1_1widget_1_1Widget_a4bf5e26fd6f22f2e205d2715ed1b43e2} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MAX\_WIDTH@{MAX\_WIDTH}}
+\index{MAX\_WIDTH@{MAX\_WIDTH}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MAX\_WIDTH}{MAX\_WIDTH}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game.\+gui.\+widget.\+Widget.\+MAX\+\_\+\+WIDTH}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_a4e9efdae5c05c4aa9022295d0447a213}\label{classgame_1_1gui_1_1widget_1_1Widget_a4e9efdae5c05c4aa9022295d0447a213} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MIN\_HEIGHT@{MIN\_HEIGHT}}
+\index{MIN\_HEIGHT@{MIN\_HEIGHT}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MIN\_HEIGHT}{MIN\_HEIGHT}}
+{\footnotesize\ttfamily int game.\+gui.\+widget.\+Widget.\+MIN\+\_\+\+HEIGHT = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1gui_1_1widget_1_1Widget_ad1165332a20855f597baeb50abba0e05}\label{classgame_1_1gui_1_1widget_1_1Widget_ad1165332a20855f597baeb50abba0e05} 
+\index{game.gui.widget.Widget@{game.gui.widget.Widget}!MIN\_WIDTH@{MIN\_WIDTH}}
+\index{MIN\_WIDTH@{MIN\_WIDTH}!game.gui.widget.Widget@{game.gui.widget.Widget}}
+\doxysubsubsection{\texorpdfstring{MIN\_WIDTH}{MIN\_WIDTH}}
+{\footnotesize\ttfamily int game.\+gui.\+widget.\+Widget.\+MIN\+\_\+\+WIDTH = 0\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

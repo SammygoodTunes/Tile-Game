@@ -105,6 +105,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:adae542acff0288d845d02d698360fb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1431a910aeedd10128e0661a977a5745" id="r_a1431a910aeedd10128e0661a977a5745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1431a910aeedd10128e0661a977a5745">MAP_HEIGHT_BYTE_SIZE</a> = int(ceil(c_log2(<a class="el" href="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html#afe206b60ee200f9503d8ec25b95038be">WorldProperties.MAX_MAP_HEIGHT</a>) / 8))</td></tr>
 <tr class="separator:a1431a910aeedd10128e0661a977a5745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d99d9a34317aa1a4e4068dc684e6af5" id="r_a8d99d9a34317aa1a4e4068dc684e6af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d99d9a34317aa1a4e4068dc684e6af5">MAP_TD_LEN_BYTE_SIZE</a></td></tr>
+<tr class="separator:a8d99d9a34317aa1a4e4068dc684e6af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Byte structure for the map.
@@ -129,6 +131,32 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a8d99d9a34317aa1a4e4068dc684e6af5" name="a8d99d9a34317aa1a4e4068dc684e6af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d99d9a34317aa1a4e4068dc684e6af5">&#9670;&#160;</a></span>MAP_TD_LEN_BYTE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">game.data.structures.map_structure.MapStructure.MAP_TD_LEN_BYTE_SIZE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  int(ceil(c_log2(</div>
+<div class="line">        (TileStructure.TILE_BYTE_SIZE + TileStructure.TILE_ADJACENT_DUPLICATES_BYTE_SIZE)</div>
+<div class="line">        * TileProperties.TILE_ADJACENT_DUPLICATES_MAX</div>
+<div class="line">    ) / 8))</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adae542acff0288d845d02d698360fb56" name="adae542acff0288d845d02d698360fb56"></a>
@@ -162,7 +190,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegame.html">game</a></li><li class="navelem"><a class="el" href="namespacegame_1_1data.html">data</a></li><li class="navelem"><a class="el" href="namespacegame_1_1data_1_1structures.html">structures</a></li><li class="navelem"><a class="el" href="namespacegame_1_1data_1_1structures_1_1map__structure.html">map_structure</a></li><li class="navelem"><a class="el" href="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure.html">MapStructure</a></li>
-    <li class="footer">Generated on Fri Oct 18 2024 00:04:14 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Tue Nov 5 2024 15:51:42 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

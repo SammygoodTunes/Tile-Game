@@ -2,6 +2,27 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler" kind="class" language="Python" prot="public">
     <compoundname>game::server::handlers::world_handler::WorldHandler</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>game.server.handlers.world_handler.WorldHandler::_world</definition>
+        <argsstring></argsstring>
+        <name>_world</name>
+        <qualifiedname>game.server.handlers.world_handler.WorldHandler._world</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/handlers/world_handler.py" line="29" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6932665d2fe7917c7fe47407586e2807" compoundref="world__handler_8py" startline="21" endline="23">game.server.handlers.world_handler.WorldHandler.__init__</referencedby>
+        <referencedby refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd" compoundref="world__handler_8py" startline="49" endline="60">game.server.handlers.world_handler.WorldHandler.get_map_data</referencedby>
+        <referencedby refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8" compoundref="world__handler_8py" startline="67" endline="72">game.server.handlers.world_handler.WorldHandler.get_world</referencedby>
+        <referencedby refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1abee61d426a44ea9bb6a4e6eb66309031" compoundref="world__handler_8py" startline="61" endline="66">game.server.handlers.world_handler.WorldHandler.set_world</referencedby>
+        <referencedby refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8" compoundref="world__handler_8py" startline="32" endline="48">game.server.handlers.world_handler.WorldHandler.update_broken_tile</referencedby>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6932665d2fe7917c7fe47407586e2807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -19,12 +40,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="20" bodyend="22"/>
+        <location file="game/server/handlers/world_handler.py" line="21" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="21" bodyend="23"/>
+        <references refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" compoundref="world__handler_8py" startline="29">game.server.handlers.world_handler.WorldHandler._world</references>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a2b82f5c8199fb6cea131c6e26c1ab4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aa15fe0fb12ae88d375f0831ecbe7c9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None game.server.handlers.world_handler.WorldHandler.create_world</definition>
-        <argsstring>(self, str seed)</argsstring>
+        <argsstring>(self, str seed, dict theme, str size)</argsstring>
         <name>create_world</name>
         <qualifiedname>game.server.handlers.world_handler.WorldHandler.create_world</qualifiedname>
         <param>
@@ -35,6 +57,14 @@
           <type>str</type>
           <declname>seed</declname>
         </param>
+        <param>
+          <type>dict</type>
+          <declname>theme</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>size</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -43,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="23" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="23" bodyend="28"/>
+        <location file="game/server/handlers/world_handler.py" line="24" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="24" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -67,7 +97,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="29" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="29" bodyend="44"/>
+        <location file="game/server/handlers/world_handler.py" line="32" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="32" bodyend="48"/>
+        <references refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" compoundref="world__handler_8py" startline="29">game.server.handlers.world_handler.WorldHandler._world</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bytes</type>
@@ -87,7 +118,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="45" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="45" bodyend="55"/>
+        <location file="game/server/handlers/world_handler.py" line="49" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="49" bodyend="60"/>
+        <references refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" compoundref="world__handler_8py" startline="29">game.server.handlers.world_handler.WorldHandler._world</references>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1abee61d426a44ea9bb6a4e6eb66309031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None game.server.handlers.world_handler.WorldHandler.set_world</definition>
+        <argsstring>(self, World world)</argsstring>
+        <name>set_world</name>
+        <qualifiedname>game.server.handlers.world_handler.WorldHandler.set_world</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1world_1_1world_1_1World" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the server world.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/server/handlers/world_handler.py" line="61" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="61" bodyend="66"/>
+        <references refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" compoundref="world__handler_8py" startline="29">game.server.handlers.world_handler.WorldHandler._world</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgame_1_1world_1_1world_1_1World" kindref="compound">World</ref></type>
@@ -107,7 +164,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="56" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="56" bodyend="61"/>
+        <location file="game/server/handlers/world_handler.py" line="67" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="67" bodyend="72"/>
+        <references refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" compoundref="world__handler_8py" startline="29">game.server.handlers.world_handler.WorldHandler._world</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -116,12 +174,14 @@
 <para><verbatim>Class for a creating the world handler.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" line="15" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/handlers/world_handler.py" bodystart="15" bodyend="61"/>
+    <location file="game/server/handlers/world_handler.py" line="16" column="1" bodyfile="game/server/handlers/world_handler.py" bodystart="16" bodyend="72"/>
     <listofallmembers>
       <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6932665d2fe7917c7fe47407586e2807" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>__init__</name></member>
-      <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a2b82f5c8199fb6cea131c6e26c1ab4f3" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>create_world</name></member>
+      <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" prot="protected" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>_world</name></member>
+      <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aa15fe0fb12ae88d375f0831ecbe7c9b5" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>create_world</name></member>
       <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>get_map_data</name></member>
       <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>get_world</name></member>
+      <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1abee61d426a44ea9bb6a4e6eb66309031" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>set_world</name></member>
       <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8" prot="public" virt="non-virtual"><scope>game::server::handlers::world_handler::WorldHandler</scope><name>update_broken_tile</name></member>
     </listofallmembers>
   </compounddef>

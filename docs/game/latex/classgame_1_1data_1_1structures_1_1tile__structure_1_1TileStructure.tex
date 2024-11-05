@@ -3,8 +3,6 @@
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_ad01b38f72c36b8b1c5cb8cb84b60800f}{TILE\+\_\+\+ID\+\_\+\+BIT\+\_\+\+SIZE}} = c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_aa3ac69e394e7d36adcf1c9f35e690b4a}{Tile\+Properties.\+TILE\+\_\+\+ID\+\_\+\+MAX}})
-\item 
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_aef0ea95d61de74b4d089d2bdd3931855}{TILE\+\_\+\+X\+\_\+\+BIT\+\_\+\+SIZE}} = c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_ae56545999866a3f29439a408ef097cee}{Tile\+Properties.\+TILE\+\_\+\+X\+\_\+\+MAX}})
 \item 
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a6bc09b5f5d78a9e44e1ee09b79a02b0f}{TILE\+\_\+\+Y\+\_\+\+BIT\+\_\+\+SIZE}} = c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_ae4ce97e387eeb40e312be726ba798fab}{Tile\+Properties.\+TILE\+\_\+\+Y\+\_\+\+MAX}})
@@ -15,11 +13,11 @@
 \item 
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a9c8f60c6557484d5b4da3020c05ec710}{TILE\+\_\+\+DAMAGE\+\_\+\+DELAY\+\_\+\+BIT\+\_\+\+SIZE}} = c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_a9a0c3c286a01280a98a62a16e9c01daa}{Tile\+Properties.\+TILE\+\_\+\+DAMAGE\+\_\+\+DELAY\+\_\+\+MAX}})
 \item 
+\mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a09a5bf8261cbb6cab9610e5e9f391ffa}{TILE\+\_\+\+ADJACENT\+\_\+\+DUPLICATES\+\_\+\+BYTE\+\_\+\+SIZE}} = int(ceil(c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_ab7e0787b5ae80aeabc7bf97c51157654}{Tile\+Properties.\+TILE\+\_\+\+ADJACENT\+\_\+\+DUPLICATES\+\_\+\+MAX}}) / 8))
+\item 
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}{TILE\+\_\+\+BYTE\+\_\+\+SIZE}}
 \item 
-int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a7d42cdc9a9a3aeed28141eef65309b8c}{TILE\+\_\+\+ID\+\_\+\+BYTE\+\_\+\+POS}} = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}{TILE\+\_\+\+BYTE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 8 -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_ad01b38f72c36b8b1c5cb8cb84b60800f}{TILE\+\_\+\+ID\+\_\+\+BIT\+\_\+\+SIZE}}
-\item 
-int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0cab0ba65e5a9ef093c16bf7b175fcdd}{TILE\+\_\+\+X\+\_\+\+BYTE\+\_\+\+POS}} = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a7d42cdc9a9a3aeed28141eef65309b8c}{TILE\+\_\+\+ID\+\_\+\+BYTE\+\_\+\+POS}} -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_aef0ea95d61de74b4d089d2bdd3931855}{TILE\+\_\+\+X\+\_\+\+BIT\+\_\+\+SIZE}}
+int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0cab0ba65e5a9ef093c16bf7b175fcdd}{TILE\+\_\+\+X\+\_\+\+BYTE\+\_\+\+POS}} = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}{TILE\+\_\+\+BYTE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 8 -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_aef0ea95d61de74b4d089d2bdd3931855}{TILE\+\_\+\+X\+\_\+\+BIT\+\_\+\+SIZE}}
 \item 
 int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a892f68f236a1704b642f4198d98b31dd}{TILE\+\_\+\+Y\+\_\+\+BYTE\+\_\+\+POS}} = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0cab0ba65e5a9ef093c16bf7b175fcdd}{TILE\+\_\+\+X\+\_\+\+BYTE\+\_\+\+POS}} -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a6bc09b5f5d78a9e44e1ee09b79a02b0f}{TILE\+\_\+\+Y\+\_\+\+BIT\+\_\+\+SIZE}}
 \item 
@@ -37,6 +35,12 @@ int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileS
  
 
 \doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a09a5bf8261cbb6cab9610e5e9f391ffa}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a09a5bf8261cbb6cab9610e5e9f391ffa} 
+\index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE@{TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE}}
+\index{TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE@{TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
+\doxysubsubsection{\texorpdfstring{TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE}{TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE}}
+{\footnotesize\ttfamily game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+ADJACENT\+\_\+\+DUPLICATES\+\_\+\+BYTE\+\_\+\+SIZE = int(ceil(c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_ab7e0787b5ae80aeabc7bf97c51157654}{Tile\+Properties.\+TILE\+\_\+\+ADJACENT\+\_\+\+DUPLICATES\+\_\+\+MAX}}) / 8))\hspace{0.3cm}{\ttfamily [static]}}
+
 \Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d} 
 \index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_BYTE\_SIZE@{TILE\_BYTE\_SIZE}}
 \index{TILE\_BYTE\_SIZE@{TILE\_BYTE\_SIZE}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
@@ -46,12 +50,11 @@ int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileS
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=\ \ int(ceil((}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TILE\_ID\_BIT\_SIZE}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ TILE\_X\_BIT\_SIZE}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ TILE\_Y\_BIT\_SIZE}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ TILE\_RESISTANCE\_BIT\_SIZE}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ TILE\_DAMAGE\_BIT\_SIZE}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ TILE\_DAMAGE\_DELAY\_BIT\_SIZE}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ TILE\_X\_BIT\_SIZE}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ TILE\_Y\_BIT\_SIZE}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ TILE\_RESISTANCE\_BIT\_SIZE}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ TILE\_DAMAGE\_BIT\_SIZE}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ TILE\_DAMAGE\_DELAY\_BIT\_SIZE}
 \DoxyCodeLine{\ \ \ \ )\ /\ 8))}
 
 \end{DoxyCode}
@@ -79,18 +82,6 @@ int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileS
 \doxysubsubsection{\texorpdfstring{TILE\_DAMAGE\_DELAY\_BYTE\_POS}{TILE\_DAMAGE\_DELAY\_BYTE\_POS}}
 {\footnotesize\ttfamily int game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+DAMAGE\+\_\+\+DELAY\+\_\+\+BYTE\+\_\+\+POS = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a64816f41535135c0509f81a6b2261833}{TILE\+\_\+\+DAMAGE\+\_\+\+BYTE\+\_\+\+POS}} -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a9c8f60c6557484d5b4da3020c05ec710}{TILE\+\_\+\+DAMAGE\+\_\+\+DELAY\+\_\+\+BIT\+\_\+\+SIZE}}\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_ad01b38f72c36b8b1c5cb8cb84b60800f}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_ad01b38f72c36b8b1c5cb8cb84b60800f} 
-\index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_ID\_BIT\_SIZE@{TILE\_ID\_BIT\_SIZE}}
-\index{TILE\_ID\_BIT\_SIZE@{TILE\_ID\_BIT\_SIZE}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
-\doxysubsubsection{\texorpdfstring{TILE\_ID\_BIT\_SIZE}{TILE\_ID\_BIT\_SIZE}}
-{\footnotesize\ttfamily game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+ID\+\_\+\+BIT\+\_\+\+SIZE = c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_aa3ac69e394e7d36adcf1c9f35e690b4a}{Tile\+Properties.\+TILE\+\_\+\+ID\+\_\+\+MAX}})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a7d42cdc9a9a3aeed28141eef65309b8c}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a7d42cdc9a9a3aeed28141eef65309b8c} 
-\index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_ID\_BYTE\_POS@{TILE\_ID\_BYTE\_POS}}
-\index{TILE\_ID\_BYTE\_POS@{TILE\_ID\_BYTE\_POS}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
-\doxysubsubsection{\texorpdfstring{TILE\_ID\_BYTE\_POS}{TILE\_ID\_BYTE\_POS}}
-{\footnotesize\ttfamily int game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+ID\+\_\+\+BYTE\+\_\+\+POS = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}{TILE\+\_\+\+BYTE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 8 -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_ad01b38f72c36b8b1c5cb8cb84b60800f}{TILE\+\_\+\+ID\+\_\+\+BIT\+\_\+\+SIZE}}\hspace{0.3cm}{\ttfamily [static]}}
-
 \Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_afe755904ce548057978187f2c0032885}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_afe755904ce548057978187f2c0032885} 
 \index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_RESISTANCE\_BIT\_SIZE@{TILE\_RESISTANCE\_BIT\_SIZE}}
 \index{TILE\_RESISTANCE\_BIT\_SIZE@{TILE\_RESISTANCE\_BIT\_SIZE}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
@@ -113,7 +104,7 @@ int \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileS
 \index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_X\_BYTE\_POS@{TILE\_X\_BYTE\_POS}}
 \index{TILE\_X\_BYTE\_POS@{TILE\_X\_BYTE\_POS}!game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}}
 \doxysubsubsection{\texorpdfstring{TILE\_X\_BYTE\_POS}{TILE\_X\_BYTE\_POS}}
-{\footnotesize\ttfamily int game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+X\+\_\+\+BYTE\+\_\+\+POS = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a7d42cdc9a9a3aeed28141eef65309b8c}{TILE\+\_\+\+ID\+\_\+\+BYTE\+\_\+\+POS}} -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_aef0ea95d61de74b4d089d2bdd3931855}{TILE\+\_\+\+X\+\_\+\+BIT\+\_\+\+SIZE}}\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily int game.\+data.\+structures.\+tile\+\_\+structure.\+Tile\+Structure.\+TILE\+\_\+\+X\+\_\+\+BYTE\+\_\+\+POS = \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a0e98f2169e9a215ecdefe1e05dd7594d}{TILE\+\_\+\+BYTE\+\_\+\+SIZE}} \texorpdfstring{$\ast$}{*} 8 -\/ \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_aef0ea95d61de74b4d089d2bdd3931855}{TILE\+\_\+\+X\+\_\+\+BIT\+\_\+\+SIZE}}\hspace{0.3cm}{\ttfamily [static]}}
 
 \Hypertarget{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a6bc09b5f5d78a9e44e1ee09b79a02b0f}\label{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_a6bc09b5f5d78a9e44e1ee09b79a02b0f} 
 \index{game.data.structures.tile\_structure.TileStructure@{game.data.structures.tile\_structure.TileStructure}!TILE\_Y\_BIT\_SIZE@{TILE\_Y\_BIT\_SIZE}}

@@ -11,9 +11,13 @@ None \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aa51037fbb4ada30
 \item 
 None \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a174156be77ca1e3bb15cb88974a9988a}{load}} (self)
 \item 
-None \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a4cdd930f081210573862d525e2811a5b}{regenerate}} (self, str \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_af1268f9cdb3dae87d5808d844529d8ff}{\+\_\+seed}})
+None \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a9e02ed127e75f7f0117a082784e9dbe0}{regenerate}} (self, str \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_af1268f9cdb3dae87d5808d844529d8ff}{\+\_\+seed}}, dict theme)
 \item 
 None \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aff7dca67d7d4c9b466ff230b180afbb1}{update}} (self, bytes new\+\_\+dynatile\+\_\+data)
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a5aa591762cc9ae0f6f43a70bf630b621}{compress\+\_\+tile\+\_\+data}} (self)
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aa485ad1c89a640a0b6eeeecf34a184f1}{decompress\+\_\+tile\+\_\+data}} (self)
 \item 
 Self \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a92d446cb31c5195d8734db58967beb5e}{set\+\_\+state}} (self, str state=\textquotesingle{}\textquotesingle{}, int value=0)
 \item 
@@ -37,6 +41,10 @@ Self \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a24e260d927deec7
 \item 
 bytes \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a0631b62137565338f2db6de56eb8659e}{get\+\_\+tile\+\_\+data}} (self)
 \item 
+Self \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_afc2a0feb08e9873ae95e993a45141d7c}{set\+\_\+compressed\+\_\+tile\+\_\+data}} (self, bytes compressed\+\_\+tile\+\_\+data)
+\item 
+bytes \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a95066d5351f6bc8b0ea4e56d4953b103}{get\+\_\+compressed\+\_\+tile\+\_\+data}} (self)
+\item 
 \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a4b57f8f6d0fbde8bb6be68ed944ab915}{set\+\_\+dynatile\+\_\+data}} (self, bytes dynatile\+\_\+data)
 \item 
 bytes \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_ab82a1b2978d184c9d4e242dd5ac8842c}{get\+\_\+dynatile\+\_\+data}} (self)
@@ -59,6 +67,8 @@ Self \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_abfa512fc695fbc6
 \item 
 int \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a059acc8d7921b5fc45e454754d9b5372}{get\+\_\+y}} (self)
 \item 
+Self \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_ad6957f7fa20786c5ac355f735db14588}{set\+\_\+size\+\_\+in\+\_\+tiles}} (self, int width, int height)
+\item 
 int \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_ae5b7f0ee6b21722807ce056bcf16e910}{get\+\_\+width\+\_\+in\+\_\+tiles}} (self)
 \item 
 int \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a169dcb92efa48b2bf8112e5152d12aab}{get\+\_\+width\+\_\+in\+\_\+pixels}} (self)
@@ -70,6 +80,11 @@ int \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aba8858dbdcba63bc
 Surface \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_af49c0926afb19003d3e90b23955cae4e}{get\+\_\+surface}} (self)
 \item 
 Surface \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a3e996531503c10a2d9a19090892697b6}{get\+\_\+dynatile\+\_\+surface}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a59660ae23c9b95be6d803badd34c3f08}{get\+\_\+size\+\_\+from\+\_\+property}} (str \+\_\+property)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -104,6 +119,10 @@ str \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aeab516b524910f14
 \item 
 \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a110aeef641f8c543c6665fab22e576cb}{\+\_\+dynatile\+\_\+data}}
 \item 
+\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_ae51c7b8e586ec5bfe7e0109eb21773da}{\+\_\+theme}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_a0f9dc9c64bfa30627916274db68c8031}{\+\_\+compressed\+\_\+tile\+\_\+data}}
+\item 
 \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_ac873b761ff771223c35b1f8c66603f1d}{\+\_\+state}}
 \item 
 \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_af1268f9cdb3dae87d5808d844529d8ff}{\+\_\+seed}}
@@ -125,7 +144,23 @@ str \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aeab516b524910f14
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_af598c523baecdb8813abcad8c13f2588}\label{classgame_1_1world_1_1map__manager_1_1Map_af598c523baecdb8813abcad8c13f2588} 
+\Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a5aa591762cc9ae0f6f43a70bf630b621}\label{classgame_1_1world_1_1map__manager_1_1Map_a5aa591762cc9ae0f6f43a70bf630b621} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!compress\_tile\_data@{compress\_tile\_data}}
+\index{compress\_tile\_data@{compress\_tile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{compress\_tile\_data()}{compress\_tile\_data()}}
+{\footnotesize\ttfamily game.\+world.\+map\+\_\+manager.\+Map.\+compress\+\_\+tile\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compress the map's tile data, then return the map manager itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_aa485ad1c89a640a0b6eeeecf34a184f1}\label{classgame_1_1world_1_1map__manager_1_1Map_aa485ad1c89a640a0b6eeeecf34a184f1} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!decompress\_tile\_data@{decompress\_tile\_data}}
+\index{decompress\_tile\_data@{decompress\_tile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{decompress\_tile\_data()}{decompress\_tile\_data()}}
+{\footnotesize\ttfamily game.\+world.\+map\+\_\+manager.\+Map.\+decompress\+\_\+tile\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decompress the map's tile data, then return the map manager itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_af598c523baecdb8813abcad8c13f2588}\label{classgame_1_1world_1_1map__manager_1_1Map_af598c523baecdb8813abcad8c13f2588} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!draw\_tile@{draw\_tile}}
 \index{draw\_tile@{draw\_tile}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
 \doxysubsubsection{\texorpdfstring{draw\_tile()}{draw\_tile()}}
@@ -140,6 +175,14 @@ str \mbox{\hyperlink{classgame_1_1world_1_1map__manager_1_1Map_aeab516b524910f14
 {\footnotesize\ttfamily  None game.\+world.\+map\+\_\+manager.\+Map.\+generate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Generate the map data.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a95066d5351f6bc8b0ea4e56d4953b103}\label{classgame_1_1world_1_1map__manager_1_1Map_a95066d5351f6bc8b0ea4e56d4953b103} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!get\_compressed\_tile\_data@{get\_compressed\_tile\_data}}
+\index{get\_compressed\_tile\_data@{get\_compressed\_tile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{get\_compressed\_tile\_data()}{get\_compressed\_tile\_data()}}
+{\footnotesize\ttfamily  bytes game.\+world.\+map\+\_\+manager.\+Map.\+get\+\_\+compressed\+\_\+tile\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the map's compressed tile data.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a80e4edb6432df7d72e8b62d40f2f59ec}\label{classgame_1_1world_1_1map__manager_1_1Map_a80e4edb6432df7d72e8b62d40f2f59ec} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!get\_dynatile@{get\_dynatile}}
@@ -189,6 +232,14 @@ Extract from an external compatible bytes object if one is given.
 {\footnotesize\ttfamily  str game.\+world.\+map\+\_\+manager.\+Map.\+get\+\_\+seed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Return the map seed.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a59660ae23c9b95be6d803badd34c3f08}\label{classgame_1_1world_1_1map__manager_1_1Map_a59660ae23c9b95be6d803badd34c3f08} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!get\_size\_from\_property@{get\_size\_from\_property}}
+\index{get\_size\_from\_property@{get\_size\_from\_property}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{get\_size\_from\_property()}{get\_size\_from\_property()}}
+{\footnotesize\ttfamily  tuple\mbox{[}int, int\mbox{]} game.\+world.\+map\+\_\+manager.\+Map.\+get\+\_\+size\+\_\+from\+\_\+property (\begin{DoxyParamCaption}\item[{str}]{\+\_\+property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return the appropriate map size (width, height) from the provided map property string value.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_ade567d71d8c613c5041371354bf6dda4}\label{classgame_1_1world_1_1map__manager_1_1Map_ade567d71d8c613c5041371354bf6dda4} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!get\_state@{get\_state}}
@@ -294,13 +345,23 @@ Extract from an external compatible bytes object if one is given.
 
 \begin{DoxyVerb}Randomise the map seed, then return the map manager itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a4cdd930f081210573862d525e2811a5b}\label{classgame_1_1world_1_1map__manager_1_1Map_a4cdd930f081210573862d525e2811a5b} 
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a9e02ed127e75f7f0117a082784e9dbe0}\label{classgame_1_1world_1_1map__manager_1_1Map_a9e02ed127e75f7f0117a082784e9dbe0} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!regenerate@{regenerate}}
 \index{regenerate@{regenerate}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
 \doxysubsubsection{\texorpdfstring{regenerate()}{regenerate()}}
-{\footnotesize\ttfamily  None game.\+world.\+map\+\_\+manager.\+Map.\+regenerate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{\+\_\+seed }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+world.\+map\+\_\+manager.\+Map.\+regenerate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{\+\_\+seed,  }\item[{dict}]{theme }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Regenerate the map data.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_afc2a0feb08e9873ae95e993a45141d7c}\label{classgame_1_1world_1_1map__manager_1_1Map_afc2a0feb08e9873ae95e993a45141d7c} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!set\_compressed\_tile\_data@{set\_compressed\_tile\_data}}
+\index{set\_compressed\_tile\_data@{set\_compressed\_tile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{set\_compressed\_tile\_data()}{set\_compressed\_tile\_data()}}
+{\footnotesize\ttfamily  Self game.\+world.\+map\+\_\+manager.\+Map.\+set\+\_\+compressed\+\_\+tile\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{compressed\+\_\+tile\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the map's compressed tile data, then return the map manager itself.
+The provided compressed tile data must be of same origin as that generated from the map manager's
+tile data compression method.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a8cea763129b1428cb6d27b6b1fd8c9ff}\label{classgame_1_1world_1_1map__manager_1_1Map_a8cea763129b1428cb6d27b6b1fd8c9ff} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!set\_dynatile@{set\_dynatile}}
@@ -326,6 +387,14 @@ the map manager itself.
 {\footnotesize\ttfamily  Self game.\+world.\+map\+\_\+manager.\+Map.\+set\+\_\+seed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{\+\_\+seed }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Set the map seed, then return the map manager itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_ad6957f7fa20786c5ac355f735db14588}\label{classgame_1_1world_1_1map__manager_1_1Map_ad6957f7fa20786c5ac355f735db14588} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!set\_size\_in\_tiles@{set\_size\_in\_tiles}}
+\index{set\_size\_in\_tiles@{set\_size\_in\_tiles}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{set\_size\_in\_tiles()}{set\_size\_in\_tiles()}}
+{\footnotesize\ttfamily  Self game.\+world.\+map\+\_\+manager.\+Map.\+set\+\_\+size\+\_\+in\+\_\+tiles (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the width and height of the map in tiles, then return the map manager itself.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a92d446cb31c5195d8734db58967beb5e}\label{classgame_1_1world_1_1map__manager_1_1Map_a92d446cb31c5195d8734db58967beb5e} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!set\_state@{set\_state}}
@@ -395,6 +464,12 @@ Only update the differences between the two.
  
 
 \doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a0f9dc9c64bfa30627916274db68c8031}\label{classgame_1_1world_1_1map__manager_1_1Map_a0f9dc9c64bfa30627916274db68c8031} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!\_compressed\_tile\_data@{\_compressed\_tile\_data}}
+\index{\_compressed\_tile\_data@{\_compressed\_tile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{\_compressed\_tile\_data}{\_compressed\_tile\_data}}
+{\footnotesize\ttfamily game.\+world.\+map\+\_\+manager.\+Map.\+\_\+compressed\+\_\+tile\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
 \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_a110aeef641f8c543c6665fab22e576cb}\label{classgame_1_1world_1_1map__manager_1_1Map_a110aeef641f8c543c6665fab22e576cb} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!\_dynatile\_data@{\_dynatile\_data}}
 \index{\_dynatile\_data@{\_dynatile\_data}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
@@ -430,6 +505,12 @@ Only update the differences between the two.
 \index{\_surface@{\_surface}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
 \doxysubsubsection{\texorpdfstring{\_surface}{\_surface}}
 {\footnotesize\ttfamily game.\+world.\+map\+\_\+manager.\+Map.\+\_\+surface\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_ae51c7b8e586ec5bfe7e0109eb21773da}\label{classgame_1_1world_1_1map__manager_1_1Map_ae51c7b8e586ec5bfe7e0109eb21773da} 
+\index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!\_theme@{\_theme}}
+\index{\_theme@{\_theme}!game.world.map\_manager.Map@{game.world.map\_manager.Map}}
+\doxysubsubsection{\texorpdfstring{\_theme}{\_theme}}
+{\footnotesize\ttfamily game.\+world.\+map\+\_\+manager.\+Map.\+\_\+theme\hspace{0.3cm}{\ttfamily [protected]}}
 
 \Hypertarget{classgame_1_1world_1_1map__manager_1_1Map_accb2ebf1e9fbd88f34bd51f329da9b59}\label{classgame_1_1world_1_1map__manager_1_1Map_accb2ebf1e9fbd88f34bd51f329da9b59} 
 \index{game.world.map\_manager.Map@{game.world.map\_manager.Map}!\_tile\_data@{\_tile\_data}}

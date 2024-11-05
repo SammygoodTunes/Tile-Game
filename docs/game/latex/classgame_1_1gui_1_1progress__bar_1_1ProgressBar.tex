@@ -9,29 +9,11 @@ Inheritance diagram for game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar\+:\begin{
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8e634fb5b36a3320ecc03cd881317f90}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str title="{}"{}, int x=0, int y=0, int value=0, int min\+\_\+value=0, int max\+\_\+value=100)
+None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4b1bf32f59269d26857f1a1cf8a384dc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str title=\textquotesingle{}\textquotesingle{}, int x=0, int y=0, int width=800, int height=30, int value=0, int min\+\_\+value=0, int max\+\_\+value=100)
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a467f14307fc15206f7589730c027ea48}{draw}} (self, screen)
+None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1538a8b6653453fcab2eac3c52973798}{draw}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}\texorpdfstring{$\vert$}{|}Surface window)
 \item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ae53164bec67983d952dc1214fa8dfa46}{update}} (self, window)
-\item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a41e5d3858dc7a13b7a50f89d212c464c}{refresh}} (self)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a25d5d1da3e7864c2d9500dfebe3662fb}{center\+\_\+horizontally}} (self, int parent\+\_\+x, int parent\+\_\+width)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a939391229d592589742d73d85c6b8dfa}{center\+\_\+vertically}} (self, int parent\+\_\+y, int parent\+\_\+height)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4a1dc60c8e0f5a440ab65f8caaef8fab}{center}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a312d3ba3a087d497c1eeeb2fd12d9a42}{center\+\_\+with\+\_\+offset}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height, int x, int y)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a12126b702a67b92a851feea6dc355ff4}{set\+\_\+width}} (self, int width)
-\item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8cab9f55f22fd81647e47f089531dec6}{get\+\_\+width}} (self)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ac24123cdded2751e9ddba4a1e19c2362}{set\+\_\+height}} (self, int height)
-\item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9729d52fbe892237fea4ff6c37ca61fb}{get\+\_\+height}} (self)
+None \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad9f8b864c57302b70d52780f84c19001}{update}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_afd6d7fc5d684580cc75cda7a5e83d268}{set\+\_\+value}} (self, int value)
 \item 
@@ -60,6 +42,14 @@ str \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4ac2d564b
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
 \begin{DoxyCompactItemize}
 \item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abd52b5239125ab9fab7bbf64d3ef8ea4}{validate\+\_\+dimensions}} (cls, int width, int height)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a68c41eeca5b7700c7fde8a450609a1bd}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a53c9de31d2b5fa7d8dbabc2496ba5d9f}{resize}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afc1e795f8bf3ab6ca80d6f6124633d4a}{is\+\_\+hovering\+\_\+over}} (self)
+\item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf}{set\+\_\+x}} (self, int x)
 \item 
 int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a94a6ce6ced2d9752ebf915e11f55f571}{get\+\_\+x}} (self)
@@ -74,6 +64,22 @@ Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba}{offset}} (self, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9365c0e2fd541f6ecf2667a6b07f696c}{offset\+\_\+x}}, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef64b7a65cf3ef}{offset\+\_\+y}})
 \item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a71285aebab1c65957305ad0941a4f9c7}{center\+\_\+horizontally}} (self, int parent\+\_\+x, int parent\+\_\+width)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a7546a211dd1fda95adf1e3b822bb02f1}{center\+\_\+vertically}} (self, int parent\+\_\+y, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad3471d2107b642abc44f71ac7d5e3eda}{center}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a09014b7184b6757ff626a1ab0d4ad6e4}{center\+\_\+with\+\_\+offset}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height, int x, int y)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a750bce6c242f4e6b963718fcbe62574f}{set\+\_\+width}} (self, int width)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aac96128e55909ef9e9bbbeb7d8052c29}{get\+\_\+width}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_adf809786300c86b89c475f54460cda3f}{set\+\_\+height}} (self, int height)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aa0ddf899cddd9df9f5764ce3bc8fe133}{get\+\_\+height}} (self)
+\item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a1fbce299d94fa570b9fdf342de8d14bc}{set\+\_\+transparency}} (self, float transparency)
 \item 
 float \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f8c50646c43d1e}{get\+\_\+transparency}} (self)
@@ -81,27 +87,35 @@ float \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aefae226fd7be0a03f4a9f8041e7f50b8}{set\+\_\+state}} (self, bool state)
 \item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad}{get\+\_\+state}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afb11083086b79c6809248a4fa7d130da}{set\+\_\+interact}} (self, bool state)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab1f4301a1d14137e7100b222a5637c35}{can\+\_\+interact}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_abdbef49de611357f71b887827a76ad69}{MIN\+\_\+\+WIDTH}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_aa550330bd9653cf31884880f4db6a2c6}{MIN\+\_\+\+HEIGHT}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9e23a484c437f0d5e13692760a485c80}{MAX\+\_\+\+WIDTH}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1b6b93c751e386dab5b9f82707ccdfc2}{MAX\+\_\+\+HEIGHT}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a79615e609d0e9277d9a421812dfbc6c9}{info\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a246290d0b72c3df344a22957ac5e56da}{progress\+\_\+label}}
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Attributes}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a5a2f8fadaff0accbf832d0e4fac7b410}{MIN\+\_\+\+WIDTH}} = 25
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4bf5e26fd6f22f2e205d2715ed1b43e2}{MAX\+\_\+\+WIDTH}}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b9363b9f52679e92f8d4bc27}{MAX\+\_\+\+WIDTH}} = 500
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a46eff264f23c643238fcd74b84f90761}{MAX\+\_\+\+HEIGHT}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1e7befedb5f092695d1e6b9bd4b1bfca}{\+\_\+width}}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a3b8c67354d096ac536d1927b97da4184}{\+\_\+height}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_aa56ce001cdade6ab7b91bb6d82b0f143}{\+\_\+value}}
 \item 
@@ -118,6 +132,10 @@ int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b
 \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a41dac941f7d9fc5a6c40b237e309ab7e}{\+\_\+x}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a897e42cfbb9b72877897a79bfbf84da5}{\+\_\+y}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1e7befedb5f092695d1e6b9bd4b1bfca}{\+\_\+width}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a3b8c67354d096ac536d1927b97da4184}{\+\_\+height}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
 \begin{DoxyCompactItemize}
@@ -129,6 +147,20 @@ int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8c72ba1a2de7b29c5bebfa891fc06ac2}{\+\_\+transparency}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4f84985e9d82c4547a7183b380283ccd}{\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a43df70dbcc9756259d376dcd95c9cc88}{\+\_\+can\+\_\+interact}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad1165332a20855f597baeb50abba0e05}{MIN\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a2c92d44e7db512f419a175df840a8666}{MAX\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4e9efdae5c05c4aa9022295d0447a213}{MIN\+\_\+\+HEIGHT}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a86fba14a9f91c050d8adafaed3adf0a6}{MAX\+\_\+\+HEIGHT}} = 0
 \end{DoxyCompactItemize}
 
 
@@ -138,61 +170,32 @@ int \mbox{\hyperlink{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8e634fb5b36a3320ecc03cd881317f90}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8e634fb5b36a3320ecc03cd881317f90} 
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4b1bf32f59269d26857f1a1cf8a384dc}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4b1bf32f59269d26857f1a1cf8a384dc} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{title = {\ttfamily "{}"{}},  }\item[{int }]{x = {\ttfamily 0},  }\item[{int }]{y = {\ttfamily 0},  }\item[{int }]{value = {\ttfamily 0},  }\item[{int }]{min\+\_\+value = {\ttfamily 0},  }\item[{int }]{max\+\_\+value = {\ttfamily 100} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{title = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{int }]{x = {\ttfamily 0},  }\item[{int }]{y = {\ttfamily 0},  }\item[{int }]{width = {\ttfamily 800},  }\item[{int }]{height = {\ttfamily 30},  }\item[{int }]{value = {\ttfamily 0},  }\item[{int }]{min\+\_\+value = {\ttfamily 0},  }\item[{int }]{max\+\_\+value = {\ttfamily 100} }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9b70692c8f6448b63d276e9b7092155f}{game.\+gui.\+widget.\+Widget}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abe90fe2a9c084ad71c7f78504612f6b0}{game.\+gui.\+widget.\+Widget}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4a1dc60c8e0f5a440ab65f8caaef8fab}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4a1dc60c8e0f5a440ab65f8caaef8fab} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!center@{center}}
-\index{center@{center}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{center()}{center()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+center (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the progress bar on both axes relative to the specified parent, then return the progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a25d5d1da3e7864c2d9500dfebe3662fb}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a25d5d1da3e7864c2d9500dfebe3662fb} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!center\_horizontally@{center\_horizontally}}
-\index{center\_horizontally@{center\_horizontally}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{center\_horizontally()}{center\_horizontally()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+center\+\_\+horizontally (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+width }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a939391229d592589742d73d85c6b8dfa}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a939391229d592589742d73d85c6b8dfa} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!center\_vertically@{center\_vertically}}
-\index{center\_vertically@{center\_vertically}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{center\_vertically()}{center\_vertically()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+center\+\_\+vertically (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the progress bar horizontally relative to the specified parent, then return the progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a312d3ba3a087d497c1eeeb2fd12d9a42}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a312d3ba3a087d497c1eeeb2fd12d9a42} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!center\_with\_offset@{center\_with\_offset}}
-\index{center\_with\_offset@{center\_with\_offset}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{center\_with\_offset()}{center\_with\_offset()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+center\+\_\+with\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the progress bar with center() and offset it by x and y relative to the specified parent, then return the
-progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a467f14307fc15206f7589730c027ea48}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a467f14307fc15206f7589730c027ea48} 
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1538a8b6653453fcab2eac3c52973798}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1538a8b6653453fcab2eac3c52973798} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!draw@{draw}}
 \index{draw@{draw}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{screen }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} \texorpdfstring{$\vert$}{|} Surface}]{window }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Draw the progress bar and its components.
+\begin{DoxyVerb}Draw the widget and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad86d47421a644aa5678617b7f3df1a37}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad86d47421a644aa5678617b7f3df1a37} 
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a117beb910dc2c07b626a75e1cb3b0611}{game.\+gui.\+widget.\+Widget}}.
+
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad86d47421a644aa5678617b7f3df1a37}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad86d47421a644aa5678617b7f3df1a37} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!get\_filled\_end\_colour@{get\_filled\_end\_colour}}
 \index{get\_filled\_end\_colour@{get\_filled\_end\_colour}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{get\_filled\_end\_colour()}{get\_filled\_end\_colour()}}
@@ -207,14 +210,6 @@ progress bar itself.
 {\footnotesize\ttfamily  tuple\mbox{[}int, int, int\mbox{]} game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+get\+\_\+filled\+\_\+start\+\_\+colour (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Return the filled start colour of the progress bar.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9729d52fbe892237fea4ff6c37ca61fb}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9729d52fbe892237fea4ff6c37ca61fb} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!get\_height@{get\_height}}
-\index{get\_height@{get\_height}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
-{\footnotesize\ttfamily  int game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+get\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Return the height of the progress bar.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4ac2d564b625ab44b18eb99b725bb4d3}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a4ac2d564b625ab44b18eb99b725bb4d3} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!get\_title@{get\_title}}
@@ -248,22 +243,6 @@ progress bar itself.
 
 \begin{DoxyVerb}Return the value bounds of the progress bar (min/max values).
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8cab9f55f22fd81647e47f089531dec6}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a8cab9f55f22fd81647e47f089531dec6} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!get\_width@{get\_width}}
-\index{get\_width@{get\_width}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
-{\footnotesize\ttfamily  int game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+get\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Return the width of the progress bar.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a41e5d3858dc7a13b7a50f89d212c464c}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a41e5d3858dc7a13b7a50f89d212c464c} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!refresh@{refresh}}
-\index{refresh@{refresh}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
-{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+refresh (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Refresh the progress bar and its components.
-\end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_af932b2657a64b8a853ba0ddae0a3cc69}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_af932b2657a64b8a853ba0ddae0a3cc69} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!set\_filled\_end\_colour@{set\_filled\_end\_colour}}
 \index{set\_filled\_end\_colour@{set\_filled\_end\_colour}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
@@ -279,14 +258,6 @@ progress bar itself.
 {\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+set\+\_\+filled\+\_\+start\+\_\+colour (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}int, int, int\mbox{]}}]{filled\+\_\+start\+\_\+colour }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Set the filled start colour of the progress bar, then return the progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ac24123cdded2751e9ddba4a1e19c2362}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ac24123cdded2751e9ddba4a1e19c2362} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!set\_height@{set\_height}}
-\index{set\_height@{set\_height}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{set\_height()}{set\_height()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+set\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{height }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Set the height of the progress bar, then return the progress bar itself.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a53683c89ee453e1baeaab66ed9adc473}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a53683c89ee453e1baeaab66ed9adc473} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!set\_title@{set\_title}}
@@ -320,23 +291,19 @@ progress bar itself.
 
 \begin{DoxyVerb}Set the value bounds of the progress bar (min/max values), then return the progress bar itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a12126b702a67b92a851feea6dc355ff4}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a12126b702a67b92a851feea6dc355ff4} 
-\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!set\_width@{set\_width}}
-\index{set\_width@{set\_width}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
-\doxysubsubsection{\texorpdfstring{set\_width()}{set\_width()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+set\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{width }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Set the width of the progress bar, then return the progress bar itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ae53164bec67983d952dc1214fa8dfa46}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ae53164bec67983d952dc1214fa8dfa46} 
+ \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad9f8b864c57302b70d52780f84c19001}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_ad9f8b864c57302b70d52780f84c19001} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!update@{update}}
 \index{update@{update}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}}]{window }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the progress bar and its components.
+\begin{DoxyVerb}Update the widget and its components.
 \end{DoxyVerb}
  
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8afa798825e40a935e8174dd85a52966}{game.\+gui.\+widget.\+Widget}}.
+
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a5a20ea3ebb8bf467ff19dcd71daace9d}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a5a20ea3ebb8bf467ff19dcd71daace9d} 
@@ -405,17 +372,29 @@ progress bar itself.
 \doxysubsubsection{\texorpdfstring{info\_label}{info\_label}}
 {\footnotesize\ttfamily game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+info\+\_\+label}
 
-\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b9363b9f52679e92f8d4bc27}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a20b33028b9363b9f52679e92f8d4bc27} 
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1b6b93c751e386dab5b9f82707ccdfc2}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a1b6b93c751e386dab5b9f82707ccdfc2} 
+\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!MAX\_HEIGHT@{MAX\_HEIGHT}}
+\index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
+\doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}}
+{\footnotesize\ttfamily game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MAX\+\_\+\+HEIGHT}
+
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9e23a484c437f0d5e13692760a485c80}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a9e23a484c437f0d5e13692760a485c80} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!MAX\_WIDTH@{MAX\_WIDTH}}
 \index{MAX\_WIDTH@{MAX\_WIDTH}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{MAX\_WIDTH}{MAX\_WIDTH}}
-{\footnotesize\ttfamily int game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MAX\+\_\+\+WIDTH = 500\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MAX\+\_\+\+WIDTH}
 
-\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a5a2f8fadaff0accbf832d0e4fac7b410}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a5a2f8fadaff0accbf832d0e4fac7b410} 
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_aa550330bd9653cf31884880f4db6a2c6}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_aa550330bd9653cf31884880f4db6a2c6} 
+\index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!MIN\_HEIGHT@{MIN\_HEIGHT}}
+\index{MIN\_HEIGHT@{MIN\_HEIGHT}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
+\doxysubsubsection{\texorpdfstring{MIN\_HEIGHT}{MIN\_HEIGHT}}
+{\footnotesize\ttfamily game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MIN\+\_\+\+HEIGHT}
+
+\Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_abdbef49de611357f71b887827a76ad69}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_abdbef49de611357f71b887827a76ad69} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!MIN\_WIDTH@{MIN\_WIDTH}}
 \index{MIN\_WIDTH@{MIN\_WIDTH}!game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}}
 \doxysubsubsection{\texorpdfstring{MIN\_WIDTH}{MIN\_WIDTH}}
-{\footnotesize\ttfamily int game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MIN\+\_\+\+WIDTH = 25\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+progress\+\_\+bar.\+Progress\+Bar.\+MIN\+\_\+\+WIDTH}
 
 \Hypertarget{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a246290d0b72c3df344a22957ac5e56da}\label{classgame_1_1gui_1_1progress__bar_1_1ProgressBar_a246290d0b72c3df344a22957ac5e56da} 
 \index{game.gui.progress\_bar.ProgressBar@{game.gui.progress\_bar.ProgressBar}!progress\_label@{progress\_label}}

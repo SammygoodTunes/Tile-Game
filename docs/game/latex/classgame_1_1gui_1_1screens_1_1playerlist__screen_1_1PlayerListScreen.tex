@@ -9,7 +9,9 @@ Inheritance diagram for game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a7c50ccb918c25f0be836dd8507ebdb9b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_add237da689861fc8935c4a51b777d018}{game}})
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a9a3419a0c67123566a28a046c5827133}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_add237da689861fc8935c4a51b777d018}{game}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a14bebe4eebb0ce97456fccbefe623b78}{translate}} (self)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_ae7da70669988790bdc7d1548a2a8ac3f}{draw}} (self)
 \item 
@@ -20,18 +22,27 @@ None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1Playe
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
 \begin{DoxyCompactItemize}
 \item 
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{events}} (self, Event e)
+\item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_add237da689861fc8935c4a51b777d018}{game}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a008367ff0b46e930bb8bad463d37a0ab}{title\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_acc828d9391694ec117c5aac61d0b6a55}{count\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_ae836f062990d9e5ec045ff8bcb6c68d4}{player\+\_\+list}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_add237da689861fc8935c4a51b777d018}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -53,15 +64,15 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a7c50ccb918c25f0be836dd8507ebdb9b}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a7c50ccb918c25f0be836dd8507ebdb9b} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a9a3419a0c67123566a28a046c5827133}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a9a3419a0c67123566a28a046c5827133} 
 \index{game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 
 
@@ -74,17 +85,33 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 
 \begin{DoxyVerb}Draw the screen and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a864ef8fa3cb46143670aea44de14e77e}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a864ef8fa3cb46143670aea44de14e77e} 
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a864ef8fa3cb46143670aea44de14e77e}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a864ef8fa3cb46143670aea44de14e77e} 
 \index{game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a14bebe4eebb0ce97456fccbefe623b78}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a14bebe4eebb0ce97456fccbefe623b78} 
+\index{game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}!translate@{translate}}
+\index{translate@{translate}!game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen.\+translate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the text of all text-related components to their translated equivalents.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a60b973f3b68da8ad083f62b9a0fd4001}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a60b973f3b68da8ad083f62b9a0fd4001} 
 \index{game.gui.screens.playerlist\_screen.PlayerListScreen@{game.gui.screens.playerlist\_screen.PlayerListScreen}!update\_ui@{update\_ui}}
@@ -92,9 +119,13 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the screen UI.
+\begin{DoxyVerb}Update the screen and its components.
 \end{DoxyVerb}
  
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a0e127d37018dadc1c1b170bb33b1044c}\label{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a0e127d37018dadc1c1b170bb33b1044c} 

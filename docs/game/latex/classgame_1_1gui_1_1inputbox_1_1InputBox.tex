@@ -9,13 +9,13 @@ Inheritance diagram for game.\+gui.\+inputbox.\+Input\+Box\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a3a9ccdb5c9be01a1f80b400e71638a30}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str text="{}"{}, str placeholder="{}"{}, int x=0, int y=0, int width=200, int height=50)
+None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a7017498eb4ffbe7f1b8dfbbdf518d7e7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str text=\textquotesingle{}\textquotesingle{}, str placeholder\+\_\+text=\textquotesingle{}\textquotesingle{}, str tooltip\+\_\+text=\textquotesingle{}\textquotesingle{}, int x=0, int y=0, int width=800, int height=50)
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a69d1435c73da5cadaf115bad31facc47}{draw}} (self, Surface screen)
+None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a58e878baf2cd2f7cebabf0b2d550ea89}{draw}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}\texorpdfstring{$\vert$}{|}Surface window)
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ad8d90fe692a18fe6fd253f67c06fe77a}{events}} (self, event.\+Event e)
+None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a8acf9f19690445930889cb8f8e8bba93}{events}} (self, Event e)
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_aaa91db0c309d082a3bb1a5b66468f3af}{update}} (self, window)
+None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a831e4878b9d485f715665e06e803e489}{update}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a1e7bc09d1e8970210009a6c3afecc172}{scroll\+\_\+text}} (self)
 \item 
@@ -36,22 +36,6 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ae2b34df97a01b8fe
 Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a6b6e6356f3a6d31d6c825a135d09e19c}{set\+\_\+selected}} (self, state)
 \item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a766eb438a7ea5e46465a47cee690e112}{is\+\_\+selected}} (self)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_afeb96871a259083d74f93fb330641718}{center\+\_\+horizontally}} (self, int parent\+\_\+x, int parent\+\_\+width)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a07b42a26abffdf97b61193759b857a44}{center\+\_\+vertically}} (self, int parent\+\_\+y, int parent\+\_\+height)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a89a154c4bac9fbf3c5c0fca57ceefb78}{center}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a392281136e4375a4ffdb32e3d1bb4ffc}{center\+\_\+with\+\_\+offset}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height, int x, int y)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_aafb42694feb1ca6402cf9307b9d691a4}{set\+\_\+width}} (self, int width)
-\item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a80b8c17f74361b79c79df66222270ed6}{get\+\_\+width}} (self)
-\item 
-Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_affd240538547017976fd18ba7c1f4162}{set\+\_\+height}} (self, int height)
-\item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a718f37e5cecfb65dfe8edbac6bd03049}{get\+\_\+height}} (self)
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a68f04d1438077757605588b65e9f78a7}{set\+\_\+border\+\_\+colour}} (self, tuple\mbox{[}int, int, int\mbox{]} border\+\_\+colour)
 \item 
@@ -76,24 +60,32 @@ str \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a07bb8400f7a5c20c9
 Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a46810e9b4d8614c8d8e036d3f82c70e8}{set\+\_\+max\+\_\+text\+\_\+length}} (self, int max\+\_\+text\+\_\+length)
 \item 
 int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a8ea9e658d677b9c24c27310b27c8302b}{get\+\_\+max\+\_\+text\+\_\+length}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a248496465a37db84238f349b90f60136}{set\+\_\+text\+\_\+colour}} (self, tuple\mbox{[}int, int, int\mbox{]} text\+\_\+colour)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a5481e2ec76cf718a08c7593fcb9b44a2}{set\+\_\+placeholder\+\_\+text\+\_\+colour}} (self, tuple\mbox{[}int, int, int\mbox{]} placeholder\+\_\+text\+\_\+colour)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a3c38637e1001bc54e80cdf7da396d74d}{set\+\_\+tooltip\+\_\+text}} (self, str tooltip\+\_\+text)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a6ff4b2fea232ed0a9faf5e2b6898e7c1}{set\+\_\+read\+\_\+only}} (self, bool state)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a09d79ea7cb27ee749b95fd1958d4760b}{get\+\_\+read\+\_\+only}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a7c4dc0db747795c6e57858bc38e9aac1}{set\+\_\+interact}} (self, bool state)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Attributes}
+\doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a1f0c7204aaa8cb45a56a6d18e340b9bb}{MIN\+\_\+\+WIDTH}} = 25
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a35601045a244112e6d6d6f634073ab86}{MIN\+\_\+\+WIDTH}}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a3ac85061cbb62995f3fd42e4c6ff766b}{MAX\+\_\+\+WIDTH}} = 800
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a3b9d7fa1c32b7d5326c30f2f95a2b95b}{MIN\+\_\+\+HEIGHT}}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ac0004afc845ced53f9eeb2c945cd3d4a}{MIN\+\_\+\+HEIGHT}} = 25
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ac7ffb649cdc87bad826ad1eafa2ab19d}{MAX\+\_\+\+WIDTH}}
 \item 
-int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a693b3785929c17886c0de20bff0b92e1}{MAX\+\_\+\+HEIGHT}} = 50
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_af0e5bbdbd486871c62b1cfb11e28408b}{MAX\+\_\+\+HEIGHT}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a862bef629b0acdab4c1a2c0ce1848cd7}{\+\_\+width}}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ae22eae3247e1a40239a509ea22069178}{\+\_\+height}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a4c14d659b5b8233c5af994157c848f81}{\+\_\+selected}}
 \item 
@@ -111,15 +103,23 @@ int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a693b3785929c17886
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a38b5b2278e1d9dcaee70d7abb131d050}{\+\_\+authorised\+\_\+chars}}
 \item 
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a7703d8875ba8f892b77036b0cd1b445e}{\+\_\+tooltip}}
+\item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_adbca92c8cb84bf617ce88b424c639b9a}{\+\_\+placeholder\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a108e74023581dd95be86348603165c78}{\+\_\+text\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a2184eb4f6fc634928c253afd7276f5c2}{\+\_\+timer}}
 \item 
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a813b09f40a1d0cbfd8eb5f990c0c8491}{\+\_\+read\+\_\+only}}
+\item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a27b17af076cd277ad2268e6ba980fae0}{\+\_\+x}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ac83e676568ee82e07dcb94e71671d63a}{\+\_\+y}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a862bef629b0acdab4c1a2c0ce1848cd7}{\+\_\+width}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_ae22eae3247e1a40239a509ea22069178}{\+\_\+height}}
 \end{DoxyCompactItemize}
 
 
@@ -129,11 +129,11 @@ int \mbox{\hyperlink{classgame_1_1gui_1_1inputbox_1_1InputBox_a693b3785929c17886
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a3a9ccdb5c9be01a1f80b400e71638a30}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a3a9ccdb5c9be01a1f80b400e71638a30} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a7017498eb4ffbe7f1b8dfbbdf518d7e7}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a7017498eb4ffbe7f1b8dfbbdf518d7e7} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{text = {\ttfamily "{}"{}},  }\item[{str }]{placeholder = {\ttfamily "{}"{}},  }\item[{int }]{x = {\ttfamily 0},  }\item[{int }]{y = {\ttfamily 0},  }\item[{int }]{width = {\ttfamily 200},  }\item[{int }]{height = {\ttfamily 50} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{text = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{str }]{placeholder\+\_\+text = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{str }]{tooltip\+\_\+text = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{int }]{x = {\ttfamily 0},  }\item[{int }]{y = {\ttfamily 0},  }\item[{int }]{width = {\ttfamily 800},  }\item[{int }]{height = {\ttfamily 50} }\end{DoxyParamCaption})}
 
 
 
@@ -180,39 +180,6 @@ This includes dashes (hyphens) and underscores.
 
 \begin{DoxyVerb}Authorise only numerical values (0-9) in the input box, then return the input box itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a89a154c4bac9fbf3c5c0fca57ceefb78}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a89a154c4bac9fbf3c5c0fca57ceefb78} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!center@{center}}
-\index{center@{center}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{center()}{center()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+center (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the input box on both axes relative to the specified parent, then return the input box itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_afeb96871a259083d74f93fb330641718}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_afeb96871a259083d74f93fb330641718} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!center\_horizontally@{center\_horizontally}}
-\index{center\_horizontally@{center\_horizontally}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{center\_horizontally()}{center\_horizontally()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+center\+\_\+horizontally (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+width }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the input box horizontally relative to the specified parent, then return the input box itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a07b42a26abffdf97b61193759b857a44}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a07b42a26abffdf97b61193759b857a44} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!center\_vertically@{center\_vertically}}
-\index{center\_vertically@{center\_vertically}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{center\_vertically()}{center\_vertically()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+center\+\_\+vertically (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+height }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the input box vertically relative to the specified parent, then return the input box itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a392281136e4375a4ffdb32e3d1bb4ffc}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a392281136e4375a4ffdb32e3d1bb4ffc} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!center\_with\_offset@{center\_with\_offset}}
-\index{center\_with\_offset@{center\_with\_offset}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{center\_with\_offset()}{center\_with\_offset()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+center\+\_\+with\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{parent\+\_\+x,  }\item[{int}]{parent\+\_\+y,  }\item[{int}]{parent\+\_\+width,  }\item[{int}]{parent\+\_\+height,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Center the input box with center() and offset it by x and y relative to the specified parent, then return the
-input box itself.
-\end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a7b0055610a614eef15a8a69e92f5a07f}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a7b0055610a614eef15a8a69e92f5a07f} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!clean\_text@{clean\_text}}
 \index{clean\_text@{clean\_text}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
@@ -221,23 +188,19 @@ input box itself.
 
 \begin{DoxyVerb}Clean the text of any unauthorised characters.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a69d1435c73da5cadaf115bad31facc47}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a69d1435c73da5cadaf115bad31facc47} 
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a58e878baf2cd2f7cebabf0b2d550ea89}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a58e878baf2cd2f7cebabf0b2d550ea89} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!draw@{draw}}
 \index{draw@{draw}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Surface}]{screen }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} \texorpdfstring{$\vert$}{|} Surface}]{window }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Draw the input box and its components.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ad8d90fe692a18fe6fd253f67c06fe77a}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ad8d90fe692a18fe6fd253f67c06fe77a} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a8acf9f19690445930889cb8f8e8bba93}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a8acf9f19690445930889cb8f8e8bba93} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!events@{events}}
 \index{events@{events}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{events()}{events()}}
-{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{event.\+Event}]{e }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Handle the input box events.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ac12e9f827b5b6c4cc6c58295f6ce02f5}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ac12e9f827b5b6c4cc6c58295f6ce02f5} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ac12e9f827b5b6c4cc6c58295f6ce02f5}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ac12e9f827b5b6c4cc6c58295f6ce02f5} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_background\_colour@{get\_background\_colour}}
 \index{get\_background\_colour@{get\_background\_colour}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{get\_background\_colour()}{get\_background\_colour()}}
@@ -261,14 +224,6 @@ input box itself.
 
 \begin{DoxyVerb}Return the cursor colour of the input box.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a718f37e5cecfb65dfe8edbac6bd03049}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a718f37e5cecfb65dfe8edbac6bd03049} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_height@{get\_height}}
-\index{get\_height@{get\_height}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
-{\footnotesize\ttfamily  int game.\+gui.\+inputbox.\+Input\+Box.\+get\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Return the height of the input box.
-\end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a8ea9e658d677b9c24c27310b27c8302b}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a8ea9e658d677b9c24c27310b27c8302b} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_max\_text\_length@{get\_max\_text\_length}}
 \index{get\_max\_text\_length@{get\_max\_text\_length}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
@@ -285,6 +240,14 @@ input box itself.
 
 \begin{DoxyVerb}Return the placeholder label text.
 \end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a09d79ea7cb27ee749b95fd1958d4760b}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a09d79ea7cb27ee749b95fd1958d4760b} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_read\_only@{get\_read\_only}}
+\index{get\_read\_only@{get\_read\_only}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{get\_read\_only()}{get\_read\_only()}}
+{\footnotesize\ttfamily  bool game.\+gui.\+inputbox.\+Input\+Box.\+get\+\_\+read\+\_\+only (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the input box's read-only state.
+\end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a07bb8400f7a5c20c9bfd856d404c8a2f}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a07bb8400f7a5c20c9bfd856d404c8a2f} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_text@{get\_text}}
 \index{get\_text@{get\_text}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
@@ -293,23 +256,13 @@ input box itself.
 
 \begin{DoxyVerb}Return the label text of the input box.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a80b8c17f74361b79c79df66222270ed6}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a80b8c17f74361b79c79df66222270ed6} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!get\_width@{get\_width}}
-\index{get\_width@{get\_width}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
-{\footnotesize\ttfamily  int game.\+gui.\+inputbox.\+Input\+Box.\+get\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-\begin{DoxyVerb}Return the width of the input box.
-\end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ae2b34df97a01b8fef2dd4ff8416d1908}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ae2b34df97a01b8fef2dd4ff8416d1908} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!is\_hovering\_over@{is\_hovering\_over}}
 \index{is\_hovering\_over@{is\_hovering\_over}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{is\_hovering\_over()}{is\_hovering\_over()}}
 {\footnotesize\ttfamily  bool game.\+gui.\+inputbox.\+Input\+Box.\+is\+\_\+hovering\+\_\+over (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Return whether the user's mouse cursor is hovering over the input box or not.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a766eb438a7ea5e46465a47cee690e112}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a766eb438a7ea5e46465a47cee690e112} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a766eb438a7ea5e46465a47cee690e112}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a766eb438a7ea5e46465a47cee690e112} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!is\_selected@{is\_selected}}
 \index{is\_selected@{is\_selected}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{is\_selected()}{is\_selected()}}
@@ -353,15 +306,13 @@ TODO: Make it better, fool.
 
 \begin{DoxyVerb}Set the cursor colour of the input box, then return the input box itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_affd240538547017976fd18ba7c1f4162}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_affd240538547017976fd18ba7c1f4162} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_height@{set\_height}}
-\index{set\_height@{set\_height}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{set\_height()}{set\_height()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{height }\end{DoxyParamCaption})}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a7c4dc0db747795c6e57858bc38e9aac1}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a7c4dc0db747795c6e57858bc38e9aac1} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_interact@{set\_interact}}
+\index{set\_interact@{set\_interact}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{set\_interact()}{set\_interact()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+interact (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the height of the input box, then return the input box itself.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a46810e9b4d8614c8d8e036d3f82c70e8}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a46810e9b4d8614c8d8e036d3f82c70e8} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a46810e9b4d8614c8d8e036d3f82c70e8}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a46810e9b4d8614c8d8e036d3f82c70e8} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_max\_text\_length@{set\_max\_text\_length}}
 \index{set\_max\_text\_length@{set\_max\_text\_length}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{set\_max\_text\_length()}{set\_max\_text\_length()}}
@@ -376,6 +327,22 @@ TODO: Make it better, fool.
 {\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+placeholder\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{placeholder\+\_\+text }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Set the placeholder label text of the input box, then return the input box itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a5481e2ec76cf718a08c7593fcb9b44a2}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a5481e2ec76cf718a08c7593fcb9b44a2} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_placeholder\_text\_colour@{set\_placeholder\_text\_colour}}
+\index{set\_placeholder\_text\_colour@{set\_placeholder\_text\_colour}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{set\_placeholder\_text\_colour()}{set\_placeholder\_text\_colour()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+placeholder\+\_\+text\+\_\+colour (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}int, int, int\mbox{]}}]{placeholder\+\_\+text\+\_\+colour }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the placeholder text colour, then return the input box itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a6ff4b2fea232ed0a9faf5e2b6898e7c1}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a6ff4b2fea232ed0a9faf5e2b6898e7c1} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_read\_only@{set\_read\_only}}
+\index{set\_read\_only@{set\_read\_only}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{set\_read\_only()}{set\_read\_only()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+read\+\_\+only (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the input box's read-only state, then return the input box itself.
 \end{DoxyVerb}
  \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a6b6e6356f3a6d31d6c825a135d09e19c}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a6b6e6356f3a6d31d6c825a135d09e19c} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_selected@{set\_selected}}
@@ -393,23 +360,29 @@ TODO: Make it better, fool.
 
 \begin{DoxyVerb}Set the label text of the input box, then return the input box itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_aafb42694feb1ca6402cf9307b9d691a4}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_aafb42694feb1ca6402cf9307b9d691a4} 
-\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_width@{set\_width}}
-\index{set\_width@{set\_width}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
-\doxysubsubsection{\texorpdfstring{set\_width()}{set\_width()}}
-{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{width }\end{DoxyParamCaption})}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a248496465a37db84238f349b90f60136}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a248496465a37db84238f349b90f60136} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_text\_colour@{set\_text\_colour}}
+\index{set\_text\_colour@{set\_text\_colour}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{set\_text\_colour()}{set\_text\_colour()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+text\+\_\+colour (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}int, int, int\mbox{]}}]{text\+\_\+colour }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the width of the input box, then return the input box itself.
+\begin{DoxyVerb}Set the text colour, then return the input box itself.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_aaa91db0c309d082a3bb1a5b66468f3af}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_aaa91db0c309d082a3bb1a5b66468f3af} 
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a3c38637e1001bc54e80cdf7da396d74d}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a3c38637e1001bc54e80cdf7da396d74d} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!set\_tooltip\_text@{set\_tooltip\_text}}
+\index{set\_tooltip\_text@{set\_tooltip\_text}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{set\_tooltip\_text()}{set\_tooltip\_text()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+inputbox.\+Input\+Box.\+set\+\_\+tooltip\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{tooltip\+\_\+text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the input box's tooltip text, then return the input box itself.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a831e4878b9d485f715665e06e803e489}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a831e4878b9d485f715665e06e803e489} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!update@{update}}
 \index{update@{update}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+inputbox.\+Input\+Box.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}}]{window }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the input box and its components.
-\end{DoxyVerb}
- 
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a38b5b2278e1d9dcaee70d7abb131d050}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a38b5b2278e1d9dcaee70d7abb131d050} 
@@ -454,6 +427,12 @@ TODO: Make it better, fool.
 \doxysubsubsection{\texorpdfstring{\_placeholder\_label}{\_placeholder\_label}}
 {\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+\_\+placeholder\+\_\+label\hspace{0.3cm}{\ttfamily [protected]}}
 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a813b09f40a1d0cbfd8eb5f990c0c8491}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a813b09f40a1d0cbfd8eb5f990c0c8491} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!\_read\_only@{\_read\_only}}
+\index{\_read\_only@{\_read\_only}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{\_read\_only}{\_read\_only}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+\_\+read\+\_\+only\hspace{0.3cm}{\ttfamily [protected]}}
+
 \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a4c14d659b5b8233c5af994157c848f81}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a4c14d659b5b8233c5af994157c848f81} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!\_selected@{\_selected}}
 \index{\_selected@{\_selected}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
@@ -484,6 +463,12 @@ TODO: Make it better, fool.
 \doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
 {\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+\_\+timer\hspace{0.3cm}{\ttfamily [protected]}}
 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a7703d8875ba8f892b77036b0cd1b445e}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a7703d8875ba8f892b77036b0cd1b445e} 
+\index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!\_tooltip@{\_tooltip}}
+\index{\_tooltip@{\_tooltip}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
+\doxysubsubsection{\texorpdfstring{\_tooltip}{\_tooltip}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+\_\+tooltip\hspace{0.3cm}{\ttfamily [protected]}}
+
 \Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a862bef629b0acdab4c1a2c0ce1848cd7}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a862bef629b0acdab4c1a2c0ce1848cd7} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!\_width@{\_width}}
 \index{\_width@{\_width}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
@@ -502,29 +487,29 @@ TODO: Make it better, fool.
 \doxysubsubsection{\texorpdfstring{\_y}{\_y}}
 {\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
 
-\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a693b3785929c17886c0de20bff0b92e1}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a693b3785929c17886c0de20bff0b92e1} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_af0e5bbdbd486871c62b1cfb11e28408b}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_af0e5bbdbd486871c62b1cfb11e28408b} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!MAX\_HEIGHT@{MAX\_HEIGHT}}
 \index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}}
-{\footnotesize\ttfamily int game.\+gui.\+inputbox.\+Input\+Box.\+MAX\+\_\+\+HEIGHT = 50\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+MAX\+\_\+\+HEIGHT}
 
-\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a3ac85061cbb62995f3fd42e4c6ff766b}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a3ac85061cbb62995f3fd42e4c6ff766b} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ac7ffb649cdc87bad826ad1eafa2ab19d}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ac7ffb649cdc87bad826ad1eafa2ab19d} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!MAX\_WIDTH@{MAX\_WIDTH}}
 \index{MAX\_WIDTH@{MAX\_WIDTH}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{MAX\_WIDTH}{MAX\_WIDTH}}
-{\footnotesize\ttfamily int game.\+gui.\+inputbox.\+Input\+Box.\+MAX\+\_\+\+WIDTH = 800\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+MAX\+\_\+\+WIDTH}
 
-\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_ac0004afc845ced53f9eeb2c945cd3d4a}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_ac0004afc845ced53f9eeb2c945cd3d4a} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a3b9d7fa1c32b7d5326c30f2f95a2b95b}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a3b9d7fa1c32b7d5326c30f2f95a2b95b} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!MIN\_HEIGHT@{MIN\_HEIGHT}}
 \index{MIN\_HEIGHT@{MIN\_HEIGHT}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{MIN\_HEIGHT}{MIN\_HEIGHT}}
-{\footnotesize\ttfamily int game.\+gui.\+inputbox.\+Input\+Box.\+MIN\+\_\+\+HEIGHT = 25\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+MIN\+\_\+\+HEIGHT}
 
-\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a1f0c7204aaa8cb45a56a6d18e340b9bb}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a1f0c7204aaa8cb45a56a6d18e340b9bb} 
+\Hypertarget{classgame_1_1gui_1_1inputbox_1_1InputBox_a35601045a244112e6d6d6f634073ab86}\label{classgame_1_1gui_1_1inputbox_1_1InputBox_a35601045a244112e6d6d6f634073ab86} 
 \index{game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}!MIN\_WIDTH@{MIN\_WIDTH}}
 \index{MIN\_WIDTH@{MIN\_WIDTH}!game.gui.inputbox.InputBox@{game.gui.inputbox.InputBox}}
 \doxysubsubsection{\texorpdfstring{MIN\_WIDTH}{MIN\_WIDTH}}
-{\footnotesize\ttfamily int game.\+gui.\+inputbox.\+Input\+Box.\+MIN\+\_\+\+WIDTH = 25\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily game.\+gui.\+inputbox.\+Input\+Box.\+MIN\+\_\+\+WIDTH}
 
 
 

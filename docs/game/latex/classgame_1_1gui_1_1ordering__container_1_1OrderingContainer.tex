@@ -18,9 +18,21 @@ Self \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContain
 list\mbox{[}any\mbox{]} \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_acbe0c5e6a88833e746b9a0d822eae51d}{get\+\_\+widgets}} (self)
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16}{set\+\_\+state}} (self, bool state)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_ab643ba5bfa47f927bb1f259fd3f9fb4e}{set\+\_\+interact}} (self, bool state)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
 \begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abd52b5239125ab9fab7bbf64d3ef8ea4}{validate\+\_\+dimensions}} (cls, int width, int height)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a53c9de31d2b5fa7d8dbabc2496ba5d9f}{resize}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8afa798825e40a935e8174dd85a52966}{update}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}} window)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a117beb910dc2c07b626a75e1cb3b0611}{draw}} (self, \mbox{\hyperlink{classgame_1_1core_1_1window_1_1Window}{Window}}\texorpdfstring{$\vert$}{|}Surface window)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afc1e795f8bf3ab6ca80d6f6124633d4a}{is\+\_\+hovering\+\_\+over}} (self)
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a00e6238ed6f89b1e9c2de796e72a0aaf}{set\+\_\+x}} (self, int x)
 \item 
@@ -36,11 +48,29 @@ Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef
 \item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ac75dfd62bf2770c34f2b15d8eb88e2ba}{offset}} (self, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9365c0e2fd541f6ecf2667a6b07f696c}{offset\+\_\+x}}, int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a0320d2f9f7fbdbd7c8ef64b7a65cf3ef}{offset\+\_\+y}})
 \item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a71285aebab1c65957305ad0941a4f9c7}{center\+\_\+horizontally}} (self, int parent\+\_\+x, int parent\+\_\+width)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a7546a211dd1fda95adf1e3b822bb02f1}{center\+\_\+vertically}} (self, int parent\+\_\+y, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad3471d2107b642abc44f71ac7d5e3eda}{center}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a09014b7184b6757ff626a1ab0d4ad6e4}{center\+\_\+with\+\_\+offset}} (self, int parent\+\_\+x, int parent\+\_\+y, int parent\+\_\+width, int parent\+\_\+height, int x, int y)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a750bce6c242f4e6b963718fcbe62574f}{set\+\_\+width}} (self, int width)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aac96128e55909ef9e9bbbeb7d8052c29}{get\+\_\+width}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_adf809786300c86b89c475f54460cda3f}{set\+\_\+height}} (self, int height)
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_aa0ddf899cddd9df9f5764ce3bc8fe133}{get\+\_\+height}} (self)
+\item 
 Self \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a1fbce299d94fa570b9fdf342de8d14bc}{set\+\_\+transparency}} (self, float transparency)
 \item 
 float \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4ba4ed0bc1d025d728f8c50646c43d1e}{get\+\_\+transparency}} (self)
 \item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3a9b61d86e2ad}{get\+\_\+state}} (self)
+\item 
+bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab1f4301a1d14137e7100b222a5637c35}{can\+\_\+interact}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -59,6 +89,27 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ab31fae7ff59591ff48f3
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a8c72ba1a2de7b29c5bebfa891fc06ac2}{\+\_\+transparency}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4f84985e9d82c4547a7183b380283ccd}{\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a43df70dbcc9756259d376dcd95c9cc88}{\+\_\+can\+\_\+interact}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4bf5e26fd6f22f2e205d2715ed1b43e2}{MAX\+\_\+\+WIDTH}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a46eff264f23c643238fcd74b84f90761}{MAX\+\_\+\+HEIGHT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget}{game.\+gui.\+widget.\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_ad1165332a20855f597baeb50abba0e05}{MIN\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a2c92d44e7db512f419a175df840a8666}{MAX\+\_\+\+WIDTH}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a4e9efdae5c05c4aa9022295d0447a213}{MIN\+\_\+\+HEIGHT}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a86fba14a9f91c050d8adafaed3adf0a6}{MAX\+\_\+\+HEIGHT}} = 0
 \end{DoxyCompactItemize}
 
 
@@ -78,7 +129,7 @@ This isn't a visible GUI component.
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9b70692c8f6448b63d276e9b7092155f}{game.\+gui.\+widget.\+Widget}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_abe90fe2a9c084ad71c7f78504612f6b0}{game.\+gui.\+widget.\+Widget}}.
 
 
 
@@ -89,9 +140,13 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9b7069
 \doxysubsubsection{\texorpdfstring{events()}{events()}}
 {\footnotesize\ttfamily  None game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Handle the ordering container events.
+\begin{DoxyVerb}Handle the widget events.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_acbe0c5e6a88833e746b9a0d822eae51d}\label{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_acbe0c5e6a88833e746b9a0d822eae51d} 
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a68c41eeca5b7700c7fde8a450609a1bd}{game.\+gui.\+widget.\+Widget}}.
+
+\Hypertarget{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_acbe0c5e6a88833e746b9a0d822eae51d}\label{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_acbe0c5e6a88833e746b9a0d822eae51d} 
 \index{game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}!get\_widgets@{get\_widgets}}
 \index{get\_widgets@{get\_widgets}!game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}}
 \doxysubsubsection{\texorpdfstring{get\_widgets()}{get\_widgets()}}
@@ -99,13 +154,25 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_a9b7069
 
 \begin{DoxyVerb}Return the ordering container's widgets array.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16}\label{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16} 
+ \Hypertarget{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_ab643ba5bfa47f927bb1f259fd3f9fb4e}\label{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_ab643ba5bfa47f927bb1f259fd3f9fb4e} 
+\index{game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}!set\_interact@{set\_interact}}
+\index{set\_interact@{set\_interact}!game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}}
+\doxysubsubsection{\texorpdfstring{set\_interact()}{set\_interact()}}
+{\footnotesize\ttfamily  Self game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container.\+set\+\_\+interact (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set whether the widget is interactable or not, independent to its visibility, then return the widget itself.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1widget_1_1Widget_afb11083086b79c6809248a4fa7d130da}{game.\+gui.\+widget.\+Widget}}.
+
+\Hypertarget{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16}\label{classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_a6a5df88d6c0d88eeff33fac5c86efb16} 
 \index{game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.ordering\_container.OrderingContainer@{game.gui.ordering\_container.OrderingContainer}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  Self game.\+gui.\+ordering\+\_\+container.\+Ordering\+Container.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the ordering container's state and reset the order, then return the ordering container itself.
+\begin{DoxyVerb}Set the widget's visibility and interactivity state, then return the widget itself.
 \end{DoxyVerb}
  
 

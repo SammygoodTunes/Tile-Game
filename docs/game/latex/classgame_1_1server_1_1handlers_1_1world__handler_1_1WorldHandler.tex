@@ -5,13 +5,20 @@
 \item 
 None \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a6932665d2fe7917c7fe47407586e2807}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-None \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a2b82f5c8199fb6cea131c6e26c1ab4f3}{create\+\_\+world}} (self, str seed)
+None \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_aa15fe0fb12ae88d375f0831ecbe7c9b5}{create\+\_\+world}} (self, str seed, dict theme, str size)
 \item 
 None \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a82eccf3f4a8a9e4c941f9832f654f7d8}{update\+\_\+broken\+\_\+tile}} (self, dict player\+\_\+dict)
 \item 
 bytes \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a077544fd514152d079e0f6b2c18fb8cd}{get\+\_\+map\+\_\+data}} (self)
 \item 
+None \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_abee61d426a44ea9bb6a4e6eb66309031}{set\+\_\+world}} (self, \mbox{\hyperlink{classgame_1_1world_1_1world_1_1World}{World}} world)
+\item 
 \mbox{\hyperlink{classgame_1_1world_1_1world_1_1World}{World}} \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a6f6d404ab90215a9fd1500725f303cb8}{get\+\_\+world}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a9fbb81ba6e85d64a5ab026edda9ec518}{\+\_\+world}}
 \end{DoxyCompactItemize}
 
 
@@ -30,11 +37,11 @@ bytes \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1Worl
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a2b82f5c8199fb6cea131c6e26c1ab4f3}\label{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a2b82f5c8199fb6cea131c6e26c1ab4f3} 
+\Hypertarget{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_aa15fe0fb12ae88d375f0831ecbe7c9b5}\label{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_aa15fe0fb12ae88d375f0831ecbe7c9b5} 
 \index{game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}!create\_world@{create\_world}}
 \index{create\_world@{create\_world}!game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}}
 \doxysubsubsection{\texorpdfstring{create\_world()}{create\_world()}}
-{\footnotesize\ttfamily  None game.\+server.\+handlers.\+world\+\_\+handler.\+World\+Handler.\+create\+\_\+world (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{seed }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+server.\+handlers.\+world\+\_\+handler.\+World\+Handler.\+create\+\_\+world (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{seed,  }\item[{dict}]{theme,  }\item[{str}]{size }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}Create a new server world.
 \end{DoxyVerb}
@@ -54,6 +61,14 @@ bytes \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1Worl
 
 \begin{DoxyVerb}Return the world object.
 \end{DoxyVerb}
+ \Hypertarget{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_abee61d426a44ea9bb6a4e6eb66309031}\label{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_abee61d426a44ea9bb6a4e6eb66309031} 
+\index{game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}!set\_world@{set\_world}}
+\index{set\_world@{set\_world}!game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}}
+\doxysubsubsection{\texorpdfstring{set\_world()}{set\_world()}}
+{\footnotesize\ttfamily  None game.\+server.\+handlers.\+world\+\_\+handler.\+World\+Handler.\+set\+\_\+world (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1world_1_1world_1_1World}{World}}}]{world }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the server world.
+\end{DoxyVerb}
  \Hypertarget{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a82eccf3f4a8a9e4c941f9832f654f7d8}\label{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a82eccf3f4a8a9e4c941f9832f654f7d8} 
 \index{game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}!update\_broken\_tile@{update\_broken\_tile}}
 \index{update\_broken\_tile@{update\_broken\_tile}!game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}}
@@ -63,6 +78,15 @@ bytes \mbox{\hyperlink{classgame_1_1server_1_1handlers_1_1world__handler_1_1Worl
 \begin{DoxyVerb}Update the map's tile data with the received player dict to take into account a broken tile.
 \end{DoxyVerb}
  
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a9fbb81ba6e85d64a5ab026edda9ec518}\label{classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_a9fbb81ba6e85d64a5ab026edda9ec518} 
+\index{game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}!\_world@{\_world}}
+\index{\_world@{\_world}!game.server.handlers.world\_handler.WorldHandler@{game.server.handlers.world\_handler.WorldHandler}}
+\doxysubsubsection{\texorpdfstring{\_world}{\_world}}
+{\footnotesize\ttfamily game.\+server.\+handlers.\+world\+\_\+handler.\+World\+Handler.\+\_\+world\hspace{0.3cm}{\ttfamily [protected]}}
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

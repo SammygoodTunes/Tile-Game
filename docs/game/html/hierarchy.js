@@ -67,6 +67,10 @@ var hierarchy =
       [ "game.client.connection.XSocket", "classgame_1_1client_1_1connection_1_1XSocket.html", null ]
     ] ],
     [ "game.client.connection.Tasks", "classgame_1_1client_1_1connection_1_1Tasks.html", null ],
+    [ "game.data.themes.theme.Theme", "classgame_1_1data_1_1themes_1_1theme_1_1Theme.html", null ],
+    [ "game.data.themes.theme_layers.ThemeLayers", "classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers.html", null ],
+    [ "game.world.theme_manager.ThemeManager", "classgame_1_1world_1_1theme__manager_1_1ThemeManager.html", null ],
+    [ "game.data.themes.themes.Themes", "classgame_1_1data_1_1themes_1_1themes_1_1Themes.html", null ],
     [ "game.data.tiles.tile.Tile", "classgame_1_1data_1_1tiles_1_1tile_1_1Tile.html", null ],
     [ "game.world.tile_manager.TileManager", "classgame_1_1world_1_1tile__manager_1_1TileManager.html", null ],
     [ "game.data.properties.tile_properties.TileProperties", "classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties.html", null ],
@@ -81,7 +85,9 @@ var hierarchy =
       [ "game.gui.nametag.NameTag", "classgame_1_1gui_1_1nametag_1_1NameTag.html", null ],
       [ "game.gui.ordering_container.OrderingContainer", "classgame_1_1gui_1_1ordering__container_1_1OrderingContainer.html", null ],
       [ "game.gui.progress_bar.ProgressBar", "classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html", null ],
-      [ "game.gui.slot.Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", null ]
+      [ "game.gui.selectbox.SelectBox", "classgame_1_1gui_1_1selectbox_1_1SelectBox.html", null ],
+      [ "game.gui.slot.Slot", "classgame_1_1gui_1_1slot_1_1Slot.html", null ],
+      [ "game.gui.tooltip.Tooltip", "classgame_1_1gui_1_1tooltip_1_1Tooltip.html", null ]
     ] ],
     [ "game.core.window.Window", "classgame_1_1core_1_1window_1_1Window.html", [
       [ "game.core.game.Game", "classgame_1_1core_1_1game_1_1Game.html", null ]

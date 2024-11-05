@@ -30,12 +30,23 @@ float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a897f
 \item 
 float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_ab4f93a8deee339eebd4cd4c2d6fcf25a}{cosine\+\_\+interpolate}} (float a, float b, float x)
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a747c6e7bb38bb771cbce79a60dd089ec}{MIN\+\_\+\+HEIGHT}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a05811008a0cdad5e4f969ea31d0666a4}{MAX\+\_\+\+HEIGHT}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202}{NOISE\+\_\+\+INTENSITY\+\_\+\+RANGE}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16
 \item 
-float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bbd121a8184d8415953c4175a4f6a6}{FREQ\+\_\+\+ALTER\+\_\+\+RANGE}} = 0.\+08
+float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bbd121a8184d8415953c4175a4f6a6}{FREQ\+\_\+\+ALTER\+\_\+\+RANGE}} = 0.\+04
+\item 
+int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a097ae16fa865cf3493d0ace32c62c9da}{MIN\+\_\+\+HEIGHT}} = 0
+\item 
+int \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa56222e5901d4615f5486c293c92704a}{MAX\+\_\+\+HEIGHT}} = 0
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -49,6 +60,8 @@ float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bb
 \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a70012a911d06b5548d4b9bf0159df182}{\+\_\+noise\+\_\+intensity}}
 \item 
 \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_af99c38c0a58b17eeeaf791ee4dd9c642}{\+\_\+frequency}}
+\item 
+\mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a9defeaab8af4037134450d6d4f7244bc}{\+\_\+noise\+\_\+params}}
 \end{DoxyCompactItemize}
 
 
@@ -170,6 +183,12 @@ float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bb
 \doxysubsubsection{\texorpdfstring{\_noise\_intensity}{\_noise\_intensity}}
 {\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+noise\+\_\+intensity\hspace{0.3cm}{\ttfamily [protected]}}
 
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a9defeaab8af4037134450d6d4f7244bc}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a9defeaab8af4037134450d6d4f7244bc} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_noise\_params@{\_noise\_params}}
+\index{\_noise\_params@{\_noise\_params}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{\_noise\_params}{\_noise\_params}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+\_\+noise\+\_\+params\hspace{0.3cm}{\ttfamily [protected]}}
+
 \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a15136b3daa0b992e9e8838c9adc2a0f0}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a15136b3daa0b992e9e8838c9adc2a0f0} 
 \index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!\_octaves@{\_octaves}}
 \index{\_octaves@{\_octaves}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
@@ -192,7 +211,31 @@ float \mbox{\hyperlink{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a22bb
 \index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!FREQ\_ALTER\_RANGE@{FREQ\_ALTER\_RANGE}}
 \index{FREQ\_ALTER\_RANGE@{FREQ\_ALTER\_RANGE}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
 \doxysubsubsection{\texorpdfstring{FREQ\_ALTER\_RANGE}{FREQ\_ALTER\_RANGE}}
-{\footnotesize\ttfamily float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+FREQ\+\_\+\+ALTER\+\_\+\+RANGE = 0.\+08\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily float game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+FREQ\+\_\+\+ALTER\+\_\+\+RANGE = 0.\+04\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa56222e5901d4615f5486c293c92704a}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_aa56222e5901d4615f5486c293c92704a} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!MAX\_HEIGHT@{MAX\_HEIGHT}}
+\index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+MAX\+\_\+\+HEIGHT = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a05811008a0cdad5e4f969ea31d0666a4}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a05811008a0cdad5e4f969ea31d0666a4} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!MAX\_HEIGHT@{MAX\_HEIGHT}}
+\index{MAX\_HEIGHT@{MAX\_HEIGHT}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{MAX\_HEIGHT}{MAX\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+MAX\+\_\+\+HEIGHT}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a097ae16fa865cf3493d0ace32c62c9da}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a097ae16fa865cf3493d0ace32c62c9da} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!MIN\_HEIGHT@{MIN\_HEIGHT}}
+\index{MIN\_HEIGHT@{MIN\_HEIGHT}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{MIN\_HEIGHT}{MIN\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+MIN\+\_\+\+HEIGHT = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a747c6e7bb38bb771cbce79a60dd089ec}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a747c6e7bb38bb771cbce79a60dd089ec} 
+\index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!MIN\_HEIGHT@{MIN\_HEIGHT}}
+\index{MIN\_HEIGHT@{MIN\_HEIGHT}!game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{MIN\_HEIGHT}{MIN\_HEIGHT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game.\+world.\+synth.\+noise.\+Perlin\+Noise.\+MIN\+\_\+\+HEIGHT}
 
 \Hypertarget{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202}\label{classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_a4643d1067f84ca8b16e8e771d66d0202} 
 \index{game.world.synth.noise.PerlinNoise@{game.world.synth.noise.PerlinNoise}!NOISE\_INTENSITY\_RANGE@{NOISE\_INTENSITY\_RANGE}}

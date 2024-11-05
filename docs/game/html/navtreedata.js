@@ -52,14 +52,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates.html",
-"classgame_1_1gui_1_1checkbox_1_1Checkbox.html#a4e9941a71af74c2b017a4020da98b242",
-"classgame_1_1gui_1_1inputbox_1_1InputBox.html#a862bef629b0acdab4c1a2c0ce1848cd7",
-"classgame_1_1gui_1_1progress__bar_1_1ProgressBar.html#acfd1cd8b4d1fbc87f0c258cb25aef717",
-"classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen.html#a104e73a51ff7598cfe05346340438e23",
-"classgame_1_1gui_1_1slot_1_1Slot.html#ab22a2141e80040e37aa7e5594e51da35",
-"classgame_1_1world_1_1map__manager_1_1Map.html#ae05bee64f7588d9209ffda50a90b0177",
-"namespacegame_1_1core_1_1game.html"
+"classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties.html",
+"classgame_1_1gui_1_1button_1_1Button.html#af260554077cdd107b776ed9d993a573b",
+"classgame_1_1gui_1_1inputbox_1_1InputBox.html#a813b09f40a1d0cbfd8eb5f990c0c8491",
+"classgame_1_1gui_1_1screen__manager_1_1Screens.html#acc1abe9922dd0de00eb9cca3663d4f32",
+"classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen.html",
+"classgame_1_1gui_1_1slot_1_1Slot.html#a0b20dcd9a0005acd652eefcb90a4eefa",
+"classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached.html#af2189f07dc3d02224744605f71b0f7a4",
+"dir_eccfc24682ef79e86296997e6081dd9b.html",
+"namespacemembers.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegame_1_1utils_1_1translator" kind="namespace" language="Python">
+    <compoundname>game::utils::translator</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegame_1_1utils_1_1translator_1a4a050cc0a96a71ff7eda9e0c55eb08ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game::utils::translator.translator</definition>
+        <argsstring></argsstring>
+        <name>translator</name>
+        <qualifiedname>game.utils.translator.translator</qualifiedname>
+        <initializer>=  i18n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/utils/translator.py" line="11" column="1" bodyfile="game/utils/translator.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1utils_1_1translator_1a25617c54a8dea8d4021ad62337eb43ef" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict game::utils::translator.locales</definition>
+        <argsstring></argsstring>
+        <name>locales</name>
+        <qualifiedname>game.utils.translator.locales</qualifiedname>
+        <initializer>=  {&apos;en&apos;: &apos;English&apos;, &apos;fr&apos;: &apos;Français&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/utils/translator.py" line="12" column="1" bodyfile="game/utils/translator.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegame_1_1utils_1_1translator_1ad15273b74928ac5a20c40d6d0e17d90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>game.utils.translator.get_locale_from_language</definition>
+        <argsstring>(str language)</argsstring>
+        <name>get_locale_from_language</name>
+        <qualifiedname>game.utils.translator.get_locale_from_language</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the locale (e.g.: &apos;en&apos;) of its associated language (e.g.: &apos;English&apos;).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/utils/translator.py" line="18" column="1" bodyfile="game/utils/translator.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Module name: translator
+
+This module configures the translator.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/utils/translator.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

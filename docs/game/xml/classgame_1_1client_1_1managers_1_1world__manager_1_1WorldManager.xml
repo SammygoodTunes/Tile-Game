@@ -3,21 +3,6 @@
   <compounddef id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" kind="class" language="Python" prot="public">
     <compoundname>game::client::managers::world_manager::WorldManager</compoundname>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>game.client.managers.world_manager.WorldManager::local_world</definition>
-        <argsstring></argsstring>
-        <name>local_world</name>
-        <qualifiedname>game.client.managers.world_manager.WorldManager.local_world</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="17" bodyend="-1"/>
-        <referencedby refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" compoundref="world__manager_8py" startline="20" endline="34">game.client.managers.world_manager.WorldManager.build_world_from_bytes</referencedby>
-      </memberdef>
       <memberdef kind="variable" id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" prot="public" static="no" mutable="no">
         <type></type>
         <definition>game.client.managers.world_manager.WorldManager::temp_data</definition>
@@ -30,8 +15,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="18" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="18" bodyend="-1"/>
-        <referencedby refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" compoundref="world__manager_8py" startline="20" endline="34">game.client.managers.world_manager.WorldManager.build_world_from_bytes</referencedby>
+        <location file="game/client/managers/world_manager.py" line="19" column="1" bodyfile="game/client/managers/world_manager.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a33e820c1d0946cf7d65aa89dab6fd686" compoundref="world__manager_8py" startline="21" endline="46">game.client.managers.world_manager.WorldManager.build_world_from_bytes</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -55,12 +40,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="16" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="16" bodyend="19"/>
+        <location file="game/client/managers/world_manager.py" line="17" column="1" bodyfile="game/client/managers/world_manager.py" bodystart="17" bodyend="20"/>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a33e820c1d0946cf7d65aa89dab6fd686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None game.client.managers.world_manager.WorldManager.build_world_from_bytes</definition>
-        <argsstring>(self, bytes bytes_obj)</argsstring>
+        <argsstring>(self, bytes bytes_obj, update_map_size=False)</argsstring>
         <name>build_world_from_bytes</name>
         <qualifiedname>game.client.managers.world_manager.WorldManager.build_world_from_bytes</qualifiedname>
         <param>
@@ -71,6 +56,11 @@
           <type>bytes</type>
           <declname>bytes_obj</declname>
         </param>
+        <param>
+          <type>update_map_size</type>
+          <defname>update_map_size</defname>
+          <defval>False</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -79,9 +69,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="20" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="20" bodyend="34"/>
-        <references refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" compoundref="world__manager_8py" startline="17">game.client.managers.world_manager.WorldManager.local_world</references>
-        <references refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" compoundref="world__manager_8py" startline="18">game.client.managers.world_manager.WorldManager.temp_data</references>
+        <location file="game/client/managers/world_manager.py" line="21" column="1" bodyfile="game/client/managers/world_manager.py" bodystart="21" bodyend="46"/>
+        <references refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" compoundref="world__manager_8py" startline="19">game.client.managers.world_manager.WorldManager.temp_data</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -90,11 +79,10 @@
 <para><verbatim>Class for handling client world information.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" line="11" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/world_manager.py" bodystart="11" bodyend="34"/>
+    <location file="game/client/managers/world_manager.py" line="12" column="1" bodyfile="game/client/managers/world_manager.py" bodystart="12" bodyend="46"/>
     <listofallmembers>
       <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a648286e0e40df5ae203b247835c13ab7" prot="public" virt="non-virtual"><scope>game::client::managers::world_manager::WorldManager</scope><name>__init__</name></member>
-      <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" prot="public" virt="non-virtual"><scope>game::client::managers::world_manager::WorldManager</scope><name>build_world_from_bytes</name></member>
-      <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" prot="public" virt="non-virtual"><scope>game::client::managers::world_manager::WorldManager</scope><name>local_world</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a33e820c1d0946cf7d65aa89dab6fd686" prot="public" virt="non-virtual"><scope>game::client::managers::world_manager::WorldManager</scope><name>build_world_from_bytes</name></member>
       <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" prot="public" virt="non-virtual"><scope>game::client::managers::world_manager::WorldManager</scope><name>temp_data</name></member>
     </listofallmembers>
   </compounddef>

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgame_1_1data_1_1themes_1_1themes_1_1Themes" kind="class" language="Python" prot="public">
+    <compoundname>game::data::themes::themes::Themes</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a3184c46bed22a21889c52e6f1749b20f" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.themes.themes.Themes::DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <qualifiedname>game.data.themes.themes.Themes.DEFAULT</qualifiedname>
+        <initializer>=  (
+        <ref refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kindref="compound">Theme</ref>(0)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1abd30dabb5d3f1dddbc6f46342083d808" kindref="member">ThemeLayers.LAYER_B</ref>, 0, -1500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a018f4b3f9add026159ec987c2468bf4c" kindref="member">Tiles.WATER</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1500, -1000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1000, -600, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -600, -300, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -300, 100, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1af41b867ad797e6998dea83ffb0986a1c" kindref="member">Tiles.GRASS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 100, 500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 500, 2000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1ac2ea589c5be7126defc2e0210737b37f" kindref="member">ThemeLayers.LAYER_T</ref>, 2000, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/themes.py" line="16" column="1" bodyfile="game/data/themes/themes.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1aea9a1c050d34dfa9a452a9bc66fc690a" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.themes.themes.Themes::HELL</definition>
+        <argsstring></argsstring>
+        <name>HELL</name>
+        <qualifiedname>game.data.themes.themes.Themes.HELL</qualifiedname>
+        <initializer>=  (
+        <ref refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kindref="compound">Theme</ref>(1)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1abd30dabb5d3f1dddbc6f46342083d808" kindref="member">ThemeLayers.LAYER_B</ref>, 0, -1500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1500, -1000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1000, -300, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -300, 100, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 100, 500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 500, 2000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a41d80124f783e89ddeb26094db8234f1" kindref="member">Tiles.FIRESTONE</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1ac2ea589c5be7126defc2e0210737b37f" kindref="member">ThemeLayers.LAYER_T</ref>, 2000, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/themes.py" line="28" column="1" bodyfile="game/data/themes/themes.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1ab3c3852ae40115b3240922ca0871b1b1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.themes.themes.Themes::ISLANDS</definition>
+        <argsstring></argsstring>
+        <name>ISLANDS</name>
+        <qualifiedname>game.data.themes.themes.Themes.ISLANDS</qualifiedname>
+        <initializer>=  (
+        <ref refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kindref="compound">Theme</ref>(2)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1abd30dabb5d3f1dddbc6f46342083d808" kindref="member">ThemeLayers.LAYER_B</ref>, 0, -1500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a018f4b3f9add026159ec987c2468bf4c" kindref="member">Tiles.WATER</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1500, -1150, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1150, -1000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1000, -900, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -900, -650, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1af41b867ad797e6998dea83ffb0986a1c" kindref="member">Tiles.GRASS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -650, -350, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -350, -200, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -200, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 0, 2000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a018f4b3f9add026159ec987c2468bf4c" kindref="member">Tiles.WATER</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2000, 2300, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2300, 2500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2500, 2700, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1ac2ea589c5be7126defc2e0210737b37f" kindref="member">ThemeLayers.LAYER_T</ref>, 2700, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/themes.py" line="39" column="1" bodyfile="game/data/themes/themes.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a17eb7eb53232c1f1178746b6df2ecaf8" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple game.data.themes.themes.Themes::HELL_ISLANDS</definition>
+        <argsstring></argsstring>
+        <name>HELL_ISLANDS</name>
+        <qualifiedname>game.data.themes.themes.Themes.HELL_ISLANDS</qualifiedname>
+        <initializer>=  (
+        <ref refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kindref="compound">Theme</ref>(3)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1abd30dabb5d3f1dddbc6f46342083d808" kindref="member">ThemeLayers.LAYER_B</ref>, 0, -1500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1500, -1150, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1150, -1000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -1000, -900, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -900, -650, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1af41b867ad797e6998dea83ffb0986a1c" kindref="member">Tiles.GRASS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -650, -350, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -350, -200, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, -200, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 0, 2000, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a57f2c637faaff64733583c0a147e54fa" kindref="member">Tiles.LAVA</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2000, 2300, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a9594383fdc0014412c1c9ec93df77038" kindref="member">Tiles.SAND</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2300, 2500, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1ad0d9e5fe31b1948a67c0ebdb74f33180" kindref="member">Tiles.DIRT</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kindref="member">ThemeLayers.LAYER_C</ref>, 2500, 2700, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a169090f8fe5f72e14f4c177463d580c9" kindref="member">Tiles.PLAINS</ref>)
+        .add_layer(<ref refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1ac2ea589c5be7126defc2e0210737b37f" kindref="member">ThemeLayers.LAYER_T</ref>, 2700, 0, <ref refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a59296220c0314f5808874fd903f554e6" kindref="member">Tiles.COBBLESTONE</ref>)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="game/data/themes/themes.py" line="56" column="1" bodyfile="game/data/themes/themes.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for creating a collection of world themes.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="game/data/themes/themes.py" line="11" column="1" bodyfile="game/data/themes/themes.py" bodystart="11" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a3184c46bed22a21889c52e6f1749b20f" prot="public" virt="non-virtual"><scope>game::data::themes::themes::Themes</scope><name>DEFAULT</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1aea9a1c050d34dfa9a452a9bc66fc690a" prot="public" virt="non-virtual"><scope>game::data::themes::themes::Themes</scope><name>HELL</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a17eb7eb53232c1f1178746b6df2ecaf8" prot="public" virt="non-virtual"><scope>game::data::themes::themes::Themes</scope><name>HELL_ISLANDS</name></member>
+      <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1ab3c3852ae40115b3240922ca0871b1b1" prot="public" virt="non-virtual"><scope>game::data::themes::themes::Themes</scope><name>ISLANDS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

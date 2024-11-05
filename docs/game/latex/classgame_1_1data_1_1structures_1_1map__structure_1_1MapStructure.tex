@@ -6,6 +6,8 @@
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_adae542acff0288d845d02d698360fb56}{MAP\+\_\+\+WIDTH\+\_\+\+BYTE\+\_\+\+SIZE}} = int(ceil(c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_a6358265daff4cc2e40b6900a0cf4af5d}{World\+Properties.\+MAX\+\_\+\+MAP\+\_\+\+WIDTH}}) / 8))
 \item 
 \mbox{\hyperlink{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_a1431a910aeedd10128e0661a977a5745}{MAP\+\_\+\+HEIGHT\+\_\+\+BYTE\+\_\+\+SIZE}} = int(ceil(c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_afe206b60ee200f9503d8ec25b95038be}{World\+Properties.\+MAX\+\_\+\+MAP\+\_\+\+HEIGHT}}) / 8))
+\item 
+\mbox{\hyperlink{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_a8d99d9a34317aa1a4e4068dc684e6af5}{MAP\+\_\+\+TD\+\_\+\+LEN\+\_\+\+BYTE\+\_\+\+SIZE}}
 \end{DoxyCompactItemize}
 
 
@@ -21,6 +23,20 @@
 \doxysubsubsection{\texorpdfstring{MAP\_HEIGHT\_BYTE\_SIZE}{MAP\_HEIGHT\_BYTE\_SIZE}}
 {\footnotesize\ttfamily game.\+data.\+structures.\+map\+\_\+structure.\+Map\+Structure.\+MAP\+\_\+\+HEIGHT\+\_\+\+BYTE\+\_\+\+SIZE = int(ceil(c\+\_\+log2(\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_afe206b60ee200f9503d8ec25b95038be}{World\+Properties.\+MAX\+\_\+\+MAP\+\_\+\+HEIGHT}}) / 8))\hspace{0.3cm}{\ttfamily [static]}}
 
+\Hypertarget{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_a8d99d9a34317aa1a4e4068dc684e6af5}\label{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_a8d99d9a34317aa1a4e4068dc684e6af5} 
+\index{game.data.structures.map\_structure.MapStructure@{game.data.structures.map\_structure.MapStructure}!MAP\_TD\_LEN\_BYTE\_SIZE@{MAP\_TD\_LEN\_BYTE\_SIZE}}
+\index{MAP\_TD\_LEN\_BYTE\_SIZE@{MAP\_TD\_LEN\_BYTE\_SIZE}!game.data.structures.map\_structure.MapStructure@{game.data.structures.map\_structure.MapStructure}}
+\doxysubsubsection{\texorpdfstring{MAP\_TD\_LEN\_BYTE\_SIZE}{MAP\_TD\_LEN\_BYTE\_SIZE}}
+{\footnotesize\ttfamily game.\+data.\+structures.\+map\+\_\+structure.\+Map\+Structure.\+MAP\+\_\+\+TD\+\_\+\+LEN\+\_\+\+BYTE\+\_\+\+SIZE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ int(ceil(c\_log2(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (TileStructure.TILE\_BYTE\_SIZE\ +\ TileStructure.TILE\_ADJACENT\_DUPLICATES\_BYTE\_SIZE)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ *\ TileProperties.TILE\_ADJACENT\_DUPLICATES\_MAX}
+\DoxyCodeLine{\ \ \ \ )\ /\ 8))}
+
+\end{DoxyCode}
 \Hypertarget{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_adae542acff0288d845d02d698360fb56}\label{classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_adae542acff0288d845d02d698360fb56} 
 \index{game.data.structures.map\_structure.MapStructure@{game.data.structures.map\_structure.MapStructure}!MAP\_WIDTH\_BYTE\_SIZE@{MAP\_WIDTH\_BYTE\_SIZE}}
 \index{MAP\_WIDTH\_BYTE\_SIZE@{MAP\_WIDTH\_BYTE\_SIZE}!game.data.structures.map\_structure.MapStructure@{game.data.structures.map\_structure.MapStructure}}

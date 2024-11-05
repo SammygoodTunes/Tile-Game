@@ -15,11 +15,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="32" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="32" bodyend="-1"/>
+        <location file="game/server/server.py" line="32" column="1" bodyfile="game/server/server.py" bodystart="32" bodyend="-1"/>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1ab8cf9700616742fe3225d3fd62cd144a" compoundref="connection_8py" startline="168" endline="186">game.client.connection.Connection.disconnect</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="144" endline="156">game.server.server.Server.safe_closure</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a" compoundref="server_8py" startline="108" endline="128">game.server.server.Server.start</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="146" endline="158">game.server.server.Server.safe_closure</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a62532fb5d1e59f13a64f91987f46eb12" compoundref="server_8py" startline="110" endline="130">game.server.server.Server.start</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a008f356261f7336532a742acb0a35e54" compoundref="connection_8py" startline="193" endline="242">game.client.connection.Connection.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1a115f47f2b8f5bf4e0f16ce0cdc5f7fcd" prot="public" static="no" mutable="no">
@@ -34,8 +34,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="33" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="33" bodyend="-1"/>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="144" endline="156">game.server.server.Server.safe_closure</referencedby>
+        <location file="game/server/server.py" line="33" column="1" bodyfile="game/server/server.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="146" endline="158">game.server.server.Server.safe_closure</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380" prot="public" static="no" mutable="no">
         <type></type>
@@ -49,12 +49,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="36" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="36" bodyend="-1"/>
+        <location file="game/server/server.py" line="36" column="1" bodyfile="game/server/server.py" bodystart="36" bodyend="-1"/>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1ab8cf9700616742fe3225d3fd62cd144a" compoundref="connection_8py" startline="168" endline="186">game.client.connection.Connection.disconnect</referencedby>
-        <referencedby refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" compoundref="main__hud_8py" startline="44" endline="97">game.gui.screens.main_hud.MainHud.draw</referencedby>
-        <referencedby refid="classgame_1_1core_1_1window_1_1Window_1ac19611f83ab29c8f3acfee6cb4442862" compoundref="window_8py" startline="83" endline="94">game.core.window.Window.draw_fps</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="144" endline="156">game.server.server.Server.safe_closure</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1af7e61056c4294f85306b7f87e5de5fb1" compoundref="game_8py" startline="107" endline="118">game.core.game.Game.draw_fps</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="146" endline="158">game.server.server.Server.safe_closure</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a" prot="public" static="no" mutable="no">
         <type></type>
@@ -68,9 +67,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="47" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="47" bodyend="-1"/>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" compoundref="server_8py" startline="88" endline="107">game.server.server.Server.run</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <location file="game/server/server.py" line="47" column="1" bodyfile="game/server/server.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" compoundref="server_8py" startline="90" endline="109">game.server.server.Server.run</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1adf7a7396794698015a0907efd5dfb892" prot="public" static="no" mutable="no">
         <type></type>
@@ -84,9 +83,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="50" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="50" bodyend="-1"/>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" compoundref="server_8py" startline="88" endline="107">game.server.server.Server.run</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <location file="game/server/server.py" line="50" column="1" bodyfile="game/server/server.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" compoundref="server_8py" startline="90" endline="109">game.server.server.Server.run</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" prot="public" static="no" mutable="no">
         <type></type>
@@ -100,10 +99,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="113" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="113" bodyend="-1"/>
+        <location file="game/server/server.py" line="115" column="1" bodyfile="game/server/server.py" bodystart="115" bodyend="-1"/>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1ab8cf9700616742fe3225d3fd62cd144a" compoundref="connection_8py" startline="168" endline="186">game.client.connection.Connection.disconnect</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" compoundref="server_8py" startline="88" endline="107">game.server.server.Server.run</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" compoundref="server_8py" startline="90" endline="109">game.server.server.Server.run</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
         <referencedby refid="classgame_1_1client_1_1connection_1_1Connection_1a008f356261f7336532a742acb0a35e54" compoundref="connection_8py" startline="193" endline="242">game.client.connection.Connection.update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" prot="public" static="no" mutable="no">
@@ -118,8 +117,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="126" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="126" bodyend="-1"/>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</referencedby>
+        <location file="game/server/server.py" line="128" column="1" bodyfile="game/server/server.py" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -139,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="31" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="31" bodyend="39"/>
+        <location file="game/server/server.py" line="31" column="1" bodyfile="game/server/server.py" bodystart="31" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -167,13 +166,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="40" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="40" bodyend="87"/>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" compoundref="server_8py" startline="88" endline="107">game.server.server.Server.run</referencedby>
+        <location file="game/server/server.py" line="40" column="1" bodyfile="game/server/server.py" bodystart="40" bodyend="89"/>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" compoundref="server_8py" startline="90" endline="109">game.server.server.Server.run</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None game.server.server.Server.run</definition>
-        <argsstring>(self, state, str _seed)</argsstring>
+        <argsstring>(self, state, str _seed, dict theme, str size)</argsstring>
         <name>run</name>
         <qualifiedname>game.server.server.Server.run</qualifiedname>
         <param>
@@ -188,6 +187,14 @@
           <type>str</type>
           <declname>_seed</declname>
         </param>
+        <param>
+          <type>dict</type>
+          <declname>theme</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>size</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -196,17 +203,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="88" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="88" bodyend="107"/>
-        <references refid="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" compoundref="server_8py" startline="40" endline="87">game.server.server.Server.client_handler</references>
+        <location file="game/server/server.py" line="90" column="1" bodyfile="game/server/server.py" bodystart="90" bodyend="109"/>
+        <references refid="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" compoundref="server_8py" startline="40" endline="89">game.server.server.Server.client_handler</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1adf7a7396794698015a0907efd5dfb892" compoundref="server_8py" startline="50">game.server.server.Server.player_handler</references>
         <references refid="classgame_1_1client_1_1connection_1_1Connection_1ac3cf9b3987df0fa43db124648130b405" compoundref="connection_8py" startline="80">game.client.connection.Connection.sock</references>
-        <references refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" compoundref="server_8py" startline="113">game.server.server.Server.sock</references>
+        <references refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" compoundref="server_8py" startline="115">game.server.server.Server.sock</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a" compoundref="server_8py" startline="47">game.server.server.Server.world_handler</references>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1a62532fb5d1e59f13a64f91987f46eb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None game.server.server.Server.start</definition>
-        <argsstring>(self, str _seed)</argsstring>
+        <argsstring>(self, str _seed, dict theme, str size)</argsstring>
         <name>start</name>
         <qualifiedname>game.server.server.Server.start</qualifiedname>
         <param>
@@ -217,6 +224,14 @@
           <type>str</type>
           <declname>_seed</declname>
         </param>
+        <param>
+          <type>dict</type>
+          <declname>theme</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>size</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -225,8 +240,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="108" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="108" bodyend="128"/>
-        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="85">game.client.connection.Connection.state</references>
+        <location file="game/server/server.py" line="110" column="1" bodyfile="game/server/server.py" bodystart="110" bodyend="130"/>
+        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="84">game.client.connection.Connection.state</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" compoundref="server_8py" startline="32">game.server.server.Server.state</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -247,21 +262,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="129" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="129" bodyend="143"/>
+        <location file="game/server/server.py" line="131" column="1" bodyfile="game/server/server.py" bodystart="131" bodyend="145"/>
         <references refid="classgame_1_1server_1_1server_1_1Server_1adf7a7396794698015a0907efd5dfb892" compoundref="server_8py" startline="50">game.server.server.Server.player_handler</references>
-        <references refid="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" compoundref="server_8py" startline="126">game.server.server.Server.server_thread</references>
+        <references refid="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" compoundref="server_8py" startline="128">game.server.server.Server.server_thread</references>
         <references refid="classgame_1_1client_1_1connection_1_1Connection_1ac3cf9b3987df0fa43db124648130b405" compoundref="connection_8py" startline="80">game.client.connection.Connection.sock</references>
-        <references refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" compoundref="server_8py" startline="113">game.server.server.Server.sock</references>
-        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="85">game.client.connection.Connection.state</references>
+        <references refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" compoundref="server_8py" startline="115">game.server.server.Server.sock</references>
+        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="84">game.client.connection.Connection.state</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" compoundref="server_8py" startline="32">game.server.server.Server.state</references>
-        <references refid="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" compoundref="connection_8py" startline="100">game.client.connection.Connection.timer</references>
-        <references refid="classgame_1_1core_1_1window_1_1Window_1a64a43e7af5c7dbf05144a7d98ea7a7a6" compoundref="window_8py" startline="90">game.core.window.Window.timer</references>
-        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a1149f33abc24a3f7ab7f19ac3cb1895d" compoundref="main__hud_8py" startline="42">game.gui.screens.main_hud.MainHud.timer</references>
+        <references refid="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" compoundref="connection_8py" startline="98">game.client.connection.Connection.timer</references>
+        <references refid="classgame_1_1core_1_1game_1_1Game_1a87837735d38531470f2a3fcd3cc04377" compoundref="game_8py" startline="114">game.core.game.Game.timer</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a1149f33abc24a3f7ab7f19ac3cb1895d" compoundref="main__hud_8py" startline="41">game.gui.screens.main_hud.MainHud.timer</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380" compoundref="server_8py" startline="36">game.server.server.Server.timer</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1ad92b403abc4a240ad0757acf0771ec4a" compoundref="server_8py" startline="47">game.server.server.Server.world_handler</references>
-        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" compoundref="game_8py" startline="54" endline="82">game.core.game.Game.all_events</referencedby>
-        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" compoundref="game_8py" startline="96" endline="119">game.core.game.Game.crash</referencedby>
-        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="144" endline="156">game.server.server.Server.safe_closure</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" compoundref="game_8py" startline="68" endline="98">game.core.game.Game.all_events</referencedby>
+        <referencedby refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" compoundref="game_8py" startline="125" endline="148">game.core.game.Game.crash</referencedby>
+        <referencedby refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" compoundref="server_8py" startline="146" endline="158">game.server.server.Server.safe_closure</referencedby>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
@@ -281,16 +296,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="144" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="144" bodyend="156"/>
+        <location file="game/server/server.py" line="146" column="1" bodyfile="game/server/server.py" bodystart="146" bodyend="158"/>
         <references refid="classgame_1_1server_1_1server_1_1Server_1a115f47f2b8f5bf4e0f16ce0cdc5f7fcd" compoundref="server_8py" startline="33">game.server.server.Server.player_count</references>
-        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="85">game.client.connection.Connection.state</references>
+        <references refid="classgame_1_1client_1_1connection_1_1Connection_1ae1db249190e2397eb6b8fba08f930d98" compoundref="connection_8py" startline="84">game.client.connection.Connection.state</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" compoundref="server_8py" startline="32">game.server.server.Server.state</references>
-        <references refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" compoundref="client_8py" startline="80" endline="86">game.client.client.Client.stop</references>
-        <references refid="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" compoundref="game_8py" startline="120" endline="129">game.core.game.Game.stop</references>
-        <references refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="129" endline="143">game.server.server.Server.stop</references>
-        <references refid="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" compoundref="connection_8py" startline="100">game.client.connection.Connection.timer</references>
-        <references refid="classgame_1_1core_1_1window_1_1Window_1a64a43e7af5c7dbf05144a7d98ea7a7a6" compoundref="window_8py" startline="90">game.core.window.Window.timer</references>
-        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a1149f33abc24a3f7ab7f19ac3cb1895d" compoundref="main__hud_8py" startline="42">game.gui.screens.main_hud.MainHud.timer</references>
+        <references refid="classgame_1_1client_1_1client_1_1Client_1aeba4f31315d488c27e9990d45f0273c3" compoundref="client_8py" startline="83" endline="89">game.client.client.Client.stop</references>
+        <references refid="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" compoundref="game_8py" startline="149" endline="158">game.core.game.Game.stop</references>
+        <references refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" compoundref="server_8py" startline="131" endline="145">game.server.server.Server.stop</references>
+        <references refid="classgame_1_1client_1_1connection_1_1Connection_1a4dff41773fa8d611bb3921a1bc00e94c" compoundref="connection_8py" startline="98">game.client.connection.Connection.timer</references>
+        <references refid="classgame_1_1core_1_1game_1_1Game_1a87837735d38531470f2a3fcd3cc04377" compoundref="game_8py" startline="114">game.core.game.Game.timer</references>
+        <references refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a1149f33abc24a3f7ab7f19ac3cb1895d" compoundref="main__hud_8py" startline="41">game.gui.screens.main_hud.MainHud.timer</references>
         <references refid="classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380" compoundref="server_8py" startline="36">game.server.server.Server.timer</references>
       </memberdef>
     </sectiondef>
@@ -300,17 +315,17 @@
 <para><verbatim>Class for creating a new Server.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/server/server.py" bodystart="26" bodyend="156"/>
+    <location file="game/server/server.py" line="26" column="1" bodyfile="game/server/server.py" bodystart="26" bodyend="158"/>
     <listofallmembers>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a26a3c9e7f7150b919b98721fb469a9fb" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>__init__</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>client_handler</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a115f47f2b8f5bf4e0f16ce0cdc5f7fcd" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>player_count</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1adf7a7396794698015a0907efd5dfb892" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>player_handler</name></member>
-      <member refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>run</name></member>
+      <member refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>run</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>safe_closure</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>server_thread</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a456290407dd7820328cae398b8923c3a" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>sock</name></member>
-      <member refid="classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>start</name></member>
+      <member refid="classgame_1_1server_1_1server_1_1Server_1a62532fb5d1e59f13a64f91987f46eb12" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>start</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>state</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>stop</name></member>
       <member refid="classgame_1_1server_1_1server_1_1Server_1a45ce6fe3bd156c166995a6b9905b2380" prot="public" virt="non-virtual"><scope>game::server::server::Server</scope><name>timer</name></member>

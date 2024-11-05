@@ -99,11 +99,11 @@
     \fancyhead[LE, RO]{\bfseries\thepage}
     \fancyhead[LO]{\bfseries\rightmark}
     \fancyhead[RE]{\bfseries\leftmark}
-    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Fri Oct 18 2024 00\+:04\+:15 for Tile-\/\+Game by Doxygen }
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Tue Nov 5 2024 15\+:51\+:42 for Tile-\/\+Game by Doxygen }
   }
   \fancypagestyle{plain}{
     \fancyhf{}
-    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Fri Oct 18 2024 00\+:04\+:15 for Tile-\/\+Game by Doxygen }
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Tue Nov 5 2024 15\+:51\+:42 for Tile-\/\+Game by Doxygen }
     \renewcommand{\headrulewidth}{0pt}
   }
   \pagestyle{fancyplain}
@@ -196,9 +196,9 @@
   {\Large Tile-\/\+Game}\\
   [1ex]\large 0.\+0.\+2a \\
   \vspace*{1cm}
-  {\large Generated on Fri Oct 18 2024 00\+:04\+:15 for Tile-\/\+Game by Doxygen 1.10.0}\\
+  {\large Generated on Tue Nov 5 2024 15\+:51\+:42 for Tile-\/\+Game by Doxygen 1.10.0}\\
     \vspace*{0.5cm}
-    {\small Fri Oct 18 2024 00:04:15}
+    {\small Tue Nov 5 2024 15:51:42}
   \end{center}
   \end{titlepage}
   \clearemptydoublepage
@@ -257,6 +257,10 @@
 \input{namespacegame_1_1data_1_1structures_1_1map__structure}
 \input{namespacegame_1_1data_1_1structures_1_1player__structure}
 \input{namespacegame_1_1data_1_1structures_1_1tile__structure}
+\input{namespacegame_1_1data_1_1themes}
+\input{namespacegame_1_1data_1_1themes_1_1theme}
+\input{namespacegame_1_1data_1_1themes_1_1theme__layers}
+\input{namespacegame_1_1data_1_1themes_1_1themes}
 \input{namespacegame_1_1data_1_1tiles}
 \input{namespacegame_1_1data_1_1tiles_1_1tile}
 \input{namespacegame_1_1data_1_1tiles_1_1tile__types}
@@ -290,7 +294,9 @@
 \input{namespacegame_1_1gui_1_1screens_1_1servercreate__screen}
 \input{namespacegame_1_1gui_1_1screens_1_1serverjoin__screen}
 \input{namespacegame_1_1gui_1_1screens_1_1servermenu__screen}
+\input{namespacegame_1_1gui_1_1selectbox}
 \input{namespacegame_1_1gui_1_1slot}
+\input{namespacegame_1_1gui_1_1tooltip}
 \input{namespacegame_1_1gui_1_1widget}
 \input{namespacegame_1_1network}
 \input{namespacegame_1_1network_1_1builders}
@@ -308,11 +314,13 @@
 \input{namespacegame_1_1utils_1_1exceptions}
 \input{namespacegame_1_1utils_1_1logger}
 \input{namespacegame_1_1utils_1_1tools}
+\input{namespacegame_1_1utils_1_1translator}
 \input{namespacegame_1_1world}
 \input{namespacegame_1_1world_1_1camera}
 \input{namespacegame_1_1world_1_1map__manager}
 \input{namespacegame_1_1world_1_1synth}
 \input{namespacegame_1_1world_1_1synth_1_1noise}
+\input{namespacegame_1_1world_1_1theme__manager}
 \input{namespacegame_1_1world_1_1tile__manager}
 \input{namespacegame_1_1world_1_1world}
 \chapter{Class Documentation}
@@ -377,6 +385,7 @@
 \input{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}
 \input{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties}
 \input{classgame_1_1gui_1_1screen__manager_1_1Screens}
+\input{classgame_1_1gui_1_1selectbox_1_1SelectBox}
 \input{classgame_1_1server_1_1server_1_1Server}
 \input{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen}
 \input{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen}
@@ -387,12 +396,17 @@
 \input{classgame_1_1server_1_1tasks_1_1ServerTasks}
 \input{classgame_1_1gui_1_1slot_1_1Slot}
 \input{classgame_1_1client_1_1connection_1_1Tasks}
+\input{classgame_1_1data_1_1themes_1_1theme_1_1Theme}
+\input{classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers}
+\input{classgame_1_1world_1_1theme__manager_1_1ThemeManager}
+\input{classgame_1_1data_1_1themes_1_1themes_1_1Themes}
 \input{classgame_1_1data_1_1tiles_1_1tile_1_1Tile}
 \input{classgame_1_1world_1_1tile__manager_1_1TileManager}
 \input{classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties}
 \input{classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles}
 \input{classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure}
 \input{classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes}
+\input{classgame_1_1gui_1_1tooltip_1_1Tooltip}
 \input{classgame_1_1gui_1_1widget_1_1Widget}
 \input{classgame_1_1core_1_1window_1_1Window}
 \input{classgame_1_1world_1_1world_1_1World}
@@ -433,6 +447,9 @@
 \input{map__structure_8py}
 \input{player__structure_8py}
 \input{tile__structure_8py}
+\input{theme_8py}
+\input{theme__layers_8py}
+\input{themes_8py}
 \input{tile_8py}
 \input{tile__types_8py}
 \input{tiles_8py}
@@ -446,6 +463,7 @@
 \input{data_2properties_2____init_____8py}
 \input{data_2states_2____init_____8py}
 \input{data_2structures_2____init_____8py}
+\input{data_2themes_2____init_____8py}
 \input{data_2tiles_2____init_____8py}
 \input{entity_2____init_____8py}
 \input{gui_2____init_____8py}
@@ -482,7 +500,9 @@
 \input{servercreate__screen_8py}
 \input{serverjoin__screen_8py}
 \input{servermenu__screen_8py}
+\input{selectbox_8py}
 \input{slot_8py}
+\input{tooltip_8py}
 \input{widget_8py}
 \input{base__builder_8py}
 \input{player__builder_8py}
@@ -494,9 +514,11 @@
 \input{exceptions_8py}
 \input{logger_8py}
 \input{tools_8py}
+\input{translator_8py}
 \input{camera_8py}
 \input{map__manager_8py}
 \input{noise_8py}
+\input{theme__manager_8py}
 \input{tile__manager_8py}
 \input{world_8py}
 %--- End generated contents ---

@@ -4,6 +4,7 @@ var dir_1e67665e7c4a6bf3ba9475d62fdc650b =
     [ "__init__.py", "world_2____init_____8py.html", null ],
     [ "camera.py", "camera_8py.html", "camera_8py" ],
     [ "map_manager.py", "map__manager_8py.html", "map__manager_8py" ],
+    [ "theme_manager.py", "theme__manager_8py.html", "theme__manager_8py" ],
     [ "tile_manager.py", "tile__manager_8py.html", "tile__manager_8py" ],
     [ "world.py", "world_8py.html", "world_8py" ]
 ];

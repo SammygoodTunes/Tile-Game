@@ -13,7 +13,10 @@ var classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise =
     [ "smooth_noise", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a26dab3b7ad94998b3a6d9603be07289c", null ],
     [ "_frequency", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#af99c38c0a58b17eeeaf791ee4dd9c642", null ],
     [ "_noise_intensity", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a70012a911d06b5548d4b9bf0159df182", null ],
+    [ "_noise_params", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a9defeaab8af4037134450d6d4f7244bc", null ],
     [ "_octaves", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a15136b3daa0b992e9e8838c9adc2a0f0", null ],
     [ "_permutations", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a0b99abab4a93ca1a79548a2bc3caa855", null ],
-    [ "_persistence", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#abfb0a4d57ec56395b622e434a686f648", null ]
+    [ "_persistence", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#abfb0a4d57ec56395b622e434a686f648", null ],
+    [ "MAX_HEIGHT", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a05811008a0cdad5e4f969ea31d0666a4", null ],
+    [ "MIN_HEIGHT", "classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise.html#a747c6e7bb38bb771cbce79a60dd089ec", null ]
 ];

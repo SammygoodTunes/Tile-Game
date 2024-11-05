@@ -18,25 +18,28 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ceil,<sp/>log2</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>os<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>path</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SupportsFloat,<sp/>SupportsIndex</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pathlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Path</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SupportsFloat,<sp/>SupportsIndex</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" kindref="member">c_log2</ref>(x:<sp/>SupportsFloat<sp/>|<sp/>SupportsIndex,<sp/>/)<sp/>-&gt;<sp/>int:</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>cast<sp/>int<sp/>ceiling<sp/>log2<sp/>of<sp/>the<sp/>given<sp/>value.</highlight></codeline>
-<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int(ceil(log2(x)))</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" kindref="member">resource_dir</ref>(directory:<sp/>str):</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
-<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>correct<sp/>resource<sp/>path<sp/>of<sp/>a<sp/>resource<sp/>directory.</highlight></codeline>
-<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>getattr(sys,<sp/></highlight><highlight class="stringliteral">&apos;frozen&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">):</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path.join(sys._MEIPASS,<sp/>directory)</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path.join(path.abspath(</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">),<sp/>directory)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegame_1_1data_1_1properties_1_1game__properties" kindref="compound">game.data.properties.game_properties</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GameProperties</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" kindref="member">c_log2</ref>(x:<sp/>SupportsFloat<sp/>|<sp/>SupportsIndex,<sp/>/)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>cast<sp/>int<sp/>ceiling<sp/>log2<sp/>of<sp/>the<sp/>given<sp/>value.</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int(ceil(log2(x)))</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" kindref="member">resource_dir</ref>(directory:<sp/>str):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>correct<sp/>resource<sp/>path<sp/>of<sp/>a<sp/>resource<sp/>directory.</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>getattr(sys,<sp/></highlight><highlight class="stringliteral">&apos;frozen&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path.join(sys._MEIPASS,<sp/>directory)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path.join(Path(__file__).parent.parent.parent,<sp/>directory)</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/utils/tools.py"/>
+    <location file="game/utils/tools.py"/>
   </compounddef>
 </doxygen>

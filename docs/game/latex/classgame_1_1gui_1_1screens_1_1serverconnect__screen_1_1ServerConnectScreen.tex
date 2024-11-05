@@ -9,9 +9,9 @@ Inheritance diagram for game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Serve
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a15e1cd778b693854009d81395b114431}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9326a01f6771065b4a8ec2eb3c569fd8}{window}})
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a60cd1ba79edbd0293a8a0c1ffd80d5a3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a30d60499b6d102e0e6ed619a8f54e1c3}{game}})
 \item 
-Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a21156afc811ed0e6fe8bf4ff2e7f08cf}{initialise\+\_\+surface}} (self)
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a776fc93bc6a1040c5b65ec36893a9b3c}{translate}} (self)
 \item 
 None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a87e401780d0a54ea5cba95773d227959}{draw}} (self)
 \item 
@@ -26,18 +26,27 @@ None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1Se
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
 \begin{DoxyCompactItemize}
 \item 
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{events}} (self, Event e)
+\item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9326a01f6771065b4a8ec2eb3c569fd8}{window}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9b9baeeaf2a00f2cd91531fb9c1526fd}{faded\+\_\+surface}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_adf19e68ab183c9e9c895b59ba20c6c74}{info\+\_\+label}}
 \item 
 \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad1607207ccf443e5383e6821b1b3d523}{main\+\_\+menu\+\_\+button}}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a30d60499b6d102e0e6ed619a8f54e1c3}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen}{game.\+gui.\+screens.\+screen.\+Screen}}}
@@ -53,15 +62,15 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a15e1cd778b693854009d81395b114431}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a15e1cd778b693854009d81395b114431} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a60cd1ba79edbd0293a8a0c1ffd80d5a3}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a60cd1ba79edbd0293a8a0c1ffd80d5a3} 
 \index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 
 
@@ -74,15 +83,11 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 
 \begin{DoxyVerb}Draw the screen and its components.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a21156afc811ed0e6fe8bf4ff2e7f08cf}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a21156afc811ed0e6fe8bf4ff2e7f08cf} 
-\index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!initialise\_surface@{initialise\_surface}}
-\index{initialise\_surface@{initialise\_surface}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
-\doxysubsubsection{\texorpdfstring{initialise\_surface()}{initialise\_surface()}}
-{\footnotesize\ttfamily  Surface game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+initialise\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+ 
 
-\begin{DoxyVerb}Initialise the screen's surface.
-\end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad8331e211329d45a117b496acc69f15b}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad8331e211329d45a117b496acc69f15b} 
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad8331e211329d45a117b496acc69f15b}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad8331e211329d45a117b496acc69f15b} 
 \index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!reset\_info\_label@{reset\_info\_label}}
 \index{reset\_info\_label@{reset\_info\_label}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
 \doxysubsubsection{\texorpdfstring{reset\_info\_label()}{reset\_info\_label()}}
@@ -96,11 +101,23 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{game.\+gui.\+screens.\+screen.\+Screen}}.
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a776fc93bc6a1040c5b65ec36893a9b3c}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a776fc93bc6a1040c5b65ec36893a9b3c} 
+\index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!translate@{translate}}
+\index{translate@{translate}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+translate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the text of all text-related components to their translated equivalents.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{game.\+gui.\+screens.\+screen.\+Screen}}.
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a2e993b0b503940af177ba6dba9a6a5bf}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a2e993b0b503940af177ba6dba9a6a5bf} 
 \index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!update\_info\_label@{update\_info\_label}}
@@ -116,9 +133,13 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
 {\footnotesize\ttfamily  None game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Update the screen UI.
+\begin{DoxyVerb}Update the screen and its components.
 \end{DoxyVerb}
  
+
+Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{game.\+gui.\+screens.\+screen.\+Screen}}.
+
+
 
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9b9baeeaf2a00f2cd91531fb9c1526fd}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9b9baeeaf2a00f2cd91531fb9c1526fd} 
@@ -126,6 +147,12 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \index{faded\_surface@{faded\_surface}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
 \doxysubsubsection{\texorpdfstring{faded\_surface}{faded\_surface}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+faded\+\_\+surface}
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a30d60499b6d102e0e6ed619a8f54e1c3}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a30d60499b6d102e0e6ed619a8f54e1c3} 
+\index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!game@{game}}
+\index{game@{game}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+game}
 
 \Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_adf19e68ab183c9e9c895b59ba20c6c74}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_adf19e68ab183c9e9c895b59ba20c6c74} 
 \index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!info\_label@{info\_label}}
@@ -138,12 +165,6 @@ Reimplemented from \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Scr
 \index{main\_menu\_button@{main\_menu\_button}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
 \doxysubsubsection{\texorpdfstring{main\_menu\_button}{main\_menu\_button}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+main\+\_\+menu\+\_\+button}
-
-\Hypertarget{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9326a01f6771065b4a8ec2eb3c569fd8}\label{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a9326a01f6771065b4a8ec2eb3c569fd8} 
-\index{game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}!window@{window}}
-\index{window@{window}!game.gui.screens.serverconnect\_screen.ServerConnectScreen@{game.gui.screens.serverconnect\_screen.ServerConnectScreen}}
-\doxysubsubsection{\texorpdfstring{window}{window}}
-{\footnotesize\ttfamily game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen.\+window}
 
 
 

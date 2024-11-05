@@ -8,29 +8,20 @@
     <member refid="classgame_1_1network_1_1builders_1_1base__builder_1_1BaseBuilder_1afb2261383fb82fbb6b423e11d7f5d2ff" kind="variable"><name>COMMAND_ID_OFFSET</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1button_1_1Button" kind="class"><name>game::gui::button::Button</name>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ae330ee669579f1b229ee2a9c1b8b28de" kind="variable"><name>MIN_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a11abf1aec20f3dfc13803a7b7b8c298b" kind="variable"><name>MAX_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a4fe6b7a892ee759c56c2d49bb719e15c" kind="variable"><name>MIN_HEIGHT</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a623f5cd887cf9e4499dd588a86cee53a" kind="variable"><name>MAX_HEIGHT</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a9b7c567489a98c2872617e3331514012" kind="variable"><name>_height</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a350ef579d36b8c015fdec9fc4fe67de4" kind="variable"><name>_background_colour</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" kind="variable"><name>_x</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ad08a91aae7ce85e9badf917673cfbcf2" kind="variable"><name>_y</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a9f8b1950e1be9933e625a7224e333e28" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1aae1f536a2251a1688fc6b466c2d59d3c" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a34e643e66f2fff9e7e69abc309ed49d9" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1aeb853ef8dc96eefdfbf4a053ca069faf" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1gui_1_1button_1_1Button_1a9c50f5cebf45e8a9ea4cbc40f699815d" kind="variable"><name>label</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ab1958cfa0a76d9c9e41e6a5e248e35f6" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ab1025133f738287954b0dc5514e3bd71" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1af00a9031ddd12b6485ee2b22ab18f6ef" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a9c5c150ae2d4212152a40e82c4e90888" kind="function"><name>refresh</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a350ef579d36b8c015fdec9fc4fe67de4" kind="variable"><name>_background_colour</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a9b7c567489a98c2872617e3331514012" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a41c5a8e7f47b665cd34db7ece89724c3" kind="variable"><name>_x</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a2e5abe12ff21913c882d3ca23477ec12" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1ac9c476fb9af1ed93b7b03fa4b6f24719" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a06cb705957034ac772ee0ebde3a0eb67" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a884e2b8ee5e66f35ce38726353fdabf5" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1button_1_1Button_1a8122c184570c0782270e1b75da0d22d2" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1button_1_1Button_1ace3348b499ec5d80a8fc832d21ef474e" kind="function"><name>is_hovering_over</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a19abd21ccd35dde10f52d72db6a0d1c7" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1aac5af4eaab5358bf15aa3f8618d902b7" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a7f5564ffd01fdf926f1bd816cc9ba9c6" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a83765c8c12a986eaa814a602abe6bb85" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a4bb688438517ccaa53afcdb4fa7b1dbf" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ac9b4bb657e742bb161d78e1ea74b24b0" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1a8783db7331fedff474b051a38084554b" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1button_1_1Button_1ad12f8ae8c9939369459bc43a428859e3" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1button_1_1Button_1a02a27193e00acc156dd26846afe0d422" kind="function"><name>set_background_colour</name></member>
     <member refid="classgame_1_1gui_1_1button_1_1Button_1af260554077cdd107b776ed9d993a573b" kind="function"><name>get_background_colour</name></member>
   </compound>
@@ -50,26 +41,25 @@
     <member refid="classgame_1_1data_1_1properties_1_1camera__properties_1_1CameraProperties_1a5c83fc19909362ebaa7ab18d6b6cba9b" kind="variable"><name>VELOCITY_STOP_DURATION</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1checkbox_1_1Checkbox" kind="class"><name>game::gui::checkbox::Checkbox</name>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1afbbfbe95e5f41a8243bf0dd2b70ec0a2" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1afd2e3e57eeb91fd3c466a898e913c4d3" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1ad862e24224d291f0bbe493d3fbfe0dc7" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a6ba4f928b8e5dceb2dd8e50b0a94bfbd" kind="variable"><name>MAX_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a17e45c0472de1b42d71f1f56340689ee" kind="variable"><name>title_label</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1acb85c8a47e5aaee6c95382ea9b141b87" kind="variable"><name>_checked</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5ddc88a9c78934c7ac370d5f8677e07e" kind="variable"><name>_colour</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aa2ee9702ca589b64a319e2217ca6f0d3" kind="variable"><name>_size</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aba500c541f1143d723410e9b4d254900" kind="variable"><name>_spacing</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a99aa8e47eb1256f850fae7f011e4443a" kind="variable"><name>_timer</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a39972f9a2932590942ca028eda448ba4" kind="variable"><name>_x</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a17e45c0472de1b42d71f1f56340689ee" kind="variable"><name>title_label</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1af4d002b2cbaa683cd2a61c1bcc2243ca" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1adad510d14579df63a9624b37107bb204" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4e9941a71af74c2b017a4020da98b242" kind="function"><name>events</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1af7192c00b134098860b32d56e90d43ba" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a3255bd82bb9df14e9faae38552082560" kind="function"><name>refresh</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a46e700b9982051e2a82af108c4cfe090" kind="variable"><name>_y</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1acade0693036db05e756543fc908c54eb" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1abaa1e44f695d68476c26029fb2667941" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1ad6bad19a572fc232b4678cf91466616d" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a9fccb3e0fff1ae8209d5b6a3aef669eb" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a69709317efe8606c9fb70c1eae70cd69" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aad5ec02c8fa29eda560e156d501daad6" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a1a7c64a67333b203792d3ac085917046" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a72c3ca9733f5ed403a6a6ad6ebe527e7" kind="function"><name>is_hovering_over</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1aced045dab7ae0a13d18ffbe2ea8833e4" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a4af175514354965243cf3e59a30dfa7e" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a48e3c16eed12127c17c9c0652a593a41" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a5e0b189acb3ab800dced15219d568bf5" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a9f82b245f9f436f2a06a95f18e6d7981" kind="function"><name>set_size</name></member>
-    <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1afe84fa368285768043d7556aade4a311" kind="function"><name>get_size</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1afa62234706018622e52dad722516b3ea" kind="function"><name>set_checked</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8abc79fd7b0d4d58b4d60814b33ff2ef" kind="function"><name>is_checked</name></member>
     <member refid="classgame_1_1gui_1_1checkbox_1_1Checkbox_1a8ae93cfbeaab5e89916ba2f026b4be10" kind="function"><name>offset_x</name></member>
@@ -141,30 +131,20 @@
     <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a94d135efa80ef7ea8b03b2ceaa440809" kind="variable"><name>IDLE</name></member>
     <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a017260e53366a665ba661f5a41ab732e" kind="variable"><name>PENDING</name></member>
     <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a7114502bcb997f7964dfe0aaff683413" kind="variable"><name>GETDATA</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a2886f9a0d0af877abd2b506925effbaa" kind="variable"><name>SUCCESS</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a2c7263d5900d2606f91a879868709aef" kind="variable"><name>INVALID</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a075936a29aa0e24d0d0177b760e38a80" kind="variable"><name>REFUSED</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a6dd47ccb206470a08d98f5bc24b88f69" kind="variable"><name>TIMEOUT</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a4b9f58bf335afddfad988e35a91aadc4" kind="variable"><name>NOROUTE</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1ac828668fee04ff540775874654f90985" kind="variable"><name>DISCONNECTED</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1ab24567c6ad1e6d02ab77c0febb508d46" kind="variable"><name>BADNAME</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a57340b54dd17be001ad242f7d96ab7f7" kind="variable"><name>MAXIMUM</name></member>
     <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a5d29fc2bdc7336be886b6c281f2a3308" kind="variable"><name>ERROR</name></member>
-    <member refid="classgame_1_1data_1_1states_1_1connection__states_1_1ConnectionStates_1a769ecab6f7210b789cda4d21ef2dadfe" kind="variable"><name>SERVFAIL</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen" kind="class"><name>game::gui::screens::crash_screen::CrashScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a50377bd6cac88ac10d86bbabbbad5d43" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1ad72a5a57539cac8f2ab6dc56cae38b5d" kind="variable"><name>surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a512145d7f5b2a9e380a808889229878d" kind="variable"><name>crash_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a273c01ac0bef48ca1b68fcf1518ce61d" kind="variable"><name>traceback_label</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1adb353c26ec380c794b577f4505287938" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1ac1959d6471759a3839d7d3da0cd8d63a" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a18c3755699f716542dddd1c7dcf8a80e" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1aaac3ef5b87c0ea178f699d830af3a589" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a114dbdc36943adbbdad1dc52f1796803" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1abf8f27665804d88705bd602d7b5fe2ae" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a547e1137cd74b6f444aa1e71c7646275" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_1a60a7e5707153b49841f604ed488e1d41" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen" kind="class"><name>game::gui::screens::credits_screen::CreditsScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aba3191d0f15a42b0e976e5b3c90c1411" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a5be91196b3a09be575f5c0327c77d6dc" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a4706ceb47007756533c10e40617da3aa" kind="variable"><name>options_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1afbac13f42cb5283f6262125d8c855f6d" kind="variable"><name>prog_title_label</name></member>
@@ -174,10 +154,9 @@
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1acbf826f378f60d72b3c9e51e5f38e026" kind="variable"><name>art_value_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aea08c20fdd5776262c4cc8d7a0005ff1" kind="variable"><name>font_value_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a7199f09a6302e47d8c8323b0387d028e" kind="variable"><name>back_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ab37d87d4b22e45a642cf39946a786f3f" kind="variable"><name>_enabled</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a67089a5565487dfcd3a253a2211166ec" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a6251e681774f4a709b71f107f820505a" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae1270b43b8d17a223e4b137630e62ac5" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a73ab3e71ffa8cbb4b3e2b63bdb35f66a" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aff0266c08e914f3a3b43d932647eb680" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a7af9ec142f0e23f43b68cccc92f516c4" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1ae85f12a09c7e938b20e23d1e23303794" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1a2b8138743832e918dc8e0b0d78c597f0" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_1aa5bcf21142f232f9a17f214732d9a1b3" kind="function"><name>set_state</name></member>
@@ -188,25 +167,32 @@
   <compound refid="classgame_1_1core_1_1game_1_1Game" kind="class"><name>game::core::game::Game</name>
     <member refid="classgame_1_1core_1_1game_1_1Game_1ae64b7fe54eebd9997fa0720b6e84ec94" kind="variable"><name>client</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a4409fc4bab20a58fd167645e86010628" kind="variable"><name>server</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1a9962d48793ff4a58bb5c5202f8d13edc" kind="variable"><name>vsync</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1a71600300e4fb1e080bd1ad2157c5af3b" kind="variable"><name>screen</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1a87751817ef0fb60b843cff233f13e9f5" kind="variable"><name>width</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1ae32d0e414d5b26867745a9da6d4e7e28" kind="variable"><name>height</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1ac40481a45b422162aa68b51c44c8f8ce" kind="variable"><name>focused</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1a87837735d38531470f2a3fcd3cc04377" kind="variable"><name>timer</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a582bded063a50acf0a78c537fa448f6c" kind="variable"><name>_running</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1aaccb123b84b5f1ba05818a0ad04347f9" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1aeacc190f2ef319521f83b6e99e3650ad" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1aeebcad4b45ccd2ea73d94cafe27885ee" kind="function"><name>window_updates</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a1aae5d34f93a9cd86ef8f4749c7b1227" kind="function"><name>update_loop</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a37f60522735ed13b5d0add0f8c31c45c" kind="function"><name>all_events</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a6aca6ae77b0b346b03c98789ae43bfc9" kind="function"><name>update_all_uis</name></member>
+    <member refid="classgame_1_1core_1_1game_1_1Game_1af7e61056c4294f85306b7f87e5de5fb1" kind="function"><name>draw_fps</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1acd7539fb6cadb1ca2713dbcd1123befa" kind="function"><name>is_running</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1afc1ed1e63c3a6afb2d5208c9c10b7ce7" kind="function"><name>crash</name></member>
     <member refid="classgame_1_1core_1_1game_1_1Game_1a8fa056f9a3b1dc59865db056d318fb5c" kind="function"><name>stop</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen" kind="class"><name>game::gui::screens::gameover_screen::GameoverScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af5dc4a30765cb1ca31ba70664ccde8d7" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1acd411cf7943016b0c9bd4698734b973f" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a9f5d8a6926c58645c7acb19939b07e3d" kind="variable"><name>gameover_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a3af7f91700998108d39945c71620a181" kind="variable"><name>respawn_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a110b5a4bcf4fe83c5c8ee53755673cf8" kind="variable"><name>disconnect_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a44785518dd4d86fa600f8c2b2602fb63" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ab406c39cd1c9737837bc8c1e64abfc9e" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1abf3dd4017093f84cc37996182af9f0bb" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a4cfe736a04370b26fb36d60cdf876ed8" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a257df17098a162bf003ad9435fe9e1a7" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1a5d75cabdc8dc86875ef3f9bcac56fcbb" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1af7dd086568136680d42b16000eb9e720" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_1ade7b03540fdfce12ae3544911f645aec" kind="function"><name>set_state</name></member>
@@ -228,10 +214,10 @@
     <member refid="classgame_1_1network_1_1packet_1_1Hasher_1a630a74ac350ad1c5b3cdcba3e5f3f45c" kind="function"><name>enhash</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider" kind="class"><name>game::gui::horizontal_slider::HorizontalSlider</name>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a6bcc5ebc6be1e91c48f3dbbd408ba829" kind="variable"><name>MIN_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5e7107862cfecb88dd5a902bd93ab776" kind="variable"><name>MAX_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aebaee16ea63cbd546276cbeeab91f669" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a82e21070646e861a94d003d9dc36775d" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aacb094054e4841755fcaca62e2263a09" kind="variable"><name>title_label</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acd2a8b23433d6cb45afc2e84e0ae9490" kind="variable"><name>value_label</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a40b2b5df695d1c0b2623eebca71b0a3e" kind="variable"><name>_value</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a138d5795084bec71a5129dd71361412b" kind="variable"><name>_min_value</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae0a498aab1a1372d04ef48537ed1e284" kind="variable"><name>_max_value</name></member>
@@ -243,22 +229,16 @@
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1a3c64557479e19899886091e0ad678e" kind="variable"><name>_button_held</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa505e692da92ae311b2ae7aa70b405cf" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acc65abdc2eb888f8169807ecd7380125" kind="variable"><name>_x</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa15337a3358d490d9e45073fa1b3864e" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1abbd333264f35886072fbb5cae8f66b43" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ad012fed51a0afc6818aff833ef17da20" kind="variable"><name>_enabled</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aacb094054e4841755fcaca62e2263a09" kind="variable"><name>title_label</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acd2a8b23433d6cb45afc2e84e0ae9490" kind="variable"><name>value_label</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5490b557e73cad71bddb7990fd60428a" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3d23ebc12dcf90b3c32d35c3295ed1ee" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae2ff1b022247daa7e56a1357bb671218" kind="function"><name>events</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a5fca4d74ac207551515165e0aa520135" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aaf9542342e7bcd0a4b4453836b250870" kind="function"><name>refresh</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a419a983489a9ba7319d25ce31b8dc2fc" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8838d1234ca62c0227742a7777befacd" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a83c5a8b4e26861e89745ff7eb8485964" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ab17b4c8426d8c05f7127e08a1d8106f8" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a622d96af524eb8caeb0ed7727e31dfd4" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4cb66b7c1a7cd2640566ed402b099d51" kind="function"><name>is_hovering_over_button</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a3ff1af25e2888fb8fb785d55ff0fb3b7" kind="function"><name>is_hovering_over</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1acdfa96e85b85a28d8131213b0809ea97" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a702d9e1f3915c4dd1a7b4167c3be146c" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a19cf3019ae51d403fe8f817e1d05b765" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a25853dd6cc2aada74d438e3b65037261" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8318735add313690e5ee82448493b537" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1aa9b163abc659ce80fd4495c7197ff8d9" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a1bb2678ae542d14b9ac6c352b19999eb" kind="function"><name>get_bar_width</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a79cb7f080c154d09dc1d2b04a8341bea" kind="function"><name>set_title</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a4b0c6393ad577663fbf1d8455c67d0ca" kind="function"><name>get_title</name></member>
@@ -271,33 +251,25 @@
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1ae91d47ebc9cd19414da22a72c6fc134a" kind="function"><name>button_held</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a86eabf059a2620ce546fd8fd2c010f85" kind="function"><name>is_button_held</name></member>
     <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a8e43a3ae1a3b86ac5b09c29aa0beb8fe" kind="function"><name>get_step_in_pixels</name></member>
-    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a402a5904824198f84bcd9d4f2741b52e" kind="function"><name>set_state</name></member>
+    <member refid="classgame_1_1gui_1_1horizontal__slider_1_1HorizontalSlider_1a94982fb7c37c647a3a09ed5b64ea85d7" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1hotbar_1_1Hotbar" kind="class"><name>game::gui::hotbar::Hotbar</name>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a06b35335ca2c40710cb96fc6023b9a11" kind="variable"><name>_spacing</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1afa65e3a0df821b2d1f20953a44b47293" kind="variable"><name>_slots</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1acc4032a56db713cac8cf1ea3a4ae1dfb" kind="variable"><name>_tooltip</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5e15b0b772517251eaf8de65a648b49a" kind="variable"><name>_selected_slot</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a410693658e238e15d217eeeb6239e224" kind="variable"><name>_surface</name></member>
+    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ab60598b8ba4bae7297a4d27a179c383d" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a0006481c2b2af4bd12ee1196d43df656" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a64d87d20ef322b3305532ab2c2fd6c5b" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a5c58813bf8f312b4cc7b5d7e3a6daf10" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3d6e48d6329f61680f908051c9e1952f" kind="variable"><name>_atlas</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af6bd89767af29f2eb222ff60c9c5484d" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1afae7b0a5c9183ba44f563b05fcf24209" kind="function"><name>init_slots</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1abe34cc11ee2dfa051dec6f297cfeea60" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a45a44ecdc4a221b1fc19c81f6de0db70" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1142265b8fc7b7c44858793b5a9331f1" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae488ec2de5de4553d42faae7eb17f715" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1afd5aad4e0a13c7ced00611862b7ff178" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1adcfd57ce413ec117b3b7ff6e0a2069d6" kind="function"><name>center_with_offset</name></member>
+    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ae8ae54b1bd11c36ea721c666b3631ffe" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1ad1e279b7a2c7d4f3b7671250054aecb2" kind="function"><name>set_spacing</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a3c207f0345bad805b1f51e9ad7181290" kind="function"><name>get_spacing</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af5776e3620adff40802cefb00f46e39d" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a79f9c7b1abe5cb25bcb03625e79a3e32" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a02b50c4d3dbedc881dd12f89b05ef8fa" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a842ddd0ebfa5af0f3b049816cbe4e08c" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a6060234d8969fd0cc3415cdf87576c37" kind="function"><name>select_slot</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1a1f49a32b10881bedc9a501bb3b93b79f" kind="function"><name>unselect_slot</name></member>
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1abdfa7104cc8afde0bab2ea632fea4ea3" kind="function"><name>get_selected_slot</name></member>
@@ -308,12 +280,10 @@
     <member refid="classgame_1_1gui_1_1hotbar_1_1Hotbar_1af4deda99d3446b0947dbb106c5633f59" kind="function"><name>get_atlas</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1inputbox_1_1InputBox" kind="class"><name>game::gui::inputbox::InputBox</name>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a1f0c7204aaa8cb45a56a6d18e340b9bb" kind="variable"><name>MIN_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ac85061cbb62995f3fd42e4c6ff766b" kind="variable"><name>MAX_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac0004afc845ced53f9eeb2c945cd3d4a" kind="variable"><name>MIN_HEIGHT</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a693b3785929c17886c0de20bff0b92e1" kind="variable"><name>MAX_HEIGHT</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a862bef629b0acdab4c1a2c0ce1848cd7" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae22eae3247e1a40239a509ea22069178" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a35601045a244112e6d6d6f634073ab86" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a3b9d7fa1c32b7d5326c30f2f95a2b95b" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac7ffb649cdc87bad826ad1eafa2ab19d" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1af0e5bbdbd486871c62b1cfb11e28408b" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a4c14d659b5b8233c5af994157c848f81" kind="variable"><name>_selected</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a5632310414c375d4196baefceac4bd98" kind="variable"><name>_border_colour</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a783a9669768dd0373066cc948660feb1" kind="variable"><name>_background_colour</name></member>
@@ -322,15 +292,19 @@
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1afa322ad401b822a95ff49f0dc074e4ca" kind="variable"><name>_text_offset</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a3ade7956ce8695803263b51f56b640b2" kind="variable"><name>_max_text_length</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a38b5b2278e1d9dcaee70d7abb131d050" kind="variable"><name>_authorised_chars</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a7703d8875ba8f892b77036b0cd1b445e" kind="variable"><name>_tooltip</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1adbca92c8cb84bf617ce88b424c639b9a" kind="variable"><name>_placeholder_label</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a108e74023581dd95be86348603165c78" kind="variable"><name>_text_label</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a2184eb4f6fc634928c253afd7276f5c2" kind="variable"><name>_timer</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a813b09f40a1d0cbfd8eb5f990c0c8491" kind="variable"><name>_read_only</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a27b17af076cd277ad2268e6ba980fae0" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ac83e676568ee82e07dcb94e71671d63a" kind="variable"><name>_y</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a3a9ccdb5c9be01a1f80b400e71638a30" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a69d1435c73da5cadaf115bad31facc47" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ad8d90fe692a18fe6fd253f67c06fe77a" kind="function"><name>events</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aaa91db0c309d082a3bb1a5b66468f3af" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a862bef629b0acdab4c1a2c0ce1848cd7" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae22eae3247e1a40239a509ea22069178" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a7017498eb4ffbe7f1b8dfbbdf518d7e7" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a58e878baf2cd2f7cebabf0b2d550ea89" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a8acf9f19690445930889cb8f8e8bba93" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a831e4878b9d485f715665e06e803e489" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a1e7bc09d1e8970210009a6c3afecc172" kind="function"><name>scroll_text</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a7b0055610a614eef15a8a69e92f5a07f" kind="function"><name>clean_text</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a22ec41ec434791f811addd2fe89cea04" kind="function"><name>authorise_only_ascii</name></member>
@@ -341,14 +315,6 @@
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1ae2b34df97a01b8fef2dd4ff8416d1908" kind="function"><name>is_hovering_over</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a6b6e6356f3a6d31d6c825a135d09e19c" kind="function"><name>set_selected</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a766eb438a7ea5e46465a47cee690e112" kind="function"><name>is_selected</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1afeb96871a259083d74f93fb330641718" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a07b42a26abffdf97b61193759b857a44" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a89a154c4bac9fbf3c5c0fca57ceefb78" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a392281136e4375a4ffdb32e3d1bb4ffc" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1aafb42694feb1ca6402cf9307b9d691a4" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a80b8c17f74361b79c79df66222270ed6" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1affd240538547017976fd18ba7c1f4162" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a718f37e5cecfb65dfe8edbac6bd03049" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a68f04d1438077757605588b65e9f78a7" kind="function"><name>set_border_colour</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a95c1fa6676d9153afe7688af8da5e9cc" kind="function"><name>get_border_colour</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a4811195d09697d2f2480ab2f69ed599d" kind="function"><name>set_background_colour</name></member>
@@ -361,6 +327,12 @@
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a07bb8400f7a5c20c9bfd856d404c8a2f" kind="function"><name>get_text</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a46810e9b4d8614c8d8e036d3f82c70e8" kind="function"><name>set_max_text_length</name></member>
     <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a8ea9e658d677b9c24c27310b27c8302b" kind="function"><name>get_max_text_length</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a248496465a37db84238f349b90f60136" kind="function"><name>set_text_colour</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a5481e2ec76cf718a08c7593fcb9b44a2" kind="function"><name>set_placeholder_text_colour</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a3c38637e1001bc54e80cdf7da396d74d" kind="function"><name>set_tooltip_text</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a6ff4b2fea232ed0a9faf5e2b6898e7c1" kind="function"><name>set_read_only</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a09d79ea7cb27ee749b95fd1958d4760b" kind="function"><name>get_read_only</name></member>
+    <member refid="classgame_1_1gui_1_1inputbox_1_1InputBox_1a7c4dc0db747795c6e57858bc38e9aac1" kind="function"><name>set_interact</name></member>
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue" kind="class"><name>game::utils::exceptions::InvalidGamePropertyValue</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1InvalidGamePropertyValue_1a733510c07e5b2effe96c7eddea99c088" kind="function"><name>__init__</name></member>
@@ -421,55 +393,42 @@
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a648f6b298ae2cbdd93b6d2de595e58b9" kind="variable"><name>_shadow_colour</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a82ef2018812e1f964f23e939dadc73dd" kind="variable"><name>_antialiasing</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a673c2a15a3d6ff158c296337e7f64666" kind="variable"><name>_transparency</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a1478cc12b6cfb796425a327d4897c915" kind="variable"><name>_shadow_x</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1aea066ce3060cfa77c83cfff59a3c9e8a" kind="variable"><name>_shadow_x_offset</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a4bea1b12fefbe997cfcc5d27f228a6ea" kind="variable"><name>_x</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a71da237d6af96e25255919936cdb2fad" kind="variable"><name>_shadow_y</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a9a9c316a4b58c03fd04a423e52328342" kind="variable"><name>_y</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a409b4167fb1cfe95984490eaa98493c6" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1abed9e5f16835a92a122ee06a3cd1b4c0" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a7bf41e5cac9ffed5f08461414f8ff15c" kind="variable"><name>_shadow_y_offset</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a59df44863e58294eaced06a343104318" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a5f95cd0605ad3704370fd7913b9ac604" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a6080c9262b1b93171e615b958c7fdc00" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a063b12e5b550f738fad5285fdb21d206" kind="function"><name>refresh</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1ae61ef3fa1853cb9cb377243af240d775" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a007411f031242bcafc95d127255f36e9" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1aa4eb842c80c7ce5890b7ed11f772ff7a" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a5da7a731431b90a044335e003f21ebdf" kind="function"><name>center_with_offset</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a687fc686fbd4b43b59a7e867de9a85c8" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a688a8fc1034057352d9239b5afda18e1" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1ac34e15d347d4bddb6eac413e0acc9f5b" kind="function"><name>set_auto_font_size</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1aeaee320c4c29b5347908cc65d089ad18" kind="function"><name>set_font_size</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1af4f419c878940247729e0349379d6d18" kind="function"><name>get_font_size</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1ae041684db2df720b082827fded869c3b" kind="function"><name>set_font_sizes</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a4b419c184d3e599c648d796266065773" kind="function"><name>get_font_sizes</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a12e7af108ec43cbb113b9d39d529aca5" kind="function"><name>get_total_width</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1afcc6c4875ce0c6c386d2c6e0e272894f" kind="function"><name>get_total_height</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a859591c0a5446916964e663b87899a62" kind="function"><name>set_text</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a801edbbd05fc13d556dcb99d10778d0c" kind="function"><name>get_text</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a9ec612a14fbba386c08fbc4997cbbb6e" kind="function"><name>set_antialiasing</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1af98d02423c28673172c2f5af0c994222" kind="function"><name>has_antialiasing</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1aedf07b8f1abcc8b2c5ed3a876eed11ea" kind="function"><name>set_colour</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1abab0ff135e940a95cc74e67824887e5c" kind="function"><name>get_colour</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a3432b0a4110723ef5332c57e35c5ed17" kind="function"><name>set_shadow_x</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a45549935ada48813236dfac7503a5616" kind="function"><name>set_x</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1ab8a8311cc9c68eabd1cf7c983bcd8f19" kind="function"><name>set_y</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a80ddd2d439ecf3d2bccda118a71bbb12" kind="function"><name>get_shadow_x</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1ae878b92ab8fd724b95f021ee0d395dea" kind="function"><name>set_shadow_y</name></member>
-    <member refid="classgame_1_1gui_1_1label_1_1Label_1a9a3f92354066838a53bfbd735ec2cdd7" kind="function"><name>get_shadow_y</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a40864dc289f7b7f8601ecb854376dd7d" kind="function"><name>set_shadow_x_offset</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1ab7f8b53b0cc9ef6dc92b44eae782e706" kind="function"><name>get_shadow_x_offset</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a23ce1497640ec49ad22ab508aa8329a6" kind="function"><name>set_shadow_y_offset</name></member>
+    <member refid="classgame_1_1gui_1_1label_1_1Label_1a88db4927939d6cd249db884e3aa27355" kind="function"><name>get_shadow_y_offset</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1a953a95cb03765675067b4e036aed8bc3" kind="function"><name>set_shadow_colour</name></member>
     <member refid="classgame_1_1gui_1_1label_1_1Label_1adbe7734198b269739a2e9121e4802406" kind="function"><name>get_shadow_colour</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen" kind="class"><name>game::gui::screens::loading_screen::LoadingScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a81d9adfeaf3f4a4a818d7169310a139b" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1af288482c074f8aafb2a11d176e8d70ad" kind="variable"><name>surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a5d0fc25bc4844b2a150d318b6b436e24" kind="variable"><name>progress_bar</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a978955f0494dc09d359930043a5de26c" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a05a246452c77351c0c2b96d499de2a5e" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1aba76c7a6923a57a5710b5a8c89c38d8a" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a80f3c628fe462c0397f55ef1a3a3a3ca" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a769c2e8d7ab7c4e2fa288686ba9ffb64" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a66cf74cdc7843141d25d00af6f8d687c" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1afb8496e239ee7ff4967b6c288e80b068" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_1a895faca6b836e598241220840b2ac1e6" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud" kind="class"><name>game::gui::screens::main_hud::MainHud</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" kind="variable"><name>game</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a00ddbcaa573976be5d37adce7b64069d" kind="variable"><name>surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a502763bd9fa43829f6f4d2efd598b5f0" kind="variable"><name>version_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afa83ede926b5a0c220de284f4dea2ff1" kind="variable"><name>score_label</name></member>
@@ -483,20 +442,23 @@
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a3fe5202f27e23f36940e2dd0f4866141" kind="variable"><name>health_bar</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a7325a91cab08dbacc92c12f110ae6641" kind="variable"><name>hotbar</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a1149f33abc24a3f7ab7f19ac3cb1895d" kind="variable"><name>timer</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa524bb7495c008e3bc102026a55bfd98" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a6a046232f098eae39f6c5d6207d2f038" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1afde409aa2afec54d2cbf3662f85cd5b9" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a2f86de40a951e479268fcc6221038ae8" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aceacce76fa06556f8eb947ecf7271229" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1a488a8b8829e74b6968a00279faf32752" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_1aa2aa65fa475e52ebf6dc60964249fd92" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen" kind="class"><name>game::gui::screens::mainmenu_screen::MainMenuScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1adaf277716da615fa1dc7f53c2d778e8e" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a472a609700f9a5abf30018f18288daf0" kind="variable"><name>title_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a27d1ad3603bb2d1035448f04517e4934" kind="variable"><name>version_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a77069b552c5247b939cff6d386c0b17f" kind="variable"><name>play_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a95ab099df7fc7f40c49368f394880b0f" kind="variable"><name>options_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a9575e735e27c3a7f53c7c315a5fa7cf0" kind="variable"><name>credits_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6e3d75ac3ced833cceb22f9f4d69ee71" kind="variable"><name>quit_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a0bcb7e1d5705bf75a9fc51f7b3fdc7ee" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a8c685ecf10d86e538c2fc1e4704cadc3" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1add97c233a82e75354a6bccf8bf9a0300" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a28ff732bd106f13f4a80b7185c2082cd" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a38ac9cdcfea7d834f7cddb7284a00194" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a13839b14d671e7b7268830a09988c4be" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_1a6d9cee9b9469b8f6269085f8f3f504ee" kind="function"><name>set_state</name></member>
@@ -514,14 +476,18 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a0d5f036ee087fdfe1878f7906d83b0a7" kind="variable"><name>_dynatile_surface</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1accb2ebf1e9fbd88f34bd51f329da9b59" kind="variable"><name>_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a110aeef641f8c543c6665fab22e576cb" kind="variable"><name>_dynatile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ae51c7b8e586ec5bfe7e0109eb21773da" kind="variable"><name>_theme</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a0f9dc9c64bfa30627916274db68c8031" kind="variable"><name>_compressed_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ac873b761ff771223c35b1f8c66603f1d" kind="variable"><name>_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1af1268f9cdb3dae87d5808d844529d8ff" kind="variable"><name>_seed</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ad60668d43d3559eaa25fb68456ee78ae" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a23d6af5b8254325a8574b7f6aec98f33" kind="function"><name>initialise</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa51037fbb4ada30daba597eff4e49a54" kind="function"><name>generate</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a174156be77ca1e3bb15cb88974a9988a" kind="function"><name>load</name></member>
-    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a4cdd930f081210573862d525e2811a5b" kind="function"><name>regenerate</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a9e02ed127e75f7f0117a082784e9dbe0" kind="function"><name>regenerate</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aff7dca67d7d4c9b466ff230b180afbb1" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a5aa591762cc9ae0f6f43a70bf630b621" kind="function"><name>compress_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aa485ad1c89a640a0b6eeeecf34a184f1" kind="function"><name>decompress_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a92d446cb31c5195d8734db58967beb5e" kind="function"><name>set_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ade567d71d8c613c5041371354bf6dda4" kind="function"><name>get_state</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ae3c13e8269986bff0247499db8d5bbe3" kind="function"><name>get_tile_pos</name></member>
@@ -533,6 +499,8 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1acb41d5adee36094b41375e6b21e99d2a" kind="function"><name>get_tile</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a24e260d927deec79d43df5618ccb4a48" kind="function"><name>set_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a0631b62137565338f2db6de56eb8659e" kind="function"><name>get_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1afc2a0feb08e9873ae95e993a45141d7c" kind="function"><name>set_compressed_tile_data</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a95066d5351f6bc8b0ea4e56d4953b103" kind="function"><name>get_compressed_tile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a4b57f8f6d0fbde8bb6be68ed944ab915" kind="function"><name>set_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ab82a1b2978d184c9d4e242dd5ac8842c" kind="function"><name>get_dynatile_data</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a8cea763129b1428cb6d27b6b1fd8c9ff" kind="function"><name>set_dynatile</name></member>
@@ -544,22 +512,24 @@
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a2c275138e72bf7980a31c739735ed54a" kind="function"><name>get_x</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1abfa512fc695fbc68b41de1bc6a23a559" kind="function"><name>set_y</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a059acc8d7921b5fc45e454754d9b5372" kind="function"><name>get_y</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ad6957f7fa20786c5ac355f735db14588" kind="function"><name>set_size_in_tiles</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1ae5b7f0ee6b21722807ce056bcf16e910" kind="function"><name>get_width_in_tiles</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a169dcb92efa48b2bf8112e5152d12aab" kind="function"><name>get_width_in_pixels</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a3688fd2be056d5996e88d34b1683a394" kind="function"><name>get_height_in_tiles</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1aba8858dbdcba63bc03f18a27ef16a1b4" kind="function"><name>get_height_in_pixels</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1af49c0926afb19003d3e90b23955cae4e" kind="function"><name>get_surface</name></member>
     <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a3e996531503c10a2d9a19090892697b6" kind="function"><name>get_dynatile_surface</name></member>
+    <member refid="classgame_1_1world_1_1map__manager_1_1Map_1a59660ae23c9b95be6d803badd34c3f08" kind="function"><name>get_size_from_property</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen" kind="class"><name>game::gui::screens::map_screen::MapScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a2ac550f7a125ec5f509c8212a6d59b29" kind="variable"><name>_got_map</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a0dbc99d28421d583777089f0d21b9b63" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1afe0705c8d97a997398c1146efcec24a3" kind="variable"><name>title_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad5d990b35ebf9bbdb4e6035775ae61e6" kind="variable"><name>scaled_map</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a2ac550f7a125ec5f509c8212a6d59b29" kind="variable"><name>_got_map</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a46279bdc6356142989203c173850afee" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ab7c8a1cba92c43a9a65b25558f12a80e" kind="function"><name>initialise_surface</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a62ba22806fe108c0a3a4ab8c686fb8af" kind="function"><name>initialise_map</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1abbd1504abecc85a880073ce2913bbd20" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1af7c7b68c7c411689ad9fd401c7b45eb5" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aab70f36d9e573593205d6138de4f1a17" kind="function"><name>translate</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a9a9fd8c013f62b4e93784bdbb4d82b30" kind="function"><name>initialise_map</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1aa634dc82e657c3c85dedbe61b218c226" kind="function"><name>reset_map</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1ad3c97215190791c66fe964592ee9cdee" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_1a66a595f4961b1d3f218f2f7162297322" kind="function"><name>update_ui</name></member>
@@ -572,6 +542,7 @@
   <compound refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure" kind="class"><name>game::data::structures::map_structure::MapStructure</name>
     <member refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_1adae542acff0288d845d02d698360fb56" kind="variable"><name>MAP_WIDTH_BYTE_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_1a1431a910aeedd10128e0661a977a5745" kind="variable"><name>MAP_HEIGHT_BYTE_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1map__structure_1_1MapStructure_1a8d99d9a34317aa1a4e4068dc684e6af5" kind="variable"><name>MAP_TD_LEN_BYTE_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached" kind="class"><name>game::utils::exceptions::MaxPlayersReached</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1MaxPlayersReached_1af2189f07dc3d02224744605f71b0f7a4" kind="function"><name>__init__</name></member>
@@ -585,41 +556,34 @@
   </compound>
   <compound refid="classgame_1_1gui_1_1nametag_1_1NameTag" kind="class"><name>game::gui::nametag::NameTag</name>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a915301acb6d999742ec609dce861de4f" kind="variable"><name>_background_colour</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a97f09fccb4294b1e8c0acfc14d7b9f23" kind="variable"><name>_faded_surface</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a0cfb4334257b0a0cacaa59e2d97e1d68" kind="variable"><name>_transparency</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a90e4f240ccb616fc2fbe7833f3b9eac8" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a512c9640e266130d06c7adcbc83ec02c" kind="variable"><name>_y</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a75f21ff3cd34fe432120d85d373bbb9e" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9a233823adb969f030096c67efc4e9e7" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3424c61e3dd38049fa9b9d6e1c483790" kind="variable"><name>label</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a1c618e1d8d2f26233968603b62b40523" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1abf046c1783ffb84e51fdf7e6532b7a7b" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a3b240a845f596f0fae2c9b09e85757b9" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a67c27b59776a17258243b2ae1dbad583" kind="function"><name>refresh</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a4bdb1905abb4db487a5d6429d4c526e1" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a8105a977d0d23d2bc62c396d5311f308" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1aa14a181dbb625ebe087d2081c51c8b9e" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a95ce7e80606428893c30d0c99a8ae275" kind="function"><name>is_hovering_over</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a331a9acb278500f783ee03cf29d93b98" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1aa4160488c3852d5b5328e416976ba1b4" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a23a20c52321ed86dd28dc85379a9f35f" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a187ff3d6e72d347816755ad7f8ad47a3" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a001a80d2eaaa1b77088c33bc05d29b64" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a9f343e555b203f788a589dfd7943143a" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1af1cabde0d417358b99247038757d4f0c" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1acc4020639c65308bcc70292b425b3f88" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a4acac4a04de2fb1e9b004061a2511f98" kind="function"><name>set_background_colour</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a2196325c8563fa2e8a3d27217d197ab1" kind="function"><name>get_background_colour</name></member>
     <member refid="classgame_1_1gui_1_1nametag_1_1NameTag_1a89a5941e6d424349fd17a553f4dbea37" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen" kind="class"><name>game::gui::screens::options_screen::OptionsScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a841af6b54440ec0d6eb0c2e94680ea7e" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1f0b66bbb43415f444043cebd9716566" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a26b6fcdf7e62ea6efd434b93e3afa11a" kind="variable"><name>options_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad75b98028886b9b37357df42cc435720" kind="variable"><name>fps_limit_slider</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ab6da27d9bb9b7aa95038fb8364fa99a9" kind="variable"><name>show_fps_box</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1aaccf0955f621c932e9f8088b73e8e7a9" kind="variable"><name>debug_info_box</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1aed706339fe0f129a67196df05dffa1bc" kind="variable"><name>vsync_box</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ab07d3a90d7e92ed1a572d000969bbc0e" kind="variable"><name>language_list</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ad20723bd00244e71172e741cdf1fcce3" kind="variable"><name>back_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a47b457e6684cd786de156f00103f9581" kind="variable"><name>_enabled</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a1bef66c3a1d109560905b309c665fb8f" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a2a7be194fe2f986af6d7a6d3d7f42a22" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a0dc2f2a2bf9aa435336de45cf0978544" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a90c214a4bd43acc09a8f44416aba210b" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1afc54f162ab5bc955a0c3e9e40c01c943" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1a963ea44ff460e96c30850017716f162c" kind="function"><name>events</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1af257cbf7a8e2b1609b454674fd6f78bd" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_1ac63d82b81b128ee0d93d761fee32a029" kind="function"><name>update_ui</name></member>
@@ -633,6 +597,7 @@
     <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a512d7f8e9a8e8701065687874982bdf6" kind="function"><name>set_widgets</name></member>
     <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1acbe0c5e6a88833e746b9a0d822eae51d" kind="function"><name>get_widgets</name></member>
     <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1a6a5df88d6c0d88eeff33fac5c86efb16" kind="function"><name>set_state</name></member>
+    <member refid="classgame_1_1gui_1_1ordering__container_1_1OrderingContainer_1ab643ba5bfa47f927bb1f259fd3f9fb4e" kind="function"><name>set_interact</name></member>
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds" kind="class"><name>game::utils::exceptions::OutOfMapBounds</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1OutOfMapBounds_1a3c6ca7c3cace8096cf29033eda46d3b1" kind="function"><name>__init__</name></member>
@@ -641,13 +606,13 @@
     <member refid="classgame_1_1network_1_1packet_1_1Packet_1a80136bc38bf90af14697e265c9e37853" kind="variable"><name>DATA_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen" kind="class"><name>game::gui::screens::pause_screen::PauseScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae5a116be437ff2207f7500c58f56aafc" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a2a91632193725b9f5f16a19bb675fbc6" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a16d18c54f4a3fcae49ed88068d845fd3" kind="variable"><name>resume_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1af08dbe1dc8102541811ecfe33b24863d" kind="variable"><name>options_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a8c31c73bbe626e4850fb596cf9f1fee5" kind="variable"><name>disconnect_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a50441ac19860cd01320ae4d021089bcc" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a181d3c8a5e8aa043ce0cd096108de014" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae2029d8b8de06eb65d5144f6fd086e9b" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a89663e8099689b132ef765ac84f0c418" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a47a84b332dfbbef6c860bc084726bbce" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a5c9af759963c136595ce07dfda88fed2" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1a24bc05e5a10a1a871eb16e9fe98e2373" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_1ae06ab55cae8c9c3a2e8cb3d50755e76c" kind="function"><name>set_state</name></member>
@@ -655,11 +620,16 @@
   <compound refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise" kind="class"><name>game::world::synth::noise::PerlinNoise</name>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a4643d1067f84ca8b16e8e771d66d0202" kind="variable"><name>NOISE_INTENSITY_RANGE</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a22bbd121a8184d8415953c4175a4f6a6" kind="variable"><name>FREQ_ALTER_RANGE</name></member>
+    <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a097ae16fa865cf3493d0ace32c62c9da" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1aa56222e5901d4615f5486c293c92704a" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a0b99abab4a93ca1a79548a2bc3caa855" kind="variable"><name>_permutations</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1abfb0a4d57ec56395b622e434a686f648" kind="variable"><name>_persistence</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a15136b3daa0b992e9e8838c9adc2a0f0" kind="variable"><name>_octaves</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a70012a911d06b5548d4b9bf0159df182" kind="variable"><name>_noise_intensity</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af99c38c0a58b17eeeaf791ee4dd9c642" kind="variable"><name>_frequency</name></member>
+    <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a9defeaab8af4037134450d6d4f7244bc" kind="variable"><name>_noise_params</name></member>
+    <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a747c6e7bb38bb771cbce79a60dd089ec" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a05811008a0cdad5e4f969ea31d0666a4" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1a8883ce27329a1b49fe1756820779c169" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1ad273d9211fb4a4777d2108536c0b9fd0" kind="function"><name>generate</name></member>
     <member refid="classgame_1_1world_1_1synth_1_1noise_1_1PerlinNoise_1af24d5e0c7018fed21f6da5fb17568547" kind="function"><name>noise</name></member>
@@ -707,7 +677,7 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a633f1adf6b5b511c6ba3c8e6aa5d08a4" kind="function"><name>draw_gun_pointer</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1aac446a4b6f9fdfec3dfe98da144db72c" kind="function"><name>update</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ab83fa784bc48f3d251d02fd96f004c59" kind="function"><name>break_tile</name></member>
-    <member refid="classgame_1_1entity_1_1player_1_1Player_1a75efbe024da9d00008138a498cfb6262" kind="function"><name>reset</name></member>
+    <member refid="classgame_1_1entity_1_1player_1_1Player_1ab6de69f5cf17046f13435a6bc831302d" kind="function"><name>reset</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a5ffdafd5b5b848e3c93c3c3a02fdd8b4" kind="function"><name>is_moving_left</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1aa09656c0ca67abf3f879dade669887af" kind="function"><name>is_moving_up</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a3d2eba9e6dc9533f2cdba19d9955174b" kind="function"><name>is_moving_right</name></member>
@@ -740,7 +710,7 @@
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a658c904f6950d8a6b4330a45420e5cd9" kind="function"><name>set_player_name</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1a04dcde82a590285957bdea1df802b9af" kind="function"><name>get_player_name</name></member>
     <member refid="classgame_1_1entity_1_1player_1_1Player_1ac33769502c033e6a429c414d2b85183b" kind="function"><name>get_walls</name></member>
-    <member refid="classgame_1_1entity_1_1player_1_1Player_1a54e8fa3820f5304d3dc4c0f353d43cea" kind="function"><name>set_ideal_spawn_point</name></member>
+    <member refid="classgame_1_1entity_1_1player_1_1Player_1ac73ac652b8ea5acca65eca2dedcf53a6" kind="function"><name>set_ideal_spawn_point</name></member>
   </compound>
   <compound refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder" kind="class"><name>game::network::builders::player_builder::PlayerBuilder</name>
     <member refid="classgame_1_1network_1_1builders_1_1player__builder_1_1PlayerBuilder_1af585f79b36a4b1b92d9714016f94c904" kind="variable"><name>NAME_KEY</name></member>
@@ -769,13 +739,14 @@
     <member refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1aad24aa31f72cb1cb7c0eccd4843b50dd" kind="function"><name>get_player</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen" kind="class"><name>game::gui::screens::playerlist_screen::PlayerListScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" kind="variable"><name>game</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a008367ff0b46e930bb8bad463d37a0ab" kind="variable"><name>title_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1acc828d9391694ec117c5aac61d0b6a55" kind="variable"><name>count_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae836f062990d9e5ec045ff8bcb6c68d4" kind="variable"><name>player_list</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1add237da689861fc8935c4a51b777d018" kind="variable"><name>game</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a0e127d37018dadc1c1b170bb33b1044c" kind="variable"><name>_faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ad33b79a0cb1e7187da2d42dd8eaa3943" kind="variable"><name>_playercount_surface</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a7c50ccb918c25f0be836dd8507ebdb9b" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a9a3419a0c67123566a28a046c5827133" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a14bebe4eebb0ce97456fccbefe623b78" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1ae7da70669988790bdc7d1548a2a8ac3f" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a60b973f3b68da8ad083f62b9a0fd4001" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_1a864ef8fa3cb46143670aea44de14e77e" kind="function"><name>set_state</name></member>
@@ -785,7 +756,7 @@
     <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1aea1e8a9d8735c640577ae3530ac39770" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a8d489e6d42e4da6545d1c16b642a309d" kind="function"><name>set_players</name></member>
     <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" kind="function"><name>get_player</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1ab6e9f58108300a5c841b8df374b1e8a4" kind="function"><name>draw_players</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a54d6f05ff5970e0fa6a2fd980b29fded" kind="function"><name>draw_players</name></member>
   </compound>
   <compound refid="classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists" kind="class"><name>game::utils::exceptions::PlayerNameAlreadyExists</name>
     <member refid="classgame_1_1utils_1_1exceptions_1_1PlayerNameAlreadyExists_1a33383c76fb3a7f4d2923e110d8d43ae8" kind="function"><name>__init__</name></member>
@@ -814,10 +785,12 @@
     <member refid="classgame_1_1data_1_1structures_1_1player__structure_1_1PlayerStructure_1ac52f9406cc9d963399a680876acae73f" kind="variable"><name>PLAYER_BROKEN_TILE_Y_BYTE_SIZE</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar" kind="class"><name>game::gui::progress_bar::ProgressBar</name>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a2f8fadaff0accbf832d0e4fac7b410" kind="variable"><name>MIN_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a20b33028b9363b9f52679e92f8d4bc27" kind="variable"><name>MAX_WIDTH</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a3b8c67354d096ac536d1927b97da4184" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1abdbef49de611357f71b887827a76ad69" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1aa550330bd9653cf31884880f4db6a2c6" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a9e23a484c437f0d5e13692760a485c80" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1b6b93c751e386dab5b9f82707ccdfc2" kind="variable"><name>MAX_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a79615e609d0e9277d9a421812dfbc6c9" kind="variable"><name>info_label</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a246290d0b72c3df344a22957ac5e56da" kind="variable"><name>progress_label</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1aa56ce001cdade6ab7b91bb6d82b0f143" kind="variable"><name>_value</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a34e9e742e09b0ebd72f7ec199b3d522f" kind="variable"><name>_min_value</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a7c138ee3cdf90ca02e9c527da0ab8fbe" kind="variable"><name>_max_value</name></member>
@@ -826,20 +799,11 @@
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a5a20ea3ebb8bf467ff19dcd71daace9d" kind="variable"><name>_filled_end_colour</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41dac941f7d9fc5a6c40b237e309ab7e" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a897e42cfbb9b72877897a79bfbf84da5" kind="variable"><name>_y</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a79615e609d0e9277d9a421812dfbc6c9" kind="variable"><name>info_label</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a246290d0b72c3df344a22957ac5e56da" kind="variable"><name>progress_label</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8e634fb5b36a3320ecc03cd881317f90" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a467f14307fc15206f7589730c027ea48" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ae53164bec67983d952dc1214fa8dfa46" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a41e5d3858dc7a13b7a50f89d212c464c" kind="function"><name>refresh</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a25d5d1da3e7864c2d9500dfebe3662fb" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a939391229d592589742d73d85c6b8dfa" kind="function"><name>center_vertically</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4a1dc60c8e0f5a440ab65f8caaef8fab" kind="function"><name>center</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a312d3ba3a087d497c1eeeb2fd12d9a42" kind="function"><name>center_with_offset</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a12126b702a67b92a851feea6dc355ff4" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a8cab9f55f22fd81647e47f089531dec6" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ac24123cdded2751e9ddba4a1e19c2362" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a9729d52fbe892237fea4ff6c37ca61fb" kind="function"><name>get_height</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1e7befedb5f092695d1e6b9bd4b1bfca" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a3b8c67354d096ac536d1927b97da4184" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a4b1bf32f59269d26857f1a1cf8a384dc" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a1538a8b6653453fcab2eac3c52973798" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1ad9f8b864c57302b70d52780f84c19001" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1afd6d7fc5d684580cc75cda7a5e83d268" kind="function"><name>set_value</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1a037e78c01f2f7b592cee7096696881c1" kind="function"><name>get_value</name></member>
     <member refid="classgame_1_1gui_1_1progress__bar_1_1ProgressBar_1acfd1cd8b4d1fbc87f0c258cb25aef717" kind="function"><name>set_value_bounds</name></member>
@@ -881,9 +845,15 @@
     <member refid="classgame_1_1network_1_1protocol_1_1Protocol_1a6cff977cc729d5b6f07ee1b6297a3a74" kind="variable"><name>HIT_RES</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen" kind="class"><name>game::gui::screens::screen::Screen</name>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a78b147a8712c208708b0ffa8ff8a6e9e" kind="variable"><name>game</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a95675271ccd54f9b41ddfa333f3d0479" kind="variable"><name>_enabled</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1aab4a7406f6ba36533a83a95670d9b0ad" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1afdfb2a66a34369f9ab1ec8c04f0167fc" kind="function"><name>set_state</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a666c2c97d9248dd92c94ef2644fe0ef5" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae875caf75e4e6bd1fafa43e803c86305" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a8f7955ae494b54f9b53c590e7a9a8f93" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a45d4029e693aec99144c3f5a0fb7f70a" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a0345c84a4b016869cda2fa9015d1ca6c" kind="function"><name>update_ui</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a94759c8e6e7a5ce8c6ec472de3bb37ea" kind="function"><name>translate</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1a0b0bbb9d14981c98db2a1f11b074af41" kind="function"><name>set_state</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1screen_1_1Screen_1ae23f7f0bb5076f6bcfef018296a69d5d" kind="function"><name>get_state</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties" kind="class"><name>game::data::properties::screen_properties::ScreenProperties</name>
@@ -891,9 +861,7 @@
     <member refid="classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_1af17513d9b6a1fdca71ed2e3efeec3868" kind="variable"><name>PRONOUNCED_ALPHA</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screen__manager_1_1Screens" kind="class"><name>game::gui::screen_manager::Screens</name>
-    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1affa6506b2c5ff28728d094ea9c5faf80" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af7bb4a883c836342e309db65a84b9530" kind="variable"><name>game</name></member>
-    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a3e27697b40f7c8a39d431793f72ede31" kind="variable"><name>screen</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ab1ebe1e20261ba3ed56d4ca4fdfe01c1" kind="variable"><name>crash_screen</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a06c35e16eadd32e1b6174809e0ed49d6" kind="variable"><name>credits_screen</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a913b52e7a11c0a5df5cf067e150e18d4" kind="variable"><name>gameover_screen</name></member>
@@ -907,13 +875,61 @@
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af9a3f7275d1bccb3d4151ab5b16814e2" kind="variable"><name>server_create_screen</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a30e3fdb03ff66ba69671ea535bc087e4" kind="variable"><name>server_join_screen</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ad6a6af98ed5f6494b13c330049e2a8ea" kind="variable"><name>server_menu_screen</name></member>
-    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6d255708cc661aa579b3de8c97c88e07" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a5c7d48365fbfd99627990d0c5ac6a9cd" kind="function"><name>link_game</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a395f3e3dd55261fb000a62f4198d7ac3" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a4d6251b26599f83dfc2a31b2203eba4b" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1acc1abe9922dd0de00eb9cca3663d4f32" kind="function"><name>perform_translation</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ae32e46fc09df416edad23b25e42a2aeb" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1ac01917bd3333b74d635f6e36ae5eb964" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1af57d5f202dbe077639d562e5f0732908" kind="function"><name>task_create_server</name></member>
     <member refid="classgame_1_1gui_1_1screen__manager_1_1Screens_1a6dbb011ad17503515d1da0c1dc1a33d9" kind="function"><name>task_join_server</name></member>
+  </compound>
+  <compound refid="classgame_1_1gui_1_1selectbox_1_1SelectBox" kind="class"><name>game::gui::selectbox::SelectBox</name>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ad6c245f4db4cf9de810b80671f9fd3d8" kind="variable"><name>MIN_VALUE_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a601ebbab595eca1403c757bac257315c" kind="variable"><name>MAX_VALUE_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ad676e949a5df255971408580717f0f4c" kind="variable"><name>MIN_ARROW_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ae4a52c3e38d8ad7d2ad72ad3472ffae6" kind="variable"><name>MAX_ARROW_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a8f6240f785720396d69cfaafe7da649e" kind="variable"><name>ARROW_X_OFFSET</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1aa8fe886272cf2852f95fc448aa7f998c" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ac99ee87f9c19e96d583aa2a20b372fec" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1af9529fbafc5492c756a9cc13f7f99591" kind="variable"><name>_display_box</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ae526a20d19f3c32e34bd54aa9bc1b379" kind="variable"><name>_values</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ad7b42ea5a23977bed485100d1d7d9a1d" kind="variable"><name>_previous_index</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1afcbaff55b11c06f831b7cef48538de27" kind="variable"><name>_current_index</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a331f4c4791b02c044a3d3ef9d302b367" kind="variable"><name>_open</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a22159cf288dc5fb3100eb69835f01e78" kind="variable"><name>_arrow_width</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ad7289619af551639954f837fc96fbf41" kind="variable"><name>_arrow_height</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a922032a435df61ae22f3f0c934e3d15e" kind="variable"><name>_arrow_colour</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ab2a8f2e8ec5a6351c8d4813bc8eee9cc" kind="variable"><name>_arrow_y_offset</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a262fbebd914751801e4990abe63c635e" kind="variable"><name>_value_surface</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a3658019b1cbcc10c2f0206945f0de091" kind="variable"><name>_value_slot_height</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ab07fb68f9fc3f706f7248ac74a45697e" kind="variable"><name>_has_selected</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a57f0bbe694c11c7694724b2d7020b07e" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a6f6be1ff6fb316d2248e0bbd332171fa" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a666116ba3c389c0e724112f57c089896" kind="variable"><name>_x</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a731b924f5629eead5885740165da5153" kind="variable"><name>_y</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a45174350b8605eb6f9a31508c37d33ed" kind="variable"><name>_enabled</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a07e6093c3e84f615f9d7e93c7104035c" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a752f1839a8dad733f04d18a3d255a42b" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1af4594732fcae742dd483d6cbb9fe3a64" kind="function"><name>draw_value_list</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a9aa0916bc605fd2aba5c37107e622bbd" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a3d7d0f2ab06a91022cc5fafc206b9994" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a79e4aa6ff1dab591a2e9892577c57ca7" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a33901d0c506b925f5049d2206c13207a" kind="function"><name>set_open</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ae6089ea41712033c0f95ef955a7796f6" kind="function"><name>is_open</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a701fb2685179008a09b654904d58780e" kind="function"><name>is_hovering_over</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1adfcac7d77d74dca62c320a8d110cd02a" kind="function"><name>is_hovering_over_display_box</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a56fbb2f1735abb3be4d59c834b4a4ecc" kind="function"><name>is_hovering_over_value_list</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a869a2a9f2f297365d5c98ec2d861a863" kind="function"><name>is_hovering_over_value</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ac5e0a49ec8969a33e694fc5c72d9075c" kind="function"><name>set_values</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a2ed05b465aab8a4b7041c8bfd0caeabd" kind="function"><name>get_values</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a22b8a6aad937328ee624ae9e07d62dea" kind="function"><name>set_current_index</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a8a33c8d27404f9f1ae0c25f90fb181bf" kind="function"><name>get_current_index</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a9e32c578c08c3dd222cd2c3a10a66f8b" kind="function"><name>get_selected</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a874bcb71154d96822e002170ba38dbe9" kind="function"><name>has_selected_a_value</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a10bd1af0f3b50cec194748b365eb1b6b" kind="function"><name>set_tooltip_text</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1ab96505dd59977e0f0be7473d88f883c0" kind="function"><name>set_width</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1afd8a45d448a56a77b435d5bfd5dccb00" kind="function"><name>set_height</name></member>
+    <member refid="classgame_1_1gui_1_1selectbox_1_1SelectBox_1a903c08e1b1dbe47b9927d2f280db77a7" kind="function"><name>set_interact</name></member>
   </compound>
   <compound refid="classgame_1_1server_1_1server_1_1Server" kind="class"><name>game::server::server::Server</name>
     <member refid="classgame_1_1server_1_1server_1_1Server_1afc8679ff26e5d73202e7e0d74dac8894" kind="variable"><name>state</name></member>
@@ -925,18 +941,18 @@
     <member refid="classgame_1_1server_1_1server_1_1Server_1af18fe8ed8cdbba54aba0e42864bcc290" kind="variable"><name>server_thread</name></member>
     <member refid="classgame_1_1server_1_1server_1_1Server_1a26a3c9e7f7150b919b98721fb469a9fb" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1server_1_1server_1_1Server_1abdd9ab4ac802fe326e2a503df63a8fb3" kind="function"><name>client_handler</name></member>
-    <member refid="classgame_1_1server_1_1server_1_1Server_1a0e167e4693f3e9bd2864239a3b1633da" kind="function"><name>run</name></member>
-    <member refid="classgame_1_1server_1_1server_1_1Server_1a18ee5bdbf5a23f82401e040602241c5a" kind="function"><name>start</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1aaf24ee2cb651af9b75f248a0d9f1bdea" kind="function"><name>run</name></member>
+    <member refid="classgame_1_1server_1_1server_1_1Server_1a62532fb5d1e59f13a64f91987f46eb12" kind="function"><name>start</name></member>
     <member refid="classgame_1_1server_1_1server_1_1Server_1a7c08f636ef0a732f91ba3b2be5b39cba" kind="function"><name>stop</name></member>
     <member refid="classgame_1_1server_1_1server_1_1Server_1a243bfaedd798b87757cf9e47c20ea3c1" kind="function"><name>safe_closure</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen" kind="class"><name>game::gui::screens::serverconnect_screen::ServerConnectScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9326a01f6771065b4a8ec2eb3c569fd8" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a9b9baeeaf2a00f2cd91531fb9c1526fd" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1adf19e68ab183c9e9c895b59ba20c6c74" kind="variable"><name>info_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad1607207ccf443e5383e6821b1b3d523" kind="variable"><name>main_menu_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a15e1cd778b693854009d81395b114431" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a21156afc811ed0e6fe8bf4ff2e7f08cf" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a30d60499b6d102e0e6ed619a8f54e1c3" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a60cd1ba79edbd0293a8a0c1ffd80d5a3" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a776fc93bc6a1040c5b65ec36893a9b3c" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a87e401780d0a54ea5cba95773d227959" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ae3fa66b6b877dbcff4be4f3a514d086e" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1a2e993b0b503940af177ba6dba9a6a5bf" kind="function"><name>update_info_label</name></member>
@@ -944,23 +960,25 @@
     <member refid="classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_1ad7c1e7a16630e792208775fba8de730d" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen" kind="class"><name>game::gui::screens::servercreate_screen::ServerCreateScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1aa200ed98a223a78bbd26325d969d4e26" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a095ce4ff134515029940365865adaa02" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1af136da39e7862cc8d50bb6e1dccdb64b" kind="variable"><name>create_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1afc280a7c3eb56f0a12e4f3f5e3bfe533" kind="variable"><name>ign_input</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6ed257a4bb91061d7b56fac0f8b3fb40" kind="variable"><name>seed_input</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a3e68fcba51db059fdf78801b50132d9b" kind="variable"><name>world_theme_select</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a9bdb844a7a91f94c25620ae1a337b4" kind="variable"><name>world_size_select</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6b97b71f0d4b1e4dd2d27d82156bdbb6" kind="variable"><name>ordering_container</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a6deee6fc7281c400552c5ae0b706cdea" kind="variable"><name>create_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2a880595d41c80cb67d2185fa1913b39" kind="variable"><name>back_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a88277b7ece6f0ed7b550f23eec4c5749" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a8dd8bc0f0c4ac0b0161f4333d172a74e" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a2cb8b3df63477fd9b78c9c94143a216e" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a81da7acf9970b286ace2cbfcb863ce83" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a4491c8a0455753f57a6bf214088b6dc0" kind="function"><name>initialise_themes</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1abaf6c6e26d56989d12e959f7f127dd83" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a10033fc91ef516e43ded79677eb2dcf2" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a62d536b859343141d982d482f54e113c" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a712f2bcf13c9a96a251c65f446618e6d" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_1a160fe5054680645061cbd03ad774cd97" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen" kind="class"><name>game::gui::screens::serverjoin_screen::ServerJoinScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a23a60d8ab9a68b792de65676f7680208" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9e697483d5c02a8080c6b7058594b9f4" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a80aca0fcd1c0dff64d5d343d6aeed30b" kind="variable"><name>join_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a1b59e4f6040e479c39684f3dd3c1931c" kind="variable"><name>ign_input</name></member>
@@ -969,22 +987,23 @@
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a79f95a144be232e84b639a332eb9635f" kind="variable"><name>join_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ad1b4730a9e14f38921a4f43eb8492ef4" kind="variable"><name>back_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af75e7ac6ccc157c2d9e929c3c18717b4" kind="variable"><name>ordering_container</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aaf1320b8b7623a5ccda590afa4be2b85" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a70278293a5f4884a24e25872aff299ee" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ab5c7bd84fcca3d7a023259586e8a4eec" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1ac78c799265316d8fbf21296a3956ff9c" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a9b4c041a03b78c45aeb32b5a09fd51ac" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1a883ea5edea36d69e6bd05834d2b5dee8" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa2d30bf0c301d8b8717e2dcd69108a72" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1af966859d8b1ba9b942347a6eb7c35523" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_1aa101fee08aba98518b61f33b1a5fc832" kind="function"><name>set_state</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen" kind="class"><name>game::gui::screens::servermenu_screen::ServerMenuScreen</name>
-    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a66f795d9cb2283c395c208dee59c1f19" kind="variable"><name>window</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a9ce05fc29bf2bce2340f29576b8ec61c" kind="variable"><name>faded_surface</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ac3dbf1f3892afe7abec7338decc3709c" kind="variable"><name>subtitle_label</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5ba604630416e8f2f20918efa48c7331" kind="variable"><name>join_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1adc112ecf97e2f5490084cc58cfde56b9" kind="variable"><name>create_button</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a743b52db40903dbb5d293422fffecc65" kind="variable"><name>back_button</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1ae1fb89341ce74ee39e865c136cdada05" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1aeacc1d6efb9972fa18b02e39e0d3acad" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a58d1bc3dea45fa46d33d7e37703dd0d5" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a78fa10d4df69914c2ba57b67cc3eb67f" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a13f7818ada8d771eeedca7874285f0de" kind="function"><name>translate</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a82677e4efb130579a232b3de65f22e9f" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a5c740de9eb51446db503ab4c2122bd70" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_1a8e6ae6a662d1039e5ba569d47d424f15" kind="function"><name>set_state</name></member>
@@ -1010,10 +1029,10 @@
     <member refid="classgame_1_1server_1_1tasks_1_1ServerTasks_1a4d4ad352431f484c7908c93d0481af07" kind="function"><name>incoming_packets</name></member>
   </compound>
   <compound refid="classgame_1_1gui_1_1slot_1_1Slot" kind="class"><name>game::gui::slot::Slot</name>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a81d05a827571de62c36eb0e9b379faf5" kind="variable"><name>MIN_SIZE</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1acd9bc7129575d89798be2b4b1bc4c013" kind="variable"><name>MAX_SIZE</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3" kind="variable"><name>_width</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a23282e62499327a7f6385871fb8144e2" kind="variable"><name>_height</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a35b3cda5cb9d1860ccf5660fdb95b60d" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a43cda87b30c91228134b725ca94873de" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a6d8668949a814587d8e8f995bb703d41" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a1f6cfd1d0a59fb599f03f6b09b9c1e00" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a0b20dcd9a0005acd652eefcb90a4eefa" kind="variable"><name>_outline_colour</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a024c0c622e7ddf062b5aa0f8a019f237" kind="variable"><name>_inner_colour</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ab22a2141e80040e37aa7e5594e51da35" kind="variable"><name>_fill_colour</name></member>
@@ -1023,22 +1042,18 @@
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ae07c31f43ace3f5308dcc040114a17ca" kind="variable"><name>_fill_surface</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ad6db80e17eaa38a4354b4769513eb6e6" kind="variable"><name>_item_count</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a43ff4e05c098b50b0bce87e511f0ab99" kind="variable"><name>_selected</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1aa0664c93899b3086fd2b30bcdbfed5a3" kind="variable"><name>_width</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a23282e62499327a7f6385871fb8144e2" kind="variable"><name>_height</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a63bbd4794d76b2621713cf0c6e37168c" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1abb41328804baccad7a324f677d37b755" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1af82c98bc46d39f992648dfe36d6cf961" kind="variable"><name>_item</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a880dc85d27ceb3671c65d42d7a5f9a0a" kind="variable"><name>_item_asset</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a8dc90a543a846fad3d1eb0deea82c96a" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1aee3b83be843372d7608102fb5a01796e" kind="function"><name>draw</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a2178d5af7d6d88e7544d24e0dd7e7a1e" kind="function"><name>update</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a94f8df86ef2ae1d84634feb872d96474" kind="function"><name>center_horizontally</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a131de6d18c585e85917a90834180cc0d" kind="function"><name>center_vertically</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ab223ac656547e0779ce1e5343de11c59" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a2c577903a27e2120266db95ef7c6ebf2" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ab55d0228cfc80d2dd059c2cc388cf366" kind="function"><name>update</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1aaa5290040947381cde1a6e849d1cf225" kind="function"><name>select</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a6ad05e26f6b579b2e4ce4953d8b476ec" kind="function"><name>unselect</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a17c0515b994a97fab7468ed558461c69" kind="function"><name>is_selected</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a442c39586b03ea2d157aae4c1c98f383" kind="function"><name>set_width</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1af097740a99121252078c4ec462abfb3d" kind="function"><name>get_width</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a15a3e38eea2151165a9fe58fc47a2607" kind="function"><name>set_height</name></member>
-    <member refid="classgame_1_1gui_1_1slot_1_1Slot_1aeb415ac5365d2007815c634194b53739" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a784b8317765aae18feecca1957de898d" kind="function"><name>set_inner_colour</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1a2d66622897bfdfb7420fcf89aabe927f" kind="function"><name>get_inner_colour</name></member>
     <member refid="classgame_1_1gui_1_1slot_1_1Slot_1ad14e0d041350598a1540d7d86e25145c" kind="function"><name>set_outline_colour</name></member>
@@ -1056,20 +1071,50 @@
     <member refid="classgame_1_1client_1_1connection_1_1Tasks_1a3ccb1bbfa0813085420af411a3a94f9f" kind="variable"><name>CONNECT</name></member>
     <member refid="classgame_1_1client_1_1connection_1_1Tasks_1ab9b6002c84a03956e747889595d1f53b" kind="variable"><name>UPDATE</name></member>
   </compound>
+  <compound refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme" kind="class"><name>game::data::themes::theme::Theme</name>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ae826d1dd4ea713ef0ae5337fd3d4e30d" kind="variable"><name>_id</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1af13d0eaf15e25a8c9a53a1038978810e" kind="variable"><name>_name</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8d6970c007c10b6d9ec09a7ada0f22e0" kind="variable"><name>_layers</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a8479161c0a96b02e03c8049b29b712a9" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a30db506685da7fcc59f85acf60dbc933" kind="function"><name>get_dict</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1ab9ee240c834121474871a99843deb270" kind="function"><name>add_layer</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a02475eb6c8e89aa7d979fae966ea3800" kind="function"><name>clear_layers</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a1d56eff774cdc7b37a39b4be4716af02" kind="function"><name>set_name</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a5945e962fa1f35d7650f182b6731670b" kind="function"><name>get_name</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a60ab092f5073086db2e86ae6bf3389a6" kind="function"><name>set_layers</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme_1_1Theme_1a23e783114252db65f1b4465696245c5e" kind="function"><name>get_layers</name></member>
+  </compound>
+  <compound refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers" kind="class"><name>game::data::themes::theme_layers::ThemeLayers</name>
+    <member refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1ac2ea589c5be7126defc2e0210737b37f" kind="variable"><name>LAYER_T</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1abd30dabb5d3f1dddbc6f46342083d808" kind="variable"><name>LAYER_B</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1theme__layers_1_1ThemeLayers_1aeec40bbf273a40ef39231c8c84de86ca" kind="variable"><name>LAYER_C</name></member>
+  </compound>
+  <compound refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager" kind="class"><name>game::world::theme_manager::ThemeManager</name>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1afd67ba16477e886698e70fed86672365" kind="variable"><name>THEMES_FILE</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1ac1af530d97e7ed5b550f4c89caa39770" kind="function"><name>init_themes</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1aa9adfd8d2ab0647b32e2864d0d22f161" kind="function"><name>create_default_themes</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1a707f1f498e6ef691fff2168d4adafd8f" kind="function"><name>check_themes</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1a88a062abdcf7c1aa2d47060fc4e690d2" kind="function"><name>get_theme_by_id</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1a88f96af9e9a4797fcd8018ce72876e9d" kind="function"><name>get_themes</name></member>
+    <member refid="classgame_1_1world_1_1theme__manager_1_1ThemeManager_1a727d10f71a91d973482f4f916b2faf3f" kind="function"><name>get_theme_names</name></member>
+  </compound>
+  <compound refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes" kind="class"><name>game::data::themes::themes::Themes</name>
+    <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a3184c46bed22a21889c52e6f1749b20f" kind="variable"><name>DEFAULT</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1aea9a1c050d34dfa9a452a9bc66fc690a" kind="variable"><name>HELL</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1ab3c3852ae40115b3240922ca0871b1b1" kind="variable"><name>ISLANDS</name></member>
+    <member refid="classgame_1_1data_1_1themes_1_1themes_1_1Themes_1a17eb7eb53232c1f1178746b6df2ecaf8" kind="variable"><name>HELL_ISLANDS</name></member>
+  </compound>
   <compound refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile" kind="class"><name>game::data::tiles::tile::Tile</name>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1ad0b1894c1684fe8f7a0b65d16f607fbd" kind="variable"><name>DEFAULT_ATLAS</name></member>
-    <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aadcc96d6ea4bacf369a8483fabf1c1fc" kind="variable"><name>count_id</name></member>
-    <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a449d3afa04d60e43280c2373871452af" kind="variable"><name>_id</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5d4632d2f492b8d2b295013bef95e596" kind="variable"><name>_xy</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a3c2ef65e4acf4334658120b90754c8f7" kind="variable"><name>_resistance</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1ad6a995d8ac46dab4c6758131d2578b96" kind="variable"><name>_damage</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1adb6629c6e6b5cc42accb55fc42a1db72" kind="variable"><name>_damage_delay</name></member>
-    <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1adb4d0dfa8f1fe18b7e4246019c76f27f" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a64965b5a023fe3bf24296746788df5ce" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aed2bb8ddd741bf0a83c843dbe194b8f6" kind="function"><name>__repr__</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a3c4d6a3b53e00ebe3d6c359f303069c3" kind="function"><name>__eq__</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1aa1ca365b8c8a76066a914921bcae5532" kind="function"><name>compress</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1afcc5219bf5abebc0a1552eecd336e258" kind="function"><name>decompress</name></member>
-    <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a4092cf2a3bb184e8834c43d654461953" kind="function"><name>get_id</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a5bc50553c7afc4d48525208c32627462" kind="function"><name>set_xy</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a24ab49009c98bdadc1b6c439f357e71e" kind="function"><name>get_xy</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile_1_1Tile_1a92d3170631cd85311c425947f3685841" kind="function"><name>set_resistance</name></member>
@@ -1089,12 +1134,12 @@
   </compound>
   <compound refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties" kind="class"><name>game::data::properties::tile_properties::TileProperties</name>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a5886781baffa413c3d27eae51cff9af5" kind="variable"><name>TILE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1aa3ac69e394e7d36adcf1c9f35e690b4a" kind="variable"><name>TILE_ID_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae56545999866a3f29439a408ef097cee" kind="variable"><name>TILE_X_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ae4ce97e387eeb40e312be726ba798fab" kind="variable"><name>TILE_Y_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a4053726e4fbe7e134c4d925e19afff05" kind="variable"><name>TILE_RESISTANCE_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a70972c17941e97d4c66d00b0e61db4c8" kind="variable"><name>TILE_DAMAGE_MAX</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1a9a0c3c286a01280a98a62a16e9c01daa" kind="variable"><name>TILE_DAMAGE_DELAY_MAX</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1tile__properties_1_1TileProperties_1ab7e0787b5ae80aeabc7bf97c51157654" kind="variable"><name>TILE_ADJACENT_DUPLICATES_MAX</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles" kind="class"><name>game::data::tiles::tiles::Tiles</name>
     <member refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a1e4eafeaaccef5a553731814eefac554" kind="variable"><name>VOID</name></member>
@@ -1110,14 +1155,13 @@
     <member refid="classgame_1_1data_1_1tiles_1_1tiles_1_1Tiles_1a02ec6cab40e2f551e921e36cf511b604" kind="variable"><name>BREAK_TILES_ANIM</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure" kind="class"><name>game::data::structures::tile_structure::TileStructure</name>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ad01b38f72c36b8b1c5cb8cb84b60800f" kind="variable"><name>TILE_ID_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1aef0ea95d61de74b4d089d2bdd3931855" kind="variable"><name>TILE_X_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a6bc09b5f5d78a9e44e1ee09b79a02b0f" kind="variable"><name>TILE_Y_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1afe755904ce548057978187f2c0032885" kind="variable"><name>TILE_RESISTANCE_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a70222d85b0fb9ea1479bede749dfdb1c" kind="variable"><name>TILE_DAMAGE_BIT_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a9c8f60c6557484d5b4da3020c05ec710" kind="variable"><name>TILE_DAMAGE_DELAY_BIT_SIZE</name></member>
+    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a09a5bf8261cbb6cab9610e5e9f391ffa" kind="variable"><name>TILE_ADJACENT_DUPLICATES_BYTE_SIZE</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0e98f2169e9a215ecdefe1e05dd7594d" kind="variable"><name>TILE_BYTE_SIZE</name></member>
-    <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a7d42cdc9a9a3aeed28141eef65309b8c" kind="variable"><name>TILE_ID_BYTE_POS</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a0cab0ba65e5a9ef093c16bf7b175fcdd" kind="variable"><name>TILE_X_BYTE_POS</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1a892f68f236a1704b642f4198d98b31dd" kind="variable"><name>TILE_Y_BYTE_POS</name></member>
     <member refid="classgame_1_1data_1_1structures_1_1tile__structure_1_1TileStructure_1ae98ce24222397dd913ca142547f711c9" kind="variable"><name>TILE_RESISTANCE_BYTE_POS</name></member>
@@ -1129,12 +1173,35 @@
     <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1ad56755365f6c5d81914ea549333d7cac" kind="variable"><name>BREAKABLE</name></member>
     <member refid="classgame_1_1data_1_1tiles_1_1tile__types_1_1TileTypes_1a127968cdf33a8647a9a39a18cbe797f4" kind="variable"><name>LETHAL</name></member>
   </compound>
+  <compound refid="classgame_1_1gui_1_1tooltip_1_1Tooltip" kind="class"><name>game::gui::tooltip::Tooltip</name>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a6cdb4df638350202dc33bbc49cde7ca1" kind="variable"><name>_label</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1affd99fbcf9f58e728062c4bd37af525a" kind="variable"><name>_surface</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1af12ee9fb5d22fb957478f8ed74f7de48" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a63b9dcf2c798126a21ac9d2074dd4206" kind="function"><name>initialise_surface</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a13608c37ad3e3837d7811ef9c0c71e63" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1ae89964a1ffa6bea625140210c9a241c1" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1a806a0b076a81b96fe3439b131c636ba1" kind="function"><name>set_text</name></member>
+    <member refid="classgame_1_1gui_1_1tooltip_1_1Tooltip_1aa71a244874a2ffd991327f58a479ce89" kind="function"><name>get_text</name></member>
+  </compound>
   <compound refid="classgame_1_1gui_1_1widget_1_1Widget" kind="class"><name>game::gui::widget::Widget</name>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1ad1165332a20855f597baeb50abba0e05" kind="variable"><name>MIN_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a2c92d44e7db512f419a175df840a8666" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a4e9efdae5c05c4aa9022295d0447a213" kind="variable"><name>MIN_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a86fba14a9f91c050d8adafaed3adf0a6" kind="variable"><name>MAX_HEIGHT</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a8eb93bda90087f0ff4b3b0fb40620743" kind="variable"><name>_x</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a5fd183797e443d1b21c113fdaf4a4751" kind="variable"><name>_y</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a8c72ba1a2de7b29c5bebfa891fc06ac2" kind="variable"><name>_transparency</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a4f84985e9d82c4547a7183b380283ccd" kind="variable"><name>_enabled</name></member>
-    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a9b70692c8f6448b63d276e9b7092155f" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a43df70dbcc9756259d376dcd95c9cc88" kind="variable"><name>_can_interact</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a4bf5e26fd6f22f2e205d2715ed1b43e2" kind="variable"><name>MAX_WIDTH</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a46eff264f23c643238fcd74b84f90761" kind="variable"><name>MAX_HEIGHT</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1abe90fe2a9c084ad71c7f78504612f6b0" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1abd52b5239125ab9fab7bbf64d3ef8ea4" kind="function"><name>validate_dimensions</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a68c41eeca5b7700c7fde8a450609a1bd" kind="function"><name>events</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a53c9de31d2b5fa7d8dbabc2496ba5d9f" kind="function"><name>resize</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a8afa798825e40a935e8174dd85a52966" kind="function"><name>update</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a117beb910dc2c07b626a75e1cb3b0611" kind="function"><name>draw</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1afc1e795f8bf3ab6ca80d6f6124633d4a" kind="function"><name>is_hovering_over</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a00e6238ed6f89b1e9c2de796e72a0aaf" kind="function"><name>set_x</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a94a6ce6ced2d9752ebf915e11f55f571" kind="function"><name>get_x</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a15c930c777ed581488c9cc8666b9734a" kind="function"><name>set_y</name></member>
@@ -1142,10 +1209,20 @@
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a9365c0e2fd541f6ecf2667a6b07f696c" kind="function"><name>offset_x</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a0320d2f9f7fbdbd7c8ef64b7a65cf3ef" kind="function"><name>offset_y</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1ac75dfd62bf2770c34f2b15d8eb88e2ba" kind="function"><name>offset</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a71285aebab1c65957305ad0941a4f9c7" kind="function"><name>center_horizontally</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a7546a211dd1fda95adf1e3b822bb02f1" kind="function"><name>center_vertically</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1ad3471d2107b642abc44f71ac7d5e3eda" kind="function"><name>center</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a09014b7184b6757ff626a1ab0d4ad6e4" kind="function"><name>center_with_offset</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a750bce6c242f4e6b963718fcbe62574f" kind="function"><name>set_width</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1aac96128e55909ef9e9bbbeb7d8052c29" kind="function"><name>get_width</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1adf809786300c86b89c475f54460cda3f" kind="function"><name>set_height</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1aa0ddf899cddd9df9f5764ce3bc8fe133" kind="function"><name>get_height</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a1fbce299d94fa570b9fdf342de8d14bc" kind="function"><name>set_transparency</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1a4ba4ed0bc1d025d728f8c50646c43d1e" kind="function"><name>get_transparency</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1aefae226fd7be0a03f4a9f8041e7f50b8" kind="function"><name>set_state</name></member>
     <member refid="classgame_1_1gui_1_1widget_1_1Widget_1ab31fae7ff59591ff48f3a9b61d86e2ad" kind="function"><name>get_state</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1afb11083086b79c6809248a4fa7d130da" kind="function"><name>set_interact</name></member>
+    <member refid="classgame_1_1gui_1_1widget_1_1Widget_1ab1f4301a1d14137e7100b222a5637c35" kind="function"><name>can_interact</name></member>
   </compound>
   <compound refid="classgame_1_1core_1_1window_1_1Window" kind="class"><name>game::core::window::Window</name>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a19329968a1be8985284cdcf8889f83ef" kind="variable"><name>FONT_PATH</name></member>
@@ -1154,8 +1231,6 @@
     <member refid="classgame_1_1core_1_1window_1_1Window_1abed4ca18c1a47d144000c98aab671c44" kind="variable"><name>halt_refresh</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1aabf9a47512b5ff475011a1a036910d00" kind="variable"><name>fps_cap</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1ab92583298f34b8b8b9235d0ca764dd4b" kind="variable"><name>screen</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1a64a43e7af5c7dbf05144a7d98ea7a7a6" kind="variable"><name>timer</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1ab3931fc89284c65a7a3baab137fb5e40" kind="variable"><name>vsync</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a49860a297457a26a186138c7489b3aea" kind="variable"><name>fullscreen</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1ac137470f44be458eebc83b0ea0cf5268" kind="variable"><name>old_width</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1aa7b97bc5dd4b5ec1182a26bee1d17f4f" kind="variable"><name>old_height</name></member>
@@ -1163,33 +1238,31 @@
     <member refid="classgame_1_1core_1_1window_1_1Window_1a54733b22062312b63cbdc3a965b500e6" kind="function"><name>clear</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a1d31402845db3549a13d8a5748661771" kind="function"><name>tick</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a0e438a403216d30673771bf0b1bb810a" kind="function"><name>resize</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1ac19611f83ab29c8f3acfee6cb4442862" kind="function"><name>draw_fps</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1a818ff8458b756cf3a99b8a406dc8d88e" kind="function"><name>window_updates</name></member>
-    <member refid="classgame_1_1core_1_1window_1_1Window_1ae4bae785468a31b4142dd168b702ec36" kind="function"><name>update_ui</name></member>
     <member refid="classgame_1_1core_1_1window_1_1Window_1a0c7491171079a59dd7d4a7892bd75909" kind="function"><name>toggle_fullscreen</name></member>
   </compound>
   <compound refid="classgame_1_1world_1_1world_1_1World" kind="class"><name>game::world::world::World</name>
     <member refid="classgame_1_1world_1_1world_1_1World_1ad019d6ba5aab6dc776e5a393598635a8" kind="variable"><name>_map</name></member>
-    <member refid="classgame_1_1world_1_1world_1_1World_1a8608d5a4ae2f8ec05bc1c0feab5b0d72" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1world_1_1world_1_1World_1a838770d208948aa68e29d7e56f4f704d" kind="function"><name>__init__</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1a8ca860e5275616969f385eb0ab5a8a2b" kind="function"><name>initialise</name></member>
-    <member refid="classgame_1_1world_1_1world_1_1World_1a0950236a2c7ca6faab58570a9b65f1cf" kind="function"><name>create</name></member>
+    <member refid="classgame_1_1world_1_1world_1_1World_1ac44ccd25958a927fcef4babd34910fc0" kind="function"><name>create</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1a22099c420762a65193b774fa8890fd6b" kind="function"><name>draw</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1a1de4f0ca427705c031e0713ce817eb4a" kind="function"><name>draw_wireframe</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1ad447eb8f35595b162dab7ebf065fabb9" kind="function"><name>set_map</name></member>
     <member refid="classgame_1_1world_1_1world_1_1World_1acab48c8c323c9ab9efa6ede83f85b4e2" kind="function"><name>get_map</name></member>
   </compound>
   <compound refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler" kind="class"><name>game::server::handlers::world_handler::WorldHandler</name>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a9fbb81ba6e85d64a5ab026edda9ec518" kind="variable"><name>_world</name></member>
     <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6932665d2fe7917c7fe47407586e2807" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a2b82f5c8199fb6cea131c6e26c1ab4f3" kind="function"><name>create_world</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1aa15fe0fb12ae88d375f0831ecbe7c9b5" kind="function"><name>create_world</name></member>
     <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a82eccf3f4a8a9e4c941f9832f654f7d8" kind="function"><name>update_broken_tile</name></member>
     <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a077544fd514152d079e0f6b2c18fb8cd" kind="function"><name>get_map_data</name></member>
+    <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1abee61d426a44ea9bb6a4e6eb66309031" kind="function"><name>set_world</name></member>
     <member refid="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler_1a6f6d404ab90215a9fd1500725f303cb8" kind="function"><name>get_world</name></member>
   </compound>
   <compound refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager" kind="class"><name>game::client::managers::world_manager::WorldManager</name>
-    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1ab33122caa942952eedf5819876a45c0c" kind="variable"><name>local_world</name></member>
     <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a2f71f56834e5fd652ec3cc79be975412" kind="variable"><name>temp_data</name></member>
     <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a648286e0e40df5ae203b247835c13ab7" kind="function"><name>__init__</name></member>
-    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1adfa93ddfd2e75a6df386e4a798e58bca" kind="function"><name>build_world_from_bytes</name></member>
+    <member refid="classgame_1_1client_1_1managers_1_1world__manager_1_1WorldManager_1a33e820c1d0946cf7d65aa89dab6fd686" kind="function"><name>build_world_from_bytes</name></member>
   </compound>
   <compound refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties" kind="class"><name>game::data::properties::world_properties::WorldProperties</name>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a7b5f32a3893cf00d0f8e6af7c53d67ec" kind="variable"><name>SKY_COLOUR</name></member>
@@ -1197,6 +1270,9 @@
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a66e29d2983c81dfe50002915977aed20" kind="variable"><name>MIN_MAP_HEIGHT</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a6358265daff4cc2e40b6900a0cf4af5d" kind="variable"><name>MAX_MAP_WIDTH</name></member>
     <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1afe206b60ee200f9503d8ec25b95038be" kind="variable"><name>MAX_MAP_HEIGHT</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1a2dcff7115eaefffefb7e20ce287a425b" kind="variable"><name>MAP_SMALL</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1aa14dfa01c83b306229267ff217dceafb" kind="variable"><name>MAP_MEDIUM</name></member>
+    <member refid="classgame_1_1data_1_1properties_1_1world__properties_1_1WorldProperties_1af8d3544753f1600d4ebba2404bc39d19" kind="variable"><name>MAP_LARGE</name></member>
   </compound>
   <compound refid="classgame_1_1client_1_1connection_1_1XSocket" kind="class"><name>game::client::connection::XSocket</name>
     <member refid="classgame_1_1client_1_1connection_1_1XSocket_1a704194709e981247c1d6abf006897995" kind="function"><name>__init__</name></member>
@@ -1287,6 +1363,14 @@
   </compound>
   <compound refid="namespacegame_1_1data_1_1structures_1_1tile__structure" kind="namespace"><name>game::data::structures::tile_structure</name>
   </compound>
+  <compound refid="namespacegame_1_1data_1_1themes" kind="namespace"><name>game::data::themes</name>
+  </compound>
+  <compound refid="namespacegame_1_1data_1_1themes_1_1theme" kind="namespace"><name>game::data::themes::theme</name>
+  </compound>
+  <compound refid="namespacegame_1_1data_1_1themes_1_1theme__layers" kind="namespace"><name>game::data::themes::theme_layers</name>
+  </compound>
+  <compound refid="namespacegame_1_1data_1_1themes_1_1themes" kind="namespace"><name>game::data::themes::themes</name>
+  </compound>
   <compound refid="namespacegame_1_1data_1_1tiles" kind="namespace"><name>game::data::tiles</name>
   </compound>
   <compound refid="namespacegame_1_1data_1_1tiles_1_1tile" kind="namespace"><name>game::data::tiles::tile</name>
@@ -1353,7 +1437,11 @@
   </compound>
   <compound refid="namespacegame_1_1gui_1_1screens_1_1servermenu__screen" kind="namespace"><name>game::gui::screens::servermenu_screen</name>
   </compound>
+  <compound refid="namespacegame_1_1gui_1_1selectbox" kind="namespace"><name>game::gui::selectbox</name>
+  </compound>
   <compound refid="namespacegame_1_1gui_1_1slot" kind="namespace"><name>game::gui::slot</name>
+  </compound>
+  <compound refid="namespacegame_1_1gui_1_1tooltip" kind="namespace"><name>game::gui::tooltip</name>
   </compound>
   <compound refid="namespacegame_1_1gui_1_1widget" kind="namespace"><name>game::gui::widget</name>
   </compound>
@@ -1369,6 +1457,7 @@
     <member refid="namespacegame_1_1network_1_1packet_1a8b7c3651a7c65a3755dec50668e259c6" kind="function"><name>fill</name></member>
     <member refid="namespacegame_1_1network_1_1packet_1ac5c4f132554ab17c7f18ce9f435d06c9" kind="function"><name>to_bytes</name></member>
     <member refid="namespacegame_1_1network_1_1packet_1a0a51168c9386fe194dc8297432d28d19" kind="function"><name>hex_len</name></member>
+    <member refid="namespacegame_1_1network_1_1packet_1a79d9e6c1d9bd9fd24b575439bdeb2238" kind="function"><name>from_hex_len</name></member>
   </compound>
   <compound refid="namespacegame_1_1network_1_1protocol" kind="namespace"><name>game::network::protocol</name>
   </compound>
@@ -1408,6 +1497,11 @@
     <member refid="namespacegame_1_1utils_1_1tools_1a3ed44a775ed03df2f15a1e2a26fe2655" kind="function"><name>c_log2</name></member>
     <member refid="namespacegame_1_1utils_1_1tools_1a89cc06dcdc3a15b60cbb72bb0d3005ef" kind="function"><name>resource_dir</name></member>
   </compound>
+  <compound refid="namespacegame_1_1utils_1_1translator" kind="namespace"><name>game::utils::translator</name>
+    <member refid="namespacegame_1_1utils_1_1translator_1a4a050cc0a96a71ff7eda9e0c55eb08ae" kind="variable"><name>translator</name></member>
+    <member refid="namespacegame_1_1utils_1_1translator_1a25617c54a8dea8d4021ad62337eb43ef" kind="variable"><name>locales</name></member>
+    <member refid="namespacegame_1_1utils_1_1translator_1ad15273b74928ac5a20c40d6d0e17d90d" kind="function"><name>get_locale_from_language</name></member>
+  </compound>
   <compound refid="namespacegame_1_1world" kind="namespace"><name>game::world</name>
   </compound>
   <compound refid="namespacegame_1_1world_1_1camera" kind="namespace"><name>game::world::camera</name>
@@ -1417,6 +1511,8 @@
   <compound refid="namespacegame_1_1world_1_1synth" kind="namespace"><name>game::world::synth</name>
   </compound>
   <compound refid="namespacegame_1_1world_1_1synth_1_1noise" kind="namespace"><name>game::world::synth::noise</name>
+  </compound>
+  <compound refid="namespacegame_1_1world_1_1theme__manager" kind="namespace"><name>game::world::theme_manager</name>
   </compound>
   <compound refid="namespacegame_1_1world_1_1tile__manager" kind="namespace"><name>game::world::tile_manager</name>
   </compound>
@@ -1486,6 +1582,12 @@
   </compound>
   <compound refid="tile__structure_8py" kind="file"><name>tile_structure.py</name>
   </compound>
+  <compound refid="theme_8py" kind="file"><name>theme.py</name>
+  </compound>
+  <compound refid="theme__layers_8py" kind="file"><name>theme_layers.py</name>
+  </compound>
+  <compound refid="themes_8py" kind="file"><name>themes.py</name>
+  </compound>
   <compound refid="tile_8py" kind="file"><name>tile.py</name>
   </compound>
   <compound refid="tile__types_8py" kind="file"><name>tile_types.py</name>
@@ -1511,6 +1613,8 @@
   <compound refid="data_2states_2____init_____8py" kind="file"><name>data/states/__init__.py</name>
   </compound>
   <compound refid="data_2structures_2____init_____8py" kind="file"><name>data/structures/__init__.py</name>
+  </compound>
+  <compound refid="data_2themes_2____init_____8py" kind="file"><name>data/themes/__init__.py</name>
   </compound>
   <compound refid="data_2tiles_2____init_____8py" kind="file"><name>data/tiles/__init__.py</name>
   </compound>
@@ -1584,7 +1688,11 @@
   </compound>
   <compound refid="servermenu__screen_8py" kind="file"><name>servermenu_screen.py</name>
   </compound>
+  <compound refid="selectbox_8py" kind="file"><name>selectbox.py</name>
+  </compound>
   <compound refid="slot_8py" kind="file"><name>slot.py</name>
+  </compound>
+  <compound refid="tooltip_8py" kind="file"><name>tooltip.py</name>
   </compound>
   <compound refid="widget_8py" kind="file"><name>widget.py</name>
   </compound>
@@ -1608,11 +1716,15 @@
   </compound>
   <compound refid="tools_8py" kind="file"><name>tools.py</name>
   </compound>
+  <compound refid="translator_8py" kind="file"><name>translator.py</name>
+  </compound>
   <compound refid="camera_8py" kind="file"><name>camera.py</name>
   </compound>
   <compound refid="map__manager_8py" kind="file"><name>map_manager.py</name>
   </compound>
   <compound refid="noise_8py" kind="file"><name>noise.py</name>
+  </compound>
+  <compound refid="theme__manager_8py" kind="file"><name>theme_manager.py</name>
   </compound>
   <compound refid="tile__manager_8py" kind="file"><name>tile_manager.py</name>
   </compound>
@@ -1651,6 +1763,8 @@
   <compound refid="dir_eccfc24682ef79e86296997e6081dd9b" kind="dir"><name>structures</name>
   </compound>
   <compound refid="dir_d45d08d522185a52b605d7b2f808a55b" kind="dir"><name>synth</name>
+  </compound>
+  <compound refid="dir_d53bc4a4c4bcf5be03d8cf965b5cfc3d" kind="dir"><name>themes</name>
   </compound>
   <compound refid="dir_1c62cad95607efae3e3ae5982a1feb40" kind="dir"><name>tiles</name>
   </compound>

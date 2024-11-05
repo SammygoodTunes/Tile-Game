@@ -9,11 +9,26 @@ Inheritance diagram for game.\+gui.\+screens.\+screen.\+Screen\+:\begin{figure}[
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}} \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}})
 \item 
-None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}{set\+\_\+state}} (self, bool state)
+Surface \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}{initialise\+\_\+surface}} (self, int alpha=\mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}})
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}{events}} (self, Event e)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}{draw}} (self)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}{update\+\_\+ui}} (self)
+\item 
+None \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}{translate}} (self)
+\item 
+Self \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}{set\+\_\+state}} (self, bool state)
 \item 
 bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}{get\+\_\+state}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}{game}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -28,38 +43,94 @@ bool \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb
  
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_aab4a7406f6ba36533a83a95670d9b0ad} 
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a666c2c97d9248dd92c94ef2644fe0ef5} 
 \index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame_1_1core_1_1game_1_1Game}{Game}}}]{game }\end{DoxyParamCaption})}
 
 
 
-Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_aa524bb7495c008e3bc102026a55bfd98}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_a46279bdc6356142989203c173850afee}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a7c50ccb918c25f0be836dd8507ebdb9b}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_adb353c26ec380c794b577f4505287938}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_a67089a5565487dfcd3a253a2211166ec}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_a44785518dd4d86fa600f8c2b2602fb63}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a978955f0494dc09d359930043a5de26c}{game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_a0bcb7e1d5705bf75a9fc51f7b3fdc7ee}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_a1bef66c3a1d109560905b309c665fb8f}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_a50441ac19860cd01320ae4d021089bcc}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a15e1cd778b693854009d81395b114431}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a88277b7ece6f0ed7b550f23eec4c5749}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_aaf1320b8b7623a5ccda590afa4be2b85}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_ae1fb89341ce74ee39e865c136cdada05}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_aaac3ef5b87c0ea178f699d830af3a589}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_aff0266c08e914f3a3b43d932647eb680}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_a4cfe736a04370b26fb36d60cdf876ed8}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a769c2e8d7ab7c4e2fa288686ba9ffb64}{game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_afde409aa2afec54d2cbf3662f85cd5b9}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_add97c233a82e75354a6bccf8bf9a0300}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_af7c7b68c7c411689ad9fd401c7b45eb5}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_a90c214a4bd43acc09a8f44416aba210b}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_a89663e8099689b132ef765ac84f0c418}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a9a3419a0c67123566a28a046c5827133}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a60cd1ba79edbd0293a8a0c1ffd80d5a3}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a81da7acf9970b286ace2cbfcb863ce83}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_ac78c799265316d8fbf21296a3956ff9c}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_a78fa10d4df69914c2ba57b67cc3eb67f}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
 
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a45d4029e693aec99144c3f5a0fb7f70a} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!draw@{draw}}
+\index{draw@{draw}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+draw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw the screen and its components.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_abf8f27665804d88705bd602d7b5fe2ae}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_ae85f12a09c7e938b20e23d1e23303794}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_a5d75cabdc8dc86875ef3f9bcac56fcbb}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a66cf74cdc7843141d25d00af6f8d687c}{game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_aceacce76fa06556f8eb947ecf7271229}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_a38ac9cdcfea7d834f7cddb7284a00194}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_ad3c97215190791c66fe964592ee9cdee}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_af257cbf7a8e2b1609b454674fd6f78bd}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_a5c9af759963c136595ce07dfda88fed2}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_ae7da70669988790bdc7d1548a2a8ac3f}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a87e401780d0a54ea5cba95773d227959}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a62d536b859343141d982d482f54e113c}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_aa2d30bf0c301d8b8717e2dcd69108a72}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_a82677e4efb130579a232b3de65f22e9f}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a8f7955ae494b54f9b53c590e7a9a8f93} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!events@{events}}
+\index{events@{events}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{events()}{events()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+events (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Event}]{e }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the screen events.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_a963ea44ff460e96c30850017716f162c}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_abaf6c6e26d56989d12e959f7f127dd83}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_a9b4c041a03b78c45aeb32b5a09fd51ac}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}.
+
 \Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae23f7f0bb5076f6bcfef018296a69d5d} 
 \index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!get\_state@{get\_state}}
 \index{get\_state@{get\_state}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
 \doxysubsubsection{\texorpdfstring{get\_state()}{get\_state()}}
 {\footnotesize\ttfamily  bool game.\+gui.\+screens.\+screen.\+Screen.\+get\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Return the screen's visibility/interactivity state.
+\begin{DoxyVerb}Return the screen's visibility and interactivity state.
 \end{DoxyVerb}
- \Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_afdfb2a66a34369f9ab1ec8c04f0167fc} 
+ \Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_ae875caf75e4e6bd1fafa43e803c86305} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!initialise\_surface@{initialise\_surface}}
+\index{initialise\_surface@{initialise\_surface}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{initialise\_surface()}{initialise\_surface()}}
+{\footnotesize\ttfamily  Surface game.\+gui.\+screens.\+screen.\+Screen.\+initialise\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{alpha = {\ttfamily \mbox{\hyperlink{classgame_1_1data_1_1properties_1_1screen__properties_1_1ScreenProperties_a74d01f53e02bbbdd234d94633b102aa6}{Screen\+Properties.\+ALPHA}}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise the screen's surface.
+\end{DoxyVerb}
+ \Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0b0bbb9d14981c98db2a1f11b074af41} 
 \index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!set\_state@{set\_state}}
 \index{set\_state@{set\_state}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
 \doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
-{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  Self game.\+gui.\+screens.\+screen.\+Screen.\+set\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{state }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Set the screen's visibility/interactivity.
+\begin{DoxyVerb}Set the screen's visibility and interactivity state, then return the screen itself
 \end{DoxyVerb}
  
 
 Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a60a7e5707153b49841f604ed488e1d41}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_aa5bcf21142f232f9a17f214732d9a1b3}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_ade7b03540fdfce12ae3544911f645aec}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_a895faca6b836e598241220840b2ac1e6}{game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_aa2aa65fa475e52ebf6dc60964249fd92}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_a6d9cee9b9469b8f6269085f8f3f504ee}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_a6373f9281fdf6f2af15e13a14654ac83}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_a104e73a51ff7598cfe05346340438e23}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_ae06ab55cae8c9c3a2e8cb3d50755e76c}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a864ef8fa3cb46143670aea44de14e77e}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ad7c1e7a16630e792208775fba8de730d}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a160fe5054680645061cbd03ad774cd97}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_aa101fee08aba98518b61f33b1a5fc832}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_a8e6ae6a662d1039e5ba569d47d424f15}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a94759c8e6e7a5ce8c6ec472de3bb37ea} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!translate@{translate}}
+\index{translate@{translate}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+translate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the text of all text-related components to their translated equivalents.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a114dbdc36943adbbdad1dc52f1796803}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_a7af9ec142f0e23f43b68cccc92f516c4}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_a257df17098a162bf003ad9435fe9e1a7}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_a2f86de40a951e479268fcc6221038ae8}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_a28ff732bd106f13f4a80b7185c2082cd}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_aab70f36d9e573593205d6138de4f1a17}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_afc54f162ab5bc955a0c3e9e40c01c943}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_a47a84b332dfbbef6c860bc084726bbce}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a14bebe4eebb0ce97456fccbefe623b78}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_a776fc93bc6a1040c5b65ec36893a9b3c}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a10033fc91ef516e43ded79677eb2dcf2}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_a883ea5edea36d69e6bd05834d2b5dee8}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_a13f7818ada8d771eeedca7874285f0de}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a0345c84a4b016869cda2fa9015d1ca6c} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!update\_ui@{update\_ui}}
+\index{update\_ui@{update\_ui}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{update\_ui()}{update\_ui()}}
+{\footnotesize\ttfamily  None game.\+gui.\+screens.\+screen.\+Screen.\+update\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the screen and its components.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1_1CrashScreen_a547e1137cd74b6f444aa1e71c7646275}{game.\+gui.\+screens.\+crash\+\_\+screen.\+Crash\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1credits__screen_1_1CreditsScreen_a2b8138743832e918dc8e0b0d78c597f0}{game.\+gui.\+screens.\+credits\+\_\+screen.\+Credits\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1gameover__screen_1_1GameoverScreen_af7dd086568136680d42b16000eb9e720}{game.\+gui.\+screens.\+gameover\+\_\+screen.\+Gameover\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1loading__screen_1_1LoadingScreen_afb8496e239ee7ff4967b6c288e80b068}{game.\+gui.\+screens.\+loading\+\_\+screen.\+Loading\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud_a488a8b8829e74b6968a00279faf32752}{game.\+gui.\+screens.\+main\+\_\+hud.\+Main\+Hud}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1mainmenu__screen_1_1MainMenuScreen_a13839b14d671e7b7268830a09988c4be}{game.\+gui.\+screens.\+mainmenu\+\_\+screen.\+Main\+Menu\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1map__screen_1_1MapScreen_a66a595f4961b1d3f218f2f7162297322}{game.\+gui.\+screens.\+map\+\_\+screen.\+Map\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1options__screen_1_1OptionsScreen_ac63d82b81b128ee0d93d761fee32a029}{game.\+gui.\+screens.\+options\+\_\+screen.\+Options\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1pause__screen_1_1PauseScreen_a24bc05e5a10a1a871eb16e9fe98e2373}{game.\+gui.\+screens.\+pause\+\_\+screen.\+Pause\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1playerlist__screen_1_1PlayerListScreen_a60b973f3b68da8ad083f62b9a0fd4001}{game.\+gui.\+screens.\+playerlist\+\_\+screen.\+Player\+List\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverconnect__screen_1_1ServerConnectScreen_ae3fa66b6b877dbcff4be4f3a514d086e}{game.\+gui.\+screens.\+serverconnect\+\_\+screen.\+Server\+Connect\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servercreate__screen_1_1ServerCreateScreen_a712f2bcf13c9a96a251c65f446618e6d}{game.\+gui.\+screens.\+servercreate\+\_\+screen.\+Server\+Create\+Screen}}, \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1serverjoin__screen_1_1ServerJoinScreen_af966859d8b1ba9b942347a6eb7c35523}{game.\+gui.\+screens.\+serverjoin\+\_\+screen.\+Server\+Join\+Screen}}, and \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1servermenu__screen_1_1ServerMenuScreen_a5c740de9eb51446db503ab4c2122bd70}{game.\+gui.\+screens.\+servermenu\+\_\+screen.\+Server\+Menu\+Screen}}.
 
 
 
@@ -69,6 +140,12 @@ Reimplemented in \mbox{\hyperlink{classgame_1_1gui_1_1screens_1_1crash__screen_1
 \index{\_enabled@{\_enabled}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
 \doxysubsubsection{\texorpdfstring{\_enabled}{\_enabled}}
 {\footnotesize\ttfamily game.\+gui.\+screens.\+screen.\+Screen.\+\_\+enabled\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e}\label{classgame_1_1gui_1_1screens_1_1screen_1_1Screen_a78b147a8712c208708b0ffa8ff8a6e9e} 
+\index{game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}!game@{game}}
+\index{game@{game}!game.gui.screens.screen.Screen@{game.gui.screens.screen.Screen}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily game.\+gui.\+screens.\+screen.\+Screen.\+game}
 
 
 

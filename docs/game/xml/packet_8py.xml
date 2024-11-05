@@ -104,7 +104,13 @@
 <codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>length<sp/>of<sp/>data<sp/>in<sp/>hex.<sp/>Used<sp/>in<sp/>packet<sp/>header<sp/>for<sp/>determining<sp/>data<sp/>size.</highlight></codeline>
 <codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int.to_bytes(len(data),<sp/>length=Packet.DATA_SIZE)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="namespacegame_1_1network_1_1packet_1a79d9e6c1d9bd9fd24b575439bdeb2238" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegame_1_1network_1_1packet_1a79d9e6c1d9bd9fd24b575439bdeb2238" kindref="member">from_hex_len</ref>(length:<sp/>bytes)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Return<sp/>the<sp/>length<sp/>as<sp/>an<sp/>integer<sp/>from<sp/>a<sp/>byte.</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int.from_bytes(length)</highlight></codeline>
     </programlisting>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/network/packet.py"/>
+    <location file="game/network/packet.py"/>
   </compounddef>
 </doxygen>

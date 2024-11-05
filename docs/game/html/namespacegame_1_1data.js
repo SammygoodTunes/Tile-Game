@@ -5,5 +5,6 @@ var namespacegame_1_1data =
     [ "properties", "namespacegame_1_1data_1_1properties.html", "namespacegame_1_1data_1_1properties" ],
     [ "states", "namespacegame_1_1data_1_1states.html", "namespacegame_1_1data_1_1states" ],
     [ "structures", "namespacegame_1_1data_1_1structures.html", "namespacegame_1_1data_1_1structures" ],
+    [ "themes", "namespacegame_1_1data_1_1themes.html", "namespacegame_1_1data_1_1themes" ],
     [ "tiles", "namespacegame_1_1data_1_1tiles.html", "namespacegame_1_1data_1_1tiles" ]
 ];

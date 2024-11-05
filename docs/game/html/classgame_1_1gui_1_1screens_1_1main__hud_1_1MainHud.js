@@ -1,8 +1,9 @@
 var classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud =
 [
-    [ "__init__", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#aa524bb7495c008e3bc102026a55bfd98", null ],
+    [ "__init__", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#afde409aa2afec54d2cbf3662f85cd5b9", null ],
     [ "draw", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#aceacce76fa06556f8eb947ecf7271229", null ],
     [ "set_state", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#aa2aa65fa475e52ebf6dc60964249fd92", null ],
+    [ "translate", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#a2f86de40a951e479268fcc6221038ae8", null ],
     [ "update_ui", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#a488a8b8829e74b6968a00279faf32752", null ],
     [ "camera_label", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#a839a5a66185c9caa47f976dac5d0866c", null ],
     [ "data_recv_label", "classgame_1_1gui_1_1screens_1_1main__hud_1_1MainHud.html#ae2f64ec14e2e3b63318125355bef8cca", null ],

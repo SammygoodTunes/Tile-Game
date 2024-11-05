@@ -94,6 +94,7 @@ $(function(){initNavTree('classgame_1_1server_1_1handlers_1_1world__handler_1_1W
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">game.server.handlers.world_handler.WorldHandler Class Reference</div></div>
 </div><!--header-->
@@ -103,14 +104,21 @@ $(function(){initNavTree('classgame_1_1server_1_1handlers_1_1world__handler_1_1W
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6932665d2fe7917c7fe47407586e2807" id="r_a6932665d2fe7917c7fe47407586e2807"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6932665d2fe7917c7fe47407586e2807">__init__</a> (self)</td></tr>
 <tr class="separator:a6932665d2fe7917c7fe47407586e2807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b82f5c8199fb6cea131c6e26c1ab4f3" id="r_a2b82f5c8199fb6cea131c6e26c1ab4f3"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b82f5c8199fb6cea131c6e26c1ab4f3">create_world</a> (self, str seed)</td></tr>
-<tr class="separator:a2b82f5c8199fb6cea131c6e26c1ab4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15fe0fb12ae88d375f0831ecbe7c9b5" id="r_aa15fe0fb12ae88d375f0831ecbe7c9b5"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa15fe0fb12ae88d375f0831ecbe7c9b5">create_world</a> (self, str seed, dict theme, str size)</td></tr>
+<tr class="separator:aa15fe0fb12ae88d375f0831ecbe7c9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82eccf3f4a8a9e4c941f9832f654f7d8" id="r_a82eccf3f4a8a9e4c941f9832f654f7d8"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82eccf3f4a8a9e4c941f9832f654f7d8">update_broken_tile</a> (self, dict player_dict)</td></tr>
 <tr class="separator:a82eccf3f4a8a9e4c941f9832f654f7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077544fd514152d079e0f6b2c18fb8cd" id="r_a077544fd514152d079e0f6b2c18fb8cd"><td class="memItemLeft" align="right" valign="top">bytes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a077544fd514152d079e0f6b2c18fb8cd">get_map_data</a> (self)</td></tr>
 <tr class="separator:a077544fd514152d079e0f6b2c18fb8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee61d426a44ea9bb6a4e6eb66309031" id="r_abee61d426a44ea9bb6a4e6eb66309031"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abee61d426a44ea9bb6a4e6eb66309031">set_world</a> (self, <a class="el" href="classgame_1_1world_1_1world_1_1World.html">World</a> world)</td></tr>
+<tr class="separator:abee61d426a44ea9bb6a4e6eb66309031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6d404ab90215a9fd1500725f303cb8" id="r_a6f6d404ab90215a9fd1500725f303cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_1_1world_1_1world_1_1World.html">World</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f6d404ab90215a9fd1500725f303cb8">get_world</a> (self)</td></tr>
 <tr class="separator:a6f6d404ab90215a9fd1500725f303cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9fbb81ba6e85d64a5ab026edda9ec518" id="r_a9fbb81ba6e85d64a5ab026edda9ec518"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fbb81ba6e85d64a5ab026edda9ec518">_world</a></td></tr>
+<tr class="separator:a9fbb81ba6e85d64a5ab026edda9ec518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Class for a creating the world handler.
@@ -133,8 +141,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2b82f5c8199fb6cea131c6e26c1ab4f3" name="a2b82f5c8199fb6cea131c6e26c1ab4f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b82f5c8199fb6cea131c6e26c1ab4f3">&#9670;&#160;</a></span>create_world()</h2>
+<a id="aa15fe0fb12ae88d375f0831ecbe7c9b5" name="aa15fe0fb12ae88d375f0831ecbe7c9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15fe0fb12ae88d375f0831ecbe7c9b5">&#9670;&#160;</a></span>create_world()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +155,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>seed</em></span>&#160;)</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>seed</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict</td>          <td class="paramname"><span class="paramname"><em>theme</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,6 +209,28 @@ Public Member Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
+<a id="abee61d426a44ea9bb6a4e6eb66309031" name="abee61d426a44ea9bb6a4e6eb66309031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee61d426a44ea9bb6a4e6eb66309031">&#9670;&#160;</a></span>set_world()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None game.server.handlers.world_handler.WorldHandler.set_world </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgame_1_1world_1_1world_1_1World.html">World</a></td>          <td class="paramname"><span class="paramname"><em>world</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the server world.
+</pre> 
+</div>
+</div>
 <a id="a82eccf3f4a8a9e4c941f9832f654f7d8" name="a82eccf3f4a8a9e4c941f9832f654f7d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82eccf3f4a8a9e4c941f9832f654f7d8">&#9670;&#160;</a></span>update_broken_tile()</h2>
 
@@ -213,6 +253,29 @@ Public Member Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9fbb81ba6e85d64a5ab026edda9ec518" name="a9fbb81ba6e85d64a5ab026edda9ec518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fbb81ba6e85d64a5ab026edda9ec518">&#9670;&#160;</a></span>_world</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">game.server.handlers.world_handler.WorldHandler._world</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="world__handler_8py.html">world_handler.py</a></li>
 </ul>
@@ -222,7 +285,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegame.html">game</a></li><li class="navelem"><a class="el" href="namespacegame_1_1server.html">server</a></li><li class="navelem"><a class="el" href="namespacegame_1_1server_1_1handlers.html">handlers</a></li><li class="navelem"><a class="el" href="namespacegame_1_1server_1_1handlers_1_1world__handler.html">world_handler</a></li><li class="navelem"><a class="el" href="classgame_1_1server_1_1handlers_1_1world__handler_1_1WorldHandler.html">WorldHandler</a></li>
-    <li class="footer">Generated on Fri Oct 18 2024 00:04:15 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Tue Nov 5 2024 15:51:42 for Tile-Game by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

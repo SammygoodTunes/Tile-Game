@@ -15,10 +15,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="24" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="24" bodyend="-1"/>
-        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1ab6e9f58108300a5c841b8df374b1e8a4" compoundref="player__manager_8py" startline="53" endline="69">game.client.managers.player_manager.PlayerManager.draw_players</referencedby>
-        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" compoundref="player__manager_8py" startline="44" endline="52">game.client.managers.player_manager.PlayerManager.get_player</referencedby>
-        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a8d489e6d42e4da6545d1c16b642a309d" compoundref="player__manager_8py" startline="26" endline="43">game.client.managers.player_manager.PlayerManager.set_players</referencedby>
+        <location file="game/client/managers/player_manager.py" line="41" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1aea1e8a9d8735c640577ae3530ac39770" compoundref="player__manager_8py" startline="24" endline="27">game.client.managers.player_manager.PlayerManager.__init__</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a54d6f05ff5970e0fa6a2fd980b29fded" compoundref="player__manager_8py" startline="55" endline="74">game.client.managers.player_manager.PlayerManager.draw_players</referencedby>
+        <referencedby refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" compoundref="player__manager_8py" startline="46" endline="54">game.client.managers.player_manager.PlayerManager.get_player</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -42,7 +42,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="22" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="22" bodyend="25"/>
+        <location file="game/client/managers/player_manager.py" line="24" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="24" bodyend="27"/>
+        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="41">game.client.managers.player_manager.PlayerManager.players</references>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a8d489e6d42e4da6545d1c16b642a309d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Self</type>
@@ -61,13 +62,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>Set the players list and return the player manager itself.
+<para><verbatim>Set the players list, then return the player manager itself.
 </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="26" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="26" bodyend="43"/>
-        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="24">game.client.managers.player_manager.PlayerManager.players</references>
+        <location file="game/client/managers/player_manager.py" line="28" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="28" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>dict|None</type>
@@ -91,16 +91,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="44" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="44" bodyend="52"/>
-        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="24">game.client.managers.player_manager.PlayerManager.players</references>
+        <location file="game/client/managers/player_manager.py" line="46" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="46" bodyend="54"/>
+        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="41">game.client.managers.player_manager.PlayerManager.players</references>
         <referencedby refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a7065c27ebf8828f7fcf764372cb1e4b8" compoundref="player__handler_8py" startline="59" endline="69">game.server.handlers.player_handler.PlayerHandler.untrack_player</referencedby>
         <referencedby refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a8beaeda4293d61add2c5ad60aa686330" compoundref="player__handler_8py" startline="28" endline="43">game.server.handlers.player_handler.PlayerHandler.update_player</referencedby>
         <referencedby refid="classgame_1_1server_1_1handlers_1_1player__handler_1_1PlayerHandler_1a6837884ad2f222fb0f265f512b24f54f" compoundref="player__handler_8py" startline="44" endline="58">game.server.handlers.player_handler.PlayerHandler.update_player_position</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1ab6e9f58108300a5c841b8df374b1e8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a54d6f05ff5970e0fa6a2fd980b29fded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>None</type>
         <definition> None game.client.managers.player_manager.PlayerManager.draw_players</definition>
-        <argsstring>(self, str player_name, float delta, game)</argsstring>
+        <argsstring>(self, str player_name, float delta, Game game)</argsstring>
         <name>draw_players</name>
         <qualifiedname>game.client.managers.player_manager.PlayerManager.draw_players</qualifiedname>
         <param>
@@ -116,8 +116,8 @@
           <declname>delta</declname>
         </param>
         <param>
-          <type>game</type>
-          <defname>game</defname>
+          <type><ref refid="classgame_1_1core_1_1game_1_1Game" kindref="compound">Game</ref></type>
+          <declname>game</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -127,8 +127,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="53" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="53" bodyend="69"/>
-        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="24">game.client.managers.player_manager.PlayerManager.players</references>
+        <location file="game/client/managers/player_manager.py" line="55" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="55" bodyend="74"/>
+        <references refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" compoundref="player__manager_8py" startline="41">game.client.managers.player_manager.PlayerManager.players</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -137,10 +137,10 @@
 <para><verbatim>Class for handling client player information.
 </verbatim> </para>
     </detaileddescription>
-    <location file="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" line="17" column="1" bodyfile="/home/samuel/Documents/Python/Tile-Game/game/client/managers/player_manager.py" bodystart="17" bodyend="69"/>
+    <location file="game/client/managers/player_manager.py" line="19" column="1" bodyfile="game/client/managers/player_manager.py" bodystart="19" bodyend="74"/>
     <listofallmembers>
       <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1aea1e8a9d8735c640577ae3530ac39770" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>__init__</name></member>
-      <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1ab6e9f58108300a5c841b8df374b1e8a4" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>draw_players</name></member>
+      <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a54d6f05ff5970e0fa6a2fd980b29fded" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>draw_players</name></member>
       <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1af8a43e17eb97eb4542f88c4481ac0b6c" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>get_player</name></member>
       <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a46af5869d683bb1d2f9f8dd88d1be52d" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>players</name></member>
       <member refid="classgame_1_1client_1_1managers_1_1player__manager_1_1PlayerManager_1a8d489e6d42e4da6545d1c16b642a309d" prot="public" virt="non-virtual"><scope>game::client::managers::player_manager::PlayerManager</scope><name>set_players</name></member>
