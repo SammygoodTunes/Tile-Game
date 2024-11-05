@@ -15,7 +15,7 @@ from game.data.properties.game_properties import GameProperties
 from game.data.properties.tile_properties import TileProperties
 from game.data.properties.world_properties import WorldProperties
 from game.data.states.map_states import MapStates
-from game.data.structures.tile_structure import TileStructure
+from game.data.structures.tile_structure import TileStructure, DynatileStructure
 from game.data.themes.theme_layers import ThemeLayers
 from game.data.tiles.tile import Tile
 from game.data.tiles.tile_types import TileTypes
@@ -42,6 +42,7 @@ class Map:
         self._dynatile_data: bytes = b''
         self._tile_data: bytes = b''
         self._compressed_tile_data: bytes = b''
+        self._compressed_dynatile_data: bytes = b''
         self._seed: str = ''
         self._theme: dict = {}
         self._x = -width * TileProperties.TILE_SIZE // 2
@@ -116,6 +117,7 @@ class Map:
 
         logger.info('Compressing map...')
         self.compress_tile_data()
+        self.compress_dynatile_data()
 
         logger.debug(f'Generated map with {self.perlin_noise.MIN_HEIGHT=} {self.perlin_noise.MAX_HEIGHT=}')
 
@@ -169,13 +171,16 @@ class Map:
         Update the old dynatile data with new dynatile data.
         Only update the differences between the two.
         """
-        if self._dynatile_data == new_dynatile_data:
+        if self._compressed_dynatile_data == new_dynatile_data:
             return
+        self.decompress_dynatile_data()
+        dynatile_data = self.decompress_dynatile_data(ext_bytes_obj=new_dynatile_data)
+
         for i in range(self._width * self._height):
             if not self._dynatile_data:
                 break
             x, y = i % self._width, i // self._height
-            if self.get_dynatile(x, y) != self.get_dynatile(x, y, ext_bytes_obj=new_dynatile_data):
+            if self.get_dynatile(x, y) != self.get_dynatile(x, y, ext_bytes_obj=dynatile_data):
                 self.tile_manager.draw(
                     x * TileProperties.TILE_SIZE,
                     y * TileProperties.TILE_SIZE,
@@ -188,9 +193,11 @@ class Map:
                     Tiles.DIRT,
                     self._dynatile_surface
                 )
-        self._dynatile_data = new_dynatile_data
 
-    def compress_tile_data(self):
+        self._compressed_dynatile_data = new_dynatile_data
+        self._dynatile_data = dynatile_data
+
+    def compress_tile_data(self) -> Self:
         """
         Compress the map's tile data, then return the map manager itself.
         """
@@ -225,8 +232,9 @@ class Map:
                         int.to_bytes(tile, length=TileStructure.TILE_BYTE_SIZE)
                         + int.to_bytes(amount, length=TileStructure.TILE_ADJACENT_DUPLICATES_BYTE_SIZE)
                 )
+        return self
 
-    def decompress_tile_data(self):
+    def decompress_tile_data(self) -> Self:
         """
         Decompress the map's tile data, then return the map manager itself.
         """
@@ -246,6 +254,64 @@ class Map:
                 ]
             )
             self._tile_data += int.to_bytes(tile, length=TileStructure.TILE_BYTE_SIZE) * amount
+        return self
+
+    def compress_dynatile_data(self) -> Self:
+        """
+        Compress the map's dynatile data, then return the map manager itself.
+        """
+        previous_dynatile: int = -1
+        amount: int = 1
+        self._compressed_dynatile_data: bytes = b''
+        length: int = len(self._dynatile_data)
+        for i in range(length):
+            if previous_dynatile < 0:
+                previous_dynatile = self._dynatile_data[i]
+                continue
+
+            if previous_dynatile == self._dynatile_data[i]:
+                amount += 1
+            else:
+                self._compressed_dynatile_data += (
+                        int.to_bytes(previous_dynatile, length=DynatileStructure.DYNATILE_STATE_BYTE_SIZE)
+                        + int.to_bytes(amount, length=DynatileStructure.DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+                )
+                amount = 1
+                previous_dynatile = self._dynatile_data[i]
+
+            if i == length - 1:
+                self._compressed_dynatile_data += (
+                        int.to_bytes(self._dynatile_data[i], length=DynatileStructure.DYNATILE_STATE_BYTE_SIZE)
+                        + int.to_bytes(amount, length=DynatileStructure.DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+                )
+        return self
+
+    def decompress_dynatile_data(self, ext_bytes_obj: bytes | None = None) -> bytes | Self:
+        """
+        Decompress the map's dynatile data.
+        Return the decompressed dynatile data if external bytes object is provided, otherwise the map manager itself.
+        """
+        dynatile_data = b''
+        compressed_dynatile_data = self._compressed_dynatile_data if ext_bytes_obj is None else ext_bytes_obj
+        sector_size = (DynatileStructure.DYNATILE_STATE_BYTE_SIZE + DynatileStructure.DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE)
+        for i in range(len(compressed_dynatile_data) // sector_size):
+            dynatile = int.from_bytes(
+                compressed_dynatile_data[
+                    i * sector_size
+                    :i * sector_size + DynatileStructure.DYNATILE_STATE_BYTE_SIZE
+                ]
+            )
+            amount = int.from_bytes(
+                compressed_dynatile_data[
+                    i * sector_size + DynatileStructure.DYNATILE_STATE_BYTE_SIZE
+                    :i * sector_size + sector_size
+                ]
+            )
+            dynatile_data += int.to_bytes(dynatile, length=DynatileStructure.DYNATILE_STATE_BYTE_SIZE) * amount
+        if ext_bytes_obj is not None:
+            return dynatile_data
+        self._dynatile_data = dynatile_data
+        return self
 
     def set_state(self, state: str = '', value: int = 0) -> Self:
         """
@@ -386,6 +452,21 @@ class Map:
         if not ext_bytes_obj:
             return bool(self._dynatile_data[byte_pos] >> (0x7 - array_index % 8) & 1)
         return bool(ext_bytes_obj[byte_pos] >> (0x7 - array_index % 8) & 1)
+
+    def set_compressed_dynatile_data(self, compressed_dynatile_data: bytes) -> Self:
+        """
+        Set the map's compressed dynatile data, then return the map manager itself.
+        The provided compressed dynatile data must be of same origin as that generated from the map manager's
+        dynatile data compression method.
+        """
+        self._compressed_dynatile_data = compressed_dynatile_data
+        return self
+
+    def get_compressed_dynatile_data(self) -> bytes:
+        """
+        Return the map's compressed dynatile data.
+        """
+        return self._compressed_dynatile_data
 
     def randomise_seed(self) -> Self:
         """

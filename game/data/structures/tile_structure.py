@@ -45,3 +45,4 @@ class DynatileStructure:
     """
 
     DYNATILE_STATE_BYTE_SIZE = 1
+    DYNATILE_ADJACENT_DUPLICATES_BYTE_SIZE = int(ceil(c_log2(TileProperties.TILE_ADJACENT_DUPLICATES_MAX // 8) / 8))
