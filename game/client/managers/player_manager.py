@@ -47,10 +47,16 @@ class PlayerManager:
         """
         Return the player by player name if they exist, None otherwise.
         """
-        index = next((i for i, p in enumerate(self.players) if p['name'] == player_name), None)
+        index = self.get_player_index(player_name)
         if index is not None:
             return self.players[index]
         return None
+
+    def get_player_index(self, player_name: str) -> int | None:
+        """
+        Return the index of a player by name if they exist, None otherwise.
+        """
+        return next((i for i, p in enumerate(self.players) if p['name'] == player_name), None)
 
     def draw_players(self, player_name: str, delta: float, game: Game) -> None:
         """

@@ -155,3 +155,12 @@ class ConnectionHandler:
         if not self.connection:
             return []
         return self.connection.player_manager.players
+
+    def get_player_index_by_name(self, player_name: str) -> int | None:
+        """
+        Return the index of the player in the player list based on their name, otherwise return None if no
+        connection has been established or if player was not found.
+        """
+        if not self.connection:
+            return None
+        return self.connection.player_manager.get_player_index(player_name)
