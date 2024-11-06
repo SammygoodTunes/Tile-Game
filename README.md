@@ -6,6 +6,16 @@ Currently in development.
 
 Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)**.
 
+## Table of contents:
+- [Preview](#preview)
+- [Controls](#controls)
+- [Setup](#setup)
+  - [Debug mode](#debug-mode)
+- [Documentation](#documentation)
+- [Information](#information)
+  - [Contributors](#contributors-a-z-)
+  - [Credits](#credits)
+
 ## Preview
 
 ![Preview](https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/main/docs/ss.png)
@@ -84,6 +94,16 @@ To view the HTML version, you must run the following URL address in the browser 
 ## Information
 
 Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
+
+---
+
+### Contributors [A-Z]: 
+- [Jatzylap](https://github.com/Jatzylap/) (art, alpha-testing)
+- Pickmonde (art)
+
+### Credits:
+- Original ["Pixeled"](https://www.dafont.com/pixeled.font) typeface by OmegaPC777 
+  - Edited to support more characters
 
 Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 
