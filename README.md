@@ -123,7 +123,7 @@ then the game may or may not work as intended.
 
 ### Dependencies
 
-| Name        | Version | Necessary |
+| Name        | Version | Required? |
 |-------------|---------|-----------|
 | Pygame      | ^2.6.1  | Yes       |
 | NumPy       | ^1.26.4 | Yes       |
