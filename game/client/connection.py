@@ -46,8 +46,7 @@ class XSocket(socket.socket):
         self._r_tmp: int = 0  # Stores the total bytes received (updated every second)
         self.old_s_tmp = 0  # Stores the old temporary value of _s_tmp (updated every second)
         self.old_r_tmp = 0  # Stores the old temporary value of _r_tmp (updated every second)
-        self.s_timer = get_ticks() / 1000.0
-        self.r_timer = get_ticks() / 1000.0
+        self.timer = get_ticks() / 1000.0
 
     def send(self, buffer: bytes, flags: int = 0) -> int:
         """
@@ -83,7 +82,6 @@ class XSocket(socket.socket):
         """
         self.old_s_tmp = self._s_tmp
         self._s_tmp = self._sent
-        self.s_timer = get_ticks() / 1000.0
 
     def set_r_tmp(self) -> None:
         """
@@ -91,7 +89,6 @@ class XSocket(socket.socket):
         """
         self.old_r_tmp = self._r_tmp
         self._r_tmp = self._recv
-        self.r_timer = get_ticks() / 1000.0
 
     def get_s_tmp(self) -> int:
         """
@@ -267,6 +264,11 @@ class Connection:
                     self.world_manager.build_world_from_bytes(map_data)
                     self.ping = round((time() - packet_recv_timestamp) * 1000)
                     packet_recv_timestamp = time()
+
+                if get_ticks() / 1000.0 - self.sock.timer >= 1:
+                    self.sock.set_s_tmp()
+                    self.sock.set_r_tmp()
+                    self.sock.timer = get_ticks() / 1000.0
 
             except TimeoutError:
                 self.state = ConnectionStates.TIMEOUT
