@@ -3,6 +3,8 @@ Module name: map_screen
 """
 
 from __future__ import annotations
+
+import pygame
 from pygame.draw import rect, line, circle
 from pygame.surface import Surface
 from pygame.transform import smoothscale_by
@@ -25,6 +27,7 @@ class MapScreen(Screen):
         self._got_map = False
         self.faded_surface = None
         self.title_label = Label('Map')
+        self._map_data_copy: bytes = b''
         self.scaled_map: Surface = Surface((0, 0))
 
     def translate(self) -> None:
@@ -117,10 +120,21 @@ class MapScreen(Screen):
 
     def update_ui(self) -> None:
         if not self._enabled: return
+        if (
+                self._map_data_copy == (self.game.client.world.get_map().get_dynatile_data()
+                                        + int.to_bytes(self.game.width, length=4)
+                                        + int.to_bytes(self.game.height, length=4)) and
+                not pygame.event.get(pygame.WINDOWRESIZED)
+        ):
+            return
         if self._got_map:
+            self._map_data_copy = (self.game.client.world.get_map().get_dynatile_data()
+                                   + int.to_bytes(self.game.width, length=4)
+                                   + int.to_bytes(self.game.height, length=4))
             coefficient = min(self.game.width / self.game.client.world.get_map().get_width_in_pixels() * 0.5,
                               self.game.height / self.game.client.world.get_map().get_height_in_pixels() * 0.5)
             self.scaled_map = smoothscale_by(self.game.client.world.get_map().get_surface(), round(coefficient, 2))
+
         self.faded_surface = self.initialise_surface()
         self.title_label.update(self.game)
         self.title_label.center_with_offset(0, 0, self.game.width, self.game.height, 0,
