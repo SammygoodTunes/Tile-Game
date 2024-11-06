@@ -62,4 +62,4 @@ Tested on Debian 12 and Windows 10
 
 Libraries used: PyTest 8.3.3
 
-> You may return to the [top of  the page](#tests) here.
+> You may return to the [top of the page](#tests) here.

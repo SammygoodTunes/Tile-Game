@@ -98,15 +98,14 @@ Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/rele
 ### Contributors [A-Z]: 
 - [Jatzylap](https://github.com/Jatzylap/) (art, alpha-testing)
 - Pickmonde (art)
+- [SammygoodTunes](https://github.com/SammygoodTunes) (art, programming)
 
 ### Credits:
 - Original ["Pixeled"](https://www.dafont.com/pixeled.font) typeface by OmegaPC777 
   - Edited to support more characters
 
-Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
-
 Tested on Debian 12 and Windows 10
 
 Libraries used: Pygame 2.6.1, Numpy 1.26.4
 
-> You may return to the [top of  the page](#tile-game) here.
+> You may return to the [top of the page](#tile-game) here.
