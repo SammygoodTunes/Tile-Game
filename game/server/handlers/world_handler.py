@@ -47,10 +47,17 @@ class WorldHandler:
         _map.compress_tile_data()
         _map.compress_dynatile_data()
 
-    def get_map_data(self) -> bytes:
+    def get_map_data(self, only_dynatile=False) -> bytes:
         """
         Return the map data in bytes.
         """
+        if only_dynatile:
+            return(
+                    int.to_bytes(self._world.get_map().get_width_in_tiles() - 1, length=MapStructure.MAP_WIDTH_BYTE_SIZE)
+                    + int.to_bytes(self._world.get_map().get_height_in_tiles() - 1, length=MapStructure.MAP_HEIGHT_BYTE_SIZE)
+                    + int.to_bytes(len(self._world.get_map().get_compressed_dynatile_data()), length=MapStructure.MAP_DTD_LEN_BYTE_SIZE)
+                    + self._world.get_map().get_compressed_dynatile_data()
+            )
         return (
             int.to_bytes(self._world.get_map().get_width_in_tiles() - 1, length=MapStructure.MAP_WIDTH_BYTE_SIZE)
             + int.to_bytes(self._world.get_map().get_height_in_tiles() - 1, length=MapStructure.MAP_HEIGHT_BYTE_SIZE)

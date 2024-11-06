@@ -156,7 +156,7 @@ class Connection:
             players = game_state[1:game_state[0] + 1]
             map_data = game_state[game_state[0] + 1:]
             self.player_manager.set_players(players)
-            self.world_manager.build_world_from_bytes(map_data)
+            self.world_manager.build_dynatile_from_bytes(map_data)
 
             data = self.sock.recv(Protocol.BUFFER_SIZE)
             if not ClientTasks.send_local_player(self.sock, data, self.player_manager):
@@ -261,7 +261,7 @@ class Connection:
                     players = _game_state[1:_game_state[0] + 1]
                     map_data = _game_state[_game_state[0] + 1:]
                     self.player_manager.set_players(players)
-                    self.world_manager.build_world_from_bytes(map_data)
+                    self.world_manager.build_dynatile_from_bytes(map_data)
                     self.ping = round((time() - packet_recv_timestamp) * 1000)
                     packet_recv_timestamp = time()
 

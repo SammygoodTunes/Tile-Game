@@ -20,7 +20,7 @@ class WorldManager:
 
     def build_world_from_bytes(self, bytes_obj: bytes, update_map_size=False) -> None:
         """
-        Build the local world from a world bytes object.
+        Build the local world from a bytes object.
         """
         if not bytes_obj.strip():
             return
@@ -43,4 +43,16 @@ class WorldManager:
             self.local_world.get_map().set_compressed_tile_data(compressed_tile_data)
             self.local_world.get_map().decompress_tile_data()
         compressed_dynatile_data = bytes_obj[tile_data_pos_end:]
+        self.temp_data = compressed_dynatile_data
+
+    def build_dynatile_from_bytes(self, bytes_obj: bytes) -> None:
+        """
+        Build the map's dynatile data from a bytes object.
+        """
+        if not bytes_obj.strip():
+            return
+        bytes_obj = Compressor.decompress(bytes_obj)
+        height_pos = MapStructure.MAP_WIDTH_BYTE_SIZE + MapStructure.MAP_HEIGHT_BYTE_SIZE
+        tile_data_pos_start = height_pos + MapStructure.MAP_DTD_LEN_BYTE_SIZE
+        compressed_dynatile_data = bytes_obj[tile_data_pos_start:]
         self.temp_data = compressed_dynatile_data

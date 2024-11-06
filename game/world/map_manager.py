@@ -181,6 +181,7 @@ class Map:
                 break
             x, y = i % self._width, i // self._height
             if self.get_dynatile(x, y) != self.get_dynatile(x, y, ext_bytes_obj=dynatile_data):
+                self.set_tile(x, y, Tiles.DIRT)
                 self.tile_manager.draw(
                     x * TileProperties.TILE_SIZE,
                     y * TileProperties.TILE_SIZE,

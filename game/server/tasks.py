@@ -101,7 +101,7 @@ class ServerTasks:
             return False
         conn.send(Hasher.enhash(Protocol.GLGAME_RES))
         compressed_players_obj = player_handler.get_players(compressed=True)
-        compressed_map_data_obj = Compressor.compress(world_handler.get_map_data())
+        compressed_map_data_obj = Compressor.compress(world_handler.get_map_data(only_dynatile=True))
         data = int.to_bytes(len(compressed_players_obj)) + compressed_players_obj + compressed_map_data_obj
         packet = fill(hex_len(data) + data)
         packet = hex_len(packet) + packet[Packet.DATA_SIZE:]

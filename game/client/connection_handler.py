@@ -10,7 +10,6 @@ Shared attributes probably will (eventually) be implemented to make it thread-sa
 """
 
 from pygame.event import Event
-from pygame.time import get_ticks
 
 from game.client.connection import Connection, Tasks
 from game.data.states.connection_states import ConnectionStates
