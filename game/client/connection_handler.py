@@ -10,7 +10,7 @@ Shared attributes probably will (eventually) be implemented to make it thread-sa
 """
 
 from pygame.event import Event
-from time import time
+from pygame.time import get_ticks
 
 from game.client.connection import Connection, Tasks
 from game.data.states.connection_states import ConnectionStates
@@ -133,21 +133,25 @@ class ConnectionHandler:
         """
         Return the average data sent per minute, rounded to kilobytes (not kibibytes).
         """
-        if not self.connection:
+        if self.connection is None:
             return 0.0
         if self.connection.timer is None:
             return 0.0
-        return self.connection.sock.get_sent() / (time() - self.connection.timer) * 60 / 1000.0
+        if get_ticks() / 1000.0 - self.connection.sock.s_timer >= 1.0:  # "Screenshot" every second the total amount
+            self.connection.sock.set_s_tmp()                            # of bytes sent
+        return (self.connection.sock.get_s_tmp() - self.connection.sock.old_s_tmp) * 60 / 1000.0
 
     def get_average_data_received(self) -> float:
         """
         Return the average data received per minute, rounded to kilobytes (not kibibytes).
         """
-        if not self.connection:
+        if self.connection is None:
             return 0.0
         if self.connection.timer is None:
             return 0.0
-        return self.connection.sock.get_recv() / (time() - self.connection.timer) * 60 / 1000.0
+        if get_ticks() / 1000.0 - self.connection.sock.r_timer >= 1.0:  # "Screenshot" every second the total amount
+            self.connection.sock.set_r_tmp()                            # of bytes received
+        return (self.connection.sock.get_r_tmp() - self.connection.sock.old_r_tmp) * 60 / 1000.0
 
     def get_players(self) -> list:
         """

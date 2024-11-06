@@ -9,6 +9,7 @@ It also calls the client tasks that send data packets to the server.
 """
 
 from pygame.event import Event
+from pygame.time import get_ticks
 from threading import Thread
 from time import time
 import socket
@@ -41,6 +42,12 @@ class XSocket(socket.socket):
         super().__init__(family, type_, proto, fileno)
         self._sent: int = 0
         self._recv: int = 0
+        self._s_tmp: int = 0  # Stores the total bytes sent (updated every second)
+        self._r_tmp: int = 0  # Stores the total bytes received (updated every second)
+        self.old_s_tmp = 0  # Stores the old temporary value of _s_tmp (updated every second)
+        self.old_r_tmp = 0  # Stores the old temporary value of _r_tmp (updated every second)
+        self.s_timer = get_ticks() / 1000.0
+        self.r_timer = get_ticks() / 1000.0
 
     def send(self, buffer: bytes, flags: int = 0) -> int:
         """
@@ -60,15 +67,43 @@ class XSocket(socket.socket):
 
     def get_sent(self) -> int:
         """
-        Get total bytes sent to the server since the existence of the socket.
+        Return total bytes sent to the server since the existence of the socket.
         """
         return self._sent
 
     def get_recv(self) -> int:
         """
-        Get total bytes received from the server since the existence of the socket.
+        Return total bytes received from the server since the existence of the socket.
         """
         return self._recv
+
+    def set_s_tmp(self) -> None:
+        """
+        Set temporary total bytes to current total bytes sent from the server since the existence of the socket.
+        """
+        self.old_s_tmp = self._s_tmp
+        self._s_tmp = self._sent
+        self.s_timer = get_ticks() / 1000.0
+
+    def set_r_tmp(self) -> None:
+        """
+        Set temporary total bytes to current total bytes received from the server since the existence of the socket.
+        """
+        self.old_r_tmp = self._r_tmp
+        self._r_tmp = self._recv
+        self.r_timer = get_ticks() / 1000.0
+
+    def get_s_tmp(self) -> int:
+        """
+        Return temporary total bytes sent from the server.
+        """
+        return self._s_tmp
+
+    def get_r_tmp(self) -> int:
+        """
+        Return temporary total bytes received from the server.
+        """
+        return self._r_tmp
 
 
 class Connection:
@@ -95,7 +130,7 @@ class Connection:
         Any errors or failures will raise specific exceptions.
         """
         try:
-            self.timer = time()
+            self.timer = get_ticks() / 1000.0
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
             if not ClientTasks.recognition(self.sock):
