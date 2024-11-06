@@ -13,8 +13,11 @@ Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/T
   - [Debug mode](#debug-mode)
 - [Documentation](#documentation)
 - [Information](#information)
+  - [Project](#project)
   - [Contributors](#contributors-a-z-)
   - [Credits](#credits)
+  - [Compatibility](#compatibility)
+  - [Dependencies](#dependencies)
 
 ## Preview
 
@@ -93,7 +96,9 @@ To view the HTML version, you must run the following URL address in the browser 
 
 ## Information
 
-Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
+### Project
+
+Current pre-release: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
 
 ### Contributors [A-Z]: 
 - [Jatzylap](https://github.com/Jatzylap/) (art, alpha-testing)
@@ -104,8 +109,24 @@ Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/rele
 - Original ["Pixeled"](https://www.dafont.com/pixeled.font) typeface by OmegaPC777 
   - Edited to support more characters
 
-Tested on Debian 12 and Windows 10
+### Compatibility
 
-Libraries used: Pygame 2.6.1, Numpy 1.26.4
+This project was tested on the following operating systems:
+- Debian 12
+- Windows 10
 
-> You may return to the [top of the page](#tile-game) here.
+If you have an operating system/distribution at your disposal that isn't listed above, 
+then the game may or may not work as intended.
+
+### Dependencies
+
+| Name        | Version | Necessary |
+|-------------|---------|-----------|
+| Pygame      | ^2.6.1  | Yes       |
+| NumPy       | ^1.26.4 | Yes       |
+| Python-i18n | ^0.3.9  | Yes       |
+| PyYAML      | ^6.0.2  | Yes       |
+| PyTest      | ^8.3.3  | No        |
+
+
+> [Go back to the top](#tile-game)
