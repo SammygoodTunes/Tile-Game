@@ -103,8 +103,6 @@ To view the HTML version, you must run the following URL address in the browser 
 
 Current Game Version: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
 
----
-
 ### Contributors [A-Z]: 
 - [Jatzylap](https://github.com/Jatzylap/) (art, alpha-testing)
 - Pickmonde (art)
