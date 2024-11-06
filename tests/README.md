@@ -4,6 +4,10 @@ All logical game-related and data-related tests are found here.
 
 Unit tests are found under the `unit/` directory, integrated tests are found under the `integrated/` directory.
 
+## Table of contents:
+- [Running a test](#running-a-test)
+- [Information](#information)
+
 ## Running a test
 
 In order to run any of the tests, the development dependencies are required.
@@ -57,3 +61,5 @@ Developed by [SammygoodTunes](https://github.com/SammygoodTunes)
 Tested on Debian 12 and Windows 10
 
 Libraries used: PyTest 8.3.3
+
+> You may return to the [top of  the page](#tests) here.
