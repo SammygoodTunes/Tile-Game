@@ -118,7 +118,7 @@ This project was tested on the following operating systems:
 - Debian 12
 - Windows 10
 
-If you have an operating system/distribution at your disposal that isn't listed above, 
+If you are using an operating system/distribution that isn't listed above, 
 then the game may or may not work as intended.
 
 ### Dependencies
