@@ -206,7 +206,10 @@ class Screens:
         """
         self.pause_screen.translate()
         self.options_screen.translate()
+        self.main_menu_screen.translate()
         self.server_create_screen.translate()
+        self.server_join_screen.translate()
+        self.gameover_screen.translate()
         self.update_ui()
 
     def update(self) -> None:
