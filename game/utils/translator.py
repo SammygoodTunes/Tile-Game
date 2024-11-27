@@ -9,7 +9,12 @@ import i18n
 from game.utils.tools import resource_dir
 
 translator = i18n
-locales = {'en': 'English', 'fr': 'Français'}
+locales = {
+    'en': 'English',
+    'fr': 'Français',
+    'ru': 'Русский',
+    'pl': 'Polski'
+    }
 
 translator.set('filename_format', '{locale}.{format}')
 translator.set('load_path', [resource_dir('game/assets/locales')])
