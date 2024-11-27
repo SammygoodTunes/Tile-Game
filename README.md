@@ -14,7 +14,7 @@ Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/T
 - [Documentation](#documentation)
 - [Information](#information)
   - [Project](#project)
-  - [Contributors](#contributors-a-z-)
+  - [Contributors](#contributors-a-z)
   - [Credits](#credits)
   - [Compatibility](#compatibility)
   - [Dependencies](#dependencies)

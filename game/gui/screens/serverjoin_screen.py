@@ -13,6 +13,7 @@ from game.gui.inputbox import InputBox
 from game.gui.label import Label
 from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class ServerJoinScreen(Screen):
@@ -54,7 +55,9 @@ class ServerJoinScreen(Screen):
         self.ordering_container.events(e)
 
     def translate(self) -> None:
-        pass
+        self.gameover_label.set_text(t.t('screens.gameover.gameover_label'))
+        self.respawn_button.set_text(t.t('screens.gameover.respawn_button'))
+        self.disconnect_button.set_text(t.t('screens.gameover.disconnect_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
