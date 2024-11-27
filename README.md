@@ -105,7 +105,7 @@ Current pre-release: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/relea
 
 ### Contributors [A-Z]: 
 - [Jatzylap](https://github.com/Jatzylap) (art, alpha-testing)
-- [Onihilist](https://github.com/onihilist) (programming, translation)
+- [o.nihilist](https://github.com/onihilist) (programming, translation)
 - Pickmonde (art)
 - [SammygoodTunes](https://github.com/SammygoodTunes) (art, programming)
 
