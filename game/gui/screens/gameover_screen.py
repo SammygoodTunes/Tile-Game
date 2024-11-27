@@ -26,8 +26,8 @@ class GameoverScreen(Screen):
 
     def translate(self) -> None:
         self.gameover_label.set_text(t.t('screens.gameover.gameover_label'))
-        self.respawn_button.set_text(t.t('screens.gameover.respawn_button'))
-        self.disconnect_button.set_text(t.t('screens.gameover.disconnect_button'))
+        self.respawn_button.label.set_text(t.t('screens.gameover.respawn_button'))
+        self.disconnect_button.label.set_text(t.t('screens.gameover.disconnect_button'))
 
     def draw(self) -> None:
         if not self._enabled: return

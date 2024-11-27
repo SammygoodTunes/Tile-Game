@@ -36,10 +36,10 @@ class MainMenuScreen(Screen):
         self.set_state(True)
 
     def translate(self) -> None:
-        self.play_button.set_text(t.t('screens.mainmenu.play_button'))
-        self.options_button.set_text(t.t('screens.mainmenu.options_button'))
-        self.credits_button.set_text(t.t('screens.mainmenu.credits_button'))
-        self.quit_button.set_text(t.t('screens.mainmenu.quit_button'))
+        self.play_button.label.set_text(t.t('screens.mainmenu.play_button'))
+        self.options_button.label.set_text(t.t('screens.mainmenu.options_button'))
+        self.credits_button.label.set_text(t.t('screens.mainmenu.credits_button'))
+        self.quit_button.label.set_text(t.t('screens.mainmenu.quit_button'))
 
     def draw(self) -> None:
         if not self._enabled: return

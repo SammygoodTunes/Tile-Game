@@ -20,8 +20,8 @@ translator.set('filename_format', '{locale}.{format}')
 translator.set('load_path', [resource_dir('game/assets/locales')])
 
 
-def get_locale_from_language(language: str):
+def get_locale_from_language(language: str) -> str:
     """
-    Return the locale (e.g.: 'en') of its associated language (e.g.: 'English').
+    Return the locale (e.g.: 'en') of its associated language (i.e.: 'English').
     """
     return list(locales.keys())[list(locales.values()).index(language)]

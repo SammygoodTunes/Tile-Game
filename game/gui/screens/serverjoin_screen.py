@@ -59,8 +59,8 @@ class ServerJoinScreen(Screen):
         self.ign_input.set_text(t.t('screens.serverjoin.ign_input'))
         self.ip_input.set_text(t.t('screens.serverjoin.ip_input'))
         self.port_input.set_text(t.t('screens.serverjoin.port_input'))
-        self.join_button.set_text(t.t('screens.serverjoin.join_button'))
-        self.back_button.set_text(t.t('screens.serverjoin.back_button'))
+        self.join_button.label.set_text(t.t('screens.serverjoin.join_button'))
+        self.back_button.label.set_text(t.t('screens.serverjoin.back_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
