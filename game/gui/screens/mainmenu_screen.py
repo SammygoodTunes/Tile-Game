@@ -13,7 +13,7 @@ from game.data.properties.gui_properties import GuiProperties
 from game.gui.button import Button
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
-
+from game.utils.translator import translator as t
 
 class MainMenuScreen(Screen):
     """
@@ -36,7 +36,10 @@ class MainMenuScreen(Screen):
         self.set_state(True)
 
     def translate(self) -> None:
-        pass
+        self.play_button.set_text(t.t('screens.mainmenu.play_button'))
+        self.options_button.set_text(t.t('screens.mainmenu.options_button'))
+        self.credits_button.set_text(t.t('screens.mainmenu.credits_button'))
+        self.quit_button.set_text(t.t('screens.mainmenu.quit_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
