@@ -104,7 +104,8 @@ To view the HTML version, you must run the following URL address in the browser 
 Current pre-release: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
 
 ### Contributors [A-Z]: 
-- [Jatzylap](https://github.com/Jatzylap/) (art, alpha-testing)
+- [Jatzylap](https://github.com/Jatzylap) (art, alpha-testing)
+- [o.nihilist](https://github.com/onihilist) (programming, translation)
 - Pickmonde (art)
 - [SammygoodTunes](https://github.com/SammygoodTunes) (art, programming)
 
