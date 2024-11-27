@@ -9,6 +9,7 @@ if TYPE_CHECKING: from game.core.game import Game
 from game.gui.button import Button
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class GameoverScreen(Screen):
@@ -24,7 +25,9 @@ class GameoverScreen(Screen):
         self.disconnect_button = Button(text="Disconnect")
 
     def translate(self) -> None:
-        pass
+        self.gameover_label.set_text(t.t('screens.gameover.gameover_label'))
+        self.respawn_button.set_text(t.t('screens.gameover.respawn_button'))
+        self.disconnect_button.set_text(t.t('screens.gameover.disconnect_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
