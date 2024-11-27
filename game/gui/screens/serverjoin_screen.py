@@ -13,6 +13,7 @@ from game.gui.inputbox import InputBox
 from game.gui.label import Label
 from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class ServerJoinScreen(Screen):
@@ -54,7 +55,12 @@ class ServerJoinScreen(Screen):
         self.ordering_container.events(e)
 
     def translate(self) -> None:
-        pass
+        self.join_label.set_text(t.t('screens.serverjoin.join_label'))
+        self.ign_input.set_text(t.t('screens.serverjoin.ign_input'))
+        self.ip_input.set_text(t.t('screens.serverjoin.ip_input'))
+        self.port_input.set_text(t.t('screens.serverjoin.port_input'))
+        self.join_button.set_text(t.t('screens.serverjoin.join_button'))
+        self.back_button.set_text(t.t('screens.serverjoin.back_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
