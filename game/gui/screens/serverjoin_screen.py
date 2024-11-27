@@ -55,9 +55,12 @@ class ServerJoinScreen(Screen):
         self.ordering_container.events(e)
 
     def translate(self) -> None:
-        self.gameover_label.set_text(t.t('screens.gameover.gameover_label'))
-        self.respawn_button.set_text(t.t('screens.gameover.respawn_button'))
-        self.disconnect_button.set_text(t.t('screens.gameover.disconnect_button'))
+        self.join_label.set_text(t.t('screens.serverjoin.join_label'))
+        self.ign_input.set_text(t.t('screens.serverjoin.ign_input'))
+        self.ip_input.set_text(t.t('screens.serverjoin.ip_input'))
+        self.port_input.set_text(t.t('screens.serverjoin.port_input'))
+        self.join_button.set_text(t.t('screens.serverjoin.join_button'))
+        self.back_button.set_text(t.t('screens.serverjoin.back_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
