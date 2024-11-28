@@ -85,8 +85,8 @@ class OptionsScreen(Screen):
         self.fps_limit_slider.set_value_text(f'{self.game.fps_cap} FPS')
 
         # experimental
-        if self.hotkeys_move_up.events(e):
-            self.hotkeys_move_up._text_value
+        #if self.hotkeys_move_up.events(e):
+        #    Keys.MOVE_UP = self.hotkeys_move_up._text_value;
 
     def draw(self) -> None:
         if not self._enabled: return
@@ -96,6 +96,13 @@ class OptionsScreen(Screen):
         self.show_fps_box.draw(self.game.screen)
         self.debug_info_box.draw(self.game.screen)
         self.vsync_box.draw(self.game.screen)
+        self.hotkeys_label.draw(self.game.screen)
+        self.hotkeys_move_up.draw(self.game.screen)
+        self.hotkeys_move_down.draw(self.game.screen)
+        self.hotkeys_move_right.draw(self.game.screen)
+        self.hotkeys_move_left.draw(self.game.screen)
+        self.hotkeys_show_map.draw(self.game.screen)
+        self.hotkeys_show_players.draw(self.game.screen)
         self.language_list.draw(self.game)
         self.back_button.draw(self.game.screen)
         self.language_list.draw_value_list(self.game)
@@ -107,6 +114,13 @@ class OptionsScreen(Screen):
         self.show_fps_box.resize(self.game)
         self.debug_info_box.resize(self.game)
         self.vsync_box.resize(self.game)
+        self.hotkeys_label.resize(self.game)
+        self.hotkeys_move_up.resize(self.game)
+        self.hotkeys_move_down.resize(self.game)
+        self.hotkeys_move_right.resize(self.game)
+        self.hotkeys_move_left.resize(self.game)
+        self.hotkeys_show_map.resize(self.game)
+        self.hotkeys_show_players.resize(self.game)
         self.language_list.resize(self.game)
         self.back_button.resize(self.game)
 
@@ -122,6 +136,13 @@ class OptionsScreen(Screen):
         self.debug_info_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
         y += 25
         self.vsync_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_label.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_move_up.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_move_down.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_move_right.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_move_left.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_show_map.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        self.hotkeys_show_players.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
         y += self.language_list.get_height()
         self.language_list.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 10 + self.back_button.get_height()
@@ -130,6 +151,13 @@ class OptionsScreen(Screen):
         self.show_fps_box.update(self.game)
         self.debug_info_box.update(self.game)
         self.vsync_box.update(self.game)
+        self.hotkeys_label.update(self.game)
+        self.hotkeys_move_up.update(self.game)
+        self.hotkeys_move_down.update(self.game)
+        self.hotkeys_move_right.update(self.game)
+        self.hotkeys_move_left.update(self.game)
+        self.hotkeys_show_map.update(self.game)
+        self.hotkeys_show_players.update(self.game)
         self.language_list.update(self.game)
         self.back_button.update(self.game)
 
@@ -140,6 +168,13 @@ class OptionsScreen(Screen):
         self.show_fps_box.set_state(state)
         self.debug_info_box.set_state(state)
         self.vsync_box.set_state(state)
+        self.hotkeys_label.set_state(state)
+        self.hotkeys_move_up.set_state(state)
+        self.hotkeys_move_down.set_state(state)
+        self.hotkeys_move_right.set_state(state)
+        self.hotkeys_move_left.set_state(state)
+        self.hotkeys_show_map.set_state(state)
+        self.hotkeys_show_players.set_state(state)
         self.language_list.set_state(state)
         self.back_button.set_state(state)
         if state: self.update_ui()
