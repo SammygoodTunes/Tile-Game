@@ -1,0 +1,35 @@
+es:
+  world:
+    themes:
+      default: Por defecto
+      hell: Oscuridad
+      islands: Islas
+  screens:
+    mainmenu:
+      play_button: Jugar
+      options_button: Opciones
+      credits_button: Créditos
+      quit_button: Salir
+    serverjoin:
+      join_label: Unirse al servidor
+      ign_input: Apodo
+      ip_input: Dirección IP
+      port_input: Puerto
+      join_button: Unirse
+      back_button: Volver
+    gameover:
+      gameover_label: Has muerto.
+      respawn_button: Reaparecer
+      disconnect_button: Desconectar
+    general:
+      back_button: Volver
+    pause:
+      resume_button: Reanudar juego
+      options_button: Ajustes
+      disconnect_button: Desconectar
+    options:
+      title: AJUSTES
+      fps_limit_slider: Límite de FPS
+      show_fps_box: Mostrar FPS
+      debug_info_box: Mostrar información de depuración
+      language_list_tooltip: Idioma
