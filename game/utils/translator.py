@@ -12,8 +12,11 @@ translator = i18n
 locales = {
     'en': 'English',
     'fr': 'Français',
+    'es': 'Español',
     'ru': 'Русский',
-    'pl': 'Polski'
+    'pl': 'Polski',
+    'zh': '简体中文',
+    'jp': '日本語',
     }
 
 translator.set('filename_format', '{locale}.{format}')
