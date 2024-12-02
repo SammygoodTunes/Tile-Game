@@ -1,0 +1,35 @@
+jp:
+  world:
+    themes:
+      default: デフォルト
+      hell: 闇
+      islands: 島
+  screens:
+    mainmenu:
+      play_button: プレイ
+      options_button: オプション
+      credits_button: クレジット
+      quit_button: 終了
+    serverjoin:
+      join_label: サーバーに参加
+      ign_input: プレイヤー名
+      ip_input: IPアドレス
+      port_input: ポート
+      join_button: 参加
+      back_button: 戻る
+    gameover:
+      gameover_label: あなたは死にました。
+      respawn_button: 再出現
+      disconnect_button: 切断
+    general:
+      back_button: 戻る
+    pause:
+      resume_button: ゲーム再開
+      options_button: 設定
+      disconnect_button: 切断
+    options:
+      title: 設定
+      fps_limit_slider: FPS制限
+      show_fps_box: FPSを表示
+      debug_info_box: デバッグ情報を表示
+      language_list_tooltip: 言語
