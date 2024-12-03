@@ -1,6 +1,6 @@
 
 Tile-Game
-=====
+=========
 
 .. image:: https://img.shields.io/badge/repo-GitHub-blue.svg?logo=github&logoColor=white&label=repository
     :alt: GitHub
