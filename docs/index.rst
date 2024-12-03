@@ -25,5 +25,7 @@ Tile-Game
 
 A tile-based multiplayer game with procedural terrain generation (using the Perlin Noise algorithm).
 
+.. figure:: https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/refs/heads/main/docs/ss.png
+
 .. note::
-    This documentation is a work-in-progress. Feel free to contribute if you notice something that hasn't been documented yet.
+    This documentation is a work-in-progress. Feel free to contribute if you notice something missing.
