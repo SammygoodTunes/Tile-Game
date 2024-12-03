@@ -27,6 +27,10 @@ class OptionsScreen(Screen):
         super().__init__(game)
         self.faded_surface = None
         self.options_label = Label('OPTIONS')
+        self.general_button = Button('General')
+        self.graphics_button = Button('Graphics')
+        self.audio_button = Button('Audio')
+        self.hotkeys_button = Button('Hotkeys')
         self.fps_limit_slider = (HorizontalSlider('FPS Limit')
                                  .set_value(game.fps_cap)
                                  .set_value_text(f'{game.fps_cap} FPS')
@@ -72,6 +76,10 @@ class OptionsScreen(Screen):
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))
         self.options_label.draw(self.game.screen)
+        self.general_button.draw(self.game.screen)
+        self.graphics_button.draw(self.game.screen)
+        self.audio_button.draw(self.game.screen)
+        self.hotkeys_button.draw(self.game.screen)
         self.fps_limit_slider.draw(self.game.screen)
         self.show_fps_box.draw(self.game.screen)
         self.debug_info_box.draw(self.game.screen)
@@ -83,6 +91,10 @@ class OptionsScreen(Screen):
     def update_ui(self) -> None:
         if not self._enabled: return
         self.faded_surface = self.initialise_surface()
+        self.general_button.resize(self.game)
+        self.graphics_button.resize(self.game)
+        self.audio_button.resize(self.game)
+        self.hotkeys_button.resize(self.game)
         self.fps_limit_slider.resize(self.game)
         self.show_fps_box.resize(self.game)
         self.debug_info_box.resize(self.game)
@@ -92,9 +104,13 @@ class OptionsScreen(Screen):
 
         self.options_label.update(self.game)
 
-        y = - 75 - self.options_label.get_height()
+        y = - 150 - self.options_label.get_height()
         self.options_label.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
-        y += 75
+        self.general_button.center_with_offset(-205, 50, self.game.width, self.game.height, -self.options_label.get_width() // 2, y)
+        self.graphics_button.center_with_offset(-40, 50, self.game.width, self.game.height, -self.options_label.get_width() // 2, y)
+        self.audio_button.center_with_offset(125, 50, self.game.width, self.game.height, -self.options_label.get_width() // 2, y)
+        self.hotkeys_button.center_with_offset(290, 50, self.game.width, self.game.height, -self.options_label.get_width() // 2, y)
+        y += 125
         self.fps_limit_slider.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 30
         self.show_fps_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
@@ -106,6 +122,10 @@ class OptionsScreen(Screen):
         self.language_list.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 10 + self.back_button.get_height()
         self.back_button.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
+        self.general_button.update(self.game)
+        self.graphics_button.update(self.game)
+        self.audio_button.update(self.game)
+        self.hotkeys_button.update(self.game)
         self.fps_limit_slider.update(self.game)
         self.show_fps_box.update(self.game)
         self.debug_info_box.update(self.game)
@@ -116,6 +136,10 @@ class OptionsScreen(Screen):
     def set_state(self, state: bool) -> None:
         super().set_state(state)
         self.options_label.set_state(state)
+        self.general_button.set_state(state)
+        self.graphics_button.set_state(state)
+        self.audio_button.set_state(state)
+        self.hotkeys_button.set_state(state)
         self.fps_limit_slider.set_state(state)
         self.show_fps_box.set_state(state)
         self.debug_info_box.set_state(state)
