@@ -1,5 +1,13 @@
 # Tile-Game
 
+[![License: MIT](https://img.shields.io/github/license/SammygoodTunes/Tile-Game.svg)](https://opensource.org/license/mit)
+[![](https://img.shields.io/github/v/release/SammygoodTunes/Tile-Game?include_prereleases&label=pre-release&logo=github)](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
+![GitHub last commit](https://img.shields.io/github/last-commit/SammygoodTunes/Tile-Game?logo=git&logoColor=white)
+<!-- 
+Uncomment when officially released:
+![GitHub Release](https://img.shields.io/github/v/release/SammygoodTunes/Tile-Game) 
+-->
+
 A tile-based multiplayer game with procedural terrain generation (using the Perlin Noise algorithm).
 
 Currently in development.
