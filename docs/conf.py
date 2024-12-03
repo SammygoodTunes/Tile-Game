@@ -1,8 +1,9 @@
 
 import os
 import sys
+from pathlib import Path
 
-sys.path.insert(0, os.path.abspath('../game'))
+sys.path.insert(0, os.path.abspath(Path('..','game')))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
@@ -39,8 +40,3 @@ autodoc_default_options = {
 htmlhelp_basename = 'tilegamedocs'
 
 source_suffix = '.rst'
-
-man_pages = [
-    ('index', 'game', 'Tile-Game Documentation', [author], 1)
-]
-
