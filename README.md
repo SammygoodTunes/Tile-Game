@@ -1,5 +1,6 @@
 # Tile-Game
 
+[![Readthedocs.io](https://img.shields.io/badge/repo-readthedocs.io-blue.svg?logo=readthedocs&logoColor=white&label=repository)](https://tile-game.readthedocs.io)
 [![License: MIT](https://img.shields.io/github/license/SammygoodTunes/Tile-Game.svg)](https://opensource.org/license/mit)
 [![](https://img.shields.io/github/v/release/SammygoodTunes/Tile-Game?include_prereleases&label=pre-release&logo=github)](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SammygoodTunes/Tile-Game?logo=git&logoColor=white)
@@ -99,7 +100,11 @@ python3 -m game --debug  # MacOS / Unix
 
 ## Documentation
 
-The official documentation of this repository can be found [here](https://tile-game.readthedocs.io/en/latest/).
+The official documentation of this repository is hosted on Readthedocs.
+
+You may find it [here](https://tile-game.readthedocs.io/en/latest/).
+
+Other versions in different languages may exist in the future, but for now it is only in English.
 
 ## Information
 
