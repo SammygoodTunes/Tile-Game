@@ -1,9 +1,9 @@
 
 import os
 import sys
-from pathlib import Path
 
-sys.path.insert(0, os.path.abspath(Path('..','game')))
+sys.path.insert(0, os.path.abspath(os.path.join('..', 'game')))
+sys.path.append(os.path.join('..', os.path.join('game', '__main__.py')))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
