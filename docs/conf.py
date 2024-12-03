@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('../../..'))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
@@ -35,6 +35,8 @@ autodoc_default_options = {
     'inherited-members': True,
     'show-inheritance': True,
 }
+
+autodoc_mock_imports = ['pygame', 'numpy', 'i18n', 'pyyaml']
 
 htmlhelp_basename = 'tilegamedocs'
 
