@@ -1,6 +1,6 @@
 # Tile-Game
 
-[![Readthedocs.io](https://img.shields.io/badge/repo-readthedocs.io-blue.svg?logo=readthedocs&logoColor=white&label=repository)](https://tile-game.readthedocs.io)
+[![Readthedocs.io](https://img.shields.io/badge/repo-readthedocs.io-blue.svg?logo=readthedocs&logoColor=white&label=docs)](https://tile-game.readthedocs.io)
 [![License: MIT](https://img.shields.io/github/license/SammygoodTunes/Tile-Game.svg)](https://opensource.org/license/mit)
 [![](https://img.shields.io/github/v/release/SammygoodTunes/Tile-Game?include_prereleases&label=pre-release&logo=github)](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SammygoodTunes/Tile-Game?logo=git&logoColor=white)
