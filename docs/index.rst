@@ -2,6 +2,10 @@
 Tile-Game
 =====
 
+.. image:: https://img.shields.io/badge/repo-GitHub-blue.svg?logo=github&logoColor=white&label=repository
+    :alt: GitHub
+    :target: https://github.com/SammygoodTunes/Tile-Game
+
 .. image:: https://img.shields.io/github/license/SammygoodTunes/Tile-Game.svg
     :alt: License: MIT
     :target: https://opensource.org/license/mit
@@ -20,3 +24,6 @@ Tile-Game
         :target:
 
 A tile-based multiplayer game with procedural terrain generation (using the Perlin Noise algorithm).
+
+.. note::
+    This documentation is a work-in-progress. Feel free to contribute if you notice something that hasn't been documented yet.
