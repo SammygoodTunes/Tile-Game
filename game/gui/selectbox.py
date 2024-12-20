@@ -106,7 +106,7 @@ class SelectBox(Widget):
             return
         value_surface_x, value_surface_y = self._x - 2,  self._y + self._height
         self._visible_values = self._values[self._scroll:self._scroll + SelectBox.MAX_VISIBLE_VALUES]
-        self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._visible_values)))
+        self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._visible_values) + 2))
         self._value_surface.fill((0, 0, 0))
         window.screen.blit(self._value_surface, (value_surface_x, value_surface_y))
         offset = 0
