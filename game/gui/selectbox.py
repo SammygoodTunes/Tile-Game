@@ -4,9 +4,9 @@ Module name: select_list
 
 from __future__ import annotations
 from numpy import ceil
-from pygame import Surface, MOUSEBUTTONDOWN
+from pygame import Surface, MOUSEWHEEL
 from pygame import mouse, MOUSEBUTTONUP
-from pygame.draw import polygon
+from pygame.draw import rect, polygon
 from pygame.event import Event
 from pygame.math import clamp
 from typing import Self, TYPE_CHECKING
@@ -25,6 +25,7 @@ class SelectBox(Widget):
 
     MIN_VALUE_HEIGHT = 10
     MAX_VALUE_HEIGHT = 50
+    MAX_VISIBLE_VALUES = 3
     MIN_ARROW_WIDTH = 4
     MAX_ARROW_WIDTH = 15
     ARROW_X_OFFSET = 10
@@ -45,8 +46,10 @@ class SelectBox(Widget):
                              .set_border_colour((255, 255, 255)))
         self.set_width(width).set_height(height)
         self._values = []
+        self._visible_values = []
         self._previous_index = 0
         self._current_index = 0
+        self._scroll = 0
         self._open = False
         self._arrow_width = SelectBox.MAX_ARROW_WIDTH
         self._arrow_height = self._arrow_width / 2
@@ -101,16 +104,29 @@ class SelectBox(Widget):
         """
         if not self._open:
             return
-        self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._values) + 2))
+        value_surface_x, value_surface_y = self._x - 2,  self._y + self._height
+        self._visible_values = self._values[self._scroll:self._scroll + SelectBox.MAX_VISIBLE_VALUES]
+        self._value_surface = Surface((self._width + 2, self._value_slot_height * len(self._visible_values)))
         self._value_surface.fill((0, 0, 0))
-        window.screen.blit(self._value_surface, (self._x - 2, self._y + self._height))
+        window.screen.blit(self._value_surface, (value_surface_x, value_surface_y))
+        offset = 0
         for i, value in enumerate(self._values):
+            if not self._scroll <= i < self._scroll + SelectBox.MAX_VISIBLE_VALUES:
+                continue
             label = Label(x=self._x + 5, text=value).set_colour((150, 150, 150)).set_font_sizes((8, 10, 12))
             label.update(window)
-            label.center_vertically(self._y + self._height + self._value_slot_height * i, self._value_slot_height)
+            label.center_vertically(self._y + self._height + self._value_slot_height * offset, self._value_slot_height)
             if self.is_hovering_over_value(i):
                 label.set_colour((255, 255, 255))
             label.draw(window.screen)
+            offset = (offset + 1) % SelectBox.MAX_VISIBLE_VALUES
+        height = len(self._values) - SelectBox.MAX_VISIBLE_VALUES + 1
+        rect(window.screen, (200, 200, 200), (
+            value_surface_x + self._value_surface.get_width() - 3,
+            value_surface_y + self._scroll * (self._value_surface.get_height() / height),
+            3,
+            self._value_surface.get_height() / height
+        ))
 
     def events(self, e: Event) -> None:
         """
@@ -119,16 +135,21 @@ class SelectBox(Widget):
         if not self._can_interact or not self._enabled:
             return
         self._has_selected = False
+        if e.type == MOUSEWHEEL:
+            self._scroll = clamp(self._scroll - e.y, 0, len(self._values) - SelectBox.MAX_VISIBLE_VALUES)
         if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 for i, _ in enumerate(self._values):
-                    if not self.is_hovering_over_value(i) or self._current_index == i:
+                    if not self.is_hovering_over_value(i) or self._current_index == i or not (
+                            self._scroll <= i < self._scroll + SelectBox.MAX_VISIBLE_VALUES
+                    ):
                         continue
                     self._has_selected = True
                     self._current_index = i
                 if self._open and self._has_selected:
                     self._open = False
                 self._open = self.is_hovering_over() if not self._open else self.is_hovering_over_value_list()
+                self._scroll = 0
         self._arrow_y_offset = self._open * 3
 
         if not len(self._values) or self._has_selected:
@@ -190,7 +211,7 @@ class SelectBox(Widget):
         return (self._x <= mouse_x <= self._x + self._width and
                 self._y + self._height
                 <= mouse_y <=
-                self._y + self._height + self._value_slot_height * len(self._values) and
+                self._y + self._height + self._value_slot_height * len(self._visible_values) and
                 self._open and self._enabled)
 
     def is_hovering_over_value(self, index: int):
@@ -199,9 +220,9 @@ class SelectBox(Widget):
         """
         mouse_x, mouse_y = mouse.get_pos()
         return (self._x - 2 <= mouse_x <= self._x + self._width and
-                self._y + self._height + self._value_slot_height * index + 2
+                self._y + self._height + self._value_slot_height * (index - self._scroll) + 2
                 <= mouse_y <
-                self._y + self._height + self._value_slot_height * (index + 1) + 2 and
+                self._y + self._height + self._value_slot_height * (index - self._scroll + 1) + 2 and
                 self._open and self._enabled)
 
     def set_values(self, values: list[str]) -> Self:
