@@ -27,6 +27,7 @@ class Label(Widget):
         self.font = Font(Label.DEFAULT_FONT, Label.DEFAULT_FONT_SIZE_NORMAL)
         self._font_size = Label.DEFAULT_FONT_SIZE_NORMAL
         self._font_sizes = (Label.DEFAULT_FONT_SIZE_SMALL, Label.DEFAULT_FONT_SIZE_NORMAL, Label.DEFAULT_FONT_SIZE_LARGE)
+        self._total_height = self._height
         self._text = text
         self._colour = (255, 255, 255)
         self._shadow_x_offset: int = 2
@@ -55,6 +56,7 @@ class Label(Widget):
         self.set_auto_font_size(window.width, window.height, window.max_width, window.max_height)
         self._width = self.font.size(self._text)[0]
         self._height = self.font.size(self._text)[1]
+        self._total_height = (1 + self._text.count('\n')) * self._height
 
     def set_auto_font_size(self, width: int, height: int, max_width: int, max_height: int) -> Self:
         """
@@ -95,6 +97,12 @@ class Label(Widget):
         """
         return self._font_sizes
 
+    def get_total_height(self) -> int:
+        """
+        Return the total height of the label.
+        """
+        return self._total_height
+
     def set_text(self, text: str) -> Self:
         """
         Set the label's text, then return the label itself.
@@ -102,6 +110,7 @@ class Label(Widget):
         self._text = text
         self._width = self.font.size(self._text)[0]
         self._height = self.font.size(self._text)[1]
+        self._total_height = (1 + self._text.count('\n')) * self._height
         return self
 
     def get_text(self) -> str:
