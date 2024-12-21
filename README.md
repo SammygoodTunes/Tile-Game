@@ -106,6 +106,8 @@ You may find it [here](https://tile-game.readthedocs.io/en/latest/).
 
 Other versions in different languages may exist in the future, but for now it is only in English.
 
+The `tools/gen_docs` tool must be run in order generate relevant doc files before pushing to the repository.
+
 ## Information
 
 ### Project
