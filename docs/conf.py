@@ -37,6 +37,8 @@ autodoc_default_options = {
     'show-inheritance': True,
 }
 
+autodoc_mock_imports = ['pygame', '']
+
 htmlhelp_basename = 'tilegamedocs'
 
 source_suffix = '.rst'
