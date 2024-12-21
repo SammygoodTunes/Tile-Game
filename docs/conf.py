@@ -3,7 +3,6 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join('..', 'game')))
-sys.path.append(os.path.join('..', os.path.join('game', '__main__.py')))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
