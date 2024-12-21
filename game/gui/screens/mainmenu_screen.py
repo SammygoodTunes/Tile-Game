@@ -3,7 +3,7 @@ Module name: mainmenu_screen
 """
 
 from __future__ import annotations
-from numpy import exp, cos, pi, absolute
+from math import exp, cos, pi
 from typing import TYPE_CHECKING
 import pygame.time
 
@@ -53,8 +53,8 @@ class MainMenuScreen(Screen):
             self.game.width,
             self.game.height,
             0,
-            -self.title_label.get_height() - (
-                    absolute(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250
+            -self.title_label.get_height() - int(
+                    abs(exp(-label_time * 3) * cos(pi * label_time * 3)) * 250
             )
         )
         self.title_label.draw(self.game.screen)

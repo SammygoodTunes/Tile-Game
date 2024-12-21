@@ -4,7 +4,7 @@ Module name: logger
 This module defines the logger.
 """
 
-from numpy import ceil, log2
+from math import ceil, log2
 from os import path
 from pathlib import Path
 import sys

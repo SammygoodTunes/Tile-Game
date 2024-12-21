@@ -136,7 +136,6 @@ then the game may or may not work as intended.
 | Name        | Version | Required? |
 |-------------|---------|-----------|
 | Pygame      | ^2.6.1  | Yes       |
-| NumPy       | ^1.26.4 | Yes       |
 | Python-i18n | ^0.3.9  | Yes       |
 | PyYAML      | ^6.0.2  | Yes       |
 | PyTest      | ^8.3.3  | No        |

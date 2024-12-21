@@ -4,7 +4,7 @@ Module name: map_structure
 This module defines the byte (or data packet) structure for the world map.
 """
 
-from numpy import ceil
+from math import ceil
 
 from game.data.properties.tile_properties import TileProperties
 from game.data.properties.world_properties import WorldProperties

@@ -4,7 +4,7 @@ Module name: tile_structure
 This module defines the byte (or data packet) structure for the map tile.
 """
 
-from numpy import ceil
+from math import ceil
 
 from game.data.properties.tile_properties import TileProperties
 from game.utils.tools import c_log2

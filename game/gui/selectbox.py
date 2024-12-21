@@ -3,7 +3,7 @@ Module name: select_list
 """
 
 from __future__ import annotations
-from numpy import ceil
+from math import ceil
 from pygame import Surface, MOUSEWHEEL
 from pygame import mouse, MOUSEBUTTONUP
 from pygame.draw import rect, polygon
