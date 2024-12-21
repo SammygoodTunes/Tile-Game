@@ -33,4 +33,4 @@ autodoc_default_options = {
 
 htmlhelp_basename = 'tilegamedocs'
 
-source_suffix = ['.rst', '.py']
+source_suffix = '.rst'
