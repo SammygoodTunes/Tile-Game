@@ -30,6 +30,24 @@ A tile-based multiplayer game with procedural terrain generation (using the Perl
 .. note::
     This documentation is a work-in-progress. Feel free to contribute if you notice something missing.
 
+
+Contents
+--------
+
+.. toctree::
+    :maxdepth: 2
+
+    game/main
+    game/client
+    game/core
+    game/data
+    game/entity
+    game/gui
+    game/network
+    game/server
+    game/utils
+    game/world
+
 Indices and tables
 ------------------
 

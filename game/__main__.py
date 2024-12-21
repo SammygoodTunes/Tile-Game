@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*-
 
 """
-Project: Tile Game
-Version: 0.0.2a
-Author: SammygoodTunes
-Art: Pickmonde, Jatzylap, SammygoodTunes
-Font: OmegaPC777
+- **Project:** Tile Game
+- **Version:** 0.0.2a
+- **Author:** SammygoodTunes
+- **Contributors:**
+  - Jatzylap
+  - Onihilist
+  - Pickmonde
+- **Font author:** OmegaPC777
 """
 
 import cProfile
