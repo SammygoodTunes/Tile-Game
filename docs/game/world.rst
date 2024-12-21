@@ -3,6 +3,5 @@
 ==============
 
 .. automodule:: game.world
-   :imported-members:
    :members:
    :undoc-members:
