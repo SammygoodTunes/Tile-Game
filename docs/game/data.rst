@@ -1,9 +1,6 @@
 
-Tile-Game
+Data
 =========
-
-Documentation
--------------
 
 .. automodule:: game.data
    :imported-members:
