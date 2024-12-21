@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
-copyright = '%Y, SammygoodTunes, Jaztylap, o.nihilist, Pickmonde'
+copyright = '%Y, SammygoodTunes'
 
 version = '0.0.2a'
 release = '0.0.2a'
