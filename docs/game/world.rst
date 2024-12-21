@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`world` module
+==============
 
 .. automodule:: game.world
    :imported-members:

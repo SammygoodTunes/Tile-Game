@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`core` module
+=============
 
 .. automodule:: game.core
    :imported-members:

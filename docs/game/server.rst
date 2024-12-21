@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`server` module
+===============
 
 .. automodule:: game.server
    :imported-members:

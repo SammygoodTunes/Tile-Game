@@ -1,6 +1,6 @@
 
-Data
-=========
+`data` module
+=============
 
 .. automodule:: game.data
    :imported-members:

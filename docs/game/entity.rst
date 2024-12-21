@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`entity` module
+===============
 
 .. automodule:: game.entity
    :imported-members:

@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`gui` module
+============
 
 .. automodule:: game.gui
    :imported-members:

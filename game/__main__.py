@@ -6,9 +6,9 @@
 - **Version:** 0.0.2a
 - **Author:** SammygoodTunes
 - **Contributors:**
-  - Jatzylap
-  - Onihilist
-  - Pickmonde
+ - Jatzylap
+ - Onihilist
+ - Pickmonde
 - **Font author:** OmegaPC777
 """
 

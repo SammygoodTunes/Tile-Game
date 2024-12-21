@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`main` module
+=============
 
 .. automodule:: game.__main__
    :imported-members:

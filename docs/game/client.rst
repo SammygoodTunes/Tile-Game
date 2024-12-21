@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`client` module
+===============
 
 .. automodule:: game.client
    :imported-members:

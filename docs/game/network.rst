@@ -1,9 +1,6 @@
 
-Tile-Game
-=========
-
-Documentation
--------------
+`network` module
+================
 
 .. automodule:: game.network
    :imported-members:
