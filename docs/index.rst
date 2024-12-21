@@ -30,7 +30,6 @@ A tile-based multiplayer game with procedural terrain generation (using the Perl
 .. note::
     This documentation is a work-in-progress. Feel free to contribute if you notice something missing.
 
-
 Contents
 --------
 
