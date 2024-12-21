@@ -27,10 +27,12 @@ A tile-based multiplayer game with procedural terrain generation (using the Perl
 
 .. figure:: https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/refs/heads/main/docs/ss.png
 
-.. automodule:: game.__main__
-   :imported-members:
-   :members:
-   :undoc-members:
-
 .. note::
     This documentation is a work-in-progress. Feel free to contribute if you notice something missing.
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
