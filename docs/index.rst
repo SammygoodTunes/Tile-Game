@@ -16,7 +16,7 @@ Tile-Game
 
 .. image:: https://img.shields.io/github/last-commit/SammygoodTunes/Tile-Game?logo=git&logoColor=white
     :alt: Last commit
-    :target: https://opensource.org/license/mit
+    :target: https://github.com/SammygoodTunes/Tile-Game/commits/main
 
 .. Uncomment when officially released:
     image:: https://img.shields.io/github/v/release/SammygoodTunes/Tile-Game
