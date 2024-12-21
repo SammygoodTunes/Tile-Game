@@ -37,7 +37,7 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    game/main
+    game/__main__
     game/client
     game/core
     game/data

@@ -1,15 +1,18 @@
 
 `core` module
 =============
-
 .. automodule:: game.core
    :members:
    :undoc-members:
 
-.. automodule:: game.core.game
+`core.game`
+-----------
+.. automodule:: game.game
    :members:
    :undoc-members:
 
-.. automodule:: game.core.window
+`core.window`
+-------------
+.. automodule:: game.window
    :members:
    :undoc-members:

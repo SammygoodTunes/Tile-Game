@@ -1,32 +1,48 @@
 
 `client` module
 ===============
-
 .. automodule:: game.client
    :members:
    :undoc-members:
 
-.. automodule:: game.client.client
+`client.client`
+---------------
+.. automodule:: game.client
    :members:
    :undoc-members:
 
-.. automodule:: game.client.connection
+`client.connection`
+-------------------
+.. automodule:: game.connection
    :members:
    :undoc-members:
 
-.. automodule:: game.client.connection_handler
+`client.connection_handler`
+---------------------------
+.. automodule:: game.connection_handler
    :members:
    :undoc-members:
 
-.. automodule:: game.client.managers.player_manager
+`client.managers`
+-----------------
+.. automodule:: game.managers
    :members:
    :undoc-members:
 
-.. automodule:: game.client.managers.world_manager
+`client.managers.player_manager`
+________________________________
+.. automodule:: game.managers.player_manager
    :members:
    :undoc-members:
 
-.. automodule:: game.client.tasks
+`client.managers.world_manager`
+_______________________________
+.. automodule:: game.managers.world_manager
    :members:
    :undoc-members:
 
+`client.tasks`
+--------------
+.. automodule:: game.tasks
+   :members:
+   :undoc-members:
