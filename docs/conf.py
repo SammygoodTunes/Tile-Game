@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath(os.path.join('..', 'game')))
+sys.path.insert(0, os.path.abspath('..'))
 
 project = 'Tile-Game'
 author = 'SammygoodTunes'
