@@ -7,6 +7,6 @@
 
 `entity.player`
 ---------------
-.. automodule:: game.player
+.. automodule:: game.entity.player
    :members:
    :undoc-members:

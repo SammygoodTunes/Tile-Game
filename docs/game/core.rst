@@ -7,12 +7,12 @@
 
 `core.game`
 -----------
-.. automodule:: game.game
+.. automodule:: game.core.game
    :members:
    :undoc-members:
 
 `core.window`
 -------------
-.. automodule:: game.window
+.. automodule:: game.core.window
    :members:
    :undoc-members:

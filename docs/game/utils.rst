@@ -7,24 +7,24 @@
 
 `utils.exceptions`
 ------------------
-.. automodule:: game.exceptions
+.. automodule:: game.utils.exceptions
    :members:
    :undoc-members:
 
 `utils.logger`
 --------------
-.. automodule:: game.logger
+.. automodule:: game.utils.logger
    :members:
    :undoc-members:
 
 `utils.tools`
 -------------
-.. automodule:: game.tools
+.. automodule:: game.utils.tools
    :members:
    :undoc-members:
 
 `utils.translator`
 ------------------
-.. automodule:: game.translator
+.. automodule:: game.utils.translator
    :members:
    :undoc-members:

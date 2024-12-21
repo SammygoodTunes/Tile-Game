@@ -7,30 +7,30 @@
 
 `server.handlers`
 -----------------
-.. automodule:: game.handlers
+.. automodule:: game.server.handlers
    :members:
    :undoc-members:
 
 `server.handlers.player_handler`
 ________________________________
-.. automodule:: game.handlers.player_handler
+.. automodule:: game.server.handlers.player_handler
    :members:
    :undoc-members:
 
 `server.handlers.world_handler`
 _______________________________
-.. automodule:: game.handlers.world_handler
+.. automodule:: game.server.handlers.world_handler
    :members:
    :undoc-members:
 
 `server.server`
 ---------------
-.. automodule:: game.server
+.. automodule:: game.server.server
    :members:
    :undoc-members:
 
 `server.tasks`
 --------------
-.. automodule:: game.tasks
+.. automodule:: game.server.tasks
    :members:
    :undoc-members:

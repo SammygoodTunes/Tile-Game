@@ -7,42 +7,42 @@
 
 `world.camera`
 --------------
-.. automodule:: game.camera
+.. automodule:: game.world.camera
    :members:
    :undoc-members:
 
 `world.map_manager`
 -------------------
-.. automodule:: game.map_manager
+.. automodule:: game.world.map_manager
    :members:
    :undoc-members:
 
 `world.synth`
 -------------
-.. automodule:: game.synth
+.. automodule:: game.world.synth
    :members:
    :undoc-members:
 
 `world.synth.noise`
 ___________________
-.. automodule:: game.synth.noise
+.. automodule:: game.world.synth.noise
    :members:
    :undoc-members:
 
 `world.theme_manager`
 ---------------------
-.. automodule:: game.theme_manager
+.. automodule:: game.world.theme_manager
    :members:
    :undoc-members:
 
 `world.tile_manager`
 --------------------
-.. automodule:: game.tile_manager
+.. automodule:: game.world.tile_manager
    :members:
    :undoc-members:
 
 `world.world`
 -------------
-.. automodule:: game.world
+.. automodule:: game.world.world
    :members:
    :undoc-members:

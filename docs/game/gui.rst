@@ -7,180 +7,180 @@
 
 `gui.button`
 ------------
-.. automodule:: game.button
+.. automodule:: game.gui.button
    :members:
    :undoc-members:
 
 `gui.checkbox`
 --------------
-.. automodule:: game.checkbox
+.. automodule:: game.gui.checkbox
    :members:
    :undoc-members:
 
 `gui.horizontal_slider`
 -----------------------
-.. automodule:: game.horizontal_slider
+.. automodule:: game.gui.horizontal_slider
    :members:
    :undoc-members:
 
 `gui.hotbar`
 ------------
-.. automodule:: game.hotbar
+.. automodule:: game.gui.hotbar
    :members:
    :undoc-members:
 
 `gui.inputbox`
 --------------
-.. automodule:: game.inputbox
+.. automodule:: game.gui.inputbox
    :members:
    :undoc-members:
 
 `gui.label`
 -----------
-.. automodule:: game.label
+.. automodule:: game.gui.label
    :members:
    :undoc-members:
 
 `gui.nametag`
 -------------
-.. automodule:: game.nametag
+.. automodule:: game.gui.nametag
    :members:
    :undoc-members:
 
 `gui.ordering_container`
 ------------------------
-.. automodule:: game.ordering_container
+.. automodule:: game.gui.ordering_container
    :members:
    :undoc-members:
 
 `gui.progress_bar`
 ------------------
-.. automodule:: game.progress_bar
+.. automodule:: game.gui.progress_bar
    :members:
    :undoc-members:
 
 `gui.screen_manager`
 --------------------
-.. automodule:: game.screen_manager
+.. automodule:: game.gui.screen_manager
    :members:
    :undoc-members:
 
 `gui.screens`
 -------------
-.. automodule:: game.screens
+.. automodule:: game.gui.screens
    :members:
    :undoc-members:
 
 `gui.screens.crash_screen`
 __________________________
-.. automodule:: game.screens.crash_screen
+.. automodule:: game.gui.screens.crash_screen
    :members:
    :undoc-members:
 
 `gui.screens.credits_screen`
 ____________________________
-.. automodule:: game.screens.credits_screen
+.. automodule:: game.gui.screens.credits_screen
    :members:
    :undoc-members:
 
 `gui.screens.gameover_screen`
 _____________________________
-.. automodule:: game.screens.gameover_screen
+.. automodule:: game.gui.screens.gameover_screen
    :members:
    :undoc-members:
 
 `gui.screens.loading_screen`
 ____________________________
-.. automodule:: game.screens.loading_screen
+.. automodule:: game.gui.screens.loading_screen
    :members:
    :undoc-members:
 
 `gui.screens.main_hud`
 ______________________
-.. automodule:: game.screens.main_hud
+.. automodule:: game.gui.screens.main_hud
    :members:
    :undoc-members:
 
 `gui.screens.mainmenu_screen`
 _____________________________
-.. automodule:: game.screens.mainmenu_screen
+.. automodule:: game.gui.screens.mainmenu_screen
    :members:
    :undoc-members:
 
 `gui.screens.map_screen`
 ________________________
-.. automodule:: game.screens.map_screen
+.. automodule:: game.gui.screens.map_screen
    :members:
    :undoc-members:
 
 `gui.screens.options_screen`
 ____________________________
-.. automodule:: game.screens.options_screen
+.. automodule:: game.gui.screens.options_screen
    :members:
    :undoc-members:
 
 `gui.screens.pause_screen`
 __________________________
-.. automodule:: game.screens.pause_screen
+.. automodule:: game.gui.screens.pause_screen
    :members:
    :undoc-members:
 
 `gui.screens.playerlist_screen`
 _______________________________
-.. automodule:: game.screens.playerlist_screen
+.. automodule:: game.gui.screens.playerlist_screen
    :members:
    :undoc-members:
 
 `gui.screens.screen`
 ____________________
-.. automodule:: game.screens.screen
+.. automodule:: game.gui.screens.screen
    :members:
    :undoc-members:
 
 `gui.screens.serverconnect_screen`
 __________________________________
-.. automodule:: game.screens.serverconnect_screen
+.. automodule:: game.gui.screens.serverconnect_screen
    :members:
    :undoc-members:
 
 `gui.screens.servercreate_screen`
 _________________________________
-.. automodule:: game.screens.servercreate_screen
+.. automodule:: game.gui.screens.servercreate_screen
    :members:
    :undoc-members:
 
 `gui.screens.serverjoin_screen`
 _______________________________
-.. automodule:: game.screens.serverjoin_screen
+.. automodule:: game.gui.screens.serverjoin_screen
    :members:
    :undoc-members:
 
 `gui.screens.servermenu_screen`
 _______________________________
-.. automodule:: game.screens.servermenu_screen
+.. automodule:: game.gui.screens.servermenu_screen
    :members:
    :undoc-members:
 
 `gui.selectbox`
 ---------------
-.. automodule:: game.selectbox
+.. automodule:: game.gui.selectbox
    :members:
    :undoc-members:
 
 `gui.slot`
 ----------
-.. automodule:: game.slot
+.. automodule:: game.gui.slot
    :members:
    :undoc-members:
 
 `gui.tooltip`
 -------------
-.. automodule:: game.tooltip
+.. automodule:: game.gui.tooltip
    :members:
    :undoc-members:
 
 `gui.widget`
 ------------
-.. automodule:: game.widget
+.. automodule:: game.gui.widget
    :members:
    :undoc-members:

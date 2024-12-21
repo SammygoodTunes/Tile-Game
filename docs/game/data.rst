@@ -7,198 +7,198 @@
 
 `data.items`
 ------------
-.. automodule:: game.items
+.. automodule:: game.data.items
    :members:
    :undoc-members:
 
 `data.items.item`
 _________________
-.. automodule:: game.items.item
+.. automodule:: game.data.items.item
    :members:
    :undoc-members:
 
 `data.items.item_types`
 _______________________
-.. automodule:: game.items.item_types
+.. automodule:: game.data.items.item_types
    :members:
    :undoc-members:
 
 `data.items.items`
 __________________
-.. automodule:: game.items.items
+.. automodule:: game.data.items.items
    :members:
    :undoc-members:
 
 `data.keys`
 -----------
-.. automodule:: game.keys
+.. automodule:: game.data.keys
    :members:
    :undoc-members:
 
 `data.properties`
 -----------------
-.. automodule:: game.properties
+.. automodule:: game.data.properties
    :members:
    :undoc-members:
 
 `data.properties.camera_properties`
 ___________________________________
-.. automodule:: game.properties.camera_properties
+.. automodule:: game.data.properties.camera_properties
    :members:
    :undoc-members:
 
 `data.properties.game_properties`
 _________________________________
-.. automodule:: game.properties.game_properties
+.. automodule:: game.data.properties.game_properties
    :members:
    :undoc-members:
 
 `data.properties.gui_properties`
 ________________________________
-.. automodule:: game.properties.gui_properties
+.. automodule:: game.data.properties.gui_properties
    :members:
    :undoc-members:
 
 `data.properties.item_properties`
 _________________________________
-.. automodule:: game.properties.item_properties
+.. automodule:: game.data.properties.item_properties
    :members:
    :undoc-members:
 
 `data.properties.player_properties`
 ___________________________________
-.. automodule:: game.properties.player_properties
+.. automodule:: game.data.properties.player_properties
    :members:
    :undoc-members:
 
 `data.properties.screen_properties`
 ___________________________________
-.. automodule:: game.properties.screen_properties
+.. automodule:: game.data.properties.screen_properties
    :members:
    :undoc-members:
 
 `data.properties.server_properties`
 ___________________________________
-.. automodule:: game.properties.server_properties
+.. automodule:: game.data.properties.server_properties
    :members:
    :undoc-members:
 
 `data.properties.tile_properties`
 _________________________________
-.. automodule:: game.properties.tile_properties
+.. automodule:: game.data.properties.tile_properties
    :members:
    :undoc-members:
 
 `data.properties.world_properties`
 __________________________________
-.. automodule:: game.properties.world_properties
+.. automodule:: game.data.properties.world_properties
    :members:
    :undoc-members:
 
 `data.states`
 -------------
-.. automodule:: game.states
+.. automodule:: game.data.states
    :members:
    :undoc-members:
 
 `data.states.connection_states`
 _______________________________
-.. automodule:: game.states.connection_states
+.. automodule:: game.data.states.connection_states
    :members:
    :undoc-members:
 
 `data.states.map_states`
 ________________________
-.. automodule:: game.states.map_states
+.. automodule:: game.data.states.map_states
    :members:
    :undoc-members:
 
 `data.states.mouse_states`
 __________________________
-.. automodule:: game.states.mouse_states
+.. automodule:: game.data.states.mouse_states
    :members:
    :undoc-members:
 
 `data.states.player_states`
 ___________________________
-.. automodule:: game.states.player_states
+.. automodule:: game.data.states.player_states
    :members:
    :undoc-members:
 
 `data.states.server_states`
 ___________________________
-.. automodule:: game.states.server_states
+.. automodule:: game.data.states.server_states
    :members:
    :undoc-members:
 
 `data.structures`
 -----------------
-.. automodule:: game.structures
+.. automodule:: game.data.structures
    :members:
    :undoc-members:
 
 `data.structures.map_structure`
 _______________________________
-.. automodule:: game.structures.map_structure
+.. automodule:: game.data.structures.map_structure
    :members:
    :undoc-members:
 
 `data.structures.player_structure`
 __________________________________
-.. automodule:: game.structures.player_structure
+.. automodule:: game.data.structures.player_structure
    :members:
    :undoc-members:
 
 `data.structures.tile_structure`
 ________________________________
-.. automodule:: game.structures.tile_structure
+.. automodule:: game.data.structures.tile_structure
    :members:
    :undoc-members:
 
 `data.themes`
 -------------
-.. automodule:: game.themes
+.. automodule:: game.data.themes
    :members:
    :undoc-members:
 
 `data.themes.theme`
 ___________________
-.. automodule:: game.themes.theme
+.. automodule:: game.data.themes.theme
    :members:
    :undoc-members:
 
 `data.themes.theme_layers`
 __________________________
-.. automodule:: game.themes.theme_layers
+.. automodule:: game.data.themes.theme_layers
    :members:
    :undoc-members:
 
 `data.themes.themes`
 ____________________
-.. automodule:: game.themes.themes
+.. automodule:: game.data.themes.themes
    :members:
    :undoc-members:
 
 `data.tiles`
 ------------
-.. automodule:: game.tiles
+.. automodule:: game.data.tiles
    :members:
    :undoc-members:
 
 `data.tiles.tile`
 _________________
-.. automodule:: game.tiles.tile
+.. automodule:: game.data.tiles.tile
    :members:
    :undoc-members:
 
 `data.tiles.tile_types`
 _______________________
-.. automodule:: game.tiles.tile_types
+.. automodule:: game.data.tiles.tile_types
    :members:
    :undoc-members:
 
 `data.tiles.tiles`
 __________________
-.. automodule:: game.tiles.tiles
+.. automodule:: game.data.tiles.tiles
    :members:
    :undoc-members:

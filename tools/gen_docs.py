@@ -47,7 +47,7 @@ def main():
                       f"Generating rst for submodule `{submodule}` ({join(DOC_PATH, module + RST_EXT)})")
                 submodule_title = f'`{module}.{submodule}`'
                 rst.write(f'\n{submodule_title}\n' + ('-' if not namespaces else '_') * len(submodule_title))
-                rst.write(f'\n.. automodule:: game.{submodule}\n   :members:\n   :undoc-members:\n')
+                rst.write(f'\n.. automodule:: game.{module}.{submodule}\n   :members:\n   :undoc-members:\n')
     print(f'Done! (Generated {len(glob(join(DOC_PATH, "*" + RST_EXT)))} file(s))')
 
 if __name__ == '__main__':

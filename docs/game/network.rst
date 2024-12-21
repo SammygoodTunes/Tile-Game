@@ -7,30 +7,30 @@
 
 `network.builders`
 ------------------
-.. automodule:: game.builders
+.. automodule:: game.network.builders
    :members:
    :undoc-members:
 
 `network.builders.base_builder`
 _______________________________
-.. automodule:: game.builders.base_builder
+.. automodule:: game.network.builders.base_builder
    :members:
    :undoc-members:
 
 `network.builders.player_builder`
 _________________________________
-.. automodule:: game.builders.player_builder
+.. automodule:: game.network.builders.player_builder
    :members:
    :undoc-members:
 
 `network.packet`
 ----------------
-.. automodule:: game.packet
+.. automodule:: game.network.packet
    :members:
    :undoc-members:
 
 `network.protocol`
 ------------------
-.. automodule:: game.protocol
+.. automodule:: game.network.protocol
    :members:
    :undoc-members:
