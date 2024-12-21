@@ -1,9 +1,4 @@
 
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath(os.path.join('..', 'game')))
-
 project = 'Tile-Game'
 author = 'SammygoodTunes'
 copyright = '%Y, SammygoodTunes, Jaztylap, o.nihilist, Pickmonde'
@@ -36,8 +31,6 @@ autodoc_default_options = {
     'show-inheritance': True,
 }
 
-autodoc_mock_imports = ['pygame']
-
 htmlhelp_basename = 'tilegamedocs'
 
-source_suffix = '.rst'
+source_suffix = ['.rst', '.py']

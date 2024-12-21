@@ -1,6 +1,6 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = game
+SOURCEDIR     = ../game
 BUILDDIR      = build
 
 help:
