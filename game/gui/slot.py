@@ -40,7 +40,7 @@ class Slot(Widget):
         self._selected = False
         self.set_item(Items.AIR)
 
-    def draw(self, window: Window | Surface) -> None:
+    def draw(self, window: Surface) -> None:
         fill_colour = (60, 40, 210) if self._selected else self._fill_colour
         inner_colour = self._inner_colour if self._selected else (128, 128, 128)
         self._fill_surface.fill(fill_colour, (0, 0, self._width - 4, self._height - 4))

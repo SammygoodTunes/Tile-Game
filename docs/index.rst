@@ -27,7 +27,7 @@ A tile-based multiplayer game with procedural terrain generation (using the Perl
 
 .. figure:: https://raw.githubusercontent.com/SammygoodTunes/Tile-Game/refs/heads/main/docs/ss.png
 
-.. autoclass:: game.client.Client
+.. automodule:: game.__main__
    :imported-members:
    :members:
    :undoc-members:

@@ -72,7 +72,7 @@ class Player:
         self.main_hud = MainHud(game)
         self.main_hud.set_state(True)
 
-    def events(self, game, map_obj, e: pygame.event.Event | pygame.event.EventType) -> None:
+    def events(self, game, map_obj, e: pygame.event.Event) -> None:
         """
         Handle the player events.
         """
