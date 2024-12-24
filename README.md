@@ -119,6 +119,7 @@ Current pre-release: [v0.0.1a](https://github.com/SammygoodTunes/Tile-Game/relea
 - [o.nihilist](https://github.com/onihilist) (programming, translation)
 - Pickmonde (art)
 - [SammygoodTunes](https://github.com/SammygoodTunes) (art, programming)
+- [o.nihilist](https://github.com/onihilist) (programming)
 
 ### Credits:
 - Original ["Pixeled"](https://www.dafont.com/pixeled.font) typeface by OmegaPC777 
