@@ -62,7 +62,7 @@ class Player:
         self.health: int = 100
         self.edges = [False, False, False, False]
         self.timers: list[float] = [0.0] * Player.TIMERS_COUNT
-        self.main_hud = None
+        self.main_hud: MainHud | None = None
         self.player_name = str()
 
     def init(self, game) -> None:

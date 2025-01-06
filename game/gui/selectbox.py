@@ -4,7 +4,6 @@ Module name: select_list
 
 from __future__ import annotations
 from math import ceil
-from xmlrpc.client import MAXINT
 
 from pygame import Surface, MOUSEWHEEL
 from pygame import mouse, MOUSEBUTTONUP

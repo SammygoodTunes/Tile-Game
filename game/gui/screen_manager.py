@@ -204,12 +204,16 @@ class Screens:
         """
         Translate all UIs to selected locale.
         """
-        self.pause_screen.translate()
-        self.options_screen.translate()
+        self.crash_screen.translate()
+        self.credits_screen.translate()
+        self.gameover_screen.translate()
+        if self.game.client.player.main_hud is not None:
+            self.game.client.player.main_hud.translate()
         self.main_menu_screen.translate()
+        self.options_screen.translate()
+        self.pause_screen.translate()
         self.server_create_screen.translate()
         self.server_join_screen.translate()
-        self.gameover_screen.translate()
         self.update_ui()
 
     def update(self) -> None:
@@ -217,18 +221,18 @@ class Screens:
         Update the screens.
         """
         self.crash_screen.draw()
-        self.main_menu_screen.draw()
-        self.server_menu_screen.draw()
-        self.server_join_screen.draw()
-        self.server_create_screen.draw()
-        self.server_connect_screen.draw()
-        self.loading_screen.draw()
-        self.pause_screen.draw()
-        self.options_screen.draw()
         self.credits_screen.draw()
         self.gameover_screen.draw()
+        self.loading_screen.draw()
+        self.main_menu_screen.draw()
         self.map_screen.draw()
+        self.options_screen.draw()
+        self.pause_screen.draw()
         self.player_list_screen.draw()
+        self.server_connect_screen.draw()
+        self.server_create_screen.draw()
+        self.server_join_screen.draw()
+        self.server_menu_screen.draw()
 
     def update_ui(self) -> None:
         """

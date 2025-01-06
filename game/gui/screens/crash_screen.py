@@ -8,6 +8,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING: from game.core.game import Game
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class CrashScreen(Screen):
@@ -22,7 +23,7 @@ class CrashScreen(Screen):
         self.traceback_label = Label().set_colour((255, 50, 50)).set_shadow_colour((50, 0, 00))
 
     def translate(self) -> None:
-        pass
+        self.crash_label.set_text(t.t('screens.crash.crash_label'))
 
     def draw(self) -> None:
         if not self._enabled: return

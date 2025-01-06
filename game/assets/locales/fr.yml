@@ -19,17 +19,26 @@ fr:
       back_button: Retour
     gameover:
       gameover_label: Vous êtes mort.
-      respawn_button: Réapparaitre
+      respawn_button: Réapparaître
       disconnect_button: Déconnexion
     general:
       back_button: Retour
-    pause:
-      resume_button: Reprendre le jeu
-      options_button: Paramètres
-      disconnect_button: Déconnexion
+    crash:
+      crash_label: Le jeu a planté
+    credits:
+      title_label: CRÉDITS
+      programming_title_label: "Développé par:"
+      art_title_label: "Art crée par:"
+      font_title_label: "Police créée par:"
+    hud:
+      health_bar_label: Points de vie
     options:
       title: PARAMÈTRES
       fps_limit_slider: Limiteur de FPS
       show_fps_box: Afficher FPS
       debug_info_box: Afficher infos de déboguage
       language_list_tooltip: Langue
+    pause:
+      resume_button: Reprendre le jeu
+      options_button: Paramètres
+      disconnect_button: Déconnexion

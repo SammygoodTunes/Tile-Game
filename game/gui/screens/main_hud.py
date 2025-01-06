@@ -12,6 +12,7 @@ from game.gui.hotbar import Hotbar
 from game.gui.label import Label
 from game.gui.progress_bar import ProgressBar
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class MainHud(Screen):
@@ -41,7 +42,7 @@ class MainHud(Screen):
         self.timer = time()
 
     def translate(self) -> None:
-        pass
+        self.health_bar.info_label.set_text(t.t('screens.hud.health_bar_label'))
 
     def draw(self) -> None:
         if not self._enabled: return

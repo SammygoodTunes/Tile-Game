@@ -23,13 +23,23 @@ en:
       disconnect_button: Disconnect
     general:
       back_button: Back
-    pause:
-      resume_button: Resume
-      options_button: Options
-      disconnect_button: Disconnect
+    crash:
+      crash_label: The game crashed
+    credits:
+      title_label: CREDITS
+      programming_title_label: "Programming by:"
+      art_title_label: "Art by:"
+      font_title_label: "Font by:"
+    hud:
+      health_bar_label: Player health
     options:
       title: OPTIONS
       fps_limit_slider: FPS Limit
       show_fps_box: Show FPS
       debug_info_box: Show debug info
       language_list_tooltip: Language
+    pause:
+      resume_button: Resume
+      options_button: Options
+      disconnect_button: Disconnect
+

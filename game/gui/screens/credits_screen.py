@@ -8,10 +8,10 @@ from pygame.event import Event
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING: from game.core.game import Game
-from game.data.states.mouse_states import MouseStates
 from game.gui.button import Button
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class CreditsScreen(Screen):
@@ -22,7 +22,7 @@ class CreditsScreen(Screen):
     def __init__(self, game: Game) -> None:
         super().__init__(game)
         self.faded_surface = None
-        self.options_label = Label('CREDITS')
+        self.title_label = Label('CREDITS')
         self.prog_title_label = Label('Programming by:')
         self.art_title_label = Label('Art by:')
         self.font_title_label = Label('Font by:')
@@ -32,12 +32,16 @@ class CreditsScreen(Screen):
         self.back_button = Button("Back")
 
     def translate(self) -> None:
-        pass
+        self.title_label.set_text(t.t('screens.credits.title_label'))
+        self.prog_title_label.set_text(t.t('screens.credits.programming_title_label'))
+        self.art_title_label.set_text(t.t('screens.credits.art_title_label'))
+        self.font_title_label.set_text(t.t('screens.credits.font_title_label'))
+        self.back_button.label.set_text(t.t('screens.general.back_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
         self.game.screen.blit(self.faded_surface, (0, 0))
-        self.options_label.draw(self.game.screen)
+        self.title_label.draw(self.game.screen)
         self.prog_title_label.draw(self.game.screen)
         self.prog_value_label.draw(self.game.screen)
         self.art_title_label.draw(self.game.screen)
@@ -50,15 +54,15 @@ class CreditsScreen(Screen):
         if not self._enabled: return
         self.faded_surface = self.initialise_surface()
         self.back_button.resize(self.game)
-        self.options_label.update(self.game)
+        self.title_label.update(self.game)
         self.prog_title_label.update(self.game)
         self.prog_value_label.update(self.game)
         self.art_title_label.update(self.game)
         self.art_value_label.update(self.game)
         self.font_title_label.update(self.game)
         self.font_value_label.update(self.game)
-        y = -50 - 20 - self.options_label.get_height()
-        self.options_label.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
+        y = -50 - 20 - self.title_label.get_height()
+        self.title_label.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 10 + self.prog_title_label.get_height()
         self.prog_title_label.center_with_offset(0, 0, self.game.width, self.game.height, -self.prog_title_label.get_width() // 2 - 10, y)
         self.prog_value_label.center_with_offset(0, 0, self.game.width, self.game.height, self.prog_value_label.get_width() // 2 + 10, y)
@@ -74,7 +78,7 @@ class CreditsScreen(Screen):
 
     def set_state(self, state: bool) -> None:
         super().set_state(state)
-        self.options_label.set_state(state)
+        self.title_label.set_state(state)
         self.prog_title_label.set_state(state)
         self.prog_value_label.set_state(state)
         self.art_title_label.set_state(state)
