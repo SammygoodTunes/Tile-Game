@@ -4,6 +4,8 @@ Module name: select_list
 
 from __future__ import annotations
 from math import ceil
+from xmlrpc.client import MAXINT
+
 from pygame import Surface, MOUSEWHEEL
 from pygame import mouse, MOUSEBUTTONUP
 from pygame.draw import rect, polygon
@@ -120,7 +122,9 @@ class SelectBox(Widget):
                 label.set_colour((255, 255, 255))
             label.draw(window.screen)
             offset = (offset + 1) % SelectBox.MAX_VISIBLE_VALUES
-        height = len(self._values) - SelectBox.MAX_VISIBLE_VALUES + 1
+        height = max(len(self._values) - SelectBox.MAX_VISIBLE_VALUES + 1, 1)
+        if height <= 1:
+            return
         rect(window.screen, (200, 200, 200), (
             value_surface_x + self._value_surface.get_width() - 3,
             value_surface_y + self._scroll * (self._value_surface.get_height() / height),
@@ -136,7 +140,11 @@ class SelectBox(Widget):
             return
         self._has_selected = False
         if e.type == MOUSEWHEEL:
-            self._scroll = clamp(self._scroll - e.y, 0, len(self._values) - SelectBox.MAX_VISIBLE_VALUES)
+            self._scroll = clamp(
+                self._scroll - e.y,
+                0,
+                0 if len(self._values) < SelectBox.MAX_VISIBLE_VALUES else len(self._values) - SelectBox.MAX_VISIBLE_VALUES
+            )
         if e.type == MOUSEBUTTONUP:
             if e.button == MouseStates.LMB:
                 for i, _ in enumerate(self._values):
