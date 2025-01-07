@@ -7,7 +7,7 @@ import logging
 
 import pygame
 
-from game.data.items.items import Items
+from game.data.data_translate import DataTranslate
 from game.data.keys import Keys
 from game.data.properties.game_properties import GameProperties
 from game.data.states.connection_states import ConnectionStates
@@ -205,6 +205,7 @@ class Screens:
         """
         Translate all UIs to selected locale.
         """
+        DataTranslate.translate_data()
         self.crash_screen.translate()
         self.credits_screen.translate()
         self.gameover_screen.translate()
@@ -217,7 +218,6 @@ class Screens:
         self.server_join_screen.translate()
         if self.game.client.player.main_hud is not None:
             self.game.client.player.main_hud.translate()
-            Items.translate()
             self.game.client.player.main_hud.update_ui()
         self.update_ui()
 

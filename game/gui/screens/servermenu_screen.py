@@ -8,9 +8,9 @@ from typing import TYPE_CHECKING
 from game.gui.screens.fx_screen import FxScreen
 
 if TYPE_CHECKING: from game.core.game import Game
-from game.gui.screens.screen import Screen
-from game.gui.label import Label
 from game.gui.button import Button
+from game.gui.label import Label
+from game.gui.screens.screen import Screen
 
 
 class ServerMenuScreen(Screen):

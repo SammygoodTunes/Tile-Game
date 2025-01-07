@@ -1,16 +1,13 @@
 
 from __future__ import annotations
-
 from datetime import date
 from math import sin
 from pygame import Surface, time, draw
-from time import strftime
 from typing import TYPE_CHECKING
-
-from game.data.properties.gui_properties import GuiProperties
 
 if TYPE_CHECKING: from game.core.game import Game
 from game.gui.screens.screen import Screen
+from game.data.properties.gui_properties import GuiProperties
 
 
 class FxScreen(Screen):

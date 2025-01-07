@@ -1,19 +1,25 @@
 en:
   data:
-    connection_states:
-      success: Connection successful.
-      invalid: Unknown host.
-      refused: Failed to connect to server.
-      timeout: Connection timed out.
-      noroute: No route to host.
-      disconnected: Disconnected.
-      badname: Player name is already taken.
-      maximum: Server is full. Come back later!
-      error: An internal error has occurred.
-      servfail: A server is already running on this machine.
-      badtheme: Bad world theme.
-      getdata: Loading world...
-      connect: Connecting to server...
+    properties:
+      world:
+        map_small: Small
+        map_medium: Medium
+        map_large: Large
+    states:
+      connection:
+        success: Connection successful.
+        invalid: Unknown host.
+        refused: Failed to connect to server.
+        timeout: Connection timed out.
+        noroute: No route to host.
+        disconnected: Disconnected.
+        badname: Player name is already taken.
+        maximum: Server is full. Come back later!
+        error: An internal error has occurred.
+        servfail: A server is already running on this machine.
+        badtheme: Bad world theme.
+        getdata: Loading world...
+        connect: Connecting to server...
     items:
       shovel_name: Shovel
       gun_name: Gun

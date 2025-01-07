@@ -2,16 +2,10 @@
 Module name: servercreate_screen
 """
 
-
 from __future__ import annotations
-
-from socket import create_server
-
 from pygame import MOUSEBUTTONDOWN, MOUSEBUTTONUP
 from pygame.event import Event
 from typing import TYPE_CHECKING
-
-from game.gui.screens.fx_screen import FxScreen
 
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.player_properties import PlayerProperties
@@ -21,10 +15,11 @@ from game.gui.button import Button
 from game.gui.inputbox import InputBox
 from game.gui.label import Label
 from game.gui.ordering_container import OrderingContainer
+from game.gui.screens.fx_screen import FxScreen
 from game.gui.screens.screen import Screen
 from game.gui.selectbox import SelectBox
-from game.world.theme_manager import ThemeManager
 from game.utils.translator import translator as t
+from game.world.theme_manager import ThemeManager
 
 
 class ServerCreateScreen(Screen):
@@ -91,6 +86,11 @@ class ServerCreateScreen(Screen):
         self.seed_input.set_tooltip_text(t.t('screens.servercreate.seed_input_placeholder'))
         self.world_theme_select.set_tooltip_text(t.t('screens.servercreate.world_theme_select_tooltip'))
         self.world_size_select.set_tooltip_text(t.t('screens.servercreate.world_size_select_tooltip'))
+        self.world_size_select.set_values([
+            WorldProperties.MAP_SMALL,
+            WorldProperties.MAP_MEDIUM,
+            WorldProperties.MAP_LARGE,
+        ])
         self.create_label.set_text(t.t('screens.servercreate.create_label'))
         self.back_button.label.set_text(t.t('screens.general.back_button'))
 
