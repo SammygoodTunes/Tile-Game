@@ -7,6 +7,7 @@ import logging
 
 import pygame
 
+from game.data.items.items import Items
 from game.data.keys import Keys
 from game.data.properties.game_properties import GameProperties
 from game.data.states.connection_states import ConnectionStates
@@ -215,6 +216,7 @@ class Screens:
         self.player_list_screen.translate()
         self.server_create_screen.translate()
         self.server_join_screen.translate()
+        Items.translate()
         self.update_ui()
 
     def update(self) -> None:
