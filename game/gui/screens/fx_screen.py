@@ -1,9 +1,13 @@
 
 from __future__ import annotations
+
+from datetime import date
 from math import sin
 from pygame import Surface, time, draw
 from time import strftime
 from typing import TYPE_CHECKING
+
+from game.data.properties.gui_properties import GuiProperties
 
 if TYPE_CHECKING: from game.core.game import Game
 from game.gui.screens.screen import Screen
@@ -22,10 +26,10 @@ class FxScreen(Screen):
         """
         Draw falling snow layer to screen.
         """
-        if not strftime('%d-%m') >= '20-12' and not strftime('%d-%m') <= '20-01':
+        if not date(date.today().year - 1, 12, 20) <= date.today() <= date(date.today().year, 1, 20):
             return
-        for i in range(20):
-            for j in range(10):
+        for i in range(GuiProperties.SNOW_PARTICLE_DENSITY[0]):
+            for j in range(GuiProperties.SNOW_PARTICLE_DENSITY[1]):
                 draw.rect(screen, (255, 255, 255), (
                     (sin(time.get_ticks() / 1000.0) * 100.0 + j * screen.get_width() / 3 + i * screen.get_width() / 7) % (screen.get_width() + 4),
                     (time.get_ticks() / 15.0 + i * screen.get_height() / 3 + j * screen.get_height() / 5) % (screen.get_height() + 4),
