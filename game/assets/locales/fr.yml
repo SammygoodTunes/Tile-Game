@@ -1,5 +1,19 @@
 fr:
   data:
+    connection_states:
+      success: Connection réussie.
+      invalid: Hôte inconnu.
+      refused: Connexion refusée.
+      timeout: Délai de connexion expiré
+      noroute: Hôte non accessible.
+      disconnected: Déconnecté(e).
+      badname: Le pseudo est déjà pris.
+      maximum: Le serveur est complet. Revenez plus tard !
+      error: Une erreur interne s'est produit.
+      servfail: Un serveur tourne déjà sur cette machine.
+      badtheme: Thème invalide pour ce monde.
+      getdata: Chargement du monde...
+      connect: Connexion au serveur...
     items:
       shovel_name: Pelle
       gun_name: Pistolet
@@ -49,6 +63,8 @@ fr:
     playerlist:
       title_label: Liste des joueurs
       online_text: EN LIGNE
+    serverconnect:
+      main_menu_button: Menu principal
     servercreate:
       create_label: Créer un serveur
       ign_input_placeholder: Pseudonyme
