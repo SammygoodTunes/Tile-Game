@@ -216,6 +216,7 @@ class Screens:
         self.server_connect_screen.translate()
         self.server_create_screen.translate()
         self.server_join_screen.translate()
+        self.server_menu_screen.translate()
         if self.game.client.player.main_hud is not None:
             self.game.client.player.main_hud.translate()
             self.game.client.player.main_hud.update_ui()

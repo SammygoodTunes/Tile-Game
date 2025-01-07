@@ -11,6 +11,7 @@ if TYPE_CHECKING: from game.core.game import Game
 from game.gui.button import Button
 from game.gui.label import Label
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class ServerMenuScreen(Screen):
@@ -29,7 +30,10 @@ class ServerMenuScreen(Screen):
 		self.back_button = Button("Back")
 
 	def translate(self) -> None:
-		pass
+		self.subtitle_label.set_text(t.t('screens.servermenu.subtitle_label'))
+		self.join_button.label.set_text(t.t('screens.servermenu.join_button'))
+		self.create_button.label.set_text(t.t('screens.servermenu.create_button'))
+		self.back_button.label.set_text(t.t('screens.general.back_button'))
 
 	def draw(self) -> None:
 		if not self._enabled: return
