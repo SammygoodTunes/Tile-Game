@@ -47,7 +47,7 @@ class MainHud(Screen):
     def draw(self) -> None:
         if not self._enabled: return
         c_handler = self.game.client.connection_handler
-        self.score_label.set_text(f'Score: {self.game.client.player.score}')
+        self.score_label.set_text(f'{t.t("screens.hud.score_text")} {self.game.client.player.score}')
         self.score_label.draw(self.game.screen)
         self.health_bar.draw(self.game.screen)
         self.hotbar.draw(self.game.screen)
@@ -58,11 +58,11 @@ class MainHud(Screen):
         if not self.game.screens.options_screen.debug_info_box.is_checked():
             return
 
-        self.data_sent_label.set_text(f'Data sent: {c_handler.get_total_data_sent():.3f} MB')
-        self.data_recv_label.set_text(f'Data received: {c_handler.get_total_data_received():.3f} MB')
-        self.camera_label.set_text(f'Camera (XY): {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
+        self.data_sent_label.set_text(f'{t.t("screens.hud.data_sent_text")} {c_handler.get_total_data_sent():.3f} MB')
+        self.data_recv_label.set_text(f'{t.t("screens.hud.data_recv_text")} {c_handler.get_total_data_received():.3f} MB')
+        self.camera_label.set_text(f'{t.t("screens.hud.camera_pos_text")} {self.game.client.camera.x: .0f} {self.game.client.camera.y: .0f}')
         self.position_label.set_text(
-            f'Player (XY): {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
+            f'{t.t("screens.hud.player_pos_text")} {self.game.client.player.get_x(): .0f} {self.game.client.player.get_y(): .0f}')
         self.ping_label.set_x(self.game.width - self.ping_label.get_width() - 2)
         self.ping_label.set_y(-8 + self.score_label.get_height() // 2 + 4)
         self.data_sent_label.set_x(self.game.width - self.data_sent_label.get_width() - 2)
@@ -86,10 +86,10 @@ class MainHud(Screen):
             return
         self.ping_label.set_text(f'Ping: {c_handler.get_ping()} (ms)')
         self.data_sent_rate_label.set_text(
-            f'Data transmission rate: {c_handler.get_average_data_sent():.1f} KB/min'
+            f'{t.t("screens.hud.data_send_rate_text")} {c_handler.get_average_data_sent():.1f} KB/min'
         )
         self.data_recv_rate_label.set_text(
-            f'Data reception rate: {c_handler.get_average_data_received():.1f} KB/min'
+            f'{t.t("screens.hud.data_recv_rate_text")} {c_handler.get_average_data_received():.1f} KB/min'
         )
         self.timer = time()
 

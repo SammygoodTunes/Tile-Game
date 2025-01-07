@@ -5,22 +5,6 @@ fr:
       hell: Ténèbres
       islands: Îles
   screens:
-    mainmenu:
-      play_button: Jouer
-      options_button: Options
-      credits_button: Crédits
-      quit_button: Quitter
-    serverjoin:
-      join_label: Rejoindre le serveur
-      ign_input: Pseudonyme
-      ip_input: Adresse IP
-      port_input: Port
-      join_button: Rejoindre
-      back_button: Retour
-    gameover:
-      gameover_label: Vous êtes mort.
-      respawn_button: Réapparaître
-      disconnect_button: Déconnexion
     general:
       back_button: Retour
     crash:
@@ -30,8 +14,24 @@ fr:
       programming_title_label: "Développé par:"
       art_title_label: "Art crée par:"
       font_title_label: "Police créée par:"
+    gameover:
+      gameover_label: Vous êtes mort.
+      respawn_button: Réapparaître
+      disconnect_button: Déconnexion
     hud:
+      score_text: "Score:"
+      player_pos_text: "Joueur (X/Y):"
+      camera_pos_text: "Caméra (X/Y):"
+      data_sent_text: "Données envoyées:"
+      data_recv_text: "Données reçues:"
+      data_send_rate_text: "Taux de données transmises:"
+      data_recv_rate_text: "Taux de données reçues:"
       health_bar_label: Points de vie
+    mainmenu:
+      play_button: Jouer
+      options_button: Paramètres
+      credits_button: Crédits
+      quit_button: Quitter
     options:
       title: PARAMÈTRES
       fps_limit_slider: Limiteur de FPS
@@ -42,3 +42,19 @@ fr:
       resume_button: Reprendre le jeu
       options_button: Paramètres
       disconnect_button: Déconnexion
+    playerlist:
+      title_label: Liste des joueurs
+      online_text: EN LIGNE
+    servercreate:
+      create_label: Créer un serveur
+      ign_input_placeholder: Pseudonyme
+      seed_input_placeholder: Graine
+      world_theme_select_tooltip: Thème du monde
+      world_size_select_tooltip: Taille du monde
+    serverjoin:
+      join_label: Rejoindre un serveur
+      ign_input_placeholder: Pseudonyme
+      ip_input_placeholder: Adresse IP
+      port_input_placeholder: Port
+      join_button: Rejoindre
+      back_button: Retour

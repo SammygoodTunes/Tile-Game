@@ -5,22 +5,6 @@ en:
       hell: Hell
       islands: Islands
   screens:
-    mainmenu:
-      play_button: Play
-      options_button: Options
-      credits_button: Credits
-      quit_button: Quit
-    serverjoin:
-      join_label: Join the server
-      ign_input: Pseudonym
-      ip_input: IP address
-      port_input: Port
-      join_button: Join
-      back_button: Back
-    gameover:
-      gameover_label: You died.
-      respawn_button: Respawn
-      disconnect_button: Disconnect
     general:
       back_button: Back
     crash:
@@ -30,8 +14,24 @@ en:
       programming_title_label: "Programming by:"
       art_title_label: "Art by:"
       font_title_label: "Font by:"
+    gameover:
+      gameover_label: You died.
+      respawn_button: Respawn
+      disconnect_button: Disconnect
     hud:
+      score_text: "Score:"
+      player_pos_text: "Player (X/Y):"
+      camera_pos_text: "Camera (X/Y):"
+      data_sent_text: "Data sent:"
+      data_recv_text: "Data received:"
+      data_send_rate_text: "Data transmission rate:"
+      data_recv_rate_text: "Data reception rate:"
       health_bar_label: Player health
+    mainmenu:
+      play_button: Play
+      options_button: Options
+      credits_button: Credits
+      quit_button: Quit
     options:
       title: OPTIONS
       fps_limit_slider: FPS Limit
@@ -42,4 +42,20 @@ en:
       resume_button: Resume
       options_button: Options
       disconnect_button: Disconnect
+    playerlist:
+      title_label: Player list
+      online_text: ONLINE
+    servercreate:
+      create_label: Create a server
+      ign_input_placeholder: Pseudonym
+      seed_input_placeholder: Seed
+      world_theme_select_tooltip: World theme
+      world_size_select_tooltip: World size
+    serverjoin:
+      join_label: Join the server
+      ign_input_placeholder: Pseudonym
+      ip_input_placeholder: IP address
+      port_input_placeholder: Port
+      join_button: Join
+      back_button: Back
 

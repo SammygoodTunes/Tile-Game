@@ -15,7 +15,7 @@ Currently in development.
 
 Pre-release **v0.0.1a** is now **[available](https://github.com/SammygoodTunes/Tile-Game/releases/tag/alpha)**.
 
-## Table of contents:
+## Contents:
 - [Preview](#preview)
 - [Controls](#controls)
 - [Setup](#setup)

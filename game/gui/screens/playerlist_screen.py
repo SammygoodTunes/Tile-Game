@@ -12,6 +12,7 @@ from game.data.properties.server_properties import ServerProperties
 from game.gui.label import Label
 from game.gui.nametag import NameTag
 from game.gui.screens.screen import Screen
+from game.utils.translator import translator as t
 
 
 class PlayerListScreen(Screen):
@@ -29,7 +30,7 @@ class PlayerListScreen(Screen):
         self.count_label = Label('ONLINE   0/10').set_font_sizes((7, 8, 9)).set_colour((0, 255, 0))
 
     def translate(self) -> None:
-        pass
+        self.title_label.set_text(t.t('screens.playerlist.title_label'))
 
     def draw(self) -> None:
         if not self._enabled: return
@@ -59,7 +60,7 @@ class PlayerListScreen(Screen):
         height = 0
         self._update_buffer = update_buffer
         self.player_list = tuple()
-        self.count_label.set_text(f'ONLINE   {len(players)}/{ServerProperties.MAX_PLAYERS}')
+        self.count_label.set_text(f'{t.t("screens.playerlist.online_text")}   {len(players)}/{ServerProperties.MAX_PLAYERS}')
         self.title_label.update(self.game)
         self.count_label.update(self.game)
         for player in players:
@@ -69,7 +70,7 @@ class PlayerListScreen(Screen):
             nametag.update(self.game)
             nametag.center_horizontally(0, self.game.width)
             height += nametag.get_height()
-            self.player_list += (nametag,)
+            self.player_list += nametag,
         self._faded_surface = Surface((self.game.width / 2, height + self.title_label.get_height() + 10))
         self._faded_surface.fill((0, 0, 0))
         self._faded_surface.set_alpha(ScreenProperties.ALPHA)

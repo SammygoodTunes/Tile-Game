@@ -212,6 +212,7 @@ class Screens:
         self.main_menu_screen.translate()
         self.options_screen.translate()
         self.pause_screen.translate()
+        self.player_list_screen.translate()
         self.server_create_screen.translate()
         self.server_join_screen.translate()
         self.update_ui()

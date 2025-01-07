@@ -56,9 +56,12 @@ class ServerJoinScreen(Screen):
 
     def translate(self) -> None:
         self.join_label.set_text(t.t('screens.serverjoin.join_label'))
-        self.ign_input.set_text(t.t('screens.serverjoin.ign_input'))
-        self.ip_input.set_text(t.t('screens.serverjoin.ip_input'))
-        self.port_input.set_text(t.t('screens.serverjoin.port_input'))
+        self.ign_input.set_placeholder_text(t.t('screens.serverjoin.ign_input_placeholder'))
+        self.ign_input.set_tooltip_text(t.t('screens.serverjoin.ign_input_placeholder'))
+        self.ip_input.set_placeholder_text(t.t('screens.serverjoin.ip_input_placeholder'))
+        self.ip_input.set_tooltip_text(t.t('screens.serverjoin.ip_input_placeholder'))
+        self.port_input.set_placeholder_text(t.t('screens.serverjoin.port_input_placeholder'))
+        self.port_input.set_tooltip_text(t.t('screens.serverjoin.port_input_placeholder'))
         self.join_button.label.set_text(t.t('screens.serverjoin.join_button'))
         self.back_button.label.set_text(t.t('screens.serverjoin.back_button'))
 
@@ -67,8 +70,8 @@ class ServerJoinScreen(Screen):
         self.game.screen.blit(self.faded_surface, (0, 0))
         self.join_label.draw(self.game.screen)
         for inputbox in self.ordering_container.get_widgets():
-            if isinstance(inputbox, InputBox):
-                inputbox.draw(self.game.screen)
+            if not isinstance(inputbox, InputBox): continue
+            inputbox.draw(self.game.screen)
         self.join_button.draw(self.game.screen)
         self.back_button.draw(self.game.screen)
 

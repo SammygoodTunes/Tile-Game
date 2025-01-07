@@ -22,6 +22,7 @@ from game.gui.ordering_container import OrderingContainer
 from game.gui.screens.screen import Screen
 from game.gui.selectbox import SelectBox
 from game.world.theme_manager import ThemeManager
+from game.utils.translator import translator as t
 
 
 class ServerCreateScreen(Screen):
@@ -82,6 +83,14 @@ class ServerCreateScreen(Screen):
 
     def translate(self) -> None:
         self.initialise_themes()
+        self.ign_input.set_placeholder_text(t.t('screens.servercreate.ign_input_placeholder'))
+        self.ign_input.set_tooltip_text(t.t('screens.servercreate.ign_input_placeholder'))
+        self.seed_input.set_placeholder_text(t.t('screens.servercreate.seed_input_placeholder'))
+        self.seed_input.set_tooltip_text(t.t('screens.servercreate.seed_input_placeholder'))
+        self.world_theme_select.set_tooltip_text(t.t('screens.servercreate.world_theme_select_tooltip'))
+        self.world_size_select.set_tooltip_text(t.t('screens.servercreate.world_size_select_tooltip'))
+        self.create_label.set_text(t.t('screens.servercreate.create_label'))
+        self.back_button.label.set_text(t.t('screens.general.back_button'))
 
     def draw(self) -> None:
         if not self._enabled: return
