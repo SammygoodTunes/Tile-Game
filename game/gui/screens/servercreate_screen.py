@@ -11,6 +11,8 @@ from pygame import MOUSEBUTTONDOWN, MOUSEBUTTONUP
 from pygame.event import Event
 from typing import TYPE_CHECKING
 
+from game.gui.screens.fx_screen import FxScreen
+
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.player_properties import PlayerProperties
 from game.data.properties.world_properties import WorldProperties
@@ -94,6 +96,7 @@ class ServerCreateScreen(Screen):
 
     def draw(self) -> None:
         if not self._enabled: return
+        FxScreen.draw_falling_snow_layer(screen=self.game.screen)
         self.game.screen.blit(self.faded_surface, (0, 0))
         self.create_label.draw(self.game.screen)
         for widget in self.ordering_container.get_widgets():

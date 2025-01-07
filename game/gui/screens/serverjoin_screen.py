@@ -6,6 +6,8 @@ from __future__ import annotations
 from pygame.event import Event
 from typing import TYPE_CHECKING
 
+from game.gui.screens.fx_screen import FxScreen
+
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.player_properties import PlayerProperties
 from game.gui.button import Button
@@ -67,6 +69,7 @@ class ServerJoinScreen(Screen):
 
     def draw(self) -> None:
         if not self._enabled: return
+        FxScreen.draw_falling_snow_layer(screen=self.game.screen)
         self.game.screen.blit(self.faded_surface, (0, 0))
         self.join_label.draw(self.game.screen)
         for inputbox in self.ordering_container.get_widgets():

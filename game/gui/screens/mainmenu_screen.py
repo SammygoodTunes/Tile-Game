@@ -7,6 +7,8 @@ from math import exp, cos, pi
 from typing import TYPE_CHECKING
 import pygame.time
 
+from game.gui.screens.fx_screen import FxScreen
+
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.game_properties import GameProperties
 from game.data.properties.gui_properties import GuiProperties
@@ -43,6 +45,9 @@ class MainMenuScreen(Screen):
 
     def draw(self) -> None:
         if not self._enabled: return
+
+        FxScreen.draw_falling_snow_layer(screen=self.game.screen)
+
         label_time = pygame.time.get_ticks() / 1000.0 - self.title_label_time
         if label_time > GuiProperties.TITLE_ANIM_DURATION:
             label_time = GuiProperties.TITLE_ANIM_DURATION

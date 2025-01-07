@@ -7,6 +7,8 @@ from pygame import MOUSEBUTTONUP, MOUSEBUTTONDOWN
 from pygame.event import Event
 from typing import TYPE_CHECKING
 
+from game.gui.screens.fx_screen import FxScreen
+
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.states.mouse_states import MouseStates
 from game.gui.button import Button
@@ -70,6 +72,8 @@ class OptionsScreen(Screen):
 
     def draw(self) -> None:
         if not self._enabled: return
+        if not self.game.start_game:
+            FxScreen.draw_falling_snow_layer(screen=self.game.screen)
         self.game.screen.blit(self.faded_surface, (0, 0))
         self.options_label.draw(self.game.screen)
         self.fps_limit_slider.draw(self.game.screen)

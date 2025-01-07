@@ -5,6 +5,8 @@ Module name: servermenu_screen
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
+from game.gui.screens.fx_screen import FxScreen
+
 if TYPE_CHECKING: from game.core.game import Game
 from game.gui.screens.screen import Screen
 from game.gui.label import Label
@@ -31,6 +33,7 @@ class ServerMenuScreen(Screen):
 
 	def draw(self) -> None:
 		if not self._enabled: return
+		FxScreen.draw_falling_snow_layer(screen=self.game.screen)
 		self.game.screen.blit(self.faded_surface, (0, 0))
 		self.subtitle_label.draw(self.game.screen)
 		self.join_button.draw(self.game.screen)
