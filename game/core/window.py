@@ -27,9 +27,14 @@ class Window:
         self.old_height: int = height
         self.max_width: int = pygame.display.Info().current_w
         self.max_height: int = pygame.display.Info().current_h
+        self.vsync: bool = True
+        self.scaled: bool = True
+        self.paused: bool = False
+        self.fullscreen: bool = False
+        self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         self.screen: pygame.Surface | pygame.SurfaceType = pygame.display.set_mode(
             (self.width, self.height),
-            pygame.RESIZABLE,
+            pygame.RESIZABLE | self.scaled * pygame.SCALED,
             depth=8,
             vsync=1)
         self.fps_cap: int = 200
@@ -37,11 +42,6 @@ class Window:
         self.timer: int = 0
         self.font: pygame.font.Font = pygame.font.Font(Window.FONT_PATH, 11)
         self.fps_label: Label = (Label(f"FPS: {str(round(self.clock.get_fps()))}", self.width - 75, -8))
-        self.vsync: bool = True
-        self.focused: bool = True
-        self.paused: bool = False
-        self.fullscreen: bool = False
-        self.halt_refresh: bool = False  # used to prevent graphical distortion when resizing window
         pygame.display.set_caption(f'{GameProperties.APP_NAME} v{GameProperties.APP_VER}')
 
     def clear(self, colour: tuple[int, int, int]) -> None:
@@ -73,7 +73,7 @@ class Window:
             self.width, self.height = e.x, e.y
             self.screen = pygame.display.set_mode(
                 (self.width, self.height),
-                pygame.RESIZABLE,
+                pygame.RESIZABLE | self.scaled * pygame.SCALED,
                 depth=8,
                 vsync=self.vsync
             )
@@ -92,7 +92,7 @@ class Window:
             self.height = self.old_height
         self.screen = pygame.display.set_mode(
             (self.width, self.height),
-            (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE),
+            (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE) | self.scaled * pygame.SCALED,
             depth=8,
             vsync=self.vsync
         )

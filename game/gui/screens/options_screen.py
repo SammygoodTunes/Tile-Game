@@ -36,6 +36,7 @@ class OptionsScreen(Screen):
         self.show_fps_box = Checkbox('Show FPS', checked=True)
         self.debug_info_box = Checkbox('Show debug info')
         self.vsync_box = Checkbox('Vsync', checked=True)
+        self.scaled_box = Checkbox('Scaled')
         self.language_list = SelectBox(tooltip_text='Language', width=200).set_values([value for value in locales.values()])
         self.back_button = Button('Back')
 
@@ -44,6 +45,7 @@ class OptionsScreen(Screen):
         self.fps_limit_slider.set_title(t.t('screens.options.fps_limit_slider'))
         self.show_fps_box.title_label.set_text(t.t('screens.options.show_fps_box'))
         self.debug_info_box.title_label.set_text(t.t('screens.options.debug_info_box'))
+        self.scaled_box.title_label.set_text(t.t('screens.options.scaled_box'))
         self.language_list.set_tooltip_text(t.t('screens.options.language_list_tooltip'))
         self.back_button.label.set_text(t.t('screens.general.back_button'))
 
@@ -53,6 +55,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.events(e)
         self.debug_info_box.events(e)
         self.vsync_box.events(e)
+        self.scaled_box.events(e)
         self.language_list.events(e)
 
         if self.language_list.has_selected_a_value():
@@ -80,6 +83,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.draw(self.game.screen)
         self.debug_info_box.draw(self.game.screen)
         self.vsync_box.draw(self.game.screen)
+        self.scaled_box.draw(self.game.screen)
         self.language_list.draw(self.game)
         self.back_button.draw(self.game.screen)
         self.language_list.draw_value_list(self.game)
@@ -91,6 +95,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.resize(self.game)
         self.debug_info_box.resize(self.game)
         self.vsync_box.resize(self.game)
+        self.scaled_box.resize(self.game)
         self.language_list.resize(self.game)
         self.back_button.resize(self.game)
 
@@ -106,6 +111,8 @@ class OptionsScreen(Screen):
         self.debug_info_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
         y += 25
         self.vsync_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
+        y += 25
+        self.scaled_box.center_with_offset(0, 0, self.game.width, self.game.height, -self.fps_limit_slider.get_width() // 2, y)
         y += self.language_list.get_height()
         self.language_list.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 10 + self.back_button.get_height()
@@ -114,6 +121,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.update(self.game)
         self.debug_info_box.update(self.game)
         self.vsync_box.update(self.game)
+        self.scaled_box.update(self.game)
         self.language_list.update(self.game)
         self.back_button.update(self.game)
 
@@ -124,6 +132,7 @@ class OptionsScreen(Screen):
         self.show_fps_box.set_state(state)
         self.debug_info_box.set_state(state)
         self.vsync_box.set_state(state)
+        self.scaled_box.set_state(state)
         self.language_list.set_state(state)
         self.back_button.set_state(state)
         if state: self.update_ui()

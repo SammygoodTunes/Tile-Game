@@ -45,14 +45,20 @@ class Game(Window):
         """
         Update window based on options' menu.
         """
+        state = False
         if self.vsync != self.screens.options_screen.vsync_box.is_checked():
             self.vsync = self.screens.options_screen.vsync_box.is_checked()
-            self.screen = pygame.display.set_mode(
-                (self.width, self.height),
-                (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE),
-                depth=8,
-                vsync=self.vsync
-            )
+            state = True
+        if self.scaled != self.screens.options_screen.scaled_box.is_checked():
+            self.scaled = self.screens.options_screen.scaled_box.is_checked()
+            state = True
+        if not state: return
+        self.screen = pygame.display.set_mode(
+            (self.width, self.height),
+            (pygame.HWACCEL | pygame.FULLSCREEN if self.fullscreen else pygame.RESIZABLE) | self.scaled * pygame.SCALED,
+            depth=8,
+            vsync=self.vsync
+        )
 
     # Used for when game needs to be updated during threaded process
     # This should be used in a while loop controlled by an Event()
