@@ -92,6 +92,7 @@ class ServerCreateScreen(Screen):
             WorldProperties.MAP_LARGE,
         ])
         self.create_label.set_text(t.t('screens.servercreate.create_label'))
+        self.create_button.label.set_text(t.t('screens.servercreate.create_button'))
         self.back_button.label.set_text(t.t('screens.general.back_button'))
 
     def draw(self) -> None:
