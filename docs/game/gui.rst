@@ -85,6 +85,12 @@ ____________________________
    :members:
    :undoc-members:
 
+`gui.screens.fx_screen`
+_______________________
+.. automodule:: game.gui.screens.fx_screen
+   :members:
+   :undoc-members:
+
 `gui.screens.gameover_screen`
 _____________________________
 .. automodule:: game.gui.screens.gameover_screen

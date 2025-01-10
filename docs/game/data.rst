@@ -7,6 +7,12 @@
    :members:
    :undoc-members:
 
+`data.data_translate`
+---------------------
+.. automodule:: game.data.data_translate
+   :members:
+   :undoc-members:
+
 `data.items`
 ------------
 .. automodule:: game.data.items
