@@ -6,8 +6,6 @@ from __future__ import annotations
 from time import time
 from typing import TYPE_CHECKING
 
-from game.gui.screens.fx_screen import FxScreen
-
 if TYPE_CHECKING: from game.core.game import Game
 from game.data.properties.game_properties import GameProperties
 from game.gui.hotbar import Hotbar

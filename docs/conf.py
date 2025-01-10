@@ -1,4 +1,8 @@
+"""
+Module name: conf
 
+Configuration for the documentation (readthedocs).
+"""
 import os
 import sys
 

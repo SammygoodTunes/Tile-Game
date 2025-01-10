@@ -10,8 +10,6 @@ from pathlib import Path
 import sys
 from typing import SupportsFloat, SupportsIndex
 
-from game.data.properties.game_properties import GameProperties
-
 
 def c_log2(x: SupportsFloat | SupportsIndex, /) -> int:
     """

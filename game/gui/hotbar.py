@@ -4,7 +4,7 @@ Module name: hotbar
 
 from __future__ import annotations
 from pygame import Surface, SRCALPHA
-from typing import Self, TYPE_CHECKING
+from typing import Self
 
 from game.core.window import Window
 from game.data.items.items import Items

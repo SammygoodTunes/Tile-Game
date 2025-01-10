@@ -1,4 +1,8 @@
+"""
+Module name: data_translate
 
+This module manages the translation of all data constants (states, properties, etc.)
+"""
 from game.data.items.items import Items
 from game.data.properties.world_properties import WorldProperties
 

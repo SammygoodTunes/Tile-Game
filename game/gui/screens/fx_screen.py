@@ -1,4 +1,6 @@
-
+"""
+Module name: fx_screen
+"""
 from __future__ import annotations
 from datetime import date
 from math import sin

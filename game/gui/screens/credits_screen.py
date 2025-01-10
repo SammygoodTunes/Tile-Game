@@ -3,8 +3,6 @@ Module name: credits_screen
 """
 
 from __future__ import annotations
-from pygame import MOUSEBUTTONUP
-from pygame.event import Event
 from typing import TYPE_CHECKING
 
 from game.gui.screens.fx_screen import FxScreen

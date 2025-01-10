@@ -27,6 +27,7 @@ class Window:
         self.old_height: int = height
         self.max_width: int = pygame.display.Info().current_w
         self.max_height: int = pygame.display.Info().current_h
+        self.focused = True
         self.vsync: bool = True
         self.scaled: bool = True
         self.paused: bool = False

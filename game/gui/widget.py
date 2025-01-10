@@ -1,7 +1,7 @@
 """
 Module name: widget
 
-This module defines the bass class for all GUI widgets.
+This module defines the base class for all GUI widgets.
 """
 
 from __future__ import annotations
