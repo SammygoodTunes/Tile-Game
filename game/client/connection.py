@@ -110,7 +110,6 @@ class Connection:
 
     def __init__(self, host: str, port: int, client) -> None:
         self.sock = XSocket()
-        self.sock.settimeout(10.0)
         self.host = host
         self.port = port
         self.state = ConnectionStates.IDLE
@@ -127,6 +126,7 @@ class Connection:
         Any errors or failures will raise specific exceptions.
         """
         try:
+            self.sock.settimeout(60.0)
             self.timer = get_ticks() / 1000.0
             self.state = ConnectionStates.PENDING
             self.sock.connect((socket.gethostbyname(socket.gethostname()) if self.host.lower() == 'localhost' else self.host, self.port))
@@ -166,6 +166,7 @@ class Connection:
             if not ClientTasks.confirm_local_player(data):
                 raise ConnectionRefusedError('Failed to confirm local player.')
 
+            self.sock.settimeout(10.0)
             self.state = ConnectionStates.SUCCESS
         except PlayerNameAlreadyExists as e:
             logger.error(f'Connection aborted: {e}')

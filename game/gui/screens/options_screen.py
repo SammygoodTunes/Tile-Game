@@ -101,7 +101,7 @@ class OptionsScreen(Screen):
 
         self.options_label.update(self.game)
 
-        y = - 75 - self.options_label.get_height()
+        y = - 100 - self.options_label.get_height()
         self.options_label.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
         y += 75
         self.fps_limit_slider.center_with_offset(0, 0, self.game.width, self.game.height, 0, y)
